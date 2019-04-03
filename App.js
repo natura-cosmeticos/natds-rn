@@ -5,6 +5,6 @@ import { NatContainer } from './lib/components/NatContainer';
 
 export const App = () => (
   <NatContainer>
-    <Text>Teste Container</Text>
+    <Text>You can test your component here</Text>
   </NatContainer>
 );
