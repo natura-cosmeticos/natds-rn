@@ -1,10 +1,8 @@
 import React from 'react';
-import { Text } from 'react-native';
-
-import { NatContainer } from './lib/components/NatContainer';
+import { View, Text } from 'react-native';
 
 export const App = () => (
-  <NatContainer>
-    <Text>You can test your component here</Text>
-  </NatContainer>
+  <View style={{ height: '100%', alignItems: 'center', justifyContent: 'center' }}>
+     <Text>You can test your component here</Text>
+  </View>
 );

@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header component Should render container component correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#FFFFFF",
+        "flexWrap": "wrap",
+        "height": 56,
+        "width": "100%",
+      },
+    ]
+  }
+>
+  <Text
+    icon=""
+    style={
+      Array [
+        Object {
+          "color": "#333333",
+          "fontFamily": "NaturaSans-Regular",
+          "fontSize": 18,
+          "marginLeft": 16,
+          "marginTop": 16,
+        },
+      ]
+    }
+  >
+    Title test
+  </Text>
+</View>
+`;

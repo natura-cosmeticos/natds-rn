@@ -1,0 +1,149 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NatGridItem component Properties of NatGridItem Should render NatGridItem component  1`] = `
+<View
+  square={true}
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "height": 200,
+        "justifyContent": "center",
+        "marginRight": 16,
+        "width": 152,
+      },
+    ]
+  }
+>
+  <Image
+    accessible={true}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    source={
+      Object {
+        "uri": "#",
+      }
+    }
+    square={true}
+    style={
+      Array [
+        Object {
+          "borderRadius": 6,
+          "height": 152,
+          "width": 152,
+        },
+      ]
+    }
+  />
+  <View
+    square={true}
+    style={
+      Array [
+        Object {
+          "height": 40,
+          "marginTop": 8,
+          "width": 152,
+        },
+      ]
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#777777",
+            "flexBasis": 0,
+            "flexGrow": 1,
+            "flexShrink": 1,
+            "fontFamily": "Roboto",
+            "fontSize": 14,
+            "fontStyle": "normal",
+            "fontWeight": "500",
+            "textAlign": "center",
+          },
+        ]
+      }
+    >
+      descrição
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`NatGridItem component Should render NatGridItem component  1`] = `
+<View
+  square={true}
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "height": 200,
+        "justifyContent": "center",
+        "marginRight": 16,
+        "width": 152,
+      },
+    ]
+  }
+>
+  <Image
+    accessible={true}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    source={
+      Object {
+        "uri": "#",
+      }
+    }
+    square={true}
+    style={
+      Array [
+        Object {
+          "borderRadius": 6,
+          "height": 152,
+          "width": 152,
+        },
+      ]
+    }
+  />
+  <View
+    square={true}
+    style={
+      Array [
+        Object {
+          "height": 40,
+          "marginTop": 8,
+          "width": 152,
+        },
+      ]
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#777777",
+            "flexBasis": 0,
+            "flexGrow": 1,
+            "flexShrink": 1,
+            "fontFamily": "Roboto",
+            "fontSize": 14,
+            "fontStyle": "normal",
+            "fontWeight": "500",
+            "textAlign": "center",
+          },
+        ]
+      }
+    >
+      Texto
+    </Text>
+  </View>
+</View>
+`;

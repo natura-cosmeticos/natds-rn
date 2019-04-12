@@ -1,0 +1,105 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button component Should render button component  1`] = `
+<View
+  accessible={true}
+  isTVSelectable={true}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#FFFFFF",
+      "borderRadius": 6,
+      "flexDirection": "row",
+      "height": 48,
+      "justifyContent": "center",
+      "marginRight": 0,
+      "opacity": 1,
+      "width": 328,
+    }
+  }
+>
+  <Text
+    style={
+      Array [
+        Object {
+          "alignSelf": "center",
+          "color": "#F4AB34",
+          "fontFamily": "Roboto",
+          "fontSize": 14,
+          "fontWeight": "bold",
+        },
+      ]
+    }
+    type="default"
+  >
+    STRING
+  </Text>
+</View>
+`;
+
+exports[`Button component when is card type Should render button component  1`] = `
+<View
+  accessible={true}
+  isTVSelectable={true}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#F4AB34",
+      "borderRadius": 6,
+      "flexDirection": "row",
+      "height": 80,
+      "justifyContent": "center",
+      "marginRight": 30,
+      "opacity": 1,
+      "width": 128,
+    }
+  }
+>
+  <Text
+    style={
+      Array [
+        Object {
+          "alignSelf": "center",
+          "color": "#FFFFFF",
+          "fontFamily": "Roboto",
+          "fontSize": 14,
+          "fontWeight": "bold",
+          "lineHeight": 21,
+          "textAlign": "center",
+          "width": 64,
+        },
+      ]
+    }
+    type="card"
+  >
+    TEST
+  </Text>
+  <Image
+    source={
+      Object {
+        "testUri": "../../../lib/assets/icons/ic_arrow_left_white.png",
+      }
+    }
+    style={
+      Array [
+        Object {
+          "height": 30,
+          "width": 30,
+        },
+      ]
+    }
+  />
+</View>
+`;
