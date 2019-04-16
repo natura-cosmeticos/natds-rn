@@ -76,7 +76,7 @@ exports[`Button component when is card type Should render button component  1`] 
           "fontFamily": "Roboto",
           "fontSize": 14,
           "fontWeight": "bold",
-          "lineHeight": 21,
+          "lineHeight": 22,
           "textAlign": "center",
           "width": 64,
         },
