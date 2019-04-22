@@ -2,6 +2,8 @@
 
 exports[`Header component Should render container component correctly 1`] = `
 <View
+  accessibilityRole="header"
+  accessible={true}
   style={
     Array [
       Object {
@@ -14,6 +16,8 @@ exports[`Header component Should render container component correctly 1`] = `
   }
 >
   <Text
+    accessibilityLabel="Title test"
+    accessibilityRole="título"
     icon=""
     style={
       Array [

@@ -2,6 +2,7 @@
 
 exports[`Button component Should render button component  1`] = `
 <View
+  accessibilityRole="button"
   accessible={true}
   isTVSelectable={true}
   onResponderGrant={[Function]}
@@ -25,6 +26,7 @@ exports[`Button component Should render button component  1`] = `
   }
 >
   <Text
+    accessibilityLabel="string"
     style={
       Array [
         Object {
@@ -45,6 +47,7 @@ exports[`Button component Should render button component  1`] = `
 
 exports[`Button component when is card type Should render button component  1`] = `
 <View
+  accessibilityRole="button"
   accessible={true}
   isTVSelectable={true}
   onResponderGrant={[Function]}
@@ -68,6 +71,7 @@ exports[`Button component when is card type Should render button component  1`] 
   }
 >
   <Text
+    accessibilityLabel="test"
     style={
       Array [
         Object {
