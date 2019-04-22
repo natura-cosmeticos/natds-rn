@@ -14,7 +14,7 @@ exports[`Button component Should render button component  1`] = `
   style={
     Object {
       "alignItems": "center",
-      "backgroundColor": "#FFFFFF",
+      "backgroundColor": "#F4AB34",
       "borderRadius": 6,
       "flexDirection": "row",
       "height": 48,
@@ -31,7 +31,7 @@ exports[`Button component Should render button component  1`] = `
       Array [
         Object {
           "alignSelf": "center",
-          "color": "#F4AB34",
+          "color": "#FFFFFF",
           "fontFamily": "Roboto",
           "fontSize": 14,
           "fontWeight": "bold",
@@ -105,5 +105,48 @@ exports[`Button component when is card type Should render button component  1`] 
       ]
     }
   />
+</View>
+`;
+
+exports[`Button component when it has different type and it is secondary Should render button component  1`] = `
+<View
+  accessible={true}
+  isTVSelectable={true}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#FFFFFF",
+      "borderRadius": 6,
+      "flexDirection": "row",
+      "height": 48,
+      "justifyContent": "center",
+      "marginRight": 0,
+      "opacity": 1,
+      "width": 328,
+    }
+  }
+>
+  <Text
+    style={
+      Array [
+        Object {
+          "alignSelf": "center",
+          "color": "#FFFFFF",
+          "fontFamily": "Roboto",
+          "fontSize": 14,
+          "fontWeight": "bold",
+        },
+      ]
+    }
+    type="another"
+  >
+    TEST
+  </Text>
 </View>
 `;
