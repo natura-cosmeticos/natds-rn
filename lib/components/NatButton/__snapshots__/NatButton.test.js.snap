@@ -32,7 +32,6 @@ exports[`Button component Should render button component  1`] = `
         Object {
           "alignSelf": "center",
           "color": "#FFFFFF",
-          "fontFamily": "Roboto",
           "fontSize": 14,
           "fontWeight": "bold",
         },
@@ -77,7 +76,6 @@ exports[`Button component when is card type Should render button component  1`] 
         Object {
           "alignSelf": "center",
           "color": "#FFFFFF",
-          "fontFamily": "Roboto",
           "fontSize": 14,
           "fontWeight": "bold",
           "lineHeight": 22,
@@ -110,6 +108,7 @@ exports[`Button component when is card type Should render button component  1`] 
 
 exports[`Button component when it has different type and it is secondary Should render button component  1`] = `
 <View
+  accessibilityRole="button"
   accessible={true}
   isTVSelectable={true}
   onResponderGrant={[Function]}
@@ -133,12 +132,12 @@ exports[`Button component when it has different type and it is secondary Should 
   }
 >
   <Text
+    accessibilityLabel="test"
     style={
       Array [
         Object {
           "alignSelf": "center",
           "color": "#FFFFFF",
-          "fontFamily": "Roboto",
           "fontSize": 14,
           "fontWeight": "bold",
         },
