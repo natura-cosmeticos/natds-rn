@@ -23,6 +23,7 @@ exports[`Header component Should render container component correctly 1`] = `
       Array [
         Object {
           "color": "#333333",
+          "fontFamily": "NaturaSans-Regular",
           "fontSize": 18,
           "marginLeft": 16,
           "marginTop": 16,
