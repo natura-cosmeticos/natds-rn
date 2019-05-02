@@ -35,6 +35,7 @@ exports[`Button component Should render button component  1`] = `
           "fontFamily": "Roboto-Bold",
           "fontSize": 14,
           "fontWeight": "bold",
+          "letterSpacing": 1,
         },
       ]
     }
@@ -80,6 +81,7 @@ exports[`Button component when is card type Should render button component  1`] 
           "fontFamily": "Roboto-Bold",
           "fontSize": 14,
           "fontWeight": "bold",
+          "letterSpacing": 1,
           "lineHeight": 22,
           "textAlign": "center",
           "width": 64,
@@ -143,6 +145,7 @@ exports[`Button component when it has different type and it is secondary Should 
           "fontFamily": "Roboto-Bold",
           "fontSize": 14,
           "fontWeight": "bold",
+          "letterSpacing": 1,
         },
       ]
     }
