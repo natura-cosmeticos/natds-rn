@@ -1,94 +1,117 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`NatModal Should match snapshot 1`] = `
-<View
-  style={
-    Array [
-      Object {
-        "alignItems": "stretch",
-        "backgroundColor": "#FFFFFF",
-        "borderRadius": 6,
-        "elevation": 6,
-        "justifyContent": "center",
-        "marginHorizontal": 24,
-        "shadowColor": "rgba(0, 0, 0, 0.24)",
-        "shadowOffset": Object {
-          "height": 16,
-          "width": 0,
-        },
-        "shadowOpacity": 1,
-        "shadowRadius": 32,
-      },
-    ]
-  }
+<Modal
+  animationType="fade"
+  hardwareAccelerated={false}
+  transparent={true}
+  visible={true}
 >
-  <Text
-    style={
-      Array [
-        Object {
-          "alignSelf": "flex-start",
-          "color": "#000000",
-          "fontFamily": "NaturaSans-Bold",
-          "fontSize": 20,
-          "marginBottom": 16,
-          "marginTop": 24,
-          "paddingHorizontal": 16,
-        },
-      ]
-    }
-  >
-    Boas vindas!
-  </Text>
-  <Text
-    style={
-      Array [
-        Object {
-          "color": "#333333",
-          "fontSize": 14,
-          "marginBottom": 24,
-          "paddingHorizontal": 16,
-        },
-      ]
-    }
-  >
-    Texto de boas vindas
-  </Text>
   <View
-    accessible={true}
-    isTVSelectable={true}
-    onResponderGrant={[Function]}
-    onResponderMove={[Function]}
-    onResponderRelease={[Function]}
-    onResponderTerminate={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
     style={
-      Object {
-        "alignItems": "center",
-        "backgroundColor": "#F4AB34",
-        "borderBottomLeftRadius": 6,
-        "borderBottomRightRadius": 6,
-        "opacity": 1,
-        "paddingBottom": 16,
-        "paddingLeft": 16,
-        "paddingRight": 16,
-        "paddingTop": 16,
-      }
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "rgba(3, 3, 3, 0.5)",
+          "flexBasis": 0,
+          "flexGrow": 1,
+          "flexShrink": 1,
+          "justifyContent": "center",
+        },
+      ]
     }
   >
-    <Text
+    <View
       style={
         Array [
           Object {
-            "color": "#FFFFFF",
-            "fontFamily": "Roboto-Bold",
-            "letterSpacing": 1,
+            "backgroundColor": "#FFFFFF",
+            "borderRadius": 6,
+            "elevation": 8,
+            "marginHorizontal": 24,
+            "shadowColor": "rgba(0, 0, 0, 0.24)",
+            "shadowOffset": Object {
+              "height": 16,
+              "width": 0,
+            },
+            "shadowOpacity": 1,
+            "shadowRadius": 32,
           },
         ]
       }
     >
-      ENTENDI
-    </Text>
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#000000",
+              "fontFamily": "NaturaSans-Bold",
+              "fontSize": 20,
+              "lineHeight": 28,
+              "marginBottom": 8,
+              "marginTop": 24,
+              "paddingHorizontal": 16,
+            },
+          ]
+        }
+      >
+        Boas vindas!
+      </Text>
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#333333",
+              "fontFamily": "Roboto-Regular",
+              "fontSize": 14,
+              "fontWeight": "400",
+              "lineHeight": 22,
+              "marginBottom": 24,
+              "paddingHorizontal": 16,
+            },
+          ]
+        }
+      >
+        Texto de boas vindas
+      </Text>
+      <View
+        accessible={true}
+        isTVSelectable={true}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#F4AB34",
+            "borderBottomLeftRadius": 6,
+            "borderBottomRightRadius": 6,
+            "opacity": 1,
+            "paddingBottom": 16,
+            "paddingLeft": 16,
+            "paddingRight": 16,
+            "paddingTop": 16,
+          }
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#FFFFFF",
+                "fontFamily": "Roboto-Bold",
+                "letterSpacing": 1,
+              },
+            ]
+          }
+        >
+          ENTENDI
+        </Text>
+      </View>
+    </View>
   </View>
-</View>
+</Modal>
 `;
