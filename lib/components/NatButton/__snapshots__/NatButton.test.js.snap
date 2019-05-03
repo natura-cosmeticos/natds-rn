@@ -19,7 +19,6 @@ exports[`Button component Should render button component  1`] = `
       "flexDirection": "row",
       "height": 48,
       "justifyContent": "center",
-      "marginRight": 0,
       "opacity": 1,
       "width": 328,
     }
@@ -65,7 +64,6 @@ exports[`Button component when is card type Should render button component  1`] 
       "flexDirection": "row",
       "height": 80,
       "justifyContent": "center",
-      "marginRight": 30,
       "opacity": 1,
       "width": 128,
     }
@@ -129,7 +127,6 @@ exports[`Button component when it has different type and it is secondary Should 
       "flexDirection": "row",
       "height": 48,
       "justifyContent": "center",
-      "marginRight": 0,
       "opacity": 1,
       "width": 328,
     }

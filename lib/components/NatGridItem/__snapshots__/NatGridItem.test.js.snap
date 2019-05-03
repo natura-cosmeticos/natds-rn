@@ -8,9 +8,7 @@ exports[`NatGridItem component Properties of NatGridItem Should render NatGridIt
     Array [
       Object {
         "height": 200,
-        "marginBottom": 12,
-        "marginLeft": 12,
-        "marginRight": 12,
+        "marginRight": 16,
         "width": 152,
       },
     ]
@@ -35,6 +33,7 @@ exports[`NatGridItem component Properties of NatGridItem Should render NatGridIt
         Object {
           "borderRadius": 6,
           "height": 152,
+          "marginBottom": 8,
           "width": 152,
         },
       ]
@@ -48,7 +47,6 @@ exports[`NatGridItem component Properties of NatGridItem Should render NatGridIt
         Object {
           "height": 40,
           "lineHeight": 22,
-          "marginTop": 8,
           "width": 152,
         },
       ]
@@ -85,9 +83,7 @@ exports[`NatGridItem component Should render NatGridItem component  1`] = `
     Array [
       Object {
         "height": 200,
-        "marginBottom": 12,
-        "marginLeft": 12,
-        "marginRight": 12,
+        "marginRight": 16,
         "width": 152,
       },
     ]
@@ -112,6 +108,7 @@ exports[`NatGridItem component Should render NatGridItem component  1`] = `
         Object {
           "borderRadius": 6,
           "height": 152,
+          "marginBottom": 8,
           "width": 152,
         },
       ]
@@ -125,7 +122,6 @@ exports[`NatGridItem component Should render NatGridItem component  1`] = `
         Object {
           "height": 40,
           "lineHeight": 22,
-          "marginTop": 8,
           "width": 152,
         },
       ]
