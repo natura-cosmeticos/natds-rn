@@ -8,10 +8,23 @@ exports[`Header component Should render container component correctly 1`] = `
     Array [
       Object {
         "backgroundColor": "#FFFFFF",
+        "flexDirection": "row",
         "flexWrap": "wrap",
         "height": 56,
+        "justifyContent": "space-between",
+        "paddingBottom": 16,
+        "paddingLeft": 16,
+        "paddingTop": 16,
+        "shadowColor": "rgba(0, 0, 0, 0.16)",
+        "shadowOffset": Object {
+          "height": 1,
+          "width": 0,
+        },
+        "shadowOpacity": 1,
+        "shadowRadius": 4,
         "width": "100%",
       },
+      false,
     ]
   }
 >
@@ -23,14 +36,27 @@ exports[`Header component Should render container component correctly 1`] = `
         Object {
           "color": "#333333",
           "fontFamily": "NaturaSans-Regular",
-          "fontSize": 18,
-          "marginLeft": 16,
-          "marginTop": 16,
+          "fontSize": 20,
+          "marginLeft": 24,
         },
       ]
     }
   >
     Title test
   </Text>
+  <View
+    style={
+      Array [
+        Object {
+          "flexBasis": 0,
+          "flexGrow": 1,
+          "flexShrink": 1,
+          "justifyContent": "flex-end",
+          "marginLeft": 16,
+          "width": 18,
+        },
+      ]
+    }
+  />
 </View>
 `;
