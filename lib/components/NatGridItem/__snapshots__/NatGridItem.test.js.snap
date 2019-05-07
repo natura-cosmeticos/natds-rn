@@ -8,7 +8,9 @@ exports[`NatGridItem component Properties of NatGridItem Should render NatGridIt
     Array [
       Object {
         "height": 200,
-        "marginRight": 16,
+        "marginBottom": 24,
+        "marginLeft": 12,
+        "marginRight": 12,
         "width": 152,
       },
     ]
@@ -83,7 +85,9 @@ exports[`NatGridItem component Should render NatGridItem component  1`] = `
     Array [
       Object {
         "height": 200,
-        "marginRight": 16,
+        "marginBottom": 24,
+        "marginLeft": 12,
+        "marginRight": 12,
         "width": 152,
       },
     ]
