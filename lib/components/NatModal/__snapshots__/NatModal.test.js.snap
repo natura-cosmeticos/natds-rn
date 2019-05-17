@@ -4,6 +4,7 @@ exports[`NatModal Should match snapshot 1`] = `
 <Modal
   animationType="fade"
   hardwareAccelerated={false}
+  onRequestClose={[MockFunction]}
   transparent={true}
   visible={true}
 >
