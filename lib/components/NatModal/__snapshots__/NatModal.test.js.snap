@@ -23,6 +23,7 @@ exports[`NatModal Should match snapshot 1`] = `
     }
   >
     <View
+      accessibilityLabel="Boas vindas!"
       style={
         Array [
           Object {
@@ -76,6 +77,7 @@ exports[`NatModal Should match snapshot 1`] = `
         Texto de boas vindas
       </Text>
       <View
+        accessibilityLabel="Entendi"
         accessible={true}
         isTVSelectable={true}
         onResponderGrant={[Function]}

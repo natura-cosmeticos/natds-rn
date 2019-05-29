@@ -20,7 +20,7 @@ exports[`Button component Should render button component  1`] = `
       "height": 48,
       "justifyContent": "center",
       "opacity": 1,
-      "width": 328,
+      "width": "100%",
     }
   }
 >
@@ -128,7 +128,7 @@ exports[`Button component when it has different type and it is secondary Should 
       "height": 48,
       "justifyContent": "center",
       "opacity": 1,
-      "width": 328,
+      "width": "100%",
     }
   }
 >
