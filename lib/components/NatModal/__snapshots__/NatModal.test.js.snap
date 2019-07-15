@@ -5,6 +5,7 @@ exports[`NatModal Should match snapshot 1`] = `
   animationType="fade"
   hardwareAccelerated={false}
   onRequestClose={[MockFunction]}
+  save={false}
   transparent={true}
   visible={true}
 >
@@ -43,6 +44,7 @@ exports[`NatModal Should match snapshot 1`] = `
       }
     >
       <Text
+        save={false}
         style={
           Array [
             Object {
@@ -124,6 +126,7 @@ exports[`NatModal error should render the error mode 1`] = `
   animationType="fade"
   hardwareAccelerated={false}
   onRequestClose={[MockFunction]}
+  save={false}
   transparent={true}
   visible={true}
 >
@@ -162,6 +165,7 @@ exports[`NatModal error should render the error mode 1`] = `
       }
     >
       <Text
+        save={false}
         style={
           Array [
             Object {
@@ -282,6 +286,110 @@ exports[`NatModal error should render the error mode 1`] = `
             ENVIAR LINK
           </Text>
         </View>
+      </View>
+    </View>
+  </View>
+</Modal>
+`;
+
+exports[`NatModal save should render the save mode 1`] = `
+<Modal
+  animationType="fade"
+  hardwareAccelerated={false}
+  onRequestClose={[MockFunction]}
+  save={true}
+  transparent={true}
+  visible={true}
+>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "rgba(3, 3, 3, 0.5)",
+          "flexBasis": 0,
+          "flexGrow": 1,
+          "flexShrink": 1,
+          "justifyContent": "center",
+        },
+      ]
+    }
+  >
+    <View
+      accessibilityLabel="título"
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#FFFFFF",
+            "borderRadius": 6,
+            "elevation": 8,
+            "marginHorizontal": 24,
+            "shadowColor": "rgba(0, 0, 0, 0.24)",
+            "shadowOffset": Object {
+              "height": 16,
+              "width": 0,
+            },
+            "shadowOpacity": 1,
+            "shadowRadius": 32,
+          },
+        ]
+      }
+    >
+      <Text
+        save={true}
+        style={
+          Array [
+            Object {
+              "color": "#000000",
+              "fontFamily": "NaturaSans-Bold",
+              "fontSize": 20,
+              "lineHeight": 28,
+              "marginBottom": 40,
+              "marginTop": 40,
+              "paddingHorizontal": 16,
+            },
+          ]
+        }
+      >
+        título
+      </Text>
+      <View
+        accessibilityLabel="OK"
+        accessible={true}
+        isTVSelectable={true}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#F4AB34",
+            "borderBottomLeftRadius": 6,
+            "borderBottomRightRadius": 6,
+            "opacity": 1,
+            "paddingBottom": 16,
+            "paddingLeft": 16,
+            "paddingRight": 16,
+            "paddingTop": 16,
+          }
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#FFFFFF",
+                "fontFamily": "Roboto-Bold",
+                "letterSpacing": 1,
+              },
+            ]
+          }
+        >
+          OK
+        </Text>
       </View>
     </View>
   </View>
