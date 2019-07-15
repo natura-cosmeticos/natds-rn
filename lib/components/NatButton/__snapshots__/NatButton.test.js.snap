@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Button component Should render button component  1`] = `
+exports[`Button component default Should render button component  1`] = `
 <View
   accessibilityRole="button"
   accessible={true}
@@ -15,7 +15,9 @@ exports[`Button component Should render button component  1`] = `
     Object {
       "alignItems": "center",
       "backgroundColor": "#F4AB34",
+      "borderColor": "transparent",
       "borderRadius": 6,
+      "borderWidth": 0,
       "flexDirection": "row",
       "height": 48,
       "justifyContent": "center",
@@ -45,7 +47,7 @@ exports[`Button component Should render button component  1`] = `
 </View>
 `;
 
-exports[`Button component when is card type Should render button component  1`] = `
+exports[`Button component default when is card type Should render button component  1`] = `
 <View
   accessibilityRole="button"
   accessible={true}
@@ -60,7 +62,9 @@ exports[`Button component when is card type Should render button component  1`] 
     Object {
       "alignItems": "center",
       "backgroundColor": "#F4AB34",
+      "borderColor": "transparent",
       "borderRadius": 6,
+      "borderWidth": 0,
       "flexDirection": "row",
       "height": 80,
       "justifyContent": "center",
@@ -108,7 +112,7 @@ exports[`Button component when is card type Should render button component  1`] 
 </View>
 `;
 
-exports[`Button component when it has different type and it is secondary Should render button component  1`] = `
+exports[`Button component default when is outline type Should render outline button component 1`] = `
 <View
   accessibilityRole="button"
   accessible={true}
@@ -123,7 +127,9 @@ exports[`Button component when it has different type and it is secondary Should 
     Object {
       "alignItems": "center",
       "backgroundColor": "#FFFFFF",
+      "borderColor": "#F4AB34",
       "borderRadius": 6,
+      "borderWidth": 2,
       "flexDirection": "row",
       "height": 48,
       "justifyContent": "center",
@@ -138,7 +144,7 @@ exports[`Button component when it has different type and it is secondary Should 
       Array [
         Object {
           "alignSelf": "center",
-          "color": "#FFFFFF",
+          "color": "#F4AB34",
           "fontFamily": "Roboto-Bold",
           "fontSize": 14,
           "fontWeight": "bold",
@@ -146,7 +152,54 @@ exports[`Button component when it has different type and it is secondary Should 
         },
       ]
     }
-    type="another"
+    type="outline"
+  >
+    TEST
+  </Text>
+</View>
+`;
+
+exports[`Button component default when is short type Should render short button component 1`] = `
+<View
+  accessibilityRole="button"
+  accessible={true}
+  isTVSelectable={true}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "transparent",
+      "borderRadius": 6,
+      "borderWidth": 0,
+      "flexDirection": "row",
+      "height": 40,
+      "justifyContent": "center",
+      "opacity": 1,
+      "width": 328,
+    }
+  }
+>
+  <Text
+    accessibilityLabel="test"
+    style={
+      Array [
+        Object {
+          "alignSelf": "center",
+          "color": "#F4AB34",
+          "fontFamily": "Roboto-Bold",
+          "fontSize": 14,
+          "fontWeight": "bold",
+          "letterSpacing": 1,
+        },
+      ]
+    }
+    type="short"
   >
     TEST
   </Text>
