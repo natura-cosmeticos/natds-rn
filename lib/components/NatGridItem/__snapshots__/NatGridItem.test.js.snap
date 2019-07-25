@@ -17,6 +17,8 @@ exports[`NatGridItem component Properties of NatGridItem Should render NatGridIt
   }
 >
   <Image
+    accessibilityLabel="descrição"
+    accessibilityRole="image"
     accessible={true}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
@@ -94,6 +96,8 @@ exports[`NatGridItem component Should render NatGridItem component  1`] = `
   }
 >
   <Image
+    accessibilityLabel="Texto"
+    accessibilityRole="image"
     accessible={true}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
