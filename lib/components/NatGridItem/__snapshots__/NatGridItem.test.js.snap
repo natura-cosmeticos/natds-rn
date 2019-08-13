@@ -2,6 +2,7 @@
 
 exports[`NatGridItem component Properties of NatGridItem Should render NatGridItem component  1`] = `
 <View
+  accessibilityLabel="descrição"
   accessible={true}
   square={true}
   style={
@@ -81,6 +82,7 @@ exports[`NatGridItem component Properties of NatGridItem Should render NatGridIt
 
 exports[`NatGridItem component Should render NatGridItem component  1`] = `
 <View
+  accessibilityLabel="Texto"
   accessible={true}
   square={true}
   style={
