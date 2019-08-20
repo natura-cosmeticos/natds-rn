@@ -4,7 +4,7 @@ exports[`NatGridItem component Properties of NatGridItem Should render NatGridIt
 <View
   accessibilityLabel="descrição"
   accessible={true}
-  square={true}
+  sizeMedium={true}
   style={
     Array [
       Object {
@@ -12,7 +12,7 @@ exports[`NatGridItem component Properties of NatGridItem Should render NatGridIt
         "marginBottom": 24,
         "marginLeft": 12,
         "marginRight": 12,
-        "width": 152,
+        "width": 156,
       },
     ]
   }
@@ -27,32 +27,32 @@ exports[`NatGridItem component Properties of NatGridItem Should render NatGridIt
     onResponderTerminate={[Function]}
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
+    sizeMedium={true}
     source={
       Object {
         "uri": "#",
       }
     }
-    square={true}
     style={
       Array [
         Object {
           "borderRadius": 6,
-          "height": 152,
+          "height": 156,
           "marginBottom": 8,
-          "width": 152,
+          "width": 156,
         },
       ]
     }
   />
   <View
     accessibilityLabel="descrição"
-    square={true}
+    sizeMedium={true}
     style={
       Array [
         Object {
           "height": 40,
-          "lineHeight": 22,
-          "width": 152,
+          "lineHeight": 20,
+          "width": 156,
         },
       ]
     }
@@ -84,7 +84,7 @@ exports[`NatGridItem component Should render NatGridItem component  1`] = `
 <View
   accessibilityLabel="Texto"
   accessible={true}
-  square={true}
+  sizeMedium={true}
   style={
     Array [
       Object {
@@ -92,7 +92,7 @@ exports[`NatGridItem component Should render NatGridItem component  1`] = `
         "marginBottom": 24,
         "marginLeft": 12,
         "marginRight": 12,
-        "width": 152,
+        "width": 156,
       },
     ]
   }
@@ -107,32 +107,32 @@ exports[`NatGridItem component Should render NatGridItem component  1`] = `
     onResponderTerminate={[Function]}
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
+    sizeMedium={true}
     source={
       Object {
         "uri": "#",
       }
     }
-    square={true}
     style={
       Array [
         Object {
           "borderRadius": 6,
-          "height": 152,
+          "height": 156,
           "marginBottom": 8,
-          "width": 152,
+          "width": 156,
         },
       ]
     }
   />
   <View
     accessibilityLabel="Texto"
-    square={true}
+    sizeMedium={true}
     style={
       Array [
         Object {
           "height": 40,
-          "lineHeight": 22,
-          "width": 152,
+          "lineHeight": 20,
+          "width": 156,
         },
       ]
     }
