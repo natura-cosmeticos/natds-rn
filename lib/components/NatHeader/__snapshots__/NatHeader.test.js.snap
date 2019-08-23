@@ -15,13 +15,6 @@ exports[`Header component Should render container component correctly 1`] = `
         "paddingBottom": 16,
         "paddingLeft": 16,
         "paddingTop": 16,
-        "shadowColor": "rgba(0, 0, 0, 0.16)",
-        "shadowOffset": Object {
-          "height": 1,
-          "width": 0,
-        },
-        "shadowOpacity": 1,
-        "shadowRadius": 4,
         "width": "100%",
       },
       false,
