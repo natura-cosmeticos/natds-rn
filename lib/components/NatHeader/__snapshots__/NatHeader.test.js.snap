@@ -21,6 +21,7 @@ exports[`Header component Should render container component correctly 1`] = `
     ]
   }
 >
+  
   <Text
     accessibilityLabel="Title test"
     icon=""
@@ -38,18 +39,51 @@ exports[`Header component Should render container component correctly 1`] = `
     Title test
   </Text>
   <View
+    accessibilityRole="button"
     style={
       Array [
         Object {
+          "color": "#F4AB34",
           "flexBasis": 0,
           "flexGrow": 1,
           "flexShrink": 1,
           "justifyContent": "flex-end",
-          "marginLeft": 16,
-          "width": 18,
+          "width": 60,
         },
       ]
     }
-  />
+  >
+    <View
+      accessible={true}
+      isTVSelectable={true}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "orange",
+            "fontSize": 14,
+          }
+        }
+      >
+         
+         
+      </Text>
+      <Image
+        accessibilityLabel="realizar ação do item da barra superior direita"
+        accessible={true}
+      />
+    </View>
+  </View>
 </View>
 `;

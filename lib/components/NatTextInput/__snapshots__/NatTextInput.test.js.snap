@@ -1,0 +1,205 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TextInput component default Should render textInput component  1`] = `
+<View
+  accessible={true}
+  defaultMargin="0px"
+  style={
+    Array [
+      Object {
+        "marginTop": 0,
+      },
+    ]
+  }
+>
+  <Text
+    state="default"
+    style={
+      Array [
+        Object {
+          "color": "#777777",
+          "fontSize": 14,
+          "fontWeight": "500",
+          "marginBottom": 3,
+        },
+      ]
+    }
+    type="default"
+  >
+    teste
+  </Text>
+  <View
+    defaultSize="56px"
+    state="default"
+    style={
+      Array [
+        Object {
+          "backgroundColor": "transparent",
+          "borderColor": "#777777",
+          "borderRadius": 4,
+          "borderStyle": "solid",
+          "borderWidth": 1,
+          "flexDirection": "row",
+          "height": 56,
+          "justifyContent": "space-between",
+          "paddingBottom": 0,
+          "paddingLeft": 16,
+        },
+      ]
+    }
+    type="default"
+  >
+    <TextInput
+      allowFontScaling={true}
+      editable={true}
+      onBlur={[Function]}
+      onChangeText={[MockFunction]}
+      onFocus={[Function]}
+      rejectResponderTermination={true}
+      style={
+        Array [
+          Object {
+            "alignSelf": "center",
+            "flexBasis": 0,
+            "flexGrow": 7,
+            "flexShrink": 1,
+            "fontSize": 16,
+            "height": 56,
+          },
+        ]
+      }
+      underlineColorAndroid="transparent"
+      value=""
+    />
+  </View>
+</View>
+`;
+
+exports[`TextInput component default Should render textInput with icon and assistive text in component 1`] = `
+<View
+  accessible={true}
+  defaultMargin="0px"
+  style={
+    Array [
+      Object {
+        "marginTop": 0,
+      },
+    ]
+  }
+>
+  <Text
+    state="default"
+    style={
+      Array [
+        Object {
+          "color": "#777777",
+          "fontSize": 14,
+          "fontWeight": "500",
+          "marginBottom": 3,
+        },
+      ]
+    }
+    type="default"
+  >
+    teste
+  </Text>
+  <View
+    defaultSize="56px"
+    state="default"
+    style={
+      Array [
+        Object {
+          "backgroundColor": "transparent",
+          "borderColor": "#777777",
+          "borderRadius": 4,
+          "borderStyle": "solid",
+          "borderWidth": 1,
+          "flexDirection": "row",
+          "height": 56,
+          "justifyContent": "space-between",
+          "paddingBottom": 0,
+          "paddingLeft": 16,
+        },
+      ]
+    }
+    type="default"
+  >
+    <TextInput
+      allowFontScaling={true}
+      editable={true}
+      onBlur={[Function]}
+      onChangeText={[MockFunction]}
+      onFocus={[Function]}
+      rejectResponderTermination={true}
+      style={
+        Array [
+          Object {
+            "alignSelf": "center",
+            "flexBasis": 0,
+            "flexGrow": 7,
+            "flexShrink": 1,
+            "fontSize": 16,
+            "height": 56,
+          },
+        ]
+      }
+      underlineColorAndroid="transparent"
+      value=""
+    />
+    <View
+      accessible={true}
+      isTVSelectable={true}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignSelf": "center",
+          "flexBasis": 0,
+          "flexGrow": 1,
+          "flexShrink": 1,
+          "opacity": 1,
+        }
+      }
+    >
+      <Image
+        source={
+          Object {
+            "testUri": "../../../lib/assets/icons/ic_arrow_left_white.png",
+          }
+        }
+        state="default"
+        style={
+          Array [
+            Object {
+              "height": 30,
+              "tintColor": "#777777",
+              "width": 30,
+            },
+          ]
+        }
+        type="default"
+      />
+    </View>
+  </View>
+  <Text
+    state="default"
+    style={
+      Array [
+        Object {
+          "color": "#777777",
+          "fontSize": 12,
+          "fontWeight": "400",
+          "marginTop": 3,
+        },
+      ]
+    }
+    type="default"
+  >
+    teste
+  </Text>
+</View>
+`;
