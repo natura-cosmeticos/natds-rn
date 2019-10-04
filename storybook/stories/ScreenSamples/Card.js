@@ -1,6 +1,6 @@
 import React from 'react';
-import { ScrollView, StyleSheet, Alert } from 'react-native';
-import { NatContainer, NatCard } from '../lib';
+import { ScrollView, StyleSheet, Alert, Text } from 'react-native';
+import { NatContainer, NatCard } from '../../../lib';
 
 export const Card = () => {
 
@@ -56,7 +56,6 @@ export const Card = () => {
       <NatContainer style={styles.container}>
       {examples.map((example, index) => (
        <NatCard
-        onPress={press}
         title={example.title}
         subtitle={example.subtitle}
         resume={example.resume}
@@ -65,7 +64,8 @@ export const Card = () => {
         margin="dense"
         key={index}
       />
-    ))}
+      ))}
+      <Text>You can apply margin-top by sending "margin" prop, with values: none, dense or normal.</Text>
       </NatContainer>
     </ScrollView>
   );

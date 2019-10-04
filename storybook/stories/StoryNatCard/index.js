@@ -1,0 +1,2 @@
+export { StoryNatCard } from './StoryNatCard';
+

@@ -1,0 +1,2 @@
+export { StoryNatTextInput } from './StoryNatTextInput';
+

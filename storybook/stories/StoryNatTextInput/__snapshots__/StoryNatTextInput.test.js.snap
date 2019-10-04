@@ -1,0 +1,206 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StoryNatTextInput component Should render StoryNatTextInput component  1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "backgroundColor": "white",
+        "bottom": 0,
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "left": 0,
+        "paddingBottom": 0,
+        "paddingLeft": 16,
+        "paddingRight": 16,
+        "paddingTop": 0,
+        "right": 0,
+        "top": 0,
+      },
+    ]
+  }
+>
+  <View
+    accessible={true}
+    defaultMargin="0px"
+    style={
+      Array [
+        Object {
+          "marginTop": 0,
+        },
+      ]
+    }
+  >
+    <Text
+      state="default"
+      style={
+        Array [
+          Object {
+            "color": "#777777",
+            "fontSize": 14,
+            "fontWeight": "500",
+            "marginBottom": 3,
+          },
+        ]
+      }
+      type="default"
+    >
+      Size Small
+    </Text>
+    <View
+      defaultSize="40px"
+      state="default"
+      style={
+        Array [
+          Object {
+            "backgroundColor": "transparent",
+            "borderColor": "#777777",
+            "borderRadius": 4,
+            "borderStyle": "solid",
+            "borderWidth": 1,
+            "flexDirection": "row",
+            "height": 40,
+            "justifyContent": "space-between",
+            "paddingBottom": 0,
+            "paddingLeft": 16,
+          },
+        ]
+      }
+      type="default"
+    >
+      <TextInput
+        allowFontScaling={true}
+        editable={true}
+        onBlur={[Function]}
+        onChangeText={[Function]}
+        onFocus={[Function]}
+        placeholder="Size Small"
+        rejectResponderTermination={true}
+        style={
+          Array [
+            Object {
+              "alignSelf": "center",
+              "flexBasis": 0,
+              "flexGrow": 7,
+              "flexShrink": 1,
+              "fontSize": 16,
+              "height": 56,
+            },
+          ]
+        }
+        underlineColorAndroid="transparent"
+        value=""
+      />
+    </View>
+    <Text
+      state="default"
+      style={
+        Array [
+          Object {
+            "color": "#777777",
+            "fontSize": 12,
+            "fontWeight": "400",
+            "marginTop": 3,
+          },
+        ]
+      }
+      type="default"
+    >
+      Size Small
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    defaultMargin="0px"
+    style={
+      Array [
+        Object {
+          "marginTop": 0,
+        },
+      ]
+    }
+  >
+    <Text
+      state="default"
+      style={
+        Array [
+          Object {
+            "color": "#777777",
+            "fontSize": 14,
+            "fontWeight": "500",
+            "marginBottom": 3,
+          },
+        ]
+      }
+      type="default"
+    >
+      Size Normal
+    </Text>
+    <View
+      defaultSize="56px"
+      state="default"
+      style={
+        Array [
+          Object {
+            "backgroundColor": "transparent",
+            "borderColor": "#777777",
+            "borderRadius": 4,
+            "borderStyle": "solid",
+            "borderWidth": 1,
+            "flexDirection": "row",
+            "height": 56,
+            "justifyContent": "space-between",
+            "paddingBottom": 0,
+            "paddingLeft": 16,
+          },
+        ]
+      }
+      type="default"
+    >
+      <TextInput
+        allowFontScaling={true}
+        editable={true}
+        onBlur={[Function]}
+        onChangeText={[Function]}
+        onFocus={[Function]}
+        placeholder="Size Normal"
+        rejectResponderTermination={true}
+        style={
+          Array [
+            Object {
+              "alignSelf": "center",
+              "flexBasis": 0,
+              "flexGrow": 7,
+              "flexShrink": 1,
+              "fontSize": 16,
+              "height": 56,
+            },
+          ]
+        }
+        underlineColorAndroid="transparent"
+        value=""
+      />
+    </View>
+    <Text
+      state="default"
+      style={
+        Array [
+          Object {
+            "color": "#777777",
+            "fontSize": 12,
+            "fontWeight": "400",
+            "marginTop": 3,
+          },
+        ]
+      }
+      type="default"
+    >
+      Size Normal
+    </Text>
+  </View>
+  <Text>
+    You can apply margin-top by sending "margin" prop, with values: none, dense or normal.
+  </Text>
+</View>
+`;

@@ -1,0 +1,175 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "backgroundColor": "white",
+        "bottom": 0,
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "left": 0,
+        "paddingBottom": 0,
+        "paddingLeft": 16,
+        "paddingRight": 16,
+        "paddingTop": 0,
+        "right": 0,
+        "top": 0,
+      },
+      Object {
+        "backgroundColor": "#F5F5F5",
+      },
+    ]
+  }
+>
+  <View
+    accessible={true}
+    isTVSelectable={true}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "backgroundColor": "#FFFFFF",
+        "borderRadius": 4,
+        "marginTop": 0,
+        "opacity": 1,
+      }
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "flexDirection": "row",
+            "paddingBottom": 10,
+            "paddingLeft": 10,
+            "paddingRight": 10,
+            "paddingTop": 10,
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "flexBasis": 0,
+              "flexGrow": 1,
+              "flexShrink": 1,
+              "paddingBottom": 5,
+              "paddingLeft": 5,
+              "paddingRight": 5,
+              "paddingTop": 5,
+            },
+          ]
+        }
+      >
+        <Image
+          source={
+            Object {
+              "uri": "http://global-press.com/wp-content/uploads/2015/06/corp4.png",
+            }
+          }
+          style={
+            Array [
+              Object {
+                "height": 50,
+                "width": 50,
+              },
+            ]
+          }
+        />
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "flexBasis": 0,
+              "flexGrow": 5,
+              "flexShrink": 1,
+              "paddingBottom": 5,
+              "paddingLeft": 5,
+              "paddingRight": 5,
+              "paddingTop": 5,
+            },
+          ]
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "fontSize": 14,
+              },
+            ]
+          }
+        >
+          Card Test
+        </Text>
+        <Text
+          style={
+            Array [
+              Object {
+                "fontSize": 12,
+              },
+            ]
+          }
+        >
+          13 hours ago
+        </Text>
+      </View>
+    </View>
+    <Image
+      accessible={true}
+      source={
+        Object {
+          "uri": "https://www.harley-davidson.com/content/dam/h-d/images/motorcycles/my19/softail/fxdr-114/overview/hdi/19-softail-fxdr114-hdi-hero.jpg",
+        }
+      }
+      style={
+        Array [
+          Object {
+            "height": 120,
+          },
+          Object {
+            "width": undefined,
+          },
+        ]
+      }
+    />
+    <View
+      style={
+        Array [
+          Object {
+            "paddingBottom": 10,
+            "paddingLeft": 10,
+            "paddingRight": 10,
+            "paddingTop": 10,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "fontSize": 12,
+            },
+          ]
+        }
+      >
+        Esse é um card da Haley Davidson
+      </Text>
+    </View>
+  </View>
+  <Text>
+    You can apply margin-top by sending "margin" prop, with values: none, dense or normal.
+  </Text>
+</View>
+`;

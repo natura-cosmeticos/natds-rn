@@ -1,7 +1,7 @@
 import React, { useState} from 'react';
 import { View, Text } from 'react-native';
-import icoArrowLeft from '../lib/assets/icons/ic_arrow_left_white.png';
-import { NatContainer, NatTextInput } from '../lib';
+import icoArrowLeft from '../../../lib/assets/icons/ic_arrow_left_white.png';
+import { NatContainer, NatTextInput } from '../../../lib';
 
 export const Form = () => {
 

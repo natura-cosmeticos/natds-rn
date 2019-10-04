@@ -1,7 +1,7 @@
 import React, { useState} from 'react';
 import { View, Image, Alert, StyleSheet } from 'react-native';
-import icoArrowLeft from '../lib/assets/icons/ic_arrow_left_white.png';
-import { NatButton, NatContainer, NatTextInput } from '../lib';
+import icoArrowLeft from '../../../lib/assets/icons/ic_arrow_left_white.png';
+import { NatButton, NatContainer, NatTextInput } from '../../../lib';
 
 export const Login = () => {
 

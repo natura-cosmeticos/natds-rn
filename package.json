@@ -9,7 +9,8 @@
     "coverage": "jest --coverage",
     "lint": "eslint .",
     "android": "react-native run-android",
-    "ios": "react-native run-ios"
+    "ios": "react-native run-ios",
+    "storybook": "start-storybook -p 7007"
   },
   "husky": {
     "hooks": {
@@ -29,7 +30,13 @@
     "@babel/core": "^7.4.5",
     "@babel/runtime": "^7.4.5",
     "@react-native-community/eslint-config": "^0.0.3",
+    "@storybook/addon-actions": "^5.2.1",
+    "@storybook/addon-links": "^5.2.1",
+    "@storybook/addons": "^5.2.1",
+    "@storybook/react-native": "^5.2.1",
+    "@storybook/react-native-server": "^5.2.1",
     "babel-jest": "^24.8.0",
+    "babel-loader": "^8.0.6",
     "babel-preset-react-native": "1.9.2",
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.12.1",
