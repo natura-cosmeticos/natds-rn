@@ -50,7 +50,7 @@ exports[`TextInput component default Should render textInput component  1`] = `
       <Image
         source={
           Object {
-            "uri": "http://global-press.com/wp-content/uploads/2015/06/corp4.png",
+            "uri": "https://upload.wikimedia.org/wikipedia/pt/thumb/c/cb/Natura_Logo.png/200px-Natura_Logo.png",
           }
         }
         style={
@@ -104,7 +104,7 @@ exports[`TextInput component default Should render textInput component  1`] = `
     accessible={true}
     source={
       Object {
-        "uri": "https://www.harley-davidson.com/content/dam/h-d/images/motorcycles/my19/softail/fxdr-114/overview/hdi/19-softail-fxdr114-hdi-hero.jpg",
+        "uri": "https://upload.wikimedia.org/wikipedia/pt/thumb/c/cb/Natura_Logo.png/200px-Natura_Logo.png",
       }
     }
     style={

@@ -73,7 +73,7 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
         <Image
           source={
             Object {
-              "uri": "http://global-press.com/wp-content/uploads/2015/06/corp4.png",
+              "uri": "https://upload.wikimedia.org/wikipedia/pt/thumb/c/cb/Natura_Logo.png/200px-Natura_Logo.png",
             }
           }
           style={
@@ -129,7 +129,7 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
       accessible={true}
       source={
         Object {
-          "uri": "https://www.harley-davidson.com/content/dam/h-d/images/motorcycles/my19/softail/fxdr-114/overview/hdi/19-softail-fxdr114-hdi-hero.jpg",
+          "uri": "https://upload.wikimedia.org/wikipedia/pt/thumb/c/cb/Natura_Logo.png/200px-Natura_Logo.png",
         }
       }
       style={
@@ -164,7 +164,7 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
           ]
         }
       >
-        Esse é um card da Haley Davidson
+        Esse é um card da Natura
       </Text>
     </View>
   </View>

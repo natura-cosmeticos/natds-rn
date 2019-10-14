@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { View, Text, Image } from 'react-native';
+import { NatLogoVertical } from '../../../lib';
 
 export default class Welcome extends React.Component {
   styles = {
@@ -10,22 +11,15 @@ export default class Welcome extends React.Component {
       justifyContent: 'center',
     },
     header: {
-      flex: 2,
+      flex: 1,
       fontSize: 20,
+      justifyContent: 'center',
+      alignItems: 'center',
     },
     content: {
-      flex: 3,
+      flex: 2,
       fontSize: 14,
       lineHeight: 18,
-    },
-    imgLogo: {
-      width: 140,
-      height: 105,
-    },
-    viewLogo: {
-      flex: 3,
-      alignItems: 'center',
-      justifyContent: 'center',
     },
   };
 
@@ -41,12 +35,7 @@ export default class Welcome extends React.Component {
   render() {
     return (
       <View style={this.styles.wrapper}>
-        <View style={this.styles.viewLogo}>
-        <Image
-          style={this.styles.imgLogo}
-          source={{uri: 'https://upload.wikimedia.org/wikipedia/pt/c/cb/Natura_Logo.png'}}
-        />
-        </View>
+        <NatLogoVertical />
         <Text style={this.styles.header}>Welcome to NATDS!</Text>
         <Text style={this.styles.content}>
           Here you can try out the components of our react-native library.

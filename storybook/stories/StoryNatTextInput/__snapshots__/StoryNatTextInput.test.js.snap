@@ -77,18 +77,22 @@ exports[`StoryNatTextInput component Should render StoryNatTextInput component  
         onFocus={[Function]}
         placeholder="Size Small"
         rejectResponderTermination={true}
+        state="default"
         style={
           Array [
             Object {
               "alignSelf": "center",
+              "color": "#333333",
               "flexBasis": 0,
               "flexGrow": 7,
               "flexShrink": 1,
               "fontSize": 16,
               "height": 56,
+              "letterSpacing": 0,
             },
           ]
         }
+        type="default"
         underlineColorAndroid="transparent"
         value=""
       />
@@ -166,18 +170,22 @@ exports[`StoryNatTextInput component Should render StoryNatTextInput component  
         onFocus={[Function]}
         placeholder="Size Normal"
         rejectResponderTermination={true}
+        state="default"
         style={
           Array [
             Object {
               "alignSelf": "center",
+              "color": "#333333",
               "flexBasis": 0,
               "flexGrow": 7,
               "flexShrink": 1,
               "fontSize": 16,
               "height": 56,
+              "letterSpacing": 0,
             },
           ]
         }
+        type="default"
         underlineColorAndroid="transparent"
         value=""
       />
