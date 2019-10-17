@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NatText component default Should render NatText component  1`] = `
+<View
+  defaultMargin="0px"
+  style={
+    Array [
+      Object {
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "marginTop": 0,
+      },
+    ]
+  }
+>
+  <Text
+    style={
+      Array [
+        Object {
+          "color": "#333333",
+          "fontSize": 20,
+          "fontWeight": "400",
+          "lineHeight": 24,
+        },
+      ]
+    }
+    type="h6"
+  >
+    Teste
+  </Text>
+</View>
+`;

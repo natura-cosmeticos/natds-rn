@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NatMenuItem component default Should render NatLogoVertical NatMenuItem  1`] = `
+<View
+  accessible={true}
+  isTVSelectable={true}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "flexDirection": "row",
+      "height": 48,
+      "justifyContent": "space-between",
+      "marginLeft": 16,
+      "opacity": 1,
+    }
+  }
+>
+  <Image
+    source={
+      Object {
+        "testUri": "../../../lib/assets/icons/nat-ic-arrow-left.png",
+      }
+    }
+    style={
+      Array [
+        Object {
+          "height": 24,
+          "width": 24,
+        },
+      ]
+    }
+  />
+  <Text
+    style={
+      Array [
+        Object {
+          "alignSelf": "center",
+          "color": "#333333",
+          "flexBasis": 0,
+          "flexGrow": 1,
+          "flexShrink": 1,
+          "marginLeft": 32,
+        },
+      ]
+    }
+    type="default"
+  >
+    Teste
+  </Text>
+</View>
+`;
