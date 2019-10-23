@@ -2,22 +2,14 @@
 
 exports[`NatImage component default Should render NatImage component  1`] = `
 <View
-  accessible={true}
-  isTVSelectable={true}
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
   style={
-    Object {
-      "flexBasis": 0,
-      "flexGrow": 1,
-      "flexShrink": 1,
-      "opacity": 1,
-    }
+    Array [
+      Object {
+        "width": "",
+      },
+    ]
   }
+  type="default"
 >
   <Image
     source={
@@ -29,8 +21,8 @@ exports[`NatImage component default Should render NatImage component  1`] = `
       Array [
         Object {
           "borderRadius": 0,
-          "height": 48,
-          "width": 48,
+          "height": "",
+          "width": "",
         },
       ]
     }

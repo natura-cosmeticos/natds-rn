@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text } from 'react-native';
+import { Text, ScrollView } from 'react-native';
 import { NatContainer, NatCard } from '../../../lib';
 
 export const StoryNatCard = () => {

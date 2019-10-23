@@ -52,14 +52,13 @@ export const Card = () => {
   ];
 
   return (
-    <ScrollView >
+    <ScrollView>
       <NatContainer style={styles.container}>
       {examples.map((example, index) => (
        <NatCard
         title={example.title}
         subtitle={example.subtitle}
         resume={example.resume}
-        iconURI={example.iconURI}
         imageURI={example.imageURI}
         margin="dense"
         key={index}

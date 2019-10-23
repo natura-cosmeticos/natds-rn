@@ -24,150 +24,157 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
     ]
   }
 >
-  <View
-    accessible={true}
-    isTVSelectable={true}
-    onResponderGrant={[Function]}
-    onResponderMove={[Function]}
-    onResponderRelease={[Function]}
-    onResponderTerminate={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
-    style={
-      Object {
-        "backgroundColor": "#FFFFFF",
-        "borderRadius": 4,
-        "marginTop": 0,
-        "opacity": 1,
-      }
-    }
-  >
-    <View
-      style={
-        Array [
-          Object {
-            "flexDirection": "row",
-            "paddingBottom": 10,
-            "paddingLeft": 10,
-            "paddingRight": 10,
-            "paddingTop": 10,
-          },
-        ]
-      }
-    >
+  <RCTScrollView>
+    <View>
       <View
+        accessible={true}
+        isTVSelectable={true}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
         style={
-          Array [
-            Object {
-              "flexBasis": 0,
-              "flexGrow": 1,
-              "flexShrink": 1,
-              "paddingBottom": 5,
-              "paddingLeft": 5,
-              "paddingRight": 5,
-              "paddingTop": 5,
-            },
-          ]
+          Object {
+            "backgroundColor": "#FFFFFF",
+            "borderRadius": 4,
+            "marginTop": 0,
+            "opacity": 1,
+          }
         }
       >
-        <Image
-          source={
-            Object {
-              "uri": "https://upload.wikimedia.org/wikipedia/pt/thumb/c/cb/Natura_Logo.png/200px-Natura_Logo.png",
+        <View
+          style={
+            Array [
+              Object {
+                "width": "100%",
+              },
+            ]
+          }
+          type="card"
+        >
+          <Image
+            source={
+              Object {
+                "uri": "https://upload.wikimedia.org/wikipedia/pt/thumb/c/cb/Natura_Logo.png/200px-Natura_Logo.png",
+              }
             }
-          }
+            style={
+              Array [
+                Object {
+                  "borderRadius": 0,
+                  "height": 184,
+                  "width": "100%",
+                },
+              ]
+            }
+            type="card"
+          />
+        </View>
+        <View
           style={
             Array [
               Object {
-                "height": 50,
-                "width": 50,
-              },
-            ]
-          }
-        />
-      </View>
-      <View
-        style={
-          Array [
-            Object {
-              "flexBasis": 0,
-              "flexGrow": 5,
-              "flexShrink": 1,
-              "paddingBottom": 5,
-              "paddingLeft": 5,
-              "paddingRight": 5,
-              "paddingTop": 5,
-            },
-          ]
-        }
-      >
-        <Text
-          style={
-            Array [
-              Object {
-                "fontSize": 14,
+                "paddingBottom": 10,
+                "paddingLeft": 10,
+                "paddingRight": 10,
+                "paddingTop": 10,
               },
             ]
           }
         >
-          Card Test
-        </Text>
-        <Text
-          style={
-            Array [
-              Object {
-                "fontSize": 12,
-              },
-            ]
-          }
-        >
-          13 hours ago
-        </Text>
+          <View
+            defaultMargin="0px"
+            style={
+              Array [
+                Object {
+                  "flexBasis": 0,
+                  "flexGrow": 1,
+                  "flexShrink": 1,
+                  "marginTop": 0,
+                },
+              ]
+            }
+          >
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#333333",
+                    "fontSize": 20,
+                    "fontWeight": "400",
+                    "lineHeight": 24,
+                  },
+                ]
+              }
+              type="h6"
+            >
+              Card Test
+            </Text>
+          </View>
+          <View
+            defaultMargin="0px"
+            style={
+              Array [
+                Object {
+                  "flexBasis": 0,
+                  "flexGrow": 1,
+                  "flexShrink": 1,
+                  "marginTop": 0,
+                },
+              ]
+            }
+          >
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#777777",
+                    "fontSize": 12,
+                    "fontWeight": "400",
+                    "lineHeight": 14,
+                  },
+                ]
+              }
+              type="caption"
+            >
+              13 hours ago
+            </Text>
+          </View>
+          <View
+            defaultMargin="8px"
+            style={
+              Array [
+                Object {
+                  "flexBasis": 0,
+                  "flexGrow": 1,
+                  "flexShrink": 1,
+                  "marginTop": 8,
+                },
+              ]
+            }
+          >
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#777777",
+                    "fontSize": 14,
+                    "fontWeight": "400",
+                    "lineHeight": 21,
+                  },
+                ]
+              }
+              type="body2"
+            >
+              Esse é um card da Natura
+            </Text>
+          </View>
+        </View>
       </View>
     </View>
-    <Image
-      accessible={true}
-      source={
-        Object {
-          "uri": "https://upload.wikimedia.org/wikipedia/pt/thumb/c/cb/Natura_Logo.png/200px-Natura_Logo.png",
-        }
-      }
-      style={
-        Array [
-          Object {
-            "height": 120,
-          },
-          Object {
-            "width": undefined,
-          },
-        ]
-      }
-    />
-    <View
-      style={
-        Array [
-          Object {
-            "paddingBottom": 10,
-            "paddingLeft": 10,
-            "paddingRight": 10,
-            "paddingTop": 10,
-          },
-        ]
-      }
-    >
-      <Text
-        style={
-          Array [
-            Object {
-              "fontSize": 12,
-            },
-          ]
-        }
-      >
-        Esse é um card da Natura
-      </Text>
-    </View>
-  </View>
+  </RCTScrollView>
   <Text>
     You can apply margin-top by sending "margin" prop, with values: none, dense or normal.
   </Text>
