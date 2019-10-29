@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`NatLogoVertical component default Should render NatLogoVertical component  1`] = `
+exports[`NatLogoHorizontal component default Should render NatLogoHorizontal component  1`] = `
 <View
   style={
     Array [
@@ -17,14 +17,14 @@ exports[`NatLogoVertical component default Should render NatLogoVertical compone
   <Image
     source={
       Object {
-        "testUri": "../../../lib/assets/images/logoVertical/logoVertical.png",
+        "testUri": "../../../lib/assets/images/logoHorizontal/logoHorizontal.png",
       }
     }
     style={
       Array [
         Object {
-          "height": 121,
-          "width": 168,
+          "height": 32,
+          "width": 132,
         },
       ]
     }

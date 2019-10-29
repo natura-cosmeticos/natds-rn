@@ -21,21 +21,6 @@ exports[`NatMenuItem component default Should render NatLogoVertical NatMenuItem
     }
   }
 >
-  <Image
-    source={
-      Object {
-        "testUri": "../../../lib/assets/icons/nat-ic-arrow-left.png",
-      }
-    }
-    style={
-      Array [
-        Object {
-          "height": 24,
-          "width": 24,
-        },
-      ]
-    }
-  />
   <Text
     style={
       Array [
