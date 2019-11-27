@@ -21,9 +21,9 @@
   "dependencies": {
     "jest-styled-components": "^6.3.1",
     "prop-types": "^15.7.2",
-    "react": "16.8.0",
+    "react": "16.9.0",
     "react-dom": "16.8.3",
-    "react-native": "0.59.10",
+    "react-native": "0.61.4",
     "styled-components": "^4.2.0"
   },
   "devDependencies": {
@@ -54,11 +54,6 @@
     "preset": "react-native",
     "setupFiles": [
       "<rootDir>/test-setup.js"
-    ]
-  },
-  "rnpm": {
-    "assets": [
-      "./modules/social_selling/src/assets/fonts/"
     ]
   }
 }

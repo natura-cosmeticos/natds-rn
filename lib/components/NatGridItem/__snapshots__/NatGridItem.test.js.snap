@@ -19,6 +19,8 @@ exports[`NatGridItem component Properties of NatGridItem Should render NatGridIt
     accessibilityLabel="descrição"
     accessibilityRole="image"
     accessible={true}
+    focusable={true}
+    onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}
@@ -97,6 +99,8 @@ exports[`NatGridItem component Should render NatGridItem component  1`] = `
     accessibilityLabel="Texto"
     accessibilityRole="image"
     accessible={true}
+    focusable={true}
+    onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}
