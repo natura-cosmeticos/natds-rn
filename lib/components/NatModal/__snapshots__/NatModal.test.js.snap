@@ -81,7 +81,9 @@ exports[`NatModal Should match snapshot 1`] = `
       <View
         accessibilityLabel="ENTENDI"
         accessible={true}
+        focusable={true}
         isTVSelectable={true}
+        onClick={[Function]}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
         onResponderRelease={[Function]}
@@ -211,7 +213,9 @@ exports[`NatModal error should render the error mode 1`] = `
         <View
           accessibilityLabel="CANCELAR"
           accessible={true}
+          focusable={true}
           isTVSelectable={true}
+          onClick={[Function]}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
           onResponderRelease={[Function]}
@@ -250,7 +254,9 @@ exports[`NatModal error should render the error mode 1`] = `
         <View
           accessibilityLabel="ENVIAR LINK"
           accessible={true}
+          focusable={true}
           isTVSelectable={true}
+          onClick={[Function]}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
           onResponderRelease={[Function]}
@@ -356,7 +362,9 @@ exports[`NatModal save should render the save mode 1`] = `
       <View
         accessibilityLabel="OK"
         accessible={true}
+        focusable={true}
         isTVSelectable={true}
+        onClick={[Function]}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
         onResponderRelease={[Function]}
