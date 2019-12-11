@@ -43,7 +43,6 @@ export default class Welcome extends React.Component {
             justifyContent: 'center',
             marginBottom: 30,
         }}>
-            <NatCounterToggler />
         </View>
         <Text style={this.styles.content}>
           Here you can try out the components of our react-native library.
