@@ -1,0 +1,152 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NatCounterToggler Should render the component correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "stretch",
+        "backgroundColor": "#FFFFFF",
+        "borderColor": "#BBBBBB",
+        "borderRadius": 6,
+        "borderStyle": "solid",
+        "borderWidth": 2,
+        "flexDirection": "row",
+        "height": 60,
+        "justifyContent": "space-between",
+        "width": 130,
+      },
+    ]
+  }
+>
+  <View
+    accessible={true}
+    isTVSelectable={true}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#FFFFFF",
+          "borderRadius": 6,
+          "flexGrow": 1,
+        },
+      ]
+    }
+  >
+    <View
+      color="#EEEEEE"
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#EEEEEE",
+            "borderBottomLeftRadius": 6,
+            "borderTopLeftRadius": 6,
+            "flexBasis": 0,
+            "flexGrow": 1,
+            "flexShrink": 1,
+            "justifyContent": "center",
+          },
+          null,
+        ]
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#777777",
+              "fontSize": 20,
+            },
+          ]
+        }
+      >
+        -
+      </Text>
+    </View>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "borderColor": "black",
+          "borderStyle": "solid",
+          "borderWidth": 0,
+          "flexBasis": 0,
+          "flexGrow": 1,
+          "flexShrink": 1,
+          "justifyContent": "center",
+        },
+      ]
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#777777",
+            "fontSize": 20,
+          },
+        ]
+      }
+    />
+  </View>
+  <View
+    accessible={true}
+    isTVSelectable={true}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#FFFFFF",
+          "borderRadius": 6,
+          "flexGrow": 1,
+        },
+      ]
+    }
+  >
+    <View
+      color="#FFFFFF"
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#FFFFFF",
+            "borderBottomRightRadius": 6,
+            "borderTopRightRadius": 6,
+            "flexBasis": 0,
+            "flexGrow": 1,
+            "flexShrink": 1,
+            "justifyContent": "center",
+          },
+          null,
+        ]
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#777777",
+              "fontSize": 20,
+            },
+          ]
+        }
+      >
+        +
+      </Text>
+    </View>
+  </View>
+</View>
+`;
