@@ -6,7 +6,7 @@ import { action } from '@storybook/addon-actions';
 import { linkTo } from '@storybook/addon-links';
 
 // eslint-disable-next-line import/extensions
-import { Login, Card, Form } from './ScreenSamples';
+import { Login, Card, Form, FriendExchange } from './ScreenSamples';
 import { StoryNatTextInput } from './StoryNatTextInput';
 import { StoryNatCard } from './StoryNatCard';
 import CenterView from './CenterView';
@@ -45,6 +45,6 @@ storiesOf('NatTextInput', module)
   ))
   .add('Card', () => (
     <Card />
+  )).add('FriendExchange', () => (
+    <FriendExchange />
   ));
-
-

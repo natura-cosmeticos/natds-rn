@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { View, Text, Image } from 'react-native';
 import { NatLogoVertical } from '../../../lib';
+import { NatCounterToggler } from '../../../lib';
 
 export default class Welcome extends React.Component {
   styles = {
@@ -37,6 +38,13 @@ export default class Welcome extends React.Component {
       <View style={this.styles.wrapper}>
         <NatLogoVertical />
         <Text style={this.styles.header}>Welcome to NATDS!</Text>
+        <View style={{
+            flexDirection: 'row',
+            justifyContent: 'center',
+            marginBottom: 30,
+        }}>
+            <NatCounterToggler />
+        </View>
         <Text style={this.styles.content}>
           Here you can try out the components of our react-native library.
         </Text>
