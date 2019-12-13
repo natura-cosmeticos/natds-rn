@@ -1,28 +1,29 @@
-import React, { useState} from 'react';
-import { View, Image, Alert, StyleSheet } from 'react-native';
+/* eslint-disable no-console */
+import React, { useState } from 'react';
+import {
+  View, Image, Alert, StyleSheet,
+} from 'react-native';
 import icoArrowLeft from '../../../lib/assets/icons/ic_arrow_left_white.png';
 import { NatButton, NatContainer, NatTextInput } from '../../../lib';
 
 export const Login = () => {
+  const [inputMatricula, setInputMatricula] = useState('');
+  const [inputSenha, setInputSenha] = useState('');
 
-  const [inputMatricula, setInputMatricula]  = useState('');
-  const [inputSenha, setInputSenha]  = useState('');
-
-  const press = () =>
-    Alert.alert(
-      'Press',
-      'My Alert Msg',
-      [
-        {text: 'Ask me later', onPress: () => console.log('Ask me later pressed')},
-        {
-          text: 'Cancel',
-          onPress: () => console.log('Cancel Pressed'),
-          style: 'cancel',
-        },
-        {text: 'OK', onPress: () => console.log('OK Pressed')},
-      ],
-      {cancelable: false},
-    );
+  const press = () => Alert.alert(
+    'Press',
+    'My Alert Msg',
+    [
+      { text: 'Ask me later', onPress: () => console.log('Ask me later pressed') },
+      {
+        text: 'Cancel',
+        onPress: () => console.log('Cancel Pressed'),
+        style: 'cancel',
+      },
+      { text: 'OK', onPress: () => console.log('OK Pressed') },
+    ],
+    { cancelable: false },
+  );
 
   return (
 
@@ -30,7 +31,7 @@ export const Login = () => {
       <View style={styles.viewLogo}>
         <Image
           style={styles.imgLogo}
-          source={{uri: 'https://upload.wikimedia.org/wikipedia/pt/c/cb/Natura_Logo.png'}}
+          source={{ uri: 'https://upload.wikimedia.org/wikipedia/pt/c/cb/Natura_Logo.png' }}
         />
       </View>
       <View style={styles.viewInput}>
@@ -91,5 +92,4 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     marginBottom: 10,
   },
-})
-;
+});

@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NatGenericCard Should match snapshot 1`] = `
+<View
+  bgColor="#FFFFFFFF"
+  height={216}
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#FFFFFFFF",
+        "elevation": 1,
+        "height": 216,
+        "width": 363,
+      },
+      Object {
+        "shadowColor": "#000000",
+        "shadowOffset": Object {
+          "height": 1,
+          "width": 0,
+        },
+        "shadowOpacity": 0.14,
+        "shadowRadius": 1,
+      },
+    ]
+  }
+  width={363}
+>
+  <Text>
+    Teste
+  </Text>
+</View>
+`;

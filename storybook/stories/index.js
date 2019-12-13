@@ -1,13 +1,13 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
 import { Text } from 'react-native';
-
 import { storiesOf } from '@storybook/react-native';
-import { action } from '@storybook/addon-actions';
 import { linkTo } from '@storybook/addon-links';
 
 // eslint-disable-next-line import/extensions
 import { Login, Card, Form, FriendExchange } from './ScreenSamples';
 import { StoryNatTextInput } from './StoryNatTextInput';
+import { NatGenericCard } from '../../lib/components/NatGenericCard/NatGenericCard';
 import { StoryNatCard } from './StoryNatCard';
 import CenterView from './CenterView';
 import Welcome from './Welcome';
@@ -26,16 +26,23 @@ storiesOf('NatTextInput', module)
     <StoryNatTextInput type="disabled" />
   ))
   .add('With icon', () => (
-    <StoryNatTextInput type="default" icon={true} />
+    <StoryNatTextInput type="default" icon />
   ));
 
-  storiesOf('NatCard', module)
+storiesOf('NatCard', module)
   .addDecorator(getStory => <CenterView>{getStory()}</CenterView>)
   .add('Default', () => (
     <StoryNatCard />
   ));
+storiesOf('NatGenericCard', module)
+  .addDecorator(getStory => <CenterView>{getStory()}</CenterView>)
+  .add('Default', () => (
+    <NatGenericCard>
+      <StoryNatTextInput type="default" />
+    </NatGenericCard>
+  ));
 
-  storiesOf('Screen Samples', module)
+storiesOf('Screen Samples', module)
   .addDecorator(getStory => <CenterView>{getStory()}</CenterView>)
   .add('Login', () => (
     <Login />
