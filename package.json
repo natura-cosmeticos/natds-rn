@@ -1,60 +1,60 @@
 {
-  "name": "natura-design-system",
-  "version": "0.0.1",
-  "private": true,
-  "main": "lib/index.js",
-  "scripts": {
-    "start": "react-native start",
-    "test": "jest",
-    "coverage": "jest --coverage",
-    "lint": "eslint .",
-    "android": "react-native run-android",
-    "ios": "react-native run-ios",
-    "storybook": "start-storybook -p 7007"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run lint",
-      "pre-push": "npm run test && npm run lint"
+    "name": "natura-design-system",
+    "version": "0.0.1",
+    "private": true,
+    "main": "lib/index.js",
+    "scripts": {
+      "start": "react-native start",
+      "test": "jest",
+      "coverage": "jest --coverage",
+      "lint": "eslint .",
+      "android": "react-native run-android",
+      "ios": "react-native run-ios",
+      "storybook": "start-storybook -p 7007"
+    },
+    "husky": {
+      "hooks": {
+        "pre-commit": "npm run lint",
+        "pre-push": "npm run test && npm run lint"
+      }
+    },
+    "dependencies": {
+      "jest-styled-components": "^6.3.1",
+      "prop-types": "^15.7.2",
+      "react": "16.9.0",
+      "react-dom": "16.8.3",
+      "react-native": "0.61.4",
+      "react-native-gesture-handler": "^1.5.2",
+      "styled-components": "^4.2.0"
+    },
+    "devDependencies": {
+      "@babel/core": "^7.6.2",
+      "@babel/runtime": "^7.6.2",
+      "@react-native-community/eslint-config": "^0.0.5",
+      "@storybook/addon-actions": "^5.2.1",
+      "@storybook/addon-links": "^5.2.1",
+      "@storybook/addons": "^5.2.1",
+      "@storybook/react-native": "^5.2.1",
+      "@storybook/react-native-server": "^5.2.1",
+      "babel-jest": "^24.9.0",
+      "babel-loader": "^8.0.6",
+      "babel-preset-react-native": "1.9.2",
+      "enzyme": "^3.9.0",
+      "enzyme-adapter-react-16": "^1.12.1",
+      "eslint": "^6.5.1",
+      "eslint-config-airbnb": "^17.1.0",
+      "eslint-plugin-import": "^2.16.0",
+      "eslint-plugin-jsx-a11y": "^6.2.1",
+      "eslint-plugin-react": "^7.12.4",
+      "husky": "^1.3.1",
+      "jest": "^24.9.0",
+      "metro-react-native-babel-preset": "^0.56.0",
+      "react-test-renderer": "16.9.0"
+    },
+    "jest": {
+      "preset": "react-native",
+      "setupFiles": [
+        "<rootDir>/test-setup.js"
+      ]
     }
-  },
-  "dependencies": {
-    "jest-styled-components": "^6.3.1",
-    "prop-types": "^15.7.2",
-    "react": "16.9.0",
-    "react-dom": "16.8.3",
-    "react-native": "0.61.4",
-    "react-native-gesture-handler": "^1.5.2",
-    "styled-components": "^4.2.0"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.6.2",
-    "@babel/runtime": "^7.6.2",
-    "@react-native-community/eslint-config": "^0.0.5",
-    "@storybook/addon-actions": "^5.2.1",
-    "@storybook/addon-links": "^5.2.1",
-    "@storybook/addons": "^5.2.1",
-    "@storybook/react-native": "^5.2.1",
-    "@storybook/react-native-server": "^5.2.1",
-    "babel-jest": "^24.9.0",
-    "babel-loader": "^8.0.6",
-    "babel-preset-react-native": "1.9.2",
-    "enzyme": "^3.9.0",
-    "enzyme-adapter-react-16": "^1.12.1",
-    "eslint": "^6.5.1",
-    "eslint-config-airbnb": "^17.1.0",
-    "eslint-plugin-import": "^2.16.0",
-    "eslint-plugin-jsx-a11y": "^6.2.1",
-    "eslint-plugin-react": "^7.12.4",
-    "husky": "^1.3.1",
-    "jest": "^24.9.0",
-    "metro-react-native-babel-preset": "^0.56.0",
-    "react-test-renderer": "16.9.0"
-  },
-  "jest": {
-    "preset": "react-native",
-    "setupFiles": [
-      "<rootDir>/test-setup.js"
-    ]
-  }
 }
