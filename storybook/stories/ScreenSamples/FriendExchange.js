@@ -1,35 +1,60 @@
 import React, { useState } from 'react';
 
-import { NatCounterToggler } from '../../../lib';
 import styled from 'styled-components/native';
+import { header } from '../../../lib/assets/theme/typography/typography';
+import { NatPeriodButton, NatCounterToggler, NatGenericCard } from '../../../lib';
 
 export const CustomContainer = styled.View`
     width: 100%;
     display: flex;
+    flex-direction: column;
     justifyContent: center;
     alignItems: center;
 `;
 
-export const FriendExchange = props => {
-    const [itemCount, setItemCount] = useState(1);
+export const HeaderText = styled.Text`
+  ${header.Small}
+`;
 
-    const onIncreaseHandler = () => {
-        setItemCount(itemCount + 1);
-    };
+const FlexNatGenericCard = {
+  display: 'flex',
+  flexDirection: 'row',
+  justifyContent: 'center',
+  alignItems: 'center',
+  width: '100%',
+};
 
-    const onDecreaseHandler = () => {
-        setItemCount(itemCount - 1);
-    };
+export const FriendExchange = () => {
+  const [itemCount, setItemCount] = useState(1);
 
-    return (
-        <CustomContainer>
-            <NatCounterToggler
-                counter={itemCount}
-                min={1}
-                max={6}
-                onIncrease={onIncreaseHandler}
-                onDecrease={onDecreaseHandler}
-            />
-        </CustomContainer>
-    );
+  const onIncreaseHandler = () => {
+    setItemCount(itemCount + 1);
+  };
+
+  const onDecreaseHandler = () => {
+    setItemCount(itemCount - 1);
+  };
+
+  return (
+    <CustomContainer>
+      <NatGenericCard style={FlexNatGenericCard}>
+        <HeaderText>Counter Toggler</HeaderText>
+        <NatCounterToggler
+          counter={itemCount}
+          min={1}
+          max={3}
+          onIncrease={onIncreaseHandler}
+          onDecrease={onDecreaseHandler}
+        />
+      </NatGenericCard>
+
+      <NatGenericCard style={FlexNatGenericCard}>
+        <HeaderText>Period Button</HeaderText>
+        <NatPeriodButton title="Hoje" subtitle="04/11" onSelect={() => null} iconSrc="https://i.imgur.com/gM3z36s.png" />
+        <NatPeriodButton title="Amanhã" subtitle="04/11" onSelect={() => null} iconSrc="https://i.imgur.com/gM3z36s.png" />
+        <NatPeriodButton selected title="A combinar" onSelect={() => null} iconSrc="https://i.imgur.com/gM3z36s.png" />
+      </NatGenericCard>
+
+    </CustomContainer>
+  );
 };

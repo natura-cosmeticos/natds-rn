@@ -5,7 +5,9 @@ import { storiesOf } from '@storybook/react-native';
 import { linkTo } from '@storybook/addon-links';
 
 // eslint-disable-next-line import/extensions
-import { Login, Card, Form, FriendExchange } from './ScreenSamples';
+import {
+  Login, Card, Form, FriendExchange,
+} from './ScreenSamples';
 import { StoryNatTextInput } from './StoryNatTextInput';
 import { NatGenericCard } from '../../lib/components/NatGenericCard/NatGenericCard';
 import { StoryNatCard } from './StoryNatCard';
@@ -52,6 +54,7 @@ storiesOf('Screen Samples', module)
   ))
   .add('Card', () => (
     <Card />
-  )).add('FriendExchange', () => (
+  ))
+  .add('FriendExchange', () => (
     <FriendExchange />
   ));
