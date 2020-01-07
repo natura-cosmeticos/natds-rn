@@ -35,7 +35,7 @@ exports[`Button component default Should render button component  1`] = `
         Object {
           "alignSelf": "center",
           "color": "#FFFFFF",
-          "fontFamily": "Roboto-Bold",
+          "fontFamily": "System",
           "fontSize": 14,
           "fontWeight": "bold",
           "letterSpacing": 1,
@@ -84,7 +84,7 @@ exports[`Button component default when is card type Should render button compone
         Object {
           "alignSelf": "center",
           "color": "#FFFFFF",
-          "fontFamily": "Roboto-Bold",
+          "fontFamily": "System",
           "fontSize": 14,
           "fontWeight": "bold",
           "letterSpacing": 1,
@@ -151,7 +151,7 @@ exports[`Button component default when is outline type Should render outline but
         Object {
           "alignSelf": "center",
           "color": "#F4AB34",
-          "fontFamily": "Roboto-Bold",
+          "fontFamily": "System",
           "fontSize": 14,
           "fontWeight": "bold",
           "letterSpacing": 1,
@@ -200,7 +200,7 @@ exports[`Button component default when is short type Should render short button 
         Object {
           "alignSelf": "center",
           "color": "#F4AB34",
-          "fontFamily": "Roboto-Bold",
+          "fontFamily": "System",
           "fontSize": 14,
           "fontWeight": "bold",
           "letterSpacing": 1,
