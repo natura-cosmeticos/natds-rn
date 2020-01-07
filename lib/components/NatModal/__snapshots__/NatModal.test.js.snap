@@ -66,7 +66,7 @@ exports[`NatModal Should match snapshot 1`] = `
           Array [
             Object {
               "color": "#333333",
-              "fontFamily": "Roboto-Regular",
+              "fontFamily": "System",
               "fontSize": 14,
               "fontWeight": "400",
               "lineHeight": 22,
@@ -109,7 +109,7 @@ exports[`NatModal Should match snapshot 1`] = `
             Array [
               Object {
                 "color": "#FFFFFF",
-                "fontFamily": "Roboto-Bold",
+                "fontFamily": "System",
                 "letterSpacing": 1,
               },
             ]
@@ -189,7 +189,7 @@ exports[`NatModal error should render the error mode 1`] = `
           Array [
             Object {
               "color": "#333333",
-              "fontFamily": "Roboto-Regular",
+              "fontFamily": "System",
               "fontSize": 14,
               "fontWeight": "400",
               "lineHeight": 22,
@@ -242,7 +242,7 @@ exports[`NatModal error should render the error mode 1`] = `
               Array [
                 Object {
                   "color": "#F4AB34",
-                  "fontFamily": "Roboto-Bold",
+                  "fontFamily": "System",
                   "letterSpacing": 1,
                 },
               ]
@@ -283,7 +283,7 @@ exports[`NatModal error should render the error mode 1`] = `
               Array [
                 Object {
                   "color": "#FFFFFF",
-                  "fontFamily": "Roboto-Bold",
+                  "fontFamily": "System",
                   "letterSpacing": 1,
                 },
               ]
@@ -390,7 +390,7 @@ exports[`NatModal save should render the save mode 1`] = `
             Array [
               Object {
                 "color": "#FFFFFF",
-                "fontFamily": "Roboto-Bold",
+                "fontFamily": "System",
                 "letterSpacing": 1,
               },
             ]
