@@ -45,6 +45,8 @@ export const FriendExchange = () => {
           max={3}
           onIncrease={onIncreaseHandler}
           onDecrease={onDecreaseHandler}
+          width="120px"
+          height="55px"
         />
       </NatGenericCard>
 
