@@ -52,6 +52,8 @@ exports[`TextInput component default Should render textInput component  1`] = `
     <TextInput
       allowFontScaling={true}
       editable={true}
+      multiline={false}
+      numberOfLines={1}
       onBlur={[Function]}
       onChangeText={[MockFunction]}
       onFocus={[Function]}
@@ -68,6 +70,9 @@ exports[`TextInput component default Should render textInput component  1`] = `
             "fontSize": 16,
             "height": 56,
             "letterSpacing": 0,
+          },
+          Object {
+            "height": 52,
           },
         ]
       }
@@ -131,6 +136,8 @@ exports[`TextInput component default Should render textInput with icon and assis
     <TextInput
       allowFontScaling={true}
       editable={true}
+      multiline={false}
+      numberOfLines={1}
       onBlur={[Function]}
       onChangeText={[MockFunction]}
       onFocus={[Function]}
@@ -147,6 +154,9 @@ exports[`TextInput component default Should render textInput with icon and assis
             "fontSize": 16,
             "height": 56,
             "letterSpacing": 0,
+          },
+          Object {
+            "height": 52,
           },
         ]
       }
