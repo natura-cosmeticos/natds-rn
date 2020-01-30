@@ -1,8 +1,6 @@
 import { AppRegistry } from 'react-native';
 import { getStorybookUI, configure } from '@storybook/react-native';
 
-import './rn-addons';
-
 // import stories
 configure(() => {
   // eslint-disable-next-line global-require
