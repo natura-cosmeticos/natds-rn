@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, ScrollView } from 'react-native';
+import { Text, ScrollView, SafeAreaView } from 'react-native';
 import { NatContainer, NatMenuItem } from '../../../lib';
 
 export const StoryNatMenuItem = () => {
@@ -130,39 +130,41 @@ export const StoryNatMenuItem = () => {
   ];
 
   return (
-    <NatContainer style={{ backgroundColor: '#FFF', width: 300, paddingTop: 20 }}>
-      <ScrollView>
-        <Text>Without Icon</Text>
-        {menuList.map(item => (
-          <NatMenuItem
-            title={item.name}
-            key={item.id}
-            level={item.levell}
-            onPress={() => { alert('click event'); }}
-          />
-        ))}
-        <Text>Use SVG</Text>
-        {menuListSvg.map(item => (
-          <NatMenuItem
-            title={item.name}
-            icon={{ svg: item.svg }}
-            key={item.id}
-            level={item.levell}
-            onPress={() => { alert('click event'); }}
-          />
-        ))}
-        <Text>With External Icon URL</Text>
-        {menuListIconUri.map(item => (
-          <NatMenuItem
-            title={item.name}
-            icon={{ uri: item.icon }}
-            key={item.name}
-            level={item.levell}
-            onPress={() => { alert('click event'); }}
-          />
-        ))}
-      </ScrollView>
-    </NatContainer>
+    <SafeAreaView>
+      <NatContainer style={{ backgroundColor: '#FFF', width: 300, paddingTop: 20 }}>
+        <ScrollView>
+          <Text>Without Icon</Text>
+          {menuList.map(item => (
+            <NatMenuItem
+              title={item.name}
+              key={item.id}
+              level={item.levell}
+              onPress={() => { alert('click event'); }}
+            />
+          ))}
+          <Text>Use SVG</Text>
+          {menuListSvg.map(item => (
+            <NatMenuItem
+              title={item.name}
+              icon={{ svg: item.svg }}
+              key={item.id}
+              level={item.levell}
+              onPress={() => { alert('click event'); }}
+            />
+          ))}
+          <Text>With External Icon URL</Text>
+          {menuListIconUri.map(item => (
+            <NatMenuItem
+              title={item.name}
+              icon={{ uri: item.icon }}
+              key={item.name}
+              level={item.levell}
+              onPress={() => { alert('click event'); }}
+            />
+          ))}
+        </ScrollView>
+      </NatContainer>
+    </SafeAreaView>
   );
 };
 
