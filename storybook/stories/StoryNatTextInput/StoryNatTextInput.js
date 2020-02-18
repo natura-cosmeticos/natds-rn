@@ -68,10 +68,6 @@ export const StoryNatTextInput = ({ type, icon }) => {
             icon={icon}
           />
           <NatText value="body1. Lorem ipsum dolor sit amet, consectetur adipscing elit. Quos blanditiis tenetur unde suscipit, quam beatae rerum inventore consectetur, neque doloribus, cupiditate numquam dignissimos laborum fugiat deleniti? Eum quasi quidem quibusdam" type="body1" />
-          <Text style={{ marginTop: 20 }}>
-            You can apply margin-top by sending &apos;margin&apos; prop,
-            with values: none, dense or normal.
-          </Text>
         </ScrollView>
       </NatContainer>
     </SafeAreaView>

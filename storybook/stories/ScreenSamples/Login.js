@@ -40,31 +40,6 @@ const styles = StyleSheet.create({
   },
 });
 
-const styles = StyleSheet.create({
-  defaultScreen: {
-    backgroundColor: '#FFF',
-    marginTop: 0,
-    width: Dimensions.get('window').width,
-  },
-  viewLogo: {
-    flex: 1.5,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  imgLogo: {
-    width: 140,
-    height: 105,
-  },
-  viewInput: {
-    flex: 1.5,
-  },
-  viewButton: {
-    flex: 1,
-    justifyContent: 'space-between',
-    marginBottom: 10,
-  },
-});
-
 export const Login = () => {
   const [inputMatricula, setInputMatricula] = useState('');
   const [inputSenha, setInputSenha] = useState('');
