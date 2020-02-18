@@ -5,7 +5,7 @@ exports[`Container component Should render container component correctly 1`] = `
   style={
     Array [
       Object {
-        "backgroundColor": "white",
+        "backgroundColor": "#FFFFFF",
         "bottom": 0,
         "flexBasis": 0,
         "flexGrow": 1,

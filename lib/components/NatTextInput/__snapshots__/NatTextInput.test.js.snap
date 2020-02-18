@@ -8,6 +8,7 @@ exports[`TextInput component default Should render textInput component  1`] = `
     Array [
       Object {
         "marginTop": 0,
+        "width": "100%",
       },
     ]
   }
@@ -1065,6 +1066,7 @@ exports[`TextInput component default Should render textInput with icon and assis
     Array [
       Object {
         "marginTop": 0,
+        "width": "100%",
       },
     ]
   }
