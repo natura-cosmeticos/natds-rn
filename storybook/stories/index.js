@@ -8,12 +8,13 @@ import {
   Login, Card, Form, FriendExchange,
 } from './ScreenSamples';
 import { StoryNatTextInput } from './StoryNatTextInput';
-import { NatGenericCard } from '../../lib/components/NatGenericCard/NatGenericCard';
 import { StoryNatCard } from './StoryNatCard';
 import { StoryNatMenuItem } from './StoryNatMenuItem';
 import { StoryNatIcon } from './StoryNatIcon';
 import { StoryTokenTypography } from './StoryTokenTypography';
 import { StoryTokenColors } from './StoryTokenColors';
+import { StoryTokenSpace } from './StoryTokenSpace';
+import { StoryNatLogo } from './StoryNatLogo';
 import { ThemeNaturaLight } from './StoryTokenThemes/ThemeNaturaLight';
 import CenterView from './CenterView';
 import Welcome from './Welcome';
@@ -29,14 +30,20 @@ storiesOf('Tokens', module)
   .add('Colors', () => (
     <StoryTokenColors />
   ))
+  .add('Space', () => (
+    <StoryTokenSpace />
+  ))
   .add('Theme Natura Light', () => (
     <ThemeNaturaLight />
   ));
 
-storiesOf('Icons', module)
+storiesOf('Images', module)
   .addDecorator(getStory => <CenterView>{getStory()}</CenterView>)
-  .add('All', () => (
+  .add('Icons', () => (
     <StoryNatIcon />
+  ))
+  .add('Logo', () => (
+    <StoryNatLogo />
   ));
 
 storiesOf('NatMenuItem', module)

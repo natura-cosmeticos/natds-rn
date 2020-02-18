@@ -1,14 +1,10 @@
 import React, { useState } from 'react';
-<<<<<<< HEAD
 import {
   Text,
   ScrollView,
   SafeAreaView,
   Dimensions,
 } from 'react-native';
-=======
-import { Text, ScrollView, SafeAreaView } from 'react-native';
->>>>>>> origin/update/react
 import propTypes from 'prop-types';
 import { NatContainer, NatTextInput, NatText } from '../../../lib';
 
@@ -28,11 +24,7 @@ export const StoryNatTextInput = ({ type, icon }) => {
 
   return (
     <SafeAreaView>
-<<<<<<< HEAD
       <NatContainer style={styles.defaultScreen}>
-=======
-      <NatContainer style={{ backgroundColor: '#FFF', width: 300, paddingTop: 20 }}>
->>>>>>> origin/update/react
         <ScrollView>
           <NatTextInput
             label="Size Small"
@@ -58,13 +50,8 @@ export const StoryNatTextInput = ({ type, icon }) => {
             label="Multiple lines"
             placeholder="Multiple lines"
             assistiveText="Multiple lines"
-<<<<<<< HEAD
             onChangeText={setInputMultiline}
             value={inputMultiline}
-=======
-            onChangeText={setInputNormal}
-            value={inputNormal}
->>>>>>> origin/update/react
             size="normal"
             multiline
             numberOfLines={4}
@@ -74,25 +61,17 @@ export const StoryNatTextInput = ({ type, icon }) => {
           <NatTextInput
             label=""
             placeholder="Search"
-<<<<<<< HEAD
             onChangeText={setInputSearch}
             value={inputSearch}
-=======
-            onChangeText={setInputNormal}
-            value={inputNormal}
->>>>>>> origin/update/react
             size="small"
             type={type}
             icon={icon}
           />
-<<<<<<< HEAD
           <NatText value="body1. Lorem ipsum dolor sit amet, consectetur adipscing elit. Quos blanditiis tenetur unde suscipit, quam beatae rerum inventore consectetur, neque doloribus, cupiditate numquam dignissimos laborum fugiat deleniti? Eum quasi quidem quibusdam" type="body1" />
-=======
           <Text style={{ marginTop: 20 }}>
             You can apply margin-top by sending &apos;margin&apos; prop,
             with values: none, dense or normal.
           </Text>
->>>>>>> origin/update/react
         </ScrollView>
       </NatContainer>
     </SafeAreaView>

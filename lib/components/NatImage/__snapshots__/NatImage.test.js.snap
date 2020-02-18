@@ -2,6 +2,7 @@
 
 exports[`NatImage component default Should render NatImage component  1`] = `
 <View
+  onPress={[Function]}
   style={
     Array [
       Object {

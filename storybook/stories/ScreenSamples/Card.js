@@ -1,10 +1,12 @@
 /* eslint-disable no-console */
 import React from 'react';
 import {
-  ScrollView, Dimensions, Alert, Text,
+  ScrollView,
+  Dimensions,
+  Alert,
   SafeAreaView,
 } from 'react-native';
-import { NatContainer, NatCard } from '../../../lib';
+import { NatContainer, NatCard, NatSpace } from '../../../lib';
 
 export const Card = () => {
   const press = () => Alert.alert(
@@ -66,17 +68,17 @@ export const Card = () => {
       <NatContainer style={styles.defaultScreen}>
         <ScrollView>
           {examples.map((example, index) => (
-            <NatCard
-              title={example.title}
-              subtitle={example.subtitle}
-              resume={example.resume}
-              imageURI={example.imageURI}
-              margin="small"
-              key={index}
-              onPress={press}
-            />
+            <NatSpace marginBottom="small">
+              <NatCard
+                title={example.title}
+                subtitle={example.subtitle}
+                resume={example.resume}
+                imageURI={example.imageURI}
+                key={index}
+                onPress={press}
+              />
+            </NatSpace>
           ))}
-          <Text>You can apply margin-top by sending "margin" prop, with values: none, dense or normal.</Text>
         </ScrollView>
       </NatContainer>
     </SafeAreaView>

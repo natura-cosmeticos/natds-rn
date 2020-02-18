@@ -6,6 +6,9 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> origin/update/react
 >>>>>>> origin/update/react
 >>>>>>> origin/update/react
 <RCTSafeAreaView
@@ -30,7 +33,11 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
         },
         Object {
           "backgroundColor": "#FFF",
+<<<<<<< HEAD
+          "marginTop": 0,
+=======
           "marginTop": 30,
+>>>>>>> origin/update/react
           "width": 750,
         },
       ]
@@ -764,6 +771,8 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
     </RCTScrollView>
   </View>
 </RCTSafeAreaView>
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -1521,6 +1530,7 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
     </View>
   </RCTScrollView>
 </View>
+>>>>>>> origin/update/react
 >>>>>>> origin/update/react
 >>>>>>> origin/update/react
 >>>>>>> origin/update/react

@@ -1,0 +1,1 @@
+export { StoryNatLogo } from './StoryNatLogo';

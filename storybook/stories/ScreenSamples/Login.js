@@ -2,14 +2,43 @@
 import React, { useState } from 'react';
 import {
   View,
-  Image,
   Alert,
   StyleSheet,
   Dimensions,
   SafeAreaView,
 } from 'react-native';
 import icoArrowLeft from '../../../lib/assets/icons/ic_arrow_left_white.png';
-import { NatButton, NatContainer, NatTextInput } from '../../../lib';
+import {
+  NatButton,
+  NatContainer,
+  NatTextInput,
+  NatLogo,
+} from '../../../lib';
+
+const styles = StyleSheet.create({
+  defaultScreen: {
+    backgroundColor: '#FFF',
+    marginTop: 0,
+    width: Dimensions.get('window').width,
+  },
+  viewLogo: {
+    flex: 1.5,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  imgLogo: {
+    width: 140,
+    height: 105,
+  },
+  viewInput: {
+    flex: 1.5,
+  },
+  viewButton: {
+    flex: 1,
+    justifyContent: 'space-between',
+    marginBottom: 10,
+  },
+});
 
 const styles = StyleSheet.create({
   defaultScreen: {
@@ -59,10 +88,7 @@ export const Login = () => {
     <SafeAreaView>
       <NatContainer style={styles.defaultScreen}>
         <View style={styles.viewLogo}>
-          <Image
-            style={styles.imgLogo}
-            source={{ uri: 'https://upload.wikimedia.org/wikipedia/pt/c/cb/Natura_Logo.png' }}
-          />
+          <NatLogo name="logo-natura-vertical" size={300} />
         </View>
         <View style={styles.viewInput}>
           <NatTextInput
