@@ -4,38 +4,11 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
 <RCTSafeAreaView
   emulateUnlessSupported={true}
 >
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> origin/update/react
->>>>>>> origin/update/react
->>>>>>> origin/update/react
->>>>>>> origin/update/react
->>>>>>> origin/update/react
->>>>>>> origin/update/react
   <View
     style={
       Array [
         Object {
-<<<<<<< HEAD
           "backgroundColor": "#FFFFFF",
-=======
-<<<<<<< HEAD
-          "backgroundColor": "#FFFFFF",
-=======
-          "backgroundColor": "white",
->>>>>>> origin/update/react
->>>>>>> origin/update/react
           "bottom": 0,
           "flexBasis": 0,
           "flexGrow": 1,
@@ -49,110 +22,15 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
           "top": 0,
         },
         Object {
-<<<<<<< HEAD
           "backgroundColor": "#FAFAFA",
           "marginTop": 0,
           "width": 750,
-=======
-<<<<<<< HEAD
-          "backgroundColor": "#FAFAFA",
-          "marginTop": 0,
-          "width": 750,
-=======
-<<<<<<< HEAD
-          "backgroundColor": "#FAFAFA",
-          "marginTop": 0,
-          "width": 750,
-=======
-<<<<<<< HEAD
-          "backgroundColor": "#FAFAFA",
-          "marginTop": 0,
-          "width": 750,
-=======
-          "backgroundColor": "#F5F5F5",
->>>>>>> origin/update/react
->>>>>>> origin/update/react
->>>>>>> origin/update/react
->>>>>>> origin/update/react
         },
       ]
     }
   >
     <RCTScrollView>
       <View>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-        <RCTScrollView>
-          <View>
-            <View
-              accessible={true}
-              focusable={true}
-              isTVSelectable={true}
-              onClick={[Function]}
-              onResponderGrant={[Function]}
-              onResponderMove={[Function]}
-              onResponderRelease={[Function]}
-              onResponderTerminate={[Function]}
-              onResponderTerminationRequest={[Function]}
-              onStartShouldSetResponder={[Function]}
-<<<<<<< HEAD
-              style={
-                Object {
-                  "backgroundColor": "#FFFFFF",
-                  "borderRadius": 4,
-                  "marginTop": 0,
-                  "opacity": 1,
-                }
-=======
-<<<<<<< HEAD
-              style={
-                Object {
-                  "backgroundColor": "#FFFFFF",
-                  "borderRadius": 4,
-                  "marginTop": 0,
-                  "opacity": 1,
-                }
-=======
-              style={
-                Object {
-                  "backgroundColor": "#FFFFFF",
-                  "borderRadius": 4,
-                  "marginTop": 0,
-                  "opacity": 1,
-                }
-=======
-  <RCTScrollView>
-    <View>
-      <View
-        accessible={true}
-        focusable={true}
-        isTVSelectable={true}
-        onClick={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        style={
-          Object {
-            "backgroundColor": "#FFFFFF",
-            "borderRadius": 4,
-            "marginTop": 0,
-            "opacity": 1,
-          }
-        }
-      >
->>>>>>> origin/update/react
->>>>>>> origin/update/react
->>>>>>> origin/update/react
->>>>>>> origin/update/react
         <View
           style={
             Object {
@@ -165,7 +43,6 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
               },
               "shadowOpacity": 0.24,
               "shadowRadius": 4,
-<<<<<<< HEAD
             }
           }
         >
@@ -195,164 +72,11 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
                 Array [
                   Object {
                     "width": "100%",
-=======
-            }
-          }
-        >
-          <View
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> origin/update/react
->>>>>>> origin/update/react
-            accessible={true}
-            focusable={true}
-            isTVSelectable={true}
-            onClick={[Function]}
-            onResponderGrant={[Function]}
-            onResponderMove={[Function]}
-            onResponderRelease={[Function]}
-            onResponderTerminate={[Function]}
-            onResponderTerminationRequest={[Function]}
-            onStartShouldSetResponder={[Function]}
-<<<<<<< HEAD
-            style={
-              Object {
-                "backgroundColor": "#FFFFFF",
-                "borderRadius": 4,
-                "marginBottom": 0,
-                "opacity": 1,
-              }
-            }
-          >
-            <View
-              onPress={[Function]}
-              style={
-                Array [
-                  Object {
-                    "width": "100%",
-=======
-<<<<<<< HEAD
-            style={
-              Object {
-                "backgroundColor": "#FFFFFF",
-                "borderRadius": 4,
-                "marginBottom": 0,
-                "opacity": 1,
-              }
-            }
-          >
-            <View
-              onPress={[Function]}
-              style={
-                Array [
-                  Object {
-                    "width": "100%",
-=======
-            style={
-              Object {
-                "backgroundColor": "#FFFFFF",
-                "borderRadius": 4,
-                "marginBottom": 0,
-                "opacity": 1,
-              }
-            }
-          >
-            <View
-              onPress={[Function]}
-              style={
-                Array [
-                  Object {
-                    "width": "100%",
-=======
-            margin={24}
-            style={
-              Array [
-                Object {
-                  "flexBasis": 0,
-                  "flexGrow": 1,
-                  "flexShrink": 1,
-                  "marginBottom": 24,
-                  "marginLeft": 0,
-                  "marginRight": 0,
-                  "marginTop": 0,
-                  "paddingBottom": 0,
-                  "paddingLeft": 0,
-                  "paddingRight": 0,
-                  "paddingTop": 0,
-                },
-              ]
-            }
-          >
-            <Text
-              color="#333333"
-              style={
-                Array [
-                  Object {
-                    "backgroundColor": "#FFF",
-                    "color": "#333333",
-                    "fontSize": 20,
-                    "fontWeight": "500",
-                    "lineHeight": 30,
-                  },
-                ]
-              }
-              type="h6"
-            >
-              Card Test
-            </Text>
-          </View>
-          <View
-            margin={24}
-            style={
-              Array [
-                Object {
-                  "flexBasis": 0,
-                  "flexGrow": 1,
-                  "flexShrink": 1,
-                  "marginBottom": 24,
-                  "marginLeft": 0,
-                  "marginRight": 0,
-                  "marginTop": 0,
-                  "paddingBottom": 0,
-                  "paddingLeft": 0,
-                  "paddingRight": 0,
-                  "paddingTop": 0,
-                },
-              ]
-            }
-          >
-            <Text
-              color="#333333"
-              style={
-                Array [
-                  Object {
-                    "backgroundColor": "#FFF",
-                    "color": "#333333",
-                    "fontSize": 12,
-                    "fontWeight": "400",
-                    "lineHeight": 18,
->>>>>>> origin/update/react
->>>>>>> origin/update/react
->>>>>>> origin/update/react
->>>>>>> origin/update/react
                   },
                 ]
               }
               type="card"
             >
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> origin/update/react
->>>>>>> origin/update/react
->>>>>>> origin/update/react
               <Image
                 source={
                   Object {
@@ -372,7 +96,6 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
               />
             </View>
             <View
-<<<<<<< HEAD
               style={
                 Array [
                   Object {
@@ -380,98 +103,15 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
                     "paddingLeft": 10,
                     "paddingRight": 10,
                     "paddingTop": 10,
-=======
-<<<<<<< HEAD
-              style={
-                Array [
-                  Object {
-                    "paddingBottom": 10,
-                    "paddingLeft": 10,
-                    "paddingRight": 10,
-                    "paddingTop": 10,
-=======
-<<<<<<< HEAD
-              style={
-                Array [
-                  Object {
-                    "paddingBottom": 10,
-                    "paddingLeft": 10,
-                    "paddingRight": 10,
-                    "paddingTop": 10,
-=======
-              style={
-                Array [
-                  Object {
-                    "paddingBottom": 10,
-                    "paddingLeft": 10,
-                    "paddingRight": 10,
-                    "paddingTop": 10,
-=======
-              13 hours ago
-            </Text>
-          </View>
-          <View
-            margin="dense"
-            style={
-              Array [
-                Object {
-                  "flexBasis": 0,
-                  "flexGrow": 1,
-                  "flexShrink": 1,
-                  "marginBottom": "dense",
-                  "marginLeft": 0,
-                  "marginRight": 0,
-                  "marginTop": 0,
-                  "paddingBottom": 0,
-                  "paddingLeft": 0,
-                  "paddingRight": 0,
-                  "paddingTop": 0,
-                },
-              ]
-            }
-          >
-            <Text
-              color="#333333"
-              style={
-                Array [
-                  Object {
-                    "backgroundColor": "#FFF",
-                    "color": "#333333",
-                    "fontSize": 14,
-                    "fontWeight": "400",
-                    "lineHeight": 21,
->>>>>>> origin/update/react
->>>>>>> origin/update/react
->>>>>>> origin/update/react
->>>>>>> origin/update/react
                   },
                 ]
->>>>>>> origin/update/react
->>>>>>> origin/update/react
->>>>>>> origin/update/react
               }
             >
               <View
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> origin/update/react
->>>>>>> origin/update/react
->>>>>>> origin/update/react
                 margin={4}
                 style={
                   Array [
                     Object {
-<<<<<<< HEAD
-=======
-                      "flexBasis": 0,
-                      "flexGrow": 1,
-                      "flexShrink": 1,
->>>>>>> origin/update/react
                       "marginBottom": 4,
                       "marginLeft": 0,
                       "marginRight": 0,
@@ -489,10 +129,6 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
                   style={
                     Array [
                       Object {
-<<<<<<< HEAD
-=======
-                        "backgroundColor": "#FFF",
->>>>>>> origin/update/react
                         "color": "#333333",
                         "fontSize": 20,
                         "fontWeight": "500",
@@ -510,12 +146,6 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
                 style={
                   Array [
                     Object {
-<<<<<<< HEAD
-=======
-                      "flexBasis": 0,
-                      "flexGrow": 1,
-                      "flexShrink": 1,
->>>>>>> origin/update/react
                       "marginBottom": 16,
                       "marginLeft": 0,
                       "marginRight": 0,
@@ -524,76 +154,15 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
                       "paddingLeft": 0,
                       "paddingRight": 0,
                       "paddingTop": 0,
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> origin/update/react
->>>>>>> origin/update/react
                     },
                   ]
                 }
               >
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
-=======
-                style={
-                  Array [
-                    Object {
-                      "width": "100%",
-                    },
-                  ]
-                }
-                type="card"
-              >
-                <Image
-                  source={
-                    Object {
-                      "uri": "https://upload.wikimedia.org/wikipedia/pt/thumb/c/cb/Natura_Logo.png/200px-Natura_Logo.png",
-                    }
-                  }
-                  style={
-                    Array [
-                      Object {
-                        "borderRadius": 0,
-                        "height": 184,
-                        "width": "100%",
-                      },
-                    ]
-                  }
-                  type="card"
-                />
-              </View>
-              <View
-                style={
-                  Array [
-                    Object {
-                      "paddingBottom": 10,
-                      "paddingLeft": 10,
-                      "paddingRight": 10,
-                      "paddingTop": 10,
->>>>>>> origin/update/react
-                    },
-                  ]
-                }
-              >
-<<<<<<< HEAD
->>>>>>> origin/update/react
->>>>>>> origin/update/react
->>>>>>> origin/update/react
                 <Text
                   color="#777777"
                   style={
                     Array [
                       Object {
-<<<<<<< HEAD
-=======
-                        "backgroundColor": "#FFF",
->>>>>>> origin/update/react
                         "color": "#777777",
                         "fontSize": 12,
                         "fontWeight": "400",
@@ -611,12 +180,6 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
                 style={
                   Array [
                     Object {
-<<<<<<< HEAD
-=======
-                      "flexBasis": 0,
-                      "flexGrow": 1,
-                      "flexShrink": 1,
->>>>>>> origin/update/react
                       "marginBottom": 24,
                       "marginLeft": 0,
                       "marginRight": 0,
@@ -634,10 +197,6 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
                   style={
                     Array [
                       Object {
-<<<<<<< HEAD
-=======
-                        "backgroundColor": "#FFF",
->>>>>>> origin/update/react
                         "color": "#333333",
                         "fontSize": 14,
                         "fontWeight": "400",
@@ -649,138 +208,10 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
                 >
                   Esse é um card da Natura
                 </Text>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
-                <View
-                  margin={24}
-                  style={
-                    Array [
-                      Object {
-                        "flexBasis": 0,
-                        "flexGrow": 1,
-                        "flexShrink": 1,
-                        "marginBottom": 24,
-                        "marginLeft": 0,
-                        "marginRight": 0,
-                        "marginTop": 0,
-                        "paddingBottom": 0,
-                        "paddingLeft": 0,
-                        "paddingRight": 0,
-                        "paddingTop": 0,
-                      },
-                    ]
-                  }
-                >
-                  <Text
-                    color="#333333"
-                    style={
-                      Array [
-                        Object {
-                          "backgroundColor": "#FFF",
-                          "color": "#333333",
-                          "fontSize": 20,
-                          "fontWeight": "500",
-                          "lineHeight": 30,
-                        },
-                      ]
-                    }
-                    type="h6"
-                  >
-                    Card Test
-                  </Text>
-                </View>
-                <View
-                  margin={24}
-                  style={
-                    Array [
-                      Object {
-                        "flexBasis": 0,
-                        "flexGrow": 1,
-                        "flexShrink": 1,
-                        "marginBottom": 24,
-                        "marginLeft": 0,
-                        "marginRight": 0,
-                        "marginTop": 0,
-                        "paddingBottom": 0,
-                        "paddingLeft": 0,
-                        "paddingRight": 0,
-                        "paddingTop": 0,
-                      },
-                    ]
-                  }
-                >
-                  <Text
-                    color="#333333"
-                    style={
-                      Array [
-                        Object {
-                          "backgroundColor": "#FFF",
-                          "color": "#333333",
-                          "fontSize": 12,
-                          "fontWeight": "400",
-                          "lineHeight": 18,
-                        },
-                      ]
-                    }
-                    type="caption"
-                  >
-                    13 hours ago
-                  </Text>
-                </View>
-                <View
-                  margin="dense"
-                  style={
-                    Array [
-                      Object {
-                        "flexBasis": 0,
-                        "flexGrow": 1,
-                        "flexShrink": 1,
-                        "marginBottom": "dense",
-                        "marginLeft": 0,
-                        "marginRight": 0,
-                        "marginTop": 0,
-                        "paddingBottom": 0,
-                        "paddingLeft": 0,
-                        "paddingRight": 0,
-                        "paddingTop": 0,
-                      },
-                    ]
-                  }
-                >
-                  <Text
-                    color="#333333"
-                    style={
-                      Array [
-                        Object {
-                          "backgroundColor": "#FFF",
-                          "color": "#333333",
-                          "fontSize": 14,
-                          "fontWeight": "400",
-                          "lineHeight": 21,
-                        },
-                      ]
-                    }
-                    type="body2"
-                  >
-                    Esse é um card da Natura
-                  </Text>
-                </View>
->>>>>>> origin/update/react
->>>>>>> origin/update/react
->>>>>>> origin/update/react
->>>>>>> origin/update/react
               </View>
             </View>
           </View>
-        </RCTScrollView>
-        <Text>
-           You can apply margin-top by sending “margin“ prop, with values: none, dense or normal. 
-        </Text>
+        </View>
       </View>
     </RCTScrollView>
   </View>

@@ -59,11 +59,21 @@ exports[`Header component Should render container component correctly 1`] = `
     />
   </View>
   <View
+    hideIconLeft={false}
+    hideIconRight={false}
     style={
-      Object {
-        "alignItems": "center",
-        "justifyContent": "center",
-      }
+      Array [
+        Object {
+          "alignItems": "center",
+          "bottom": 0,
+          "color": "#333333",
+          "justifyContent": "center",
+          "left": 48,
+          "position": "absolute",
+          "right": 48,
+          "top": 0,
+        },
+      ]
     }
   >
     <View

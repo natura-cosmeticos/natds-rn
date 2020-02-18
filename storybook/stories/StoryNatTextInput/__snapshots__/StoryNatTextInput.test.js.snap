@@ -8,15 +8,7 @@ exports[`StoryNatTextInput component Should render StoryNatTextInput component  
     style={
       Array [
         Object {
-<<<<<<< HEAD
           "backgroundColor": "#FFFFFF",
-=======
-<<<<<<< HEAD
-          "backgroundColor": "#FFFFFF",
-=======
-          "backgroundColor": "white",
->>>>>>> origin/update/react
->>>>>>> origin/update/react
           "bottom": 0,
           "flexBasis": 0,
           "flexGrow": 1,
@@ -31,28 +23,8 @@ exports[`StoryNatTextInput component Should render StoryNatTextInput component  
         },
         Object {
           "backgroundColor": "#FFF",
-<<<<<<< HEAD
           "marginTop": 0,
           "width": 750,
-=======
-<<<<<<< HEAD
-          "marginTop": 0,
-          "width": 750,
-=======
-<<<<<<< HEAD
-          "marginTop": 0,
-          "width": 750,
-=======
-<<<<<<< HEAD
-          "marginTop": 0,
-          "width": 750,
-=======
-          "paddingTop": 20,
-          "width": 300,
->>>>>>> origin/update/react
->>>>>>> origin/update/react
->>>>>>> origin/update/react
->>>>>>> origin/update/react
         },
       ]
     }
@@ -65,19 +37,8 @@ exports[`StoryNatTextInput component Should render StoryNatTextInput component  
           style={
             Array [
               Object {
-                "marginTop": 0,
-<<<<<<< HEAD
+                "marginBottom": 0,
                 "width": "100%",
-=======
-<<<<<<< HEAD
-                "width": "100%",
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> origin/update/react
->>>>>>> origin/update/react
->>>>>>> origin/update/react
               },
             ]
           }
@@ -256,7 +217,6 @@ exports[`StoryNatTextInput component Should render StoryNatTextInput component  
                   "contrastText": "#FFFFFF",
                   "main": "#E74627",
                 },
-<<<<<<< HEAD
                 "grayscale": Object {
                   "colorBrdBlack": "#000000",
                   "colorBrdNatGray": "#333333",
@@ -264,8 +224,6 @@ exports[`StoryNatTextInput component Should render StoryNatTextInput component  
                   "colorBrdNatGray2": "#BBBBBB",
                   "colorBrdNatGray3": "#EEEEEE",
                 },
-=======
->>>>>>> origin/update/react
                 "primary": Object {
                   "contrastText": "#333333",
                   "dark": "#EF8426",
@@ -305,17 +263,6 @@ exports[`StoryNatTextInput component Should render StoryNatTextInput component  
               "shape": Object {
                 "badgeBorderRadius": 100,
                 "borderRadius": 4,
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
->>>>>>> origin/update/react
->>>>>>> origin/update/react
->>>>>>> origin/update/react
->>>>>>> origin/update/react
               },
               "sizes": Object {
                 "huge": 96,
@@ -421,36 +368,11 @@ exports[`StoryNatTextInput component Should render StoryNatTextInput component  
             }
           }
         >
-<<<<<<< HEAD
           <View
             margin={0}
             style={
               Array [
                 Object {
-=======
-<<<<<<< HEAD
-          <View
-            margin={0}
-            style={
-              Array [
-                Object {
-=======
-<<<<<<< HEAD
-          <View
-            margin={0}
-            style={
-              Array [
-                Object {
-=======
-<<<<<<< HEAD
-          <View
-            margin={0}
-            style={
-              Array [
-                Object {
-                  "flexBasis": 0,
-                  "flexGrow": 1,
-                  "flexShrink": 1,
                   "marginBottom": 0,
                   "marginLeft": 0,
                   "marginRight": 0,
@@ -468,7 +390,6 @@ exports[`StoryNatTextInput component Should render StoryNatTextInput component  
               style={
                 Array [
                   Object {
-                    "backgroundColor": "#FFF",
                     "color": "#777777",
                     "fontSize": 14,
                     "fontWeight": "400",
@@ -481,24 +402,6 @@ exports[`StoryNatTextInput component Should render StoryNatTextInput component  
               Size Small
             </Text>
           </View>
-=======
-          <Text
-            state="default"
-            style={
-              Array [
-                Object {
-                  "color": "#777777",
-                  "fontSize": 14,
-                  "fontWeight": "500",
-                  "marginBottom": 3,
-                },
-              ]
-            }
-            type="default"
-          >
-            Size Small
-          </Text>
->>>>>>> origin/update/react
           <View
             defaultSize="40px"
             state="default"
@@ -506,11 +409,7 @@ exports[`StoryNatTextInput component Should render StoryNatTextInput component  
               Array [
                 Object {
                   "backgroundColor": "transparent",
-<<<<<<< HEAD
                   "borderColor": "#BBBBBB",
-=======
-                  "borderColor": "#777777",
->>>>>>> origin/update/react
                   "borderRadius": 4,
                   "borderStyle": "solid",
                   "borderWidth": 1,
@@ -697,809 +596,6 @@ exports[`StoryNatTextInput component Should render StoryNatTextInput component  
                     "contrastText": "#FFFFFF",
                     "main": "#E74627",
                   },
-                  "primary": Object {
-                    "contrastText": "#333333",
-                    "dark": "#EF8426",
-                    "light": "#FEFDE8",
-                    "main": "#F4AB34",
-                  },
-                  "secondary": Object {
-                    "contrastText": "#000000",
-                    "dark": "#EF8426",
-                    "light": "#FEFDE8",
-                    "main": "#FF6B0B",
-                  },
-                  "success": Object {
-                    "contrastText": "#FFFFFF",
-                    "main": "#569A32",
-                  },
-                  "text": Object {
-                    "disabled": "#BBBBBB",
-                    "hint": "#BBBBBB",
-                    "primary": "#333333",
-                    "secondary": "#777777",
-                  },
-                },
-                "shadows": Object {
-                  "0": "none",
-                  "1": "0 1px 1px 0 rgba(0, 0, 0, 0.14)",
-                  "12": "0 12px 17px 0 rgba(0, 0, 0, 0.14)",
-                  "16": "0 16px 24px 0 rgba(0, 0, 0, 0.14)",
-                  "2": "0 2px 2px 0 rgba(0, 0, 0, 0.14)",
-                  "24": "0 24px 38px 0 rgba(0, 0, 0, 0.14)",
-                  "3": "0 3px 4px 0 rgba(0, 0, 0, 0.14)",
-                  "4": "0 4px 5px 0 rgba(0, 0, 0, 0.14)",
-                  "6": "0 6px 10px 0 rgba(0, 0, 0, 0.14)",
-                  "8": "0 8px 10px 0 rgba(0, 0, 0, 0.14)",
-                  "9": "0 9px 12px 0 rgba(0, 0, 0, 0.14)",
-                },
-                "shape": Object {
-                  "badgeBorderRadius": 100,
-                  "borderRadius": 4,
-                },
-                "sizes": Object {
-                  "huge": 96,
-                  "hugex": 128,
-                  "hugexx": 144,
-                  "hugexxx": 192,
-                  "large": 64,
-                  "largex": 72,
-                  "largexx": 80,
-                  "largexxx": 88,
-                  "medium": 48,
-                  "mediumx": 56,
-                  "micro": 4,
-                  "none": 0,
-                  "semi": 32,
-                  "semix": 40,
-                  "small": 16,
-                  "standard": 24,
-                  "tiny": 8,
-                  "veryhuge": 256,
-                },
-                "spacing": Object {
-                  "spacing": 8,
-                  "spacingHuge": 64,
-                  "spacingLarge": 48,
-                  "spacingMicro": 4,
-                  "spacingNone": 0,
-                  "spacingSemi": 32,
-                  "spacingSmall": 16,
-                  "spacingStandard": 24,
-                  "spacingTiny": 8,
-                },
-                "typography": Object {
-                  "body1": Object {
-                    "color": "#333333",
-                    "fontSize": 16,
-                    "fontWeight": 400,
-                    "lineHeight": 24,
-                  },
-                  "body2": Object {
-                    "color": "#777777",
-                    "fontSize": 14,
-                    "fontWeight": 400,
-                    "lineHeight": 21,
-                  },
-                  "button": Object {
-                    "fontSize": 14,
-                    "fontWeight": 500,
-                    "lineHeight": 21,
-                  },
-                  "caption": Object {
-                    "color": "#777777",
-                    "fontSize": 12,
-                    "fontWeight": 400,
-                    "lineHeight": 18,
-                  },
-                  "h1": Object {
-                    "fontSize": 96,
-                    "fontWeight": 400,
-                    "lineHeight": 144,
-                  },
-                  "h2": Object {
-                    "fontSize": 60,
-                    "fontWeight": 400,
-                    "lineHeight": 90,
-                  },
-                  "h3": Object {
-                    "fontSize": 48,
-                    "fontWeight": 400,
-                    "lineHeight": 72,
-                  },
-                  "h4": Object {
-                    "fontSize": 34,
-                    "fontWeight": 400,
-                    "lineHeight": 51,
-                  },
-                  "h5": Object {
-                    "fontSize": 24,
-                    "fontWeight": 400,
-                    "lineHeight": 36,
-                  },
-                  "h6": Object {
-                    "fontSize": 20,
-                    "fontWeight": 500,
-                    "lineHeight": 30,
-                  },
-                  "overline": Object {
-                    "fontSize": 12,
-                    "fontWeight": 500,
-                    "lineHeight": 18,
-                  },
-                  "subtitle1": Object {
-                    "fontSize": 16,
-                    "fontWeight": 500,
-                    "lineHeight": 24,
-                  },
-                  "subtitle2": Object {
-                    "fontSize": 14,
-                    "fontWeight": 500,
-                    "lineHeight": 21,
-                  },
-                },
-              }
-            }
-            type="default"
-          >
-            <TextInput
-              allowFontScaling={true}
-              editable={true}
-              multiline={false}
-              numberOfLines={1}
-              onBlur={[Function]}
-              onChangeText={[Function]}
-              onFocus={[Function]}
-              placeholder="Size Small"
-              rejectResponderTermination={true}
-              state="default"
-              style={
-                Array [
-                  Object {
-                    "alignSelf": "center",
-<<<<<<< HEAD
-                    "color": "#777777",
-=======
-                    "color": "#333333",
->>>>>>> origin/update/react
-                    "flexBasis": 0,
-                    "flexGrow": 7,
-                    "flexShrink": 1,
-                    "fontSize": 16,
-                    "height": 56,
-                    "letterSpacing": 0,
-<<<<<<< HEAD
-                    "paddingBottom": 0,
-                    "paddingTop": 0,
-                    "textAlignVertical": "top",
-=======
->>>>>>> origin/update/react
-                  },
-                  Object {
-                    "height": 36,
-                  },
-                ]
-              }
-<<<<<<< HEAD
-              theme={
-                Object {
-                  "avatarSizes": Object {
-                    "huge": Object {
-                      "fontSize": "1.5rem",
-                      "size": 80,
-                    },
-                    "large": Object {
-                      "fontSize": "1rem",
-                      "size": 48,
-                    },
-                    "small": Object {
-                      "fontSize": ".875rem",
-                      "size": 32,
-                    },
-                    "standard": Object {
-                      "fontSize": "1rem",
-                      "size": 40,
-                    },
-                    "tiny": Object {
-                      "fontSize": ".625rem",
-                      "size": 24,
-                    },
-                  },
-                  "buttonSizes": Object {
-                    "large": Object {
-                      "minHeight": 48,
-                      "paddingBottom": 16,
-                      "paddingLeft": 16,
-                      "paddingRight": 16,
-                      "paddingTop": 16,
-                    },
-                    "medium": Object {
-                      "minHeight": 40,
-                      "paddingBottom": 12,
-                      "paddingLeft": 16,
-                      "paddingRight": 16,
-                      "paddingTop": 12,
-                    },
-                    "small": Object {
-                      "minHeight": 32,
-                      "paddingBottom": 8,
-                      "paddingLeft": 8,
-                      "paddingRight": 8,
-                      "paddingTop": 8,
-                    },
-                  },
-                  "iconSizes": Object {
-                    "huge": 144,
-                    "hugex": 192,
-                    "hugexx": 256,
-                    "large": 72,
-                    "largex": 96,
-                    "largexx": 128,
-                    "medium": 64,
-                    "micro": 16,
-                    "small": 32,
-                    "standard": 48,
-                    "tiny": 24,
-                  },
-                  "overrides": Object {
-                    "MuiAvatar": Object {
-                      "colorDefault": Object {
-                        "color": "#333333",
-                      },
-                    },
-                    "MuiButton": Object {
-                      "outlinedPrimary": Object {
-                        "color": "#333333",
-                      },
-                      "outlinedSecondary": Object {
-                        "color": "#333333",
-                      },
-                      "root": Object {
-                        "fontSize": "0.875rem",
-                        "minHeight": "40px",
-                        "padding": "8px 16px",
-                      },
-                      "sizeLarge": Object {
-                        "fontSize": "0.875rem",
-                        "minHeight": "48px",
-                      },
-                      "sizeSmall": Object {
-                        "fontSize": "0.875rem",
-                        "minHeight": "32px",
-                      },
-                    },
-                    "MuiIconButton": Object {
-                      "root": Object {
-                        "padding": "8px",
-                      },
-                      "sizeSmall": Object {
-                        "padding": "4px",
-                      },
-                    },
-                    "MuiListItem": Object {
-                      "button": Object {
-                        "&:hover": Object {
-                          "backgroundColor": "rgba(255, 107, 11, .08)",
-                        },
-                      },
-                      "root": Object {
-                        "&$selected": Object {
-                          "backgroundColor": "rgba(255, 107, 11, .16)",
-                        },
-                        "&$selected:hover": Object {
-                          "backgroundColor": "rgba(255, 107, 11, .08)",
-                        },
-                      },
-                    },
-                    "MuiTab": Object {
-                      "root": Object {
-                        "&$disabled": Object {
-                          "opacity": 0.24,
-                        },
-                      },
-                      "textColorInherit": Object {
-                        "&$disabled": Object {
-                          "opacity": 0.24,
-                        },
-                      },
-                      "wrapper": Object {
-                        "& > *:first-child": Object {
-                          "marginBottom": "2px !important",
-                        },
-                      },
-                    },
-                    "MuiToolbar": Object {
-                      "dense": Object {
-                        "@media (min-width: 600px)": Object {
-                          "minHeight": "56px",
-                        },
-                        "minHeight": "56px",
-                      },
-                      "gutters": Object {
-                        "@media (min-width: 600px)": Object {
-                          "padding": "0 16px",
-                        },
-                        "padding": "0 16px",
-                      },
-                      "regular": Object {
-                        "@media (min-width: 600px)": Object {
-                          "minHeight": "56px",
-                        },
-                        "minHeight": "56px",
-                      },
-                      "root": Object {
-                        "@media (min-width: 600px)": Object {
-                          "padding": "0 16px",
-                        },
-                        "padding": "0 16px",
-                      },
-                    },
-                  },
-                  "palette": Object {
-                    "action": Object {
-                      "disabled": "rgba(0, 0, 0, .24)",
-                    },
-                    "background": Object {
-                      "default": "#FAFAFA",
-                      "defaultContrastText": "#333333",
-                      "paper": "#FFFFFF",
-                      "paperContrastText": "#333333",
-                    },
-                    "complementary": Object {
-                      "highlight": "#000000",
-                      "link": "#227BBD",
-                      "linkContrastText": "#FFFFFF",
-                      "warning": "#FCC433",
-                      "warningContrastText": "#000000",
-                    },
-                    "error": Object {
-                      "contrastText": "#FFFFFF",
-                      "main": "#E74627",
-                    },
-                    "primary": Object {
-                      "contrastText": "#333333",
-                      "dark": "#EF8426",
-                      "light": "#FEFDE8",
-                      "main": "#F4AB34",
-                    },
-                    "secondary": Object {
-                      "contrastText": "#000000",
-                      "dark": "#EF8426",
-                      "light": "#FEFDE8",
-                      "main": "#FF6B0B",
-                    },
-                    "success": Object {
-                      "contrastText": "#FFFFFF",
-                      "main": "#569A32",
-                    },
-                    "text": Object {
-                      "disabled": "#BBBBBB",
-                      "hint": "#BBBBBB",
-                      "primary": "#333333",
-                      "secondary": "#777777",
-                    },
-                  },
-                  "shadows": Object {
-                    "0": "none",
-                    "1": "0 1px 1px 0 rgba(0, 0, 0, 0.14)",
-                    "12": "0 12px 17px 0 rgba(0, 0, 0, 0.14)",
-                    "16": "0 16px 24px 0 rgba(0, 0, 0, 0.14)",
-                    "2": "0 2px 2px 0 rgba(0, 0, 0, 0.14)",
-                    "24": "0 24px 38px 0 rgba(0, 0, 0, 0.14)",
-                    "3": "0 3px 4px 0 rgba(0, 0, 0, 0.14)",
-                    "4": "0 4px 5px 0 rgba(0, 0, 0, 0.14)",
-                    "6": "0 6px 10px 0 rgba(0, 0, 0, 0.14)",
-                    "8": "0 8px 10px 0 rgba(0, 0, 0, 0.14)",
-                    "9": "0 9px 12px 0 rgba(0, 0, 0, 0.14)",
-                  },
-                  "shape": Object {
-                    "badgeBorderRadius": 100,
-                    "borderRadius": 4,
-                  },
-                  "sizes": Object {
-                    "huge": 96,
-                    "hugex": 128,
-                    "hugexx": 144,
-                    "hugexxx": 192,
-                    "large": 64,
-                    "largex": 72,
-                    "largexx": 80,
-                    "largexxx": 88,
-                    "medium": 48,
-                    "mediumx": 56,
-                    "micro": 4,
-                    "none": 0,
-                    "semi": 32,
-                    "semix": 40,
-                    "small": 16,
-                    "standard": 24,
-                    "tiny": 8,
-                    "veryhuge": 256,
-                  },
-                  "spacing": Object {
-                    "spacing": 8,
-                    "spacingHuge": 64,
-                    "spacingLarge": 48,
-                    "spacingMicro": 4,
-                    "spacingNone": 0,
-                    "spacingSemi": 32,
-                    "spacingSmall": 16,
-                    "spacingStandard": 24,
-                    "spacingTiny": 8,
-                  },
-                  "typography": Object {
-                    "body1": Object {
-                      "color": "#333333",
-                      "fontSize": 16,
-                      "fontWeight": 400,
-                      "lineHeight": 24,
-                    },
-                    "body2": Object {
-                      "color": "#777777",
-                      "fontSize": 14,
-                      "fontWeight": 400,
-                      "lineHeight": 21,
-                    },
-                    "button": Object {
-                      "fontSize": 14,
-                      "fontWeight": 500,
-                      "lineHeight": 21,
-                    },
-                    "caption": Object {
-                      "color": "#777777",
-                      "fontSize": 12,
-                      "fontWeight": 400,
-                      "lineHeight": 18,
-                    },
-                    "h1": Object {
-                      "fontSize": 96,
-                      "fontWeight": 400,
-                      "lineHeight": 144,
-                    },
-                    "h2": Object {
-                      "fontSize": 60,
-                      "fontWeight": 400,
-                      "lineHeight": 90,
-                    },
-                    "h3": Object {
-                      "fontSize": 48,
-                      "fontWeight": 400,
-                      "lineHeight": 72,
-                    },
-                    "h4": Object {
-                      "fontSize": 34,
-                      "fontWeight": 400,
-                      "lineHeight": 51,
-                    },
-                    "h5": Object {
-                      "fontSize": 24,
-                      "fontWeight": 400,
-                      "lineHeight": 36,
-                    },
-                    "h6": Object {
-                      "fontSize": 20,
-                      "fontWeight": 500,
-                      "lineHeight": 30,
-                    },
-                    "overline": Object {
-                      "fontSize": 12,
-                      "fontWeight": 500,
-                      "lineHeight": 18,
-                    },
-                    "subtitle1": Object {
-                      "fontSize": 16,
-                      "fontWeight": 500,
-                      "lineHeight": 24,
-                    },
-                    "subtitle2": Object {
-                      "fontSize": 14,
-                      "fontWeight": 500,
-                      "lineHeight": 21,
-                    },
-                  },
-                }
-              }
-=======
->>>>>>> origin/update/react
-              type="default"
-              underlineColorAndroid="transparent"
-              value=""
-            />
-          </View>
-<<<<<<< HEAD
-          <View
-            margin={0}
-            style={
-              Array [
-                Object {
->>>>>>> origin/update/react
->>>>>>> origin/update/react
-                  "flexBasis": 0,
-                  "flexGrow": 1,
-                  "flexShrink": 1,
->>>>>>> origin/update/react
-                  "marginBottom": 0,
-                  "marginLeft": 0,
-                  "marginRight": 0,
-                  "marginTop": 0,
-                  "paddingBottom": 0,
-                  "paddingLeft": 0,
-                  "paddingRight": 0,
-                  "paddingTop": 0,
-                },
-              ]
-            }
-          >
-            <Text
-              color="#777777"
-              style={
-                Array [
-                  Object {
-<<<<<<< HEAD
-                    "color": "#777777",
-=======
-                    "backgroundColor": "#FFF",
-                    "color": "#777777",
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> origin/update/react
->>>>>>> origin/update/react
-                    "fontSize": 14,
-                    "fontWeight": "400",
-                    "lineHeight": 21,
-                  },
-                ]
-              }
-              type="body2"
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
-                    "fontSize": 12,
-                    "fontWeight": "400",
-                    "lineHeight": 18,
-                  },
-                ]
-              }
-              type="caption"
->>>>>>> origin/update/react
->>>>>>> origin/update/react
->>>>>>> origin/update/react
-            >
-              Size Small
-            </Text>
-          </View>
-<<<<<<< HEAD
-          <View
-            defaultSize="40px"
-=======
-<<<<<<< HEAD
-          <View
-            defaultSize="40px"
-=======
-<<<<<<< HEAD
-          <View
-            defaultSize="40px"
-=======
-=======
-          <Text
->>>>>>> origin/update/react
->>>>>>> origin/update/react
->>>>>>> origin/update/react
-            state="default"
-            style={
-              Array [
-                Object {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> origin/update/react
->>>>>>> origin/update/react
-                  "backgroundColor": "transparent",
-                  "borderColor": "#BBBBBB",
-                  "borderRadius": 4,
-                  "borderStyle": "solid",
-                  "borderWidth": 1,
-                  "flexDirection": "row",
-                  "height": 40,
-                  "justifyContent": "space-between",
-                  "paddingBottom": 0,
-                  "paddingLeft": 16,
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
-                  "color": "#777777",
-                  "fontSize": 12,
-                  "fontWeight": "400",
-                  "marginTop": 3,
->>>>>>> origin/update/react
->>>>>>> origin/update/react
->>>>>>> origin/update/react
-                },
-              ]
-            }
-            theme={
-              Object {
-                "avatarSizes": Object {
-                  "huge": Object {
-                    "fontSize": "1.5rem",
-                    "size": 80,
-                  },
-                  "large": Object {
-                    "fontSize": "1rem",
-                    "size": 48,
-                  },
-                  "small": Object {
-                    "fontSize": ".875rem",
-                    "size": 32,
-                  },
-                  "standard": Object {
-                    "fontSize": "1rem",
-                    "size": 40,
-                  },
-                  "tiny": Object {
-                    "fontSize": ".625rem",
-                    "size": 24,
-                  },
-                },
-                "buttonSizes": Object {
-                  "large": Object {
-                    "minHeight": 48,
-                    "paddingBottom": 16,
-                    "paddingLeft": 16,
-                    "paddingRight": 16,
-                    "paddingTop": 16,
-                  },
-                  "medium": Object {
-                    "minHeight": 40,
-                    "paddingBottom": 12,
-                    "paddingLeft": 16,
-                    "paddingRight": 16,
-                    "paddingTop": 12,
-                  },
-                  "small": Object {
-                    "minHeight": 32,
-                    "paddingBottom": 8,
-                    "paddingLeft": 8,
-                    "paddingRight": 8,
-                    "paddingTop": 8,
-                  },
-                },
-                "iconSizes": Object {
-                  "huge": 144,
-                  "hugex": 192,
-                  "hugexx": 256,
-                  "large": 72,
-                  "largex": 96,
-                  "largexx": 128,
-                  "medium": 64,
-                  "micro": 16,
-                  "small": 32,
-                  "standard": 48,
-                  "tiny": 24,
-                },
-                "overrides": Object {
-                  "MuiAvatar": Object {
-                    "colorDefault": Object {
-                      "color": "#333333",
-                    },
-                  },
-                  "MuiButton": Object {
-                    "outlinedPrimary": Object {
-                      "color": "#333333",
-                    },
-                    "outlinedSecondary": Object {
-                      "color": "#333333",
-                    },
-                    "root": Object {
-                      "fontSize": "0.875rem",
-                      "minHeight": "40px",
-                      "padding": "8px 16px",
-                    },
-                    "sizeLarge": Object {
-                      "fontSize": "0.875rem",
-                      "minHeight": "48px",
-                    },
-                    "sizeSmall": Object {
-                      "fontSize": "0.875rem",
-                      "minHeight": "32px",
-                    },
-                  },
-                  "MuiIconButton": Object {
-                    "root": Object {
-                      "padding": "8px",
-                    },
-                    "sizeSmall": Object {
-                      "padding": "4px",
-                    },
-                  },
-                  "MuiListItem": Object {
-                    "button": Object {
-                      "&:hover": Object {
-                        "backgroundColor": "rgba(255, 107, 11, .08)",
-                      },
-                    },
-                    "root": Object {
-                      "&$selected": Object {
-                        "backgroundColor": "rgba(255, 107, 11, .16)",
-                      },
-                      "&$selected:hover": Object {
-                        "backgroundColor": "rgba(255, 107, 11, .08)",
-                      },
-                    },
-                  },
-                  "MuiTab": Object {
-                    "root": Object {
-                      "&$disabled": Object {
-                        "opacity": 0.24,
-                      },
-                    },
-                    "textColorInherit": Object {
-                      "&$disabled": Object {
-                        "opacity": 0.24,
-                      },
-                    },
-                    "wrapper": Object {
-                      "& > *:first-child": Object {
-                        "marginBottom": "2px !important",
-                      },
-                    },
-                  },
-                  "MuiToolbar": Object {
-                    "dense": Object {
-                      "@media (min-width: 600px)": Object {
-                        "minHeight": "56px",
-                      },
-                      "minHeight": "56px",
-                    },
-                    "gutters": Object {
-                      "@media (min-width: 600px)": Object {
-                        "padding": "0 16px",
-                      },
-                      "padding": "0 16px",
-                    },
-                    "regular": Object {
-                      "@media (min-width: 600px)": Object {
-                        "minHeight": "56px",
-                      },
-                      "minHeight": "56px",
-                    },
-                    "root": Object {
-                      "@media (min-width: 600px)": Object {
-                        "padding": "0 16px",
-                      },
-                      "padding": "0 16px",
-                    },
-                  },
-                },
-                "palette": Object {
-                  "action": Object {
-                    "disabled": "rgba(0, 0, 0, .24)",
-                  },
-                  "background": Object {
-                    "default": "#FAFAFA",
-                    "defaultContrastText": "#333333",
-                    "paper": "#FFFFFF",
-                    "paperContrastText": "#333333",
-                  },
-                  "complementary": Object {
-                    "highlight": "#000000",
-                    "link": "#227BBD",
-                    "linkContrastText": "#FFFFFF",
-                    "warning": "#FCC433",
-                    "warningContrastText": "#000000",
-                  },
-                  "error": Object {
-                    "contrastText": "#FFFFFF",
-                    "main": "#E74627",
-                  },
-<<<<<<< HEAD
                   "grayscale": Object {
                     "colorBrdBlack": "#000000",
                     "colorBrdNatGray": "#333333",
@@ -1507,8 +603,6 @@ exports[`StoryNatTextInput component Should render StoryNatTextInput component  
                     "colorBrdNatGray2": "#BBBBBB",
                     "colorBrdNatGray3": "#EEEEEE",
                   },
-=======
->>>>>>> origin/update/react
                   "primary": Object {
                     "contrastText": "#333333",
                     "dark": "#EF8426",
@@ -1654,13 +748,6 @@ exports[`StoryNatTextInput component Should render StoryNatTextInput component  
             }
             type="default"
           >
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> origin/update/react
->>>>>>> origin/update/react
             <TextInput
               allowFontScaling={true}
               editable={true}
@@ -1867,7 +954,6 @@ exports[`StoryNatTextInput component Should render StoryNatTextInput component  
                       "contrastText": "#FFFFFF",
                       "main": "#E74627",
                     },
-<<<<<<< HEAD
                     "grayscale": Object {
                       "colorBrdBlack": "#000000",
                       "colorBrdNatGray": "#333333",
@@ -1875,8 +961,6 @@ exports[`StoryNatTextInput component Should render StoryNatTextInput component  
                       "colorBrdNatGray2": "#BBBBBB",
                       "colorBrdNatGray3": "#EEEEEE",
                     },
-=======
->>>>>>> origin/update/react
                     "primary": Object {
                       "contrastText": "#333333",
                       "dark": "#EF8426",
@@ -2030,12 +1114,6 @@ exports[`StoryNatTextInput component Should render StoryNatTextInput component  
             style={
               Array [
                 Object {
-<<<<<<< HEAD
-=======
-                  "flexBasis": 0,
-                  "flexGrow": 1,
-                  "flexShrink": 1,
->>>>>>> origin/update/react
                   "marginBottom": 0,
                   "marginLeft": 0,
                   "marginRight": 0,
@@ -2053,10 +1131,6 @@ exports[`StoryNatTextInput component Should render StoryNatTextInput component  
               style={
                 Array [
                   Object {
-<<<<<<< HEAD
-=======
-                    "backgroundColor": "#FFF",
->>>>>>> origin/update/react
                     "color": "#777777",
                     "fontSize": 12,
                     "fontWeight": "400",
@@ -2069,17 +1143,6 @@ exports[`StoryNatTextInput component Should render StoryNatTextInput component  
               Size Small
             </Text>
           </View>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
-            Size Small
-          </Text>
->>>>>>> origin/update/react
->>>>>>> origin/update/react
->>>>>>> origin/update/react
->>>>>>> origin/update/react
         </View>
         <View
           accessible={true}
@@ -2087,19 +1150,8 @@ exports[`StoryNatTextInput component Should render StoryNatTextInput component  
           style={
             Array [
               Object {
-                "marginTop": 0,
-<<<<<<< HEAD
+                "marginBottom": 0,
                 "width": "100%",
-=======
-<<<<<<< HEAD
-                "width": "100%",
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> origin/update/react
->>>>>>> origin/update/react
->>>>>>> origin/update/react
               },
             ]
           }
@@ -2278,7 +1330,6 @@ exports[`StoryNatTextInput component Should render StoryNatTextInput component  
                   "contrastText": "#FFFFFF",
                   "main": "#E74627",
                 },
-<<<<<<< HEAD
                 "grayscale": Object {
                   "colorBrdBlack": "#000000",
                   "colorBrdNatGray": "#333333",
@@ -2286,8 +1337,6 @@ exports[`StoryNatTextInput component Should render StoryNatTextInput component  
                   "colorBrdNatGray2": "#BBBBBB",
                   "colorBrdNatGray3": "#EEEEEE",
                 },
-=======
->>>>>>> origin/update/react
                 "primary": Object {
                   "contrastText": "#333333",
                   "dark": "#EF8426",
@@ -2327,17 +1376,6 @@ exports[`StoryNatTextInput component Should render StoryNatTextInput component  
               "shape": Object {
                 "badgeBorderRadius": 100,
                 "borderRadius": 4,
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
->>>>>>> origin/update/react
->>>>>>> origin/update/react
->>>>>>> origin/update/react
->>>>>>> origin/update/react
               },
               "sizes": Object {
                 "huge": 96,
@@ -2443,7 +1481,6 @@ exports[`StoryNatTextInput component Should render StoryNatTextInput component  
             }
           }
         >
-<<<<<<< HEAD
           <View
             margin={0}
             style={
@@ -2486,132 +1523,6 @@ exports[`StoryNatTextInput component Should render StoryNatTextInput component  
                 Object {
                   "backgroundColor": "transparent",
                   "borderColor": "#BBBBBB",
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> origin/update/react
->>>>>>> origin/update/react
-          <View
-            margin={0}
-            style={
-              Array [
-                Object {
-                  "flexBasis": 0,
-                  "flexGrow": 1,
-                  "flexShrink": 1,
-                  "marginBottom": 0,
-                  "marginLeft": 0,
-                  "marginRight": 0,
-                  "marginTop": 0,
-                  "paddingBottom": 0,
-                  "paddingLeft": 0,
-                  "paddingRight": 0,
-                  "paddingTop": 0,
-<<<<<<< HEAD
-                },
-              ]
-            }
-          >
-            <Text
-              color="#777777"
-              style={
-                Array [
-                  Object {
-                    "backgroundColor": "#FFF",
-                    "color": "#777777",
-                    "fontSize": 14,
-                    "fontWeight": "400",
-                    "lineHeight": 21,
-                  },
-                ]
-              }
-              type="body2"
-            >
-              Size Normal
-            </Text>
-          </View>
-          <View
-            defaultSize="56px"
-=======
-<<<<<<< HEAD
-                },
-              ]
-            }
-          >
-            <Text
-              color="#777777"
-              style={
-                Array [
-                  Object {
-                    "backgroundColor": "#FFF",
-                    "color": "#777777",
-                    "fontSize": 14,
-                    "fontWeight": "400",
-                    "lineHeight": 21,
-                  },
-                ]
-              }
-              type="body2"
-            >
-              Size Normal
-            </Text>
-          </View>
-          <View
-            defaultSize="56px"
-=======
-                },
-              ]
-            }
-          >
-            <Text
-              color="#777777"
-              style={
-                Array [
-                  Object {
-                    "backgroundColor": "#FFF",
-                    "color": "#777777",
-                    "fontSize": 14,
-                    "fontWeight": "400",
-                    "lineHeight": 21,
-                  },
-                ]
-              }
-              type="body2"
-            >
-              Size Normal
-            </Text>
-          </View>
-          <View
-            defaultSize="56px"
-=======
-          <Text
-            state="default"
-            style={
-              Array [
-                Object {
-                  "color": "#777777",
-                  "fontSize": 14,
-                  "fontWeight": "500",
-                  "marginBottom": 3,
-                },
-              ]
-            }
-            type="default"
-          >
-            Size Normal
-          </Text>
-          <View
-            defaultSize="56px"
-            state="default"
-            style={
-              Array [
-                Object {
-                  "backgroundColor": "transparent",
-                  "borderColor": "#777777",
->>>>>>> origin/update/react
                   "borderRadius": 4,
                   "borderStyle": "solid",
                   "borderWidth": 1,
@@ -2623,7 +1534,6 @@ exports[`StoryNatTextInput component Should render StoryNatTextInput component  
                 },
               ]
             }
-<<<<<<< HEAD
             theme={
               Object {
                 "avatarSizes": Object {
@@ -2949,8 +1859,6 @@ exports[`StoryNatTextInput component Should render StoryNatTextInput component  
                 },
               }
             }
-=======
->>>>>>> origin/update/react
             type="default"
           >
             <TextInput
@@ -2968,30 +1876,22 @@ exports[`StoryNatTextInput component Should render StoryNatTextInput component  
                 Array [
                   Object {
                     "alignSelf": "center",
-<<<<<<< HEAD
                     "color": "#777777",
-=======
-                    "color": "#333333",
->>>>>>> origin/update/react
                     "flexBasis": 0,
                     "flexGrow": 7,
                     "flexShrink": 1,
                     "fontSize": 16,
                     "height": 56,
                     "letterSpacing": 0,
-<<<<<<< HEAD
                     "paddingBottom": 0,
                     "paddingTop": 0,
                     "textAlignVertical": "top",
-=======
->>>>>>> origin/update/react
                   },
                   Object {
                     "height": 52,
                   },
                 ]
               }
-<<<<<<< HEAD
               theme={
                 Object {
                   "avatarSizes": Object {
@@ -3338,763 +2238,12 @@ exports[`StoryNatTextInput component Should render StoryNatTextInput component  
                 },
               ]
             }
-=======
-              type="default"
-              underlineColorAndroid="transparent"
-              value=""
-            />
-          </View>
-          <Text
->>>>>>> origin/update/react
->>>>>>> origin/update/react
->>>>>>> origin/update/react
-            state="default"
-            style={
-              Array [
-                Object {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> origin/update/react
->>>>>>> origin/update/react
-                  "backgroundColor": "transparent",
-                  "borderColor": "#BBBBBB",
-                  "borderRadius": 4,
-                  "borderStyle": "solid",
-                  "borderWidth": 1,
-                  "flexDirection": "row",
-                  "height": 56,
-                  "justifyContent": "space-between",
-                  "paddingBottom": 0,
-                  "paddingLeft": 16,
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
-                  "color": "#777777",
-                  "fontSize": 12,
-                  "fontWeight": "400",
-                  "marginTop": 3,
->>>>>>> origin/update/react
->>>>>>> origin/update/react
->>>>>>> origin/update/react
-                },
-              ]
-            }
-            theme={
-              Object {
-                "avatarSizes": Object {
-                  "huge": Object {
-                    "fontSize": "1.5rem",
-                    "size": 80,
-                  },
-                  "large": Object {
-                    "fontSize": "1rem",
-                    "size": 48,
-                  },
-                  "small": Object {
-                    "fontSize": ".875rem",
-                    "size": 32,
-                  },
-                  "standard": Object {
-                    "fontSize": "1rem",
-                    "size": 40,
-                  },
-                  "tiny": Object {
-                    "fontSize": ".625rem",
-                    "size": 24,
-                  },
-                },
-                "buttonSizes": Object {
-                  "large": Object {
-                    "minHeight": 48,
-                    "paddingBottom": 16,
-                    "paddingLeft": 16,
-                    "paddingRight": 16,
-                    "paddingTop": 16,
-                  },
-                  "medium": Object {
-                    "minHeight": 40,
-                    "paddingBottom": 12,
-                    "paddingLeft": 16,
-                    "paddingRight": 16,
-                    "paddingTop": 12,
-                  },
-                  "small": Object {
-                    "minHeight": 32,
-                    "paddingBottom": 8,
-                    "paddingLeft": 8,
-                    "paddingRight": 8,
-                    "paddingTop": 8,
-                  },
-                },
-                "iconSizes": Object {
-                  "huge": 144,
-                  "hugex": 192,
-                  "hugexx": 256,
-                  "large": 72,
-                  "largex": 96,
-                  "largexx": 128,
-                  "medium": 64,
-                  "micro": 16,
-                  "small": 32,
-                  "standard": 48,
-                  "tiny": 24,
-                },
-                "overrides": Object {
-                  "MuiAvatar": Object {
-                    "colorDefault": Object {
-                      "color": "#333333",
-                    },
-                  },
-                  "MuiButton": Object {
-                    "outlinedPrimary": Object {
-                      "color": "#333333",
-                    },
-                    "outlinedSecondary": Object {
-                      "color": "#333333",
-                    },
-                    "root": Object {
-                      "fontSize": "0.875rem",
-                      "minHeight": "40px",
-                      "padding": "8px 16px",
-                    },
-                    "sizeLarge": Object {
-                      "fontSize": "0.875rem",
-                      "minHeight": "48px",
-                    },
-                    "sizeSmall": Object {
-                      "fontSize": "0.875rem",
-                      "minHeight": "32px",
-                    },
-                  },
-                  "MuiIconButton": Object {
-                    "root": Object {
-                      "padding": "8px",
-                    },
-                    "sizeSmall": Object {
-                      "padding": "4px",
-                    },
-                  },
-                  "MuiListItem": Object {
-                    "button": Object {
-                      "&:hover": Object {
-                        "backgroundColor": "rgba(255, 107, 11, .08)",
-                      },
-                    },
-                    "root": Object {
-                      "&$selected": Object {
-                        "backgroundColor": "rgba(255, 107, 11, .16)",
-                      },
-                      "&$selected:hover": Object {
-                        "backgroundColor": "rgba(255, 107, 11, .08)",
-                      },
-                    },
-                  },
-                  "MuiTab": Object {
-                    "root": Object {
-                      "&$disabled": Object {
-                        "opacity": 0.24,
-                      },
-                    },
-                    "textColorInherit": Object {
-                      "&$disabled": Object {
-                        "opacity": 0.24,
-                      },
-                    },
-                    "wrapper": Object {
-                      "& > *:first-child": Object {
-                        "marginBottom": "2px !important",
-                      },
-                    },
-                  },
-                  "MuiToolbar": Object {
-                    "dense": Object {
-                      "@media (min-width: 600px)": Object {
-                        "minHeight": "56px",
-                      },
-                      "minHeight": "56px",
-                    },
-                    "gutters": Object {
-                      "@media (min-width: 600px)": Object {
-                        "padding": "0 16px",
-                      },
-                      "padding": "0 16px",
-                    },
-                    "regular": Object {
-                      "@media (min-width: 600px)": Object {
-                        "minHeight": "56px",
-                      },
-                      "minHeight": "56px",
-                    },
-                    "root": Object {
-                      "@media (min-width: 600px)": Object {
-                        "padding": "0 16px",
-                      },
-                      "padding": "0 16px",
-                    },
-                  },
-                },
-                "palette": Object {
-                  "action": Object {
-                    "disabled": "rgba(0, 0, 0, .24)",
-                  },
-                  "background": Object {
-                    "default": "#FAFAFA",
-                    "defaultContrastText": "#333333",
-                    "paper": "#FFFFFF",
-                    "paperContrastText": "#333333",
-                  },
-                  "complementary": Object {
-                    "highlight": "#000000",
-                    "link": "#227BBD",
-                    "linkContrastText": "#FFFFFF",
-                    "warning": "#FCC433",
-                    "warningContrastText": "#000000",
-                  },
-                  "error": Object {
-                    "contrastText": "#FFFFFF",
-                    "main": "#E74627",
-                  },
-                  "primary": Object {
-                    "contrastText": "#333333",
-                    "dark": "#EF8426",
-                    "light": "#FEFDE8",
-                    "main": "#F4AB34",
-                  },
-                  "secondary": Object {
-                    "contrastText": "#000000",
-                    "dark": "#EF8426",
-                    "light": "#FEFDE8",
-                    "main": "#FF6B0B",
-                  },
-                  "success": Object {
-                    "contrastText": "#FFFFFF",
-                    "main": "#569A32",
-                  },
-                  "text": Object {
-                    "disabled": "#BBBBBB",
-                    "hint": "#BBBBBB",
-                    "primary": "#333333",
-                    "secondary": "#777777",
-                  },
-                },
-                "shadows": Object {
-                  "0": "none",
-                  "1": "0 1px 1px 0 rgba(0, 0, 0, 0.14)",
-                  "12": "0 12px 17px 0 rgba(0, 0, 0, 0.14)",
-                  "16": "0 16px 24px 0 rgba(0, 0, 0, 0.14)",
-                  "2": "0 2px 2px 0 rgba(0, 0, 0, 0.14)",
-                  "24": "0 24px 38px 0 rgba(0, 0, 0, 0.14)",
-                  "3": "0 3px 4px 0 rgba(0, 0, 0, 0.14)",
-                  "4": "0 4px 5px 0 rgba(0, 0, 0, 0.14)",
-                  "6": "0 6px 10px 0 rgba(0, 0, 0, 0.14)",
-                  "8": "0 8px 10px 0 rgba(0, 0, 0, 0.14)",
-                  "9": "0 9px 12px 0 rgba(0, 0, 0, 0.14)",
-                },
-                "shape": Object {
-                  "badgeBorderRadius": 100,
-                  "borderRadius": 4,
-                },
-                "sizes": Object {
-                  "huge": 96,
-                  "hugex": 128,
-                  "hugexx": 144,
-                  "hugexxx": 192,
-                  "large": 64,
-                  "largex": 72,
-                  "largexx": 80,
-                  "largexxx": 88,
-                  "medium": 48,
-                  "mediumx": 56,
-                  "micro": 4,
-                  "none": 0,
-                  "semi": 32,
-                  "semix": 40,
-                  "small": 16,
-                  "standard": 24,
-                  "tiny": 8,
-                  "veryhuge": 256,
-                },
-                "spacing": Object {
-                  "spacing": 8,
-                  "spacingHuge": 64,
-                  "spacingLarge": 48,
-                  "spacingMicro": 4,
-                  "spacingNone": 0,
-                  "spacingSemi": 32,
-                  "spacingSmall": 16,
-                  "spacingStandard": 24,
-                  "spacingTiny": 8,
-                },
-                "typography": Object {
-                  "body1": Object {
-                    "color": "#333333",
-                    "fontSize": 16,
-                    "fontWeight": 400,
-                    "lineHeight": 24,
-                  },
-                  "body2": Object {
-                    "color": "#777777",
-                    "fontSize": 14,
-                    "fontWeight": 400,
-                    "lineHeight": 21,
-                  },
-                  "button": Object {
-                    "fontSize": 14,
-                    "fontWeight": 500,
-                    "lineHeight": 21,
-                  },
-                  "caption": Object {
-                    "color": "#777777",
-                    "fontSize": 12,
-                    "fontWeight": 400,
-                    "lineHeight": 18,
-                  },
-                  "h1": Object {
-                    "fontSize": 96,
-                    "fontWeight": 400,
-                    "lineHeight": 144,
-                  },
-                  "h2": Object {
-                    "fontSize": 60,
-                    "fontWeight": 400,
-                    "lineHeight": 90,
-                  },
-                  "h3": Object {
-                    "fontSize": 48,
-                    "fontWeight": 400,
-                    "lineHeight": 72,
-                  },
-                  "h4": Object {
-                    "fontSize": 34,
-                    "fontWeight": 400,
-                    "lineHeight": 51,
-                  },
-                  "h5": Object {
-                    "fontSize": 24,
-                    "fontWeight": 400,
-                    "lineHeight": 36,
-                  },
-                  "h6": Object {
-                    "fontSize": 20,
-                    "fontWeight": 500,
-                    "lineHeight": 30,
-                  },
-                  "overline": Object {
-                    "fontSize": 12,
-                    "fontWeight": 500,
-                    "lineHeight": 18,
-                  },
-                  "subtitle1": Object {
-                    "fontSize": 16,
-                    "fontWeight": 500,
-                    "lineHeight": 24,
-                  },
-                  "subtitle2": Object {
-                    "fontSize": 14,
-                    "fontWeight": 500,
-                    "lineHeight": 21,
-                  },
-                },
-              }
-            }
-            type="default"
-          >
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> origin/update/react
->>>>>>> origin/update/react
-            <TextInput
-              allowFontScaling={true}
-              editable={true}
-              multiline={false}
-              numberOfLines={1}
-              onBlur={[Function]}
-              onChangeText={[Function]}
-              onFocus={[Function]}
-              placeholder="Size Normal"
-              rejectResponderTermination={true}
-              state="default"
-              style={
-                Array [
-                  Object {
-                    "alignSelf": "center",
-                    "color": "#777777",
-                    "flexBasis": 0,
-                    "flexGrow": 7,
-                    "flexShrink": 1,
-                    "fontSize": 16,
-                    "height": 56,
-                    "letterSpacing": 0,
-                    "paddingBottom": 0,
-                    "paddingTop": 0,
-                    "textAlignVertical": "top",
-                  },
-                  Object {
-                    "height": 52,
-                  },
-                ]
-              }
-              theme={
-                Object {
-                  "avatarSizes": Object {
-                    "huge": Object {
-                      "fontSize": "1.5rem",
-                      "size": 80,
-                    },
-                    "large": Object {
-                      "fontSize": "1rem",
-                      "size": 48,
-                    },
-                    "small": Object {
-                      "fontSize": ".875rem",
-                      "size": 32,
-                    },
-                    "standard": Object {
-                      "fontSize": "1rem",
-                      "size": 40,
-                    },
-                    "tiny": Object {
-                      "fontSize": ".625rem",
-                      "size": 24,
-                    },
-                  },
-                  "buttonSizes": Object {
-                    "large": Object {
-                      "minHeight": 48,
-                      "paddingBottom": 16,
-                      "paddingLeft": 16,
-                      "paddingRight": 16,
-                      "paddingTop": 16,
-                    },
-                    "medium": Object {
-                      "minHeight": 40,
-                      "paddingBottom": 12,
-                      "paddingLeft": 16,
-                      "paddingRight": 16,
-                      "paddingTop": 12,
-                    },
-                    "small": Object {
-                      "minHeight": 32,
-                      "paddingBottom": 8,
-                      "paddingLeft": 8,
-                      "paddingRight": 8,
-                      "paddingTop": 8,
-                    },
-                  },
-                  "iconSizes": Object {
-                    "huge": 144,
-                    "hugex": 192,
-                    "hugexx": 256,
-                    "large": 72,
-                    "largex": 96,
-                    "largexx": 128,
-                    "medium": 64,
-                    "micro": 16,
-                    "small": 32,
-                    "standard": 48,
-                    "tiny": 24,
-                  },
-                  "overrides": Object {
-                    "MuiAvatar": Object {
-                      "colorDefault": Object {
-                        "color": "#333333",
-                      },
-                    },
-                    "MuiButton": Object {
-                      "outlinedPrimary": Object {
-                        "color": "#333333",
-                      },
-                      "outlinedSecondary": Object {
-                        "color": "#333333",
-                      },
-                      "root": Object {
-                        "fontSize": "0.875rem",
-                        "minHeight": "40px",
-                        "padding": "8px 16px",
-                      },
-                      "sizeLarge": Object {
-                        "fontSize": "0.875rem",
-                        "minHeight": "48px",
-                      },
-                      "sizeSmall": Object {
-                        "fontSize": "0.875rem",
-                        "minHeight": "32px",
-                      },
-                    },
-                    "MuiIconButton": Object {
-                      "root": Object {
-                        "padding": "8px",
-                      },
-                      "sizeSmall": Object {
-                        "padding": "4px",
-                      },
-                    },
-                    "MuiListItem": Object {
-                      "button": Object {
-                        "&:hover": Object {
-                          "backgroundColor": "rgba(255, 107, 11, .08)",
-                        },
-                      },
-                      "root": Object {
-                        "&$selected": Object {
-                          "backgroundColor": "rgba(255, 107, 11, .16)",
-                        },
-                        "&$selected:hover": Object {
-                          "backgroundColor": "rgba(255, 107, 11, .08)",
-                        },
-                      },
-                    },
-                    "MuiTab": Object {
-                      "root": Object {
-                        "&$disabled": Object {
-                          "opacity": 0.24,
-                        },
-                      },
-                      "textColorInherit": Object {
-                        "&$disabled": Object {
-                          "opacity": 0.24,
-                        },
-                      },
-                      "wrapper": Object {
-                        "& > *:first-child": Object {
-                          "marginBottom": "2px !important",
-                        },
-                      },
-                    },
-                    "MuiToolbar": Object {
-                      "dense": Object {
-                        "@media (min-width: 600px)": Object {
-                          "minHeight": "56px",
-                        },
-                        "minHeight": "56px",
-                      },
-                      "gutters": Object {
-                        "@media (min-width: 600px)": Object {
-                          "padding": "0 16px",
-                        },
-                        "padding": "0 16px",
-                      },
-                      "regular": Object {
-                        "@media (min-width: 600px)": Object {
-                          "minHeight": "56px",
-                        },
-                        "minHeight": "56px",
-                      },
-                      "root": Object {
-                        "@media (min-width: 600px)": Object {
-                          "padding": "0 16px",
-                        },
-                        "padding": "0 16px",
-                      },
-                    },
-                  },
-                  "palette": Object {
-                    "action": Object {
-                      "disabled": "rgba(0, 0, 0, .24)",
-                    },
-                    "background": Object {
-                      "default": "#FAFAFA",
-                      "defaultContrastText": "#333333",
-                      "paper": "#FFFFFF",
-                      "paperContrastText": "#333333",
-                    },
-                    "complementary": Object {
-                      "highlight": "#000000",
-                      "link": "#227BBD",
-                      "linkContrastText": "#FFFFFF",
-                      "warning": "#FCC433",
-                      "warningContrastText": "#000000",
-                    },
-                    "error": Object {
-                      "contrastText": "#FFFFFF",
-                      "main": "#E74627",
-                    },
-                    "primary": Object {
-                      "contrastText": "#333333",
-                      "dark": "#EF8426",
-                      "light": "#FEFDE8",
-                      "main": "#F4AB34",
-                    },
-                    "secondary": Object {
-                      "contrastText": "#000000",
-                      "dark": "#EF8426",
-                      "light": "#FEFDE8",
-                      "main": "#FF6B0B",
-                    },
-                    "success": Object {
-                      "contrastText": "#FFFFFF",
-                      "main": "#569A32",
-                    },
-                    "text": Object {
-                      "disabled": "#BBBBBB",
-                      "hint": "#BBBBBB",
-                      "primary": "#333333",
-                      "secondary": "#777777",
-                    },
-                  },
-                  "shadows": Object {
-                    "0": "none",
-                    "1": "0 1px 1px 0 rgba(0, 0, 0, 0.14)",
-                    "12": "0 12px 17px 0 rgba(0, 0, 0, 0.14)",
-                    "16": "0 16px 24px 0 rgba(0, 0, 0, 0.14)",
-                    "2": "0 2px 2px 0 rgba(0, 0, 0, 0.14)",
-                    "24": "0 24px 38px 0 rgba(0, 0, 0, 0.14)",
-                    "3": "0 3px 4px 0 rgba(0, 0, 0, 0.14)",
-                    "4": "0 4px 5px 0 rgba(0, 0, 0, 0.14)",
-                    "6": "0 6px 10px 0 rgba(0, 0, 0, 0.14)",
-                    "8": "0 8px 10px 0 rgba(0, 0, 0, 0.14)",
-                    "9": "0 9px 12px 0 rgba(0, 0, 0, 0.14)",
-                  },
-                  "shape": Object {
-                    "badgeBorderRadius": 100,
-                    "borderRadius": 4,
-                  },
-                  "sizes": Object {
-                    "huge": 96,
-                    "hugex": 128,
-                    "hugexx": 144,
-                    "hugexxx": 192,
-                    "large": 64,
-                    "largex": 72,
-                    "largexx": 80,
-                    "largexxx": 88,
-                    "medium": 48,
-                    "mediumx": 56,
-                    "micro": 4,
-                    "none": 0,
-                    "semi": 32,
-                    "semix": 40,
-                    "small": 16,
-                    "standard": 24,
-                    "tiny": 8,
-                    "veryhuge": 256,
-                  },
-                  "spacing": Object {
-                    "spacing": 8,
-                    "spacingHuge": 64,
-                    "spacingLarge": 48,
-                    "spacingMicro": 4,
-                    "spacingNone": 0,
-                    "spacingSemi": 32,
-                    "spacingSmall": 16,
-                    "spacingStandard": 24,
-                    "spacingTiny": 8,
-                  },
-                  "typography": Object {
-                    "body1": Object {
-                      "color": "#333333",
-                      "fontSize": 16,
-                      "fontWeight": 400,
-                      "lineHeight": 24,
-                    },
-                    "body2": Object {
-                      "color": "#777777",
-                      "fontSize": 14,
-                      "fontWeight": 400,
-                      "lineHeight": 21,
-                    },
-                    "button": Object {
-                      "fontSize": 14,
-                      "fontWeight": 500,
-                      "lineHeight": 21,
-                    },
-                    "caption": Object {
-                      "color": "#777777",
-                      "fontSize": 12,
-                      "fontWeight": 400,
-                      "lineHeight": 18,
-                    },
-                    "h1": Object {
-                      "fontSize": 96,
-                      "fontWeight": 400,
-                      "lineHeight": 144,
-                    },
-                    "h2": Object {
-                      "fontSize": 60,
-                      "fontWeight": 400,
-                      "lineHeight": 90,
-                    },
-                    "h3": Object {
-                      "fontSize": 48,
-                      "fontWeight": 400,
-                      "lineHeight": 72,
-                    },
-                    "h4": Object {
-                      "fontSize": 34,
-                      "fontWeight": 400,
-                      "lineHeight": 51,
-                    },
-                    "h5": Object {
-                      "fontSize": 24,
-                      "fontWeight": 400,
-                      "lineHeight": 36,
-                    },
-                    "h6": Object {
-                      "fontSize": 20,
-                      "fontWeight": 500,
-                      "lineHeight": 30,
-                    },
-                    "overline": Object {
-                      "fontSize": 12,
-                      "fontWeight": 500,
-                      "lineHeight": 18,
-                    },
-                    "subtitle1": Object {
-                      "fontSize": 16,
-                      "fontWeight": 500,
-                      "lineHeight": 24,
-                    },
-                    "subtitle2": Object {
-                      "fontSize": 14,
-                      "fontWeight": 500,
-                      "lineHeight": 21,
-                    },
-                  },
-                }
-              }
-              type="default"
-              underlineColorAndroid="transparent"
-              value=""
-            />
-          </View>
-          <View
-            margin={0}
-            style={
-              Array [
-                Object {
-                  "flexBasis": 0,
-                  "flexGrow": 1,
-                  "flexShrink": 1,
-                  "marginBottom": 0,
-                  "marginLeft": 0,
-                  "marginRight": 0,
-                  "marginTop": 0,
-                  "paddingBottom": 0,
-                  "paddingLeft": 0,
-                  "paddingRight": 0,
-                  "paddingTop": 0,
-                },
-              ]
-            }
->>>>>>> origin/update/react
           >
             <Text
               color="#777777"
               style={
                 Array [
                   Object {
-<<<<<<< HEAD
-=======
-                    "backgroundColor": "#FFF",
->>>>>>> origin/update/react
                     "color": "#777777",
                     "fontSize": 12,
                     "fontWeight": "400",
@@ -4107,19 +2256,6 @@ exports[`StoryNatTextInput component Should render StoryNatTextInput component  
               Size Normal
             </Text>
           </View>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
-            Size Normal
-          </Text>
->>>>>>> origin/update/react
->>>>>>> origin/update/react
->>>>>>> origin/update/react
->>>>>>> origin/update/react
         </View>
         <View
           accessible={true}
@@ -4127,19 +2263,8 @@ exports[`StoryNatTextInput component Should render StoryNatTextInput component  
           style={
             Array [
               Object {
-                "marginTop": 0,
-<<<<<<< HEAD
+                "marginBottom": 0,
                 "width": "100%",
-=======
-<<<<<<< HEAD
-                "width": "100%",
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> origin/update/react
->>>>>>> origin/update/react
->>>>>>> origin/update/react
               },
             ]
           }
@@ -4318,7 +2443,6 @@ exports[`StoryNatTextInput component Should render StoryNatTextInput component  
                   "contrastText": "#FFFFFF",
                   "main": "#E74627",
                 },
-<<<<<<< HEAD
                 "grayscale": Object {
                   "colorBrdBlack": "#000000",
                   "colorBrdNatGray": "#333333",
@@ -4326,8 +2450,6 @@ exports[`StoryNatTextInput component Should render StoryNatTextInput component  
                   "colorBrdNatGray2": "#BBBBBB",
                   "colorBrdNatGray3": "#EEEEEE",
                 },
-=======
->>>>>>> origin/update/react
                 "primary": Object {
                   "contrastText": "#333333",
                   "dark": "#EF8426",
@@ -4367,17 +2489,6 @@ exports[`StoryNatTextInput component Should render StoryNatTextInput component  
               "shape": Object {
                 "badgeBorderRadius": 100,
                 "borderRadius": 4,
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
->>>>>>> origin/update/react
->>>>>>> origin/update/react
->>>>>>> origin/update/react
->>>>>>> origin/update/react
               },
               "sizes": Object {
                 "huge": 96,
@@ -4483,27 +2594,11 @@ exports[`StoryNatTextInput component Should render StoryNatTextInput component  
             }
           }
         >
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> origin/update/react
->>>>>>> origin/update/react
->>>>>>> origin/update/react
           <View
             margin={0}
             style={
               Array [
                 Object {
-<<<<<<< HEAD
-=======
-                  "flexBasis": 0,
-                  "flexGrow": 1,
-                  "flexShrink": 1,
->>>>>>> origin/update/react
                   "marginBottom": 0,
                   "marginLeft": 0,
                   "marginRight": 0,
@@ -4512,10 +2607,6 @@ exports[`StoryNatTextInput component Should render StoryNatTextInput component  
                   "paddingLeft": 0,
                   "paddingRight": 0,
                   "paddingTop": 0,
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> origin/update/react
                 },
               ]
             }
@@ -4525,10 +2616,6 @@ exports[`StoryNatTextInput component Should render StoryNatTextInput component  
               style={
                 Array [
                   Object {
-<<<<<<< HEAD
-=======
-                    "backgroundColor": "#FFF",
->>>>>>> origin/update/react
                     "color": "#777777",
                     "fontSize": 14,
                     "fontWeight": "400",
@@ -4543,149 +2630,10 @@ exports[`StoryNatTextInput component Should render StoryNatTextInput component  
           </View>
           <View
             defaultSize="160px"
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
-                },
-              ]
-            }
-          >
-            <Text
-              color="#777777"
-              style={
-                Array [
-                  Object {
-                    "backgroundColor": "#FFF",
-                    "color": "#777777",
-                    "fontSize": 14,
-                    "fontWeight": "400",
-                    "lineHeight": 21,
-                  },
-                ]
-              }
-              type="body2"
-            >
-              Multiple lines
-            </Text>
-          </View>
-          <View
-            defaultSize="160px"
-=======
-                },
-              ]
-            }
-          >
-            <Text
-              color="#777777"
-              style={
-                Array [
-                  Object {
-                    "backgroundColor": "#FFF",
-                    "color": "#777777",
-                    "fontSize": 14,
-                    "fontWeight": "400",
-                    "lineHeight": 21,
-                  },
-                ]
-              }
-              type="body2"
-            >
-              Multiple lines
-            </Text>
-          </View>
-          <View
-            defaultSize="160px"
-=======
-          <Text
             state="default"
             style={
               Array [
                 Object {
-                  "color": "#777777",
-                  "fontSize": 14,
-                  "fontWeight": "500",
-                  "marginBottom": 3,
-                },
-              ]
-            }
-            type="default"
-          >
-            Multiple lines
-          </Text>
-          <View
-            defaultSize="160px"
-            state="default"
-            style={
-              Array [
-                Object {
-                  "backgroundColor": "transparent",
-                  "borderColor": "#777777",
-                  "borderRadius": 4,
-                  "borderStyle": "solid",
-                  "borderWidth": 1,
-                  "flexDirection": "row",
-                  "height": 160,
-                  "justifyContent": "space-between",
-                  "paddingBottom": 0,
-                  "paddingLeft": 16,
-                },
-              ]
-            }
-            type="default"
-          >
-            <TextInput
-              allowFontScaling={true}
-              editable={true}
-              multiline={true}
-              numberOfLines={4}
-              onBlur={[Function]}
-              onChangeText={[Function]}
-              onFocus={[Function]}
-              placeholder="Multiple lines"
-              rejectResponderTermination={true}
-              state="default"
-              style={
-                Array [
-                  Object {
-                    "alignSelf": "center",
-                    "color": "#333333",
-                    "flexBasis": 0,
-                    "flexGrow": 7,
-                    "flexShrink": 1,
-                    "fontSize": 16,
-                    "height": 56,
-                    "letterSpacing": 0,
-                  },
-                  Object {
-                    "height": 156,
-                  },
-                ]
-              }
-              type="default"
-              underlineColorAndroid="transparent"
-              value=""
-            />
-          </View>
-          <Text
->>>>>>> origin/update/react
->>>>>>> origin/update/react
->>>>>>> origin/update/react
->>>>>>> origin/update/react
-            state="default"
-            style={
-              Array [
-                Object {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> origin/update/react
->>>>>>> origin/update/react
->>>>>>> origin/update/react
                   "backgroundColor": "transparent",
                   "borderColor": "#BBBBBB",
                   "borderRadius": 4,
@@ -4696,21 +2644,6 @@ exports[`StoryNatTextInput component Should render StoryNatTextInput component  
                   "justifyContent": "space-between",
                   "paddingBottom": 0,
                   "paddingLeft": 16,
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
-                  "color": "#777777",
-                  "fontSize": 12,
-                  "fontWeight": "400",
-                  "marginTop": 3,
->>>>>>> origin/update/react
->>>>>>> origin/update/react
->>>>>>> origin/update/react
->>>>>>> origin/update/react
                 },
               ]
             }
@@ -4889,7 +2822,6 @@ exports[`StoryNatTextInput component Should render StoryNatTextInput component  
                     "contrastText": "#FFFFFF",
                     "main": "#E74627",
                   },
-<<<<<<< HEAD
                   "grayscale": Object {
                     "colorBrdBlack": "#000000",
                     "colorBrdNatGray": "#333333",
@@ -4897,8 +2829,6 @@ exports[`StoryNatTextInput component Should render StoryNatTextInput component  
                     "colorBrdNatGray2": "#BBBBBB",
                     "colorBrdNatGray3": "#EEEEEE",
                   },
-=======
->>>>>>> origin/update/react
                   "primary": Object {
                     "contrastText": "#333333",
                     "dark": "#EF8426",
@@ -5044,16 +2974,6 @@ exports[`StoryNatTextInput component Should render StoryNatTextInput component  
             }
             type="default"
           >
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> origin/update/react
->>>>>>> origin/update/react
->>>>>>> origin/update/react
             <TextInput
               allowFontScaling={true}
               editable={true}
@@ -5260,7 +3180,6 @@ exports[`StoryNatTextInput component Should render StoryNatTextInput component  
                       "contrastText": "#FFFFFF",
                       "main": "#E74627",
                     },
-<<<<<<< HEAD
                     "grayscale": Object {
                       "colorBrdBlack": "#000000",
                       "colorBrdNatGray": "#333333",
@@ -5268,8 +3187,6 @@ exports[`StoryNatTextInput component Should render StoryNatTextInput component  
                       "colorBrdNatGray2": "#BBBBBB",
                       "colorBrdNatGray3": "#EEEEEE",
                     },
-=======
->>>>>>> origin/update/react
                     "primary": Object {
                       "contrastText": "#333333",
                       "dark": "#EF8426",
@@ -5423,12 +3340,6 @@ exports[`StoryNatTextInput component Should render StoryNatTextInput component  
             style={
               Array [
                 Object {
-<<<<<<< HEAD
-=======
-                  "flexBasis": 0,
-                  "flexGrow": 1,
-                  "flexShrink": 1,
->>>>>>> origin/update/react
                   "marginBottom": 0,
                   "marginLeft": 0,
                   "marginRight": 0,
@@ -5446,10 +3357,6 @@ exports[`StoryNatTextInput component Should render StoryNatTextInput component  
               style={
                 Array [
                   Object {
-<<<<<<< HEAD
-=======
-                    "backgroundColor": "#FFF",
->>>>>>> origin/update/react
                     "color": "#777777",
                     "fontSize": 12,
                     "fontWeight": "400",
@@ -5469,15 +3376,8 @@ exports[`StoryNatTextInput component Should render StoryNatTextInput component  
           style={
             Array [
               Object {
-                "marginTop": 0,
-<<<<<<< HEAD
+                "marginBottom": 0,
                 "width": "100%",
-=======
-<<<<<<< HEAD
-                "width": "100%",
-=======
->>>>>>> origin/update/react
->>>>>>> origin/update/react
               },
             ]
           }
@@ -5656,7 +3556,6 @@ exports[`StoryNatTextInput component Should render StoryNatTextInput component  
                   "contrastText": "#FFFFFF",
                   "main": "#E74627",
                 },
-<<<<<<< HEAD
                 "grayscale": Object {
                   "colorBrdBlack": "#000000",
                   "colorBrdNatGray": "#333333",
@@ -5664,8 +3563,6 @@ exports[`StoryNatTextInput component Should render StoryNatTextInput component  
                   "colorBrdNatGray2": "#BBBBBB",
                   "colorBrdNatGray3": "#EEEEEE",
                 },
-=======
->>>>>>> origin/update/react
                 "primary": Object {
                   "contrastText": "#333333",
                   "dark": "#EF8426",
@@ -5810,50 +3707,6 @@ exports[`StoryNatTextInput component Should render StoryNatTextInput component  
             }
           }
         >
-          <View
-            margin={0}
-            style={
-              Array [
-                Object {
-<<<<<<< HEAD
-=======
-                  "flexBasis": 0,
-                  "flexGrow": 1,
-                  "flexShrink": 1,
->>>>>>> origin/update/react
-                  "marginBottom": 0,
-                  "marginLeft": 0,
-                  "marginRight": 0,
-                  "marginTop": 0,
-                  "paddingBottom": 0,
-                  "paddingLeft": 0,
-                  "paddingRight": 0,
-                  "paddingTop": 0,
-                },
-              ]
-            }
-          >
-            <Text
-              color="#777777"
-              style={
-                Array [
-                  Object {
-<<<<<<< HEAD
-=======
-                    "backgroundColor": "#FFF",
->>>>>>> origin/update/react
-                    "color": "#777777",
-                    "fontSize": 14,
-                    "fontWeight": "400",
-                    "lineHeight": 21,
-                  },
-                ]
-              }
-              type="body2"
-            >
-              
-            </Text>
-          </View>
           <View
             defaultSize="40px"
             state="default"
@@ -6048,7 +3901,6 @@ exports[`StoryNatTextInput component Should render StoryNatTextInput component  
                     "contrastText": "#FFFFFF",
                     "main": "#E74627",
                   },
-<<<<<<< HEAD
                   "grayscale": Object {
                     "colorBrdBlack": "#000000",
                     "colorBrdNatGray": "#333333",
@@ -6056,8 +3908,6 @@ exports[`StoryNatTextInput component Should render StoryNatTextInput component  
                     "colorBrdNatGray2": "#BBBBBB",
                     "colorBrdNatGray3": "#EEEEEE",
                   },
-=======
->>>>>>> origin/update/react
                   "primary": Object {
                     "contrastText": "#333333",
                     "dark": "#EF8426",
@@ -6409,7 +4259,6 @@ exports[`StoryNatTextInput component Should render StoryNatTextInput component  
                       "contrastText": "#FFFFFF",
                       "main": "#E74627",
                     },
-<<<<<<< HEAD
                     "grayscale": Object {
                       "colorBrdBlack": "#000000",
                       "colorBrdNatGray": "#333333",
@@ -6417,8 +4266,6 @@ exports[`StoryNatTextInput component Should render StoryNatTextInput component  
                       "colorBrdNatGray2": "#BBBBBB",
                       "colorBrdNatGray3": "#EEEEEE",
                     },
-=======
->>>>>>> origin/update/react
                     "primary": Object {
                       "contrastText": "#333333",
                       "dark": "#EF8426",
@@ -6573,12 +4420,6 @@ exports[`StoryNatTextInput component Should render StoryNatTextInput component  
           style={
             Array [
               Object {
-<<<<<<< HEAD
-=======
-                "flexBasis": 0,
-                "flexGrow": 1,
-                "flexShrink": 1,
->>>>>>> origin/update/react
                 "marginBottom": 24,
                 "marginLeft": 0,
                 "marginRight": 0,
@@ -6587,55 +4428,19 @@ exports[`StoryNatTextInput component Should render StoryNatTextInput component  
                 "paddingLeft": 0,
                 "paddingRight": 0,
                 "paddingTop": 0,
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
-            Multiple lines
-          </Text>
-        </View>
-        <View
-          accessible={true}
-          defaultMargin="0px"
-          style={
-            Array [
-              Object {
-                "marginTop": 0,
->>>>>>> origin/update/react
->>>>>>> origin/update/react
->>>>>>> origin/update/react
->>>>>>> origin/update/react
               },
             ]
           }
         >
           <Text
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> origin/update/react
->>>>>>> origin/update/react
->>>>>>> origin/update/react
             color="#333333"
             style={
               Array [
                 Object {
-<<<<<<< HEAD
-=======
-                  "backgroundColor": "#FFF",
->>>>>>> origin/update/react
                   "color": "#333333",
                   "fontSize": 16,
                   "fontWeight": "400",
                   "lineHeight": 24,
-<<<<<<< HEAD
                 },
               ]
             }
@@ -6644,119 +4449,6 @@ exports[`StoryNatTextInput component Should render StoryNatTextInput component  
             body1. Lorem ipsum dolor sit amet, consectetur adipscing elit. Quos blanditiis tenetur unde suscipit, quam beatae rerum inventore consectetur, neque doloribus, cupiditate numquam dignissimos laborum fugiat deleniti? Eum quasi quidem quibusdam
           </Text>
         </View>
-=======
-<<<<<<< HEAD
-                },
-              ]
-            }
-            type="body1"
-          >
-            body1. Lorem ipsum dolor sit amet, consectetur adipscing elit. Quos blanditiis tenetur unde suscipit, quam beatae rerum inventore consectetur, neque doloribus, cupiditate numquam dignissimos laborum fugiat deleniti? Eum quasi quidem quibusdam
-          </Text>
-        </View>
-=======
-<<<<<<< HEAD
-                },
-              ]
-            }
-            type="body1"
-          >
-            body1. Lorem ipsum dolor sit amet, consectetur adipscing elit. Quos blanditiis tenetur unde suscipit, quam beatae rerum inventore consectetur, neque doloribus, cupiditate numquam dignissimos laborum fugiat deleniti? Eum quasi quidem quibusdam
-          </Text>
-        </View>
-=======
-                },
-              ]
-            }
-            type="body1"
-          >
-            body1. Lorem ipsum dolor sit amet, consectetur adipscing elit. Quos blanditiis tenetur unde suscipit, quam beatae rerum inventore consectetur, neque doloribus, cupiditate numquam dignissimos laborum fugiat deleniti? Eum quasi quidem quibusdam
-          </Text>
-        </View>
-=======
-            state="default"
-            style={
-              Array [
-                Object {
-                  "color": "#777777",
-                  "fontSize": 14,
-                  "fontWeight": "500",
-                  "marginBottom": 3,
-                },
-              ]
-            }
-            type="default"
-          >
-            
-          </Text>
-          <View
-            defaultSize="40px"
-            state="default"
-            style={
-              Array [
-                Object {
-                  "backgroundColor": "transparent",
-                  "borderColor": "#777777",
-                  "borderRadius": 4,
-                  "borderStyle": "solid",
-                  "borderWidth": 1,
-                  "flexDirection": "row",
-                  "height": 40,
-                  "justifyContent": "space-between",
-                  "paddingBottom": 0,
-                  "paddingLeft": 16,
-                },
-              ]
-            }
-            type="default"
-          >
-            <TextInput
-              allowFontScaling={true}
-              editable={true}
-              multiline={false}
-              numberOfLines={1}
-              onBlur={[Function]}
-              onChangeText={[Function]}
-              onFocus={[Function]}
-              placeholder="Search"
-              rejectResponderTermination={true}
-              state="default"
-              style={
-                Array [
-                  Object {
-                    "alignSelf": "center",
-                    "color": "#333333",
-                    "flexBasis": 0,
-                    "flexGrow": 7,
-                    "flexShrink": 1,
-                    "fontSize": 16,
-                    "height": 56,
-                    "letterSpacing": 0,
-                  },
-                  Object {
-                    "height": 36,
-                  },
-                ]
-              }
-              type="default"
-              underlineColorAndroid="transparent"
-              value=""
-            />
-          </View>
-        </View>
-        <Text
-          style={
-            Object {
-              "marginTop": 20,
-            }
-          }
-        >
-          You can apply margin-top by sending 'margin' prop, with values: none, dense or normal.
-        </Text>
->>>>>>> origin/update/react
->>>>>>> origin/update/react
->>>>>>> origin/update/react
->>>>>>> origin/update/react
       </View>
     </RCTScrollView>
   </View>

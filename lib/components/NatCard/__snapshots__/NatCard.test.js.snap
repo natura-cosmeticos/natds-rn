@@ -82,12 +82,6 @@ exports[`TextInput component default Should render textInput component  1`] = `
         style={
           Array [
             Object {
-<<<<<<< HEAD
-=======
-              "flexBasis": 0,
-              "flexGrow": 1,
-              "flexShrink": 1,
->>>>>>> origin/update/react
               "marginBottom": 4,
               "marginLeft": 0,
               "marginRight": 0,
@@ -105,10 +99,6 @@ exports[`TextInput component default Should render textInput component  1`] = `
           style={
             Array [
               Object {
-<<<<<<< HEAD
-=======
-                "backgroundColor": "#FFF",
->>>>>>> origin/update/react
                 "color": "#333333",
                 "fontSize": 20,
                 "fontWeight": "500",
@@ -126,12 +116,6 @@ exports[`TextInput component default Should render textInput component  1`] = `
         style={
           Array [
             Object {
-<<<<<<< HEAD
-=======
-              "flexBasis": 0,
-              "flexGrow": 1,
-              "flexShrink": 1,
->>>>>>> origin/update/react
               "marginBottom": 16,
               "marginLeft": 0,
               "marginRight": 0,
@@ -144,7 +128,6 @@ exports[`TextInput component default Should render textInput component  1`] = `
           ]
         }
       >
-<<<<<<< HEAD
         <Text
           color="#777777"
           style={
@@ -154,116 +137,11 @@ exports[`TextInput component default Should render textInput component  1`] = `
                 "fontSize": 12,
                 "fontWeight": "400",
                 "lineHeight": 18,
-=======
-<<<<<<< HEAD
-        <Text
-          color="#777777"
-          style={
-            Array [
-              Object {
-                "backgroundColor": "#FFF",
-                "color": "#777777",
-                "fontSize": 12,
-                "fontWeight": "400",
-                "lineHeight": 18,
-=======
-<<<<<<< HEAD
-        <Text
-          color="#777777"
-          style={
-            Array [
-              Object {
-                "backgroundColor": "#FFF",
-                "color": "#777777",
-                "fontSize": 12,
-                "fontWeight": "400",
-                "lineHeight": 18,
-=======
-<<<<<<< HEAD
-        <Text
-          color="#777777"
-          style={
-            Array [
-              Object {
-                "backgroundColor": "#FFF",
-                "color": "#777777",
-                "fontSize": 12,
-                "fontWeight": "400",
-                "lineHeight": 18,
-=======
-        <View
-          margin={24}
-          style={
-            Array [
-              Object {
-                "flexBasis": 0,
-                "flexGrow": 1,
-                "flexShrink": 1,
-                "marginBottom": 24,
-                "marginLeft": 0,
-                "marginRight": 0,
-                "marginTop": 0,
-                "paddingBottom": 0,
-                "paddingLeft": 0,
-                "paddingRight": 0,
-                "paddingTop": 0,
-              },
-            ]
-          }
-        >
-          <Text
-            color="#333333"
-            style={
-              Array [
-                Object {
-                  "backgroundColor": "#FFF",
-                  "color": "#333333",
-                  "fontSize": 20,
-                  "fontWeight": "500",
-                  "lineHeight": 30,
-                },
-              ]
-            }
-            type="h6"
-          >
-            teste
-          </Text>
-        </View>
-        <View
-          margin={24}
-          style={
-            Array [
-              Object {
-                "flexBasis": 0,
-                "flexGrow": 1,
-                "flexShrink": 1,
-                "marginBottom": 24,
-                "marginLeft": 0,
-                "marginRight": 0,
-                "marginTop": 0,
-                "paddingBottom": 0,
-                "paddingLeft": 0,
-                "paddingRight": 0,
-                "paddingTop": 0,
->>>>>>> origin/update/react
->>>>>>> origin/update/react
->>>>>>> origin/update/react
->>>>>>> origin/update/react
               },
             ]
           }
           type="caption"
         >
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> origin/update/react
->>>>>>> origin/update/react
->>>>>>> origin/update/react
           
         </Text>
       </View>
@@ -272,12 +150,6 @@ exports[`TextInput component default Should render textInput component  1`] = `
         style={
           Array [
             Object {
-<<<<<<< HEAD
-=======
-              "flexBasis": 0,
-              "flexGrow": 1,
-              "flexShrink": 1,
->>>>>>> origin/update/react
               "marginBottom": 24,
               "marginLeft": 0,
               "marginRight": 0,
@@ -292,7 +164,6 @@ exports[`TextInput component default Should render textInput component  1`] = `
       >
         <Text
           color="#333333"
-<<<<<<< HEAD
           style={
             Array [
               Object {
@@ -300,117 +171,13 @@ exports[`TextInput component default Should render textInput component  1`] = `
                 "fontSize": 14,
                 "fontWeight": "400",
                 "lineHeight": 21,
-=======
-<<<<<<< HEAD
-          style={
-            Array [
-              Object {
-                "backgroundColor": "#FFF",
-                "color": "#333333",
-                "fontSize": 14,
-                "fontWeight": "400",
-                "lineHeight": 21,
-=======
-<<<<<<< HEAD
-          style={
-            Array [
-              Object {
-                "backgroundColor": "#FFF",
-                "color": "#333333",
-                "fontSize": 14,
-                "fontWeight": "400",
-                "lineHeight": 21,
-=======
-          style={
-            Array [
-              Object {
-                "backgroundColor": "#FFF",
-                "color": "#333333",
-                "fontSize": 14,
-                "fontWeight": "400",
-                "lineHeight": 21,
-=======
-          <Text
-            color="#333333"
-            style={
-              Array [
-                Object {
-                  "backgroundColor": "#FFF",
-                  "color": "#333333",
-                  "fontSize": 12,
-                  "fontWeight": "400",
-                  "lineHeight": 18,
-                },
-              ]
-            }
-            type="caption"
-          >
-            
-          </Text>
-        </View>
-        <View
-          margin="dense"
-          style={
-            Array [
-              Object {
-                "flexBasis": 0,
-                "flexGrow": 1,
-                "flexShrink": 1,
-                "marginBottom": "dense",
-                "marginLeft": 0,
-                "marginRight": 0,
-                "marginTop": 0,
-                "paddingBottom": 0,
-                "paddingLeft": 0,
-                "paddingRight": 0,
-                "paddingTop": 0,
->>>>>>> origin/update/react
->>>>>>> origin/update/react
->>>>>>> origin/update/react
->>>>>>> origin/update/react
               },
             ]
           }
           type="body2"
         >
-<<<<<<< HEAD
           teste
         </Text>
-=======
-<<<<<<< HEAD
-          teste
-        </Text>
-=======
-<<<<<<< HEAD
-          teste
-        </Text>
-=======
-<<<<<<< HEAD
-          teste
-        </Text>
-=======
-          <Text
-            color="#333333"
-            style={
-              Array [
-                Object {
-                  "backgroundColor": "#FFF",
-                  "color": "#333333",
-                  "fontSize": 14,
-                  "fontWeight": "400",
-                  "lineHeight": 21,
-                },
-              ]
-            }
-            type="body2"
-          >
-            teste
-          </Text>
-        </View>
->>>>>>> origin/update/react
->>>>>>> origin/update/react
->>>>>>> origin/update/react
->>>>>>> origin/update/react
       </View>
     </View>
   </View>

@@ -7,7 +7,7 @@ import {
 } from 'react-native';
 import {
   NatContainer,
-  NatHeaderNew,
+  NatAppBar,
   NatLogo,
   NatTextInput,
 } from '../../../lib';
@@ -20,28 +20,26 @@ const styles = {
   },
 };
 
-export const StoryNatHeaderNew = () => {
+export const StoryNatAppBar = () => {
   const [inputSearch, setInputSearch] = useState('');
 
   const logo = () => (<NatLogo name="logo-natura-horizontal" size={200} />);
   const getInput = () => (
-    <View style={{ width: 200 }}>
-      <NatTextInput
-        label=""
-        placeholder="Search"
-        onChangeText={setInputSearch}
-        value={inputSearch}
-        size="normal"
-        type="none"
-        icon={null}
-      />
-    </View>
+    <NatTextInput
+      label=""
+      placeholder="Search"
+      onChangeText={setInputSearch}
+      value={inputSearch}
+      size="normal"
+      type="none"
+      icon={null}
+    />
   );
   return (
     <SafeAreaView>
       <NatContainer style={styles.defaultScreen}>
         <ScrollView>
-          <NatHeaderNew
+          <NatAppBar
             title="Title Text"
             iconLeft={{ svg: { name: 'outlined-navigation-menu' } }}
             iconRight={{ svg: { name: 'outlined-action-autofilter' } }}
@@ -49,19 +47,19 @@ export const StoryNatHeaderNew = () => {
             onPressRight={() => alert('press')}
           />
           <View style={{ height: 10 }} />
-          <NatHeaderNew
+          <NatAppBar
             title="Title Text"
             iconLeft={{ svg: { name: 'outlined-navigation-menu' } }}
             onPressLeft={() => alert('press')}
             onPress={() => alert('press')}
           />
           <View style={{ height: 10 }} />
-          <NatHeaderNew
+          <NatAppBar
             title="Title Text"
             onPress={() => alert('press')}
           />
           <View style={{ height: 10 }} />
-          <NatHeaderNew
+          <NatAppBar
             title="Title Text"
             node={logo()}
             iconLeft={{ svg: { name: 'outlined-navigation-menu' } }}
@@ -70,7 +68,7 @@ export const StoryNatHeaderNew = () => {
             onPressRight={() => alert('press')}
           />
           <View style={{ height: 10 }} />
-          <NatHeaderNew
+          <NatAppBar
             title="Title Text"
             node={logo()}
             iconLeft={{ svg: { name: 'outlined-navigation-menu' } }}
@@ -78,37 +76,39 @@ export const StoryNatHeaderNew = () => {
             onPress={() => alert('press')}
           />
           <View style={{ height: 10 }} />
-          <NatHeaderNew
+          <NatAppBar
             title="Title Text"
             node={logo()}
             onPress={() => alert('press')}
           />
           <View style={{ height: 10 }} />
-          <NatHeaderNew
+          <NatAppBar
             title="Exclusive"
-            iconLeft={false}
+            showIconLeft={false}
             iconRight={{ svg: { name: 'outlined-action-autofilter' } }}
             onPressLeft={() => alert('press')}
             onPressRight={() => alert('press')}
           />
           <View style={{ height: 10 }} />
-          <NatHeaderNew
+          <NatAppBar
             title="Exclusive"
             iconLeft={{ svg: { name: 'outlined-navigation-menu' } }}
-            iconRight={false}
+            showIconRight={false}
             onPressLeft={() => alert('press')}
             onPress={() => alert('press')}
           />
           <View style={{ height: 10 }} />
-          <NatHeaderNew
+          <NatAppBar
             title="Exclusive"
-            iconLeft={false}
-            iconRight={false}
+            showIconLeft={false}
+            showIconRight={false}
             onPress={() => alert('press')}
           />
           <View style={{ height: 10 }} />
-          <NatHeaderNew
+          <NatAppBar
             title="Title Text"
+            showIconLeft={false}
+            showIconRight={false}
             node={getInput()}
           />
         </ScrollView>
@@ -117,5 +117,5 @@ export const StoryNatHeaderNew = () => {
   );
 };
 
-StoryNatHeaderNew.propTypes = {
+StoryNatAppBar.propTypes = {
 };
