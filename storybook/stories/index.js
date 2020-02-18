@@ -11,6 +11,7 @@ import { StoryNatTextInput } from './StoryNatTextInput';
 import { NatGenericCard } from '../../lib/components/NatGenericCard/NatGenericCard';
 import { StoryNatCard } from './StoryNatCard';
 import { StoryNatMenuItem } from './StoryNatMenuItem';
+import { StoryNatIcon } from './StoryNatIcon';
 import { StoryTokenTypography } from './StoryTokenTypography';
 import CenterView from './CenterView';
 import Welcome from './Welcome';
@@ -22,6 +23,12 @@ storiesOf('Tokens', module)
   .addDecorator(getStory => <CenterView>{getStory()}</CenterView>)
   .add('Typography', () => (
     <StoryTokenTypography />
+  ));
+
+storiesOf('Icons', module)
+  .addDecorator(getStory => <CenterView>{getStory()}</CenterView>)
+  .add('All', () => (
+    <StoryNatIcon />
   ));
 
 storiesOf('NatMenuItem', module)

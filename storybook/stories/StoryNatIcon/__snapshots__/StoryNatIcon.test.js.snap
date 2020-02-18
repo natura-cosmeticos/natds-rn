@@ -1,0 +1,1161 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StoryNatIcon component Should render StoryNatIcon component  1`] = `
+<RCTSafeAreaView
+  emulateUnlessSupported={true}
+>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "white",
+          "bottom": 0,
+          "flexBasis": 0,
+          "flexGrow": 1,
+          "flexShrink": 1,
+          "left": 0,
+          "paddingBottom": 0,
+          "paddingLeft": 16,
+          "paddingRight": 16,
+          "paddingTop": 0,
+          "right": 0,
+          "top": 0,
+        },
+        Object {
+          "backgroundColor": "#FFF",
+          "width": 750,
+        },
+      ]
+    }
+  >
+    <RCTScrollView>
+      <View>
+        <View
+          margin={24}
+          style={
+            Array [
+              Object {
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
+                "marginBottom": 24,
+                "marginLeft": 0,
+                "marginRight": 0,
+                "marginTop": 0,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
+              },
+            ]
+          }
+        >
+          <Text
+            color="#333333"
+            style={
+              Array [
+                Object {
+                  "backgroundColor": "#FFF",
+                  "color": "#333333",
+                  "fontSize": 20,
+                  "fontWeight": "500",
+                  "lineHeight": 30,
+                },
+              ]
+            }
+            type="h6"
+          >
+            ICONS SVG
+          </Text>
+        </View>
+        <RCTScrollView
+          data={
+            Array [
+              Object {
+                "name": "filled-action-add",
+              },
+              Object {
+                "name": "filled-action-cancel",
+              },
+              Object {
+                "name": "filled-action-check",
+              },
+              Object {
+                "name": "filled-action-rating",
+              },
+              Object {
+                "name": "filled-action-subtract",
+              },
+              Object {
+                "name": "filled-brand-naturarosacea",
+              },
+              Object {
+                "name": "filled-media-pause",
+              },
+              Object {
+                "name": "filled-media-play",
+              },
+              Object {
+                "name": "filled-navigation-directionleft",
+              },
+              Object {
+                "name": "filled-navigation-directionright",
+              },
+              Object {
+                "name": "filled-navigation-directiontbottom",
+              },
+              Object {
+                "name": "filled-navigation-directiontop",
+              },
+              Object {
+                "name": "filled-navigation-menu",
+              },
+              Object {
+                "name": "filled-navigation-more",
+              },
+              Object {
+                "name": "outlined-action-add",
+              },
+              Object {
+                "name": "outlined-action-attachment",
+              },
+              Object {
+                "name": "outlined-action-autofilter",
+              },
+              Object {
+                "name": "outlined-action-calendar",
+              },
+              Object {
+                "name": "outlined-action-cancel",
+              },
+              Object {
+                "name": "outlined-action-change",
+              },
+              Object {
+                "name": "outlined-action-check",
+              },
+              Object {
+                "name": "outlined-action-closedbox",
+              },
+              Object {
+                "name": "outlined-action-copy",
+              },
+              Object {
+                "name": "outlined-action-cycle",
+              },
+              Object {
+                "name": "outlined-action-delete",
+              },
+              Object {
+                "name": "outlined-action-done",
+              },
+              Object {
+                "name": "outlined-action-download",
+              },
+              Object {
+                "name": "outlined-action-edit",
+              },
+              Object {
+                "name": "outlined-action-favorite",
+              },
+              Object {
+                "name": "outlined-action-filter",
+              },
+              Object {
+                "name": "outlined-action-gridsquare",
+              },
+              Object {
+                "name": "outlined-action-help",
+              },
+              Object {
+                "name": "outlined-action-history",
+              },
+              Object {
+                "name": "outlined-action-like",
+              },
+              Object {
+                "name": "outlined-action-list",
+              },
+              Object {
+                "name": "outlined-action-love",
+              },
+              Object {
+                "name": "outlined-action-mic",
+              },
+              Object {
+                "name": "outlined-action-micrec",
+              },
+              Object {
+                "name": "outlined-action-newrequest",
+              },
+              Object {
+                "name": "outlined-action-order",
+              },
+              Object {
+                "name": "outlined-action-phone",
+              },
+              Object {
+                "name": "outlined-action-print",
+              },
+              Object {
+                "name": "outlined-action-rating",
+              },
+              Object {
+                "name": "outlined-action-request",
+              },
+              Object {
+                "name": "outlined-action-save",
+              },
+              Object {
+                "name": "outlined-action-schedule",
+              },
+              Object {
+                "name": "outlined-action-search",
+              },
+              Object {
+                "name": "outlined-action-selectedalllines",
+              },
+              Object {
+                "name": "outlined-action-send",
+              },
+              Object {
+                "name": "outlined-action-settings",
+              },
+              Object {
+                "name": "outlined-action-share",
+              },
+              Object {
+                "name": "outlined-action-subtract",
+              },
+              Object {
+                "name": "outlined-action-update",
+              },
+              Object {
+                "name": "outlined-action-upload",
+              },
+              Object {
+                "name": "outlined-action-visibility",
+              },
+              Object {
+                "name": "outlined-action-visibilityoff",
+              },
+              Object {
+                "name": "outlined-alert-empty",
+              },
+              Object {
+                "name": "outlined-alert-indeterminate",
+              },
+              Object {
+                "name": "outlined-alert-info",
+              },
+              Object {
+                "name": "outlined-communication-chat",
+              },
+              Object {
+                "name": "outlined-communication-email",
+              },
+              Object {
+                "name": "outlined-communication-help",
+              },
+              Object {
+                "name": "outlined-communication-message",
+              },
+              Object {
+                "name": "outlined-communication-occurrence",
+              },
+              Object {
+                "name": "outlined-communication-readEmail",
+              },
+              Object {
+                "name": "outlined-communication-signal",
+              },
+              Object {
+                "name": "outlined-communication-speaker",
+              },
+              Object {
+                "name": "outlined-communication-treatment",
+              },
+              Object {
+                "name": "outlined-content-adddocument",
+              },
+              Object {
+                "name": "outlined-content-agility",
+              },
+              Object {
+                "name": "outlined-content-book",
+              },
+              Object {
+                "name": "outlined-content-brightness",
+              },
+              Object {
+                "name": "outlined-content-changeview",
+              },
+              Object {
+                "name": "outlined-content-channel",
+              },
+              Object {
+                "name": "outlined-content-christmascard",
+              },
+              Object {
+                "name": "outlined-content-consistency",
+              },
+              Object {
+                "name": "outlined-content-divulgation",
+              },
+              Object {
+                "name": "outlined-content-education",
+              },
+              Object {
+                "name": "outlined-content-gift",
+              },
+              Object {
+                "name": "outlined-content-global",
+              },
+              Object {
+                "name": "outlined-content-health",
+              },
+              Object {
+                "name": "outlined-content-lock",
+              },
+              Object {
+                "name": "outlined-content-magic",
+              },
+              Object {
+                "name": "outlined-content-medal",
+              },
+              Object {
+                "name": "outlined-content-menu",
+              },
+              Object {
+                "name": "outlined-content-mirror",
+              },
+              Object {
+                "name": "outlined-content-produtivity",
+              },
+              Object {
+                "name": "outlined-content-store",
+              },
+              Object {
+                "name": "outlined-content-wifi",
+              },
+              Object {
+                "name": "outlined-finance-bag",
+              },
+              Object {
+                "name": "outlined-finance-cards",
+              },
+              Object {
+                "name": "outlined-finance-charging",
+              },
+              Object {
+                "name": "outlined-finance-creditcard",
+              },
+              Object {
+                "name": "outlined-finance-debit",
+              },
+              Object {
+                "name": "outlined-finance-discount",
+              },
+              Object {
+                "name": "outlined-finance-littlemachine",
+              },
+              Object {
+                "name": "outlined-finance-money",
+              },
+              Object {
+                "name": "outlined-finance-moneypaper",
+              },
+              Object {
+                "name": "outlined-finance-promotion",
+              },
+              Object {
+                "name": "outlined-finance-shoppingcart",
+              },
+              Object {
+                "name": "outlined-finance-shoppingcartproduct",
+              },
+              Object {
+                "name": "outlined-finance-tagdiscount",
+              },
+              Object {
+                "name": "outlined-finance-transfermoney",
+              },
+              Object {
+                "name": "outlined-media-app",
+              },
+              Object {
+                "name": "outlined-media-camera",
+              },
+              Object {
+                "name": "outlined-media-monitor",
+              },
+              Object {
+                "name": "outlined-media-play",
+              },
+              Object {
+                "name": "outlined-navigation-arrowbottom",
+              },
+              Object {
+                "name": "outlined-navigation-arrowleft",
+              },
+              Object {
+                "name": "outlined-navigation-arrowright",
+              },
+              Object {
+                "name": "outlined-navigation-arrowtop",
+              },
+              Object {
+                "name": "outlined-navigation-close",
+              },
+              Object {
+                "name": "outlined-navigation-directionbottom",
+              },
+              Object {
+                "name": "outlined-navigation-directionleft",
+              },
+              Object {
+                "name": "outlined-navigation-directionright",
+              },
+              Object {
+                "name": "outlined-navigation-directiontop",
+              },
+              Object {
+                "name": "outlined-navigation-exit",
+              },
+              Object {
+                "name": "outlined-navigation-goback",
+              },
+              Object {
+                "name": "outlined-navigation-gofront",
+              },
+              Object {
+                "name": "outlined-navigation-home",
+              },
+              Object {
+                "name": "outlined-navigation-menu",
+              },
+              Object {
+                "name": "outlined-place-bus",
+              },
+              Object {
+                "name": "outlined-place-forklift",
+              },
+              Object {
+                "name": "outlined-place-local",
+              },
+              Object {
+                "name": "outlined-place-truck",
+              },
+              Object {
+                "name": "outlined-place-waze",
+              },
+              Object {
+                "name": "outlined-product-bagproduct",
+              },
+              Object {
+                "name": "outlined-product-beard",
+              },
+              Object {
+                "name": "outlined-product-brandsproduct",
+              },
+              Object {
+                "name": "outlined-product-childish",
+              },
+              Object {
+                "name": "outlined-product-dailycare",
+              },
+              Object {
+                "name": "outlined-product-hair",
+              },
+              Object {
+                "name": "outlined-product-makeup",
+              },
+              Object {
+                "name": "outlined-product-outlet",
+              },
+              Object {
+                "name": "outlined-product-perfumery",
+              },
+              Object {
+                "name": "outlined-product-promotionproduct",
+              },
+              Object {
+                "name": "outlined-product-vegan",
+              },
+              Object {
+                "name": "outlined-social-addcontact",
+              },
+              Object {
+                "name": "outlined-social-birthday",
+              },
+              Object {
+                "name": "outlined-social-collaborate",
+              },
+              Object {
+                "name": "outlined-social-contact",
+              },
+              Object {
+                "name": "outlined-social-digitalconsultant",
+              },
+              Object {
+                "name": "outlined-social-groupofpeople",
+              },
+              Object {
+                "name": "outlined-social-myprofile",
+              },
+              Object {
+                "name": "outlined-social-network",
+              },
+              Object {
+                "name": "outlined-social-person",
+              },
+            ]
+          }
+          disableVirtualization={false}
+          getItem={[Function]}
+          getItemCount={[Function]}
+          horizontal={false}
+          initialNumToRender={10}
+          keyExtractor={[Function]}
+          maxToRenderPerBatch={10}
+          numColumns={1}
+          onContentSizeChange={[Function]}
+          onEndReachedThreshold={2}
+          onLayout={[Function]}
+          onMomentumScrollEnd={[Function]}
+          onScroll={[Function]}
+          onScrollBeginDrag={[Function]}
+          onScrollEndDrag={[Function]}
+          removeClippedSubviews={false}
+          renderItem={[Function]}
+          scrollEventThrottle={50}
+          stickyHeaderIndices={Array []}
+          updateCellsBatchingPeriod={50}
+          viewabilityConfigCallbackPairs={Array []}
+          windowSize={21}
+        >
+          <View>
+            <View
+              onLayout={[Function]}
+              style={null}
+            >
+              <View
+                style={
+                  Object {
+                    "flex": 1,
+                    "flexDirection": "row",
+                  }
+                }
+              >
+                <SvgMock
+                  height={24}
+                  style={
+                    Object {
+                      "fill": "#333333",
+                    }
+                  }
+                  width={24}
+                />
+                <View
+                  margin={24}
+                  style={
+                    Array [
+                      Object {
+                        "flexBasis": 0,
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                        "marginBottom": 24,
+                        "marginLeft": 0,
+                        "marginRight": 0,
+                        "marginTop": 0,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    color="#333333"
+                    style={
+                      Array [
+                        Object {
+                          "backgroundColor": "#FFF",
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                          "lineHeight": 24,
+                        },
+                      ]
+                    }
+                    type="body1"
+                  >
+                    filled-action-add
+                  </Text>
+                </View>
+              </View>
+            </View>
+            <View
+              onLayout={[Function]}
+              style={null}
+            >
+              <View
+                style={
+                  Object {
+                    "flex": 1,
+                    "flexDirection": "row",
+                  }
+                }
+              >
+                <SvgMock
+                  height={24}
+                  style={
+                    Object {
+                      "fill": "#333333",
+                    }
+                  }
+                  width={24}
+                />
+                <View
+                  margin={24}
+                  style={
+                    Array [
+                      Object {
+                        "flexBasis": 0,
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                        "marginBottom": 24,
+                        "marginLeft": 0,
+                        "marginRight": 0,
+                        "marginTop": 0,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    color="#333333"
+                    style={
+                      Array [
+                        Object {
+                          "backgroundColor": "#FFF",
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                          "lineHeight": 24,
+                        },
+                      ]
+                    }
+                    type="body1"
+                  >
+                    filled-action-cancel
+                  </Text>
+                </View>
+              </View>
+            </View>
+            <View
+              onLayout={[Function]}
+              style={null}
+            >
+              <View
+                style={
+                  Object {
+                    "flex": 1,
+                    "flexDirection": "row",
+                  }
+                }
+              >
+                <SvgMock
+                  height={24}
+                  style={
+                    Object {
+                      "fill": "#333333",
+                    }
+                  }
+                  width={24}
+                />
+                <View
+                  margin={24}
+                  style={
+                    Array [
+                      Object {
+                        "flexBasis": 0,
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                        "marginBottom": 24,
+                        "marginLeft": 0,
+                        "marginRight": 0,
+                        "marginTop": 0,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    color="#333333"
+                    style={
+                      Array [
+                        Object {
+                          "backgroundColor": "#FFF",
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                          "lineHeight": 24,
+                        },
+                      ]
+                    }
+                    type="body1"
+                  >
+                    filled-action-check
+                  </Text>
+                </View>
+              </View>
+            </View>
+            <View
+              onLayout={[Function]}
+              style={null}
+            >
+              <View
+                style={
+                  Object {
+                    "flex": 1,
+                    "flexDirection": "row",
+                  }
+                }
+              >
+                <SvgMock
+                  height={24}
+                  style={
+                    Object {
+                      "fill": "#333333",
+                    }
+                  }
+                  width={24}
+                />
+                <View
+                  margin={24}
+                  style={
+                    Array [
+                      Object {
+                        "flexBasis": 0,
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                        "marginBottom": 24,
+                        "marginLeft": 0,
+                        "marginRight": 0,
+                        "marginTop": 0,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    color="#333333"
+                    style={
+                      Array [
+                        Object {
+                          "backgroundColor": "#FFF",
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                          "lineHeight": 24,
+                        },
+                      ]
+                    }
+                    type="body1"
+                  >
+                    filled-action-rating
+                  </Text>
+                </View>
+              </View>
+            </View>
+            <View
+              onLayout={[Function]}
+              style={null}
+            >
+              <View
+                style={
+                  Object {
+                    "flex": 1,
+                    "flexDirection": "row",
+                  }
+                }
+              >
+                <SvgMock
+                  height={24}
+                  style={
+                    Object {
+                      "fill": "#333333",
+                    }
+                  }
+                  width={24}
+                />
+                <View
+                  margin={24}
+                  style={
+                    Array [
+                      Object {
+                        "flexBasis": 0,
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                        "marginBottom": 24,
+                        "marginLeft": 0,
+                        "marginRight": 0,
+                        "marginTop": 0,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    color="#333333"
+                    style={
+                      Array [
+                        Object {
+                          "backgroundColor": "#FFF",
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                          "lineHeight": 24,
+                        },
+                      ]
+                    }
+                    type="body1"
+                  >
+                    filled-action-subtract
+                  </Text>
+                </View>
+              </View>
+            </View>
+            <View
+              onLayout={[Function]}
+              style={null}
+            >
+              <View
+                style={
+                  Object {
+                    "flex": 1,
+                    "flexDirection": "row",
+                  }
+                }
+              >
+                <SvgMock
+                  height={24}
+                  style={
+                    Object {
+                      "fill": "#333333",
+                    }
+                  }
+                  width={24}
+                />
+                <View
+                  margin={24}
+                  style={
+                    Array [
+                      Object {
+                        "flexBasis": 0,
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                        "marginBottom": 24,
+                        "marginLeft": 0,
+                        "marginRight": 0,
+                        "marginTop": 0,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    color="#333333"
+                    style={
+                      Array [
+                        Object {
+                          "backgroundColor": "#FFF",
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                          "lineHeight": 24,
+                        },
+                      ]
+                    }
+                    type="body1"
+                  >
+                    filled-brand-naturarosacea
+                  </Text>
+                </View>
+              </View>
+            </View>
+            <View
+              onLayout={[Function]}
+              style={null}
+            >
+              <View
+                style={
+                  Object {
+                    "flex": 1,
+                    "flexDirection": "row",
+                  }
+                }
+              >
+                <SvgMock
+                  height={24}
+                  style={
+                    Object {
+                      "fill": "#333333",
+                    }
+                  }
+                  width={24}
+                />
+                <View
+                  margin={24}
+                  style={
+                    Array [
+                      Object {
+                        "flexBasis": 0,
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                        "marginBottom": 24,
+                        "marginLeft": 0,
+                        "marginRight": 0,
+                        "marginTop": 0,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    color="#333333"
+                    style={
+                      Array [
+                        Object {
+                          "backgroundColor": "#FFF",
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                          "lineHeight": 24,
+                        },
+                      ]
+                    }
+                    type="body1"
+                  >
+                    filled-media-pause
+                  </Text>
+                </View>
+              </View>
+            </View>
+            <View
+              onLayout={[Function]}
+              style={null}
+            >
+              <View
+                style={
+                  Object {
+                    "flex": 1,
+                    "flexDirection": "row",
+                  }
+                }
+              >
+                <SvgMock
+                  height={24}
+                  style={
+                    Object {
+                      "fill": "#333333",
+                    }
+                  }
+                  width={24}
+                />
+                <View
+                  margin={24}
+                  style={
+                    Array [
+                      Object {
+                        "flexBasis": 0,
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                        "marginBottom": 24,
+                        "marginLeft": 0,
+                        "marginRight": 0,
+                        "marginTop": 0,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    color="#333333"
+                    style={
+                      Array [
+                        Object {
+                          "backgroundColor": "#FFF",
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                          "lineHeight": 24,
+                        },
+                      ]
+                    }
+                    type="body1"
+                  >
+                    filled-media-play
+                  </Text>
+                </View>
+              </View>
+            </View>
+            <View
+              onLayout={[Function]}
+              style={null}
+            >
+              <View
+                style={
+                  Object {
+                    "flex": 1,
+                    "flexDirection": "row",
+                  }
+                }
+              >
+                <SvgMock
+                  height={24}
+                  style={
+                    Object {
+                      "fill": "#333333",
+                    }
+                  }
+                  width={24}
+                />
+                <View
+                  margin={24}
+                  style={
+                    Array [
+                      Object {
+                        "flexBasis": 0,
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                        "marginBottom": 24,
+                        "marginLeft": 0,
+                        "marginRight": 0,
+                        "marginTop": 0,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    color="#333333"
+                    style={
+                      Array [
+                        Object {
+                          "backgroundColor": "#FFF",
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                          "lineHeight": 24,
+                        },
+                      ]
+                    }
+                    type="body1"
+                  >
+                    filled-navigation-directionleft
+                  </Text>
+                </View>
+              </View>
+            </View>
+            <View
+              onLayout={[Function]}
+              style={null}
+            >
+              <View
+                style={
+                  Object {
+                    "flex": 1,
+                    "flexDirection": "row",
+                  }
+                }
+              >
+                <SvgMock
+                  height={24}
+                  style={
+                    Object {
+                      "fill": "#333333",
+                    }
+                  }
+                  width={24}
+                />
+                <View
+                  margin={24}
+                  style={
+                    Array [
+                      Object {
+                        "flexBasis": 0,
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                        "marginBottom": 24,
+                        "marginLeft": 0,
+                        "marginRight": 0,
+                        "marginTop": 0,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    color="#333333"
+                    style={
+                      Array [
+                        Object {
+                          "backgroundColor": "#FFF",
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                          "lineHeight": 24,
+                        },
+                      ]
+                    }
+                    type="body1"
+                  >
+                    filled-navigation-directionright
+                  </Text>
+                </View>
+              </View>
+            </View>
+            <View
+              style={
+                Object {
+                  "height": 0,
+                }
+              }
+            />
+          </View>
+        </RCTScrollView>
+      </View>
+    </RCTScrollView>
+  </View>
+</RCTSafeAreaView>
+`;
