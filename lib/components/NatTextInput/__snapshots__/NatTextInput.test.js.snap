@@ -7,7 +7,7 @@ exports[`TextInput component default Should render textInput component  1`] = `
   style={
     Array [
       Object {
-        "marginTop": 0,
+        "marginBottom": 0,
         "width": "100%",
       },
     ]
@@ -187,7 +187,6 @@ exports[`TextInput component default Should render textInput component  1`] = `
           "contrastText": "#FFFFFF",
           "main": "#E74627",
         },
-<<<<<<< HEAD
         "grayscale": Object {
           "colorBrdBlack": "#000000",
           "colorBrdNatGray": "#333333",
@@ -195,8 +194,6 @@ exports[`TextInput component default Should render textInput component  1`] = `
           "colorBrdNatGray2": "#BBBBBB",
           "colorBrdNatGray3": "#EEEEEE",
         },
-=======
->>>>>>> origin/update/react
         "primary": Object {
           "contrastText": "#333333",
           "dark": "#EF8426",
@@ -344,12 +341,6 @@ exports[`TextInput component default Should render textInput component  1`] = `
     style={
       Array [
         Object {
-<<<<<<< HEAD
-=======
-          "flexBasis": 0,
-          "flexGrow": 1,
-          "flexShrink": 1,
->>>>>>> origin/update/react
           "marginBottom": 0,
           "marginLeft": 0,
           "marginRight": 0,
@@ -367,10 +358,6 @@ exports[`TextInput component default Should render textInput component  1`] = `
       style={
         Array [
           Object {
-<<<<<<< HEAD
-=======
-            "backgroundColor": "#FFF",
->>>>>>> origin/update/react
             "color": "#777777",
             "fontSize": 14,
             "fontWeight": "400",
@@ -577,7 +564,6 @@ exports[`TextInput component default Should render textInput component  1`] = `
             "contrastText": "#FFFFFF",
             "main": "#E74627",
           },
-<<<<<<< HEAD
           "grayscale": Object {
             "colorBrdBlack": "#000000",
             "colorBrdNatGray": "#333333",
@@ -585,8 +571,6 @@ exports[`TextInput component default Should render textInput component  1`] = `
             "colorBrdNatGray2": "#BBBBBB",
             "colorBrdNatGray3": "#EEEEEE",
           },
-=======
->>>>>>> origin/update/react
           "primary": Object {
             "contrastText": "#333333",
             "dark": "#EF8426",
@@ -935,7 +919,6 @@ exports[`TextInput component default Should render textInput component  1`] = `
               "contrastText": "#FFFFFF",
               "main": "#E74627",
             },
-<<<<<<< HEAD
             "grayscale": Object {
               "colorBrdBlack": "#000000",
               "colorBrdNatGray": "#333333",
@@ -943,8 +926,6 @@ exports[`TextInput component default Should render textInput component  1`] = `
               "colorBrdNatGray2": "#BBBBBB",
               "colorBrdNatGray3": "#EEEEEE",
             },
-=======
->>>>>>> origin/update/react
             "primary": Object {
               "contrastText": "#333333",
               "dark": "#EF8426",
@@ -1101,7 +1082,7 @@ exports[`TextInput component default Should render textInput with icon and assis
   style={
     Array [
       Object {
-        "marginTop": 0,
+        "marginBottom": 0,
         "width": "100%",
       },
     ]
@@ -1281,7 +1262,6 @@ exports[`TextInput component default Should render textInput with icon and assis
           "contrastText": "#FFFFFF",
           "main": "#E74627",
         },
-<<<<<<< HEAD
         "grayscale": Object {
           "colorBrdBlack": "#000000",
           "colorBrdNatGray": "#333333",
@@ -1289,8 +1269,6 @@ exports[`TextInput component default Should render textInput with icon and assis
           "colorBrdNatGray2": "#BBBBBB",
           "colorBrdNatGray3": "#EEEEEE",
         },
-=======
->>>>>>> origin/update/react
         "primary": Object {
           "contrastText": "#333333",
           "dark": "#EF8426",
@@ -1439,12 +1417,6 @@ exports[`TextInput component default Should render textInput with icon and assis
     style={
       Array [
         Object {
-<<<<<<< HEAD
-=======
-          "flexBasis": 0,
-          "flexGrow": 1,
-          "flexShrink": 1,
->>>>>>> origin/update/react
           "marginBottom": 0,
           "marginLeft": 0,
           "marginRight": 0,
@@ -1462,10 +1434,6 @@ exports[`TextInput component default Should render textInput with icon and assis
       style={
         Array [
           Object {
-<<<<<<< HEAD
-=======
-            "backgroundColor": "#FFF",
->>>>>>> origin/update/react
             "color": "#777777",
             "fontSize": 14,
             "fontWeight": "400",
@@ -1672,7 +1640,6 @@ exports[`TextInput component default Should render textInput with icon and assis
             "contrastText": "#FFFFFF",
             "main": "#E74627",
           },
-<<<<<<< HEAD
           "grayscale": Object {
             "colorBrdBlack": "#000000",
             "colorBrdNatGray": "#333333",
@@ -1680,8 +1647,6 @@ exports[`TextInput component default Should render textInput with icon and assis
             "colorBrdNatGray2": "#BBBBBB",
             "colorBrdNatGray3": "#EEEEEE",
           },
-=======
->>>>>>> origin/update/react
           "primary": Object {
             "contrastText": "#333333",
             "dark": "#EF8426",
@@ -2031,7 +1996,6 @@ exports[`TextInput component default Should render textInput with icon and assis
               "contrastText": "#FFFFFF",
               "main": "#E74627",
             },
-<<<<<<< HEAD
             "grayscale": Object {
               "colorBrdBlack": "#000000",
               "colorBrdNatGray": "#333333",
@@ -2039,8 +2003,6 @@ exports[`TextInput component default Should render textInput with icon and assis
               "colorBrdNatGray2": "#BBBBBB",
               "colorBrdNatGray3": "#EEEEEE",
             },
-=======
->>>>>>> origin/update/react
             "primary": Object {
               "contrastText": "#333333",
               "dark": "#EF8426",
@@ -2399,7 +2361,6 @@ exports[`TextInput component default Should render textInput with icon and assis
                 "contrastText": "#FFFFFF",
                 "main": "#E74627",
               },
-<<<<<<< HEAD
               "grayscale": Object {
                 "colorBrdBlack": "#000000",
                 "colorBrdNatGray": "#333333",
@@ -2407,8 +2368,6 @@ exports[`TextInput component default Should render textInput with icon and assis
                 "colorBrdNatGray2": "#BBBBBB",
                 "colorBrdNatGray3": "#EEEEEE",
               },
-=======
->>>>>>> origin/update/react
               "primary": Object {
                 "contrastText": "#333333",
                 "dark": "#EF8426",
@@ -2560,12 +2519,6 @@ exports[`TextInput component default Should render textInput with icon and assis
     style={
       Array [
         Object {
-<<<<<<< HEAD
-=======
-          "flexBasis": 0,
-          "flexGrow": 1,
-          "flexShrink": 1,
->>>>>>> origin/update/react
           "marginBottom": 0,
           "marginLeft": 0,
           "marginRight": 0,
@@ -2583,10 +2536,6 @@ exports[`TextInput component default Should render textInput with icon and assis
       style={
         Array [
           Object {
-<<<<<<< HEAD
-=======
-            "backgroundColor": "#FFF",
->>>>>>> origin/update/react
             "color": "#777777",
             "fontSize": 12,
             "fontWeight": "400",

@@ -94,11 +94,21 @@ exports[`StoryNatListItem component Should render StoryNatListItem component  1`
             </View>
           </View>
           <View
+            hideIconLeft={false}
+            hideIconRight={false}
             style={
-              Object {
-                "alignItems": "center",
-                "justifyContent": "center",
-              }
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "bottom": 0,
+                  "color": "#333333",
+                  "justifyContent": "center",
+                  "left": 48,
+                  "position": "absolute",
+                  "right": 48,
+                  "top": 0,
+                },
+              ]
             }
           >
             <View
@@ -205,7 +215,7 @@ exports[`StoryNatListItem component Should render StoryNatListItem component  1`
             Array [
               Object {
                 "alignItems": "stretch",
-                "backgroundColor": "#FEFDE8",
+                "backgroundColor": "#FF6B0B29",
                 "borderBottomColor": "#EEEEEE",
                 "borderBottomWidth": 1,
                 "flexBasis": 0,
@@ -260,11 +270,21 @@ exports[`StoryNatListItem component Should render StoryNatListItem component  1`
             </View>
           </View>
           <View
+            hideIconLeft={false}
+            hideIconRight={false}
             style={
-              Object {
-                "alignItems": "center",
-                "justifyContent": "center",
-              }
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "bottom": 0,
+                  "color": "#333333",
+                  "justifyContent": "center",
+                  "left": 48,
+                  "position": "absolute",
+                  "right": 48,
+                  "top": 0,
+                },
+              ]
             }
           >
             <View
@@ -414,11 +434,21 @@ exports[`StoryNatListItem component Should render StoryNatListItem component  1`
             />
           </View>
           <View
+            hideIconLeft={false}
+            hideIconRight={false}
             style={
-              Object {
-                "alignItems": "center",
-                "justifyContent": "center",
-              }
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "bottom": 0,
+                  "color": "#333333",
+                  "justifyContent": "center",
+                  "left": 48,
+                  "position": "absolute",
+                  "right": 48,
+                  "top": 0,
+                },
+              ]
             }
           >
             <View
@@ -539,11 +569,21 @@ exports[`StoryNatListItem component Should render StoryNatListItem component  1`
           }
         >
           <View
+            hideIconLeft={true}
+            hideIconRight={false}
             style={
-              Object {
-                "alignItems": "center",
-                "justifyContent": "center",
-              }
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "bottom": 0,
+                  "color": "#333333",
+                  "justifyContent": "center",
+                  "left": 0,
+                  "position": "absolute",
+                  "right": 48,
+                  "top": 0,
+                },
+              ]
             }
           >
             <View
@@ -661,7 +701,7 @@ exports[`StoryNatListItem component Should render StoryNatListItem component  1`
             Array [
               Object {
                 "alignItems": "stretch",
-                "backgroundColor": "#FEFDE8",
+                "backgroundColor": "#FF6B0B29",
                 "flexBasis": 0,
                 "flexDirection": "row",
                 "flexGrow": 1,
@@ -725,11 +765,21 @@ exports[`StoryNatListItem component Should render StoryNatListItem component  1`
             </View>
           </View>
           <View
+            hideIconLeft={false}
+            hideIconRight={false}
             style={
-              Object {
-                "alignItems": "center",
-                "justifyContent": "center",
-              }
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "bottom": 0,
+                  "color": "#333333",
+                  "justifyContent": "center",
+                  "left": 48,
+                  "position": "absolute",
+                  "right": 48,
+                  "top": 0,
+                },
+              ]
             }
           >
             <View
@@ -848,11 +898,21 @@ exports[`StoryNatListItem component Should render StoryNatListItem component  1`
           }
         >
           <View
+            hideIconLeft={true}
+            hideIconRight={false}
             style={
-              Object {
-                "alignItems": "center",
-                "justifyContent": "center",
-              }
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "bottom": 0,
+                  "color": "#333333",
+                  "justifyContent": "center",
+                  "left": 0,
+                  "position": "absolute",
+                  "right": 48,
+                  "top": 0,
+                },
+              ]
             }
           >
             <View
@@ -1002,11 +1062,21 @@ exports[`StoryNatListItem component Should render StoryNatListItem component  1`
             />
           </View>
           <View
+            hideIconLeft={false}
+            hideIconRight={false}
             style={
-              Object {
-                "alignItems": "center",
-                "justifyContent": "center",
-              }
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "bottom": 0,
+                  "color": "#333333",
+                  "justifyContent": "center",
+                  "left": 48,
+                  "position": "absolute",
+                  "right": 48,
+                  "top": 0,
+                },
+              ]
             }
           >
             <View
@@ -1169,11 +1239,21 @@ exports[`StoryNatListItem component Should render StoryNatListItem component  1`
             </View>
           </View>
           <View
+            hideIconLeft={false}
+            hideIconRight={false}
             style={
-              Object {
-                "alignItems": "center",
-                "justifyContent": "center",
-              }
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "bottom": 0,
+                  "color": "#333333",
+                  "justifyContent": "center",
+                  "left": 48,
+                  "position": "absolute",
+                  "right": 48,
+                  "top": 0,
+                },
+              ]
             }
           >
             <View
@@ -1323,11 +1403,21 @@ exports[`StoryNatListItem component Should render StoryNatListItem component  1`
             />
           </View>
           <View
+            hideIconLeft={false}
+            hideIconRight={false}
             style={
-              Object {
-                "alignItems": "center",
-                "justifyContent": "center",
-              }
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "bottom": 0,
+                  "color": "#333333",
+                  "justifyContent": "center",
+                  "left": 48,
+                  "position": "absolute",
+                  "right": 48,
+                  "top": 0,
+                },
+              ]
             }
           >
             <View

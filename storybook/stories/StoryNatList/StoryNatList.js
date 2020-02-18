@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   View,
   ScrollView,
@@ -10,6 +10,7 @@ import {
   NatList,
   NatListItem,
   NatLogo,
+  NatText,
 } from '../../../lib';
 
 const styles = {
@@ -21,6 +22,9 @@ const styles = {
 };
 
 export const StoryNatList = () => {
+  const [valueWithoutHighlight, setValueWithoutHighlight] = useState([]);
+  const [valueSimple, setValueSimple] = useState([]);
+  const [valueMultiple, setValueMultiple] = useState([]);
   const listItems = [
     {
       id: '1',
@@ -44,7 +48,8 @@ export const StoryNatList = () => {
       id: '3',
       title: 'Title Text',
       iconLeft: { svg: { name: 'outlined-navigation-menu' } },
-      hideIconRight: false,
+      hideIconLeft: true,
+      hideIconRight: true,
       onPressLeft: () => alert('press'),
       onPressRight: () => alert('press'),
     },
@@ -59,13 +64,45 @@ export const StoryNatList = () => {
     },
   ];
 
+  const changeWithoutHighlight = (result) => {
+    setValueWithoutHighlight(result);
+  };
+  const changeSimple = (result) => {
+    setValueSimple(result);
+  };
+  const changeMulitple = (result) => {
+    setValueMultiple(result);
+  };
+
   return (
     <SafeAreaView>
       <NatContainer style={styles.defaultScreen}>
         <ScrollView>
+          <NatText value="List with simple select without Highlight" />
+          <NatText value="Value: " />
+          <NatText value={JSON.stringify(valueWithoutHighlight)} />
           <NatList
             items={listItems}
-            selected="3"
+            selected={valueWithoutHighlight}
+            onChange={changeWithoutHighlight}
+            showHighlight={false}
+          />
+          <NatText value="List with simple select" />
+          <NatText value="Value: " />
+          <NatText value={JSON.stringify(valueSimple)} />
+          <NatList
+            items={listItems}
+            selected={valueSimple}
+            onChange={changeSimple}
+          />
+          <NatText value="List with multiple select" />
+          <NatText value="Value: " />
+          <NatText value={JSON.stringify(valueMultiple)} />
+          <NatList
+            items={listItems}
+            selected={valueMultiple}
+            onChange={changeMulitple}
+            multiSelect
           />
         </ScrollView>
       </NatContainer>

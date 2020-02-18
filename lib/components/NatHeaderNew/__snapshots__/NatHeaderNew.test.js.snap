@@ -21,7 +21,6 @@ exports[`Header component Should render container component correctly 1`] = `
         "position": "relative",
         "width": "100%",
       },
-<<<<<<< HEAD
       Object {
         "elevation": 1,
         "shadowColor": "#000",
@@ -31,8 +30,6 @@ exports[`Header component Should render container component correctly 1`] = `
         },
         "shadowOpacity": 0.24,
       },
-=======
->>>>>>> origin/update/react
     ]
   }
 >
@@ -52,16 +49,12 @@ exports[`Header component Should render container component correctly 1`] = `
       onStartShouldSetResponder={[Function]}
       style={
         Object {
-<<<<<<< HEAD
           "alignItems": "center",
-=======
->>>>>>> origin/update/react
           "alignSelf": "center",
           "flexBasis": 0,
           "flexGrow": 1,
           "flexShrink": 1,
           "height": 56,
-<<<<<<< HEAD
           "justifyContent": "center",
           "opacity": 1,
           "paddingBottom": 16,
@@ -69,14 +62,6 @@ exports[`Header component Should render container component correctly 1`] = `
           "paddingRight": 0,
           "paddingTop": 16,
           "width": 40,
-=======
-          "opacity": 1,
-          "paddingBottom": 16,
-          "paddingLeft": 16,
-          "paddingRight": 16,
-          "paddingTop": 16,
-          "width": 56,
->>>>>>> origin/update/react
         }
       }
     >
@@ -111,10 +96,6 @@ exports[`Header component Should render container component correctly 1`] = `
             "marginLeft": 0,
             "paddingBottom": 16,
             "paddingLeft": 16,
-<<<<<<< HEAD
-=======
-            "paddingRight": 16,
->>>>>>> origin/update/react
             "paddingTop": 16,
           },
         ]
@@ -144,16 +125,12 @@ exports[`Header component Should render container component correctly 1`] = `
       onStartShouldSetResponder={[Function]}
       style={
         Object {
-<<<<<<< HEAD
           "alignItems": "center",
-=======
->>>>>>> origin/update/react
           "alignSelf": "center",
           "flexBasis": 0,
           "flexGrow": 1,
           "flexShrink": 1,
           "height": 56,
-<<<<<<< HEAD
           "justifyContent": "center",
           "opacity": 1,
           "paddingBottom": 16,
@@ -161,14 +138,6 @@ exports[`Header component Should render container component correctly 1`] = `
           "paddingRight": 16,
           "paddingTop": 16,
           "width": 40,
-=======
-          "opacity": 1,
-          "paddingBottom": 16,
-          "paddingLeft": 16,
-          "paddingRight": 16,
-          "paddingTop": 16,
-          "width": 56,
->>>>>>> origin/update/react
         }
       }
     >

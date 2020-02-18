@@ -1,1 +1,0 @@
-export { StoryNatHeaderNew } from './StoryNatHeaderNew';

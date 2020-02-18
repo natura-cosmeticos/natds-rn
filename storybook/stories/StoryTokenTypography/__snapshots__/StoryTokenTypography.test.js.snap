@@ -1,25 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> origin/update/react
->>>>>>> origin/update/react
->>>>>>> origin/update/react
->>>>>>> origin/update/react
->>>>>>> origin/update/react
->>>>>>> origin/update/react
 <RCTSafeAreaView
   emulateUnlessSupported={true}
 >
@@ -27,15 +8,7 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
     style={
       Array [
         Object {
-<<<<<<< HEAD
           "backgroundColor": "#FFFFFF",
-=======
-<<<<<<< HEAD
-          "backgroundColor": "#FFFFFF",
-=======
-          "backgroundColor": "white",
->>>>>>> origin/update/react
->>>>>>> origin/update/react
           "bottom": 0,
           "flexBasis": 0,
           "flexGrow": 1,
@@ -50,23 +23,7 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
         },
         Object {
           "backgroundColor": "#FFF",
-<<<<<<< HEAD
           "marginTop": 0,
-=======
-<<<<<<< HEAD
-          "marginTop": 0,
-=======
-<<<<<<< HEAD
-          "marginTop": 0,
-=======
-<<<<<<< HEAD
-          "marginTop": 0,
-=======
-          "marginTop": 30,
->>>>>>> origin/update/react
->>>>>>> origin/update/react
->>>>>>> origin/update/react
->>>>>>> origin/update/react
           "width": 750,
         },
       ]
@@ -79,12 +36,6 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
           style={
             Array [
               Object {
-<<<<<<< HEAD
-=======
-                "flexBasis": 0,
-                "flexGrow": 1,
-                "flexShrink": 1,
->>>>>>> origin/update/react
                 "marginBottom": 24,
                 "marginLeft": 0,
                 "marginRight": 0,
@@ -102,10 +53,6 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
             style={
               Array [
                 Object {
-<<<<<<< HEAD
-=======
-                  "backgroundColor": "#FFF",
->>>>>>> origin/update/react
                   "color": "#333333",
                   "fontSize": 20,
                   "fontWeight": "500",
@@ -123,12 +70,6 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
           style={
             Array [
               Object {
-<<<<<<< HEAD
-=======
-                "flexBasis": 0,
-                "flexGrow": 1,
-                "flexShrink": 1,
->>>>>>> origin/update/react
                 "marginBottom": 24,
                 "marginLeft": 0,
                 "marginRight": 0,
@@ -146,10 +87,6 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
             style={
               Array [
                 Object {
-<<<<<<< HEAD
-=======
-                  "backgroundColor": "#FFF",
->>>>>>> origin/update/react
                   "color": "#333333",
                   "fontSize": 96,
                   "fontWeight": "400",
@@ -167,12 +104,6 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
           style={
             Array [
               Object {
-<<<<<<< HEAD
-=======
-                "flexBasis": 0,
-                "flexGrow": 1,
-                "flexShrink": 1,
->>>>>>> origin/update/react
                 "marginBottom": 24,
                 "marginLeft": 0,
                 "marginRight": 0,
@@ -190,10 +121,6 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
             style={
               Array [
                 Object {
-<<<<<<< HEAD
-=======
-                  "backgroundColor": "#FFF",
->>>>>>> origin/update/react
                   "color": "#333333",
                   "fontSize": 60,
                   "fontWeight": "400",
@@ -211,12 +138,6 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
           style={
             Array [
               Object {
-<<<<<<< HEAD
-=======
-                "flexBasis": 0,
-                "flexGrow": 1,
-                "flexShrink": 1,
->>>>>>> origin/update/react
                 "marginBottom": 24,
                 "marginLeft": 0,
                 "marginRight": 0,
@@ -234,10 +155,6 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
             style={
               Array [
                 Object {
-<<<<<<< HEAD
-=======
-                  "backgroundColor": "#FFF",
->>>>>>> origin/update/react
                   "color": "#333333",
                   "fontSize": 48,
                   "fontWeight": "400",
@@ -255,12 +172,6 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
           style={
             Array [
               Object {
-<<<<<<< HEAD
-=======
-                "flexBasis": 0,
-                "flexGrow": 1,
-                "flexShrink": 1,
->>>>>>> origin/update/react
                 "marginBottom": 24,
                 "marginLeft": 0,
                 "marginRight": 0,
@@ -278,10 +189,6 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
             style={
               Array [
                 Object {
-<<<<<<< HEAD
-=======
-                  "backgroundColor": "#FFF",
->>>>>>> origin/update/react
                   "color": "#333333",
                   "fontSize": 34,
                   "fontWeight": "400",
@@ -299,12 +206,6 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
           style={
             Array [
               Object {
-<<<<<<< HEAD
-=======
-                "flexBasis": 0,
-                "flexGrow": 1,
-                "flexShrink": 1,
->>>>>>> origin/update/react
                 "marginBottom": 24,
                 "marginLeft": 0,
                 "marginRight": 0,
@@ -322,10 +223,6 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
             style={
               Array [
                 Object {
-<<<<<<< HEAD
-=======
-                  "backgroundColor": "#FFF",
->>>>>>> origin/update/react
                   "color": "#333333",
                   "fontSize": 24,
                   "fontWeight": "400",
@@ -343,12 +240,6 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
           style={
             Array [
               Object {
-<<<<<<< HEAD
-=======
-                "flexBasis": 0,
-                "flexGrow": 1,
-                "flexShrink": 1,
->>>>>>> origin/update/react
                 "marginBottom": 24,
                 "marginLeft": 0,
                 "marginRight": 0,
@@ -366,10 +257,6 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
             style={
               Array [
                 Object {
-<<<<<<< HEAD
-=======
-                  "backgroundColor": "#FFF",
->>>>>>> origin/update/react
                   "color": "#333333",
                   "fontSize": 20,
                   "fontWeight": "500",
@@ -387,12 +274,6 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
           style={
             Array [
               Object {
-<<<<<<< HEAD
-=======
-                "flexBasis": 0,
-                "flexGrow": 1,
-                "flexShrink": 1,
->>>>>>> origin/update/react
                 "marginBottom": 24,
                 "marginLeft": 0,
                 "marginRight": 0,
@@ -410,10 +291,6 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
             style={
               Array [
                 Object {
-<<<<<<< HEAD
-=======
-                  "backgroundColor": "#FFF",
->>>>>>> origin/update/react
                   "color": "#333333",
                   "fontSize": 16,
                   "fontWeight": "500",
@@ -431,12 +308,6 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
           style={
             Array [
               Object {
-<<<<<<< HEAD
-=======
-                "flexBasis": 0,
-                "flexGrow": 1,
-                "flexShrink": 1,
->>>>>>> origin/update/react
                 "marginBottom": 24,
                 "marginLeft": 0,
                 "marginRight": 0,
@@ -454,10 +325,6 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
             style={
               Array [
                 Object {
-<<<<<<< HEAD
-=======
-                  "backgroundColor": "#FFF",
->>>>>>> origin/update/react
                   "color": "#333333",
                   "fontSize": 14,
                   "fontWeight": "500",
@@ -475,12 +342,6 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
           style={
             Array [
               Object {
-<<<<<<< HEAD
-=======
-                "flexBasis": 0,
-                "flexGrow": 1,
-                "flexShrink": 1,
->>>>>>> origin/update/react
                 "marginBottom": 24,
                 "marginLeft": 0,
                 "marginRight": 0,
@@ -498,10 +359,6 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
             style={
               Array [
                 Object {
-<<<<<<< HEAD
-=======
-                  "backgroundColor": "#FFF",
->>>>>>> origin/update/react
                   "color": "#333333",
                   "fontSize": 16,
                   "fontWeight": "400",
@@ -519,12 +376,6 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
           style={
             Array [
               Object {
-<<<<<<< HEAD
-=======
-                "flexBasis": 0,
-                "flexGrow": 1,
-                "flexShrink": 1,
->>>>>>> origin/update/react
                 "marginBottom": 24,
                 "marginLeft": 0,
                 "marginRight": 0,
@@ -542,10 +393,6 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
             style={
               Array [
                 Object {
-<<<<<<< HEAD
-=======
-                  "backgroundColor": "#FFF",
->>>>>>> origin/update/react
                   "color": "#333333",
                   "fontSize": 14,
                   "fontWeight": "400",
@@ -563,12 +410,6 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
           style={
             Array [
               Object {
-<<<<<<< HEAD
-=======
-                "flexBasis": 0,
-                "flexGrow": 1,
-                "flexShrink": 1,
->>>>>>> origin/update/react
                 "marginBottom": 24,
                 "marginLeft": 0,
                 "marginRight": 0,
@@ -586,10 +427,6 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
             style={
               Array [
                 Object {
-<<<<<<< HEAD
-=======
-                  "backgroundColor": "#FFF",
->>>>>>> origin/update/react
                   "color": "#333333",
                   "fontSize": 14,
                   "fontWeight": "500",
@@ -607,12 +444,6 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
           style={
             Array [
               Object {
-<<<<<<< HEAD
-=======
-                "flexBasis": 0,
-                "flexGrow": 1,
-                "flexShrink": 1,
->>>>>>> origin/update/react
                 "marginBottom": 24,
                 "marginLeft": 0,
                 "marginRight": 0,
@@ -630,10 +461,6 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
             style={
               Array [
                 Object {
-<<<<<<< HEAD
-=======
-                  "backgroundColor": "#FFF",
->>>>>>> origin/update/react
                   "color": "#333333",
                   "fontSize": 12,
                   "fontWeight": "400",
@@ -651,12 +478,6 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
           style={
             Array [
               Object {
-<<<<<<< HEAD
-=======
-                "flexBasis": 0,
-                "flexGrow": 1,
-                "flexShrink": 1,
->>>>>>> origin/update/react
                 "marginBottom": 24,
                 "marginLeft": 0,
                 "marginRight": 0,
@@ -674,10 +495,6 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
             style={
               Array [
                 Object {
-<<<<<<< HEAD
-=======
-                  "backgroundColor": "#FFF",
->>>>>>> origin/update/react
                   "color": "#333333",
                   "fontSize": 12,
                   "fontWeight": "500",
@@ -695,12 +512,6 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
           style={
             Array [
               Object {
-<<<<<<< HEAD
-=======
-                "flexBasis": 0,
-                "flexGrow": 1,
-                "flexShrink": 1,
->>>>>>> origin/update/react
                 "marginBottom": 24,
                 "marginLeft": 0,
                 "marginRight": 0,
@@ -718,10 +529,6 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
             style={
               Array [
                 Object {
-<<<<<<< HEAD
-=======
-                  "backgroundColor": "#FFF",
->>>>>>> origin/update/react
                   "color": "#333333",
                   "fontSize": 20,
                   "fontWeight": "500",
@@ -739,12 +546,6 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
           style={
             Array [
               Object {
-<<<<<<< HEAD
-=======
-                "flexBasis": 0,
-                "flexGrow": 1,
-                "flexShrink": 1,
->>>>>>> origin/update/react
                 "marginBottom": 24,
                 "marginLeft": 0,
                 "marginRight": 0,
@@ -762,10 +563,6 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
             style={
               Array [
                 Object {
-<<<<<<< HEAD
-=======
-                  "backgroundColor": "#FFF",
->>>>>>> origin/update/react
                   "color": "#F4AB34",
                   "fontSize": 16,
                   "fontWeight": "400",
@@ -783,12 +580,6 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
           style={
             Array [
               Object {
-<<<<<<< HEAD
-=======
-                "flexBasis": 0,
-                "flexGrow": 1,
-                "flexShrink": 1,
->>>>>>> origin/update/react
                 "marginBottom": 0,
                 "marginLeft": 0,
                 "marginRight": 0,
@@ -806,10 +597,6 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
             style={
               Array [
                 Object {
-<<<<<<< HEAD
-=======
-                  "backgroundColor": "#FFF",
->>>>>>> origin/update/react
                   "color": "#333333",
                   "fontSize": 16,
                   "fontWeight": "400",
@@ -827,12 +614,6 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
           style={
             Array [
               Object {
-<<<<<<< HEAD
-=======
-                "flexBasis": 0,
-                "flexGrow": 1,
-                "flexShrink": 1,
->>>>>>> origin/update/react
                 "marginBottom": 64,
                 "marginLeft": 0,
                 "marginRight": 0,
@@ -850,10 +631,6 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
             style={
               Array [
                 Object {
-<<<<<<< HEAD
-=======
-                  "backgroundColor": "#FFF",
->>>>>>> origin/update/react
                   "color": "#333333",
                   "fontSize": 16,
                   "fontWeight": "400",
@@ -871,12 +648,6 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
           style={
             Array [
               Object {
-<<<<<<< HEAD
-=======
-                "flexBasis": 0,
-                "flexGrow": 1,
-                "flexShrink": 1,
->>>>>>> origin/update/react
                 "marginBottom": 4,
                 "marginLeft": 0,
                 "marginRight": 0,
@@ -894,10 +665,6 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
             style={
               Array [
                 Object {
-<<<<<<< HEAD
-=======
-                  "backgroundColor": "#FFF",
->>>>>>> origin/update/react
                   "color": "#333333",
                   "fontSize": 16,
                   "fontWeight": "400",
@@ -914,776 +681,4 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
     </RCTScrollView>
   </View>
 </RCTSafeAreaView>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
-<View
-  style={
-    Array [
-      Object {
-        "backgroundColor": "white",
-        "bottom": 0,
-        "flexBasis": 0,
-        "flexGrow": 1,
-        "flexShrink": 1,
-        "left": 0,
-        "paddingBottom": 0,
-        "paddingLeft": 16,
-        "paddingRight": 16,
-        "paddingTop": 0,
-        "right": 0,
-        "top": 0,
-      },
-      Object {
-        "backgroundColor": "#FFF",
-        "marginTop": 30,
-        "width": 750,
-      },
-    ]
-  }
->
-  <RCTScrollView>
-    <View>
-      <View
-        margin={24}
-        style={
-          Array [
-            Object {
-              "flexBasis": 0,
-              "flexGrow": 1,
-              "flexShrink": 1,
-              "marginBottom": 24,
-              "marginLeft": 0,
-              "marginRight": 0,
-              "marginTop": 0,
-              "paddingBottom": 0,
-              "paddingLeft": 0,
-              "paddingRight": 0,
-              "paddingTop": 0,
-            },
-          ]
-        }
-      >
-        <Text
-          color="#333333"
-          style={
-            Array [
-              Object {
-                "backgroundColor": "#FFF",
-                "color": "#333333",
-                "fontSize": 20,
-                "fontWeight": "500",
-                "lineHeight": 30,
-              },
-            ]
-          }
-          type="h6"
-        >
-          SIZES
-        </Text>
-      </View>
-      <View
-        margin={24}
-        style={
-          Array [
-            Object {
-              "flexBasis": 0,
-              "flexGrow": 1,
-              "flexShrink": 1,
-              "marginBottom": 24,
-              "marginLeft": 0,
-              "marginRight": 0,
-              "marginTop": 0,
-              "paddingBottom": 0,
-              "paddingLeft": 0,
-              "paddingRight": 0,
-              "paddingTop": 0,
-            },
-          ]
-        }
-      >
-        <Text
-          color="#333333"
-          style={
-            Array [
-              Object {
-                "backgroundColor": "#FFF",
-                "color": "#333333",
-                "fontSize": 96,
-                "fontWeight": "400",
-                "lineHeight": 144,
-              },
-            ]
-          }
-          type="h1"
-        >
-          h1. Heading
-        </Text>
-      </View>
-      <View
-        margin={24}
-        style={
-          Array [
-            Object {
-              "flexBasis": 0,
-              "flexGrow": 1,
-              "flexShrink": 1,
-              "marginBottom": 24,
-              "marginLeft": 0,
-              "marginRight": 0,
-              "marginTop": 0,
-              "paddingBottom": 0,
-              "paddingLeft": 0,
-              "paddingRight": 0,
-              "paddingTop": 0,
-            },
-          ]
-        }
-      >
-        <Text
-          color="#333333"
-          style={
-            Array [
-              Object {
-                "backgroundColor": "#FFF",
-                "color": "#333333",
-                "fontSize": 60,
-                "fontWeight": "400",
-                "lineHeight": 90,
-              },
-            ]
-          }
-          type="h2"
-        >
-          h2. Heading
-        </Text>
-      </View>
-      <View
-        margin={24}
-        style={
-          Array [
-            Object {
-              "flexBasis": 0,
-              "flexGrow": 1,
-              "flexShrink": 1,
-              "marginBottom": 24,
-              "marginLeft": 0,
-              "marginRight": 0,
-              "marginTop": 0,
-              "paddingBottom": 0,
-              "paddingLeft": 0,
-              "paddingRight": 0,
-              "paddingTop": 0,
-            },
-          ]
-        }
-      >
-        <Text
-          color="#333333"
-          style={
-            Array [
-              Object {
-                "backgroundColor": "#FFF",
-                "color": "#333333",
-                "fontSize": 48,
-                "fontWeight": "400",
-                "lineHeight": 72,
-              },
-            ]
-          }
-          type="h3"
-        >
-          h3. Heading
-        </Text>
-      </View>
-      <View
-        margin={24}
-        style={
-          Array [
-            Object {
-              "flexBasis": 0,
-              "flexGrow": 1,
-              "flexShrink": 1,
-              "marginBottom": 24,
-              "marginLeft": 0,
-              "marginRight": 0,
-              "marginTop": 0,
-              "paddingBottom": 0,
-              "paddingLeft": 0,
-              "paddingRight": 0,
-              "paddingTop": 0,
-            },
-          ]
-        }
-      >
-        <Text
-          color="#333333"
-          style={
-            Array [
-              Object {
-                "backgroundColor": "#FFF",
-                "color": "#333333",
-                "fontSize": 34,
-                "fontWeight": "400",
-                "lineHeight": 51,
-              },
-            ]
-          }
-          type="h4"
-        >
-          h4. Heading
-        </Text>
-      </View>
-      <View
-        margin={24}
-        style={
-          Array [
-            Object {
-              "flexBasis": 0,
-              "flexGrow": 1,
-              "flexShrink": 1,
-              "marginBottom": 24,
-              "marginLeft": 0,
-              "marginRight": 0,
-              "marginTop": 0,
-              "paddingBottom": 0,
-              "paddingLeft": 0,
-              "paddingRight": 0,
-              "paddingTop": 0,
-            },
-          ]
-        }
-      >
-        <Text
-          color="#333333"
-          style={
-            Array [
-              Object {
-                "backgroundColor": "#FFF",
-                "color": "#333333",
-                "fontSize": 24,
-                "fontWeight": "400",
-                "lineHeight": 36,
-              },
-            ]
-          }
-          type="h5"
-        >
-          h5. Heading
-        </Text>
-      </View>
-      <View
-        margin={24}
-        style={
-          Array [
-            Object {
-              "flexBasis": 0,
-              "flexGrow": 1,
-              "flexShrink": 1,
-              "marginBottom": 24,
-              "marginLeft": 0,
-              "marginRight": 0,
-              "marginTop": 0,
-              "paddingBottom": 0,
-              "paddingLeft": 0,
-              "paddingRight": 0,
-              "paddingTop": 0,
-            },
-          ]
-        }
-      >
-        <Text
-          color="#333333"
-          style={
-            Array [
-              Object {
-                "backgroundColor": "#FFF",
-                "color": "#333333",
-                "fontSize": 20,
-                "fontWeight": "500",
-                "lineHeight": 30,
-              },
-            ]
-          }
-          type="h6"
-        >
-          h6. Heading
-        </Text>
-      </View>
-      <View
-        margin={24}
-        style={
-          Array [
-            Object {
-              "flexBasis": 0,
-              "flexGrow": 1,
-              "flexShrink": 1,
-              "marginBottom": 24,
-              "marginLeft": 0,
-              "marginRight": 0,
-              "marginTop": 0,
-              "paddingBottom": 0,
-              "paddingLeft": 0,
-              "paddingRight": 0,
-              "paddingTop": 0,
-            },
-          ]
-        }
-      >
-        <Text
-          color="#333333"
-          style={
-            Array [
-              Object {
-                "backgroundColor": "#FFF",
-                "color": "#333333",
-                "fontSize": 16,
-                "fontWeight": "500",
-                "lineHeight": 24,
-              },
-            ]
-          }
-          type="subtitle1"
-        >
-          subtitle1. Lorem ipsum dolor sit amet, consectetur adipscing elit. Quos blanditiis tenetur
-        </Text>
-      </View>
-      <View
-        margin={24}
-        style={
-          Array [
-            Object {
-              "flexBasis": 0,
-              "flexGrow": 1,
-              "flexShrink": 1,
-              "marginBottom": 24,
-              "marginLeft": 0,
-              "marginRight": 0,
-              "marginTop": 0,
-              "paddingBottom": 0,
-              "paddingLeft": 0,
-              "paddingRight": 0,
-              "paddingTop": 0,
-            },
-          ]
-        }
-      >
-        <Text
-          color="#333333"
-          style={
-            Array [
-              Object {
-                "backgroundColor": "#FFF",
-                "color": "#333333",
-                "fontSize": 14,
-                "fontWeight": "500",
-                "lineHeight": 21,
-              },
-            ]
-          }
-          type="subtitle2"
-        >
-          subtitle2. Lorem ipsum dolor sit amet, consectetur adipscing elit. Quos blanditiis tenetur
-        </Text>
-      </View>
-      <View
-        margin={24}
-        style={
-          Array [
-            Object {
-              "flexBasis": 0,
-              "flexGrow": 1,
-              "flexShrink": 1,
-              "marginBottom": 24,
-              "marginLeft": 0,
-              "marginRight": 0,
-              "marginTop": 0,
-              "paddingBottom": 0,
-              "paddingLeft": 0,
-              "paddingRight": 0,
-              "paddingTop": 0,
-            },
-          ]
-        }
-      >
-        <Text
-          color="#333333"
-          style={
-            Array [
-              Object {
-                "backgroundColor": "#FFF",
-                "color": "#333333",
-                "fontSize": 16,
-                "fontWeight": "400",
-                "lineHeight": 24,
-              },
-            ]
-          }
-          type="body1"
-        >
-          body1. Lorem ipsum dolor sit amet, consectetur adipscing elit. Quos blanditiis tenetur unde suscipit, quam beatae rerum inventore consectetur, neque doloribus, cupiditate numquam dignissimos laborum fugiat deleniti? Eum quasi quidem quibusdam
-        </Text>
-      </View>
-      <View
-        margin={24}
-        style={
-          Array [
-            Object {
-              "flexBasis": 0,
-              "flexGrow": 1,
-              "flexShrink": 1,
-              "marginBottom": 24,
-              "marginLeft": 0,
-              "marginRight": 0,
-              "marginTop": 0,
-              "paddingBottom": 0,
-              "paddingLeft": 0,
-              "paddingRight": 0,
-              "paddingTop": 0,
-            },
-          ]
-        }
-      >
-        <Text
-          color="#333333"
-          style={
-            Array [
-              Object {
-                "backgroundColor": "#FFF",
-                "color": "#333333",
-                "fontSize": 14,
-                "fontWeight": "400",
-                "lineHeight": 21,
-              },
-            ]
-          }
-          type="body2"
-        >
-          body2. Lorem ipsum dolor sit amet, consectetur adipscing elit. Quos blanditiis tenetur unde suscipit, quam beatae rerum inventore consectetur, neque doloribus, cupiditate numquam dignissimos
-        </Text>
-      </View>
-      <View
-        margin={24}
-        style={
-          Array [
-            Object {
-              "flexBasis": 0,
-              "flexGrow": 1,
-              "flexShrink": 1,
-              "marginBottom": 24,
-              "marginLeft": 0,
-              "marginRight": 0,
-              "marginTop": 0,
-              "paddingBottom": 0,
-              "paddingLeft": 0,
-              "paddingRight": 0,
-              "paddingTop": 0,
-            },
-          ]
-        }
-      >
-        <Text
-          color="#333333"
-          style={
-            Array [
-              Object {
-                "backgroundColor": "#FFF",
-                "color": "#333333",
-                "fontSize": 14,
-                "fontWeight": "500",
-                "lineHeight": 21,
-              },
-            ]
-          }
-          type="button"
-        >
-          BUTTON TEXT
-        </Text>
-      </View>
-      <View
-        margin={24}
-        style={
-          Array [
-            Object {
-              "flexBasis": 0,
-              "flexGrow": 1,
-              "flexShrink": 1,
-              "marginBottom": 24,
-              "marginLeft": 0,
-              "marginRight": 0,
-              "marginTop": 0,
-              "paddingBottom": 0,
-              "paddingLeft": 0,
-              "paddingRight": 0,
-              "paddingTop": 0,
-            },
-          ]
-        }
-      >
-        <Text
-          color="#333333"
-          style={
-            Array [
-              Object {
-                "backgroundColor": "#FFF",
-                "color": "#333333",
-                "fontSize": 12,
-                "fontWeight": "400",
-                "lineHeight": 18,
-              },
-            ]
-          }
-          type="caption"
-        >
-          Caption text
-        </Text>
-      </View>
-      <View
-        margin={24}
-        style={
-          Array [
-            Object {
-              "flexBasis": 0,
-              "flexGrow": 1,
-              "flexShrink": 1,
-              "marginBottom": 24,
-              "marginLeft": 0,
-              "marginRight": 0,
-              "marginTop": 0,
-              "paddingBottom": 0,
-              "paddingLeft": 0,
-              "paddingRight": 0,
-              "paddingTop": 0,
-            },
-          ]
-        }
-      >
-        <Text
-          color="#333333"
-          style={
-            Array [
-              Object {
-                "backgroundColor": "#FFF",
-                "color": "#333333",
-                "fontSize": 12,
-                "fontWeight": "500",
-                "lineHeight": 18,
-              },
-            ]
-          }
-          type="overline"
-        >
-          OVERLINE TEXT
-        </Text>
-      </View>
-      <View
-        margin={24}
-        style={
-          Array [
-            Object {
-              "flexBasis": 0,
-              "flexGrow": 1,
-              "flexShrink": 1,
-              "marginBottom": 24,
-              "marginLeft": 0,
-              "marginRight": 0,
-              "marginTop": 0,
-              "paddingBottom": 0,
-              "paddingLeft": 0,
-              "paddingRight": 0,
-              "paddingTop": 0,
-            },
-          ]
-        }
-      >
-        <Text
-          color="#333333"
-          style={
-            Array [
-              Object {
-                "backgroundColor": "#FFF",
-                "color": "#333333",
-                "fontSize": 20,
-                "fontWeight": "500",
-                "lineHeight": 30,
-              },
-            ]
-          }
-          type="h6"
-        >
-          VARIATIONS
-        </Text>
-      </View>
-      <View
-        margin={24}
-        style={
-          Array [
-            Object {
-              "flexBasis": 0,
-              "flexGrow": 1,
-              "flexShrink": 1,
-              "marginBottom": 24,
-              "marginLeft": 0,
-              "marginRight": 0,
-              "marginTop": 0,
-              "paddingBottom": 0,
-              "paddingLeft": 0,
-              "paddingRight": 0,
-              "paddingTop": 0,
-            },
-          ]
-        }
-      >
-        <Text
-          color="#F4AB34"
-          style={
-            Array [
-              Object {
-                "backgroundColor": "#FFF",
-                "color": "#F4AB34",
-                "fontSize": 16,
-                "fontWeight": "400",
-                "lineHeight": 24,
-              },
-            ]
-          }
-          type="body1"
-        >
-          body1. Set diffente color
-        </Text>
-      </View>
-      <View
-        margin={0}
-        style={
-          Array [
-            Object {
-              "flexBasis": 0,
-              "flexGrow": 1,
-              "flexShrink": 1,
-              "marginBottom": 0,
-              "marginLeft": 0,
-              "marginRight": 0,
-              "marginTop": 0,
-              "paddingBottom": 0,
-              "paddingLeft": 0,
-              "paddingRight": 0,
-              "paddingTop": 0,
-            },
-          ]
-        }
-      >
-        <Text
-          color="#333333"
-          style={
-            Array [
-              Object {
-                "backgroundColor": "#FFF",
-                "color": "#333333",
-                "fontSize": 16,
-                "fontWeight": "400",
-                "lineHeight": 24,
-              },
-            ]
-          }
-          type="body1"
-        >
-          body1. Withou marginBottom spacingNone
-        </Text>
-      </View>
-      <View
-        margin={64}
-        style={
-          Array [
-            Object {
-              "flexBasis": 0,
-              "flexGrow": 1,
-              "flexShrink": 1,
-              "marginBottom": 64,
-              "marginLeft": 0,
-              "marginRight": 0,
-              "marginTop": 0,
-              "paddingBottom": 0,
-              "paddingLeft": 0,
-              "paddingRight": 0,
-              "paddingTop": 0,
-            },
-          ]
-        }
-      >
-        <Text
-          color="#333333"
-          style={
-            Array [
-              Object {
-                "backgroundColor": "#FFF",
-                "color": "#333333",
-                "fontSize": 16,
-                "fontWeight": "400",
-                "lineHeight": 24,
-              },
-            ]
-          }
-          type="body1"
-        >
-          body1. Withou marginBottom spacingHuge
-        </Text>
-      </View>
-      <View
-        margin={4}
-        style={
-          Array [
-            Object {
-              "flexBasis": 0,
-              "flexGrow": 1,
-              "flexShrink": 1,
-              "marginBottom": 4,
-              "marginLeft": 0,
-              "marginRight": 0,
-              "marginTop": 0,
-              "paddingBottom": 0,
-              "paddingLeft": 0,
-              "paddingRight": 0,
-              "paddingTop": 0,
-            },
-          ]
-        }
-      >
-        <Text
-          color="#333333"
-          style={
-            Array [
-              Object {
-                "backgroundColor": "#FFF",
-                "color": "#333333",
-                "fontSize": 16,
-                "fontWeight": "400",
-                "lineHeight": 24,
-              },
-            ]
-          }
-          type="body1"
-        >
-          body1. Withou marginBottom spacingMicro
-        </Text>
-      </View>
-    </View>
-  </RCTScrollView>
-</View>
->>>>>>> origin/update/react
->>>>>>> origin/update/react
->>>>>>> origin/update/react
->>>>>>> origin/update/react
->>>>>>> origin/update/react
->>>>>>> origin/update/react
->>>>>>> origin/update/react
 `;

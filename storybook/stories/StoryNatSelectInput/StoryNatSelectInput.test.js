@@ -2,12 +2,12 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import 'jest-styled-components/native';
 
-import { StoryNatHeaderNew } from './StoryNatHeaderNew';
+import { StoryNatSelectInput } from './StoryNatSelectInput';
 
-describe('StoryNatHeaderNew component', () => {
-  it('Should render StoryNatHeaderNew component ', () => {
+describe('StoryNatSelectInput component', () => {
+  it('Should render StoryNatSelectInput component ', () => {
     const button = renderer.create(
-      <StoryNatHeaderNew />,
+      <StoryNatSelectInput />,
     ).toJSON();
     expect(button).toMatchSnapshot();
   });
