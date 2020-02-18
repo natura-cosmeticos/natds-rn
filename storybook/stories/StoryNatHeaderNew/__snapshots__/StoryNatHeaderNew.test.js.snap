@@ -51,6 +51,18 @@ exports[`StoryNatHeaderNew component Should render StoryNatHeaderNew component  
                 "position": "relative",
                 "width": "100%",
               },
+<<<<<<< HEAD
+              Object {
+                "elevation": 1,
+                "shadowColor": "#000",
+                "shadowOffset": Object {
+                  "height": 2,
+                  "width": 0,
+                },
+                "shadowOpacity": 0.24,
+              },
+=======
+>>>>>>> origin/update/react
             ]
           }
         >
@@ -70,17 +82,31 @@ exports[`StoryNatHeaderNew component Should render StoryNatHeaderNew component  
               onStartShouldSetResponder={[Function]}
               style={
                 Object {
+<<<<<<< HEAD
+                  "alignItems": "center",
+=======
+>>>>>>> origin/update/react
                   "alignSelf": "center",
                   "flexBasis": 0,
                   "flexGrow": 1,
                   "flexShrink": 1,
                   "height": 56,
+<<<<<<< HEAD
+                  "justifyContent": "center",
+                  "opacity": 1,
+                  "paddingBottom": 16,
+                  "paddingLeft": 16,
+                  "paddingRight": 0,
+                  "paddingTop": 16,
+                  "width": 40,
+=======
                   "opacity": 1,
                   "paddingBottom": 16,
                   "paddingLeft": 16,
                   "paddingRight": 16,
                   "paddingTop": 16,
                   "width": 56,
+>>>>>>> origin/update/react
                 }
               }
             >
@@ -108,7 +134,10 @@ exports[`StoryNatHeaderNew component Should render StoryNatHeaderNew component  
                     "marginLeft": 0,
                     "paddingBottom": 16,
                     "paddingLeft": 16,
+<<<<<<< HEAD
+=======
                     "paddingRight": 16,
+>>>>>>> origin/update/react
                     "paddingTop": 16,
                   },
                 ]
@@ -138,17 +167,31 @@ exports[`StoryNatHeaderNew component Should render StoryNatHeaderNew component  
               onStartShouldSetResponder={[Function]}
               style={
                 Object {
+<<<<<<< HEAD
+                  "alignItems": "center",
+=======
+>>>>>>> origin/update/react
                   "alignSelf": "center",
                   "flexBasis": 0,
                   "flexGrow": 1,
                   "flexShrink": 1,
                   "height": 56,
+<<<<<<< HEAD
+                  "justifyContent": "center",
+                  "opacity": 1,
+                  "paddingBottom": 16,
+                  "paddingLeft": 0,
+                  "paddingRight": 16,
+                  "paddingTop": 16,
+                  "width": 40,
+=======
                   "opacity": 1,
                   "paddingBottom": 16,
                   "paddingLeft": 16,
                   "paddingRight": 16,
                   "paddingTop": 16,
                   "width": 56,
+>>>>>>> origin/update/react
                 }
               }
             >
@@ -186,6 +229,18 @@ exports[`StoryNatHeaderNew component Should render StoryNatHeaderNew component  
                 "position": "relative",
                 "width": "100%",
               },
+<<<<<<< HEAD
+              Object {
+                "elevation": 1,
+                "shadowColor": "#000",
+                "shadowOffset": Object {
+                  "height": 2,
+                  "width": 0,
+                },
+                "shadowOpacity": 0.24,
+              },
+=======
+>>>>>>> origin/update/react
             ]
           }
         >
@@ -205,17 +260,31 @@ exports[`StoryNatHeaderNew component Should render StoryNatHeaderNew component  
               onStartShouldSetResponder={[Function]}
               style={
                 Object {
+<<<<<<< HEAD
+                  "alignItems": "center",
+=======
+>>>>>>> origin/update/react
                   "alignSelf": "center",
                   "flexBasis": 0,
                   "flexGrow": 1,
                   "flexShrink": 1,
                   "height": 56,
+<<<<<<< HEAD
+                  "justifyContent": "center",
+                  "opacity": 1,
+                  "paddingBottom": 16,
+                  "paddingLeft": 16,
+                  "paddingRight": 0,
+                  "paddingTop": 16,
+                  "width": 40,
+=======
                   "opacity": 1,
                   "paddingBottom": 16,
                   "paddingLeft": 16,
                   "paddingRight": 16,
                   "paddingTop": 16,
                   "width": 56,
+>>>>>>> origin/update/react
                 }
               }
             >
@@ -243,7 +312,10 @@ exports[`StoryNatHeaderNew component Should render StoryNatHeaderNew component  
                     "marginLeft": 0,
                     "paddingBottom": 16,
                     "paddingLeft": 16,
+<<<<<<< HEAD
+=======
                     "paddingRight": 16,
+>>>>>>> origin/update/react
                     "paddingTop": 16,
                   },
                 ]
@@ -273,17 +345,31 @@ exports[`StoryNatHeaderNew component Should render StoryNatHeaderNew component  
               onStartShouldSetResponder={[Function]}
               style={
                 Object {
+<<<<<<< HEAD
+                  "alignItems": "center",
+=======
+>>>>>>> origin/update/react
                   "alignSelf": "center",
                   "flexBasis": 0,
                   "flexGrow": 1,
                   "flexShrink": 1,
                   "height": 56,
+<<<<<<< HEAD
+                  "justifyContent": "center",
+                  "opacity": 1,
+                  "paddingBottom": 16,
+                  "paddingLeft": 0,
+                  "paddingRight": 16,
+                  "paddingTop": 16,
+                  "width": 40,
+=======
                   "opacity": 1,
                   "paddingBottom": 16,
                   "paddingLeft": 16,
                   "paddingRight": 16,
                   "paddingTop": 16,
                   "width": 56,
+>>>>>>> origin/update/react
                 }
               }
             >
@@ -328,6 +414,18 @@ exports[`StoryNatHeaderNew component Should render StoryNatHeaderNew component  
                 "position": "relative",
                 "width": "100%",
               },
+<<<<<<< HEAD
+              Object {
+                "elevation": 1,
+                "shadowColor": "#000",
+                "shadowOffset": Object {
+                  "height": 2,
+                  "width": 0,
+                },
+                "shadowOpacity": 0.24,
+              },
+=======
+>>>>>>> origin/update/react
             ]
           }
         >
@@ -347,17 +445,31 @@ exports[`StoryNatHeaderNew component Should render StoryNatHeaderNew component  
               onStartShouldSetResponder={[Function]}
               style={
                 Object {
+<<<<<<< HEAD
+                  "alignItems": "center",
+=======
+>>>>>>> origin/update/react
                   "alignSelf": "center",
                   "flexBasis": 0,
                   "flexGrow": 1,
                   "flexShrink": 1,
                   "height": 56,
+<<<<<<< HEAD
+                  "justifyContent": "center",
+                  "opacity": 1,
+                  "paddingBottom": 16,
+                  "paddingLeft": 16,
+                  "paddingRight": 0,
+                  "paddingTop": 16,
+                  "width": 40,
+=======
                   "opacity": 1,
                   "paddingBottom": 16,
                   "paddingLeft": 16,
                   "paddingRight": 16,
                   "paddingTop": 16,
                   "width": 56,
+>>>>>>> origin/update/react
                 }
               }
             >
@@ -392,7 +504,10 @@ exports[`StoryNatHeaderNew component Should render StoryNatHeaderNew component  
                     "marginLeft": 0,
                     "paddingBottom": 16,
                     "paddingLeft": 16,
+<<<<<<< HEAD
+=======
                     "paddingRight": 16,
+>>>>>>> origin/update/react
                     "paddingTop": 16,
                   },
                 ]
@@ -422,17 +537,31 @@ exports[`StoryNatHeaderNew component Should render StoryNatHeaderNew component  
               onStartShouldSetResponder={[Function]}
               style={
                 Object {
+<<<<<<< HEAD
+                  "alignItems": "center",
+=======
+>>>>>>> origin/update/react
                   "alignSelf": "center",
                   "flexBasis": 0,
                   "flexGrow": 1,
                   "flexShrink": 1,
                   "height": 56,
+<<<<<<< HEAD
+                  "justifyContent": "center",
+                  "opacity": 1,
+                  "paddingBottom": 16,
+                  "paddingLeft": 0,
+                  "paddingRight": 16,
+                  "paddingTop": 16,
+                  "width": 40,
+=======
                   "opacity": 1,
                   "paddingBottom": 16,
                   "paddingLeft": 16,
                   "paddingRight": 16,
                   "paddingTop": 16,
                   "width": 56,
+>>>>>>> origin/update/react
                 }
               }
             >
@@ -477,6 +606,18 @@ exports[`StoryNatHeaderNew component Should render StoryNatHeaderNew component  
                 "position": "relative",
                 "width": "100%",
               },
+<<<<<<< HEAD
+              Object {
+                "elevation": 1,
+                "shadowColor": "#000",
+                "shadowOffset": Object {
+                  "height": 2,
+                  "width": 0,
+                },
+                "shadowOpacity": 0.24,
+              },
+=======
+>>>>>>> origin/update/react
             ]
           }
         >
@@ -496,17 +637,31 @@ exports[`StoryNatHeaderNew component Should render StoryNatHeaderNew component  
               onStartShouldSetResponder={[Function]}
               style={
                 Object {
+<<<<<<< HEAD
+                  "alignItems": "center",
+=======
+>>>>>>> origin/update/react
                   "alignSelf": "center",
                   "flexBasis": 0,
                   "flexGrow": 1,
                   "flexShrink": 1,
                   "height": 56,
+<<<<<<< HEAD
+                  "justifyContent": "center",
+                  "opacity": 1,
+                  "paddingBottom": 16,
+                  "paddingLeft": 16,
+                  "paddingRight": 0,
+                  "paddingTop": 16,
+                  "width": 40,
+=======
                   "opacity": 1,
                   "paddingBottom": 16,
                   "paddingLeft": 16,
                   "paddingRight": 16,
                   "paddingTop": 16,
                   "width": 56,
+>>>>>>> origin/update/react
                 }
               }
             >
@@ -549,17 +704,31 @@ exports[`StoryNatHeaderNew component Should render StoryNatHeaderNew component  
               onStartShouldSetResponder={[Function]}
               style={
                 Object {
+<<<<<<< HEAD
+                  "alignItems": "center",
+=======
+>>>>>>> origin/update/react
                   "alignSelf": "center",
                   "flexBasis": 0,
                   "flexGrow": 1,
                   "flexShrink": 1,
                   "height": 56,
+<<<<<<< HEAD
+                  "justifyContent": "center",
+                  "opacity": 1,
+                  "paddingBottom": 16,
+                  "paddingLeft": 0,
+                  "paddingRight": 16,
+                  "paddingTop": 16,
+                  "width": 40,
+=======
                   "opacity": 1,
                   "paddingBottom": 16,
                   "paddingLeft": 16,
                   "paddingRight": 16,
                   "paddingTop": 16,
                   "width": 56,
+>>>>>>> origin/update/react
                 }
               }
             >
@@ -597,6 +766,18 @@ exports[`StoryNatHeaderNew component Should render StoryNatHeaderNew component  
                 "position": "relative",
                 "width": "100%",
               },
+<<<<<<< HEAD
+              Object {
+                "elevation": 1,
+                "shadowColor": "#000",
+                "shadowOffset": Object {
+                  "height": 2,
+                  "width": 0,
+                },
+                "shadowOpacity": 0.24,
+              },
+=======
+>>>>>>> origin/update/react
             ]
           }
         >
@@ -616,17 +797,31 @@ exports[`StoryNatHeaderNew component Should render StoryNatHeaderNew component  
               onStartShouldSetResponder={[Function]}
               style={
                 Object {
+<<<<<<< HEAD
+                  "alignItems": "center",
+=======
+>>>>>>> origin/update/react
                   "alignSelf": "center",
                   "flexBasis": 0,
                   "flexGrow": 1,
                   "flexShrink": 1,
                   "height": 56,
+<<<<<<< HEAD
+                  "justifyContent": "center",
+                  "opacity": 1,
+                  "paddingBottom": 16,
+                  "paddingLeft": 16,
+                  "paddingRight": 0,
+                  "paddingTop": 16,
+                  "width": 40,
+=======
                   "opacity": 1,
                   "paddingBottom": 16,
                   "paddingLeft": 16,
                   "paddingRight": 16,
                   "paddingTop": 16,
                   "width": 56,
+>>>>>>> origin/update/react
                 }
               }
             >
@@ -669,17 +864,31 @@ exports[`StoryNatHeaderNew component Should render StoryNatHeaderNew component  
               onStartShouldSetResponder={[Function]}
               style={
                 Object {
+<<<<<<< HEAD
+                  "alignItems": "center",
+=======
+>>>>>>> origin/update/react
                   "alignSelf": "center",
                   "flexBasis": 0,
                   "flexGrow": 1,
                   "flexShrink": 1,
                   "height": 56,
+<<<<<<< HEAD
+                  "justifyContent": "center",
+                  "opacity": 1,
+                  "paddingBottom": 16,
+                  "paddingLeft": 0,
+                  "paddingRight": 16,
+                  "paddingTop": 16,
+                  "width": 40,
+=======
                   "opacity": 1,
                   "paddingBottom": 16,
                   "paddingLeft": 16,
                   "paddingRight": 16,
                   "paddingTop": 16,
                   "width": 56,
+>>>>>>> origin/update/react
                 }
               }
             >
@@ -724,6 +933,18 @@ exports[`StoryNatHeaderNew component Should render StoryNatHeaderNew component  
                 "position": "relative",
                 "width": "100%",
               },
+<<<<<<< HEAD
+              Object {
+                "elevation": 1,
+                "shadowColor": "#000",
+                "shadowOffset": Object {
+                  "height": 2,
+                  "width": 0,
+                },
+                "shadowOpacity": 0.24,
+              },
+=======
+>>>>>>> origin/update/react
             ]
           }
         >
@@ -743,17 +964,31 @@ exports[`StoryNatHeaderNew component Should render StoryNatHeaderNew component  
               onStartShouldSetResponder={[Function]}
               style={
                 Object {
+<<<<<<< HEAD
+                  "alignItems": "center",
+=======
+>>>>>>> origin/update/react
                   "alignSelf": "center",
                   "flexBasis": 0,
                   "flexGrow": 1,
                   "flexShrink": 1,
                   "height": 56,
+<<<<<<< HEAD
+                  "justifyContent": "center",
+                  "opacity": 1,
+                  "paddingBottom": 16,
+                  "paddingLeft": 16,
+                  "paddingRight": 0,
+                  "paddingTop": 16,
+                  "width": 40,
+=======
                   "opacity": 1,
                   "paddingBottom": 16,
                   "paddingLeft": 16,
                   "paddingRight": 16,
                   "paddingTop": 16,
                   "width": 56,
+>>>>>>> origin/update/react
                 }
               }
             >
@@ -803,17 +1038,31 @@ exports[`StoryNatHeaderNew component Should render StoryNatHeaderNew component  
               onStartShouldSetResponder={[Function]}
               style={
                 Object {
+<<<<<<< HEAD
+                  "alignItems": "center",
+=======
+>>>>>>> origin/update/react
                   "alignSelf": "center",
                   "flexBasis": 0,
                   "flexGrow": 1,
                   "flexShrink": 1,
                   "height": 56,
+<<<<<<< HEAD
+                  "justifyContent": "center",
+                  "opacity": 1,
+                  "paddingBottom": 16,
+                  "paddingLeft": 0,
+                  "paddingRight": 16,
+                  "paddingTop": 16,
+                  "width": 40,
+=======
                   "opacity": 1,
                   "paddingBottom": 16,
                   "paddingLeft": 16,
                   "paddingRight": 16,
                   "paddingTop": 16,
                   "width": 56,
+>>>>>>> origin/update/react
                 }
               }
             >
@@ -858,6 +1107,18 @@ exports[`StoryNatHeaderNew component Should render StoryNatHeaderNew component  
                 "position": "relative",
                 "width": "100%",
               },
+<<<<<<< HEAD
+              Object {
+                "elevation": 1,
+                "shadowColor": "#000",
+                "shadowOffset": Object {
+                  "height": 2,
+                  "width": 0,
+                },
+                "shadowOpacity": 0.24,
+              },
+=======
+>>>>>>> origin/update/react
             ]
           }
         >
@@ -879,7 +1140,10 @@ exports[`StoryNatHeaderNew component Should render StoryNatHeaderNew component  
                     "marginLeft": 0,
                     "paddingBottom": 16,
                     "paddingLeft": 16,
+<<<<<<< HEAD
+=======
                     "paddingRight": 16,
+>>>>>>> origin/update/react
                     "paddingTop": 16,
                   },
                 ]
@@ -909,17 +1173,31 @@ exports[`StoryNatHeaderNew component Should render StoryNatHeaderNew component  
               onStartShouldSetResponder={[Function]}
               style={
                 Object {
+<<<<<<< HEAD
+                  "alignItems": "center",
+=======
+>>>>>>> origin/update/react
                   "alignSelf": "center",
                   "flexBasis": 0,
                   "flexGrow": 1,
                   "flexShrink": 1,
                   "height": 56,
+<<<<<<< HEAD
+                  "justifyContent": "center",
+                  "opacity": 1,
+                  "paddingBottom": 16,
+                  "paddingLeft": 0,
+                  "paddingRight": 16,
+                  "paddingTop": 16,
+                  "width": 40,
+=======
                   "opacity": 1,
                   "paddingBottom": 16,
                   "paddingLeft": 16,
                   "paddingRight": 16,
                   "paddingTop": 16,
                   "width": 56,
+>>>>>>> origin/update/react
                 }
               }
             >
@@ -957,6 +1235,18 @@ exports[`StoryNatHeaderNew component Should render StoryNatHeaderNew component  
                 "position": "relative",
                 "width": "100%",
               },
+<<<<<<< HEAD
+              Object {
+                "elevation": 1,
+                "shadowColor": "#000",
+                "shadowOffset": Object {
+                  "height": 2,
+                  "width": 0,
+                },
+                "shadowOpacity": 0.24,
+              },
+=======
+>>>>>>> origin/update/react
             ]
           }
         >
@@ -976,17 +1266,31 @@ exports[`StoryNatHeaderNew component Should render StoryNatHeaderNew component  
               onStartShouldSetResponder={[Function]}
               style={
                 Object {
+<<<<<<< HEAD
+                  "alignItems": "center",
+=======
+>>>>>>> origin/update/react
                   "alignSelf": "center",
                   "flexBasis": 0,
                   "flexGrow": 1,
                   "flexShrink": 1,
                   "height": 56,
+<<<<<<< HEAD
+                  "justifyContent": "center",
+                  "opacity": 1,
+                  "paddingBottom": 16,
+                  "paddingLeft": 16,
+                  "paddingRight": 0,
+                  "paddingTop": 16,
+                  "width": 40,
+=======
                   "opacity": 1,
                   "paddingBottom": 16,
                   "paddingLeft": 16,
                   "paddingRight": 16,
                   "paddingTop": 16,
                   "width": 56,
+>>>>>>> origin/update/react
                 }
               }
             >
@@ -1014,7 +1318,10 @@ exports[`StoryNatHeaderNew component Should render StoryNatHeaderNew component  
                     "marginLeft": 0,
                     "paddingBottom": 16,
                     "paddingLeft": 16,
+<<<<<<< HEAD
+=======
                     "paddingRight": 16,
+>>>>>>> origin/update/react
                     "paddingTop": 16,
                   },
                 ]
@@ -1051,6 +1358,18 @@ exports[`StoryNatHeaderNew component Should render StoryNatHeaderNew component  
                 "position": "relative",
                 "width": "100%",
               },
+<<<<<<< HEAD
+              Object {
+                "elevation": 1,
+                "shadowColor": "#000",
+                "shadowOffset": Object {
+                  "height": 2,
+                  "width": 0,
+                },
+                "shadowOpacity": 0.24,
+              },
+=======
+>>>>>>> origin/update/react
             ]
           }
         >
@@ -1072,7 +1391,10 @@ exports[`StoryNatHeaderNew component Should render StoryNatHeaderNew component  
                     "marginLeft": 0,
                     "paddingBottom": 16,
                     "paddingLeft": 16,
+<<<<<<< HEAD
+=======
                     "paddingRight": 16,
+>>>>>>> origin/update/react
                     "paddingTop": 16,
                   },
                 ]
@@ -1109,6 +1431,18 @@ exports[`StoryNatHeaderNew component Should render StoryNatHeaderNew component  
                 "position": "relative",
                 "width": "100%",
               },
+<<<<<<< HEAD
+              Object {
+                "elevation": 1,
+                "shadowColor": "#000",
+                "shadowOffset": Object {
+                  "height": 2,
+                  "width": 0,
+                },
+                "shadowOpacity": 0.24,
+              },
+=======
+>>>>>>> origin/update/react
             ]
           }
         >
@@ -1128,17 +1462,31 @@ exports[`StoryNatHeaderNew component Should render StoryNatHeaderNew component  
               onStartShouldSetResponder={[Function]}
               style={
                 Object {
+<<<<<<< HEAD
+                  "alignItems": "center",
+=======
+>>>>>>> origin/update/react
                   "alignSelf": "center",
                   "flexBasis": 0,
                   "flexGrow": 1,
                   "flexShrink": 1,
                   "height": 56,
+<<<<<<< HEAD
+                  "justifyContent": "center",
+                  "opacity": 1,
+                  "paddingBottom": 16,
+                  "paddingLeft": 16,
+                  "paddingRight": 0,
+                  "paddingTop": 16,
+                  "width": 40,
+=======
                   "opacity": 1,
                   "paddingBottom": 16,
                   "paddingLeft": 16,
                   "paddingRight": 16,
                   "paddingTop": 16,
                   "width": 56,
+>>>>>>> origin/update/react
                 }
               }
             >
@@ -1356,6 +1704,16 @@ exports[`StoryNatHeaderNew component Should render StoryNatHeaderNew component  
                         "contrastText": "#FFFFFF",
                         "main": "#E74627",
                       },
+<<<<<<< HEAD
+                      "grayscale": Object {
+                        "colorBrdBlack": "#000000",
+                        "colorBrdNatGray": "#333333",
+                        "colorBrdNatGray1": "#777777",
+                        "colorBrdNatGray2": "#BBBBBB",
+                        "colorBrdNatGray3": "#EEEEEE",
+                      },
+=======
+>>>>>>> origin/update/react
                       "primary": Object {
                         "contrastText": "#333333",
                         "dark": "#EF8426",
@@ -1434,7 +1792,11 @@ exports[`StoryNatHeaderNew component Should render StoryNatHeaderNew component  
                         "lineHeight": 24,
                       },
                       "body2": Object {
+<<<<<<< HEAD
+                        "color": "#BBBBBB",
+=======
                         "color": "#777777",
+>>>>>>> origin/update/react
                         "fontSize": 14,
                         "fontWeight": 400,
                         "lineHeight": 21,
@@ -1503,9 +1865,12 @@ exports[`StoryNatHeaderNew component Should render StoryNatHeaderNew component  
                   style={
                     Array [
                       Object {
+<<<<<<< HEAD
+=======
                         "flexBasis": 0,
                         "flexGrow": 1,
                         "flexShrink": 1,
+>>>>>>> origin/update/react
                         "marginBottom": 0,
                         "marginLeft": 0,
                         "marginRight": 0,
@@ -1519,12 +1884,20 @@ exports[`StoryNatHeaderNew component Should render StoryNatHeaderNew component  
                   }
                 >
                   <Text
+<<<<<<< HEAD
+                    color="#BBBBBB"
+                    style={
+                      Array [
+                        Object {
+                          "color": "#BBBBBB",
+=======
                     color="#777777"
                     style={
                       Array [
                         Object {
                           "backgroundColor": "#FFF",
                           "color": "#777777",
+>>>>>>> origin/update/react
                           "fontSize": 14,
                           "fontWeight": "400",
                           "lineHeight": 21,
@@ -1546,7 +1919,11 @@ exports[`StoryNatHeaderNew component Should render StoryNatHeaderNew component  
                         "borderColor": "#BBBBBB",
                         "borderRadius": 4,
                         "borderStyle": "solid",
+<<<<<<< HEAD
+                        "borderWidth": 0,
+=======
                         "borderWidth": 1,
+>>>>>>> origin/update/react
                         "flexDirection": "row",
                         "height": 56,
                         "justifyContent": "space-between",
@@ -1730,6 +2107,16 @@ exports[`StoryNatHeaderNew component Should render StoryNatHeaderNew component  
                           "contrastText": "#FFFFFF",
                           "main": "#E74627",
                         },
+<<<<<<< HEAD
+                        "grayscale": Object {
+                          "colorBrdBlack": "#000000",
+                          "colorBrdNatGray": "#333333",
+                          "colorBrdNatGray1": "#777777",
+                          "colorBrdNatGray2": "#BBBBBB",
+                          "colorBrdNatGray3": "#EEEEEE",
+                        },
+=======
+>>>>>>> origin/update/react
                         "primary": Object {
                           "contrastText": "#333333",
                           "dark": "#EF8426",
@@ -1808,7 +2195,11 @@ exports[`StoryNatHeaderNew component Should render StoryNatHeaderNew component  
                           "lineHeight": 24,
                         },
                         "body2": Object {
+<<<<<<< HEAD
+                          "color": "#BBBBBB",
+=======
                           "color": "#777777",
+>>>>>>> origin/update/react
                           "fontSize": 14,
                           "fontWeight": 400,
                           "lineHeight": 21,
@@ -1871,7 +2262,11 @@ exports[`StoryNatHeaderNew component Should render StoryNatHeaderNew component  
                       },
                     }
                   }
+<<<<<<< HEAD
+                  type="none"
+=======
                   type="default"
+>>>>>>> origin/update/react
                 >
                   <TextInput
                     allowFontScaling={true}
@@ -2079,6 +2474,16 @@ exports[`StoryNatHeaderNew component Should render StoryNatHeaderNew component  
                             "contrastText": "#FFFFFF",
                             "main": "#E74627",
                           },
+<<<<<<< HEAD
+                          "grayscale": Object {
+                            "colorBrdBlack": "#000000",
+                            "colorBrdNatGray": "#333333",
+                            "colorBrdNatGray1": "#777777",
+                            "colorBrdNatGray2": "#BBBBBB",
+                            "colorBrdNatGray3": "#EEEEEE",
+                          },
+=======
+>>>>>>> origin/update/react
                           "primary": Object {
                             "contrastText": "#333333",
                             "dark": "#EF8426",
@@ -2157,7 +2562,11 @@ exports[`StoryNatHeaderNew component Should render StoryNatHeaderNew component  
                             "lineHeight": 24,
                           },
                           "body2": Object {
+<<<<<<< HEAD
+                            "color": "#BBBBBB",
+=======
                             "color": "#777777",
+>>>>>>> origin/update/react
                             "fontSize": 14,
                             "fontWeight": 400,
                             "lineHeight": 21,
@@ -2220,7 +2629,11 @@ exports[`StoryNatHeaderNew component Should render StoryNatHeaderNew component  
                         },
                       }
                     }
+<<<<<<< HEAD
+                    type="none"
+=======
                     type="default"
+>>>>>>> origin/update/react
                     underlineColorAndroid="transparent"
                     value=""
                   />
@@ -2249,17 +2662,31 @@ exports[`StoryNatHeaderNew component Should render StoryNatHeaderNew component  
               onStartShouldSetResponder={[Function]}
               style={
                 Object {
+<<<<<<< HEAD
+                  "alignItems": "center",
+=======
+>>>>>>> origin/update/react
                   "alignSelf": "center",
                   "flexBasis": 0,
                   "flexGrow": 1,
                   "flexShrink": 1,
                   "height": 56,
+<<<<<<< HEAD
+                  "justifyContent": "center",
+                  "opacity": 1,
+                  "paddingBottom": 16,
+                  "paddingLeft": 0,
+                  "paddingRight": 16,
+                  "paddingTop": 16,
+                  "width": 40,
+=======
                   "opacity": 1,
                   "paddingBottom": 16,
                   "paddingLeft": 16,
                   "paddingRight": 16,
                   "paddingTop": 16,
                   "width": 56,
+>>>>>>> origin/update/react
                 }
               }
             >

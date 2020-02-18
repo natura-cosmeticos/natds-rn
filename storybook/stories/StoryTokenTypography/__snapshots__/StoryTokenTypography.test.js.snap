@@ -12,6 +12,9 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> origin/update/react
 >>>>>>> origin/update/react
 >>>>>>> origin/update/react
 >>>>>>> origin/update/react
@@ -27,7 +30,11 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
 <<<<<<< HEAD
           "backgroundColor": "#FFFFFF",
 =======
+<<<<<<< HEAD
+          "backgroundColor": "#FFFFFF",
+=======
           "backgroundColor": "white",
+>>>>>>> origin/update/react
 >>>>>>> origin/update/react
           "bottom": 0,
           "flexBasis": 0,
@@ -52,7 +59,11 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
 <<<<<<< HEAD
           "marginTop": 0,
 =======
+<<<<<<< HEAD
+          "marginTop": 0,
+=======
           "marginTop": 30,
+>>>>>>> origin/update/react
 >>>>>>> origin/update/react
 >>>>>>> origin/update/react
 >>>>>>> origin/update/react
@@ -68,9 +79,12 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
           style={
             Array [
               Object {
+<<<<<<< HEAD
+=======
                 "flexBasis": 0,
                 "flexGrow": 1,
                 "flexShrink": 1,
+>>>>>>> origin/update/react
                 "marginBottom": 24,
                 "marginLeft": 0,
                 "marginRight": 0,
@@ -88,7 +102,10 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
             style={
               Array [
                 Object {
+<<<<<<< HEAD
+=======
                   "backgroundColor": "#FFF",
+>>>>>>> origin/update/react
                   "color": "#333333",
                   "fontSize": 20,
                   "fontWeight": "500",
@@ -106,9 +123,12 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
           style={
             Array [
               Object {
+<<<<<<< HEAD
+=======
                 "flexBasis": 0,
                 "flexGrow": 1,
                 "flexShrink": 1,
+>>>>>>> origin/update/react
                 "marginBottom": 24,
                 "marginLeft": 0,
                 "marginRight": 0,
@@ -126,7 +146,10 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
             style={
               Array [
                 Object {
+<<<<<<< HEAD
+=======
                   "backgroundColor": "#FFF",
+>>>>>>> origin/update/react
                   "color": "#333333",
                   "fontSize": 96,
                   "fontWeight": "400",
@@ -144,9 +167,12 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
           style={
             Array [
               Object {
+<<<<<<< HEAD
+=======
                 "flexBasis": 0,
                 "flexGrow": 1,
                 "flexShrink": 1,
+>>>>>>> origin/update/react
                 "marginBottom": 24,
                 "marginLeft": 0,
                 "marginRight": 0,
@@ -164,7 +190,10 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
             style={
               Array [
                 Object {
+<<<<<<< HEAD
+=======
                   "backgroundColor": "#FFF",
+>>>>>>> origin/update/react
                   "color": "#333333",
                   "fontSize": 60,
                   "fontWeight": "400",
@@ -182,9 +211,12 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
           style={
             Array [
               Object {
+<<<<<<< HEAD
+=======
                 "flexBasis": 0,
                 "flexGrow": 1,
                 "flexShrink": 1,
+>>>>>>> origin/update/react
                 "marginBottom": 24,
                 "marginLeft": 0,
                 "marginRight": 0,
@@ -202,7 +234,10 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
             style={
               Array [
                 Object {
+<<<<<<< HEAD
+=======
                   "backgroundColor": "#FFF",
+>>>>>>> origin/update/react
                   "color": "#333333",
                   "fontSize": 48,
                   "fontWeight": "400",
@@ -220,9 +255,12 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
           style={
             Array [
               Object {
+<<<<<<< HEAD
+=======
                 "flexBasis": 0,
                 "flexGrow": 1,
                 "flexShrink": 1,
+>>>>>>> origin/update/react
                 "marginBottom": 24,
                 "marginLeft": 0,
                 "marginRight": 0,
@@ -240,7 +278,10 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
             style={
               Array [
                 Object {
+<<<<<<< HEAD
+=======
                   "backgroundColor": "#FFF",
+>>>>>>> origin/update/react
                   "color": "#333333",
                   "fontSize": 34,
                   "fontWeight": "400",
@@ -258,9 +299,12 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
           style={
             Array [
               Object {
+<<<<<<< HEAD
+=======
                 "flexBasis": 0,
                 "flexGrow": 1,
                 "flexShrink": 1,
+>>>>>>> origin/update/react
                 "marginBottom": 24,
                 "marginLeft": 0,
                 "marginRight": 0,
@@ -278,7 +322,10 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
             style={
               Array [
                 Object {
+<<<<<<< HEAD
+=======
                   "backgroundColor": "#FFF",
+>>>>>>> origin/update/react
                   "color": "#333333",
                   "fontSize": 24,
                   "fontWeight": "400",
@@ -296,9 +343,12 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
           style={
             Array [
               Object {
+<<<<<<< HEAD
+=======
                 "flexBasis": 0,
                 "flexGrow": 1,
                 "flexShrink": 1,
+>>>>>>> origin/update/react
                 "marginBottom": 24,
                 "marginLeft": 0,
                 "marginRight": 0,
@@ -316,7 +366,10 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
             style={
               Array [
                 Object {
+<<<<<<< HEAD
+=======
                   "backgroundColor": "#FFF",
+>>>>>>> origin/update/react
                   "color": "#333333",
                   "fontSize": 20,
                   "fontWeight": "500",
@@ -334,9 +387,12 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
           style={
             Array [
               Object {
+<<<<<<< HEAD
+=======
                 "flexBasis": 0,
                 "flexGrow": 1,
                 "flexShrink": 1,
+>>>>>>> origin/update/react
                 "marginBottom": 24,
                 "marginLeft": 0,
                 "marginRight": 0,
@@ -354,7 +410,10 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
             style={
               Array [
                 Object {
+<<<<<<< HEAD
+=======
                   "backgroundColor": "#FFF",
+>>>>>>> origin/update/react
                   "color": "#333333",
                   "fontSize": 16,
                   "fontWeight": "500",
@@ -372,9 +431,12 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
           style={
             Array [
               Object {
+<<<<<<< HEAD
+=======
                 "flexBasis": 0,
                 "flexGrow": 1,
                 "flexShrink": 1,
+>>>>>>> origin/update/react
                 "marginBottom": 24,
                 "marginLeft": 0,
                 "marginRight": 0,
@@ -392,7 +454,10 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
             style={
               Array [
                 Object {
+<<<<<<< HEAD
+=======
                   "backgroundColor": "#FFF",
+>>>>>>> origin/update/react
                   "color": "#333333",
                   "fontSize": 14,
                   "fontWeight": "500",
@@ -410,9 +475,12 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
           style={
             Array [
               Object {
+<<<<<<< HEAD
+=======
                 "flexBasis": 0,
                 "flexGrow": 1,
                 "flexShrink": 1,
+>>>>>>> origin/update/react
                 "marginBottom": 24,
                 "marginLeft": 0,
                 "marginRight": 0,
@@ -430,7 +498,10 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
             style={
               Array [
                 Object {
+<<<<<<< HEAD
+=======
                   "backgroundColor": "#FFF",
+>>>>>>> origin/update/react
                   "color": "#333333",
                   "fontSize": 16,
                   "fontWeight": "400",
@@ -448,9 +519,12 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
           style={
             Array [
               Object {
+<<<<<<< HEAD
+=======
                 "flexBasis": 0,
                 "flexGrow": 1,
                 "flexShrink": 1,
+>>>>>>> origin/update/react
                 "marginBottom": 24,
                 "marginLeft": 0,
                 "marginRight": 0,
@@ -468,7 +542,10 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
             style={
               Array [
                 Object {
+<<<<<<< HEAD
+=======
                   "backgroundColor": "#FFF",
+>>>>>>> origin/update/react
                   "color": "#333333",
                   "fontSize": 14,
                   "fontWeight": "400",
@@ -486,9 +563,12 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
           style={
             Array [
               Object {
+<<<<<<< HEAD
+=======
                 "flexBasis": 0,
                 "flexGrow": 1,
                 "flexShrink": 1,
+>>>>>>> origin/update/react
                 "marginBottom": 24,
                 "marginLeft": 0,
                 "marginRight": 0,
@@ -506,7 +586,10 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
             style={
               Array [
                 Object {
+<<<<<<< HEAD
+=======
                   "backgroundColor": "#FFF",
+>>>>>>> origin/update/react
                   "color": "#333333",
                   "fontSize": 14,
                   "fontWeight": "500",
@@ -524,9 +607,12 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
           style={
             Array [
               Object {
+<<<<<<< HEAD
+=======
                 "flexBasis": 0,
                 "flexGrow": 1,
                 "flexShrink": 1,
+>>>>>>> origin/update/react
                 "marginBottom": 24,
                 "marginLeft": 0,
                 "marginRight": 0,
@@ -544,7 +630,10 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
             style={
               Array [
                 Object {
+<<<<<<< HEAD
+=======
                   "backgroundColor": "#FFF",
+>>>>>>> origin/update/react
                   "color": "#333333",
                   "fontSize": 12,
                   "fontWeight": "400",
@@ -562,9 +651,12 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
           style={
             Array [
               Object {
+<<<<<<< HEAD
+=======
                 "flexBasis": 0,
                 "flexGrow": 1,
                 "flexShrink": 1,
+>>>>>>> origin/update/react
                 "marginBottom": 24,
                 "marginLeft": 0,
                 "marginRight": 0,
@@ -582,7 +674,10 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
             style={
               Array [
                 Object {
+<<<<<<< HEAD
+=======
                   "backgroundColor": "#FFF",
+>>>>>>> origin/update/react
                   "color": "#333333",
                   "fontSize": 12,
                   "fontWeight": "500",
@@ -600,9 +695,12 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
           style={
             Array [
               Object {
+<<<<<<< HEAD
+=======
                 "flexBasis": 0,
                 "flexGrow": 1,
                 "flexShrink": 1,
+>>>>>>> origin/update/react
                 "marginBottom": 24,
                 "marginLeft": 0,
                 "marginRight": 0,
@@ -620,7 +718,10 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
             style={
               Array [
                 Object {
+<<<<<<< HEAD
+=======
                   "backgroundColor": "#FFF",
+>>>>>>> origin/update/react
                   "color": "#333333",
                   "fontSize": 20,
                   "fontWeight": "500",
@@ -638,9 +739,12 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
           style={
             Array [
               Object {
+<<<<<<< HEAD
+=======
                 "flexBasis": 0,
                 "flexGrow": 1,
                 "flexShrink": 1,
+>>>>>>> origin/update/react
                 "marginBottom": 24,
                 "marginLeft": 0,
                 "marginRight": 0,
@@ -658,7 +762,10 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
             style={
               Array [
                 Object {
+<<<<<<< HEAD
+=======
                   "backgroundColor": "#FFF",
+>>>>>>> origin/update/react
                   "color": "#F4AB34",
                   "fontSize": 16,
                   "fontWeight": "400",
@@ -676,9 +783,12 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
           style={
             Array [
               Object {
+<<<<<<< HEAD
+=======
                 "flexBasis": 0,
                 "flexGrow": 1,
                 "flexShrink": 1,
+>>>>>>> origin/update/react
                 "marginBottom": 0,
                 "marginLeft": 0,
                 "marginRight": 0,
@@ -696,7 +806,10 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
             style={
               Array [
                 Object {
+<<<<<<< HEAD
+=======
                   "backgroundColor": "#FFF",
+>>>>>>> origin/update/react
                   "color": "#333333",
                   "fontSize": 16,
                   "fontWeight": "400",
@@ -714,9 +827,12 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
           style={
             Array [
               Object {
+<<<<<<< HEAD
+=======
                 "flexBasis": 0,
                 "flexGrow": 1,
                 "flexShrink": 1,
+>>>>>>> origin/update/react
                 "marginBottom": 64,
                 "marginLeft": 0,
                 "marginRight": 0,
@@ -734,7 +850,10 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
             style={
               Array [
                 Object {
+<<<<<<< HEAD
+=======
                   "backgroundColor": "#FFF",
+>>>>>>> origin/update/react
                   "color": "#333333",
                   "fontSize": 16,
                   "fontWeight": "400",
@@ -752,9 +871,12 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
           style={
             Array [
               Object {
+<<<<<<< HEAD
+=======
                 "flexBasis": 0,
                 "flexGrow": 1,
                 "flexShrink": 1,
+>>>>>>> origin/update/react
                 "marginBottom": 4,
                 "marginLeft": 0,
                 "marginRight": 0,
@@ -772,7 +894,10 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
             style={
               Array [
                 Object {
+<<<<<<< HEAD
+=======
                   "backgroundColor": "#FFF",
+>>>>>>> origin/update/react
                   "color": "#333333",
                   "fontSize": 16,
                   "fontWeight": "400",
@@ -789,6 +914,8 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
     </RCTScrollView>
   </View>
 </RCTSafeAreaView>
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -1552,6 +1679,7 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
     </View>
   </RCTScrollView>
 </View>
+>>>>>>> origin/update/react
 >>>>>>> origin/update/react
 >>>>>>> origin/update/react
 >>>>>>> origin/update/react

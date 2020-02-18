@@ -17,6 +17,8 @@ import { StoryTokenSpace } from './StoryTokenSpace';
 import { StoryNatLogo } from './StoryNatLogo';
 import { StoryNatHeader } from './StoryNatHeader';
 import { StoryNatHeaderNew } from './StoryNatHeaderNew';
+import { StoryNatList } from './StoryNatList';
+import { StoryNatListItem } from './StoryNatListItem';
 import { ThemeNaturaLight } from './StoryTokenThemes/ThemeNaturaLight';
 import CenterView from './CenterView';
 import Welcome from './Welcome';
@@ -70,6 +72,15 @@ storiesOf('NatMenuItem', module)
   .addDecorator(getStory => <CenterView>{getStory()}</CenterView>)
   .add('All', () => (
     <StoryNatMenuItem />
+  ));
+
+storiesOf('NatList', module)
+  .addDecorator(getStory => <CenterView>{getStory()}</CenterView>)
+  .add('List', () => (
+    <StoryNatList />
+  ))
+  .add('Only ListItem', () => (
+    <StoryNatListItem />
   ));
 
 storiesOf('NatHeader', module)

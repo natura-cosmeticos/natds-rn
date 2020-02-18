@@ -11,7 +11,11 @@ exports[`StoryTokenSpace component Should render StoryTokenSpace component  1`] 
 <<<<<<< HEAD
           "backgroundColor": "#FFFFFF",
 =======
+<<<<<<< HEAD
+          "backgroundColor": "#FFFFFF",
+=======
           "backgroundColor": "white",
+>>>>>>> origin/update/react
 >>>>>>> origin/update/react
           "bottom": 0,
           "flexBasis": 0,
@@ -66,9 +70,12 @@ exports[`StoryTokenSpace component Should render StoryTokenSpace component  1`] 
           style={
             Array [
               Object {
+<<<<<<< HEAD
+=======
                 "flexBasis": 0,
                 "flexGrow": 1,
                 "flexShrink": 1,
+>>>>>>> origin/update/react
                 "marginBottom": 24,
                 "marginLeft": 0,
                 "marginRight": 0,
@@ -86,7 +93,10 @@ exports[`StoryTokenSpace component Should render StoryTokenSpace component  1`] 
             style={
               Array [
                 Object {
+<<<<<<< HEAD
+=======
                   "backgroundColor": "#FFF",
+>>>>>>> origin/update/react
                   "color": "#333333",
                   "fontSize": 16,
                   "fontWeight": "400",
@@ -130,9 +140,12 @@ exports[`StoryTokenSpace component Should render StoryTokenSpace component  1`] 
           style={
             Array [
               Object {
+<<<<<<< HEAD
+=======
                 "flexBasis": 0,
                 "flexGrow": 1,
                 "flexShrink": 1,
+>>>>>>> origin/update/react
                 "marginBottom": 24,
                 "marginLeft": 0,
                 "marginRight": 0,
@@ -150,7 +163,10 @@ exports[`StoryTokenSpace component Should render StoryTokenSpace component  1`] 
             style={
               Array [
                 Object {
+<<<<<<< HEAD
+=======
                   "backgroundColor": "#FFF",
+>>>>>>> origin/update/react
                   "color": "#333333",
                   "fontSize": 16,
                   "fontWeight": "400",
@@ -194,9 +210,12 @@ exports[`StoryTokenSpace component Should render StoryTokenSpace component  1`] 
           style={
             Array [
               Object {
+<<<<<<< HEAD
+=======
                 "flexBasis": 0,
                 "flexGrow": 1,
                 "flexShrink": 1,
+>>>>>>> origin/update/react
                 "marginBottom": 24,
                 "marginLeft": 0,
                 "marginRight": 0,
@@ -214,7 +233,10 @@ exports[`StoryTokenSpace component Should render StoryTokenSpace component  1`] 
             style={
               Array [
                 Object {
+<<<<<<< HEAD
+=======
                   "backgroundColor": "#FFF",
+>>>>>>> origin/update/react
                   "color": "#333333",
                   "fontSize": 16,
                   "fontWeight": "400",
@@ -258,9 +280,12 @@ exports[`StoryTokenSpace component Should render StoryTokenSpace component  1`] 
           style={
             Array [
               Object {
+<<<<<<< HEAD
+=======
                 "flexBasis": 0,
                 "flexGrow": 1,
                 "flexShrink": 1,
+>>>>>>> origin/update/react
                 "marginBottom": 24,
                 "marginLeft": 0,
                 "marginRight": 0,
@@ -278,7 +303,10 @@ exports[`StoryTokenSpace component Should render StoryTokenSpace component  1`] 
             style={
               Array [
                 Object {
+<<<<<<< HEAD
+=======
                   "backgroundColor": "#FFF",
+>>>>>>> origin/update/react
                   "color": "#333333",
                   "fontSize": 16,
                   "fontWeight": "400",
@@ -322,9 +350,12 @@ exports[`StoryTokenSpace component Should render StoryTokenSpace component  1`] 
           style={
             Array [
               Object {
+<<<<<<< HEAD
+=======
                 "flexBasis": 0,
                 "flexGrow": 1,
                 "flexShrink": 1,
+>>>>>>> origin/update/react
                 "marginBottom": 24,
                 "marginLeft": 0,
                 "marginRight": 0,
@@ -342,7 +373,10 @@ exports[`StoryTokenSpace component Should render StoryTokenSpace component  1`] 
             style={
               Array [
                 Object {
+<<<<<<< HEAD
+=======
                   "backgroundColor": "#FFF",
+>>>>>>> origin/update/react
                   "color": "#333333",
                   "fontSize": 16,
                   "fontWeight": "400",

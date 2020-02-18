@@ -32,7 +32,7 @@ export const StoryNatHeaderNew = () => {
         onChangeText={setInputSearch}
         value={inputSearch}
         size="normal"
-        type="default"
+        type="none"
         icon={null}
       />
     </View>
