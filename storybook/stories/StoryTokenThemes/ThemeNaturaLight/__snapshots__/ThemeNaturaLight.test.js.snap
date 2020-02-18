@@ -1,0 +1,3070 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ThemeNaturaLight component Should render ThemeNaturaLight component  1`] = `
+<RCTSafeAreaView
+  emulateUnlessSupported={true}
+>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "white",
+          "bottom": 0,
+          "flexBasis": 0,
+          "flexGrow": 1,
+          "flexShrink": 1,
+          "left": 0,
+          "paddingBottom": 0,
+          "paddingLeft": 16,
+          "paddingRight": 16,
+          "paddingTop": 0,
+          "right": 0,
+          "top": 0,
+        },
+        Object {
+          "backgroundColor": "#FFF",
+          "width": 750,
+        },
+      ]
+    }
+  >
+    <RCTScrollView>
+      <View>
+        <View
+          margin={24}
+          style={
+            Array [
+              Object {
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
+                "marginBottom": 24,
+                "marginLeft": 0,
+                "marginRight": 0,
+                "marginTop": 0,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
+              },
+            ]
+          }
+        >
+          <Text
+            color="#333333"
+            style={
+              Array [
+                Object {
+                  "backgroundColor": "#FFF",
+                  "color": "#333333",
+                  "fontSize": 20,
+                  "fontWeight": "500",
+                  "lineHeight": 30,
+                },
+              ]
+            }
+            type="h6"
+          >
+            PRIMARY
+          </Text>
+        </View>
+        <RCTScrollView
+          data={
+            Array [
+              Object {
+                "color": "#F4AB34",
+                "name": "main",
+              },
+              Object {
+                "color": "#FEFDE8",
+                "name": "light",
+              },
+              Object {
+                "color": "#EF8426",
+                "name": "dark",
+              },
+              Object {
+                "color": "#333333",
+                "name": "contrastText",
+              },
+            ]
+          }
+          disableVirtualization={false}
+          getItem={[Function]}
+          getItemCount={[Function]}
+          horizontal={false}
+          initialNumToRender={10}
+          keyExtractor={[Function]}
+          maxToRenderPerBatch={10}
+          numColumns={1}
+          onContentSizeChange={[Function]}
+          onEndReachedThreshold={2}
+          onLayout={[Function]}
+          onMomentumScrollEnd={[Function]}
+          onScroll={[Function]}
+          onScrollBeginDrag={[Function]}
+          onScrollEndDrag={[Function]}
+          removeClippedSubviews={false}
+          renderItem={[Function]}
+          scrollEventThrottle={50}
+          stickyHeaderIndices={Array []}
+          updateCellsBatchingPeriod={50}
+          viewabilityConfigCallbackPairs={Array []}
+          windowSize={21}
+        >
+          <View>
+            <View
+              onLayout={[Function]}
+              style={null}
+            >
+              <View
+                style={
+                  Object {
+                    "flexDirection": "row",
+                  }
+                }
+              >
+                <View
+                  margin={24}
+                  style={
+                    Array [
+                      Object {
+                        "flexBasis": 0,
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                        "marginBottom": 24,
+                        "marginLeft": 0,
+                        "marginRight": 0,
+                        "marginTop": 0,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    color="#333333"
+                    style={
+                      Array [
+                        Object {
+                          "backgroundColor": "#FFF",
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                          "lineHeight": 24,
+                        },
+                      ]
+                    }
+                    type="body1"
+                  >
+                    main
+                  </Text>
+                </View>
+                <View
+                  style={
+                    Object {
+                      "backgroundColor": "#F4AB34",
+                      "height": 30,
+                      "width": 30,
+                    }
+                  }
+                />
+                <View
+                  margin={24}
+                  style={
+                    Array [
+                      Object {
+                        "flexBasis": 0,
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                        "marginBottom": 24,
+                        "marginLeft": 0,
+                        "marginRight": 0,
+                        "marginTop": 0,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    color="#333333"
+                    style={
+                      Array [
+                        Object {
+                          "backgroundColor": "#FFF",
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                          "lineHeight": 24,
+                        },
+                      ]
+                    }
+                    type="body1"
+                  >
+                    #F4AB34
+                  </Text>
+                </View>
+              </View>
+            </View>
+            <View
+              onLayout={[Function]}
+              style={null}
+            >
+              <View
+                style={
+                  Object {
+                    "flexDirection": "row",
+                  }
+                }
+              >
+                <View
+                  margin={24}
+                  style={
+                    Array [
+                      Object {
+                        "flexBasis": 0,
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                        "marginBottom": 24,
+                        "marginLeft": 0,
+                        "marginRight": 0,
+                        "marginTop": 0,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    color="#333333"
+                    style={
+                      Array [
+                        Object {
+                          "backgroundColor": "#FFF",
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                          "lineHeight": 24,
+                        },
+                      ]
+                    }
+                    type="body1"
+                  >
+                    light
+                  </Text>
+                </View>
+                <View
+                  style={
+                    Object {
+                      "backgroundColor": "#FEFDE8",
+                      "height": 30,
+                      "width": 30,
+                    }
+                  }
+                />
+                <View
+                  margin={24}
+                  style={
+                    Array [
+                      Object {
+                        "flexBasis": 0,
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                        "marginBottom": 24,
+                        "marginLeft": 0,
+                        "marginRight": 0,
+                        "marginTop": 0,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    color="#333333"
+                    style={
+                      Array [
+                        Object {
+                          "backgroundColor": "#FFF",
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                          "lineHeight": 24,
+                        },
+                      ]
+                    }
+                    type="body1"
+                  >
+                    #FEFDE8
+                  </Text>
+                </View>
+              </View>
+            </View>
+            <View
+              onLayout={[Function]}
+              style={null}
+            >
+              <View
+                style={
+                  Object {
+                    "flexDirection": "row",
+                  }
+                }
+              >
+                <View
+                  margin={24}
+                  style={
+                    Array [
+                      Object {
+                        "flexBasis": 0,
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                        "marginBottom": 24,
+                        "marginLeft": 0,
+                        "marginRight": 0,
+                        "marginTop": 0,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    color="#333333"
+                    style={
+                      Array [
+                        Object {
+                          "backgroundColor": "#FFF",
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                          "lineHeight": 24,
+                        },
+                      ]
+                    }
+                    type="body1"
+                  >
+                    dark
+                  </Text>
+                </View>
+                <View
+                  style={
+                    Object {
+                      "backgroundColor": "#EF8426",
+                      "height": 30,
+                      "width": 30,
+                    }
+                  }
+                />
+                <View
+                  margin={24}
+                  style={
+                    Array [
+                      Object {
+                        "flexBasis": 0,
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                        "marginBottom": 24,
+                        "marginLeft": 0,
+                        "marginRight": 0,
+                        "marginTop": 0,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    color="#333333"
+                    style={
+                      Array [
+                        Object {
+                          "backgroundColor": "#FFF",
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                          "lineHeight": 24,
+                        },
+                      ]
+                    }
+                    type="body1"
+                  >
+                    #EF8426
+                  </Text>
+                </View>
+              </View>
+            </View>
+            <View
+              onLayout={[Function]}
+              style={null}
+            >
+              <View
+                style={
+                  Object {
+                    "flexDirection": "row",
+                  }
+                }
+              >
+                <View
+                  margin={24}
+                  style={
+                    Array [
+                      Object {
+                        "flexBasis": 0,
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                        "marginBottom": 24,
+                        "marginLeft": 0,
+                        "marginRight": 0,
+                        "marginTop": 0,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    color="#333333"
+                    style={
+                      Array [
+                        Object {
+                          "backgroundColor": "#FFF",
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                          "lineHeight": 24,
+                        },
+                      ]
+                    }
+                    type="body1"
+                  >
+                    contrastText
+                  </Text>
+                </View>
+                <View
+                  style={
+                    Object {
+                      "backgroundColor": "#333333",
+                      "height": 30,
+                      "width": 30,
+                    }
+                  }
+                />
+                <View
+                  margin={24}
+                  style={
+                    Array [
+                      Object {
+                        "flexBasis": 0,
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                        "marginBottom": 24,
+                        "marginLeft": 0,
+                        "marginRight": 0,
+                        "marginTop": 0,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    color="#333333"
+                    style={
+                      Array [
+                        Object {
+                          "backgroundColor": "#FFF",
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                          "lineHeight": 24,
+                        },
+                      ]
+                    }
+                    type="body1"
+                  >
+                    #333333
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+        </RCTScrollView>
+        <View
+          margin={24}
+          style={
+            Array [
+              Object {
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
+                "marginBottom": 24,
+                "marginLeft": 0,
+                "marginRight": 0,
+                "marginTop": 0,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
+              },
+            ]
+          }
+        >
+          <Text
+            color="#333333"
+            style={
+              Array [
+                Object {
+                  "backgroundColor": "#FFF",
+                  "color": "#333333",
+                  "fontSize": 20,
+                  "fontWeight": "500",
+                  "lineHeight": 30,
+                },
+              ]
+            }
+            type="h6"
+          >
+            SECONDARY
+          </Text>
+        </View>
+        <RCTScrollView
+          data={
+            Array [
+              Object {
+                "color": "#FF6B0B",
+                "name": "main",
+              },
+              Object {
+                "color": "#FEFDE8",
+                "name": "light",
+              },
+              Object {
+                "color": "#EF8426",
+                "name": "dark",
+              },
+              Object {
+                "color": "#000000",
+                "name": "contrastText",
+              },
+            ]
+          }
+          disableVirtualization={false}
+          getItem={[Function]}
+          getItemCount={[Function]}
+          horizontal={false}
+          initialNumToRender={10}
+          keyExtractor={[Function]}
+          maxToRenderPerBatch={10}
+          numColumns={1}
+          onContentSizeChange={[Function]}
+          onEndReachedThreshold={2}
+          onLayout={[Function]}
+          onMomentumScrollEnd={[Function]}
+          onScroll={[Function]}
+          onScrollBeginDrag={[Function]}
+          onScrollEndDrag={[Function]}
+          removeClippedSubviews={false}
+          renderItem={[Function]}
+          scrollEventThrottle={50}
+          stickyHeaderIndices={Array []}
+          updateCellsBatchingPeriod={50}
+          viewabilityConfigCallbackPairs={Array []}
+          windowSize={21}
+        >
+          <View>
+            <View
+              onLayout={[Function]}
+              style={null}
+            >
+              <View
+                style={
+                  Object {
+                    "flexDirection": "row",
+                  }
+                }
+              >
+                <View
+                  margin={24}
+                  style={
+                    Array [
+                      Object {
+                        "flexBasis": 0,
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                        "marginBottom": 24,
+                        "marginLeft": 0,
+                        "marginRight": 0,
+                        "marginTop": 0,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    color="#333333"
+                    style={
+                      Array [
+                        Object {
+                          "backgroundColor": "#FFF",
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                          "lineHeight": 24,
+                        },
+                      ]
+                    }
+                    type="body1"
+                  >
+                    main
+                  </Text>
+                </View>
+                <View
+                  style={
+                    Object {
+                      "backgroundColor": "#FF6B0B",
+                      "height": 30,
+                      "width": 30,
+                    }
+                  }
+                />
+                <View
+                  margin={24}
+                  style={
+                    Array [
+                      Object {
+                        "flexBasis": 0,
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                        "marginBottom": 24,
+                        "marginLeft": 0,
+                        "marginRight": 0,
+                        "marginTop": 0,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    color="#333333"
+                    style={
+                      Array [
+                        Object {
+                          "backgroundColor": "#FFF",
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                          "lineHeight": 24,
+                        },
+                      ]
+                    }
+                    type="body1"
+                  >
+                    #FF6B0B
+                  </Text>
+                </View>
+              </View>
+            </View>
+            <View
+              onLayout={[Function]}
+              style={null}
+            >
+              <View
+                style={
+                  Object {
+                    "flexDirection": "row",
+                  }
+                }
+              >
+                <View
+                  margin={24}
+                  style={
+                    Array [
+                      Object {
+                        "flexBasis": 0,
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                        "marginBottom": 24,
+                        "marginLeft": 0,
+                        "marginRight": 0,
+                        "marginTop": 0,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    color="#333333"
+                    style={
+                      Array [
+                        Object {
+                          "backgroundColor": "#FFF",
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                          "lineHeight": 24,
+                        },
+                      ]
+                    }
+                    type="body1"
+                  >
+                    light
+                  </Text>
+                </View>
+                <View
+                  style={
+                    Object {
+                      "backgroundColor": "#FEFDE8",
+                      "height": 30,
+                      "width": 30,
+                    }
+                  }
+                />
+                <View
+                  margin={24}
+                  style={
+                    Array [
+                      Object {
+                        "flexBasis": 0,
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                        "marginBottom": 24,
+                        "marginLeft": 0,
+                        "marginRight": 0,
+                        "marginTop": 0,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    color="#333333"
+                    style={
+                      Array [
+                        Object {
+                          "backgroundColor": "#FFF",
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                          "lineHeight": 24,
+                        },
+                      ]
+                    }
+                    type="body1"
+                  >
+                    #FEFDE8
+                  </Text>
+                </View>
+              </View>
+            </View>
+            <View
+              onLayout={[Function]}
+              style={null}
+            >
+              <View
+                style={
+                  Object {
+                    "flexDirection": "row",
+                  }
+                }
+              >
+                <View
+                  margin={24}
+                  style={
+                    Array [
+                      Object {
+                        "flexBasis": 0,
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                        "marginBottom": 24,
+                        "marginLeft": 0,
+                        "marginRight": 0,
+                        "marginTop": 0,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    color="#333333"
+                    style={
+                      Array [
+                        Object {
+                          "backgroundColor": "#FFF",
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                          "lineHeight": 24,
+                        },
+                      ]
+                    }
+                    type="body1"
+                  >
+                    dark
+                  </Text>
+                </View>
+                <View
+                  style={
+                    Object {
+                      "backgroundColor": "#EF8426",
+                      "height": 30,
+                      "width": 30,
+                    }
+                  }
+                />
+                <View
+                  margin={24}
+                  style={
+                    Array [
+                      Object {
+                        "flexBasis": 0,
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                        "marginBottom": 24,
+                        "marginLeft": 0,
+                        "marginRight": 0,
+                        "marginTop": 0,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    color="#333333"
+                    style={
+                      Array [
+                        Object {
+                          "backgroundColor": "#FFF",
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                          "lineHeight": 24,
+                        },
+                      ]
+                    }
+                    type="body1"
+                  >
+                    #EF8426
+                  </Text>
+                </View>
+              </View>
+            </View>
+            <View
+              onLayout={[Function]}
+              style={null}
+            >
+              <View
+                style={
+                  Object {
+                    "flexDirection": "row",
+                  }
+                }
+              >
+                <View
+                  margin={24}
+                  style={
+                    Array [
+                      Object {
+                        "flexBasis": 0,
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                        "marginBottom": 24,
+                        "marginLeft": 0,
+                        "marginRight": 0,
+                        "marginTop": 0,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    color="#333333"
+                    style={
+                      Array [
+                        Object {
+                          "backgroundColor": "#FFF",
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                          "lineHeight": 24,
+                        },
+                      ]
+                    }
+                    type="body1"
+                  >
+                    contrastText
+                  </Text>
+                </View>
+                <View
+                  style={
+                    Object {
+                      "backgroundColor": "#000000",
+                      "height": 30,
+                      "width": 30,
+                    }
+                  }
+                />
+                <View
+                  margin={24}
+                  style={
+                    Array [
+                      Object {
+                        "flexBasis": 0,
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                        "marginBottom": 24,
+                        "marginLeft": 0,
+                        "marginRight": 0,
+                        "marginTop": 0,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    color="#333333"
+                    style={
+                      Array [
+                        Object {
+                          "backgroundColor": "#FFF",
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                          "lineHeight": 24,
+                        },
+                      ]
+                    }
+                    type="body1"
+                  >
+                    #000000
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+        </RCTScrollView>
+        <View
+          margin={24}
+          style={
+            Array [
+              Object {
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
+                "marginBottom": 24,
+                "marginLeft": 0,
+                "marginRight": 0,
+                "marginTop": 0,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
+              },
+            ]
+          }
+        >
+          <Text
+            color="#333333"
+            style={
+              Array [
+                Object {
+                  "backgroundColor": "#FFF",
+                  "color": "#333333",
+                  "fontSize": 20,
+                  "fontWeight": "500",
+                  "lineHeight": 30,
+                },
+              ]
+            }
+            type="h6"
+          >
+            ERROR
+          </Text>
+        </View>
+        <RCTScrollView
+          data={
+            Array [
+              Object {
+                "color": "#E74627",
+                "name": "main",
+              },
+              Object {
+                "color": "#FFFFFF",
+                "name": "contrastText",
+              },
+            ]
+          }
+          disableVirtualization={false}
+          getItem={[Function]}
+          getItemCount={[Function]}
+          horizontal={false}
+          initialNumToRender={10}
+          keyExtractor={[Function]}
+          maxToRenderPerBatch={10}
+          numColumns={1}
+          onContentSizeChange={[Function]}
+          onEndReachedThreshold={2}
+          onLayout={[Function]}
+          onMomentumScrollEnd={[Function]}
+          onScroll={[Function]}
+          onScrollBeginDrag={[Function]}
+          onScrollEndDrag={[Function]}
+          removeClippedSubviews={false}
+          renderItem={[Function]}
+          scrollEventThrottle={50}
+          stickyHeaderIndices={Array []}
+          updateCellsBatchingPeriod={50}
+          viewabilityConfigCallbackPairs={Array []}
+          windowSize={21}
+        >
+          <View>
+            <View
+              onLayout={[Function]}
+              style={null}
+            >
+              <View
+                style={
+                  Object {
+                    "flexDirection": "row",
+                  }
+                }
+              >
+                <View
+                  margin={24}
+                  style={
+                    Array [
+                      Object {
+                        "flexBasis": 0,
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                        "marginBottom": 24,
+                        "marginLeft": 0,
+                        "marginRight": 0,
+                        "marginTop": 0,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    color="#333333"
+                    style={
+                      Array [
+                        Object {
+                          "backgroundColor": "#FFF",
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                          "lineHeight": 24,
+                        },
+                      ]
+                    }
+                    type="body1"
+                  >
+                    main
+                  </Text>
+                </View>
+                <View
+                  style={
+                    Object {
+                      "backgroundColor": "#E74627",
+                      "height": 30,
+                      "width": 30,
+                    }
+                  }
+                />
+                <View
+                  margin={24}
+                  style={
+                    Array [
+                      Object {
+                        "flexBasis": 0,
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                        "marginBottom": 24,
+                        "marginLeft": 0,
+                        "marginRight": 0,
+                        "marginTop": 0,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    color="#333333"
+                    style={
+                      Array [
+                        Object {
+                          "backgroundColor": "#FFF",
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                          "lineHeight": 24,
+                        },
+                      ]
+                    }
+                    type="body1"
+                  >
+                    #E74627
+                  </Text>
+                </View>
+              </View>
+            </View>
+            <View
+              onLayout={[Function]}
+              style={null}
+            >
+              <View
+                style={
+                  Object {
+                    "flexDirection": "row",
+                  }
+                }
+              >
+                <View
+                  margin={24}
+                  style={
+                    Array [
+                      Object {
+                        "flexBasis": 0,
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                        "marginBottom": 24,
+                        "marginLeft": 0,
+                        "marginRight": 0,
+                        "marginTop": 0,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    color="#333333"
+                    style={
+                      Array [
+                        Object {
+                          "backgroundColor": "#FFF",
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                          "lineHeight": 24,
+                        },
+                      ]
+                    }
+                    type="body1"
+                  >
+                    contrastText
+                  </Text>
+                </View>
+                <View
+                  style={
+                    Object {
+                      "backgroundColor": "#FFFFFF",
+                      "height": 30,
+                      "width": 30,
+                    }
+                  }
+                />
+                <View
+                  margin={24}
+                  style={
+                    Array [
+                      Object {
+                        "flexBasis": 0,
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                        "marginBottom": 24,
+                        "marginLeft": 0,
+                        "marginRight": 0,
+                        "marginTop": 0,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    color="#333333"
+                    style={
+                      Array [
+                        Object {
+                          "backgroundColor": "#FFF",
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                          "lineHeight": 24,
+                        },
+                      ]
+                    }
+                    type="body1"
+                  >
+                    #FFFFFF
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+        </RCTScrollView>
+        <View
+          margin={24}
+          style={
+            Array [
+              Object {
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
+                "marginBottom": 24,
+                "marginLeft": 0,
+                "marginRight": 0,
+                "marginTop": 0,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
+              },
+            ]
+          }
+        >
+          <Text
+            color="#333333"
+            style={
+              Array [
+                Object {
+                  "backgroundColor": "#FFF",
+                  "color": "#333333",
+                  "fontSize": 20,
+                  "fontWeight": "500",
+                  "lineHeight": 30,
+                },
+              ]
+            }
+            type="h6"
+          >
+            SUCCESS
+          </Text>
+        </View>
+        <RCTScrollView
+          data={
+            Array [
+              Object {
+                "color": "#569A32",
+                "name": "main",
+              },
+              Object {
+                "color": "#FFFFFF",
+                "name": "contrastText",
+              },
+            ]
+          }
+          disableVirtualization={false}
+          getItem={[Function]}
+          getItemCount={[Function]}
+          horizontal={false}
+          initialNumToRender={10}
+          keyExtractor={[Function]}
+          maxToRenderPerBatch={10}
+          numColumns={1}
+          onContentSizeChange={[Function]}
+          onEndReachedThreshold={2}
+          onLayout={[Function]}
+          onMomentumScrollEnd={[Function]}
+          onScroll={[Function]}
+          onScrollBeginDrag={[Function]}
+          onScrollEndDrag={[Function]}
+          removeClippedSubviews={false}
+          renderItem={[Function]}
+          scrollEventThrottle={50}
+          stickyHeaderIndices={Array []}
+          updateCellsBatchingPeriod={50}
+          viewabilityConfigCallbackPairs={Array []}
+          windowSize={21}
+        >
+          <View>
+            <View
+              onLayout={[Function]}
+              style={null}
+            >
+              <View
+                style={
+                  Object {
+                    "flexDirection": "row",
+                  }
+                }
+              >
+                <View
+                  margin={24}
+                  style={
+                    Array [
+                      Object {
+                        "flexBasis": 0,
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                        "marginBottom": 24,
+                        "marginLeft": 0,
+                        "marginRight": 0,
+                        "marginTop": 0,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    color="#333333"
+                    style={
+                      Array [
+                        Object {
+                          "backgroundColor": "#FFF",
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                          "lineHeight": 24,
+                        },
+                      ]
+                    }
+                    type="body1"
+                  >
+                    main
+                  </Text>
+                </View>
+                <View
+                  style={
+                    Object {
+                      "backgroundColor": "#569A32",
+                      "height": 30,
+                      "width": 30,
+                    }
+                  }
+                />
+                <View
+                  margin={24}
+                  style={
+                    Array [
+                      Object {
+                        "flexBasis": 0,
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                        "marginBottom": 24,
+                        "marginLeft": 0,
+                        "marginRight": 0,
+                        "marginTop": 0,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    color="#333333"
+                    style={
+                      Array [
+                        Object {
+                          "backgroundColor": "#FFF",
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                          "lineHeight": 24,
+                        },
+                      ]
+                    }
+                    type="body1"
+                  >
+                    #569A32
+                  </Text>
+                </View>
+              </View>
+            </View>
+            <View
+              onLayout={[Function]}
+              style={null}
+            >
+              <View
+                style={
+                  Object {
+                    "flexDirection": "row",
+                  }
+                }
+              >
+                <View
+                  margin={24}
+                  style={
+                    Array [
+                      Object {
+                        "flexBasis": 0,
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                        "marginBottom": 24,
+                        "marginLeft": 0,
+                        "marginRight": 0,
+                        "marginTop": 0,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    color="#333333"
+                    style={
+                      Array [
+                        Object {
+                          "backgroundColor": "#FFF",
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                          "lineHeight": 24,
+                        },
+                      ]
+                    }
+                    type="body1"
+                  >
+                    contrastText
+                  </Text>
+                </View>
+                <View
+                  style={
+                    Object {
+                      "backgroundColor": "#FFFFFF",
+                      "height": 30,
+                      "width": 30,
+                    }
+                  }
+                />
+                <View
+                  margin={24}
+                  style={
+                    Array [
+                      Object {
+                        "flexBasis": 0,
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                        "marginBottom": 24,
+                        "marginLeft": 0,
+                        "marginRight": 0,
+                        "marginTop": 0,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    color="#333333"
+                    style={
+                      Array [
+                        Object {
+                          "backgroundColor": "#FFF",
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                          "lineHeight": 24,
+                        },
+                      ]
+                    }
+                    type="body1"
+                  >
+                    #FFFFFF
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+        </RCTScrollView>
+        <View
+          margin={24}
+          style={
+            Array [
+              Object {
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
+                "marginBottom": 24,
+                "marginLeft": 0,
+                "marginRight": 0,
+                "marginTop": 0,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
+              },
+            ]
+          }
+        >
+          <Text
+            color="#333333"
+            style={
+              Array [
+                Object {
+                  "backgroundColor": "#FFF",
+                  "color": "#333333",
+                  "fontSize": 20,
+                  "fontWeight": "500",
+                  "lineHeight": 30,
+                },
+              ]
+            }
+            type="h6"
+          >
+            BACKGROUND
+          </Text>
+        </View>
+        <RCTScrollView
+          data={
+            Array [
+              Object {
+                "color": "#FFFFFF",
+                "name": "paper",
+              },
+              Object {
+                "color": "#FAFAFA",
+                "name": "default",
+              },
+              Object {
+                "color": "#333333",
+                "name": "paperContrastText",
+              },
+              Object {
+                "color": "#333333",
+                "name": "defaultContrastText",
+              },
+            ]
+          }
+          disableVirtualization={false}
+          getItem={[Function]}
+          getItemCount={[Function]}
+          horizontal={false}
+          initialNumToRender={10}
+          keyExtractor={[Function]}
+          maxToRenderPerBatch={10}
+          numColumns={1}
+          onContentSizeChange={[Function]}
+          onEndReachedThreshold={2}
+          onLayout={[Function]}
+          onMomentumScrollEnd={[Function]}
+          onScroll={[Function]}
+          onScrollBeginDrag={[Function]}
+          onScrollEndDrag={[Function]}
+          removeClippedSubviews={false}
+          renderItem={[Function]}
+          scrollEventThrottle={50}
+          stickyHeaderIndices={Array []}
+          updateCellsBatchingPeriod={50}
+          viewabilityConfigCallbackPairs={Array []}
+          windowSize={21}
+        >
+          <View>
+            <View
+              onLayout={[Function]}
+              style={null}
+            >
+              <View
+                style={
+                  Object {
+                    "flexDirection": "row",
+                  }
+                }
+              >
+                <View
+                  margin={24}
+                  style={
+                    Array [
+                      Object {
+                        "flexBasis": 0,
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                        "marginBottom": 24,
+                        "marginLeft": 0,
+                        "marginRight": 0,
+                        "marginTop": 0,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    color="#333333"
+                    style={
+                      Array [
+                        Object {
+                          "backgroundColor": "#FFF",
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                          "lineHeight": 24,
+                        },
+                      ]
+                    }
+                    type="body1"
+                  >
+                    paper
+                  </Text>
+                </View>
+                <View
+                  style={
+                    Object {
+                      "backgroundColor": "#FFFFFF",
+                      "height": 30,
+                      "width": 30,
+                    }
+                  }
+                />
+                <View
+                  margin={24}
+                  style={
+                    Array [
+                      Object {
+                        "flexBasis": 0,
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                        "marginBottom": 24,
+                        "marginLeft": 0,
+                        "marginRight": 0,
+                        "marginTop": 0,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    color="#333333"
+                    style={
+                      Array [
+                        Object {
+                          "backgroundColor": "#FFF",
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                          "lineHeight": 24,
+                        },
+                      ]
+                    }
+                    type="body1"
+                  >
+                    #FFFFFF
+                  </Text>
+                </View>
+              </View>
+            </View>
+            <View
+              onLayout={[Function]}
+              style={null}
+            >
+              <View
+                style={
+                  Object {
+                    "flexDirection": "row",
+                  }
+                }
+              >
+                <View
+                  margin={24}
+                  style={
+                    Array [
+                      Object {
+                        "flexBasis": 0,
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                        "marginBottom": 24,
+                        "marginLeft": 0,
+                        "marginRight": 0,
+                        "marginTop": 0,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    color="#333333"
+                    style={
+                      Array [
+                        Object {
+                          "backgroundColor": "#FFF",
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                          "lineHeight": 24,
+                        },
+                      ]
+                    }
+                    type="body1"
+                  >
+                    default
+                  </Text>
+                </View>
+                <View
+                  style={
+                    Object {
+                      "backgroundColor": "#FAFAFA",
+                      "height": 30,
+                      "width": 30,
+                    }
+                  }
+                />
+                <View
+                  margin={24}
+                  style={
+                    Array [
+                      Object {
+                        "flexBasis": 0,
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                        "marginBottom": 24,
+                        "marginLeft": 0,
+                        "marginRight": 0,
+                        "marginTop": 0,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    color="#333333"
+                    style={
+                      Array [
+                        Object {
+                          "backgroundColor": "#FFF",
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                          "lineHeight": 24,
+                        },
+                      ]
+                    }
+                    type="body1"
+                  >
+                    #FAFAFA
+                  </Text>
+                </View>
+              </View>
+            </View>
+            <View
+              onLayout={[Function]}
+              style={null}
+            >
+              <View
+                style={
+                  Object {
+                    "flexDirection": "row",
+                  }
+                }
+              >
+                <View
+                  margin={24}
+                  style={
+                    Array [
+                      Object {
+                        "flexBasis": 0,
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                        "marginBottom": 24,
+                        "marginLeft": 0,
+                        "marginRight": 0,
+                        "marginTop": 0,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    color="#333333"
+                    style={
+                      Array [
+                        Object {
+                          "backgroundColor": "#FFF",
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                          "lineHeight": 24,
+                        },
+                      ]
+                    }
+                    type="body1"
+                  >
+                    paperContrastText
+                  </Text>
+                </View>
+                <View
+                  style={
+                    Object {
+                      "backgroundColor": "#333333",
+                      "height": 30,
+                      "width": 30,
+                    }
+                  }
+                />
+                <View
+                  margin={24}
+                  style={
+                    Array [
+                      Object {
+                        "flexBasis": 0,
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                        "marginBottom": 24,
+                        "marginLeft": 0,
+                        "marginRight": 0,
+                        "marginTop": 0,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    color="#333333"
+                    style={
+                      Array [
+                        Object {
+                          "backgroundColor": "#FFF",
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                          "lineHeight": 24,
+                        },
+                      ]
+                    }
+                    type="body1"
+                  >
+                    #333333
+                  </Text>
+                </View>
+              </View>
+            </View>
+            <View
+              onLayout={[Function]}
+              style={null}
+            >
+              <View
+                style={
+                  Object {
+                    "flexDirection": "row",
+                  }
+                }
+              >
+                <View
+                  margin={24}
+                  style={
+                    Array [
+                      Object {
+                        "flexBasis": 0,
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                        "marginBottom": 24,
+                        "marginLeft": 0,
+                        "marginRight": 0,
+                        "marginTop": 0,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    color="#333333"
+                    style={
+                      Array [
+                        Object {
+                          "backgroundColor": "#FFF",
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                          "lineHeight": 24,
+                        },
+                      ]
+                    }
+                    type="body1"
+                  >
+                    defaultContrastText
+                  </Text>
+                </View>
+                <View
+                  style={
+                    Object {
+                      "backgroundColor": "#333333",
+                      "height": 30,
+                      "width": 30,
+                    }
+                  }
+                />
+                <View
+                  margin={24}
+                  style={
+                    Array [
+                      Object {
+                        "flexBasis": 0,
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                        "marginBottom": 24,
+                        "marginLeft": 0,
+                        "marginRight": 0,
+                        "marginTop": 0,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    color="#333333"
+                    style={
+                      Array [
+                        Object {
+                          "backgroundColor": "#FFF",
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                          "lineHeight": 24,
+                        },
+                      ]
+                    }
+                    type="body1"
+                  >
+                    #333333
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+        </RCTScrollView>
+        <View
+          margin={24}
+          style={
+            Array [
+              Object {
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
+                "marginBottom": 24,
+                "marginLeft": 0,
+                "marginRight": 0,
+                "marginTop": 0,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
+              },
+            ]
+          }
+        >
+          <Text
+            color="#333333"
+            style={
+              Array [
+                Object {
+                  "backgroundColor": "#FFF",
+                  "color": "#333333",
+                  "fontSize": 20,
+                  "fontWeight": "500",
+                  "lineHeight": 30,
+                },
+              ]
+            }
+            type="h6"
+          >
+            TEXT
+          </Text>
+        </View>
+        <RCTScrollView
+          data={
+            Array [
+              Object {
+                "color": "#333333",
+                "name": "primary",
+              },
+              Object {
+                "color": "#777777",
+                "name": "secondary",
+              },
+              Object {
+                "color": "#BBBBBB",
+                "name": "disabled",
+              },
+              Object {
+                "color": "#BBBBBB",
+                "name": "hint",
+              },
+            ]
+          }
+          disableVirtualization={false}
+          getItem={[Function]}
+          getItemCount={[Function]}
+          horizontal={false}
+          initialNumToRender={10}
+          keyExtractor={[Function]}
+          maxToRenderPerBatch={10}
+          numColumns={1}
+          onContentSizeChange={[Function]}
+          onEndReachedThreshold={2}
+          onLayout={[Function]}
+          onMomentumScrollEnd={[Function]}
+          onScroll={[Function]}
+          onScrollBeginDrag={[Function]}
+          onScrollEndDrag={[Function]}
+          removeClippedSubviews={false}
+          renderItem={[Function]}
+          scrollEventThrottle={50}
+          stickyHeaderIndices={Array []}
+          updateCellsBatchingPeriod={50}
+          viewabilityConfigCallbackPairs={Array []}
+          windowSize={21}
+        >
+          <View>
+            <View
+              onLayout={[Function]}
+              style={null}
+            >
+              <View
+                style={
+                  Object {
+                    "flexDirection": "row",
+                  }
+                }
+              >
+                <View
+                  margin={24}
+                  style={
+                    Array [
+                      Object {
+                        "flexBasis": 0,
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                        "marginBottom": 24,
+                        "marginLeft": 0,
+                        "marginRight": 0,
+                        "marginTop": 0,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    color="#333333"
+                    style={
+                      Array [
+                        Object {
+                          "backgroundColor": "#FFF",
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                          "lineHeight": 24,
+                        },
+                      ]
+                    }
+                    type="body1"
+                  >
+                    primary
+                  </Text>
+                </View>
+                <View
+                  style={
+                    Object {
+                      "backgroundColor": "#333333",
+                      "height": 30,
+                      "width": 30,
+                    }
+                  }
+                />
+                <View
+                  margin={24}
+                  style={
+                    Array [
+                      Object {
+                        "flexBasis": 0,
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                        "marginBottom": 24,
+                        "marginLeft": 0,
+                        "marginRight": 0,
+                        "marginTop": 0,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    color="#333333"
+                    style={
+                      Array [
+                        Object {
+                          "backgroundColor": "#FFF",
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                          "lineHeight": 24,
+                        },
+                      ]
+                    }
+                    type="body1"
+                  >
+                    #333333
+                  </Text>
+                </View>
+              </View>
+            </View>
+            <View
+              onLayout={[Function]}
+              style={null}
+            >
+              <View
+                style={
+                  Object {
+                    "flexDirection": "row",
+                  }
+                }
+              >
+                <View
+                  margin={24}
+                  style={
+                    Array [
+                      Object {
+                        "flexBasis": 0,
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                        "marginBottom": 24,
+                        "marginLeft": 0,
+                        "marginRight": 0,
+                        "marginTop": 0,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    color="#333333"
+                    style={
+                      Array [
+                        Object {
+                          "backgroundColor": "#FFF",
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                          "lineHeight": 24,
+                        },
+                      ]
+                    }
+                    type="body1"
+                  >
+                    secondary
+                  </Text>
+                </View>
+                <View
+                  style={
+                    Object {
+                      "backgroundColor": "#777777",
+                      "height": 30,
+                      "width": 30,
+                    }
+                  }
+                />
+                <View
+                  margin={24}
+                  style={
+                    Array [
+                      Object {
+                        "flexBasis": 0,
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                        "marginBottom": 24,
+                        "marginLeft": 0,
+                        "marginRight": 0,
+                        "marginTop": 0,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    color="#333333"
+                    style={
+                      Array [
+                        Object {
+                          "backgroundColor": "#FFF",
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                          "lineHeight": 24,
+                        },
+                      ]
+                    }
+                    type="body1"
+                  >
+                    #777777
+                  </Text>
+                </View>
+              </View>
+            </View>
+            <View
+              onLayout={[Function]}
+              style={null}
+            >
+              <View
+                style={
+                  Object {
+                    "flexDirection": "row",
+                  }
+                }
+              >
+                <View
+                  margin={24}
+                  style={
+                    Array [
+                      Object {
+                        "flexBasis": 0,
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                        "marginBottom": 24,
+                        "marginLeft": 0,
+                        "marginRight": 0,
+                        "marginTop": 0,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    color="#333333"
+                    style={
+                      Array [
+                        Object {
+                          "backgroundColor": "#FFF",
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                          "lineHeight": 24,
+                        },
+                      ]
+                    }
+                    type="body1"
+                  >
+                    disabled
+                  </Text>
+                </View>
+                <View
+                  style={
+                    Object {
+                      "backgroundColor": "#BBBBBB",
+                      "height": 30,
+                      "width": 30,
+                    }
+                  }
+                />
+                <View
+                  margin={24}
+                  style={
+                    Array [
+                      Object {
+                        "flexBasis": 0,
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                        "marginBottom": 24,
+                        "marginLeft": 0,
+                        "marginRight": 0,
+                        "marginTop": 0,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    color="#333333"
+                    style={
+                      Array [
+                        Object {
+                          "backgroundColor": "#FFF",
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                          "lineHeight": 24,
+                        },
+                      ]
+                    }
+                    type="body1"
+                  >
+                    #BBBBBB
+                  </Text>
+                </View>
+              </View>
+            </View>
+            <View
+              onLayout={[Function]}
+              style={null}
+            >
+              <View
+                style={
+                  Object {
+                    "flexDirection": "row",
+                  }
+                }
+              >
+                <View
+                  margin={24}
+                  style={
+                    Array [
+                      Object {
+                        "flexBasis": 0,
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                        "marginBottom": 24,
+                        "marginLeft": 0,
+                        "marginRight": 0,
+                        "marginTop": 0,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    color="#333333"
+                    style={
+                      Array [
+                        Object {
+                          "backgroundColor": "#FFF",
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                          "lineHeight": 24,
+                        },
+                      ]
+                    }
+                    type="body1"
+                  >
+                    hint
+                  </Text>
+                </View>
+                <View
+                  style={
+                    Object {
+                      "backgroundColor": "#BBBBBB",
+                      "height": 30,
+                      "width": 30,
+                    }
+                  }
+                />
+                <View
+                  margin={24}
+                  style={
+                    Array [
+                      Object {
+                        "flexBasis": 0,
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                        "marginBottom": 24,
+                        "marginLeft": 0,
+                        "marginRight": 0,
+                        "marginTop": 0,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    color="#333333"
+                    style={
+                      Array [
+                        Object {
+                          "backgroundColor": "#FFF",
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                          "lineHeight": 24,
+                        },
+                      ]
+                    }
+                    type="body1"
+                  >
+                    #BBBBBB
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+        </RCTScrollView>
+        <View
+          margin={24}
+          style={
+            Array [
+              Object {
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
+                "marginBottom": 24,
+                "marginLeft": 0,
+                "marginRight": 0,
+                "marginTop": 0,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
+              },
+            ]
+          }
+        >
+          <Text
+            color="#333333"
+            style={
+              Array [
+                Object {
+                  "backgroundColor": "#FFF",
+                  "color": "#333333",
+                  "fontSize": 20,
+                  "fontWeight": "500",
+                  "lineHeight": 30,
+                },
+              ]
+            }
+            type="h6"
+          >
+            COMPLEMENTARY
+          </Text>
+        </View>
+        <RCTScrollView
+          data={
+            Array [
+              Object {
+                "color": "#000000",
+                "name": "highlight",
+              },
+              Object {
+                "color": "#227BBD",
+                "name": "link",
+              },
+              Object {
+                "color": "#FFFFFF",
+                "name": "linkContrastText",
+              },
+              Object {
+                "color": "#FCC433",
+                "name": "warning",
+              },
+              Object {
+                "color": "#000000",
+                "name": "warningContrastText",
+              },
+            ]
+          }
+          disableVirtualization={false}
+          getItem={[Function]}
+          getItemCount={[Function]}
+          horizontal={false}
+          initialNumToRender={10}
+          keyExtractor={[Function]}
+          maxToRenderPerBatch={10}
+          numColumns={1}
+          onContentSizeChange={[Function]}
+          onEndReachedThreshold={2}
+          onLayout={[Function]}
+          onMomentumScrollEnd={[Function]}
+          onScroll={[Function]}
+          onScrollBeginDrag={[Function]}
+          onScrollEndDrag={[Function]}
+          removeClippedSubviews={false}
+          renderItem={[Function]}
+          scrollEventThrottle={50}
+          stickyHeaderIndices={Array []}
+          updateCellsBatchingPeriod={50}
+          viewabilityConfigCallbackPairs={Array []}
+          windowSize={21}
+        >
+          <View>
+            <View
+              onLayout={[Function]}
+              style={null}
+            >
+              <View
+                style={
+                  Object {
+                    "flexDirection": "row",
+                  }
+                }
+              >
+                <View
+                  margin={24}
+                  style={
+                    Array [
+                      Object {
+                        "flexBasis": 0,
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                        "marginBottom": 24,
+                        "marginLeft": 0,
+                        "marginRight": 0,
+                        "marginTop": 0,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    color="#333333"
+                    style={
+                      Array [
+                        Object {
+                          "backgroundColor": "#FFF",
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                          "lineHeight": 24,
+                        },
+                      ]
+                    }
+                    type="body1"
+                  >
+                    highlight
+                  </Text>
+                </View>
+                <View
+                  style={
+                    Object {
+                      "backgroundColor": "#000000",
+                      "height": 30,
+                      "width": 30,
+                    }
+                  }
+                />
+                <View
+                  margin={24}
+                  style={
+                    Array [
+                      Object {
+                        "flexBasis": 0,
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                        "marginBottom": 24,
+                        "marginLeft": 0,
+                        "marginRight": 0,
+                        "marginTop": 0,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    color="#333333"
+                    style={
+                      Array [
+                        Object {
+                          "backgroundColor": "#FFF",
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                          "lineHeight": 24,
+                        },
+                      ]
+                    }
+                    type="body1"
+                  >
+                    #000000
+                  </Text>
+                </View>
+              </View>
+            </View>
+            <View
+              onLayout={[Function]}
+              style={null}
+            >
+              <View
+                style={
+                  Object {
+                    "flexDirection": "row",
+                  }
+                }
+              >
+                <View
+                  margin={24}
+                  style={
+                    Array [
+                      Object {
+                        "flexBasis": 0,
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                        "marginBottom": 24,
+                        "marginLeft": 0,
+                        "marginRight": 0,
+                        "marginTop": 0,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    color="#333333"
+                    style={
+                      Array [
+                        Object {
+                          "backgroundColor": "#FFF",
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                          "lineHeight": 24,
+                        },
+                      ]
+                    }
+                    type="body1"
+                  >
+                    link
+                  </Text>
+                </View>
+                <View
+                  style={
+                    Object {
+                      "backgroundColor": "#227BBD",
+                      "height": 30,
+                      "width": 30,
+                    }
+                  }
+                />
+                <View
+                  margin={24}
+                  style={
+                    Array [
+                      Object {
+                        "flexBasis": 0,
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                        "marginBottom": 24,
+                        "marginLeft": 0,
+                        "marginRight": 0,
+                        "marginTop": 0,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    color="#333333"
+                    style={
+                      Array [
+                        Object {
+                          "backgroundColor": "#FFF",
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                          "lineHeight": 24,
+                        },
+                      ]
+                    }
+                    type="body1"
+                  >
+                    #227BBD
+                  </Text>
+                </View>
+              </View>
+            </View>
+            <View
+              onLayout={[Function]}
+              style={null}
+            >
+              <View
+                style={
+                  Object {
+                    "flexDirection": "row",
+                  }
+                }
+              >
+                <View
+                  margin={24}
+                  style={
+                    Array [
+                      Object {
+                        "flexBasis": 0,
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                        "marginBottom": 24,
+                        "marginLeft": 0,
+                        "marginRight": 0,
+                        "marginTop": 0,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    color="#333333"
+                    style={
+                      Array [
+                        Object {
+                          "backgroundColor": "#FFF",
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                          "lineHeight": 24,
+                        },
+                      ]
+                    }
+                    type="body1"
+                  >
+                    linkContrastText
+                  </Text>
+                </View>
+                <View
+                  style={
+                    Object {
+                      "backgroundColor": "#FFFFFF",
+                      "height": 30,
+                      "width": 30,
+                    }
+                  }
+                />
+                <View
+                  margin={24}
+                  style={
+                    Array [
+                      Object {
+                        "flexBasis": 0,
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                        "marginBottom": 24,
+                        "marginLeft": 0,
+                        "marginRight": 0,
+                        "marginTop": 0,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    color="#333333"
+                    style={
+                      Array [
+                        Object {
+                          "backgroundColor": "#FFF",
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                          "lineHeight": 24,
+                        },
+                      ]
+                    }
+                    type="body1"
+                  >
+                    #FFFFFF
+                  </Text>
+                </View>
+              </View>
+            </View>
+            <View
+              onLayout={[Function]}
+              style={null}
+            >
+              <View
+                style={
+                  Object {
+                    "flexDirection": "row",
+                  }
+                }
+              >
+                <View
+                  margin={24}
+                  style={
+                    Array [
+                      Object {
+                        "flexBasis": 0,
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                        "marginBottom": 24,
+                        "marginLeft": 0,
+                        "marginRight": 0,
+                        "marginTop": 0,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    color="#333333"
+                    style={
+                      Array [
+                        Object {
+                          "backgroundColor": "#FFF",
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                          "lineHeight": 24,
+                        },
+                      ]
+                    }
+                    type="body1"
+                  >
+                    warning
+                  </Text>
+                </View>
+                <View
+                  style={
+                    Object {
+                      "backgroundColor": "#FCC433",
+                      "height": 30,
+                      "width": 30,
+                    }
+                  }
+                />
+                <View
+                  margin={24}
+                  style={
+                    Array [
+                      Object {
+                        "flexBasis": 0,
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                        "marginBottom": 24,
+                        "marginLeft": 0,
+                        "marginRight": 0,
+                        "marginTop": 0,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    color="#333333"
+                    style={
+                      Array [
+                        Object {
+                          "backgroundColor": "#FFF",
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                          "lineHeight": 24,
+                        },
+                      ]
+                    }
+                    type="body1"
+                  >
+                    #FCC433
+                  </Text>
+                </View>
+              </View>
+            </View>
+            <View
+              onLayout={[Function]}
+              style={null}
+            >
+              <View
+                style={
+                  Object {
+                    "flexDirection": "row",
+                  }
+                }
+              >
+                <View
+                  margin={24}
+                  style={
+                    Array [
+                      Object {
+                        "flexBasis": 0,
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                        "marginBottom": 24,
+                        "marginLeft": 0,
+                        "marginRight": 0,
+                        "marginTop": 0,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    color="#333333"
+                    style={
+                      Array [
+                        Object {
+                          "backgroundColor": "#FFF",
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                          "lineHeight": 24,
+                        },
+                      ]
+                    }
+                    type="body1"
+                  >
+                    warningContrastText
+                  </Text>
+                </View>
+                <View
+                  style={
+                    Object {
+                      "backgroundColor": "#000000",
+                      "height": 30,
+                      "width": 30,
+                    }
+                  }
+                />
+                <View
+                  margin={24}
+                  style={
+                    Array [
+                      Object {
+                        "flexBasis": 0,
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                        "marginBottom": 24,
+                        "marginLeft": 0,
+                        "marginRight": 0,
+                        "marginTop": 0,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    color="#333333"
+                    style={
+                      Array [
+                        Object {
+                          "backgroundColor": "#FFF",
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                          "lineHeight": 24,
+                        },
+                      ]
+                    }
+                    type="body1"
+                  >
+                    #000000
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+        </RCTScrollView>
+      </View>
+    </RCTScrollView>
+  </View>
+</RCTSafeAreaView>
+`;

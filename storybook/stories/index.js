@@ -13,6 +13,8 @@ import { StoryNatCard } from './StoryNatCard';
 import { StoryNatMenuItem } from './StoryNatMenuItem';
 import { StoryNatIcon } from './StoryNatIcon';
 import { StoryTokenTypography } from './StoryTokenTypography';
+import { StoryTokenColors } from './StoryTokenColors';
+import { ThemeNaturaLight } from './StoryTokenThemes/ThemeNaturaLight';
 import CenterView from './CenterView';
 import Welcome from './Welcome';
 import icoArrowLeft from '../../lib/assets/icons/ic_arrow_left_white.png';
@@ -23,6 +25,12 @@ storiesOf('Tokens', module)
   .addDecorator(getStory => <CenterView>{getStory()}</CenterView>)
   .add('Typography', () => (
     <StoryTokenTypography />
+  ))
+  .add('Colors', () => (
+    <StoryTokenColors />
+  ))
+  .add('Theme Natura Light', () => (
+    <ThemeNaturaLight />
   ));
 
 storiesOf('Icons', module)

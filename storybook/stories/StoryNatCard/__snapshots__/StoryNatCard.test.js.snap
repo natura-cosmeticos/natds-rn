@@ -5,6 +5,9 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
   emulateUnlessSupported={true}
 >
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> origin/update/react
   <View
     style={
       Array [
@@ -43,6 +46,15 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
               onResponderTerminate={[Function]}
               onResponderTerminationRequest={[Function]}
               onStartShouldSetResponder={[Function]}
+<<<<<<< HEAD
+              style={
+                Object {
+                  "backgroundColor": "#FFFFFF",
+                  "borderRadius": 4,
+                  "marginTop": 0,
+                  "opacity": 1,
+                }
+=======
               style={
                 Object {
                   "backgroundColor": "#FFFFFF",
@@ -221,6 +233,7 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
                     "lineHeight": 21,
                   },
                 ]
+>>>>>>> origin/update/react
 >>>>>>> origin/update/react
               }
             >
