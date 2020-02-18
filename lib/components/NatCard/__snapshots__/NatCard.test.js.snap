@@ -64,26 +64,35 @@ exports[`TextInput component default Should render textInput component  1`] = `
         }
       >
         <View
-          defaultMargin="0px"
+          margin={24}
           style={
             Array [
               Object {
                 "flexBasis": 0,
                 "flexGrow": 1,
                 "flexShrink": 1,
+                "marginBottom": 24,
+                "marginLeft": 0,
+                "marginRight": 0,
                 "marginTop": 0,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
               },
             ]
           }
         >
           <Text
+            color="#333333"
             style={
               Array [
                 Object {
+                  "backgroundColor": "#FFF",
                   "color": "#333333",
                   "fontSize": 20,
-                  "fontWeight": "400",
-                  "lineHeight": 24,
+                  "fontWeight": "500",
+                  "lineHeight": 30,
                 },
               ]
             }
@@ -93,50 +102,70 @@ exports[`TextInput component default Should render textInput component  1`] = `
           </Text>
         </View>
         <View
-          defaultMargin="0px"
+          margin={24}
           style={
             Array [
               Object {
                 "flexBasis": 0,
                 "flexGrow": 1,
                 "flexShrink": 1,
+                "marginBottom": 24,
+                "marginLeft": 0,
+                "marginRight": 0,
                 "marginTop": 0,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
               },
             ]
           }
         >
           <Text
+            color="#333333"
             style={
               Array [
                 Object {
-                  "color": "#777777",
+                  "backgroundColor": "#FFF",
+                  "color": "#333333",
                   "fontSize": 12,
                   "fontWeight": "400",
-                  "lineHeight": 14,
+                  "lineHeight": 18,
                 },
               ]
             }
             type="caption"
-          />
+          >
+            
+          </Text>
         </View>
         <View
-          defaultMargin="8px"
+          margin="dense"
           style={
             Array [
               Object {
                 "flexBasis": 0,
                 "flexGrow": 1,
                 "flexShrink": 1,
-                "marginTop": 8,
+                "marginBottom": "dense",
+                "marginLeft": 0,
+                "marginRight": 0,
+                "marginTop": 0,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
               },
             ]
           }
         >
           <Text
+            color="#333333"
             style={
               Array [
                 Object {
-                  "color": "#777777",
+                  "backgroundColor": "#FFF",
+                  "color": "#333333",
                   "fontSize": 14,
                   "fontWeight": "400",
                   "lineHeight": 21,

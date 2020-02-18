@@ -349,8 +349,8 @@
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* NaturaReactComponentsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NaturaReactComponentsTests.m; sourceTree = "<group>"; };
 		05E078CE4272FDDC668DF6E2 /* Pods-NaturaReactComponents.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NaturaReactComponents.debug.xcconfig"; path = "Target Support Files/Pods-NaturaReactComponents/Pods-NaturaReactComponents.debug.xcconfig"; sourceTree = "<group>"; };
-		0A7C7BF260E448A8985D4EF3 /* Roboto-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Italic.ttf"; path = "../lib/assets/fonts/Roboto-Italic.ttf"; sourceTree = "<group>"; };
-		0BD654E940A7467FBA2B1A00 /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-LightItalic.ttf"; path = "../lib/assets/fonts/Roboto-LightItalic.ttf"; sourceTree = "<group>"; };
+		0A7C7BF260E448A8985D4EF3 /* Roboto-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Italic.ttf"; path = "../lib/assets/fonts/Roboto-Italic.ttf"; sourceTree = "<group>"; };
+		0BD654E940A7467FBA2B1A00 /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-LightItalic.ttf"; path = "../lib/assets/fonts/Roboto-LightItalic.ttf"; sourceTree = "<group>"; };
 		139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTSettings.xcodeproj; path = "../node_modules/react-native/Libraries/Settings/RCTSettings.xcodeproj"; sourceTree = "<group>"; };
 		139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTWebSocket.xcodeproj; path = "../node_modules/react-native/Libraries/WebSocket/RCTWebSocket.xcodeproj"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* NaturaReactComponents.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NaturaReactComponents.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -366,35 +366,35 @@
 		2D02E47B1E0B4A5D006451C7 /* NaturaReactComponents-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NaturaReactComponents-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* NaturaReactComponents-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NaturaReactComponents-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D16E6891FA4F8E400B85C8A /* libReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		4F642E1623074ACB9C401F9C /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-MediumItalic.ttf"; path = "../lib/assets/fonts/Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
+		4F642E1623074ACB9C401F9C /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-MediumItalic.ttf"; path = "../lib/assets/fonts/Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		5FD0AC75F1F2BDF7D6DD0650 /* libPods-NaturaReactComponents.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NaturaReactComponents.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E88D8258CF5DE10F3A099B4 /* Pods-NaturaReactComponentsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NaturaReactComponentsTests.release.xcconfig"; path = "Target Support Files/Pods-NaturaReactComponentsTests/Pods-NaturaReactComponentsTests.release.xcconfig"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		7AB1A1280B6D2E2FF23F4755 /* Pods-NaturaReactComponents-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NaturaReactComponents-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-NaturaReactComponents-tvOSTests/Pods-NaturaReactComponents-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
-		7F56E12CADA44D89AF13F9A4 /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-BoldItalic.ttf"; path = "../lib/assets/fonts/Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
-		8104E855C8834B399F347237 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Thin.ttf"; path = "../lib/assets/fonts/Roboto-Thin.ttf"; sourceTree = "<group>"; };
-		81B005F7776242AA948AFB4F /* Roboto-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Black.ttf"; path = "../lib/assets/fonts/Roboto-Black.ttf"; sourceTree = "<group>"; };
+		7F56E12CADA44D89AF13F9A4 /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-BoldItalic.ttf"; path = "../lib/assets/fonts/Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
+		8104E855C8834B399F347237 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Thin.ttf"; path = "../lib/assets/fonts/Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		81B005F7776242AA948AFB4F /* Roboto-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Black.ttf"; path = "../lib/assets/fonts/Roboto-Black.ttf"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
-		975FE5E1F4414CB7AB0D86A9 /* NaturaSans-Bold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "NaturaSans-Bold.otf"; path = "../lib/assets/fonts/NaturaSans-Bold.otf"; sourceTree = "<group>"; };
-		9EAABA0F580948769B517996 /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-ThinItalic.ttf"; path = "../lib/assets/fonts/Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
+		975FE5E1F4414CB7AB0D86A9 /* NaturaSans-Bold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "NaturaSans-Bold.otf"; path = "../lib/assets/fonts/NaturaSans-Bold.otf"; sourceTree = "<group>"; };
+		9EAABA0F580948769B517996 /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-ThinItalic.ttf"; path = "../lib/assets/fonts/Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
 		AAF26294D2DA22939A10EABD /* libPods-NaturaReactComponentsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NaturaReactComponentsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AB55A714650146EA899F5ED6 /* NaturaSans-Regular.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "NaturaSans-Regular.otf"; path = "../lib/assets/fonts/NaturaSans-Regular.otf"; sourceTree = "<group>"; };
+		AB55A714650146EA899F5ED6 /* NaturaSans-Regular.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "NaturaSans-Regular.otf"; path = "../lib/assets/fonts/NaturaSans-Regular.otf"; sourceTree = "<group>"; };
 		AD845809FB13D061F20A97B8 /* Pods-NaturaReactComponents-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NaturaReactComponents-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-NaturaReactComponents-tvOSTests/Pods-NaturaReactComponents-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
-		AE18AB54FED1468F84EB39AB /* Roboto-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Bold.ttf"; path = "../lib/assets/fonts/Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		AE18AB54FED1468F84EB39AB /* Roboto-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Bold.ttf"; path = "../lib/assets/fonts/Roboto-Bold.ttf"; sourceTree = "<group>"; };
 		B941665D121348244D08FC8B /* libPods-NaturaReactComponents-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NaturaReactComponents-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B9C5479D7C2D441BAC64F9D8 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Regular.ttf"; path = "../lib/assets/fonts/Roboto-Regular.ttf"; sourceTree = "<group>"; };
-		BE625FF943B44B849B61CEFF /* Roboto-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Light.ttf"; path = "../lib/assets/fonts/Roboto-Light.ttf"; sourceTree = "<group>"; };
-		CBE8154F147E4CB8A5BE208C /* NaturaSans-Light.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "NaturaSans-Light.otf"; path = "../lib/assets/fonts/NaturaSans-Light.otf"; sourceTree = "<group>"; };
+		B9C5479D7C2D441BAC64F9D8 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Regular.ttf"; path = "../lib/assets/fonts/Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		BE625FF943B44B849B61CEFF /* Roboto-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Light.ttf"; path = "../lib/assets/fonts/Roboto-Light.ttf"; sourceTree = "<group>"; };
+		CBE8154F147E4CB8A5BE208C /* NaturaSans-Light.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "NaturaSans-Light.otf"; path = "../lib/assets/fonts/NaturaSans-Light.otf"; sourceTree = "<group>"; };
 		D027548F06D64DE705893760 /* Pods-NaturaReactComponents-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NaturaReactComponents-tvOS.release.xcconfig"; path = "Target Support Files/Pods-NaturaReactComponents-tvOS/Pods-NaturaReactComponents-tvOS.release.xcconfig"; sourceTree = "<group>"; };
-		D05B8C99F73C4879BE9D0E81 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Medium.ttf"; path = "../lib/assets/fonts/Roboto-Medium.ttf"; sourceTree = "<group>"; };
-		D0ADC710FBFF462A8771E793 /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-BlackItalic.ttf"; path = "../lib/assets/fonts/Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
+		D05B8C99F73C4879BE9D0E81 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Medium.ttf"; path = "../lib/assets/fonts/Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		D0ADC710FBFF462A8771E793 /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-BlackItalic.ttf"; path = "../lib/assets/fonts/Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
 		E01566DB96821DEE0E73E4A3 /* Pods-NaturaReactComponents-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NaturaReactComponents-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-NaturaReactComponents-tvOS/Pods-NaturaReactComponents-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 		EE1E491C84F144A70A4DF023 /* Pods-NaturaReactComponentsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NaturaReactComponentsTests.debug.xcconfig"; path = "Target Support Files/Pods-NaturaReactComponentsTests/Pods-NaturaReactComponentsTests.debug.xcconfig"; sourceTree = "<group>"; };
-		F6D52117307E42D98677E89F /* NaturaScript.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = NaturaScript.otf; path = ../lib/assets/fonts/NaturaScript.otf; sourceTree = "<group>"; };
+		F6D52117307E42D98677E89F /* NaturaScript.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = NaturaScript.otf; path = ../lib/assets/fonts/NaturaScript.otf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -608,7 +608,6 @@
 				9EAABA0F580948769B517996 /* Roboto-ThinItalic.ttf */,
 			);
 			name = Resources;
-			path = "";
 			sourceTree = "<group>";
 		};
 		5E91572E1DD0AC6500FF2AA8 /* Products */ = {
@@ -705,7 +704,6 @@
 				EE1E491C84F144A70A4DF023 /* Pods-NaturaReactComponentsTests.debug.xcconfig */,
 				6E88D8258CF5DE10F3A099B4 /* Pods-NaturaReactComponentsTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -817,6 +815,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -1430,7 +1429,6 @@
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
-					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = NaturaReactComponents;
