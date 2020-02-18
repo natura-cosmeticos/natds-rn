@@ -13,6 +13,9 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> origin/update/react
 >>>>>>> origin/update/react
 >>>>>>> origin/update/react
 >>>>>>> origin/update/react
@@ -21,7 +24,11 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
     style={
       Array [
         Object {
+<<<<<<< HEAD
+          "backgroundColor": "#FFFFFF",
+=======
           "backgroundColor": "white",
+>>>>>>> origin/update/react
           "bottom": 0,
           "flexBasis": 0,
           "flexGrow": 1,
@@ -45,7 +52,13 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
           "marginTop": 0,
           "width": 750,
 =======
+<<<<<<< HEAD
+          "backgroundColor": "#FAFAFA",
+          "marginTop": 0,
+          "width": 750,
+=======
           "backgroundColor": "#F5F5F5",
+>>>>>>> origin/update/react
 >>>>>>> origin/update/react
 >>>>>>> origin/update/react
         },
@@ -54,6 +67,8 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
   >
     <RCTScrollView>
       <View>
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -121,6 +136,7 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
       >
 >>>>>>> origin/update/react
 >>>>>>> origin/update/react
+>>>>>>> origin/update/react
         <View
           style={
             Object {
@@ -140,6 +156,9 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> origin/update/react
 >>>>>>> origin/update/react
             accessible={true}
             focusable={true}
@@ -151,6 +170,23 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
             onResponderTerminate={[Function]}
             onResponderTerminationRequest={[Function]}
             onStartShouldSetResponder={[Function]}
+<<<<<<< HEAD
+            style={
+              Object {
+                "backgroundColor": "#FFFFFF",
+                "borderRadius": 4,
+                "marginBottom": 0,
+                "opacity": 1,
+              }
+            }
+          >
+            <View
+              onPress={[Function]}
+              style={
+                Array [
+                  Object {
+                    "width": "100%",
+=======
 <<<<<<< HEAD
             style={
               Object {
@@ -253,6 +289,7 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
                     "lineHeight": 18,
 >>>>>>> origin/update/react
 >>>>>>> origin/update/react
+>>>>>>> origin/update/react
                   },
                 ]
               }
@@ -261,6 +298,9 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> origin/update/react
 >>>>>>> origin/update/react
               <Image
                 source={
@@ -281,6 +321,15 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
               />
             </View>
             <View
+<<<<<<< HEAD
+              style={
+                Array [
+                  Object {
+                    "paddingBottom": 10,
+                    "paddingLeft": 10,
+                    "paddingRight": 10,
+                    "paddingTop": 10,
+=======
 <<<<<<< HEAD
               style={
                 Array [
@@ -333,6 +382,7 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
                     "lineHeight": 21,
 >>>>>>> origin/update/react
 >>>>>>> origin/update/react
+>>>>>>> origin/update/react
                   },
                 ]
 >>>>>>> origin/update/react
@@ -344,6 +394,9 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> origin/update/react
 >>>>>>> origin/update/react
                 margin={4}
                 style={
@@ -399,10 +452,15 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
                       "paddingRight": 0,
                       "paddingTop": 0,
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> origin/update/react
                     },
                   ]
                 }
               >
+<<<<<<< HEAD
+=======
 =======
 =======
                 style={
@@ -446,6 +504,7 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
                 }
               >
 <<<<<<< HEAD
+>>>>>>> origin/update/react
 >>>>>>> origin/update/react
                 <Text
                   color="#777777"
@@ -502,6 +561,8 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
                 >
                   Esse é um card da Natura
                 </Text>
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
 =======
 =======
@@ -619,6 +680,7 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
                     Esse é um card da Natura
                   </Text>
                 </View>
+>>>>>>> origin/update/react
 >>>>>>> origin/update/react
 >>>>>>> origin/update/react
               </View>

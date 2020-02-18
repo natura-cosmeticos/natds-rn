@@ -8,7 +8,11 @@ exports[`StoryTokenSpace component Should render StoryTokenSpace component  1`] 
     style={
       Array [
         Object {
+<<<<<<< HEAD
+          "backgroundColor": "#FFFFFF",
+=======
           "backgroundColor": "white",
+>>>>>>> origin/update/react
           "bottom": 0,
           "flexBasis": 0,
           "flexGrow": 1,

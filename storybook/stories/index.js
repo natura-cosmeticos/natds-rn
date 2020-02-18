@@ -15,6 +15,8 @@ import { StoryTokenTypography } from './StoryTokenTypography';
 import { StoryTokenColors } from './StoryTokenColors';
 import { StoryTokenSpace } from './StoryTokenSpace';
 import { StoryNatLogo } from './StoryNatLogo';
+import { StoryNatHeader } from './StoryNatHeader';
+import { StoryNatHeaderNew } from './StoryNatHeaderNew';
 import { ThemeNaturaLight } from './StoryTokenThemes/ThemeNaturaLight';
 import CenterView from './CenterView';
 import Welcome from './Welcome';
@@ -46,12 +48,6 @@ storiesOf('Images', module)
     <StoryNatLogo />
   ));
 
-storiesOf('NatMenuItem', module)
-  .addDecorator(getStory => <CenterView>{getStory()}</CenterView>)
-  .add('All', () => (
-    <StoryNatMenuItem />
-  ));
-
 storiesOf('NatTextInput', module)
   .addDecorator(getStory => <CenterView>{getStory()}</CenterView>)
   .add('Default', () => (
@@ -68,6 +64,21 @@ storiesOf('NatTextInput', module)
   ))
   .add('With icon - SVG', () => (
     <StoryNatTextInput type="default" icon={{ svg: { name: 'filled-action-check' } }} />
+  ));
+
+storiesOf('NatMenuItem', module)
+  .addDecorator(getStory => <CenterView>{getStory()}</CenterView>)
+  .add('All', () => (
+    <StoryNatMenuItem />
+  ));
+
+storiesOf('NatHeader', module)
+  .addDecorator(getStory => <CenterView>{getStory()}</CenterView>)
+  .add('OLD', () => (
+    <StoryNatHeader />
+  ))
+  .add('NEW', () => (
+    <StoryNatHeaderNew />
   ));
 
 storiesOf('NatCard', module)
