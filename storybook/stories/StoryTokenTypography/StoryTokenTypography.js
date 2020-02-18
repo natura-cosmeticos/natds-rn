@@ -5,11 +5,7 @@ import { NatContainer, NatText, ThemeNaturaLight } from '../../../lib';
 const styles = {
   defaultScreen: {
     backgroundColor: '#FFF',
-<<<<<<< HEAD
     marginTop: 0,
-=======
-    marginTop: 30,
->>>>>>> origin/update/react
     width: Dimensions.get('window').width,
   },
 };

@@ -1,68 +1,152 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`TextInput component default Should render textInput component  1`] = `
-<RCTScrollView>
-  <View>
-    <View
-      accessible={true}
-      focusable={true}
-      isTVSelectable={true}
-      onClick={[Function]}
-      onResponderGrant={[Function]}
-      onResponderMove={[Function]}
-      onResponderRelease={[Function]}
-      onResponderTerminate={[Function]}
-      onResponderTerminationRequest={[Function]}
-      onStartShouldSetResponder={[Function]}
-      style={
-        Object {
-          "backgroundColor": "#FFFFFF",
-          "borderRadius": 4,
-          "marginTop": 0,
-          "opacity": 1,
-        }
+<View
+  style={
+    Object {
+      "borderRadius": 4,
+      "elevation": 1,
+      "shadowColor": "#000",
+      "shadowOffset": Object {
+        "height": 1,
+        "width": 0,
+      },
+      "shadowOpacity": 0.24,
+      "shadowRadius": 4,
+    }
+  }
+>
+  <View
+    accessible={true}
+    focusable={true}
+    isTVSelectable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "backgroundColor": "#FFFFFF",
+        "borderRadius": 4,
+        "marginBottom": 0,
+        "opacity": 1,
       }
+    }
+  >
+    <View
+      onPress={[Function]}
+      style={
+        Array [
+          Object {
+            "width": "100%",
+          },
+        ]
+      }
+      type="card"
     >
-      <View
+      <Image
+        source={
+          Object {
+            "uri": "https://upload.wikimedia.org/wikipedia/pt/thumb/c/cb/Natura_Logo.png/200px-Natura_Logo.png",
+          }
+        }
         style={
           Array [
             Object {
+              "borderRadius": 0,
+              "height": 184,
               "width": "100%",
             },
           ]
         }
         type="card"
-      >
-        <Image
-          source={
-            Object {
-              "uri": "https://upload.wikimedia.org/wikipedia/pt/thumb/c/cb/Natura_Logo.png/200px-Natura_Logo.png",
-            }
-          }
-          style={
-            Array [
-              Object {
-                "borderRadius": 0,
-                "height": 184,
-                "width": "100%",
-              },
-            ]
-          }
-          type="card"
-        />
-      </View>
+      />
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "paddingBottom": 10,
+            "paddingLeft": 10,
+            "paddingRight": 10,
+            "paddingTop": 10,
+          },
+        ]
+      }
+    >
       <View
+        margin={4}
         style={
           Array [
             Object {
-              "paddingBottom": 10,
-              "paddingLeft": 10,
-              "paddingRight": 10,
-              "paddingTop": 10,
+              "flexBasis": 0,
+              "flexGrow": 1,
+              "flexShrink": 1,
+              "marginBottom": 4,
+              "marginLeft": 0,
+              "marginRight": 0,
+              "marginTop": 0,
+              "paddingBottom": 0,
+              "paddingLeft": 0,
+              "paddingRight": 0,
+              "paddingTop": 0,
             },
           ]
         }
       >
+        <Text
+          color="#333333"
+          style={
+            Array [
+              Object {
+                "backgroundColor": "#FFF",
+                "color": "#333333",
+                "fontSize": 20,
+                "fontWeight": "500",
+                "lineHeight": 30,
+              },
+            ]
+          }
+          type="h6"
+        >
+          teste
+        </Text>
+      </View>
+      <View
+        margin={16}
+        style={
+          Array [
+            Object {
+              "flexBasis": 0,
+              "flexGrow": 1,
+              "flexShrink": 1,
+              "marginBottom": 16,
+              "marginLeft": 0,
+              "marginRight": 0,
+              "marginTop": 0,
+              "paddingBottom": 0,
+              "paddingLeft": 0,
+              "paddingRight": 0,
+              "paddingTop": 0,
+            },
+          ]
+        }
+      >
+<<<<<<< HEAD
+        <Text
+          color="#777777"
+          style={
+            Array [
+              Object {
+                "backgroundColor": "#FFF",
+                "color": "#777777",
+                "fontSize": 12,
+                "fontWeight": "400",
+                "lineHeight": 18,
+=======
         <View
           margin={24}
           style={
@@ -117,10 +201,47 @@ exports[`TextInput component default Should render textInput component  1`] = `
                 "paddingLeft": 0,
                 "paddingRight": 0,
                 "paddingTop": 0,
+>>>>>>> origin/update/react
               },
             ]
           }
+          type="caption"
         >
+<<<<<<< HEAD
+          
+        </Text>
+      </View>
+      <View
+        margin={24}
+        style={
+          Array [
+            Object {
+              "flexBasis": 0,
+              "flexGrow": 1,
+              "flexShrink": 1,
+              "marginBottom": 24,
+              "marginLeft": 0,
+              "marginRight": 0,
+              "marginTop": 0,
+              "paddingBottom": 0,
+              "paddingLeft": 0,
+              "paddingRight": 0,
+              "paddingTop": 0,
+            },
+          ]
+        }
+      >
+        <Text
+          color="#333333"
+          style={
+            Array [
+              Object {
+                "backgroundColor": "#FFF",
+                "color": "#333333",
+                "fontSize": 14,
+                "fontWeight": "400",
+                "lineHeight": 21,
+=======
           <Text
             color="#333333"
             style={
@@ -155,10 +276,16 @@ exports[`TextInput component default Should render textInput component  1`] = `
                 "paddingLeft": 0,
                 "paddingRight": 0,
                 "paddingTop": 0,
+>>>>>>> origin/update/react
               },
             ]
           }
+          type="body2"
         >
+<<<<<<< HEAD
+          teste
+        </Text>
+=======
           <Text
             color="#333333"
             style={
@@ -177,8 +304,9 @@ exports[`TextInput component default Should render textInput component  1`] = `
             teste
           </Text>
         </View>
+>>>>>>> origin/update/react
       </View>
     </View>
   </View>
-</RCTScrollView>
+</View>
 `;

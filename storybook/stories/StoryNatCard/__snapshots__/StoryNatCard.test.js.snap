@@ -9,6 +9,9 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> origin/update/react
 >>>>>>> origin/update/react
 >>>>>>> origin/update/react
   <View
@@ -29,13 +32,21 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
           "top": 0,
         },
         Object {
+<<<<<<< HEAD
+          "backgroundColor": "#FAFAFA",
+          "marginTop": 0,
+          "width": 750,
+=======
           "backgroundColor": "#F5F5F5",
+>>>>>>> origin/update/react
         },
       ]
     }
   >
     <RCTScrollView>
       <View>
+<<<<<<< HEAD
+=======
         <RCTScrollView>
           <View>
             <View
@@ -97,47 +108,50 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
           }
         }
       >
+>>>>>>> origin/update/react
         <View
           style={
-            Array [
-              Object {
-                "width": "100%",
+            Object {
+              "borderRadius": 4,
+              "elevation": 1,
+              "shadowColor": "#000",
+              "shadowOffset": Object {
+                "height": 1,
+                "width": 0,
               },
-            ]
-          }
-          type="card"
-        >
-          <Image
-            source={
-              Object {
-                "uri": "https://upload.wikimedia.org/wikipedia/pt/thumb/c/cb/Natura_Logo.png/200px-Natura_Logo.png",
-              }
+              "shadowOpacity": 0.24,
+              "shadowRadius": 4,
             }
-            style={
-              Array [
-                Object {
-                  "borderRadius": 0,
-                  "height": 184,
-                  "width": "100%",
-                },
-              ]
-            }
-            type="card"
-          />
-        </View>
-        <View
-          style={
-            Array [
-              Object {
-                "paddingBottom": 10,
-                "paddingLeft": 10,
-                "paddingRight": 10,
-                "paddingTop": 10,
-              },
-            ]
           }
         >
           <View
+<<<<<<< HEAD
+            accessible={true}
+            focusable={true}
+            isTVSelectable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "backgroundColor": "#FFFFFF",
+                "borderRadius": 4,
+                "marginBottom": 0,
+                "opacity": 1,
+              }
+            }
+          >
+            <View
+              onPress={[Function]}
+              style={
+                Array [
+                  Object {
+                    "width": "100%",
+=======
             margin={24}
             style={
               Array [
@@ -205,11 +219,40 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
                     "fontSize": 12,
                     "fontWeight": "400",
                     "lineHeight": 18,
+>>>>>>> origin/update/react
                   },
                 ]
               }
-              type="caption"
+              type="card"
             >
+<<<<<<< HEAD
+              <Image
+                source={
+                  Object {
+                    "uri": "https://i.picsum.photos/id/1016/328/184.jpg",
+                  }
+                }
+                style={
+                  Array [
+                    Object {
+                      "borderRadius": 0,
+                      "height": 184,
+                      "width": "100%",
+                    },
+                  ]
+                }
+                type="card"
+              />
+            </View>
+            <View
+              style={
+                Array [
+                  Object {
+                    "paddingBottom": 10,
+                    "paddingLeft": 10,
+                    "paddingRight": 10,
+                    "paddingTop": 10,
+=======
               13 hours ago
             </Text>
           </View>
@@ -243,6 +286,7 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
                     "fontSize": 14,
                     "fontWeight": "400",
                     "lineHeight": 21,
+>>>>>>> origin/update/react
                   },
                 ]
 >>>>>>> origin/update/react
@@ -251,6 +295,61 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
               }
             >
               <View
+<<<<<<< HEAD
+                margin={4}
+                style={
+                  Array [
+                    Object {
+                      "flexBasis": 0,
+                      "flexGrow": 1,
+                      "flexShrink": 1,
+                      "marginBottom": 4,
+                      "marginLeft": 0,
+                      "marginRight": 0,
+                      "marginTop": 0,
+                      "paddingBottom": 0,
+                      "paddingLeft": 0,
+                      "paddingRight": 0,
+                      "paddingTop": 0,
+                    },
+                  ]
+                }
+              >
+                <Text
+                  color="#333333"
+                  style={
+                    Array [
+                      Object {
+                        "backgroundColor": "#FFF",
+                        "color": "#333333",
+                        "fontSize": 20,
+                        "fontWeight": "500",
+                        "lineHeight": 30,
+                      },
+                    ]
+                  }
+                  type="h6"
+                >
+                  Card Test
+                </Text>
+              </View>
+              <View
+                margin={16}
+                style={
+                  Array [
+                    Object {
+                      "flexBasis": 0,
+                      "flexGrow": 1,
+                      "flexShrink": 1,
+                      "marginBottom": 16,
+                      "marginLeft": 0,
+                      "marginRight": 0,
+                      "marginTop": 0,
+                      "paddingBottom": 0,
+                      "paddingLeft": 0,
+                      "paddingRight": 0,
+                      "paddingTop": 0,
+=======
                 style={
                   Array [
                     Object {
@@ -286,10 +385,68 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
                       "paddingLeft": 10,
                       "paddingRight": 10,
                       "paddingTop": 10,
+>>>>>>> origin/update/react
                     },
                   ]
                 }
               >
+<<<<<<< HEAD
+                <Text
+                  color="#777777"
+                  style={
+                    Array [
+                      Object {
+                        "backgroundColor": "#FFF",
+                        "color": "#777777",
+                        "fontSize": 12,
+                        "fontWeight": "400",
+                        "lineHeight": 18,
+                      },
+                    ]
+                  }
+                  type="caption"
+                >
+                  13 hours ago
+                </Text>
+              </View>
+              <View
+                margin={24}
+                style={
+                  Array [
+                    Object {
+                      "flexBasis": 0,
+                      "flexGrow": 1,
+                      "flexShrink": 1,
+                      "marginBottom": 24,
+                      "marginLeft": 0,
+                      "marginRight": 0,
+                      "marginTop": 0,
+                      "paddingBottom": 0,
+                      "paddingLeft": 0,
+                      "paddingRight": 0,
+                      "paddingTop": 0,
+                    },
+                  ]
+                }
+              >
+                <Text
+                  color="#333333"
+                  style={
+                    Array [
+                      Object {
+                        "backgroundColor": "#FFF",
+                        "color": "#333333",
+                        "fontSize": 14,
+                        "fontWeight": "400",
+                        "lineHeight": 21,
+                      },
+                    ]
+                  }
+                  type="body2"
+                >
+                  Esse é um card da Natura
+                </Text>
+=======
                 <View
                   margin={24}
                   style={
@@ -404,6 +561,7 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
                     Esse é um card da Natura
                   </Text>
                 </View>
+>>>>>>> origin/update/react
               </View>
             </View>
           </View>
