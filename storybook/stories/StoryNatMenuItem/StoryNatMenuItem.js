@@ -1,6 +1,23 @@
 import React from 'react';
+<<<<<<< HEAD
+import {
+  Text,
+  ScrollView,
+  SafeAreaView,
+  Dimensions,
+} from 'react-native';
+=======
 import { Text, ScrollView, SafeAreaView } from 'react-native';
+>>>>>>> origin/update/react
 import { NatContainer, NatMenuItem } from '../../../lib';
+
+const styles = {
+  defaultScreen: {
+    backgroundColor: '#FFF',
+    marginTop: 0,
+    width: Dimensions.get('window').width,
+  },
+};
 
 export const StoryNatMenuItem = () => {
   const menuList = [
@@ -131,7 +148,11 @@ export const StoryNatMenuItem = () => {
 
   return (
     <SafeAreaView>
+<<<<<<< HEAD
+      <NatContainer style={styles.defaultScreen}>
+=======
       <NatContainer style={{ backgroundColor: '#FFF', width: 300, paddingTop: 20 }}>
+>>>>>>> origin/update/react
         <ScrollView>
           <Text>Without Icon</Text>
           {menuList.map(item => (
