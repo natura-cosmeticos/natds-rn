@@ -1,10 +1,40 @@
 /* eslint-disable no-console */
 import React, { useState } from 'react';
 import {
-  View, Image, Alert, StyleSheet,
+  View,
+  Image,
+  Alert,
+  StyleSheet,
+  Dimensions,
+  SafeAreaView,
 } from 'react-native';
 import icoArrowLeft from '../../../lib/assets/icons/ic_arrow_left_white.png';
 import { NatButton, NatContainer, NatTextInput } from '../../../lib';
+
+const styles = StyleSheet.create({
+  defaultScreen: {
+    backgroundColor: '#FFF',
+    marginTop: 0,
+    width: Dimensions.get('window').width,
+  },
+  viewLogo: {
+    flex: 1.5,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  imgLogo: {
+    width: 140,
+    height: 105,
+  },
+  viewInput: {
+    flex: 1.5,
+  },
+  viewButton: {
+    flex: 1,
+    justifyContent: 'space-between',
+    marginBottom: 10,
+  },
+});
 
 export const Login = () => {
   const [inputMatricula, setInputMatricula] = useState('');
@@ -26,70 +56,51 @@ export const Login = () => {
   );
 
   return (
-
-    <NatContainer>
-      <View style={styles.viewLogo}>
-        <Image
-          style={styles.imgLogo}
-          source={{ uri: 'https://upload.wikimedia.org/wikipedia/pt/c/cb/Natura_Logo.png' }}
-        />
-      </View>
-      <View style={styles.viewInput}>
-        <NatTextInput
-          label="Matrícula"
-          placeholder="Ex: 99999"
-          assistiveText="Digite sua matrícula"
-          onChangeText={setInputMatricula}
-          value={inputMatricula}
-        />
-        <NatTextInput
-          label="Senha"
-          placeholder="Ex: sua senha"
-          assistiveText="Digite sua senha"
-          secureTextEntry
-          onChangeText={setInputSenha}
-          icon={icoArrowLeft}
-          iconPress={press}
-          value={inputSenha}
-        />
-      </View>
-      <View style={styles.viewButton}>
-        <NatButton
-          type="short"
-          label="Esqueceu a senha?"
-          onPress={press}
-        />
-        <NatButton
-          type="newDefault"
-          label="Entrar"
-          onPress={press}
-        />
-        <NatButton
-          type="short"
-          label="Selecionar país"
-          onPress={press}
-        />
-      </View>
-    </NatContainer>
+    <SafeAreaView>
+      <NatContainer style={styles.defaultScreen}>
+        <View style={styles.viewLogo}>
+          <Image
+            style={styles.imgLogo}
+            source={{ uri: 'https://upload.wikimedia.org/wikipedia/pt/c/cb/Natura_Logo.png' }}
+          />
+        </View>
+        <View style={styles.viewInput}>
+          <NatTextInput
+            label="Matrícula"
+            placeholder="Ex: 99999"
+            assistiveText="Digite sua matrícula"
+            onChangeText={setInputMatricula}
+            value={inputMatricula}
+          />
+          <NatTextInput
+            label="Senha"
+            placeholder="Ex: sua senha"
+            assistiveText="Digite sua senha"
+            secureTextEntry
+            onChangeText={setInputSenha}
+            icon={icoArrowLeft}
+            iconPress={press}
+            value={inputSenha}
+          />
+        </View>
+        <View style={styles.viewButton}>
+          <NatButton
+            type="short"
+            label="Esqueceu a senha?"
+            onPress={press}
+          />
+          <NatButton
+            type="newDefault"
+            label="Entrar"
+            onPress={press}
+          />
+          <NatButton
+            type="short"
+            label="Selecionar país"
+            onPress={press}
+          />
+        </View>
+      </NatContainer>
+    </SafeAreaView>
   );
 };
-
-const styles = StyleSheet.create({
-  viewLogo: {
-    flex: 1.5,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  imgLogo: {
-    width: 140,
-    height: 105,
-  },
-  viewInput: {
-    flex: 1.5,
-  },
-  viewButton: {
-    flex: 1,
-    justifyContent: 'space-between',
-    marginBottom: 10,
-  },
-});

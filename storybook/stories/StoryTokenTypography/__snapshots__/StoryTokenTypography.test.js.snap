@@ -4,6 +4,9 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> origin/update/react
 >>>>>>> origin/update/react
 <RCTSafeAreaView
   emulateUnlessSupported={true}
@@ -763,6 +766,8 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
 </RCTSafeAreaView>
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
 =======
 <View
   style={
@@ -1516,6 +1521,7 @@ exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
     </View>
   </RCTScrollView>
 </View>
+>>>>>>> origin/update/react
 >>>>>>> origin/update/react
 >>>>>>> origin/update/react
 `;

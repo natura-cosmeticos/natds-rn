@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { SafeAreaView } from 'react-native';
 
 import styled from 'styled-components/native';
 import { header } from '../../../lib/assets/theme/typography/typography';
@@ -36,27 +37,29 @@ export const FriendExchange = () => {
   };
 
   return (
-    <CustomContainer>
-      <NatGenericCard style={FlexNatGenericCard}>
-        <HeaderText>Counter Toggler</HeaderText>
-        <NatCounterToggler
-          counter={itemCount}
-          min={1}
-          max={3}
-          onIncrease={onIncreaseHandler}
-          onDecrease={onDecreaseHandler}
-          width="120px"
-          height="55px"
-        />
-      </NatGenericCard>
+    <SafeAreaView>
+      <CustomContainer>
+        <NatGenericCard style={FlexNatGenericCard}>
+          <HeaderText>Counter Toggler</HeaderText>
+          <NatCounterToggler
+            counter={itemCount}
+            min={1}
+            max={3}
+            onIncrease={onIncreaseHandler}
+            onDecrease={onDecreaseHandler}
+            width="120px"
+            height="55px"
+          />
+        </NatGenericCard>
 
-      <NatGenericCard style={FlexNatGenericCard}>
-        <HeaderText>Period Button</HeaderText>
-        <NatPeriodButton title="Hoje" subtitle="04/11" onSelect={() => null} iconSrc="https://i.imgur.com/gM3z36s.png" />
-        <NatPeriodButton title="Amanhã" subtitle="04/11" onSelect={() => null} iconSrc="https://i.imgur.com/gM3z36s.png" />
-        <NatPeriodButton selected title="A combinar" onSelect={() => null} iconSrc="https://i.imgur.com/gM3z36s.png" />
-      </NatGenericCard>
+        <NatGenericCard style={FlexNatGenericCard}>
+          <HeaderText>Period Button</HeaderText>
+          <NatPeriodButton title="Hoje" subtitle="04/11" onSelect={() => null} iconSrc="https://i.imgur.com/gM3z36s.png" />
+          <NatPeriodButton title="Amanhã" subtitle="04/11" onSelect={() => null} iconSrc="https://i.imgur.com/gM3z36s.png" />
+          <NatPeriodButton selected title="A combinar" onSelect={() => null} iconSrc="https://i.imgur.com/gM3z36s.png" />
+        </NatGenericCard>
 
-    </CustomContainer>
+      </CustomContainer>
+    </SafeAreaView>
   );
 };

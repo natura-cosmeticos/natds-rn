@@ -57,6 +57,39 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component  1`
 <<<<<<< HEAD
           }
         >
+          <Text
+            style={
+              Array [
+                Object {
+                  "alignSelf": "center",
+                  "color": "#333333",
+                  "flexBasis": 0,
+                  "flexGrow": 1,
+                  "flexShrink": 1,
+                  "marginLeft": 32,
+                },
+              ]
+            }
+            type="default"
+          >
+            First menu
+          </Text>
+        </View>
+        <View
+          accessible={true}
+          focusable={true}
+          isTVSelectable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+=======
+<<<<<<< HEAD
+          }
+        >
 =======
           }
         >
@@ -509,6 +542,7 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component  1`
         />
         <Text
 >>>>>>> origin/update/react
+>>>>>>> origin/update/react
           style={
             Object {
               "alignItems": "center",
@@ -521,10 +555,13 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component  1`
           }
         >
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
           <SvgMock
             height={24}
             width={24}
           />
+>>>>>>> origin/update/react
 >>>>>>> origin/update/react
           <Text
             style={
@@ -542,9 +579,13 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component  1`
             type="default"
           >
 <<<<<<< HEAD
+            Second menu
+=======
+<<<<<<< HEAD
             First menu
 =======
             outlined-finance-moneypaper
+>>>>>>> origin/update/react
 >>>>>>> origin/update/react
           </Text>
         </View>
@@ -561,6 +602,9 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component  1`
           onStartShouldSetResponder={[Function]}
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
+>>>>>>> origin/update/react
           style={
             Object {
               "alignItems": "center",
@@ -570,6 +614,39 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component  1`
               "marginLeft": 16,
               "opacity": 1,
             }
+<<<<<<< HEAD
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "alignSelf": "center",
+                  "color": "#333333",
+                  "flexBasis": 0,
+                  "flexGrow": 1,
+                  "flexShrink": 1,
+                  "marginLeft": 32,
+                },
+              ]
+            }
+            type="default"
+          >
+            Another sample menu
+          </Text>
+        </View>
+        <View
+          accessible={true}
+          focusable={true}
+          isTVSelectable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+=======
 =======
           outlined-content-lock
         </Text>
@@ -602,6 +679,7 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component  1`
         />
         <Text
 >>>>>>> origin/update/react
+>>>>>>> origin/update/react
           style={
             Object {
               "alignItems": "center",
@@ -613,6 +691,8 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component  1`
             }
           }
         >
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
           <Text
             style={
@@ -654,6 +734,7 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component  1`
             }
           }
         >
+>>>>>>> origin/update/react
           <Text
             style={
               Array [
@@ -672,6 +753,22 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component  1`
             Another sample menu
           </Text>
         </View>
+<<<<<<< HEAD
+        <Text>
+          Use SVG
+        </Text>
+        <View
+          accessible={true}
+          focusable={true}
+          isTVSelectable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+=======
         <View
           accessible={true}
           focusable={true}
@@ -715,81 +812,6 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component  1`
         />
         <Text
 >>>>>>> origin/update/react
-          style={
-            Object {
-              "alignItems": "center",
-              "flexDirection": "row",
-              "height": 48,
-              "justifyContent": "space-between",
-              "marginLeft": 16,
-              "opacity": 1,
-            }
-          }
-        >
-<<<<<<< HEAD
-          <Text
-            style={
-              Array [
-                Object {
-                  "alignSelf": "center",
-                  "color": "#333333",
-                  "flexBasis": 0,
-                  "flexGrow": 1,
-                  "flexShrink": 1,
-                  "marginLeft": 32,
-                },
-              ]
-            }
-            type="default"
-          >
-            Another sample menu
-          </Text>
-        </View>
-        <Text>
-          Use SVG
-        </Text>
-        <View
-          accessible={true}
-          focusable={true}
-          isTVSelectable={true}
-          onClick={[Function]}
-          onResponderGrant={[Function]}
-          onResponderMove={[Function]}
-          onResponderRelease={[Function]}
-          onResponderTerminate={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
-=======
-          outlined-content-adddocument
-        </Text>
-      </View>
-      <View
-        accessible={true}
-        focusable={true}
-        isTVSelectable={true}
-        onClick={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        style={
-          Object {
-            "alignItems": "center",
-            "flexDirection": "row",
-            "height": 48,
-            "justifyContent": "space-between",
-            "marginLeft": 16,
-            "opacity": 1,
-          }
-        }
-      >
-        <SvgMock
-          height={24}
-          width={24}
-        />
-        <Text
 >>>>>>> origin/update/react
           style={
             Object {
@@ -807,6 +829,9 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component  1`
             height="24"
             width="24"
           />
+=======
+<<<<<<< HEAD
+>>>>>>> origin/update/react
           <Text
             style={
               Array [
@@ -822,9 +847,18 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component  1`
             }
             type="default"
           >
+<<<<<<< HEAD
             outlined-navigation-home
           </Text>
         </View>
+=======
+            Another sample menu
+          </Text>
+        </View>
+        <Text>
+          Use SVG
+        </Text>
+>>>>>>> origin/update/react
         <View
           accessible={true}
           focusable={true}
@@ -836,6 +870,7 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component  1`
           onResponderTerminate={[Function]}
           onResponderTerminationRequest={[Function]}
           onStartShouldSetResponder={[Function]}
+<<<<<<< HEAD
           style={
             Object {
               "alignItems": "center",
@@ -881,7 +916,8 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component  1`
           onResponderTerminationRequest={[Function]}
           onStartShouldSetResponder={[Function]}
 =======
-          outlined-communication-chat
+=======
+          outlined-content-adddocument
         </Text>
       </View>
       <View
@@ -912,6 +948,7 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component  1`
         />
         <Text
 >>>>>>> origin/update/react
+>>>>>>> origin/update/react
           style={
             Object {
               "alignItems": "center",
@@ -921,9 +958,56 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component  1`
               "marginLeft": 16,
               "opacity": 1,
             }
+<<<<<<< HEAD
+=======
           }
         >
 <<<<<<< HEAD
+          <SvgMock
+            height="24"
+            width="24"
+          />
+          <Text
+            style={
+              Array [
+                Object {
+                  "alignSelf": "center",
+                  "color": "#333333",
+                  "flexBasis": 0,
+                  "flexGrow": 1,
+                  "flexShrink": 1,
+                  "marginLeft": 32,
+                },
+              ]
+            }
+            type="default"
+          >
+            outlined-navigation-home
+          </Text>
+        </View>
+        <View
+          accessible={true}
+          focusable={true}
+          isTVSelectable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "height": 48,
+              "justifyContent": "space-between",
+              "marginLeft": 16,
+              "opacity": 1,
+            }
+>>>>>>> origin/update/react
+          }
+        >
           <SvgMock
             height={24}
             width={24}
@@ -943,7 +1027,11 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component  1`
             }
             type="default"
           >
+<<<<<<< HEAD
             outlined-content-wifi
+=======
+            outlined-content-lock
+>>>>>>> origin/update/react
           </Text>
         </View>
         <View
@@ -957,6 +1045,7 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component  1`
           onResponderTerminate={[Function]}
           onResponderTerminationRequest={[Function]}
           onStartShouldSetResponder={[Function]}
+<<<<<<< HEAD
           style={
             Object {
               "alignItems": "center",
@@ -1002,7 +1091,8 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component  1`
           onResponderTerminationRequest={[Function]}
           onStartShouldSetResponder={[Function]}
 =======
-          outlined-content-channel
+=======
+          outlined-communication-chat
         </Text>
       </View>
       <View
@@ -1033,6 +1123,7 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component  1`
         />
         <Text
 >>>>>>> origin/update/react
+>>>>>>> origin/update/react
           style={
             Object {
               "alignItems": "center",
@@ -1042,6 +1133,8 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component  1`
               "marginLeft": 16,
               "opacity": 1,
             }
+<<<<<<< HEAD
+=======
           }
         >
 <<<<<<< HEAD
@@ -1064,7 +1157,7 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component  1`
             }
             type="default"
           >
-            outlined-communication-chat
+            outlined-content-wifi
           </Text>
         </View>
         <View
@@ -1078,6 +1171,56 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component  1`
           onResponderTerminate={[Function]}
           onResponderTerminationRequest={[Function]}
           onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "height": 48,
+              "justifyContent": "space-between",
+              "marginLeft": 16,
+              "opacity": 1,
+            }
+>>>>>>> origin/update/react
+          }
+        >
+          <SvgMock
+            height={24}
+            width={24}
+          />
+          <Text
+            style={
+              Array [
+                Object {
+                  "alignSelf": "center",
+                  "color": "#333333",
+                  "flexBasis": 0,
+                  "flexGrow": 1,
+                  "flexShrink": 1,
+                  "marginLeft": 32,
+                },
+              ]
+            }
+            type="default"
+          >
+<<<<<<< HEAD
+            outlined-communication-chat
+=======
+            outlined-content-adddocument
+>>>>>>> origin/update/react
+          </Text>
+        </View>
+        <View
+          accessible={true}
+          focusable={true}
+          isTVSelectable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+<<<<<<< HEAD
           style={
             Object {
               "alignItems": "center",
@@ -1123,7 +1266,8 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component  1`
           onResponderTerminationRequest={[Function]}
           onStartShouldSetResponder={[Function]}
 =======
-          outlined-finance-moneypaper
+=======
+          outlined-content-channel
         </Text>
       </View>
       <View
@@ -1154,6 +1298,7 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component  1`
         />
         <Text
 >>>>>>> origin/update/react
+>>>>>>> origin/update/react
           style={
             Object {
               "alignItems": "center",
@@ -1163,6 +1308,8 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component  1`
               "marginLeft": 16,
               "opacity": 1,
             }
+<<<<<<< HEAD
+=======
           }
         >
 <<<<<<< HEAD
@@ -1185,7 +1332,7 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component  1`
             }
             type="default"
           >
-            outlined-finance-moneypaper
+            outlined-communication-chat
           </Text>
         </View>
         <View
@@ -1199,6 +1346,56 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component  1`
           onResponderTerminate={[Function]}
           onResponderTerminationRequest={[Function]}
           onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "height": 48,
+              "justifyContent": "space-between",
+              "marginLeft": 16,
+              "opacity": 1,
+            }
+>>>>>>> origin/update/react
+          }
+        >
+          <SvgMock
+            height={24}
+            width={24}
+          />
+          <Text
+            style={
+              Array [
+                Object {
+                  "alignSelf": "center",
+                  "color": "#333333",
+                  "flexBasis": 0,
+                  "flexGrow": 1,
+                  "flexShrink": 1,
+                  "marginLeft": 32,
+                },
+              ]
+            }
+            type="default"
+          >
+<<<<<<< HEAD
+            outlined-finance-moneypaper
+=======
+            outlined-content-channel
+>>>>>>> origin/update/react
+          </Text>
+        </View>
+        <View
+          accessible={true}
+          focusable={true}
+          isTVSelectable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+<<<<<<< HEAD
           style={
             Object {
               "alignItems": "center",
@@ -1243,6 +1440,92 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component  1`
           onResponderTerminate={[Function]}
           onResponderTerminationRequest={[Function]}
           onStartShouldSetResponder={[Function]}
+=======
+=======
+          outlined-finance-moneypaper
+        </Text>
+      </View>
+      <View
+        accessible={true}
+        focusable={true}
+        isTVSelectable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": 48,
+            "justifyContent": "space-between",
+            "marginLeft": 16,
+            "opacity": 1,
+          }
+        }
+      >
+        <SvgMock
+          height={24}
+          width={24}
+        />
+        <Text
+>>>>>>> origin/update/react
+>>>>>>> origin/update/react
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "height": 48,
+              "justifyContent": "space-between",
+              "marginLeft": 16,
+              "opacity": 1,
+            }
+          }
+        >
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> origin/update/react
+          <SvgMock
+            height={24}
+            width={24}
+          />
+          <Text
+            style={
+              Array [
+                Object {
+                  "alignSelf": "center",
+                  "color": "#333333",
+                  "flexBasis": 0,
+                  "flexGrow": 1,
+                  "flexShrink": 1,
+                  "marginLeft": 32,
+                },
+              ]
+            }
+            type="default"
+          >
+<<<<<<< HEAD
+            outlined-place-bus
+=======
+            outlined-finance-moneypaper
+>>>>>>> origin/update/react
+          </Text>
+        </View>
+        <View
+          accessible={true}
+          focusable={true}
+          isTVSelectable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
           style={
             Object {
               "alignItems": "center",
@@ -1273,6 +1556,73 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component  1`
             }
             type="default"
           >
+<<<<<<< HEAD
+            outlined-alert-info
+=======
+            outlined-communication-speaker
+>>>>>>> origin/update/react
+          </Text>
+        </View>
+        <View
+          accessible={true}
+          focusable={true}
+          isTVSelectable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "height": 48,
+              "justifyContent": "space-between",
+              "marginLeft": 16,
+              "opacity": 1,
+            }
+          }
+        >
+          <SvgMock
+            height={24}
+            width={24}
+          />
+          <Text
+            style={
+              Array [
+                Object {
+                  "alignSelf": "center",
+                  "color": "#333333",
+                  "flexBasis": 0,
+                  "flexGrow": 1,
+                  "flexShrink": 1,
+                  "marginLeft": 32,
+                },
+              ]
+            }
+            type="default"
+          >
+<<<<<<< HEAD
+            outlined-navigation-exit
+          </Text>
+        </View>
+        <Text>
+          With External Icon URL
+        </Text>
+        <View
+          accessible={true}
+          focusable={true}
+          isTVSelectable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+=======
             outlined-place-bus
           </Text>
         </View>
@@ -1363,6 +1713,7 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component  1`
         />
         <Text
 >>>>>>> origin/update/react
+>>>>>>> origin/update/react
           style={
             Object {
               "alignItems": "center",
@@ -1374,6 +1725,8 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component  1`
             }
           }
         >
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
           <SvgMock
             height={24}
@@ -1422,6 +1775,7 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component  1`
             }
           }
         >
+>>>>>>> origin/update/react
           <Image
             source={
               Object {
@@ -1466,6 +1820,8 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component  1`
           onResponderTerminate={[Function]}
           onResponderTerminationRequest={[Function]}
           onStartShouldSetResponder={[Function]}
+<<<<<<< HEAD
+=======
 =======
           outlined-place-bus
         </Text>
@@ -1497,20 +1853,54 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component  1`
           width={24}
         />
         <Text
+>>>>>>> origin/update/react
           style={
-            Array [
-              Object {
-                "alignSelf": "center",
-                "color": "#333333",
-                "flexBasis": 0,
-                "flexGrow": 1,
-                "flexShrink": 1,
-                "marginLeft": 32,
-              },
-            ]
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "height": 48,
+              "justifyContent": "space-between",
+              "marginLeft": 16,
+              "opacity": 1,
+            }
           }
-          type="default"
         >
+<<<<<<< HEAD
+          <Image
+            source={
+              Object {
+                "uri": "https://s3-sa-east-1.amazonaws.com/somos-natura-prd/files/menus/generic_menu/img_url_tmp_generic_menu_20170822160140.png",
+              }
+            }
+            style={
+              Array [
+                Object {
+                  "height": 24,
+                  "width": 24,
+                },
+              ]
+            }
+          />
+          <Text
+            style={
+              Array [
+                Object {
+                  "alignSelf": "center",
+                  "color": "#333333",
+                  "flexBasis": 0,
+                  "flexGrow": 1,
+                  "flexShrink": 1,
+                  "marginLeft": 32,
+                },
+              ]
+            }
+            type="default"
+          >
+            Bus Information
+          </Text>
+        </View>
+      </View>
+=======
           outlined-alert-info
         </Text>
       </View>
@@ -1885,6 +2275,7 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component  1`
           </Text>
         </View>
       </View>
+>>>>>>> origin/update/react
 >>>>>>> origin/update/react
     </RCTScrollView>
   </View>
