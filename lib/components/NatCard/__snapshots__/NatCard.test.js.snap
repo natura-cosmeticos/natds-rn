@@ -147,6 +147,18 @@ exports[`TextInput component default Should render textInput component  1`] = `
                 "fontWeight": "400",
                 "lineHeight": 18,
 =======
+<<<<<<< HEAD
+        <Text
+          color="#777777"
+          style={
+            Array [
+              Object {
+                "backgroundColor": "#FFF",
+                "color": "#777777",
+                "fontSize": 12,
+                "fontWeight": "400",
+                "lineHeight": 18,
+=======
         <View
           margin={24}
           style={
@@ -202,12 +214,16 @@ exports[`TextInput component default Should render textInput component  1`] = `
                 "paddingRight": 0,
                 "paddingTop": 0,
 >>>>>>> origin/update/react
+>>>>>>> origin/update/react
               },
             ]
           }
           type="caption"
         >
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> origin/update/react
           
         </Text>
       </View>
@@ -233,6 +249,16 @@ exports[`TextInput component default Should render textInput component  1`] = `
       >
         <Text
           color="#333333"
+<<<<<<< HEAD
+          style={
+            Array [
+              Object {
+                "backgroundColor": "#FFF",
+                "color": "#333333",
+                "fontSize": 14,
+                "fontWeight": "400",
+                "lineHeight": 21,
+=======
           style={
             Array [
               Object {
@@ -277,11 +303,16 @@ exports[`TextInput component default Should render textInput component  1`] = `
                 "paddingRight": 0,
                 "paddingTop": 0,
 >>>>>>> origin/update/react
+>>>>>>> origin/update/react
               },
             ]
           }
           type="body2"
         >
+<<<<<<< HEAD
+          teste
+        </Text>
+=======
 <<<<<<< HEAD
           teste
         </Text>
@@ -304,6 +335,7 @@ exports[`TextInput component default Should render textInput component  1`] = `
             teste
           </Text>
         </View>
+>>>>>>> origin/update/react
 >>>>>>> origin/update/react
       </View>
     </View>
