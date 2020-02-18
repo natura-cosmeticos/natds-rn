@@ -1,6 +1,5 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
-import { Text, View } from 'react-native';
 import { storiesOf } from '@storybook/react-native';
 import { linkTo } from '@storybook/addon-links';
 
@@ -12,11 +11,18 @@ import { StoryNatTextInput } from './StoryNatTextInput';
 import { NatGenericCard } from '../../lib/components/NatGenericCard/NatGenericCard';
 import { StoryNatCard } from './StoryNatCard';
 import { StoryNatMenuItem } from './StoryNatMenuItem';
+import { StoryTokenTypography } from './StoryTokenTypography';
 import CenterView from './CenterView';
 import Welcome from './Welcome';
 import icoArrowLeft from '../../lib/assets/icons/ic_arrow_left_white.png';
 
 storiesOf('Welcome', module).add('NATDS', () => <Welcome showApp={linkTo('Welcome')} />);
+
+storiesOf('Tokens', module)
+  .addDecorator(getStory => <CenterView>{getStory()}</CenterView>)
+  .add('Typography', () => (
+    <StoryTokenTypography />
+  ));
 
 storiesOf('NatMenuItem', module)
   .addDecorator(getStory => <CenterView>{getStory()}</CenterView>)

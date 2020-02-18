@@ -235,7 +235,7 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component  1`
           }
           type="default"
         >
-          First menu
+          outlined-navigation-home
         </Text>
       </View>
       <View
@@ -261,8 +261,8 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component  1`
         }
       >
         <SvgMock
-          height="24"
-          width="24"
+          height={24}
+          width={24}
         />
         <Text
           style={
@@ -279,7 +279,403 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component  1`
           }
           type="default"
         >
-          Second menu
+          outlined-content-lock
+        </Text>
+      </View>
+      <View
+        accessible={true}
+        focusable={true}
+        isTVSelectable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": 48,
+            "justifyContent": "space-between",
+            "marginLeft": 16,
+            "opacity": 1,
+          }
+        }
+      >
+        <SvgMock
+          height={24}
+          width={24}
+        />
+        <Text
+          style={
+            Array [
+              Object {
+                "alignSelf": "center",
+                "color": "#333333",
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
+                "marginLeft": 32,
+              },
+            ]
+          }
+          type="default"
+        >
+          outlined-content-wifi
+        </Text>
+      </View>
+      <View
+        accessible={true}
+        focusable={true}
+        isTVSelectable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": 48,
+            "justifyContent": "space-between",
+            "marginLeft": 16,
+            "opacity": 1,
+          }
+        }
+      >
+        <SvgMock
+          height={24}
+          width={24}
+        />
+        <Text
+          style={
+            Array [
+              Object {
+                "alignSelf": "center",
+                "color": "#333333",
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
+                "marginLeft": 32,
+              },
+            ]
+          }
+          type="default"
+        >
+          outlined-content-adddocument
+        </Text>
+      </View>
+      <View
+        accessible={true}
+        focusable={true}
+        isTVSelectable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": 48,
+            "justifyContent": "space-between",
+            "marginLeft": 16,
+            "opacity": 1,
+          }
+        }
+      >
+        <SvgMock
+          height={24}
+          width={24}
+        />
+        <Text
+          style={
+            Array [
+              Object {
+                "alignSelf": "center",
+                "color": "#333333",
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
+                "marginLeft": 32,
+              },
+            ]
+          }
+          type="default"
+        >
+          outlined-communication-chat
+        </Text>
+      </View>
+      <View
+        accessible={true}
+        focusable={true}
+        isTVSelectable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": 48,
+            "justifyContent": "space-between",
+            "marginLeft": 16,
+            "opacity": 1,
+          }
+        }
+      >
+        <SvgMock
+          height={24}
+          width={24}
+        />
+        <Text
+          style={
+            Array [
+              Object {
+                "alignSelf": "center",
+                "color": "#333333",
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
+                "marginLeft": 32,
+              },
+            ]
+          }
+          type="default"
+        >
+          outlined-content-channel
+        </Text>
+      </View>
+      <View
+        accessible={true}
+        focusable={true}
+        isTVSelectable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": 48,
+            "justifyContent": "space-between",
+            "marginLeft": 16,
+            "opacity": 1,
+          }
+        }
+      >
+        <SvgMock
+          height={24}
+          width={24}
+        />
+        <Text
+          style={
+            Array [
+              Object {
+                "alignSelf": "center",
+                "color": "#333333",
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
+                "marginLeft": 32,
+              },
+            ]
+          }
+          type="default"
+        >
+          outlined-finance-moneypaper
+        </Text>
+      </View>
+      <View
+        accessible={true}
+        focusable={true}
+        isTVSelectable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": 48,
+            "justifyContent": "space-between",
+            "marginLeft": 16,
+            "opacity": 1,
+          }
+        }
+      >
+        <SvgMock
+          height={24}
+          width={24}
+        />
+        <Text
+          style={
+            Array [
+              Object {
+                "alignSelf": "center",
+                "color": "#333333",
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
+                "marginLeft": 32,
+              },
+            ]
+          }
+          type="default"
+        >
+          outlined-communication-speaker
+        </Text>
+      </View>
+      <View
+        accessible={true}
+        focusable={true}
+        isTVSelectable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": 48,
+            "justifyContent": "space-between",
+            "marginLeft": 16,
+            "opacity": 1,
+          }
+        }
+      >
+        <SvgMock
+          height={24}
+          width={24}
+        />
+        <Text
+          style={
+            Array [
+              Object {
+                "alignSelf": "center",
+                "color": "#333333",
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
+                "marginLeft": 32,
+              },
+            ]
+          }
+          type="default"
+        >
+          outlined-place-bus
+        </Text>
+      </View>
+      <View
+        accessible={true}
+        focusable={true}
+        isTVSelectable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": 48,
+            "justifyContent": "space-between",
+            "marginLeft": 16,
+            "opacity": 1,
+          }
+        }
+      >
+        <SvgMock
+          height={24}
+          width={24}
+        />
+        <Text
+          style={
+            Array [
+              Object {
+                "alignSelf": "center",
+                "color": "#333333",
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
+                "marginLeft": 32,
+              },
+            ]
+          }
+          type="default"
+        >
+          outlined-alert-info
+        </Text>
+      </View>
+      <View
+        accessible={true}
+        focusable={true}
+        isTVSelectable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": 48,
+            "justifyContent": "space-between",
+            "marginLeft": 16,
+            "opacity": 1,
+          }
+        }
+      >
+        <SvgMock
+          height={24}
+          width={24}
+        />
+        <Text
+          style={
+            Array [
+              Object {
+                "alignSelf": "center",
+                "color": "#333333",
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
+                "marginLeft": 32,
+              },
+            ]
+          }
+          type="default"
+        >
+          outlined-navigation-exit
         </Text>
       </View>
       <Text>

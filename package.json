@@ -5,6 +5,7 @@
   "main": "lib/index.js",
   "scripts": {
     "start": "react-native start",
+    "start:clear": "react-native start --reset-cache",
     "test": "jest",
     "test:clean": "jest --update-snapshot",
     "ios:5": "react-native run-ios --simulator=\"iPhone 5s\"",
