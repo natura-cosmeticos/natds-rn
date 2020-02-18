@@ -2,12 +2,12 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import 'jest-styled-components/native';
 
-import { NatLogoVertical } from './NatLogoVertical';
+import { StoryNatListItem } from './StoryNatListItem';
 
-describe('NatLogoVertical component default', () => {
-  it('Should render NatLogoVertical component ', () => {
+describe('StoryNatListItem component', () => {
+  it('Should render StoryNatListItem component ', () => {
     const button = renderer.create(
-      <NatLogoVertical />,
+      <StoryNatListItem />,
     ).toJSON();
     expect(button).toMatchSnapshot();
   });

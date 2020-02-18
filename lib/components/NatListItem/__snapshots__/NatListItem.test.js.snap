@@ -4,6 +4,9 @@ exports[`Header component Should render container component correctly 1`] = `
 <View
   accessibilityRole="header"
   accessible={true}
+  active={false}
+  dividerBottom={false}
+  dividerTop={false}
   style={
     Array [
       Object {
@@ -13,7 +16,7 @@ exports[`Header component Should render container component correctly 1`] = `
         "flexDirection": "row",
         "flexGrow": 1,
         "flexShrink": 1,
-        "height": 56,
+        "height": 48,
         "paddingBottom": 0,
         "paddingLeft": 0,
         "paddingRight": 0,
@@ -21,18 +24,6 @@ exports[`Header component Should render container component correctly 1`] = `
         "position": "relative",
         "width": "100%",
       },
-<<<<<<< HEAD
-      Object {
-        "elevation": 1,
-        "shadowColor": "#000",
-        "shadowOffset": Object {
-          "height": 2,
-          "width": 0,
-        },
-        "shadowOpacity": 0.24,
-      },
-=======
->>>>>>> origin/update/react
     ]
   }
 >
@@ -52,46 +43,20 @@ exports[`Header component Should render container component correctly 1`] = `
       onStartShouldSetResponder={[Function]}
       style={
         Object {
-<<<<<<< HEAD
-          "alignItems": "center",
-=======
->>>>>>> origin/update/react
           "alignSelf": "center",
           "flexBasis": 0,
           "flexGrow": 1,
           "flexShrink": 1,
-          "height": 56,
-<<<<<<< HEAD
-          "justifyContent": "center",
+          "height": 40,
           "opacity": 1,
-          "paddingBottom": 16,
+          "paddingBottom": 12,
           "paddingLeft": 16,
           "paddingRight": 0,
-          "paddingTop": 16,
+          "paddingTop": 12,
           "width": 40,
-=======
-          "opacity": 1,
-          "paddingBottom": 16,
-          "paddingLeft": 16,
-          "paddingRight": 16,
-          "paddingTop": 16,
-          "width": 56,
->>>>>>> origin/update/react
         }
       }
-    >
-      <Image
-        source={null}
-        style={
-          Array [
-            Object {
-              "height": 24,
-              "width": 24,
-            },
-          ]
-        }
-      />
-    </View>
+    />
   </View>
   <View
     style={
@@ -101,27 +66,50 @@ exports[`Header component Should render container component correctly 1`] = `
       }
     }
   >
-    <Text
-      accessibilityLabel="Title test"
+    <View
+      accessible={true}
+      focusable={true}
+      isTVSelectable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
       style={
-        Array [
-          Object {
-            "color": "#333333",
-            "fontSize": 20,
-            "marginLeft": 0,
-            "paddingBottom": 16,
-            "paddingLeft": 16,
-<<<<<<< HEAD
-=======
-            "paddingRight": 16,
->>>>>>> origin/update/react
-            "paddingTop": 16,
-          },
-        ]
+        Object {
+          "alignSelf": "stretch",
+          "flexBasis": 0,
+          "flexGrow": 1,
+          "flexShrink": 1,
+          "justifyContent": "center",
+          "opacity": 1,
+        }
       }
     >
-      Title test
-    </Text>
+      <Text
+        accessibilityLabel="Title test"
+        style={
+          Array [
+            Object {
+              "color": "#333333",
+              "flexBasis": 0,
+              "flexGrow": 1,
+              "flexShrink": 1,
+              "fontSize": 16,
+              "justifyContent": "center",
+              "marginLeft": 0,
+              "paddingBottom": 12,
+              "paddingLeft": 16,
+              "paddingTop": 12,
+            },
+          ]
+        }
+      >
+        Title test
+      </Text>
+    </View>
   </View>
   <View
     style={
@@ -144,46 +132,20 @@ exports[`Header component Should render container component correctly 1`] = `
       onStartShouldSetResponder={[Function]}
       style={
         Object {
-<<<<<<< HEAD
-          "alignItems": "center",
-=======
->>>>>>> origin/update/react
           "alignSelf": "center",
           "flexBasis": 0,
           "flexGrow": 1,
           "flexShrink": 1,
-          "height": 56,
-<<<<<<< HEAD
-          "justifyContent": "center",
+          "height": 40,
           "opacity": 1,
-          "paddingBottom": 16,
+          "paddingBottom": 12,
           "paddingLeft": 0,
           "paddingRight": 16,
-          "paddingTop": 16,
+          "paddingTop": 12,
           "width": 40,
-=======
-          "opacity": 1,
-          "paddingBottom": 16,
-          "paddingLeft": 16,
-          "paddingRight": 16,
-          "paddingTop": 16,
-          "width": 56,
->>>>>>> origin/update/react
         }
       }
-    >
-      <Image
-        source={null}
-        style={
-          Array [
-            Object {
-              "height": 24,
-              "width": 24,
-            },
-          ]
-        }
-      />
-    </View>
+    />
   </View>
 </View>
 `;
