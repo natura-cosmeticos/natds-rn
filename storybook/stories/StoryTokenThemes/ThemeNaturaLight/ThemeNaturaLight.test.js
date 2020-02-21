@@ -9,6 +9,7 @@ describe('ThemeNaturaLight component', () => {
     const button = renderer.create(
       <ThemeNaturaLight />,
     ).toJSON();
+
     expect(button).toMatchSnapshot();
   });
 });

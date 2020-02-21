@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`NatModal Should match snapshot 1`] = `
+exports[`NatModal component and its variants NatModal Should match snapshot 1`] = `
 <Modal
   animationType="fade"
   hardwareAccelerated={false}
@@ -123,7 +123,7 @@ exports[`NatModal Should match snapshot 1`] = `
 </Modal>
 `;
 
-exports[`NatModal error should render the error mode 1`] = `
+exports[`NatModal component and its variants NatModal error should render the error mode 1`] = `
 <Modal
   animationType="fade"
   hardwareAccelerated={false}
@@ -298,7 +298,7 @@ exports[`NatModal error should render the error mode 1`] = `
 </Modal>
 `;
 
-exports[`NatModal save should render the save mode 1`] = `
+exports[`NatModal component and its variants NatModal save should render the save mode 1`] = `
 <Modal
   animationType="fade"
   hardwareAccelerated={false}

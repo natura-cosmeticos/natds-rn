@@ -9,6 +9,7 @@ describe('StoryNatSelectInput component', () => {
     const button = renderer.create(
       <StoryNatSelectInput />,
     ).toJSON();
+
     expect(button).toMatchSnapshot();
   });
 });

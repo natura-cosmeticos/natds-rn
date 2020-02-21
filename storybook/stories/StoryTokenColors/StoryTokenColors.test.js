@@ -9,6 +9,7 @@ describe('StoryTokenColors component', () => {
     const button = renderer.create(
       <StoryTokenColors />,
     ).toJSON();
+
     expect(button).toMatchSnapshot();
   });
 });

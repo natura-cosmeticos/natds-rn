@@ -9,6 +9,7 @@ describe('StoryNatCard component', () => {
     const button = renderer.create(
       <StoryNatCard />,
     ).toJSON();
+
     expect(button).toMatchSnapshot();
   });
 });

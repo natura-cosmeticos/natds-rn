@@ -5,8 +5,8 @@ import { NatLogo, NatText } from '../../../lib';
 export const Welcome = () => (
   <SafeAreaView>
     <View style={{
-      justifyContent: 'center',
       alignItems: 'center',
+      justifyContent: 'center',
     }}
     >
       <NatLogo name="logo-natura-vertical" size={300} />

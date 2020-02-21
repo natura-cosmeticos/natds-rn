@@ -78,8 +78,8 @@ export const StoryNatTextInput = ({ type, icon }) => {
 };
 
 StoryNatTextInput.propTypes = {
-  type: propTypes.string.isRequired,
   icon: propTypes.string,
+  type: propTypes.string.isRequired,
 };
 
 StoryNatTextInput.defaultProps = {

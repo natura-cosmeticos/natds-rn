@@ -21,22 +21,22 @@ const styles = StyleSheet.create({
     marginTop: 0,
     width: Dimensions.get('window').width,
   },
-  viewLogo: {
-    flex: 1.5,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
   imgLogo: {
-    width: 140,
     height: 105,
-  },
-  viewInput: {
-    flex: 1.5,
+    width: 140,
   },
   viewButton: {
     flex: 1,
     justifyContent: 'space-between',
     marginBottom: 10,
+  },
+  viewInput: {
+    flex: 1.5,
+  },
+  viewLogo: {
+    alignItems: 'center',
+    flex: 1.5,
+    justifyContent: 'center',
   },
 });
 
@@ -48,13 +48,13 @@ export const Login = () => {
     'Press',
     'My Alert Msg',
     [
-      { text: 'Ask me later', onPress: () => console.log('Ask me later pressed') },
+      { onPress: () => console.log('Ask me later pressed'), text: 'Ask me later' },
       {
-        text: 'Cancel',
         onPress: () => console.log('Cancel Pressed'),
         style: 'cancel',
+        text: 'Cancel',
       },
-      { text: 'OK', onPress: () => console.log('OK Pressed') },
+      { onPress: () => console.log('OK Pressed'), text: 'OK' },
     ],
     { cancelable: false },
   );
