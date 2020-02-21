@@ -23,7 +23,6 @@ export const StoryNatSelectInput = ({ type }) => {
   const [inputNormal, setInputNormal] = useState('');
 
   const onChange = (obj) => {
-    console.log('Storybook: onChange', obj);
     setInputNormal(obj);
   };
 
