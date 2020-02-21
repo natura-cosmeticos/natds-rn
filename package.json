@@ -11,6 +11,7 @@
     "ios:5": "react-native run-ios --simulator=\"iPhone 5s\"",
     "coverage": "jest --coverage",
     "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "storybook": "start-storybook -p 7007"

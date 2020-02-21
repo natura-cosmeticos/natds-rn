@@ -758,6 +758,7 @@ exports[`StoryNatTextInput component Should render StoryNatTextInput component  
               onFocus={[Function]}
               placeholder="Size Small"
               rejectResponderTermination={true}
+              size="small"
               state="default"
               style={
                 Array [
@@ -770,8 +771,8 @@ exports[`StoryNatTextInput component Should render StoryNatTextInput component  
                     "fontSize": 16,
                     "height": 56,
                     "letterSpacing": 0,
-                    "paddingBottom": 0,
-                    "paddingTop": 0,
+                    "paddingBottom": 8,
+                    "paddingTop": 8,
                     "textAlignVertical": "top",
                   },
                   Object {
@@ -1871,6 +1872,7 @@ exports[`StoryNatTextInput component Should render StoryNatTextInput component  
               onFocus={[Function]}
               placeholder="Size Normal"
               rejectResponderTermination={true}
+              size="normal"
               state="default"
               style={
                 Array [
@@ -1883,8 +1885,8 @@ exports[`StoryNatTextInput component Should render StoryNatTextInput component  
                     "fontSize": 16,
                     "height": 56,
                     "letterSpacing": 0,
-                    "paddingBottom": 0,
-                    "paddingTop": 0,
+                    "paddingBottom": 16,
+                    "paddingTop": 16,
                     "textAlignVertical": "top",
                   },
                   Object {
@@ -2984,6 +2986,7 @@ exports[`StoryNatTextInput component Should render StoryNatTextInput component  
               onFocus={[Function]}
               placeholder="Multiple lines"
               rejectResponderTermination={true}
+              size="normal"
               state="default"
               style={
                 Array [
@@ -4063,6 +4066,7 @@ exports[`StoryNatTextInput component Should render StoryNatTextInput component  
               onFocus={[Function]}
               placeholder="Search"
               rejectResponderTermination={true}
+              size="small"
               state="default"
               style={
                 Array [
@@ -4075,8 +4079,8 @@ exports[`StoryNatTextInput component Should render StoryNatTextInput component  
                     "fontSize": 16,
                     "height": 56,
                     "letterSpacing": 0,
-                    "paddingBottom": 0,
-                    "paddingTop": 0,
+                    "paddingBottom": 8,
+                    "paddingTop": 8,
                     "textAlignVertical": "top",
                   },
                   Object {

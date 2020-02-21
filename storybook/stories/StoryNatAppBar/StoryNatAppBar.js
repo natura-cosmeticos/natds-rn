@@ -21,20 +21,8 @@ const styles = {
 };
 
 export const StoryNatAppBar = () => {
-  const [inputSearch, setInputSearch] = useState('');
-
   const logo = () => (<NatLogo name="logo-natura-horizontal" size={200} />);
-  const getInput = () => (
-    <NatTextInput
-      label=""
-      placeholder="Search"
-      onChangeText={setInputSearch}
-      value={inputSearch}
-      size="normal"
-      type="none"
-      icon={null}
-    />
-  );
+
   return (
     <SafeAreaView>
       <NatContainer style={styles.defaultScreen}>
@@ -103,13 +91,6 @@ export const StoryNatAppBar = () => {
             showIconLeft={false}
             showIconRight={false}
             onPress={() => alert('press')}
-          />
-          <View style={{ height: 10 }} />
-          <NatAppBar
-            title="Title Text"
-            showIconLeft={false}
-            showIconRight={false}
-            node={getInput()}
           />
         </ScrollView>
       </NatContainer>

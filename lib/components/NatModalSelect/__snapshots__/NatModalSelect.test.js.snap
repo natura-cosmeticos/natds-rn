@@ -784,6 +784,7 @@ exports[`NatModalSelect Should match snapshot 1`] = `
                   onFocus={[Function]}
                   placeholder="Search"
                   rejectResponderTermination={true}
+                  size="normal"
                   state="default"
                   style={
                     Array [
@@ -796,8 +797,8 @@ exports[`NatModalSelect Should match snapshot 1`] = `
                         "fontSize": 16,
                         "height": 56,
                         "letterSpacing": 0,
-                        "paddingBottom": 0,
-                        "paddingTop": 0,
+                        "paddingBottom": 16,
+                        "paddingTop": 16,
                         "textAlignVertical": "top",
                       },
                       Object {
@@ -2040,6 +2041,7 @@ exports[`NatModalSelect error should render the error mode 1`] = `
                   onFocus={[Function]}
                   placeholder="Search"
                   rejectResponderTermination={true}
+                  size="normal"
                   state="default"
                   style={
                     Array [
@@ -2052,8 +2054,8 @@ exports[`NatModalSelect error should render the error mode 1`] = `
                         "fontSize": 16,
                         "height": 56,
                         "letterSpacing": 0,
-                        "paddingBottom": 0,
-                        "paddingTop": 0,
+                        "paddingBottom": 16,
+                        "paddingTop": 16,
                         "textAlignVertical": "top",
                       },
                       Object {
@@ -3296,6 +3298,7 @@ exports[`NatModalSelect save should render the save mode 1`] = `
                   onFocus={[Function]}
                   placeholder="Search"
                   rejectResponderTermination={true}
+                  size="normal"
                   state="default"
                   style={
                     Array [
@@ -3308,8 +3311,8 @@ exports[`NatModalSelect save should render the save mode 1`] = `
                         "fontSize": 16,
                         "height": 56,
                         "letterSpacing": 0,
-                        "paddingBottom": 0,
-                        "paddingTop": 0,
+                        "paddingBottom": 16,
+                        "paddingTop": 16,
                         "textAlignVertical": "top",
                       },
                       Object {
