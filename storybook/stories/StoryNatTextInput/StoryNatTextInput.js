@@ -1,12 +1,15 @@
 import React, { useState } from 'react';
 import {
-  Text,
   ScrollView,
   SafeAreaView,
   Dimensions,
 } from 'react-native';
 import propTypes from 'prop-types';
-import { NatContainer, NatTextInput, NatText } from '../../../lib';
+import {
+  NatContainer,
+  NatTextInput,
+  NatText,
+} from '../../../lib';
 
 const styles = {
   defaultScreen: {
@@ -76,5 +79,9 @@ export const StoryNatTextInput = ({ type, icon }) => {
 
 StoryNatTextInput.propTypes = {
   type: propTypes.string.isRequired,
-  icon: propTypes.isRequired,
+  icon: propTypes.string,
+};
+
+StoryNatTextInput.defaultProps = {
+  icon: null,
 };

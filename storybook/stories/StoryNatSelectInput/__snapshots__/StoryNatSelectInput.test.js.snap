@@ -1223,6 +1223,7 @@ exports[`StoryNatSelectInput component Should render StoryNatSelectInput compone
                             onFocus={[Function]}
                             placeholder="Size Normal"
                             rejectResponderTermination={true}
+                            size="normal"
                             state="default"
                             style={
                               Array [
@@ -1235,8 +1236,8 @@ exports[`StoryNatSelectInput component Should render StoryNatSelectInput compone
                                   "fontSize": 16,
                                   "height": 56,
                                   "letterSpacing": 0,
-                                  "paddingBottom": 0,
-                                  "paddingTop": 0,
+                                  "paddingBottom": 16,
+                                  "paddingTop": 16,
                                   "textAlignVertical": "top",
                                 },
                                 Object {
@@ -2440,6 +2441,7 @@ exports[`StoryNatSelectInput component Should render StoryNatSelectInput compone
                   onFocus={[Function]}
                   placeholder="Size Normal"
                   rejectResponderTermination={true}
+                  size="normal"
                   state="default"
                   style={
                     Array [
@@ -2452,8 +2454,8 @@ exports[`StoryNatSelectInput component Should render StoryNatSelectInput compone
                         "fontSize": 16,
                         "height": 56,
                         "letterSpacing": 0,
-                        "paddingBottom": 0,
-                        "paddingTop": 0,
+                        "paddingBottom": 16,
+                        "paddingTop": 16,
                         "textAlignVertical": "top",
                       },
                       Object {
@@ -2813,6 +2815,11 @@ exports[`StoryNatSelectInput component Should render StoryNatSelectInput compone
                 >
                   <SvgMock
                     height={24}
+                    style={
+                      Object {
+                        "fill": "#333333",
+                      }
+                    }
                     width={24}
                   />
                 </View>
