@@ -14,23 +14,21 @@ const styles = {
   },
 };
 
-export const StoryNatHeader = () => {
-  return (
-    <SafeAreaView>
-      <NatContainer style={styles.defaultScreen}>
-        <ScrollView>
-          <NatHeader
-            title="Title Text"
-            icon="iconRight"
-            onPress={() => alert('press')}
-            onPressRight={() => alert('press')}
-            textRight="Text Right"
-          />
-        </ScrollView>
-      </NatContainer>
-    </SafeAreaView>
-  );
-};
+export const StoryNatHeader = () => (
+  <SafeAreaView>
+    <NatContainer style={styles.defaultScreen}>
+      <ScrollView>
+        <NatHeader
+          title="Title Text"
+          icon="iconRight"
+          onPress={() => alert('press')}
+          onPressRight={() => alert('press')}
+          textRight="Text Right"
+        />
+      </ScrollView>
+    </NatContainer>
+  </SafeAreaView>
+);
 
 StoryNatHeader.propTypes = {
 };

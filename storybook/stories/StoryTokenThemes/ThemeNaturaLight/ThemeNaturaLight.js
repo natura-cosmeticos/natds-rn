@@ -20,7 +20,6 @@ const styles = {
 };
 
 export const ThemeNaturaLight = () => {
-
   const renderItem = (name, color) => (
     <View style={{ flexDirection: 'row' }}>
       <NatText type="body1" value={name} />
