@@ -9,6 +9,7 @@ describe('StoryNatAppBar component', () => {
     const button = renderer.create(
       <StoryNatAppBar />,
     ).toJSON();
+
     expect(button).toMatchSnapshot();
   });
 });

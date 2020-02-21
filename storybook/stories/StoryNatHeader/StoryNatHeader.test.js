@@ -9,6 +9,7 @@ describe('StoryNatHeader component', () => {
     const button = renderer.create(
       <StoryNatHeader />,
     ).toJSON();
+
     expect(button).toMatchSnapshot();
   });
 });
