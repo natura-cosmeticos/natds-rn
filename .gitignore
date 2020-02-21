@@ -57,3 +57,11 @@ buck-out/
 
 # CocoaPods
 /ios/Pods/
+
+# Coverage
+coverage
+
+# Distribution Bundle
+/dist
+
+package-lock.json
