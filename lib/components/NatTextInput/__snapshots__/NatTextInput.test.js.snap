@@ -735,8 +735,8 @@ exports[`TextInput component default Should render textInput component  1`] = `
             "fontSize": 16,
             "height": 56,
             "letterSpacing": 0,
-            "paddingBottom": 0,
-            "paddingTop": 0,
+            "paddingBottom": 16,
+            "paddingTop": 16,
             "textAlignVertical": "top",
           },
           Object {
@@ -1812,8 +1812,8 @@ exports[`TextInput component default Should render textInput with icon and assis
             "fontSize": 16,
             "height": 56,
             "letterSpacing": 0,
-            "paddingBottom": 0,
-            "paddingTop": 0,
+            "paddingBottom": 16,
+            "paddingTop": 16,
             "textAlignVertical": "top",
           },
           Object {
