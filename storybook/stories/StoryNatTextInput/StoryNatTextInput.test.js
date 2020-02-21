@@ -9,6 +9,7 @@ describe('StoryNatTextInput component', () => {
     const button = renderer.create(
       <StoryNatTextInput />,
     ).toJSON();
+
     expect(button).toMatchSnapshot();
   });
 });

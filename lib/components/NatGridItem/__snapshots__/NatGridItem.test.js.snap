@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`NatGridItem component Properties of NatGridItem Should render NatGridItem component  1`] = `
+exports[`NatGridItem and local styled components NatGridItem component Properties of NatGridItem Should render NatGridItem component  1`] = `
 <View
   sizeMedium={true}
   style={
@@ -80,7 +80,7 @@ exports[`NatGridItem component Properties of NatGridItem Should render NatGridIt
 </View>
 `;
 
-exports[`NatGridItem component Should render NatGridItem component  1`] = `
+exports[`NatGridItem and local styled components NatGridItem component Should render NatGridItem component  1`] = `
 <View
   sizeMedium={true}
   style={

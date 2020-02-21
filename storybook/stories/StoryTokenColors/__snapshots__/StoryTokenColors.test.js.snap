@@ -68,20 +68,20 @@ exports[`StoryTokenColors component Should render StoryTokenColors component  1`
           data={
             Array [
               Object {
-                "color": "#FF6B0B",
-                "name": "colorBrdNatPrimaryOrange",
-              },
-              Object {
-                "color": "#F4AB34",
-                "name": "colorBrdNatPrimaryYellow",
-              },
-              Object {
                 "color": "#513528",
                 "name": "colorBrdNatPrimaryBrown",
               },
               Object {
+                "color": "#FF6B0B",
+                "name": "colorBrdNatPrimaryOrange",
+              },
+              Object {
                 "color": "#FFFFFF",
                 "name": "colorBrdNatPrimaryWhite",
+              },
+              Object {
+                "color": "#F4AB34",
+                "name": "colorBrdNatPrimaryYellow",
               },
             ]
           }
@@ -109,186 +109,6 @@ exports[`StoryTokenColors component Should render StoryTokenColors component  1`
           windowSize={21}
         >
           <View>
-            <View
-              onLayout={[Function]}
-              style={null}
-            >
-              <View
-                style={
-                  Object {
-                    "flexDirection": "row",
-                  }
-                }
-              >
-                <View
-                  margin={24}
-                  style={
-                    Array [
-                      Object {
-                        "marginBottom": 24,
-                        "marginLeft": 0,
-                        "marginRight": 0,
-                        "marginTop": 0,
-                        "paddingBottom": 0,
-                        "paddingLeft": 0,
-                        "paddingRight": 0,
-                        "paddingTop": 0,
-                      },
-                    ]
-                  }
-                >
-                  <Text
-                    color="#333333"
-                    style={
-                      Array [
-                        Object {
-                          "color": "#333333",
-                          "fontSize": 16,
-                          "fontWeight": "400",
-                          "lineHeight": 24,
-                        },
-                      ]
-                    }
-                    type="body1"
-                  >
-                    colorBrdNatPrimaryOrange
-                  </Text>
-                </View>
-                <View
-                  style={
-                    Object {
-                      "backgroundColor": "#FF6B0B",
-                      "height": 30,
-                      "width": 30,
-                    }
-                  }
-                />
-                <View
-                  margin={24}
-                  style={
-                    Array [
-                      Object {
-                        "marginBottom": 24,
-                        "marginLeft": 0,
-                        "marginRight": 0,
-                        "marginTop": 0,
-                        "paddingBottom": 0,
-                        "paddingLeft": 0,
-                        "paddingRight": 0,
-                        "paddingTop": 0,
-                      },
-                    ]
-                  }
-                >
-                  <Text
-                    color="#333333"
-                    style={
-                      Array [
-                        Object {
-                          "color": "#333333",
-                          "fontSize": 16,
-                          "fontWeight": "400",
-                          "lineHeight": 24,
-                        },
-                      ]
-                    }
-                    type="body1"
-                  >
-                    #FF6B0B
-                  </Text>
-                </View>
-              </View>
-            </View>
-            <View
-              onLayout={[Function]}
-              style={null}
-            >
-              <View
-                style={
-                  Object {
-                    "flexDirection": "row",
-                  }
-                }
-              >
-                <View
-                  margin={24}
-                  style={
-                    Array [
-                      Object {
-                        "marginBottom": 24,
-                        "marginLeft": 0,
-                        "marginRight": 0,
-                        "marginTop": 0,
-                        "paddingBottom": 0,
-                        "paddingLeft": 0,
-                        "paddingRight": 0,
-                        "paddingTop": 0,
-                      },
-                    ]
-                  }
-                >
-                  <Text
-                    color="#333333"
-                    style={
-                      Array [
-                        Object {
-                          "color": "#333333",
-                          "fontSize": 16,
-                          "fontWeight": "400",
-                          "lineHeight": 24,
-                        },
-                      ]
-                    }
-                    type="body1"
-                  >
-                    colorBrdNatPrimaryYellow
-                  </Text>
-                </View>
-                <View
-                  style={
-                    Object {
-                      "backgroundColor": "#F4AB34",
-                      "height": 30,
-                      "width": 30,
-                    }
-                  }
-                />
-                <View
-                  margin={24}
-                  style={
-                    Array [
-                      Object {
-                        "marginBottom": 24,
-                        "marginLeft": 0,
-                        "marginRight": 0,
-                        "marginTop": 0,
-                        "paddingBottom": 0,
-                        "paddingLeft": 0,
-                        "paddingRight": 0,
-                        "paddingTop": 0,
-                      },
-                    ]
-                  }
-                >
-                  <Text
-                    color="#333333"
-                    style={
-                      Array [
-                        Object {
-                          "color": "#333333",
-                          "fontSize": 16,
-                          "fontWeight": "400",
-                          "lineHeight": 24,
-                        },
-                      ]
-                    }
-                    type="body1"
-                  >
-                    #F4AB34
-                  </Text>
-                </View>
-              </View>
-            </View>
             <View
               onLayout={[Function]}
               style={null}
@@ -421,6 +241,96 @@ exports[`StoryTokenColors component Should render StoryTokenColors component  1`
                     }
                     type="body1"
                   >
+                    colorBrdNatPrimaryOrange
+                  </Text>
+                </View>
+                <View
+                  style={
+                    Object {
+                      "backgroundColor": "#FF6B0B",
+                      "height": 30,
+                      "width": 30,
+                    }
+                  }
+                />
+                <View
+                  margin={24}
+                  style={
+                    Array [
+                      Object {
+                        "marginBottom": 24,
+                        "marginLeft": 0,
+                        "marginRight": 0,
+                        "marginTop": 0,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    color="#333333"
+                    style={
+                      Array [
+                        Object {
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                          "lineHeight": 24,
+                        },
+                      ]
+                    }
+                    type="body1"
+                  >
+                    #FF6B0B
+                  </Text>
+                </View>
+              </View>
+            </View>
+            <View
+              onLayout={[Function]}
+              style={null}
+            >
+              <View
+                style={
+                  Object {
+                    "flexDirection": "row",
+                  }
+                }
+              >
+                <View
+                  margin={24}
+                  style={
+                    Array [
+                      Object {
+                        "marginBottom": 24,
+                        "marginLeft": 0,
+                        "marginRight": 0,
+                        "marginTop": 0,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    color="#333333"
+                    style={
+                      Array [
+                        Object {
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                          "lineHeight": 24,
+                        },
+                      ]
+                    }
+                    type="body1"
+                  >
                     colorBrdNatPrimaryWhite
                   </Text>
                 </View>
@@ -469,87 +379,6 @@ exports[`StoryTokenColors component Should render StoryTokenColors component  1`
                 </View>
               </View>
             </View>
-          </View>
-        </RCTScrollView>
-        <View
-          margin={24}
-          style={
-            Array [
-              Object {
-                "marginBottom": 24,
-                "marginLeft": 0,
-                "marginRight": 0,
-                "marginTop": 0,
-                "paddingBottom": 0,
-                "paddingLeft": 0,
-                "paddingRight": 0,
-                "paddingTop": 0,
-              },
-            ]
-          }
-        >
-          <Text
-            color="#333333"
-            style={
-              Array [
-                Object {
-                  "color": "#333333",
-                  "fontSize": 20,
-                  "fontWeight": "500",
-                  "lineHeight": 30,
-                },
-              ]
-            }
-            type="h6"
-          >
-            SECONDARY
-          </Text>
-        </View>
-        <RCTScrollView
-          data={
-            Array [
-              Object {
-                "color": "#7080A0",
-                "name": "colorBrdNatSecondaryPurple",
-              },
-              Object {
-                "color": "#71CACD",
-                "name": "colorBrdNatSecondaryBlue",
-              },
-              Object {
-                "color": "#B3CA36",
-                "name": "colorBrdNatSecondaryGreen",
-              },
-              Object {
-                "color": "#FFBA1B",
-                "name": "colorBrdNatSecondaryYellow",
-              },
-            ]
-          }
-          disableVirtualization={false}
-          getItem={[Function]}
-          getItemCount={[Function]}
-          horizontal={false}
-          initialNumToRender={10}
-          keyExtractor={[Function]}
-          maxToRenderPerBatch={10}
-          numColumns={1}
-          onContentSizeChange={[Function]}
-          onEndReachedThreshold={2}
-          onLayout={[Function]}
-          onMomentumScrollEnd={[Function]}
-          onScroll={[Function]}
-          onScrollBeginDrag={[Function]}
-          onScrollEndDrag={[Function]}
-          removeClippedSubviews={false}
-          renderItem={[Function]}
-          scrollEventThrottle={50}
-          stickyHeaderIndices={Array []}
-          updateCellsBatchingPeriod={50}
-          viewabilityConfigCallbackPairs={Array []}
-          windowSize={21}
-        >
-          <View>
             <View
               onLayout={[Function]}
               style={null}
@@ -592,13 +421,13 @@ exports[`StoryTokenColors component Should render StoryTokenColors component  1`
                     }
                     type="body1"
                   >
-                    colorBrdNatSecondaryPurple
+                    colorBrdNatPrimaryYellow
                   </Text>
                 </View>
                 <View
                   style={
                     Object {
-                      "backgroundColor": "#7080A0",
+                      "backgroundColor": "#F4AB34",
                       "height": 30,
                       "width": 30,
                     }
@@ -635,11 +464,92 @@ exports[`StoryTokenColors component Should render StoryTokenColors component  1`
                     }
                     type="body1"
                   >
-                    #7080A0
+                    #F4AB34
                   </Text>
                 </View>
               </View>
             </View>
+          </View>
+        </RCTScrollView>
+        <View
+          margin={24}
+          style={
+            Array [
+              Object {
+                "marginBottom": 24,
+                "marginLeft": 0,
+                "marginRight": 0,
+                "marginTop": 0,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
+              },
+            ]
+          }
+        >
+          <Text
+            color="#333333"
+            style={
+              Array [
+                Object {
+                  "color": "#333333",
+                  "fontSize": 20,
+                  "fontWeight": "500",
+                  "lineHeight": 30,
+                },
+              ]
+            }
+            type="h6"
+          >
+            SECONDARY
+          </Text>
+        </View>
+        <RCTScrollView
+          data={
+            Array [
+              Object {
+                "color": "#71CACD",
+                "name": "colorBrdNatSecondaryBlue",
+              },
+              Object {
+                "color": "#B3CA36",
+                "name": "colorBrdNatSecondaryGreen",
+              },
+              Object {
+                "color": "#7080A0",
+                "name": "colorBrdNatSecondaryPurple",
+              },
+              Object {
+                "color": "#FFBA1B",
+                "name": "colorBrdNatSecondaryYellow",
+              },
+            ]
+          }
+          disableVirtualization={false}
+          getItem={[Function]}
+          getItemCount={[Function]}
+          horizontal={false}
+          initialNumToRender={10}
+          keyExtractor={[Function]}
+          maxToRenderPerBatch={10}
+          numColumns={1}
+          onContentSizeChange={[Function]}
+          onEndReachedThreshold={2}
+          onLayout={[Function]}
+          onMomentumScrollEnd={[Function]}
+          onScroll={[Function]}
+          onScrollBeginDrag={[Function]}
+          onScrollEndDrag={[Function]}
+          removeClippedSubviews={false}
+          renderItem={[Function]}
+          scrollEventThrottle={50}
+          stickyHeaderIndices={Array []}
+          updateCellsBatchingPeriod={50}
+          viewabilityConfigCallbackPairs={Array []}
+          windowSize={21}
+        >
+          <View>
             <View
               onLayout={[Function]}
               style={null}
@@ -816,6 +726,96 @@ exports[`StoryTokenColors component Should render StoryTokenColors component  1`
                     type="body1"
                   >
                     #B3CA36
+                  </Text>
+                </View>
+              </View>
+            </View>
+            <View
+              onLayout={[Function]}
+              style={null}
+            >
+              <View
+                style={
+                  Object {
+                    "flexDirection": "row",
+                  }
+                }
+              >
+                <View
+                  margin={24}
+                  style={
+                    Array [
+                      Object {
+                        "marginBottom": 24,
+                        "marginLeft": 0,
+                        "marginRight": 0,
+                        "marginTop": 0,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    color="#333333"
+                    style={
+                      Array [
+                        Object {
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                          "lineHeight": 24,
+                        },
+                      ]
+                    }
+                    type="body1"
+                  >
+                    colorBrdNatSecondaryPurple
+                  </Text>
+                </View>
+                <View
+                  style={
+                    Object {
+                      "backgroundColor": "#7080A0",
+                      "height": 30,
+                      "width": 30,
+                    }
+                  }
+                />
+                <View
+                  margin={24}
+                  style={
+                    Array [
+                      Object {
+                        "marginBottom": 24,
+                        "marginLeft": 0,
+                        "marginRight": 0,
+                        "marginTop": 0,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    color="#333333"
+                    style={
+                      Array [
+                        Object {
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                          "lineHeight": 24,
+                        },
+                      ]
+                    }
+                    type="body1"
+                  >
+                    #7080A0
                   </Text>
                 </View>
               </View>
@@ -1485,16 +1485,8 @@ exports[`StoryTokenColors component Should render StoryTokenColors component  1`
           data={
             Array [
               Object {
-                "color": "#7B6A58",
-                "name": "colorLevelSeed",
-              },
-              Object {
                 "color": "#C47F5B",
                 "name": "colorLevelBronze",
-              },
-              Object {
-                "color": "#9D9D9C",
-                "name": "colorLevelSilver",
               },
               Object {
                 "color": "#AEC2CE",
@@ -1503,6 +1495,14 @@ exports[`StoryTokenColors component Should render StoryTokenColors component  1`
               Object {
                 "color": "#D8B75E",
                 "name": "colorLevelGold",
+              },
+              Object {
+                "color": "#7B6A58",
+                "name": "colorLevelSeed",
+              },
+              Object {
+                "color": "#9D9D9C",
+                "name": "colorLevelSilver",
               },
             ]
           }
@@ -1530,96 +1530,6 @@ exports[`StoryTokenColors component Should render StoryTokenColors component  1`
           windowSize={21}
         >
           <View>
-            <View
-              onLayout={[Function]}
-              style={null}
-            >
-              <View
-                style={
-                  Object {
-                    "flexDirection": "row",
-                  }
-                }
-              >
-                <View
-                  margin={24}
-                  style={
-                    Array [
-                      Object {
-                        "marginBottom": 24,
-                        "marginLeft": 0,
-                        "marginRight": 0,
-                        "marginTop": 0,
-                        "paddingBottom": 0,
-                        "paddingLeft": 0,
-                        "paddingRight": 0,
-                        "paddingTop": 0,
-                      },
-                    ]
-                  }
-                >
-                  <Text
-                    color="#333333"
-                    style={
-                      Array [
-                        Object {
-                          "color": "#333333",
-                          "fontSize": 16,
-                          "fontWeight": "400",
-                          "lineHeight": 24,
-                        },
-                      ]
-                    }
-                    type="body1"
-                  >
-                    colorLevelSeed
-                  </Text>
-                </View>
-                <View
-                  style={
-                    Object {
-                      "backgroundColor": "#7B6A58",
-                      "height": 30,
-                      "width": 30,
-                    }
-                  }
-                />
-                <View
-                  margin={24}
-                  style={
-                    Array [
-                      Object {
-                        "marginBottom": 24,
-                        "marginLeft": 0,
-                        "marginRight": 0,
-                        "marginTop": 0,
-                        "paddingBottom": 0,
-                        "paddingLeft": 0,
-                        "paddingRight": 0,
-                        "paddingTop": 0,
-                      },
-                    ]
-                  }
-                >
-                  <Text
-                    color="#333333"
-                    style={
-                      Array [
-                        Object {
-                          "color": "#333333",
-                          "fontSize": 16,
-                          "fontWeight": "400",
-                          "lineHeight": 24,
-                        },
-                      ]
-                    }
-                    type="body1"
-                  >
-                    #7B6A58
-                  </Text>
-                </View>
-              </View>
-            </View>
             <View
               onLayout={[Function]}
               style={null}
@@ -1706,96 +1616,6 @@ exports[`StoryTokenColors component Should render StoryTokenColors component  1`
                     type="body1"
                   >
                     #C47F5B
-                  </Text>
-                </View>
-              </View>
-            </View>
-            <View
-              onLayout={[Function]}
-              style={null}
-            >
-              <View
-                style={
-                  Object {
-                    "flexDirection": "row",
-                  }
-                }
-              >
-                <View
-                  margin={24}
-                  style={
-                    Array [
-                      Object {
-                        "marginBottom": 24,
-                        "marginLeft": 0,
-                        "marginRight": 0,
-                        "marginTop": 0,
-                        "paddingBottom": 0,
-                        "paddingLeft": 0,
-                        "paddingRight": 0,
-                        "paddingTop": 0,
-                      },
-                    ]
-                  }
-                >
-                  <Text
-                    color="#333333"
-                    style={
-                      Array [
-                        Object {
-                          "color": "#333333",
-                          "fontSize": 16,
-                          "fontWeight": "400",
-                          "lineHeight": 24,
-                        },
-                      ]
-                    }
-                    type="body1"
-                  >
-                    colorLevelSilver
-                  </Text>
-                </View>
-                <View
-                  style={
-                    Object {
-                      "backgroundColor": "#9D9D9C",
-                      "height": 30,
-                      "width": 30,
-                    }
-                  }
-                />
-                <View
-                  margin={24}
-                  style={
-                    Array [
-                      Object {
-                        "marginBottom": 24,
-                        "marginLeft": 0,
-                        "marginRight": 0,
-                        "marginTop": 0,
-                        "paddingBottom": 0,
-                        "paddingLeft": 0,
-                        "paddingRight": 0,
-                        "paddingTop": 0,
-                      },
-                    ]
-                  }
-                >
-                  <Text
-                    color="#333333"
-                    style={
-                      Array [
-                        Object {
-                          "color": "#333333",
-                          "fontSize": 16,
-                          "fontWeight": "400",
-                          "lineHeight": 24,
-                        },
-                      ]
-                    }
-                    type="body1"
-                  >
-                    #9D9D9C
                   </Text>
                 </View>
               </View>
@@ -1980,6 +1800,186 @@ exports[`StoryTokenColors component Should render StoryTokenColors component  1`
                 </View>
               </View>
             </View>
+            <View
+              onLayout={[Function]}
+              style={null}
+            >
+              <View
+                style={
+                  Object {
+                    "flexDirection": "row",
+                  }
+                }
+              >
+                <View
+                  margin={24}
+                  style={
+                    Array [
+                      Object {
+                        "marginBottom": 24,
+                        "marginLeft": 0,
+                        "marginRight": 0,
+                        "marginTop": 0,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    color="#333333"
+                    style={
+                      Array [
+                        Object {
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                          "lineHeight": 24,
+                        },
+                      ]
+                    }
+                    type="body1"
+                  >
+                    colorLevelSeed
+                  </Text>
+                </View>
+                <View
+                  style={
+                    Object {
+                      "backgroundColor": "#7B6A58",
+                      "height": 30,
+                      "width": 30,
+                    }
+                  }
+                />
+                <View
+                  margin={24}
+                  style={
+                    Array [
+                      Object {
+                        "marginBottom": 24,
+                        "marginLeft": 0,
+                        "marginRight": 0,
+                        "marginTop": 0,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    color="#333333"
+                    style={
+                      Array [
+                        Object {
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                          "lineHeight": 24,
+                        },
+                      ]
+                    }
+                    type="body1"
+                  >
+                    #7B6A58
+                  </Text>
+                </View>
+              </View>
+            </View>
+            <View
+              onLayout={[Function]}
+              style={null}
+            >
+              <View
+                style={
+                  Object {
+                    "flexDirection": "row",
+                  }
+                }
+              >
+                <View
+                  margin={24}
+                  style={
+                    Array [
+                      Object {
+                        "marginBottom": 24,
+                        "marginLeft": 0,
+                        "marginRight": 0,
+                        "marginTop": 0,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    color="#333333"
+                    style={
+                      Array [
+                        Object {
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                          "lineHeight": 24,
+                        },
+                      ]
+                    }
+                    type="body1"
+                  >
+                    colorLevelSilver
+                  </Text>
+                </View>
+                <View
+                  style={
+                    Object {
+                      "backgroundColor": "#9D9D9C",
+                      "height": 30,
+                      "width": 30,
+                    }
+                  }
+                />
+                <View
+                  margin={24}
+                  style={
+                    Array [
+                      Object {
+                        "marginBottom": 24,
+                        "marginLeft": 0,
+                        "marginRight": 0,
+                        "marginTop": 0,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    color="#333333"
+                    style={
+                      Array [
+                        Object {
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                          "lineHeight": 24,
+                        },
+                      ]
+                    }
+                    type="body1"
+                  >
+                    #9D9D9C
+                  </Text>
+                </View>
+              </View>
+            </View>
           </View>
         </RCTScrollView>
         <View
@@ -2036,6 +2036,18 @@ exports[`StoryTokenColors component Should render StoryTokenColors component  1`
                 "name": "colorBrdNatCpBlue4",
               },
               Object {
+                "color": "#371E14",
+                "name": "colorBrdNatCpBrown1",
+              },
+              Object {
+                "color": "#5D3B2A",
+                "name": "colorBrdNatCpBrown2",
+              },
+              Object {
+                "color": "#7A573C",
+                "name": "colorBrdNatCpBrown3",
+              },
+              Object {
                 "color": "#569A32",
                 "name": "colorBrdNatCpGreen1",
               },
@@ -2050,22 +2062,6 @@ exports[`StoryTokenColors component Should render StoryTokenColors component  1`
               Object {
                 "color": "#BEC950",
                 "name": "colorBrdNatCpGreen4",
-              },
-              Object {
-                "color": "#CCB619",
-                "name": "colorBrdNatCpYellow1",
-              },
-              Object {
-                "color": "#E7CE22",
-                "name": "colorBrdNatCpYellow2",
-              },
-              Object {
-                "color": "#FFD600",
-                "name": "colorBrdNatCpYellow3",
-              },
-              Object {
-                "color": "#8E96A9",
-                "name": "colorBrdNatCpYellow4",
               },
               Object {
                 "color": "#E8530E",
@@ -2100,16 +2096,20 @@ exports[`StoryTokenColors component Should render StoryTokenColors component  1`
                 "name": "colorBrdNatCpRed4",
               },
               Object {
-                "color": "#371E14",
-                "name": "colorBrdNatCpBrown1",
+                "color": "#CCB619",
+                "name": "colorBrdNatCpYellow1",
               },
               Object {
-                "color": "#5D3B2A",
-                "name": "colorBrdNatCpBrown2",
+                "color": "#E7CE22",
+                "name": "colorBrdNatCpYellow2",
               },
               Object {
-                "color": "#7A573C",
-                "name": "colorBrdNatCpBrown3",
+                "color": "#FFD600",
+                "name": "colorBrdNatCpYellow3",
+              },
+              Object {
+                "color": "#8E96A9",
+                "name": "colorBrdNatCpYellow4",
               },
             ]
           }
@@ -2539,6 +2539,276 @@ exports[`StoryTokenColors component Should render StoryTokenColors component  1`
                     }
                     type="body1"
                   >
+                    colorBrdNatCpBrown1
+                  </Text>
+                </View>
+                <View
+                  style={
+                    Object {
+                      "backgroundColor": "#371E14",
+                      "height": 30,
+                      "width": 30,
+                    }
+                  }
+                />
+                <View
+                  margin={24}
+                  style={
+                    Array [
+                      Object {
+                        "marginBottom": 24,
+                        "marginLeft": 0,
+                        "marginRight": 0,
+                        "marginTop": 0,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    color="#333333"
+                    style={
+                      Array [
+                        Object {
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                          "lineHeight": 24,
+                        },
+                      ]
+                    }
+                    type="body1"
+                  >
+                    #371E14
+                  </Text>
+                </View>
+              </View>
+            </View>
+            <View
+              onLayout={[Function]}
+              style={null}
+            >
+              <View
+                style={
+                  Object {
+                    "flexDirection": "row",
+                  }
+                }
+              >
+                <View
+                  margin={24}
+                  style={
+                    Array [
+                      Object {
+                        "marginBottom": 24,
+                        "marginLeft": 0,
+                        "marginRight": 0,
+                        "marginTop": 0,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    color="#333333"
+                    style={
+                      Array [
+                        Object {
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                          "lineHeight": 24,
+                        },
+                      ]
+                    }
+                    type="body1"
+                  >
+                    colorBrdNatCpBrown2
+                  </Text>
+                </View>
+                <View
+                  style={
+                    Object {
+                      "backgroundColor": "#5D3B2A",
+                      "height": 30,
+                      "width": 30,
+                    }
+                  }
+                />
+                <View
+                  margin={24}
+                  style={
+                    Array [
+                      Object {
+                        "marginBottom": 24,
+                        "marginLeft": 0,
+                        "marginRight": 0,
+                        "marginTop": 0,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    color="#333333"
+                    style={
+                      Array [
+                        Object {
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                          "lineHeight": 24,
+                        },
+                      ]
+                    }
+                    type="body1"
+                  >
+                    #5D3B2A
+                  </Text>
+                </View>
+              </View>
+            </View>
+            <View
+              onLayout={[Function]}
+              style={null}
+            >
+              <View
+                style={
+                  Object {
+                    "flexDirection": "row",
+                  }
+                }
+              >
+                <View
+                  margin={24}
+                  style={
+                    Array [
+                      Object {
+                        "marginBottom": 24,
+                        "marginLeft": 0,
+                        "marginRight": 0,
+                        "marginTop": 0,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    color="#333333"
+                    style={
+                      Array [
+                        Object {
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                          "lineHeight": 24,
+                        },
+                      ]
+                    }
+                    type="body1"
+                  >
+                    colorBrdNatCpBrown3
+                  </Text>
+                </View>
+                <View
+                  style={
+                    Object {
+                      "backgroundColor": "#7A573C",
+                      "height": 30,
+                      "width": 30,
+                    }
+                  }
+                />
+                <View
+                  margin={24}
+                  style={
+                    Array [
+                      Object {
+                        "marginBottom": 24,
+                        "marginLeft": 0,
+                        "marginRight": 0,
+                        "marginTop": 0,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    color="#333333"
+                    style={
+                      Array [
+                        Object {
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                          "lineHeight": 24,
+                        },
+                      ]
+                    }
+                    type="body1"
+                  >
+                    #7A573C
+                  </Text>
+                </View>
+              </View>
+            </View>
+            <View
+              onLayout={[Function]}
+              style={null}
+            >
+              <View
+                style={
+                  Object {
+                    "flexDirection": "row",
+                  }
+                }
+              >
+                <View
+                  margin={24}
+                  style={
+                    Array [
+                      Object {
+                        "marginBottom": 24,
+                        "marginLeft": 0,
+                        "marginRight": 0,
+                        "marginTop": 0,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    color="#333333"
+                    style={
+                      Array [
+                        Object {
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                          "lineHeight": 24,
+                        },
+                      ]
+                    }
+                    type="body1"
+                  >
                     colorBrdNatCpGreen1
                   </Text>
                 </View>
@@ -2763,276 +3033,6 @@ exports[`StoryTokenColors component Should render StoryTokenColors component  1`
                     type="body1"
                   >
                     #C2CD00
-                  </Text>
-                </View>
-              </View>
-            </View>
-            <View
-              onLayout={[Function]}
-              style={null}
-            >
-              <View
-                style={
-                  Object {
-                    "flexDirection": "row",
-                  }
-                }
-              >
-                <View
-                  margin={24}
-                  style={
-                    Array [
-                      Object {
-                        "marginBottom": 24,
-                        "marginLeft": 0,
-                        "marginRight": 0,
-                        "marginTop": 0,
-                        "paddingBottom": 0,
-                        "paddingLeft": 0,
-                        "paddingRight": 0,
-                        "paddingTop": 0,
-                      },
-                    ]
-                  }
-                >
-                  <Text
-                    color="#333333"
-                    style={
-                      Array [
-                        Object {
-                          "color": "#333333",
-                          "fontSize": 16,
-                          "fontWeight": "400",
-                          "lineHeight": 24,
-                        },
-                      ]
-                    }
-                    type="body1"
-                  >
-                    colorBrdNatCpGreen4
-                  </Text>
-                </View>
-                <View
-                  style={
-                    Object {
-                      "backgroundColor": "#BEC950",
-                      "height": 30,
-                      "width": 30,
-                    }
-                  }
-                />
-                <View
-                  margin={24}
-                  style={
-                    Array [
-                      Object {
-                        "marginBottom": 24,
-                        "marginLeft": 0,
-                        "marginRight": 0,
-                        "marginTop": 0,
-                        "paddingBottom": 0,
-                        "paddingLeft": 0,
-                        "paddingRight": 0,
-                        "paddingTop": 0,
-                      },
-                    ]
-                  }
-                >
-                  <Text
-                    color="#333333"
-                    style={
-                      Array [
-                        Object {
-                          "color": "#333333",
-                          "fontSize": 16,
-                          "fontWeight": "400",
-                          "lineHeight": 24,
-                        },
-                      ]
-                    }
-                    type="body1"
-                  >
-                    #BEC950
-                  </Text>
-                </View>
-              </View>
-            </View>
-            <View
-              onLayout={[Function]}
-              style={null}
-            >
-              <View
-                style={
-                  Object {
-                    "flexDirection": "row",
-                  }
-                }
-              >
-                <View
-                  margin={24}
-                  style={
-                    Array [
-                      Object {
-                        "marginBottom": 24,
-                        "marginLeft": 0,
-                        "marginRight": 0,
-                        "marginTop": 0,
-                        "paddingBottom": 0,
-                        "paddingLeft": 0,
-                        "paddingRight": 0,
-                        "paddingTop": 0,
-                      },
-                    ]
-                  }
-                >
-                  <Text
-                    color="#333333"
-                    style={
-                      Array [
-                        Object {
-                          "color": "#333333",
-                          "fontSize": 16,
-                          "fontWeight": "400",
-                          "lineHeight": 24,
-                        },
-                      ]
-                    }
-                    type="body1"
-                  >
-                    colorBrdNatCpYellow1
-                  </Text>
-                </View>
-                <View
-                  style={
-                    Object {
-                      "backgroundColor": "#CCB619",
-                      "height": 30,
-                      "width": 30,
-                    }
-                  }
-                />
-                <View
-                  margin={24}
-                  style={
-                    Array [
-                      Object {
-                        "marginBottom": 24,
-                        "marginLeft": 0,
-                        "marginRight": 0,
-                        "marginTop": 0,
-                        "paddingBottom": 0,
-                        "paddingLeft": 0,
-                        "paddingRight": 0,
-                        "paddingTop": 0,
-                      },
-                    ]
-                  }
-                >
-                  <Text
-                    color="#333333"
-                    style={
-                      Array [
-                        Object {
-                          "color": "#333333",
-                          "fontSize": 16,
-                          "fontWeight": "400",
-                          "lineHeight": 24,
-                        },
-                      ]
-                    }
-                    type="body1"
-                  >
-                    #CCB619
-                  </Text>
-                </View>
-              </View>
-            </View>
-            <View
-              onLayout={[Function]}
-              style={null}
-            >
-              <View
-                style={
-                  Object {
-                    "flexDirection": "row",
-                  }
-                }
-              >
-                <View
-                  margin={24}
-                  style={
-                    Array [
-                      Object {
-                        "marginBottom": 24,
-                        "marginLeft": 0,
-                        "marginRight": 0,
-                        "marginTop": 0,
-                        "paddingBottom": 0,
-                        "paddingLeft": 0,
-                        "paddingRight": 0,
-                        "paddingTop": 0,
-                      },
-                    ]
-                  }
-                >
-                  <Text
-                    color="#333333"
-                    style={
-                      Array [
-                        Object {
-                          "color": "#333333",
-                          "fontSize": 16,
-                          "fontWeight": "400",
-                          "lineHeight": 24,
-                        },
-                      ]
-                    }
-                    type="body1"
-                  >
-                    colorBrdNatCpYellow2
-                  </Text>
-                </View>
-                <View
-                  style={
-                    Object {
-                      "backgroundColor": "#E7CE22",
-                      "height": 30,
-                      "width": 30,
-                    }
-                  }
-                />
-                <View
-                  margin={24}
-                  style={
-                    Array [
-                      Object {
-                        "marginBottom": 24,
-                        "marginLeft": 0,
-                        "marginRight": 0,
-                        "marginTop": 0,
-                        "paddingBottom": 0,
-                        "paddingLeft": 0,
-                        "paddingRight": 0,
-                        "paddingTop": 0,
-                      },
-                    ]
-                  }
-                >
-                  <Text
-                    color="#333333"
-                    style={
-                      Array [
-                        Object {
-                          "color": "#333333",
-                          "fontSize": 16,
-                          "fontWeight": "400",
-                          "lineHeight": 24,
-                        },
-                      ]
-                    }
-                    type="body1"
-                  >
-                    #E7CE22
                   </Text>
                 </View>
               </View>

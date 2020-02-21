@@ -18,10 +18,10 @@ export const HeaderText = styled.Text`
 `;
 
 const FlexNatGenericCard = {
+  alignItems: 'center',
   display: 'flex',
   flexDirection: 'row',
   justifyContent: 'center',
-  alignItems: 'center',
   width: '100%',
 };
 

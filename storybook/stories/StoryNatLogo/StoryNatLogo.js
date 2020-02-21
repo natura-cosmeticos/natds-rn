@@ -23,10 +23,10 @@ const styles = {
 
 export const StoryNatLogo = () => {
   const iconList = [
-    { name: 'logo-natura-horizontal', size: 300, background: 'white' },
-    { name: 'logo-natura-vertical', size: 300, background: 'white' },
-    { name: 'logo-natura-negative-horizontal', size: 300, background: ThemeNaturaLight.palette.text.primary },
-    { name: 'logo-natura-negative-vertical', size: 300, background: ThemeNaturaLight.palette.text.primary },
+    { background: 'white', name: 'logo-natura-horizontal', size: 300 },
+    { background: 'white', name: 'logo-natura-vertical', size: 300 },
+    { background: ThemeNaturaLight.palette.text.primary, name: 'logo-natura-negative-horizontal', size: 300 },
+    { background: ThemeNaturaLight.palette.text.primary, name: 'logo-natura-negative-vertical', size: 300 },
   ];
 
   const renderItem = (name, size, background) => (
