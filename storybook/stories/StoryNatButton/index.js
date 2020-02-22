@@ -1,0 +1,1 @@
+export { StoryNatButton } from './StoryNatButton';
