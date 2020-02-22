@@ -90,6 +90,11 @@ exports[`Header component Should render container component correctly: NatAppBar
       >
         <SvgMock
           height={24}
+          style={
+            Object {
+              "fill": "#333333",
+            }
+          }
           width={24}
         />
       </View>

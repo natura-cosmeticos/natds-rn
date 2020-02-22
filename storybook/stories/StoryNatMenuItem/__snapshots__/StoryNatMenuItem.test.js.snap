@@ -221,6 +221,11 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component  1`
         >
           <SvgMock
             height="24"
+            style={
+              Object {
+                "fill": "#333333",
+              }
+            }
             width="24"
           />
           <Text
@@ -265,6 +270,11 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component  1`
         >
           <SvgMock
             height={24}
+            style={
+              Object {
+                "fill": "#333333",
+              }
+            }
             width={24}
           />
           <Text
@@ -309,6 +319,11 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component  1`
         >
           <SvgMock
             height={24}
+            style={
+              Object {
+                "fill": "#333333",
+              }
+            }
             width={24}
           />
           <Text
@@ -353,6 +368,11 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component  1`
         >
           <SvgMock
             height={24}
+            style={
+              Object {
+                "fill": "#333333",
+              }
+            }
             width={24}
           />
           <Text
@@ -397,6 +417,11 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component  1`
         >
           <SvgMock
             height={24}
+            style={
+              Object {
+                "fill": "#333333",
+              }
+            }
             width={24}
           />
           <Text
@@ -441,6 +466,11 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component  1`
         >
           <SvgMock
             height={24}
+            style={
+              Object {
+                "fill": "#333333",
+              }
+            }
             width={24}
           />
           <Text
@@ -485,6 +515,11 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component  1`
         >
           <SvgMock
             height={24}
+            style={
+              Object {
+                "fill": "#333333",
+              }
+            }
             width={24}
           />
           <Text
@@ -529,6 +564,11 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component  1`
         >
           <SvgMock
             height={24}
+            style={
+              Object {
+                "fill": "#333333",
+              }
+            }
             width={24}
           />
           <Text
@@ -573,6 +613,11 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component  1`
         >
           <SvgMock
             height={24}
+            style={
+              Object {
+                "fill": "#333333",
+              }
+            }
             width={24}
           />
           <Text
@@ -617,6 +662,11 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component  1`
         >
           <SvgMock
             height={24}
+            style={
+              Object {
+                "fill": "#333333",
+              }
+            }
             width={24}
           />
           <Text
@@ -661,6 +711,11 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component  1`
         >
           <SvgMock
             height={24}
+            style={
+              Object {
+                "fill": "#333333",
+              }
+            }
             width={24}
           />
           <Text
@@ -713,12 +768,10 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component  1`
               }
             }
             style={
-              Array [
-                Object {
-                  "height": 24,
-                  "width": 24,
-                },
-              ]
+              Object {
+                "height": 24,
+                "width": 24,
+              }
             }
           />
           <Text
@@ -768,12 +821,10 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component  1`
               }
             }
             style={
-              Array [
-                Object {
-                  "height": 24,
-                  "width": 24,
-                },
-              ]
+              Object {
+                "height": 24,
+                "width": 24,
+              }
             }
           />
           <Text

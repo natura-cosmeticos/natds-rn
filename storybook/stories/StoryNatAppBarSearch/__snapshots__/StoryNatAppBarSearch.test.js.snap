@@ -120,6 +120,11 @@ exports[`StoryNatAppBarSearch component Should render StoryNatAppBarSearch compo
               >
                 <SvgMock
                   height={24}
+                  style={
+                    Object {
+                      "fill": "#333333",
+                    }
+                  }
                   width={24}
                 />
               </View>
@@ -1304,6 +1309,11 @@ exports[`StoryNatAppBarSearch component Should render StoryNatAppBarSearch compo
               >
                 <SvgMock
                   height={24}
+                  style={
+                    Object {
+                      "fill": "#333333",
+                    }
+                  }
                   width={24}
                 />
               </View>

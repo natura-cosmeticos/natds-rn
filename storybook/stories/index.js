@@ -10,6 +10,7 @@ import {
 import { StoryNatTextInput } from './StoryNatTextInput';
 import { StoryNatSelectInput } from './StoryNatSelectInput';
 import { StoryNatCard } from './StoryNatCard';
+import { StoryNatButton } from './StoryNatButton';
 import { StoryNatMenuItem } from './StoryNatMenuItem';
 import { StoryNatIcon } from './StoryNatIcon';
 import { StoryTokenTypography } from './StoryTokenTypography';
@@ -24,7 +25,7 @@ import { StoryNatListItem } from './StoryNatListItem';
 import { ThemeNaturaLight } from './StoryTokenThemes/ThemeNaturaLight';
 import CenterView from './CenterView';
 import { Welcome } from './Welcome';
-import icoArrowLeft from '../../lib/assets/icons/ic_arrow_left_white.png';
+import iconArrowLeft from '../../lib/assets/icons/ic_arrow_left_white.png';
 
 storiesOf('Welcome', module)
   .add('NATDS', () => (
@@ -66,8 +67,11 @@ storiesOf('NatTextInput', module)
   .add('Disabled', () => (
     <StoryNatTextInput type="disabled" />
   ))
+  .add('With icon - URL', () => (
+    <StoryNatTextInput type="default" icon={{ uri: 'https://s3-sa-east-1.amazonaws.com/somos-natura-prd/files/menus/generic_menu/img_url_tmp_generic_menu_20170822160140.png' }} />
+  ))
   .add('With icon - image', () => (
-    <StoryNatTextInput type="default" icon={{ content: icoArrowLeft }} />
+    <StoryNatTextInput type="default" icon={{ content: iconArrowLeft }} />
   ))
   .add('With icon - SVG', () => (
     <StoryNatTextInput type="default" icon={{ svg: { name: 'filled-action-check' } }} />
@@ -86,6 +90,13 @@ storiesOf('NatSelectInput', module)
     <StoryNatSelectInput type="disabled" />
   ));
 */
+
+storiesOf('NatButton', module)
+  .addDecorator(getStory => <CenterView>{getStory()}</CenterView>)
+  .add('All', () => (
+    <StoryNatButton />
+  ));
+
 storiesOf('NatMenuItem', module)
   .addDecorator(getStory => <CenterView>{getStory()}</CenterView>)
   .add('All', () => (
