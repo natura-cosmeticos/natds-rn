@@ -1,0 +1,164 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StoryNatButton component Should render StoryNatButton component  1`] = `
+<RCTSafeAreaView
+  emulateUnlessSupported={true}
+>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#FFFFFF",
+          "bottom": 0,
+          "flexBasis": 0,
+          "flexGrow": 1,
+          "flexShrink": 1,
+          "left": 0,
+          "paddingBottom": 0,
+          "paddingLeft": 16,
+          "paddingRight": 16,
+          "paddingTop": 0,
+          "right": 0,
+          "top": 0,
+        },
+        Object {
+          "backgroundColor": "#FAFAFA",
+          "marginTop": 0,
+          "width": 750,
+        },
+      ]
+    }
+  >
+    <RCTScrollView>
+      <View>
+        <View
+          margin={24}
+          style={
+            Array [
+              Object {
+                "marginBottom": 24,
+                "marginLeft": 0,
+                "marginRight": 0,
+                "marginTop": 0,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
+              },
+            ]
+          }
+        >
+          <Text
+            color="#333333"
+            style={
+              Array [
+                Object {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "fontWeight": "400",
+                  "lineHeight": 24,
+                },
+              ]
+            }
+            type="body1"
+          >
+            Buttons by type
+          </Text>
+        </View>
+        <View
+          accessibilityRole="button"
+          accessible={true}
+          focusable={true}
+          isTVSelectable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "#F4AB34",
+              "borderColor": "transparent",
+              "borderRadius": 6,
+              "borderWidth": 0,
+              "flexDirection": "row",
+              "height": 48,
+              "justifyContent": "center",
+              "opacity": 1,
+              "width": "100%",
+            }
+          }
+        >
+          <Text
+            accessibilityLabel="Button with type newDefault"
+            style={
+              Array [
+                Object {
+                  "alignSelf": "center",
+                  "color": "#333333",
+                  "fontFamily": "System",
+                  "fontSize": 14,
+                  "fontWeight": "bold",
+                  "letterSpacing": 1,
+                },
+              ]
+            }
+            type="newDefault"
+          >
+            BUTTON WITH TYPE NEWDEFAULT
+          </Text>
+        </View>
+        <View
+          accessibilityRole="button"
+          accessible={true}
+          focusable={true}
+          isTVSelectable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "#FFFFFF",
+              "borderColor": "transparent",
+              "borderRadius": 6,
+              "borderWidth": 0,
+              "flexDirection": "row",
+              "height": 40,
+              "justifyContent": "center",
+              "opacity": 1,
+              "width": 328,
+            }
+          }
+        >
+          <Text
+            accessibilityLabel="Button with type short"
+            style={
+              Array [
+                Object {
+                  "alignSelf": "center",
+                  "color": "#F4AB34",
+                  "fontFamily": "System",
+                  "fontSize": 14,
+                  "fontWeight": "bold",
+                  "letterSpacing": 1,
+                },
+              ]
+            }
+            type="short"
+          >
+            BUTTON WITH TYPE SHORT
+          </Text>
+        </View>
+      </View>
+    </RCTScrollView>
+  </View>
+</RCTSafeAreaView>
+`;
