@@ -89,6 +89,11 @@ exports[`StoryNatListItem component Should render StoryNatListItem component  1`
             >
               <SvgMock
                 height={24}
+                style={
+                  Object {
+                    "fill": "#333333",
+                  }
+                }
                 width={24}
               />
             </View>
@@ -193,6 +198,11 @@ exports[`StoryNatListItem component Should render StoryNatListItem component  1`
             >
               <SvgMock
                 height={24}
+                style={
+                  Object {
+                    "fill": "#333333",
+                  }
+                }
                 width={24}
               />
             </View>
@@ -265,6 +275,11 @@ exports[`StoryNatListItem component Should render StoryNatListItem component  1`
             >
               <SvgMock
                 height={24}
+                style={
+                  Object {
+                    "fill": "#333333",
+                  }
+                }
                 width={24}
               />
             </View>
@@ -673,12 +688,10 @@ exports[`StoryNatListItem component Should render StoryNatListItem component  1`
                   }
                 }
                 style={
-                  Array [
-                    Object {
-                      "height": 24,
-                      "width": 24,
-                    },
-                  ]
+                  Object {
+                    "height": 24,
+                    "width": 24,
+                  }
                 }
               />
             </View>
@@ -754,12 +767,10 @@ exports[`StoryNatListItem component Should render StoryNatListItem component  1`
                   }
                 }
                 style={
-                  Array [
-                    Object {
-                      "height": 24,
-                      "width": 24,
-                    },
-                  ]
+                  Object {
+                    "height": 24,
+                    "width": 24,
+                  }
                 }
               />
             </View>
@@ -1127,7 +1138,6 @@ exports[`StoryNatListItem component Should render StoryNatListItem component  1`
           <View
             style={
               Object {
-                "alignSelf": "center",
                 "position": "absolute",
                 "right": 0,
               }
@@ -1159,11 +1169,7 @@ exports[`StoryNatListItem component Should render StoryNatListItem component  1`
                   "width": 40,
                 }
               }
-            >
-              <Text>
-                DS
-              </Text>
-            </View>
+            />
           </View>
         </View>
         <View
@@ -1200,11 +1206,7 @@ exports[`StoryNatListItem component Should render StoryNatListItem component  1`
           }
         >
           <View
-            style={
-              Object {
-                "alignSelf": "center",
-              }
-            }
+            style={Object {}}
           >
             <View
               accessible={true}
@@ -1232,11 +1234,7 @@ exports[`StoryNatListItem component Should render StoryNatListItem component  1`
                   "width": 40,
                 }
               }
-            >
-              <Text>
-                DS
-              </Text>
-            </View>
+            />
           </View>
           <View
             hideIconLeft={false}
