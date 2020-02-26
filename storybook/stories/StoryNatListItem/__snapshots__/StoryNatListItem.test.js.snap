@@ -40,25 +40,26 @@ exports[`StoryNatListItem component Should render StoryNatListItem component  1`
           style={
             Array [
               Object {
-                "alignItems": "stretch",
-                "backgroundColor": "#FFFFFF",
+                "backgroundColor": "#FFFFFF29",
                 "flexBasis": 0,
-                "flexDirection": "row",
                 "flexGrow": 1,
                 "flexShrink": 1,
-                "height": 48,
                 "paddingBottom": 0,
                 "paddingLeft": 0,
                 "paddingRight": 0,
                 "paddingTop": 0,
-                "position": "relative",
                 "width": "100%",
               },
             ]
           }
         >
           <View
-            style={Object {}}
+            style={
+              Object {
+                "left": 0,
+                "position": "absolute",
+              }
+            }
           >
             <View
               accessible={true}
@@ -109,7 +110,6 @@ exports[`StoryNatListItem component Should render StoryNatListItem component  1`
                   "color": "#333333",
                   "justifyContent": "center",
                   "left": 48,
-                  "position": "absolute",
                   "right": 48,
                   "top": 0,
                 },
@@ -224,27 +224,28 @@ exports[`StoryNatListItem component Should render StoryNatListItem component  1`
           style={
             Array [
               Object {
-                "alignItems": "stretch",
                 "backgroundColor": "#FF6B0B29",
                 "borderBottomColor": "#EEEEEE",
                 "borderBottomWidth": 1,
                 "flexBasis": 0,
-                "flexDirection": "row",
                 "flexGrow": 1,
                 "flexShrink": 1,
-                "height": 48,
                 "paddingBottom": 0,
                 "paddingLeft": 0,
                 "paddingRight": 0,
                 "paddingTop": 0,
-                "position": "relative",
                 "width": "100%",
               },
             ]
           }
         >
           <View
-            style={Object {}}
+            style={
+              Object {
+                "left": 0,
+                "position": "absolute",
+              }
+            }
           >
             <View
               accessible={true}
@@ -295,7 +296,6 @@ exports[`StoryNatListItem component Should render StoryNatListItem component  1`
                   "color": "#333333",
                   "justifyContent": "center",
                   "left": 48,
-                  "position": "absolute",
                   "right": 48,
                   "top": 0,
                 },
@@ -400,25 +400,26 @@ exports[`StoryNatListItem component Should render StoryNatListItem component  1`
           style={
             Array [
               Object {
-                "alignItems": "stretch",
-                "backgroundColor": "#FFFFFF",
+                "backgroundColor": "#FFFFFF29",
                 "flexBasis": 0,
-                "flexDirection": "row",
                 "flexGrow": 1,
                 "flexShrink": 1,
-                "height": 48,
                 "paddingBottom": 0,
                 "paddingLeft": 0,
                 "paddingRight": 0,
                 "paddingTop": 0,
-                "position": "relative",
                 "width": "100%",
               },
             ]
           }
         >
           <View
-            style={Object {}}
+            style={
+              Object {
+                "left": 0,
+                "position": "absolute",
+              }
+            }
           >
             <View
               accessible={true}
@@ -459,7 +460,6 @@ exports[`StoryNatListItem component Should render StoryNatListItem component  1`
                   "color": "#333333",
                   "justifyContent": "center",
                   "left": 48,
-                  "position": "absolute",
                   "right": 48,
                   "top": 0,
                 },
@@ -564,20 +564,16 @@ exports[`StoryNatListItem component Should render StoryNatListItem component  1`
           style={
             Array [
               Object {
-                "alignItems": "stretch",
-                "backgroundColor": "#FFFFFF",
+                "backgroundColor": "#FFFFFF29",
                 "borderTopColor": "#EEEEEE",
                 "borderTopWidth": 1,
                 "flexBasis": 0,
-                "flexDirection": "row",
                 "flexGrow": 1,
                 "flexShrink": 1,
-                "height": 48,
                 "paddingBottom": 0,
                 "paddingLeft": 0,
                 "paddingRight": 0,
                 "paddingTop": 0,
-                "position": "relative",
                 "width": "100%",
               },
             ]
@@ -594,7 +590,6 @@ exports[`StoryNatListItem component Should render StoryNatListItem component  1`
                   "color": "#333333",
                   "justifyContent": "center",
                   "left": 0,
-                  "position": "absolute",
                   "right": 48,
                   "top": 0,
                 },
@@ -713,25 +708,26 @@ exports[`StoryNatListItem component Should render StoryNatListItem component  1`
           style={
             Array [
               Object {
-                "alignItems": "stretch",
                 "backgroundColor": "#FF6B0B29",
                 "flexBasis": 0,
-                "flexDirection": "row",
                 "flexGrow": 1,
                 "flexShrink": 1,
-                "height": 48,
                 "paddingBottom": 0,
                 "paddingLeft": 0,
                 "paddingRight": 0,
                 "paddingTop": 0,
-                "position": "relative",
                 "width": "100%",
               },
             ]
           }
         >
           <View
-            style={Object {}}
+            style={
+              Object {
+                "left": 0,
+                "position": "absolute",
+              }
+            }
           >
             <View
               accessible={true}
@@ -786,7 +782,6 @@ exports[`StoryNatListItem component Should render StoryNatListItem component  1`
                   "color": "#333333",
                   "justifyContent": "center",
                   "left": 48,
-                  "position": "absolute",
                   "right": 48,
                   "top": 0,
                 },
@@ -891,18 +886,14 @@ exports[`StoryNatListItem component Should render StoryNatListItem component  1`
           style={
             Array [
               Object {
-                "alignItems": "stretch",
-                "backgroundColor": "#FFFFFF",
+                "backgroundColor": "#FFFFFF29",
                 "flexBasis": 0,
-                "flexDirection": "row",
                 "flexGrow": 1,
                 "flexShrink": 1,
-                "height": 48,
                 "paddingBottom": 0,
                 "paddingLeft": 0,
                 "paddingRight": 0,
                 "paddingTop": 0,
-                "position": "relative",
                 "width": "100%",
               },
             ]
@@ -919,7 +910,6 @@ exports[`StoryNatListItem component Should render StoryNatListItem component  1`
                   "color": "#333333",
                   "justifyContent": "center",
                   "left": 0,
-                  "position": "absolute",
                   "right": 48,
                   "top": 0,
                 },
@@ -1024,25 +1014,26 @@ exports[`StoryNatListItem component Should render StoryNatListItem component  1`
           style={
             Array [
               Object {
-                "alignItems": "stretch",
-                "backgroundColor": "#FFFFFF",
+                "backgroundColor": "#FFFFFF29",
                 "flexBasis": 0,
-                "flexDirection": "row",
                 "flexGrow": 1,
                 "flexShrink": 1,
-                "height": 48,
                 "paddingBottom": 0,
                 "paddingLeft": 0,
                 "paddingRight": 0,
                 "paddingTop": 0,
-                "position": "relative",
                 "width": "100%",
               },
             ]
           }
         >
           <View
-            style={Object {}}
+            style={
+              Object {
+                "left": 0,
+                "position": "absolute",
+              }
+            }
           >
             <View
               accessible={true}
@@ -1083,7 +1074,6 @@ exports[`StoryNatListItem component Should render StoryNatListItem component  1`
                   "color": "#333333",
                   "justifyContent": "center",
                   "left": 48,
-                  "position": "absolute",
                   "right": 48,
                   "top": 0,
                 },
@@ -1188,25 +1178,26 @@ exports[`StoryNatListItem component Should render StoryNatListItem component  1`
           style={
             Array [
               Object {
-                "alignItems": "stretch",
-                "backgroundColor": "#FFFFFF",
+                "backgroundColor": "#FFFFFF29",
                 "flexBasis": 0,
-                "flexDirection": "row",
                 "flexGrow": 1,
                 "flexShrink": 1,
-                "height": 48,
                 "paddingBottom": 0,
                 "paddingLeft": 0,
                 "paddingRight": 0,
                 "paddingTop": 0,
-                "position": "relative",
                 "width": "100%",
               },
             ]
           }
         >
           <View
-            style={Object {}}
+            style={
+              Object {
+                "left": 0,
+                "position": "absolute",
+              }
+            }
           >
             <View
               accessible={true}
@@ -1247,7 +1238,6 @@ exports[`StoryNatListItem component Should render StoryNatListItem component  1`
                   "color": "#333333",
                   "justifyContent": "center",
                   "left": 48,
-                  "position": "absolute",
                   "right": 48,
                   "top": 0,
                 },
@@ -1352,25 +1342,26 @@ exports[`StoryNatListItem component Should render StoryNatListItem component  1`
           style={
             Array [
               Object {
-                "alignItems": "stretch",
-                "backgroundColor": "#FFFFFF",
+                "backgroundColor": "#FFFFFF29",
                 "flexBasis": 0,
-                "flexDirection": "row",
                 "flexGrow": 1,
                 "flexShrink": 1,
-                "height": 48,
                 "paddingBottom": 0,
                 "paddingLeft": 0,
                 "paddingRight": 0,
                 "paddingTop": 0,
-                "position": "relative",
                 "width": "100%",
               },
             ]
           }
         >
           <View
-            style={Object {}}
+            style={
+              Object {
+                "left": 0,
+                "position": "absolute",
+              }
+            }
           >
             <View
               accessible={true}
@@ -1411,7 +1402,6 @@ exports[`StoryNatListItem component Should render StoryNatListItem component  1`
                   "color": "#333333",
                   "justifyContent": "center",
                   "left": 48,
-                  "position": "absolute",
                   "right": 48,
                   "top": 0,
                 },
