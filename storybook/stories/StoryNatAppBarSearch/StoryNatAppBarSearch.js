@@ -23,6 +23,7 @@ export const StoryNatAppBarSearch = () => {
   const [search2, setSearch2] = useState('');
   const [search3, setSearch3] = useState('');
   const [search4, setSearch4] = useState('');
+  const [search5, setSearch5] = useState('');
 
   return (
     <SafeAreaView>
@@ -63,6 +64,16 @@ export const StoryNatAppBarSearch = () => {
             onPressRight={() => alert('press right icon')}
           />
           <NatText value={`Search value: ${search4}`} />
+          <NatAppBarSearch
+            title="Search5 - submit on each tap"
+            value={search5}
+            onSubmit={text => setSearch5(text)}
+            showIconLeft={false}
+            onPressLeft={() => alert('press left icon')}
+            onPressRight={() => alert('press right icon')}
+            submitOnChange
+          />
+          <NatText value={`Search value: ${search5}`} />
         </ScrollView>
       </NatContainer>
     </SafeAreaView>
