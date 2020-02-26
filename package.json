@@ -15,6 +15,7 @@
     "ios": "react-native run-ios",
     "storybook": "start-storybook -p 7007",
     "cm": "git-cz",
+    "release": "semantic-release",
     "build": "rm -rf dist && babel lib --out-dir dist --ignore node_modules,dist --source-maps --copy-files --no-babelrc --presets react-native"
   },
   "husky": {
@@ -58,7 +59,12 @@
     "react-dom": "16.8.3",
     "react-native": "^0.61.4",
     "react-native-svg-transformer": "^0.14.3",
-    "react-test-renderer": "16.9.0"
+    "react-test-renderer": "16.9.0",
+    "semantic-release": "^17.0.4"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-native": ">=0.59.10"
   },
   "jest": {
     "preset": "react-native",
