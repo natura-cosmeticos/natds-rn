@@ -10,6 +10,6 @@ describe('StoryNatButton component', () => {
       <StoryNatButton />,
     ).toJSON();
 
-    expect(button).toMatchSnapshot();
+    expect(button).toMatchSnapshot('StoryNatButton default render');
   });
 });
