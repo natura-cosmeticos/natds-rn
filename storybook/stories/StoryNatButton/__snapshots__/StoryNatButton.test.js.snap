@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`StoryNatButton component Should render StoryNatButton component  1`] = `
+exports[`StoryNatButton component Should render StoryNatButton component : StoryNatButton default render 1`] = `
 <RCTSafeAreaView
   emulateUnlessSupported={true}
 >
@@ -54,13 +54,13 @@ exports[`StoryNatButton component Should render StoryNatButton component  1`] = 
               Array [
                 Object {
                   "color": "#333333",
-                  "fontSize": 16,
-                  "fontWeight": "400",
-                  "lineHeight": 24,
+                  "fontSize": 20,
+                  "fontWeight": "500",
+                  "lineHeight": 30,
                 },
               ]
             }
-            type="body1"
+            type="h6"
           >
             Buttons - Variations
           </Text>
@@ -474,13 +474,13 @@ exports[`StoryNatButton component Should render StoryNatButton component  1`] = 
               Array [
                 Object {
                   "color": "#333333",
-                  "fontSize": 16,
-                  "fontWeight": "400",
-                  "lineHeight": 24,
+                  "fontSize": 20,
+                  "fontWeight": "500",
+                  "lineHeight": 30,
                 },
               ]
             }
-            type="body1"
+            type="h6"
           >
             Buttons - Social Selling
           </Text>
