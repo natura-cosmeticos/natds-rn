@@ -8,6 +8,7 @@ import {
   NatContainer,
   NatText,
   NatButton,
+  NatSpace,
 } from '../../../lib';
 
 const styles = {
@@ -36,15 +37,54 @@ export const StoryNatButton = () => {
     <SafeAreaView>
       <NatContainer style={styles.defaultScreen}>
         <ScrollView>
-          <NatText value={`Buttons by type`} />
+          <NatText value={`Buttons - Variations`} type="h6" />
+          <NatSpace />
           <NatButton
             type="newDefault"
-            label="Button with type newDefault"
+            label="newDefault"
+            onPress={() => alert('press button')}
+          />
+          <NatSpace />
+          <NatButton
+            type="disabled"
+            label="disabled"
+            onPress={() => alert('press button')}
+          />
+          <NatSpace />
+          <NatButton
+            type="link"
+            label="link"
+            onPress={() => alert('press button')}
+          />
+          <NatSpace />
+          <NatButton
+            type="newShort"
+            label="newShort"
+            onPress={() => alert('press button')}
+          />
+          <NatSpace />
+          <NatButton
+            type="outline"
+            label="outline"
+            onPress={() => alert('press button')}
+          />
+          <NatSpace />
+          <NatText value={`Buttons - Social Selling`} type="h6" />
+          <NatSpace />
+          <NatButton
+            type="default"
+            label="default"
+            onPress={() => alert('press button')}
+          />
+          <NatSpace />
+          <NatButton
+            type="short"
+            label="short"
             onPress={() => alert('press button')}
           />
           <NatButton
-            type="short"
-            label="Button with type short"
+            type="card"
+            label="card"
             onPress={() => alert('press button')}
           />
         </ScrollView>
