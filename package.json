@@ -1,6 +1,7 @@
 {
   "name": "natura-design-system",
   "version": "0.0.1",
+  "license": "MIT",
   "main": "lib/index.js",
   "scripts": {
     "start": "react-native start",
@@ -8,17 +9,18 @@
     "test": "jest --collectCoverage",
     "test:clean": "jest --update-snapshot",
     "ios:5": "react-native run-ios --simulator=\"iPhone 5s\"",
-    "coverage": "jest --coverage",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "storybook": "start-storybook -p 7007",
+    "cm": "git-cz",
+    "release": "semantic-release",
     "build": "rm -rf dist && babel lib --out-dir dist --ignore node_modules,dist --source-maps --copy-files --no-babelrc --presets react-native"
   },
   "husky": {
     "hooks": {
-      "pre-push": "npm run test"
+      "pre-push": "yarn test"
     }
   },
   "dependencies": {
@@ -42,6 +44,7 @@
     "babel-jest": "^24.9.0",
     "babel-loader": "^8.0.6",
     "babel-preset-react-native": "^1.9.2",
+    "cz-conventional-changelog": "3.1.0",
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.12.1",
     "eslint": "^6.5.1",
@@ -56,7 +59,8 @@
     "react-dom": "16.8.3",
     "react-native": "^0.61.4",
     "react-native-svg-transformer": "^0.14.3",
-    "react-test-renderer": "16.9.0"
+    "react-test-renderer": "16.9.0",
+    "semantic-release": "^17.0.4"
   },
   "peerDependencies": {
     "react": ">=16.8.0",
@@ -87,6 +91,11 @@
         "lines": 75,
         "statements": 75
       }
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
     }
   }
 }
