@@ -116,6 +116,7 @@ export const StoryNatSelectInput = ({ type }) => {
             size="normal"
             type={type}
             options={options}
+            multiSelect
           />
           <NatText value={`Value: ${JSON.stringify(input3)}`} />
           <NatText value="Select multiple - initial value" type="h6" />
@@ -130,6 +131,7 @@ export const StoryNatSelectInput = ({ type }) => {
             size="normal"
             type={type}
             options={options}
+            multiSelect
           />
           <NatText value={`Value: ${JSON.stringify(input4)}`} />
         </ScrollView>
