@@ -76,8 +76,7 @@ storiesOf('NatTextInput', module)
   .add('With icon - SVG', () => (
     <StoryNatTextInput type="default" icon={{ svg: { name: 'filled-action-check' } }} />
   ));
-/*
-NatSelectInput in Delevoping
+
 storiesOf('NatSelectInput', module)
   .addDecorator(getStory => <CenterView>{getStory()}</CenterView>)
   .add('Default', () => (
@@ -89,7 +88,6 @@ storiesOf('NatSelectInput', module)
   .add('Disabled', () => (
     <StoryNatSelectInput type="disabled" />
   ));
-*/
 
 storiesOf('NatButton', module)
   .addDecorator(getStory => <CenterView>{getStory()}</CenterView>)
@@ -112,12 +110,6 @@ storiesOf('NatList', module)
     <StoryNatListItem />
   ));
 
-storiesOf('NatHeader - SS', module)
-  .addDecorator(getStory => <CenterView>{getStory()}</CenterView>)
-  .add('All', () => (
-    <StoryNatHeader />
-  ));
-
 storiesOf('NatAppBar', module)
   .addDecorator(getStory => <CenterView>{getStory()}</CenterView>)
   .add('All', () => (
@@ -131,6 +123,12 @@ storiesOf('NatCard', module)
   .addDecorator(getStory => <CenterView>{getStory()}</CenterView>)
   .add('Default', () => (
     <StoryNatCard />
+  ));
+
+storiesOf('NatHeader - SS', module)
+  .addDecorator(getStory => <CenterView>{getStory()}</CenterView>)
+  .add('All', () => (
+    <StoryNatHeader />
   ));
 
 storiesOf('Screen Samples', module)
