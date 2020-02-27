@@ -1,0 +1,31 @@
+language: android
+os: linux
+
+jobs:
+  include:
+    - stage: Push Alpha Tag
+      before_install:
+        - nvm install 12 && node --version
+      if: type = pull_request AND branch = develop AND tag IS blank
+      script: ./.travis/push-alpha-tag.sh
+    - stage: Build Release Artifact
+      android: 
+        components:
+        - build-tools-28.0.3
+        - android-28
+        - extra-android-m2repository
+        - extra-google-google_play_services
+        - extra-google-m2repository
+        - addon-google_apis-google-16
+      if: type = push AND tag IS present
+      before_install:
+        - nvm install 12 && node --version
+      install: yarn
+      script: ./.travis/utils/fix-max-file-watch.sh && cd android && ./gradlew assembleRelease 
+      deploy:
+        provider: releases
+        api_key: $GH_TOKEN
+        file: $TRAVIS_BUILD_DIR/android/app/build/outputs/apk/release/app-release.apk
+        on:
+          repo: natura-cosmeticos/natds-rn
+          tags: true
