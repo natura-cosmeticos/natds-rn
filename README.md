@@ -2,6 +2,18 @@
 
 Repositório de componentes React Native.
 
+Para instalação dos componentes, rode na raiz do seu projeto
+
+```sh
+npm install --save @naturacosmeticos/natds-rn
+
+# OR
+
+yarn add @naturacosmeticos/natds-rn
+```
+
+# Contribuindo
+
 ## Dependências
 
 - Yarn 1.21.1^

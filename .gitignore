@@ -61,7 +61,4 @@ buck-out/
 # Coverage
 coverage
 
-# Distribution Bundle
-/dist
-
 package-lock.json
