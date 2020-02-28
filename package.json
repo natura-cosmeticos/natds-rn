@@ -1,8 +1,11 @@
 {
-  "name": "natura-design-system",
-  "version": "0.0.1",
+  "name": "@naturacosmeticos/natds-rn",
+  "version": "0.0.0-development",
   "license": "MIT",
   "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
   "scripts": {
     "start": "react-native start",
     "start:clear": "react-native start --reset-cache",
@@ -15,8 +18,7 @@
     "ios": "react-native run-ios",
     "storybook": "start-storybook -p 7007",
     "cm": "git-cz",
-    "release": "semantic-release",
-    "build": "rm -rf dist && babel lib --out-dir dist --ignore node_modules,dist --source-maps --copy-files --no-babelrc --presets react-native"
+    "release": "semantic-release"
   },
   "husky": {
     "hooks": {
