@@ -148,6 +148,11 @@ exports[`Header component Should render container component correctly 1`] = `
             >
               <SvgMock
                 height={24}
+                style={
+                  Object {
+                    "fill": "#333333",
+                  }
+                }
                 width={24}
               />
             </View>
@@ -252,6 +257,11 @@ exports[`Header component Should render container component correctly 1`] = `
             >
               <SvgMock
                 height={24}
+                style={
+                  Object {
+                    "fill": "#333333",
+                  }
+                }
                 width={24}
               />
             </View>
@@ -421,6 +431,11 @@ exports[`Header component Should render container component correctly 1`] = `
             >
               <SvgMock
                 height={24}
+                style={
+                  Object {
+                    "fill": "#333333",
+                  }
+                }
                 width={24}
               />
             </View>
@@ -489,6 +504,11 @@ exports[`Header component Should render container component correctly 1`] = `
             >
               <SvgMock
                 height={24}
+                style={
+                  Object {
+                    "fill": "#333333",
+                  }
+                }
                 width={24}
               />
             </View>
@@ -658,6 +678,11 @@ exports[`Header component Should render container component correctly 1`] = `
             >
               <SvgMock
                 height={24}
+                style={
+                  Object {
+                    "fill": "#333333",
+                  }
+                }
                 width={24}
               />
             </View>

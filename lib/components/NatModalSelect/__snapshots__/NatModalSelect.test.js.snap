@@ -1171,19 +1171,7 @@ exports[`NatModalSelect and its variants NatModalSelect Should match snapshot 1`
                   "width": 40,
                 }
               }
-            >
-              <Image
-                source={null}
-                style={
-                  Array [
-                    Object {
-                      "height": 24,
-                      "width": 24,
-                    },
-                  ]
-                }
-              />
-            </View>
+            />
           </View>
         </View>
       </View>
@@ -2428,19 +2416,7 @@ exports[`NatModalSelect and its variants NatModalSelect error should render the 
                   "width": 40,
                 }
               }
-            >
-              <Image
-                source={null}
-                style={
-                  Array [
-                    Object {
-                      "height": 24,
-                      "width": 24,
-                    },
-                  ]
-                }
-              />
-            </View>
+            />
           </View>
         </View>
       </View>
@@ -3685,19 +3661,7 @@ exports[`NatModalSelect and its variants NatModalSelect save should render the s
                   "width": 40,
                 }
               }
-            >
-              <Image
-                source={null}
-                style={
-                  Array [
-                    Object {
-                      "height": 24,
-                      "width": 24,
-                    },
-                  ]
-                }
-              />
-            </View>
+            />
           </View>
         </View>
       </View>

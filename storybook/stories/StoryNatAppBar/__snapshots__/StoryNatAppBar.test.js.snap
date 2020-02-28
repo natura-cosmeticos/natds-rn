@@ -97,6 +97,11 @@ exports[`StoryNatAppBar component Should render StoryNatAppBar component  1`] = 
             >
               <SvgMock
                 height={24}
+                style={
+                  Object {
+                    "fill": "#333333",
+                  }
+                }
                 width={24}
               />
             </View>
@@ -171,6 +176,11 @@ exports[`StoryNatAppBar component Should render StoryNatAppBar component  1`] = 
             >
               <SvgMock
                 height={24}
+                style={
+                  Object {
+                    "fill": "#333333",
+                  }
+                }
                 width={24}
               />
             </View>
@@ -249,6 +259,11 @@ exports[`StoryNatAppBar component Should render StoryNatAppBar component  1`] = 
             >
               <SvgMock
                 height={24}
+                style={
+                  Object {
+                    "fill": "#333333",
+                  }
+                }
                 width={24}
               />
             </View>
@@ -320,19 +335,7 @@ exports[`StoryNatAppBar component Should render StoryNatAppBar component  1`] = 
                   "width": 40,
                 }
               }
-            >
-              <Image
-                source={null}
-                style={
-                  Array [
-                    Object {
-                      "height": 24,
-                      "width": 24,
-                    },
-                  ]
-                }
-              />
-            </View>
+            />
           </View>
         </View>
         <View
@@ -405,19 +408,7 @@ exports[`StoryNatAppBar component Should render StoryNatAppBar component  1`] = 
                   "width": 40,
                 }
               }
-            >
-              <Image
-                source={null}
-                style={
-                  Array [
-                    Object {
-                      "height": 24,
-                      "width": 24,
-                    },
-                  ]
-                }
-              />
-            </View>
+            />
           </View>
           <View
             style={
@@ -486,17 +477,153 @@ exports[`StoryNatAppBar component Should render StoryNatAppBar component  1`] = 
                   "width": 40,
                 }
               }
-            >
-              <Image
-                source={null}
-                style={
-                  Array [
-                    Object {
-                      "height": 24,
-                      "width": 24,
-                    },
-                  ]
+            />
+          </View>
+        </View>
+        <View
+          style={
+            Object {
+              "height": 10,
+            }
+          }
+        />
+        <View
+          accessibilityRole="header"
+          accessible={true}
+          style={
+            Array [
+              Object {
+                "alignItems": "stretch",
+                "backgroundColor": "#FFFFFF",
+                "flexBasis": 0,
+                "flexDirection": "row",
+                "flexGrow": 1,
+                "flexShrink": 1,
+                "height": 56,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
+                "position": "relative",
+                "width": "100%",
+              },
+              Object {
+                "elevation": 1,
+                "shadowColor": "#000",
+                "shadowOffset": Object {
+                  "height": 2,
+                  "width": 0,
+                },
+                "shadowOpacity": 0.24,
+              },
+            ]
+          }
+        >
+          <View
+            style={Object {}}
+          >
+            <View
+              accessible={true}
+              focusable={true}
+              isTVSelectable={true}
+              onClick={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Object {
+                  "alignItems": "center",
+                  "alignSelf": "center",
+                  "flexBasis": 0,
+                  "flexGrow": 1,
+                  "flexShrink": 1,
+                  "height": 56,
+                  "justifyContent": "center",
+                  "opacity": 1,
+                  "paddingBottom": 16,
+                  "paddingLeft": 16,
+                  "paddingRight": 0,
+                  "paddingTop": 16,
+                  "width": 40,
                 }
+              }
+            >
+              <SvgMock
+                height={24}
+                style={
+                  Object {
+                    "fill": "#333333",
+                  }
+                }
+                width={24}
+              />
+            </View>
+          </View>
+          <View
+            style={
+              Object {
+                "alignItems": "flex-start",
+                "bottom": 0,
+                "justifyContent": "flex-start",
+                "left": 40,
+                "position": "absolute",
+                "right": 0,
+                "top": 0,
+              }
+            }
+          >
+            <SvgMock
+              width={200}
+            />
+          </View>
+          <View
+            style={
+              Object {
+                "position": "absolute",
+                "right": 0,
+              }
+            }
+          >
+            <View
+              accessible={true}
+              focusable={true}
+              isTVSelectable={true}
+              onClick={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Object {
+                  "alignItems": "center",
+                  "alignSelf": "center",
+                  "flexBasis": 0,
+                  "flexGrow": 1,
+                  "flexShrink": 1,
+                  "height": 56,
+                  "justifyContent": "center",
+                  "opacity": 1,
+                  "paddingBottom": 16,
+                  "paddingLeft": 0,
+                  "paddingRight": 16,
+                  "paddingTop": 16,
+                  "width": 40,
+                }
+              }
+            >
+              <SvgMock
+                height={24}
+                style={
+                  Object {
+                    "fill": "#333333",
+                  }
+                }
+                width={24}
               />
             </View>
           </View>
@@ -574,6 +701,11 @@ exports[`StoryNatAppBar component Should render StoryNatAppBar component  1`] = 
             >
               <SvgMock
                 height={24}
+                style={
+                  Object {
+                    "fill": "#333333",
+                  }
+                }
                 width={24}
               />
             </View>
@@ -631,12 +763,7 @@ exports[`StoryNatAppBar component Should render StoryNatAppBar component  1`] = 
                   "width": 40,
                 }
               }
-            >
-              <SvgMock
-                height={24}
-                width={24}
-              />
-            </View>
+            />
           </View>
         </View>
         <View
@@ -709,12 +836,7 @@ exports[`StoryNatAppBar component Should render StoryNatAppBar component  1`] = 
                   "width": 40,
                 }
               }
-            >
-              <SvgMock
-                height={24}
-                width={24}
-              />
-            </View>
+            />
           </View>
           <View
             style={
@@ -769,171 +891,7 @@ exports[`StoryNatAppBar component Should render StoryNatAppBar component  1`] = 
                   "width": 40,
                 }
               }
-            >
-              <Image
-                source={null}
-                style={
-                  Array [
-                    Object {
-                      "height": 24,
-                      "width": 24,
-                    },
-                  ]
-                }
-              />
-            </View>
-          </View>
-        </View>
-        <View
-          style={
-            Object {
-              "height": 10,
-            }
-          }
-        />
-        <View
-          accessibilityRole="header"
-          accessible={true}
-          style={
-            Array [
-              Object {
-                "alignItems": "stretch",
-                "backgroundColor": "#FFFFFF",
-                "flexBasis": 0,
-                "flexDirection": "row",
-                "flexGrow": 1,
-                "flexShrink": 1,
-                "height": 56,
-                "paddingBottom": 0,
-                "paddingLeft": 0,
-                "paddingRight": 0,
-                "paddingTop": 0,
-                "position": "relative",
-                "width": "100%",
-              },
-              Object {
-                "elevation": 1,
-                "shadowColor": "#000",
-                "shadowOffset": Object {
-                  "height": 2,
-                  "width": 0,
-                },
-                "shadowOpacity": 0.24,
-              },
-            ]
-          }
-        >
-          <View
-            style={Object {}}
-          >
-            <View
-              accessible={true}
-              focusable={true}
-              isTVSelectable={true}
-              onClick={[Function]}
-              onResponderGrant={[Function]}
-              onResponderMove={[Function]}
-              onResponderRelease={[Function]}
-              onResponderTerminate={[Function]}
-              onResponderTerminationRequest={[Function]}
-              onStartShouldSetResponder={[Function]}
-              style={
-                Object {
-                  "alignItems": "center",
-                  "alignSelf": "center",
-                  "flexBasis": 0,
-                  "flexGrow": 1,
-                  "flexShrink": 1,
-                  "height": 56,
-                  "justifyContent": "center",
-                  "opacity": 1,
-                  "paddingBottom": 16,
-                  "paddingLeft": 16,
-                  "paddingRight": 0,
-                  "paddingTop": 16,
-                  "width": 40,
-                }
-              }
-            >
-              <Image
-                source={null}
-                style={
-                  Array [
-                    Object {
-                      "height": 24,
-                      "width": 24,
-                    },
-                  ]
-                }
-              />
-            </View>
-          </View>
-          <View
-            style={
-              Object {
-                "alignItems": "flex-start",
-                "bottom": 0,
-                "justifyContent": "flex-start",
-                "left": 40,
-                "position": "absolute",
-                "right": 0,
-                "top": 0,
-              }
-            }
-          >
-            <SvgMock
-              width={200}
             />
-          </View>
-          <View
-            style={
-              Object {
-                "position": "absolute",
-                "right": 0,
-              }
-            }
-          >
-            <View
-              accessible={true}
-              focusable={true}
-              isTVSelectable={true}
-              onClick={[Function]}
-              onResponderGrant={[Function]}
-              onResponderMove={[Function]}
-              onResponderRelease={[Function]}
-              onResponderTerminate={[Function]}
-              onResponderTerminationRequest={[Function]}
-              onStartShouldSetResponder={[Function]}
-              style={
-                Object {
-                  "alignItems": "center",
-                  "alignSelf": "center",
-                  "flexBasis": 0,
-                  "flexGrow": 1,
-                  "flexShrink": 1,
-                  "height": 56,
-                  "justifyContent": "center",
-                  "opacity": 1,
-                  "paddingBottom": 16,
-                  "paddingLeft": 0,
-                  "paddingRight": 16,
-                  "paddingTop": 16,
-                  "width": 40,
-                }
-              }
-            >
-              <Image
-                source={null}
-                style={
-                  Array [
-                    Object {
-                      "height": 24,
-                      "width": 24,
-                    },
-                  ]
-                }
-              />
-            </View>
           </View>
         </View>
         <View
@@ -1045,6 +1003,11 @@ exports[`StoryNatAppBar component Should render StoryNatAppBar component  1`] = 
             >
               <SvgMock
                 height={24}
+                style={
+                  Object {
+                    "fill": "#333333",
+                  }
+                }
                 width={24}
               />
             </View>
@@ -1123,6 +1086,11 @@ exports[`StoryNatAppBar component Should render StoryNatAppBar component  1`] = 
             >
               <SvgMock
                 height={24}
+                style={
+                  Object {
+                    "fill": "#333333",
+                  }
+                }
                 width={24}
               />
             </View>

@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NatIcon component default Should render NatIcon component  1`] = `
+<SvgMock
+  height={24}
+  style={
+    Object {
+      "fill": "#333333",
+    }
+  }
+  width={24}
+/>
+`;
