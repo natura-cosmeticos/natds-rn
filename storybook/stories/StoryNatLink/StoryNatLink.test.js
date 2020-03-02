@@ -10,6 +10,6 @@ describe('StoryNatLink component', () => {
       <StoryNatLink />,
     ).toJSON();
 
-    expect(button).toMatchSnapshot();
+    expect(button).toMatchSnapshot('StoryNatLink snapshot');
   });
 });

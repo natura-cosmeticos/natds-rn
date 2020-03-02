@@ -10,6 +10,6 @@ describe('StoryNatMenuItem component', () => {
       <StoryNatMenuItem />,
     ).toJSON();
 
-    expect(button).toMatchSnapshot();
+    expect(button).toMatchSnapshot('StoryNatMenuItem snapshot');
   });
 });

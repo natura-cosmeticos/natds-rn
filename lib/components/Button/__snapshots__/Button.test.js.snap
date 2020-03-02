@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Button component default Should render button component  1`] = `
+exports[`Button component default Should render button component : Button snapshot 1`] = `
 <View>
   <View
     backgroundColor="transparent"

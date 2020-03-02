@@ -10,6 +10,6 @@ describe('StoryNatIcon component', () => {
       <StoryNatIcon />,
     ).toJSON();
 
-    expect(button).toMatchSnapshot();
+    expect(button).toMatchSnapshot('StoryNatIcon snapshot');
   });
 });

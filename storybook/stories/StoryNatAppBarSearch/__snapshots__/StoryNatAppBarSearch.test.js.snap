@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`StoryNatAppBarSearch component Should render StoryNatAppBarSearch component  1`] = `
+exports[`StoryNatAppBarSearch component Should render StoryNatAppBarSearch component : StoryNatAppBarSearch snapshot 1`] = `
 <RCTSafeAreaView
   emulateUnlessSupported={true}
   style={

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`StoryNatIcon component Should render StoryNatIcon component  1`] = `
+exports[`StoryNatIcon component Should render StoryNatIcon component : StoryNatIcon snapshot 1`] = `
 <RCTSafeAreaView
   emulateUnlessSupported={true}
   style={

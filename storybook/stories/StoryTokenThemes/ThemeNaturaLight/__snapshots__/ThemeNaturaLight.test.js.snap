@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ThemeNaturaLight component Should render ThemeNaturaLight component  1`] = `
+exports[`ThemeNaturaLight component Should render ThemeNaturaLight component : ThemeNaturaLight snapshot 1`] = `
 <RCTSafeAreaView
   emulateUnlessSupported={true}
   style={
