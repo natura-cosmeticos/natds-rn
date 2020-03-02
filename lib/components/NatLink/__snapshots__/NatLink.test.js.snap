@@ -14,28 +14,48 @@ exports[`NatText component default Should render NatText component  1`] = `
   onStartShouldSetResponder={[Function]}
   style={
     Object {
+      "alignItems": "flex-start",
       "flexBasis": 0,
       "flexGrow": 1,
       "flexShrink": 1,
-      "marginTop": 0,
+      "marginBottom": 0,
       "opacity": 1,
     }
   }
 >
-  <Text
+  <View
+    margin={24}
     style={
       Array [
         Object {
-          "color": "#777777",
-          "fontSize": 14,
-          "fontWeight": "400",
-          "lineHeight": 21,
+          "marginBottom": 24,
+          "marginLeft": 0,
+          "marginRight": 0,
+          "marginTop": 0,
+          "paddingBottom": 0,
+          "paddingLeft": 0,
+          "paddingRight": 0,
+          "paddingTop": 0,
         },
       ]
     }
-    type="body2"
   >
-    Teste
-  </Text>
+    <Text
+      color="#227BBD"
+      style={
+        Array [
+          Object {
+            "color": "#227BBD",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "lineHeight": 21,
+          },
+        ]
+      }
+      type="body2"
+    >
+      Teste
+    </Text>
+  </View>
 </View>
 `;
