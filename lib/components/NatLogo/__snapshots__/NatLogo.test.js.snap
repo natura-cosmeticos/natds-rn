@@ -2,6 +2,7 @@
 
 exports[`NatLogo component default Should render NatLogo component  1`] = `
 <SvgMock
-  width={24}
+  height={0}
+  width={0}
 />
 `;
