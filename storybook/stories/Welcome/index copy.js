@@ -22,7 +22,7 @@ const styles = {
 };
 
 export const Welcome = () => (
-  <SafeAreaView>
+  <SafeAreaView style={styles.defaultScreen}>
     <View style={styles.wrapper}>
       <NatLogo name="logo-natura-vertical" size={300} />
       <Text style={styles.header}>Welcome to NATDS!</Text>

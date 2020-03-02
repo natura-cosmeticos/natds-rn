@@ -14,7 +14,7 @@ import {
 
 const styles = {
   defaultScreen: {
-    backgroundColor: '#FFF',
+    flex: 1,
     width: Dimensions.get('window').width,
   },
 };
@@ -40,8 +40,8 @@ export const StoryTokenColors = () => {
     .map(k => ({ color: Tokens.colors.natura.complementary[k], name: k }));
 
   return (
-    <SafeAreaView>
-      <NatContainer style={styles.defaultScreen}>
+    <SafeAreaView style={styles.defaultScreen}>
+      <NatContainer>
         <ScrollView>
           <NatText type="h6" value="PRIMARY" />
           <FlatList
