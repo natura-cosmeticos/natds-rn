@@ -8165,8 +8165,8 @@ exports[`Button component default Should render button component  1`] = `
     marginRight="none"
     marginTop="none"
     paddingBottom="tiny"
-    paddingLeft="none"
-    paddingRight="none"
+    paddingLeft="small"
+    paddingRight="small"
     paddingTop="small"
     style={
       Array [
@@ -8177,8 +8177,8 @@ exports[`Button component default Should render button component  1`] = `
           "marginRight": 0,
           "marginTop": 0,
           "paddingBottom": 8,
-          "paddingLeft": 0,
-          "paddingRight": 0,
+          "paddingLeft": 16,
+          "paddingRight": 16,
           "paddingTop": 16,
         },
       ]

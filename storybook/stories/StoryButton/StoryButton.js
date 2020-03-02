@@ -15,6 +15,7 @@ import {
 
 const styles = {
   defaultScreen: {
+    flex: 1,
     width: Dimensions.get('window').width,
     marginBottom: 100,
   },
@@ -187,13 +188,13 @@ export const StoryButton = () => {
             onPress={() => alert('press')}
           />
         </ScrollView>
-        <Button
-          type="primary"
-          label="bottom fixed"
-          fixedBottom
-          onPress={() => alert('press')}
-        />
       </NatContainer>
+      <Button
+        type="primary"
+        label="bottom fixed"
+        fixedBottom
+        onPress={() => alert('press')}
+      />
     </SafeAreaView>
   );
 };
