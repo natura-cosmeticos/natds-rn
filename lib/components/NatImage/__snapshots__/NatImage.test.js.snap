@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`NatImage component default Should render NatImage component  1`] = `
+exports[`NatImage component default Should render NatImage component : NatImage snapshot 1`] = `
 <View
   onPress={[Function]}
   style={

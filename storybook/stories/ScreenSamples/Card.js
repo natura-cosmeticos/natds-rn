@@ -57,15 +57,14 @@ export const Card = () => {
 
   const styles = {
     defaultScreen: {
-      backgroundColor: '#FAFAFA',
-      marginTop: 0,
+      flex: 1,
       width: Dimensions.get('window').width,
     },
   };
 
   return (
-    <SafeAreaView>
-      <NatContainer style={styles.defaultScreen}>
+    <SafeAreaView style={styles.defaultScreen}>
+      <NatContainer>
         <ScrollView>
           {examples.map((example, index) => (
             <NatSpace marginBottom="small">

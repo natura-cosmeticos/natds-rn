@@ -10,6 +10,6 @@ describe('StoryNatCard component', () => {
       <StoryNatCard />,
     ).toJSON();
 
-    expect(button).toMatchSnapshot();
+    expect(button).toMatchSnapshot('StoryNatCard snapshot');
   });
 });

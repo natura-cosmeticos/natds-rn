@@ -7,8 +7,7 @@ import { NatContainer, NatTextInput } from '../../../lib';
 
 const styles = {
   defaultScreen: {
-    backgroundColor: '#FFF',
-    marginTop: 0,
+    flex: 1,
     width: Dimensions.get('window').width,
   },
 };
@@ -20,7 +19,7 @@ export const Form = () => {
   const [inputNormal, setInputNormal] = useState('');
 
   return (
-    <SafeAreaView>
+    <SafeAreaView style={styles.defaultScreen}>
       <NatContainer styles={styles}>
         <View>
           <NatTextInput
@@ -38,7 +37,6 @@ export const Form = () => {
             assistiveText="Size Normal"
             onChangeText={setInputNormal}
             value={inputNormal}
-            margin="normal"
           />
           <NatTextInput
             label="Error"

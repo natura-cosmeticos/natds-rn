@@ -13,8 +13,7 @@ import {
 
 const styles = {
   defaultScreen: {
-    backgroundColor: '#FFF',
-    marginTop: 0,
+    flex: 1,
     width: Dimensions.get('window').width,
   },
 };
@@ -73,8 +72,8 @@ export const StoryNatSelectInput = ({ type }) => {
   ];
 
   return (
-    <SafeAreaView>
-      <NatContainer style={styles.defaultScreen}>
+    <SafeAreaView style={styles.defaultScreen}>
+      <NatContainer>
         <ScrollView>
           <NatText value="Select - empty" type="h6" />
           <NatSelectInput

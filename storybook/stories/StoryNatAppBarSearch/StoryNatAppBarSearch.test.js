@@ -10,6 +10,6 @@ describe('StoryNatAppBarSearch component', () => {
       <StoryNatAppBarSearch />,
     ).toJSON();
 
-    expect(button).toMatchSnapshot();
+    expect(button).toMatchSnapshot('StoryNatAppBarSearch snapshot');
   });
 });

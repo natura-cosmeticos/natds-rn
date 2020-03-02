@@ -1,21 +1,25 @@
 import React, { useState } from 'react';
-import { SafeAreaView } from 'react-native';
+import { SafeAreaView, Dimensions } from 'react-native';
 
 import styled from 'styled-components/native';
 import { header } from '../../../lib/assets/theme/typography/typography';
-import { NatPeriodButton, NatCounterToggler, NatGenericCard } from '../../../lib';
-
-export const CustomContainer = styled.View`
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justifyContent: center;
-    alignItems: center;
-`;
+import {
+  NatPeriodButton,
+  NatCounterToggler,
+  NatGenericCard,
+  NatContainer,
+} from '../../../lib';
 
 export const HeaderText = styled.Text`
   ${header.Small}
 `;
+
+const styles = {
+  defaultScreen: {
+    flex: 1,
+    width: Dimensions.get('window').width,
+  },
+};
 
 const FlexNatGenericCard = {
   alignItems: 'center',
@@ -37,8 +41,8 @@ export const FriendExchange = () => {
   };
 
   return (
-    <SafeAreaView>
-      <CustomContainer>
+    <SafeAreaView style={styles.defaultScreen}>
+      <NatContainer>
         <NatGenericCard style={FlexNatGenericCard}>
           <HeaderText>Counter Toggler</HeaderText>
           <NatCounterToggler
@@ -59,7 +63,7 @@ export const FriendExchange = () => {
           <NatPeriodButton selected title="A combinar" onSelect={() => null} iconSrc="https://i.imgur.com/gM3z36s.png" />
         </NatGenericCard>
 
-      </CustomContainer>
+      </NatContainer>
     </SafeAreaView>
   );
 };

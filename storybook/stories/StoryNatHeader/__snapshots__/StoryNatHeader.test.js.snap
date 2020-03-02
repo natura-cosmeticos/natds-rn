@@ -1,30 +1,36 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`StoryNatHeader component Should render StoryNatHeader component  1`] = `
+exports[`StoryNatHeader component Should render StoryNatHeader component : StoryNatHeader snapshot 1`] = `
 <RCTSafeAreaView
   emulateUnlessSupported={true}
+  style={
+    Object {
+      "flex": 1,
+      "width": 750,
+    }
+  }
 >
   <View
+    marginBottom="none"
+    marginLeft="none"
+    marginRight="none"
+    marginTop="none"
+    paddingBottom="small"
+    paddingLeft="small"
+    paddingRight="small"
+    paddingTop="small"
     style={
       Array [
         Object {
           "backgroundColor": "#FFFFFF",
-          "bottom": 0,
-          "flexBasis": 0,
-          "flexGrow": 1,
-          "flexShrink": 1,
-          "left": 0,
-          "paddingBottom": 0,
+          "marginBottom": 0,
+          "marginLeft": 0,
+          "marginRight": 0,
+          "marginTop": 0,
+          "paddingBottom": 16,
           "paddingLeft": 16,
           "paddingRight": 16,
-          "paddingTop": 0,
-          "right": 0,
-          "top": 0,
-        },
-        Object {
-          "backgroundColor": "#FAFAFA",
-          "marginTop": 0,
-          "width": 750,
+          "paddingTop": 16,
         },
       ]
     }

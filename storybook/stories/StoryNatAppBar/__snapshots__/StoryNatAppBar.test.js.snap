@@ -1,30 +1,36 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`StoryNatAppBar component Should render StoryNatAppBar component  1`] = `
+exports[`StoryNatAppBar component Should render StoryNatAppBar component : StoryNatAppBar snapshot 1`] = `
 <RCTSafeAreaView
   emulateUnlessSupported={true}
+  style={
+    Object {
+      "flex": 1,
+      "width": 750,
+    }
+  }
 >
   <View
+    marginBottom="none"
+    marginLeft="none"
+    marginRight="none"
+    marginTop="none"
+    paddingBottom="small"
+    paddingLeft="small"
+    paddingRight="small"
+    paddingTop="small"
     style={
       Array [
         Object {
           "backgroundColor": "#FFFFFF",
-          "bottom": 0,
-          "flexBasis": 0,
-          "flexGrow": 1,
-          "flexShrink": 1,
-          "left": 0,
-          "paddingBottom": 0,
+          "marginBottom": 0,
+          "marginLeft": 0,
+          "marginRight": 0,
+          "marginTop": 0,
+          "paddingBottom": 16,
           "paddingLeft": 16,
           "paddingRight": 16,
-          "paddingTop": 0,
-          "right": 0,
-          "top": 0,
-        },
-        Object {
-          "backgroundColor": "#FAFAFA",
-          "marginTop": 0,
-          "width": 750,
+          "paddingTop": 16,
         },
       ]
     }
@@ -109,12 +115,174 @@ exports[`StoryNatAppBar component Should render StoryNatAppBar component  1`] = 
           <View
             style={
               Object {
+                "alignItems": "center",
+                "bottom": 0,
+                "justifyContent": "center",
+                "left": 40,
+                "position": "absolute",
+                "right": 40,
+                "top": 0,
+              }
+            }
+          >
+            <Text
+              accessibilityLabel="Center title"
+              style={
+                Array [
+                  Object {
+                    "color": "#333333",
+                    "fontSize": 20,
+                    "marginLeft": 0,
+                    "paddingBottom": 16,
+                    "paddingLeft": 16,
+                    "paddingTop": 16,
+                  },
+                ]
+              }
+            >
+              Center title
+            </Text>
+          </View>
+          <View
+            style={
+              Object {
+                "position": "absolute",
+                "right": 0,
+              }
+            }
+          >
+            <View
+              accessible={true}
+              focusable={true}
+              isTVSelectable={true}
+              onClick={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Object {
+                  "alignItems": "center",
+                  "alignSelf": "center",
+                  "flexBasis": 0,
+                  "flexGrow": 1,
+                  "flexShrink": 1,
+                  "height": 56,
+                  "justifyContent": "center",
+                  "opacity": 1,
+                  "paddingBottom": 16,
+                  "paddingLeft": 0,
+                  "paddingRight": 16,
+                  "paddingTop": 16,
+                  "width": 40,
+                }
+              }
+            >
+              <SvgMock
+                height={24}
+                style={
+                  Object {
+                    "fill": "#333333",
+                  }
+                }
+                width={24}
+              />
+            </View>
+          </View>
+        </View>
+        <View
+          style={
+            Object {
+              "height": 10,
+            }
+          }
+        />
+        <View
+          accessibilityRole="header"
+          accessible={true}
+          style={
+            Array [
+              Object {
+                "alignItems": "stretch",
+                "backgroundColor": "#FFFFFF",
+                "flexBasis": 0,
+                "flexDirection": "row",
+                "flexGrow": 1,
+                "flexShrink": 1,
+                "height": 56,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
+                "position": "relative",
+                "width": "100%",
+              },
+              Object {
+                "elevation": 1,
+                "shadowColor": "#000",
+                "shadowOffset": Object {
+                  "height": 2,
+                  "width": 0,
+                },
+                "shadowOpacity": 0.24,
+              },
+            ]
+          }
+        >
+          <View
+            style={Object {}}
+          >
+            <View
+              accessible={true}
+              focusable={true}
+              isTVSelectable={true}
+              onClick={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Object {
+                  "alignItems": "center",
+                  "alignSelf": "center",
+                  "flexBasis": 0,
+                  "flexGrow": 1,
+                  "flexShrink": 1,
+                  "height": 56,
+                  "justifyContent": "center",
+                  "opacity": 1,
+                  "paddingBottom": 16,
+                  "paddingLeft": 16,
+                  "paddingRight": 0,
+                  "paddingTop": 16,
+                  "width": 40,
+                }
+              }
+            >
+              <SvgMock
+                height={24}
+                style={
+                  Object {
+                    "fill": "#333333",
+                  }
+                }
+                width={24}
+              />
+            </View>
+          </View>
+          <View
+            style={
+              Object {
                 "alignItems": "flex-start",
                 "bottom": 0,
                 "justifyContent": "flex-start",
                 "left": 40,
                 "position": "absolute",
-                "right": 0,
+                "right": 40,
                 "top": 0,
               }
             }
@@ -276,7 +444,7 @@ exports[`StoryNatAppBar component Should render StoryNatAppBar component  1`] = 
                 "justifyContent": "flex-start",
                 "left": 40,
                 "position": "absolute",
-                "right": 0,
+                "right": 40,
                 "top": 0,
               }
             }
@@ -418,7 +586,7 @@ exports[`StoryNatAppBar component Should render StoryNatAppBar component  1`] = 
                 "justifyContent": "flex-start",
                 "left": 40,
                 "position": "absolute",
-                "right": 0,
+                "right": 40,
                 "top": 0,
               }
             }
@@ -570,14 +738,30 @@ exports[`StoryNatAppBar component Should render StoryNatAppBar component  1`] = 
                 "justifyContent": "flex-start",
                 "left": 40,
                 "position": "absolute",
-                "right": 0,
+                "right": 40,
                 "top": 0,
               }
             }
           >
-            <SvgMock
-              width={200}
-            />
+            <View
+              style={
+                Object {
+                  "bottom": 0,
+                  "justifyContent": "flex-start",
+                  "left": 0,
+                  "paddingLeft": 16,
+                  "paddingRight": 16,
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 0,
+                }
+              }
+            >
+              <SvgMock
+                height={56}
+                width={150}
+              />
+            </View>
           </View>
           <View
             style={
@@ -713,19 +897,35 @@ exports[`StoryNatAppBar component Should render StoryNatAppBar component  1`] = 
           <View
             style={
               Object {
-                "alignItems": "flex-start",
+                "alignItems": "center",
                 "bottom": 0,
-                "justifyContent": "flex-start",
+                "justifyContent": "center",
                 "left": 40,
                 "position": "absolute",
-                "right": 0,
+                "right": 40,
                 "top": 0,
               }
             }
           >
-            <SvgMock
-              width={200}
-            />
+            <View
+              style={
+                Object {
+                  "bottom": 0,
+                  "justifyContent": "center",
+                  "left": 0,
+                  "paddingLeft": 16,
+                  "paddingRight": 16,
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 0,
+                }
+              }
+            >
+              <SvgMock
+                height={56}
+                width={150}
+              />
+            </View>
           </View>
           <View
             style={
@@ -846,14 +1046,30 @@ exports[`StoryNatAppBar component Should render StoryNatAppBar component  1`] = 
                 "justifyContent": "flex-start",
                 "left": 40,
                 "position": "absolute",
-                "right": 0,
+                "right": 40,
                 "top": 0,
               }
             }
           >
-            <SvgMock
-              width={200}
-            />
+            <View
+              style={
+                Object {
+                  "bottom": 0,
+                  "justifyContent": "flex-start",
+                  "left": 0,
+                  "paddingLeft": 16,
+                  "paddingRight": 16,
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 0,
+                }
+              }
+            >
+              <SvgMock
+                height={56}
+                width={150}
+              />
+            </View>
           </View>
           <View
             style={
@@ -941,7 +1157,7 @@ exports[`StoryNatAppBar component Should render StoryNatAppBar component  1`] = 
                 "justifyContent": "flex-start",
                 "left": 0,
                 "position": "absolute",
-                "right": 0,
+                "right": 40,
                 "top": 0,
               }
             }

@@ -7,28 +7,25 @@ import {
   Dimensions,
   SafeAreaView,
 } from 'react-native';
-import icoArrowLeft from '../../../lib/assets/icons/ic_arrow_left_white.png';
 import {
-  NatButton,
+  Button,
   NatContainer,
   NatTextInput,
   NatLogo,
+  NatSpace,
+  NatLink,
 } from '../../../lib';
+
+const widthTotal = Dimensions.get('window').width;
 
 const styles = StyleSheet.create({
   defaultScreen: {
-    backgroundColor: '#FFF',
-    marginTop: 0,
-    width: Dimensions.get('window').width,
-  },
-  imgLogo: {
-    height: 105,
-    width: 140,
+    flex: 1,
+    width: widthTotal,
   },
   viewButton: {
     flex: 1,
     justifyContent: 'space-between',
-    marginBottom: 10,
   },
   viewInput: {
     flex: 1.5,
@@ -41,8 +38,11 @@ const styles = StyleSheet.create({
 });
 
 export const Login = () => {
-  const [inputMatricula, setInputMatricula] = useState('');
-  const [inputSenha, setInputSenha] = useState('');
+  const [inputUsername, setInputUsername] = useState('');
+  const [inputPassword, setInputPassword] = useState('');
+  const [inputPasswordSecret, setInputPasswordSecret] = useState(true);
+  const [inputPasswordIcon, setInputPasswordIcon] = useState('outlined-action-visibility');
+  
 
   const press = () => Alert.alert(
     'Press',
@@ -59,46 +59,54 @@ export const Login = () => {
     { cancelable: false },
   );
 
+  const togglePassword = () => {
+    if (inputPasswordIcon === 'outlined-action-visibility') {
+      setInputPasswordIcon('outlined-action-visibilityoff');
+      setInputPasswordSecret(false);
+    } else {
+      setInputPasswordIcon('outlined-action-visibility');
+      setInputPasswordSecret(true);
+    }
+  }
+
   return (
-    <SafeAreaView>
-      <NatContainer style={styles.defaultScreen}>
+    <SafeAreaView style={styles.defaultScreen}>
+      <NatContainer style={{ flex: 1 }}>
         <View style={styles.viewLogo}>
-          <NatLogo name="logo-natura-vertical" size={300} />
+          <NatSpace>
+            <NatLogo name="logo-natura-vertical" size={widthTotal - 100} />
+          </NatSpace>
         </View>
         <View style={styles.viewInput}>
           <NatTextInput
-            label="Matrícula"
-            placeholder="Ex: 99999"
-            assistiveText="Digite sua matrícula"
-            onChangeText={setInputMatricula}
-            value={inputMatricula}
+            label="Username"
+            placeholder="your username"
+            assistiveText=""
+            onChangeText={setInputUsername}
+            value={inputUsername}
           />
           <NatTextInput
-            label="Senha"
-            placeholder="Ex: sua senha"
-            assistiveText="Digite sua senha"
-            secureTextEntry
-            onChangeText={setInputSenha}
-            icon={icoArrowLeft}
-            iconPress={press}
-            value={inputSenha}
+            label="Password"
+            placeholder="your password"
+            assistiveText=""
+            onChangeText={setInputPassword}
+            value={inputPassword}
+            icon={{ svg: { name: inputPasswordIcon } }}
+            iconPress={() => togglePassword()}
+            secureTextEntry={inputPasswordSecret}
           />
+          <NatLink type="body1" value="Forgot password?" onPress={() => alert('press link')} align="center" />
         </View>
         <View style={styles.viewButton}>
-          <NatButton
-            type="short"
-            label="Esqueceu a senha?"
-            onPress={press}
+          <Button
+            type="primary"
+            label="Enter"
+            onPress={() => {}}
           />
-          <NatButton
-            type="newDefault"
-            label="Entrar"
-            onPress={press}
-          />
-          <NatButton
-            type="short"
-            label="Selecionar país"
-            onPress={press}
+          <Button
+            type="tertiary"
+            label="Select Country"
+            onPress={() => {}}
           />
         </View>
       </NatContainer>

@@ -13,8 +13,7 @@ import {
 
 const styles = {
   defaultScreen: {
-    backgroundColor: '#FFF',
-    marginTop: 0,
+    flex: 1,
     width: Dimensions.get('window').width,
   },
 };
@@ -26,8 +25,8 @@ export const StoryNatTextInput = ({ type, icon }) => {
   const [inputSearch, setInputSearch] = useState('');
 
   return (
-    <SafeAreaView>
-      <NatContainer style={styles.defaultScreen}>
+    <SafeAreaView style={styles.defaultScreen}>
+      <NatContainer>
         <ScrollView>
           <NatTextInput
             label="Size Small"

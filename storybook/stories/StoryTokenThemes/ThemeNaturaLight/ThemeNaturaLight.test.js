@@ -10,6 +10,6 @@ describe('ThemeNaturaLight component', () => {
       <ThemeNaturaLight />,
     ).toJSON();
 
-    expect(button).toMatchSnapshot();
+    expect(button).toMatchSnapshot('ThemeNaturaLight snapshot');
   });
 });

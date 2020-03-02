@@ -1,13 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`TextInput component default Should render textInput component  1`] = `
+exports[`TextInput component default Should render textInput component : TextInput snapshot default 1`] = `
 <View
   accessible={true}
-  defaultMargin="0px"
+  marginDefault="tiny"
   style={
     Array [
       Object {
-        "marginBottom": 0,
+        "marginBottom": 8,
         "width": "100%",
       },
     ]
@@ -1075,14 +1075,14 @@ exports[`TextInput component default Should render textInput component  1`] = `
 </View>
 `;
 
-exports[`TextInput component default Should render textInput with icon and assistive text in component 1`] = `
+exports[`TextInput component default Should render textInput with icon and assistive text in component: TextInput snapshot with icon 1`] = `
 <View
   accessible={true}
-  defaultMargin="0px"
+  marginDefault="tiny"
   style={
     Array [
       Object {
-        "marginBottom": 0,
+        "marginBottom": 8,
         "width": "100%",
       },
     ]

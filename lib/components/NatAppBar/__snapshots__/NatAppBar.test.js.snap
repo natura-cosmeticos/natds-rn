@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Header component Should render container component correctly 1`] = `
+exports[`NatAppBar component Should render container component correctly: NatAppBar snapshot 1`] = `
 <View
   accessibilityRole="header"
   accessible={true}
@@ -74,7 +74,7 @@ exports[`Header component Should render container component correctly 1`] = `
         "justifyContent": "flex-start",
         "left": 40,
         "position": "absolute",
-        "right": 0,
+        "right": 40,
         "top": 0,
       }
     }

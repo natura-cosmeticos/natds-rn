@@ -13,8 +13,7 @@ import {
 
 const styles = {
   defaultScreen: {
-    backgroundColor: '#FAFAFA',
-    marginTop: 0,
+    flex: 1,
     width: Dimensions.get('window').width,
   },
 };
@@ -34,41 +33,9 @@ const styles = {
 export const StoryNatButton = () => {
 
   return (
-    <SafeAreaView>
-      <NatContainer style={styles.defaultScreen}>
+    <SafeAreaView style={styles.defaultScreen}>
+      <NatContainer>
         <ScrollView>
-          <NatText value={`Buttons - Variations`} type="h6" />
-          <NatSpace />
-          <NatButton
-            type="newDefault"
-            label="newDefault"
-            onPress={() => alert('press button')}
-          />
-          <NatSpace />
-          <NatButton
-            type="disabled"
-            label="disabled"
-            onPress={() => alert('press button')}
-          />
-          <NatSpace />
-          <NatButton
-            type="link"
-            label="link"
-            onPress={() => alert('press button')}
-          />
-          <NatSpace />
-          <NatButton
-            type="newShort"
-            label="newShort"
-            onPress={() => alert('press button')}
-          />
-          <NatSpace />
-          <NatButton
-            type="outline"
-            label="outline"
-            onPress={() => alert('press button')}
-          />
-          <NatSpace />
           <NatText value={`Buttons - Social Selling`} type="h6" />
           <NatSpace />
           <NatButton

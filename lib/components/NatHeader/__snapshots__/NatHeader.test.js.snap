@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Header component Should render container component correctly 1`] = `
+exports[`NatHeader component Should render container component correctly: NatHeader snapshot 1`] = `
 <View
   accessibilityRole="header"
   accessible={true}

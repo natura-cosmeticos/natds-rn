@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`TextInput component default Should render textInput component  1`] = `
+exports[`NatCard component default Should render NatCard component : NatCard snapshot 1`] = `
 <View
   style={
     Object {
