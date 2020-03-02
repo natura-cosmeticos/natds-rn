@@ -3,11 +3,11 @@
 exports[`TextInput component default Should render textInput component  1`] = `
 <View
   accessible={true}
-  defaultMargin="0px"
+  marginDefault="tiny"
   style={
     Array [
       Object {
-        "marginBottom": 0,
+        "marginBottom": 8,
         "width": "100%",
       },
     ]
@@ -1078,11 +1078,11 @@ exports[`TextInput component default Should render textInput component  1`] = `
 exports[`TextInput component default Should render textInput with icon and assistive text in component 1`] = `
 <View
   accessible={true}
-  defaultMargin="0px"
+  marginDefault="tiny"
   style={
     Array [
       Object {
-        "marginBottom": 0,
+        "marginBottom": 8,
         "width": "100%",
       },
     ]

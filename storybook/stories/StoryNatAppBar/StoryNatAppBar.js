@@ -9,24 +9,31 @@ import {
   NatContainer,
   NatAppBar,
   NatLogo,
-  NatTextInput,
 } from '../../../lib';
 
 const styles = {
   defaultScreen: {
-    backgroundColor: '#FAFAFA',
-    marginTop: 0,
+    flex: 1,
     width: Dimensions.get('window').width,
   },
 };
 
 export const StoryNatAppBar = () => {
-  const logo = () => (<NatLogo name="logo-natura-horizontal" size={200} />);
+  const logo = () => (<NatLogo name="logo-natura-horizontal" width={150} height={56} />);
 
   return (
-    <SafeAreaView>
-      <NatContainer style={styles.defaultScreen}>
+    <SafeAreaView style={styles.defaultScreen}>
+      <NatContainer>
         <ScrollView>
+          <NatAppBar
+            title="Center title"
+            alignTitle="center"
+            iconLeft={{ svg: { name: 'outlined-navigation-menu' } }}
+            iconRight={{ svg: { name: 'outlined-action-autofilter' } }}
+            onPressLeft={() => alert('press')}
+            onPressRight={() => alert('press')}
+          />
+          <View style={{ height: 10 }} />
           <NatAppBar
             title="Title Text"
             iconLeft={{ svg: { name: 'outlined-navigation-menu' } }}
@@ -58,6 +65,7 @@ export const StoryNatAppBar = () => {
           <View style={{ height: 10 }} />
           <NatAppBar
             title="Title Text"
+            alignTitle="center"
             node={logo()}
             iconLeft={{ svg: { name: 'outlined-navigation-menu' } }}
             onPressLeft={() => alert('press')}
