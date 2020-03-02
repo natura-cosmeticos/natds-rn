@@ -1,17 +1,19 @@
 import React, { useState } from 'react';
 import {
-  Text,
   ScrollView,
   SafeAreaView,
   Dimensions,
 } from 'react-native';
 import propTypes from 'prop-types';
-import { NatContainer, NatTextInput, NatText } from '../../../lib';
+import {
+  NatContainer,
+  NatTextInput,
+  NatText,
+} from '../../../lib';
 
 const styles = {
   defaultScreen: {
-    backgroundColor: '#FFF',
-    marginTop: 0,
+    flex: 1,
     width: Dimensions.get('window').width,
   },
 };
@@ -23,8 +25,8 @@ export const StoryNatTextInput = ({ type, icon }) => {
   const [inputSearch, setInputSearch] = useState('');
 
   return (
-    <SafeAreaView>
-      <NatContainer style={styles.defaultScreen}>
+    <SafeAreaView style={styles.defaultScreen}>
+      <NatContainer>
         <ScrollView>
           <NatTextInput
             label="Size Small"
@@ -75,6 +77,10 @@ export const StoryNatTextInput = ({ type, icon }) => {
 };
 
 StoryNatTextInput.propTypes = {
+  icon: propTypes.string,
   type: propTypes.string.isRequired,
-  icon: propTypes.isRequired,
+};
+
+StoryNatTextInput.defaultProps = {
+  icon: null,
 };

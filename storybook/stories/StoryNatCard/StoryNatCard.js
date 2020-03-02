@@ -8,15 +8,14 @@ import { NatContainer, NatCard } from '../../../lib';
 
 const styles = {
   defaultScreen: {
-    backgroundColor: '#FAFAFA',
-    marginTop: 0,
+    flex: 1,
     width: Dimensions.get('window').width,
   },
 };
 
 export const StoryNatCard = () => (
-  <SafeAreaView>
-    <NatContainer style={styles.defaultScreen}>
+  <SafeAreaView style={styles.defaultScreen}>
+    <NatContainer>
       <ScrollView>
         <NatCard
           title="Card Test"

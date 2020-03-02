@@ -9,6 +9,7 @@ describe('StoryNatLogo component', () => {
     const button = renderer.create(
       <StoryNatLogo />,
     ).toJSON();
-    expect(button).toMatchSnapshot();
+
+    expect(button).toMatchSnapshot('StoryNatLogo snapshot');
   });
 });

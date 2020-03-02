@@ -15,8 +15,7 @@ import {
 
 const styles = {
   defaultScreen: {
-    backgroundColor: '#FAFAFA',
-    marginTop: 0,
+    flex: 1,
     width: Dimensions.get('window').width,
   },
 };
@@ -27,40 +26,40 @@ export const StoryNatList = () => {
   const [valueMultiple, setValueMultiple] = useState([]);
   const listItems = [
     {
+      iconLeft: { svg: { name: 'outlined-navigation-menu' } },
+      iconRight: { svg: { name: 'outlined-action-autofilter' } },
       id: '1',
-      title: 'Title Text',
-      iconLeft: { svg: { name: 'outlined-navigation-menu' } },
-      iconRight: { svg: { name: 'outlined-action-autofilter' } },
-      onPressLeft: () => alert('press'),
       onPress: () => alert('press'),
-      onPressRight: () => alert('press'),
-    },
-    {
-      id: '2',
-      title: 'Title Text',
-      iconRight: { svg: { name: 'outlined-action-autofilter' } },
-      hideIconLeft: false,
       onPressLeft: () => alert('press'),
       onPressRight: () => alert('press'),
-      dividerBottom: true,
+      title: 'Title Text',
     },
     {
-      id: '3',
+      dividerBottom: true,
+      hideIconLeft: false,
+      iconRight: { svg: { name: 'outlined-action-autofilter' } },
+      id: '2',
+      onPressLeft: () => alert('press'),
+      onPressRight: () => alert('press'),
       title: 'Title Text',
-      iconLeft: { svg: { name: 'outlined-navigation-menu' } },
+    },
+    {
       hideIconLeft: true,
       hideIconRight: true,
+      iconLeft: { svg: { name: 'outlined-navigation-menu' } },
+      id: '3',
       onPressLeft: () => alert('press'),
       onPressRight: () => alert('press'),
+      title: 'Title Text',
     },
     {
-      id: '4',
-      title: 'Title Text',
-      iconLeft: { svg: { name: 'outlined-navigation-menu' } },
+      dividerTop: true,
       hideIconRight: false,
+      iconLeft: { svg: { name: 'outlined-navigation-menu' } },
+      id: '4',
       onPressLeft: () => alert('press'),
       onPressRight: () => alert('press'),
-      dividerTop: true,
+      title: 'Title Text',
     },
   ];
 
@@ -75,8 +74,8 @@ export const StoryNatList = () => {
   };
 
   return (
-    <SafeAreaView>
-      <NatContainer style={styles.defaultScreen}>
+    <SafeAreaView style={styles.defaultScreen}>
+      <NatContainer>
         <ScrollView>
           <NatText value="List with simple select without Highlight" />
           <NatText value="Value: " />

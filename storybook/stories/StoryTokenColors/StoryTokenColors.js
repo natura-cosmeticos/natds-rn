@@ -14,7 +14,7 @@ import {
 
 const styles = {
   defaultScreen: {
-    backgroundColor: '#FFF',
+    flex: 1,
     width: Dimensions.get('window').width,
   },
 };
@@ -23,25 +23,25 @@ export const StoryTokenColors = () => {
   const renderItem = (name, color) => (
     <View style={{ flexDirection: 'row' }}>
       <NatText type="body1" value={name} />
-      <View style={{ backgroundColor: color, width: 30, height: 30 }} />
+      <View style={{ backgroundColor: color, height: 30, width: 30 }} />
       <NatText type="body1" value={color} />
     </View>
   );
 
   const primary = Object.keys(Tokens.colors.natura.primary)
-    .map(k => ({ name: k, color: Tokens.colors.natura.primary[k] }));
+    .map(k => ({ color: Tokens.colors.natura.primary[k], name: k }));
   const secondary = Object.keys(Tokens.colors.natura.secondary)
-    .map(k => ({ name: k, color: Tokens.colors.natura.secondary[k] }));
+    .map(k => ({ color: Tokens.colors.natura.secondary[k], name: k }));
   const grayscale = Object.keys(Tokens.colors.natura.grayscale)
-    .map(k => ({ name: k, color: Tokens.colors.natura.grayscale[k] }));
+    .map(k => ({ color: Tokens.colors.natura.grayscale[k], name: k }));
   const level = Object.keys(Tokens.colors.natura.level)
-    .map(k => ({ name: k, color: Tokens.colors.natura.level[k] }));
+    .map(k => ({ color: Tokens.colors.natura.level[k], name: k }));
   const complementary = Object.keys(Tokens.colors.natura.complementary)
-    .map(k => ({ name: k, color: Tokens.colors.natura.complementary[k] }));
+    .map(k => ({ color: Tokens.colors.natura.complementary[k], name: k }));
 
   return (
-    <SafeAreaView>
-      <NatContainer style={styles.defaultScreen}>
+    <SafeAreaView style={styles.defaultScreen}>
+      <NatContainer>
         <ScrollView>
           <NatText type="h6" value="PRIMARY" />
           <FlatList

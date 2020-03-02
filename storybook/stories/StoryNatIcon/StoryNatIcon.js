@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   SafeAreaView,
   FlatList,
@@ -10,17 +10,19 @@ import {
   NatContainer,
   NatText,
   NatIcon,
+  NatTextInput,
   ThemeNaturaLight,
 } from '../../../lib';
 
 const styles = {
   defaultScreen: {
-    backgroundColor: '#FFF',
+    flex: 1,
     width: Dimensions.get('window').width,
   },
 };
 
 export const StoryNatIcon = () => {
+  const [input, setInput] = useState('');
   const iconList = [
     { name: 'filled-action-add' },
     { name: 'filled-action-cancel' },
@@ -177,13 +179,24 @@ export const StoryNatIcon = () => {
     </View>
   );
 
+  const filterIconList = filter => iconList.filter(item => item.name.includes(filter.toLowerCase()));
+
   return (
-    <SafeAreaView>
-      <NatContainer style={styles.defaultScreen}>
+    <SafeAreaView style={styles.defaultScreen}>
+      <NatContainer>
         <ScrollView>
           <NatText type="h6" value="ICONS SVG" />
+          <NatTextInput
+            label=""
+            placeholder="Search"
+            onChangeText={setInput}
+            value={input}
+            size="normal"
+            type="default"
+            icon={null}
+          />
           <FlatList
-            data={iconList}
+            data={filterIconList(input)}
             renderItem={({ item }) => renderItem(item.name)}
             keyExtractor={item => item.name}
           />

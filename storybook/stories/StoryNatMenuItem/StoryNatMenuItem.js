@@ -9,8 +9,7 @@ import { NatContainer, NatMenuItem } from '../../../lib';
 
 const styles = {
   defaultScreen: {
-    backgroundColor: '#FFF',
-    marginTop: 0,
+    flex: 1,
     width: Dimensions.get('window').width,
   },
 };
@@ -19,132 +18,132 @@ export const StoryNatMenuItem = () => {
   const menuList = [
     {
       id: 1,
-      name: 'First menu',
       level: 1,
+      name: 'First menu',
     },
     {
       id: 2,
-      name: 'Second menu',
       level: 1,
+      name: 'Second menu',
     },
     {
       id: 3,
-      name: 'Another sample menu',
       level: 1,
+      name: 'Another sample menu',
     },
     {
       id: 4,
-      name: 'Another sample menu',
       level: 1,
+      name: 'Another sample menu',
     },
   ];
   const menuListSvg = [
     {
       id: 1,
+      level: 1,
       name: 'outlined-navigation-home',
       svg: {
         name: 'outlined-navigation-home',
         size: '24',
       },
-      level: 1,
     },
     {
       id: 2,
+      level: 1,
       name: 'outlined-content-lock',
       svg: {
         name: 'outlined-content-lock',
       },
-      level: 1,
     },
     {
       id: 3,
+      level: 1,
       name: 'outlined-content-wifi',
       svg: {
         name: 'outlined-content-wifi',
       },
-      level: 1,
     },
     {
       id: 4,
+      level: 1,
       name: 'outlined-content-adddocument',
       svg: {
         name: 'outlined-content-adddocument',
       },
-      level: 1,
     },
     {
       id: 5,
+      level: 1,
       name: 'outlined-communication-chat',
       svg: {
         name: 'outlined-communication-chat',
       },
-      level: 1,
     },
     {
       id: 6,
+      level: 1,
       name: 'outlined-content-channel',
       svg: {
         name: 'outlined-content-channel',
       },
-      level: 1,
     },
     {
       id: 7,
+      level: 1,
       name: 'outlined-finance-moneypaper',
       svg: {
         name: 'outlined-finance-moneypaper',
       },
-      level: 1,
     },
     {
       id: 8,
+      level: 1,
       name: 'outlined-communication-speaker',
       svg: {
         name: 'outlined-communication-speaker',
       },
-      level: 1,
     },
     {
       id: 9,
+      level: 1,
       name: 'outlined-place-bus',
       svg: {
         name: 'outlined-place-bus',
       },
-      level: 1,
     },
     {
       id: 10,
+      level: 1,
       name: 'outlined-alert-info',
       svg: {
         name: 'outlined-alert-info',
       },
-      level: 1,
     },
     {
       id: 11,
+      level: 1,
       name: 'outlined-navigation-exit',
       svg: {
         name: 'outlined-navigation-exit',
       },
-      level: 1,
     },
   ];
   const menuListIconUri = [
     {
-      name: 'Menu Food',
       icon: 'https://s3-sa-east-1.amazonaws.com/somos-natura-prd/files/menus/261/img_url_tmp_261_20180323135427.png',
       level: '1',
+      name: 'Menu Food',
     },
     {
-      name: 'Bus Information',
       icon: 'https://s3-sa-east-1.amazonaws.com/somos-natura-prd/files/menus/generic_menu/img_url_tmp_generic_menu_20170822160140.png',
       level: '1',
+      name: 'Bus Information',
     },
   ];
 
   return (
-    <SafeAreaView>
-      <NatContainer style={styles.defaultScreen}>
+    <SafeAreaView style={styles.defaultScreen}>
+      <NatContainer>
         <ScrollView>
           <Text>Without Icon</Text>
           {menuList.map(item => (

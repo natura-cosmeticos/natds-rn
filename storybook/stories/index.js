@@ -7,24 +7,27 @@ import { linkTo } from '@storybook/addon-links';
 import {
   Login, Card, Form, FriendExchange,
 } from './ScreenSamples';
-import { StoryNatTextInput } from './StoryNatTextInput';
-import { StoryNatSelectInput } from './StoryNatSelectInput';
-import { StoryNatCard } from './StoryNatCard';
-import { StoryNatMenuItem } from './StoryNatMenuItem';
-import { StoryNatIcon } from './StoryNatIcon';
-import { StoryTokenTypography } from './StoryTokenTypography';
-import { StoryTokenColors } from './StoryTokenColors';
-import { StoryTokenSpace } from './StoryTokenSpace';
-import { StoryNatLogo } from './StoryNatLogo';
-import { StoryNatHeader } from './StoryNatHeader';
+import { StoryButton } from './StoryButton';
 import { StoryNatAppBar } from './StoryNatAppBar';
 import { StoryNatAppBarSearch } from './StoryNatAppBarSearch';
+import { StoryNatButton } from './StoryNatButton';
+import { StoryNatCard } from './StoryNatCard';
+import { StoryNatHeader } from './StoryNatHeader';
+import { StoryNatIcon } from './StoryNatIcon';
+import { StoryNatLink } from './StoryNatLink';
 import { StoryNatList } from './StoryNatList';
 import { StoryNatListItem } from './StoryNatListItem';
+import { StoryNatLogo } from './StoryNatLogo';
+import { StoryNatMenuItem } from './StoryNatMenuItem';
+import { StoryNatSelectInput } from './StoryNatSelectInput';
+import { StoryNatTextInput } from './StoryNatTextInput';
+import { StoryTokenColors } from './StoryTokenColors';
+import { StoryTokenSpace } from './StoryTokenSpace';
+import { StoryTokenTypography } from './StoryTokenTypography';
 import { ThemeNaturaLight } from './StoryTokenThemes/ThemeNaturaLight';
 import CenterView from './CenterView';
 import { Welcome } from './Welcome';
-import icoArrowLeft from '../../lib/assets/icons/ic_arrow_left_white.png';
+import iconArrowLeft from '../../lib/assets/icons/ic_arrow_left_white.png';
 
 storiesOf('Welcome', module)
   .add('NATDS', () => (
@@ -55,6 +58,18 @@ storiesOf('Images', module)
     <StoryNatLogo />
   ));
 
+storiesOf('Link', module)
+  .addDecorator(getStory => <CenterView>{getStory()}</CenterView>)
+  .add('All', () => (
+    <StoryNatLink />
+  ));
+
+storiesOf('Button', module)
+  .addDecorator(getStory => <CenterView>{getStory()}</CenterView>)
+  .add('All', () => (
+    <StoryButton />
+  ));
+
 storiesOf('NatTextInput', module)
   .addDecorator(getStory => <CenterView>{getStory()}</CenterView>)
   .add('Default', () => (
@@ -66,14 +81,16 @@ storiesOf('NatTextInput', module)
   .add('Disabled', () => (
     <StoryNatTextInput type="disabled" />
   ))
+  .add('With icon - URL', () => (
+    <StoryNatTextInput type="default" icon={{ uri: 'https://s3-sa-east-1.amazonaws.com/somos-natura-prd/files/menus/generic_menu/img_url_tmp_generic_menu_20170822160140.png' }} />
+  ))
   .add('With icon - image', () => (
-    <StoryNatTextInput type="default" icon={{ content: icoArrowLeft }} />
+    <StoryNatTextInput type="default" icon={{ content: iconArrowLeft }} />
   ))
   .add('With icon - SVG', () => (
     <StoryNatTextInput type="default" icon={{ svg: { name: 'filled-action-check' } }} />
   ));
-/*
-NatSelectInput in Delevoping
+
 storiesOf('NatSelectInput', module)
   .addDecorator(getStory => <CenterView>{getStory()}</CenterView>)
   .add('Default', () => (
@@ -85,7 +102,7 @@ storiesOf('NatSelectInput', module)
   .add('Disabled', () => (
     <StoryNatSelectInput type="disabled" />
   ));
-*/
+
 storiesOf('NatMenuItem', module)
   .addDecorator(getStory => <CenterView>{getStory()}</CenterView>)
   .add('All', () => (
@@ -101,12 +118,6 @@ storiesOf('NatList', module)
     <StoryNatListItem />
   ));
 
-storiesOf('NatHeader - SS', module)
-  .addDecorator(getStory => <CenterView>{getStory()}</CenterView>)
-  .add('All', () => (
-    <StoryNatHeader />
-  ));
-
 storiesOf('NatAppBar', module)
   .addDecorator(getStory => <CenterView>{getStory()}</CenterView>)
   .add('All', () => (
@@ -120,6 +131,18 @@ storiesOf('NatCard', module)
   .addDecorator(getStory => <CenterView>{getStory()}</CenterView>)
   .add('Default', () => (
     <StoryNatCard />
+  ));
+
+storiesOf('NatButton - OLD', module)
+  .addDecorator(getStory => <CenterView>{getStory()}</CenterView>)
+  .add('All', () => (
+    <StoryNatButton />
+  ));
+
+storiesOf('NatHeader - OLD', module)
+  .addDecorator(getStory => <CenterView>{getStory()}</CenterView>)
+  .add('All', () => (
+    <StoryNatHeader />
   ));
 
 storiesOf('Screen Samples', module)

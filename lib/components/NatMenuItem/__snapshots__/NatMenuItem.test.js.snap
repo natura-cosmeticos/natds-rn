@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`NatMenuItem component default Should render NatMenuItem NatMenuItem  1`] = `
+exports[`NatMenuItem component default Should render NatMenuItem NatMenuItem : NatMenuItem snapshot 1`] = `
 <View
   accessible={true}
   focusable={true}

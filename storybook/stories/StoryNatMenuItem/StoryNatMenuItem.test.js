@@ -9,6 +9,7 @@ describe('StoryNatMenuItem component', () => {
     const button = renderer.create(
       <StoryNatMenuItem />,
     ).toJSON();
-    expect(button).toMatchSnapshot();
+
+    expect(button).toMatchSnapshot('StoryNatMenuItem snapshot');
   });
 });

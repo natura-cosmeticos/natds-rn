@@ -13,15 +13,14 @@ import {
 
 const styles = {
   defaultScreen: {
-    backgroundColor: '#FAFAFA',
-    marginTop: 0,
+    flex: 1,
     width: Dimensions.get('window').width,
   },
 };
 
 export const StoryTokenSpace = () => (
-  <SafeAreaView>
-    <NatContainer style={styles.defaultScreen}>
+  <SafeAreaView style={styles.defaultScreen}>
+    <NatContainer>
       <ScrollView>
         <NatSpace
           marginTop="small"
@@ -83,6 +82,42 @@ export const StoryTokenSpace = () => (
           backgroundColor={Theme.palette.primary.main}
         />
         <NatText value="Standard" type="body1" />
+        <NatSpace
+          marginTop="small"
+          marginBottom="none"
+          marginRight="none"
+          marginLeft="none"
+          paddingTop="none"
+          paddingBottom="semi"
+          paddingRight="none"
+          paddingLeft="none"
+          backgroundColor={Theme.palette.primary.main}
+        />
+        <NatText value="Semi" type="body1" />
+        <NatSpace
+          marginTop="small"
+          marginBottom="none"
+          marginRight="none"
+          marginLeft="none"
+          paddingTop="none"
+          paddingBottom="medium"
+          paddingRight="none"
+          paddingLeft="none"
+          backgroundColor={Theme.palette.primary.main}
+        />
+        <NatText value="Medium" type="body1" />
+        <NatSpace
+          marginTop="small"
+          marginBottom="none"
+          marginRight="none"
+          marginLeft="none"
+          paddingTop="none"
+          paddingBottom="huge"
+          paddingRight="none"
+          paddingLeft="none"
+          backgroundColor={Theme.palette.primary.main}
+        />
+        <NatText value="Huge" type="body1" />
       </ScrollView>
     </NatContainer>
   </SafeAreaView>

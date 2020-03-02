@@ -13,15 +13,14 @@ import {
 
 const styles = {
   defaultScreen: {
-    backgroundColor: '#FAFAFA',
-    marginTop: 0,
+    flex: 1,
     width: Dimensions.get('window').width,
   },
 };
 
 export const StoryNatListItem = () => (
-  <SafeAreaView>
-    <NatContainer style={styles.defaultScreen}>
+  <SafeAreaView style={styles.defaultScreen}>
+    <NatContainer>
       <ScrollView>
         <NatListItem
           title="Title Text and SVG icon"

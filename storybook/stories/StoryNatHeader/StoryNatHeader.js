@@ -8,29 +8,26 @@ import { NatContainer, NatHeader } from '../../../lib';
 
 const styles = {
   defaultScreen: {
-    backgroundColor: '#FAFAFA',
-    marginTop: 0,
+    flex: 1,
     width: Dimensions.get('window').width,
   },
 };
 
-export const StoryNatHeader = () => {
-  return (
-    <SafeAreaView>
-      <NatContainer style={styles.defaultScreen}>
-        <ScrollView>
-          <NatHeader
-            title="Title Text"
-            icon="iconRight"
-            onPress={() => alert('press')}
-            onPressRight={() => alert('press')}
-            textRight="Text Right"
-          />
-        </ScrollView>
-      </NatContainer>
-    </SafeAreaView>
-  );
-};
+export const StoryNatHeader = () => (
+  <SafeAreaView style={styles.defaultScreen}>
+    <NatContainer>
+      <ScrollView>
+        <NatHeader
+          title="Title Text"
+          icon="iconRight"
+          onPress={() => alert('press')}
+          onPressRight={() => alert('press')}
+          textRight="Text Right"
+        />
+      </ScrollView>
+    </NatContainer>
+  </SafeAreaView>
+);
 
 StoryNatHeader.propTypes = {
 };

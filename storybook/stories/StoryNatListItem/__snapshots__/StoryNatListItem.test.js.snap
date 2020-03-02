@@ -1,30 +1,36 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`StoryNatListItem component Should render StoryNatListItem component  1`] = `
+exports[`StoryNatListItem component Should render StoryNatListItem component : StoryNatListItem snapshot 1`] = `
 <RCTSafeAreaView
   emulateUnlessSupported={true}
+  style={
+    Object {
+      "flex": 1,
+      "width": 750,
+    }
+  }
 >
   <View
+    marginBottom="none"
+    marginLeft="none"
+    marginRight="none"
+    marginTop="none"
+    paddingBottom="small"
+    paddingLeft="small"
+    paddingRight="small"
+    paddingTop="small"
     style={
       Array [
         Object {
           "backgroundColor": "#FFFFFF",
-          "bottom": 0,
-          "flexBasis": 0,
-          "flexGrow": 1,
-          "flexShrink": 1,
-          "left": 0,
-          "paddingBottom": 0,
+          "marginBottom": 0,
+          "marginLeft": 0,
+          "marginRight": 0,
+          "marginTop": 0,
+          "paddingBottom": 16,
           "paddingLeft": 16,
           "paddingRight": 16,
-          "paddingTop": 0,
-          "right": 0,
-          "top": 0,
-        },
-        Object {
-          "backgroundColor": "#FAFAFA",
-          "marginTop": 0,
-          "width": 750,
+          "paddingTop": 16,
         },
       ]
     }
@@ -40,25 +46,26 @@ exports[`StoryNatListItem component Should render StoryNatListItem component  1`
           style={
             Array [
               Object {
-                "alignItems": "stretch",
-                "backgroundColor": "#FFFFFF",
+                "backgroundColor": "#FFFFFF29",
                 "flexBasis": 0,
-                "flexDirection": "row",
                 "flexGrow": 1,
                 "flexShrink": 1,
-                "height": 48,
                 "paddingBottom": 0,
                 "paddingLeft": 0,
                 "paddingRight": 0,
                 "paddingTop": 0,
-                "position": "relative",
                 "width": "100%",
               },
             ]
           }
         >
           <View
-            style={Object {}}
+            style={
+              Object {
+                "left": 0,
+                "position": "absolute",
+              }
+            }
           >
             <View
               accessible={true}
@@ -89,6 +96,11 @@ exports[`StoryNatListItem component Should render StoryNatListItem component  1`
             >
               <SvgMock
                 height={24}
+                style={
+                  Object {
+                    "fill": "#333333",
+                  }
+                }
                 width={24}
               />
             </View>
@@ -104,7 +116,6 @@ exports[`StoryNatListItem component Should render StoryNatListItem component  1`
                   "color": "#333333",
                   "justifyContent": "center",
                   "left": 48,
-                  "position": "absolute",
                   "right": 48,
                   "top": 0,
                 },
@@ -193,6 +204,11 @@ exports[`StoryNatListItem component Should render StoryNatListItem component  1`
             >
               <SvgMock
                 height={24}
+                style={
+                  Object {
+                    "fill": "#333333",
+                  }
+                }
                 width={24}
               />
             </View>
@@ -214,27 +230,28 @@ exports[`StoryNatListItem component Should render StoryNatListItem component  1`
           style={
             Array [
               Object {
-                "alignItems": "stretch",
                 "backgroundColor": "#FF6B0B29",
                 "borderBottomColor": "#EEEEEE",
                 "borderBottomWidth": 1,
                 "flexBasis": 0,
-                "flexDirection": "row",
                 "flexGrow": 1,
                 "flexShrink": 1,
-                "height": 48,
                 "paddingBottom": 0,
                 "paddingLeft": 0,
                 "paddingRight": 0,
                 "paddingTop": 0,
-                "position": "relative",
                 "width": "100%",
               },
             ]
           }
         >
           <View
-            style={Object {}}
+            style={
+              Object {
+                "left": 0,
+                "position": "absolute",
+              }
+            }
           >
             <View
               accessible={true}
@@ -265,6 +282,11 @@ exports[`StoryNatListItem component Should render StoryNatListItem component  1`
             >
               <SvgMock
                 height={24}
+                style={
+                  Object {
+                    "fill": "#333333",
+                  }
+                }
                 width={24}
               />
             </View>
@@ -280,7 +302,6 @@ exports[`StoryNatListItem component Should render StoryNatListItem component  1`
                   "color": "#333333",
                   "justifyContent": "center",
                   "left": 48,
-                  "position": "absolute",
                   "right": 48,
                   "top": 0,
                 },
@@ -385,25 +406,26 @@ exports[`StoryNatListItem component Should render StoryNatListItem component  1`
           style={
             Array [
               Object {
-                "alignItems": "stretch",
-                "backgroundColor": "#FFFFFF",
+                "backgroundColor": "#FFFFFF29",
                 "flexBasis": 0,
-                "flexDirection": "row",
                 "flexGrow": 1,
                 "flexShrink": 1,
-                "height": 48,
                 "paddingBottom": 0,
                 "paddingLeft": 0,
                 "paddingRight": 0,
                 "paddingTop": 0,
-                "position": "relative",
                 "width": "100%",
               },
             ]
           }
         >
           <View
-            style={Object {}}
+            style={
+              Object {
+                "left": 0,
+                "position": "absolute",
+              }
+            }
           >
             <View
               accessible={true}
@@ -444,7 +466,6 @@ exports[`StoryNatListItem component Should render StoryNatListItem component  1`
                   "color": "#333333",
                   "justifyContent": "center",
                   "left": 48,
-                  "position": "absolute",
                   "right": 48,
                   "top": 0,
                 },
@@ -549,20 +570,16 @@ exports[`StoryNatListItem component Should render StoryNatListItem component  1`
           style={
             Array [
               Object {
-                "alignItems": "stretch",
-                "backgroundColor": "#FFFFFF",
+                "backgroundColor": "#FFFFFF29",
                 "borderTopColor": "#EEEEEE",
                 "borderTopWidth": 1,
                 "flexBasis": 0,
-                "flexDirection": "row",
                 "flexGrow": 1,
                 "flexShrink": 1,
-                "height": 48,
                 "paddingBottom": 0,
                 "paddingLeft": 0,
                 "paddingRight": 0,
                 "paddingTop": 0,
-                "position": "relative",
                 "width": "100%",
               },
             ]
@@ -579,7 +596,6 @@ exports[`StoryNatListItem component Should render StoryNatListItem component  1`
                   "color": "#333333",
                   "justifyContent": "center",
                   "left": 0,
-                  "position": "absolute",
                   "right": 48,
                   "top": 0,
                 },
@@ -673,12 +689,10 @@ exports[`StoryNatListItem component Should render StoryNatListItem component  1`
                   }
                 }
                 style={
-                  Array [
-                    Object {
-                      "height": 24,
-                      "width": 24,
-                    },
-                  ]
+                  Object {
+                    "height": 24,
+                    "width": 24,
+                  }
                 }
               />
             </View>
@@ -700,25 +714,26 @@ exports[`StoryNatListItem component Should render StoryNatListItem component  1`
           style={
             Array [
               Object {
-                "alignItems": "stretch",
                 "backgroundColor": "#FF6B0B29",
                 "flexBasis": 0,
-                "flexDirection": "row",
                 "flexGrow": 1,
                 "flexShrink": 1,
-                "height": 48,
                 "paddingBottom": 0,
                 "paddingLeft": 0,
                 "paddingRight": 0,
                 "paddingTop": 0,
-                "position": "relative",
                 "width": "100%",
               },
             ]
           }
         >
           <View
-            style={Object {}}
+            style={
+              Object {
+                "left": 0,
+                "position": "absolute",
+              }
+            }
           >
             <View
               accessible={true}
@@ -754,12 +769,10 @@ exports[`StoryNatListItem component Should render StoryNatListItem component  1`
                   }
                 }
                 style={
-                  Array [
-                    Object {
-                      "height": 24,
-                      "width": 24,
-                    },
-                  ]
+                  Object {
+                    "height": 24,
+                    "width": 24,
+                  }
                 }
               />
             </View>
@@ -775,7 +788,6 @@ exports[`StoryNatListItem component Should render StoryNatListItem component  1`
                   "color": "#333333",
                   "justifyContent": "center",
                   "left": 48,
-                  "position": "absolute",
                   "right": 48,
                   "top": 0,
                 },
@@ -880,18 +892,14 @@ exports[`StoryNatListItem component Should render StoryNatListItem component  1`
           style={
             Array [
               Object {
-                "alignItems": "stretch",
-                "backgroundColor": "#FFFFFF",
+                "backgroundColor": "#FFFFFF29",
                 "flexBasis": 0,
-                "flexDirection": "row",
                 "flexGrow": 1,
                 "flexShrink": 1,
-                "height": 48,
                 "paddingBottom": 0,
                 "paddingLeft": 0,
                 "paddingRight": 0,
                 "paddingTop": 0,
-                "position": "relative",
                 "width": "100%",
               },
             ]
@@ -908,7 +916,6 @@ exports[`StoryNatListItem component Should render StoryNatListItem component  1`
                   "color": "#333333",
                   "justifyContent": "center",
                   "left": 0,
-                  "position": "absolute",
                   "right": 48,
                   "top": 0,
                 },
@@ -1013,25 +1020,26 @@ exports[`StoryNatListItem component Should render StoryNatListItem component  1`
           style={
             Array [
               Object {
-                "alignItems": "stretch",
-                "backgroundColor": "#FFFFFF",
+                "backgroundColor": "#FFFFFF29",
                 "flexBasis": 0,
-                "flexDirection": "row",
                 "flexGrow": 1,
                 "flexShrink": 1,
-                "height": 48,
                 "paddingBottom": 0,
                 "paddingLeft": 0,
                 "paddingRight": 0,
                 "paddingTop": 0,
-                "position": "relative",
                 "width": "100%",
               },
             ]
           }
         >
           <View
-            style={Object {}}
+            style={
+              Object {
+                "left": 0,
+                "position": "absolute",
+              }
+            }
           >
             <View
               accessible={true}
@@ -1072,184 +1080,6 @@ exports[`StoryNatListItem component Should render StoryNatListItem component  1`
                   "color": "#333333",
                   "justifyContent": "center",
                   "left": 48,
-                  "position": "absolute",
-                  "right": 48,
-                  "top": 0,
-                },
-              ]
-            }
-          >
-            <View
-              accessible={true}
-              focusable={true}
-              isTVSelectable={true}
-              onClick={[Function]}
-              onResponderGrant={[Function]}
-              onResponderMove={[Function]}
-              onResponderRelease={[Function]}
-              onResponderTerminate={[Function]}
-              onResponderTerminationRequest={[Function]}
-              onStartShouldSetResponder={[Function]}
-              style={
-                Object {
-                  "alignSelf": "stretch",
-                  "flexBasis": 0,
-                  "flexGrow": 1,
-                  "flexShrink": 1,
-                  "justifyContent": "center",
-                  "opacity": 1,
-                }
-              }
-            >
-              <Text
-                accessibilityLabel="Title Text and Node icon"
-                style={
-                  Array [
-                    Object {
-                      "color": "#333333",
-                      "flexBasis": 0,
-                      "flexGrow": 1,
-                      "flexShrink": 1,
-                      "fontSize": 16,
-                      "justifyContent": "center",
-                      "marginLeft": 0,
-                      "paddingBottom": 12,
-                      "paddingLeft": 16,
-                      "paddingTop": 12,
-                    },
-                  ]
-                }
-              >
-                Title Text and Node icon
-              </Text>
-            </View>
-          </View>
-          <View
-            style={
-              Object {
-                "alignSelf": "center",
-                "position": "absolute",
-                "right": 0,
-              }
-            }
-          >
-            <View
-              accessible={true}
-              focusable={true}
-              isTVSelectable={true}
-              onClick={[Function]}
-              onResponderGrant={[Function]}
-              onResponderMove={[Function]}
-              onResponderRelease={[Function]}
-              onResponderTerminate={[Function]}
-              onResponderTerminationRequest={[Function]}
-              onStartShouldSetResponder={[Function]}
-              style={
-                Object {
-                  "alignSelf": "center",
-                  "flexBasis": 0,
-                  "flexGrow": 1,
-                  "flexShrink": 1,
-                  "height": 40,
-                  "opacity": 1,
-                  "paddingBottom": 12,
-                  "paddingLeft": 0,
-                  "paddingRight": 16,
-                  "paddingTop": 12,
-                  "width": 40,
-                }
-              }
-            >
-              <Text>
-                DS
-              </Text>
-            </View>
-          </View>
-        </View>
-        <View
-          style={
-            Object {
-              "height": 10,
-            }
-          }
-        />
-        <View
-          accessibilityRole="header"
-          accessible={true}
-          active={false}
-          dividerBottom={false}
-          dividerTop={false}
-          style={
-            Array [
-              Object {
-                "alignItems": "stretch",
-                "backgroundColor": "#FFFFFF",
-                "flexBasis": 0,
-                "flexDirection": "row",
-                "flexGrow": 1,
-                "flexShrink": 1,
-                "height": 48,
-                "paddingBottom": 0,
-                "paddingLeft": 0,
-                "paddingRight": 0,
-                "paddingTop": 0,
-                "position": "relative",
-                "width": "100%",
-              },
-            ]
-          }
-        >
-          <View
-            style={
-              Object {
-                "alignSelf": "center",
-              }
-            }
-          >
-            <View
-              accessible={true}
-              focusable={true}
-              isTVSelectable={true}
-              onClick={[Function]}
-              onResponderGrant={[Function]}
-              onResponderMove={[Function]}
-              onResponderRelease={[Function]}
-              onResponderTerminate={[Function]}
-              onResponderTerminationRequest={[Function]}
-              onStartShouldSetResponder={[Function]}
-              style={
-                Object {
-                  "alignSelf": "center",
-                  "flexBasis": 0,
-                  "flexGrow": 1,
-                  "flexShrink": 1,
-                  "height": 40,
-                  "opacity": 1,
-                  "paddingBottom": 12,
-                  "paddingLeft": 16,
-                  "paddingRight": 0,
-                  "paddingTop": 12,
-                  "width": 40,
-                }
-              }
-            >
-              <Text>
-                DS
-              </Text>
-            </View>
-          </View>
-          <View
-            hideIconLeft={false}
-            hideIconRight={false}
-            style={
-              Array [
-                Object {
-                  "alignItems": "center",
-                  "bottom": 0,
-                  "color": "#333333",
-                  "justifyContent": "center",
-                  "left": 48,
-                  "position": "absolute",
                   "right": 48,
                   "top": 0,
                 },
@@ -1354,25 +1184,26 @@ exports[`StoryNatListItem component Should render StoryNatListItem component  1`
           style={
             Array [
               Object {
-                "alignItems": "stretch",
-                "backgroundColor": "#FFFFFF",
+                "backgroundColor": "#FFFFFF29",
                 "flexBasis": 0,
-                "flexDirection": "row",
                 "flexGrow": 1,
                 "flexShrink": 1,
-                "height": 48,
                 "paddingBottom": 0,
                 "paddingLeft": 0,
                 "paddingRight": 0,
                 "paddingTop": 0,
-                "position": "relative",
                 "width": "100%",
               },
             ]
           }
         >
           <View
-            style={Object {}}
+            style={
+              Object {
+                "left": 0,
+                "position": "absolute",
+              }
+            }
           >
             <View
               accessible={true}
@@ -1413,7 +1244,170 @@ exports[`StoryNatListItem component Should render StoryNatListItem component  1`
                   "color": "#333333",
                   "justifyContent": "center",
                   "left": 48,
-                  "position": "absolute",
+                  "right": 48,
+                  "top": 0,
+                },
+              ]
+            }
+          >
+            <View
+              accessible={true}
+              focusable={true}
+              isTVSelectable={true}
+              onClick={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Object {
+                  "alignSelf": "stretch",
+                  "flexBasis": 0,
+                  "flexGrow": 1,
+                  "flexShrink": 1,
+                  "justifyContent": "center",
+                  "opacity": 1,
+                }
+              }
+            >
+              <Text
+                accessibilityLabel="Title Text and Node icon"
+                style={
+                  Array [
+                    Object {
+                      "color": "#333333",
+                      "flexBasis": 0,
+                      "flexGrow": 1,
+                      "flexShrink": 1,
+                      "fontSize": 16,
+                      "justifyContent": "center",
+                      "marginLeft": 0,
+                      "paddingBottom": 12,
+                      "paddingLeft": 16,
+                      "paddingTop": 12,
+                    },
+                  ]
+                }
+              >
+                Title Text and Node icon
+              </Text>
+            </View>
+          </View>
+          <View
+            style={
+              Object {
+                "position": "absolute",
+                "right": 0,
+              }
+            }
+          >
+            <View
+              accessible={true}
+              focusable={true}
+              isTVSelectable={true}
+              onClick={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Object {
+                  "alignSelf": "center",
+                  "flexBasis": 0,
+                  "flexGrow": 1,
+                  "flexShrink": 1,
+                  "height": 40,
+                  "opacity": 1,
+                  "paddingBottom": 12,
+                  "paddingLeft": 0,
+                  "paddingRight": 16,
+                  "paddingTop": 12,
+                  "width": 40,
+                }
+              }
+            />
+          </View>
+        </View>
+        <View
+          style={
+            Object {
+              "height": 10,
+            }
+          }
+        />
+        <View
+          accessibilityRole="header"
+          accessible={true}
+          active={false}
+          dividerBottom={false}
+          dividerTop={false}
+          style={
+            Array [
+              Object {
+                "backgroundColor": "#FFFFFF29",
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
+                "width": "100%",
+              },
+            ]
+          }
+        >
+          <View
+            style={
+              Object {
+                "left": 0,
+                "position": "absolute",
+              }
+            }
+          >
+            <View
+              accessible={true}
+              focusable={true}
+              isTVSelectable={true}
+              onClick={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Object {
+                  "alignSelf": "center",
+                  "flexBasis": 0,
+                  "flexGrow": 1,
+                  "flexShrink": 1,
+                  "height": 40,
+                  "opacity": 1,
+                  "paddingBottom": 12,
+                  "paddingLeft": 16,
+                  "paddingRight": 0,
+                  "paddingTop": 12,
+                  "width": 40,
+                }
+              }
+            />
+          </View>
+          <View
+            hideIconLeft={false}
+            hideIconRight={false}
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "bottom": 0,
+                  "color": "#333333",
+                  "justifyContent": "center",
+                  "left": 48,
                   "right": 48,
                   "top": 0,
                 },

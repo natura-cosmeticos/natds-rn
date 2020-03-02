@@ -9,6 +9,7 @@ describe('StoryTokenSpace component', () => {
     const button = renderer.create(
       <StoryTokenSpace />,
     ).toJSON();
-    expect(button).toMatchSnapshot();
+
+    expect(button).toMatchSnapshot('StoryTokenSpace snapshot');
   });
 });

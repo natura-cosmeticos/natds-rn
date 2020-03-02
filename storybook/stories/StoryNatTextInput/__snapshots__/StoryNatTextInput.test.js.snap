@@ -1,30 +1,36 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`StoryNatTextInput component Should render StoryNatTextInput component  1`] = `
+exports[`StoryNatTextInput component Should render StoryNatTextInput component : StoryNatTextInput snapshot 1`] = `
 <RCTSafeAreaView
   emulateUnlessSupported={true}
+  style={
+    Object {
+      "flex": 1,
+      "width": 750,
+    }
+  }
 >
   <View
+    marginBottom="none"
+    marginLeft="none"
+    marginRight="none"
+    marginTop="none"
+    paddingBottom="small"
+    paddingLeft="small"
+    paddingRight="small"
+    paddingTop="small"
     style={
       Array [
         Object {
           "backgroundColor": "#FFFFFF",
-          "bottom": 0,
-          "flexBasis": 0,
-          "flexGrow": 1,
-          "flexShrink": 1,
-          "left": 0,
-          "paddingBottom": 0,
+          "marginBottom": 0,
+          "marginLeft": 0,
+          "marginRight": 0,
+          "marginTop": 0,
+          "paddingBottom": 16,
           "paddingLeft": 16,
           "paddingRight": 16,
-          "paddingTop": 0,
-          "right": 0,
-          "top": 0,
-        },
-        Object {
-          "backgroundColor": "#FFF",
-          "marginTop": 0,
-          "width": 750,
+          "paddingTop": 16,
         },
       ]
     }
@@ -33,11 +39,11 @@ exports[`StoryNatTextInput component Should render StoryNatTextInput component  
       <View>
         <View
           accessible={true}
-          defaultMargin="0px"
+          marginDefault="tiny"
           style={
             Array [
               Object {
-                "marginBottom": 0,
+                "marginBottom": 8,
                 "width": "100%",
               },
             ]
@@ -758,6 +764,7 @@ exports[`StoryNatTextInput component Should render StoryNatTextInput component  
               onFocus={[Function]}
               placeholder="Size Small"
               rejectResponderTermination={true}
+              size="small"
               state="default"
               style={
                 Array [
@@ -770,8 +777,8 @@ exports[`StoryNatTextInput component Should render StoryNatTextInput component  
                     "fontSize": 16,
                     "height": 56,
                     "letterSpacing": 0,
-                    "paddingBottom": 0,
-                    "paddingTop": 0,
+                    "paddingBottom": 8,
+                    "paddingTop": 8,
                     "textAlignVertical": "top",
                   },
                   Object {
@@ -1146,11 +1153,11 @@ exports[`StoryNatTextInput component Should render StoryNatTextInput component  
         </View>
         <View
           accessible={true}
-          defaultMargin="0px"
+          marginDefault="tiny"
           style={
             Array [
               Object {
-                "marginBottom": 0,
+                "marginBottom": 8,
                 "width": "100%",
               },
             ]
@@ -1871,6 +1878,7 @@ exports[`StoryNatTextInput component Should render StoryNatTextInput component  
               onFocus={[Function]}
               placeholder="Size Normal"
               rejectResponderTermination={true}
+              size="normal"
               state="default"
               style={
                 Array [
@@ -1883,8 +1891,8 @@ exports[`StoryNatTextInput component Should render StoryNatTextInput component  
                     "fontSize": 16,
                     "height": 56,
                     "letterSpacing": 0,
-                    "paddingBottom": 0,
-                    "paddingTop": 0,
+                    "paddingBottom": 16,
+                    "paddingTop": 16,
                     "textAlignVertical": "top",
                   },
                   Object {
@@ -2259,11 +2267,11 @@ exports[`StoryNatTextInput component Should render StoryNatTextInput component  
         </View>
         <View
           accessible={true}
-          defaultMargin="0px"
+          marginDefault="tiny"
           style={
             Array [
               Object {
-                "marginBottom": 0,
+                "marginBottom": 8,
                 "width": "100%",
               },
             ]
@@ -2984,6 +2992,7 @@ exports[`StoryNatTextInput component Should render StoryNatTextInput component  
               onFocus={[Function]}
               placeholder="Multiple lines"
               rejectResponderTermination={true}
+              size="normal"
               state="default"
               style={
                 Array [
@@ -3372,11 +3381,11 @@ exports[`StoryNatTextInput component Should render StoryNatTextInput component  
         </View>
         <View
           accessible={true}
-          defaultMargin="0px"
+          marginDefault="tiny"
           style={
             Array [
               Object {
-                "marginBottom": 0,
+                "marginBottom": 8,
                 "width": "100%",
               },
             ]
@@ -4063,6 +4072,7 @@ exports[`StoryNatTextInput component Should render StoryNatTextInput component  
               onFocus={[Function]}
               placeholder="Search"
               rejectResponderTermination={true}
+              size="small"
               state="default"
               style={
                 Array [
@@ -4075,8 +4085,8 @@ exports[`StoryNatTextInput component Should render StoryNatTextInput component  
                     "fontSize": 16,
                     "height": 56,
                     "letterSpacing": 0,
-                    "paddingBottom": 0,
-                    "paddingTop": 0,
+                    "paddingBottom": 8,
+                    "paddingTop": 8,
                     "textAlignVertical": "top",
                   },
                   Object {

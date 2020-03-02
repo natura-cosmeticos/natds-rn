@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
-import { View, Text, Dimensions, SafeAreaView } from 'react-native';
+import {
+  View, Text, Dimensions, SafeAreaView,
+} from 'react-native';
 import icoArrowLeft from '../../../lib/assets/icons/ic_arrow_left_white.png';
 import { NatContainer, NatTextInput } from '../../../lib';
 
 const styles = {
   defaultScreen: {
-    backgroundColor: '#FFF',
-    marginTop: 0,
+    flex: 1,
     width: Dimensions.get('window').width,
   },
 };
@@ -18,7 +19,7 @@ export const Form = () => {
   const [inputNormal, setInputNormal] = useState('');
 
   return (
-    <SafeAreaView>
+    <SafeAreaView style={styles.defaultScreen}>
       <NatContainer styles={styles}>
         <View>
           <NatTextInput
@@ -36,7 +37,6 @@ export const Form = () => {
             assistiveText="Size Normal"
             onChangeText={setInputNormal}
             value={inputNormal}
-            margin="normal"
           />
           <NatTextInput
             label="Error"

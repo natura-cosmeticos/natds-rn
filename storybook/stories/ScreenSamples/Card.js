@@ -13,59 +13,58 @@ export const Card = () => {
     'Press',
     'My Alert Msg',
     [
-      { text: 'Ask me later', onPress: () => console.log('Ask me later pressed') },
+      { onPress: () => console.log('Ask me later pressed'), text: 'Ask me later' },
       {
-        text: 'Cancel',
         onPress: () => console.log('Cancel Pressed'),
         style: 'cancel',
+        text: 'Cancel',
       },
-      { text: 'OK', onPress: () => console.log('OK Pressed') },
+      { onPress: () => console.log('OK Pressed'), text: 'OK' },
     ],
     { cancelable: false },
   );
 
   const examples = [
     {
+      iconURI: 'https://upload.wikimedia.org/wikipedia/pt/thumb/c/cb/Natura_Logo.png/200px-Natura_Logo.png',
+      imageURI: 'https://i.picsum.photos/id/1016/328/184.jpg',
+      resume: 'This is a Natura card ',
+      subtitle: '13 hours ago',
       title: 'Card Test Number 1',
-      subtitle: '13 hours ago',
-      resume: 'This is a Natura card ',
-      iconURI: 'https://upload.wikimedia.org/wikipedia/pt/thumb/c/cb/Natura_Logo.png/200px-Natura_Logo.png',
-      imageURI: 'https://i.picsum.photos/id/1016/328/184.jpg',
     },
     {
+      iconURI: 'https://upload.wikimedia.org/wikipedia/pt/thumb/c/cb/Natura_Logo.png/200px-Natura_Logo.png',
+      imageURI: 'https://i.picsum.photos/id/1016/328/184.jpg',
+      resume: 'This is a Natura card ',
+      subtitle: '13 hours ago',
       title: 'Card Test Number 2',
-      subtitle: '13 hours ago',
-      resume: 'This is a Natura card ',
-      iconURI: 'https://upload.wikimedia.org/wikipedia/pt/thumb/c/cb/Natura_Logo.png/200px-Natura_Logo.png',
-      imageURI: 'https://i.picsum.photos/id/1016/328/184.jpg',
     },
     {
+      iconURI: 'https://upload.wikimedia.org/wikipedia/pt/thumb/c/cb/Natura_Logo.png/200px-Natura_Logo.png',
+      imageURI: 'https://i.picsum.photos/id/1016/328/184.jpg',
+      resume: 'This is a Natura card ',
+      subtitle: '13 hours ago',
       title: 'Card Test Number 3',
-      subtitle: '13 hours ago',
-      resume: 'This is a Natura card ',
-      iconURI: 'https://upload.wikimedia.org/wikipedia/pt/thumb/c/cb/Natura_Logo.png/200px-Natura_Logo.png',
-      imageURI: 'https://i.picsum.photos/id/1016/328/184.jpg',
     },
     {
-      title: 'Card Test Number 4',
-      subtitle: '13 hours ago',
-      resume: 'This is a Natura card ',
       iconURI: 'https://upload.wikimedia.org/wikipedia/pt/thumb/c/cb/Natura_Logo.png/200px-Natura_Logo.png',
       imageURI: 'https://i.picsum.photos/id/1016/328/184.jpg',
+      resume: 'This is a Natura card ',
+      subtitle: '13 hours ago',
+      title: 'Card Test Number 4',
     },
   ];
 
   const styles = {
     defaultScreen: {
-      backgroundColor: '#FAFAFA',
-      marginTop: 0,
+      flex: 1,
       width: Dimensions.get('window').width,
     },
   };
 
   return (
-    <SafeAreaView>
-      <NatContainer style={styles.defaultScreen}>
+    <SafeAreaView style={styles.defaultScreen}>
+      <NatContainer>
         <ScrollView>
           {examples.map((example, index) => (
             <NatSpace marginBottom="small">

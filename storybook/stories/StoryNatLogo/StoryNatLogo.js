@@ -16,17 +16,17 @@ import {
 
 const styles = {
   defaultScreen: {
-    backgroundColor: '#FFF',
+    flex: 1,
     width: Dimensions.get('window').width,
   },
 };
 
 export const StoryNatLogo = () => {
   const iconList = [
-    { name: 'logo-natura-horizontal', size: 300, background: 'white' },
-    { name: 'logo-natura-vertical', size: 300, background: 'white' },
-    { name: 'logo-natura-negative-horizontal', size: 300, background: ThemeNaturaLight.palette.text.primary },
-    { name: 'logo-natura-negative-vertical', size: 300, background: ThemeNaturaLight.palette.text.primary },
+    { background: 'white', name: 'logo-natura-horizontal', size: 200 },
+    { background: 'white', name: 'logo-natura-vertical', size: 200 },
+    { background: ThemeNaturaLight.palette.text.primary, name: 'logo-natura-negative-horizontal', size: 200 },
+    { background: ThemeNaturaLight.palette.text.primary, name: 'logo-natura-negative-vertical', size: 200 },
   ];
 
   const renderItem = (name, size, background) => (
@@ -39,8 +39,8 @@ export const StoryNatLogo = () => {
   );
 
   return (
-    <SafeAreaView>
-      <NatContainer style={styles.defaultScreen}>
+    <SafeAreaView style={styles.defaultScreen}>
+      <NatContainer>
         <ScrollView>
           <NatText type="h6" value="ICONS SVG" />
           <FlatList

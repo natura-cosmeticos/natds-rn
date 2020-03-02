@@ -1,29 +1,36 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ThemeNaturaLight component Should render ThemeNaturaLight component  1`] = `
+exports[`ThemeNaturaLight component Should render ThemeNaturaLight component : ThemeNaturaLight snapshot 1`] = `
 <RCTSafeAreaView
   emulateUnlessSupported={true}
+  style={
+    Object {
+      "flex": 1,
+      "width": 750,
+    }
+  }
 >
   <View
+    marginBottom="none"
+    marginLeft="none"
+    marginRight="none"
+    marginTop="none"
+    paddingBottom="small"
+    paddingLeft="small"
+    paddingRight="small"
+    paddingTop="small"
     style={
       Array [
         Object {
           "backgroundColor": "#FFFFFF",
-          "bottom": 0,
-          "flexBasis": 0,
-          "flexGrow": 1,
-          "flexShrink": 1,
-          "left": 0,
-          "paddingBottom": 0,
+          "marginBottom": 0,
+          "marginLeft": 0,
+          "marginRight": 0,
+          "marginTop": 0,
+          "paddingBottom": 16,
           "paddingLeft": 16,
           "paddingRight": 16,
-          "paddingTop": 0,
-          "right": 0,
-          "top": 0,
-        },
-        Object {
-          "backgroundColor": "#FFF",
-          "width": 750,
+          "paddingTop": 16,
         },
       ]
     }
@@ -68,20 +75,20 @@ exports[`ThemeNaturaLight component Should render ThemeNaturaLight component  1`
           data={
             Array [
               Object {
-                "color": "#F4AB34",
-                "name": "main",
-              },
-              Object {
-                "color": "#FEFDE8",
-                "name": "light",
+                "color": "#333333",
+                "name": "contrastText",
               },
               Object {
                 "color": "#EF8426",
                 "name": "dark",
               },
               Object {
-                "color": "#333333",
-                "name": "contrastText",
+                "color": "#FEFDE8",
+                "name": "light",
+              },
+              Object {
+                "color": "#F4AB34",
+                "name": "main",
               },
             ]
           }
@@ -109,276 +116,6 @@ exports[`ThemeNaturaLight component Should render ThemeNaturaLight component  1`
           windowSize={21}
         >
           <View>
-            <View
-              onLayout={[Function]}
-              style={null}
-            >
-              <View
-                style={
-                  Object {
-                    "flexDirection": "row",
-                  }
-                }
-              >
-                <View
-                  margin={24}
-                  style={
-                    Array [
-                      Object {
-                        "marginBottom": 24,
-                        "marginLeft": 0,
-                        "marginRight": 0,
-                        "marginTop": 0,
-                        "paddingBottom": 0,
-                        "paddingLeft": 0,
-                        "paddingRight": 0,
-                        "paddingTop": 0,
-                      },
-                    ]
-                  }
-                >
-                  <Text
-                    color="#333333"
-                    style={
-                      Array [
-                        Object {
-                          "color": "#333333",
-                          "fontSize": 16,
-                          "fontWeight": "400",
-                          "lineHeight": 24,
-                        },
-                      ]
-                    }
-                    type="body1"
-                  >
-                    main
-                  </Text>
-                </View>
-                <View
-                  style={
-                    Object {
-                      "backgroundColor": "#F4AB34",
-                      "height": 30,
-                      "width": 30,
-                    }
-                  }
-                />
-                <View
-                  margin={24}
-                  style={
-                    Array [
-                      Object {
-                        "marginBottom": 24,
-                        "marginLeft": 0,
-                        "marginRight": 0,
-                        "marginTop": 0,
-                        "paddingBottom": 0,
-                        "paddingLeft": 0,
-                        "paddingRight": 0,
-                        "paddingTop": 0,
-                      },
-                    ]
-                  }
-                >
-                  <Text
-                    color="#333333"
-                    style={
-                      Array [
-                        Object {
-                          "color": "#333333",
-                          "fontSize": 16,
-                          "fontWeight": "400",
-                          "lineHeight": 24,
-                        },
-                      ]
-                    }
-                    type="body1"
-                  >
-                    #F4AB34
-                  </Text>
-                </View>
-              </View>
-            </View>
-            <View
-              onLayout={[Function]}
-              style={null}
-            >
-              <View
-                style={
-                  Object {
-                    "flexDirection": "row",
-                  }
-                }
-              >
-                <View
-                  margin={24}
-                  style={
-                    Array [
-                      Object {
-                        "marginBottom": 24,
-                        "marginLeft": 0,
-                        "marginRight": 0,
-                        "marginTop": 0,
-                        "paddingBottom": 0,
-                        "paddingLeft": 0,
-                        "paddingRight": 0,
-                        "paddingTop": 0,
-                      },
-                    ]
-                  }
-                >
-                  <Text
-                    color="#333333"
-                    style={
-                      Array [
-                        Object {
-                          "color": "#333333",
-                          "fontSize": 16,
-                          "fontWeight": "400",
-                          "lineHeight": 24,
-                        },
-                      ]
-                    }
-                    type="body1"
-                  >
-                    light
-                  </Text>
-                </View>
-                <View
-                  style={
-                    Object {
-                      "backgroundColor": "#FEFDE8",
-                      "height": 30,
-                      "width": 30,
-                    }
-                  }
-                />
-                <View
-                  margin={24}
-                  style={
-                    Array [
-                      Object {
-                        "marginBottom": 24,
-                        "marginLeft": 0,
-                        "marginRight": 0,
-                        "marginTop": 0,
-                        "paddingBottom": 0,
-                        "paddingLeft": 0,
-                        "paddingRight": 0,
-                        "paddingTop": 0,
-                      },
-                    ]
-                  }
-                >
-                  <Text
-                    color="#333333"
-                    style={
-                      Array [
-                        Object {
-                          "color": "#333333",
-                          "fontSize": 16,
-                          "fontWeight": "400",
-                          "lineHeight": 24,
-                        },
-                      ]
-                    }
-                    type="body1"
-                  >
-                    #FEFDE8
-                  </Text>
-                </View>
-              </View>
-            </View>
-            <View
-              onLayout={[Function]}
-              style={null}
-            >
-              <View
-                style={
-                  Object {
-                    "flexDirection": "row",
-                  }
-                }
-              >
-                <View
-                  margin={24}
-                  style={
-                    Array [
-                      Object {
-                        "marginBottom": 24,
-                        "marginLeft": 0,
-                        "marginRight": 0,
-                        "marginTop": 0,
-                        "paddingBottom": 0,
-                        "paddingLeft": 0,
-                        "paddingRight": 0,
-                        "paddingTop": 0,
-                      },
-                    ]
-                  }
-                >
-                  <Text
-                    color="#333333"
-                    style={
-                      Array [
-                        Object {
-                          "color": "#333333",
-                          "fontSize": 16,
-                          "fontWeight": "400",
-                          "lineHeight": 24,
-                        },
-                      ]
-                    }
-                    type="body1"
-                  >
-                    dark
-                  </Text>
-                </View>
-                <View
-                  style={
-                    Object {
-                      "backgroundColor": "#EF8426",
-                      "height": 30,
-                      "width": 30,
-                    }
-                  }
-                />
-                <View
-                  margin={24}
-                  style={
-                    Array [
-                      Object {
-                        "marginBottom": 24,
-                        "marginLeft": 0,
-                        "marginRight": 0,
-                        "marginTop": 0,
-                        "paddingBottom": 0,
-                        "paddingLeft": 0,
-                        "paddingRight": 0,
-                        "paddingTop": 0,
-                      },
-                    ]
-                  }
-                >
-                  <Text
-                    color="#333333"
-                    style={
-                      Array [
-                        Object {
-                          "color": "#333333",
-                          "fontSize": 16,
-                          "fontWeight": "400",
-                          "lineHeight": 24,
-                        },
-                      ]
-                    }
-                    type="body1"
-                  >
-                    #EF8426
-                  </Text>
-                </View>
-              </View>
-            </View>
             <View
               onLayout={[Function]}
               style={null}
@@ -469,87 +206,6 @@ exports[`ThemeNaturaLight component Should render ThemeNaturaLight component  1`
                 </View>
               </View>
             </View>
-          </View>
-        </RCTScrollView>
-        <View
-          margin={24}
-          style={
-            Array [
-              Object {
-                "marginBottom": 24,
-                "marginLeft": 0,
-                "marginRight": 0,
-                "marginTop": 0,
-                "paddingBottom": 0,
-                "paddingLeft": 0,
-                "paddingRight": 0,
-                "paddingTop": 0,
-              },
-            ]
-          }
-        >
-          <Text
-            color="#333333"
-            style={
-              Array [
-                Object {
-                  "color": "#333333",
-                  "fontSize": 20,
-                  "fontWeight": "500",
-                  "lineHeight": 30,
-                },
-              ]
-            }
-            type="h6"
-          >
-            SECONDARY
-          </Text>
-        </View>
-        <RCTScrollView
-          data={
-            Array [
-              Object {
-                "color": "#FF6B0B",
-                "name": "main",
-              },
-              Object {
-                "color": "#FEFDE8",
-                "name": "light",
-              },
-              Object {
-                "color": "#EF8426",
-                "name": "dark",
-              },
-              Object {
-                "color": "#000000",
-                "name": "contrastText",
-              },
-            ]
-          }
-          disableVirtualization={false}
-          getItem={[Function]}
-          getItemCount={[Function]}
-          horizontal={false}
-          initialNumToRender={10}
-          keyExtractor={[Function]}
-          maxToRenderPerBatch={10}
-          numColumns={1}
-          onContentSizeChange={[Function]}
-          onEndReachedThreshold={2}
-          onLayout={[Function]}
-          onMomentumScrollEnd={[Function]}
-          onScroll={[Function]}
-          onScrollBeginDrag={[Function]}
-          onScrollEndDrag={[Function]}
-          removeClippedSubviews={false}
-          renderItem={[Function]}
-          scrollEventThrottle={50}
-          stickyHeaderIndices={Array []}
-          updateCellsBatchingPeriod={50}
-          viewabilityConfigCallbackPairs={Array []}
-          windowSize={21}
-        >
-          <View>
             <View
               onLayout={[Function]}
               style={null}
@@ -592,13 +248,13 @@ exports[`ThemeNaturaLight component Should render ThemeNaturaLight component  1`
                     }
                     type="body1"
                   >
-                    main
+                    dark
                   </Text>
                 </View>
                 <View
                   style={
                     Object {
-                      "backgroundColor": "#FF6B0B",
+                      "backgroundColor": "#EF8426",
                       "height": 30,
                       "width": 30,
                     }
@@ -635,7 +291,7 @@ exports[`ThemeNaturaLight component Should render ThemeNaturaLight component  1`
                     }
                     type="body1"
                   >
-                    #FF6B0B
+                    #EF8426
                   </Text>
                 </View>
               </View>
@@ -772,13 +428,13 @@ exports[`ThemeNaturaLight component Should render ThemeNaturaLight component  1`
                     }
                     type="body1"
                   >
-                    dark
+                    main
                   </Text>
                 </View>
                 <View
                   style={
                     Object {
-                      "backgroundColor": "#EF8426",
+                      "backgroundColor": "#F4AB34",
                       "height": 30,
                       "width": 30,
                     }
@@ -815,11 +471,92 @@ exports[`ThemeNaturaLight component Should render ThemeNaturaLight component  1`
                     }
                     type="body1"
                   >
-                    #EF8426
+                    #F4AB34
                   </Text>
                 </View>
               </View>
             </View>
+          </View>
+        </RCTScrollView>
+        <View
+          margin={24}
+          style={
+            Array [
+              Object {
+                "marginBottom": 24,
+                "marginLeft": 0,
+                "marginRight": 0,
+                "marginTop": 0,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
+              },
+            ]
+          }
+        >
+          <Text
+            color="#333333"
+            style={
+              Array [
+                Object {
+                  "color": "#333333",
+                  "fontSize": 20,
+                  "fontWeight": "500",
+                  "lineHeight": 30,
+                },
+              ]
+            }
+            type="h6"
+          >
+            SECONDARY
+          </Text>
+        </View>
+        <RCTScrollView
+          data={
+            Array [
+              Object {
+                "color": "#000000",
+                "name": "contrastText",
+              },
+              Object {
+                "color": "#EF8426",
+                "name": "dark",
+              },
+              Object {
+                "color": "#FEFDE8",
+                "name": "light",
+              },
+              Object {
+                "color": "#FF6B0B",
+                "name": "main",
+              },
+            ]
+          }
+          disableVirtualization={false}
+          getItem={[Function]}
+          getItemCount={[Function]}
+          horizontal={false}
+          initialNumToRender={10}
+          keyExtractor={[Function]}
+          maxToRenderPerBatch={10}
+          numColumns={1}
+          onContentSizeChange={[Function]}
+          onEndReachedThreshold={2}
+          onLayout={[Function]}
+          onMomentumScrollEnd={[Function]}
+          onScroll={[Function]}
+          onScrollBeginDrag={[Function]}
+          onScrollEndDrag={[Function]}
+          removeClippedSubviews={false}
+          renderItem={[Function]}
+          scrollEventThrottle={50}
+          stickyHeaderIndices={Array []}
+          updateCellsBatchingPeriod={50}
+          viewabilityConfigCallbackPairs={Array []}
+          windowSize={21}
+        >
+          <View>
             <View
               onLayout={[Function]}
               style={null}
@@ -910,6 +647,276 @@ exports[`ThemeNaturaLight component Should render ThemeNaturaLight component  1`
                 </View>
               </View>
             </View>
+            <View
+              onLayout={[Function]}
+              style={null}
+            >
+              <View
+                style={
+                  Object {
+                    "flexDirection": "row",
+                  }
+                }
+              >
+                <View
+                  margin={24}
+                  style={
+                    Array [
+                      Object {
+                        "marginBottom": 24,
+                        "marginLeft": 0,
+                        "marginRight": 0,
+                        "marginTop": 0,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    color="#333333"
+                    style={
+                      Array [
+                        Object {
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                          "lineHeight": 24,
+                        },
+                      ]
+                    }
+                    type="body1"
+                  >
+                    dark
+                  </Text>
+                </View>
+                <View
+                  style={
+                    Object {
+                      "backgroundColor": "#EF8426",
+                      "height": 30,
+                      "width": 30,
+                    }
+                  }
+                />
+                <View
+                  margin={24}
+                  style={
+                    Array [
+                      Object {
+                        "marginBottom": 24,
+                        "marginLeft": 0,
+                        "marginRight": 0,
+                        "marginTop": 0,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    color="#333333"
+                    style={
+                      Array [
+                        Object {
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                          "lineHeight": 24,
+                        },
+                      ]
+                    }
+                    type="body1"
+                  >
+                    #EF8426
+                  </Text>
+                </View>
+              </View>
+            </View>
+            <View
+              onLayout={[Function]}
+              style={null}
+            >
+              <View
+                style={
+                  Object {
+                    "flexDirection": "row",
+                  }
+                }
+              >
+                <View
+                  margin={24}
+                  style={
+                    Array [
+                      Object {
+                        "marginBottom": 24,
+                        "marginLeft": 0,
+                        "marginRight": 0,
+                        "marginTop": 0,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    color="#333333"
+                    style={
+                      Array [
+                        Object {
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                          "lineHeight": 24,
+                        },
+                      ]
+                    }
+                    type="body1"
+                  >
+                    light
+                  </Text>
+                </View>
+                <View
+                  style={
+                    Object {
+                      "backgroundColor": "#FEFDE8",
+                      "height": 30,
+                      "width": 30,
+                    }
+                  }
+                />
+                <View
+                  margin={24}
+                  style={
+                    Array [
+                      Object {
+                        "marginBottom": 24,
+                        "marginLeft": 0,
+                        "marginRight": 0,
+                        "marginTop": 0,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    color="#333333"
+                    style={
+                      Array [
+                        Object {
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                          "lineHeight": 24,
+                        },
+                      ]
+                    }
+                    type="body1"
+                  >
+                    #FEFDE8
+                  </Text>
+                </View>
+              </View>
+            </View>
+            <View
+              onLayout={[Function]}
+              style={null}
+            >
+              <View
+                style={
+                  Object {
+                    "flexDirection": "row",
+                  }
+                }
+              >
+                <View
+                  margin={24}
+                  style={
+                    Array [
+                      Object {
+                        "marginBottom": 24,
+                        "marginLeft": 0,
+                        "marginRight": 0,
+                        "marginTop": 0,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    color="#333333"
+                    style={
+                      Array [
+                        Object {
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                          "lineHeight": 24,
+                        },
+                      ]
+                    }
+                    type="body1"
+                  >
+                    main
+                  </Text>
+                </View>
+                <View
+                  style={
+                    Object {
+                      "backgroundColor": "#FF6B0B",
+                      "height": 30,
+                      "width": 30,
+                    }
+                  }
+                />
+                <View
+                  margin={24}
+                  style={
+                    Array [
+                      Object {
+                        "marginBottom": 24,
+                        "marginLeft": 0,
+                        "marginRight": 0,
+                        "marginTop": 0,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    color="#333333"
+                    style={
+                      Array [
+                        Object {
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                          "lineHeight": 24,
+                        },
+                      ]
+                    }
+                    type="body1"
+                  >
+                    #FF6B0B
+                  </Text>
+                </View>
+              </View>
+            </View>
           </View>
         </RCTScrollView>
         <View
@@ -950,12 +957,12 @@ exports[`ThemeNaturaLight component Should render ThemeNaturaLight component  1`
           data={
             Array [
               Object {
-                "color": "#E74627",
-                "name": "main",
-              },
-              Object {
                 "color": "#FFFFFF",
                 "name": "contrastText",
+              },
+              Object {
+                "color": "#E74627",
+                "name": "main",
               },
             ]
           }
@@ -983,6 +990,96 @@ exports[`ThemeNaturaLight component Should render ThemeNaturaLight component  1`
           windowSize={21}
         >
           <View>
+            <View
+              onLayout={[Function]}
+              style={null}
+            >
+              <View
+                style={
+                  Object {
+                    "flexDirection": "row",
+                  }
+                }
+              >
+                <View
+                  margin={24}
+                  style={
+                    Array [
+                      Object {
+                        "marginBottom": 24,
+                        "marginLeft": 0,
+                        "marginRight": 0,
+                        "marginTop": 0,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    color="#333333"
+                    style={
+                      Array [
+                        Object {
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                          "lineHeight": 24,
+                        },
+                      ]
+                    }
+                    type="body1"
+                  >
+                    contrastText
+                  </Text>
+                </View>
+                <View
+                  style={
+                    Object {
+                      "backgroundColor": "#FFFFFF",
+                      "height": 30,
+                      "width": 30,
+                    }
+                  }
+                />
+                <View
+                  margin={24}
+                  style={
+                    Array [
+                      Object {
+                        "marginBottom": 24,
+                        "marginLeft": 0,
+                        "marginRight": 0,
+                        "marginTop": 0,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    color="#333333"
+                    style={
+                      Array [
+                        Object {
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                          "lineHeight": 24,
+                        },
+                      ]
+                    }
+                    type="body1"
+                  >
+                    #FFFFFF
+                  </Text>
+                </View>
+              </View>
+            </View>
             <View
               onLayout={[Function]}
               style={null}
@@ -1073,6 +1170,79 @@ exports[`ThemeNaturaLight component Should render ThemeNaturaLight component  1`
                 </View>
               </View>
             </View>
+          </View>
+        </RCTScrollView>
+        <View
+          margin={24}
+          style={
+            Array [
+              Object {
+                "marginBottom": 24,
+                "marginLeft": 0,
+                "marginRight": 0,
+                "marginTop": 0,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
+              },
+            ]
+          }
+        >
+          <Text
+            color="#333333"
+            style={
+              Array [
+                Object {
+                  "color": "#333333",
+                  "fontSize": 20,
+                  "fontWeight": "500",
+                  "lineHeight": 30,
+                },
+              ]
+            }
+            type="h6"
+          >
+            SUCCESS
+          </Text>
+        </View>
+        <RCTScrollView
+          data={
+            Array [
+              Object {
+                "color": "#FFFFFF",
+                "name": "contrastText",
+              },
+              Object {
+                "color": "#569A32",
+                "name": "main",
+              },
+            ]
+          }
+          disableVirtualization={false}
+          getItem={[Function]}
+          getItemCount={[Function]}
+          horizontal={false}
+          initialNumToRender={10}
+          keyExtractor={[Function]}
+          maxToRenderPerBatch={10}
+          numColumns={1}
+          onContentSizeChange={[Function]}
+          onEndReachedThreshold={2}
+          onLayout={[Function]}
+          onMomentumScrollEnd={[Function]}
+          onScroll={[Function]}
+          onScrollBeginDrag={[Function]}
+          onScrollEndDrag={[Function]}
+          removeClippedSubviews={false}
+          renderItem={[Function]}
+          scrollEventThrottle={50}
+          stickyHeaderIndices={Array []}
+          updateCellsBatchingPeriod={50}
+          viewabilityConfigCallbackPairs={Array []}
+          windowSize={21}
+        >
+          <View>
             <View
               onLayout={[Function]}
               style={null}
@@ -1163,79 +1333,6 @@ exports[`ThemeNaturaLight component Should render ThemeNaturaLight component  1`
                 </View>
               </View>
             </View>
-          </View>
-        </RCTScrollView>
-        <View
-          margin={24}
-          style={
-            Array [
-              Object {
-                "marginBottom": 24,
-                "marginLeft": 0,
-                "marginRight": 0,
-                "marginTop": 0,
-                "paddingBottom": 0,
-                "paddingLeft": 0,
-                "paddingRight": 0,
-                "paddingTop": 0,
-              },
-            ]
-          }
-        >
-          <Text
-            color="#333333"
-            style={
-              Array [
-                Object {
-                  "color": "#333333",
-                  "fontSize": 20,
-                  "fontWeight": "500",
-                  "lineHeight": 30,
-                },
-              ]
-            }
-            type="h6"
-          >
-            SUCCESS
-          </Text>
-        </View>
-        <RCTScrollView
-          data={
-            Array [
-              Object {
-                "color": "#569A32",
-                "name": "main",
-              },
-              Object {
-                "color": "#FFFFFF",
-                "name": "contrastText",
-              },
-            ]
-          }
-          disableVirtualization={false}
-          getItem={[Function]}
-          getItemCount={[Function]}
-          horizontal={false}
-          initialNumToRender={10}
-          keyExtractor={[Function]}
-          maxToRenderPerBatch={10}
-          numColumns={1}
-          onContentSizeChange={[Function]}
-          onEndReachedThreshold={2}
-          onLayout={[Function]}
-          onMomentumScrollEnd={[Function]}
-          onScroll={[Function]}
-          onScrollBeginDrag={[Function]}
-          onScrollEndDrag={[Function]}
-          removeClippedSubviews={false}
-          renderItem={[Function]}
-          scrollEventThrottle={50}
-          stickyHeaderIndices={Array []}
-          updateCellsBatchingPeriod={50}
-          viewabilityConfigCallbackPairs={Array []}
-          windowSize={21}
-        >
-          <View>
             <View
               onLayout={[Function]}
               style={null}
@@ -1326,96 +1423,6 @@ exports[`ThemeNaturaLight component Should render ThemeNaturaLight component  1`
                 </View>
               </View>
             </View>
-            <View
-              onLayout={[Function]}
-              style={null}
-            >
-              <View
-                style={
-                  Object {
-                    "flexDirection": "row",
-                  }
-                }
-              >
-                <View
-                  margin={24}
-                  style={
-                    Array [
-                      Object {
-                        "marginBottom": 24,
-                        "marginLeft": 0,
-                        "marginRight": 0,
-                        "marginTop": 0,
-                        "paddingBottom": 0,
-                        "paddingLeft": 0,
-                        "paddingRight": 0,
-                        "paddingTop": 0,
-                      },
-                    ]
-                  }
-                >
-                  <Text
-                    color="#333333"
-                    style={
-                      Array [
-                        Object {
-                          "color": "#333333",
-                          "fontSize": 16,
-                          "fontWeight": "400",
-                          "lineHeight": 24,
-                        },
-                      ]
-                    }
-                    type="body1"
-                  >
-                    contrastText
-                  </Text>
-                </View>
-                <View
-                  style={
-                    Object {
-                      "backgroundColor": "#FFFFFF",
-                      "height": 30,
-                      "width": 30,
-                    }
-                  }
-                />
-                <View
-                  margin={24}
-                  style={
-                    Array [
-                      Object {
-                        "marginBottom": 24,
-                        "marginLeft": 0,
-                        "marginRight": 0,
-                        "marginTop": 0,
-                        "paddingBottom": 0,
-                        "paddingLeft": 0,
-                        "paddingRight": 0,
-                        "paddingTop": 0,
-                      },
-                    ]
-                  }
-                >
-                  <Text
-                    color="#333333"
-                    style={
-                      Array [
-                        Object {
-                          "color": "#333333",
-                          "fontSize": 16,
-                          "fontWeight": "400",
-                          "lineHeight": 24,
-                        },
-                      ]
-                    }
-                    type="body1"
-                  >
-                    #FFFFFF
-                  </Text>
-                </View>
-              </View>
-            </View>
           </View>
         </RCTScrollView>
         <View
@@ -1456,20 +1463,20 @@ exports[`ThemeNaturaLight component Should render ThemeNaturaLight component  1`
           data={
             Array [
               Object {
-                "color": "#FFFFFF",
-                "name": "paper",
-              },
-              Object {
                 "color": "#FAFAFA",
                 "name": "default",
               },
               Object {
                 "color": "#333333",
-                "name": "paperContrastText",
+                "name": "defaultContrastText",
+              },
+              Object {
+                "color": "#FFFFFF",
+                "name": "paper",
               },
               Object {
                 "color": "#333333",
-                "name": "defaultContrastText",
+                "name": "paperContrastText",
               },
             ]
           }
@@ -1497,96 +1504,6 @@ exports[`ThemeNaturaLight component Should render ThemeNaturaLight component  1`
           windowSize={21}
         >
           <View>
-            <View
-              onLayout={[Function]}
-              style={null}
-            >
-              <View
-                style={
-                  Object {
-                    "flexDirection": "row",
-                  }
-                }
-              >
-                <View
-                  margin={24}
-                  style={
-                    Array [
-                      Object {
-                        "marginBottom": 24,
-                        "marginLeft": 0,
-                        "marginRight": 0,
-                        "marginTop": 0,
-                        "paddingBottom": 0,
-                        "paddingLeft": 0,
-                        "paddingRight": 0,
-                        "paddingTop": 0,
-                      },
-                    ]
-                  }
-                >
-                  <Text
-                    color="#333333"
-                    style={
-                      Array [
-                        Object {
-                          "color": "#333333",
-                          "fontSize": 16,
-                          "fontWeight": "400",
-                          "lineHeight": 24,
-                        },
-                      ]
-                    }
-                    type="body1"
-                  >
-                    paper
-                  </Text>
-                </View>
-                <View
-                  style={
-                    Object {
-                      "backgroundColor": "#FFFFFF",
-                      "height": 30,
-                      "width": 30,
-                    }
-                  }
-                />
-                <View
-                  margin={24}
-                  style={
-                    Array [
-                      Object {
-                        "marginBottom": 24,
-                        "marginLeft": 0,
-                        "marginRight": 0,
-                        "marginTop": 0,
-                        "paddingBottom": 0,
-                        "paddingLeft": 0,
-                        "paddingRight": 0,
-                        "paddingTop": 0,
-                      },
-                    ]
-                  }
-                >
-                  <Text
-                    color="#333333"
-                    style={
-                      Array [
-                        Object {
-                          "color": "#333333",
-                          "fontSize": 16,
-                          "fontWeight": "400",
-                          "lineHeight": 24,
-                        },
-                      ]
-                    }
-                    type="body1"
-                  >
-                    #FFFFFF
-                  </Text>
-                </View>
-              </View>
-            </View>
             <View
               onLayout={[Function]}
               style={null}
@@ -1719,7 +1636,7 @@ exports[`ThemeNaturaLight component Should render ThemeNaturaLight component  1`
                     }
                     type="body1"
                   >
-                    paperContrastText
+                    defaultContrastText
                   </Text>
                 </View>
                 <View
@@ -1809,7 +1726,97 @@ exports[`ThemeNaturaLight component Should render ThemeNaturaLight component  1`
                     }
                     type="body1"
                   >
-                    defaultContrastText
+                    paper
+                  </Text>
+                </View>
+                <View
+                  style={
+                    Object {
+                      "backgroundColor": "#FFFFFF",
+                      "height": 30,
+                      "width": 30,
+                    }
+                  }
+                />
+                <View
+                  margin={24}
+                  style={
+                    Array [
+                      Object {
+                        "marginBottom": 24,
+                        "marginLeft": 0,
+                        "marginRight": 0,
+                        "marginTop": 0,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    color="#333333"
+                    style={
+                      Array [
+                        Object {
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                          "lineHeight": 24,
+                        },
+                      ]
+                    }
+                    type="body1"
+                  >
+                    #FFFFFF
+                  </Text>
+                </View>
+              </View>
+            </View>
+            <View
+              onLayout={[Function]}
+              style={null}
+            >
+              <View
+                style={
+                  Object {
+                    "flexDirection": "row",
+                  }
+                }
+              >
+                <View
+                  margin={24}
+                  style={
+                    Array [
+                      Object {
+                        "marginBottom": 24,
+                        "marginLeft": 0,
+                        "marginRight": 0,
+                        "marginTop": 0,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    color="#333333"
+                    style={
+                      Array [
+                        Object {
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                          "lineHeight": 24,
+                        },
+                      ]
+                    }
+                    type="body1"
+                  >
+                    paperContrastText
                   </Text>
                 </View>
                 <View
@@ -1897,20 +1904,20 @@ exports[`ThemeNaturaLight component Should render ThemeNaturaLight component  1`
           data={
             Array [
               Object {
-                "color": "#333333",
-                "name": "primary",
-              },
-              Object {
-                "color": "#777777",
-                "name": "secondary",
-              },
-              Object {
                 "color": "#BBBBBB",
                 "name": "disabled",
               },
               Object {
                 "color": "#BBBBBB",
                 "name": "hint",
+              },
+              Object {
+                "color": "#333333",
+                "name": "primary",
+              },
+              Object {
+                "color": "#777777",
+                "name": "secondary",
               },
             ]
           }
@@ -1938,186 +1945,6 @@ exports[`ThemeNaturaLight component Should render ThemeNaturaLight component  1`
           windowSize={21}
         >
           <View>
-            <View
-              onLayout={[Function]}
-              style={null}
-            >
-              <View
-                style={
-                  Object {
-                    "flexDirection": "row",
-                  }
-                }
-              >
-                <View
-                  margin={24}
-                  style={
-                    Array [
-                      Object {
-                        "marginBottom": 24,
-                        "marginLeft": 0,
-                        "marginRight": 0,
-                        "marginTop": 0,
-                        "paddingBottom": 0,
-                        "paddingLeft": 0,
-                        "paddingRight": 0,
-                        "paddingTop": 0,
-                      },
-                    ]
-                  }
-                >
-                  <Text
-                    color="#333333"
-                    style={
-                      Array [
-                        Object {
-                          "color": "#333333",
-                          "fontSize": 16,
-                          "fontWeight": "400",
-                          "lineHeight": 24,
-                        },
-                      ]
-                    }
-                    type="body1"
-                  >
-                    primary
-                  </Text>
-                </View>
-                <View
-                  style={
-                    Object {
-                      "backgroundColor": "#333333",
-                      "height": 30,
-                      "width": 30,
-                    }
-                  }
-                />
-                <View
-                  margin={24}
-                  style={
-                    Array [
-                      Object {
-                        "marginBottom": 24,
-                        "marginLeft": 0,
-                        "marginRight": 0,
-                        "marginTop": 0,
-                        "paddingBottom": 0,
-                        "paddingLeft": 0,
-                        "paddingRight": 0,
-                        "paddingTop": 0,
-                      },
-                    ]
-                  }
-                >
-                  <Text
-                    color="#333333"
-                    style={
-                      Array [
-                        Object {
-                          "color": "#333333",
-                          "fontSize": 16,
-                          "fontWeight": "400",
-                          "lineHeight": 24,
-                        },
-                      ]
-                    }
-                    type="body1"
-                  >
-                    #333333
-                  </Text>
-                </View>
-              </View>
-            </View>
-            <View
-              onLayout={[Function]}
-              style={null}
-            >
-              <View
-                style={
-                  Object {
-                    "flexDirection": "row",
-                  }
-                }
-              >
-                <View
-                  margin={24}
-                  style={
-                    Array [
-                      Object {
-                        "marginBottom": 24,
-                        "marginLeft": 0,
-                        "marginRight": 0,
-                        "marginTop": 0,
-                        "paddingBottom": 0,
-                        "paddingLeft": 0,
-                        "paddingRight": 0,
-                        "paddingTop": 0,
-                      },
-                    ]
-                  }
-                >
-                  <Text
-                    color="#333333"
-                    style={
-                      Array [
-                        Object {
-                          "color": "#333333",
-                          "fontSize": 16,
-                          "fontWeight": "400",
-                          "lineHeight": 24,
-                        },
-                      ]
-                    }
-                    type="body1"
-                  >
-                    secondary
-                  </Text>
-                </View>
-                <View
-                  style={
-                    Object {
-                      "backgroundColor": "#777777",
-                      "height": 30,
-                      "width": 30,
-                    }
-                  }
-                />
-                <View
-                  margin={24}
-                  style={
-                    Array [
-                      Object {
-                        "marginBottom": 24,
-                        "marginLeft": 0,
-                        "marginRight": 0,
-                        "marginTop": 0,
-                        "paddingBottom": 0,
-                        "paddingLeft": 0,
-                        "paddingRight": 0,
-                        "paddingTop": 0,
-                      },
-                    ]
-                  }
-                >
-                  <Text
-                    color="#333333"
-                    style={
-                      Array [
-                        Object {
-                          "color": "#333333",
-                          "fontSize": 16,
-                          "fontWeight": "400",
-                          "lineHeight": 24,
-                        },
-                      ]
-                    }
-                    type="body1"
-                  >
-                    #777777
-                  </Text>
-                </View>
-              </View>
-            </View>
             <View
               onLayout={[Function]}
               style={null}
@@ -2294,6 +2121,186 @@ exports[`ThemeNaturaLight component Should render ThemeNaturaLight component  1`
                     type="body1"
                   >
                     #BBBBBB
+                  </Text>
+                </View>
+              </View>
+            </View>
+            <View
+              onLayout={[Function]}
+              style={null}
+            >
+              <View
+                style={
+                  Object {
+                    "flexDirection": "row",
+                  }
+                }
+              >
+                <View
+                  margin={24}
+                  style={
+                    Array [
+                      Object {
+                        "marginBottom": 24,
+                        "marginLeft": 0,
+                        "marginRight": 0,
+                        "marginTop": 0,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    color="#333333"
+                    style={
+                      Array [
+                        Object {
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                          "lineHeight": 24,
+                        },
+                      ]
+                    }
+                    type="body1"
+                  >
+                    primary
+                  </Text>
+                </View>
+                <View
+                  style={
+                    Object {
+                      "backgroundColor": "#333333",
+                      "height": 30,
+                      "width": 30,
+                    }
+                  }
+                />
+                <View
+                  margin={24}
+                  style={
+                    Array [
+                      Object {
+                        "marginBottom": 24,
+                        "marginLeft": 0,
+                        "marginRight": 0,
+                        "marginTop": 0,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    color="#333333"
+                    style={
+                      Array [
+                        Object {
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                          "lineHeight": 24,
+                        },
+                      ]
+                    }
+                    type="body1"
+                  >
+                    #333333
+                  </Text>
+                </View>
+              </View>
+            </View>
+            <View
+              onLayout={[Function]}
+              style={null}
+            >
+              <View
+                style={
+                  Object {
+                    "flexDirection": "row",
+                  }
+                }
+              >
+                <View
+                  margin={24}
+                  style={
+                    Array [
+                      Object {
+                        "marginBottom": 24,
+                        "marginLeft": 0,
+                        "marginRight": 0,
+                        "marginTop": 0,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    color="#333333"
+                    style={
+                      Array [
+                        Object {
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                          "lineHeight": 24,
+                        },
+                      ]
+                    }
+                    type="body1"
+                  >
+                    secondary
+                  </Text>
+                </View>
+                <View
+                  style={
+                    Object {
+                      "backgroundColor": "#777777",
+                      "height": 30,
+                      "width": 30,
+                    }
+                  }
+                />
+                <View
+                  margin={24}
+                  style={
+                    Array [
+                      Object {
+                        "marginBottom": 24,
+                        "marginLeft": 0,
+                        "marginRight": 0,
+                        "marginTop": 0,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    color="#333333"
+                    style={
+                      Array [
+                        Object {
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                          "lineHeight": 24,
+                        },
+                      ]
+                    }
+                    type="body1"
+                  >
+                    #777777
                   </Text>
                 </View>
               </View>

@@ -14,39 +14,38 @@ import {
 
 const styles = {
   defaultScreen: {
-    backgroundColor: '#FFF',
+    flex: 1,
     width: Dimensions.get('window').width,
   },
 };
 
 export const ThemeNaturaLight = () => {
-
   const renderItem = (name, color) => (
     <View style={{ flexDirection: 'row' }}>
       <NatText type="body1" value={name} />
-      <View style={{ backgroundColor: color, width: 30, height: 30 }} />
+      <View style={{ backgroundColor: color, height: 30, width: 30 }} />
       <NatText type="body1" value={color} />
     </View>
   );
 
   const primary = Object.keys(Theme.palette.primary)
-    .map(k => ({ name: k, color: Theme.palette.primary[k] }));
+    .map(k => ({ color: Theme.palette.primary[k], name: k }));
   const secondary = Object.keys(Theme.palette.secondary)
-    .map(k => ({ name: k, color: Theme.palette.secondary[k] }));
+    .map(k => ({ color: Theme.palette.secondary[k], name: k }));
   const error = Object.keys(Theme.palette.error)
-    .map(k => ({ name: k, color: Theme.palette.error[k] }));
+    .map(k => ({ color: Theme.palette.error[k], name: k }));
   const success = Object.keys(Theme.palette.success)
-    .map(k => ({ name: k, color: Theme.palette.success[k] }));
+    .map(k => ({ color: Theme.palette.success[k], name: k }));
   const background = Object.keys(Theme.palette.background)
-    .map(k => ({ name: k, color: Theme.palette.background[k] }));
+    .map(k => ({ color: Theme.palette.background[k], name: k }));
   const text = Object.keys(Theme.palette.text)
-    .map(k => ({ name: k, color: Theme.palette.text[k] }));
+    .map(k => ({ color: Theme.palette.text[k], name: k }));
   const complementary = Object.keys(Theme.palette.complementary)
-    .map(k => ({ name: k, color: Theme.palette.complementary[k] }));
+    .map(k => ({ color: Theme.palette.complementary[k], name: k }));
 
   return (
-    <SafeAreaView>
-      <NatContainer style={styles.defaultScreen}>
+    <SafeAreaView style={styles.defaultScreen}>
+      <NatContainer>
         <ScrollView>
           <NatText type="h6" value="PRIMARY" />
           <FlatList

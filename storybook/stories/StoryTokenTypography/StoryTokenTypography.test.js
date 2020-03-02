@@ -4,11 +4,12 @@ import 'jest-styled-components/native';
 
 import { StoryTokenTypography } from './StoryTokenTypography';
 
-describe('StoryNatCard component', () => {
+describe('StoryTokenTypography component', () => {
   it('Should render StoryNatCard component ', () => {
     const button = renderer.create(
       <StoryTokenTypography />,
     ).toJSON();
-    expect(button).toMatchSnapshot();
+
+    expect(button).toMatchSnapshot('StoryTokenTypography snapshot');
   });
 });

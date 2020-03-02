@@ -3,26 +3,26 @@ import { View, Text, SafeAreaView } from 'react-native';
 import { NatLogo } from '../../../lib';
 
 const styles = {
-  wrapper: {
-    flex: 1,
-    padding: 24,
-    justifyContent: 'center',
-  },
-  header: {
-    flex: 1,
-    fontSize: 20,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
   content: {
     flex: 2,
     fontSize: 14,
     lineHeight: 18,
   },
+  header: {
+    alignItems: 'center',
+    flex: 1,
+    fontSize: 20,
+    justifyContent: 'center',
+  },
+  wrapper: {
+    flex: 1,
+    justifyContent: 'center',
+    padding: 24,
+  },
 };
 
 export const Welcome = () => (
-  <SafeAreaView>
+  <SafeAreaView style={styles.defaultScreen}>
     <View style={styles.wrapper}>
       <NatLogo name="logo-natura-vertical" size={300} />
       <Text style={styles.header}>Welcome to NATDS!</Text>
