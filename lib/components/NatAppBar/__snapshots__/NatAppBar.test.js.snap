@@ -74,7 +74,7 @@ exports[`Header component Should render container component correctly 1`] = `
         "justifyContent": "flex-start",
         "left": 40,
         "position": "absolute",
-        "right": 0,
+        "right": 40,
         "top": 0,
       }
     }
