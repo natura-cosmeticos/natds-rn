@@ -7,21 +7,23 @@ import { linkTo } from '@storybook/addon-links';
 import {
   Login, Card, Form, FriendExchange,
 } from './ScreenSamples';
-import { StoryNatTextInput } from './StoryNatTextInput';
-import { StoryNatSelectInput } from './StoryNatSelectInput';
-import { StoryNatCard } from './StoryNatCard';
-import { StoryNatButton } from './StoryNatButton';
-import { StoryNatMenuItem } from './StoryNatMenuItem';
-import { StoryNatIcon } from './StoryNatIcon';
-import { StoryTokenTypography } from './StoryTokenTypography';
-import { StoryTokenColors } from './StoryTokenColors';
-import { StoryTokenSpace } from './StoryTokenSpace';
-import { StoryNatLogo } from './StoryNatLogo';
-import { StoryNatHeader } from './StoryNatHeader';
+import { StoryButton } from './StoryButton';
 import { StoryNatAppBar } from './StoryNatAppBar';
 import { StoryNatAppBarSearch } from './StoryNatAppBarSearch';
+import { StoryNatButton } from './StoryNatButton';
+import { StoryNatCard } from './StoryNatCard';
+import { StoryNatHeader } from './StoryNatHeader';
+import { StoryNatIcon } from './StoryNatIcon';
+import { StoryNatLink } from './StoryNatLink';
 import { StoryNatList } from './StoryNatList';
 import { StoryNatListItem } from './StoryNatListItem';
+import { StoryNatLogo } from './StoryNatLogo';
+import { StoryNatMenuItem } from './StoryNatMenuItem';
+import { StoryNatSelectInput } from './StoryNatSelectInput';
+import { StoryNatTextInput } from './StoryNatTextInput';
+import { StoryTokenColors } from './StoryTokenColors';
+import { StoryTokenSpace } from './StoryTokenSpace';
+import { StoryTokenTypography } from './StoryTokenTypography';
 import { ThemeNaturaLight } from './StoryTokenThemes/ThemeNaturaLight';
 import CenterView from './CenterView';
 import { Welcome } from './Welcome';
@@ -54,6 +56,18 @@ storiesOf('Images', module)
   ))
   .add('Logo', () => (
     <StoryNatLogo />
+  ));
+
+storiesOf('Link', module)
+  .addDecorator(getStory => <CenterView>{getStory()}</CenterView>)
+  .add('All', () => (
+    <StoryNatLink />
+  ));
+
+storiesOf('Button', module)
+  .addDecorator(getStory => <CenterView>{getStory()}</CenterView>)
+  .add('All', () => (
+    <StoryButton />
   ));
 
 storiesOf('NatTextInput', module)
@@ -89,12 +103,6 @@ storiesOf('NatSelectInput', module)
     <StoryNatSelectInput type="disabled" />
   ));
 
-storiesOf('NatButton', module)
-  .addDecorator(getStory => <CenterView>{getStory()}</CenterView>)
-  .add('All', () => (
-    <StoryNatButton />
-  ));
-
 storiesOf('NatMenuItem', module)
   .addDecorator(getStory => <CenterView>{getStory()}</CenterView>)
   .add('All', () => (
@@ -125,7 +133,13 @@ storiesOf('NatCard', module)
     <StoryNatCard />
   ));
 
-storiesOf('NatHeader - SS', module)
+storiesOf('NatButton - OLD', module)
+  .addDecorator(getStory => <CenterView>{getStory()}</CenterView>)
+  .add('All', () => (
+    <StoryNatButton />
+  ));
+
+storiesOf('NatHeader - OLD', module)
   .addDecorator(getStory => <CenterView>{getStory()}</CenterView>)
   .add('All', () => (
     <StoryNatHeader />

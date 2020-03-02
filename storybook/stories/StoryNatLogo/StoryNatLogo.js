@@ -16,6 +16,7 @@ import {
 
 const styles = {
   defaultScreen: {
+    flex: 1,
     width: Dimensions.get('window').width,
   },
 };

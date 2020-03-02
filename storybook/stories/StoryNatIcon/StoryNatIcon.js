@@ -16,7 +16,7 @@ import {
 
 const styles = {
   defaultScreen: {
-    backgroundColor: '#FFF',
+    flex: 1,
     width: Dimensions.get('window').width,
   },
 };
@@ -182,8 +182,8 @@ export const StoryNatIcon = () => {
   const filterIconList = filter => iconList.filter(item => item.name.includes(filter.toLowerCase()));
 
   return (
-    <SafeAreaView>
-      <NatContainer style={styles.defaultScreen}>
+    <SafeAreaView style={styles.defaultScreen}>
+      <NatContainer>
         <ScrollView>
           <NatText type="h6" value="ICONS SVG" />
           <NatTextInput
