@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`NatText component default Should render NatText component  1`] = `
+exports[`NatText component default Should render NatText component : NatText snapshot 1`] = `
 <View
   margin={24}
   style={

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`StoryNatListItem component Should render StoryNatListItem component  1`] = `
+exports[`StoryNatListItem component Should render StoryNatListItem component : StoryNatListItem snapshot 1`] = `
 <RCTSafeAreaView
   emulateUnlessSupported={true}
   style={

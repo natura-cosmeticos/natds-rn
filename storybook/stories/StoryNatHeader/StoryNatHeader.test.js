@@ -10,6 +10,6 @@ describe('StoryNatHeader component', () => {
       <StoryNatHeader />,
     ).toJSON();
 
-    expect(button).toMatchSnapshot();
+    expect(button).toMatchSnapshot('StoryNatHeader snapshot');
   });
 });

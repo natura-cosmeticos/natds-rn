@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`StoryNatSelectInput component Should render StoryNatSelectInput component  1`] = `
+exports[`StoryNatSelectInput component Should render StoryNatSelectInput component : StoryNatSelectInput snapshot 1`] = `
 <RCTSafeAreaView
   emulateUnlessSupported={true}
   style={

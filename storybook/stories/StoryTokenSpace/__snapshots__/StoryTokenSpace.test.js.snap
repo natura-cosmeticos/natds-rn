@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`StoryTokenSpace component Should render StoryTokenSpace component  1`] = `
+exports[`StoryTokenSpace component Should render StoryTokenSpace component : StoryTokenSpace snapshot 1`] = `
 <RCTSafeAreaView
   emulateUnlessSupported={true}
   style={

@@ -10,6 +10,6 @@ describe('StoryNatTextInput component', () => {
       <StoryNatTextInput />,
     ).toJSON();
 
-    expect(button).toMatchSnapshot();
+    expect(button).toMatchSnapshot('StoryNatTextInput snapshot');
   });
 });

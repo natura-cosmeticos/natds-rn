@@ -10,6 +10,6 @@ describe('StoryTokenColors component', () => {
       <StoryTokenColors />,
     ).toJSON();
 
-    expect(button).toMatchSnapshot();
+    expect(button).toMatchSnapshot('StoryTokenColors snapshot');
   });
 });

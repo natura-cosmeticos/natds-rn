@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`StoryNatCard component Should render StoryNatCard component  1`] = `
+exports[`StoryTokenTypography component Should render StoryNatCard component : StoryTokenTypography snapshot 1`] = `
 <RCTSafeAreaView
   emulateUnlessSupported={true}
   style={

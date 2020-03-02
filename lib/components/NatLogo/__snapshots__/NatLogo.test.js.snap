@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`NatLogo component default Should render NatLogo component  1`] = `
+exports[`NatLogo component default Should render NatLogo component : NatLogo snapshot 1`] = `
 <SvgMock
   height={0}
   width={0}

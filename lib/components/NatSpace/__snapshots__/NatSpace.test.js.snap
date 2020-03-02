@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Space component Should render Space component correctly 1`] = `
+exports[`NatSpace component Should render Space component correctly: NatSpace snapshot 1`] = `
 <View
   backgroundColor="transparent"
   marginBottom="small"
