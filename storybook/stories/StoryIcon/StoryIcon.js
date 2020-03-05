@@ -34,7 +34,7 @@ export const StoryIcon = () => {
 
   const listHeader = () => (
     <>
-      <NatText type="h6" value="ICONS SVG" />
+      <NatText type="h6" value="ICONS" />
       <NatTextInput
         label=""
         placeholder="Search"
