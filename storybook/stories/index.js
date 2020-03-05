@@ -28,6 +28,7 @@ import { ThemeNaturaLight } from './StoryTokenThemes/ThemeNaturaLight';
 import CenterView from './CenterView';
 import { Welcome } from './Welcome';
 import iconArrowLeft from '../../lib/assets/icons/ic_arrow_left_white.png';
+import { StoryIcon } from './StoryIcon';
 
 storiesOf('Welcome', module)
   .add('NATDS', () => (
@@ -143,6 +144,12 @@ storiesOf('NatHeader - OLD', module)
   .addDecorator(getStory => <CenterView>{getStory()}</CenterView>)
   .add('All', () => (
     <StoryNatHeader />
+  ));
+
+storiesOf('Icons', module)
+  .addDecorator(getStory => <CenterView>{getStory()}</CenterView>)
+  .add('All', () => (
+    <StoryIcon />
   ));
 
 storiesOf('Screen Samples', module)
