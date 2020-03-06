@@ -2,7 +2,7 @@
 
 Repositório de componentes React Native.
 
-Para instalação dos componentes, rode na raiz do seu projeto
+Para instalação dos componentes, execute na raiz do seu projeto
 
 ```sh
 npm install --save @naturacosmeticos/natds-rn
@@ -58,6 +58,16 @@ O conventional commits é utilizado para automação de publicação com o [sema
   - `0.0.0` -> `1.0.0`
 
 Os bumps sempre vão priorizar os commits de maior importância na hora de avaliar qual a próxima versão. Por exemplo, caso esteja na versão `0.0.0` e fizer vários commits de fix, mas apenas um commit de feature, será priorizado esse commit de feature e a próxima versão será `0.1.0`
+
+## Iniciando um novo milestone
+
+Partindo da branch `master`, cria uma nova branch com a seguinte nomenclatura:
+
+- vM.m.p
+  - v &rarr; letra v de versão;
+  - M.m.p &rarr; Número de versão de um milestone seguindo [SemVer](https://semver.org/);
+
+Para mais detalhes, chequem o [processo de milestones](./MILESTONE_PROCESS.md).
 
 ## SVG
 
