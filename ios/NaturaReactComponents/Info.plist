@@ -71,6 +71,9 @@
 		<string>Roboto-Regular.ttf</string>
 		<string>Roboto-Thin.ttf</string>
 		<string>Roboto-ThinItalic.ttf</string>
+		<string>natds-icons.ttf</string>
+		<string>natds-icons.woff</string>
+		<string>natds-icons.woff2</string>
 	</array>
 </dict>
 </plist>
