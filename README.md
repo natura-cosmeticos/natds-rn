@@ -27,11 +27,11 @@ module.exports = {
 };
 ```
 
-Em seguida, na raiz do seu projeto rode `yarn react-native link` e a fonte já deve estar no seu projeto para consumo. Caso não estejam, é recomendado os seguinets passos para cada plataforma:
+Em seguida, na raiz do seu projeto em um terminal, execute `yarn react-native link` e a fonte deverá estar no seu projeto para consumo. Caso não esteja, é recomendado os seguintes passos para cada plataforma:
 
 ### iOS
 
-Abra o projeto da pasta `ios` com o xcode e dentro da árvore de módulos do projeto, apague o módulo `Resources`. Em seguida, executa o comando `yarn react-native link` para linkar novamente todos as dependências.
+Abra o projeto da pasta `ios` com o xcode e dentro da árvore de módulos do projeto, apague o módulo `Resources`. Em seguida, execute o comando `yarn react-native link` para linkar novamente todos as dependências.
 
 ATENÇÃO: CASO ALGUMA DEPENDÊNCIA TENHA SIDO ADICIONADA MANUALMENTE, ELA DEVERÁ SER ADICIONADA NOVAMENTE
 
