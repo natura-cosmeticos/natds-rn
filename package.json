@@ -25,7 +25,8 @@
     "ios": "react-native run-ios",
     "storybook": "start-storybook -p 7007",
     "cm": "git-cz",
-    "release": "semantic-release"
+    "release": "semantic-release",
+    "build": "babel lib --out-dir lib --ignore node_modules,dist --source-maps --copy-files --no-babelrc --presets react-native"
   },
   "husky": {
     "hooks": {
