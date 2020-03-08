@@ -8,6 +8,7 @@ import {
   Login, Card, Form, FriendExchange,
 } from './ScreenSamples';
 import { StoryButton } from './StoryButton';
+import { StoryDivider } from './StoryDivider';
 import { StoryNatAppBar } from './StoryNatAppBar';
 import { StoryNatAppBarSearch } from './StoryNatAppBarSearch';
 import { StoryNatButton } from './StoryNatButton';
@@ -48,6 +49,12 @@ storiesOf('Tokens', module)
   ))
   .add('Theme Natura Light', () => (
     <ThemeNaturaLight />
+  ));
+
+storiesOf('Divider', module)
+  .addDecorator(getStory => <CenterView>{getStory()}</CenterView>)
+  .add('All', () => (
+    <StoryDivider />
   ));
 
 storiesOf('Images', module)
