@@ -1,6 +1,8 @@
+// Copies up to date fonts to lib/assets/fonts folder
+require('./hooks/prelink');
+
 module.exports = {
   assets: [
-    './node_modules/@naturacosmeticos/natds-icons/dist/fonts',
     './lib/assets/fonts',
   ],
 };
