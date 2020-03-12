@@ -30,6 +30,7 @@ import CenterView from './CenterView';
 import { Welcome } from './Welcome';
 import iconArrowLeft from '../../lib/assets/icons/ic_arrow_left_white.png';
 import { StoryIcon } from './StoryIcon';
+import { StoryTabBar } from './StoryTabBar'
 
 storiesOf('Welcome', module)
   .add('NATDS', () => (
@@ -139,6 +140,12 @@ storiesOf('NatCard', module)
   .addDecorator(getStory => <CenterView>{getStory()}</CenterView>)
   .add('Default', () => (
     <StoryNatCard />
+  ));
+
+storiesOf('TabBar', module)
+  .addDecorator(getStory => <CenterView>{getStory()}</CenterView>)
+  .add('All', () => (
+    <StoryTabBar />
   ));
 
 storiesOf('NatButton - OLD', module)
