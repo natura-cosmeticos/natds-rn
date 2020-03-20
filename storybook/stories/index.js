@@ -30,7 +30,8 @@ import CenterView from './CenterView';
 import { Welcome } from './Welcome';
 import iconArrowLeft from '../../lib/assets/icons/ic_arrow_left_white.png';
 import { StoryIcon } from './StoryIcon';
-import { StoryTabBar } from './StoryTabBar'
+import { StoryTabBar } from './StoryTabBar';
+import { StoryFAB } from './StoryFAB';
 
 storiesOf('Welcome', module)
   .add('NATDS', () => (
@@ -146,6 +147,15 @@ storiesOf('TabBar', module)
   .addDecorator(getStory => <CenterView>{getStory()}</CenterView>)
   .add('All', () => (
     <StoryTabBar />
+  ));
+
+storiesOf('FAB', module)
+  .addDecorator(getStory => <CenterView>{getStory()}</CenterView>)
+  .add('Round', () => (
+    <StoryFAB type='round' value='+' />
+  ))
+  .add('Extended', () => (
+    <StoryFAB type='extended' value='extended' />
   ));
 
 storiesOf('NatButton - OLD', module)
