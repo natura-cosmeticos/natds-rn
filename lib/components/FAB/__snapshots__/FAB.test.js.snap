@@ -20,6 +20,7 @@ exports[`FAB component should render FAB component: FAB snapshot 1`] = `
         "borderRadius": 24,
         "elevation": 2,
         "height": 40,
+        "includeFontPadding": false,
         "justifyContent": "center",
         "marginBottom": 5,
         "marginLeft": 5,
@@ -44,6 +45,7 @@ exports[`FAB component should render FAB component: FAB snapshot 1`] = `
           Object {
             "color": "#333333",
             "fontSize": 12,
+            "lineHeight": 12,
             "textTransform": "uppercase",
           },
         ]
@@ -393,6 +395,7 @@ exports[`FAB component should render FAB component: FAB snapshot 1`] = `
         "borderRadius": 24,
         "elevation": 2,
         "height": 48,
+        "includeFontPadding": false,
         "justifyContent": "center",
         "marginBottom": 5,
         "marginLeft": 5,
@@ -417,6 +420,7 @@ exports[`FAB component should render FAB component: FAB snapshot 1`] = `
           Object {
             "color": "#333333",
             "fontSize": 16,
+            "lineHeight": 16,
             "textTransform": "uppercase",
           },
         ]
@@ -766,6 +770,7 @@ exports[`FAB component should render FAB component: FAB snapshot 1`] = `
         "borderRadius": 24,
         "elevation": 2,
         "height": 56,
+        "includeFontPadding": false,
         "justifyContent": "center",
         "marginBottom": 5,
         "marginLeft": 5,
@@ -790,6 +795,7 @@ exports[`FAB component should render FAB component: FAB snapshot 1`] = `
           Object {
             "color": "#333333",
             "fontSize": 24,
+            "lineHeight": 24,
             "textTransform": "uppercase",
           },
         ]
@@ -1139,6 +1145,7 @@ exports[`FAB component should render FAB component: FAB snapshot 1`] = `
         "borderRadius": 48,
         "elevation": 2,
         "height": 56,
+        "includeFontPadding": false,
         "justifyContent": "center",
         "marginBottom": 5,
         "marginLeft": 5,
@@ -1163,6 +1170,7 @@ exports[`FAB component should render FAB component: FAB snapshot 1`] = `
           Object {
             "color": "#333333",
             "fontSize": 56,
+            "lineHeight": 56,
             "textTransform": "uppercase",
           },
         ]
@@ -1512,6 +1520,7 @@ exports[`FAB component should render FAB component: FAB snapshot 1`] = `
         "borderRadius": 48,
         "elevation": 2,
         "height": 72,
+        "includeFontPadding": false,
         "justifyContent": "center",
         "marginBottom": 5,
         "marginLeft": 5,
@@ -1536,6 +1545,7 @@ exports[`FAB component should render FAB component: FAB snapshot 1`] = `
           Object {
             "color": "#333333",
             "fontSize": 72,
+            "lineHeight": 72,
             "textTransform": "uppercase",
           },
         ]
@@ -1885,6 +1895,7 @@ exports[`FAB component should render FAB component: FAB snapshot 1`] = `
         "borderRadius": 48,
         "elevation": 2,
         "height": 88,
+        "includeFontPadding": false,
         "justifyContent": "center",
         "marginBottom": 5,
         "marginLeft": 5,
@@ -1909,6 +1920,7 @@ exports[`FAB component should render FAB component: FAB snapshot 1`] = `
           Object {
             "color": "#333333",
             "fontSize": 88,
+            "lineHeight": 88,
             "textTransform": "uppercase",
           },
         ]
@@ -2258,6 +2270,7 @@ exports[`FAB component should render FAB component: FAB snapshot 1`] = `
         "borderRadius": 24,
         "elevation": 2,
         "height": 40,
+        "includeFontPadding": false,
         "justifyContent": "center",
         "marginBottom": 5,
         "marginLeft": 5,
@@ -2282,6 +2295,7 @@ exports[`FAB component should render FAB component: FAB snapshot 1`] = `
           Object {
             "color": "#333333",
             "fontSize": 12,
+            "lineHeight": 12,
             "textTransform": "uppercase",
           },
         ]
@@ -2631,6 +2645,7 @@ exports[`FAB component should render FAB component: FAB snapshot 1`] = `
         "borderRadius": 24,
         "elevation": 2,
         "height": 40,
+        "includeFontPadding": false,
         "justifyContent": "center",
         "marginBottom": 5,
         "marginLeft": 5,
@@ -2655,6 +2670,7 @@ exports[`FAB component should render FAB component: FAB snapshot 1`] = `
           Object {
             "color": "#333333",
             "fontSize": 12,
+            "lineHeight": 12,
             "textTransform": "uppercase",
           },
         ]
@@ -3004,6 +3020,7 @@ exports[`FAB component should render FAB component: FAB snapshot 1`] = `
         "borderRadius": 24,
         "elevation": 2,
         "height": 40,
+        "includeFontPadding": false,
         "justifyContent": "center",
         "marginBottom": 5,
         "marginLeft": 5,
@@ -3028,6 +3045,7 @@ exports[`FAB component should render FAB component: FAB snapshot 1`] = `
           Object {
             "color": "#777777",
             "fontSize": 12,
+            "lineHeight": 12,
             "textTransform": "uppercase",
           },
         ]
@@ -3377,6 +3395,7 @@ exports[`FAB component should render FAB component: FAB snapshot 1`] = `
         "borderRadius": 48,
         "elevation": 2,
         "height": 56,
+        "includeFontPadding": false,
         "justifyContent": "center",
         "marginBottom": 5,
         "marginLeft": 5,
@@ -3401,6 +3420,7 @@ exports[`FAB component should render FAB component: FAB snapshot 1`] = `
           Object {
             "color": "#333333",
             "fontSize": 56,
+            "lineHeight": 56,
             "textTransform": "uppercase",
           },
         ]
@@ -3750,6 +3770,7 @@ exports[`FAB component should render FAB component: FAB snapshot 1`] = `
         "borderRadius": 48,
         "elevation": 2,
         "height": 56,
+        "includeFontPadding": false,
         "justifyContent": "center",
         "marginBottom": 5,
         "marginLeft": 5,
@@ -3774,6 +3795,7 @@ exports[`FAB component should render FAB component: FAB snapshot 1`] = `
           Object {
             "color": "#333333",
             "fontSize": 56,
+            "lineHeight": 56,
             "textTransform": "uppercase",
           },
         ]
@@ -4123,6 +4145,7 @@ exports[`FAB component should render FAB component: FAB snapshot 1`] = `
         "borderRadius": 48,
         "elevation": 2,
         "height": 56,
+        "includeFontPadding": false,
         "justifyContent": "center",
         "marginBottom": 5,
         "marginLeft": 5,
@@ -4147,6 +4170,7 @@ exports[`FAB component should render FAB component: FAB snapshot 1`] = `
           Object {
             "color": "#777777",
             "fontSize": 56,
+            "lineHeight": 56,
             "textTransform": "uppercase",
           },
         ]
