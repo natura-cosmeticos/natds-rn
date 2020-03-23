@@ -3,7 +3,6 @@ ios
 dist
 natura-design-system
 App
-index.js
 metro.config.js
 babel.config.js
 .eslintrc.js
