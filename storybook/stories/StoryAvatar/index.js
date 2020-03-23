@@ -1,0 +1,1 @@
+export { StoryAvatar } from './StoryAvatar';
