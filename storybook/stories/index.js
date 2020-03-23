@@ -1,36 +1,36 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
-import {storiesOf} from '@storybook/react-native';
-import {linkTo} from '@storybook/addon-links';
+import { storiesOf } from '@storybook/react-native';
+import { linkTo } from '@storybook/addon-links';
 
 // eslint-disable-next-line import/extensions
-import {Login, Card, Form, FriendExchange} from './ScreenSamples';
-import {StoryButton} from './StoryButton';
-import {StoryDivider} from './StoryDivider';
-import {StoryNatAppBar} from './StoryNatAppBar';
-import {StoryNatAppBarSearch} from './StoryNatAppBarSearch';
-import {StoryNatButton} from './StoryNatButton';
-import {StoryNatCard} from './StoryNatCard';
-import {StoryNatHeader} from './StoryNatHeader';
-import {StoryNatIcon} from './StoryNatIcon';
-import {StoryNatLink} from './StoryNatLink';
-import {StoryNatList} from './StoryNatList';
-import {StoryNatListItem} from './StoryNatListItem';
-import {StoryNatLogo} from './StoryNatLogo';
-import {StoryNatMenuItem} from './StoryNatMenuItem';
-import {StoryNatSelectInput} from './StoryNatSelectInput';
-import {StoryNatTextInput} from './StoryNatTextInput';
-import {StoryTokenColors} from './StoryTokenColors';
-import {StoryTokenSpace} from './StoryTokenSpace';
-import {StoryTokenTypography} from './StoryTokenTypography';
-import {ThemeNaturaLight} from './StoryTokenThemes/ThemeNaturaLight';
+import { Login, Card, Form, FriendExchange } from './ScreenSamples';
+import { StoryButton } from './StoryButton';
+import { StoryDivider } from './StoryDivider';
+import { StoryNatAppBar } from './StoryNatAppBar';
+import { StoryNatAppBarSearch } from './StoryNatAppBarSearch';
+import { StoryNatButton } from './StoryNatButton';
+import { StoryNatCard } from './StoryNatCard';
+import { StoryNatHeader } from './StoryNatHeader';
+import { StoryNatIcon } from './StoryNatIcon';
+import { StoryNatLink } from './StoryNatLink';
+import { StoryNatList } from './StoryNatList';
+import { StoryNatListItem } from './StoryNatListItem';
+import { StoryNatLogo } from './StoryNatLogo';
+import { StoryNatMenuItem } from './StoryNatMenuItem';
+import { StoryNatSelectInput } from './StoryNatSelectInput';
+import { StoryNatTextInput } from './StoryNatTextInput';
+import { StoryTokenColors } from './StoryTokenColors';
+import { StoryTokenSpace } from './StoryTokenSpace';
+import { StoryTokenTypography } from './StoryTokenTypography';
+import { ThemeNaturaLight } from './StoryTokenThemes/ThemeNaturaLight';
 import CenterView from './CenterView';
-import {Welcome} from './Welcome';
+import { Welcome } from './Welcome';
 import iconArrowLeft from '../../lib/assets/icons/ic_arrow_left_white.png';
-import {StoryIcon} from './StoryIcon';
-import {StoryTabBar} from './StoryTabBar';
-import {StoryFAB} from './StoryFAB';
-import {StoryAvatar} from './StoryAvatar';
+import { StoryIcon } from './StoryIcon';
+import { StoryTabBar } from './StoryTabBar';
+import { StoryFAB } from './StoryFAB';
+import { StoryAvatar } from './StoryAvatar';
 
 storiesOf('Welcome', module).add('NATDS', () => <Welcome />);
 
@@ -73,12 +73,12 @@ storiesOf('NatTextInput', module)
     />
   ))
   .add('With icon - image', () => (
-    <StoryNatTextInput type="default" icon={{content: iconArrowLeft}} />
+    <StoryNatTextInput type="default" icon={{ content: iconArrowLeft }} />
   ))
   .add('With icon - SVG', () => (
     <StoryNatTextInput
       type="default"
-      icon={{svg: {name: 'filled-action-check'}}}
+      icon={{ svg: { name: 'filled-action-check' } }}
     />
   ));
 
