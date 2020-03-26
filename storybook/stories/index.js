@@ -112,8 +112,7 @@ storiesOf('TabBar', module)
 
 storiesOf('FAB', module)
   .addDecorator(getStory => <CenterView>{getStory()}</CenterView>)
-  .add('Round', () => <StoryFAB type="round" />)
-  .add('Extended', () => <StoryFAB type="extended" value="extended" />);
+  .add('Round', () => <StoryFAB />)
 
 storiesOf('Avatar', module)
   .addDecorator(getStory => <CenterView>{getStory()}</CenterView>)
