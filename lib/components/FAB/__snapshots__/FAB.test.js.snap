@@ -3043,7 +3043,7 @@ exports[`FAB component should render FAB component: FAB snapshot 1`] = `
       style={
         Array [
           Object {
-            "color": "#777777",
+            "color": "#000000",
             "fontSize": 12,
             "lineHeight": 12,
             "textTransform": "uppercase",
@@ -4168,7 +4168,7 @@ exports[`FAB component should render FAB component: FAB snapshot 1`] = `
       style={
         Array [
           Object {
-            "color": "#777777",
+            "color": "#000000",
             "fontSize": 56,
             "lineHeight": 56,
             "textTransform": "uppercase",
