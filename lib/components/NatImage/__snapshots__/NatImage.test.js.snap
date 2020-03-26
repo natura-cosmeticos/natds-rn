@@ -13,6 +13,7 @@ exports[`NatImage component default Should render NatImage component : NatImage 
   type="default"
 >
   <Image
+    resizeMode="contain"
     source={
       Object {
         "uri": undefined,
