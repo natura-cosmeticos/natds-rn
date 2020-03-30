@@ -39,18 +39,20 @@ exports[`StoryNatHeader component Should render StoryNatHeader component : Story
       <View>
         <View
           accessibilityRole="header"
-          accessible={true}
           style={
             Array [
               Object {
+                "alignItems": "center",
                 "backgroundColor": "#FFFFFF",
+                "display": "flex",
                 "flexDirection": "row",
-                "flexWrap": "wrap",
+                "flexWrap": "nowrap",
                 "height": 56,
                 "justifyContent": "space-between",
-                "paddingBottom": 16,
+                "paddingBottom": 0,
                 "paddingLeft": 16,
-                "paddingTop": 16,
+                "paddingRight": 16,
+                "paddingTop": 0,
                 "width": "100%",
               },
               false,
@@ -71,10 +73,6 @@ exports[`StoryNatHeader component Should render StoryNatHeader component : Story
             onStartShouldSetResponder={[Function]}
             style={
               Object {
-                "flexBasis": 0,
-                "flexGrow": 1,
-                "flexShrink": 1,
-                "justifyContent": "flex-start",
                 "opacity": 1,
                 "width": 24,
               }
@@ -82,7 +80,6 @@ exports[`StoryNatHeader component Should render StoryNatHeader component : Story
           >
             <Image
               accessibilityLabel="navegação para retornar a página anterior"
-              accessible={true}
               source={
                 Object {
                   "testUri": "../../../lib/assets/icons/nat-ic-right.png",
@@ -100,6 +97,8 @@ exports[`StoryNatHeader component Should render StoryNatHeader component : Story
                   "fontFamily": "NaturaSans-Regular",
                   "fontSize": 20,
                   "marginLeft": 24,
+                  "paddingLeft": 45,
+                  "paddingTop": 8,
                 },
               ]
             }
@@ -112,10 +111,7 @@ exports[`StoryNatHeader component Should render StoryNatHeader component : Story
               Array [
                 Object {
                   "color": "#F4AB34",
-                  "flexBasis": 0,
-                  "flexGrow": 1,
-                  "flexShrink": 1,
-                  "justifyContent": "flex-end",
+                  "marginTop": 4,
                   "width": 60,
                 },
               ]
@@ -139,6 +135,7 @@ exports[`StoryNatHeader component Should render StoryNatHeader component : Story
               }
             >
               <Text
+                accessibilityLabel="Text Right"
                 style={
                   Object {
                     "color": "orange",
@@ -152,7 +149,6 @@ exports[`StoryNatHeader component Should render StoryNatHeader component : Story
               </Text>
               <Image
                 accessibilityLabel="realizar ação do item da barra superior direita"
-                accessible={true}
               />
             </View>
           </View>
