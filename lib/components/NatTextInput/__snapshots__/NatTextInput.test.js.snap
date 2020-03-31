@@ -2166,6 +2166,7 @@ exports[`TextInput component default Should render textInput with icon and assis
           "flexBasis": 0,
           "flexGrow": 1,
           "flexShrink": 1,
+          "marginRight": 5,
           "opacity": 1,
         }
       }
