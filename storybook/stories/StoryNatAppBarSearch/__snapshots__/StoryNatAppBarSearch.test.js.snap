@@ -90,6 +90,7 @@ exports[`StoryNatAppBarSearch component Should render StoryNatAppBarSearch compo
                     "paddingTop": 0,
                     "position": "relative",
                     "width": "100%",
+                    "zIndex": 1,
                   },
                 ]
               }
@@ -1217,7 +1218,7 @@ exports[`StoryNatAppBarSearch component Should render StoryNatAppBarSearch compo
                     "left": 0,
                     "position": "absolute",
                     "right": 0,
-                    "top": 30,
+                    "top": 55,
                     "zIndex": -2,
                   },
                   Object {
@@ -1321,6 +1322,7 @@ exports[`StoryNatAppBarSearch component Should render StoryNatAppBarSearch compo
                     "paddingTop": 0,
                     "position": "relative",
                     "width": "100%",
+                    "zIndex": 1,
                   },
                 ]
               }
@@ -2448,7 +2450,7 @@ exports[`StoryNatAppBarSearch component Should render StoryNatAppBarSearch compo
                     "left": 0,
                     "position": "absolute",
                     "right": 0,
-                    "top": 30,
+                    "top": 55,
                     "zIndex": -2,
                   },
                   Object {
@@ -2552,6 +2554,7 @@ exports[`StoryNatAppBarSearch component Should render StoryNatAppBarSearch compo
                     "paddingTop": 0,
                     "position": "relative",
                     "width": "100%",
+                    "zIndex": 1,
                   },
                 ]
               }
@@ -3636,7 +3639,7 @@ exports[`StoryNatAppBarSearch component Should render StoryNatAppBarSearch compo
                     "left": 0,
                     "position": "absolute",
                     "right": 0,
-                    "top": 30,
+                    "top": 55,
                     "zIndex": -2,
                   },
                   Object {
@@ -3740,6 +3743,7 @@ exports[`StoryNatAppBarSearch component Should render StoryNatAppBarSearch compo
                     "paddingTop": 0,
                     "position": "relative",
                     "width": "100%",
+                    "zIndex": 1,
                   },
                 ]
               }
@@ -4824,7 +4828,7 @@ exports[`StoryNatAppBarSearch component Should render StoryNatAppBarSearch compo
                     "left": 0,
                     "position": "absolute",
                     "right": 0,
-                    "top": 30,
+                    "top": 55,
                     "zIndex": -2,
                   },
                   Object {
@@ -4928,6 +4932,7 @@ exports[`StoryNatAppBarSearch component Should render StoryNatAppBarSearch compo
                     "paddingTop": 0,
                     "position": "relative",
                     "width": "100%",
+                    "zIndex": 1,
                   },
                 ]
               }
@@ -6012,7 +6017,7 @@ exports[`StoryNatAppBarSearch component Should render StoryNatAppBarSearch compo
                     "left": 0,
                     "position": "absolute",
                     "right": 0,
-                    "top": 30,
+                    "top": 55,
                     "zIndex": -2,
                   },
                   Object {

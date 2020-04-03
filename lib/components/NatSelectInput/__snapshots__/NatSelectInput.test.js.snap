@@ -425,6 +425,7 @@ exports[`NatSelectInput component default Should render textInput component : Na
                       "paddingTop": 0,
                       "position": "relative",
                       "width": "100%",
+                      "zIndex": 1,
                     },
                   ]
                 }
@@ -1552,7 +1553,7 @@ exports[`NatSelectInput component default Should render textInput component : Na
                       "left": 0,
                       "position": "absolute",
                       "right": 0,
-                      "top": 30,
+                      "top": 55,
                       "zIndex": -2,
                     },
                     Object {
@@ -3587,6 +3588,7 @@ exports[`NatSelectInput component default Should render textInput with icon and 
                       "paddingTop": 0,
                       "position": "relative",
                       "width": "100%",
+                      "zIndex": 1,
                     },
                   ]
                 }
@@ -4717,7 +4719,7 @@ exports[`NatSelectInput component default Should render textInput with icon and 
                       "left": 0,
                       "position": "absolute",
                       "right": 0,
-                      "top": 30,
+                      "top": 55,
                       "zIndex": -2,
                     },
                     Object {

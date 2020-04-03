@@ -92,6 +92,7 @@ exports[`NatModalSelect and its variants NatModalSelect Should match snapshot: N
                     "paddingTop": 0,
                     "position": "relative",
                     "width": "100%",
+                    "zIndex": 1,
                   },
                 ]
               }
@@ -1216,7 +1217,7 @@ exports[`NatModalSelect and its variants NatModalSelect Should match snapshot: N
                     "left": 0,
                     "position": "absolute",
                     "right": 0,
-                    "top": 30,
+                    "top": 55,
                     "zIndex": -2,
                   },
                   Object {

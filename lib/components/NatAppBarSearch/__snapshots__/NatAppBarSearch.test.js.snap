@@ -54,6 +54,7 @@ exports[`Header component Should render container component correctly: NatAppBar
             "paddingTop": 0,
             "position": "relative",
             "width": "100%",
+            "zIndex": 1,
           },
         ]
       }
@@ -1178,7 +1179,7 @@ exports[`Header component Should render container component correctly: NatAppBar
             "left": 0,
             "position": "absolute",
             "right": 0,
-            "top": 30,
+            "top": 55,
             "zIndex": -2,
           },
           Object {
