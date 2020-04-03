@@ -498,6 +498,7 @@ exports[`StoryNatSelectInput component Should render StoryNatSelectInput compone
                               "paddingTop": 0,
                               "position": "relative",
                               "width": "100%",
+                              "zIndex": 1,
                             },
                           ]
                         }
@@ -1634,7 +1635,7 @@ exports[`StoryNatSelectInput component Should render StoryNatSelectInput compone
                               "left": 0,
                               "position": "absolute",
                               "right": 0,
-                              "top": 30,
+                              "top": 55,
                               "zIndex": -2,
                             },
                             Object {
@@ -5137,6 +5138,7 @@ exports[`StoryNatSelectInput component Should render StoryNatSelectInput compone
                               "paddingTop": 0,
                               "position": "relative",
                               "width": "100%",
+                              "zIndex": 1,
                             },
                           ]
                         }
@@ -6273,7 +6275,7 @@ exports[`StoryNatSelectInput component Should render StoryNatSelectInput compone
                               "left": 0,
                               "position": "absolute",
                               "right": 0,
-                              "top": 30,
+                              "top": 55,
                               "zIndex": -2,
                             },
                             Object {
@@ -9776,6 +9778,7 @@ exports[`StoryNatSelectInput component Should render StoryNatSelectInput compone
                               "paddingTop": 0,
                               "position": "relative",
                               "width": "100%",
+                              "zIndex": 1,
                             },
                           ]
                         }
@@ -10912,7 +10915,7 @@ exports[`StoryNatSelectInput component Should render StoryNatSelectInput compone
                               "left": 0,
                               "position": "absolute",
                               "right": 0,
-                              "top": 30,
+                              "top": 55,
                               "zIndex": -2,
                             },
                             Object {
@@ -14415,6 +14418,7 @@ exports[`StoryNatSelectInput component Should render StoryNatSelectInput compone
                               "paddingTop": 0,
                               "position": "relative",
                               "width": "100%",
+                              "zIndex": 1,
                             },
                           ]
                         }
@@ -15551,7 +15555,7 @@ exports[`StoryNatSelectInput component Should render StoryNatSelectInput compone
                               "left": 0,
                               "position": "absolute",
                               "right": 0,
-                              "top": 30,
+                              "top": 55,
                               "zIndex": -2,
                             },
                             Object {
@@ -19104,6 +19108,7 @@ exports[`StoryNatSelectInput component Should render StoryNatSelectInput compone
                                   "paddingTop": 0,
                                   "position": "relative",
                                   "width": "100%",
+                                  "zIndex": 1,
                                 },
                               ]
                             }
@@ -20240,7 +20245,7 @@ exports[`StoryNatSelectInput component Should render StoryNatSelectInput compone
                                   "left": 0,
                                   "position": "absolute",
                                   "right": 0,
-                                  "top": 30,
+                                  "top": 55,
                                   "zIndex": -2,
                                 },
                                 Object {
@@ -23718,6 +23723,7 @@ exports[`StoryNatSelectInput component Should render StoryNatSelectInput compone
                                   "paddingTop": 0,
                                   "position": "relative",
                                   "width": "100%",
+                                  "zIndex": 1,
                                 },
                               ]
                             }
@@ -24854,7 +24860,7 @@ exports[`StoryNatSelectInput component Should render StoryNatSelectInput compone
                                   "left": 0,
                                   "position": "absolute",
                                   "right": 0,
-                                  "top": 30,
+                                  "top": 55,
                                   "zIndex": -2,
                                 },
                                 Object {
