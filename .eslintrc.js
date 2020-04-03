@@ -40,8 +40,7 @@ module.exports = {
     "max-lines": 0,
     "complexity": 0,
     "max-statements": 0,
-    "max-len": 0,
-    "func-names": 0
+    "max-len": 0
   },
   "settings": {
     "import/resolver": {
