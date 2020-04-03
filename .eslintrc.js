@@ -41,8 +41,7 @@ module.exports = {
     "complexity": 0,
     "max-statements": 0,
     "max-len": 0,
-    "func-names": 0,
-    "id-length": 0
+    "func-names": 0
   },
   "settings": {
     "import/resolver": {
