@@ -36,8 +36,7 @@ module.exports = {
     ],
     "import/prefer-default-export": 0,
     "import/no-extraneous-dependencies": 0,
-    "max-lines-per-function": 0,
-    "max-lines": 0
+    "max-lines-per-function": 0
   },
   "settings": {
     "import/resolver": {
