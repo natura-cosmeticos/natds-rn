@@ -23,6 +23,7 @@ const styles = {
 export const StoryNatList = () => {
   const [valueWithoutHighlight, setValueWithoutHighlight] = useState([]);
   const [valueSimple, setValueSimple] = useState([]);
+  const [valueSimpleRequired, setValueSimpleRequired] = useState([]);
   const [valueMultiple, setValueMultiple] = useState([]);
   const listItems = [
     {
@@ -69,6 +70,9 @@ export const StoryNatList = () => {
   const changeSimple = (result) => {
     setValueSimple(result);
   };
+  const changeSimpleRequired = (result) => {
+    setValueSimpleRequired(result);
+  };
   const changeMulitple = (result) => {
     setValueMultiple(result);
   };
@@ -93,6 +97,15 @@ export const StoryNatList = () => {
             items={listItems}
             selected={valueSimple}
             onChange={changeSimple}
+          />
+          <NatText value="List with simple select - required" />
+          <NatText value="Value: " />
+          <NatText value={JSON.stringify(valueSimpleRequired)} />
+          <NatList
+            items={listItems}
+            selected={valueSimpleRequired}
+            isRequired
+            onChange={changeSimpleRequired}
           />
           <NatText value="List with multiple select" />
           <NatText value="Value: " />
