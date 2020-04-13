@@ -35,15 +35,7 @@ module.exports = {
       }
     ],
     "import/prefer-default-export": 0,
-    "import/no-extraneous-dependencies": 0,
-    "max-lines-per-function": 0,
-    "max-lines": 0,
-    "complexity": 0,
-    "max-statements": 0,
-    "max-len": 0,
-    "func-names": 0,
-    "id-length": 0,
-    "no-extra-boolean-cast": 0
+    "max-lines-per-function": 0
   },
   "settings": {
     "import/resolver": {
