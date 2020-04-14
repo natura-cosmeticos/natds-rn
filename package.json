@@ -26,13 +26,10 @@
     "storybook": "start-storybook -p 7007",
     "cm": "git-cz",
     "release": "semantic-release",
-    "build": "babel lib --out-dir lib --ignore node_modules,dist --source-maps --copy-files --no-babelrc --presets react-native"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run lint",
-      "pre-push": "npm run lint && npm run test"
-    }
+    "build": "babel lib --out-dir lib --ignore node_modules,dist --source-maps --copy-files --no-babelrc --presets react-native",
+    "build:sample:android": "react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res",
+    "build:sample:ios": "react-native bundle --platform ios --dev false --entry-file index.js --bundle-output ios/NaturaReactComponents/main.jsbundle --assets-dest ios",
+    "archive:sample:ios": "xcodebuild -project ./ios/NaturaReactComponents.xcodeproj -scheme 'NaturaReactComponents' -derivedDataPath ./ios/build -archivePath ./ios/archive/NaturaReactComponents.xcarchive archive"
   },
   "dependencies": {
     "@naturacosmeticos/natds-icons": "^0.4.0",
