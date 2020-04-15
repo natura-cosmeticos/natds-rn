@@ -9,12 +9,10 @@ const styles = {
   },
 };
 
-export const Welcome = () => (
-  <SafeAreaView style={styles.defaultScreen}>
-    <NatContainer>
-      <NatLogo name="logo-natura-vertical" size={300} />
-      <NatText type="h3" value="Welcome to NATDS!" />
-      <NatText value="Here you can try out the components of our react-native library." />
-    </NatContainer>
-  </SafeAreaView>
+export const Welcome = props => (
+  <>
+    <NatLogo name="logo-natura-vertical" size={300} />
+    <NatText type="h3" value="Welcome to NATDS!" />
+    <NatText value="Here you can try out the components of our react-native library." />
+  </>
 );
