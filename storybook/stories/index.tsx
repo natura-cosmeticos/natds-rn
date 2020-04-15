@@ -23,6 +23,7 @@ import { StoryTokenColors } from './StoryTokenColors';
 import { StoryTokenSpace } from './StoryTokenSpace';
 import { StoryTokenTypography } from './StoryTokenTypography';
 import { ThemeNaturaLight } from './StoryTokenThemes/ThemeNaturaLight';
+import { Themes } from './StoryTokenThemes/Themes';
 import { Welcome } from './Welcome';
 import iconArrowLeft from '../../lib/assets/icons/ic_arrow_left_white.png';
 import { StoryIcon } from './StoryIcon';
@@ -38,7 +39,9 @@ storiesOf('Tokens', module)
   .add('Typography', () => <StoryTokenTypography />)
   .add('Colors', () => <StoryTokenColors />)
   .add('Space', () => <StoryTokenSpace />)
-  .add('Theme Natura Light', () => <ThemeNaturaLight />);
+  .add('Theme Natura Light', () => <ThemeNaturaLight />)
+  .add('Themes', () => <Themes />);
+
 storiesOf('Divider', module)
   .add('All', () => <StoryDivider />);
 storiesOf('Images', module)
