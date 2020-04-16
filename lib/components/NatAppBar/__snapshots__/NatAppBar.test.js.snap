@@ -9,6 +9,14 @@ exports[`NatAppBar component Should render container component correctly: NatApp
         "flexGrow": 1,
         "flexShrink": 1,
       },
+      Object {
+        "shadowColor": "#666",
+        "shadowOffset": Object {
+          "height": 1,
+          "width": 0,
+        },
+        "shadowOpacity": 0.24,
+      },
     ]
   }
 >
@@ -25,12 +33,6 @@ exports[`NatAppBar component Should render container component correctly: NatApp
           "flexGrow": 1,
           "flexShrink": 1,
           "height": 56,
-          "paddingBottom": 0,
-          "paddingLeft": 0,
-          "paddingRight": 0,
-          "paddingTop": 0,
-          "position": "relative",
-          "width": "100%",
           "zIndex": 1,
         },
       ]
@@ -84,15 +86,18 @@ exports[`NatAppBar component Should render container component correctly: NatApp
     >
       <Text
         accessibilityLabel="Title test"
+        alignTitle="flex-start"
         style={
           Array [
             Object {
+              "alignItems": "center",
               "color": "#333333",
               "fontSize": 20,
               "marginLeft": 0,
               "paddingBottom": 16,
               "paddingLeft": 16,
               "paddingTop": 16,
+              "textAlign": "center",
             },
           ]
         }
@@ -139,29 +144,5 @@ exports[`NatAppBar component Should render container component correctly: NatApp
       />
     </View>
   </View>
-  <View
-    style={
-      Array [
-        Object {
-          "backgroundColor": "#FFFFFF",
-          "bottom": 0,
-          "left": 0,
-          "position": "absolute",
-          "right": 0,
-          "top": 55,
-          "zIndex": -2,
-        },
-        Object {
-          "elevation": 1,
-          "shadowColor": "#000",
-          "shadowOffset": Object {
-            "height": 2,
-            "width": 0,
-          },
-          "shadowOpacity": 0.24,
-        },
-      ]
-    }
-  />
 </View>
 `;

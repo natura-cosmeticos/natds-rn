@@ -70,6 +70,14 @@ exports[`NatModalSelect and its variants NatModalSelect Should match snapshot: N
                   "flexGrow": 1,
                   "flexShrink": 1,
                 },
+                Object {
+                  "shadowColor": "#666",
+                  "shadowOffset": Object {
+                    "height": 1,
+                    "width": 0,
+                  },
+                  "shadowOpacity": 0.24,
+                },
               ]
             }
           >
@@ -86,12 +94,6 @@ exports[`NatModalSelect and its variants NatModalSelect Should match snapshot: N
                     "flexGrow": 1,
                     "flexShrink": 1,
                     "height": 56,
-                    "paddingBottom": 0,
-                    "paddingLeft": 0,
-                    "paddingRight": 0,
-                    "paddingTop": 0,
-                    "position": "relative",
-                    "width": "100%",
                     "zIndex": 1,
                   },
                 ]
@@ -1208,30 +1210,6 @@ exports[`NatModalSelect and its variants NatModalSelect Should match snapshot: N
                 </View>
               </View>
             </View>
-            <View
-              style={
-                Array [
-                  Object {
-                    "backgroundColor": "#FFFFFF",
-                    "bottom": 0,
-                    "left": 0,
-                    "position": "absolute",
-                    "right": 0,
-                    "top": 55,
-                    "zIndex": -2,
-                  },
-                  Object {
-                    "elevation": 1,
-                    "shadowColor": "#000",
-                    "shadowOffset": Object {
-                      "height": 2,
-                      "width": 0,
-                    },
-                    "shadowOpacity": 0.24,
-                  },
-                ]
-              }
-            />
           </View>
         </View>
       </View>
