@@ -30,7 +30,7 @@ import { StoryIcon } from './StoryIcon';
 import { StoryTabBar } from './StoryTabBar';
 import { StoryFAB } from './StoryFAB';
 import { StoryAvatar } from './StoryAvatar';
-import { StoriesWrapper } from './StoriesWrapper';
+import { StoriesWrapper } from './StoryWrapper';
 
 addDecorator(storyFn => <StoriesWrapper story={storyFn || null} />);
 
