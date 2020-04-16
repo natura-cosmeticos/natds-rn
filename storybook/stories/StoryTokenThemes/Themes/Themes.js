@@ -40,30 +40,49 @@ const styles = StyleSheet.create({
   itemColorName: {
     marginLeft: 5,
   },
+  title: {
+    fontSize: 30,
+    fontWeight: '100',
+    marginBottom: 20,
+  },
 });
 
 const buildData = item => Object.keys(item).map(key => ({ key, value: item[key] }));
 
+const handleRenderItem = ({ item }, textColor) => (
+  <View style={styles.container}>
+    <Text style={{ ...styles.item, color: textColor }}>{item.key}</Text>
+    <View style={styles.colorWrapper}>
+      <View style={{ backgroundColor: item.value, ...styles.itemColor }}></View>
+      <Text style={{ ...styles.itemColorName, color: textColor }}>{item.value}</Text>
+    </View>
+  </View>
+);
+
+const handleRenderSectionHeader = ({ section }) => (
+  <Text style={styles.sectionHeader}>
+    {section.title}
+  </Text>
+);
+
 export const Themes = withTheme((props) => {
-  const { palette } = props.theme;
+  const { theme: { palette }, light } = props;
+
   const sections = Object
     .keys(palette)
     .map(item => ({ data: buildData(palette[item]), title: item }));
 
   return (
-    <SectionList
-      sections={sections}
-      renderItem={({ item }) => (
-          <View style={styles.container}>
-            <Text style={styles.item}>{item.key}</Text>
-            <View style={styles.colorWrapper}>
-              <View style={{ backgroundColor: item.value, ...styles.itemColor }}></View>
-              <Text style={styles.itemColorName}>{item.value}</Text>
-            </View>
-          </View>
-      )}
-      renderSectionHeader={({ section }) => <Text style={styles.sectionHeader}>{section.title}</Text>}
-      keyExtractor={(item, index) => index}
-    />
+    <View>
+      <Text style={{ ...styles.title, color: palette.text.primary }}>
+        {`Natura ${light ? 'Light' : 'Dark'}`}
+      </Text>
+      <SectionList
+        sections={sections}
+        renderItem={item => handleRenderItem(item, palette.text.primary)}
+        renderSectionHeader={item => handleRenderSectionHeader(item, palette.text.primary)}
+        keyExtractor={(item, index) => index}
+      />
+    </View>
   );
 });

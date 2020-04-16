@@ -26,7 +26,7 @@ export const StoriesWrapper = ({ story }) => {
         />
       <ScrollView>
         <ThemeProvider theme={theme}>
-          <NatContainer>
+          <NatContainer style={{ backgroundColor: themes.natura[mode].palette.background.paper }}>
             {story && story({ light: isLight, theme: themes.natura[mode] })}
           </NatContainer>
         </ThemeProvider>
