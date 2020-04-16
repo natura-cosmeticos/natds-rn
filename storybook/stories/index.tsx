@@ -40,7 +40,7 @@ storiesOf('Tokens', module)
   .add('Colors', () => <StoryTokenColors />)
   .add('Space', () => <StoryTokenSpace />)
   .add('Theme Natura Light', () => <ThemeNaturaLight />)
-  .add('Themes', () => <Themes />);
+  .add('Themes', props => <Themes {...props} />);
 
 storiesOf('Divider', module)
   .add('All', () => <StoryDivider />);
