@@ -1,7 +1,10 @@
 import styled from 'styled-components/native';
+import {
+  getBackgroundDefault, getTheme, getPrimaryMain, getTextPrimary,
+} from '../../../lib';
 
 export const ContainerWithTheme = styled.View`
-  background-color: ${({ theme }) => theme.palette.background.default};
+  background-color: ${getTheme(getBackgroundDefault)};
 `;
 
 export const Container = styled(ContainerWithTheme)`
@@ -34,7 +37,7 @@ export const ModalContainer = styled(ContainerWithTheme)`
 
 export const Button = styled.TouchableHighlight`
   border-radius: 20px;
-  border-color: ${({ theme }) => theme.palette.primary.main}; 
+  border-color: ${getTheme(getPrimaryMain)}; 
   border-width: 1px;
   padding: 10px;
   elevation: 2;
@@ -45,7 +48,7 @@ export const BlockButton = styled(Button)`
 `;
 
 export const TextWithTheme = styled.Text`
-  color: ${({ theme }) => theme.palette.text.primary};
+  color: ${getTheme(getTextPrimary)};
 `;
 
 export const Title = styled(TextWithTheme)`

@@ -2,17 +2,17 @@ import React from 'react';
 import { Switch } from 'react-native';
 import { withTheme } from 'styled-components';
 import { SwitchContainer, TextWithTheme } from './StoryWrapper.styles';
+import { getSuccessContrastText, getSuccessMain, getActionDisabled } from '../../../lib';
 
 const SwitchWithLabelComponent = ({
   onChange, isLast, label, isActive, theme,
 }) => {
-  const colors = theme.palette;
   const colorProps = {
     ios_backgroundColor: '#3e3e3e',
-    thumbColor: colors.success.contrastText,
+    thumbColor: getSuccessContrastText(theme),
     trackColor: {
-      false: colors.action.disabled,
-      true: colors.success.main,
+      false: getActionDisabled(theme),
+      true: getSuccessMain(theme),
     },
   };
 
