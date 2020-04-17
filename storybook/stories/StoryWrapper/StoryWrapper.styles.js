@@ -1,11 +1,6 @@
 import styled from 'styled-components/native';
-import {
-  getBackgroundDefault, getTheme, getPrimaryMain, getTextPrimary,
-} from '../../../lib';
-
-export const ContainerWithTheme = styled.View`
-  background-color: ${getTheme(getBackgroundDefault)};
-`;
+import { getTheme, getPrimaryMain } from '../../../lib';
+import { ContainerWithTheme, TextWithTheme } from '../HelperComponents/ThemeHelper.styles';
 
 export const Container = styled(ContainerWithTheme)`
   align-items: center;
@@ -45,10 +40,6 @@ export const Button = styled.TouchableHighlight`
 
 export const BlockButton = styled(Button)`
   align-self: stretch;
-`;
-
-export const TextWithTheme = styled.Text`
-  color: ${getTheme(getTextPrimary)};
 `;
 
 export const Title = styled(TextWithTheme)`
