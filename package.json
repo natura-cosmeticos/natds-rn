@@ -17,6 +17,7 @@
     "start": "react-native start",
     "start:clear": "react-native start --reset-cache",
     "test": "jest --collectCoverage",
+    "test:watch": "jest --watch",
     "test:clean": "jest --update-snapshot",
     "ios:5": "react-native run-ios --simulator=\"iPhone 5s\"",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",

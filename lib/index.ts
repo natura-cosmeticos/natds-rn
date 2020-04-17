@@ -1,6 +1,17 @@
 import * as Tokens from './tokens';
 import { ThemeNaturaLight } from './themes/ThemeNaturaLight';
 
+export {
+  getActionDisabled,
+  getSuccessMain,
+  getBackgroundPaper,
+  getSuccessContrastText,
+  getBackgroundDefault,
+  getTheme,
+  getPrimaryMain,
+  getTextPrimary,
+} from './themes/themeSelectors';
+
 export { Button } from './components/Button';
 export { Divider } from './components/Divider';
 export { NatAppBar } from './components/NatAppBar';
