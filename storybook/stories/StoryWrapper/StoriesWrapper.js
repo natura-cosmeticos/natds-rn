@@ -2,10 +2,12 @@ import React, { useState } from 'react';
 import { themes } from '@naturacosmeticos/natds-styles';
 import { ThemeProvider } from 'styled-components/native';
 import {
-  ScrollView, SafeAreaView, Dimensions, View, Switch, Modal, StyleSheet,
+  ScrollView, SafeAreaView, Dimensions, StyleSheet,
 } from 'react-native';
 import { NatContainer } from '../../../lib';
-import { SwitchContainer, ModalContainer, Container, Button, BlockButton, TextWithTheme, Title } from './StoryWrapper.styles';
+import { Container, Button, TextWithTheme } from './StoryWrapper.styles';
+import { ThemeSelectorModal } from './ThemeSelectorModal';
+import { SwitchWithLabel } from './SwitchWithLabel';
 
 const styles = StyleSheet.create({
   defaultScreen: {
@@ -14,53 +16,8 @@ const styles = StyleSheet.create({
   },
 });
 
-const SwitchWithLabel = ({ colors, onChange, isLast, label, isActive }) => {
-  return (
-    <SwitchContainer isLast={isLast}>
-      <TextWithTheme style={{ paddingRight: 5 }}>{label}</TextWithTheme>
-      <Switch
-        trackColor={{ false: colors.action.disabled, true: colors.success.main }}
-        thumbColor={colors.success.contrastText}
-        ios_backgroundColor="#3e3e3e"
-        onValueChange={onChange}
-        value={isActive}
-      />
-    </SwitchContainer>
-  );
-};
-
-const ThemeSelectorModal = ({ modalVisible, themeNames, colors, activeTheme, changeTheme, setModalVisible }) => {
-  return (
-    <Modal
-      animationType="slide"
-      visible={modalVisible}
-      statusBarTranslucent
-    >
-      <ModalContainer>
-        <Title>Available Themes:</Title>
-        <View style={{ width: '100%' }}>
-          {
-            themeNames.map((themeName, index) => (
-              <SwitchWithLabel
-                key={index}
-                colors={colors}
-                onChange={() => changeTheme(themeName)}
-                isLast={index === themeNames.length - 1}
-                label={themeName}
-                isActive={activeTheme === themeName}
-              />))
-          }
-        </View>
-        <BlockButton style={{ marginTop: 20 }} onPress={() => setModalVisible(!modalVisible)}>
-          <TextWithTheme style={{ textAlign: 'center' }}>Close</TextWithTheme>
-        </BlockButton>
-      </ModalContainer>
-    </Modal>
-  );
-};
-
 export const StoriesWrapper = ({ story }) => {
-  themes.test = themes.natura
+  themes.test = themes.natura;
   const themeNames = Object.keys(themes);
   const [isLight, changeMode] = useState(true);
   const [activeTheme, changeTheme] = useState(themeNames[0]);
@@ -85,7 +42,6 @@ export const StoriesWrapper = ({ story }) => {
             <TextWithTheme>Change Theme</TextWithTheme>
           </Button>
           <SwitchWithLabel
-            colors={colors}
             onChange={changeMode}
             value={isLight}
             label="Light"
