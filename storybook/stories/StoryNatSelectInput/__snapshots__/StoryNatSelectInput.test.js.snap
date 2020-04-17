@@ -475,14 +475,7 @@ exports[`StoryNatSelectInput component Should render StoryNatSelectInput compone
                             "flexBasis": 0,
                             "flexGrow": 1,
                             "flexShrink": 1,
-                          },
-                          Object {
-                            "shadowColor": "#666",
-                            "shadowOffset": Object {
-                              "height": 1,
-                              "width": 0,
-                            },
-                            "shadowOpacity": 0.24,
+                            "position": "relative",
                           },
                         ]
                       }
@@ -495,11 +488,14 @@ exports[`StoryNatSelectInput component Should render StoryNatSelectInput compone
                             Object {
                               "alignItems": "stretch",
                               "backgroundColor": "#FFFFFF",
+                              "bottom": 0,
                               "flexBasis": 0,
                               "flexDirection": "row",
                               "flexGrow": 1,
                               "flexShrink": 1,
                               "height": 56,
+                              "position": "absolute",
+                              "width": "100%",
                               "zIndex": 1,
                             },
                           ]
@@ -5093,14 +5089,7 @@ exports[`StoryNatSelectInput component Should render StoryNatSelectInput compone
                             "flexBasis": 0,
                             "flexGrow": 1,
                             "flexShrink": 1,
-                          },
-                          Object {
-                            "shadowColor": "#666",
-                            "shadowOffset": Object {
-                              "height": 1,
-                              "width": 0,
-                            },
-                            "shadowOpacity": 0.24,
+                            "position": "relative",
                           },
                         ]
                       }
@@ -5113,11 +5102,14 @@ exports[`StoryNatSelectInput component Should render StoryNatSelectInput compone
                             Object {
                               "alignItems": "stretch",
                               "backgroundColor": "#FFFFFF",
+                              "bottom": 0,
                               "flexBasis": 0,
                               "flexDirection": "row",
                               "flexGrow": 1,
                               "flexShrink": 1,
                               "height": 56,
+                              "position": "absolute",
+                              "width": "100%",
                               "zIndex": 1,
                             },
                           ]
@@ -9711,14 +9703,7 @@ exports[`StoryNatSelectInput component Should render StoryNatSelectInput compone
                             "flexBasis": 0,
                             "flexGrow": 1,
                             "flexShrink": 1,
-                          },
-                          Object {
-                            "shadowColor": "#666",
-                            "shadowOffset": Object {
-                              "height": 1,
-                              "width": 0,
-                            },
-                            "shadowOpacity": 0.24,
+                            "position": "relative",
                           },
                         ]
                       }
@@ -9731,11 +9716,14 @@ exports[`StoryNatSelectInput component Should render StoryNatSelectInput compone
                             Object {
                               "alignItems": "stretch",
                               "backgroundColor": "#FFFFFF",
+                              "bottom": 0,
                               "flexBasis": 0,
                               "flexDirection": "row",
                               "flexGrow": 1,
                               "flexShrink": 1,
                               "height": 56,
+                              "position": "absolute",
+                              "width": "100%",
                               "zIndex": 1,
                             },
                           ]
@@ -14329,14 +14317,7 @@ exports[`StoryNatSelectInput component Should render StoryNatSelectInput compone
                             "flexBasis": 0,
                             "flexGrow": 1,
                             "flexShrink": 1,
-                          },
-                          Object {
-                            "shadowColor": "#666",
-                            "shadowOffset": Object {
-                              "height": 1,
-                              "width": 0,
-                            },
-                            "shadowOpacity": 0.24,
+                            "position": "relative",
                           },
                         ]
                       }
@@ -14349,11 +14330,14 @@ exports[`StoryNatSelectInput component Should render StoryNatSelectInput compone
                             Object {
                               "alignItems": "stretch",
                               "backgroundColor": "#FFFFFF",
+                              "bottom": 0,
                               "flexBasis": 0,
                               "flexDirection": "row",
                               "flexGrow": 1,
                               "flexShrink": 1,
                               "height": 56,
+                              "position": "absolute",
+                              "width": "100%",
                               "zIndex": 1,
                             },
                           ]
@@ -18997,14 +18981,7 @@ exports[`StoryNatSelectInput component Should render StoryNatSelectInput compone
                                 "flexBasis": 0,
                                 "flexGrow": 1,
                                 "flexShrink": 1,
-                              },
-                              Object {
-                                "shadowColor": "#666",
-                                "shadowOffset": Object {
-                                  "height": 1,
-                                  "width": 0,
-                                },
-                                "shadowOpacity": 0.24,
+                                "position": "relative",
                               },
                             ]
                           }
@@ -19017,11 +18994,14 @@ exports[`StoryNatSelectInput component Should render StoryNatSelectInput compone
                                 Object {
                                   "alignItems": "stretch",
                                   "backgroundColor": "#FFFFFF",
+                                  "bottom": 0,
                                   "flexBasis": 0,
                                   "flexDirection": "row",
                                   "flexGrow": 1,
                                   "flexShrink": 1,
                                   "height": 56,
+                                  "position": "absolute",
+                                  "width": "100%",
                                   "zIndex": 1,
                                 },
                               ]
@@ -23590,14 +23570,7 @@ exports[`StoryNatSelectInput component Should render StoryNatSelectInput compone
                                 "flexBasis": 0,
                                 "flexGrow": 1,
                                 "flexShrink": 1,
-                              },
-                              Object {
-                                "shadowColor": "#666",
-                                "shadowOffset": Object {
-                                  "height": 1,
-                                  "width": 0,
-                                },
-                                "shadowOpacity": 0.24,
+                                "position": "relative",
                               },
                             ]
                           }
@@ -23610,11 +23583,14 @@ exports[`StoryNatSelectInput component Should render StoryNatSelectInput compone
                                 Object {
                                   "alignItems": "stretch",
                                   "backgroundColor": "#FFFFFF",
+                                  "bottom": 0,
                                   "flexBasis": 0,
                                   "flexDirection": "row",
                                   "flexGrow": 1,
                                   "flexShrink": 1,
                                   "height": 56,
+                                  "position": "absolute",
+                                  "width": "100%",
                                   "zIndex": 1,
                                 },
                               ]

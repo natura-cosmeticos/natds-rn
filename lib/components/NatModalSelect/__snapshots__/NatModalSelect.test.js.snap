@@ -69,14 +69,7 @@ exports[`NatModalSelect and its variants NatModalSelect Should match snapshot: N
                   "flexBasis": 0,
                   "flexGrow": 1,
                   "flexShrink": 1,
-                },
-                Object {
-                  "shadowColor": "#666",
-                  "shadowOffset": Object {
-                    "height": 1,
-                    "width": 0,
-                  },
-                  "shadowOpacity": 0.24,
+                  "position": "relative",
                 },
               ]
             }
@@ -89,11 +82,14 @@ exports[`NatModalSelect and its variants NatModalSelect Should match snapshot: N
                   Object {
                     "alignItems": "stretch",
                     "backgroundColor": "#FFFFFF",
+                    "bottom": 0,
                     "flexBasis": 0,
                     "flexDirection": "row",
                     "flexGrow": 1,
                     "flexShrink": 1,
                     "height": 56,
+                    "position": "absolute",
+                    "width": "100%",
                     "zIndex": 1,
                   },
                 ]
