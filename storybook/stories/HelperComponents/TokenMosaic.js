@@ -1,8 +1,12 @@
 import React from 'react';
-import { withTheme } from 'styled-components';
-import { View, Text } from 'react-native';
-import { tokens } from '@naturacosmeticos/natds-styles';
-import { TokenContainer, TokenColorContainer, ActualColor, ColorName, CategoryTitle, CategoryWrapper } from './TokenMosaic.styles';
+import { View } from 'react-native';
+import {
+  TokenContainer,
+  TokenColorContainer,
+  ActualColor, ColorName,
+  CategoryTitle,
+  CategoryWrapper,
+} from './TokenMosaic.styles';
 
 const buildMosaic = (data, itemRenderer) => Object
   .keys(data)

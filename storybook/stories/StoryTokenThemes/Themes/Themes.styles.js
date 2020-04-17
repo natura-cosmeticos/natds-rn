@@ -1,5 +1,5 @@
 import styled from 'styled-components/native';
-import { getTextPrimary, getTheme } from '../../../../lib/themes/themeSelectors'
+import { getTextPrimary, getTheme, getBackgroundDefault } from '../../../../lib/themes/themeSelectors'
 import { TextWithTheme } from '../../HelperComponents/ThemeHelper.styles'
 
 export const ItemWrapper = styled.View`
@@ -39,7 +39,7 @@ export const SectionHeader = styled(TextWithTheme)`
   padding-bottom: 2px;
   font-size: 14px;
   font-weight: bold;
-  background-color: rgba(247,247,247,1.0);
+  background-color: ${getTheme(getBackgroundDefault)};
 `;
 
 export const Title = styled(TextWithTheme)`
