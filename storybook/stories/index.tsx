@@ -32,9 +32,12 @@ import { StoryFAB } from './StoryFAB';
 import { StoryAvatar } from './StoryAvatar';
 import { StoriesWrapper } from './StoryWrapper';
 
+console.disableYellowBox = true;
+
 addDecorator(storyFn => <StoriesWrapper story={storyFn || null} />);
 
 storiesOf('Welcome', module).add('NATDS', () => <Welcome />);
+
 storiesOf('Tokens', module)
   .add('Typography', () => <StoryTokenTypography />)
   .add('Colors', () => <StoryTokenColors />)

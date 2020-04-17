@@ -5,7 +5,8 @@ import {
   ScrollView, SafeAreaView, Dimensions, StyleSheet,
 } from 'react-native';
 import { NatContainer, getBackgroundPaper } from '../../../lib';
-import { Container, Button, TextWithTheme } from './StoryWrapper.styles';
+import { TextWithTheme } from '../HelperComponents/ThemeHelper.styles';
+import { Container, Button } from './StoryWrapper.styles';
 import { ThemeSelectorModal } from './ThemeSelectorModal';
 import { SwitchWithLabel } from './SwitchWithLabel';
 
@@ -51,7 +52,7 @@ export const StoriesWrapper = ({ story }) => {
         </Container>
         <ScrollView>
           <NatContainer style={{ backgroundColor: getBackgroundPaper(theme) }}>
-            {story && story({ light: isLight, theme })}
+            {story && story({ activeTheme, light: isLight })}
           </NatContainer>
         </ScrollView>
       </ThemeProvider>

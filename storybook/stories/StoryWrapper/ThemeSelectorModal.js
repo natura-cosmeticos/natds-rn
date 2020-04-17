@@ -1,7 +1,8 @@
 import React from 'react';
 import { View, Modal } from 'react-native';
+import { TextWithTheme } from '../HelperComponents/ThemeHelper.styles'
 import {
-  ModalContainer, BlockButton, TextWithTheme, Title,
+  ModalContainer, BlockButton, Title,
 } from './StoryWrapper.styles';
 import { SwitchWithLabel } from './SwitchWithLabel';
 
