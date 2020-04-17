@@ -19,7 +19,7 @@ import { StoryNatLogo } from './StoryNatLogo';
 import { StoryNatMenuItem } from './StoryNatMenuItem';
 import { StoryNatSelectInput } from './StoryNatSelectInput';
 import { StoryNatTextInput } from './StoryNatTextInput';
-import { StoryTokenColors } from './StoryTokenColors';
+import { StoryTokenColors, Colors } from './StoryTokenColors';
 import { StoryTokenSpace } from './StoryTokenSpace';
 import { StoryTokenTypography } from './StoryTokenTypography';
 import { ThemeNaturaLight } from './StoryTokenThemes/ThemeNaturaLight';
@@ -41,6 +41,7 @@ storiesOf('Welcome', module).add('NATDS', () => <Welcome />);
 storiesOf('Tokens', module)
   .add('Typography', () => <StoryTokenTypography />)
   .add('Colors', () => <StoryTokenColors />)
+  .add('Colors New', props => <Colors {...props} />)
   .add('Space', () => <StoryTokenSpace />)
   .add('Theme Natura Light', () => <ThemeNaturaLight />)
   .add('Themes', props => <Themes {...props} />);
