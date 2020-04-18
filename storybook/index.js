@@ -1,5 +1,5 @@
 import { AppRegistry } from 'react-native';
-import { getStorybookUI, configure } from '@storybook/react-native';
+import { getStorybookUI, configure } from '@storybook/react-native'; // eslint-disable-line import/no-extraneous-dependencies
 
 // import stories
 configure(() => {

@@ -48,7 +48,7 @@ export const StoryDivider = () => (
           marginTop="small"
           backgroundColor={Theme.palette.background.paper}
         />
-        
+
       </ScrollView>
     </NatContainer>
   </SafeAreaView>

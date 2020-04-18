@@ -6,13 +6,13 @@ import {
   Dimensions,
   Text,
 } from 'react-native';
+import natdsIcons from '@naturacosmeticos/natds-icons/dist/natds-icons.json';
 import {
   NatContainer,
   NatText,
   Icon,
   NatTextInput,
 } from '../../../lib';
-import natdsIcons from '@naturacosmeticos/natds-icons/dist/natds-icons.json';
 
 const styles = {
   defaultScreen: {
@@ -27,7 +27,7 @@ export const StoryIcon = () => {
   const renderItem = name => (
     <View style={{ flex: 1, flexDirection: 'row' }}>
       <Icon name={name} />
-      <Text>{"  "}</Text>
+      <Text>{'  '}</Text>
       <NatText type="body1" value={name} />
     </View>
   );
@@ -47,7 +47,9 @@ export const StoryIcon = () => {
     </>
   );
 
-  const filterIconList = filter => Object.keys(natdsIcons).filter(item => item.includes(filter.toLowerCase()));
+  const filterIconList = filter => Object
+    .keys(natdsIcons)
+    .filter(item => item.includes(filter.toLowerCase()));
 
   return (
     <SafeAreaView style={styles.defaultScreen}>

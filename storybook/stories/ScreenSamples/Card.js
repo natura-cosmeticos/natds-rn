@@ -67,7 +67,7 @@ export const Card = () => {
       <NatContainer>
         <ScrollView>
           {examples.map((example, index) => (
-            <NatSpace marginBottom="small">
+            <NatSpace key={index} marginBottom="small">
               <NatCard
                 title={example.title}
                 subtitle={example.subtitle}

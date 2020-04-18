@@ -1,10 +1,11 @@
-/* eslint-disable import/no-extraneous-dependencies */
+/* eslint-disable import/no-extraneous-dependencies, max-lines */
 import React from 'react';
 import { storiesOf } from '@storybook/react-native';
-import { linkTo } from '@storybook/addon-links';
 
 // eslint-disable-next-line import/extensions
-import { Login, Card, Form, FriendExchange } from './ScreenSamples';
+import {
+  Login, Card, Form, FriendExchange,
+} from './ScreenSamples';
 import { StoryButton } from './StoryButton';
 import { StoryDivider } from './StoryDivider';
 import { StoryNatAppBar } from './StoryNatAppBar';
@@ -112,7 +113,7 @@ storiesOf('TabBar', module)
 
 storiesOf('FAB', module)
   .addDecorator(getStory => <CenterView>{getStory()}</CenterView>)
-  .add('All', () => <StoryFAB />)
+  .add('All', () => <StoryFAB />);
 
 storiesOf('Avatar', module)
   .addDecorator(getStory => <CenterView>{getStory()}</CenterView>)

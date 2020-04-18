@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import {
   ScrollView,
   SafeAreaView,
   Dimensions,
+  Alert,
 } from 'react-native';
 import { NatContainer, NatHeader } from '../../../lib';
 
@@ -20,8 +21,8 @@ export const StoryNatHeader = () => (
         <NatHeader
           title="Title Text"
           icon="iconRight"
-          onPress={() => alert('press')}
-          onPressRight={() => alert('press')}
+          onPress={() => Alert.alert('press')}
+          onPressRight={() => Alert.alert('press')}
           textRight="Text Right"
         />
       </ScrollView>
