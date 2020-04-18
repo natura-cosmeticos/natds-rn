@@ -1,6 +1,6 @@
 import styled from 'styled-components/native';
-import { getTextPrimary, getTheme, getBackgroundDefault } from '../../../../lib/themes/themeSelectors'
-import { TextWithTheme } from '../../HelperComponents/ThemeHelper.styles'
+import { getTextPrimary, getTheme, getBackgroundDefault } from '../../../../lib/themes/themeSelectors';
+import { TextWithTheme } from '../../HelperComponents/ThemeHelper.styles';
 
 export const ItemWrapper = styled.View`
   flex-direction: row;
