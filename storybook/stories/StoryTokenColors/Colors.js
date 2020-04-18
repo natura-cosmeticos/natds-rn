@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text } from 'react-native'
+import { Text } from 'react-native';
 import { tokens } from '@naturacosmeticos/natds-styles';
 import { TokenMosaicWithCategories, TokenColor } from '../HelperComponents/TokenMosaic';
 
