@@ -9,6 +9,8 @@ describe('NatModalSelect and its variants', () => {
         action: jest.fn(),
         alternative: false,
         buttonText: 'Entendi',
+        onClose: jest.fn(),
+        options: [],
         text: 'Texto de boas vindas',
         title: 'Boas vindas!',
         visible: true,

@@ -7,17 +7,16 @@ import { NatAppBarSearch } from '../NatAppBarSearch';
 import { Button } from '../Button';
 
 type NatModalSelectProps = {
-  action: (...args: any[]) => any,
+  action?: (...args: any[]) => any,
   buttonText?: string,
   multiSelect?: boolean,
-  onClose?: (...args: any[]) => any,
-  options?: {
-    id?: string,
-    title?: string
+  onClose: (...args: any[]) => any,
+  options: {
+    id: string,
+    title: string
   }[],
   placeholderText?: string,
-  save?: boolean,
-  title: string,
+  title?: string,
   value?: string[],
   visible?: boolean
 };
@@ -28,13 +27,12 @@ export const NatModalSelect: React.SFC<NatModalSelectProps> = ({
   onClose,
   options,
   placeholderText,
-  save,
   title,
   value,
   visible,
 }) => {
   const [inputSelected, setInputSelected] = useState(value);
-  const [inputFilter, setInputFilter] = useState([]);
+  const [inputFilter, setInputFilter] = useState('');
   const selectButton = () => {
     onClose(inputSelected);
   };
@@ -61,15 +59,13 @@ export const NatModalSelect: React.SFC<NatModalSelectProps> = ({
     <Modal
       animationType="fade"
       onRequestClose={action}
-      save={save}
       visible={visible}
     >
       <SafeAreaView style={{ flex: 1 }}>
-        <ModalContent accessibilityLabel={title}>
+        <ModalContent accessibilityLabel={title || ''}>
           <View style={{ height: 59 }}>
             <NatAppBarSearch
               title={placeholderText}
-              value={inputFilter}
               onSubmit={text => setInputFilter(text)}
               showIconLeft={true}
               onPressLeft={() => onClose(inputSelected)}
@@ -104,7 +100,6 @@ NatModalSelect.defaultProps = {
   onClose: () => {},
   options: [],
   placeholderText: 'Search',
-  save: false,
   value: [],
   visible: false,
 };

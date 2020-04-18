@@ -2,49 +2,7 @@
 import React from 'react';
 import styled from 'styled-components/native';
 import { NatText } from '../NatText';
-
-interface ConfigStyle {
-  color?: string,
-  borderColor?: string,
-  border?: string,
-}
-
-const getInputStyles = (type, state, theme) => {
-  const configStyle: ConfigStyle = {};
-
-  switch (type) {
-    case 'error':
-      configStyle.color = theme.palette.error.main;
-      configStyle.borderColor = theme.palette.error.main;
-      configStyle.border = '2px';
-      break;
-    case 'disabled':
-      configStyle.color = theme.palette.text.disabled;
-      configStyle.borderColor = theme.palette.text.disabled;
-      // configStyle.backgroundColor = theme.palette.text.disabled;
-      break;
-    case 'none':
-      configStyle.color = theme.palette.text.disabled;
-      configStyle.borderColor = theme.palette.text.disabled;
-      configStyle.border = '0px';
-      // configStyle.backgroundColor = theme.palette.text.disabled;
-      break;
-    default:
-      configStyle.color = theme.palette.text.secondary;
-      configStyle.borderColor = theme.palette.text.disabled;
-      if (state === 'active') {
-        configStyle.border = '2px';
-        configStyle.borderColor = theme.palette.primary.main;
-      }
-      if (state === 'filled') {
-        // configStyle.border = '2px';
-        configStyle.borderColor = theme.palette.background.defaultContrastText;
-      }
-      break;
-  }
-
-  return configStyle;
-};
+import { getInputStyles } from '../NatTextInput/NatTextInput.styles';
 
 export const Wrapper = styled.View`
   width: 100%;

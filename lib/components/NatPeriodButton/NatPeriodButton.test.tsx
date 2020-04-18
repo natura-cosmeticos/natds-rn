@@ -62,6 +62,7 @@ describe('NatPeriodButton', () => {
     expect(wrapper.find(Title).text()).toBe('Title test');
   });
   it('Should throw exception when the onSelect property is not passed to the component', () => {
+    // @ts-ignore
     expect(() => shallow(<NatPeriodButton />)).toThrow(
       'Period Button needs an onSelect property to be passed to the component.',
     );

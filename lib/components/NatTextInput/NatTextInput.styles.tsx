@@ -5,8 +5,14 @@ import styled from 'styled-components/native';
 import { NatText } from '../NatText';
 import { sizes } from '../../tokens/sizes';
 
-const getInputStyles = (type, state, theme) => {
-  const configStyle = {};
+interface ConfigStyle {
+  color?: string,
+  borderColor?: string,
+  border?: string,
+}
+
+export const getInputStyles = (type, state, theme) => {
+  const configStyle: ConfigStyle = {};
 
   switch (type) {
     case 'error':
@@ -68,7 +74,7 @@ export const InputWrapper = styled.View`
   padding-bottom: 0px;
   flex-direction: row;
   justify-content: space-between;
-  background-color: ${({ type, state, theme }) => getInputStyles(type, state, theme).backgroundColor || 'transparent'};
+  background-color: 'transparent';
 `;
 
 export const TextInput = styled.TextInput`
@@ -79,7 +85,7 @@ export const TextInput = styled.TextInput`
   padding-bottom: ${({ numberOfLines, size }) => getPaddingSize(numberOfLines, size)};
   text-align-vertical: top;
   height: ${({ defaultSize }) => defaultSize || '56px'};
-  color: ${({ type, state, theme }) => getInputStyles(type, state, theme).fontColor || theme.palette.text.secondary};
+  color: ${({ theme }) => theme.palette.text.secondary};
   letter-spacing: ${({ secureTextEntry }) => (secureTextEntry ? '0px' : '0px')};
 `;
 

@@ -113,6 +113,7 @@ export const NatTextInput: React.SFC<NatTextInputProps> = ({
       theme={theme}
     >
       {label !== '' && (
+        // @ts-ignore
         <Label type={type} state={state} theme={theme} text={label} />
       )}
       <InputWrapper
@@ -143,12 +144,8 @@ export const NatTextInput: React.SFC<NatTextInputProps> = ({
         {icon && renderIcon(icon)}
       </InputWrapper>
       {assistiveText !== '' && (
-        <AssistiveTexView
-          type={type}
-          state={state}
-          theme={theme}
-          text={assistiveText}
-        />
+        // @ts-ignore
+        <AssistiveTexView type={type} state={state} theme={theme} text={assistiveText}/>
       )}
     </Wrapper>
   );
