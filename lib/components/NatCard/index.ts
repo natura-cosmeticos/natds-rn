@@ -1,0 +1,1 @@
+export { NatCard } from "./NatCard";
