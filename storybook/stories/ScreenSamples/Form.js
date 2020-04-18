@@ -55,7 +55,7 @@ export const Form = () => {
             onChangeText={setInputDisabled}
             value={inputDisabled}
           />
-          <Text>You can apply margin by sending "margin" prop, with values: none, dense or normal.</Text>
+          <Text>You can apply margin using the prop with values: none, dense or normal.</Text>
         </View>
       </NatContainer>
     </SafeAreaView>

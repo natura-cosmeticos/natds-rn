@@ -1,13 +1,15 @@
 import React from 'react';
-import { SafeAreaView, ScrollView, Dimensions, View } from 'react-native';
+import {
+  SafeAreaView, ScrollView, Dimensions, View,
+} from 'react-native';
 
 import { Avatar, NatText } from '../../../lib';
 
 const styles = {
   defaultScreen: {
     flex: 1,
-    width: Dimensions.get('window').width,
     marginTop: 2,
+    width: Dimensions.get('window').width,
   },
 };
 
@@ -16,7 +18,7 @@ export const StoryAvatar = () => (
     <ScrollView>
       <NatText value="Letter" />
       <View style={{ flexDirection: 'row' }}>
-        <Avatar name="MP" size={1} type='letter'  />
+        <Avatar name="MP" size={1} type='letter' />
         <Avatar name="MP" size={2} type='letter' />
         <Avatar name="MP" size={3} type='letter' />
         <Avatar name="MP" size={4} type='letter' />
@@ -30,7 +32,7 @@ export const StoryAvatar = () => (
         <Avatar size={4} type='anonymous' />
         <Avatar size={5} type='anonymous' />
       </View>
-      
+
       <NatText value="Image" />
       <View style={{ flexDirection: 'row' }}>
         <Avatar size={1} type='image' uri='https://c.pxhere.com/photos/52/58/photo-1412284.jpg!d' />

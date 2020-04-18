@@ -1,18 +1,20 @@
 import React from 'react';
-import { ScrollView, SafeAreaView, Dimensions, View } from 'react-native';
+import {
+  ScrollView, SafeAreaView, Dimensions, View,
+} from 'react-native';
 import PropTypes from 'prop-types';
 import { FAB, NatText, NatSpace } from '../../../lib';
 
 const styles = {
   defaultScreen: {
     flex: 1,
+    marginTop: 5,
     width: Dimensions.get('window').width,
-    marginTop: 5
   },
 };
 
-const valueText = "+";
-const valueExtended = "extended";
+const valueText = '+';
+const valueExtended = 'extended';
 
 export const StoryFAB = () => (
   <SafeAreaView style={styles.defaultScreen}>

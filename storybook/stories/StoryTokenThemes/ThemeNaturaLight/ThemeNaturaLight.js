@@ -1,3 +1,4 @@
+/* eslint-disable max-lines */
 import React from 'react';
 import {
   SafeAreaView,
@@ -29,19 +30,19 @@ export const ThemeNaturaLight = () => {
   );
 
   const primary = Object.keys(Theme.palette.primary)
-    .map(k => ({ color: Theme.palette.primary[k], name: k }));
+    .map(key => ({ color: Theme.palette.primary[key], name: key }));
   const secondary = Object.keys(Theme.palette.secondary)
-    .map(k => ({ color: Theme.palette.secondary[k], name: k }));
+    .map(key => ({ color: Theme.palette.secondary[key], name: key }));
   const error = Object.keys(Theme.palette.error)
-    .map(k => ({ color: Theme.palette.error[k], name: k }));
+    .map(key => ({ color: Theme.palette.error[key], name: key }));
   const success = Object.keys(Theme.palette.success)
-    .map(k => ({ color: Theme.palette.success[k], name: k }));
+    .map(key => ({ color: Theme.palette.success[key], name: key }));
   const background = Object.keys(Theme.palette.background)
-    .map(k => ({ color: Theme.palette.background[k], name: k }));
+    .map(key => ({ color: Theme.palette.background[key], name: key }));
   const text = Object.keys(Theme.palette.text)
-    .map(k => ({ color: Theme.palette.text[k], name: k }));
+    .map(key => ({ color: Theme.palette.text[key], name: key }));
   const complementary = Object.keys(Theme.palette.complementary)
-    .map(k => ({ color: Theme.palette.complementary[k], name: k }));
+    .map(key => ({ color: Theme.palette.complementary[key], name: key }));
 
   return (
     <SafeAreaView style={styles.defaultScreen}>

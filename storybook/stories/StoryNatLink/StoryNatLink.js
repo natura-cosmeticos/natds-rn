@@ -3,11 +3,11 @@ import {
   ScrollView,
   SafeAreaView,
   Dimensions,
+  Alert,
 } from 'react-native';
 import {
   NatContainer,
   NatSpace,
-  ThemeNaturaLight as Theme,
   NatText,
   NatLink,
 } from '../../../lib';
@@ -34,9 +34,9 @@ export const StoryNatLink = () => (
           paddingLeft="none"
         />
         <NatText value="Text without link" type="body1" />
-        <NatLink value="Text with link" type="body1" onPress={() => alert('click link')} />
-        <NatLink value="Text with link" type="body1" onPress={() => alert('click link')} align="center" />
-        <NatLink value="Text with link" type="body1" onPress={() => alert('click link')} align="flex-end" />
+        <NatLink value="Text with link" type="body1" onPress={() => Alert.alert('click link')} />
+        <NatLink value="Text with link" type="body1" onPress={() => Alert.alert('click link')} align="center" />
+        <NatLink value="Text with link" type="body1" onPress={() => Alert.alert('click link')} align="flex-end" />
       </ScrollView>
     </NatContainer>
   </SafeAreaView>

@@ -6,4 +6,3 @@ App
 metro.config.js
 babel.config.js
 .eslintrc.js
-storybook

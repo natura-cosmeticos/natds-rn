@@ -7,6 +7,7 @@ import { StoryAvatar } from './StoryAvatar';
 describe('StoryAvatar component', () => {
   it('should render correctly', () => {
     const button = renderer.create(<StoryAvatar />).toJSON();
+
     expect(button).toMatchSnapshot('StoryAvatar snapshot');
   });
 });

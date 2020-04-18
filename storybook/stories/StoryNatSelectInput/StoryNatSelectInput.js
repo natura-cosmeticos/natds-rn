@@ -1,5 +1,8 @@
+/* eslint-disable max-lines */
 import React, { useState } from 'react';
-import { ScrollView, SafeAreaView, Dimensions, View } from 'react-native';
+import {
+  ScrollView, SafeAreaView, Dimensions, View,
+} from 'react-native';
 import propTypes from 'prop-types';
 import { NatContainer, NatText, NatSelectInput } from '../../../lib';
 
@@ -130,8 +133,8 @@ export const StoryNatSelectInput = ({ type }) => {
           <NatText value="Select - Two side by side" type="h6" />
           <View
             style={{
-              flexDirection: 'row',
               flex: 1,
+              flexDirection: 'row',
               justifyContent: 'space-between',
             }}>
             <View style={{ flex: 1 }}>

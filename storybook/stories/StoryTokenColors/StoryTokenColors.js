@@ -29,15 +29,15 @@ export const StoryTokenColors = () => {
   );
 
   const primary = Object.keys(Tokens.colors.natura.primary)
-    .map(k => ({ color: Tokens.colors.natura.primary[k], name: k }));
+    .map(key => ({ color: Tokens.colors.natura.primary[key], name: key }));
   const secondary = Object.keys(Tokens.colors.natura.secondary)
-    .map(k => ({ color: Tokens.colors.natura.secondary[k], name: k }));
+    .map(key => ({ color: Tokens.colors.natura.secondary[key], name: key }));
   const grayscale = Object.keys(Tokens.colors.natura.grayscale)
-    .map(k => ({ color: Tokens.colors.natura.grayscale[k], name: k }));
+    .map(key => ({ color: Tokens.colors.natura.grayscale[key], name: key }));
   const level = Object.keys(Tokens.colors.natura.level)
-    .map(k => ({ color: Tokens.colors.natura.level[k], name: k }));
+    .map(key => ({ color: Tokens.colors.natura.level[key], name: key }));
   const complementary = Object.keys(Tokens.colors.natura.complementary)
-    .map(k => ({ color: Tokens.colors.natura.complementary[k], name: k }));
+    .map(key => ({ color: Tokens.colors.natura.complementary[key], name: key }));
 
   return (
     <SafeAreaView style={styles.defaultScreen}>

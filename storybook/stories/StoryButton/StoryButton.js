@@ -1,8 +1,10 @@
-import React, { useState } from 'react';
+/* eslint-disable max-lines */
+import React from 'react';
 import {
   ScrollView,
   SafeAreaView,
   Dimensions,
+  Alert,
 } from 'react-native';
 import {
   NatContainer,
@@ -16,176 +18,174 @@ import {
 const styles = {
   defaultScreen: {
     flex: 1,
-    width: Dimensions.get('window').width,
     marginBottom: 100,
+    width: Dimensions.get('window').width,
   },
 };
 
-export const StoryButton = () => {
-
-  return (
+export const StoryButton = () => (
     <SafeAreaView style={styles.defaultScreen}>
       <NatContainer>
         <ScrollView style={{ position: 'relative' }}>
-          <NatText value={`Variations`} type="h6" />
+          <NatText value={'Variations'} type="h6" />
           <NatSpace />
           <Button
             type="primary"
             label="Primary"
-            onPress={() => alert('press')}
+            onPress={() => Alert.alert('press')}
           />
           <NatSpace />
           <Button
             type="secondary"
             label="Secondary"
-            onPress={() => alert('press')}
+            onPress={() => Alert.alert('press')}
           />
           <NatSpace />
           <Button
             type="tertiary"
             label="Tertiary"
-            onPress={() => alert('press')}
+            onPress={() => Alert.alert('press')}
           />
           <NatSpace />
-          <NatText value={`Color`} type="h6" />
+          <NatText value={'Color'} type="h6" />
           <NatSpace />
           <Button
             type="primary"
             label="Default"
-            onPress={() => alert('press')}
+            onPress={() => Alert.alert('press')}
           />
           <NatSpace />
           <Button
             type="secondary"
             label="Default"
-            onPress={() => alert('press')}
+            onPress={() => Alert.alert('press')}
           />
           <NatSpace />
           <Button
             type="tertiary"
             label="Default"
-            onPress={() => alert('press')}
+            onPress={() => Alert.alert('press')}
           />
           <NatSpace />
           <Button
             type="primary"
             label="Primary"
             color="primary"
-            onPress={() => alert('press')}
+            onPress={() => Alert.alert('press')}
           />
           <NatSpace />
           <Button
             type="secondary"
             label="primary"
             color="primary"
-            onPress={() => alert('press')}
+            onPress={() => Alert.alert('press')}
           />
           <NatSpace />
           <Button
             type="tertiary"
             label="Primary"
             color="primary"
-            onPress={() => alert('press')}
+            onPress={() => Alert.alert('press')}
           />
           <NatSpace />
           <Button
             type="primary"
             label="secondary"
             color="secondary"
-            onPress={() => alert('press')}
+            onPress={() => Alert.alert('press')}
           />
           <NatSpace />
           <Button
             type="secondary"
             label="secondary"
             color="secondary"
-            onPress={() => alert('press')}
+            onPress={() => Alert.alert('press')}
           />
           <NatSpace />
           <Button
             type="tertiary"
             label="secondary"
             color="secondary"
-            onPress={() => alert('press')}
+            onPress={() => Alert.alert('press')}
           />
           <NatSpace />
           <Button
             type="primary"
             label="disabled"
             color="disabled"
-            onPress={() => alert('press')}
+            onPress={() => Alert.alert('press')}
           />
           <NatSpace />
           <Button
             type="secondary"
             label="disabled"
             color="disabled"
-            onPress={() => alert('press')}
+            onPress={() => Alert.alert('press')}
           />
           <NatSpace />
           <Button
             type="tertiary"
             label="disabled"
             color="disabled"
-            onPress={() => alert('press')}
+            onPress={() => Alert.alert('press')}
           />
           <NatSpace />
-          <NatText value={`Icon`} type="h6" />
+          <NatText value={'Icon'} type="h6" />
           <NatSpace />
           <Button
             iconLeft={{ svg: { name: 'outlined-navigation-menu' } }}
             iconRight={{ svg: { name: 'outlined-action-autofilter' } }}
-            onPressLeft={() => alert('click left')}
-            onPressRight={() => alert('click right')}
+            onPressLeft={() => Alert.alert('click left')}
+            onPressRight={() => Alert.alert('click right')}
             type="primary"
             label="Default"
-            onPress={() => alert('press')}
+            onPress={() => Alert.alert('press')}
           />
           <NatSpace />
           <Button
             iconLeft={{ svg: { name: 'outlined-navigation-menu' } }}
             iconRight={{ svg: { name: 'outlined-action-autofilter' } }}
-            onPressLeft={() => alert('click left')}
-            onPressRight={() => alert('click right')}
+            onPressLeft={() => Alert.alert('click left')}
+            onPressRight={() => Alert.alert('click right')}
             type="secondary"
             label="Default"
-            onPress={() => alert('press')}
+            onPress={() => Alert.alert('press')}
           />
           <NatSpace />
           <Button
             iconLeft={{ svg: { name: 'outlined-navigation-menu' } }}
             iconRight={{ svg: { name: 'outlined-action-autofilter' } }}
-            onPressLeft={() => alert('click left')}
-            onPressRight={() => alert('click right')}
+            onPressLeft={() => Alert.alert('click left')}
+            onPressRight={() => Alert.alert('click right')}
             type="tertiary"
             label="Default"
-            onPress={() => alert('press')}
+            onPress={() => Alert.alert('press')}
           />
           <NatSpace />
-          <NatText value={`Title custom`} type="h6" />
+          <NatText value={'Title custom'} type="h6" />
           <NatSpace />
           <Button
             iconLeft={{ svg: { name: 'outlined-navigation-menu' } }}
             iconRight={{ svg: { name: 'outlined-action-autofilter' } }}
-            onPressLeft={() => alert('click left')}
-            onPressRight={() => alert('click right')}
+            onPressLeft={() => Alert.alert('click left')}
+            onPressRight={() => Alert.alert('click right')}
             type="secondary"
             node={(
               <NatLogo name={'logo-natura-horizontal'} size={100} />
             )}
-            onPress={() => alert('press')}
+            onPress={() => Alert.alert('press')}
           />
           <NatSpace />
           <Button
             iconLeft={{ svg: { name: 'outlined-navigation-menu' } }}
             iconRight={{ svg: { name: 'outlined-action-autofilter' } }}
-            onPressLeft={() => alert('click left')}
-            onPressRight={() => alert('click right')}
+            onPressLeft={() => Alert.alert('click left')}
+            onPressRight={() => Alert.alert('click right')}
             type="primary"
             node={(
               <NatLoading />
             )}
-            onPress={() => alert('press')}
+            onPress={() => Alert.alert('press')}
           />
         </ScrollView>
       </NatContainer>
@@ -193,11 +193,7 @@ export const StoryButton = () => {
         type="primary"
         label="bottom fixed"
         fixedBottom
-        onPress={() => alert('press')}
+        onPress={() => Alert.alert('press')}
       />
     </SafeAreaView>
-  );
-};
-
-StoryButton.propTypes = {
-};
+);

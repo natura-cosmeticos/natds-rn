@@ -3,6 +3,7 @@ import {
   ScrollView,
   SafeAreaView,
   Dimensions,
+  Alert,
 } from 'react-native';
 import {
   NatContainer,
@@ -32,15 +33,15 @@ export const StoryNatAppBarSearch = () => {
             title="Search1"
             value={search1}
             onSubmit={text => setSearch1(text)}
-            onPressLeft={() => alert('press left icon')}
+            onPressLeft={() => Alert.alert('press left icon')}
           />
           <NatText value={`Search value: ${search1}`} />
           <NatAppBarSearch
             title="Search2"
             value={search2}
             onSubmit={text => setSearch2(text)}
-            onPressLeft={() => alert('press left icon')}
-            onPressRight={() => alert('press right icon')}
+            onPressLeft={() => Alert.alert('press left icon')}
+            onPressRight={() => Alert.alert('press right icon')}
             iconRight={{ svg: { name: 'outlined-action-mic' } }}
           />
           <NatText value={`Search value: ${search2}`} />
@@ -49,8 +50,8 @@ export const StoryNatAppBarSearch = () => {
             value={search3}
             onSubmit={text => setSearch3(text)}
             showIconLeft={false}
-            onPressLeft={() => alert('press left icon')}
-            onPressRight={() => alert('press right icon')}
+            onPressLeft={() => Alert.alert('press left icon')}
+            onPressRight={() => Alert.alert('press right icon')}
             iconRight={{ svg: { name: 'outlined-action-mic' } }}
           />
           <NatText value={`Search value: ${search3}`} />
@@ -59,8 +60,8 @@ export const StoryNatAppBarSearch = () => {
             value={search4}
             onSubmit={text => setSearch4(text)}
             showIconLeft={false}
-            onPressLeft={() => alert('press left icon')}
-            onPressRight={() => alert('press right icon')}
+            onPressLeft={() => Alert.alert('press left icon')}
+            onPressRight={() => Alert.alert('press right icon')}
           />
           <NatText value={`Search value: ${search4}`} />
           <NatAppBarSearch
@@ -68,8 +69,8 @@ export const StoryNatAppBarSearch = () => {
             value={search5}
             onSubmit={text => setSearch5(text)}
             showIconLeft={false}
-            onPressLeft={() => alert('press left icon')}
-            onPressRight={() => alert('press right icon')}
+            onPressLeft={() => Alert.alert('press left icon')}
+            onPressRight={() => Alert.alert('press right icon')}
             submitOnChange
           />
           <NatText value={`Search value: ${search5}`} />

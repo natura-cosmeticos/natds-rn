@@ -1,9 +1,11 @@
-import React, { useState } from 'react';
+/* eslint-disable max-lines */
+import React from 'react';
 import {
   View,
   ScrollView,
   SafeAreaView,
   Dimensions,
+  Alert,
 } from 'react-native';
 import {
   NatContainer,
@@ -30,28 +32,28 @@ export const StoryNatAppBar = () => {
             alignTitle="center"
             iconLeft={{ svg: { name: 'outlined-navigation-menu' } }}
             iconRight={{ svg: { name: 'outlined-action-autofilter' } }}
-            onPressLeft={() => alert('press')}
-            onPressRight={() => alert('press')}
+            onPressLeft={() => Alert.alert('press')}
+            onPressRight={() => Alert.alert('press')}
           />
           <View style={{ height: 10 }} />
           <NatAppBar
             title="Title Text"
             iconLeft={{ svg: { name: 'outlined-navigation-menu' } }}
             iconRight={{ svg: { name: 'outlined-action-autofilter' } }}
-            onPressLeft={() => alert('press')}
-            onPressRight={() => alert('press')}
+            onPressLeft={() => Alert.alert('press')}
+            onPressRight={() => Alert.alert('press')}
           />
           <View style={{ height: 10 }} />
           <NatAppBar
             title="Title Text"
             iconLeft={{ svg: { name: 'outlined-navigation-menu' } }}
-            onPressLeft={() => alert('press')}
-            onPress={() => alert('press')}
+            onPressLeft={() => Alert.alert('press')}
+            onPress={() => Alert.alert('press')}
           />
           <View style={{ height: 10 }} />
           <NatAppBar
             title="Title Text"
-            onPress={() => alert('press')}
+            onPress={() => Alert.alert('press')}
           />
           <View style={{ height: 10 }} />
           <NatAppBar
@@ -59,8 +61,8 @@ export const StoryNatAppBar = () => {
             node={logo()}
             iconLeft={{ svg: { name: 'outlined-navigation-menu' } }}
             iconRight={{ svg: { name: 'outlined-action-autofilter' } }}
-            onPressLeft={() => alert('press')}
-            onPressRight={() => alert('press')}
+            onPressLeft={() => Alert.alert('press')}
+            onPressRight={() => Alert.alert('press')}
           />
           <View style={{ height: 10 }} />
           <NatAppBar
@@ -68,37 +70,37 @@ export const StoryNatAppBar = () => {
             alignTitle="center"
             node={logo()}
             iconLeft={{ svg: { name: 'outlined-navigation-menu' } }}
-            onPressLeft={() => alert('press')}
-            onPress={() => alert('press')}
+            onPressLeft={() => Alert.alert('press')}
+            onPress={() => Alert.alert('press')}
           />
           <View style={{ height: 10 }} />
           <NatAppBar
             title="Title Text"
             node={logo()}
-            onPress={() => alert('press')}
+            onPress={() => Alert.alert('press')}
           />
           <View style={{ height: 10 }} />
           <NatAppBar
             title="Exclusive"
             showIconLeft={false}
             iconRight={{ svg: { name: 'outlined-action-autofilter' } }}
-            onPressLeft={() => alert('press')}
-            onPressRight={() => alert('press')}
+            onPressLeft={() => Alert.alert('press')}
+            onPressRight={() => Alert.alert('press')}
           />
           <View style={{ height: 10 }} />
           <NatAppBar
             title="Exclusive"
             iconLeft={{ svg: { name: 'outlined-navigation-menu' } }}
             showIconRight={false}
-            onPressLeft={() => alert('press')}
-            onPress={() => alert('press')}
+            onPressLeft={() => Alert.alert('press')}
+            onPress={() => Alert.alert('press')}
           />
           <View style={{ height: 10 }} />
           <NatAppBar
             title="Exclusive"
             showIconLeft={false}
             showIconRight={false}
-            onPress={() => alert('press')}
+            onPress={() => Alert.alert('press')}
           />
         </ScrollView>
       </NatContainer>
