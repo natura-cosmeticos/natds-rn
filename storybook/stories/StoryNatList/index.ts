@@ -1,0 +1,1 @@
+export { StoryNatList } from "./StoryNatList";

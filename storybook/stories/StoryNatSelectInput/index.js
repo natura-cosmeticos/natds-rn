@@ -1,1 +1,0 @@
-export { StoryNatSelectInput } from './StoryNatSelectInput';

@@ -1,1 +1,0 @@
-export { StoryNatIcon } from './StoryNatIcon';

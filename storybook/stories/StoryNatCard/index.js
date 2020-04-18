@@ -1,1 +1,0 @@
-export { StoryNatCard } from './StoryNatCard';
