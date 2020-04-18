@@ -65,7 +65,7 @@ FAB.propTypes = {
   icon: PropTypes.string,
   onPress: PropTypes.func.isRequired,
   size: PropTypes.string,
-  theme: PropTypes.shape(),
+  theme: PropTypes.shape({}),
   type: PropTypes.string.isRequired,
   value: PropTypes.string,
 };

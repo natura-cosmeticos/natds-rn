@@ -111,8 +111,8 @@ export const NatAppBar = ({
 
 NatAppBar.propTypes = {
   alignTitle: PropTypes.string,
-  iconLeft: PropTypes.shape(),
-  iconRight: PropTypes.shape(),
+  iconLeft: PropTypes.shape({}),
+  iconRight: PropTypes.shape({}),
   node: PropTypes.node,
   onPressLeft: PropTypes.func,
   onPressRight: PropTypes.func,

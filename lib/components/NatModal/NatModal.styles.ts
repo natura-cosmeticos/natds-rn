@@ -44,7 +44,7 @@ export const ModalButton = styled.TouchableOpacity`
     `}
 `;
 export const ModalButtonLabel = styled.Text`
-  color: ${colors.primary.white}
+  color: ${colors.primary.white};
   font-family: ${Platform.OS === 'ios' ? sanfrancisco.bold : roboto.bold};
   letter-spacing: 1px;
 `;

@@ -114,13 +114,13 @@ export const IconPress = styled.TouchableOpacity`
 AssistiveTexView.propTypes = {
   state: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
-  theme: PropTypes.shape().isRequired,
+  theme: PropTypes.shape({}).isRequired,
   type: PropTypes.string.isRequired,
 };
 
 Label.propTypes = {
   state: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
-  theme: PropTypes.shape().isRequired,
+  theme: PropTypes.shape({}).isRequired,
   type: PropTypes.string.isRequired,
 };

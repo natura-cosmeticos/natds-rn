@@ -3,7 +3,17 @@ import React from 'react';
 import { Image } from 'react-native';
 import { load as loadSvg } from '../assets/icons/svg';
 
-export const loadIcon = (icon, attributes) => {
+interface IconData {
+  content?: any,
+  uri?: string,
+  svg?: {
+    name?: string,
+    size?: number,
+    color?: string
+  }
+}
+
+export const loadIcon = (icon: IconData, attributes) => {
   if (icon && icon.svg) {
     const IconComponent = loadSvg(icon.svg.name);
     const iconSize = icon.svg.size ? icon.svg.size : attributes.size;

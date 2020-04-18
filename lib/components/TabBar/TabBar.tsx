@@ -37,7 +37,7 @@ export const TabBar = ({
             status={status || ''}
             disabled={status === 'disabled'}
           >
-            <TabText type={getCurrentType(index, status)} theme={theme}>
+            <TabText type={getCurrentType({ index, status })} theme={theme}>
               {noUppercase ? title : title.toUpperCase()}
             </TabText>
           </TabButton>
@@ -52,9 +52,8 @@ TabBar.propTypes = {
     routes: PropTypes.array,
   }).isRequired,
   noUppercase: PropTypes.bool,
-  position: PropTypes.shape().isRequired,
   setIndex: PropTypes.func.isRequired,
-  theme: PropTypes.shape(),
+  theme: PropTypes.shape({}),
 };
 
 TabBar.defaultProps = {

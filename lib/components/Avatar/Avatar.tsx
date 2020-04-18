@@ -31,7 +31,7 @@ export const TypeElement = ({
 TypeElement.propTypes = {
   name: PropTypes.string,
   size: PropTypes.number,
-  theme: PropTypes.shape(),
+  theme: PropTypes.shape({}),
   type: PropTypes.string.isRequired,
   uri: PropTypes.string,
 };
@@ -54,7 +54,7 @@ Avatar.defaultProps = {
 Avatar.propTypes = {
   name: PropTypes.string,
   size: PropTypes.number,
-  theme: PropTypes.shape(),
+  theme: PropTypes.shape({}),
   type: PropTypes.string.isRequired,
   uri: PropTypes.string,
 };
