@@ -1,11 +1,14 @@
 import React from "react";
+import PropTypes from 'prop-types';
 import { TouchableWithoutFeedback } from "react-native";
 import { Thumb, Item, Description, Title } from "./NatGridItem.styles";
+
 type NatGridItemProps = {
   onPress?: (...args: any[]) => any,
   sizeMedium?: boolean,
   source: string
 };
+
 export const NatGridItem: React.SFC<NatGridItemProps> = ({
   source,
   sizeMedium,

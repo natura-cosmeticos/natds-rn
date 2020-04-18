@@ -26,10 +26,11 @@
     "storybook": "start-storybook -p 7007",
     "cm": "git-cz",
     "release": "semantic-release",
-    "build": "babel lib --out-dir lib --ignore node_modules,dist --source-maps --copy-files --no-babelrc --presets react-native",
+    "build": "babel lib --out-dir dist --ignore node_modules,dist --source-maps --copy-files --no-babelrc --presets react-native",
     "build:sample:android": "react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res",
     "build:sample:ios": "react-native bundle --platform ios --dev false --entry-file index.js --bundle-output ios/NaturaReactComponents/main.jsbundle --assets-dest ios",
-    "archive:sample:ios": "xcodebuild -project ./ios/NaturaReactComponents.xcodeproj -scheme 'NaturaReactComponents' -derivedDataPath ./ios/build -archivePath ./ios/archive/NaturaReactComponents.xcarchive archive"
+    "archive:sample:ios": "xcodebuild -project ./ios/NaturaReactComponents.xcodeproj -scheme 'NaturaReactComponents' -derivedDataPath ./ios/build -archivePath ./ios/archive/NaturaReactComponents.xcarchive archive",
+    "tsc": "tsc"
   },
   "dependencies": {
     "@naturacosmeticos/natds-icons": "^0.4.0",
@@ -67,11 +68,14 @@
     "jest": "24.9.0",
     "metro-react-native-babel-preset": "0.56.4",
     "react": "16.9.0",
+    "react-docgen-typescript-loader": "^3.7.2",
     "react-dom": "16.8.3",
     "react-native": "0.61.5",
     "react-native-svg-transformer": "0.14.3",
     "react-test-renderer": "16.9.0",
-    "semantic-release": "17.0.4"
+    "semantic-release": "17.0.4",
+    "ts-loader": "^7.0.0",
+    "typescript": "^3.8.3"
   },
   "peerDependencies": {
     "react": ">=16.8.0",
@@ -102,7 +106,15 @@
         "lines": 75,
         "statements": 75
       }
-    }
+    },
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
   },
   "config": {
     "commitizen": {
