@@ -1,55 +1,58 @@
 /* eslint-disable no-console */
-import React, { useState } from "react";
+import React, { useState } from 'react';
 import {
   View,
   Alert,
   StyleSheet,
   Dimensions,
-  SafeAreaView
-} from "react-native";
+  SafeAreaView,
+} from 'react-native';
 import {
   Button,
   NatContainer,
   NatTextInput,
   NatLogo,
   NatSpace,
-  NatLink
-} from "../../../lib";
-const widthTotal = Dimensions.get("window").width;
+  NatLink,
+} from '../../../lib';
+
+const widthTotal = Dimensions.get('window').width;
 const styles = StyleSheet.create({
   defaultScreen: {
     flex: 1,
-    width: widthTotal
+    width: widthTotal,
   },
   viewButton: {
     flex: 1,
-    justifyContent: "space-between"
+    justifyContent: 'space-between',
   },
   viewInput: {
-    flex: 1.5
+    flex: 1.5,
   },
   viewLogo: {
-    alignItems: "center",
+    alignItems: 'center',
     flex: 1.5,
-    justifyContent: "center"
-  }
+    justifyContent: 'center',
+  },
 });
+
 export const Login = () => {
-  const [inputUsername, setInputUsername] = useState("");
-  const [inputPassword, setInputPassword] = useState("");
+  const [inputUsername, setInputUsername] = useState('');
+  const [inputPassword, setInputPassword] = useState('');
   const [inputPasswordSecret, setInputPasswordSecret] = useState(true);
   const [inputPasswordIcon, setInputPasswordIcon] = useState(
-    "outlined-action-visibility"
+    'outlined-action-visibility',
   );
   const togglePassword = () => {
-    if (inputPasswordIcon === "outlined-action-visibility") {
-      setInputPasswordIcon("outlined-action-visibilityoff");
+    if (inputPasswordIcon === 'outlined-action-visibility') {
+      setInputPasswordIcon('outlined-action-visibilityoff');
       setInputPasswordSecret(false);
     } else {
-      setInputPasswordIcon("outlined-action-visibility");
+      setInputPasswordIcon('outlined-action-visibility');
       setInputPasswordSecret(true);
     }
   };
+
   return (
     <SafeAreaView style={styles.defaultScreen}>
       <NatContainer style={{ flex: 1 }}>
@@ -79,7 +82,7 @@ export const Login = () => {
           <NatLink
             type="body1"
             value="Forgot password?"
-            onPress={() => Alert.alert("press link")}
+            onPress={() => Alert.alert('press link')}
             align="center"
           />
         </View>

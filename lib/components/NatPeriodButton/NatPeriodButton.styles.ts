@@ -1,5 +1,6 @@
-import styled from "styled-components/native";
-import { colors } from "../../assets/theme/colors/colors";
+import styled from 'styled-components/native';
+import { colors } from '../../assets/theme/colors/colors';
+
 const contentDefault = `
     align-items: center;
     justify-content: center;
@@ -10,12 +11,12 @@ const contentDefault = `
     padding: 5px;
     margin-horizontal: 5px;
 `;
+
 export const CustomView = styled.View`
     ${contentDefault}
-    background-color: ${props =>
-      props.selected
-        ? colors.content.selectedBackground
-        : colors.primary.white};
+    background-color: ${props => (props.selected
+    ? colors.content.selectedBackground
+    : colors.primary.white)};
 `;
 export const Title = styled.Text`
   font-weight: bold;

@@ -1,1 +1,1 @@
-export { NatGenericCard } from "./NatGenericCard";
+export { NatGenericCard } from './NatGenericCard';

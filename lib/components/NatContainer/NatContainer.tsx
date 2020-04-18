@@ -1,5 +1,6 @@
-import React from "react";
-import { View } from "./NatContainer.styles";
+import React from 'react';
+import { View } from './NatContainer.styles';
+
 type NatContainerProps = {
   marginBottom?: string,
   marginLeft?: string,
@@ -15,12 +16,12 @@ export const NatContainer: React.SFC<NatContainerProps> = ({
   ...props
 }) => <View {...props}>{children}</View>;
 NatContainer.defaultProps = {
-  marginBottom: "none",
-  marginLeft: "none",
-  marginRight: "none",
-  marginTop: "none",
-  paddingBottom: "small",
-  paddingLeft: "small",
-  paddingRight: "small",
-  paddingTop: "small"
+  marginBottom: 'none',
+  marginLeft: 'none',
+  marginRight: 'none',
+  marginTop: 'none',
+  paddingBottom: 'small',
+  paddingLeft: 'small',
+  paddingRight: 'small',
+  paddingTop: 'small',
 };

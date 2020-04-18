@@ -1,1 +1,1 @@
-export { StoryNatButton } from "./StoryNatButton";
+export { StoryNatButton } from './StoryNatButton';

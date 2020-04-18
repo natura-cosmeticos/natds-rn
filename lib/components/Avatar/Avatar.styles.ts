@@ -1,12 +1,12 @@
-import styled from "styled-components/native";
+import styled from 'styled-components/native';
+
 export const stylesType = ({ size, theme }) => ({
   fontSize: theme.sizes.tiny * size,
   height: theme.sizes.standard * size,
-  width: theme.sizes.standard * size
+  width: theme.sizes.standard * size,
 });
 export const AvatarWrapper = styled.View`
-  background-color: ${({ theme, type }) =>
-    type === "letter" ? theme.palette.primary.main : "transparent"};
+  background-color: ${({ theme, type }) => (type === 'letter' ? theme.palette.primary.main : 'transparent')};
   border-radius: ${({ theme }) => theme.sizes.mediumx};
   height: ${({ size, theme }) => stylesType({ size, theme }).height};
   width: ${({ size, theme }) => stylesType({ size, theme }).width};

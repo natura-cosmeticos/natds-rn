@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 import PropTypes from 'prop-types';
-import { Modal } from "react-native";
+import { Modal } from 'react-native';
 import {
   ModalView,
   ModalContent,
@@ -10,8 +10,9 @@ import {
   ModalButtonLabel,
   ModalContainer,
   ModalButtonAlternative,
-  ModalButtonLabelAlternative
-} from "./NatModal.styles";
+  ModalButtonLabelAlternative,
+} from './NatModal.styles';
+
 type NatModalProps = {
   action: (...args: any[]) => any,
   alternative?: boolean,
@@ -30,7 +31,7 @@ export const NatModal: React.SFC<NatModalProps> = ({
   alternative,
   buttonTextAlternative,
   alternativeAction,
-  save
+  save,
 }) => (
   <Modal animationType="fade" transparent onRequestClose={action} save={save}>
     <ModalView>
@@ -73,7 +74,7 @@ export const NatModal: React.SFC<NatModalProps> = ({
 NatModal.defaultProps = {
   alternative: false,
   alternativeAction: PropTypes.func,
-  buttonTextAlternative: "Button text error",
+  buttonTextAlternative: 'Button text error',
   save: false,
-  text: "Modal text error"
+  text: 'Modal text error',
 };

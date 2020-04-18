@@ -1,13 +1,17 @@
 /* eslint-disable max-lines */
-import React, { useState } from "react";
-import { ScrollView, SafeAreaView, Dimensions, Alert } from "react-native";
-import { NatContainer, NatList, NatText } from "../../../lib";
+import React, { useState } from 'react';
+import {
+  ScrollView, SafeAreaView, Dimensions, Alert,
+} from 'react-native';
+import { NatContainer, NatList, NatText } from '../../../lib';
+
 const styles = {
   defaultScreen: {
     flex: 1,
-    width: Dimensions.get("window").width
-  }
+    width: Dimensions.get('window').width,
+  },
 };
+
 export const StoryNatList = () => {
   const [valueWithoutHighlight, setValueWithoutHighlight] = useState([]);
   const [valueSimple, setValueSimple] = useState([]);
@@ -15,54 +19,55 @@ export const StoryNatList = () => {
   const [valueMultiple, setValueMultiple] = useState([]);
   const listItems = [
     {
-      iconLeft: { svg: { name: "outlined-navigation-menu" } },
-      iconRight: { svg: { name: "outlined-action-autofilter" } },
-      id: "1",
-      onPress: () => Alert.alert("press"),
-      onPressLeft: () => Alert.alert("press"),
-      onPressRight: () => Alert.alert("press"),
-      title: "Title Text"
+      iconLeft: { svg: { name: 'outlined-navigation-menu' } },
+      iconRight: { svg: { name: 'outlined-action-autofilter' } },
+      id: '1',
+      onPress: () => Alert.alert('press'),
+      onPressLeft: () => Alert.alert('press'),
+      onPressRight: () => Alert.alert('press'),
+      title: 'Title Text',
     },
     {
       dividerBottom: true,
       hideIconLeft: false,
-      iconRight: { svg: { name: "outlined-action-autofilter" } },
-      id: "2",
-      onPressLeft: () => Alert.alert("press"),
-      onPressRight: () => Alert.alert("press"),
-      title: "Title Text"
+      iconRight: { svg: { name: 'outlined-action-autofilter' } },
+      id: '2',
+      onPressLeft: () => Alert.alert('press'),
+      onPressRight: () => Alert.alert('press'),
+      title: 'Title Text',
     },
     {
       hideIconLeft: true,
       hideIconRight: true,
-      iconLeft: { svg: { name: "outlined-navigation-menu" } },
-      id: "3",
-      onPressLeft: () => Alert.alert("press"),
-      onPressRight: () => Alert.alert("press"),
-      title: "Title Text"
+      iconLeft: { svg: { name: 'outlined-navigation-menu' } },
+      id: '3',
+      onPressLeft: () => Alert.alert('press'),
+      onPressRight: () => Alert.alert('press'),
+      title: 'Title Text',
     },
     {
       dividerTop: true,
       hideIconRight: false,
-      iconLeft: { svg: { name: "outlined-navigation-menu" } },
-      id: "4",
-      onPressLeft: () => Alert.alert("press"),
-      onPressRight: () => Alert.alert("press"),
-      title: "Title Text"
-    }
+      iconLeft: { svg: { name: 'outlined-navigation-menu' } },
+      id: '4',
+      onPressLeft: () => Alert.alert('press'),
+      onPressRight: () => Alert.alert('press'),
+      title: 'Title Text',
+    },
   ];
-  const changeWithoutHighlight = result => {
+  const changeWithoutHighlight = (result) => {
     setValueWithoutHighlight(result);
   };
-  const changeSimple = result => {
+  const changeSimple = (result) => {
     setValueSimple(result);
   };
-  const changeSimpleRequired = result => {
+  const changeSimpleRequired = (result) => {
     setValueSimpleRequired(result);
   };
-  const changeMulitple = result => {
+  const changeMulitple = (result) => {
     setValueMultiple(result);
   };
+
   return (
     <SafeAreaView style={styles.defaultScreen}>
       <NatContainer>

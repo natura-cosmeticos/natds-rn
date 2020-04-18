@@ -1,11 +1,12 @@
-import React from "react";
-import renderer from "react-test-renderer";
-import "jest-styled-components/native";
-import { shallow } from "enzyme";
-import { View } from "react-native";
-import { Avatar, TypeElement } from "./Avatar";
-describe("Avatar component", () => {
-  it("should render correctly", () => {
+import React from 'react';
+import renderer from 'react-test-renderer';
+import 'jest-styled-components/native';
+import { shallow } from 'enzyme';
+import { View } from 'react-native';
+import { Avatar, TypeElement } from './Avatar';
+
+describe('Avatar component', () => {
+  it('should render correctly', () => {
     const button = renderer
       .create(
         <View>
@@ -44,28 +45,31 @@ describe("Avatar component", () => {
             type="image"
             uri="https://c.pxhere.com/photos/52/58/photo-1412284.jpg!d"
           />
-        </View>
+        </View>,
       )
       .toJSON();
-    expect(button).toMatchSnapshot("Avatar snapshot");
+
+    expect(button).toMatchSnapshot('Avatar snapshot');
   });
-  it("should render TypeElement and pass the correct name", () => {
+  it('should render TypeElement and pass the correct name', () => {
     const wrapper = shallow(<Avatar name="MP" type="letter" size={2} />);
+
     expect(wrapper.containsMatchingElement(<TypeElement />)).toEqual(true);
-    expect(wrapper.find(TypeElement).prop("name")).toEqual("MP");
+    expect(wrapper.find(TypeElement).prop('name')).toEqual('MP');
   });
-  it("should pass the correct uri to TypeElement", () => {
+  it('should pass the correct uri to TypeElement', () => {
     const wrapper = shallow(
       <Avatar
         name="MP"
         type="image"
         size={2}
         uri="https://c.pxhere.com/photos/52/58/photo-1412284.jpg!d"
-      />
+      />,
     );
+
     expect(wrapper.containsMatchingElement(<TypeElement />)).toEqual(true);
-    expect(wrapper.find(TypeElement).prop("uri")).toEqual(
-      "https://c.pxhere.com/photos/52/58/photo-1412284.jpg!d"
+    expect(wrapper.find(TypeElement).prop('uri')).toEqual(
+      'https://c.pxhere.com/photos/52/58/photo-1412284.jpg!d',
     );
   });
 });

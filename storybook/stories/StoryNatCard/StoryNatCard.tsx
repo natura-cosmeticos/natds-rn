@@ -1,12 +1,14 @@
-import React from "react";
-import { ScrollView, SafeAreaView, Dimensions } from "react-native";
-import { NatContainer, NatCard, NatSpace } from "../../../lib";
+import React from 'react';
+import { ScrollView, SafeAreaView, Dimensions } from 'react-native';
+import { NatContainer, NatCard, NatSpace } from '../../../lib';
+
 const styles = {
   defaultScreen: {
     flex: 1,
-    width: Dimensions.get("window").width
-  }
+    width: Dimensions.get('window').width,
+  },
 };
+
 export const StoryNatCard = () => (
   <SafeAreaView style={styles.defaultScreen}>
     <NatContainer style={{}}>

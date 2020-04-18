@@ -1,2 +1,3 @@
-import Anonymous from "./anonymous.svg";
+import Anonymous from './anonymous.svg';
+
 export { Anonymous };

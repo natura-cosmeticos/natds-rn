@@ -1,1 +1,1 @@
-export { NatText } from "./NatText";
+export { NatText } from './NatText';

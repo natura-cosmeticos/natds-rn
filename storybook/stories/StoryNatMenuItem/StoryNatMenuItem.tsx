@@ -1,147 +1,150 @@
 /* eslint-disable max-lines */
-import React from "react";
+import React from 'react';
 import {
   Text,
   ScrollView,
   SafeAreaView,
   Dimensions,
-  Alert
-} from "react-native";
-import { NatContainer, NatMenuItem } from "../../../lib";
+  Alert,
+} from 'react-native';
+import { NatContainer, NatMenuItem } from '../../../lib';
+
 const styles = {
   defaultScreen: {
     flex: 1,
-    width: Dimensions.get("window").width
-  }
+    width: Dimensions.get('window').width,
+  },
 };
+
 export const StoryNatMenuItem: React.SFC<{}> = () => {
   const menuList = [
     {
       id: 1,
       level: 1,
-      name: "First menu"
+      name: 'First menu',
     },
     {
       id: 2,
       level: 1,
-      name: "Second menu"
+      name: 'Second menu',
     },
     {
       id: 3,
       level: 1,
-      name: "Another sample menu"
+      name: 'Another sample menu',
     },
     {
       id: 4,
       level: 1,
-      name: "Another sample menu"
-    }
+      name: 'Another sample menu',
+    },
   ];
   const menuListSvg = [
     {
       id: 1,
       level: 1,
-      name: "outlined-navigation-home",
+      name: 'outlined-navigation-home',
       svg: {
-        name: "outlined-navigation-home",
-        size: "24"
-      }
+        name: 'outlined-navigation-home',
+        size: '24',
+      },
     },
     {
       id: 2,
       level: 1,
-      name: "outlined-content-lock",
+      name: 'outlined-content-lock',
       svg: {
-        name: "outlined-content-lock"
-      }
+        name: 'outlined-content-lock',
+      },
     },
     {
       id: 3,
       level: 1,
-      name: "outlined-content-wifi",
+      name: 'outlined-content-wifi',
       svg: {
-        name: "outlined-content-wifi"
-      }
+        name: 'outlined-content-wifi',
+      },
     },
     {
       id: 4,
       level: 1,
-      name: "outlined-content-adddocument",
+      name: 'outlined-content-adddocument',
       svg: {
-        name: "outlined-content-adddocument"
-      }
+        name: 'outlined-content-adddocument',
+      },
     },
     {
       id: 5,
       level: 1,
-      name: "outlined-communication-chat",
+      name: 'outlined-communication-chat',
       svg: {
-        name: "outlined-communication-chat"
-      }
+        name: 'outlined-communication-chat',
+      },
     },
     {
       id: 6,
       level: 1,
-      name: "outlined-content-channel",
+      name: 'outlined-content-channel',
       svg: {
-        name: "outlined-content-channel"
-      }
+        name: 'outlined-content-channel',
+      },
     },
     {
       id: 7,
       level: 1,
-      name: "outlined-finance-moneypaper",
+      name: 'outlined-finance-moneypaper',
       svg: {
-        name: "outlined-finance-moneypaper"
-      }
+        name: 'outlined-finance-moneypaper',
+      },
     },
     {
       id: 8,
       level: 1,
-      name: "outlined-communication-speaker",
+      name: 'outlined-communication-speaker',
       svg: {
-        name: "outlined-communication-speaker"
-      }
+        name: 'outlined-communication-speaker',
+      },
     },
     {
       id: 9,
       level: 1,
-      name: "outlined-place-bus",
+      name: 'outlined-place-bus',
       svg: {
-        name: "outlined-place-bus"
-      }
+        name: 'outlined-place-bus',
+      },
     },
     {
       id: 10,
       level: 1,
-      name: "outlined-alert-info",
+      name: 'outlined-alert-info',
       svg: {
-        name: "outlined-alert-info"
-      }
+        name: 'outlined-alert-info',
+      },
     },
     {
       id: 11,
       level: 1,
-      name: "outlined-navigation-exit",
+      name: 'outlined-navigation-exit',
       svg: {
-        name: "outlined-navigation-exit"
-      }
-    }
+        name: 'outlined-navigation-exit',
+      },
+    },
   ];
   const menuListIconUri = [
     {
       icon:
-        "https://s3-sa-east-1.amazonaws.com/somos-natura-prd/files/menus/261/img_url_tmp_261_20180323135427.png",
-      level: "1",
-      name: "Menu Food"
+        'https://s3-sa-east-1.amazonaws.com/somos-natura-prd/files/menus/261/img_url_tmp_261_20180323135427.png',
+      level: '1',
+      name: 'Menu Food',
     },
     {
       icon:
-        "https://s3-sa-east-1.amazonaws.com/somos-natura-prd/files/menus/generic_menu/img_url_tmp_generic_menu_20170822160140.png",
-      level: "1",
-      name: "Bus Information"
-    }
+        'https://s3-sa-east-1.amazonaws.com/somos-natura-prd/files/menus/generic_menu/img_url_tmp_generic_menu_20170822160140.png',
+      level: '1',
+      name: 'Bus Information',
+    },
   ];
+
   return (
     <SafeAreaView style={styles.defaultScreen}>
       <NatContainer>
@@ -153,7 +156,7 @@ export const StoryNatMenuItem: React.SFC<{}> = () => {
               key={item.id}
               level={item.levell}
               onPress={() => {
-                Alert.alert("click event");
+                Alert.alert('click event');
               }}
             />
           ))}
@@ -165,7 +168,7 @@ export const StoryNatMenuItem: React.SFC<{}> = () => {
               key={item.id}
               level={item.levell}
               onPress={() => {
-                Alert.alert("click event");
+                Alert.alert('click event');
               }}
             />
           ))}
@@ -177,7 +180,7 @@ export const StoryNatMenuItem: React.SFC<{}> = () => {
               key={item.name}
               level={item.levell}
               onPress={() => {
-                Alert.alert("click event");
+                Alert.alert('click event');
               }}
             />
           ))}

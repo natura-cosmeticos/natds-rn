@@ -1,18 +1,22 @@
-import React from "react";
-import { SafeAreaView, ScrollView, Dimensions, View } from "react-native";
-import { Avatar, NatText } from "../../../lib";
+import React from 'react';
+import {
+  SafeAreaView, ScrollView, Dimensions, View,
+} from 'react-native';
+import { Avatar, NatText } from '../../../lib';
+
 const styles = {
   defaultScreen: {
     flex: 1,
     marginTop: 2,
-    width: Dimensions.get("window").width
-  }
+    width: Dimensions.get('window').width,
+  },
 };
+
 export const StoryAvatar = () => (
   <SafeAreaView style={styles.defaultScreen}>
     <ScrollView>
       <NatText value="Letter" />
-      <View style={{ flexDirection: "row" }}>
+      <View style={{ flexDirection: 'row' }}>
         <Avatar name="MP" size={1} type="letter" />
         <Avatar name="MP" size={2} type="letter" />
         <Avatar name="MP" size={3} type="letter" />
@@ -20,7 +24,7 @@ export const StoryAvatar = () => (
         <Avatar name="MP" size={5} type="letter" />
       </View>
       <NatText value="Anonymous" />
-      <View style={{ flexDirection: "row" }}>
+      <View style={{ flexDirection: 'row' }}>
         <Avatar size={1} type="anonymous" />
         <Avatar size={2} type="anonymous" />
         <Avatar size={3} type="anonymous" />
@@ -29,7 +33,7 @@ export const StoryAvatar = () => (
       </View>
 
       <NatText value="Image" />
-      <View style={{ flexDirection: "row" }}>
+      <View style={{ flexDirection: 'row' }}>
         <Avatar
           size={1}
           type="image"

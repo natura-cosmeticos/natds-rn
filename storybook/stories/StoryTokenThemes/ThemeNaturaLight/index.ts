@@ -1,1 +1,1 @@
-export { ThemeNaturaLight } from "./ThemeNaturaLight";
+export { ThemeNaturaLight } from './ThemeNaturaLight';

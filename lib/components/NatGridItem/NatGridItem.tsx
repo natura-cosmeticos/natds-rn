@@ -1,7 +1,9 @@
-import React from "react";
+import React from 'react';
 import PropTypes from 'prop-types';
-import { TouchableWithoutFeedback } from "react-native";
-import { Thumb, Item, Description, Title } from "./NatGridItem.styles";
+import { TouchableWithoutFeedback } from 'react-native';
+import {
+  Thumb, Item, Description, Title,
+} from './NatGridItem.styles';
 
 type NatGridItemProps = {
   onPress?: (...args: any[]) => any,
@@ -13,7 +15,7 @@ export const NatGridItem: React.SFC<NatGridItemProps> = ({
   source,
   sizeMedium,
   onPress,
-  children
+  children,
 }) => (
   <Item sizeMedium={sizeMedium}>
     <TouchableWithoutFeedback onPress={onPress}>
@@ -30,7 +32,7 @@ export const NatGridItem: React.SFC<NatGridItemProps> = ({
   </Item>
 );
 NatGridItem.defaultProps = {
-  children: "Título da imagem",
+  children: 'Título da imagem',
   onPress: PropTypes.func,
-  sizeMedium: false
+  sizeMedium: false,
 };

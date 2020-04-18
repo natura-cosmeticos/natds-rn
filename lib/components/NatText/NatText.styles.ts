@@ -1,6 +1,8 @@
-import styled from "styled-components/native";
-import { fontSize } from "../../tokens";
+import styled from 'styled-components/native';
+import { fontSize } from '../../tokens';
+
 const getStyles = (type, color) => Object.assign(fontSize[type], { color });
+
 export const View = styled.View`
   padding-left: 0;
   padding-right: 0;

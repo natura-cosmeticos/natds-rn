@@ -1,4 +1,5 @@
-import styled from "styled-components/native";
+import styled from 'styled-components/native';
+
 export const View = styled.View`
   margin-top: ${props => props.marginTop}px;
   margin-bottom: ${props => props.marginBottom}px;
@@ -8,8 +9,7 @@ export const View = styled.View`
   padding-bottom: ${props => props.paddingBottom}px;
   padding-right: ${props => props.paddingRight}px;
   padding-left: ${props => props.paddingLeft}px;
-  background-color: ${props =>
-    props.backgroundColor !== ""
-      ? props.backgroundColor
-      : `${props.theme.palette.grayscale.colorBrdBlack}1F`};
+  background-color: ${props => (props.backgroundColor !== ''
+    ? props.backgroundColor
+    : `${props.theme.palette.grayscale.colorBrdBlack}1F`)};
 `;

@@ -1,1 +1,1 @@
-export { NatIcon } from "./NatIcon";
+export { NatIcon } from './NatIcon';

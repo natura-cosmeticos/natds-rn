@@ -1,1 +1,1 @@
-export { StoryTokenSpace } from "./StoryTokenSpace";
+export { StoryTokenSpace } from './StoryTokenSpace';

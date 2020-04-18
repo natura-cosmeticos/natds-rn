@@ -1,24 +1,26 @@
-import React from "react";
-import { View, Text, SafeAreaView } from "react-native";
-import { NatLogo } from "../../../lib";
+import React from 'react';
+import { View, Text, SafeAreaView } from 'react-native';
+import { NatLogo } from '../../../lib';
+
 const styles = {
   content: {
     flex: 2,
     fontSize: 14,
-    lineHeight: 18
+    lineHeight: 18,
   },
   header: {
-    alignItems: "center",
+    alignItems: 'center',
     flex: 1,
     fontSize: 20,
-    justifyContent: "center"
+    justifyContent: 'center',
   },
   wrapper: {
     flex: 1,
-    justifyContent: "center",
-    padding: 24
-  }
+    justifyContent: 'center',
+    padding: 24,
+  },
 };
+
 export const Welcome = () => (
   <SafeAreaView style={styles.defaultScreen}>
     <View style={styles.wrapper}>
@@ -26,9 +28,9 @@ export const Welcome = () => (
       <Text style={styles.header}>Welcome to NATDS!</Text>
       <View
         style={{
-          flexDirection: "row",
-          justifyContent: "center",
-          marginBottom: 30
+          flexDirection: 'row',
+          justifyContent: 'center',
+          marginBottom: 30,
         }}
       />
       <Text style={styles.content}>

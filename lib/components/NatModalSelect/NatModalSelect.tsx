@@ -1,10 +1,11 @@
 /* eslint-disable max-lines */
-import React, { useState } from "react";
-import { Modal, SafeAreaView, View } from "react-native";
-import { ModalContent } from "./NatModalSelect.styles";
-import { NatList } from "../NatList";
-import { NatAppBarSearch } from "../NatAppBarSearch";
-import { Button } from "../Button";
+import React, { useState } from 'react';
+import { Modal, SafeAreaView, View } from 'react-native';
+import { ModalContent } from './NatModalSelect.styles';
+import { NatList } from '../NatList';
+import { NatAppBarSearch } from '../NatAppBarSearch';
+import { Button } from '../Button';
+
 type NatModalSelectProps = {
   action: (...args: any[]) => any,
   buttonText?: string,
@@ -30,31 +31,32 @@ export const NatModalSelect: React.SFC<NatModalSelectProps> = ({
   save,
   title,
   value,
-  visible
+  visible,
 }) => {
   const [inputSelected, setInputSelected] = useState(value);
   const [inputFilter, setInputFilter] = useState([]);
   const selectButton = () => {
     onClose(inputSelected);
   };
-  const closeOnChange = values => {
+  const closeOnChange = (values) => {
     if (!multiSelect) {
       onClose(values);
     }
     setInputSelected(values);
   };
-  const optionsList = () =>
-    options
-      .filter(item => {
-        if (inputFilter === "") return true;
-        return item.title.includes(inputFilter);
-      })
-      .map(item => ({
-        dividerBottom: true,
-        hideIconLeft: true,
-        id: item.id,
-        title: item.title
-      }));
+  const optionsList = () => options
+    .filter((item) => {
+      if (inputFilter === '') return true;
+
+      return item.title.includes(inputFilter);
+    })
+    .map(item => ({
+      dividerBottom: true,
+      hideIconLeft: true,
+      id: item.id,
+      title: item.title,
+    }));
+
   return (
     <Modal
       animationType="fade"
@@ -71,7 +73,7 @@ export const NatModalSelect: React.SFC<NatModalSelectProps> = ({
               onSubmit={text => setInputFilter(text)}
               showIconLeft={true}
               onPressLeft={() => onClose(inputSelected)}
-              iconLeft={{ svg: { name: "outlined-naviagtion-directionright" } }}
+              iconLeft={{ svg: { name: 'outlined-naviagtion-directionright' } }}
               submitOnChange
             />
           </View>
@@ -97,12 +99,12 @@ export const NatModalSelect: React.SFC<NatModalSelectProps> = ({
   );
 };
 NatModalSelect.defaultProps = {
-  buttonText: "Select",
+  buttonText: 'Select',
   multiSelect: false,
   onClose: () => {},
   options: [],
-  placeholderText: "Search",
+  placeholderText: 'Search',
   save: false,
   value: [],
-  visible: false
+  visible: false,
 };

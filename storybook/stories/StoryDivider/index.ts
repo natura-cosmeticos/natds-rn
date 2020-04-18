@@ -1,1 +1,1 @@
-export { StoryDivider } from "./StoryDivider";
+export { StoryDivider } from './StoryDivider';

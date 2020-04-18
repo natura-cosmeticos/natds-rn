@@ -1,1 +1,1 @@
-export { NatMenuItem } from "./NatMenuItem";
+export { NatMenuItem } from './NatMenuItem';

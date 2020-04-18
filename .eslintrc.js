@@ -5,7 +5,7 @@ module.exports = {
     "node": true,
     "jest": true
   },
-  "parser": "babel-eslint",
+  "parser": "@typescript-eslint/parser",
   "extends": [
     "@naturacosmeticos/eslint-config-natura",
     "plugin:react/recommended"
@@ -22,23 +22,32 @@ module.exports = {
     "SharedArrayBuffer": "readonly"
   },
   "plugins": [
-    "react"
+    "react",
+    '@typescript-eslint'
   ],
   "rules": {
     "react/jsx-filename-extension": [
       1,
       {
         "extensions": [
-          ".js",
+          ".tsx",
           ".jsx"
         ]
       }
     ],
     "import/prefer-default-export": 0,
-    "max-lines-per-function": 0
+    "max-lines-per-function": 0,
+    "react/prop-types": 0
+  },
+  "overrides": {
+    "files": ["*.test.tsx", "*.test.ts"],
+    "rules": {
+      "import/no-extraneous-dependencies": 0
+    }
   },
   "settings": {
     "import/resolver": {
+      "typescript": {},
       "node": {
         "paths": [
           "lib"

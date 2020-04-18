@@ -1,11 +1,12 @@
-import React from "react";
-import renderer from "react-test-renderer";
-import "jest-styled-components/native";
-import { shallow } from "enzyme";
-import { View } from "react-native";
-import { FAB } from "./FAB";
-describe("FAB component", () => {
-  it("should render FAB component", () => {
+import React from 'react';
+import renderer from 'react-test-renderer';
+import 'jest-styled-components/native';
+import { shallow } from 'enzyme';
+import { View } from 'react-native';
+import { FAB } from './FAB';
+
+describe('FAB component', () => {
+  it('should render FAB component', () => {
     const button = renderer
       .create(
         <View>
@@ -53,28 +54,31 @@ describe("FAB component", () => {
           />
           <FAB
             type="extended"
-            value={"secondary"}
+            value={'secondary'}
             color="secondary"
             onPress={() => {}}
           />
           <FAB type="round" value="+" color="default" onPress={() => {}} />
           <FAB type="round" value="+" color="primary" onPress={() => {}} />
           <FAB type="round" value="+" color="secondary" onPress={() => {}} />
-        </View>
+        </View>,
       )
       .toJSON();
-    expect(button).toMatchSnapshot("FAB snapshot");
+
+    expect(button).toMatchSnapshot('FAB snapshot');
   });
-  it("should render the extend type correctly", () => {
+  it('should render the extend type correctly', () => {
     const button = shallow(
-      <FAB onPress={jest.fn()} type="extended" value="extended" />
+      <FAB onPress={jest.fn()} type="extended" value="extended" />,
     );
-    expect(button.prop("type")).toEqual("extended");
-    expect(button.text()).toEqual("extended");
+
+    expect(button.prop('type')).toEqual('extended');
+    expect(button.text()).toEqual('extended');
   });
-  it("should render the round type correctly", () => {
+  it('should render the round type correctly', () => {
     const button = shallow(<FAB onPress={jest.fn()} type="round" value="+" />);
-    expect(button.prop("type")).toEqual("round");
-    expect(button.text()).toEqual("+");
+
+    expect(button.prop('type')).toEqual('round');
+    expect(button.text()).toEqual('+');
   });
 });

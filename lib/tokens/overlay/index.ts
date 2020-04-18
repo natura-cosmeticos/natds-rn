@@ -1,3 +1,3 @@
 export const overlay = {
-  solidBlack: 0.56
+  solidBlack: 0.56,
 };

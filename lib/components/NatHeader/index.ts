@@ -1,1 +1,1 @@
-export { NatHeader } from "./NatHeader";
+export { NatHeader } from './NatHeader';

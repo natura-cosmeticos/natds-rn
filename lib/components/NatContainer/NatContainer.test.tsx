@@ -1,50 +1,55 @@
-import React from "react";
-import renderer from "react-test-renderer";
-import { Text } from "react-native";
-import "jest-styled-components/native";
-import { NatContainer } from "./NatContainer";
-describe("NatContainer component", () => {
-  it("Should render container component correctly", () => {
+import React from 'react';
+import renderer from 'react-test-renderer';
+import { Text } from 'react-native';
+import 'jest-styled-components/native';
+import { NatContainer } from './NatContainer';
+
+describe('NatContainer component', () => {
+  it('Should render container component correctly', () => {
     const container = renderer
       .create(
         <NatContainer>
           <Text>Hello</Text>
-        </NatContainer>
+        </NatContainer>,
       )
       .toJSON();
-    expect(container).toMatchSnapshot("NatContainer snapshot");
+
+    expect(container).toMatchSnapshot('NatContainer snapshot');
   });
-  it("Should render container component with default styling", () => {
+  it('Should render container component with default styling', () => {
     const container = renderer
       .create(
         <NatContainer>
           <Text>Hello</Text>
-        </NatContainer>
+        </NatContainer>,
       )
       .toJSON();
-    expect(container).toHaveStyleRule("background-color", "#FFFFFF");
+
+    expect(container).toHaveStyleRule('background-color', '#FFFFFF');
   });
-  it("Should render container component with custom styling", () => {
+  it('Should render container component with custom styling', () => {
     const container = renderer
       .create(
         <NatContainer color="red" center>
           <Text>Hello</Text>
-        </NatContainer>
+        </NatContainer>,
       )
       .toJSON();
-    expect(container).toHaveStyleRule("background-color", "red");
-    expect(container).toHaveStyleRule("justify-content", "center");
-    expect(container).toHaveStyleRule("align-items", "center");
+
+    expect(container).toHaveStyleRule('background-color', 'red');
+    expect(container).toHaveStyleRule('justify-content', 'center');
+    expect(container).toHaveStyleRule('align-items', 'center');
   });
-  it("should pass the props center", () => {
+  it('should pass the props center', () => {
     const containerCenter = renderer
       .create(
         <NatContainer center>
           <Text>Hello</Text>
-        </NatContainer>
+        </NatContainer>,
       )
       .toJSON();
-    expect(containerCenter).toHaveStyleRule("justify-content", "center");
-    expect(containerCenter).toHaveStyleRule("align-items", "center");
+
+    expect(containerCenter).toHaveStyleRule('justify-content', 'center');
+    expect(containerCenter).toHaveStyleRule('align-items', 'center');
   });
 });

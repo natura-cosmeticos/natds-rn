@@ -1,13 +1,14 @@
 /* eslint-disable complexity */
-import React from "react";
-import { Platform, TouchableNativeFeedback } from "react-native";
+import React from 'react';
+import { Platform, TouchableNativeFeedback } from 'react-native';
 import {
   CustomView,
   Title,
   SubTitle,
   CheckedIcon,
-  CustomTouchableOpacity
-} from "./NatPeriodButton.styles";
+  CustomTouchableOpacity,
+} from './NatPeriodButton.styles';
+
 type NatPeriodButtonProps = {
   iconSrc: string,
   onSelect: (...args: any[]) => any,
@@ -20,14 +21,15 @@ export const NatPeriodButton: React.SFC<NatPeriodButtonProps> = ({
   title,
   subtitle,
   onSelect,
-  iconSrc
+  iconSrc,
 }) => {
   if (!onSelect) {
     throw new Error(
-      "Period Button needs an onSelect property to be passed to the component."
+      'Period Button needs an onSelect property to be passed to the component.',
     );
   }
-  return Platform.OS === "android" ? (
+
+  return Platform.OS === 'android' ? (
     <TouchableNativeFeedback onPress={onSelect}>
       <CustomView selected={selected}>
         {selected && <CheckedIcon source={{ uri: iconSrc }} />}
@@ -48,5 +50,5 @@ export const NatPeriodButton: React.SFC<NatPeriodButtonProps> = ({
 NatPeriodButton.defaultProps = {
   selected: false,
   subtitle: null,
-  title: null
+  title: null,
 };

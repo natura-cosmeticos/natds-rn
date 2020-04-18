@@ -1,1 +1,1 @@
-export { NatSpace } from "./NatSpace";
+export { NatSpace } from './NatSpace';

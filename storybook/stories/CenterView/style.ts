@@ -1,8 +1,8 @@
 export default {
   main: {
-    alignItems: "center",
-    backgroundColor: "#F5FCFF",
+    alignItems: 'center',
+    backgroundColor: '#F5FCFF',
     flex: 1,
-    justifyContent: "center"
-  }
+    justifyContent: 'center',
+  },
 };

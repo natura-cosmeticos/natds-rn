@@ -1,1 +1,1 @@
-export { StoryFAB } from "./StoryFAB";
+export { StoryFAB } from './StoryFAB';

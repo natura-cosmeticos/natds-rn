@@ -1,6 +1,7 @@
-import React from "react";
-import { View, Text } from "./NatText.styles";
-import { ThemeNaturaLight } from "../../themes/ThemeNaturaLight";
+import React from 'react';
+import { View, Text } from './NatText.styles';
+import { ThemeNaturaLight } from '../../themes/ThemeNaturaLight';
+
 type NatTextProps = {
   color?: string,
   margin?: number,
@@ -11,7 +12,7 @@ export const NatText: React.SFC<NatTextProps> = ({
   value,
   type,
   color,
-  margin
+  margin,
 }) => (
   <View margin={margin}>
     <Text type={type} color={color}>
@@ -22,6 +23,6 @@ export const NatText: React.SFC<NatTextProps> = ({
 NatText.defaultProps = {
   color: ThemeNaturaLight.palette.text.primary,
   margin: ThemeNaturaLight.spacing.spacingStandard,
-  type: "body1",
-  value: ""
+  type: 'body1',
+  value: '',
 };

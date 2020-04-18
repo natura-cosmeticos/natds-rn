@@ -1,4 +1,5 @@
-import { sizes } from "../sizes";
+import { sizes } from '../sizes';
+
 export const iconSizes = {
   huge: sizes.hugexx,
   hugex: sizes.hugexxx,
@@ -10,5 +11,5 @@ export const iconSizes = {
   micro: sizes.small,
   small: sizes.semi,
   standard: sizes.medium,
-  tiny: sizes.standard
+  tiny: sizes.standard,
 };

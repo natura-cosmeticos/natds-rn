@@ -1,5 +1,6 @@
-import styled from "styled-components/native";
-import { sizes } from "../../tokens/sizes";
+import styled from 'styled-components/native';
+import { sizes } from '../../tokens/sizes';
+
 export const NatView = styled.View`
   margin-top: ${props => sizes[props.marginTop]}px;
   margin-bottom: ${props => sizes[props.marginBottom]}px;
@@ -9,6 +10,5 @@ export const NatView = styled.View`
   padding-bottom: ${props => sizes[props.paddingBottom]}px;
   padding-right: ${props => sizes[props.paddingRight]}px;
   padding-left: ${props => sizes[props.paddingLeft]}px;
-  background-color: ${props =>
-    props.backgroundColor ? props.backgroundColor : "none"};
+  background-color: ${props => (props.backgroundColor ? props.backgroundColor : 'none')};
 `;

@@ -1,5 +1,6 @@
-import React from "react";
-import { View, Image } from "./NatImage.styles";
+import React from 'react';
+import { View, Image } from './NatImage.styles';
+
 type NatImageProps = {
   onPress?: (...args: any[]) => any,
   source: string,
@@ -8,7 +9,7 @@ type NatImageProps = {
 export const NatImage: React.SFC<NatImageProps> = ({
   source,
   onPress,
-  type
+  type,
 }) => (
   <View onPress={onPress} type={type}>
     <Image source={{ uri: source }} type={type} resizeMode="contain" />
@@ -16,5 +17,5 @@ export const NatImage: React.SFC<NatImageProps> = ({
 );
 NatImage.defaultProps = {
   onPress: () => {},
-  type: "default"
+  type: 'default',
 };

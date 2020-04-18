@@ -1,24 +1,27 @@
-import React, { useState } from "react";
-import { ScrollView, SafeAreaView, Dimensions } from "react-native";
-import { NatContainer, NatTextInput, NatText } from "../../../lib";
+import React, { useState } from 'react';
+import { ScrollView, SafeAreaView, Dimensions } from 'react-native';
+import { NatContainer, NatTextInput, NatText } from '../../../lib';
+
 const styles = {
   defaultScreen: {
     flex: 1,
-    width: Dimensions.get("window").width
-  }
+    width: Dimensions.get('window').width,
+  },
 };
+
 type StoryNatTextInputProps = {
   icon?: string,
   type: string
 };
 export const StoryNatTextInput: React.SFC<StoryNatTextInputProps> = ({
   type,
-  icon
+  icon,
 }) => {
-  const [inputSmall, setInputSmall] = useState("");
-  const [inputNormal, setInputNormal] = useState("");
-  const [inputMultiline, setInputMultiline] = useState("");
-  const [inputSearch, setInputSearch] = useState("");
+  const [inputSmall, setInputSmall] = useState('');
+  const [inputNormal, setInputNormal] = useState('');
+  const [inputMultiline, setInputMultiline] = useState('');
+  const [inputSearch, setInputSearch] = useState('');
+
   return (
     <SafeAreaView style={styles.defaultScreen}>
       <NatContainer>
@@ -74,5 +77,5 @@ export const StoryNatTextInput: React.SFC<StoryNatTextInputProps> = ({
   );
 };
 StoryNatTextInput.defaultProps = {
-  icon: null
+  icon: null,
 };

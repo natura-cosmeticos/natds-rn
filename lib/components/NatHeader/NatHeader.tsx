@@ -1,13 +1,16 @@
-import React from "react";
-import { Image, Platform, Text, TouchableOpacity } from "react-native";
+import React from 'react';
+import {
+  Image, Platform, Text, TouchableOpacity,
+} from 'react-native';
 import {
   HeaderWrapper,
   HeaderTitle,
   HeaderIcon,
   HeaderRight,
-  AndroidStyle
-} from "./NatHeader.styles";
-import { icons } from "../../assets/theme/icons";
+  AndroidStyle,
+} from './NatHeader.styles';
+import { icons } from '../../assets/theme/icons';
+
 type NatHeaderProps = {
   icon?: string,
   iconRight?: string,
@@ -22,14 +25,15 @@ export const NatHeader: React.SFC<NatHeaderProps> = ({
   onPress,
   textRight,
   iconRight,
-  onPressRight
+  onPressRight,
 }) => {
   if (!title) {
-    throw new Error("Title should not empty string");
+    throw new Error('Title should not empty string');
   }
+
   return (
     <HeaderWrapper
-      style={Platform.OS === "android" && AndroidStyle.android}
+      style={Platform.OS === 'android' && AndroidStyle.android}
       accessibilityRole="header"
     >
       {icon && (
@@ -48,10 +52,10 @@ export const NatHeader: React.SFC<NatHeaderProps> = ({
         <TouchableOpacity onPress={onPressRight}>
           <Text
             accessibilityLabel={textRight}
-            style={{ color: "orange", fontSize: 14 }}
+            style={{ color: 'orange', fontSize: 14 }}
           >
-            {" "}
-            {textRight}{" "}
+            {' '}
+            {textRight}{' '}
           </Text>
           <Image
             source={icons[iconRight]}
@@ -63,5 +67,5 @@ export const NatHeader: React.SFC<NatHeaderProps> = ({
   );
 };
 NatHeader.defaultProps = {
-  icon: ""
+  icon: '',
 };

@@ -1,38 +1,40 @@
-import React from "react";
+import React from 'react';
 import {
   SafeAreaView,
   FlatList,
   View,
   ScrollView,
-  Dimensions
-} from "react-native";
+  Dimensions,
+} from 'react-native';
 import {
   NatContainer,
   NatText,
   NatLogo,
   NatSpace,
-  ThemeNaturaLight
-} from "../../../lib";
+  ThemeNaturaLight,
+} from '../../../lib';
+
 const styles = {
   defaultScreen: {
     flex: 1,
-    width: Dimensions.get("window").width
-  }
+    width: Dimensions.get('window').width,
+  },
 };
+
 export const StoryNatLogo: React.SFC<{}> = () => {
   const iconList = [
-    { background: "white", name: "logo-natura-horizontal", size: 200 },
-    { background: "white", name: "logo-natura-vertical", size: 200 },
+    { background: 'white', name: 'logo-natura-horizontal', size: 200 },
+    { background: 'white', name: 'logo-natura-vertical', size: 200 },
     {
       background: ThemeNaturaLight.palette.text.primary,
-      name: "logo-natura-negative-horizontal",
-      size: 200
+      name: 'logo-natura-negative-horizontal',
+      size: 200,
     },
     {
       background: ThemeNaturaLight.palette.text.primary,
-      name: "logo-natura-negative-vertical",
-      size: 200
-    }
+      name: 'logo-natura-negative-vertical',
+      size: 200,
+    },
   ];
   const renderItem = (name, size, background) => (
     <View>
@@ -46,6 +48,7 @@ export const StoryNatLogo: React.SFC<{}> = () => {
       </NatSpace>
     </View>
   );
+
   return (
     <SafeAreaView style={styles.defaultScreen}>
       <NatContainer>
@@ -53,8 +56,7 @@ export const StoryNatLogo: React.SFC<{}> = () => {
           <NatText type="h6" value="ICONS SVG" />
           <FlatList
             data={iconList}
-            renderItem={({ item }) =>
-              renderItem(item.name, item.size, item.background)
+            renderItem={({ item }) => renderItem(item.name, item.size, item.background)
             }
             keyExtractor={item => item.name}
           />

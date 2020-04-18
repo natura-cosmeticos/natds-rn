@@ -1,1 +1,1 @@
-export { NatGridItem } from "./NatGridItem";
+export { NatGridItem } from './NatGridItem';

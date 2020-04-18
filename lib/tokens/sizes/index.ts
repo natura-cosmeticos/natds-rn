@@ -17,5 +17,5 @@ export const sizes = {
   hugex: 128,
   hugexx: 144,
   hugexxx: 192,
-  veryhuge: 256
+  veryhuge: 256,
 };
