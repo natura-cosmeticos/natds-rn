@@ -42,22 +42,6 @@ export const Login = () => {
   const [inputPassword, setInputPassword] = useState('');
   const [inputPasswordSecret, setInputPasswordSecret] = useState(true);
   const [inputPasswordIcon, setInputPasswordIcon] = useState('outlined-action-visibility');
-  
-
-  const press = () => Alert.alert(
-    'Press',
-    'My Alert Msg',
-    [
-      { onPress: () => console.log('Ask me later pressed'), text: 'Ask me later' },
-      {
-        onPress: () => console.log('Cancel Pressed'),
-        style: 'cancel',
-        text: 'Cancel',
-      },
-      { onPress: () => console.log('OK Pressed'), text: 'OK' },
-    ],
-    { cancelable: false },
-  );
 
   const togglePassword = () => {
     if (inputPasswordIcon === 'outlined-action-visibility') {
@@ -67,7 +51,7 @@ export const Login = () => {
       setInputPasswordIcon('outlined-action-visibility');
       setInputPasswordSecret(true);
     }
-  }
+  };
 
   return (
     <SafeAreaView style={styles.defaultScreen}>
@@ -95,7 +79,7 @@ export const Login = () => {
             iconPress={() => togglePassword()}
             secureTextEntry={inputPasswordSecret}
           />
-          <NatLink type="body1" value="Forgot password?" onPress={() => alert('press link')} align="center" />
+          <NatLink type="body1" value="Forgot password?" onPress={() => Alert.alert('press link')} align="center" />
         </View>
         <View style={styles.viewButton}>
           <Button

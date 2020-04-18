@@ -1,9 +1,11 @@
+/* eslint-disable max-lines */
 import React from 'react';
 import {
   Text,
   ScrollView,
   SafeAreaView,
   Dimensions,
+  Alert,
 } from 'react-native';
 import { NatContainer, NatMenuItem } from '../../../lib';
 
@@ -151,7 +153,7 @@ export const StoryNatMenuItem = () => {
               title={item.name}
               key={item.id}
               level={item.levell}
-              onPress={() => { alert('click event'); }}
+              onPress={() => { Alert.alert('click event'); }}
             />
           ))}
           <Text>Use SVG</Text>
@@ -161,7 +163,7 @@ export const StoryNatMenuItem = () => {
               icon={{ svg: item.svg }}
               key={item.id}
               level={item.levell}
-              onPress={() => { alert('click event'); }}
+              onPress={() => { Alert.alert('click event'); }}
             />
           ))}
           <Text>With External Icon URL</Text>
@@ -171,7 +173,7 @@ export const StoryNatMenuItem = () => {
               icon={{ uri: item.icon }}
               key={item.name}
               level={item.levell}
-              onPress={() => { alert('click event'); }}
+              onPress={() => { Alert.alert('click event'); }}
             />
           ))}
         </ScrollView>

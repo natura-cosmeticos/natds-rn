@@ -1,15 +1,14 @@
+/* eslint-disable max-lines */
 import React, { useState } from 'react';
 import {
-  View,
   ScrollView,
   SafeAreaView,
   Dimensions,
+  Alert,
 } from 'react-native';
 import {
   NatContainer,
   NatList,
-  NatListItem,
-  NatLogo,
   NatText,
 } from '../../../lib';
 
@@ -30,9 +29,9 @@ export const StoryNatList = () => {
       iconLeft: { svg: { name: 'outlined-navigation-menu' } },
       iconRight: { svg: { name: 'outlined-action-autofilter' } },
       id: '1',
-      onPress: () => alert('press'),
-      onPressLeft: () => alert('press'),
-      onPressRight: () => alert('press'),
+      onPress: () => Alert.alert('press'),
+      onPressLeft: () => Alert.alert('press'),
+      onPressRight: () => Alert.alert('press'),
       title: 'Title Text',
     },
     {
@@ -40,8 +39,8 @@ export const StoryNatList = () => {
       hideIconLeft: false,
       iconRight: { svg: { name: 'outlined-action-autofilter' } },
       id: '2',
-      onPressLeft: () => alert('press'),
-      onPressRight: () => alert('press'),
+      onPressLeft: () => Alert.alert('press'),
+      onPressRight: () => Alert.alert('press'),
       title: 'Title Text',
     },
     {
@@ -49,8 +48,8 @@ export const StoryNatList = () => {
       hideIconRight: true,
       iconLeft: { svg: { name: 'outlined-navigation-menu' } },
       id: '3',
-      onPressLeft: () => alert('press'),
-      onPressRight: () => alert('press'),
+      onPressLeft: () => Alert.alert('press'),
+      onPressRight: () => Alert.alert('press'),
       title: 'Title Text',
     },
     {
@@ -58,8 +57,8 @@ export const StoryNatList = () => {
       hideIconRight: false,
       iconLeft: { svg: { name: 'outlined-navigation-menu' } },
       id: '4',
-      onPressLeft: () => alert('press'),
-      onPressRight: () => alert('press'),
+      onPressLeft: () => Alert.alert('press'),
+      onPressRight: () => Alert.alert('press'),
       title: 'Title Text',
     },
   ];
@@ -120,7 +119,4 @@ export const StoryNatList = () => {
       </NatContainer>
     </SafeAreaView>
   );
-};
-
-StoryNatList.propTypes = {
 };

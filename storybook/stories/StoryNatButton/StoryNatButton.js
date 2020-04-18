@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import {
   ScrollView,
   SafeAreaView,
   Dimensions,
+  Alert,
 } from 'react-native';
 import {
   NatContainer,
@@ -18,47 +19,29 @@ const styles = {
   },
 };
 
-/*
-<NatButton
-  type="primary"
-  color="default"
-  state="enabled"
-  iconLeft=""
-  iconRight=""
-  size="medium"
-  label="Primary default enable"
-  onPress={() => alert('press button')}
-/>
-*/
-export const StoryNatButton = () => {
-
-  return (
+export const StoryNatButton = () => (
     <SafeAreaView style={styles.defaultScreen}>
       <NatContainer>
         <ScrollView>
-          <NatText value={`Buttons - Social Selling`} type="h6" />
+          <NatText value={'Buttons - Social Selling'} type="h6" />
           <NatSpace />
           <NatButton
             type="default"
             label="default"
-            onPress={() => alert('press button')}
+            onPress={() => Alert.alert('press button')}
           />
           <NatSpace />
           <NatButton
             type="short"
             label="short"
-            onPress={() => alert('press button')}
+            onPress={() => Alert.alert('press button')}
           />
           <NatButton
             type="card"
             label="card"
-            onPress={() => alert('press button')}
+            onPress={() => Alert.alert('press button')}
           />
         </ScrollView>
       </NatContainer>
     </SafeAreaView>
-  );
-};
-
-StoryNatButton.propTypes = {
-};
+);
