@@ -1,11 +1,12 @@
-import { Platform, StyleSheet } from "react-native";
-import styled, { css } from "styled-components/native";
-import { colors } from "../../assets/theme/colors/colors";
-import { natura } from "../../assets/theme/fonts/fonts";
+import { Platform, StyleSheet } from 'react-native';
+import styled, { css } from 'styled-components/native';
+import { colors } from '../../assets/theme/colors/colors';
+import { natura } from '../../assets/theme/fonts/fonts';
+
 export const AndroidStyle = StyleSheet.create({
   android: {
-    marginTop: 4
-  }
+    marginTop: 4,
+  },
 });
 export const HeaderWrapper = styled.View`
   display: flex;
@@ -27,7 +28,7 @@ export const HeaderWrapper = styled.View`
     ios: css`
       flex-direction: row;
       justify-content: space-between;
-    `
+    `,
   })}
 `;
 export const HeaderIcon = styled.TouchableOpacity`
@@ -45,7 +46,7 @@ export const HeaderTitle = styled.Text`
     ios: css`
       padding-left: 45px;
       padding-top: 8px;
-    `
+    `,
   })}
 `;
 export const HeaderRight = styled.View`
@@ -59,6 +60,6 @@ export const HeaderRight = styled.View`
     `,
     ios: css`
       margin-top: 4;
-    `
+    `,
   })}
 `;

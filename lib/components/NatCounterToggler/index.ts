@@ -1,1 +1,1 @@
-export { NatCounterToggler } from "./NatCounterToggler";
+export { NatCounterToggler } from './NatCounterToggler';

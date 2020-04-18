@@ -1,1 +1,1 @@
-export { StoryTokenTypography } from "./StoryTokenTypography";
+export { StoryTokenTypography } from './StoryTokenTypography';

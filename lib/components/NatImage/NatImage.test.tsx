@@ -1,10 +1,12 @@
-import React from "react";
-import renderer from "react-test-renderer";
-import "jest-styled-components/native";
-import { NatImage } from "./NatImage";
-describe("NatImage component default", () => {
-  it("Should render NatImage component ", () => {
+import React from 'react';
+import renderer from 'react-test-renderer';
+import 'jest-styled-components/native';
+import { NatImage } from './NatImage';
+
+describe('NatImage component default', () => {
+  it('Should render NatImage component ', () => {
     const button = renderer.create(<NatImage />).toJSON();
-    expect(button).toMatchSnapshot("NatImage snapshot");
+
+    expect(button).toMatchSnapshot('NatImage snapshot');
   });
 });

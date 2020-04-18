@@ -1,5 +1,5 @@
 module.exports = {
-  webpackFinal: async config => {
+  webpackFinal: (config) => {
     config.module.rules.push({
       test: /\.(ts|tsx)$/,
       use: [
@@ -13,6 +13,7 @@ module.exports = {
       ],
     });
     config.resolve.extensions.push('.ts', '.tsx');
+
     return config;
   },
 };

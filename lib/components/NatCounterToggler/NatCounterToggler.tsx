@@ -1,15 +1,16 @@
-/* eslint-disable max-statements, complexity */
-import React, { useState } from "react";
-import { Platform, TouchableNativeFeedback } from "react-native";
-import { colors } from "../../assets/theme/colors/colors";
+/* eslint-disable max-statements, complexity, max-lines */
+import React, { useState } from 'react';
+import { Platform, TouchableNativeFeedback } from 'react-native';
+import { colors } from '../../assets/theme/colors/colors';
 import {
   CounterView,
   ContentViewDefault,
   ContentViewLeft,
   ContentViewRight,
   CustomTouchableHighlight,
-  CustomTextOperators
-} from "./NatCounterToggler.styles";
+  CustomTextOperators,
+} from './NatCounterToggler.styles';
+
 type NatCounterTogglerProps = {
   color: string,
   counter: number,
@@ -28,14 +29,14 @@ export const NatCounterToggler: React.SFC<NatCounterTogglerProps> = ({
   width,
   height,
   min,
-  max
+  max,
 }) => {
   const [decreaseDisabled, setDecreaseDisabled] = useState(true);
   const [increaseDisabled, setIncreaseDisabled] = useState(false);
   const [decreaseColor, setDecreaseColor] = useState(colors.bw.grayLight);
   const [increaseColor, setIncreaseColor] = useState(colors.primary.white);
-  const actionHandler = action => {
-    if (action === "increase") {
+  const actionHandler = (action) => {
+    if (action === 'increase') {
       onIncrease();
       if (counter === min) {
         setDecreaseColor(colors.primary.white);
@@ -57,11 +58,12 @@ export const NatCounterToggler: React.SFC<NatCounterTogglerProps> = ({
       }
     }
   };
-  return Platform.OS === "android" ? (
+
+  return Platform.OS === 'android' ? (
     <CounterView color={color} width={width} height={height}>
       <TouchableNativeFeedback
         disabled={decreaseDisabled}
-        onPress={() => actionHandler("decrease")}
+        onPress={() => actionHandler('decrease')}
       >
         <ContentViewLeft color={decreaseColor}>
           <CustomTextOperators>-</CustomTextOperators>
@@ -74,7 +76,7 @@ export const NatCounterToggler: React.SFC<NatCounterTogglerProps> = ({
 
       <TouchableNativeFeedback
         disabled={increaseDisabled}
-        onPress={() => actionHandler("increase")}
+        onPress={() => actionHandler('increase')}
       >
         <ContentViewRight color={increaseColor}>
           <CustomTextOperators>+</CustomTextOperators>
@@ -85,7 +87,7 @@ export const NatCounterToggler: React.SFC<NatCounterTogglerProps> = ({
     <CounterView color={color}>
       <CustomTouchableHighlight
         disabled={decreaseDisabled}
-        onPress={() => actionHandler("decrease")}
+        onPress={() => actionHandler('decrease')}
       >
         <ContentViewLeft color={decreaseColor}>
           <CustomTextOperators>-</CustomTextOperators>
@@ -98,7 +100,7 @@ export const NatCounterToggler: React.SFC<NatCounterTogglerProps> = ({
 
       <CustomTouchableHighlight
         disabled={increaseDisabled}
-        onPress={() => actionHandler("increase")}
+        onPress={() => actionHandler('increase')}
       >
         <ContentViewRight color={increaseColor}>
           <CustomTextOperators>+</CustomTextOperators>
@@ -109,5 +111,5 @@ export const NatCounterToggler: React.SFC<NatCounterTogglerProps> = ({
 };
 NatCounterToggler.defaultProps = {
   height: null,
-  width: null
+  width: null,
 };

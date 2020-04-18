@@ -1,12 +1,14 @@
 /* eslint-disable complexity */
-import React from "react";
-import { Image } from "react-native";
-import { load as loadSvg } from "../assets/icons/svg";
+import React from 'react';
+import { Image } from 'react-native';
+import { load as loadSvg } from '../assets/icons/svg';
+
 export const loadIcon = (icon, attributes) => {
   if (icon && icon.svg) {
     const IconComponent = loadSvg(icon.svg.name);
     const iconSize = icon.svg.size ? icon.svg.size : attributes.size;
     const iconColor = icon.svg.color ? icon.svg.color : attributes.color;
+
     return (
       <IconComponent
         width={iconSize}
@@ -21,7 +23,7 @@ export const loadIcon = (icon, attributes) => {
         style={{
           height: attributes.size,
           tintColor: attributes.color,
-          width: attributes.size
+          width: attributes.size,
         }}
         source={icon.content}
       />
@@ -35,5 +37,6 @@ export const loadIcon = (icon, attributes) => {
       />
     );
   }
+
   return null;
 };

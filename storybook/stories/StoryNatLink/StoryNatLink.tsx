@@ -1,12 +1,18 @@
-import React from "react";
-import { ScrollView, SafeAreaView, Dimensions, Alert } from "react-native";
-import { NatContainer, NatSpace, NatText, NatLink } from "../../../lib";
+import React from 'react';
+import {
+  ScrollView, SafeAreaView, Dimensions, Alert,
+} from 'react-native';
+import {
+  NatContainer, NatSpace, NatText, NatLink,
+} from '../../../lib';
+
 const styles = {
   defaultScreen: {
     flex: 1,
-    width: Dimensions.get("window").width
-  }
+    width: Dimensions.get('window').width,
+  },
 };
+
 export const StoryNatLink = () => (
   <SafeAreaView style={styles.defaultScreen}>
     <NatContainer>
@@ -25,18 +31,18 @@ export const StoryNatLink = () => (
         <NatLink
           value="Text with link"
           type="body1"
-          onPress={() => Alert.alert("click link")}
+          onPress={() => Alert.alert('click link')}
         />
         <NatLink
           value="Text with link"
           type="body1"
-          onPress={() => Alert.alert("click link")}
+          onPress={() => Alert.alert('click link')}
           align="center"
         />
         <NatLink
           value="Text with link"
           type="body1"
-          onPress={() => Alert.alert("click link")}
+          onPress={() => Alert.alert('click link')}
           align="flex-end"
         />
       </ScrollView>

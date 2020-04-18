@@ -1,12 +1,14 @@
-import React from "react";
-import { ScrollView, Dimensions, SafeAreaView } from "react-native";
-import { NatContainer, NatText, ThemeNaturaLight } from "../../../lib";
+import React from 'react';
+import { ScrollView, Dimensions, SafeAreaView } from 'react-native';
+import { NatContainer, NatText, ThemeNaturaLight } from '../../../lib';
+
 const styles = {
   defaultScreen: {
     flex: 1,
-    width: Dimensions.get("window").width
-  }
+    width: Dimensions.get('window').width,
+  },
 };
+
 export const StoryTokenTypography = () => (
   <SafeAreaView style={styles.defaultScreen}>
     <NatContainer>

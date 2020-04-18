@@ -1,6 +1,7 @@
-import React from "react";
-import icoArrowLeft from "../../assets/icons/ic_arrow_left_white.png";
-import { ButtonWrapper, ButtonText, ButtonIcon } from "./NatButton.styles";
+import React from 'react';
+import icoArrowLeft from '../../assets/icons/ic_arrow_left_white.png';
+import { ButtonWrapper, ButtonText, ButtonIcon } from './NatButton.styles';
+
 type NatButtonProps = {
   iconLeft?: string,
   label: string,
@@ -13,22 +14,22 @@ export const NatButton: React.SFC<NatButtonProps> = ({
   type,
   label,
   noUpperCase,
-  iconLeft
+  iconLeft,
 }) => (
   <ButtonWrapper
     accessible
     accessibilityRole="button"
     onPress={onPress}
     type={type}
-    disabled={type === "disabled"}
+    disabled={type === 'disabled'}
   >
     {iconLeft && <ButtonIcon source={iconLeft} />}
     <ButtonText type={type} accessibilityLabel={`${label}`}>
       {noUpperCase ? label : label.toUpperCase()}
     </ButtonText>
-    {type === "card" && <ButtonIcon source={icoArrowLeft} />}
+    {type === 'card' && <ButtonIcon source={icoArrowLeft} />}
   </ButtonWrapper>
 );
 NatButton.defaultProps = {
-  type: "default"
+  type: 'default',
 };

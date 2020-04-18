@@ -1,5 +1,6 @@
-import React from "react";
-import { NatView } from "./NatSpace.styles";
+import React from 'react';
+import { NatView } from './NatSpace.styles';
+
 type NatSpaceProps = {
   backgroundColor?: string,
   marginBottom?: string,
@@ -21,7 +22,7 @@ export const NatSpace: React.SFC<NatSpaceProps> = ({
   paddingBottom,
   paddingRight,
   paddingLeft,
-  backgroundColor
+  backgroundColor,
 }) => (
   <NatView
     {...{
@@ -33,20 +34,20 @@ export const NatSpace: React.SFC<NatSpaceProps> = ({
       paddingBottom,
       paddingLeft,
       paddingRight,
-      paddingTop
+      paddingTop,
     }}
   >
     {children}
   </NatView>
 );
 NatSpace.defaultProps = {
-  backgroundColor: "transparent",
-  marginBottom: "small",
-  marginLeft: "none",
-  marginRight: "none",
-  marginTop: "none",
-  paddingBottom: "none",
-  paddingLeft: "none",
-  paddingRight: "none",
-  paddingTop: "none"
+  backgroundColor: 'transparent',
+  marginBottom: 'small',
+  marginLeft: 'none',
+  marginRight: 'none',
+  marginTop: 'none',
+  paddingBottom: 'none',
+  paddingLeft: 'none',
+  paddingRight: 'none',
+  paddingTop: 'none',
 };

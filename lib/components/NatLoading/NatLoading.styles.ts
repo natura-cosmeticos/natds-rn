@@ -1,4 +1,5 @@
-import styled from "styled-components/native";
+import styled from 'styled-components/native';
+
 export const LoadingWrapper = styled.View`
   justify-content: center;
   align-items: center;

@@ -1,1 +1,1 @@
-export { NatSelectInput } from "./NatSelectInput";
+export { NatSelectInput } from './NatSelectInput';

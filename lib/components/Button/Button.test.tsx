@@ -1,11 +1,12 @@
 /* eslint-disable max-lines */
-import React from "react";
-import renderer from "react-test-renderer";
-import "jest-styled-components/native";
-import { View, Text } from "react-native";
-import { Button } from "./Button";
-describe("Button component default", () => {
-  it("Should render button component ", () => {
+import React from 'react';
+import renderer from 'react-test-renderer';
+import 'jest-styled-components/native';
+import { View, Text } from 'react-native';
+import { Button } from './Button';
+
+describe('Button component default', () => {
+  it('Should render button component ', () => {
     const button = renderer
       .create(
         <View>
@@ -70,8 +71,8 @@ describe("Button component default", () => {
             onPress={() => {}}
           />
           <Button
-            iconLeft={{ svg: { name: "outlined-navigation-menu" } }}
-            iconRight={{ svg: { name: "outlined-action-autofilter" } }}
+            iconLeft={{ svg: { name: 'outlined-navigation-menu' } }}
+            iconRight={{ svg: { name: 'outlined-action-autofilter' } }}
             onPressLeft={() => {}}
             onPressRight={() => {}}
             type="primary"
@@ -79,8 +80,8 @@ describe("Button component default", () => {
             onPress={() => {}}
           />
           <Button
-            iconLeft={{ svg: { name: "outlined-navigation-menu" } }}
-            iconRight={{ svg: { name: "outlined-action-autofilter" } }}
+            iconLeft={{ svg: { name: 'outlined-navigation-menu' } }}
+            iconRight={{ svg: { name: 'outlined-action-autofilter' } }}
             onPressLeft={() => {}}
             onPressRight={() => {}}
             type="secondary"
@@ -88,8 +89,8 @@ describe("Button component default", () => {
             onPress={() => {}}
           />
           <Button
-            iconLeft={{ svg: { name: "outlined-navigation-menu" } }}
-            iconRight={{ svg: { name: "outlined-action-autofilter" } }}
+            iconLeft={{ svg: { name: 'outlined-navigation-menu' } }}
+            iconRight={{ svg: { name: 'outlined-action-autofilter' } }}
             onPressLeft={() => {}}
             onPressRight={() => {}}
             type="tertiary"
@@ -97,8 +98,8 @@ describe("Button component default", () => {
             onPress={() => {}}
           />
           <Button
-            iconLeft={{ svg: { name: "outlined-navigation-menu" } }}
-            iconRight={{ svg: { name: "outlined-action-autofilter" } }}
+            iconLeft={{ svg: { name: 'outlined-navigation-menu' } }}
+            iconRight={{ svg: { name: 'outlined-action-autofilter' } }}
             onPressLeft={() => {}}
             onPressRight={() => {}}
             type="secondary"
@@ -111,9 +112,10 @@ describe("Button component default", () => {
             fixedBottom
             onPress={() => {}}
           />
-        </View>
+        </View>,
       )
       .toJSON();
-    expect(button).toMatchSnapshot("Button snapshot");
+
+    expect(button).toMatchSnapshot('Button snapshot');
   });
 });

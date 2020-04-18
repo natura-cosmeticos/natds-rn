@@ -1,1 +1,1 @@
-export { NatModalSelect } from "./NatModalSelect";
+export { NatModalSelect } from './NatModalSelect';

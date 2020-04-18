@@ -1,1 +1,1 @@
-export { NatCard } from "./NatCard";
+export { NatCard } from './NatCard';

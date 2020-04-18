@@ -1,18 +1,23 @@
-import React, { useState } from "react";
-import { View, Text, Dimensions, SafeAreaView } from "react-native";
-import icoArrowLeft from "../../../lib/assets/icons/ic_arrow_left_white.png";
-import { NatContainer, NatTextInput } from "../../../lib";
+import React, { useState } from 'react';
+import {
+  View, Text, Dimensions, SafeAreaView,
+} from 'react-native';
+import icoArrowLeft from '../../../lib/assets/icons/ic_arrow_left_white.png';
+import { NatContainer, NatTextInput } from '../../../lib';
+
 const styles = {
   defaultScreen: {
     flex: 1,
-    width: Dimensions.get("window").width
-  }
+    width: Dimensions.get('window').width,
+  },
 };
+
 export const Form = () => {
-  const [inputSmall, setInputSmall] = useState("");
-  const [inputError, setInputError] = useState("");
-  const [inputDisabled, setInputDisabled] = useState("");
-  const [inputNormal, setInputNormal] = useState("");
+  const [inputSmall, setInputSmall] = useState('');
+  const [inputError, setInputError] = useState('');
+  const [inputDisabled, setInputDisabled] = useState('');
+  const [inputNormal, setInputNormal] = useState('');
+
   return (
     <SafeAreaView style={styles.defaultScreen}>
       <NatContainer styles={styles}>

@@ -1,23 +1,26 @@
 /* eslint-disable max-lines */
-import React from "react";
+import React from 'react';
 import {
   View,
   ScrollView,
   SafeAreaView,
   Dimensions,
-  Alert
-} from "react-native";
-import { NatContainer, NatAppBar, NatLogo } from "../../../lib";
+  Alert,
+} from 'react-native';
+import { NatContainer, NatAppBar, NatLogo } from '../../../lib';
+
 const styles = {
   defaultScreen: {
     flex: 1,
-    width: Dimensions.get("window").width
-  }
+    width: Dimensions.get('window').width,
+  },
 };
+
 export const StoryNatAppBar: React.SFC<{}> = () => {
   const logo = () => (
     <NatLogo name="logo-natura-horizontal" width={150} height={56} />
   );
+
   return (
     <SafeAreaView style={styles.defaultScreen}>
       <NatContainer>
@@ -25,74 +28,74 @@ export const StoryNatAppBar: React.SFC<{}> = () => {
           <NatAppBar
             title="Center title"
             alignTitle="center"
-            iconLeft={{ svg: { name: "outlined-navigation-menu" } }}
-            iconRight={{ svg: { name: "outlined-action-autofilter" } }}
-            onPressLeft={() => Alert.alert("press")}
-            onPressRight={() => Alert.alert("press")}
+            iconLeft={{ svg: { name: 'outlined-navigation-menu' } }}
+            iconRight={{ svg: { name: 'outlined-action-autofilter' } }}
+            onPressLeft={() => Alert.alert('press')}
+            onPressRight={() => Alert.alert('press')}
           />
           <View style={{ height: 10 }} />
           <NatAppBar
             title="Title Text"
-            iconLeft={{ svg: { name: "outlined-navigation-menu" } }}
-            iconRight={{ svg: { name: "outlined-action-autofilter" } }}
-            onPressLeft={() => Alert.alert("press")}
-            onPressRight={() => Alert.alert("press")}
+            iconLeft={{ svg: { name: 'outlined-navigation-menu' } }}
+            iconRight={{ svg: { name: 'outlined-action-autofilter' } }}
+            onPressLeft={() => Alert.alert('press')}
+            onPressRight={() => Alert.alert('press')}
           />
           <View style={{ height: 10 }} />
           <NatAppBar
             title="Title Text"
-            iconLeft={{ svg: { name: "outlined-navigation-menu" } }}
-            onPressLeft={() => Alert.alert("press")}
-            onPress={() => Alert.alert("press")}
+            iconLeft={{ svg: { name: 'outlined-navigation-menu' } }}
+            onPressLeft={() => Alert.alert('press')}
+            onPress={() => Alert.alert('press')}
           />
           <View style={{ height: 10 }} />
-          <NatAppBar title="Title Text" onPress={() => Alert.alert("press")} />
+          <NatAppBar title="Title Text" onPress={() => Alert.alert('press')} />
           <View style={{ height: 10 }} />
           <NatAppBar
             title="Title Text"
             node={logo()}
-            iconLeft={{ svg: { name: "outlined-navigation-menu" } }}
-            iconRight={{ svg: { name: "outlined-action-autofilter" } }}
-            onPressLeft={() => Alert.alert("press")}
-            onPressRight={() => Alert.alert("press")}
+            iconLeft={{ svg: { name: 'outlined-navigation-menu' } }}
+            iconRight={{ svg: { name: 'outlined-action-autofilter' } }}
+            onPressLeft={() => Alert.alert('press')}
+            onPressRight={() => Alert.alert('press')}
           />
           <View style={{ height: 10 }} />
           <NatAppBar
             title="Title Text"
             alignTitle="center"
             node={logo()}
-            iconLeft={{ svg: { name: "outlined-navigation-menu" } }}
-            onPressLeft={() => Alert.alert("press")}
-            onPress={() => Alert.alert("press")}
+            iconLeft={{ svg: { name: 'outlined-navigation-menu' } }}
+            onPressLeft={() => Alert.alert('press')}
+            onPress={() => Alert.alert('press')}
           />
           <View style={{ height: 10 }} />
           <NatAppBar
             title="Title Text"
             node={logo()}
-            onPress={() => Alert.alert("press")}
+            onPress={() => Alert.alert('press')}
           />
           <View style={{ height: 10 }} />
           <NatAppBar
             title="Exclusive"
             showIconLeft={false}
-            iconRight={{ svg: { name: "outlined-action-autofilter" } }}
-            onPressLeft={() => Alert.alert("press")}
-            onPressRight={() => Alert.alert("press")}
+            iconRight={{ svg: { name: 'outlined-action-autofilter' } }}
+            onPressLeft={() => Alert.alert('press')}
+            onPressRight={() => Alert.alert('press')}
           />
           <View style={{ height: 10 }} />
           <NatAppBar
             title="Exclusive"
-            iconLeft={{ svg: { name: "outlined-navigation-menu" } }}
+            iconLeft={{ svg: { name: 'outlined-navigation-menu' } }}
             showIconRight={false}
-            onPressLeft={() => Alert.alert("press")}
-            onPress={() => Alert.alert("press")}
+            onPressLeft={() => Alert.alert('press')}
+            onPress={() => Alert.alert('press')}
           />
           <View style={{ height: 10 }} />
           <NatAppBar
             title="Exclusive"
             showIconLeft={false}
             showIconRight={false}
-            onPress={() => Alert.alert("press")}
+            onPress={() => Alert.alert('press')}
           />
         </ScrollView>
       </NatContainer>

@@ -1,5 +1,6 @@
 /* eslint-disable sort-keys */
-import { sizes } from "../sizes";
+import { sizes } from '../sizes';
+
 export const spacing = {
   spacing: sizes.tiny,
   spacingNone: sizes.none,
@@ -9,5 +10,5 @@ export const spacing = {
   spacingStandard: sizes.standard,
   spacingSemi: sizes.semi,
   spacingLarge: sizes.medium,
-  spacingHuge: sizes.large
+  spacingHuge: sizes.large,
 };

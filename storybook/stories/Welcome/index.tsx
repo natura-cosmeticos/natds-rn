@@ -1,12 +1,14 @@
-import React from "react";
-import { SafeAreaView, Dimensions } from "react-native";
-import { NatLogo, NatText, NatContainer } from "../../../lib";
+import React from 'react';
+import { SafeAreaView, Dimensions } from 'react-native';
+import { NatLogo, NatText, NatContainer } from '../../../lib';
+
 const styles = {
   defaultScreen: {
     flex: 1,
-    width: Dimensions.get("window").width
-  }
+    width: Dimensions.get('window').width,
+  },
 };
+
 export const Welcome = () => (
   <SafeAreaView style={styles.defaultScreen}>
     <NatContainer>

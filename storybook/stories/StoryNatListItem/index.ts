@@ -1,1 +1,1 @@
-export { StoryNatListItem } from "./StoryNatListItem";
+export { StoryNatListItem } from './StoryNatListItem';

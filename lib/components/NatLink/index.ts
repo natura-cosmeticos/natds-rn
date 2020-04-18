@@ -1,1 +1,1 @@
-export { NatLink } from "./NatLink";
+export { NatLink } from './NatLink';

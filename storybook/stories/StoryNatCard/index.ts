@@ -1,1 +1,1 @@
-export { StoryNatCard } from "./StoryNatCard";
+export { StoryNatCard } from './StoryNatCard';

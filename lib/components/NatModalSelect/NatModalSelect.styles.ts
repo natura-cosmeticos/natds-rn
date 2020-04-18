@@ -1,8 +1,9 @@
-import { Platform } from "react-native";
-import styled, { css } from "styled-components/native";
-import { roboto, sanfrancisco } from "../../assets/theme/fonts/fonts";
-import { body, header } from "../../assets/theme/typography/typography";
-import { colors } from "../../assets/theme/colors/colors";
+import { Platform } from 'react-native';
+import styled, { css } from 'styled-components/native';
+import { roboto, sanfrancisco } from '../../assets/theme/fonts/fonts';
+import { body, header } from '../../assets/theme/typography/typography';
+import { colors } from '../../assets/theme/colors/colors';
+
 export const ModalView = styled.View`
   flex: 1;
   justify-content: center;
@@ -35,9 +36,8 @@ export const ModalButton = styled.TouchableOpacity`
   background-color: ${colors.primary.yellow};
   border-bottom-left-radius: 6;
   border-bottom-right-radius: 6;
-  ${props =>
-    props.alternative &&
-    css`
+  ${props => props.alternative
+    && css`
       width: 50%;
       border-bottom-left-radius: 0;
       border-bottom-right-radius: 6;
@@ -45,7 +45,7 @@ export const ModalButton = styled.TouchableOpacity`
 `;
 export const ModalButtonLabel = styled.Text`
   color: ${colors.primary.white}
-  font-family: ${Platform.OS === "ios" ? sanfrancisco.bold : roboto.bold};
+  font-family: ${Platform.OS === 'ios' ? sanfrancisco.bold : roboto.bold};
   letter-spacing: 1px;
 `;
 export const ModalContainer = styled.View`
@@ -60,6 +60,6 @@ export const ModalButtonAlternative = styled.TouchableOpacity`
 `;
 export const ModalButtonLabelAlternative = styled.Text`
   color: ${colors.primary.yellow};
-  font-family: ${Platform.OS === "ios" ? sanfrancisco.bold : roboto.bold};
+  font-family: ${Platform.OS === 'ios' ? sanfrancisco.bold : roboto.bold};
   letter-spacing: 1px;
 `;

@@ -1,1 +1,1 @@
-export { StoryTabBar } from "./StoryTabBar";
+export { StoryTabBar } from './StoryTabBar';

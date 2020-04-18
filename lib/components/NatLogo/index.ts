@@ -1,1 +1,1 @@
-export { NatLogo } from "./NatLogo";
+export { NatLogo } from './NatLogo';

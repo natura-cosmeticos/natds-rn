@@ -1,1 +1,1 @@
-export { StoryNatLink } from "./StoryNatLink";
+export { StoryNatLink } from './StoryNatLink';

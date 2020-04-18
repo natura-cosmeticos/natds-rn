@@ -1,6 +1,7 @@
-import styled from "styled-components/native";
-import { ThemeNaturaLight } from "../../themes/ThemeNaturaLight";
-import { sizes } from "../../tokens/sizes";
+import styled from 'styled-components/native';
+import { ThemeNaturaLight } from '../../themes/ThemeNaturaLight';
+import { sizes } from '../../tokens/sizes';
+
 export const View = styled.View`
   margin-top: ${props => sizes[props.marginTop]}px;
   margin-bottom: ${props => sizes[props.marginBottom]}px;
@@ -10,7 +11,6 @@ export const View = styled.View`
   padding-bottom: ${props => sizes[props.paddingBottom]}px;
   padding-right: ${props => sizes[props.paddingRight]}px;
   padding-left: ${props => sizes[props.paddingLeft]}px;
-  ${props => props.center && "justify-content: center; align-items: center;"}
-  background-color: ${props =>
-    props.color ? props.color : ThemeNaturaLight.palette.background.paper}
+  ${props => props.center && 'justify-content: center; align-items: center;'}
+  background-color: ${props => (props.color ? props.color : ThemeNaturaLight.palette.background.paper)}
 `;

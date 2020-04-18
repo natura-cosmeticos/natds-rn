@@ -1,5 +1,6 @@
-import styled from "styled-components/native";
-import { ThemeNaturaLight } from "../../themes/ThemeNaturaLight";
+import styled from 'styled-components/native';
+import { ThemeNaturaLight } from '../../themes/ThemeNaturaLight';
+
 export const HeaderWrapper = styled.View`
   flex: 1;
   width: 100%;
@@ -27,8 +28,8 @@ export const IconPress = styled.TouchableOpacity`
   justify-content: center;
   padding-top: 16px;
   padding-bottom: 16px;
-  padding-right: ${({ position }) => (position === "right" ? "16px" : "0px")};
-  padding-left: ${({ position }) => (position === "right" ? "0px" : "16px")};
+  padding-right: ${({ position }) => (position === 'right' ? '16px' : '0px')};
+  padding-left: ${({ position }) => (position === 'right' ? '0px' : '16px')};
 `;
 export const TouchableOpacity = styled.TouchableOpacity`
   flex: 1;

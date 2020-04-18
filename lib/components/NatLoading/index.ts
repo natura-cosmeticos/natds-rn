@@ -1,1 +1,1 @@
-export { NatLoading } from "./NatLoading";
+export { NatLoading } from './NatLoading';

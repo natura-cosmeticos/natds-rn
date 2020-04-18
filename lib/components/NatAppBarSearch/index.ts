@@ -1,1 +1,1 @@
-export { NatAppBarSearch } from "./NatAppBarSearch";
+export { NatAppBarSearch } from './NatAppBarSearch';

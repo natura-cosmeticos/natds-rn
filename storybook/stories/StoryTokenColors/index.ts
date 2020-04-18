@@ -1,1 +1,1 @@
-export { StoryTokenColors } from "./StoryTokenColors";
+export { StoryTokenColors } from './StoryTokenColors';

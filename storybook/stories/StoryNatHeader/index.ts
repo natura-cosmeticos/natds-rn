@@ -1,1 +1,1 @@
-export { StoryNatHeader } from "./StoryNatHeader";
+export { StoryNatHeader } from './StoryNatHeader';

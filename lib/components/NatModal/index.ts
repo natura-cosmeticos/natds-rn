@@ -1,1 +1,1 @@
-export { NatModal } from "./NatModal";
+export { NatModal } from './NatModal';

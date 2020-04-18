@@ -1,29 +1,31 @@
-import React, { useState } from "react";
-import { SafeAreaView, Dimensions } from "react-native";
-import styled from "styled-components/native";
-import { header } from "../../../lib/assets/theme/typography/typography";
+import React, { useState } from 'react';
+import { SafeAreaView, Dimensions } from 'react-native';
+import styled from 'styled-components/native';
+import { header } from '../../../lib/assets/theme/typography/typography';
 import {
   NatPeriodButton,
   NatCounterToggler,
   NatGenericCard,
-  NatContainer
-} from "../../../lib";
+  NatContainer,
+} from '../../../lib';
+
 export const HeaderText = styled.Text`
   ${header.Small}
 `;
 const styles = {
   defaultScreen: {
     flex: 1,
-    width: Dimensions.get("window").width
-  }
+    width: Dimensions.get('window').width,
+  },
 };
 const FlexNatGenericCard = {
-  alignItems: "center",
-  display: "flex",
-  flexDirection: "row",
-  justifyContent: "center",
-  width: "100%"
+  alignItems: 'center',
+  display: 'flex',
+  flexDirection: 'row',
+  justifyContent: 'center',
+  width: '100%',
 };
+
 export const FriendExchange = () => {
   const [itemCount, setItemCount] = useState(1);
   const onIncreaseHandler = () => {
@@ -32,6 +34,7 @@ export const FriendExchange = () => {
   const onDecreaseHandler = () => {
     setItemCount(itemCount - 1);
   };
+
   return (
     <SafeAreaView style={styles.defaultScreen}>
       <NatContainer>

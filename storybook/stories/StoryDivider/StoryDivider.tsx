@@ -1,18 +1,20 @@
-import React from "react";
-import { ScrollView, SafeAreaView, Dimensions } from "react-native";
+import React from 'react';
+import { ScrollView, SafeAreaView, Dimensions } from 'react-native';
 import {
   NatContainer,
   NatSpace,
   ThemeNaturaLight as Theme,
   NatText,
-  Divider
-} from "../../../lib";
+  Divider,
+} from '../../../lib';
+
 const styles = {
   defaultScreen: {
     flex: 1,
-    width: Dimensions.get("window").width
-  }
+    width: Dimensions.get('window').width,
+  },
 };
+
 export const StoryDivider = () => (
   <SafeAreaView style={styles.defaultScreen}>
     <NatContainer>

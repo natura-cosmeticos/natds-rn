@@ -1,7 +1,8 @@
-import React from "react";
-import { View, MenuTitle } from "./NatMenuItem.styles";
-import { loadIcon } from "../../utils";
-import { ThemeNaturaLight } from "../../themes/ThemeNaturaLight";
+import React from 'react';
+import { View, MenuTitle } from './NatMenuItem.styles';
+import { loadIcon } from '../../utils';
+import { ThemeNaturaLight } from '../../themes/ThemeNaturaLight';
+
 type NatMenuItemProps = {
   icon?: {
     icon?: string,
@@ -19,12 +20,13 @@ export const NatMenuItem: React.SFC<NatMenuItemProps> = ({
   type,
   title,
   onPress,
-  icon
+  icon,
 }) => {
   const iconAttributes = {
     color: ThemeNaturaLight.palette.text.primary,
-    size: 24
+    size: 24,
   };
+
   return (
     <View onPress={onPress}>
       {loadIcon(icon, iconAttributes)}
@@ -35,6 +37,6 @@ export const NatMenuItem: React.SFC<NatMenuItemProps> = ({
 NatMenuItem.defaultProps = {
   icon: {},
   onPress: null,
-  title: "title",
-  type: "default"
+  title: 'title',
+  type: 'default',
 };

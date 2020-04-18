@@ -1,7 +1,8 @@
-import { Platform } from "react-native";
-import styled from "styled-components/native";
-import { roboto, sanfrancisco } from "../../assets/theme/fonts/fonts";
-import { colors } from "../../assets/theme/colors/colors";
+import { Platform } from 'react-native';
+import styled from 'styled-components/native';
+import { roboto, sanfrancisco } from '../../assets/theme/fonts/fonts';
+import { colors } from '../../assets/theme/colors/colors';
+
 export const Item = styled.View`
   margin-bottom: ${props => (props.sizeMedium ? 24 : 0)};
   margin-right: ${props => (props.sizeMedium ? 12 : 16)};
@@ -27,5 +28,5 @@ export const Title = styled.Text`
   font-style: normal;
   text-align: center;
   color: ${colors.bw.grayDark};
-  font-family: ${Platform.OS === "ios" ? sanfrancisco.regular : roboto.regular};
+  font-family: ${Platform.OS === 'ios' ? sanfrancisco.regular : roboto.regular};
 `;
