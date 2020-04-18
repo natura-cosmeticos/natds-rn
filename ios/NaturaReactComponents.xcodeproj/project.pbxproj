@@ -689,7 +689,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NaturaReactComponents.app/NaturaReactComponents";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NatDSRNSampleApp.app/NatDSRNSampleApp";
 			};
 			name = Debug;
 		};
@@ -709,7 +709,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NaturaReactComponents.app/NaturaReactComponents";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NatDSRNSampleApp.app/NatDSRNSampleApp";
 			};
 			name = Release;
 		};
