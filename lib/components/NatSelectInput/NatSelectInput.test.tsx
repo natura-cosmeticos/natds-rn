@@ -7,7 +7,7 @@ import { NatSelectInput } from './NatSelectInput';
 describe('NatSelectInput component default', () => {
   it('Should render textInput component ', () => {
     const button = renderer
-      .create(<NatSelectInput label="teste" onChangeText={jest.fn()} />)
+      .create(<NatSelectInput label="teste" onChange={jest.fn()} />)
       .toJSON();
 
     expect(button).toMatchSnapshot('NatSelectInput snapshot');
@@ -17,9 +17,8 @@ describe('NatSelectInput component default', () => {
       .create(
         <NatSelectInput
           label="teste"
-          onChangeText={jest.fn()}
+          onChange={jest.fn()}
           icon={icoArrowLeft}
-          iconPress={jest.fn()}
           assistiveText="teste"
         />,
       )

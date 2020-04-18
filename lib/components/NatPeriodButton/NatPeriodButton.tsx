@@ -10,7 +10,7 @@ import {
 } from './NatPeriodButton.styles';
 
 type NatPeriodButtonProps = {
-  iconSrc: string,
+  iconSrc?: string,
   onSelect: (...args: any[]) => any,
   selected?: boolean,
   subtitle?: string,
@@ -49,6 +49,4 @@ export const NatPeriodButton: React.SFC<NatPeriodButtonProps> = ({
 };
 NatPeriodButton.defaultProps = {
   selected: false,
-  subtitle: null,
-  title: null,
 };
