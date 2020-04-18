@@ -88,7 +88,7 @@ NatCard.propTypes = {
   onPress: PropTypes.func.isRequired,
   resume: PropTypes.string.isRequired,
   subtitle: PropTypes.string,
-  theme: PropTypes.shape(),
+  theme: PropTypes.shape({}),
   title: PropTypes.string.isRequired,
 };
 

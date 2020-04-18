@@ -30,7 +30,6 @@ describe('TabBar Component', () => {
         <TabBar
           setIndex={jest.fn()}
           navigationState={navigation}
-          position={{}}
         />,
       )
       .toJSON();
@@ -43,7 +42,6 @@ describe('TabBar Component', () => {
         <TabBar
           setIndex={jest.fn()}
           navigationState={navigation}
-          position={{}}
           noUppercase
         />,
       )
@@ -53,14 +51,14 @@ describe('TabBar Component', () => {
   });
   it('should render all children correctly', () => {
     const wrapper = shallow(
-      <TabBar setIndex={jest.fn()} navigationState={navigation} position={{}} />,
+      <TabBar setIndex={jest.fn()} navigationState={navigation} />,
     );
 
     expect(wrapper.find(TabButton)).toHaveLength(3);
   });
   it('should change to second tab to primary after click', () => {
     const wrapper = shallow(
-      <TabBar setIndex={jest.fn()} navigationState={navigation} position={{}} />,
+      <TabBar setIndex={jest.fn()} navigationState={navigation} />,
     );
 
     wrapper

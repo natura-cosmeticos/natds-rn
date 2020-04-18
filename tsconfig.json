@@ -3,17 +3,25 @@
     "outDir": "build/lib",
     "module": "commonjs",
     "target": "es5",
-    "lib": ["es5", "es6", "es7", "es2017", "dom"],
+    "lib": [
+      "es5",
+      "es6",
+      "es7",
+      "es2017"
+    ],
     "sourceMap": true,
     "allowJs": false,
     "jsx": "react-native",
     "moduleResolution": "node",
-    "rootDirs": ["lib", "storybook"],
-    "baseUrl": "src",
+    "rootDirs": [
+      "lib",
+      "storybook"
+    ],
+    "baseUrl": ".",
     "forceConsistentCasingInFileNames": true,
     "noImplicitReturns": true,
     "noImplicitThis": true,
-    "noImplicitAny": true,
+    "noImplicitAny": false,
     "strictNullChecks": true,
     "suppressImplicitAnyIndexErrors": true,
     "noUnusedLocals": true,
@@ -21,8 +29,18 @@
     "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true,
     "experimentalDecorators": true,
-    "emitDecoratorMetadata": true
+    "emitDecoratorMetadata": true,
   },
-  "include": ["src/**/*"],
-  "exclude": ["node_modules", "build", "scripts"]
-  }
+  "include": [
+    "lib/**/*"
+  ],
+  "files": [
+    "./types/png.d.ts",
+    "./types/svg.d.ts",
+  ],
+  "exclude": [
+    "node_modules",
+    "build",
+    "scripts"
+  ]
+}

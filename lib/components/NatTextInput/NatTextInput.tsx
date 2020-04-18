@@ -36,7 +36,7 @@ type NatTextInputProps = {
   placeholder?: string,
   secureTextEntry?: boolean,
   size?: string,
-  theme?: {},
+  theme?: typeof ThemeNaturaLight,
   type?: string,
   value?: string
 };
@@ -155,8 +155,6 @@ export const NatTextInput: React.SFC<NatTextInputProps> = ({
 };
 NatTextInput.defaultProps = {
   assistiveText: '',
-  icon: false,
-  iconPress: null,
   margin: 'tiny',
   multiline: false,
   numberOfLines: 1,

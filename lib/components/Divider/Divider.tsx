@@ -45,7 +45,7 @@ Divider.propTypes = {
   paddingLeft: PropTypes.string,
   paddingRight: PropTypes.string,
   paddingTop: PropTypes.string,
-  theme: PropTypes.shape(),
+  theme: PropTypes.shape({}),
 };
 
 Divider.defaultProps = {

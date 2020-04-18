@@ -3,8 +3,14 @@ import React from 'react';
 import styled from 'styled-components/native';
 import { NatText } from '../NatText';
 
+interface ConfigStyle {
+  color?: string,
+  borderColor?: string,
+  border?: string,
+}
+
 const getInputStyles = (type, state, theme) => {
-  const configStyle = {};
+  const configStyle: ConfigStyle = {};
 
   switch (type) {
     case 'error':
@@ -53,7 +59,7 @@ export const InputWrapper = styled.View`
   padding-bottom: 0px;
   flex-direction: row;
   justify-content: space-between;
-  background-color: ${({ type, state, theme }) => getInputStyles(type, state, theme).backgroundColor || 'transparent'};
+  background-color: transparent;
 `;
 export const TextInput = styled.TextInput`
   font-size: 16px;
@@ -63,8 +69,7 @@ export const TextInput = styled.TextInput`
   padding-bottom: ${({ numberOfLines }) => (numberOfLines > 1 ? '16px' : '0px')};
   text-align-vertical: top;
   height: ${({ defaultSize }) => defaultSize || '56px'};
-  color: ${({ type, state, theme }) => getInputStyles(type, state, theme).fontColor
-    || theme.palette.text.secondary};
+  color: ${({ theme }) => theme.palette.text.secondary};
   letter-spacing: ${({ secureTextEntry }) => (secureTextEntry ? '0px' : '0px')};
 `;
 type LabelProps = {

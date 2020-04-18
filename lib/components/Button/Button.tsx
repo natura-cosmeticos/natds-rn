@@ -107,8 +107,8 @@ export const Button = ({
 Button.propTypes = {
   color: PropTypes.string,
   fixedBottom: PropTypes.bool,
-  iconLeft: PropTypes.shape(),
-  iconRight: PropTypes.shape(),
+  iconLeft: PropTypes.shape({}),
+  iconRight: PropTypes.shape({}),
   label: PropTypes.string,
   node: PropTypes.node,
   noUpperCase: PropTypes.bool,
@@ -118,7 +118,7 @@ Button.propTypes = {
   showIconLeft: PropTypes.bool,
   showIconRight: PropTypes.bool,
   state: PropTypes.string,
-  theme: PropTypes.shape(),
+  theme: PropTypes.shape({}),
   type: PropTypes.string,
 
 };

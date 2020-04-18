@@ -85,8 +85,8 @@ export const NatAppBarSearch = ({
 };
 
 NatAppBarSearch.propTypes = {
-  iconLeft: PropTypes.shape(),
-  iconRight: PropTypes.shape(),
+  iconLeft: PropTypes.shape({}),
+  iconRight: PropTypes.shape({}),
   node: PropTypes.node,
   onPressLeft: PropTypes.func,
   onPressRight: PropTypes.func,
