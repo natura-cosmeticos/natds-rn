@@ -1,6 +1,7 @@
 android
 ios
 dist
+build
 natura-design-system
 App
 metro.config.js
