@@ -1,5 +1,6 @@
 /* eslint-disable max-lines */
-import { View } from 'react-native';
+import React from 'react';
+import { View, Platform } from 'react-native';
 import FilledActionAdd from './filled-action-add.svg';
 import FilledActionCancel from './filled-action-cancel.svg';
 import FilledActionCheck from './filled-action-check.svg';
@@ -302,7 +303,9 @@ const parseName = name => name
 const load = (name) => {
   const icon = icons[parseName(name)];
 
-  if (icon) return icon;
+  if (icon) {
+    return Platform.OS === 'web' ? props => <img {...props} src={icon} /> : icon;
+  }
 
   return View;
 };
