@@ -65,3 +65,5 @@ package-lock.json
 
 # Fonts copies before linking
 lib/assets/fonts/natds-icons.*
+
+.jest/

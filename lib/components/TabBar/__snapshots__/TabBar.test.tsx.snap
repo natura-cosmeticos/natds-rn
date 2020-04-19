@@ -47,7 +47,7 @@ exports[`TabBar Component should render each type with no uppercase titles corre
       style={
         Array [
           Object {
-            "color": "#777777",
+            "color": "#333333",
             "fontWeight": "bold",
           },
         ]
@@ -374,7 +374,7 @@ exports[`TabBar Component should render each type with no uppercase titles corre
           },
         }
       }
-      type="secondary"
+      type="primary"
     >
       Given
     </Text>
@@ -779,7 +779,7 @@ exports[`TabBar Component should render each type with no uppercase titles corre
       style={
         Array [
           Object {
-            "color": "#777777",
+            "color": "#BBBBBB",
             "fontWeight": "bold",
           },
         ]
@@ -1106,7 +1106,7 @@ exports[`TabBar Component should render each type with no uppercase titles corre
           },
         }
       }
-      type="secondary"
+      type="disabled"
     >
       Disabled
     </Text>
@@ -1161,7 +1161,7 @@ exports[`TabBar Component should render the tab bar correctly: Tabbar snapshot w
       style={
         Array [
           Object {
-            "color": "#777777",
+            "color": "#333333",
             "fontWeight": "bold",
           },
         ]
@@ -1488,7 +1488,7 @@ exports[`TabBar Component should render the tab bar correctly: Tabbar snapshot w
           },
         }
       }
-      type="secondary"
+      type="primary"
     >
       GIVEN
     </Text>
@@ -1893,7 +1893,7 @@ exports[`TabBar Component should render the tab bar correctly: Tabbar snapshot w
       style={
         Array [
           Object {
-            "color": "#777777",
+            "color": "#BBBBBB",
             "fontWeight": "bold",
           },
         ]
@@ -2220,7 +2220,7 @@ exports[`TabBar Component should render the tab bar correctly: Tabbar snapshot w
           },
         }
       }
-      type="secondary"
+      type="disabled"
     >
       DISABLED
     </Text>

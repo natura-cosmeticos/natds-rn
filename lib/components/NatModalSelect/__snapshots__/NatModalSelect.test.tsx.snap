@@ -5,7 +5,6 @@ exports[`NatModalSelect and its variants NatModalSelect Should match snapshot: N
   animationType="fade"
   hardwareAccelerated={false}
   onRequestClose={[MockFunction]}
-  save={false}
   visible={true}
 >
   <RCTSafeAreaView

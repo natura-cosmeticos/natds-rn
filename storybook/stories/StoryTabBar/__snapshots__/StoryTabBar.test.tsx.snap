@@ -118,7 +118,7 @@ exports[`StoryTabBar component should render correctly: StoryTabBar snapshot 1`]
               style={
                 Array [
                   Object {
-                    "color": "#777777",
+                    "color": "#333333",
                     "fontWeight": "bold",
                   },
                 ]
@@ -446,7 +446,7 @@ exports[`StoryTabBar component should render correctly: StoryTabBar snapshot 1`]
                   },
                 }
               }
-              type="secondary"
+              type="primary"
             >
               GIVEN
             </Text>
@@ -852,7 +852,7 @@ exports[`StoryTabBar component should render correctly: StoryTabBar snapshot 1`]
               style={
                 Array [
                   Object {
-                    "color": "#777777",
+                    "color": "#BBBBBB",
                     "fontWeight": "bold",
                   },
                 ]
@@ -1180,7 +1180,7 @@ exports[`StoryTabBar component should render correctly: StoryTabBar snapshot 1`]
                   },
                 }
               }
-              type="secondary"
+              type="disabled"
             >
               DISABLED
             </Text>

@@ -5,14 +5,8 @@ import styled from 'styled-components/native';
 import { NatText } from '../NatText';
 import { sizes } from '../../tokens/sizes';
 
-interface ConfigStyle {
-  color?: string,
-  borderColor?: string,
-  border?: string,
-}
-
-export const getInputStyles = (type, state, theme) => {
-  const configStyle: ConfigStyle = {};
+const getInputStyles = (type, state, theme) => {
+  const configStyle = {};
 
   switch (type) {
     case 'error':
@@ -74,7 +68,7 @@ export const InputWrapper = styled.View`
   padding-bottom: 0px;
   flex-direction: row;
   justify-content: space-between;
-  background-color: 'transparent';
+  background-color: ${({ type, state, theme }) => getInputStyles(type, state, theme).backgroundColor || 'transparent'};
 `;
 
 export const TextInput = styled.TextInput`
@@ -85,7 +79,7 @@ export const TextInput = styled.TextInput`
   padding-bottom: ${({ numberOfLines, size }) => getPaddingSize(numberOfLines, size)};
   text-align-vertical: top;
   height: ${({ defaultSize }) => defaultSize || '56px'};
-  color: ${({ theme }) => theme.palette.text.secondary};
+  color: ${({ type, state, theme }) => getInputStyles(type, state, theme).fontColor || theme.palette.text.secondary};
   letter-spacing: ${({ secureTextEntry }) => (secureTextEntry ? '0px' : '0px')};
 `;
 
@@ -120,13 +114,13 @@ export const IconPress = styled.TouchableOpacity`
 AssistiveTexView.propTypes = {
   state: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
-  theme: PropTypes.shape({}).isRequired,
+  theme: PropTypes.shape().isRequired,
   type: PropTypes.string.isRequired,
 };
 
 Label.propTypes = {
   state: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
-  theme: PropTypes.shape({}).isRequired,
+  theme: PropTypes.shape().isRequired,
   type: PropTypes.string.isRequired,
 };
