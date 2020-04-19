@@ -89,6 +89,7 @@ export const Label = ({
   theme,
   text,
 }) => {
+  // @ts-ignore
   const { color } = getInputStyles(type, state, theme);
 
   return <NatText value={text} type="body2" color={color} margin={theme.spacing.spacingNone} />;
@@ -100,6 +101,7 @@ export const AssistiveTexView = ({
   theme,
   text,
 }) => {
+  // @ts-ignore
   const { color } = getInputStyles(type, state, theme);
 
   return <NatText value={text} type="caption" color={color} margin={theme.spacing.spacingNone} />;
@@ -114,6 +116,7 @@ export const IconPress = styled.TouchableOpacity`
 AssistiveTexView.propTypes = {
   state: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
+  // @ts-ignore
   theme: PropTypes.shape().isRequired,
   type: PropTypes.string.isRequired,
 };
@@ -121,6 +124,7 @@ AssistiveTexView.propTypes = {
 Label.propTypes = {
   state: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
+  // @ts-ignore
   theme: PropTypes.shape().isRequired,
   type: PropTypes.string.isRequired,
 };

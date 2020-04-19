@@ -120,6 +120,7 @@ NatSelectInput.propTypes = {
   searchText: PropTypes.string,
   selectButtonText: PropTypes.string,
   size: PropTypes.string,
+  // @ts-ignore
   theme: PropTypes.shape(),
   type: PropTypes.string,
   value: PropTypes.array,
