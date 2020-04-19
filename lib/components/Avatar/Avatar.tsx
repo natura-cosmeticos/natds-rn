@@ -6,6 +6,7 @@ import { ThemeNaturaLight } from '../../themes/ThemeNaturaLight';
 import { AvatarWrapper, AvatarText, AvatarImage } from './Avatar.styles';
 
 import { Anonymous } from '../../assets/images/avatar';
+import { Platform } from 'react-native';
 
 export const TypeElement = ({
   uri, type, name, size, theme,
@@ -20,7 +21,7 @@ export const TypeElement = ({
         </AvatarText>
       );
     case 'anonymous':
-      return <Anonymous width={iconSize} height={iconSize} />;
+      return Platform.OS === 'web' ? () => <img width={iconSize} height={iconSize} src={Anonymous} /> : <Anonymous width={iconSize} height={iconSize} />;
     case 'image':
       return <AvatarImage source={{ uri }} size={size} theme={theme} />;
     default:
@@ -39,10 +40,10 @@ TypeElement.propTypes = {
 export const Avatar = ({
   name, size, theme, type, uri,
 }) => (
-  <AvatarWrapper size={size} theme={theme} type={type}>
-    <TypeElement uri={uri} size={size} theme={theme} name={name} type={type} />
-  </AvatarWrapper>
-);
+    <AvatarWrapper size={size} theme={theme} type={type}>
+      <TypeElement uri={uri} size={size} theme={theme} name={name} type={type} />
+    </AvatarWrapper>
+  );
 
 Avatar.defaultProps = {
   name: '',
