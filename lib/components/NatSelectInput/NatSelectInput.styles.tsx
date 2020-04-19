@@ -2,7 +2,43 @@
 import React from 'react';
 import styled from 'styled-components/native';
 import { NatText } from '../NatText';
-import { getInputStyles } from '../NatTextInput/NatTextInput.styles';
+
+const getInputStyles = (type, state, theme) => {
+  const configStyle = {};
+
+  switch (type) {
+    case 'error':
+      configStyle.color = theme.palette.error.main;
+      configStyle.borderColor = theme.palette.error.main;
+      configStyle.border = '2px';
+      break;
+    case 'disabled':
+      configStyle.color = theme.palette.text.disabled;
+      configStyle.borderColor = theme.palette.text.disabled;
+      // configStyle.backgroundColor = theme.palette.text.disabled;
+      break;
+    case 'none':
+      configStyle.color = theme.palette.text.disabled;
+      configStyle.borderColor = theme.palette.text.disabled;
+      configStyle.border = '0px';
+      // configStyle.backgroundColor = theme.palette.text.disabled;
+      break;
+    default:
+      configStyle.color = theme.palette.text.secondary;
+      configStyle.borderColor = theme.palette.text.disabled;
+      if (state === 'active') {
+        configStyle.border = '2px';
+        configStyle.borderColor = theme.palette.primary.main;
+      }
+      if (state === 'filled') {
+        // configStyle.border = '2px';
+        configStyle.borderColor = theme.palette.background.defaultContrastText;
+      }
+      break;
+  }
+
+  return configStyle;
+};
 
 export const Wrapper = styled.View`
   width: 100%;
@@ -17,7 +53,7 @@ export const InputWrapper = styled.View`
   padding-bottom: 0px;
   flex-direction: row;
   justify-content: space-between;
-  background-color: transparent;
+  background-color: ${({ type, state, theme }) => getInputStyles(type, state, theme).backgroundColor || 'transparent'};
 `;
 export const TextInput = styled.TextInput`
   font-size: 16px;
@@ -27,7 +63,8 @@ export const TextInput = styled.TextInput`
   padding-bottom: ${({ numberOfLines }) => (numberOfLines > 1 ? '16px' : '0px')};
   text-align-vertical: top;
   height: ${({ defaultSize }) => defaultSize || '56px'};
-  color: ${({ theme }) => theme.palette.text.secondary};
+  color: ${({ type, state, theme }) => getInputStyles(type, state, theme).fontColor
+    || theme.palette.text.secondary};
   letter-spacing: ${({ secureTextEntry }) => (secureTextEntry ? '0px' : '0px')};
 `;
 type LabelProps = {

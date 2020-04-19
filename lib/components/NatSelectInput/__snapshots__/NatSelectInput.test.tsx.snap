@@ -339,7 +339,6 @@ exports[`NatSelectInput component default Should render textInput component : Na
   <Modal
     animationType="fade"
     hardwareAccelerated={false}
-    save={false}
     visible={false}
   >
     <RCTSafeAreaView
@@ -351,6 +350,7 @@ exports[`NatSelectInput component default Should render textInput component : Na
       }
     >
       <View
+        accessibilityLabel=""
         style={
           Array [
             Object {
@@ -3502,7 +3502,6 @@ exports[`NatSelectInput component default Should render textInput with icon and 
   <Modal
     animationType="fade"
     hardwareAccelerated={false}
-    save={false}
     visible={false}
   >
     <RCTSafeAreaView
@@ -3514,6 +3513,7 @@ exports[`NatSelectInput component default Should render textInput with icon and 
       }
     >
       <View
+        accessibilityLabel=""
         style={
           Array [
             Object {

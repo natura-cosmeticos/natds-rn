@@ -36,7 +36,7 @@ type NatTextInputProps = {
   placeholder?: string,
   secureTextEntry?: boolean,
   size?: string,
-  theme?: typeof ThemeNaturaLight,
+  theme?: {},
   type?: string,
   value?: string
 };
@@ -113,7 +113,6 @@ export const NatTextInput: React.SFC<NatTextInputProps> = ({
       theme={theme}
     >
       {label !== '' && (
-        // @ts-ignore
         <Label type={type} state={state} theme={theme} text={label} />
       )}
       <InputWrapper
@@ -144,14 +143,20 @@ export const NatTextInput: React.SFC<NatTextInputProps> = ({
         {icon && renderIcon(icon)}
       </InputWrapper>
       {assistiveText !== '' && (
-        // @ts-ignore
-        <AssistiveTexView type={type} state={state} theme={theme} text={assistiveText}/>
+        <AssistiveTexView
+          type={type}
+          state={state}
+          theme={theme}
+          text={assistiveText}
+        />
       )}
     </Wrapper>
   );
 };
 NatTextInput.defaultProps = {
   assistiveText: '',
+  icon: false,
+  iconPress: null,
   margin: 'tiny',
   multiline: false,
   numberOfLines: 1,
