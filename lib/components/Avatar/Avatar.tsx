@@ -2,11 +2,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import { Platform } from 'react-native';
 import { ThemeNaturaLight } from '../../themes/ThemeNaturaLight';
 import { AvatarWrapper, AvatarText, AvatarImage } from './Avatar.styles';
 
 import { Anonymous } from '../../assets/images/avatar';
-import { Platform } from 'react-native';
 
 export const TypeElement = ({
   uri, type, name, size, theme,

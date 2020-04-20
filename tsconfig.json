@@ -14,7 +14,6 @@
     "jsx": "react-native",
     "moduleResolution": "node",
     "esModuleInterop": true,
-    "baseUrl": ".",
     "forceConsistentCasingInFileNames": true,
     "noImplicitReturns": true,
     "noImplicitThis": true,
