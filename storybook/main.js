@@ -1,4 +1,8 @@
+const createCompiler = require('@storybook/addon-docs/mdx-compiler-plugin');
+
 module.exports = {
+  presets: ['@storybook/addon-docs/react/preset'],
+  stories: ['../lib/**/*.stories.(js|mdx)'],
   webpackFinal: (config) => {
     const newConfig = { ...config };
 
@@ -11,7 +15,7 @@ module.exports = {
 
     newConfig.module.rules[0].use[0].options.plugins.push(['react-native-web', { commonjs: true }]);
 
-    newConfig.module.rules[3] = {
+    newConfig.module.rules[7] = {
       test: /\.(gif|jpe?g|png|svg)$/,
       use: {
         loader: 'url-loader',
@@ -20,7 +24,6 @@ module.exports = {
         },
       },
     };
-
 
     newConfig.module.rules.push({
       test: /\.(ts|tsx)$/,
@@ -38,7 +41,7 @@ module.exports = {
         },
       ],
     });
-    newConfig.resolve.extensions.push('.ts', '.tsx');
+    newConfig.resolve.extensions.push('.ts', '.tsx', '.mdx');
 
     // console.dir(newConfig, { depth: null });
 
