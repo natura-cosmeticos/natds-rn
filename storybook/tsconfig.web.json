@@ -4,8 +4,7 @@
     "jsx": "react"
   },
   "include": [
-    "storybook",
-    "storybook-web",
+    ".",
   ],
   "files": []
 }
