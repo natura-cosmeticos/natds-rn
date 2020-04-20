@@ -1,15 +1,17 @@
 module.exports = {
-  webpackFinal: async (config) => {
-    config.resolve.alias = {
+  webpackFinal: (config) => {
+    const newConfig = { ...config };
+
+    newConfig.resolve.alias = {
       ...(config.resolve.alias || {}),
       '@storybook/react-native': '@storybook/react',
       'react-native$': 'react-native-web',
       'react-native-svg': 'react-native-svg/lib/commonjs/ReactNativeSVG.web',
     };
 
-    config.module.rules[0].use[0].options.plugins.push(['react-native-web', { commonjs: true }]);
+    newConfig.module.rules[0].use[0].options.plugins.push(['react-native-web', { commonjs: true }]);
 
-    config.module.rules[3] = {
+    newConfig.module.rules[3] = {
       test: /\.(gif|jpe?g|png|svg)$/,
       use: {
         loader: 'url-loader',
@@ -20,7 +22,7 @@ module.exports = {
     };
 
 
-    config.module.rules.push({
+    newConfig.module.rules.push({
       test: /\.(ts|tsx)$/,
       use: [
         {
@@ -36,10 +38,10 @@ module.exports = {
         },
       ],
     });
-    config.resolve.extensions.push('.ts', '.tsx');
+    newConfig.resolve.extensions.push('.ts', '.tsx');
 
-    console.dir(config, { depth: null });
+    // console.dir(newConfig, { depth: null });
 
-    return config;
+    return newConfig;
   },
 };
