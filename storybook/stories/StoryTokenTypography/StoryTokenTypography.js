@@ -29,6 +29,9 @@ export const StoryTokenTypography = () => (
         <NatText value="OVERLINE TEXT" type="overline" />
 
         <NatText value="VARIATIONS" type="h6" />
+        <NatText value="Sample textAlign left" type="h6" textAlign="left" />
+        <NatText value="Sample textAlign center" type="h6" textAlign="center" />
+        <NatText value="Sample textAlign right" type="h6" textAlign="right" />
         <NatText value="body1. Set diffente color" type="body1" color={ThemeNaturaLight.palette.primary.main} />
         <NatText value="body1. Withou marginBottom spacingNone" type="body1" margin={ThemeNaturaLight.spacing.spacingNone} />
         <NatText value="body1. Withou marginBottom spacingHuge" type="body1" margin={ThemeNaturaLight.spacing.spacingHuge} />
