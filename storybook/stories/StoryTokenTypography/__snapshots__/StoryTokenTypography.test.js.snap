@@ -63,9 +63,11 @@ exports[`StoryTokenTypography component Should render StoryNatCard component : S
                   "fontSize": 20,
                   "fontWeight": "500",
                   "lineHeight": 30,
+                  "textAlign": "auto",
                 },
               ]
             }
+            textAlign="auto"
             type="h6"
           >
             SIZES
@@ -97,9 +99,11 @@ exports[`StoryTokenTypography component Should render StoryNatCard component : S
                   "fontSize": 96,
                   "fontWeight": "400",
                   "lineHeight": 144,
+                  "textAlign": "auto",
                 },
               ]
             }
+            textAlign="auto"
             type="h1"
           >
             h1. Heading
@@ -131,9 +135,11 @@ exports[`StoryTokenTypography component Should render StoryNatCard component : S
                   "fontSize": 60,
                   "fontWeight": "400",
                   "lineHeight": 90,
+                  "textAlign": "auto",
                 },
               ]
             }
+            textAlign="auto"
             type="h2"
           >
             h2. Heading
@@ -165,9 +171,11 @@ exports[`StoryTokenTypography component Should render StoryNatCard component : S
                   "fontSize": 48,
                   "fontWeight": "400",
                   "lineHeight": 72,
+                  "textAlign": "auto",
                 },
               ]
             }
+            textAlign="auto"
             type="h3"
           >
             h3. Heading
@@ -199,9 +207,11 @@ exports[`StoryTokenTypography component Should render StoryNatCard component : S
                   "fontSize": 34,
                   "fontWeight": "400",
                   "lineHeight": 51,
+                  "textAlign": "auto",
                 },
               ]
             }
+            textAlign="auto"
             type="h4"
           >
             h4. Heading
@@ -233,9 +243,11 @@ exports[`StoryTokenTypography component Should render StoryNatCard component : S
                   "fontSize": 24,
                   "fontWeight": "400",
                   "lineHeight": 36,
+                  "textAlign": "auto",
                 },
               ]
             }
+            textAlign="auto"
             type="h5"
           >
             h5. Heading
@@ -267,9 +279,11 @@ exports[`StoryTokenTypography component Should render StoryNatCard component : S
                   "fontSize": 20,
                   "fontWeight": "500",
                   "lineHeight": 30,
+                  "textAlign": "auto",
                 },
               ]
             }
+            textAlign="auto"
             type="h6"
           >
             h6. Heading
@@ -301,9 +315,11 @@ exports[`StoryTokenTypography component Should render StoryNatCard component : S
                   "fontSize": 16,
                   "fontWeight": "500",
                   "lineHeight": 24,
+                  "textAlign": "auto",
                 },
               ]
             }
+            textAlign="auto"
             type="subtitle1"
           >
             subtitle1. Lorem ipsum dolor sit amet, consectetur adipscing elit. Quos blanditiis tenetur
@@ -335,9 +351,11 @@ exports[`StoryTokenTypography component Should render StoryNatCard component : S
                   "fontSize": 14,
                   "fontWeight": "500",
                   "lineHeight": 21,
+                  "textAlign": "auto",
                 },
               ]
             }
+            textAlign="auto"
             type="subtitle2"
           >
             subtitle2. Lorem ipsum dolor sit amet, consectetur adipscing elit. Quos blanditiis tenetur
@@ -369,9 +387,11 @@ exports[`StoryTokenTypography component Should render StoryNatCard component : S
                   "fontSize": 16,
                   "fontWeight": "400",
                   "lineHeight": 24,
+                  "textAlign": "auto",
                 },
               ]
             }
+            textAlign="auto"
             type="body1"
           >
             body1. Lorem ipsum dolor sit amet, consectetur adipscing elit. Quos blanditiis tenetur unde suscipit, quam beatae rerum inventore consectetur, neque doloribus, cupiditate numquam dignissimos laborum fugiat deleniti? Eum quasi quidem quibusdam
@@ -403,9 +423,11 @@ exports[`StoryTokenTypography component Should render StoryNatCard component : S
                   "fontSize": 14,
                   "fontWeight": "400",
                   "lineHeight": 21,
+                  "textAlign": "auto",
                 },
               ]
             }
+            textAlign="auto"
             type="body2"
           >
             body2. Lorem ipsum dolor sit amet, consectetur adipscing elit. Quos blanditiis tenetur unde suscipit, quam beatae rerum inventore consectetur, neque doloribus, cupiditate numquam dignissimos
@@ -437,9 +459,11 @@ exports[`StoryTokenTypography component Should render StoryNatCard component : S
                   "fontSize": 14,
                   "fontWeight": "500",
                   "lineHeight": 21,
+                  "textAlign": "auto",
                 },
               ]
             }
+            textAlign="auto"
             type="button"
           >
             BUTTON TEXT
@@ -471,9 +495,11 @@ exports[`StoryTokenTypography component Should render StoryNatCard component : S
                   "fontSize": 12,
                   "fontWeight": "400",
                   "lineHeight": 18,
+                  "textAlign": "auto",
                 },
               ]
             }
+            textAlign="auto"
             type="caption"
           >
             Caption text
@@ -505,9 +531,11 @@ exports[`StoryTokenTypography component Should render StoryNatCard component : S
                   "fontSize": 12,
                   "fontWeight": "500",
                   "lineHeight": 18,
+                  "textAlign": "auto",
                 },
               ]
             }
+            textAlign="auto"
             type="overline"
           >
             OVERLINE TEXT
@@ -539,12 +567,122 @@ exports[`StoryTokenTypography component Should render StoryNatCard component : S
                   "fontSize": 20,
                   "fontWeight": "500",
                   "lineHeight": 30,
+                  "textAlign": "auto",
                 },
               ]
             }
+            textAlign="auto"
             type="h6"
           >
             VARIATIONS
+          </Text>
+        </View>
+        <View
+          margin={24}
+          style={
+            Array [
+              Object {
+                "marginBottom": 24,
+                "marginLeft": 0,
+                "marginRight": 0,
+                "marginTop": 0,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
+              },
+            ]
+          }
+        >
+          <Text
+            color="#333333"
+            style={
+              Array [
+                Object {
+                  "color": "#333333",
+                  "fontSize": 20,
+                  "fontWeight": "500",
+                  "lineHeight": 30,
+                  "textAlign": "left",
+                },
+              ]
+            }
+            textAlign="left"
+            type="h6"
+          >
+            Sample textAlign left
+          </Text>
+        </View>
+        <View
+          margin={24}
+          style={
+            Array [
+              Object {
+                "marginBottom": 24,
+                "marginLeft": 0,
+                "marginRight": 0,
+                "marginTop": 0,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
+              },
+            ]
+          }
+        >
+          <Text
+            color="#333333"
+            style={
+              Array [
+                Object {
+                  "color": "#333333",
+                  "fontSize": 20,
+                  "fontWeight": "500",
+                  "lineHeight": 30,
+                  "textAlign": "center",
+                },
+              ]
+            }
+            textAlign="center"
+            type="h6"
+          >
+            Sample textAlign center
+          </Text>
+        </View>
+        <View
+          margin={24}
+          style={
+            Array [
+              Object {
+                "marginBottom": 24,
+                "marginLeft": 0,
+                "marginRight": 0,
+                "marginTop": 0,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
+              },
+            ]
+          }
+        >
+          <Text
+            color="#333333"
+            style={
+              Array [
+                Object {
+                  "color": "#333333",
+                  "fontSize": 20,
+                  "fontWeight": "500",
+                  "lineHeight": 30,
+                  "textAlign": "right",
+                },
+              ]
+            }
+            textAlign="right"
+            type="h6"
+          >
+            Sample textAlign right
           </Text>
         </View>
         <View
@@ -573,9 +711,11 @@ exports[`StoryTokenTypography component Should render StoryNatCard component : S
                   "fontSize": 16,
                   "fontWeight": "400",
                   "lineHeight": 24,
+                  "textAlign": "auto",
                 },
               ]
             }
+            textAlign="auto"
             type="body1"
           >
             body1. Set diffente color
@@ -607,9 +747,11 @@ exports[`StoryTokenTypography component Should render StoryNatCard component : S
                   "fontSize": 16,
                   "fontWeight": "400",
                   "lineHeight": 24,
+                  "textAlign": "auto",
                 },
               ]
             }
+            textAlign="auto"
             type="body1"
           >
             body1. Withou marginBottom spacingNone
@@ -641,9 +783,11 @@ exports[`StoryTokenTypography component Should render StoryNatCard component : S
                   "fontSize": 16,
                   "fontWeight": "400",
                   "lineHeight": 24,
+                  "textAlign": "auto",
                 },
               ]
             }
+            textAlign="auto"
             type="body1"
           >
             body1. Withou marginBottom spacingHuge
@@ -675,9 +819,11 @@ exports[`StoryTokenTypography component Should render StoryNatCard component : S
                   "fontSize": 16,
                   "fontWeight": "400",
                   "lineHeight": 24,
+                  "textAlign": "auto",
                 },
               ]
             }
+            textAlign="auto"
             type="body1"
           >
             body1. Withou marginBottom spacingMicro

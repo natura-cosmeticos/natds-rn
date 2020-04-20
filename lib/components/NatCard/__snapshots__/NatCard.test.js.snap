@@ -104,9 +104,11 @@ exports[`NatCard component default Should render NatCard component : NatCard sna
                 "fontSize": 20,
                 "fontWeight": "500",
                 "lineHeight": 30,
+                "textAlign": "auto",
               },
             ]
           }
+          textAlign="auto"
           type="h6"
         >
           teste
@@ -138,9 +140,11 @@ exports[`NatCard component default Should render NatCard component : NatCard sna
                 "fontSize": 12,
                 "fontWeight": "400",
                 "lineHeight": 18,
+                "textAlign": "auto",
               },
             ]
           }
+          textAlign="auto"
           type="caption"
         >
           
@@ -172,9 +176,11 @@ exports[`NatCard component default Should render NatCard component : NatCard sna
                 "fontSize": 14,
                 "fontWeight": "400",
                 "lineHeight": 21,
+                "textAlign": "auto",
               },
             ]
           }
+          textAlign="auto"
           type="body2"
         >
           teste

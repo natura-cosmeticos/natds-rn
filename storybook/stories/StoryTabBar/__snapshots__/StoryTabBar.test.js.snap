@@ -38,9 +38,11 @@ exports[`StoryTabBar component should render correctly: StoryTabBar snapshot 1`]
                 "fontSize": 20,
                 "fontWeight": "500",
                 "lineHeight": 30,
+                "textAlign": "auto",
               },
             ]
           }
+          textAlign="auto"
           type="h6"
         >
           Example with types: primary, secondary and disabled

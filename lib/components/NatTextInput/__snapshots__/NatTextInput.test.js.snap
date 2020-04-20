@@ -362,9 +362,11 @@ exports[`TextInput component default Should render textInput component : TextInp
             "fontSize": 14,
             "fontWeight": "400",
             "lineHeight": 21,
+            "textAlign": "auto",
           },
         ]
       }
+      textAlign="auto"
       type="body2"
     >
       teste
@@ -1438,9 +1440,11 @@ exports[`TextInput component default Should render textInput with icon and assis
             "fontSize": 14,
             "fontWeight": "400",
             "lineHeight": 21,
+            "textAlign": "auto",
           },
         ]
       }
+      textAlign="auto"
       type="body2"
     >
       teste
@@ -2198,9 +2202,11 @@ exports[`TextInput component default Should render textInput with icon and assis
             "fontSize": 12,
             "fontWeight": "400",
             "lineHeight": 18,
+            "textAlign": "auto",
           },
         ]
       }
+      textAlign="auto"
       type="caption"
     >
       teste

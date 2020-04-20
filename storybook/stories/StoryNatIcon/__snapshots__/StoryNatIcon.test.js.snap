@@ -63,9 +63,11 @@ exports[`StoryNatIcon component Should render StoryNatIcon component : StoryNatI
                   "fontSize": 20,
                   "fontWeight": "500",
                   "lineHeight": 30,
+                  "textAlign": "auto",
                 },
               ]
             }
+            textAlign="auto"
             type="h6"
           >
             ICONS SVG
@@ -1628,9 +1630,11 @@ exports[`StoryNatIcon component Should render StoryNatIcon component : StoryNatI
                           "fontSize": 16,
                           "fontWeight": "400",
                           "lineHeight": 24,
+                          "textAlign": "auto",
                         },
                       ]
                     }
+                    textAlign="auto"
                     type="body1"
                   >
                     filled-action-add
@@ -1685,9 +1689,11 @@ exports[`StoryNatIcon component Should render StoryNatIcon component : StoryNatI
                           "fontSize": 16,
                           "fontWeight": "400",
                           "lineHeight": 24,
+                          "textAlign": "auto",
                         },
                       ]
                     }
+                    textAlign="auto"
                     type="body1"
                   >
                     filled-action-cancel
@@ -1742,9 +1748,11 @@ exports[`StoryNatIcon component Should render StoryNatIcon component : StoryNatI
                           "fontSize": 16,
                           "fontWeight": "400",
                           "lineHeight": 24,
+                          "textAlign": "auto",
                         },
                       ]
                     }
+                    textAlign="auto"
                     type="body1"
                   >
                     filled-action-check
@@ -1799,9 +1807,11 @@ exports[`StoryNatIcon component Should render StoryNatIcon component : StoryNatI
                           "fontSize": 16,
                           "fontWeight": "400",
                           "lineHeight": 24,
+                          "textAlign": "auto",
                         },
                       ]
                     }
+                    textAlign="auto"
                     type="body1"
                   >
                     filled-action-rating
@@ -1856,9 +1866,11 @@ exports[`StoryNatIcon component Should render StoryNatIcon component : StoryNatI
                           "fontSize": 16,
                           "fontWeight": "400",
                           "lineHeight": 24,
+                          "textAlign": "auto",
                         },
                       ]
                     }
+                    textAlign="auto"
                     type="body1"
                   >
                     filled-action-subtract
@@ -1913,9 +1925,11 @@ exports[`StoryNatIcon component Should render StoryNatIcon component : StoryNatI
                           "fontSize": 16,
                           "fontWeight": "400",
                           "lineHeight": 24,
+                          "textAlign": "auto",
                         },
                       ]
                     }
+                    textAlign="auto"
                     type="body1"
                   >
                     filled-brand-naturarosacea
@@ -1970,9 +1984,11 @@ exports[`StoryNatIcon component Should render StoryNatIcon component : StoryNatI
                           "fontSize": 16,
                           "fontWeight": "400",
                           "lineHeight": 24,
+                          "textAlign": "auto",
                         },
                       ]
                     }
+                    textAlign="auto"
                     type="body1"
                   >
                     filled-media-pause
@@ -2027,9 +2043,11 @@ exports[`StoryNatIcon component Should render StoryNatIcon component : StoryNatI
                           "fontSize": 16,
                           "fontWeight": "400",
                           "lineHeight": 24,
+                          "textAlign": "auto",
                         },
                       ]
                     }
+                    textAlign="auto"
                     type="body1"
                   >
                     filled-media-play
@@ -2084,9 +2102,11 @@ exports[`StoryNatIcon component Should render StoryNatIcon component : StoryNatI
                           "fontSize": 16,
                           "fontWeight": "400",
                           "lineHeight": 24,
+                          "textAlign": "auto",
                         },
                       ]
                     }
+                    textAlign="auto"
                     type="body1"
                   >
                     filled-navigation-directionleft
@@ -2141,9 +2161,11 @@ exports[`StoryNatIcon component Should render StoryNatIcon component : StoryNatI
                           "fontSize": 16,
                           "fontWeight": "400",
                           "lineHeight": 24,
+                          "textAlign": "auto",
                         },
                       ]
                     }
+                    textAlign="auto"
                     type="body1"
                   >
                     filled-navigation-directionright

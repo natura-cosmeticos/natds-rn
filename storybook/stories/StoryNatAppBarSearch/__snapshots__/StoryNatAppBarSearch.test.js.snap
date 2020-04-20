@@ -1235,9 +1235,11 @@ exports[`StoryNatAppBarSearch component Should render StoryNatAppBarSearch compo
                   "fontSize": 16,
                   "fontWeight": "400",
                   "lineHeight": 24,
+                  "textAlign": "auto",
                 },
               ]
             }
+            textAlign="auto"
             type="body1"
           >
             Search value: 
@@ -2441,9 +2443,11 @@ exports[`StoryNatAppBarSearch component Should render StoryNatAppBarSearch compo
                   "fontSize": 16,
                   "fontWeight": "400",
                   "lineHeight": 24,
+                  "textAlign": "auto",
                 },
               ]
             }
+            textAlign="auto"
             type="body1"
           >
             Search value: 
@@ -3604,9 +3608,11 @@ exports[`StoryNatAppBarSearch component Should render StoryNatAppBarSearch compo
                   "fontSize": 16,
                   "fontWeight": "400",
                   "lineHeight": 24,
+                  "textAlign": "auto",
                 },
               ]
             }
+            textAlign="auto"
             type="body1"
           >
             Search value: 
@@ -4767,9 +4773,11 @@ exports[`StoryNatAppBarSearch component Should render StoryNatAppBarSearch compo
                   "fontSize": 16,
                   "fontWeight": "400",
                   "lineHeight": 24,
+                  "textAlign": "auto",
                 },
               ]
             }
+            textAlign="auto"
             type="body1"
           >
             Search value: 
@@ -5930,9 +5938,11 @@ exports[`StoryNatAppBarSearch component Should render StoryNatAppBarSearch compo
                   "fontSize": 16,
                   "fontWeight": "400",
                   "lineHeight": 24,
+                  "textAlign": "auto",
                 },
               ]
             }
+            textAlign="auto"
             type="body1"
           >
             Search value: 

@@ -63,9 +63,11 @@ exports[`StoryNatButton component Should render StoryNatButton component : Story
                   "fontSize": 20,
                   "fontWeight": "500",
                   "lineHeight": 30,
+                  "textAlign": "auto",
                 },
               ]
             }
+            textAlign="auto"
             type="h6"
           >
             Buttons - Social Selling

@@ -63,9 +63,11 @@ exports[`StoryNatLogo component Should render StoryNatLogo component : StoryNatL
                   "fontSize": 20,
                   "fontWeight": "500",
                   "lineHeight": 30,
+                  "textAlign": "auto",
                 },
               ]
             }
+            textAlign="auto"
             type="h6"
           >
             ICONS SVG
@@ -151,9 +153,11 @@ exports[`StoryNatLogo component Should render StoryNatLogo component : StoryNatL
                           "fontSize": 16,
                           "fontWeight": "400",
                           "lineHeight": 24,
+                          "textAlign": "auto",
                         },
                       ]
                     }
+                    textAlign="auto"
                     type="body1"
                   >
                     logo-natura-horizontal
@@ -223,9 +227,11 @@ exports[`StoryNatLogo component Should render StoryNatLogo component : StoryNatL
                           "fontSize": 16,
                           "fontWeight": "400",
                           "lineHeight": 24,
+                          "textAlign": "auto",
                         },
                       ]
                     }
+                    textAlign="auto"
                     type="body1"
                   >
                     logo-natura-vertical
@@ -295,9 +301,11 @@ exports[`StoryNatLogo component Should render StoryNatLogo component : StoryNatL
                           "fontSize": 16,
                           "fontWeight": "400",
                           "lineHeight": 24,
+                          "textAlign": "auto",
                         },
                       ]
                     }
+                    textAlign="auto"
                     type="body1"
                   >
                     logo-natura-negative-horizontal
@@ -367,9 +375,11 @@ exports[`StoryNatLogo component Should render StoryNatLogo component : StoryNatL
                           "fontSize": 16,
                           "fontWeight": "400",
                           "lineHeight": 24,
+                          "textAlign": "auto",
                         },
                       ]
                     }
+                    textAlign="auto"
                     type="body1"
                   >
                     logo-natura-negative-vertical

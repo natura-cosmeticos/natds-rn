@@ -89,9 +89,11 @@ exports[`StoryDivider component Should render StoryDivider component : StoryDivi
                   "fontSize": 16,
                   "fontWeight": "400",
                   "lineHeight": 24,
+                  "textAlign": "auto",
                 },
               ]
             }
+            textAlign="auto"
             type="body1"
           >
             Default
@@ -498,9 +500,11 @@ exports[`StoryDivider component Should render StoryDivider component : StoryDivi
                   "fontSize": 16,
                   "fontWeight": "400",
                   "lineHeight": 24,
+                  "textAlign": "auto",
                 },
               ]
             }
+            textAlign="auto"
             type="body1"
           >
             Custom Background

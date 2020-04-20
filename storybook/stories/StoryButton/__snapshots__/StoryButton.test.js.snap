@@ -70,9 +70,11 @@ exports[`StoryButton component Should render StoryButton component : StoryButton
                   "fontSize": 20,
                   "fontWeight": "500",
                   "lineHeight": 30,
+                  "textAlign": "auto",
                 },
               ]
             }
+            textAlign="auto"
             type="h6"
           >
             Variations
@@ -1517,9 +1519,11 @@ exports[`StoryButton component Should render StoryButton component : StoryButton
                   "fontSize": 20,
                   "fontWeight": "500",
                   "lineHeight": 30,
+                  "textAlign": "auto",
                 },
               ]
             }
+            textAlign="auto"
             type="h6"
           >
             Color
@@ -7118,9 +7122,11 @@ exports[`StoryButton component Should render StoryButton component : StoryButton
                   "fontSize": 20,
                   "fontWeight": "500",
                   "lineHeight": 30,
+                  "textAlign": "auto",
                 },
               ]
             }
+            textAlign="auto"
             type="h6"
           >
             Icon
@@ -8739,9 +8745,11 @@ exports[`StoryButton component Should render StoryButton component : StoryButton
                   "fontSize": 20,
                   "fontWeight": "500",
                   "lineHeight": 30,
+                  "textAlign": "auto",
                 },
               ]
             }
+            textAlign="auto"
             type="h6"
           >
             Title custom

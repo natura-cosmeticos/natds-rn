@@ -40,9 +40,11 @@ exports[`StoryFAB component Should render StoryFAB component : StoryFAB snapshot
                   "fontSize": 20,
                   "fontWeight": "500",
                   "lineHeight": 30,
+                  "textAlign": "auto",
                 },
               ]
             }
+            textAlign="auto"
             type="h6"
           >
             TYPE: round
@@ -74,9 +76,11 @@ exports[`StoryFAB component Should render StoryFAB component : StoryFAB snapshot
                   "fontSize": 16,
                   "fontWeight": "400",
                   "lineHeight": 24,
+                  "textAlign": "auto",
                 },
               ]
             }
+            textAlign="auto"
             type="body1"
           >
             Sizes - Icon
@@ -277,9 +281,11 @@ exports[`StoryFAB component Should render StoryFAB component : StoryFAB snapshot
                   "fontSize": 16,
                   "fontWeight": "400",
                   "lineHeight": 24,
+                  "textAlign": "auto",
                 },
               ]
             }
+            textAlign="auto"
             type="body1"
           >
             Sizes - Text
@@ -1476,9 +1482,11 @@ exports[`StoryFAB component Should render StoryFAB component : StoryFAB snapshot
                   "fontSize": 16,
                   "fontWeight": "400",
                   "lineHeight": 24,
+                  "textAlign": "auto",
                 },
               ]
             }
+            textAlign="auto"
             type="body1"
           >
             Colors - Text
@@ -2649,9 +2657,11 @@ exports[`StoryFAB component Should render StoryFAB component : StoryFAB snapshot
                   "fontSize": 20,
                   "fontWeight": "500",
                   "lineHeight": 30,
+                  "textAlign": "auto",
                 },
               ]
             }
+            textAlign="auto"
             type="h6"
           >
             TYPE: extended
@@ -2683,9 +2693,11 @@ exports[`StoryFAB component Should render StoryFAB component : StoryFAB snapshot
                   "fontSize": 16,
                   "fontWeight": "400",
                   "lineHeight": 24,
+                  "textAlign": "auto",
                 },
               ]
             }
+            textAlign="auto"
             type="body1"
           >
             Sizes - Icon
@@ -3882,9 +3894,11 @@ exports[`StoryFAB component Should render StoryFAB component : StoryFAB snapshot
                   "fontSize": 16,
                   "fontWeight": "400",
                   "lineHeight": 24,
+                  "textAlign": "auto",
                 },
               ]
             }
+            textAlign="auto"
             type="body1"
           >
             Sizes - Text
@@ -5081,9 +5095,11 @@ exports[`StoryFAB component Should render StoryFAB component : StoryFAB snapshot
                   "fontSize": 16,
                   "fontWeight": "400",
                   "lineHeight": 24,
+                  "textAlign": "auto",
                 },
               ]
             }
+            textAlign="auto"
             type="body1"
           >
             Colors - Text
@@ -6269,9 +6285,11 @@ exports[`StoryFAB component Should render StoryFAB component : StoryFAB snapshot
                   "fontSize": 20,
                   "fontWeight": "500",
                   "lineHeight": 30,
+                  "textAlign": "auto",
                 },
               ]
             }
+            textAlign="auto"
             type="h6"
           >
             TYPE: round
@@ -6303,9 +6321,11 @@ exports[`StoryFAB component Should render StoryFAB component : StoryFAB snapshot
                   "fontSize": 16,
                   "fontWeight": "400",
                   "lineHeight": 24,
+                  "textAlign": "auto",
                 },
               ]
             }
+            textAlign="auto"
             type="body1"
           >
             Sizes - Icon
@@ -6506,9 +6526,11 @@ exports[`StoryFAB component Should render StoryFAB component : StoryFAB snapshot
                   "fontSize": 16,
                   "fontWeight": "400",
                   "lineHeight": 24,
+                  "textAlign": "auto",
                 },
               ]
             }
+            textAlign="auto"
             type="body1"
           >
             Sizes - Text
@@ -7705,9 +7727,11 @@ exports[`StoryFAB component Should render StoryFAB component : StoryFAB snapshot
                   "fontSize": 16,
                   "fontWeight": "400",
                   "lineHeight": 24,
+                  "textAlign": "auto",
                 },
               ]
             }
+            textAlign="auto"
             type="body1"
           >
             Colors - Text
@@ -8878,9 +8902,11 @@ exports[`StoryFAB component Should render StoryFAB component : StoryFAB snapshot
                   "fontSize": 20,
                   "fontWeight": "500",
                   "lineHeight": 30,
+                  "textAlign": "auto",
                 },
               ]
             }
+            textAlign="auto"
             type="h6"
           >
             TYPE: extended
@@ -8912,9 +8938,11 @@ exports[`StoryFAB component Should render StoryFAB component : StoryFAB snapshot
                   "fontSize": 16,
                   "fontWeight": "400",
                   "lineHeight": 24,
+                  "textAlign": "auto",
                 },
               ]
             }
+            textAlign="auto"
             type="body1"
           >
             Sizes - Icon
@@ -10111,9 +10139,11 @@ exports[`StoryFAB component Should render StoryFAB component : StoryFAB snapshot
                   "fontSize": 16,
                   "fontWeight": "400",
                   "lineHeight": 24,
+                  "textAlign": "auto",
                 },
               ]
             }
+            textAlign="auto"
             type="body1"
           >
             Sizes - Text
@@ -11310,9 +11340,11 @@ exports[`StoryFAB component Should render StoryFAB component : StoryFAB snapshot
                   "fontSize": 16,
                   "fontWeight": "400",
                   "lineHeight": 24,
+                  "textAlign": "auto",
                 },
               ]
             }
+            textAlign="auto"
             type="body1"
           >
             Colors - Text

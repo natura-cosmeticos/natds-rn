@@ -89,9 +89,11 @@ exports[`StoryNatLink component Should render StoryNatLink component : StoryNatL
                   "fontSize": 16,
                   "fontWeight": "400",
                   "lineHeight": 24,
+                  "textAlign": "auto",
                 },
               ]
             }
+            textAlign="auto"
             type="body1"
           >
             Text without link
@@ -145,9 +147,11 @@ exports[`StoryNatLink component Should render StoryNatLink component : StoryNatL
                     "fontSize": 16,
                     "fontWeight": "400",
                     "lineHeight": 24,
+                    "textAlign": "auto",
                   },
                 ]
               }
+              textAlign="auto"
               type="body1"
             >
               Text with link
@@ -202,9 +206,11 @@ exports[`StoryNatLink component Should render StoryNatLink component : StoryNatL
                     "fontSize": 16,
                     "fontWeight": "400",
                     "lineHeight": 24,
+                    "textAlign": "auto",
                   },
                 ]
               }
+              textAlign="auto"
               type="body1"
             >
               Text with link
@@ -259,9 +265,11 @@ exports[`StoryNatLink component Should render StoryNatLink component : StoryNatL
                     "fontSize": 16,
                     "fontWeight": "400",
                     "lineHeight": 24,
+                    "textAlign": "auto",
                   },
                 ]
               }
+              textAlign="auto"
               type="body1"
             >
               Text with link

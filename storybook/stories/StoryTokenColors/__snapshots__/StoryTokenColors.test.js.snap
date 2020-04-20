@@ -63,9 +63,11 @@ exports[`StoryTokenColors component Should render StoryTokenColors component : S
                   "fontSize": 20,
                   "fontWeight": "500",
                   "lineHeight": 30,
+                  "textAlign": "auto",
                 },
               ]
             }
+            textAlign="auto"
             type="h6"
           >
             PRIMARY
@@ -153,9 +155,11 @@ exports[`StoryTokenColors component Should render StoryTokenColors component : S
                           "fontSize": 16,
                           "fontWeight": "400",
                           "lineHeight": 24,
+                          "textAlign": "auto",
                         },
                       ]
                     }
+                    textAlign="auto"
                     type="body1"
                   >
                     colorBrdNatPrimaryBrown
@@ -196,9 +200,11 @@ exports[`StoryTokenColors component Should render StoryTokenColors component : S
                           "fontSize": 16,
                           "fontWeight": "400",
                           "lineHeight": 24,
+                          "textAlign": "auto",
                         },
                       ]
                     }
+                    textAlign="auto"
                     type="body1"
                   >
                     #513528
@@ -243,9 +249,11 @@ exports[`StoryTokenColors component Should render StoryTokenColors component : S
                           "fontSize": 16,
                           "fontWeight": "400",
                           "lineHeight": 24,
+                          "textAlign": "auto",
                         },
                       ]
                     }
+                    textAlign="auto"
                     type="body1"
                   >
                     colorBrdNatPrimaryOrange
@@ -286,9 +294,11 @@ exports[`StoryTokenColors component Should render StoryTokenColors component : S
                           "fontSize": 16,
                           "fontWeight": "400",
                           "lineHeight": 24,
+                          "textAlign": "auto",
                         },
                       ]
                     }
+                    textAlign="auto"
                     type="body1"
                   >
                     #FF6B0B
@@ -333,9 +343,11 @@ exports[`StoryTokenColors component Should render StoryTokenColors component : S
                           "fontSize": 16,
                           "fontWeight": "400",
                           "lineHeight": 24,
+                          "textAlign": "auto",
                         },
                       ]
                     }
+                    textAlign="auto"
                     type="body1"
                   >
                     colorBrdNatPrimaryWhite
@@ -376,9 +388,11 @@ exports[`StoryTokenColors component Should render StoryTokenColors component : S
                           "fontSize": 16,
                           "fontWeight": "400",
                           "lineHeight": 24,
+                          "textAlign": "auto",
                         },
                       ]
                     }
+                    textAlign="auto"
                     type="body1"
                   >
                     #FFFFFF
@@ -423,9 +437,11 @@ exports[`StoryTokenColors component Should render StoryTokenColors component : S
                           "fontSize": 16,
                           "fontWeight": "400",
                           "lineHeight": 24,
+                          "textAlign": "auto",
                         },
                       ]
                     }
+                    textAlign="auto"
                     type="body1"
                   >
                     colorBrdNatPrimaryYellow
@@ -466,9 +482,11 @@ exports[`StoryTokenColors component Should render StoryTokenColors component : S
                           "fontSize": 16,
                           "fontWeight": "400",
                           "lineHeight": 24,
+                          "textAlign": "auto",
                         },
                       ]
                     }
+                    textAlign="auto"
                     type="body1"
                   >
                     #F4AB34
@@ -504,9 +522,11 @@ exports[`StoryTokenColors component Should render StoryTokenColors component : S
                   "fontSize": 20,
                   "fontWeight": "500",
                   "lineHeight": 30,
+                  "textAlign": "auto",
                 },
               ]
             }
+            textAlign="auto"
             type="h6"
           >
             SECONDARY
@@ -594,9 +614,11 @@ exports[`StoryTokenColors component Should render StoryTokenColors component : S
                           "fontSize": 16,
                           "fontWeight": "400",
                           "lineHeight": 24,
+                          "textAlign": "auto",
                         },
                       ]
                     }
+                    textAlign="auto"
                     type="body1"
                   >
                     colorBrdNatSecondaryBlue
@@ -637,9 +659,11 @@ exports[`StoryTokenColors component Should render StoryTokenColors component : S
                           "fontSize": 16,
                           "fontWeight": "400",
                           "lineHeight": 24,
+                          "textAlign": "auto",
                         },
                       ]
                     }
+                    textAlign="auto"
                     type="body1"
                   >
                     #71CACD
@@ -684,9 +708,11 @@ exports[`StoryTokenColors component Should render StoryTokenColors component : S
                           "fontSize": 16,
                           "fontWeight": "400",
                           "lineHeight": 24,
+                          "textAlign": "auto",
                         },
                       ]
                     }
+                    textAlign="auto"
                     type="body1"
                   >
                     colorBrdNatSecondaryGreen
@@ -727,9 +753,11 @@ exports[`StoryTokenColors component Should render StoryTokenColors component : S
                           "fontSize": 16,
                           "fontWeight": "400",
                           "lineHeight": 24,
+                          "textAlign": "auto",
                         },
                       ]
                     }
+                    textAlign="auto"
                     type="body1"
                   >
                     #B3CA36
@@ -774,9 +802,11 @@ exports[`StoryTokenColors component Should render StoryTokenColors component : S
                           "fontSize": 16,
                           "fontWeight": "400",
                           "lineHeight": 24,
+                          "textAlign": "auto",
                         },
                       ]
                     }
+                    textAlign="auto"
                     type="body1"
                   >
                     colorBrdNatSecondaryPurple
@@ -817,9 +847,11 @@ exports[`StoryTokenColors component Should render StoryTokenColors component : S
                           "fontSize": 16,
                           "fontWeight": "400",
                           "lineHeight": 24,
+                          "textAlign": "auto",
                         },
                       ]
                     }
+                    textAlign="auto"
                     type="body1"
                   >
                     #7080A0
@@ -864,9 +896,11 @@ exports[`StoryTokenColors component Should render StoryTokenColors component : S
                           "fontSize": 16,
                           "fontWeight": "400",
                           "lineHeight": 24,
+                          "textAlign": "auto",
                         },
                       ]
                     }
+                    textAlign="auto"
                     type="body1"
                   >
                     colorBrdNatSecondaryYellow
@@ -907,9 +941,11 @@ exports[`StoryTokenColors component Should render StoryTokenColors component : S
                           "fontSize": 16,
                           "fontWeight": "400",
                           "lineHeight": 24,
+                          "textAlign": "auto",
                         },
                       ]
                     }
+                    textAlign="auto"
                     type="body1"
                   >
                     #FFBA1B
@@ -945,9 +981,11 @@ exports[`StoryTokenColors component Should render StoryTokenColors component : S
                   "fontSize": 20,
                   "fontWeight": "500",
                   "lineHeight": 30,
+                  "textAlign": "auto",
                 },
               ]
             }
+            textAlign="auto"
             type="h6"
           >
             GRAYSCALE
@@ -1039,9 +1077,11 @@ exports[`StoryTokenColors component Should render StoryTokenColors component : S
                           "fontSize": 16,
                           "fontWeight": "400",
                           "lineHeight": 24,
+                          "textAlign": "auto",
                         },
                       ]
                     }
+                    textAlign="auto"
                     type="body1"
                   >
                     colorBrdBlack
@@ -1082,9 +1122,11 @@ exports[`StoryTokenColors component Should render StoryTokenColors component : S
                           "fontSize": 16,
                           "fontWeight": "400",
                           "lineHeight": 24,
+                          "textAlign": "auto",
                         },
                       ]
                     }
+                    textAlign="auto"
                     type="body1"
                   >
                     #000000
@@ -1129,9 +1171,11 @@ exports[`StoryTokenColors component Should render StoryTokenColors component : S
                           "fontSize": 16,
                           "fontWeight": "400",
                           "lineHeight": 24,
+                          "textAlign": "auto",
                         },
                       ]
                     }
+                    textAlign="auto"
                     type="body1"
                   >
                     colorBrdNatGray
@@ -1172,9 +1216,11 @@ exports[`StoryTokenColors component Should render StoryTokenColors component : S
                           "fontSize": 16,
                           "fontWeight": "400",
                           "lineHeight": 24,
+                          "textAlign": "auto",
                         },
                       ]
                     }
+                    textAlign="auto"
                     type="body1"
                   >
                     #333333
@@ -1219,9 +1265,11 @@ exports[`StoryTokenColors component Should render StoryTokenColors component : S
                           "fontSize": 16,
                           "fontWeight": "400",
                           "lineHeight": 24,
+                          "textAlign": "auto",
                         },
                       ]
                     }
+                    textAlign="auto"
                     type="body1"
                   >
                     colorBrdNatGray1
@@ -1262,9 +1310,11 @@ exports[`StoryTokenColors component Should render StoryTokenColors component : S
                           "fontSize": 16,
                           "fontWeight": "400",
                           "lineHeight": 24,
+                          "textAlign": "auto",
                         },
                       ]
                     }
+                    textAlign="auto"
                     type="body1"
                   >
                     #777777
@@ -1309,9 +1359,11 @@ exports[`StoryTokenColors component Should render StoryTokenColors component : S
                           "fontSize": 16,
                           "fontWeight": "400",
                           "lineHeight": 24,
+                          "textAlign": "auto",
                         },
                       ]
                     }
+                    textAlign="auto"
                     type="body1"
                   >
                     colorBrdNatGray2
@@ -1352,9 +1404,11 @@ exports[`StoryTokenColors component Should render StoryTokenColors component : S
                           "fontSize": 16,
                           "fontWeight": "400",
                           "lineHeight": 24,
+                          "textAlign": "auto",
                         },
                       ]
                     }
+                    textAlign="auto"
                     type="body1"
                   >
                     #BBBBBB
@@ -1399,9 +1453,11 @@ exports[`StoryTokenColors component Should render StoryTokenColors component : S
                           "fontSize": 16,
                           "fontWeight": "400",
                           "lineHeight": 24,
+                          "textAlign": "auto",
                         },
                       ]
                     }
+                    textAlign="auto"
                     type="body1"
                   >
                     colorBrdNatGray3
@@ -1442,9 +1498,11 @@ exports[`StoryTokenColors component Should render StoryTokenColors component : S
                           "fontSize": 16,
                           "fontWeight": "400",
                           "lineHeight": 24,
+                          "textAlign": "auto",
                         },
                       ]
                     }
+                    textAlign="auto"
                     type="body1"
                   >
                     #EEEEEE
@@ -1480,9 +1538,11 @@ exports[`StoryTokenColors component Should render StoryTokenColors component : S
                   "fontSize": 20,
                   "fontWeight": "500",
                   "lineHeight": 30,
+                  "textAlign": "auto",
                 },
               ]
             }
+            textAlign="auto"
             type="h6"
           >
             LEVEL
@@ -1574,9 +1634,11 @@ exports[`StoryTokenColors component Should render StoryTokenColors component : S
                           "fontSize": 16,
                           "fontWeight": "400",
                           "lineHeight": 24,
+                          "textAlign": "auto",
                         },
                       ]
                     }
+                    textAlign="auto"
                     type="body1"
                   >
                     colorLevelBronze
@@ -1617,9 +1679,11 @@ exports[`StoryTokenColors component Should render StoryTokenColors component : S
                           "fontSize": 16,
                           "fontWeight": "400",
                           "lineHeight": 24,
+                          "textAlign": "auto",
                         },
                       ]
                     }
+                    textAlign="auto"
                     type="body1"
                   >
                     #C47F5B
@@ -1664,9 +1728,11 @@ exports[`StoryTokenColors component Should render StoryTokenColors component : S
                           "fontSize": 16,
                           "fontWeight": "400",
                           "lineHeight": 24,
+                          "textAlign": "auto",
                         },
                       ]
                     }
+                    textAlign="auto"
                     type="body1"
                   >
                     colorLevelDiamond
@@ -1707,9 +1773,11 @@ exports[`StoryTokenColors component Should render StoryTokenColors component : S
                           "fontSize": 16,
                           "fontWeight": "400",
                           "lineHeight": 24,
+                          "textAlign": "auto",
                         },
                       ]
                     }
+                    textAlign="auto"
                     type="body1"
                   >
                     #AEC2CE
@@ -1754,9 +1822,11 @@ exports[`StoryTokenColors component Should render StoryTokenColors component : S
                           "fontSize": 16,
                           "fontWeight": "400",
                           "lineHeight": 24,
+                          "textAlign": "auto",
                         },
                       ]
                     }
+                    textAlign="auto"
                     type="body1"
                   >
                     colorLevelGold
@@ -1797,9 +1867,11 @@ exports[`StoryTokenColors component Should render StoryTokenColors component : S
                           "fontSize": 16,
                           "fontWeight": "400",
                           "lineHeight": 24,
+                          "textAlign": "auto",
                         },
                       ]
                     }
+                    textAlign="auto"
                     type="body1"
                   >
                     #D8B75E
@@ -1844,9 +1916,11 @@ exports[`StoryTokenColors component Should render StoryTokenColors component : S
                           "fontSize": 16,
                           "fontWeight": "400",
                           "lineHeight": 24,
+                          "textAlign": "auto",
                         },
                       ]
                     }
+                    textAlign="auto"
                     type="body1"
                   >
                     colorLevelSeed
@@ -1887,9 +1961,11 @@ exports[`StoryTokenColors component Should render StoryTokenColors component : S
                           "fontSize": 16,
                           "fontWeight": "400",
                           "lineHeight": 24,
+                          "textAlign": "auto",
                         },
                       ]
                     }
+                    textAlign="auto"
                     type="body1"
                   >
                     #7B6A58
@@ -1934,9 +2010,11 @@ exports[`StoryTokenColors component Should render StoryTokenColors component : S
                           "fontSize": 16,
                           "fontWeight": "400",
                           "lineHeight": 24,
+                          "textAlign": "auto",
                         },
                       ]
                     }
+                    textAlign="auto"
                     type="body1"
                   >
                     colorLevelSilver
@@ -1977,9 +2055,11 @@ exports[`StoryTokenColors component Should render StoryTokenColors component : S
                           "fontSize": 16,
                           "fontWeight": "400",
                           "lineHeight": 24,
+                          "textAlign": "auto",
                         },
                       ]
                     }
+                    textAlign="auto"
                     type="body1"
                   >
                     #9D9D9C
@@ -2015,9 +2095,11 @@ exports[`StoryTokenColors component Should render StoryTokenColors component : S
                   "fontSize": 20,
                   "fontWeight": "500",
                   "lineHeight": 30,
+                  "textAlign": "auto",
                 },
               ]
             }
+            textAlign="auto"
             type="h6"
           >
             COMPLEMENTARY
@@ -2181,9 +2263,11 @@ exports[`StoryTokenColors component Should render StoryTokenColors component : S
                           "fontSize": 16,
                           "fontWeight": "400",
                           "lineHeight": 24,
+                          "textAlign": "auto",
                         },
                       ]
                     }
+                    textAlign="auto"
                     type="body1"
                   >
                     colorBrdNatCpBlue1
@@ -2224,9 +2308,11 @@ exports[`StoryTokenColors component Should render StoryTokenColors component : S
                           "fontSize": 16,
                           "fontWeight": "400",
                           "lineHeight": 24,
+                          "textAlign": "auto",
                         },
                       ]
                     }
+                    textAlign="auto"
                     type="body1"
                   >
                     #227BBD
@@ -2271,9 +2357,11 @@ exports[`StoryTokenColors component Should render StoryTokenColors component : S
                           "fontSize": 16,
                           "fontWeight": "400",
                           "lineHeight": 24,
+                          "textAlign": "auto",
                         },
                       ]
                     }
+                    textAlign="auto"
                     type="body1"
                   >
                     colorBrdNatCpBlue2
@@ -2314,9 +2402,11 @@ exports[`StoryTokenColors component Should render StoryTokenColors component : S
                           "fontSize": 16,
                           "fontWeight": "400",
                           "lineHeight": 24,
+                          "textAlign": "auto",
                         },
                       ]
                     }
+                    textAlign="auto"
                     type="body1"
                   >
                     #6BB1E2
@@ -2361,9 +2451,11 @@ exports[`StoryTokenColors component Should render StoryTokenColors component : S
                           "fontSize": 16,
                           "fontWeight": "400",
                           "lineHeight": 24,
+                          "textAlign": "auto",
                         },
                       ]
                     }
+                    textAlign="auto"
                     type="body1"
                   >
                     colorBrdNatCpBlue3
@@ -2404,9 +2496,11 @@ exports[`StoryTokenColors component Should render StoryTokenColors component : S
                           "fontSize": 16,
                           "fontWeight": "400",
                           "lineHeight": 24,
+                          "textAlign": "auto",
                         },
                       ]
                     }
+                    textAlign="auto"
                     type="body1"
                   >
                     #54BECF
@@ -2451,9 +2545,11 @@ exports[`StoryTokenColors component Should render StoryTokenColors component : S
                           "fontSize": 16,
                           "fontWeight": "400",
                           "lineHeight": 24,
+                          "textAlign": "auto",
                         },
                       ]
                     }
+                    textAlign="auto"
                     type="body1"
                   >
                     colorBrdNatCpBlue4
@@ -2494,9 +2590,11 @@ exports[`StoryTokenColors component Should render StoryTokenColors component : S
                           "fontSize": 16,
                           "fontWeight": "400",
                           "lineHeight": 24,
+                          "textAlign": "auto",
                         },
                       ]
                     }
+                    textAlign="auto"
                     type="body1"
                   >
                     #8E96A9
@@ -2541,9 +2639,11 @@ exports[`StoryTokenColors component Should render StoryTokenColors component : S
                           "fontSize": 16,
                           "fontWeight": "400",
                           "lineHeight": 24,
+                          "textAlign": "auto",
                         },
                       ]
                     }
+                    textAlign="auto"
                     type="body1"
                   >
                     colorBrdNatCpBrown1
@@ -2584,9 +2684,11 @@ exports[`StoryTokenColors component Should render StoryTokenColors component : S
                           "fontSize": 16,
                           "fontWeight": "400",
                           "lineHeight": 24,
+                          "textAlign": "auto",
                         },
                       ]
                     }
+                    textAlign="auto"
                     type="body1"
                   >
                     #371E14
@@ -2631,9 +2733,11 @@ exports[`StoryTokenColors component Should render StoryTokenColors component : S
                           "fontSize": 16,
                           "fontWeight": "400",
                           "lineHeight": 24,
+                          "textAlign": "auto",
                         },
                       ]
                     }
+                    textAlign="auto"
                     type="body1"
                   >
                     colorBrdNatCpBrown2
@@ -2674,9 +2778,11 @@ exports[`StoryTokenColors component Should render StoryTokenColors component : S
                           "fontSize": 16,
                           "fontWeight": "400",
                           "lineHeight": 24,
+                          "textAlign": "auto",
                         },
                       ]
                     }
+                    textAlign="auto"
                     type="body1"
                   >
                     #5D3B2A
@@ -2721,9 +2827,11 @@ exports[`StoryTokenColors component Should render StoryTokenColors component : S
                           "fontSize": 16,
                           "fontWeight": "400",
                           "lineHeight": 24,
+                          "textAlign": "auto",
                         },
                       ]
                     }
+                    textAlign="auto"
                     type="body1"
                   >
                     colorBrdNatCpBrown3
@@ -2764,9 +2872,11 @@ exports[`StoryTokenColors component Should render StoryTokenColors component : S
                           "fontSize": 16,
                           "fontWeight": "400",
                           "lineHeight": 24,
+                          "textAlign": "auto",
                         },
                       ]
                     }
+                    textAlign="auto"
                     type="body1"
                   >
                     #7A573C
@@ -2811,9 +2921,11 @@ exports[`StoryTokenColors component Should render StoryTokenColors component : S
                           "fontSize": 16,
                           "fontWeight": "400",
                           "lineHeight": 24,
+                          "textAlign": "auto",
                         },
                       ]
                     }
+                    textAlign="auto"
                     type="body1"
                   >
                     colorBrdNatCpGreen1
@@ -2854,9 +2966,11 @@ exports[`StoryTokenColors component Should render StoryTokenColors component : S
                           "fontSize": 16,
                           "fontWeight": "400",
                           "lineHeight": 24,
+                          "textAlign": "auto",
                         },
                       ]
                     }
+                    textAlign="auto"
                     type="body1"
                   >
                     #569A32
@@ -2901,9 +3015,11 @@ exports[`StoryTokenColors component Should render StoryTokenColors component : S
                           "fontSize": 16,
                           "fontWeight": "400",
                           "lineHeight": 24,
+                          "textAlign": "auto",
                         },
                       ]
                     }
+                    textAlign="auto"
                     type="body1"
                   >
                     colorBrdNatCpGreen2
@@ -2944,9 +3060,11 @@ exports[`StoryTokenColors component Should render StoryTokenColors component : S
                           "fontSize": 16,
                           "fontWeight": "400",
                           "lineHeight": 24,
+                          "textAlign": "auto",
                         },
                       ]
                     }
+                    textAlign="auto"
                     type="body1"
                   >
                     #8EBE2F
@@ -2991,9 +3109,11 @@ exports[`StoryTokenColors component Should render StoryTokenColors component : S
                           "fontSize": 16,
                           "fontWeight": "400",
                           "lineHeight": 24,
+                          "textAlign": "auto",
                         },
                       ]
                     }
+                    textAlign="auto"
                     type="body1"
                   >
                     colorBrdNatCpGreen3
@@ -3034,9 +3154,11 @@ exports[`StoryTokenColors component Should render StoryTokenColors component : S
                           "fontSize": 16,
                           "fontWeight": "400",
                           "lineHeight": 24,
+                          "textAlign": "auto",
                         },
                       ]
                     }
+                    textAlign="auto"
                     type="body1"
                   >
                     #C2CD00

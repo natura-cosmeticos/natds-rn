@@ -63,9 +63,11 @@ exports[`StoryNatSelectInput component Should render StoryNatSelectInput compone
                   "fontSize": 20,
                   "fontWeight": "500",
                   "lineHeight": 30,
+                  "textAlign": "auto",
                 },
               ]
             }
+            textAlign="auto"
             type="h6"
           >
             Select - empty
@@ -3830,9 +3832,11 @@ exports[`StoryNatSelectInput component Should render StoryNatSelectInput compone
                         "fontSize": 14,
                         "fontWeight": "400",
                         "lineHeight": 21,
+                        "textAlign": "auto",
                       },
                     ]
                   }
+                  textAlign="auto"
                   type="body2"
                 >
                   label
@@ -4606,9 +4610,11 @@ exports[`StoryNatSelectInput component Should render StoryNatSelectInput compone
                         "fontSize": 12,
                         "fontWeight": "400",
                         "lineHeight": 18,
+                        "textAlign": "auto",
                       },
                     ]
                   }
+                  textAlign="auto"
                   type="caption"
                 >
                   assistiveText
@@ -4643,9 +4649,11 @@ exports[`StoryNatSelectInput component Should render StoryNatSelectInput compone
                   "fontSize": 16,
                   "fontWeight": "400",
                   "lineHeight": 24,
+                  "textAlign": "auto",
                 },
               ]
             }
+            textAlign="auto"
             type="body1"
           >
             Value: []
@@ -4677,9 +4685,11 @@ exports[`StoryNatSelectInput component Should render StoryNatSelectInput compone
                   "fontSize": 20,
                   "fontWeight": "500",
                   "lineHeight": 30,
+                  "textAlign": "auto",
                 },
               ]
             }
+            textAlign="auto"
             type="h6"
           >
             Select - initial value
@@ -8444,9 +8454,11 @@ exports[`StoryNatSelectInput component Should render StoryNatSelectInput compone
                         "fontSize": 14,
                         "fontWeight": "400",
                         "lineHeight": 21,
+                        "textAlign": "auto",
                       },
                     ]
                   }
+                  textAlign="auto"
                   type="body2"
                 >
                   label
@@ -9220,9 +9232,11 @@ exports[`StoryNatSelectInput component Should render StoryNatSelectInput compone
                         "fontSize": 12,
                         "fontWeight": "400",
                         "lineHeight": 18,
+                        "textAlign": "auto",
                       },
                     ]
                   }
+                  textAlign="auto"
                   type="caption"
                 >
                   assistiveText
@@ -9257,9 +9271,11 @@ exports[`StoryNatSelectInput component Should render StoryNatSelectInput compone
                   "fontSize": 16,
                   "fontWeight": "400",
                   "lineHeight": 24,
+                  "textAlign": "auto",
                 },
               ]
             }
+            textAlign="auto"
             type="body1"
           >
             Value: ["2"]
@@ -9291,9 +9307,11 @@ exports[`StoryNatSelectInput component Should render StoryNatSelectInput compone
                   "fontSize": 20,
                   "fontWeight": "500",
                   "lineHeight": 30,
+                  "textAlign": "auto",
                 },
               ]
             }
+            textAlign="auto"
             type="h6"
           >
             Select multiple - empty
@@ -13058,9 +13076,11 @@ exports[`StoryNatSelectInput component Should render StoryNatSelectInput compone
                         "fontSize": 14,
                         "fontWeight": "400",
                         "lineHeight": 21,
+                        "textAlign": "auto",
                       },
                     ]
                   }
+                  textAlign="auto"
                   type="body2"
                 >
                   label
@@ -13834,9 +13854,11 @@ exports[`StoryNatSelectInput component Should render StoryNatSelectInput compone
                         "fontSize": 12,
                         "fontWeight": "400",
                         "lineHeight": 18,
+                        "textAlign": "auto",
                       },
                     ]
                   }
+                  textAlign="auto"
                   type="caption"
                 >
                   assistiveText
@@ -13871,9 +13893,11 @@ exports[`StoryNatSelectInput component Should render StoryNatSelectInput compone
                   "fontSize": 16,
                   "fontWeight": "400",
                   "lineHeight": 24,
+                  "textAlign": "auto",
                 },
               ]
             }
+            textAlign="auto"
             type="body1"
           >
             Value: []
@@ -13905,9 +13929,11 @@ exports[`StoryNatSelectInput component Should render StoryNatSelectInput compone
                   "fontSize": 20,
                   "fontWeight": "500",
                   "lineHeight": 30,
+                  "textAlign": "auto",
                 },
               ]
             }
+            textAlign="auto"
             type="h6"
           >
             Select multiple - initial value
@@ -17672,9 +17698,11 @@ exports[`StoryNatSelectInput component Should render StoryNatSelectInput compone
                         "fontSize": 14,
                         "fontWeight": "400",
                         "lineHeight": 21,
+                        "textAlign": "auto",
                       },
                     ]
                   }
+                  textAlign="auto"
                   type="body2"
                 >
                   label
@@ -18448,9 +18476,11 @@ exports[`StoryNatSelectInput component Should render StoryNatSelectInput compone
                         "fontSize": 12,
                         "fontWeight": "400",
                         "lineHeight": 18,
+                        "textAlign": "auto",
                       },
                     ]
                   }
+                  textAlign="auto"
                   type="caption"
                 >
                   assistiveText
@@ -18485,9 +18515,11 @@ exports[`StoryNatSelectInput component Should render StoryNatSelectInput compone
                   "fontSize": 16,
                   "fontWeight": "400",
                   "lineHeight": 24,
+                  "textAlign": "auto",
                 },
               ]
             }
+            textAlign="auto"
             type="body1"
           >
             Value: ["2","10"]
@@ -18519,9 +18551,11 @@ exports[`StoryNatSelectInput component Should render StoryNatSelectInput compone
                   "fontSize": 20,
                   "fontWeight": "500",
                   "lineHeight": 30,
+                  "textAlign": "auto",
                 },
               ]
             }
+            textAlign="auto"
             type="h6"
           >
             Select - Two side by side
@@ -18569,9 +18603,11 @@ exports[`StoryNatSelectInput component Should render StoryNatSelectInput compone
                       "fontSize": 16,
                       "fontWeight": "400",
                       "lineHeight": 24,
+                      "textAlign": "auto",
                     },
                   ]
                 }
+                textAlign="auto"
                 type="body1"
               >
                 Select 1
@@ -22336,9 +22372,11 @@ exports[`StoryNatSelectInput component Should render StoryNatSelectInput compone
                             "fontSize": 14,
                             "fontWeight": "400",
                             "lineHeight": 21,
+                            "textAlign": "auto",
                           },
                         ]
                       }
+                      textAlign="auto"
                       type="body2"
                     >
                       label
@@ -23112,9 +23150,11 @@ exports[`StoryNatSelectInput component Should render StoryNatSelectInput compone
                             "fontSize": 12,
                             "fontWeight": "400",
                             "lineHeight": 18,
+                            "textAlign": "auto",
                           },
                         ]
                       }
+                      textAlign="auto"
                       type="caption"
                     >
                       assistiveText
@@ -23158,9 +23198,11 @@ exports[`StoryNatSelectInput component Should render StoryNatSelectInput compone
                       "fontSize": 16,
                       "fontWeight": "400",
                       "lineHeight": 24,
+                      "textAlign": "auto",
                     },
                   ]
                 }
+                textAlign="auto"
                 type="body1"
               >
                 Select 2
@@ -26925,9 +26967,11 @@ exports[`StoryNatSelectInput component Should render StoryNatSelectInput compone
                             "fontSize": 14,
                             "fontWeight": "400",
                             "lineHeight": 21,
+                            "textAlign": "auto",
                           },
                         ]
                       }
+                      textAlign="auto"
                       type="body2"
                     >
                       label
@@ -27701,9 +27745,11 @@ exports[`StoryNatSelectInput component Should render StoryNatSelectInput compone
                             "fontSize": 12,
                             "fontWeight": "400",
                             "lineHeight": 18,
+                            "textAlign": "auto",
                           },
                         ]
                       }
+                      textAlign="auto"
                       type="caption"
                     >
                       assistiveText

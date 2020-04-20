@@ -400,9 +400,11 @@ exports[`StoryNatTextInput component Should render StoryNatTextInput component :
                     "fontSize": 14,
                     "fontWeight": "400",
                     "lineHeight": 21,
+                    "textAlign": "auto",
                   },
                 ]
               }
+              textAlign="auto"
               type="body2"
             >
               Size Small
@@ -1142,9 +1144,11 @@ exports[`StoryNatTextInput component Should render StoryNatTextInput component :
                     "fontSize": 12,
                     "fontWeight": "400",
                     "lineHeight": 18,
+                    "textAlign": "auto",
                   },
                 ]
               }
+              textAlign="auto"
               type="caption"
             >
               Size Small
@@ -1514,9 +1518,11 @@ exports[`StoryNatTextInput component Should render StoryNatTextInput component :
                     "fontSize": 14,
                     "fontWeight": "400",
                     "lineHeight": 21,
+                    "textAlign": "auto",
                   },
                 ]
               }
+              textAlign="auto"
               type="body2"
             >
               Size Normal
@@ -2256,9 +2262,11 @@ exports[`StoryNatTextInput component Should render StoryNatTextInput component :
                     "fontSize": 12,
                     "fontWeight": "400",
                     "lineHeight": 18,
+                    "textAlign": "auto",
                   },
                 ]
               }
+              textAlign="auto"
               type="caption"
             >
               Size Normal
@@ -2628,9 +2636,11 @@ exports[`StoryNatTextInput component Should render StoryNatTextInput component :
                     "fontSize": 14,
                     "fontWeight": "400",
                     "lineHeight": 21,
+                    "textAlign": "auto",
                   },
                 ]
               }
+              textAlign="auto"
               type="body2"
             >
               Multiple lines
@@ -3370,9 +3380,11 @@ exports[`StoryNatTextInput component Should render StoryNatTextInput component :
                     "fontSize": 12,
                     "fontWeight": "400",
                     "lineHeight": 18,
+                    "textAlign": "auto",
                   },
                 ]
               }
+              textAlign="auto"
               type="caption"
             >
               Multiple lines
@@ -4451,9 +4463,11 @@ exports[`StoryNatTextInput component Should render StoryNatTextInput component :
                   "fontSize": 16,
                   "fontWeight": "400",
                   "lineHeight": 24,
+                  "textAlign": "auto",
                 },
               ]
             }
+            textAlign="auto"
             type="body1"
           >
             body1. Lorem ipsum dolor sit amet, consectetur adipscing elit. Quos blanditiis tenetur unde suscipit, quam beatae rerum inventore consectetur, neque doloribus, cupiditate numquam dignissimos laborum fugiat deleniti? Eum quasi quidem quibusdam
