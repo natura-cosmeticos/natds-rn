@@ -25,101 +25,90 @@ exports[`Header component Should render container component correctly: NatAppBar
   }
 >
   <View
-    accessibilityRole="header"
-    accessible={true}
     style={
       Array [
         Object {
-          "alignItems": "stretch",
-          "backgroundColor": "#FFFFFF",
           "flexBasis": 0,
-          "flexDirection": "row",
           "flexGrow": 1,
           "flexShrink": 1,
-          "height": 56,
-          "paddingBottom": 0,
-          "paddingLeft": 0,
-          "paddingRight": 0,
-          "paddingTop": 0,
-          "position": "relative",
-          "width": "100%",
-        },
-        Object {
-          "elevation": 1,
-          "shadowColor": "#000",
-          "shadowOffset": Object {
-            "height": 2,
-            "width": 0,
-          },
-          "shadowOpacity": 0.24,
         },
       ]
     }
   >
     <View
-      style={Object {}}
-    >
-      <View
-        accessible={true}
-        focusable={true}
-        isTVSelectable={true}
-        onClick={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        style={
+      accessibilityRole="header"
+      accessible={true}
+      style={
+        Array [
           Object {
-            "alignItems": "center",
-            "alignSelf": "center",
+            "alignItems": "stretch",
+            "backgroundColor": "#FFFFFF",
             "flexBasis": 0,
+            "flexDirection": "row",
             "flexGrow": 1,
             "flexShrink": 1,
             "height": 56,
-            "justifyContent": "center",
-            "opacity": 1,
-            "paddingBottom": 16,
-            "paddingLeft": 16,
+            "paddingBottom": 0,
+            "paddingLeft": 0,
             "paddingRight": 0,
-            "paddingTop": 16,
-            "width": 40,
-          }
-        }
-      >
-        <SvgMock
-          height={24}
-          style={
-            Object {
-              "fill": "#333333",
-            }
-          }
-          width={24}
-        />
-      </View>
-    </View>
-    <View
-      style={
-        Object {
-          "alignItems": "flex-start",
-          "bottom": 0,
-          "justifyContent": "flex-start",
-          "left": 40,
-          "position": "absolute",
-          "right": 0,
-          "top": 0,
-        }
+            "paddingTop": 0,
+            "position": "relative",
+            "width": "100%",
+            "zIndex": 1,
+          },
+        ]
       }
     >
       <View
+        style={Object {}}
+      >
+        <View
+          accessible={true}
+          focusable={true}
+          isTVSelectable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "alignSelf": "center",
+              "flexBasis": 0,
+              "flexGrow": 1,
+              "flexShrink": 1,
+              "height": 56,
+              "justifyContent": "center",
+              "opacity": 1,
+              "paddingBottom": 16,
+              "paddingLeft": 16,
+              "paddingRight": 0,
+              "paddingTop": 16,
+              "width": 40,
+            }
+          }
+        >
+          <SvgMock
+            height={24}
+            style={
+              Object {
+                "fill": "#333333",
+              }
+            }
+            width={24}
+          />
+        </View>
+      </View>
+      <View
         style={
           Object {
+            "alignItems": "flex-start",
             "bottom": 0,
             "justifyContent": "flex-start",
-            "left": 0,
-            "paddingLeft": 16,
-            "paddingRight": 16,
+            "left": 40,
             "position": "absolute",
             "right": 0,
             "top": 0,
@@ -127,355 +116,27 @@ exports[`Header component Should render container component correctly: NatAppBar
         }
       >
         <View
-          accessible={true}
-          marginDefault="tiny"
           style={
-            Array [
-              Object {
-                "marginBottom": 8,
-                "width": "100%",
-              },
-            ]
-          }
-          theme={
             Object {
-              "avatarSizes": Object {
-                "huge": Object {
-                  "fontSize": "1.5rem",
-                  "size": 80,
-                },
-                "large": Object {
-                  "fontSize": "1rem",
-                  "size": 48,
-                },
-                "small": Object {
-                  "fontSize": ".875rem",
-                  "size": 32,
-                },
-                "standard": Object {
-                  "fontSize": "1rem",
-                  "size": 40,
-                },
-                "tiny": Object {
-                  "fontSize": ".625rem",
-                  "size": 24,
-                },
-              },
-              "buttonSizes": Object {
-                "large": Object {
-                  "minHeight": 48,
-                  "paddingBottom": 16,
-                  "paddingLeft": 16,
-                  "paddingRight": 16,
-                  "paddingTop": 16,
-                },
-                "medium": Object {
-                  "minHeight": 40,
-                  "paddingBottom": 12,
-                  "paddingLeft": 16,
-                  "paddingRight": 16,
-                  "paddingTop": 12,
-                },
-                "small": Object {
-                  "minHeight": 32,
-                  "paddingBottom": 8,
-                  "paddingLeft": 8,
-                  "paddingRight": 8,
-                  "paddingTop": 8,
-                },
-              },
-              "iconSizes": Object {
-                "huge": 144,
-                "hugex": 192,
-                "hugexx": 256,
-                "large": 72,
-                "largex": 96,
-                "largexx": 128,
-                "medium": 64,
-                "micro": 16,
-                "small": 32,
-                "standard": 48,
-                "tiny": 24,
-              },
-              "overrides": Object {
-                "MuiAvatar": Object {
-                  "colorDefault": Object {
-                    "color": "#333333",
-                  },
-                },
-                "MuiButton": Object {
-                  "outlinedPrimary": Object {
-                    "color": "#333333",
-                  },
-                  "outlinedSecondary": Object {
-                    "color": "#333333",
-                  },
-                  "root": Object {
-                    "fontSize": "0.875rem",
-                    "minHeight": "40px",
-                    "padding": "8px 16px",
-                  },
-                  "sizeLarge": Object {
-                    "fontSize": "0.875rem",
-                    "minHeight": "48px",
-                  },
-                  "sizeSmall": Object {
-                    "fontSize": "0.875rem",
-                    "minHeight": "32px",
-                  },
-                },
-                "MuiIconButton": Object {
-                  "root": Object {
-                    "padding": "8px",
-                  },
-                  "sizeSmall": Object {
-                    "padding": "4px",
-                  },
-                },
-                "MuiListItem": Object {
-                  "button": Object {
-                    "&:hover": Object {
-                      "backgroundColor": "rgba(255, 107, 11, .08)",
-                    },
-                  },
-                  "root": Object {
-                    "&$selected": Object {
-                      "backgroundColor": "rgba(255, 107, 11, .16)",
-                    },
-                    "&$selected:hover": Object {
-                      "backgroundColor": "rgba(255, 107, 11, .08)",
-                    },
-                  },
-                },
-                "MuiTab": Object {
-                  "root": Object {
-                    "&$disabled": Object {
-                      "opacity": 0.24,
-                    },
-                  },
-                  "textColorInherit": Object {
-                    "&$disabled": Object {
-                      "opacity": 0.24,
-                    },
-                  },
-                  "wrapper": Object {
-                    "& > *:first-child": Object {
-                      "marginBottom": "2px !important",
-                    },
-                  },
-                },
-                "MuiToolbar": Object {
-                  "dense": Object {
-                    "@media (min-width: 600px)": Object {
-                      "minHeight": "56px",
-                    },
-                    "minHeight": "56px",
-                  },
-                  "gutters": Object {
-                    "@media (min-width: 600px)": Object {
-                      "padding": "0 16px",
-                    },
-                    "padding": "0 16px",
-                  },
-                  "regular": Object {
-                    "@media (min-width: 600px)": Object {
-                      "minHeight": "56px",
-                    },
-                    "minHeight": "56px",
-                  },
-                  "root": Object {
-                    "@media (min-width: 600px)": Object {
-                      "padding": "0 16px",
-                    },
-                    "padding": "0 16px",
-                  },
-                },
-              },
-              "palette": Object {
-                "action": Object {
-                  "disabled": "rgba(0, 0, 0, .24)",
-                },
-                "background": Object {
-                  "default": "#FAFAFA",
-                  "defaultContrastText": "#333333",
-                  "paper": "#FFFFFF",
-                  "paperContrastText": "#333333",
-                },
-                "complementary": Object {
-                  "highlight": "#000000",
-                  "link": "#227BBD",
-                  "linkContrastText": "#FFFFFF",
-                  "warning": "#FCC433",
-                  "warningContrastText": "#000000",
-                },
-                "error": Object {
-                  "contrastText": "#FFFFFF",
-                  "main": "#E74627",
-                },
-                "grayscale": Object {
-                  "colorBrdBlack": "#000000",
-                  "colorBrdNatGray": "#333333",
-                  "colorBrdNatGray1": "#777777",
-                  "colorBrdNatGray2": "#BBBBBB",
-                  "colorBrdNatGray3": "#EEEEEE",
-                },
-                "primary": Object {
-                  "contrastText": "#333333",
-                  "dark": "#EF8426",
-                  "light": "#FEFDE8",
-                  "main": "#F4AB34",
-                },
-                "secondary": Object {
-                  "contrastText": "#000000",
-                  "dark": "#EF8426",
-                  "light": "#FEFDE8",
-                  "main": "#FF6B0B",
-                },
-                "success": Object {
-                  "contrastText": "#FFFFFF",
-                  "main": "#569A32",
-                },
-                "text": Object {
-                  "disabled": "#BBBBBB",
-                  "hint": "#BBBBBB",
-                  "primary": "#333333",
-                  "secondary": "#777777",
-                },
-              },
-              "shadows": Object {
-                "0": "none",
-                "1": "0 1px 1px 0 rgba(0, 0, 0, 0.14)",
-                "12": "0 12px 17px 0 rgba(0, 0, 0, 0.14)",
-                "16": "0 16px 24px 0 rgba(0, 0, 0, 0.14)",
-                "2": "0 2px 2px 0 rgba(0, 0, 0, 0.14)",
-                "24": "0 24px 38px 0 rgba(0, 0, 0, 0.14)",
-                "3": "0 3px 4px 0 rgba(0, 0, 0, 0.14)",
-                "4": "0 4px 5px 0 rgba(0, 0, 0, 0.14)",
-                "6": "0 6px 10px 0 rgba(0, 0, 0, 0.14)",
-                "8": "0 8px 10px 0 rgba(0, 0, 0, 0.14)",
-                "9": "0 9px 12px 0 rgba(0, 0, 0, 0.14)",
-              },
-              "shape": Object {
-                "badgeBorderRadius": 100,
-                "borderRadius": 4,
-              },
-              "sizes": Object {
-                "huge": 96,
-                "hugex": 128,
-                "hugexx": 144,
-                "hugexxx": 192,
-                "large": 64,
-                "largex": 72,
-                "largexx": 80,
-                "largexxx": 88,
-                "medium": 48,
-                "mediumx": 56,
-                "micro": 4,
-                "none": 0,
-                "semi": 32,
-                "semix": 40,
-                "small": 16,
-                "standard": 24,
-                "tiny": 8,
-                "veryhuge": 256,
-              },
-              "spacing": Object {
-                "spacing": 8,
-                "spacingHuge": 64,
-                "spacingLarge": 48,
-                "spacingMicro": 4,
-                "spacingNone": 0,
-                "spacingSemi": 32,
-                "spacingSmall": 16,
-                "spacingStandard": 24,
-                "spacingTiny": 8,
-              },
-              "typography": Object {
-                "body1": Object {
-                  "fontSize": 16,
-                  "fontWeight": 400,
-                  "lineHeight": 24,
-                },
-                "body2": Object {
-                  "fontSize": 14,
-                  "fontWeight": 400,
-                  "lineHeight": 21,
-                },
-                "button": Object {
-                  "fontSize": 14,
-                  "fontWeight": 500,
-                  "lineHeight": 21,
-                },
-                "caption": Object {
-                  "fontSize": 12,
-                  "fontWeight": 400,
-                  "lineHeight": 18,
-                },
-                "h1": Object {
-                  "fontSize": 96,
-                  "fontWeight": 400,
-                  "lineHeight": 144,
-                },
-                "h2": Object {
-                  "fontSize": 60,
-                  "fontWeight": 400,
-                  "lineHeight": 90,
-                },
-                "h3": Object {
-                  "fontSize": 48,
-                  "fontWeight": 400,
-                  "lineHeight": 72,
-                },
-                "h4": Object {
-                  "fontSize": 34,
-                  "fontWeight": 400,
-                  "lineHeight": 51,
-                },
-                "h5": Object {
-                  "fontSize": 24,
-                  "fontWeight": 400,
-                  "lineHeight": 36,
-                },
-                "h6": Object {
-                  "fontSize": 20,
-                  "fontWeight": 500,
-                  "lineHeight": 30,
-                },
-                "overline": Object {
-                  "fontSize": 12,
-                  "fontWeight": 500,
-                  "lineHeight": 18,
-                },
-                "subtitle1": Object {
-                  "fontSize": 16,
-                  "fontWeight": 500,
-                  "lineHeight": 24,
-                },
-                "subtitle2": Object {
-                  "fontSize": 14,
-                  "fontWeight": 500,
-                  "lineHeight": 21,
-                },
-              },
+              "bottom": 0,
+              "justifyContent": "flex-start",
+              "left": 0,
+              "paddingLeft": 16,
+              "paddingRight": 16,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
             }
           }
         >
           <View
-            defaultSize="56px"
-            state="default"
+            accessible={true}
+            marginDefault="tiny"
             style={
               Array [
                 Object {
-                  "backgroundColor": "transparent",
-                  "borderColor": "#BBBBBB",
-                  "borderRadius": 4,
-                  "borderStyle": "solid",
-                  "borderWidth": 0,
-                  "flexDirection": "row",
-                  "height": 56,
-                  "justifyContent": "space-between",
-                  "paddingBottom": 0,
-                  "paddingLeft": 16,
+                  "marginBottom": 8,
+                  "width": "100%",
                 },
               ]
             }
@@ -801,38 +462,23 @@ exports[`Header component Should render container component correctly: NatAppBar
                 },
               }
             }
-            type="none"
           >
-            <TextInput
-              allowFontScaling={true}
-              editable={true}
-              multiline={false}
-              numberOfLines={1}
-              onBlur={[Function]}
-              onChangeText={[Function]}
-              onFocus={[Function]}
-              onSubmitEditing={[Function]}
-              placeholder="Title test"
-              rejectResponderTermination={true}
-              size="normal"
+            <View
+              defaultSize="56px"
               state="default"
               style={
                 Array [
                   Object {
-                    "alignSelf": "center",
-                    "color": "#777777",
-                    "flexBasis": 0,
-                    "flexGrow": 7,
-                    "flexShrink": 1,
-                    "fontSize": 16,
+                    "backgroundColor": "transparent",
+                    "borderColor": "#BBBBBB",
+                    "borderRadius": 4,
+                    "borderStyle": "solid",
+                    "borderWidth": 0,
+                    "flexDirection": "row",
                     "height": 56,
-                    "letterSpacing": 0,
-                    "paddingBottom": 16,
-                    "paddingTop": 16,
-                    "textAlignVertical": "top",
-                  },
-                  Object {
-                    "height": 52,
+                    "justifyContent": "space-between",
+                    "paddingBottom": 0,
+                    "paddingLeft": 16,
                   },
                 ]
               }
@@ -1159,13 +805,395 @@ exports[`Header component Should render container component correctly: NatAppBar
                 }
               }
               type="none"
-              underlineColorAndroid="transparent"
-              value=""
-            />
+            >
+              <TextInput
+                allowFontScaling={true}
+                editable={true}
+                multiline={false}
+                numberOfLines={1}
+                onBlur={[Function]}
+                onChangeText={[Function]}
+                onFocus={[Function]}
+                onSubmitEditing={[Function]}
+                placeholder="Title test"
+                rejectResponderTermination={true}
+                size="normal"
+                state="default"
+                style={
+                  Array [
+                    Object {
+                      "alignSelf": "center",
+                      "color": "#777777",
+                      "flexBasis": 0,
+                      "flexGrow": 7,
+                      "flexShrink": 1,
+                      "fontSize": 16,
+                      "height": 56,
+                      "letterSpacing": 0,
+                      "paddingBottom": 16,
+                      "paddingTop": 16,
+                      "textAlignVertical": "top",
+                    },
+                    Object {
+                      "height": 52,
+                    },
+                  ]
+                }
+                theme={
+                  Object {
+                    "avatarSizes": Object {
+                      "huge": Object {
+                        "fontSize": "1.5rem",
+                        "size": 80,
+                      },
+                      "large": Object {
+                        "fontSize": "1rem",
+                        "size": 48,
+                      },
+                      "small": Object {
+                        "fontSize": ".875rem",
+                        "size": 32,
+                      },
+                      "standard": Object {
+                        "fontSize": "1rem",
+                        "size": 40,
+                      },
+                      "tiny": Object {
+                        "fontSize": ".625rem",
+                        "size": 24,
+                      },
+                    },
+                    "buttonSizes": Object {
+                      "large": Object {
+                        "minHeight": 48,
+                        "paddingBottom": 16,
+                        "paddingLeft": 16,
+                        "paddingRight": 16,
+                        "paddingTop": 16,
+                      },
+                      "medium": Object {
+                        "minHeight": 40,
+                        "paddingBottom": 12,
+                        "paddingLeft": 16,
+                        "paddingRight": 16,
+                        "paddingTop": 12,
+                      },
+                      "small": Object {
+                        "minHeight": 32,
+                        "paddingBottom": 8,
+                        "paddingLeft": 8,
+                        "paddingRight": 8,
+                        "paddingTop": 8,
+                      },
+                    },
+                    "iconSizes": Object {
+                      "huge": 144,
+                      "hugex": 192,
+                      "hugexx": 256,
+                      "large": 72,
+                      "largex": 96,
+                      "largexx": 128,
+                      "medium": 64,
+                      "micro": 16,
+                      "small": 32,
+                      "standard": 48,
+                      "tiny": 24,
+                    },
+                    "overrides": Object {
+                      "MuiAvatar": Object {
+                        "colorDefault": Object {
+                          "color": "#333333",
+                        },
+                      },
+                      "MuiButton": Object {
+                        "outlinedPrimary": Object {
+                          "color": "#333333",
+                        },
+                        "outlinedSecondary": Object {
+                          "color": "#333333",
+                        },
+                        "root": Object {
+                          "fontSize": "0.875rem",
+                          "minHeight": "40px",
+                          "padding": "8px 16px",
+                        },
+                        "sizeLarge": Object {
+                          "fontSize": "0.875rem",
+                          "minHeight": "48px",
+                        },
+                        "sizeSmall": Object {
+                          "fontSize": "0.875rem",
+                          "minHeight": "32px",
+                        },
+                      },
+                      "MuiIconButton": Object {
+                        "root": Object {
+                          "padding": "8px",
+                        },
+                        "sizeSmall": Object {
+                          "padding": "4px",
+                        },
+                      },
+                      "MuiListItem": Object {
+                        "button": Object {
+                          "&:hover": Object {
+                            "backgroundColor": "rgba(255, 107, 11, .08)",
+                          },
+                        },
+                        "root": Object {
+                          "&$selected": Object {
+                            "backgroundColor": "rgba(255, 107, 11, .16)",
+                          },
+                          "&$selected:hover": Object {
+                            "backgroundColor": "rgba(255, 107, 11, .08)",
+                          },
+                        },
+                      },
+                      "MuiTab": Object {
+                        "root": Object {
+                          "&$disabled": Object {
+                            "opacity": 0.24,
+                          },
+                        },
+                        "textColorInherit": Object {
+                          "&$disabled": Object {
+                            "opacity": 0.24,
+                          },
+                        },
+                        "wrapper": Object {
+                          "& > *:first-child": Object {
+                            "marginBottom": "2px !important",
+                          },
+                        },
+                      },
+                      "MuiToolbar": Object {
+                        "dense": Object {
+                          "@media (min-width: 600px)": Object {
+                            "minHeight": "56px",
+                          },
+                          "minHeight": "56px",
+                        },
+                        "gutters": Object {
+                          "@media (min-width: 600px)": Object {
+                            "padding": "0 16px",
+                          },
+                          "padding": "0 16px",
+                        },
+                        "regular": Object {
+                          "@media (min-width: 600px)": Object {
+                            "minHeight": "56px",
+                          },
+                          "minHeight": "56px",
+                        },
+                        "root": Object {
+                          "@media (min-width: 600px)": Object {
+                            "padding": "0 16px",
+                          },
+                          "padding": "0 16px",
+                        },
+                      },
+                    },
+                    "palette": Object {
+                      "action": Object {
+                        "disabled": "rgba(0, 0, 0, .24)",
+                      },
+                      "background": Object {
+                        "default": "#FAFAFA",
+                        "defaultContrastText": "#333333",
+                        "paper": "#FFFFFF",
+                        "paperContrastText": "#333333",
+                      },
+                      "complementary": Object {
+                        "highlight": "#000000",
+                        "link": "#227BBD",
+                        "linkContrastText": "#FFFFFF",
+                        "warning": "#FCC433",
+                        "warningContrastText": "#000000",
+                      },
+                      "error": Object {
+                        "contrastText": "#FFFFFF",
+                        "main": "#E74627",
+                      },
+                      "grayscale": Object {
+                        "colorBrdBlack": "#000000",
+                        "colorBrdNatGray": "#333333",
+                        "colorBrdNatGray1": "#777777",
+                        "colorBrdNatGray2": "#BBBBBB",
+                        "colorBrdNatGray3": "#EEEEEE",
+                      },
+                      "primary": Object {
+                        "contrastText": "#333333",
+                        "dark": "#EF8426",
+                        "light": "#FEFDE8",
+                        "main": "#F4AB34",
+                      },
+                      "secondary": Object {
+                        "contrastText": "#000000",
+                        "dark": "#EF8426",
+                        "light": "#FEFDE8",
+                        "main": "#FF6B0B",
+                      },
+                      "success": Object {
+                        "contrastText": "#FFFFFF",
+                        "main": "#569A32",
+                      },
+                      "text": Object {
+                        "disabled": "#BBBBBB",
+                        "hint": "#BBBBBB",
+                        "primary": "#333333",
+                        "secondary": "#777777",
+                      },
+                    },
+                    "shadows": Object {
+                      "0": "none",
+                      "1": "0 1px 1px 0 rgba(0, 0, 0, 0.14)",
+                      "12": "0 12px 17px 0 rgba(0, 0, 0, 0.14)",
+                      "16": "0 16px 24px 0 rgba(0, 0, 0, 0.14)",
+                      "2": "0 2px 2px 0 rgba(0, 0, 0, 0.14)",
+                      "24": "0 24px 38px 0 rgba(0, 0, 0, 0.14)",
+                      "3": "0 3px 4px 0 rgba(0, 0, 0, 0.14)",
+                      "4": "0 4px 5px 0 rgba(0, 0, 0, 0.14)",
+                      "6": "0 6px 10px 0 rgba(0, 0, 0, 0.14)",
+                      "8": "0 8px 10px 0 rgba(0, 0, 0, 0.14)",
+                      "9": "0 9px 12px 0 rgba(0, 0, 0, 0.14)",
+                    },
+                    "shape": Object {
+                      "badgeBorderRadius": 100,
+                      "borderRadius": 4,
+                    },
+                    "sizes": Object {
+                      "huge": 96,
+                      "hugex": 128,
+                      "hugexx": 144,
+                      "hugexxx": 192,
+                      "large": 64,
+                      "largex": 72,
+                      "largexx": 80,
+                      "largexxx": 88,
+                      "medium": 48,
+                      "mediumx": 56,
+                      "micro": 4,
+                      "none": 0,
+                      "semi": 32,
+                      "semix": 40,
+                      "small": 16,
+                      "standard": 24,
+                      "tiny": 8,
+                      "veryhuge": 256,
+                    },
+                    "spacing": Object {
+                      "spacing": 8,
+                      "spacingHuge": 64,
+                      "spacingLarge": 48,
+                      "spacingMicro": 4,
+                      "spacingNone": 0,
+                      "spacingSemi": 32,
+                      "spacingSmall": 16,
+                      "spacingStandard": 24,
+                      "spacingTiny": 8,
+                    },
+                    "typography": Object {
+                      "body1": Object {
+                        "fontSize": 16,
+                        "fontWeight": 400,
+                        "lineHeight": 24,
+                      },
+                      "body2": Object {
+                        "fontSize": 14,
+                        "fontWeight": 400,
+                        "lineHeight": 21,
+                      },
+                      "button": Object {
+                        "fontSize": 14,
+                        "fontWeight": 500,
+                        "lineHeight": 21,
+                      },
+                      "caption": Object {
+                        "fontSize": 12,
+                        "fontWeight": 400,
+                        "lineHeight": 18,
+                      },
+                      "h1": Object {
+                        "fontSize": 96,
+                        "fontWeight": 400,
+                        "lineHeight": 144,
+                      },
+                      "h2": Object {
+                        "fontSize": 60,
+                        "fontWeight": 400,
+                        "lineHeight": 90,
+                      },
+                      "h3": Object {
+                        "fontSize": 48,
+                        "fontWeight": 400,
+                        "lineHeight": 72,
+                      },
+                      "h4": Object {
+                        "fontSize": 34,
+                        "fontWeight": 400,
+                        "lineHeight": 51,
+                      },
+                      "h5": Object {
+                        "fontSize": 24,
+                        "fontWeight": 400,
+                        "lineHeight": 36,
+                      },
+                      "h6": Object {
+                        "fontSize": 20,
+                        "fontWeight": 500,
+                        "lineHeight": 30,
+                      },
+                      "overline": Object {
+                        "fontSize": 12,
+                        "fontWeight": 500,
+                        "lineHeight": 18,
+                      },
+                      "subtitle1": Object {
+                        "fontSize": 16,
+                        "fontWeight": 500,
+                        "lineHeight": 24,
+                      },
+                      "subtitle2": Object {
+                        "fontSize": 14,
+                        "fontWeight": 500,
+                        "lineHeight": 21,
+                      },
+                    },
+                  }
+                }
+                type="none"
+                underlineColorAndroid="transparent"
+                value=""
+              />
+            </View>
           </View>
         </View>
       </View>
     </View>
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#FFFFFF",
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 55,
+            "zIndex": -2,
+          },
+          Object {
+            "elevation": 1,
+            "shadowColor": "#000",
+            "shadowOffset": Object {
+              "height": 2,
+              "width": 0,
+            },
+            "shadowOpacity": 0.24,
+          },
+        ]
+      }
+    />
   </View>
 </View>
 `;

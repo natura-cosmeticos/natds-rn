@@ -1,3 +1,4 @@
+/* eslint-disable max-lines */
 import React, { useState } from 'react';
 import {
   SafeAreaView,
@@ -179,7 +180,8 @@ export const StoryNatIcon = () => {
     </View>
   );
 
-  const filterIconList = filter => iconList.filter(item => item.name.includes(filter.toLowerCase()));
+  const filterIconList = filter => iconList
+    .filter(item => item.name.includes(filter.toLowerCase()));
 
   return (
     <SafeAreaView style={styles.defaultScreen}>

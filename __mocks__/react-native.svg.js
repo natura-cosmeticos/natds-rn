@@ -3,7 +3,7 @@
 // https://github.com/FormidableLabs/react-native-svg-mock
 import React from 'react';
 
-const createComponent = function (name) {
+const createComponent = function (name) { // eslint-disable-line func-names
   return class extends React.Component {
     // overwrite the displayName, since this is a class created dynamically
     static displayName = name;
@@ -20,7 +20,7 @@ const createComponent = function (name) {
 const Svg = createComponent('Svg');
 const Circle = createComponent('Circle');
 const Ellipse = createComponent('Ellipse');
-const G = createComponent('G');
+const G = createComponent('G'); // eslint-disable-line id-length
 const Text = createComponent('Text');
 const TextPath = createComponent('TextPath');
 const TSpan = createComponent('TSpan');

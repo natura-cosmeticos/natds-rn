@@ -3,18 +3,20 @@
 exports[`NatHeader component Should render container component correctly: NatHeader snapshot 1`] = `
 <View
   accessibilityRole="header"
-  accessible={true}
   style={
     Array [
       Object {
+        "alignItems": "center",
         "backgroundColor": "#FFFFFF",
+        "display": "flex",
         "flexDirection": "row",
-        "flexWrap": "wrap",
+        "flexWrap": "nowrap",
         "height": 56,
         "justifyContent": "space-between",
-        "paddingBottom": 16,
+        "paddingBottom": 0,
         "paddingLeft": 16,
-        "paddingTop": 16,
+        "paddingRight": 16,
+        "paddingTop": 0,
         "width": "100%",
       },
       false,
@@ -32,6 +34,8 @@ exports[`NatHeader component Should render container component correctly: NatHea
           "fontFamily": "NaturaSans-Regular",
           "fontSize": 20,
           "marginLeft": 24,
+          "paddingLeft": 45,
+          "paddingTop": 8,
         },
       ]
     }
@@ -44,10 +48,7 @@ exports[`NatHeader component Should render container component correctly: NatHea
       Array [
         Object {
           "color": "#F4AB34",
-          "flexBasis": 0,
-          "flexGrow": 1,
-          "flexShrink": 1,
-          "justifyContent": "flex-end",
+          "marginTop": 4,
           "width": 60,
         },
       ]
@@ -83,7 +84,6 @@ exports[`NatHeader component Should render container component correctly: NatHea
       </Text>
       <Image
         accessibilityLabel="realizar ação do item da barra superior direita"
-        accessible={true}
       />
     </View>
   </View>

@@ -2,7 +2,7 @@
 
 Repositório de componentes React Native.
 
-Para instalação dos componentes, rode na raiz do seu projeto
+Para instalação dos componentes, execute na raiz do seu projeto
 
 ```sh
 npm install --save @naturacosmeticos/natds-rn
@@ -11,6 +11,35 @@ npm install --save @naturacosmeticos/natds-rn
 
 yarn add @naturacosmeticos/natds-rn
 ```
+
+## Ícones
+
+Para fazer uso dos ícones, configure no seu projeto react-native para usar os ícones da biblioteca @naturacosmeticos/natds-icons que já vem instalada como dependência deste pacote.
+
+Para configurar, crie um arquivo na raiz do seu projeto chamado `react-native.config.js` caso ele ainda não exista. Dentro dele, deve ser adicionada a pasta de fontes como asset necessário para o seu projeto. 
+
+```javascript
+module.exports = {
+  ...,
+  assets: [
+    './node_modules/@naturacosmeticos/natds-icons/dist/fonts'
+  ]
+};
+```
+
+Em seguida, na raiz do seu projeto em um terminal, execute `yarn react-native link` e a fonte deverá estar no seu projeto para consumo. Caso não esteja, é recomendado os seguintes passos para cada plataforma:
+
+### iOS
+
+Abra o projeto da pasta `ios` com o xcode e dentro da árvore de módulos do projeto, apague o módulo `Resources`. Em seguida, execute o comando `yarn react-native link` para linkar novamente todos as dependências.
+
+ATENÇÃO: CASO ALGUMA DEPENDÊNCIA TENHA SIDO ADICIONADA MANUALMENTE, ELA DEVERÁ SER ADICIONADA NOVAMENTE
+
+### android
+
+Navegue até a pasta `android/app/src/main`, exclua a pasta assets e na raiz do projeto react-native execute novamente `yarn react-native link`.
+
+ATENÇÃO: CASO ALGUMA DEPENDÊNCIA TENHA SIDO ADICIONADA MANUALMENTE, ELA DEVERÁ SER ADICIONADA NOVAMENTE
 
 # Contribuindo
 
@@ -58,6 +87,16 @@ O conventional commits é utilizado para automação de publicação com o [sema
   - `0.0.0` -> `1.0.0`
 
 Os bumps sempre vão priorizar os commits de maior importância na hora de avaliar qual a próxima versão. Por exemplo, caso esteja na versão `0.0.0` e fizer vários commits de fix, mas apenas um commit de feature, será priorizado esse commit de feature e a próxima versão será `0.1.0`
+
+## Iniciando um novo milestone
+
+Partindo da branch `master`, cria uma nova branch com a seguinte nomenclatura:
+
+- vM.m.p
+  - v &rarr; letra v de versão;
+  - M.m.p &rarr; Número de versão de um milestone seguindo [SemVer](https://semver.org/);
+
+Para mais detalhes, chequem o [processo de milestones](./MILESTONE_PROCESS.md).
 
 ## SVG
 

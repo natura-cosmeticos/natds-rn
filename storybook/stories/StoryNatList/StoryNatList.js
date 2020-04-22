@@ -1,15 +1,14 @@
+/* eslint-disable max-lines */
 import React, { useState } from 'react';
 import {
-  View,
   ScrollView,
   SafeAreaView,
   Dimensions,
+  Alert,
 } from 'react-native';
 import {
   NatContainer,
   NatList,
-  NatListItem,
-  NatLogo,
   NatText,
 } from '../../../lib';
 
@@ -23,15 +22,16 @@ const styles = {
 export const StoryNatList = () => {
   const [valueWithoutHighlight, setValueWithoutHighlight] = useState([]);
   const [valueSimple, setValueSimple] = useState([]);
+  const [valueSimpleRequired, setValueSimpleRequired] = useState([]);
   const [valueMultiple, setValueMultiple] = useState([]);
   const listItems = [
     {
       iconLeft: { svg: { name: 'outlined-navigation-menu' } },
       iconRight: { svg: { name: 'outlined-action-autofilter' } },
       id: '1',
-      onPress: () => alert('press'),
-      onPressLeft: () => alert('press'),
-      onPressRight: () => alert('press'),
+      onPress: () => Alert.alert('press'),
+      onPressLeft: () => Alert.alert('press'),
+      onPressRight: () => Alert.alert('press'),
       title: 'Title Text',
     },
     {
@@ -39,8 +39,8 @@ export const StoryNatList = () => {
       hideIconLeft: false,
       iconRight: { svg: { name: 'outlined-action-autofilter' } },
       id: '2',
-      onPressLeft: () => alert('press'),
-      onPressRight: () => alert('press'),
+      onPressLeft: () => Alert.alert('press'),
+      onPressRight: () => Alert.alert('press'),
       title: 'Title Text',
     },
     {
@@ -48,8 +48,8 @@ export const StoryNatList = () => {
       hideIconRight: true,
       iconLeft: { svg: { name: 'outlined-navigation-menu' } },
       id: '3',
-      onPressLeft: () => alert('press'),
-      onPressRight: () => alert('press'),
+      onPressLeft: () => Alert.alert('press'),
+      onPressRight: () => Alert.alert('press'),
       title: 'Title Text',
     },
     {
@@ -57,8 +57,8 @@ export const StoryNatList = () => {
       hideIconRight: false,
       iconLeft: { svg: { name: 'outlined-navigation-menu' } },
       id: '4',
-      onPressLeft: () => alert('press'),
-      onPressRight: () => alert('press'),
+      onPressLeft: () => Alert.alert('press'),
+      onPressRight: () => Alert.alert('press'),
       title: 'Title Text',
     },
   ];
@@ -68,6 +68,9 @@ export const StoryNatList = () => {
   };
   const changeSimple = (result) => {
     setValueSimple(result);
+  };
+  const changeSimpleRequired = (result) => {
+    setValueSimpleRequired(result);
   };
   const changeMulitple = (result) => {
     setValueMultiple(result);
@@ -94,6 +97,15 @@ export const StoryNatList = () => {
             selected={valueSimple}
             onChange={changeSimple}
           />
+          <NatText value="List with simple select - required" />
+          <NatText value="Value: " />
+          <NatText value={JSON.stringify(valueSimpleRequired)} />
+          <NatList
+            items={listItems}
+            selected={valueSimpleRequired}
+            isRequired
+            onChange={changeSimpleRequired}
+          />
           <NatText value="List with multiple select" />
           <NatText value="Value: " />
           <NatText value={JSON.stringify(valueMultiple)} />
@@ -107,7 +119,4 @@ export const StoryNatList = () => {
       </NatContainer>
     </SafeAreaView>
   );
-};
-
-StoryNatList.propTypes = {
 };
