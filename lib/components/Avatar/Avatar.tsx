@@ -1,5 +1,5 @@
 /* eslint-disable no-nested-ternary */
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 import PropTypes from 'prop-types';
 
 import { Platform } from 'react-native';
@@ -29,33 +29,54 @@ export const TypeElement = ({
   }
 };
 
-TypeElement.propTypes = {
-  name: PropTypes.string,
-  size: PropTypes.number,
-  theme: PropTypes.shape({}),
-  type: PropTypes.string.isRequired,
-  uri: PropTypes.string,
-};
+export enum Type {
+  LETTER = 'letter',
+  ANONYMOUS = 'anonymous',
+  IMAGE = 'image',
+}
 
-export const Avatar = ({
-  name, size, theme, type, uri,
+export interface AvatarProps {
+  /**
+   * The name od the avatar
+   */
+  name: string
+  /**
+   * The avatar sizes
+   */
+  size: number
+  /**
+   * The theme to be applied
+   */
+  theme: typeof ThemeNaturaLight
+  /**
+   * The avatar typesss
+   *
+   * @default 'letter;
+   */
+  type: Type
+  /**
+   * The avatar image uri
+   */
+  uri: string
+}
+
+/**
+ * An avatar component
+ *
+ * Can be used to display user pictures in applications
+ */
+
+export const Avatar: FunctionComponent<AvatarProps> = ({
+  name, size = 3, theme = ThemeNaturaLight, type = Type.LETTER, uri,
 }) => (
-    <AvatarWrapper size={size} theme={theme} type={type}>
-      <TypeElement uri={uri} size={size} theme={theme} name={name} type={type} />
-    </AvatarWrapper>
-  );
+  <AvatarWrapper size={size} theme={theme} type={type}>
+    <TypeElement uri={uri} size={size} theme={theme} name={name} type={type} />
+  </AvatarWrapper>
+);
 
-Avatar.defaultProps = {
-  name: '',
-  size: 3,
-  theme: ThemeNaturaLight,
-  type: 'letter',
-};
-
-Avatar.propTypes = {
-  name: PropTypes.string,
-  size: PropTypes.number,
-  theme: PropTypes.shape({}),
-  type: PropTypes.string.isRequired,
-  uri: PropTypes.string,
-};
+// Avatar.defaultProps = {
+//   name: '',
+//   size: 3,
+//   theme: ThemeNaturaLight,
+//   type: 'letter',
+// };
