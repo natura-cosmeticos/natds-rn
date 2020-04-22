@@ -42,7 +42,11 @@ module.exports = {
   "overrides": {
     "files": ["*.test.tsx", "*.test.ts"],
     "rules": {
-      "import/no-extraneous-dependencies": 0
+      "import/no-extraneous-dependencies": 0,
+    },
+    "files": ["*.tsx", "*.ts"],
+    "rules": {
+      "no-unused-vars": 0
     }
   },
   "settings": {

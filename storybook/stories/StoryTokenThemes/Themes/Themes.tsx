@@ -11,7 +11,9 @@ import {
   Title,
 } from './Themes.styles';
 
-const buildData = item => Object.keys(item).map(key => ({ key, value: item[key] }));
+const buildData = (
+  item: Record<string, string>,
+) => Object.keys(item).map(key => ({ key, value: item[key] }));
 
 const handleRenderItem = ({ item }) => (
   <ItemWrapper>
@@ -42,8 +44,8 @@ export const Themes = withTheme((props) => {
       <SectionList
         sections={sections}
         renderItem={item => handleRenderItem(item)}
-        renderSectionHeader={item => handleRenderSectionHeader(item, palette.text.primary)}
-        keyExtractor={(item, index) => index}
+        renderSectionHeader={item => handleRenderSectionHeader(item)}
+        keyExtractor={(item, index) => `${index}`}
       />
     </View>
   );

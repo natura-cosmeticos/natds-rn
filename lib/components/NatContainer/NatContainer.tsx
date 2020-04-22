@@ -1,4 +1,5 @@
 import React from 'react';
+import { ViewProps } from 'react-native';
 import { View } from './NatContainer.styles';
 
 type NatContainerProps = {
@@ -10,7 +11,8 @@ type NatContainerProps = {
   paddingLeft?: string,
   paddingRight?: string,
   paddingTop?: string
-};
+} & ViewProps;
+
 export const NatContainer: React.SFC<NatContainerProps> = ({
   children,
   ...props

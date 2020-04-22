@@ -19,10 +19,9 @@ import { StoryNatLogo } from './StoryNatLogo';
 import { StoryNatMenuItem } from './StoryNatMenuItem';
 import { StoryNatSelectInput } from './StoryNatSelectInput';
 import { StoryNatTextInput } from './StoryNatTextInput';
-import { StoryTokenColors, Colors } from './StoryTokenColors';
+import { Colors } from './StoryTokenColors';
 import { StoryTokenSpace } from './StoryTokenSpace';
 import { StoryTokenTypography } from './StoryTokenTypography';
-import { ThemeNaturaLight } from './StoryTokenThemes/ThemeNaturaLight';
 import { Themes } from './StoryTokenThemes/Themes';
 import { Welcome } from './Welcome';
 import iconArrowLeft from '../../lib/assets/icons/ic_arrow_left_white.png';
@@ -41,12 +40,9 @@ storiesOf('Welcome', module).add('NATDS', () => <Welcome />);
 
 storiesOf('Tokens', module)
   .add('Typography', () => <StoryTokenTypography />)
-  .add('Colors', () => <StoryTokenColors />)
-  .add('Colors New', props => <Colors {...props} />)
+  .add('Colors', props => <Colors {...props} />)
   .add('Space', () => <StoryTokenSpace />)
-  .add('Theme Natura Light', () => <ThemeNaturaLight />)
   .add('Themes', props => <Themes {...props} />);
-
 storiesOf('Divider', module)
   .add('All', () => <StoryDivider />);
 storiesOf('Images', module)
@@ -96,7 +92,6 @@ storiesOf('TabBar', module)
   .add('All', () => <StoryTabBar />);
 storiesOf('FAB', module)
   .add('All', () => <StoryFAB />);
-
 storiesOf('Avatar', module)
   .add('All', () => <StoryAvatar />);
 storiesOf('NatButton - OLD', module)
