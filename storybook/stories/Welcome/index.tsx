@@ -1,15 +1,7 @@
 import React from 'react';
-import { SafeAreaView, Dimensions } from 'react-native';
-import { NatLogo, NatText, NatContainer } from '../../../lib';
+import { NatLogo, NatText } from '../../../lib';
 
-const styles = {
-  defaultScreen: {
-    flex: 1,
-    width: Dimensions.get('window').width,
-  },
-};
-
-export const Welcome = props => (
+export const Welcome = () => (
   <>
     <NatLogo name="logo-natura-vertical" size={300} />
     <NatText type="h3" value="Welcome to NATDS!" />
