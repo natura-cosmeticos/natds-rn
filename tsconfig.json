@@ -1,0 +1,47 @@
+{
+  "compilerOptions": {
+    "outDir": "build/lib",
+    "module": "esnext",
+    "target": "es2017",
+    "lib": [
+      "es5",
+      "es6",
+      "es7",
+      "es2017"
+    ],
+    "sourceMap": true,
+    "allowJs": false,
+    "jsx": "react-native",
+    "moduleResolution": "node",
+    "rootDirs": [
+      "lib",
+      "storybook"
+    ],
+    "esModuleInterop": true,
+    "baseUrl": ".",
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": false,
+    "strictNullChecks": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "noUnusedLocals": true,
+    "declaration": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+  },
+  "include": [
+    "lib/**/*"
+  ],
+  "files": [
+    "./types/png.d.ts",
+    "./types/svg.d.ts",
+  ],
+  "exclude": [
+    "node_modules",
+    "build",
+    "scripts"
+  ]
+}
