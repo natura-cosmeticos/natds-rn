@@ -18,14 +18,12 @@ const styles = StyleSheet.create({
 });
 
 export const StoriesWrapper = ({ story }) => {
-  themes.test = themes.natura;
   const themeNames = Object.keys(themes);
   const [isLight, changeMode] = useState(true);
   const [activeTheme, changeTheme] = useState(themeNames[0]);
   const [modalVisible, setModalVisible] = useState(false);
   const mode = isLight ? 'light' : 'dark';
   const theme = themes[activeTheme][mode];
-  const colors = theme.palette;
 
   return (
     <SafeAreaView style={styles.defaultScreen}>
@@ -34,7 +32,6 @@ export const StoriesWrapper = ({ story }) => {
           <ThemeSelectorModal
             modalVisible={modalVisible}
             themeNames={themeNames}
-            colors={colors}
             activeTheme={activeTheme}
             changeTheme={changeTheme}
             setModalVisible={setModalVisible}

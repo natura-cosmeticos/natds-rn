@@ -9,7 +9,7 @@ import { SwitchWithLabel } from './SwitchWithLabel';
 export const ThemeSelectorModal = ({
   modalVisible, themeNames, activeTheme, changeTheme, setModalVisible,
 }) => (
-  <Modal animationType="slide" visible={modalVisible} statusBarTranslucent >
+  <Modal animationType="slide" visible={modalVisible} >
     <ModalContainer>
       <Title>Available Themes:</Title>
       <View style={{ width: '100%' }}>

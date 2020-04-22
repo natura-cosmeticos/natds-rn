@@ -48,12 +48,14 @@ const scenarios = [
 ];
 
 describe('Palette selectors', () => {
-  it('should call the given function destructuring the theme prop', () => {
-    const fakeSelector = jest.fn(theme => theme.palette.background.paper);
-    const result = selectors.getTheme(fakeSelector)({ theme: sampleTheme });
+  describe('getTheme', () => {
+    it('should call the given function destructuring the theme prop', () => {
+      const fakeSelector = jest.fn(theme => theme.palette.background.paper);
+      const result = selectors.getTheme(fakeSelector)({ theme: sampleTheme });
 
-    expect(fakeSelector).toHaveBeenCalledWith(sampleTheme);
-    expect(result).toBe(sampleTheme.palette?.background?.paper);
+      expect(fakeSelector).toHaveBeenCalledWith(sampleTheme);
+      expect(result).toBe(sampleTheme.palette?.background?.paper);
+    });
   });
 
   /*  eslint-disable mocha/no-setup-in-describe */
