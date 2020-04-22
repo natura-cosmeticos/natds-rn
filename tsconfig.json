@@ -13,10 +13,6 @@
     "allowJs": false,
     "jsx": "react-native",
     "moduleResolution": "node",
-    "rootDirs": [
-      "lib",
-      "storybook"
-    ],
     "esModuleInterop": true,
     "baseUrl": ".",
     "forceConsistentCasingInFileNames": true,
@@ -33,11 +29,8 @@
     "emitDecoratorMetadata": true,
   },
   "include": [
-    "lib/**/*"
-  ],
-  "files": [
-    "./types/png.d.ts",
-    "./types/svg.d.ts",
+    "lib/**/*",
+    "types/**/*"
   ],
   "exclude": [
     "node_modules",
