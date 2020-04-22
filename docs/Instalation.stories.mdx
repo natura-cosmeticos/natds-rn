@@ -1,0 +1,49 @@
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
+
+
+<Meta title="Get Started/Installation" />
+
+
+# Natura React Components
+
+Repositório de componentes React Native.
+
+Para instalação dos componentes, execute na raiz do seu projeto
+
+```sh
+npm install --save @naturacosmeticos/natds-rn
+
+# OR
+
+yarn add @naturacosmeticos/natds-rn
+```
+
+## Ícones
+
+Para fazer uso dos ícones, configure no seu projeto react-native para usar os ícones da biblioteca @naturacosmeticos/natds-icons que já vem instalada como dependência deste pacote.
+
+Para configurar, crie um arquivo na raiz do seu projeto chamado `react-native.config.js` caso ele ainda não exista. Dentro dele, deve ser adicionada a pasta de fontes como asset necessário para o seu projeto.
+
+```javascript
+module.exports = {
+  ...,
+  assets: [
+    './node_modules/@naturacosmeticos/natds-icons/dist/fonts'
+  ]
+};
+```
+
+Em seguida, na raiz do seu projeto em um terminal, execute `yarn react-native link` e a fonte deverá estar no seu projeto para consumo. Caso não esteja, é recomendado os seguintes passos para cada plataforma:
+
+### iOS
+
+Abra o projeto da pasta `ios` com o xcode e dentro da árvore de módulos do projeto, apague o módulo `Resources`. Em seguida, execute o comando `yarn react-native link` para linkar novamente todos as dependências.
+
+ATENÇÃO: CASO ALGUMA DEPENDÊNCIA TENHA SIDO ADICIONADA MANUALMENTE, ELA DEVERÁ SER ADICIONADA NOVAMENTE
+
+### android
+
+Navegue até a pasta `android/app/src/main`, exclua a pasta assets e na raiz do projeto react-native execute novamente `yarn react-native link`.
+
+ATENÇÃO: CASO ALGUMA DEPENDÊNCIA TENHA SIDO ADICIONADA MANUALMENTE, ELA DEVERÁ SER ADICIONADA NOVAMENTE
+

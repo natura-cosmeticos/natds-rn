@@ -108,6 +108,7 @@
     "react-native-web": "^0.12.2",
     "react-test-renderer": "16.9.0",
     "semantic-release": "17.0.4",
+    "storybook-addon-designs": "^5.2.0",
     "ts-jest": "^25.4.0",
     "ts-loader": "^7.0.0",
     "typescript": "^3.8.3",

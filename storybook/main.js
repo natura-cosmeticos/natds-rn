@@ -1,8 +1,9 @@
-const createCompiler = require('@storybook/addon-docs/mdx-compiler-plugin');
-
 module.exports = {
-  presets: ['@storybook/addon-docs/react/preset'],
-  stories: ['../lib/**/*.stories.(js|mdx)'],
+  presets: ['@storybook/addon-docs/preset'],
+  stories: [
+    '../docs/**/*.stories.(js|mdx)',
+    '../lib/**/*.stories.(js|mdx)',
+  ],
   webpackFinal: (config) => {
     const newConfig = { ...config };
 

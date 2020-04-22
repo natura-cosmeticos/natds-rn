@@ -1,0 +1,58 @@
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
+import {text, withKnobs} from '@storybook/addon-knobs'
+import { withDesign } from 'storybook-addon-designs'
+import { Avatar } from './Avatar';
+import { Button } from '../Button/Button';
+
+
+<Meta title="MAvatar" component={Avatar} decorators={[withKnobs, withDesign]} />
+
+# Avatar
+
+With `MDX` we can define a story for `Avatar` right in the middle of our
+markdown documentation.
+
+
+## Sizes
+
+size: `1`
+
+<Avatar
+    size={1}
+    type="image"
+    uri="https://c.pxhere.com/photos/52/58/photo-1412284.jpg!d"
+  />
+
+size: `2`
+<Avatar
+    size={2}
+    type="image"
+    uri="https://c.pxhere.com/photos/52/58/photo-1412284.jpg!d"
+  />
+
+size: `3`
+<Avatar
+    size={3}
+    type="image"
+    uri="https://c.pxhere.com/photos/52/58/photo-1412284.jpg!d"
+  />
+
+<Preview>
+  <Story name="Avatar" parameters={{
+    design: {
+      type: 'iframe',
+      url: 'https://appetize.io/embed/0bezq9znd9pmuwr3rpdrvb6eq0?device=nexus5&scale=75&orientation=portrait&osVersion=8.1'
+    }
+  }}>
+      <Avatar
+        size={1}
+        type={text('Type', 'image')}
+        uri="https://c.pxhere.com/photos/52/58/photo-1412284.jpg!d"
+      />
+  </Story>
+</Preview>
+
+
+## Props
+
+<Props of={Avatar} />
