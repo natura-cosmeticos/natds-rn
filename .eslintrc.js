@@ -45,7 +45,7 @@ module.exports = {
           "**/*.test.ts",
           "**/*.test.tsx",
           "test-setup.js",
-          "storybook/**/*"
+          "storybook/**/*",
           "storybook-web/**/*"
         ]
       }

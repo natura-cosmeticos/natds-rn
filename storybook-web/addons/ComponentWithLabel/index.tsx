@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import './styles.scss';
+import './styles.css';
 
 export interface IComponentWithLabelItem {
   title?: string;
@@ -12,18 +12,8 @@ export interface IComponentWithLabelProps {
   itemsPerRow?: number;
 }
 
-export default function ComponentWithLabel(props: IComponentWithLabelProps) {
-  const { componentList, itemsPerRow } = props;
-
-  return (
-    <ul className="component__list">
-      {componentList.map(BuildComponentItem, { itemsPerRow })}
-    </ul>
-  );
-}
-
 function BuildComponentItem({ title, component }: IComponentWithLabelItem, key: number) {
-  const { itemsPerRow = 'auto' }:any = this;
+  const { itemsPerRow = 'auto' }: any = this;
   const styles = itemsPerRow === 'auto' ? {} : { flexBasis: `${100 / itemsPerRow}%` };
 
   return (
@@ -31,5 +21,15 @@ function BuildComponentItem({ title, component }: IComponentWithLabelItem, key: 
       <h5 className="component__item__title">{title}</h5>
       {component}
     </li>
+  );
+}
+
+export default function ComponentWithLabel(props: IComponentWithLabelProps) {
+  const { componentList, itemsPerRow } = props;
+
+  return (
+    <ul className="component__list">
+      {componentList.map(BuildComponentItem, { itemsPerRow })}
+    </ul>
   );
 }

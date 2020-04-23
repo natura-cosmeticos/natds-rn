@@ -3,11 +3,11 @@ import { addons, types } from '@storybook/addons';
 import {
   PANEL_ID, ADDON_ID, TITLE, PARAM_KEY,
 } from './shared';
-import Theme from './index';
+import { Versions } from './index';
 
 addons.register(ADDON_ID, (api) => {
   const render = () => (
-      <Theme
+      <Versions
         channel={addons.getChannel()}
         api={api}
       />

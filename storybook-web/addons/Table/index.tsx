@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import './styles.scss';
+import './styles.css';
 
 interface ITableComponent {
   title?: string;
@@ -10,19 +10,18 @@ interface ITableComponent {
   };
 }
 
-export default function Table(props: ITableComponent) {
-  const { title }: { title?: string } = props;
+const renderItem = (item: any) => {
+  if (item.type === 'color') {
+    return (
+      <div>
+        <span className="table__body__item__color" style={{ background: item.name }} />
+        <span className="table__body__item__color-name">{item.name}</span>
+      </div>
+    );
+  }
 
-  return (
-    <div className="table__container">
-      {title && <h4 className="table__title">{title}</h4>}
-      <table className="table">
-        {renderTableHead(props.schema.head)}
-        {renderTableBody(props.schema.body)}
-      </table>
-    </div>
-  );
-}
+  return item.name;
+};
 
 const renderTableHead = (head: string[]) => (
   <thead className="table__head">
@@ -46,15 +45,16 @@ const renderTableBody = (body: any[]) => (
   </tbody>
 );
 
-const renderItem = (item: any) => {
-  if(item.type === 'color') {
-    return (
-      <div>
-        <span className="table__body__item__color" style={{ background: item.name }} />
-        <span className="table__body__item__color-name">{item.name}</span>
-      </div>
-    );
-  }
+export default function Table(props: ITableComponent) {
+  const { title }: { title?: string } = props;
 
-  return item.name;
-};
+  return (
+    <div className="table__container">
+      {title && <h4 className="table__title">{title}</h4>}
+      <table className="table">
+        {renderTableHead(props.schema.head)}
+        {renderTableBody(props.schema.body)}
+      </table>
+    </div>
+  );
+}
