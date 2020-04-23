@@ -71,5 +71,3 @@ lib/assets/fonts/natds-icons.*
 
 #jest
 .jest/
-# Storybook web
-dist-storybook-web/
