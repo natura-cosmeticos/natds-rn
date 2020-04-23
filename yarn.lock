@@ -1479,6 +1479,13 @@
   resolved "https://registry.yarnpkg.com/@naturacosmeticos/natds-icons/-/natds-icons-0.4.0.tgz#3bc57978b7a75a3ade10663f7d2cfcfaa5e309ea"
   integrity sha512-4qwtkucI4XfJZi2EIYsmPyXaRlYXR0Pg4O5doASmujwtgQx7VdqzoTUqVFcOQK85INmFjTu9KxW3G1U6a9Ssyg==
 
+"@naturacosmeticos/natds-styles@^0.4.2":
+  version "0.4.2"
+  resolved "https://registry.yarnpkg.com/@naturacosmeticos/natds-styles/-/natds-styles-0.4.2.tgz#260dea6264ca5dbc491e3320b5dd87fc2b0b9654"
+  integrity sha512-/JIXQ5fXm3cJlC3pMqfT55FR115X8CgCmge/01PhDLPE3Ac8lB7g/9YbQ2ptigKZjtE5RRGWX5XnKk765zx4ng==
+  dependencies:
+    hex-to-rgba "2.0.1"
+
 "@nodelib/fs.scandir@2.1.3":
   version "2.1.3"
   resolved "https://registry.yarnpkg.com/@nodelib/fs.scandir/-/fs.scandir-2.1.3.tgz#3a582bdb53804c6ba6d146579c46e52130cf4a3b"
@@ -8490,6 +8497,11 @@ hermes-engine@^0.2.1:
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/hermes-engine/-/hermes-engine-0.2.1.tgz#25c0f1ff852512a92cb5c5cc47cf967e1e722ea2"
   integrity sha512-eNHUQHuadDMJARpaqvlCZoK/Nitpj6oywq3vQ3wCwEsww5morX34mW5PmKWQTO7aU0ck0hgulxR+EVDlXygGxQ==
+
+hex-to-rgba@2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/hex-to-rgba/-/hex-to-rgba-2.0.1.tgz#4176977882a1cb32b83ce5ab1db6828ab84d5a13"
+  integrity sha512-5XqPJBpsEUMsseJUi2w2Hl7cHFFi3+OO10M2pzAvKB1zL6fc+koGMhmBqoDOCB4GemiRM/zvDMRIhVw6EkB8dQ==
 
 highlight.js@~9.13.0:
   version "9.13.1"

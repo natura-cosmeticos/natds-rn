@@ -1,1 +1,0 @@
-export { StoryTokenColors } from './StoryTokenColors';
