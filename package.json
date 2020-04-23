@@ -46,6 +46,7 @@
   },
   "devDependencies": {
     "@babel/core": "7.6.2",
+    "@babel/plugin-proposal-optional-chaining": "^7.9.0",
     "@babel/runtime": "7.6.2",
     "@naturacosmeticos/eslint-config-natura": "2.0.1",
     "@naturacosmeticos/natds-styles": "^0.4.2",

@@ -14,6 +14,7 @@ module.exports = {
       'react-native-svg': 'react-native-svg/lib/commonjs/ReactNativeSVG.web',
     };
 
+    newConfig.module.rules[0].use[0].options.plugins.push(['@babel/plugin-proposal-optional-chaining']);
     newConfig.module.rules[0].use[0].options.plugins.push(['react-native-web', { commonjs: true }]);
 
     newConfig.module.rules[7] = {
