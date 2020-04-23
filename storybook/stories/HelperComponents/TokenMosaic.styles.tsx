@@ -14,7 +14,6 @@ export const TokenColorContainer = styled.View`
   padding: 5px;
   margin-top: 5px;
   margin-bottom: 5px;
-
 `;
 
 export const ActualColor = styled.View`
