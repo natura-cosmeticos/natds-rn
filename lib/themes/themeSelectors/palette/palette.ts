@@ -1,9 +1,15 @@
 import { ITheme } from '@naturacosmeticos/natds-styles';
 
+interface ThemeSelector {
+  (theme: ITheme): string
+}
+
 // Helper selectors
 const getPalette = (theme: ITheme) => theme.palette;
 
-export const getTheme = selector => ({ theme }) => selector(theme);
+export const getTheme = (selector: ThemeSelector) => (
+  { theme }: { theme: ITheme },
+) => selector(theme);
 
 
 // Success selectors
