@@ -21,7 +21,6 @@ const knobsChange = 'storybookjs/knobs/change';
 
 const backgroundStyles = {
   bottom: 0,
-  boxShadow: 'rgba(255,255,255,.1) 0 0 0 1px inset',
   left: 0,
   position: 'fixed',
   right: 0,
@@ -35,9 +34,9 @@ const storyStyles = {
   zIndex: 1,
 };
 
-const DEFAULT_BACKGROUND = 'transparent';
+const DEFAULT_BACKGROUND = '#ffffff';
 
-const Wrapper = (getStory, storyContext, { options, parameters }) => {
+const wrapper = (getStory, storyContext, { options, parameters }) => {
   const channel = addons.getChannel();
   const { context, disableBackground } = parameters;
   const { themes, defaultTheme } = getProvider(context || options);
@@ -75,5 +74,5 @@ export const withTheme = makeDecorator({
   name: 'withTheme',
   parameterName: PARAM_KEY,
   skipIfNoParametersOrOptions: true,
-  wrapper: Wrapper,
+  wrapper,
 });

@@ -55,7 +55,7 @@ export default function Theme(props) {
     channel.emit(CHANGE, params);
   };
 
-  const renderTooltip = ({ onHide }) => items => (
+  const renderTooltip = items => ({ onHide }) => (
     <TooltipLinkList
       links={getDisplayedItems(items, (index) => {
         handleChange(index);
