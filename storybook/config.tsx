@@ -1,4 +1,4 @@
-import { configure } from '@storybook/react-native'; // eslint-disable-line import/no-extraneous-dependencies
+import { configure } from '@storybook/react-native';
 
 configure(() => {
   // eslint-disable-next-line global-require

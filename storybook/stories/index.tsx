@@ -31,7 +31,6 @@ import { StoryFAB } from './StoryFAB';
 import { StoryAvatar } from './StoryAvatar';
 import { StoriesWrapper } from './StoryWrapper';
 
-
 console.disableYellowBox = true; // eslint-disable-line no-console
 
 addDecorator(storyFn => <StoriesWrapper story={storyFn || null} />);

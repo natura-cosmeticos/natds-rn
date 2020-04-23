@@ -5,7 +5,7 @@ interface ThemeSelector {
 }
 
 // Helper selectors
-const getPalette = (theme: ITheme) => theme.palette;
+const getPalette = (theme: ITheme) => theme?.palette;
 
 export const getTheme = (selector: ThemeSelector) => (
   { theme }: { theme: ITheme },

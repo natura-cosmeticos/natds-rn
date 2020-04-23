@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { themes } from '@naturacosmeticos/natds-styles';
 import { ThemeProvider } from 'styled-components/native';
 import {
-  ScrollView, SafeAreaView, Dimensions, StyleSheet,
+  ScrollView, SafeAreaView, Dimensions, StyleSheet, Platform,
 } from 'react-native';
 import { NatContainer, getBackgroundPaper } from '../../../lib';
 import { TextWithTheme } from '../HelperComponents/ThemeHelper.styles';
@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
   },
 });
 
-export const StoriesWrapper = ({ story }) => {
+export const StoriesWrapperNative = ({ story }) => {
   const themeNames = Object.keys(themes);
   const [isLight, changeMode] = useState(true);
   const [activeTheme, changeTheme] = useState(themeNames[0]);
@@ -56,3 +56,19 @@ export const StoriesWrapper = ({ story }) => {
     </SafeAreaView>
   );
 };
+
+export const StoriesWrapperWeb = ({ story }) => (
+  <SafeAreaView style={styles.defaultScreen}>
+    <ScrollView>
+      <NatContainer >
+        {story && story()}
+      </NatContainer>
+    </ScrollView>
+  </SafeAreaView>
+);
+
+export const StoriesWrapper = props => (
+  Platform.OS === 'web'
+    ? <StoriesWrapperWeb {...props} />
+    : <StoriesWrapperNative {...props} />
+);

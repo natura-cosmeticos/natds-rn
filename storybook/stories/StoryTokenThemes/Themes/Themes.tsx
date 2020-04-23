@@ -1,5 +1,5 @@
 import React from 'react';
-import { withTheme } from 'styled-components';
+import { withTheme } from 'styled-components/native';
 import { View, SectionList } from 'react-native';
 import {
   ItemWrapper,
@@ -39,7 +39,7 @@ export const Themes = withTheme((props) => {
   return (
     <View>
       <Title>
-        {`${activeTheme} ${light ? 'Light' : 'Dark'}`}
+        {activeTheme ? `${activeTheme} ${light ? 'Light' : 'Dark'}` : 'Selected theme'}
       </Title>
       <SectionList
         sections={sections}

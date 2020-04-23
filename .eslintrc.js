@@ -38,7 +38,18 @@ module.exports = {
     "import/prefer-default-export": 0,
     "max-lines-per-function": 0,
     "react/prop-types": 0,
-    "import/no-extraneous-dependencies": ["error", { "devDependencies": ["**/*.test.ts", "**/*.test.tsx", "test-setup.js"] }]
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": [
+          "**/*.test.ts",
+          "**/*.test.tsx",
+          "test-setup.js",
+          "storybook/**/*"
+          "storybook-web/**/*"
+        ]
+      }
+    ]
   },
   "overrides": [
     {
