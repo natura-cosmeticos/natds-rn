@@ -1,17 +1,9 @@
 import * as React from 'react';
 
-import './styles.scss';
+import './styles.css';
 
 interface IColors {
   colors: any;
-}
-
-export default function Colors(props: IColors) {
-  return (
-    <div className="colors__container">
-      {Object.entries(props.colors).map(ColorsGroup)}
-    </div>
-  );
 }
 
 const BuildColorList = ([name, value]: any[], key: number) => (
@@ -30,3 +22,11 @@ const ColorsGroup = ([name, colors]: any[], index: number = 0) => (
     </ul>
   </div>
 );
+
+export default function Colors(props: IColors) {
+  return (
+    <div className="colors__container">
+      {Object.entries(props.colors).map(ColorsGroup)}
+    </div>
+  );
+}

@@ -17,7 +17,6 @@ function LocalhostWarning() {
 }
 
 function changeVersion(version, name) {
-  console.log(version, name)
   const { origin, search } = window.location;
   const newPath = `${origin}/${name}/${version}/${search}`;
 
