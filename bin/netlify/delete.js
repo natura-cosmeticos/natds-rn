@@ -13,7 +13,7 @@ if (!pullRequestBranch) exitWithMsg('env var BITRISEIO_PULL_REQUEST_MERGE_BRANCH
 const init = async () => {
   const client = new NetlifyAPI(authToken);
   const siteName = buildBranchSiteName(pullRequestBranch);
-  const site = findSiteByName(client, siteName);
+  const site = await findSiteByName(client, siteName);
 
   if (!site) {
     exitWithMsg('Could not find site associated with this branch.');
@@ -24,7 +24,8 @@ const init = async () => {
       site_id: site.site_id,
     });
   } catch (error) {
-    exitWithMsg(`Error deleting ${siteName}.`, 1);
+    exitWithMsg(`Error deleting ${siteName}.
+    ${JSON.stringify(error, null, 2)}`, 1);
   }
 
   exitWithMsg(`Site ${siteName} deleted!`);
