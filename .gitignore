@@ -72,5 +72,5 @@ lib/assets/fonts/natds-icons.*
 #jest
 .jest/
 
-# Firebse
-.firebase
+# Local Netlify folder
+.netlify
