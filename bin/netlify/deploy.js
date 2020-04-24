@@ -1,5 +1,6 @@
 #!/usr/bin/env node
-const shell = require('shelljs'); // eslint-disable-line
+
+const shell = require('shelljs');
 const NetlifyAPI = require('netlify');
 
 const exitWithMsg = (msg, code = 0) => {
