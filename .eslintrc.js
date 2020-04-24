@@ -44,9 +44,12 @@ module.exports = {
         "devDependencies": [
           "**/*.test.ts",
           "**/*.test.tsx",
+          "**/*.stories.tsx",
+          "**/*.stories.mdx",
           "test-setup.js",
           "storybook/**/*",
-          "storybook-web/**/*"
+          "storybook-web/**/*",
+          "bin/**/*"
         ]
       }
     ]
@@ -56,6 +59,12 @@ module.exports = {
       "files": ["*.tsx", "*.ts"],
       "rules": {
         "no-unused-vars": 0
+      }
+    },
+    {
+      "files": ["bin/**/*"],
+      "rules": {
+        "no-console": 0
       }
     }
   ],
