@@ -29,7 +29,7 @@ const deploy = async (site) => {
 };
 
 const publishRelease = async (siteName) => {
-  const site = await findSiteByName(siteName);
+  const site = await findSiteByName(client, siteName);
   const currentSite = site || await client.createSite({
     body: { name: siteName },
   });
