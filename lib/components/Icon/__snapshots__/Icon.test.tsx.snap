@@ -104,7 +104,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: filled-navigation-directionleft 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: filled-media-stop 1`] = `
 <Text
   style={
     Object {
@@ -117,7 +117,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: filled-navigation-directionright 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: filled-navigation-directionleft 1`] = `
 <Text
   style={
     Object {
@@ -130,7 +130,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: filled-navigation-directiontbottom 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: filled-navigation-directionright 1`] = `
 <Text
   style={
     Object {
@@ -143,7 +143,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: filled-navigation-directiontop 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: filled-navigation-directiontbottom 1`] = `
 <Text
   style={
     Object {
@@ -156,7 +156,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: filled-navigation-menu 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: filled-navigation-directiontop 1`] = `
 <Text
   style={
     Object {
@@ -169,7 +169,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: filled-navigation-more 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: filled-navigation-menu 1`] = `
 <Text
   style={
     Object {
@@ -182,7 +182,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-action-add 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: filled-navigation-more 1`] = `
 <Text
   style={
     Object {
@@ -195,7 +195,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-action-attachment 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-action-add 1`] = `
 <Text
   style={
     Object {
@@ -208,7 +208,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-action-autofilter 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-action-attachment 1`] = `
 <Text
   style={
     Object {
@@ -221,7 +221,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-action-calendar 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-action-autofilter 1`] = `
 <Text
   style={
     Object {
@@ -234,7 +234,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-action-cancel 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-action-calendar 1`] = `
 <Text
   style={
     Object {
@@ -247,7 +247,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-action-change 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-action-cancel 1`] = `
 <Text
   style={
     Object {
@@ -260,7 +260,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-action-check 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-action-change 1`] = `
 <Text
   style={
     Object {
@@ -273,7 +273,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-action-closedbox 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-action-check 1`] = `
 <Text
   style={
     Object {
@@ -286,7 +286,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-action-copy 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-action-closedbox 1`] = `
 <Text
   style={
     Object {
@@ -299,7 +299,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-action-cycle 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-action-copy 1`] = `
 <Text
   style={
     Object {
@@ -312,7 +312,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-action-delete 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-action-cycle 1`] = `
 <Text
   style={
     Object {
@@ -325,7 +325,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-action-done 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-action-delete 1`] = `
 <Text
   style={
     Object {
@@ -338,7 +338,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-action-download 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-action-done 1`] = `
 <Text
   style={
     Object {
@@ -351,7 +351,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-action-edit 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-action-download 1`] = `
 <Text
   style={
     Object {
@@ -364,7 +364,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-action-favorite 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-action-edit 1`] = `
 <Text
   style={
     Object {
@@ -377,7 +377,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-action-filter 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-action-favorite 1`] = `
 <Text
   style={
     Object {
@@ -390,7 +390,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-action-gridsquare 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-action-filter 1`] = `
 <Text
   style={
     Object {
@@ -403,7 +403,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-action-help 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-action-gridsquare 1`] = `
 <Text
   style={
     Object {
@@ -416,7 +416,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-action-history 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-action-help 1`] = `
 <Text
   style={
     Object {
@@ -429,7 +429,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-action-like 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-action-history 1`] = `
 <Text
   style={
     Object {
@@ -442,7 +442,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-action-list 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-action-like 1`] = `
 <Text
   style={
     Object {
@@ -455,7 +455,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-action-love 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-action-list 1`] = `
 <Text
   style={
     Object {
@@ -468,7 +468,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-action-mic 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-action-love 1`] = `
 <Text
   style={
     Object {
@@ -481,7 +481,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-action-micrec 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-action-mic 1`] = `
 <Text
   style={
     Object {
@@ -494,7 +494,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-action-newrequest 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-action-micrec 1`] = `
 <Text
   style={
     Object {
@@ -507,7 +507,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-action-order 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-action-newregister 1`] = `
 <Text
   style={
     Object {
@@ -520,7 +520,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-action-phone 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-action-newrequest 1`] = `
 <Text
   style={
     Object {
@@ -533,7 +533,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-action-print 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-action-order 1`] = `
 <Text
   style={
     Object {
@@ -546,7 +546,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-action-rating 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-action-phone 1`] = `
 <Text
   style={
     Object {
@@ -559,7 +559,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-action-request 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-action-print 1`] = `
 <Text
   style={
     Object {
@@ -572,7 +572,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-action-save 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-action-rating 1`] = `
 <Text
   style={
     Object {
@@ -585,7 +585,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-action-schedule 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-action-recycle 1`] = `
 <Text
   style={
     Object {
@@ -598,7 +598,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-action-search 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-action-request 1`] = `
 <Text
   style={
     Object {
@@ -611,7 +611,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-action-selectedalllines 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-action-save 1`] = `
 <Text
   style={
     Object {
@@ -624,7 +624,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-action-send 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-action-schedule 1`] = `
 <Text
   style={
     Object {
@@ -637,7 +637,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-action-settings 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-action-search 1`] = `
 <Text
   style={
     Object {
@@ -650,7 +650,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-action-share 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-action-selectedalllines 1`] = `
 <Text
   style={
     Object {
@@ -663,7 +663,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-action-subtract 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-action-send 1`] = `
 <Text
   style={
     Object {
@@ -676,7 +676,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-action-update 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-action-settings 1`] = `
 <Text
   style={
     Object {
@@ -689,7 +689,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-action-upload 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-action-share 1`] = `
 <Text
   style={
     Object {
@@ -702,7 +702,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-action-visibility 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-action-subtract 1`] = `
 <Text
   style={
     Object {
@@ -715,7 +715,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-action-visibilityoff 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-action-update 1`] = `
 <Text
   style={
     Object {
@@ -728,7 +728,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-alert-empty 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-action-upload 1`] = `
 <Text
   style={
     Object {
@@ -741,7 +741,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-alert-indeterminate 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-action-visibility 1`] = `
 <Text
   style={
     Object {
@@ -754,7 +754,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-alert-info 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-action-visibilityoff 1`] = `
 <Text
   style={
     Object {
@@ -767,7 +767,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-communication-chat 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-alert-empty 1`] = `
 <Text
   style={
     Object {
@@ -780,7 +780,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-communication-email 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-alert-indeterminate 1`] = `
 <Text
   style={
     Object {
@@ -793,7 +793,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-communication-help 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-alert-info 1`] = `
 <Text
   style={
     Object {
@@ -806,7 +806,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-communication-message 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-communication-chat 1`] = `
 <Text
   style={
     Object {
@@ -819,7 +819,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-communication-occurrence 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-communication-email 1`] = `
 <Text
   style={
     Object {
@@ -832,7 +832,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-communication-readEmail 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-communication-help 1`] = `
 <Text
   style={
     Object {
@@ -845,7 +845,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-communication-signal 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-communication-message 1`] = `
 <Text
   style={
     Object {
@@ -858,7 +858,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-communication-speaker 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-communication-occurrence 1`] = `
 <Text
   style={
     Object {
@@ -871,7 +871,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-communication-treatment 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-communication-readEmail 1`] = `
 <Text
   style={
     Object {
@@ -884,7 +884,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-content-adddocument 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-communication-signal 1`] = `
 <Text
   style={
     Object {
@@ -897,7 +897,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-content-agility 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-communication-speaker 1`] = `
 <Text
   style={
     Object {
@@ -910,7 +910,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-content-bellringing 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-communication-treatment 1`] = `
 <Text
   style={
     Object {
@@ -923,7 +923,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-content-book 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-content-adddocument 1`] = `
 <Text
   style={
     Object {
@@ -936,7 +936,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-content-brightness 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-content-agility 1`] = `
 <Text
   style={
     Object {
@@ -949,7 +949,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-content-changeview 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-content-bellringing 1`] = `
 <Text
   style={
     Object {
@@ -962,7 +962,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-content-channel 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-content-book 1`] = `
 <Text
   style={
     Object {
@@ -975,7 +975,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-content-christmascard 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-content-brightness 1`] = `
 <Text
   style={
     Object {
@@ -988,7 +988,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-content-consistency 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-content-changeview 1`] = `
 <Text
   style={
     Object {
@@ -1001,7 +1001,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-content-divulgation 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-content-channel 1`] = `
 <Text
   style={
     Object {
@@ -1014,7 +1014,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-content-education 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-content-christmascard 1`] = `
 <Text
   style={
     Object {
@@ -1027,7 +1027,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-content-exchangereports 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-content-consistency 1`] = `
 <Text
   style={
     Object {
@@ -1040,7 +1040,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-content-gallery 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-content-divulgation 1`] = `
 <Text
   style={
     Object {
@@ -1053,7 +1053,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-content-gift 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-content-education 1`] = `
 <Text
   style={
     Object {
@@ -1066,7 +1066,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-content-global 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-content-exchangereports 1`] = `
 <Text
   style={
     Object {
@@ -1079,7 +1079,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-content-health 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-content-gallery 1`] = `
 <Text
   style={
     Object {
@@ -1092,7 +1092,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-content-healthy 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-content-gift 1`] = `
 <Text
   style={
     Object {
@@ -1105,7 +1105,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-content-lock 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-content-global 1`] = `
 <Text
   style={
     Object {
@@ -1118,7 +1118,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-content-magic 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-content-health 1`] = `
 <Text
   style={
     Object {
@@ -1131,7 +1131,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-content-medal 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-content-healthy 1`] = `
 <Text
   style={
     Object {
@@ -1144,7 +1144,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-content-menu 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-content-indicator 1`] = `
 <Text
   style={
     Object {
@@ -1157,7 +1157,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-content-mirror 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-content-lock 1`] = `
 <Text
   style={
     Object {
@@ -1170,7 +1170,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-content-planb 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-content-magic 1`] = `
 <Text
   style={
     Object {
@@ -1183,7 +1183,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-content-produtivity 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-content-medal 1`] = `
 <Text
   style={
     Object {
@@ -1196,7 +1196,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-content-store 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-content-menu 1`] = `
 <Text
   style={
     Object {
@@ -1209,7 +1209,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-content-wifi 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-content-mirror 1`] = `
 <Text
   style={
     Object {
@@ -1222,7 +1222,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-finance-bag 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-content-planb 1`] = `
 <Text
   style={
     Object {
@@ -1235,7 +1235,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-finance-cards 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-content-produtivity 1`] = `
 <Text
   style={
     Object {
@@ -1248,7 +1248,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-finance-charging 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-content-report 1`] = `
 <Text
   style={
     Object {
@@ -1261,7 +1261,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-finance-creditcard 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-content-store 1`] = `
 <Text
   style={
     Object {
@@ -1274,7 +1274,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-finance-debit 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-content-wellness 1`] = `
 <Text
   style={
     Object {
@@ -1287,7 +1287,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-finance-discount 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-content-wifi 1`] = `
 <Text
   style={
     Object {
@@ -1300,7 +1300,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-finance-littlemachine 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-finance-bag 1`] = `
 <Text
   style={
     Object {
@@ -1313,7 +1313,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-finance-money 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-finance-bank 1`] = `
 <Text
   style={
     Object {
@@ -1326,7 +1326,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-finance-moneypaper 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-finance-cards 1`] = `
 <Text
   style={
     Object {
@@ -1339,7 +1339,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-finance-promotion 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-finance-charging 1`] = `
 <Text
   style={
     Object {
@@ -1352,7 +1352,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-finance-shoppingcart 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-finance-creditcard 1`] = `
 <Text
   style={
     Object {
@@ -1365,7 +1365,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-finance-shoppingcartproduct 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-finance-debit 1`] = `
 <Text
   style={
     Object {
@@ -1378,7 +1378,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-finance-tagdiscount 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-finance-discount 1`] = `
 <Text
   style={
     Object {
@@ -1391,7 +1391,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-finance-transfermoney 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-finance-littlemachine 1`] = `
 <Text
   style={
     Object {
@@ -1404,7 +1404,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-media-app 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-finance-money 1`] = `
 <Text
   style={
     Object {
@@ -1417,7 +1417,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-media-camera 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-finance-moneypaper 1`] = `
 <Text
   style={
     Object {
@@ -1430,7 +1430,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-media-monitor 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-finance-promotion 1`] = `
 <Text
   style={
     Object {
@@ -1443,7 +1443,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-media-play 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-finance-shoppingcart 1`] = `
 <Text
   style={
     Object {
@@ -1456,7 +1456,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-navigation-arrowbottom 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-finance-shoppingcartproduct 1`] = `
 <Text
   style={
     Object {
@@ -1469,7 +1469,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-navigation-arrowleft 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-finance-tagdiscount 1`] = `
 <Text
   style={
     Object {
@@ -1482,7 +1482,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-navigation-arrowright 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-finance-transfermoney 1`] = `
 <Text
   style={
     Object {
@@ -1495,7 +1495,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-navigation-arrowtop 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-media-app 1`] = `
 <Text
   style={
     Object {
@@ -1508,7 +1508,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-navigation-close 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-media-camera 1`] = `
 <Text
   style={
     Object {
@@ -1521,7 +1521,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-navigation-directionbottom 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-media-monitor 1`] = `
 <Text
   style={
     Object {
@@ -1534,7 +1534,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-navigation-directionleft 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-media-play 1`] = `
 <Text
   style={
     Object {
@@ -1547,7 +1547,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-navigation-directionright 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-navigation-arrowbottom 1`] = `
 <Text
   style={
     Object {
@@ -1560,7 +1560,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-navigation-directiontop 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-navigation-arrowleft 1`] = `
 <Text
   style={
     Object {
@@ -1573,7 +1573,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-navigation-exit 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-navigation-arrowright 1`] = `
 <Text
   style={
     Object {
@@ -1586,7 +1586,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-navigation-goback 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-navigation-arrowtop 1`] = `
 <Text
   style={
     Object {
@@ -1599,7 +1599,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-navigation-gofront 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-navigation-close 1`] = `
 <Text
   style={
     Object {
@@ -1612,7 +1612,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-navigation-home 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-navigation-directionbottom 1`] = `
 <Text
   style={
     Object {
@@ -1625,7 +1625,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-navigation-menu 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-navigation-directionleft 1`] = `
 <Text
   style={
     Object {
@@ -1638,7 +1638,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-place-bus 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-navigation-directionright 1`] = `
 <Text
   style={
     Object {
@@ -1651,7 +1651,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-place-forklift 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-navigation-directiontop 1`] = `
 <Text
   style={
     Object {
@@ -1664,7 +1664,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-place-local 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-navigation-exit 1`] = `
 <Text
   style={
     Object {
@@ -1677,7 +1677,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-place-truck 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-navigation-goback 1`] = `
 <Text
   style={
     Object {
@@ -1690,7 +1690,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-place-waze 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-navigation-gofront 1`] = `
 <Text
   style={
     Object {
@@ -1703,7 +1703,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-product-bagproduct 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-navigation-home 1`] = `
 <Text
   style={
     Object {
@@ -1716,7 +1716,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-product-beard 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-navigation-menu 1`] = `
 <Text
   style={
     Object {
@@ -1729,7 +1729,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-product-brandsproduct 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-place-bus 1`] = `
 <Text
   style={
     Object {
@@ -1742,7 +1742,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-product-childish 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-place-forklift 1`] = `
 <Text
   style={
     Object {
@@ -1755,7 +1755,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-product-dailycare 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-place-local 1`] = `
 <Text
   style={
     Object {
@@ -1768,7 +1768,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-product-hair 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-place-truck 1`] = `
 <Text
   style={
     Object {
@@ -1781,7 +1781,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-product-makeup 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-place-waze 1`] = `
 <Text
   style={
     Object {
@@ -1794,7 +1794,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-product-outlet 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-product-bagproduct 1`] = `
 <Text
   style={
     Object {
@@ -1807,7 +1807,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-product-perfumery 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-product-beard 1`] = `
 <Text
   style={
     Object {
@@ -1820,7 +1820,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-product-promotionproduct 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-product-brandsproduct 1`] = `
 <Text
   style={
     Object {
@@ -1833,7 +1833,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-product-vegan 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-product-childish 1`] = `
 <Text
   style={
     Object {
@@ -1846,7 +1846,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-social-addcontact 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-product-dailycare 1`] = `
 <Text
   style={
     Object {
@@ -1859,7 +1859,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-social-birthday 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-product-hair 1`] = `
 <Text
   style={
     Object {
@@ -1872,7 +1872,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-social-collaborate 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-product-makeup 1`] = `
 <Text
   style={
     Object {
@@ -1885,7 +1885,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-social-contact 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-product-outlet 1`] = `
 <Text
   style={
     Object {
@@ -1898,7 +1898,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-social-digitalconsultant 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-product-perfumery 1`] = `
 <Text
   style={
     Object {
@@ -1911,7 +1911,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-social-groupofpeople 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-product-promotionproduct 1`] = `
 <Text
   style={
     Object {
@@ -1924,7 +1924,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-social-myprofile 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-product-vegan 1`] = `
 <Text
   style={
     Object {
@@ -1937,7 +1937,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-social-network 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-social-addcontact 1`] = `
 <Text
   style={
     Object {
@@ -1950,7 +1950,7 @@ exports[`Icon component should render Icon component with all possible icons: Ic
 </Text>
 `;
 
-exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-social-person 1`] = `
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-social-birthday 1`] = `
 <Text
   style={
     Object {
@@ -1960,6 +1960,97 @@ exports[`Icon component should render Icon component with all possible icons: Ic
   }
 >
   
+</Text>
+`;
+
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-social-collaborate 1`] = `
+<Text
+  style={
+    Object {
+      "fontFamily": "natds-icons",
+      "fontSize": 48,
+    }
+  }
+>
+  
+</Text>
+`;
+
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-social-contact 1`] = `
+<Text
+  style={
+    Object {
+      "fontFamily": "natds-icons",
+      "fontSize": 48,
+    }
+  }
+>
+  
+</Text>
+`;
+
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-social-digitalconsultant 1`] = `
+<Text
+  style={
+    Object {
+      "fontFamily": "natds-icons",
+      "fontSize": 48,
+    }
+  }
+>
+  
+</Text>
+`;
+
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-social-groupofpeople 1`] = `
+<Text
+  style={
+    Object {
+      "fontFamily": "natds-icons",
+      "fontSize": 48,
+    }
+  }
+>
+  
+</Text>
+`;
+
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-social-myprofile 1`] = `
+<Text
+  style={
+    Object {
+      "fontFamily": "natds-icons",
+      "fontSize": 48,
+    }
+  }
+>
+  
+</Text>
+`;
+
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-social-network 1`] = `
+<Text
+  style={
+    Object {
+      "fontFamily": "natds-icons",
+      "fontSize": 48,
+    }
+  }
+>
+  
+</Text>
+`;
+
+exports[`Icon component should render Icon component with all possible icons: Icon component - name: outlined-social-person 1`] = `
+<Text
+  style={
+    Object {
+      "fontFamily": "natds-icons",
+      "fontSize": 48,
+    }
+  }
+>
+  
 </Text>
 `;
 
