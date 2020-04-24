@@ -7,3 +7,5 @@ App
 metro.config.js
 babel.config.js
 .eslintrc.js
+storybook-web/addons/versions
+jest.config.js
