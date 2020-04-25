@@ -2152,7 +2152,6 @@ exports[`TextInput component default Should render textInput with icon and assis
     <View
       accessible={true}
       focusable={true}
-      isTVSelectable={true}
       onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}

@@ -436,7 +436,6 @@ exports[`NatSelectInput component default Should render textInput component : Na
                   <View
                     accessible={true}
                     focusable={true}
-                    isTVSelectable={true}
                     onClick={[Function]}
                     onResponderGrant={[Function]}
                     onResponderMove={[Function]}
@@ -1621,7 +1620,6 @@ exports[`NatSelectInput component default Should render textInput component : Na
               accessibilityRole="button"
               accessible={true}
               focusable={true}
-              isTVSelectable={true}
               onClick={[Function]}
               onResponderGrant={[Function]}
               onResponderMove={[Function]}
@@ -2003,7 +2001,6 @@ exports[`NatSelectInput component default Should render textInput component : Na
                 <View
                   accessible={true}
                   focusable={true}
-                  isTVSelectable={true}
                   onClick={[Function]}
                   onResponderGrant={[Function]}
                   onResponderMove={[Function]}
@@ -2039,7 +2036,6 @@ exports[`NatSelectInput component default Should render textInput component : Na
   <View
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
@@ -3127,7 +3123,6 @@ exports[`NatSelectInput component default Should render textInput component : Na
         <View
           accessible={true}
           focusable={true}
-          isTVSelectable={true}
           onClick={[Function]}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
@@ -3599,7 +3594,6 @@ exports[`NatSelectInput component default Should render textInput with icon and 
                   <View
                     accessible={true}
                     focusable={true}
-                    isTVSelectable={true}
                     onClick={[Function]}
                     onResponderGrant={[Function]}
                     onResponderMove={[Function]}
@@ -4787,7 +4781,6 @@ exports[`NatSelectInput component default Should render textInput with icon and 
               accessibilityRole="button"
               accessible={true}
               focusable={true}
-              isTVSelectable={true}
               onClick={[Function]}
               onResponderGrant={[Function]}
               onResponderMove={[Function]}
@@ -5170,7 +5163,6 @@ exports[`NatSelectInput component default Should render textInput with icon and 
                 <View
                   accessible={true}
                   focusable={true}
-                  isTVSelectable={true}
                   onClick={[Function]}
                   onResponderGrant={[Function]}
                   onResponderMove={[Function]}
@@ -5206,7 +5198,6 @@ exports[`NatSelectInput component default Should render textInput with icon and 
   <View
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
@@ -6297,7 +6288,6 @@ exports[`NatSelectInput component default Should render textInput with icon and 
         <View
           accessible={true}
           focusable={true}
-          isTVSelectable={true}
           onClick={[Function]}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}

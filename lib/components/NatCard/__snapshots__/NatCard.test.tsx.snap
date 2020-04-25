@@ -19,7 +19,6 @@ exports[`NatCard component default Should render NatCard component : NatCard sna
   <View
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}

@@ -56,7 +56,6 @@ exports[`StoryNatCard component Should render StoryNatCard component : StoryNatC
           <View
             accessible={true}
             focusable={true}
-            isTVSelectable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -264,7 +263,6 @@ exports[`StoryNatCard component Should render StoryNatCard component : StoryNatC
           <View
             accessible={true}
             focusable={true}
-            isTVSelectable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -472,7 +470,6 @@ exports[`StoryNatCard component Should render StoryNatCard component : StoryNatC
           <View
             accessible={true}
             focusable={true}
-            isTVSelectable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -680,7 +677,6 @@ exports[`StoryNatCard component Should render StoryNatCard component : StoryNatC
           <View
             accessible={true}
             focusable={true}
-            isTVSelectable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}

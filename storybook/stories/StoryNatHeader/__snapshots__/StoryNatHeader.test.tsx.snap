@@ -63,7 +63,6 @@ exports[`StoryNatHeader component Should render StoryNatHeader component : Story
             accessibilityRole="button"
             accessible={true}
             focusable={true}
-            isTVSelectable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -120,7 +119,6 @@ exports[`StoryNatHeader component Should render StoryNatHeader component : Story
             <View
               accessible={true}
               focusable={true}
-              isTVSelectable={true}
               onClick={[Function]}
               onResponderGrant={[Function]}
               onResponderMove={[Function]}
