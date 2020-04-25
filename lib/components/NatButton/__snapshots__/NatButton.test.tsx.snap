@@ -5,7 +5,6 @@ exports[`Button component default Should render button component  1`] = `
   accessibilityRole="button"
   accessible={true}
   focusable={true}
-  isTVSelectable={true}
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -54,7 +53,6 @@ exports[`Button component default when is card type Should render button compone
   accessibilityRole="button"
   accessible={true}
   focusable={true}
-  isTVSelectable={true}
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -121,7 +119,6 @@ exports[`Button component default when is outline type Should render outline but
   accessibilityRole="button"
   accessible={true}
   focusable={true}
-  isTVSelectable={true}
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -170,7 +167,6 @@ exports[`Button component default when is short type Should render short button 
   accessibilityRole="button"
   accessible={true}
   focusable={true}
-  isTVSelectable={true}
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}

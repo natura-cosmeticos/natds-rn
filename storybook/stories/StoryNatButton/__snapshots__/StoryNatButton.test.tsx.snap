@@ -101,7 +101,6 @@ exports[`StoryNatButton component Should render StoryNatButton component : Story
           accessibilityRole="button"
           accessible={true}
           focusable={true}
-          isTVSelectable={true}
           onClick={[Function]}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
@@ -173,7 +172,6 @@ exports[`StoryNatButton component Should render StoryNatButton component : Story
           accessibilityRole="button"
           accessible={true}
           focusable={true}
-          isTVSelectable={true}
           onClick={[Function]}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
@@ -219,7 +217,6 @@ exports[`StoryNatButton component Should render StoryNatButton component : Story
           accessibilityRole="button"
           accessible={true}
           focusable={true}
-          isTVSelectable={true}
           onClick={[Function]}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}

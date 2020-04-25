@@ -103,7 +103,6 @@ exports[`StoryNatLogo component Should render StoryNatLogo component : StoryNatL
           initialNumToRender={10}
           keyExtractor={[Function]}
           maxToRenderPerBatch={10}
-          numColumns={1}
           onContentSizeChange={[Function]}
           onEndReachedThreshold={2}
           onLayout={[Function]}

@@ -100,7 +100,6 @@ exports[`StoryNatLink component Should render StoryNatLink component : StoryNatL
         <View
           accessible={true}
           focusable={true}
-          isTVSelectable={true}
           onClick={[Function]}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
@@ -157,7 +156,6 @@ exports[`StoryNatLink component Should render StoryNatLink component : StoryNatL
         <View
           accessible={true}
           focusable={true}
-          isTVSelectable={true}
           onClick={[Function]}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
@@ -214,7 +212,6 @@ exports[`StoryNatLink component Should render StoryNatLink component : StoryNatL
         <View
           accessible={true}
           focusable={true}
-          isTVSelectable={true}
           onClick={[Function]}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}

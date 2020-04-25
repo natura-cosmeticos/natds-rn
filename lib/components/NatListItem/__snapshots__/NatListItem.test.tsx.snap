@@ -34,7 +34,6 @@ exports[`NatListItem component Should render container component correctly: NatL
     <View
       accessible={true}
       focusable={true}
-      isTVSelectable={true}
       onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
@@ -79,7 +78,6 @@ exports[`NatListItem component Should render container component correctly: NatL
     <View
       accessible={true}
       focusable={true}
-      isTVSelectable={true}
       onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
@@ -132,7 +130,6 @@ exports[`NatListItem component Should render container component correctly: NatL
     <View
       accessible={true}
       focusable={true}
-      isTVSelectable={true}
       onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
