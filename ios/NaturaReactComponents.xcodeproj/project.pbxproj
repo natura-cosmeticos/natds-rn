@@ -76,6 +76,7 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = NaturaReactComponents/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = NaturaReactComponents/main.m; sourceTree = "<group>"; };
 		18207638E48A5EB947EC2897 /* libPods-NaturaReactComponents-NaturaReactComponentsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NaturaReactComponents-NaturaReactComponentsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		191A857E2453E86D001A532B /* NaturaReactComponents-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NaturaReactComponents-Bridging-Header.h"; sourceTree = "<group>"; };
 		2144776E004340A89CBE79EA /* Roboto-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Medium.ttf"; path = "../lib/assets/fonts/Roboto-Medium.ttf"; sourceTree = "<group>"; };
 		225BA6C76C944F62A4966326 /* Roboto-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Light.ttf"; path = "../lib/assets/fonts/Roboto-Light.ttf"; sourceTree = "<group>"; };
 		2AB6FA3FA759A014609CA1F6 /* libPods-NaturaReactComponents-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NaturaReactComponents-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -174,6 +175,7 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				191A857E2453E86D001A532B /* NaturaReactComponents-Bridging-Header.h */,
 			);
 			name = NaturaReactComponents;
 			sourceTree = "<group>";
@@ -356,7 +358,7 @@
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 940;
+				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = "Natura Cosmeticos";
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
@@ -365,6 +367,7 @@
 					};
 					13B07F861A680F5B00A75B9A = {
 						DevelopmentTeam = XUT82JX72R;
+						LastSwiftMigration = 1140;
 						ProvisioningStyle = Manual;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
@@ -380,10 +383,9 @@
 			};
 			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "NaturaReactComponents" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
 				Base,
 			);
@@ -721,7 +723,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = ACB3C07D040D928D77136F03 /* Pods-NaturaReactComponents.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
@@ -735,6 +739,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = net.natura.NatDSRNSample;
 				PRODUCT_NAME = NatDSRNSampleApp;
 				PROVISIONING_PROFILE_SPECIFIER = "NATDS React Native - appStore";
+				SWIFT_OBJC_BRIDGING_HEADER = "NaturaReactComponents-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -743,7 +750,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 069512BDB7C40A41FA8BC2DA /* Pods-NaturaReactComponents.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
@@ -756,6 +765,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = net.natura.NatDSRNSample;
 				PRODUCT_NAME = NatDSRNSampleApp;
 				PROVISIONING_PROFILE_SPECIFIER = "NATDS React Native - appStore";
+				SWIFT_OBJC_BRIDGING_HEADER = "NaturaReactComponents-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
@@ -874,6 +885,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -927,6 +939,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
