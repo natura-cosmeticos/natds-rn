@@ -22,4 +22,5 @@ module.exports = {
   buildMasterSiteName,
   exitWithMsg,
   findSiteByName,
+  sitePrefix,
 };

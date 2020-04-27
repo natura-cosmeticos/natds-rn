@@ -42,6 +42,6 @@ addDecorator(withKnobs);
 
 const instalation = require.context('../docs', true, /Instalation.stories.mdx/);
 const contribution = require.context('../docs', true, /Contribution.stories.mdx/);
-const components = require.context('../src/components', true, /\.(stories|docs).(ts|md)x?$/);
+const components = require.context('../src/components', true, /\.stories.(ts|md)x?$/);
 
 configure([instalation, contribution, components], module);

@@ -44,7 +44,7 @@ module.exports = {
 
     newConfig.resolve.extensions.push('.ts', '.tsx', '.mdx');
 
-    console.dir(newConfig, { depth: null });
+    // console.dir(newConfig, { depth: null });
 
     return newConfig;
   },
