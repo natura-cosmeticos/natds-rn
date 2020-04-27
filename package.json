@@ -33,6 +33,7 @@
     "build:sample:android": "react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res",
     "build:sample:ios": "react-native bundle --platform ios --dev false --entry-file index.js --bundle-output ios/NaturaReactComponents/main.jsbundle --assets-dest ios",
     "build:storybook:web": "build-storybook -c storybook-web -o build/storybook -s storybook-web/static",
+    "build:build:info": "node .bin/buildInfo/buildInfo.js",
     "tsc": "tsc --noEmit",
     "publish:storybook:web": "node ./bin/netlify/deploy.js",
     "delete:storybook:web": "node ./bin/netlify/delete.js",
