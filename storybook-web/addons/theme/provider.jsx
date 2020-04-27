@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { addons, makeDecorator } from '@storybook/addons';
+import { addons, makeDecorator,  } from '@storybook/addons';
 import { FORCE_RE_RENDER } from '@storybook/core-events';
+import { useStorybookApi } from '@storybook/api';
 import { ThemeProvider } from 'styled-components/native';
 import { themes as themesWeb } from '@naturacosmeticos/natds-styles';
-import { CHANGE, PARAM_KEY } from './shared';
+import { CHANGE, PARAM_KEY, getStoryBookTheme } from './shared';
 
 const THEME_PROVIDERS = {
   web: {
@@ -40,26 +41,21 @@ const wrapper = (getStory, storyContext, { options, parameters }) => {
   const channel = addons.getChannel();
   const { context, disableBackground } = parameters;
   const { themes, defaultTheme } = getProvider(context || options);
-  const [theme, setTheme] = useState(defaultTheme);
+  const [theme, setTheme] = useState(getStoryBookTheme() === 'light' ? defaultTheme : { ...defaultTheme, defaultTheme: themesWeb.natura.dark});
 
   useEffect(() => {
     channel.on(CHANGE, ({ type, name }) => {
       setTheme(themes[name][type]);
     });
 
-    channel.on(knobsChange, () => {
-      channel.emit(FORCE_RE_RENDER);
-    });
-
     return () => {
       channel.removeListener(CHANGE);
-      channel.removeListener(knobsChange);
     };
   }, []);
 
   const background = disableBackground
     ? DEFAULT_BACKGROUND
-    : theme.palette.background.default;
+    : theme.palette.background.paper;
 
   return (
     <ThemeProvider theme={theme}>

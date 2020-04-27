@@ -36,7 +36,8 @@
     "tsc": "tsc --noEmit",
     "publish:storybook:web": "node ./bin/netlify/deploy.js",
     "delete:storybook:web": "node ./bin/netlify/delete.js",
-    "postinstall": "npm dedupe && rm package-lock.json"
+    "postinstall": "npm dedupe && rm package-lock.json",
+    "prestorybook": "rnstl"
   },
   "dependencies": {
     "@naturacosmeticos/natds-icons": "^0.4.0",
@@ -107,6 +108,7 @@
     "react-dom": "16.8.3",
     "react-is": "^16.13.1",
     "react-native": "0.62.2",
+    "react-native-storybook-loader": "^1.8.1",
     "react-native-svg-transformer": "0.14.3",
     "react-native-svg-web": "^1.0.1",
     "react-native-web": "^0.12.2",
@@ -128,6 +130,11 @@
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
+    },
+    "react-native-storybook-loader": {
+      "searchDir": ["./src/components"],
+      "pattern": "**/*.stories.native.tsx",
+      "outputFile": "./storybook/storyLoader.ts"
     }
   }
 }
