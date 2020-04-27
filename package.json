@@ -14,8 +14,8 @@
     "build/lib"
   ],
   "scripts": {
-    "start": "react-native start",
-    "start:clear": "react-native start --reset-cache",
+    "start": "concurrently --names 'auto-import-stories,react-native' 'rnstl' 'react-native start'",
+    "start:clear": "concurrently --names 'auto-import-stories,react-native' 'rnstl' 'yarn start --reset-cache'",
     "start:clear:cache": "rm -rf /tmp/metro-* && watchman watch-del-all && yarn start:clear",
     "test": "jest --collectCoverage",
     "test:watch": "jest --watch",
@@ -23,8 +23,8 @@
     "ios:5": "react-native run-ios --simulator=\"iPhone 5s\"",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "lint:fix": "eslint --fix .",
-    "android": "react-native run-android",
-    "ios": "react-native run-ios",
+    "android": "concurrently --names 'auto-import-stories,react-native' 'rnstl' 'react-native run-android'",
+    "ios": "concurrently --names 'auto-import-stories,react-native' 'rnstl' 'react-native run-ios'",
     "storybook": "start-storybook -p 7007",
     "storybook:web": "node ./node_modules/@storybook/react/bin/index.js start-storybook -p 9001 -c storybook-web -s storybook-web/static",
     "cm": "git-cz",
@@ -87,6 +87,7 @@
     "babel-loader": "8.0.6",
     "babel-plugin-react-native-web": "^0.12.2",
     "babel-preset-react-native": "1.9.2",
+    "concurrently": "^5.2.0",
     "cz-conventional-changelog": "3.1.0",
     "enzyme": "3.11.0",
     "enzyme-adapter-react-16": "1.15.2",
@@ -132,8 +133,10 @@
       "path": "./node_modules/cz-conventional-changelog"
     },
     "react-native-storybook-loader": {
-      "searchDir": ["./src/components"],
-      "pattern": "**/*.stories.native.tsx",
+      "searchDir": [
+        "./src/components"
+      ],
+      "pattern": "**/*.native.tsx",
       "outputFile": "./storybook/storyLoader.ts"
     }
   }
