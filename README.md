@@ -35,7 +35,7 @@ Abra o projeto da pasta `ios` com o xcode e dentro da árvore de módulos do pro
 
 ATENÇÃO: CASO ALGUMA DEPENDÊNCIA TENHA SIDO ADICIONADA MANUALMENTE, ELA DEVERÁ SER ADICIONADA NOVAMENTE
 
-### android
+### Android
 
 Navegue até a pasta `android/app/src/main`, exclua a pasta assets e na raiz do projeto react-native execute novamente `yarn react-native link`.
 
