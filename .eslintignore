@@ -8,4 +8,5 @@ metro.config.js
 babel.config.js
 .eslintrc.js
 storybook-web/addons/versions
+storybook/storyLoader.ts
 jest.config.js

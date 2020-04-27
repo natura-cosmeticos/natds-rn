@@ -42,8 +42,10 @@ module.exports = {
       "error",
       {
         "devDependencies": [
+          "hooks/**/*",
           "**/*.test.*",
           "**/*.stories.*",
+          "**/*.native.*",
           "test-setup.js",
           "storybook/**/*",
           "storybook-web/**/*",

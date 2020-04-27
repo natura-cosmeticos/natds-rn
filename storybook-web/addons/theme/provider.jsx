@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { addons, makeDecorator,  } from '@storybook/addons';
-import { FORCE_RE_RENDER } from '@storybook/core-events';
-import { useStorybookApi } from '@storybook/api';
+import { addons, makeDecorator } from '@storybook/addons';
 import { ThemeProvider } from 'styled-components/native';
 import { themes as themesWeb } from '@naturacosmeticos/natds-styles';
 import { CHANGE, PARAM_KEY, getStoryBookTheme } from './shared';
@@ -17,8 +15,6 @@ const THEME_PROVIDERS = {
 function getProvider(context) {
   return THEME_PROVIDERS[context] || THEME_PROVIDERS.web;
 }
-
-const knobsChange = 'storybookjs/knobs/change';
 
 const backgroundStyles = {
   bottom: 0,
@@ -41,7 +37,7 @@ const wrapper = (getStory, storyContext, { options, parameters }) => {
   const channel = addons.getChannel();
   const { context, disableBackground } = parameters;
   const { themes, defaultTheme } = getProvider(context || options);
-  const [theme, setTheme] = useState(getStoryBookTheme() === 'light' ? defaultTheme : { ...defaultTheme, defaultTheme: themesWeb.natura.dark});
+  const [theme, setTheme] = useState(getStoryBookTheme() === 'light' ? defaultTheme : { ...defaultTheme, defaultTheme: themesWeb.natura.dark });
 
   useEffect(() => {
     channel.on(CHANGE, ({ type, name }) => {

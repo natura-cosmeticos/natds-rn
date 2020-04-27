@@ -1,12 +1,6 @@
 import React from 'react';
 import styled from 'styled-components/native';
 
-// export const enum DividerPropTypes {
-//   inset = 'inset',
-//   middle = 'middle',
-//   full = 'full'
-// }
-
 export type DividerPropTypes = 'inset' | 'middle' | 'full'
 
 export interface DividerProps {
