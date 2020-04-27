@@ -1,4 +1,4 @@
-/* eslint-disable import/no-extraneous-dependencies, max-lines */
+/* eslint-disable max-lines */
 import React from 'react';
 import { storiesOf, addDecorator } from '@storybook/react-native';
 import {

@@ -1,6 +1,7 @@
 module.exports = {
   webpackFinal: (config) => {
     const newConfig = { ...config };
+
     newConfig.module.rules[0].use[0].options.plugins.push(['@babel/plugin-proposal-optional-chaining']);
 
     newConfig.module.rules.push({

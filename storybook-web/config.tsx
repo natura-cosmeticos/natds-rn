@@ -1,8 +1,8 @@
-import { configure, addDecorator, addParameters } from '@storybook/react'; // eslint-disable-line import/no-extraneous-dependencies
+import { configure, addDecorator, addParameters } from '@storybook/react';
 import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
 import { withKnobs } from '@storybook/addon-knobs';
 import { DocsPage, DocsContainer } from '@storybook/addon-docs/blocks';
-import { addons } from '@storybook/addons'
+import { addons } from '@storybook/addons';
 import { themes } from '@naturacosmeticos/natds-styles';
 import { withTheme } from './addons/theme/provider';
 import { dark, light } from './theme';
@@ -12,13 +12,13 @@ const isInDarkMode = window.matchMedia && window.matchMedia('(prefers-color-sche
 const activeTheme = isInDarkMode ? dark : light;
 
 addons.setConfig({
-  theme: activeTheme
-})
+  theme: activeTheme,
+});
 
 addParameters({
   docs: {
     container: DocsContainer,
-    page: DocsPage
+    page: DocsPage,
   },
   options: {
     sidebarAnimations: true,

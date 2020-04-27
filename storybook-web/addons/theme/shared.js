@@ -9,5 +9,6 @@ export const getStoryBookTheme = () => {
   const store = localStorage.getItem('@storybook/ui/store');
   const initialTheme = store && JSON.parse(store);
   const { theme } = initialTheme;
+
   return theme.base;
-}
+};
