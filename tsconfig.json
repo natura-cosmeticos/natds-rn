@@ -29,7 +29,8 @@
   },
   "include": [
     "lib/**/*",
-    "types/**/*"
+    "types/**/*",
+    "src/**/*",
   ],
   "exclude": [
     "node_modules",
