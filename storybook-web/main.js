@@ -1,8 +1,5 @@
 module.exports = {
   presets: ['@storybook/addon-docs/preset'],
-  stories: [
-    '../lib/**/*.stories.(js|mdx)',
-  ],
   webpackFinal: (config) => {
     const newConfig = { ...config };
 

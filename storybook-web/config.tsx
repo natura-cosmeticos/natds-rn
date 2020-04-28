@@ -21,6 +21,12 @@ addParameters({
     page: DocsPage,
   },
   options: {
+    enableShortcuts: true,
+    isFullscreen: false,
+    isToolshown: true,
+    panelPosition: 'bottom',
+    showNav: true,
+    showPanel: true,
     sidebarAnimations: true,
   },
   theme: {
@@ -42,6 +48,7 @@ addDecorator(withKnobs);
 
 const instalation = require.context('../docs', true, /Instalation.stories.mdx/);
 const contribution = require.context('../docs', true, /Contribution.stories.mdx/);
+// const documentation = require.context('../docs', true, /\.stories.(ts|md)x?$/);
 const components = require.context('../src/components', true, /\.stories.(ts|md)x?$/);
 
 configure([instalation, contribution, components], module);

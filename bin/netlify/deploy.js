@@ -34,7 +34,7 @@ const publishRelease = async (siteName) => {
   const site = await findSiteByName(client, siteName);
 
   if (site) {
-    console.log(`Another version was find with ${siteName} name. Overwriting...`);
+    console.log(`Another version was found with ${siteName} name. Overwriting...`);
 
     deploy(site);
   } else {
