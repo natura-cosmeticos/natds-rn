@@ -43,7 +43,7 @@ import { Meta } from '@storybook/addon-docs/blocks';
 
 <Meta title="Documentation|Version Information" />
 
-# Version Info
+# Version Information
 
 {{#each item}}
 {{name}}: \`{{value}}\`
