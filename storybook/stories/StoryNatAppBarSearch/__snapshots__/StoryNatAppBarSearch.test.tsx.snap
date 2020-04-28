@@ -101,7 +101,6 @@ exports[`StoryNatAppBarSearch component Should render StoryNatAppBarSearch compo
                 <View
                   accessible={true}
                   focusable={true}
-                  isTVSelectable={true}
                   onClick={[Function]}
                   onResponderGrant={[Function]}
                   onResponderMove={[Function]}
@@ -1333,7 +1332,6 @@ exports[`StoryNatAppBarSearch component Should render StoryNatAppBarSearch compo
                 <View
                   accessible={true}
                   focusable={true}
-                  isTVSelectable={true}
                   onClick={[Function]}
                   onResponderGrant={[Function]}
                   onResponderMove={[Function]}

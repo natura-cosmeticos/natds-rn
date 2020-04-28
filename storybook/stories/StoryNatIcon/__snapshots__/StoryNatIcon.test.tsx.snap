@@ -1564,7 +1564,6 @@ exports[`StoryNatIcon component Should render StoryNatIcon component : StoryNatI
           initialNumToRender={10}
           keyExtractor={[Function]}
           maxToRenderPerBatch={10}
-          numColumns={1}
           onContentSizeChange={[Function]}
           onEndReachedThreshold={2}
           onLayout={[Function]}

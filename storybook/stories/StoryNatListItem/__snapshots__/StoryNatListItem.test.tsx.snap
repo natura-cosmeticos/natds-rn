@@ -70,7 +70,6 @@ exports[`StoryNatListItem component Should render StoryNatListItem component : S
             <View
               accessible={true}
               focusable={true}
-              isTVSelectable={true}
               onClick={[Function]}
               onResponderGrant={[Function]}
               onResponderMove={[Function]}
@@ -125,7 +124,6 @@ exports[`StoryNatListItem component Should render StoryNatListItem component : S
             <View
               accessible={true}
               focusable={true}
-              isTVSelectable={true}
               onClick={[Function]}
               onResponderGrant={[Function]}
               onResponderMove={[Function]}
@@ -178,7 +176,6 @@ exports[`StoryNatListItem component Should render StoryNatListItem component : S
             <View
               accessible={true}
               focusable={true}
-              isTVSelectable={true}
               onClick={[Function]}
               onResponderGrant={[Function]}
               onResponderMove={[Function]}
@@ -256,7 +253,6 @@ exports[`StoryNatListItem component Should render StoryNatListItem component : S
             <View
               accessible={true}
               focusable={true}
-              isTVSelectable={true}
               onClick={[Function]}
               onResponderGrant={[Function]}
               onResponderMove={[Function]}
@@ -311,7 +307,6 @@ exports[`StoryNatListItem component Should render StoryNatListItem component : S
             <View
               accessible={true}
               focusable={true}
-              isTVSelectable={true}
               onClick={[Function]}
               onResponderGrant={[Function]}
               onResponderMove={[Function]}
@@ -364,7 +359,6 @@ exports[`StoryNatListItem component Should render StoryNatListItem component : S
             <View
               accessible={true}
               focusable={true}
-              isTVSelectable={true}
               onClick={[Function]}
               onResponderGrant={[Function]}
               onResponderMove={[Function]}
@@ -430,7 +424,6 @@ exports[`StoryNatListItem component Should render StoryNatListItem component : S
             <View
               accessible={true}
               focusable={true}
-              isTVSelectable={true}
               onClick={[Function]}
               onResponderGrant={[Function]}
               onResponderMove={[Function]}
@@ -475,7 +468,6 @@ exports[`StoryNatListItem component Should render StoryNatListItem component : S
             <View
               accessible={true}
               focusable={true}
-              isTVSelectable={true}
               onClick={[Function]}
               onResponderGrant={[Function]}
               onResponderMove={[Function]}
@@ -528,7 +520,6 @@ exports[`StoryNatListItem component Should render StoryNatListItem component : S
             <View
               accessible={true}
               focusable={true}
-              isTVSelectable={true}
               onClick={[Function]}
               onResponderGrant={[Function]}
               onResponderMove={[Function]}
@@ -605,7 +596,6 @@ exports[`StoryNatListItem component Should render StoryNatListItem component : S
             <View
               accessible={true}
               focusable={true}
-              isTVSelectable={true}
               onClick={[Function]}
               onResponderGrant={[Function]}
               onResponderMove={[Function]}
@@ -658,7 +648,6 @@ exports[`StoryNatListItem component Should render StoryNatListItem component : S
             <View
               accessible={true}
               focusable={true}
-              isTVSelectable={true}
               onClick={[Function]}
               onResponderGrant={[Function]}
               onResponderMove={[Function]}
@@ -738,7 +727,6 @@ exports[`StoryNatListItem component Should render StoryNatListItem component : S
             <View
               accessible={true}
               focusable={true}
-              isTVSelectable={true}
               onClick={[Function]}
               onResponderGrant={[Function]}
               onResponderMove={[Function]}
@@ -797,7 +785,6 @@ exports[`StoryNatListItem component Should render StoryNatListItem component : S
             <View
               accessible={true}
               focusable={true}
-              isTVSelectable={true}
               onClick={[Function]}
               onResponderGrant={[Function]}
               onResponderMove={[Function]}
@@ -850,7 +837,6 @@ exports[`StoryNatListItem component Should render StoryNatListItem component : S
             <View
               accessible={true}
               focusable={true}
-              isTVSelectable={true}
               onClick={[Function]}
               onResponderGrant={[Function]}
               onResponderMove={[Function]}
@@ -925,7 +911,6 @@ exports[`StoryNatListItem component Should render StoryNatListItem component : S
             <View
               accessible={true}
               focusable={true}
-              isTVSelectable={true}
               onClick={[Function]}
               onResponderGrant={[Function]}
               onResponderMove={[Function]}
@@ -978,7 +963,6 @@ exports[`StoryNatListItem component Should render StoryNatListItem component : S
             <View
               accessible={true}
               focusable={true}
-              isTVSelectable={true}
               onClick={[Function]}
               onResponderGrant={[Function]}
               onResponderMove={[Function]}
@@ -1044,7 +1028,6 @@ exports[`StoryNatListItem component Should render StoryNatListItem component : S
             <View
               accessible={true}
               focusable={true}
-              isTVSelectable={true}
               onClick={[Function]}
               onResponderGrant={[Function]}
               onResponderMove={[Function]}
@@ -1089,7 +1072,6 @@ exports[`StoryNatListItem component Should render StoryNatListItem component : S
             <View
               accessible={true}
               focusable={true}
-              isTVSelectable={true}
               onClick={[Function]}
               onResponderGrant={[Function]}
               onResponderMove={[Function]}
@@ -1142,7 +1124,6 @@ exports[`StoryNatListItem component Should render StoryNatListItem component : S
             <View
               accessible={true}
               focusable={true}
-              isTVSelectable={true}
               onClick={[Function]}
               onResponderGrant={[Function]}
               onResponderMove={[Function]}
@@ -1208,7 +1189,6 @@ exports[`StoryNatListItem component Should render StoryNatListItem component : S
             <View
               accessible={true}
               focusable={true}
-              isTVSelectable={true}
               onClick={[Function]}
               onResponderGrant={[Function]}
               onResponderMove={[Function]}
@@ -1253,7 +1233,6 @@ exports[`StoryNatListItem component Should render StoryNatListItem component : S
             <View
               accessible={true}
               focusable={true}
-              isTVSelectable={true}
               onClick={[Function]}
               onResponderGrant={[Function]}
               onResponderMove={[Function]}
@@ -1306,7 +1285,6 @@ exports[`StoryNatListItem component Should render StoryNatListItem component : S
             <View
               accessible={true}
               focusable={true}
-              isTVSelectable={true}
               onClick={[Function]}
               onResponderGrant={[Function]}
               onResponderMove={[Function]}
@@ -1372,7 +1350,6 @@ exports[`StoryNatListItem component Should render StoryNatListItem component : S
             <View
               accessible={true}
               focusable={true}
-              isTVSelectable={true}
               onClick={[Function]}
               onResponderGrant={[Function]}
               onResponderMove={[Function]}
@@ -1417,7 +1394,6 @@ exports[`StoryNatListItem component Should render StoryNatListItem component : S
             <View
               accessible={true}
               focusable={true}
-              isTVSelectable={true}
               onClick={[Function]}
               onResponderGrant={[Function]}
               onResponderMove={[Function]}
@@ -1470,7 +1446,6 @@ exports[`StoryNatListItem component Should render StoryNatListItem component : S
             <View
               accessible={true}
               focusable={true}
-              isTVSelectable={true}
               onClick={[Function]}
               onResponderGrant={[Function]}
               onResponderMove={[Function]}

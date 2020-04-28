@@ -42,7 +42,6 @@ exports[`NatAppBar component Should render container component correctly: NatApp
       <View
         accessible={true}
         focusable={true}
-        isTVSelectable={true}
         onClick={[Function]}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
@@ -111,7 +110,6 @@ exports[`NatAppBar component Should render container component correctly: NatApp
       <View
         accessible={true}
         focusable={true}
-        isTVSelectable={true}
         onClick={[Function]}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}

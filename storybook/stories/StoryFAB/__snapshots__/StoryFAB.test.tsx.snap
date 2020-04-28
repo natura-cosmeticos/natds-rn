@@ -92,7 +92,6 @@ exports[`StoryFAB component Should render StoryFAB component : StoryFAB snapshot
           <View
             accessible={true}
             focusable={true}
-            isTVSelectable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -137,7 +136,6 @@ exports[`StoryFAB component Should render StoryFAB component : StoryFAB snapshot
           <View
             accessible={true}
             focusable={true}
-            isTVSelectable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -182,7 +180,6 @@ exports[`StoryFAB component Should render StoryFAB component : StoryFAB snapshot
           <View
             accessible={true}
             focusable={true}
-            isTVSelectable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -295,7 +292,6 @@ exports[`StoryFAB component Should render StoryFAB component : StoryFAB snapshot
           <View
             accessible={true}
             focusable={true}
-            isTVSelectable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -672,7 +668,6 @@ exports[`StoryFAB component Should render StoryFAB component : StoryFAB snapshot
           <View
             accessible={true}
             focusable={true}
-            isTVSelectable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -1049,7 +1044,6 @@ exports[`StoryFAB component Should render StoryFAB component : StoryFAB snapshot
           <View
             accessible={true}
             focusable={true}
-            isTVSelectable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -1494,7 +1488,6 @@ exports[`StoryFAB component Should render StoryFAB component : StoryFAB snapshot
           <View
             accessible={true}
             focusable={true}
-            isTVSelectable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -1871,7 +1864,6 @@ exports[`StoryFAB component Should render StoryFAB component : StoryFAB snapshot
           <View
             accessible={true}
             focusable={true}
-            isTVSelectable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -2248,7 +2240,6 @@ exports[`StoryFAB component Should render StoryFAB component : StoryFAB snapshot
           <View
             accessible={true}
             focusable={true}
-            isTVSelectable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -2701,7 +2692,6 @@ exports[`StoryFAB component Should render StoryFAB component : StoryFAB snapshot
           <View
             accessible={true}
             focusable={true}
-            isTVSelectable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -3078,7 +3068,6 @@ exports[`StoryFAB component Should render StoryFAB component : StoryFAB snapshot
           <View
             accessible={true}
             focusable={true}
-            isTVSelectable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -3455,7 +3444,6 @@ exports[`StoryFAB component Should render StoryFAB component : StoryFAB snapshot
           <View
             accessible={true}
             focusable={true}
-            isTVSelectable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -3900,7 +3888,6 @@ exports[`StoryFAB component Should render StoryFAB component : StoryFAB snapshot
           <View
             accessible={true}
             focusable={true}
-            isTVSelectable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -4277,7 +4264,6 @@ exports[`StoryFAB component Should render StoryFAB component : StoryFAB snapshot
           <View
             accessible={true}
             focusable={true}
-            isTVSelectable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -4654,7 +4640,6 @@ exports[`StoryFAB component Should render StoryFAB component : StoryFAB snapshot
           <View
             accessible={true}
             focusable={true}
-            isTVSelectable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -5099,7 +5084,6 @@ exports[`StoryFAB component Should render StoryFAB component : StoryFAB snapshot
           <View
             accessible={true}
             focusable={true}
-            isTVSelectable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -5476,7 +5460,6 @@ exports[`StoryFAB component Should render StoryFAB component : StoryFAB snapshot
           <View
             accessible={true}
             focusable={true}
-            isTVSelectable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -5853,7 +5836,6 @@ exports[`StoryFAB component Should render StoryFAB component : StoryFAB snapshot
           <View
             accessible={true}
             focusable={true}
-            isTVSelectable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -6321,7 +6303,6 @@ exports[`StoryFAB component Should render StoryFAB component : StoryFAB snapshot
           <View
             accessible={true}
             focusable={true}
-            isTVSelectable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -6366,7 +6347,6 @@ exports[`StoryFAB component Should render StoryFAB component : StoryFAB snapshot
           <View
             accessible={true}
             focusable={true}
-            isTVSelectable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -6411,7 +6391,6 @@ exports[`StoryFAB component Should render StoryFAB component : StoryFAB snapshot
           <View
             accessible={true}
             focusable={true}
-            isTVSelectable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -6524,7 +6503,6 @@ exports[`StoryFAB component Should render StoryFAB component : StoryFAB snapshot
           <View
             accessible={true}
             focusable={true}
-            isTVSelectable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -6901,7 +6879,6 @@ exports[`StoryFAB component Should render StoryFAB component : StoryFAB snapshot
           <View
             accessible={true}
             focusable={true}
-            isTVSelectable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -7278,7 +7255,6 @@ exports[`StoryFAB component Should render StoryFAB component : StoryFAB snapshot
           <View
             accessible={true}
             focusable={true}
-            isTVSelectable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -7723,7 +7699,6 @@ exports[`StoryFAB component Should render StoryFAB component : StoryFAB snapshot
           <View
             accessible={true}
             focusable={true}
-            isTVSelectable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -8100,7 +8075,6 @@ exports[`StoryFAB component Should render StoryFAB component : StoryFAB snapshot
           <View
             accessible={true}
             focusable={true}
-            isTVSelectable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -8477,7 +8451,6 @@ exports[`StoryFAB component Should render StoryFAB component : StoryFAB snapshot
           <View
             accessible={true}
             focusable={true}
-            isTVSelectable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -8930,7 +8903,6 @@ exports[`StoryFAB component Should render StoryFAB component : StoryFAB snapshot
           <View
             accessible={true}
             focusable={true}
-            isTVSelectable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -9307,7 +9279,6 @@ exports[`StoryFAB component Should render StoryFAB component : StoryFAB snapshot
           <View
             accessible={true}
             focusable={true}
-            isTVSelectable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -9684,7 +9655,6 @@ exports[`StoryFAB component Should render StoryFAB component : StoryFAB snapshot
           <View
             accessible={true}
             focusable={true}
-            isTVSelectable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -10129,7 +10099,6 @@ exports[`StoryFAB component Should render StoryFAB component : StoryFAB snapshot
           <View
             accessible={true}
             focusable={true}
-            isTVSelectable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -10506,7 +10475,6 @@ exports[`StoryFAB component Should render StoryFAB component : StoryFAB snapshot
           <View
             accessible={true}
             focusable={true}
-            isTVSelectable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -10883,7 +10851,6 @@ exports[`StoryFAB component Should render StoryFAB component : StoryFAB snapshot
           <View
             accessible={true}
             focusable={true}
-            isTVSelectable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -11328,7 +11295,6 @@ exports[`StoryFAB component Should render StoryFAB component : StoryFAB snapshot
           <View
             accessible={true}
             focusable={true}
-            isTVSelectable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -11705,7 +11671,6 @@ exports[`StoryFAB component Should render StoryFAB component : StoryFAB snapshot
           <View
             accessible={true}
             focusable={true}
-            isTVSelectable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -12082,7 +12047,6 @@ exports[`StoryFAB component Should render StoryFAB component : StoryFAB snapshot
           <View
             accessible={true}
             focusable={true}
-            isTVSelectable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}

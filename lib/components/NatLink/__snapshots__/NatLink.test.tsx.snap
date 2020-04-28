@@ -4,7 +4,6 @@ exports[`NatText component default Should render NatText component : NatLink sna
 <View
   accessible={true}
   focusable={false}
-  isTVSelectable={true}
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}

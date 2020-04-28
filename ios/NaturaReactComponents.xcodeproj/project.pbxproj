@@ -14,6 +14,7 @@
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		191A85822453F74E001A532B /* dummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191A85812453F74E001A532B /* dummy.swift */; };
 		1B89CD77AAAD4907BAAD43BB /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50080117856C46C1A7B7FE46 /* Roboto-ThinItalic.ttf */; };
 		20A09E673A4B4E2D9C5F3419 /* natds-icons.svg in Resources */ = {isa = PBXBuildFile; fileRef = ADC473A511514A9192A4A9C6 /* natds-icons.svg */; };
 		25A5ACAFEEB442169C9E7738 /* Roboto-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AA07B9CA14A044688C2E45B3 /* Roboto-LightItalic.ttf */; };
@@ -27,12 +28,12 @@
 		4E2C821AA01E4E6B8B6FC88F /* NaturaScript.otf in Resources */ = {isa = PBXBuildFile; fileRef = C99DD50EBFE24A1BA366EA67 /* NaturaScript.otf */; };
 		5D064C71B8C8401CAEC9C5CF /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2144776E004340A89CBE79EA /* Roboto-Medium.ttf */; };
 		6D1EC731990120E5459AAB33 /* libPods-NaturaReactComponents-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AB6FA3FA759A014609CA1F6 /* libPods-NaturaReactComponents-tvOS.a */; };
-		7446EED49E2DBCEEE29BFECB /* libPods-NaturaReactComponentsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 68131E18D1BEB7FA489680BD /* libPods-NaturaReactComponentsTests.a */; };
 		781ACF41C6BA4D9098CB740E /* NaturaSans-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = BB30EC4FC9644B049A890322 /* NaturaSans-Regular.otf */; };
 		8C35FA480294E58F24259362 /* libPods-NaturaReactComponents.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7963EBFC3063ED00E8AB01D9 /* libPods-NaturaReactComponents.a */; };
 		9968056F972A4F338EC1C24E /* NaturaSans-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = EEF7E11139C44655B0C1F181 /* NaturaSans-Bold.otf */; };
 		A7D1407DDDC34F4D9BB601E5 /* Roboto-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C2668511CAE448D7B81BFB54 /* Roboto-BoldItalic.ttf */; };
 		A928B0E5A15F47A8BF24E72D /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 76D066C242E343FB80C2336E /* Roboto-Italic.ttf */; };
+		C48C1BD0544FB138710CA898 /* libPods-NaturaReactComponents-NaturaReactComponentsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18207638E48A5EB947EC2897 /* libPods-NaturaReactComponents-NaturaReactComponentsTests.a */; };
 		CD1D70F2D8D84126B50B4F2B /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C2F779305C854E9B9E72BBFE /* Roboto-Thin.ttf */; };
 		D1762B2849264B57A5932122 /* natds-icons.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = F787AC809C1A4DB8A9109F3D /* natds-icons.woff2 */; };
 		DAED5749D46B433583284701 /* natds-icons.woff in Resources */ = {isa = PBXBuildFile; fileRef = 2B4E0DCFE25D49FB95F38DFE /* natds-icons.woff */; };
@@ -75,6 +76,9 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = NaturaReactComponents/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = NaturaReactComponents/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = NaturaReactComponents/main.m; sourceTree = "<group>"; };
+		18207638E48A5EB947EC2897 /* libPods-NaturaReactComponents-NaturaReactComponentsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NaturaReactComponents-NaturaReactComponentsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		191A857E2453E86D001A532B /* NaturaReactComponents-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NaturaReactComponents-Bridging-Header.h"; sourceTree = "<group>"; };
+		191A85812453F74E001A532B /* dummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dummy.swift; sourceTree = "<group>"; };
 		2144776E004340A89CBE79EA /* Roboto-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Medium.ttf"; path = "../lib/assets/fonts/Roboto-Medium.ttf"; sourceTree = "<group>"; };
 		225BA6C76C944F62A4966326 /* Roboto-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Light.ttf"; path = "../lib/assets/fonts/Roboto-Light.ttf"; sourceTree = "<group>"; };
 		2AB6FA3FA759A014609CA1F6 /* libPods-NaturaReactComponents-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NaturaReactComponents-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,9 +87,9 @@
 		2D02E4901E0B4A5D006451C7 /* NaturaReactComponents-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NaturaReactComponents-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E2A08D0DE3741EC9BDA9B91 /* NaturaSans-Light.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "NaturaSans-Light.otf"; path = "../lib/assets/fonts/NaturaSans-Light.otf"; sourceTree = "<group>"; };
 		45F3F7D0861EC8D9705F8CEC /* Pods-NaturaReactComponents-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NaturaReactComponents-tvOS.release.xcconfig"; path = "Target Support Files/Pods-NaturaReactComponents-tvOS/Pods-NaturaReactComponents-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		4F910D4E2675543E64B2CC57 /* Pods-NaturaReactComponents-NaturaReactComponentsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NaturaReactComponents-NaturaReactComponentsTests.release.xcconfig"; path = "Target Support Files/Pods-NaturaReactComponents-NaturaReactComponentsTests/Pods-NaturaReactComponents-NaturaReactComponentsTests.release.xcconfig"; sourceTree = "<group>"; };
 		50080117856C46C1A7B7FE46 /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-ThinItalic.ttf"; path = "../lib/assets/fonts/Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
 		65B93365A66EC7F11406C820 /* Pods-NaturaReactComponents-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NaturaReactComponents-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-NaturaReactComponents-tvOSTests/Pods-NaturaReactComponents-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
-		68131E18D1BEB7FA489680BD /* libPods-NaturaReactComponentsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NaturaReactComponentsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DC94B83174C4234A68172DF /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-MediumItalic.ttf"; path = "../lib/assets/fonts/Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
 		76D066C242E343FB80C2336E /* Roboto-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Italic.ttf"; path = "../lib/assets/fonts/Roboto-Italic.ttf"; sourceTree = "<group>"; };
 		7963EBFC3063ED00E8AB01D9 /* libPods-NaturaReactComponents.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NaturaReactComponents.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,6 +105,7 @@
 		C2F779305C854E9B9E72BBFE /* Roboto-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Thin.ttf"; path = "../lib/assets/fonts/Roboto-Thin.ttf"; sourceTree = "<group>"; };
 		C99DD50EBFE24A1BA366EA67 /* NaturaScript.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = NaturaScript.otf; path = ../lib/assets/fonts/NaturaScript.otf; sourceTree = "<group>"; };
 		CBCAEDAC33A742AD85BE276A /* Roboto-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Bold.ttf"; path = "../lib/assets/fonts/Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		D0642809588A67508E542E26 /* Pods-NaturaReactComponents-NaturaReactComponentsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NaturaReactComponents-NaturaReactComponentsTests.debug.xcconfig"; path = "Target Support Files/Pods-NaturaReactComponents-NaturaReactComponentsTests/Pods-NaturaReactComponents-NaturaReactComponentsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D4FDBDC81C6749B18D159638 /* natds-icons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "natds-icons.ttf"; path = "../lib/assets/fonts/natds-icons.ttf"; sourceTree = "<group>"; };
 		EAD3FF4D8536237F0F67159A /* Pods-NaturaReactComponents-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NaturaReactComponents-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-NaturaReactComponents-tvOS/Pods-NaturaReactComponents-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
@@ -114,7 +119,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7446EED49E2DBCEEE29BFECB /* libPods-NaturaReactComponentsTests.a in Frameworks */,
+				C48C1BD0544FB138710CA898 /* libPods-NaturaReactComponents-NaturaReactComponentsTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,10 +173,12 @@
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
+				191A85812453F74E001A532B /* dummy.swift */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				191A857E2453E86D001A532B /* NaturaReactComponents-Bridging-Header.h */,
 			);
 			name = NaturaReactComponents;
 			sourceTree = "<group>";
@@ -187,6 +194,8 @@
 				65B93365A66EC7F11406C820 /* Pods-NaturaReactComponents-tvOSTests.release.xcconfig */,
 				B6D5F433DF0F1985CD52ACBB /* Pods-NaturaReactComponentsTests.debug.xcconfig */,
 				9E6A91FA379DB03038A5E6D4 /* Pods-NaturaReactComponentsTests.release.xcconfig */,
+				D0642809588A67508E542E26 /* Pods-NaturaReactComponents-NaturaReactComponentsTests.debug.xcconfig */,
+				4F910D4E2675543E64B2CC57 /* Pods-NaturaReactComponents-NaturaReactComponentsTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -199,7 +208,7 @@
 				7963EBFC3063ED00E8AB01D9 /* libPods-NaturaReactComponents.a */,
 				2AB6FA3FA759A014609CA1F6 /* libPods-NaturaReactComponents-tvOS.a */,
 				0BAE456EA6301DEF9A2FBDB8 /* libPods-NaturaReactComponents-tvOSTests.a */,
-				68131E18D1BEB7FA489680BD /* libPods-NaturaReactComponentsTests.a */,
+				18207638E48A5EB947EC2897 /* libPods-NaturaReactComponents-NaturaReactComponentsTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -352,8 +361,8 @@
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 940;
-				ORGANIZATIONNAME = Facebook;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Natura Cosmeticos";
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
@@ -361,6 +370,7 @@
 					};
 					13B07F861A680F5B00A75B9A = {
 						DevelopmentTeam = XUT82JX72R;
+						LastSwiftMigration = 1140;
 						ProvisioningStyle = Manual;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
@@ -376,10 +386,9 @@
 			};
 			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "NaturaReactComponents" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
 				Base,
 			);
@@ -560,7 +569,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-NaturaReactComponentsTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-NaturaReactComponents-NaturaReactComponentsTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -621,6 +630,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				191A85822453F74E001A532B /* dummy.swift in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -672,8 +682,9 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B6D5F433DF0F1985CD52ACBB /* Pods-NaturaReactComponentsTests.debug.xcconfig */;
+			baseConfigurationReference = D0642809588A67508E542E26 /* Pods-NaturaReactComponents-NaturaReactComponentsTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -682,6 +693,10 @@
 				INFOPLIST_FILE = NaturaReactComponentsTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DFB_SONARKIT_ENABLED=1",
+				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lc++",
@@ -695,13 +710,18 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9E6A91FA379DB03038A5E6D4 /* Pods-NaturaReactComponentsTests.release.xcconfig */;
+			baseConfigurationReference = 4F910D4E2675543E64B2CC57 /* Pods-NaturaReactComponents-NaturaReactComponentsTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = NaturaReactComponentsTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DFB_SONARKIT_ENABLED=1",
+				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lc++",
@@ -718,19 +738,31 @@
 			baseConfigurationReference = ACB3C07D040D928D77136F03 /* Pods-NaturaReactComponents.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_TEAM = XUT82JX72R;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"FB_SONARKIT_ENABLED=1",
+				);
 				INFOPLIST_FILE = NaturaReactComponents/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DFB_SONARKIT_ENABLED=1",
+				);
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = net.natura.NatDSRNSample;
 				PRODUCT_NAME = NatDSRNSampleApp;
 				PROVISIONING_PROFILE_SPECIFIER = "NATDS React Native - appStore";
+				SWIFT_OBJC_BRIDGING_HEADER = "NaturaReactComponents-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -740,6 +772,7 @@
 			baseConfigurationReference = 069512BDB7C40A41FA8BC2DA /* Pods-NaturaReactComponents.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
@@ -748,10 +781,16 @@
 				INFOPLIST_FILE = NaturaReactComponents/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DFB_SONARKIT_ENABLED=1",
+				);
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = net.natura.NatDSRNSample;
 				PRODUCT_NAME = NatDSRNSampleApp;
 				PROVISIONING_PROFILE_SPECIFIER = "NATDS React Native - appStore";
+				SWIFT_OBJC_BRIDGING_HEADER = "NaturaReactComponents-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
@@ -771,6 +810,10 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "NaturaReactComponents-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DFB_SONARKIT_ENABLED=1",
+				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -799,6 +842,10 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "NaturaReactComponents-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DFB_SONARKIT_ENABLED=1",
+				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -825,7 +872,11 @@
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "NaturaReactComponents-tvOSTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "/usr/lib/swift $(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DFB_SONARKIT_ENABLED=1",
+				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -852,7 +903,11 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "NaturaReactComponents-tvOSTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "/usr/lib/swift $(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DFB_SONARKIT_ENABLED=1",
+				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -869,7 +924,9 @@
 		83CBBA201A601CBA00E9B192 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -913,8 +970,14 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)\"",
+					"\"$(inherited)\"",
+				);
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -922,7 +985,9 @@
 		83CBBA211A601CBA00E9B192 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -959,7 +1024,14 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)\"",
+					"\"$(inherited)\"",
+				);
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				"OTHER_LDFLAGS[arch=*]" = "$(inherited)";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};

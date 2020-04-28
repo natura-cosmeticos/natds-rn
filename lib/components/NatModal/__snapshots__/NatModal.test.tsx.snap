@@ -82,7 +82,6 @@ exports[`NatModal component and its variants NatModal Should match snapshot 1`] 
         accessibilityLabel="ENTENDI"
         accessible={true}
         focusable={true}
-        isTVSelectable={true}
         onClick={[Function]}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
@@ -214,7 +213,6 @@ exports[`NatModal component and its variants NatModal error should render the er
           accessibilityLabel="CANCELAR"
           accessible={true}
           focusable={true}
-          isTVSelectable={true}
           onClick={[Function]}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
@@ -255,7 +253,6 @@ exports[`NatModal component and its variants NatModal error should render the er
           accessibilityLabel="ENVIAR LINK"
           accessible={true}
           focusable={true}
-          isTVSelectable={true}
           onClick={[Function]}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
@@ -363,7 +360,6 @@ exports[`NatModal component and its variants NatModal save should render the sav
         accessibilityLabel="OK"
         accessible={true}
         focusable={true}
-        isTVSelectable={true}
         onClick={[Function]}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}

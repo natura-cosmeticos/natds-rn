@@ -16,7 +16,6 @@ exports[`TabBar Component should render each type with no uppercase titles corre
   <View
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
@@ -382,7 +381,6 @@ exports[`TabBar Component should render each type with no uppercase titles corre
   <View
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
@@ -748,7 +746,6 @@ exports[`TabBar Component should render each type with no uppercase titles corre
   <View
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
@@ -1130,7 +1127,6 @@ exports[`TabBar Component should render the tab bar correctly: Tabbar snapshot w
   <View
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
@@ -1496,7 +1492,6 @@ exports[`TabBar Component should render the tab bar correctly: Tabbar snapshot w
   <View
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
@@ -1862,7 +1857,6 @@ exports[`TabBar Component should render the tab bar correctly: Tabbar snapshot w
   <View
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}

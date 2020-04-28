@@ -52,7 +52,14 @@ module.exports = {
           "bin/**/*"
         ]
       }
-    ]
+    ],
+    'import/extensions': ['error', 'ignorePackages', {
+      js: 'never',
+      mjs: 'never',
+      jsx: 'never',
+      ts: 'never',
+      tsx: 'never',
+    }],
   },
   "overrides": [
     {
@@ -74,7 +81,8 @@ module.exports = {
       "node": {
         "paths": [
           "lib"
-        ]
+        ],
+        "extensions": ['.js', '.jsx', '.ts', '.tsx', '.json']
       }
     },
     "react": {

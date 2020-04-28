@@ -32,7 +32,6 @@ exports[`Button component default Should render button component : Button snapsh
       accessibilityRole="button"
       accessible={true}
       focusable={true}
-      isTVSelectable={true}
       onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
@@ -413,7 +412,6 @@ exports[`Button component default Should render button component : Button snapsh
         <View
           accessible={true}
           focusable={true}
-          isTVSelectable={true}
           onClick={[Function]}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
@@ -472,7 +470,6 @@ exports[`Button component default Should render button component : Button snapsh
       accessibilityRole="button"
       accessible={true}
       focusable={true}
-      isTVSelectable={true}
       onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
@@ -846,7 +843,6 @@ exports[`Button component default Should render button component : Button snapsh
         <View
           accessible={true}
           focusable={true}
-          isTVSelectable={true}
           onClick={[Function]}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
@@ -905,7 +901,6 @@ exports[`Button component default Should render button component : Button snapsh
       accessibilityRole="button"
       accessible={true}
       focusable={true}
-      isTVSelectable={true}
       onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
@@ -1279,7 +1274,6 @@ exports[`Button component default Should render button component : Button snapsh
         <View
           accessible={true}
           focusable={true}
-          isTVSelectable={true}
           onClick={[Function]}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
@@ -1338,7 +1332,6 @@ exports[`Button component default Should render button component : Button snapsh
       accessibilityRole="button"
       accessible={true}
       focusable={true}
-      isTVSelectable={true}
       onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
@@ -1719,7 +1712,6 @@ exports[`Button component default Should render button component : Button snapsh
         <View
           accessible={true}
           focusable={true}
-          isTVSelectable={true}
           onClick={[Function]}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
@@ -1778,7 +1770,6 @@ exports[`Button component default Should render button component : Button snapsh
       accessibilityRole="button"
       accessible={true}
       focusable={true}
-      isTVSelectable={true}
       onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
@@ -2152,7 +2143,6 @@ exports[`Button component default Should render button component : Button snapsh
         <View
           accessible={true}
           focusable={true}
-          isTVSelectable={true}
           onClick={[Function]}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
@@ -2211,7 +2201,6 @@ exports[`Button component default Should render button component : Button snapsh
       accessibilityRole="button"
       accessible={true}
       focusable={true}
-      isTVSelectable={true}
       onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
@@ -2585,7 +2574,6 @@ exports[`Button component default Should render button component : Button snapsh
         <View
           accessible={true}
           focusable={true}
-          isTVSelectable={true}
           onClick={[Function]}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
@@ -2644,7 +2632,6 @@ exports[`Button component default Should render button component : Button snapsh
       accessibilityRole="button"
       accessible={true}
       focusable={true}
-      isTVSelectable={true}
       onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
@@ -3025,7 +3012,6 @@ exports[`Button component default Should render button component : Button snapsh
         <View
           accessible={true}
           focusable={true}
-          isTVSelectable={true}
           onClick={[Function]}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
@@ -3084,7 +3070,6 @@ exports[`Button component default Should render button component : Button snapsh
       accessibilityRole="button"
       accessible={true}
       focusable={true}
-      isTVSelectable={true}
       onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
@@ -3458,7 +3443,6 @@ exports[`Button component default Should render button component : Button snapsh
         <View
           accessible={true}
           focusable={true}
-          isTVSelectable={true}
           onClick={[Function]}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
@@ -3517,7 +3501,6 @@ exports[`Button component default Should render button component : Button snapsh
       accessibilityRole="button"
       accessible={true}
       focusable={true}
-      isTVSelectable={true}
       onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
@@ -3891,7 +3874,6 @@ exports[`Button component default Should render button component : Button snapsh
         <View
           accessible={true}
           focusable={true}
-          isTVSelectable={true}
           onClick={[Function]}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
@@ -3950,7 +3932,6 @@ exports[`Button component default Should render button component : Button snapsh
       accessibilityRole="button"
       accessible={true}
       focusable={true}
-      isTVSelectable={true}
       onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
@@ -4331,7 +4312,6 @@ exports[`Button component default Should render button component : Button snapsh
         <View
           accessible={true}
           focusable={true}
-          isTVSelectable={true}
           onClick={[Function]}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
@@ -4390,7 +4370,6 @@ exports[`Button component default Should render button component : Button snapsh
       accessibilityRole="button"
       accessible={true}
       focusable={true}
-      isTVSelectable={true}
       onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
@@ -4764,7 +4743,6 @@ exports[`Button component default Should render button component : Button snapsh
         <View
           accessible={true}
           focusable={true}
-          isTVSelectable={true}
           onClick={[Function]}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
@@ -4823,7 +4801,6 @@ exports[`Button component default Should render button component : Button snapsh
       accessibilityRole="button"
       accessible={true}
       focusable={true}
-      isTVSelectable={true}
       onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
@@ -5197,7 +5174,6 @@ exports[`Button component default Should render button component : Button snapsh
         <View
           accessible={true}
           focusable={true}
-          isTVSelectable={true}
           onClick={[Function]}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
@@ -5256,7 +5232,6 @@ exports[`Button component default Should render button component : Button snapsh
       accessibilityRole="button"
       accessible={true}
       focusable={true}
-      isTVSelectable={true}
       onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
@@ -5630,7 +5605,6 @@ exports[`Button component default Should render button component : Button snapsh
         <View
           accessible={true}
           focusable={true}
-          isTVSelectable={true}
           onClick={[Function]}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
@@ -5689,7 +5663,6 @@ exports[`Button component default Should render button component : Button snapsh
       accessibilityRole="button"
       accessible={true}
       focusable={true}
-      isTVSelectable={true}
       onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
@@ -6063,7 +6036,6 @@ exports[`Button component default Should render button component : Button snapsh
         <View
           accessible={true}
           focusable={true}
-          isTVSelectable={true}
           onClick={[Function]}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
@@ -6122,7 +6094,6 @@ exports[`Button component default Should render button component : Button snapsh
       accessibilityRole="button"
       accessible={true}
       focusable={true}
-      isTVSelectable={true}
       onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
@@ -6496,7 +6467,6 @@ exports[`Button component default Should render button component : Button snapsh
         <View
           accessible={true}
           focusable={true}
-          isTVSelectable={true}
           onClick={[Function]}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
@@ -6555,7 +6525,6 @@ exports[`Button component default Should render button component : Button snapsh
       accessibilityRole="button"
       accessible={true}
       focusable={true}
-      isTVSelectable={true}
       onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
@@ -6595,7 +6564,6 @@ exports[`Button component default Should render button component : Button snapsh
         <View
           accessible={true}
           focusable={true}
-          isTVSelectable={true}
           onClick={[Function]}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
@@ -6984,7 +6952,6 @@ exports[`Button component default Should render button component : Button snapsh
         <View
           accessible={true}
           focusable={true}
-          isTVSelectable={true}
           onClick={[Function]}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
@@ -7053,7 +7020,6 @@ exports[`Button component default Should render button component : Button snapsh
       accessibilityRole="button"
       accessible={true}
       focusable={true}
-      isTVSelectable={true}
       onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
@@ -7086,7 +7052,6 @@ exports[`Button component default Should render button component : Button snapsh
         <View
           accessible={true}
           focusable={true}
-          isTVSelectable={true}
           onClick={[Function]}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
@@ -7475,7 +7440,6 @@ exports[`Button component default Should render button component : Button snapsh
         <View
           accessible={true}
           focusable={true}
-          isTVSelectable={true}
           onClick={[Function]}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
@@ -7544,7 +7508,6 @@ exports[`Button component default Should render button component : Button snapsh
       accessibilityRole="button"
       accessible={true}
       focusable={true}
-      isTVSelectable={true}
       onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
@@ -7577,7 +7540,6 @@ exports[`Button component default Should render button component : Button snapsh
         <View
           accessible={true}
           focusable={true}
-          isTVSelectable={true}
           onClick={[Function]}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
@@ -7966,7 +7928,6 @@ exports[`Button component default Should render button component : Button snapsh
         <View
           accessible={true}
           focusable={true}
-          isTVSelectable={true}
           onClick={[Function]}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
@@ -8035,7 +7996,6 @@ exports[`Button component default Should render button component : Button snapsh
       accessibilityRole="button"
       accessible={true}
       focusable={true}
-      isTVSelectable={true}
       onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
@@ -8068,7 +8028,6 @@ exports[`Button component default Should render button component : Button snapsh
         <View
           accessible={true}
           focusable={true}
-          isTVSelectable={true}
           onClick={[Function]}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
@@ -8119,7 +8078,6 @@ exports[`Button component default Should render button component : Button snapsh
         <View
           accessible={true}
           focusable={true}
-          isTVSelectable={true}
           onClick={[Function]}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
@@ -8188,7 +8146,6 @@ exports[`Button component default Should render button component : Button snapsh
       accessibilityRole="button"
       accessible={true}
       focusable={true}
-      isTVSelectable={true}
       onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
@@ -8569,7 +8526,6 @@ exports[`Button component default Should render button component : Button snapsh
         <View
           accessible={true}
           focusable={true}
-          isTVSelectable={true}
           onClick={[Function]}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}

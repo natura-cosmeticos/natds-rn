@@ -5,7 +5,6 @@ exports[`FAB component should render FAB component: FAB snapshot 1`] = `
   <View
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
@@ -380,7 +379,6 @@ exports[`FAB component should render FAB component: FAB snapshot 1`] = `
   <View
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
@@ -755,7 +753,6 @@ exports[`FAB component should render FAB component: FAB snapshot 1`] = `
   <View
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
@@ -1130,7 +1127,6 @@ exports[`FAB component should render FAB component: FAB snapshot 1`] = `
   <View
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
@@ -1505,7 +1501,6 @@ exports[`FAB component should render FAB component: FAB snapshot 1`] = `
   <View
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
@@ -1880,7 +1875,6 @@ exports[`FAB component should render FAB component: FAB snapshot 1`] = `
   <View
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
@@ -2255,7 +2249,6 @@ exports[`FAB component should render FAB component: FAB snapshot 1`] = `
   <View
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
@@ -2630,7 +2623,6 @@ exports[`FAB component should render FAB component: FAB snapshot 1`] = `
   <View
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
@@ -3005,7 +2997,6 @@ exports[`FAB component should render FAB component: FAB snapshot 1`] = `
   <View
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
@@ -3380,7 +3371,6 @@ exports[`FAB component should render FAB component: FAB snapshot 1`] = `
   <View
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
@@ -3755,7 +3745,6 @@ exports[`FAB component should render FAB component: FAB snapshot 1`] = `
   <View
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
@@ -4130,7 +4119,6 @@ exports[`FAB component should render FAB component: FAB snapshot 1`] = `
   <View
     accessible={true}
     focusable={true}
-    isTVSelectable={true}
     onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}

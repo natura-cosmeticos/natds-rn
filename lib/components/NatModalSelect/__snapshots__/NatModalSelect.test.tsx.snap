@@ -102,7 +102,6 @@ exports[`NatModalSelect and its variants NatModalSelect Should match snapshot: N
                 <View
                   accessible={true}
                   focusable={true}
-                  isTVSelectable={true}
                   onClick={[Function]}
                   onResponderGrant={[Function]}
                   onResponderMove={[Function]}
@@ -1284,7 +1283,6 @@ exports[`NatModalSelect and its variants NatModalSelect Should match snapshot: N
             accessibilityRole="button"
             accessible={true}
             focusable={true}
-            isTVSelectable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -1665,7 +1663,6 @@ exports[`NatModalSelect and its variants NatModalSelect Should match snapshot: N
               <View
                 accessible={true}
                 focusable={true}
-                isTVSelectable={true}
                 onClick={[Function]}
                 onResponderGrant={[Function]}
                 onResponderMove={[Function]}
