@@ -1,6 +1,8 @@
 #!/usr/bin/env node
 
 const fs = require('fs');
+const Handlebars = require('handlebars');
+
 // const shell = require('shelljs');
 
 // const branch = shell.exec('git rev-parse --abbrev-ref HEAD').trim();
@@ -30,10 +32,33 @@ const buildInfo = {
   pullRequestBranch,
 };
 
-const filePath = process.argv[2] || process.env.BUILD_INFO_PATH || 'storybook-web/static';
+const definedInfo = [];
+
+Object
+  .keys(buildInfo)
+  .forEach(item => buildInfo[item] && definedInfo.push({ name: item, value: buildInfo[item] }));
+
+const template = `
+import { Meta } from '@storybook/addon-docs/blocks';
+
+<Meta title="Documentation|Version Information" />
+
+# Version Info
+
+{{#each item}}
+{{name}}: \`{{value}}\`
+
+{{/each}}
+`;
+
+const compile = Handlebars.compile(template);
+const output = compile({ item: definedInfo });
+
+const filePath = process.argv[2] || process.env.BUILD_INFO_PATH || 'docs';
 
 try {
-  fs.writeFileSync(`${filePath}/buildInfo.json`, JSON.stringify(buildInfo));
+  fs.writeFileSync(`${filePath}/Version.stories.mdx`, output);
+  process.exit();
 } catch (err) {
   console.error(err);
   process.exit(1);
