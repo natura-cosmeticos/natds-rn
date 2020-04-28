@@ -1,6 +1,6 @@
 {
   "name": "@naturacosmeticos/natds-rn",
-  "version": "0.0.0-development",
+  "version": "0.0.0",
   "license": "MIT",
   "main": "build/lib/index.js",
   "author": {
@@ -37,8 +37,7 @@
     "tsc": "tsc --noEmit",
     "publish:storybook:web": "node ./bin/netlify/deploy.js",
     "delete:storybook:web": "node ./bin/netlify/delete.js",
-    "postinstall": "npm dedupe && rm package-lock.json",
-    "prestorybook": "rnstl"
+    "postinstall": "npm dedupe && rm package-lock.json && rm -rf node_modules/@types/reach__router"
   },
   "dependencies": {
     "@naturacosmeticos/natds-icons": "^0.4.0",
@@ -142,5 +141,14 @@
       "pattern": "**/*.native.tsx",
       "outputFile": "./storybook/storyLoader.ts"
     }
+  },
+  "release": {
+    "branches": [
+      "master",
+      {
+        "name": "*",
+        "prerelease": true
+      }
+    ]
   }
 }
