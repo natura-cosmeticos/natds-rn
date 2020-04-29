@@ -2,7 +2,7 @@ import React from 'react';
 import { Switch } from 'react-native';
 import { withTheme } from 'styled-components/native';
 import { SwitchContainer } from './StoryWrapper.styles';
-import { getSuccessContrastText, getSuccessMain, getActionDisabled } from '../../../lib';
+import { getSuccessContrastText, getSuccessMain, getActionDisabled } from '../themeSelectors';
 import { TextWithTheme } from '../HelperComponents/ThemeHelper.styles';
 
 const SwitchWithLabelComponent = ({

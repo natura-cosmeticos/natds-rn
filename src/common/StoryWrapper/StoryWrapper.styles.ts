@@ -1,5 +1,5 @@
 import styled from 'styled-components/native';
-import { getTheme, getPrimaryMain } from '../../../lib';
+import { getTheme, getPrimaryMain } from '../themeSelectors';
 import { ContainerWithTheme, TextWithTheme } from '../HelperComponents/ThemeHelper.styles';
 
 export const Container = styled(ContainerWithTheme)`
@@ -32,7 +32,7 @@ export const ModalContainer = styled(ContainerWithTheme)`
 
 export const Button = styled.TouchableHighlight`
   border-radius: 20px;
-  border-color: ${getTheme(getPrimaryMain)}; 
+  border-color: ${getTheme(getPrimaryMain)};
   border-width: 1px;
   padding: 10px;
   elevation: 2;

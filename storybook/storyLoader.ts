@@ -5,10 +5,12 @@
 
 function loadStories() {
 	require('../src/components/Divider/Divider.device');
+	require('../src/tokens/Tokens.device');
 }
 
 const stories = [
-	'../src/components/Divider/Divider.device'
+	'../src/components/Divider/Divider.device',
+	'../src/tokens/Tokens.device'
 ];
 
 module.exports = {
