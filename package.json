@@ -47,6 +47,7 @@
     "build:storybook:web": "build-storybook -c storybook-web -o build/storybook -s storybook-web/static",
     "build:version:info": "node ./bin/buildInfo/createBuildInfo.js",
     "tsc": "tsc --noEmit",
+    "publish:pre:release": "node ./bin/pre-release/pre-release.js",
     "publish:storybook:web": "node ./bin/netlify/deploy.js",
     "delete:storybook:web": "node ./bin/netlify/delete.js",
     "postinstall": "npm dedupe && rm package-lock.json && rm -rf node_modules/@types/reach__router"
