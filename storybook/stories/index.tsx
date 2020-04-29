@@ -19,7 +19,6 @@ import { StoryNatLogo } from './StoryNatLogo';
 import { StoryNatMenuItem } from './StoryNatMenuItem';
 import { StoryNatSelectInput } from './StoryNatSelectInput';
 import { StoryNatTextInput } from './StoryNatTextInput';
-import { Colors } from './StoryTokenColors';
 import { StoryTokenSpace } from './StoryTokenSpace';
 import { StoryTokenTypography } from './StoryTokenTypography';
 import { Welcome } from './Welcome';
@@ -35,7 +34,6 @@ storiesOf('Welcome', module).add('NATDS', () => <Welcome />);
 
 storiesOf('Tokens', module)
   .add('Typography', () => <StoryTokenTypography />)
-  .add('Colors', props => <Colors {...props} />)
   .add('Space', () => <StoryTokenSpace />);
 storiesOf('Divider', module)
   .add('All', () => <StoryDivider />);

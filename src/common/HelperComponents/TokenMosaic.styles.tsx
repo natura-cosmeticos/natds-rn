@@ -35,3 +35,7 @@ export const CategoryWrapper = styled.View`
   margin-top: 20px;
   margin-bottom: 20px;
 `;
+
+export const Container = styled.View`
+  padding: 20px;
+`;

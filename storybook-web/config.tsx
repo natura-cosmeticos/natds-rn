@@ -50,6 +50,7 @@ const instalation = require.context('../docs', true, /Instalation.stories.mdx/);
 const contribution = require.context('../docs', true, /Contribution.stories.mdx/);
 const version = require.context('../docs', true, /Version.stories.mdx/);
 
+const tokens = require.context('../src/tokens', true, /\.stories.(ts|md)x?$/);
 const components = require.context('../src/components', true, /\.stories.(ts|md)x?$/);
 
-configure([instalation, contribution, version, components], module);
+configure([instalation, contribution, version, tokens, components], module);
