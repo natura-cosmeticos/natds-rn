@@ -14,7 +14,6 @@ addons.register(ADDON_ID, (api) => {
   );
 
   addons.add(PANEL_ID, {
-    match: ({ viewMode }) => viewMode === 'story',
     paramKey: PARAM_KEY,
     render,
     title: TITLE,

@@ -42,10 +42,10 @@ module.exports = {
       "error",
       {
         "devDependencies": [
-          "**/*.test.ts",
-          "**/*.test.tsx",
-          "**/*.stories.tsx",
-          "**/*.stories.mdx",
+          "hooks/**/*",
+          "**/*.test.*",
+          "**/*.stories.*",
+          "**/*.native.*",
           "test-setup.js",
           "storybook/**/*",
           "storybook-web/**/*",
@@ -82,7 +82,7 @@ module.exports = {
         "paths": [
           "lib"
         ],
-        "extensions": ['.js', '.jsx', '.ts', '.tsx', '.json']
+        "extensions": ['.js', '.jsx', '.ts', '.tsx', '.json', '.mdx']
       }
     },
     "react": {

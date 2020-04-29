@@ -1,8 +1,5 @@
 module.exports = {
   presets: ['@storybook/addon-docs/preset'],
-  stories: [
-    '../lib/**/*.stories.(js|mdx)',
-  ],
   webpackFinal: (config) => {
     const newConfig = { ...config };
 
@@ -41,6 +38,7 @@ module.exports = {
         },
       ],
     });
+
     newConfig.resolve.extensions.push('.ts', '.tsx', '.mdx');
 
     // console.dir(newConfig, { depth: null });

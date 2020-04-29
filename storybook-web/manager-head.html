@@ -1,32 +1,31 @@
-<style>
-  .sidebar-container .sidebar-item,
-  .sidebar-container .sidebar-item:hover {
-    color: #f0f0f0;
-  }
+<script>
+  const updateColors = (isDark) => {
+    console.log({ isDark })
+    const styles = document.getElementById('ds-styles-manager');
 
-  .sidebar-container .sidebar-item.selected {
-    background: rgba(255, 107, 11, 0.16);
+    styles.innerHTML = `
+    .sidebar-header a:after {
+      content: 'DS React Native';
+      color: ${isDark ? 'white' : '#333333'};
+      display: block;
+      text-align: center;
+    }
+  `
   }
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+    console.log({ e })
+    updateColors(e.matches)
+  });
+  window.onload = () => updateColors(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)
+  window.addEventListener('CHANGE_THEME', (e) => {
+    setTimeout(() => {
+      const store = localStorage.getItem('@storybook/ui/store');
+      const initialTheme = store && JSON.parse(store);
+      const { theme } = initialTheme;
+      updateColors(theme.base === 'dark')
+    }, 200);
+  })
+</script>
 
-  .sidebar-header button {
-    color: #f0f0f0;
-    box-shadow: #f0f0f0 0 0 0 1px inset;
-  }
-
-  .sidebar-header button:hover {
-    color: #fff;
-    box-shadow: #fff 0 0 0 1px inset;
-  }
-
-  .sidebar-header a:after {
-    content: 'DS React Native';
-    color: white;
-    display: block;
-    text-align: center;
-  }
-
-  .simplebar-content .sidebar-subheading {
-    color: #fff;
-  }
-</style>
+<style id="ds-styles-manager"></style>
 <link rel="shortcut icon" href="/favicon.png" />

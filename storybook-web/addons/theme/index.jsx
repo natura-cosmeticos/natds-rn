@@ -1,8 +1,10 @@
 import React, { useEffect, Fragment } from 'react';
 import { useAddonState, Consumer } from '@storybook/api';
 import { TabButton, WithTooltip, TooltipLinkList } from '@storybook/components';
-import { STORY_CHANGED } from '@storybook/core-events';
-import { PANEL_ID, CHANGE, PARAM_KEY } from './shared';
+import {
+  PANEL_ID, CHANGE, PARAM_KEY, getStoryBookTheme,
+} from './shared';
+import { light, dark } from '../../theme';
 
 import './styles.css';
 
@@ -10,6 +12,8 @@ const DEFAULT_THEME = {
   name: 'natura',
   type: 'light',
 };
+
+const buildThemeProps = mode => ({ ...DEFAULT_THEME, type: mode });
 
 function parseTheme(themes) {
   return Object.entries(themes).reduce((accum, [name, variants]) => {
@@ -45,13 +49,20 @@ const mapper = ({ api, state }) => {
   return { items: parseTheme(themes) };
 };
 
-export default function Theme(props) {
-  const { channel, api } = props;
-  const [currentTheme, changeTheme] = useAddonState(PANEL_ID, DEFAULT_THEME);
+export default function Theme({ channel, api }) {
+  const apiTheme = getStoryBookTheme();
+  const initialTheme = apiTheme ? buildThemeProps(apiTheme) : DEFAULT_THEME;
+  const [currentTheme, changeTheme] = useAddonState(PANEL_ID, initialTheme);
   const { disabled } = api.getCurrentParameter(PARAM_KEY) || {};
 
   const handleChange = (params) => {
     changeTheme(params);
+    api.setOptions({
+      theme: params.type === 'light' ? light : dark,
+    });
+    const event = new Event('CHANGE_THEME', { detail: params.type });
+
+    window.dispatchEvent(event);
     channel.emit(CHANGE, params);
   };
 
@@ -64,12 +75,16 @@ export default function Theme(props) {
     />
   );
 
-  useEffect(() => {
-    channel.on(STORY_CHANGED, () => {
-      changeTheme(DEFAULT_THEME);
-    });
+  const eventListener = event => handleChange(buildThemeProps(event.matches ? 'dark' : 'light'));
 
-    return () => (channel.removeListener(STORY_CHANGED));
+  useEffect(() => {
+    const matchMediaEnvent = window.matchMedia('(prefers-color-scheme: dark)');
+
+    matchMediaEnvent.addEventListener('change', eventListener);
+
+    return () => {
+      matchMediaEnvent.removeEventListener('change', eventListener);
+    };
   }, []);
 
   if (disabled) return null;
