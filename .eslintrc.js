@@ -45,7 +45,7 @@ module.exports = {
           "hooks/**/*",
           "**/*.test.*",
           "**/*.stories.*",
-          "**/*.native.*",
+          "**/*.device.*",
           "test-setup.js",
           "storybook/**/*",
           "storybook-web/**/*",
