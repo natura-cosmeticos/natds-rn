@@ -1526,10 +1526,10 @@
   resolved "https://registry.yarnpkg.com/@naturacosmeticos/natds-icons/-/natds-icons-0.4.4.tgz#e03eb1356d8bfd70d71a96bb4be22738619ede0b"
   integrity sha512-wAIXX0ts1omgpGTufdwDaHy/72s3twSKBRG4L+T824dDLwg69BC6nyQsK+QHzIJhzOU1ACQQVXH5AvCUXj9Ppg==
 
-"@naturacosmeticos/natds-styles@^0.4.2":
-  version "0.4.4"
-  resolved "https://registry.yarnpkg.com/@naturacosmeticos/natds-styles/-/natds-styles-0.4.4.tgz#9a171e6796f1f23702eda023521ecef6107ce094"
-  integrity sha512-kYK7YLxPnva7iB9FiX7svjqTSKhAuPfhVFhlfDrlF+Vtko0CdIPF2YFbtX/rV7I/UZrgaPOzUlxUqeLMJMCotA==
+"@naturacosmeticos/natds-styles@0.5.0":
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/@naturacosmeticos/natds-styles/-/natds-styles-0.5.0.tgz#51605204223624e361db75eeb0dc33de2a0d2df5"
+  integrity sha512-9uP0qJuWIatp2T/JHh91RdCu1KclxKljvSNJCwG8ttYDctmp1XTFJu2yYX855ME2fzHx9oTWkb/oW83bZ7jGVw==
   dependencies:
     hex-to-rgba "2.0.1"
 

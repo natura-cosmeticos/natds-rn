@@ -5,4 +5,3 @@ import '@storybook/addon-viewport/register';
 import '@storybook/addon-knobs/register';
 import 'storybook-addon-designs/register';
 import './addons/theme/register';
-import './addons/versions/register';
