@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 import { View } from 'react-native';
 import {
   TokenContainer,
@@ -6,9 +6,32 @@ import {
   ActualColor, ColorName,
   CategoryTitle,
   CategoryWrapper,
+  Container,
 } from './TokenMosaic.styles';
 
-const buildMosaic = (data, itemRenderer) => Object
+type TokenMosaicData = Record<string, string>
+type TokenMosaicWithCategoriesData = Record<string, TokenMosaicData>
+
+interface ItemRenderer {
+  (key: string, data: TokenMosaicData): ReactElement
+}
+
+interface TokenColorProps {
+  colorName: string
+  color: string
+}
+
+interface TokenMosaicProps {
+  data: TokenMosaicData
+  itemRenderer: ItemRenderer
+}
+
+interface TokenMosaicWithCategoriesProps {
+  categories: TokenMosaicWithCategoriesData
+  itemRenderer: ItemRenderer
+}
+
+const buildMosaic = (data: TokenMosaicData, itemRenderer: ItemRenderer) => Object
   .keys(data)
   .map(key => itemRenderer(key, data));
 
@@ -21,7 +44,10 @@ const Category = ({ category, data, itemRenderer }) => (
   </CategoryWrapper>
 );
 
-const buildCategories = (categories, itemRenderer) => Object
+const buildCategories = (
+  categories: TokenMosaicWithCategoriesData,
+  itemRenderer: ItemRenderer,
+) => Object
   .keys(categories)
   .map(category => (
     <Category
@@ -32,19 +58,21 @@ const buildCategories = (categories, itemRenderer) => Object
     />
   ));
 
-export const TokenMosaicWithCategories = ({ categories, itemRenderer }) => (
-  <View>
+export const TokenMosaicWithCategories = (
+  { categories, itemRenderer }: TokenMosaicWithCategoriesProps,
+) => (
+  <Container>
     {buildCategories(categories, itemRenderer)}
-  </View>
+  </Container>
 );
 
-export const TokenMosaic = ({ data, itemRenderer }) => (
-  <View>
+export const TokenMosaic = ({ data, itemRenderer }: TokenMosaicProps) => (
+  <Container>
     {buildMosaic(data, itemRenderer)}
-  </View>
+  </Container>
 );
 
-export const TokenColor = ({ colorName, color }) => (
+export const TokenColor = ({ colorName, color }: TokenColorProps) => (
   <TokenColorContainer>
     <ActualColor style={{ backgroundColor: color }}></ActualColor>
     <View>

@@ -12,8 +12,8 @@ const SwitchWithLabelComponent = ({
     ios_backgroundColor: '#3e3e3e',
     thumbColor: getSuccessContrastText(theme),
     trackColor: {
-      false: getActionDisabled(theme),
-      true: getSuccessMain(theme),
+      false: getActionDisabled(theme) || '#eaeaea',
+      true: getSuccessMain(theme) || '#BEC950',
     },
   };
 

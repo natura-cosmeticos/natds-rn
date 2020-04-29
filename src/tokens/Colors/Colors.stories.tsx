@@ -1,13 +1,13 @@
 import React from 'react';
 import { Text } from 'react-native';
 import { tokens } from '@naturacosmeticos/natds-styles';
-import { TokenMosaicWithCategories, TokenColor } from '../HelperComponents/TokenMosaic';
+import { TokenMosaicWithCategories, TokenColor } from '../../common/HelperComponents/TokenMosaic';
 
 const mosaicItemRendered = (
-  colorName, colors,
+  colorName: string, colors: Record<string, string>,
 ) => <TokenColor colorName={colorName} color={colors[colorName]} />;
 
-export const Colors = ({ activeTheme }) => {
+export const colors = ({ activeTheme }) => {
   const colorByTheme = tokens.colors[activeTheme || 'natura'];
 
   if (!colorByTheme) return <Text>No colors found for this theme.</Text>;
@@ -20,4 +20,11 @@ export const Colors = ({ activeTheme }) => {
       itemRenderer={mosaicItemRendered}
     />
   );
+};
+
+export default {
+  parameters: {
+    componentSubtitle: 'These are the colors available in the current theme',
+  },
+  title: 'Tokens|Colors',
 };

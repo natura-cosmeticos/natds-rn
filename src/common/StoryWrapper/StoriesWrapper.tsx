@@ -41,7 +41,6 @@ export const StoriesWrapperNative = ({ story }) => {
           </Button>
           <SwitchWithLabel
             onChange={changeMode}
-            value={isLight}
             label="Light"
             isActive={isLight}
             isLast
