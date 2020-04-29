@@ -68,7 +68,9 @@ export const TokenMosaicWithCategories = (
 
 export const TokenMosaic = ({ data, itemRenderer }: TokenMosaicProps) => (
   <Container>
-    {buildMosaic(data, itemRenderer)}
+    <TokenContainer>
+      {buildMosaic(data, itemRenderer)}
+    </TokenContainer>
   </Container>
 );
 

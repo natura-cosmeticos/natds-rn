@@ -38,10 +38,12 @@ const wrapper = (getStory, storyContext, { options, parameters }) => {
   const { context, disableBackground } = parameters;
   const { themes, defaultTheme } = getProvider(context || options);
   const [theme, setTheme] = useState(getStoryBookTheme() === 'light' ? defaultTheme : { ...defaultTheme, defaultTheme: themesWeb.natura.dark });
+  const [themeInfo, setThemeInfo] = useState({ activeTheme: 'natura', light: true });
 
   useEffect(() => {
     channel.on(CHANGE, ({ type, name }) => {
       setTheme(themes[name][type]);
+      setThemeInfo({ activeTheme: name, light: type === 'light' });
     });
 
     return () => {
@@ -55,7 +57,7 @@ const wrapper = (getStory, storyContext, { options, parameters }) => {
 
   return (
     <ThemeProvider theme={theme}>
-      <div style={storyStyles}>{getStory(storyContext)}</div>
+      <div style={storyStyles}>{getStory({ ...storyContext, ...themeInfo })}</div>
       <div style={{ ...backgroundStyles, background }} />
     </ThemeProvider>
   );
