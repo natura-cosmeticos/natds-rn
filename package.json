@@ -138,7 +138,7 @@
       "searchDir": [
         "./src/components"
       ],
-      "pattern": "**/*.native.tsx",
+      "pattern": "**/*.device.tsx",
       "outputFile": "./storybook/storyLoader.ts"
     }
   },

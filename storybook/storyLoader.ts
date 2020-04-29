@@ -4,11 +4,11 @@
 // https://github.com/elderfo/react-native-storybook-loader.git
 
 function loadStories() {
-	require('../src/components/Divider/stories/Divider.native');
+	require('../src/components/Divider/Divider.device');
 }
 
 const stories = [
-	'../src/components/Divider/stories/Divider.native'
+	'../src/components/Divider/Divider.device'
 ];
 
 module.exports = {
