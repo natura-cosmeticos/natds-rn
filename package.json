@@ -40,7 +40,7 @@
     "storybook": "start-storybook -p 7007",
     "storybook:web": "node ./node_modules/@storybook/react/bin/index.js start-storybook -p 9001 -c storybook-web -s storybook-web/static",
     "cm": "git-cz",
-    "release": "semantic-release",
+    "release": "standard-version",
     "build": "tsc && babel build/lib --out-dir build/lib --ignore node_modules,dist --source-maps --copy-files --no-babelrc --presets react-native",
     "build:sample:android": "rnstl && react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res",
     "build:sample:ios": "rnstl && react-native bundle --platform ios --dev false --entry-file index.js --bundle-output ios/NaturaReactComponents/main.jsbundle --assets-dest ios",
@@ -134,6 +134,7 @@
     "regenerator-runtime": "^0.13.5",
     "semantic-release": "17.0.4",
     "shelljs": "^0.8.3",
+    "standard-version": "^7.1.0",
     "storybook-addon-designs": "^5.2.0",
     "ts-jest": "^25.4.0",
     "ts-loader": "^7.0.0",
@@ -163,13 +164,7 @@
       "outputFile": "./storybook/storyLoader.ts"
     }
   },
-  "release": {
-    "branches": [
-      "master",
-      {
-        "name": "*",
-        "prerelease": true
-      }
-    ]
+  "standard-version": {
+    "no-verify": true
   }
 }
