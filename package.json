@@ -136,7 +136,8 @@
     },
     "react-native-storybook-loader": {
       "searchDir": [
-        "./src/components"
+        "./src/components",
+        "./src/tokens"
       ],
       "pattern": "**/*.device.tsx",
       "outputFile": "./storybook/storyLoader.ts"

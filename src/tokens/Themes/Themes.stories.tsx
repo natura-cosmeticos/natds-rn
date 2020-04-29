@@ -29,7 +29,7 @@ const handleRenderSectionHeader = ({ section }) => (
   <SectionHeader>{section.title}</SectionHeader>
 );
 
-export const Themes = withTheme((props) => {
+const ThemesWithHoc = withTheme((props) => {
   const { theme: { palette }, light, activeTheme } = props;
 
   const sections = Object
@@ -50,3 +50,12 @@ export const Themes = withTheme((props) => {
     </View>
   );
 });
+
+export const themes = () => <ThemesWithHoc />;
+
+export default {
+  parameters: {
+    componentSubtitle: 'These are the props available in the current theme',
+  },
+  title: 'Tokens|Theme',
+};
