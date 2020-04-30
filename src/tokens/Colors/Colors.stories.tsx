@@ -25,7 +25,7 @@ export const colors = ({ activeTheme, light }) => {
 
 export default {
   parameters: {
-    componentSubtitle: 'These are the colors available in the current theme',
+    componentSubtitle: 'Colors available in the current theme. Read more in the Documentation section.',
   },
   title: 'Tokens|Colors',
 };
