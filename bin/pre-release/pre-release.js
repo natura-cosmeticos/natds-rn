@@ -15,9 +15,9 @@ const init = async () => {
   const issueNumber = commits.find(issue => issue.match(/(DSY-\d+)/g));
   const preReleaseName = issueNumber.match(/(DSY-\d+)/g)[0] || 'alpha';
 
-  shell.exec(`yarn release --prerelease ${preReleaseName}`);
+  shell.exec(`npm run release --prerelease ${preReleaseName}`);
   // shell.exec('git push --follow-tags');
-  shell.exec(`npm config set "//registry.npmjs.org/:_authToken" "${npmToken}"`);
+  shell.exec('echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/.npmrc');
   shell.exec(`npm publish --tag ${preReleaseName}`);
 };
 
