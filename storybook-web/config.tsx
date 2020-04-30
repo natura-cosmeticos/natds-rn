@@ -3,7 +3,7 @@ import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
 import { withKnobs } from '@storybook/addon-knobs';
 import { DocsPage, DocsContainer } from '@storybook/addon-docs/blocks';
 import { addons } from '@storybook/addons';
-import { themes } from '@naturacosmeticos/natds-styles';
+import { themes as dsThemes } from '@naturacosmeticos/natds-styles';
 import { withTheme } from './addons/theme/provider';
 import { dark, light } from './theme';
 
@@ -30,7 +30,7 @@ addParameters({
     sidebarAnimations: true,
   },
   theme: {
-    themes,
+    themes: dsThemes,
   },
   viewport: {
     viewports: INITIAL_VIEWPORTS,
@@ -45,12 +45,12 @@ addDecorator(withKnobs);
 //   require('../storybook/stories');
 // }, module);
 
-
 const instalation = require.context('../docs', true, /Instalation.stories.mdx/);
 const contribution = require.context('../docs', true, /Contribution.stories.mdx/);
+const themes = require.context('../docs', true, /Themes.stories.mdx/);
 const version = require.context('../docs', true, /Version.stories.mdx/);
 
 const tokens = require.context('../src/tokens', true, /\.stories.(ts|md)x?$/);
 const components = require.context('../src/components', true, /\.stories.(ts|md)x?$/);
 
-configure([instalation, contribution, version, tokens, components], module);
+configure([instalation, contribution, themes, version, tokens, components], module);
