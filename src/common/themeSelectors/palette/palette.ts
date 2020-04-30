@@ -1,7 +1,7 @@
 import { ITheme } from '@naturacosmeticos/natds-styles';
 
 interface ThemeSelector {
-  (theme: ITheme): string
+  (theme: ITheme): string | undefined
 }
 
 // Helper selectors

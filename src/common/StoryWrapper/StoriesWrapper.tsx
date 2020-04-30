@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import { themes } from '@naturacosmeticos/natds-styles';
 import { ThemeProvider } from 'styled-components/native';
 import {
-  ScrollView, SafeAreaView, Dimensions, StyleSheet, Platform,
+  ScrollView, SafeAreaView, Dimensions, StyleSheet, Platform, View,
 } from 'react-native';
-import { NatContainer, getBackgroundPaper } from '../../../lib';
 import { TextWithTheme } from '../HelperComponents/ThemeHelper.styles';
+import { getBackgroundPaper } from '../themeSelectors';
 import { Container, Button } from './StoryWrapper.styles';
 import { ThemeSelectorModal } from './ThemeSelectorModal';
 import { SwitchWithLabel } from './SwitchWithLabel';
@@ -41,16 +41,15 @@ export const StoriesWrapperNative = ({ story }) => {
           </Button>
           <SwitchWithLabel
             onChange={changeMode}
-            value={isLight}
             label="Light"
             isActive={isLight}
             isLast
           />
         </Container>
         <ScrollView>
-          <NatContainer style={{ backgroundColor: getBackgroundPaper(theme) }}>
+          <View style={{ backgroundColor: getBackgroundPaper(theme) }}>
             {story && story({ activeTheme, light: isLight })}
-          </NatContainer>
+          </View>
         </ScrollView>
       </ThemeProvider>
     </SafeAreaView>
@@ -60,9 +59,9 @@ export const StoriesWrapperNative = ({ story }) => {
 export const StoriesWrapperWeb = ({ story }) => (
   <SafeAreaView style={styles.defaultScreen}>
     <ScrollView>
-      <NatContainer >
+      <View>
         {story && story()}
-      </NatContainer>
+      </View>
     </ScrollView>
   </SafeAreaView>
 );

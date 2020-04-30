@@ -3,13 +3,25 @@
   "version": "0.0.0",
   "license": "MIT",
   "main": "build/lib/index.js",
-  "author": {
-    "name": "Douglas Freitas",
-    "email": "douglasfreitas@natura.net",
-    "url": "https://github.com/douglasofreitas"
-  },
+  "keywords": [
+    "Design System",
+    "design-system",
+    "Natura",
+    "Natura Design System"
+  ],
+  "author": "Natura Cosméticos <designsystem@natura.net>",
+  "contributors": [
+    "Vicente Lyrio <vicente.lyrio@vizir.com.br>",
+    "Vagner Saraiva <vagner@vizir.com.br>",
+    "Matheus Robert Lichtnow <matheus@vizir.com.br>",
+    "Douglas Freitas <douglasfreitas@natura.net>"
+  ],
   "description": "Natura Design System for React Native",
   "homepage": "https://github.com/natura-cosmeticos/natds-rn",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/natura-cosmeticos/natds-rn.git"
+  },
   "files": [
     "build/lib"
   ],
@@ -32,7 +44,7 @@
     "build": "tsc && babel build/lib --out-dir build/lib --ignore node_modules,dist --source-maps --copy-files --no-babelrc --presets react-native",
     "build:sample:android": "rnstl && react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res",
     "build:sample:ios": "rnstl && react-native bundle --platform ios --dev false --entry-file index.js --bundle-output ios/NaturaReactComponents/main.jsbundle --assets-dest ios",
-    "build:storybook:web": "build-storybook -c storybook-web -o build/storybook -s storybook-web/static --docs",
+    "build:storybook:web": "build-storybook -c storybook-web -o build/storybook -s storybook-web/static",
     "build:version:info": "node ./bin/buildInfo/createBuildInfo.js",
     "tsc": "tsc --noEmit",
     "publish:storybook:web": "node ./bin/netlify/deploy.js",
@@ -41,7 +53,7 @@
   },
   "dependencies": {
     "@naturacosmeticos/natds-icons": "^0.4.0",
-    "@naturacosmeticos/natds-styles": "^0.4.2",
+    "@naturacosmeticos/natds-styles": "0.5.0",
     "prop-types": "15.7.2",
     "react-native-gesture-handler": "1.6.0",
     "react-native-svg": "11.0.1",
@@ -136,7 +148,8 @@
     },
     "react-native-storybook-loader": {
       "searchDir": [
-        "./src/components"
+        "./src/components",
+        "./src/tokens"
       ],
       "pattern": "**/*.device.tsx",
       "outputFile": "./storybook/storyLoader.ts"

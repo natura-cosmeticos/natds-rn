@@ -1,6 +1,6 @@
 /* eslint-disable max-lines */
 import React from 'react';
-import { storiesOf, addDecorator } from '@storybook/react-native';
+import { storiesOf } from '@storybook/react-native';
 import {
   Login, Card, Form, FriendExchange,
 } from './ScreenSamples';
@@ -19,29 +19,22 @@ import { StoryNatLogo } from './StoryNatLogo';
 import { StoryNatMenuItem } from './StoryNatMenuItem';
 import { StoryNatSelectInput } from './StoryNatSelectInput';
 import { StoryNatTextInput } from './StoryNatTextInput';
-import { Colors } from './StoryTokenColors';
 import { StoryTokenSpace } from './StoryTokenSpace';
 import { StoryTokenTypography } from './StoryTokenTypography';
-import { Themes } from './StoryTokenThemes/Themes';
 import { Welcome } from './Welcome';
 import iconArrowLeft from '../../lib/assets/icons/ic_arrow_left_white.png';
 import { StoryIcon } from './StoryIcon';
 import { StoryTabBar } from './StoryTabBar';
 import { StoryFAB } from './StoryFAB';
 import { StoryAvatar } from './StoryAvatar';
-import { StoriesWrapper } from './StoryWrapper';
 
 console.disableYellowBox = true; // eslint-disable-line no-console
-
-addDecorator(storyFn => <StoriesWrapper story={storyFn || null} />);
 
 storiesOf('Welcome', module).add('NATDS', () => <Welcome />);
 
 storiesOf('Tokens', module)
   .add('Typography', () => <StoryTokenTypography />)
-  .add('Colors', props => <Colors {...props} />)
-  .add('Space', () => <StoryTokenSpace />)
-  .add('Themes', props => <Themes {...props} />);
+  .add('Space', () => <StoryTokenSpace />);
 storiesOf('Divider', module)
   .add('All', () => <StoryDivider />);
 storiesOf('Images', module)

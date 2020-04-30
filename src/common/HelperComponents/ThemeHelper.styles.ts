@@ -1,5 +1,5 @@
 import styled from 'styled-components/native';
-import { getTheme, getTextPrimary, getBackgroundDefault } from '../../../lib';
+import { getTheme, getTextPrimary, getBackgroundDefault } from '../themeSelectors';
 
 export const TextWithTheme = styled.Text`
   color: ${getTheme(getTextPrimary)};

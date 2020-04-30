@@ -1,6 +1,6 @@
 import styled from 'styled-components/native';
-import { getTextPrimary, getTheme, getBackgroundDefault } from '../../../../lib/themes/themeSelectors';
-import { TextWithTheme } from '../../HelperComponents/ThemeHelper.styles';
+import { getTextPrimary, getTheme, getBackgroundDefault } from '../../common/themeSelectors';
+import { TextWithTheme } from '../../common/HelperComponents/ThemeHelper.styles';
 
 export const ItemWrapper = styled.View`
   flex-direction: row;
@@ -46,4 +46,7 @@ export const Title = styled(TextWithTheme)`
   font-size: 30px;
   font-weight: 100;
   margin-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 10px;
 `;
