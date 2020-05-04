@@ -1,6 +1,6 @@
 {
   "name": "@naturacosmeticos/natds-rn",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "license": "MIT",
   "main": "build/lib/index.js",
   "keywords": [
@@ -40,18 +40,21 @@
     "storybook": "start-storybook -p 7007",
     "storybook:web": "node ./node_modules/@storybook/react/bin/index.js start-storybook -p 9001 -c storybook-web -s storybook-web/static",
     "cm": "git-cz",
-    "release": "semantic-release",
+    "release": "standard-version",
     "build": "tsc && babel build/lib --out-dir build/lib --ignore node_modules,dist --source-maps --copy-files --no-babelrc --presets react-native",
     "build:sample:android": "rnstl && react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res",
     "build:sample:ios": "rnstl && react-native bundle --platform ios --dev false --entry-file index.js --bundle-output ios/NaturaReactComponents/main.jsbundle --assets-dest ios",
     "build:storybook:web": "build-storybook -c storybook-web -o build/storybook -s storybook-web/static",
     "build:version:info": "node ./bin/buildInfo/createBuildInfo.js",
     "tsc": "tsc --noEmit",
+    "publish:pre:release": "node ./bin/pre-release/pre-release.js",
     "publish:storybook:web": "node ./bin/netlify/deploy.js",
     "delete:storybook:web": "node ./bin/netlify/delete.js",
     "postinstall": "npm dedupe && rm package-lock.json && rm -rf node_modules/@types/reach__router"
   },
   "dependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
     "@naturacosmeticos/natds-icons": "^0.4.0",
     "@naturacosmeticos/natds-styles": "0.5.0",
     "prop-types": "15.7.2",
@@ -63,6 +66,7 @@
     "@babel/core": "7.6.2",
     "@babel/plugin-proposal-optional-chaining": "^7.9.0",
     "@babel/runtime": "7.6.2",
+    "@commitlint/read": "^8.3.4",
     "@naturacosmeticos/eslint-config-natura": "2.0.1",
     "@react-native-community/eslint-config": "0.0.5",
     "@storybook/addon-actions": "5.3.18",
@@ -131,6 +135,7 @@
     "regenerator-runtime": "^0.13.5",
     "semantic-release": "17.0.4",
     "shelljs": "^0.8.3",
+    "standard-version": "^7.1.0",
     "storybook-addon-designs": "^5.2.0",
     "ts-jest": "^25.4.0",
     "ts-loader": "^7.0.0",
@@ -141,6 +146,11 @@
   "peerDependencies": {
     "react": ">=16.8.0",
     "react-native": ">=0.59.10"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
   },
   "config": {
     "commitizen": {
@@ -155,13 +165,7 @@
       "outputFile": "./storybook/storyLoader.ts"
     }
   },
-  "release": {
-    "branches": [
-      "master",
-      {
-        "name": "*",
-        "prerelease": true
-      }
-    ]
+  "standard-version": {
+    "no-verify": true
   }
 }

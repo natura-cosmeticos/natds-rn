@@ -16,7 +16,7 @@ const { version } = require('../../package.json');
 
 const siteDir = 'build/storybook';
 const client = new NetlifyAPI(authToken);
-const currentBranch = process.env.BITRISE_GIT_BRANCH || shell.exec('git rev-parse --abbrev-ref HEAD').trim();
+const currentBranch = process.env.BITRISE_GIT_BRANCH.trim() || shell.exec('git rev-parse --abbrev-ref HEAD').trim();
 
 const deploy = async (site) => {
   const deployInfo = await client.deploy(site.site_id, siteDir);
