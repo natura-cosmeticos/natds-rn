@@ -1,5 +1,5 @@
 import styled from 'styled-components/native';
-import { getTheme, getPrimaryMain } from '../themeSelectors';
+import { getTheme, getColorPrimary } from '../themeSelectors';
 import { ContainerWithTheme, TextWithTheme } from '../HelperComponents/ThemeHelper.styles';
 
 export const Container = styled(ContainerWithTheme)`
@@ -7,6 +7,7 @@ export const Container = styled(ContainerWithTheme)`
   flex-direction: row;
   justify-content: space-between;
   padding: 10px;
+  border-bottom-color: #eaeaea;
 `;
 
 const addBorder = ({ isLast }) => {
@@ -30,12 +31,15 @@ export const ModalContainer = styled(ContainerWithTheme)`
   padding-right: 20px;
 `;
 
-export const Button = styled.TouchableHighlight`
+export const Button = styled.TouchableHighlight.attrs(props => ({
+  activeOpacity: 0.9,
+  elevation: 2,
+  underlayColor: '#eaeaea',
+}))`
   border-radius: 20px;
-  border-color: ${getTheme(getPrimaryMain)};
+  border-color: ${getTheme(getColorPrimary)};
   border-width: 1px;
   padding: 10px;
-  elevation: 2;
 `;
 
 export const BlockButton = styled(Button)`
