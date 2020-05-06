@@ -1,10 +1,2 @@
-export {
-  getActionDisabled,
-  getSuccessMain,
-  getBackgroundPaper,
-  getSuccessContrastText,
-  getBackgroundDefault,
-  getTheme,
-  getPrimaryMain,
-  getTextPrimary,
-} from './palette/palette';
+export * from './colors/colors';
+export * from './theme/theme';
