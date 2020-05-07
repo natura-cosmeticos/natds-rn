@@ -3,8 +3,8 @@ import renderer from 'react-test-renderer';
 import { render } from '@testing-library/react-native';
 import '@testing-library/jest-native/extend-expect';
 import { ThemeProvider } from 'styled-components/native';
-import { Button } from './Button';
 import theme from '../../common/themeSelectors/theme/mock-theme.json';
+import { Button } from './Button';
 
 jest.mock('../../common/themeSelectors', () => (
   {
@@ -14,14 +14,13 @@ jest.mock('../../common/themeSelectors', () => (
     getColorPrimary: () => '#FFFFFF',
     getRadiusPropsBySize: () => 42,
     getShadowBySize: () => ({ shadowColor: '#AEAEAE' }),
-    getTheme: fn => fn(),
   }));
 
 describe('Button component', () => {
   it('Should render button with a text', () => {
     const { queryByTestId } = render(
       <ThemeProvider theme={theme}>
-        <Button text="texto legal"/>
+        <Button text="texto legal" />
       </ThemeProvider>,
     );
 
@@ -31,7 +30,7 @@ describe('Button component', () => {
   it('Should render button with default props', () => {
     const { queryByTestId } = render(
       <ThemeProvider theme={theme}>
-        <Button text="texto legal"/>
+        <Button text="texto legal" />
       </ThemeProvider>,
     );
 
@@ -41,7 +40,7 @@ describe('Button component', () => {
   it('Should render button with type props', () => {
     const { queryByTestId } = render(
       <ThemeProvider theme={theme}>
-        <Button type="outlined" text="texto legal"/>
+        <Button type="outlined" text="texto legal" />
       </ThemeProvider>,
     );
 
@@ -53,7 +52,7 @@ describe('Button component', () => {
   it('Should render button component outlined', () => {
     const button = renderer.create(
       <ThemeProvider theme={theme}>
-        <Button type="outlined" text="texto legal"/>
+        <Button type="outlined" text="texto legal" />
       </ThemeProvider>,
     ).toJSON();
 
@@ -63,7 +62,7 @@ describe('Button component', () => {
   it('Should render button component contained', () => {
     const button = renderer.create(
       <ThemeProvider theme={theme}>
-        <Button text="texto legal"/>
+        <Button text="texto legal" />
       </ThemeProvider>,
     ).toJSON();
 
@@ -73,7 +72,7 @@ describe('Button component', () => {
   it('Should render button component text', () => {
     const button = renderer.create(
       <ThemeProvider theme={theme}>
-        <Button type="text" text="texto legal"/>
+        <Button type="text" text="texto legal" />
       </ThemeProvider>,
     ).toJSON();
 
