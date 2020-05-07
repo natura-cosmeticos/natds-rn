@@ -4,30 +4,43 @@ import {
   getTheme,
   getColorPrimary,
   getColorOnPrimary,
-  getColorOnSecondary,
+  getColorHighEmphasis,
   Theme,
   getButtonPropsBySize,
   getRadiusPropsBySize,
   getShadowBySize,
 } from '../../common/themeSelectors';
 
-export type ButtonPropTypes = 'contained' | 'outlined' | 'text'
+export type ButtonTypes = 'contained' | 'outlined' | 'text'
 
 export interface ButtonProps {
   /**
    * The button content
    */
   text: string
-  type?: ButtonPropTypes
+  type?: ButtonTypes
+  theme: Theme,
+  testID?: string
+}
+
+interface ButonBase {
+  type: ButtonTypes
   theme: Theme
 }
 
-type ButonBase = Omit<ButtonProps, 'text'>
+const getButtonStyles = (theme: Theme) => ({
+  contained: {
+    background: getColorPrimary(theme),
+  },
+  outlined: {
+    borderColor: getColorPrimary(theme),
+    borderWidth: 1,
+  },
+});
 
 const ButtonBase = styled.TouchableOpacity<ButonBase>(({ type, theme }) => ({
   borderRadius: getRadiusPropsBySize(theme, 'medium'),
-  ...(type === 'contained' ? { background: getColorPrimary(theme) } : {}),
-  ...(type === 'outlined' ? { borderColor: getColorPrimary(theme), borderWidth: 1 } : {}),
+  ...getButtonStyles(theme)[type],
   ...getButtonPropsBySize(theme, 'medium'),
 }));
 
@@ -36,11 +49,11 @@ color: ${
   props => (
     props.type === 'contained'
       ? getTheme(getColorOnPrimary)
-      : getTheme(getColorOnSecondary))
+      : getTheme(getColorHighEmphasis))
 };
 `;
 
-const getShadowByType = (type, theme) => {
+const getShadowByType = (type: ButtonTypes, theme: Theme) => {
   if (type === 'contained') {
     return getShadowBySize(theme, '2');
   }
@@ -48,8 +61,11 @@ const getShadowByType = (type, theme) => {
   return {};
 };
 
-const ButtonComponent = ({ theme, text, type = 'contained' }: ButtonProps) => (
+const ButtonComponent = ({
+  theme, text, type = 'contained', testID = 'button',
+}: ButtonProps) => (
   <ButtonBase
+    testID={testID}
     style={getShadowByType(type, theme)}
     type={type}
   >

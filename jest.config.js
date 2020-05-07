@@ -1,4 +1,5 @@
 const { defaults: tsjPreset } = require('ts-jest/presets');
+const jestPreset = require('@testing-library/react-native/jest-preset');
 
 module.exports = {
   cacheDirectory: '.jest/cache',
@@ -25,8 +26,9 @@ module.exports = {
   moduleNameMapper: {
     '\\.svg': '<rootDir>/__mocks__/svgMock.js',
   },
-  preset: 'react-native',
+  preset: '@testing-library/react-native',
   setupFiles: [
+    ...jestPreset.setupFiles,
     '<rootDir>/test-setup.js',
   ],
   testMatch: [

@@ -1,0 +1,92 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button component Should render button component contained 1`] = `
+<
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#AEAEAE",
+        "borderRadius": 42,
+      },
+      Object {
+        "shadowColor": "#AEAEAE",
+      },
+    ]
+  }
+  testID="button"
+  type="contained"
+>
+  <Text
+    style={
+      Array [
+        Object {
+          "color": "#F4F4",
+        },
+      ]
+    }
+    type="contained"
+  >
+    texto legal
+  </Text>
+</>
+`;
+
+exports[`Button component Should render button component outlined 1`] = `
+<
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#AEAEAE",
+        "borderColor": "#FFFFFF",
+        "borderRadius": 42,
+        "borderWidth": 1,
+      },
+      Object {},
+    ]
+  }
+  testID="button"
+  type="outlined"
+>
+  <Text
+    style={
+      Array [
+        Object {
+          "color": "#FAF3E3",
+        },
+      ]
+    }
+    type="outlined"
+  >
+    texto legal
+  </Text>
+</>
+`;
+
+exports[`Button component Should render button component text 1`] = `
+<
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#AEAEAE",
+        "borderRadius": 42,
+      },
+      Object {},
+    ]
+  }
+  testID="button"
+  type="text"
+>
+  <Text
+    style={
+      Array [
+        Object {
+          "color": "#FAF3E3",
+        },
+      ]
+    }
+    type="text"
+  >
+    texto legal
+  </Text>
+</>
+`;
