@@ -2,7 +2,7 @@ import React from 'react';
 import { Switch } from 'react-native';
 import { withTheme } from 'styled-components/native';
 import { SwitchContainer } from './StoryWrapper.styles';
-import { getSuccessContrastText, getSuccessMain, getActionDisabled } from '../themeSelectors';
+import { getColorSuccess, getColorLowEmphasis, getColorOnSuccess } from '../themeSelectors';
 import { TextWithTheme } from '../HelperComponents/ThemeHelper.styles';
 
 const SwitchWithLabelComponent = ({
@@ -10,10 +10,10 @@ const SwitchWithLabelComponent = ({
 }) => {
   const colorProps = {
     ios_backgroundColor: '#3e3e3e',
-    thumbColor: getSuccessContrastText(theme),
+    thumbColor: getColorOnSuccess(theme),
     trackColor: {
-      false: getActionDisabled(theme) || '#eaeaea',
-      true: getSuccessMain(theme) || '#BEC950',
+      false: getColorLowEmphasis(theme) || '#eaeaea',
+      true: getColorSuccess(theme) || '#BEC950',
     },
   };
 
