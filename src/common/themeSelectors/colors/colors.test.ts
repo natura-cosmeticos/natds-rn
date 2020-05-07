@@ -44,6 +44,12 @@ const scenarios = [
     selector: selectors.getColorLowEmphasis,
     title: 'low emphasis',
   },
+  {
+    expectedResult: theme.colorTokens.colorOnSecondary,
+    name: 'getColorOnSecondary',
+    selector: selectors.getColorOnSecondary,
+    title: 'on secondary',
+  },
 ];
 
 describe('Color selectors', () => {
