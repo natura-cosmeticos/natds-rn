@@ -1,6 +1,7 @@
 import { storiesOf } from '@storybook/react-native';
-import { contained, outlined } from './Button.stories';
+import { contained, outlined, text } from './Button.stories';
 
 storiesOf('Button', module)
   .add('contained', contained)
-  .add('outlined', outlined);
+  .add('outlined', outlined)
+  .add('text', text);

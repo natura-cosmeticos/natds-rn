@@ -1,11 +1,8 @@
 import styled from 'styled-components/native';
 import { getTheme, getColorPrimary } from '../themeSelectors';
-import { ContainerWithTheme, TextWithTheme } from '../HelperComponents/ThemeHelper.styles';
+import { ContainerRow, TextWithTheme, ContainerWithTheme } from '../HelperComponents/ThemeHelper.styles';
 
-export const Container = styled(ContainerWithTheme)`
-  align-items: center;
-  flex-direction: row;
-  justify-content: space-between;
+export const Container = styled(ContainerRow)`
   padding: 10px;
   border-bottom-color: #eaeaea;
 `;

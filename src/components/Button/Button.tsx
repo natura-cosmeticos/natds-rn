@@ -1,35 +1,60 @@
 import React from 'react';
-import styled from 'styled-components/native';
-import { ITheme } from '@naturacosmeticos/natds-styles';
+import styled, { withTheme } from 'styled-components/native';
 import {
-  getTheme, getPrimaryMain, getColorOnPrimary, getColorOnSecondery,
+  getTheme,
+  getColorPrimary,
+  getColorOnPrimary,
+  getColorOnSecondary,
+  Theme,
+  getButtonPropsBySize,
+  getRadiusPropsBySize,
+  getShadowBySize,
 } from '../../common/themeSelectors';
 
-export type ButtonPropTypes = 'contained' | 'outlined'
+export type ButtonPropTypes = 'contained' | 'outlined' | 'text'
 
 export interface ButtonProps {
   /**
    * The button content
    */
-  text: string,
-  type?: 'contained' | 'outlined',
-  theme?: ITheme,
+  text: string
+  type?: ButtonPropTypes
+  theme: Theme
 }
 
-const ButtonBase = styled.TouchableOpacity<Omit<ButtonProps, 'text'>>`
-  background: ${props => (
-    props.type === 'contained'
-      ? getTheme(getPrimaryMain)
-      : getTheme(getPrimaryMain))};
-  `;
+type ButonBase = Omit<ButtonProps, 'text'>
 
-const Text = styled.Text<Omit<ButtonProps, 'text'>>`
-  color: ${props => (
+const ButtonBase = styled.TouchableOpacity<ButonBase>(({ type, theme }) => ({
+  borderRadius: getRadiusPropsBySize(theme, 'medium'),
+  ...(type === 'contained' ? { background: getColorPrimary(theme) } : {}),
+  ...(type === 'outlined' ? { borderColor: getColorPrimary(theme), borderWidth: 1 } : {}),
+  ...getButtonPropsBySize(theme, 'medium'),
+}));
+
+const Text = styled.Text<ButonBase>`
+color: ${
+  props => (
     props.type === 'contained'
       ? getTheme(getColorOnPrimary)
-      : getTheme(getColorOnSecondery))};
-  `;
+      : getTheme(getColorOnSecondary))
+};
+`;
 
-export const Button = ({ text, type = 'contained' }: ButtonProps) => <ButtonBase type={type}>
+const getShadowByType = (type, theme) => {
+  if (type === 'contained') {
+    return getShadowBySize(theme, '2');
+  }
+
+  return {};
+};
+
+const ButtonComponent = ({ theme, text, type = 'contained' }: ButtonProps) => (
+  <ButtonBase
+    style={getShadowByType(type, theme)}
+    type={type}
+  >
     <Text type={type}>{text}</Text>
-  </ButtonBase>;
+  </ButtonBase>
+);
+
+export const Button = withTheme(ButtonComponent);
