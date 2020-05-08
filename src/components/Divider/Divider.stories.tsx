@@ -1,7 +1,7 @@
 
 import React from 'react';
-import { text, select } from '@storybook/addon-knobs';
-import { Divider, DividerPropTypes } from './Divider';
+import { select } from '@storybook/addon-knobs';
+import { Divider } from './Divider';
 
 export default {
   component: Divider,

@@ -1,8 +1,9 @@
 
 import React from 'react';
 import { View } from 'react-native';
+import { text as textKnob, select } from '@storybook/addon-knobs';
 import { ContainerRow, ContainerWithTheme } from '../../common/HelperComponents/ThemeHelper.styles';
-import { Button } from './Button';
+import { Button, ButtonTypes } from './Button';
 
 export default {
   component: Button,
@@ -13,6 +14,12 @@ export default {
 };
 
 const onPress = () => { };
+
+const buttonTypes = {
+  contained: 'contained',
+  outlined: 'outlined',
+  text: 'text',
+};
 
 export const all = () => (
   <View style={{ maxWidth: 600, padding: 30 }}>
@@ -28,9 +35,10 @@ export const all = () => (
     </ContainerWithTheme >
   </View>
 );
+
 export const contained = () => (
   <ContainerRow style={{ padding: 30 }} >
-    <Button onPress={onPress} text="default" />
+    <Button onPress={onPress} text="default" type="contained" />
   </ContainerRow>
 );
 
@@ -43,5 +51,15 @@ export const outlined = () => (
 export const text = () => (
   <ContainerRow style={{ padding: 30 }}>
     <Button onPress={onPress} text="default" type="text" />
+  </ContainerRow>
+);
+
+export const interactive = () => (
+  <ContainerRow style={{ padding: 30 }} >
+    <Button
+      onPress={onPress}
+      text={textKnob('Text', 'default')}
+      type={select('Types', buttonTypes, 'contained') as ButtonTypes}
+    />
   </ContainerRow>
 );
