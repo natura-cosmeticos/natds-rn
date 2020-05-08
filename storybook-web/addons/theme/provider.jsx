@@ -1,20 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { addons, makeDecorator } from '@storybook/addons';
 import { ThemeProvider } from 'styled-components/native';
-import { themes as themesWeb } from '@naturacosmeticos/natds-styles';
+import { tokens } from '@naturacosmeticos/natds-styles';
 import { CHANGE, PARAM_KEY, getStoryBookTheme } from './shared';
+import { buildTheme } from '../../../src/common/themeSelectors';
 
-const THEME_PROVIDERS = {
-  web: {
-    defaultTheme: themesWeb.natura.light,
-    provider: ThemeProvider,
-    themes: themesWeb,
-  },
-};
-
-function getProvider(context) {
-  return THEME_PROVIDERS[context] || THEME_PROVIDERS.web;
-}
+const defaultTheme = buildTheme(tokens, 'natura', getStoryBookTheme());
 
 const backgroundStyles = {
   bottom: 0,
@@ -33,16 +24,15 @@ const storyStyles = {
 
 const DEFAULT_BACKGROUND = '#ffffff';
 
-const wrapper = (getStory, storyContext, { options, parameters }) => {
+const wrapper = (getStory, storyContext, { parameters }) => {
   const channel = addons.getChannel();
-  const { context, disableBackground } = parameters;
-  const { themes, defaultTheme } = getProvider(context || options);
-  const [theme, setTheme] = useState(getStoryBookTheme() === 'light' ? defaultTheme : { ...defaultTheme, defaultTheme: themesWeb.natura.dark });
+  const { disableBackground } = parameters;
+  const [theme, setTheme] = useState(defaultTheme);
   const [themeInfo, setThemeInfo] = useState({ activeTheme: 'natura', light: true });
 
   useEffect(() => {
     channel.on(CHANGE, ({ type, name }) => {
-      setTheme(themes[name][type]);
+      setTheme(buildTheme(tokens, name, type));
       setThemeInfo({ activeTheme: name, light: type === 'light' });
     });
 
@@ -53,7 +43,7 @@ const wrapper = (getStory, storyContext, { options, parameters }) => {
 
   const background = disableBackground
     ? DEFAULT_BACKGROUND
-    : theme.palette.background.paper;
+    : theme.colorTokens.colorBackground;
 
   return (
     <ThemeProvider theme={theme}>
