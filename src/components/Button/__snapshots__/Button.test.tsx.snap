@@ -1,7 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Button component Should render button component contained 1`] = `
-<
+<TouchableOpacity
+  onPress={[Function]}
   style={
     Array [
       Object {
@@ -20,19 +21,25 @@ exports[`Button component Should render button component contained 1`] = `
     style={
       Array [
         Object {
+          "alignSelf": "center",
           "color": "#F4F4",
+          "fontFamily": "doc robot",
+          "fontSize": 14,
+          "fontWeight": "600",
+          "letterSpacing": 1,
         },
       ]
     }
     type="contained"
   >
-    texto legal
+    label button
   </Text>
-</>
+</TouchableOpacity>
 `;
 
 exports[`Button component Should render button component outlined 1`] = `
-<
+<TouchableOpacity
+  onPress={[Function]}
   style={
     Array [
       Object {
@@ -51,19 +58,25 @@ exports[`Button component Should render button component outlined 1`] = `
     style={
       Array [
         Object {
+          "alignSelf": "center",
           "color": "#FAF3E3",
+          "fontFamily": "doc robot",
+          "fontSize": 14,
+          "fontWeight": "600",
+          "letterSpacing": 1,
         },
       ]
     }
     type="outlined"
   >
-    texto legal
+    label button
   </Text>
-</>
+</TouchableOpacity>
 `;
 
 exports[`Button component Should render button component text 1`] = `
-<
+<TouchableOpacity
+  onPress={[Function]}
   style={
     Array [
       Object {
@@ -80,13 +93,18 @@ exports[`Button component Should render button component text 1`] = `
     style={
       Array [
         Object {
+          "alignSelf": "center",
           "color": "#FAF3E3",
+          "fontFamily": "doc robot",
+          "fontSize": 14,
+          "fontWeight": "600",
+          "letterSpacing": 1,
         },
       ]
     }
     type="text"
   >
-    texto legal
+    label button
   </Text>
-</>
+</TouchableOpacity>
 `;

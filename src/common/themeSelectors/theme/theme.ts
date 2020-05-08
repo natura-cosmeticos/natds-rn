@@ -8,6 +8,7 @@ type TokensWithoutColorTokens = Omit<TokensWithoutColor, 'colorTokens'>
 type TokensWithoutElevation = Omit<TokensWithoutColorTokens, 'elevation'>
 
 interface ElevationProps {
+  elevation: number
   shadowColor: string
   shadowOffset: { height: number, width: number }
   shadowOpacity: number
@@ -35,6 +36,7 @@ const parseElevation = (elevation: string) => {
     const toUnit = (prop: string) => parseInt(prop, 0);
 
     return {
+      elevation: 2,
       shadowColor: `rgb(${r}, ${g}, ${b})`,
       shadowOffset: { height: toUnit(height), width: toUnit(width) },
       shadowOpacity: parseFloat(alpha),

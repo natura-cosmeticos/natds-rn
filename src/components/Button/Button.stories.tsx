@@ -11,20 +11,25 @@ export default {
   title: 'Components|Button',
 };
 
+const defaultProps = ({
+  onPress: () => {},
+  text: 'DEFAULT',
+});
+
 export const contained = () => (
-  <ContainerRow style={{ padding: 30 }}>
-    <Button text="Hello :)" />
+  <ContainerRow style={{ padding: 30 }} >
+    <Button { ...defaultProps }/>
   </ContainerRow>
 );
 
 export const outlined = () => (
   <ContainerRow >
-    <Button type="outlined" text="Hello :)" />
+    <Button type="outlined" { ...defaultProps } />
   </ContainerRow>
 );
 
 export const text = () => (
   <ContainerRow >
-    <Button type="text" text="Hello :)" />
+    <Button type="text" { ...defaultProps } />
   </ContainerRow>
 );
