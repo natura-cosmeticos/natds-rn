@@ -15,19 +15,25 @@ import {
 export type ButtonTypes = 'contained' | 'outlined' | 'text'
 
 export interface ButtonProps {
+  /**
+   * The onPress event handler
+   */
   onPress: (ev: NativeSyntheticEvent<NativeTouchEvent>) => void,
   /**
    * The button text content
    */
   text: string
   /**
-   * Button styling types 'contained' | 'outlined' | 'text'
+   * Button variants `contained` | `outlined` | `text`
    */
   type?: ButtonTypes
   /**
    * The button theme
    */
   theme: Theme,
+  /**
+   * Optional ID for testing
+   */
   testID?: string,
 }
 
@@ -88,7 +94,7 @@ const ButtonComponent = ({
       style={getShadowByType(type, theme)}
       type={type}
     >
-      <Text type={type}>{text}</Text>
+      <Text type={type}>{text.toUpperCase()}</Text>
     </ButtonBase>
 );
 
