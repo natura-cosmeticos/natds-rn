@@ -1,6 +1,7 @@
 
 import React from 'react';
-import { Divider } from './Divider';
+import { text, select } from '@storybook/addon-knobs';
+import { Divider, DividerPropTypes } from './Divider';
 
 export default {
   component: Divider,
@@ -10,11 +11,20 @@ export default {
   title: 'Components|Divider',
 };
 
+const types = {
+  full: 'full',
+  inset: 'inset',
+  middle: 'middle',
+};
 
-export const fullWidth = () => <Divider />;
+// @ts-ignore
+export const fullWidth = () => <Divider type={select('Type', types, 'Type')} />;
 fullWidth.story = {
   name: 'full width',
 };
 
-export const inset = () => <Divider type="inset" />;
-export const middle = () => <Divider type="middle" />;
+// @ts-ignore
+export const inset = () => <Divider type={select('Type', types, 'Type')} />;
+
+// @ts-ignore
+export const middle = () => <Divider type={select('Type', types, 'Type')} />;
