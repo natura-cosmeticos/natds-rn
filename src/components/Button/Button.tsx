@@ -1,18 +1,21 @@
 import React from 'react';
 import styled, { withTheme } from 'styled-components/native';
+import { NativeSyntheticEvent, NativeTouchEvent } from 'react-native';
 import {
   getColorPrimary,
   getColorOnPrimary,
   getColorHighEmphasis,
-  Theme,
   getButtonPropsBySize,
+  getFont,
   getRadiusPropsBySize,
   getShadowBySize,
+  Theme,
 } from '../../common/themeSelectors';
 
 export type ButtonTypes = 'contained' | 'outlined' | 'text'
 
 export interface ButtonProps {
+  onPress: (ev: NativeSyntheticEvent<NativeTouchEvent>) => void,
   /**
    * The button text content
    */
@@ -25,7 +28,7 @@ export interface ButtonProps {
    * The button theme
    */
   theme: Theme,
-  testID?: string
+  testID?: string,
 }
 
 interface ButonBase {
@@ -63,6 +66,11 @@ const ButtonBase = styled.TouchableOpacity<ButonBase>(({ type, theme }) => ({
 
 const Text = styled.Text<ButonBase>`
   color: ${({ type, theme }) => getButtonTextStyles(theme, type)};
+  font-size: 14px;
+  align-self: center;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-family: ${getFont('bold')};
 `;
 
 const getShadowByType = (type: ButtonTypes, theme: Theme) => (
@@ -72,10 +80,11 @@ const getShadowByType = (type: ButtonTypes, theme: Theme) => (
 );
 
 const ButtonComponent = ({
-  theme, text, type = 'contained', testID = 'button',
+  onPress, theme, text, type = 'contained', testID = 'button',
 }: ButtonProps) => (
     <ButtonBase
       testID={testID}
+      onPress={onPress}
       style={getShadowByType(type, theme)}
       type={type}
     >
