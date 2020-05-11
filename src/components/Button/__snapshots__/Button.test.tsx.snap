@@ -32,7 +32,7 @@ exports[`Button component Should render button component contained 1`] = `
     }
     type="contained"
   >
-    label button
+    LABEL BUTTON
   </Text>
 </TouchableOpacity>
 `;
@@ -69,7 +69,7 @@ exports[`Button component Should render button component outlined 1`] = `
     }
     type="outlined"
   >
-    label button
+    LABEL BUTTON
   </Text>
 </TouchableOpacity>
 `;
@@ -104,7 +104,7 @@ exports[`Button component Should render button component text 1`] = `
     }
     type="text"
   >
-    label button
+    LABEL BUTTON
   </Text>
 </TouchableOpacity>
 `;

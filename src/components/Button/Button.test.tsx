@@ -32,10 +32,10 @@ const defaultProps = ({
 });
 
 describe('Button component', () => {
-  it('Should render button with a text', () => {
+  it('Should render button with a uppercase text', () => {
     const { queryByTestId } = renderButton(render, defaultProps);
 
-    expect(queryByTestId('button')).toHaveTextContent(defaultProps.text);
+    expect(queryByTestId('button')).toHaveTextContent('LABEL BUTTON');
   });
 
   it('Should render button with default props', () => {

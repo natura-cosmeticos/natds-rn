@@ -38,6 +38,8 @@ module.exports = {
   testPathIgnorePatterns: [
     '<rootDir>/dist/',
     '<rootDir>/build/',
+    '<rootDir>/lib/',
+    '<rootDir>/storybook/',
   ],
   ...tsjPreset,
   globals: {
