@@ -8,7 +8,7 @@ import { Button, ButtonTypes } from './Button';
 export default {
   component: Button,
   parameters: {
-    componentSubtitle: 'A usefull button component.',
+    componentSubtitle: 'A button component.',
   },
   title: 'Components|Button',
 };

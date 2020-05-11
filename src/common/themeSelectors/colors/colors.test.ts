@@ -50,6 +50,12 @@ const scenarios = [
     selector: selectors.getColorOnSecondary,
     title: 'on secondary',
   },
+  {
+    expectedResult: theme.colorTokens.colorHighEmphasis,
+    name: 'getColorHighEmphasis',
+    selector: selectors.getColorHighEmphasis,
+    title: 'high emphasis',
+  },
 ];
 
 describe('Color selectors', () => {
