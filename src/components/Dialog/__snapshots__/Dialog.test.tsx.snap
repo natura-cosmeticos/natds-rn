@@ -1,0 +1,116 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Dialog component Should render a dialog with title, content and actions 1`] = `
+<Modal
+  animationType="fade"
+  hardwareAccelerated={false}
+  transparent={true}
+  visible={true}
+>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexBasis": 0,
+          "flexGrow": 1,
+          "flexShrink": 1,
+          "justifyContent": "center",
+          "paddingLeft": 16,
+          "paddingRight": 16,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#000000",
+            "bottom": 0,
+            "flexBasis": 0,
+            "flexGrow": 1,
+            "flexShrink": 1,
+            "left": 0,
+            "opacity": 0.56,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+        ]
+      }
+    />
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#FFFFFF",
+            "borderRadius": 4,
+            "paddingVertical": 16,
+            "width": "100%",
+          },
+        ]
+      }
+      testID="dialog"
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#333333",
+              "fontFamily": "System",
+              "fontSize": 20,
+              "fontWeight": "600",
+              "marginBottom": 8,
+              "marginHorizontal": 16,
+            },
+          ]
+        }
+      >
+        Title
+      </Text>
+      <View
+        style={
+          Array [
+            Object {
+              "paddingHorizontal": 16,
+            },
+          ]
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#333333",
+                "fontFamily": "System",
+                "fontSize": 14,
+                "fontWeight": "400",
+              },
+            ]
+          }
+        >
+          content
+        </Text>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "flexDirection": "row",
+              "flexWrap": "wrap",
+              "justifyContent": "flex-end",
+              "paddingHorizontal": 16,
+              "paddingTop": 8,
+            },
+          ]
+        }
+      >
+        <Text>
+          actions
+        </Text>
+      </View>
+    </View>
+  </View>
+</Modal>
+`;
