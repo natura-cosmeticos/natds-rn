@@ -10,9 +10,9 @@ const scenarios = [
     title: 'shadow',
   },
   {
-    expectedResult: theme.opacity['80'],
-    name: 'getOpacity80',
-    selector: selectors.getOpacity80,
+    expectedResult: theme.opacity[80],
+    name: 'getOpacity10',
+    selector: selectors.getOpacity10,
     title: 'oa',
   },
 ];

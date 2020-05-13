@@ -1,6 +1,5 @@
 import React, { ReactNode } from 'react';
 import styled from 'styled-components/native';
-import { Modal } from 'react-native';
 import {
   getColorHighEmphasis,
   getColorSurface,
@@ -11,6 +10,7 @@ import {
   getFont,
   getSpacingTiny,
 } from '../../common/themeSelectors';
+import Modal from '../../common/Modal';
 
 export interface DialogProps {
   /**

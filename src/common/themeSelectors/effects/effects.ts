@@ -6,4 +6,4 @@ export const getShadowBySize = (theme: Theme, size: string) => getElevation(them
 
 const getOpacity = (theme: Theme) => theme.opacity;
 
-export const getOpacity80 = (theme: Theme) => getOpacity(theme)[80];
+export const getOpacity10 = (theme: Theme) => getOpacity(theme)[80];
