@@ -46,8 +46,6 @@ class InnerModal extends Component {
       paddingRight: 0,
       paddingBottom: 0,
       paddingLeft: 0,
-      position: 'relative',
-      zIndex: 0,
 
       // modal
       position: 'fixed',
@@ -57,7 +55,7 @@ class InnerModal extends Component {
       bottom: 0,
       zIndex: 2,
 
-      // etc
+      // @ts-ignore
       backgroundColor: this.props.transparent ? 'transparent' : 'white',
     };
 
