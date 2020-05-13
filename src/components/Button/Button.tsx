@@ -10,7 +10,7 @@ import {
   getRadiusBySize,
   getShadowBySize,
   Theme,
-  getOpacity80,
+  getOpacity10,
   getColorPrimaryLight,
 } from '../../common/themeSelectors';
 
@@ -96,7 +96,7 @@ const ButtonComponent = ({
       onPress={onPress}
       style={getShadowByType(type, theme)}
       underlayColor={getColorPrimaryLight(theme)}
-      activeOpacity={getOpacity80(theme)}
+      activeOpacity={getOpacity10(theme)}
     >
       <Text type={type}>{text.toUpperCase()}</Text>
     </ButtonBase>
