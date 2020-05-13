@@ -1,7 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Button component Should render button component contained 1`] = `
-<TouchableOpacity
+<TouchableHighlight
+  activeOpacity={0.8}
   onPress={[Function]}
   style={
     Array [
@@ -16,6 +17,7 @@ exports[`Button component Should render button component contained 1`] = `
   }
   testID="button"
   type="contained"
+  underlayColor="#BABABA"
 >
   <Text
     style={
@@ -34,11 +36,12 @@ exports[`Button component Should render button component contained 1`] = `
   >
     LABEL BUTTON
   </Text>
-</TouchableOpacity>
+</TouchableHighlight>
 `;
 
 exports[`Button component Should render button component outlined 1`] = `
-<TouchableOpacity
+<TouchableHighlight
+  activeOpacity={0.8}
   onPress={[Function]}
   style={
     Array [
@@ -53,6 +56,7 @@ exports[`Button component Should render button component outlined 1`] = `
   }
   testID="button"
   type="outlined"
+  underlayColor="#BABABA"
 >
   <Text
     style={
@@ -71,11 +75,12 @@ exports[`Button component Should render button component outlined 1`] = `
   >
     LABEL BUTTON
   </Text>
-</TouchableOpacity>
+</TouchableHighlight>
 `;
 
 exports[`Button component Should render button component text 1`] = `
-<TouchableOpacity
+<TouchableHighlight
+  activeOpacity={0.8}
   onPress={[Function]}
   style={
     Array [
@@ -88,6 +93,7 @@ exports[`Button component Should render button component text 1`] = `
   }
   testID="button"
   type="text"
+  underlayColor="#BABABA"
 >
   <Text
     style={
@@ -106,5 +112,5 @@ exports[`Button component Should render button component text 1`] = `
   >
     LABEL BUTTON
   </Text>
-</TouchableOpacity>
+</TouchableHighlight>
 `;

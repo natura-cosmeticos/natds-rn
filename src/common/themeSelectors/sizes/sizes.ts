@@ -8,4 +8,4 @@ export const getButtonPropsBySize = (theme: Theme, size: Size) => getButtonSizes
 
 const getRadiusSizes = (theme: Theme) => theme.radius;
 
-export const getRadiusPropsBySize = (theme: Theme, size: Size) => getRadiusSizes(theme)[size];
+export const getRadiusBySize = (theme: Theme, size: Size) => getRadiusSizes(theme)[size];

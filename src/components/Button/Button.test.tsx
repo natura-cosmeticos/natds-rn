@@ -6,8 +6,8 @@ import { ThemeProvider } from 'styled-components/native';
 import theme from '../../common/themeSelectors/theme/mock-theme.json';
 import { Button, ButtonProps } from './Button';
 
-jest.mock('react-native/Libraries/Components/Touchable/TouchableOpacity',
-  () => 'TouchableOpacity');
+jest.mock('react-native/Libraries/Components/Touchable/TouchableHighlight',
+  () => 'TouchableHighlight');
 
 jest.mock('../../common/themeSelectors', () => (
   {
@@ -15,8 +15,10 @@ jest.mock('../../common/themeSelectors', () => (
     getColorHighEmphasis: () => '#FAF3E3',
     getColorOnPrimary: () => '#F4F4',
     getColorPrimary: () => '#FFFFFF',
+    getColorPrimaryLight: () => '#BABABA',
     getFont: () => 'doc robot',
-    getRadiusPropsBySize: () => 42,
+    getOpacity80: () => 0.8,
+    getRadiusBySize: () => 42,
     getShadowBySize: () => ({ shadowColor: '#AEAEAE' }),
   }));
 
@@ -32,19 +34,19 @@ const defaultProps = ({
 });
 
 describe('Button component', () => {
-  it('Should render button with a uppercase text', () => {
-    const { queryByTestId } = renderButton(render, defaultProps);
-
-    expect(queryByTestId('button')).toHaveTextContent('LABEL BUTTON');
-  });
-
   it('Should render button with default props', () => {
     const { queryByTestId } = renderButton(render, defaultProps);
 
     expect(queryByTestId('button')?.props).toHaveProperty('type', 'contained');
   });
 
-  it('Should render button with type prop', () => {
+  it('Should render button with a uppercase text', () => {
+    const { queryByTestId } = renderButton(render, defaultProps);
+
+    expect(queryByTestId('button')).toHaveTextContent('LABEL BUTTON');
+  });
+
+  it('Should render button with the given type prop', () => {
     const { queryByTestId } = renderButton(render, {
       ...defaultProps,
       type: 'outlined',

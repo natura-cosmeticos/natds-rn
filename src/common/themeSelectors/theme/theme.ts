@@ -31,7 +31,7 @@ const parseElevation = (elevation: string) => {
   const matches = elevation.match(regEx);
 
   if (matches) {
-    const [width, height, blurRadius, spreadRadius, r, g, b, alpha] = matches;
+    const [width, height, blurRadius, , r, g, b, alpha] = matches;
 
     const toUnit = (prop: string) => parseInt(prop, 0);
 
