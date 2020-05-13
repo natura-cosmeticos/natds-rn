@@ -11,9 +11,9 @@ const scenarios = [
   },
   {
     expectedResult: theme.radius.medium,
-    name: 'getRadiusPropsBySize',
+    name: 'getRadiusBySize',
     params: 'medium',
-    selector: selectors.getRadiusPropsBySize,
+    selector: selectors.getRadiusBySize,
     title: 'radius',
   },
 ];

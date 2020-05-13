@@ -9,6 +9,12 @@ const scenarios = [
     selector: selectors.getShadowBySize,
     title: 'shadow',
   },
+  {
+    expectedResult: theme.opacity['80'],
+    name: 'getOpacity80',
+    selector: selectors.getOpacity80,
+    title: 'oa',
+  },
 ];
 
 describe('Effects selectors', () => {
@@ -17,7 +23,7 @@ describe('Effects selectors', () => {
     describe(scenario.name, () => {
       (
         it(`should return the ${scenario.title} effect`, () => {
-          const result = scenario.selector(theme, scenario.params);
+          const result = scenario.selector(theme, scenario.params || '');
 
           expect(result).toBe(scenario.expectedResult);
         })

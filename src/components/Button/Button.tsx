@@ -7,9 +7,11 @@ import {
   getColorHighEmphasis,
   getButtonPropsBySize,
   getFont,
-  getRadiusPropsBySize,
+  getRadiusBySize,
   getShadowBySize,
   Theme,
+  getOpacity80,
+  getColorPrimaryLight,
 } from '../../common/themeSelectors';
 
 export type ButtonTypes = 'contained' | 'outlined' | 'text'
@@ -64,8 +66,8 @@ const getButtonTextStyles = (theme: Theme, type: ButtonTypes) => (
     : getColorHighEmphasis(theme)
 );
 
-const ButtonBase = styled.TouchableOpacity<ButonBase>(({ type, theme }) => ({
-  borderRadius: getRadiusPropsBySize(theme, 'medium'),
+const ButtonBase = styled.TouchableHighlight<ButonBase>(({ type, theme }) => ({
+  borderRadius: getRadiusBySize(theme, 'medium'),
   ...getButtonStyles(theme, type),
   ...getButtonPropsBySize(theme, 'medium'),
 }));
@@ -90,9 +92,11 @@ const ButtonComponent = ({
 }: ButtonProps) => (
     <ButtonBase
       testID={testID}
+      type={type}
       onPress={onPress}
       style={getShadowByType(type, theme)}
-      type={type}
+      underlayColor={getColorPrimaryLight(theme)}
+      activeOpacity={getOpacity80(theme)}
     >
       <Text type={type}>{text.toUpperCase()}</Text>
     </ButtonBase>

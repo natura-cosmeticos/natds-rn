@@ -4,6 +4,7 @@ const getColors = (theme: Theme) => theme.colorTokens;
 
 export const getColorPrimary = (theme: Theme) => getColors(theme).colorPrimary;
 export const getColorOnPrimary = (theme: Theme) => getColors(theme).colorOnPrimary;
+export const getColorPrimaryLight = (theme: Theme) => getColors(theme).colorPrimaryLight;
 
 export const getColorOnSecondary = (theme: Theme) => getColors(theme).colorOnSecondary;
 
