@@ -1,1 +1,0 @@
-export { NatModal } from './NatModal';
