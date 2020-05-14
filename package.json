@@ -14,7 +14,8 @@
     "Vicente Lyrio <vicente.lyrio@vizir.com.br>",
     "Vagner Saraiva <vagner@vizir.com.br>",
     "Matheus Robert Lichtnow <matheus@vizir.com.br>",
-    "Douglas Freitas <douglasfreitas@natura.net>"
+    "Douglas Freitas <douglasfreitas@natura.net>",
+    "Ariel FLor <arielwb@gmail.com>"
   ],
   "description": "Natura Design System for React Native",
   "homepage": "https://github.com/natura-cosmeticos/natds-rn",
@@ -53,20 +54,19 @@
     "postinstall": "npm dedupe && rm package-lock.json && rm -rf node_modules/@types/reach__router"
   },
   "dependencies": {
-    "@commitlint/cli": "^8.3.5",
-    "@commitlint/config-conventional": "^8.3.4",
-    "@naturacosmeticos/natds-icons": "^0.4.0",
     "@naturacosmeticos/natds-styles": "0.5.1",
-    "@storybook/addon-ondevice-knobs": "^5.3.18",
-    "prop-types": "15.7.2",
     "react-native-gesture-handler": "1.6.0",
-    "react-native-svg": "11.0.1",
     "styled-components": "^5.1.0"
   },
   "devDependencies": {
+    "react-native-svg": "11.0.1",
+    "prop-types": "15.7.2",
+    "@naturacosmeticos/natds-icons": "^0.4.0",
     "@babel/core": "7.6.2",
     "@babel/plugin-proposal-optional-chaining": "^7.9.0",
     "@babel/runtime": "7.6.2",
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
     "@commitlint/read": "^8.3.4",
     "@naturacosmeticos/eslint-config-natura": "2.0.1",
     "@react-native-community/eslint-config": "0.0.5",
@@ -74,6 +74,7 @@
     "@storybook/addon-docs": "^5.3.18",
     "@storybook/addon-knobs": "^5.3.18",
     "@storybook/addon-links": "5.3.18",
+    "@storybook/addon-ondevice-knobs": "^5.3.18",
     "@storybook/addon-viewport": "^5.3.18",
     "@storybook/addons": "5.3.18",
     "@storybook/api": "^5.3.18",

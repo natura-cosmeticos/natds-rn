@@ -4,7 +4,7 @@ import { View } from 'react-native';
 import { text, boolean } from '@storybook/addon-knobs';
 import {
   Dialog, DialogTitle, DialogContent, DialogContentText, DialogActions,
-} from './Dialog';
+} from '.';
 import { Button } from '../Button';
 
 export default {
