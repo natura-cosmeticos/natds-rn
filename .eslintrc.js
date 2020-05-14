@@ -49,7 +49,8 @@ module.exports = {
           "test-setup.js",
           "storybook/**/*",
           "storybook-web/**/*",
-          "bin/**/*"
+          "bin/**/*",
+          "lib/**/*"
         ]
       }
     ],
