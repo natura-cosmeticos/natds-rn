@@ -1,7 +1,7 @@
 /* eslint-disable */
-import { Platform } from 'react-native';
+import { Platform, Modal as ModalNative } from 'react-native';
 
-let Modal;
+let Modal: typeof ModalNative;
 
 if (Platform.OS !== 'web') {
   Modal = require('react-native').Modal;
