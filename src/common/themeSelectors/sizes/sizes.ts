@@ -1,5 +1,5 @@
-
 import { Theme } from '..';
+
 interface ButtonProperties {
   paddingTop: number;
   paddingRight: number;
