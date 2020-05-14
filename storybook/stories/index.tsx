@@ -4,7 +4,6 @@ import { storiesOf } from '@storybook/react-native';
 import {
   Login, Card, Form, FriendExchange,
 } from './ScreenSamples';
-import { StoryButton } from './StoryButton';
 import { StoryDivider } from './StoryDivider';
 import { StoryNatAppBar } from './StoryNatAppBar';
 import { StoryNatAppBarSearch } from './StoryNatAppBarSearch';
@@ -42,8 +41,6 @@ storiesOf('Images', module)
   .add('Logo', () => <StoryNatLogo />);
 storiesOf('Link', module)
   .add('All', () => <StoryNatLink />);
-storiesOf('Button', module)
-  .add('All', () => <StoryButton />);
 storiesOf('NatTextInput', module)
   .add('Default', () => <StoryNatTextInput type="default" />)
   .add('Error', () => <StoryNatTextInput type="error" />)

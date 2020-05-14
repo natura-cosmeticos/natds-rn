@@ -4,7 +4,7 @@ import { Modal, SafeAreaView, View } from 'react-native';
 import { ModalContent } from './NatModalSelect.styles';
 import { NatList } from '../NatList';
 import { NatAppBarSearch } from '../NatAppBarSearch';
-import { Button } from '../Button';
+import { Button } from '../../../src/components/Button';
 
 type NatModalSelectProps = {
   action?: (...args: any[]) => any,
@@ -83,9 +83,7 @@ export const NatModalSelect: React.SFC<NatModalSelectProps> = ({
           </View>
           <View style={{ height: 48 }}>
             <Button
-              type="primary"
-              fixedBottom
-              label={buttonText}
+              text={buttonText}
               onPress={selectButton}
             />
           </View>

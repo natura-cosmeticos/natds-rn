@@ -1,11 +1,9 @@
 import * as Tokens from './tokens';
 import { ThemeNaturaLight } from './themes/ThemeNaturaLight';
 
-export { Button } from './components/Button';
 export { Divider } from './components/Divider';
 export { NatAppBar } from './components/NatAppBar';
 export { NatAppBarSearch } from './components/NatAppBarSearch';
-export { NatButton } from './components/NatButton';
 export { NatCard } from './components/NatCard';
 export { NatContainer } from './components/NatContainer';
 export { NatCounterToggler } from './components/NatCounterToggler';
@@ -20,7 +18,6 @@ export { NatListItem } from './components/NatListItem';
 export { NatLoading } from './components/NatLoading';
 export { NatLogo } from './components/NatLogo';
 export { NatMenuItem } from './components/NatMenuItem';
-export { NatModal } from './components/NatModal';
 export { NatModalSelect } from './components/NatModalSelect';
 export { NatPeriodButton } from './components/NatPeriodButton';
 export { NatSelectInput } from './components/NatSelectInput';

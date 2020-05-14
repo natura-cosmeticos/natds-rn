@@ -7,7 +7,7 @@ import { Text } from 'react-native';
 import theme from '../../common/themeSelectors/theme/mock-theme.json';
 import {
   Dialog, DialogTitle, DialogContent, DialogContentText, DialogActions,
-} from './Dialog';
+} from '.';
 
 const renderDialog = () => (renderer.create(
   <ThemeProvider theme={theme}>
