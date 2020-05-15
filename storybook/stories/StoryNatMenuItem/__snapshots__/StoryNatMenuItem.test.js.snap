@@ -851,6 +851,67 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component : S
             Bus Information
           </Text>
         </View>
+        <Text>
+          With Submenu indicator
+        </Text>
+        <View
+          accessible={true}
+          focusable={true}
+          isTVSelectable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "height": 48,
+              "justifyContent": "space-between",
+              "marginLeft": 16,
+              "opacity": 1,
+            }
+          }
+        >
+          <SvgMock
+            height={24}
+            style={
+              Object {
+                "fill": "#333333",
+              }
+            }
+            width={24}
+          />
+          <Text
+            style={
+              Array [
+                Object {
+                  "alignSelf": "center",
+                  "color": "#333333",
+                  "flexBasis": 0,
+                  "flexGrow": 1,
+                  "flexShrink": 1,
+                  "marginLeft": 32,
+                },
+              ]
+            }
+            type="default"
+          >
+            Compras
+          </Text>
+          <SvgMock
+            height={24}
+            style={
+              Object {
+                "fill": "#333333",
+              }
+            }
+            width={24}
+          />
+        </View>
       </View>
     </RCTScrollView>
   </View>

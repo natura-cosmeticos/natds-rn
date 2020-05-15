@@ -132,12 +132,14 @@ export const StoryNatMenuItem = () => {
   ];
   const menuListIconUri = [
     {
-      icon: 'https://s3-sa-east-1.amazonaws.com/somos-natura-prd/files/menus/261/img_url_tmp_261_20180323135427.png',
+      icon:
+        'https://s3-sa-east-1.amazonaws.com/somos-natura-prd/files/menus/261/img_url_tmp_261_20180323135427.png',
       level: '1',
       name: 'Menu Food',
     },
     {
-      icon: 'https://s3-sa-east-1.amazonaws.com/somos-natura-prd/files/menus/generic_menu/img_url_tmp_generic_menu_20170822160140.png',
+      icon:
+        'https://s3-sa-east-1.amazonaws.com/somos-natura-prd/files/menus/generic_menu/img_url_tmp_generic_menu_20170822160140.png',
       level: '1',
       name: 'Bus Information',
     },
@@ -153,7 +155,9 @@ export const StoryNatMenuItem = () => {
               title={item.name}
               key={item.id}
               level={item.levell}
-              onPress={() => { Alert.alert('click event'); }}
+              onPress={() => {
+                Alert.alert('click event');
+              }}
             />
           ))}
           <Text>Use SVG</Text>
@@ -163,7 +167,9 @@ export const StoryNatMenuItem = () => {
               icon={{ svg: item.svg }}
               key={item.id}
               level={item.levell}
-              onPress={() => { Alert.alert('click event'); }}
+              onPress={() => {
+                Alert.alert('click event');
+              }}
             />
           ))}
           <Text>With External Icon URL</Text>
@@ -173,14 +179,30 @@ export const StoryNatMenuItem = () => {
               icon={{ uri: item.icon }}
               key={item.name}
               level={item.levell}
-              onPress={() => { Alert.alert('click event'); }}
+              onPress={() => {
+                Alert.alert('click event');
+              }}
             />
           ))}
+          <Text>With Submenu indicator</Text>
+          <NatMenuItem
+            title={'Compras'}
+            icon={{ svg: { name: 'outlined-content-store' } }}
+            key={''}
+            level={1}
+            onPress={() => {
+              Alert.alert('click event');
+            }}
+            iconLeft={{
+              svg: {
+                name: 'outlined-navigation-arrowbottom',
+              },
+            }}
+          />
         </ScrollView>
       </NatContainer>
     </SafeAreaView>
   );
 };
 
-StoryNatMenuItem.propTypes = {
-};
+StoryNatMenuItem.propTypes = {};
