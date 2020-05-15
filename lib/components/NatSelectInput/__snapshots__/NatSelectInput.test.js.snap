@@ -1615,6 +1615,8 @@ exports[`NatSelectInput component default Should render textInput component : Na
                   "height": 48,
                   "justifyContent": "center",
                   "opacity": 1,
+                  "paddingLeft": 16,
+                  "paddingRight": 16,
                   "shadowColor": "#000",
                   "shadowOffset": Object {
                     "height": 2,
@@ -4757,6 +4759,8 @@ exports[`NatSelectInput component default Should render textInput with icon and 
                   "height": 48,
                   "justifyContent": "center",
                   "opacity": 1,
+                  "paddingLeft": 16,
+                  "paddingRight": 16,
                   "shadowColor": "#000",
                   "shadowOffset": Object {
                     "height": 2,

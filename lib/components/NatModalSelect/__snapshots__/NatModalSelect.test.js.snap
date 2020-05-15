@@ -1279,6 +1279,8 @@ exports[`NatModalSelect and its variants NatModalSelect Should match snapshot: N
                 "height": 48,
                 "justifyContent": "center",
                 "opacity": 1,
+                "paddingLeft": 16,
+                "paddingRight": 16,
                 "shadowColor": "#000",
                 "shadowOffset": Object {
                   "height": 2,

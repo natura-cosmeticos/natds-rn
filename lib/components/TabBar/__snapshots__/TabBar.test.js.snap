@@ -28,7 +28,7 @@ exports[`TabBar Component should render each type with no uppercase titles corre
       Object {
         "alignItems": "center",
         "backgroundColor": "#FFFFFF",
-        "borderBottomColor": "#F4AB34",
+        "borderBottomColor": "transparent",
         "borderColor": "transparent",
         "borderStyle": "solid",
         "borderWidth": 2,
@@ -47,7 +47,7 @@ exports[`TabBar Component should render each type with no uppercase titles corre
       style={
         Array [
           Object {
-            "color": "#777777",
+            "color": "#333333",
             "fontWeight": "bold",
           },
         ]
@@ -374,7 +374,7 @@ exports[`TabBar Component should render each type with no uppercase titles corre
           },
         }
       }
-      type="secondary"
+      type="primary"
     >
       Given
     </Text>
@@ -413,7 +413,7 @@ exports[`TabBar Component should render each type with no uppercase titles corre
       style={
         Array [
           Object {
-            "color": "#777777",
+            "color": "#333333",
             "fontWeight": "bold",
           },
         ]
@@ -740,7 +740,7 @@ exports[`TabBar Component should render each type with no uppercase titles corre
           },
         }
       }
-      type="secondary"
+      type="primary"
     >
       Received
     </Text>
@@ -779,7 +779,7 @@ exports[`TabBar Component should render each type with no uppercase titles corre
       style={
         Array [
           Object {
-            "color": "#777777",
+            "color": "#333333",
             "fontWeight": "bold",
           },
         ]
@@ -1106,7 +1106,7 @@ exports[`TabBar Component should render each type with no uppercase titles corre
           },
         }
       }
-      type="secondary"
+      type="primary"
     >
       Disabled
     </Text>
@@ -1142,7 +1142,7 @@ exports[`TabBar Component should render the tab bar correctly: Tabbar snapshot w
       Object {
         "alignItems": "center",
         "backgroundColor": "#FFFFFF",
-        "borderBottomColor": "#F4AB34",
+        "borderBottomColor": "transparent",
         "borderColor": "transparent",
         "borderStyle": "solid",
         "borderWidth": 2,
@@ -1161,7 +1161,7 @@ exports[`TabBar Component should render the tab bar correctly: Tabbar snapshot w
       style={
         Array [
           Object {
-            "color": "#777777",
+            "color": "#333333",
             "fontWeight": "bold",
           },
         ]
@@ -1488,7 +1488,7 @@ exports[`TabBar Component should render the tab bar correctly: Tabbar snapshot w
           },
         }
       }
-      type="secondary"
+      type="primary"
     >
       GIVEN
     </Text>
@@ -1527,7 +1527,7 @@ exports[`TabBar Component should render the tab bar correctly: Tabbar snapshot w
       style={
         Array [
           Object {
-            "color": "#777777",
+            "color": "#333333",
             "fontWeight": "bold",
           },
         ]
@@ -1854,7 +1854,7 @@ exports[`TabBar Component should render the tab bar correctly: Tabbar snapshot w
           },
         }
       }
-      type="secondary"
+      type="primary"
     >
       RECEIVED
     </Text>
@@ -1893,7 +1893,7 @@ exports[`TabBar Component should render the tab bar correctly: Tabbar snapshot w
       style={
         Array [
           Object {
-            "color": "#777777",
+            "color": "#333333",
             "fontWeight": "bold",
           },
         ]
@@ -2220,7 +2220,7 @@ exports[`TabBar Component should render the tab bar correctly: Tabbar snapshot w
           },
         }
       }
-      type="secondary"
+      type="primary"
     >
       DISABLED
     </Text>

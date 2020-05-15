@@ -3053,6 +3053,8 @@ exports[`StoryNatSelectInput component Should render StoryNatSelectInput compone
                           "height": 48,
                           "justifyContent": "center",
                           "opacity": 1,
+                          "paddingLeft": 16,
+                          "paddingRight": 16,
                           "shadowColor": "#000",
                           "shadowOffset": Object {
                             "height": 2,
@@ -7675,6 +7677,8 @@ exports[`StoryNatSelectInput component Should render StoryNatSelectInput compone
                           "height": 48,
                           "justifyContent": "center",
                           "opacity": 1,
+                          "paddingLeft": 16,
+                          "paddingRight": 16,
                           "shadowColor": "#000",
                           "shadowOffset": Object {
                             "height": 2,
@@ -12297,6 +12301,8 @@ exports[`StoryNatSelectInput component Should render StoryNatSelectInput compone
                           "height": 48,
                           "justifyContent": "center",
                           "opacity": 1,
+                          "paddingLeft": 16,
+                          "paddingRight": 16,
                           "shadowColor": "#000",
                           "shadowOffset": Object {
                             "height": 2,
@@ -16919,6 +16925,8 @@ exports[`StoryNatSelectInput component Should render StoryNatSelectInput compone
                           "height": 48,
                           "justifyContent": "center",
                           "opacity": 1,
+                          "paddingLeft": 16,
+                          "paddingRight": 16,
                           "shadowColor": "#000",
                           "shadowOffset": Object {
                             "height": 2,
@@ -21593,6 +21601,8 @@ exports[`StoryNatSelectInput component Should render StoryNatSelectInput compone
                               "height": 48,
                               "justifyContent": "center",
                               "opacity": 1,
+                              "paddingLeft": 16,
+                              "paddingRight": 16,
                               "shadowColor": "#000",
                               "shadowOffset": Object {
                                 "height": 2,
@@ -26188,6 +26198,8 @@ exports[`StoryNatSelectInput component Should render StoryNatSelectInput compone
                               "height": 48,
                               "justifyContent": "center",
                               "opacity": 1,
+                              "paddingLeft": 16,
+                              "paddingRight": 16,
                               "shadowColor": "#000",
                               "shadowOffset": Object {
                                 "height": 2,
