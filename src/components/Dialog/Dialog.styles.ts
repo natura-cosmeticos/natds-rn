@@ -32,6 +32,7 @@ export const DialogWrapper = styled.View(({ theme }) => ({
 export const DialogContainer = styled.View(({ theme }) => ({
   backgroundColor: getColorSurface(theme),
   borderRadius: getRadiusBySize(theme, 'medium'),
+  maxWidth: '328px',
   paddingVertical: getSpacingSmall(theme),
   width: '100%',
 }));
@@ -56,8 +57,16 @@ export const DialogContent = styled.View(({ theme }) => ({
   paddingHorizontal: getSpacingSmall(theme),
 }));
 
-export const DialogActions = styled.View(({ theme }) => ({
-  flexDirection: 'row',
+export type AlignmentOptions = 'side-by-side' | 'stacked';
+export interface DialogActionsProps {
+  actionsAlignment?: AlignmentOptions
+}
+
+const buildDialogAlignment = (actionsAlignment: AlignmentOptions) => (actionsAlignment === 'side-by-side' ? 'row' : 'column');
+
+export const DialogActions = styled.View<DialogActionsProps>(({ theme, actionsAlignment = 'side-by-side' }) => ({
+  alignContent: 'stretch',
+  flexDirection: buildDialogAlignment(actionsAlignment),
   flexWrap: 'wrap',
   justifyContent: 'flex-end',
   paddingHorizontal: getSpacingSmall(theme),

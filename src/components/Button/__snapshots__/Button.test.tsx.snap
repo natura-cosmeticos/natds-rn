@@ -20,6 +20,7 @@ exports[`Button component Should render button component contained 1`] = `
   underlayColor="#BABABA"
 >
   <Text
+    accessibilityRole="button"
     style={
       Array [
         Object {
@@ -59,6 +60,7 @@ exports[`Button component Should render button component outlined 1`] = `
   underlayColor="#BABABA"
 >
   <Text
+    accessibilityRole="button"
     style={
       Array [
         Object {
@@ -96,6 +98,7 @@ exports[`Button component Should render button component text 1`] = `
   underlayColor="#BABABA"
 >
   <Text
+    accessibilityRole="button"
     style={
       Array [
         Object {

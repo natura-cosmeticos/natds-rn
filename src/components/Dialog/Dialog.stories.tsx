@@ -1,11 +1,12 @@
 /* eslint-disable no-use-before-define, max-lines */
 import React, { useState } from 'react';
 import { View } from 'react-native';
-import { text, boolean } from '@storybook/addon-knobs';
+import { text, boolean, select } from '@storybook/addon-knobs';
 import {
   Dialog, DialogTitle, DialogContent, DialogContentText, DialogActions,
 } from '.';
 import { Button } from '../Button';
+import { AlignmentOptions } from './Dialog.styles';
 
 export default {
   component: Dialog,
@@ -25,7 +26,7 @@ export const all = () => (
   <View style={{
     flexDirection: 'row',
     justifyContent: 'space-between',
-    maxWidth: 500,
+    maxWidth: 800,
     padding: 20,
   }}>
     <View style={{ maxWidth: 300 }}>
@@ -38,6 +39,12 @@ export const all = () => (
       {
         // for implementation samples view `confirmation` story bellow
         confirmation()
+      }
+    </View>
+    <View style={{ maxWidth: 300 }}>
+      {
+        // for implementation samples view `confirmationStacked` story bellow
+        confirmationStacked()
       }
     </View>
   </View>
@@ -91,14 +98,65 @@ export const confirmation = () => {
   );
 };
 
-export const interactive = () => {
+export const confirmationStacked = () => {
   const [modalVisible, setModalVisible] = useState(false);
+
+  return (
+    <View style={{ flexDirection: 'row' }} >
+      <Button text="confimation dialog with staked buttons" onPress={() => setModalVisible(!modalVisible)} />
+      <Dialog visible={modalVisible}>
+        <DialogTitle>Title</DialogTitle>
+        <DialogContent>
+          <DialogContentText>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc scelerisque metus nibh.
+            Suspendisse varius gravida ex. Praesent consequat, nibh non semper mattis, lorem purus
+            pellentesque sapien, vitae facilisis tellus sem et enim. Sed eget nunc nec eros gravida
+            egestas. Phasellus nec ipsum dolor. Donec justo ipsum, vehicula vel lacus at, facilisis
+            bibendum tellus. Duis ornare in tellus vel scelerisque.
+          </DialogContentText>
+        </DialogContent>
+        <DialogActions actionsAlignment="stacked">
+          <Button text="cancel" type="text" onPress={() => setModalVisible(!modalVisible)} />
+          <Button text="ok" onPress={() => setModalVisible(!modalVisible)} />
+        </DialogActions>
+      </Dialog>
+    </View>
+  );
+};
+
+const buildKnobs = () => {
   const title = text('Title', 'Title');
   const content = text('Content', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc scelerisque metus nibh.');
   const withTextButton = boolean('With a text button?', true);
   const textButtonLabel = text('Text button label', 'cancel');
   const withTextContainedButton = boolean('With a contained button?', true);
   const containedButtonLabel = text('Contained button label', 'ok');
+  const options = ['side-by-side', 'stacked'];
+  const actionsAlignment = select('Actions alignment', options, 'side-by-side');
+
+  return {
+    actionsAlignment,
+    containedButtonLabel,
+    content,
+    textButtonLabel,
+    title,
+    withTextButton,
+    withTextContainedButton,
+  };
+};
+
+export const interactive = () => {
+  const [modalVisible, setModalVisible] = useState(false);
+
+  const {
+    actionsAlignment,
+    containedButtonLabel,
+    content,
+    textButtonLabel,
+    title,
+    withTextButton,
+    withTextContainedButton,
+  } = buildKnobs();
 
   const buttonText = withTextButton && <Button text={textButtonLabel} type="text" onPress={() => setModalVisible(!modalVisible)} />;
   const buttonContained = withTextContainedButton && (
@@ -120,7 +178,7 @@ export const interactive = () => {
         </DialogContent>
         {
           (withTextButton || withTextContainedButton) && (
-            <DialogActions>
+            <DialogActions actionsAlignment={actionsAlignment as AlignmentOptions}>
               {buttonText}
               {buttonContained}
             </DialogActions>
