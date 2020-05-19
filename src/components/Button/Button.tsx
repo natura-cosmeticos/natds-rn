@@ -34,6 +34,17 @@ export interface ButtonProps {
    */
   theme: Theme,
   /**
+   * An accessibility hint helps users understand what will happen when they perform an action
+   * on the accessibility element when that result is not clear from the accessibility label.
+   */
+  accessibilityHint?: string
+  /**
+   * Overrides the text that's read by the screen reader when the user interacts with the element.
+   * By default, the label is constructed by traversing all the children and accumulating
+   * all the Text nodes separated by space.
+   */
+  accessibilityLabel?: string
+   /**
    * Optional ID for testing
    */
   testID?: string,
@@ -88,18 +99,23 @@ const getShadowByType = (type: ButtonTypes, theme: Theme) => (
 );
 
 const ButtonComponent = ({
-  onPress, theme, text, type = 'contained', testID = 'button',
+  onPress, theme, text, type = 'contained', testID = 'button', accessibilityLabel, accessibilityHint,
 }: ButtonProps) => (
-    <ButtonBase
-      testID={testID}
+  <ButtonBase
+    testID={testID}
+    type={type}
+    onPress={onPress}
+    style={getShadowByType(type, theme)}
+    underlayColor={getColorPrimaryLight(theme)}
+    activeOpacity={getOpacity10(theme)}
+  >
+    <Text
+      accessibilityLabel={accessibilityLabel}
+      accessibilityHint={accessibilityHint}
+      accessibilityRole="button"
       type={type}
-      onPress={onPress}
-      style={getShadowByType(type, theme)}
-      underlayColor={getColorPrimaryLight(theme)}
-      activeOpacity={getOpacity10(theme)}
-    >
-      <Text type={type}>{text.toUpperCase()}</Text>
-    </ButtonBase>
+    >{text.toUpperCase()}</Text>
+  </ButtonBase>
 );
 
 export const Button = withTheme(ButtonComponent);
