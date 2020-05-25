@@ -414,6 +414,7 @@ exports[`StoryNatSelectInput component Should render StoryNatSelectInput compone
           <Modal
             animationType="fade"
             hardwareAccelerated={false}
+            onRequestClose={[Function]}
             save={false}
             visible={false}
           >
@@ -426,6 +427,7 @@ exports[`StoryNatSelectInput component Should render StoryNatSelectInput compone
               }
             >
               <View
+                accessibilityLabel=""
                 style={
                   Array [
                     Object {
@@ -5038,6 +5040,7 @@ exports[`StoryNatSelectInput component Should render StoryNatSelectInput compone
           <Modal
             animationType="fade"
             hardwareAccelerated={false}
+            onRequestClose={[Function]}
             save={false}
             visible={false}
           >
@@ -5050,6 +5053,7 @@ exports[`StoryNatSelectInput component Should render StoryNatSelectInput compone
               }
             >
               <View
+                accessibilityLabel=""
                 style={
                   Array [
                     Object {
@@ -9662,6 +9666,7 @@ exports[`StoryNatSelectInput component Should render StoryNatSelectInput compone
           <Modal
             animationType="fade"
             hardwareAccelerated={false}
+            onRequestClose={[Function]}
             save={false}
             visible={false}
           >
@@ -9674,6 +9679,7 @@ exports[`StoryNatSelectInput component Should render StoryNatSelectInput compone
               }
             >
               <View
+                accessibilityLabel=""
                 style={
                   Array [
                     Object {
@@ -14286,6 +14292,7 @@ exports[`StoryNatSelectInput component Should render StoryNatSelectInput compone
           <Modal
             animationType="fade"
             hardwareAccelerated={false}
+            onRequestClose={[Function]}
             save={false}
             visible={false}
           >
@@ -14298,6 +14305,7 @@ exports[`StoryNatSelectInput component Should render StoryNatSelectInput compone
               }
             >
               <View
+                accessibilityLabel=""
                 style={
                   Array [
                     Object {
@@ -18962,6 +18970,7 @@ exports[`StoryNatSelectInput component Should render StoryNatSelectInput compone
               <Modal
                 animationType="fade"
                 hardwareAccelerated={false}
+                onRequestClose={[Function]}
                 save={false}
                 visible={false}
               >
@@ -18974,6 +18983,7 @@ exports[`StoryNatSelectInput component Should render StoryNatSelectInput compone
                   }
                 >
                   <View
+                    accessibilityLabel=""
                     style={
                       Array [
                         Object {
@@ -23559,6 +23569,7 @@ exports[`StoryNatSelectInput component Should render StoryNatSelectInput compone
               <Modal
                 animationType="fade"
                 hardwareAccelerated={false}
+                onRequestClose={[Function]}
                 save={false}
                 visible={false}
               >
@@ -23571,6 +23582,7 @@ exports[`StoryNatSelectInput component Should render StoryNatSelectInput compone
                   }
                 >
                   <View
+                    accessibilityLabel=""
                     style={
                       Array [
                         Object {
