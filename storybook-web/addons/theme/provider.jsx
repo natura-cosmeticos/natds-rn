@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { addons, makeDecorator } from '@storybook/addons';
 import { ThemeProvider } from 'styled-components/native';
-import { tokens } from '@naturacosmeticos/natds-styles';
 import { CHANGE, PARAM_KEY, getStoryBookTheme } from './shared';
 import { buildTheme } from '../../../src/common/themeSelectors';
 
-const defaultTheme = buildTheme(tokens, 'natura', getStoryBookTheme());
+const defaultTheme = buildTheme('natura', getStoryBookTheme());
 
 const backgroundStyles = {
   bottom: 0,
@@ -32,7 +31,7 @@ const wrapper = (getStory, storyContext, { parameters }) => {
 
   useEffect(() => {
     channel.on(CHANGE, ({ type, name }) => {
-      setTheme(buildTheme(tokens, name, type));
+      setTheme(buildTheme(name, type));
       setThemeInfo({ activeTheme: name, light: type === 'light' });
     });
 

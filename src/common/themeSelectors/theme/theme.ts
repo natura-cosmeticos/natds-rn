@@ -1,8 +1,8 @@
-import { tokens as styleTokens } from '@naturacosmeticos/natds-styles';
+import { tokens } from '@naturacosmeticos/natds-styles';
 import { IColorThemeTokens } from '@naturacosmeticos/natds-styles/dist/tokens/colors/themeBound/IColorThemeTokens';
 import { IElevation } from '@naturacosmeticos/natds-styles/dist/tokens/elevation/IElevation';
 
-type Tokens = typeof styleTokens;
+type Tokens = typeof tokens;
 type TokensWithoutColor = Omit<Tokens, 'colors'>
 type TokensWithoutColorTokens = Omit<TokensWithoutColor, 'colorTokens'>
 type TokensWithoutElevation = Omit<TokensWithoutColorTokens, 'elevation'>
@@ -57,7 +57,7 @@ const buidElevation = (elevation: IElevation) => {
   return nativeElevation;
 };
 
-export const buildTheme = (tokens: Tokens, brand: string, mode: ThemeMode) => {
+export const buildTheme = (brand: string, mode: ThemeMode) => {
   const colorThemeName = `${brand}${mode === 'light' ? 'Light' : 'Dark'}ColorTokens`;
   const localTokens = { ...tokens };
 

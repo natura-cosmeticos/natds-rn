@@ -1,6 +1,6 @@
 {
   "name": "@naturacosmeticos/natds-rn",
-  "version": "2.0.0",
+  "version": "2.1.0-DSY-778.2",
   "license": "MIT",
   "main": "build/lib/index.js",
   "keywords": [
@@ -58,8 +58,7 @@
   },
   "dependencies": {
     "@naturacosmeticos/natds-styles": "0.5.5",
-    "react-native-gesture-handler": "1.6.0",
-    "styled-components": "^5.1.0"
+    "react-native-gesture-handler": "1.6.0"
   },
   "devDependencies": {
     "@babel/core": "7.6.2",
@@ -144,6 +143,7 @@
     "shelljs": "^0.8.3",
     "standard-version": "^7.1.0",
     "storybook-addon-designs": "^5.2.0",
+    "styled-components": "^5.1.0",
     "ts-jest": "^25.4.0",
     "ts-loader": "^7.0.0",
     "typescript": "^3.8.3",
@@ -152,7 +152,8 @@
   },
   "peerDependencies": {
     "react": ">=16.8.0",
-    "react-native": ">=0.59.10"
+    "react-native": ">=0.59.10",
+    "styled-components": ">=5"
   },
   "husky": {
     "hooks": {

@@ -25,7 +25,7 @@ export const StoriesWrapperNative = ({ story }) => {
   const [modalVisible, setModalVisible] = useState(false);
   const mode = isLight ? 'light' : 'dark';
 
-  const theme = buildTheme(tokens.tokens, activeTheme, mode);
+  const theme = buildTheme(activeTheme, mode);
 
   return (
     <SafeAreaView style={styles.defaultScreen}>
