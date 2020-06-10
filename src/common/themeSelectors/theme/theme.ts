@@ -58,6 +58,9 @@ const buidElevation = (elevation: IElevation) => {
 };
 
 export const buildTheme = (brand: string, mode: ThemeMode) => {
+  if (!brand || !mode) throw new Error('No brand or mode found. To build a theme, you have to provide this.')
+  if (!tokens) throw new Error('Unable to load tokens dependency. Check the instalation logs for errors')
+
   const colorThemeName = `${brand}${mode === 'light' ? 'Light' : 'Dark'}ColorTokens`;
   const localTokens = { ...tokens };
 
@@ -79,3 +82,9 @@ interface ThemeSelector {
 export const getTheme = (selector: ThemeSelector) => (
   { theme }: { theme: Theme },
 ) => selector(theme);
+
+export const checkTheme = (theme: Theme) => {
+  if (!theme) throw new Error('Can not find theme. Check your ThemeProvider setup');
+
+  return theme;
+}

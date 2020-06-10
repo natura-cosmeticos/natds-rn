@@ -1,6 +1,6 @@
-import { Theme } from '..';
+import { Theme, checkTheme } from '..';
 
-const getColors = (theme: Theme) => theme.colorTokens;
+const getColors = (theme: Theme) => checkTheme(theme).colorTokens;
 
 export const getColorPrimary = (theme: Theme) => getColors(theme).colorPrimary;
 export const getColorOnPrimary = (theme: Theme) => getColors(theme).colorOnPrimary;
