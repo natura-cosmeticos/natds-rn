@@ -11,9 +11,10 @@ if (!npmToken) {
 
 const init = () => {
   shell.exec('npm run release');
-  shell.exec('git push --follow-tags');
+  shell.exec('git push --tags');
   shell.exec('echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/.npmrc');
   shell.exec('npm publish');
+  shell.exec('git push');
 };
 
 init();
