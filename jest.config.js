@@ -4,8 +4,10 @@ const jestPreset = require('@testing-library/react-native/jest-preset');
 module.exports = {
   cacheDirectory: '.jest/cache',
   collectCoverageFrom: [
-    '<rootDir>/lib/**/*.js',
-    '!<rootDir>/lib/**/*.test.js',
+    '<rootDir>/src/**/**/*.+(ts|tsx|js)',
+    '!<rootDir>/src/**/**/*.test.+(ts|tsx|js)',
+    '!<rootDir>/src/**/**/*.device.+(ts|tsx|js)',
+    '!<rootDir>/src/**/**/*.stories.+(ts|tsx|js)',
   ],
   coverageThreshold: {
     global: {

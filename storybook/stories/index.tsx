@@ -7,7 +7,6 @@ import {
 import { StoryDivider } from './StoryDivider';
 import { StoryNatAppBar } from './StoryNatAppBar';
 import { StoryNatAppBarSearch } from './StoryNatAppBarSearch';
-import { StoryNatButton } from './StoryNatButton';
 import { StoryNatCard } from './StoryNatCard';
 import { StoryNatHeader } from './StoryNatHeader';
 import { StoryNatIcon } from './StoryNatIcon';
@@ -83,8 +82,6 @@ storiesOf('FAB', module)
   .add('All', () => <StoryFAB />);
 storiesOf('Avatar', module)
   .add('All', () => <StoryAvatar />);
-storiesOf('NatButton - OLD', module)
-  .add('All', () => <StoryNatButton />);
 storiesOf('NatHeader - OLD', module)
   .add('All', () => <StoryNatHeader />);
 storiesOf('Icons', module)
