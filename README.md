@@ -54,6 +54,8 @@ This package currently depend on `natds-styles` and `styled-components`. This pa
 
 ## Usage
 
+You can edit [this live example](https://snack.expo.io/@arielwb/natds-rn:button) to test component props and theme setup
+
 ### Setup the theme
 
 On your application entry point, add the `<Provider />` and choose the `theme` to be applied to the components
@@ -66,17 +68,13 @@ import { buildTheme } from '@naturacosmeticos/natds-rn';
 import { App } from './app';
 
 export const Main = () => {
-
   /**
    * The `buildTheme` function accepts three paramenters:
    *
    * tokens: `@naturacosmeticos/natds-styles` tokens
-   *
    * brand: the name of the brand to applied ('natura' | 'avon' | 'theBodyShop')
-   *
    * mode: the color scheme for the current branch ('light' | 'dark')
    */
-
   const theme = buildTheme(tokens, 'natura', 'light');
 
   return (

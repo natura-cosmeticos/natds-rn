@@ -1,68 +1,122 @@
-# Contribuindo
+# Contributing
 
-## Dependências
+## Steps
 
-- Yarn 1.21.1^
-- Node >= 12
-- Xcode 10.1 para iOS
-- JDK 8 e Android SDK 29 para android
+Follow the steps bellow to add a new feature, make an improvement or fix a bug.
+(Make sure to read the guides on each step as they contain important additional information)
 
-## Instalação
+- Make sure your development environment meets the [prerequisites]()
+- [Install]() the project on your machine
+- Open a branch and [make your changes]()
+- [Check your]() code locally
+- Submit a [Pull Request]() for validation
+- [Merge]() your contribuition
 
-Execute o comando `yarn install` na raiz para instalar as dependências necessárias.
+## Prerequisites
 
-Para iOS, execute `pod install` na pasta `ios` para instalar as dependências do iOS.
+This docs assume you have some knoledge and made the setup of:
 
-## Execução
+- git
+- node
+- yarn
+- react-native ([environment-setup](https://reactnative.dev/docs/environment-setup))
+- xcode/android studio
 
-Para executar a aplicação e visualizar os componentes em um emulador, execute o comando `yarn android` ou `yarn ios`.
+## Instalation
 
-## Testes unitários
+Clone or fork the project
 
-Os testes unitários são executados através do comando `yarn test`.
+```shell
+  git clone https://github.com/natura-cosmeticos/natds-rn.git
+```
 
-## Contribuindo
+Install dependencies
 
-É possível contribuir criando um fork do repositório e depois criando um Pull Request.
+```shell
+  yarn install
+  cd ios
+  pod install // if you intend to run on an ios device/simulator
+```
 
-## Fazendo commits
+## Preview your changes
 
-Os commits são feitos usando [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/#summary) através da CLI do [commitizen](https://github.com/commitizen/cz-cli). Para utilizá-la, basta rodar o comando `yarn cm` na raiz do projeto e seguir as instruções.
+We use `storybook` to build our native samples for ios and android, and also the [web docs](https://natds-rn.netlify.app/).
 
-O conventional commits é utilizado para automação de publicação com o [semantic release](https://github.com/semantic-release/semantic-release), o qual usa o [SemVer](https://semver.org/) como método de versionamento.
+To preview your changes on the device/simulator run:
 
-### Tipos de bump de versão
+```shell
+  yarn ios //or
+  yarn android
+```
 
-- Patch
-  - São hotfixes feitos na versão, apenas para correção de bugs aumentando o último número da versão. Utilize o tipo de commit `fix` na CLI do commitizen.
-  - `0.0.1` -> `0.0.2`
-- Minor
-  - São features novas adicionadas na versão. Utilize o tipo de commit `feat` na CLI do commitizen.
-  - `0.1.0` -> `0.2.0`
-- Major
-  - São breaking changes, indicando mudanças na API da biblioteca que podem quebrar o código dos consumidores. Na CLI, indique que o seu commit é um BREAKING CHANGE (Não está nas opções iniciais);
-  - `0.0.0` -> `1.0.0`
+To preview your documentarion changes on the browser run:
 
-Os bumps sempre vão priorizar os commits de maior importância na hora de avaliar qual a próxima versão. Por exemplo, caso esteja na versão `0.0.0` e fizer vários commits de fix, mas apenas um commit de feature, será priorizado esse commit de feature e a próxima versão será `0.1.0`
+```shell
+  yarn storybook:web
+```
 
-## Iniciando um novo milestone
+## Contribution guidelines
 
-Partindo da branch `master`, cria uma nova branch com a seguinte nomenclatura:
+This projects use some information (file names, commit messages) to automate several tasks.
+Because of this, some guidelines must be followed.
 
-- vM.m.p
-  - v &rarr; letra v de versão;
-  - M.m.p &rarr; Número de versão de um milestone seguindo [SemVer](https://semver.org/);
+### Project structure
 
-Para mais detalhes, chequem o [processo de milestones](./MILESTONE_PROCESS.md).
+#### Source code
 
-## SVG
+All code that should be exposed in main entry of the package should be exported in the exported by `src/components/index.ts` file.
+New code should be placed in the `src` folder.
+Shared code and components should be located under the `src/common` folder.
+Token related stories should be located under the `src/tokens` folder.
+Public components (the ones the users will import) should be locatend in the `src/components` folder.
 
-Para ver os ícones SVG, a aplicação precisa dos seguintes pacotes instalados:
+> in the `lib` folder there are several legacy components that are being refactored and then, moved to src.
+> before add a new component you could check out this folder for reference
+> after adding a new component, be sure to delete any files related this component in the `lib` folder and also any related stories at `storybook/stories` folder
 
-- react-native-svg
-- react-native-svg-transformer
+#### Folder conventions
 
-Os exemplos no storybook com o uso de SVG são:
+- Folders should follow component names
+- Avoid deep nested folders
+- If you and to break your component code, do it by the component domain rather than the file nature (create a Button and a ButtonIcon folder rather than a test and stories one)
 
-- NatMenuItem
-- NatTextInput
+#### File naming conventions
+
+This projects follows several file name based configurations:
+
+- Component names should follow the Design System stablish name
+- Component files should be PacalCased
+- Test files should have the src file name plus the `.test` suffix (Button.test.tsx)
+- All components should have a `.stories` (for web docs) and a `.device` (for native) file. Read more about in the [Storybook]() section.
+- A component may have a optional `.styles` file.
+
+### Commits
+
+This project follows the [conventional commits](https://www.conventionalcommits.org) guidelines to automate our version menagement and changelog generation.
+A precommit hook runs [commit lint](https://commitlint.js.org/) before every commit to ensure commit consistency.
+If you need some help commiting, try running `yarn commit` to commit using the [commitizen](https://github.com/commitizen/cz-cli) tool.
+
+> Be sure to check out those links for more information on how conventional commits guidelines and tools
+
+#### Commit requirements
+
+- A commit message should follow the conventional commits guidelines
+- A commit message should include an issue number (DSY-*)
+
+#### Commit Examples
+
+```sh
+docs: update readme, move contributing section to new file
+DSY-778
+
+
+chore(dialog): add max-width and actionsAlignment prop
+
+DSY-793
+
+
+feat(button): add button component
+
+co-author: @somebody
+DSY-766
+```
