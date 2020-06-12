@@ -8,7 +8,6 @@ import {
   SafeAreaView,
 } from 'react-native';
 import {
-  Button,
   NatContainer,
   NatTextInput,
   NatLogo,
@@ -85,10 +84,6 @@ export const Login = () => {
             onPress={() => Alert.alert('press link')}
             align="center"
           />
-        </View>
-        <View style={styles.viewButton}>
-          <Button type="primary" label="Enter" onPress={() => {}} />
-          <Button type="tertiary" label="Select Country" onPress={() => {}} />
         </View>
       </NatContainer>
     </SafeAreaView>
