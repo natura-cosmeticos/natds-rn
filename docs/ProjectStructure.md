@@ -25,5 +25,5 @@ This projects follows several file name based configurations:
 - Component names should follow the Design System stablish name
 - Component files should be PacalCased
 - Test files should have the src file name plus the `.test` suffix (Button.test.tsx)
-- All components should have a `.stories` (for web docs) and a `.device` (for native) file. Read more about in the [Storybook]() section.
+- All components should have a `.stories` (for web docs) and a `.device` (for native) file. Read more about in the [Storybook](./MakingChanges.md#about-storybook) section.
 - A component may have a optional `.styles` file.

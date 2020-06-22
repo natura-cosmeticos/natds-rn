@@ -112,7 +112,7 @@ Have an issue, need help or have a feature request? [create a issue](https://git
 
 # Contributing
 
-If you want to add a new component or feature to `natds-rn` check our [contributing docs](https://github.com/natura-cosmeticos/natds-rn/blob/master/CONTRIBUTING.md) :tada: :tada:
+If you want to add a new component or feature to `natds-rn` check our [contributing docs](./CONTRIBUTING.md) :tada: :tada:
 
 # License
 

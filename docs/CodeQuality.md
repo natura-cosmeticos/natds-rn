@@ -32,7 +32,7 @@ Related commands:
 
 ## Commit lint
 
-This ensure that our commits are in the right format, with the minimun needed information. Read more about it [here]()
+This ensure that our commits are in the right format, with the minimun needed information. Read more about it [here](./Commiting.md)
 
 > This is the only not optional script and it will run un every commit as a pre-commit hook
 
