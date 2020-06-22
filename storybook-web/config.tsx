@@ -45,12 +45,10 @@ addDecorator(withKnobs);
 //   require('../storybook/stories');
 // }, module);
 
-const instalation = require.context('../docs', true, /Instalation.stories.mdx/);
-const contribution = require.context('../docs', true, /Contribution.stories.mdx/);
 const themes = require.context('../docs', true, /Themes.stories.mdx/);
 const version = require.context('../docs', true, /Version.stories.mdx/);
 
 const tokens = require.context('../src/tokens', true, /\.stories.(ts|md)x?$/);
 const components = require.context('../src/components', true, /\.stories.(ts|md)x?$/);
 
-configure([instalation, contribution, themes, version, tokens, components], module);
+configure([themes, version, tokens, components], module);
