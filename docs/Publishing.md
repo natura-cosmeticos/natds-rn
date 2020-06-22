@@ -24,5 +24,5 @@ Our merge workflow will run the following steps:
 - code quality (tests, lint, type checking)
 - build and publish a new version of the `ios` sample app on the itunes connect
 - build the `android` a new version of sample app and distribute via bitrise install page for review
-- build and publish a new version of the storybook documentation on netlify for review (acessible by the url natds-rn.netlify.app )
-- build and publish a new version of the library on npm (npm install @naturacosmeticos/natds-rn)
+- build and publish a new version of the storybook documentation on netlify for review (acessible by the url `natds-rn.netlify.app`)
+- build and publish a new version of the library on npm (`npm install @naturacosmeticos/natds-rn`)
