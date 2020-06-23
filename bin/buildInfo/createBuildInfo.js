@@ -31,10 +31,6 @@ Object
   .forEach(item => buildInfo[item] && definedInfo.push({ name: item, value: buildInfo[item] }));
 
 const template = `
-import { Meta } from '@storybook/addon-docs/blocks';
-
-<Meta title="Documentation|Version Information" />
-
 # Version Information
 
 {{#each item}}
@@ -49,7 +45,7 @@ const output = compile({ item: definedInfo });
 const filePath = process.argv[2] || process.env.BUILD_INFO_PATH || 'docs';
 
 try {
-  fs.writeFileSync(`${filePath}/Version.stories.mdx`, output);
+  fs.writeFileSync(`${filePath}/Version.md`, output);
   process.exit();
 } catch (err) {
   console.error(err);
