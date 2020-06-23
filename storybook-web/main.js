@@ -1,5 +1,3 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin')
-
 module.exports = {
   presets: ['@storybook/addon-docs/preset'],
   webpackFinal: (config) => {
