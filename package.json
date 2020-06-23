@@ -37,6 +37,7 @@
     "ios:5": "react-native run-ios --simulator=\"iPhone 5s\"",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "lint:fix": "eslint --fix .",
+    "lint:commits": "commitlint --from=master",
     "android": "concurrently --names 'auto-import-stories,react-native' 'rnstl' 'react-native run-android'",
     "ios": "concurrently --names 'auto-import-stories,react-native' 'rnstl' 'react-native run-ios'",
     "storybook": "start-storybook -p 7007",
