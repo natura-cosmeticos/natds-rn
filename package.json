@@ -1,6 +1,6 @@
 {
   "name": "@naturacosmeticos/natds-rn",
-  "version": "2.1.0-DSY-778.3",
+  "version": "2.0.0",
   "license": "MIT",
   "main": "build/lib/index.js",
   "keywords": [
@@ -46,9 +46,10 @@
     "lint:fix": "eslint --fix .",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "postinstall": "npm dedupe && rm package-lock.json && rm -rf node_modules/@types/reach__router",
-    "publish:pre:release": "node ./bin/pre-release/pre-release.js",
+    "publish:pre:release": "node ./bin/release/pre-release.js",
+    "publish:release": "./bin/release/release.sh",
     "publish:storybook:web": "node ./bin/netlify/deploy.js",
-    "release": "standard-version",
+    "bump:version": "standard-version",
     "start:clear:cache": "rm -rf /tmp/metro-* && watchman watch-del-all && yarn start:clear",
     "start:clear": "concurrently --names 'auto-import-stories,react-native' 'rnstl' 'yarn start --reset-cache'",
     "start": "concurrently --names 'auto-import-stories,react-native' 'rnstl' 'react-native start'",
@@ -57,7 +58,7 @@
     "test:clean": "jest --update-snapshot",
     "test:coverage": "jest --collectCoverage",
     "test:watch": "jest --watch --collectCoverage",
-    "test": "jest --collectCoverage",
+    "test": "jest",
     "tsc": "tsc --noEmit"
   },
   "dependencies": {
