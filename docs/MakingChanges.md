@@ -1,8 +1,8 @@
 # Writing your contribution
 
-Before your start writting code, recommend that you read your [contributing guidelines](./ContributionGuidelines.md) to help you get started.
+Before your start writing code, recommend that you read your [contributing guidelines](./ContributionGuidelines.md) to help you get started.
 
-## Writting a new component
+## Writing a new component
 
 ### Step One: Create your component boilerplate
 
@@ -18,7 +18,7 @@ Create your component boilerplate following de [folder and file conventions](./P
 #### About Storybook
 
 We use storybook to write stories for our native sample apps (ios and android) and also for the web docs.
-Unfortunately, some funcionality is only available to the web version and not the native.
+Unfortunately, some functionality is only available to the web version and not the native.
 Because of this, we have to separate our native stories from our web stories, and this is done by the file names
 
 `.device` files are for the native sample apps
@@ -36,7 +36,7 @@ You can view examples in the [Button](../src/components/Button/) and [Dialog](..
 
 ### Step Three: View your changes
 
-Open your device or simulator and [run the app](./Instalation.md#check-your-instalation)
+Open your device or simulator and [run the app](./Installation.md#check-your-installation)
 
 ### Step Four: Add documentation to your component
 

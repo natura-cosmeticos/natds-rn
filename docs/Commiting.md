@@ -1,7 +1,7 @@
 # Commits
 
-This project follows the [conventional commits](https://www.conventionalcommits.org) guidelines to automate our version menagement and changelog generation.
-A precommit hook runs [commit lint](https://commitlint.js.org/) before every commit to ensure commit consistency.
+This project follows the [conventional commits](https://www.conventionalcommits.org) guidelines to automate our version management and changelog generation.
+A pre-commit hook runs [commit lint](https://commitlint.js.org/) before every commit to ensure commit consistency.
 If you need some help commiting, try running `yarn commit` to commit using the [commitizen](https://github.com/commitizen/cz-cli) tool.
 
 > Be sure to check out those links for more information on how conventional commits guidelines and tools
