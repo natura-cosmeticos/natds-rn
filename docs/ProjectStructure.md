@@ -6,7 +6,7 @@ All code that should be exposed in main entry of the package should be exported 
 New code should be placed in the `src` folder.
 Shared code and components should be located under the `src/common` folder.
 Token related stories should be located under the `src/tokens` folder.
-Public components (the ones the users will import) should be locatend in the `src/components` folder.
+Public components (the ones the users will import) should be located in the `src/components` folder.
 
 > in the `lib` folder there are several legacy components that are being refactored and then, moved to src.
 > before add a new component you could check out this folder for reference
@@ -23,7 +23,7 @@ Public components (the ones the users will import) should be locatend in the `sr
 This projects follows several file name based configurations:
 
 - Component names should follow the Design System stablish name
-- Component files should be PacalCased
+- Component files should be PascalCased
 - Test files should have the src file name plus the `.test` suffix (Button.test.tsx)
 - All components should have a `.stories` (for web docs) and a `.device` (for native) file. Read more about in the [Storybook](./MakingChanges.md#about-storybook) section.
 - A component may have a optional `.styles` file.

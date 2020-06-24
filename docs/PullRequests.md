@@ -10,7 +10,7 @@ Before opening a pull request, please be sure that:
 
 ## Opening a pull request
 
-When you open a pull request, be sure to fill the description template provided and add any other addicional information that will be helpfull for the review proccess.
+When you open a pull request, be sure to fill the description template provided and add any other additional information that will be helpful for the review process.
 
 Also, a pull request is a trigger for several processes.
 The main processes are:
@@ -23,7 +23,7 @@ The main processes are:
 Our pull request pipeline will run the following steps:
 
 - code quality (tests, lint, type checking)
-- build and publish the `ios` sample app on the itunes connect for review
+- build and publish the `ios` sample app on the iTunes connect for review
 - build the `android` sample app and distribute via bitrise install page for review
-- build and publish a test version the storybook documentation on netlify for review (acessible by the url `natds-rn-your-branch-name.netlify.app`)
+- build and publish a test version the storybook documentation on netlify for review (accessible by the url `natds-rn-your-branch-name.netlify.app`)
 - build and publish our lib on npm as a pre-release for a integrated test (installable using a tag, `npm install @naturacosmeticos/natds-rn@DSY-<your component issue number>`)

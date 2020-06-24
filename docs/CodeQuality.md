@@ -6,7 +6,7 @@ To make our development experience easier and have some security that your chang
 
 ## Tests
 
-- All the components sould have tests
+- All the components should have tests
 - All the code logic should be testes unitarily
 - Components styles can be tested with snapshots
 
@@ -22,17 +22,17 @@ Related commands:
 `lint`: will check for code styling errors
 `lint:fix`: will check for code styling errors and try to fix it
 
-## Typechecking
+## Type checking
 
-We use typescript as it help us a lot to document our code and cach mistakes.
-Make shure to add type notations to your code and tests, and to fix any type errors
+We use typescript as it help us a lot to document our code and catch mistakes.
+Make sure to add type notations to your code and tests, and to fix any type errors
 
 Related commands:
 `tsc`: will check for type errors
 
 ## Commit lint
 
-This ensure that our commits are in the right format, with the minimun needed information. Read more about it [here](./Commiting.md)
+This ensure that our commits are in the right format, with the minimum needed information. Read more about it [here](./Commiting.md)
 
 > This is the only not optional script and it will run un every commit as a pre-commit hook
 

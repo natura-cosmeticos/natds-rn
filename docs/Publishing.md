@@ -8,7 +8,7 @@ When you merge you code you are all done here. A new version of the library will
 Before opening a merging, please be sure that:
 
 - your code was reviewed and approved by the Design System Team developers
-- your changes were visualy validated by the Design System Team designers
+- your changes were visually validated by the Design System Team designers
 - your changes were approved and the jira issue was moved to waiting release
 
 ## Merging your code
@@ -22,7 +22,7 @@ If you have any issue, please contact the Design System Team
 Our merge workflow will run the following steps:
 
 - code quality (tests, lint, type checking)
-- build and publish a new version of the `ios` sample app on the itunes connect
+- build and publish a new version of the `ios` sample app on the iTunes connect
 - build the `android` a new version of sample app and distribute via bitrise install page for review
-- build and publish a new version of the storybook documentation on netlify for review (acessible by the url `natds-rn.netlify.app`)
+- build and publish a new version of the storybook documentation on netlify for review (accessible by the url `natds-rn.netlify.app`)
 - build and publish a new version of the library on npm (`npm install @naturacosmeticos/natds-rn`)

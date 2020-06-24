@@ -1,4 +1,4 @@
-# Instalation
+# Installation
 
 Clone or fork the project
 
@@ -14,7 +14,7 @@ cd ios
 pod install // if you intend to run on an ios device/simulator
 ```
 
-## Check your instalation
+## Check your Installation
 
 We use `storybook` to build our native samples for ios and android, and also the [web docs](https://natds-rn.netlify.app/).
 
@@ -25,7 +25,7 @@ yarn ios //or
 yarn android
 ```
 
-To preview your documentarion changes on the browser run:
+To preview your documentation changes on the browser run:
 
 ```shell
 yarn storybook:web
