@@ -11,6 +11,9 @@ Before opening a merging, please be sure that:
 - your changes were visually validated by the Design System Team designers
 - your changes were approved and the jira issue was moved to waiting release
 
+> Are you a developer from outside Natura organization and does not have an jira issue?
+> [Contact us](https://github.com/natura-cosmeticos/natds-rn/issues)
+
 ## Merging your code
 
 After all is developed, reviewed and approved, your ready to merge and publish your changes!
