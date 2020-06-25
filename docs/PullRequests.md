@@ -5,8 +5,8 @@
 Before opening a pull request, please be sure that:
 
 - your code follows our [contributing guidelines](./ContributionGuidelines.md) and that your [code quality checks](./CodeQuality.md) pass locally.
-- you tested your code on an ios and android and made sure that both are consistent with our visual guidelines.
-- you documented your code. If it is a component, make sure you documented the props and added examples in you sample app and web documentation.
+- you tested your code on an ios and android and made sure that both are consistent with [our visual guidelines](https://zeroheight.com/08f80f4e1/v/latest/p/46291e-about).
+- you documented your code. If it is a component, make sure you documented the props and added examples in you sample app and web documentation. Also check that the documentation is rendering and legible on storybook.
 
 ## Opening a pull request
 
@@ -27,3 +27,6 @@ Our pull request pipeline will run the following steps:
 - build the `android` sample app and distribute via bitrise install page for review
 - build and publish a test version the storybook documentation on netlify for review (accessible by the url `natds-rn-your-branch-name.netlify.app`)
 - build and publish our lib on npm as a pre-release for a integrated test (installable using a tag, `npm install @naturacosmeticos/natds-rn@DSY-<your component issue number>`)
+
+> Are you working with a fork and does not have access to our pipelines?
+> [Contact us](https://github.com/natura-cosmeticos/natds-rn/issues)

@@ -9,7 +9,10 @@ If you need some help commiting, try running `yarn commit` to commit using the [
 ## Commit requirements
 
 - A commit message should follow the conventional commits guidelines
-- A commit message should include an issue number (DSY-*)
+- A commit message should include an jira issue number (DSY-*)
+
+> Are you a developer from outside Natura organization and does not have an jira issue?
+> [Contact us](https://github.com/natura-cosmeticos/natds-rn/issues)
 
 ### Commit Examples
 
