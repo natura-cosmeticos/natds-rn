@@ -13,10 +13,10 @@ The Natura Design system for `react-native`
 
 :bowtie: [Check out our component docs](https://natds-rn.netlify.app/)
 
-You can also install our sample apps in your iOS or android device, check the [ information version page](https://natds-rn.netlify.app/?path=/docs/documentation-version-information--page) to get the latest versions of the sample apps
+You can also install our sample apps in your iOS or android device, check the [information version page](https://natds-rn.netlify.app/?path=/docs/documentation-version-information--page) to get the latest versions of the sample apps
 
 > For `iOS` you will need to have your device registered as a beta tester.
-> you can request acess opening an issue or at your slack channel
+> you can request access opening an issue or at your slack channel
 
 ---
 
@@ -34,7 +34,7 @@ If that is not the case, we strongly recommend that you finish the [get started]
   - `react@>=16.8.0`
   - `react-native@>=0.59.10`
 
-## Instalation
+## Installation
 
 To start using the `natds-rn` components on you project, first you will need to install it
 
@@ -50,7 +50,7 @@ yarn add @naturacosmeticos/natds-rn
 
 This package currently depend on `natds-styles` and `styled-components`. This packages will be installed automatically with the command above.
 
-> If you have currently installed versions of this packages, be sure to check the instalation logs for version incompatibilities
+> If you have currently installed versions of this packages, be sure to check the installation logs for version incompatibilities
 
 ## Usage
 
@@ -69,7 +69,7 @@ import { App } from './app';
 
 export const Main = () => {
   /**
-   * The `buildTheme` function accepts three paramenters:
+   * The `buildTheme` function accepts three parameters:
    *
    * tokens: `@naturacosmeticos/natds-styles` tokens
    * brand: the name of the brand to applied ('natura' | 'avon' | 'theBodyShop')
@@ -112,7 +112,7 @@ Have an issue, need help or have a feature request? [create a issue](https://git
 
 # Contributing
 
-If you want to add a new component or feature to `natds-rn` check our [contributing docs](https://github.com/natura-cosmeticos/natds-rn/blob/master/CONTRIBUTING.md) :tada: :tada:
+If you want to add a new component or feature to `natds-rn` check our [contributing docs](./CONTRIBUTING.md) :tada: :tada:
 
 # License
 
