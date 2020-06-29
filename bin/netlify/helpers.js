@@ -9,7 +9,7 @@ const exitWithMsg = (msg, code = 0) => {
 };
 
 const buildBranchSiteName = branchName => `${sitePrefix}-${branchName.trim().replace('/', '-')}`;
-const buildMasterSiteName = version => `${sitePrefix}-v${version.replace('.', '-')}`;
+const buildMasterSiteName = version => `${sitePrefix}-v${version.replace(/\./g, '-')}`;
 
 const findSiteByName = async (client, siteName) => {
   const sites = await client.listSites();
