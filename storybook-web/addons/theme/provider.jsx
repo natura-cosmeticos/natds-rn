@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { addons, makeDecorator } from '@storybook/addons';
 import { ThemeProvider } from 'styled-components/native';
-import { CHANGE, PARAM_KEY, getStoryBookTheme } from './shared';
+import { CHANGE, PARAM_KEY } from './shared';
 import { buildTheme } from '../../../src/common/themeSelectors';
 
-const defaultTheme = buildTheme('natura', getStoryBookTheme());
+const defaultTheme = buildTheme('natura', 'light');
 
 const backgroundStyles = {
   bottom: 0,
