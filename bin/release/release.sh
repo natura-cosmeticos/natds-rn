@@ -1,6 +1,6 @@
 #!/bin/bash
 
-[[ $1 = "pre-release" ]] && PRE_RELEASE="--prerelease $(node ./bin/release/pre-release.js) --skip.tag --skip.changelog" || PRE_RELEASE=""
+[[ $1 = "pre-release" ]] && PRE_RELEASE="--prerelease $(node ./bin/release/getPreReleaseName.js) --skip.tag --skip.changelog" || PRE_RELEASE=""
 
 if \
   { git log "$( git describe --tags --abbrev=0 )..HEAD" --format='%s' | cut -d: -f1 | sort -u | sed -e 's/([^)]*)//' | grep -q -i -E '^feat|fix|perf|refactor|revert$' ; } || \
