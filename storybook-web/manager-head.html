@@ -1,6 +1,5 @@
 <script>
   const updateColors = (isDark) => {
-    console.log({ isDark })
     const styles = document.getElementById('ds-styles-manager');
 
     styles.innerHTML = `
@@ -13,7 +12,6 @@
   `
   }
   window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
-    console.log({ e })
     updateColors(e.matches)
   });
   window.onload = () => updateColors(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)

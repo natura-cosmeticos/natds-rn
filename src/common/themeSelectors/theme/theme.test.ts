@@ -1,4 +1,3 @@
-import { tokens } from '@naturacosmeticos/natds-styles';
 import mockTheme from './mock-theme.json';
 import { getTheme, buildTheme } from './theme';
 
@@ -15,7 +14,7 @@ describe('Theme selectors', () => {
 
   describe('buildTheme', () => {
     it('should build theme using tokens', () => {
-      const result = buildTheme(tokens, 'natura', 'light');
+      const result = buildTheme('natura', 'light');
 
       expect(result).toStrictEqual(mockTheme);
     });

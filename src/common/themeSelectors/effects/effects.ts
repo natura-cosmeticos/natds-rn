@@ -1,6 +1,6 @@
-import { Theme } from '..';
+import { Theme, checkTheme } from '..';
 
-const getElevation = (theme: Theme) => theme.elevation;
+const getElevation = (theme: Theme) => checkTheme(theme).elevation;
 
 export const getShadowBySize = (theme: Theme, size: string) => getElevation(theme)[size];
 

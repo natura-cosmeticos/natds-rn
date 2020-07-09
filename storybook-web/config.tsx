@@ -45,11 +45,8 @@ addDecorator(withKnobs);
 //   require('../storybook/stories');
 // }, module);
 
-const version = require.context('../docs', true, /Version.stories.mdx/);
-const readme = require.context('./docs', true, /README.stories.mdx/);
 const docs = require.context('./docs', true, /\.stories.mdx/);
-
 const tokens = require.context('../src/tokens', true, /\.stories.(ts|md)x?$/);
 const components = require.context('../src/components', true, /\.stories.(ts|md)x?$/);
 
-configure([readme, docs, version, tokens, components], module);
+configure([docs, tokens, components], module);
