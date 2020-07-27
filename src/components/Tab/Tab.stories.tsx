@@ -27,7 +27,7 @@ export const fixed = () => {
   ];
 
   const onChange = (value: number) => {
-    Alert.alert('current value', `${value}`);
+    Alert.alert('Current Tab', `${tabOptions[value].label}`);
   };
 
   return (
