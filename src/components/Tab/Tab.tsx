@@ -50,7 +50,7 @@ const TabComponent = ({
   };
 
   return (
-    <TabWrapper testID={testID}>
+    <TabWrapper theme={theme} testID={testID}>
       {tabOptions.map((tabOption, index) => (
         <TabButton
           key={tabOption.key}

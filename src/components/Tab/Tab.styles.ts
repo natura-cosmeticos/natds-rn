@@ -17,6 +17,10 @@ interface TabBase {
   theme: Theme
 }
 
+interface TabWrapperProp {
+  theme: Theme
+}
+
 const getTabButtonStyles = (theme: Theme, type: TabButtonTypes) => {
   const styles = {
     primary: {
@@ -43,7 +47,8 @@ const getTabTextStyles = (theme: Theme, type: TabButtonTypes) => {
   return styles[type];
 };
 
-export const TabWrapper = styled.View(({ theme }) => ({
+export const TabWrapper = styled.View<TabWrapperProp>(({ theme }) => ({
+  backgroundColor: getColorSurface(theme),
   border: 'none',
   flexDirection: 'row',
   ...getShadowBySize(theme, '6'),
@@ -51,7 +56,6 @@ export const TabWrapper = styled.View(({ theme }) => ({
 
 export const TabButton = styled.TouchableOpacity<TabBase>(({ type, theme }) => ({
   alignItems: 'center',
-  backgroundColor: getColorSurface(theme),
   border: 'transparent',
   borderStyle: 'solid',
   borderWidth: 2,
