@@ -5,6 +5,7 @@ exports[`Tab component Should render tab component without passing any type prop
   style={
     Array [
       Object {
+        "backgroundColor": "#FFFFFF",
         "borderColor": "black",
         "borderStyle": "solid",
         "borderWidth": 0,
@@ -14,6 +15,309 @@ exports[`Tab component Should render tab component without passing any type prop
     ]
   }
   testID="tab"
+  theme={
+    Object {
+      "avatarSizes": Object {
+        "huge": Object {
+          "fontSize": "1.5rem",
+          "size": 80,
+        },
+        "large": Object {
+          "fontSize": "1rem",
+          "size": 48,
+        },
+        "small": Object {
+          "fontSize": ".875rem",
+          "size": 32,
+        },
+        "standard": Object {
+          "fontSize": "1rem",
+          "size": 40,
+        },
+        "tiny": Object {
+          "fontSize": ".625rem",
+          "size": 24,
+        },
+      },
+      "buttonSizes": Object {
+        "large": Object {
+          "minHeight": 48,
+          "paddingBottom": 16,
+          "paddingLeft": 16,
+          "paddingRight": 16,
+          "paddingTop": 16,
+        },
+        "medium": Object {
+          "minHeight": 40,
+          "paddingBottom": 12,
+          "paddingLeft": 16,
+          "paddingRight": 16,
+          "paddingTop": 12,
+        },
+        "small": Object {
+          "minHeight": 32,
+          "paddingBottom": 8,
+          "paddingLeft": 8,
+          "paddingRight": 8,
+          "paddingTop": 8,
+        },
+      },
+      "colorTokens": Object {
+        "colorAlert": "#E74627",
+        "colorBackground": "#FAFAFA",
+        "colorHighEmphasis": "#333333",
+        "colorHighlight": "#000000",
+        "colorLink": "#227BBD",
+        "colorLowEmphasis": "#BBBBBB",
+        "colorMediumEmphasis": "#777777",
+        "colorOnAlert": "#FFFFFF",
+        "colorOnBackground": "#333333",
+        "colorOnLink": "#FFFFFF",
+        "colorOnPrimary": "#333333",
+        "colorOnPrimaryDark": "#333333",
+        "colorOnPrimaryLight": "#333333",
+        "colorOnSecondary": "#000000",
+        "colorOnSecondaryDark": "#000000",
+        "colorOnSecondaryLight": "#000000",
+        "colorOnSuccess": "#FFFFFF",
+        "colorOnSurface": "#333333",
+        "colorOnWarning": "#333333",
+        "colorPrimary": "#F4AB34",
+        "colorPrimaryDark": "#EF8426",
+        "colorPrimaryLight": "#FEFDE8",
+        "colorSecondary": "#FF6B0B",
+        "colorSecondaryDark": "#FF5808",
+        "colorSecondaryLight": "#FFF8E1",
+        "colorSuccess": "#569A32",
+        "colorSurface": "#FFFFFF",
+        "colorWarning": "#FCC433",
+      },
+      "elevation": Object {
+        "0": Object {},
+        "1": Object {
+          "elevation": 2,
+          "shadowColor": "rgb(0, 0, 0)",
+          "shadowOffset": Object {
+            "height": 1,
+            "width": 0,
+          },
+          "shadowOpacity": 0.14,
+          "shadowRadius": 1,
+        },
+        "12": Object {
+          "elevation": 2,
+          "shadowColor": "rgb(0, 0, 0)",
+          "shadowOffset": Object {
+            "height": 12,
+            "width": 0,
+          },
+          "shadowOpacity": 0.14,
+          "shadowRadius": 17,
+        },
+        "16": Object {
+          "elevation": 2,
+          "shadowColor": "rgb(0, 0, 0)",
+          "shadowOffset": Object {
+            "height": 16,
+            "width": 0,
+          },
+          "shadowOpacity": 0.14,
+          "shadowRadius": 24,
+        },
+        "2": Object {
+          "elevation": 2,
+          "shadowColor": "rgb(0, 0, 0)",
+          "shadowOffset": Object {
+            "height": 2,
+            "width": 0,
+          },
+          "shadowOpacity": 0.14,
+          "shadowRadius": 2,
+        },
+        "24": Object {
+          "elevation": 2,
+          "shadowColor": "rgb(0, 0, 0)",
+          "shadowOffset": Object {
+            "height": 24,
+            "width": 0,
+          },
+          "shadowOpacity": 0.14,
+          "shadowRadius": 38,
+        },
+        "3": Object {
+          "elevation": 2,
+          "shadowColor": "rgb(0, 0, 0)",
+          "shadowOffset": Object {
+            "height": 3,
+            "width": 0,
+          },
+          "shadowOpacity": 0.14,
+          "shadowRadius": 4,
+        },
+        "4": Object {
+          "elevation": 2,
+          "shadowColor": "rgb(0, 0, 0)",
+          "shadowOffset": Object {
+            "height": 4,
+            "width": 0,
+          },
+          "shadowOpacity": 0.14,
+          "shadowRadius": 5,
+        },
+        "6": Object {
+          "elevation": 2,
+          "shadowColor": "rgb(0, 0, 0)",
+          "shadowOffset": Object {
+            "height": 6,
+            "width": 0,
+          },
+          "shadowOpacity": 0.14,
+          "shadowRadius": 10,
+        },
+        "8": Object {
+          "elevation": 2,
+          "shadowColor": "rgb(0, 0, 0)",
+          "shadowOffset": Object {
+            "height": 8,
+            "width": 0,
+          },
+          "shadowOpacity": 0.14,
+          "shadowRadius": 10,
+        },
+        "9": Object {
+          "elevation": 2,
+          "shadowColor": "rgb(0, 0, 0)",
+          "shadowOffset": Object {
+            "height": 9,
+            "width": 0,
+          },
+          "shadowOpacity": 0.14,
+          "shadowRadius": 12,
+        },
+      },
+      "fontSize": Object {
+        "body1": Object {
+          "fontSize": "1rem",
+          "fontWeight": 400,
+        },
+        "body2": Object {
+          "fontSize": "0.875rem",
+          "fontWeight": 400,
+        },
+        "button": Object {
+          "fontSize": "0.875rem",
+          "fontWeight": 600,
+        },
+        "caption": Object {
+          "fontSize": "0.75rem",
+          "fontWeight": 400,
+        },
+        "h1": Object {
+          "fontSize": "6rem",
+          "fontWeight": 300,
+        },
+        "h2": Object {
+          "fontSize": "3.75rem",
+          "fontWeight": 300,
+        },
+        "h3": Object {
+          "fontSize": "3rem",
+          "fontWeight": 400,
+        },
+        "h4": Object {
+          "fontSize": "2.125rem",
+          "fontWeight": 400,
+        },
+        "h5": Object {
+          "fontSize": "1.5rem",
+          "fontWeight": 400,
+        },
+        "h6": Object {
+          "fontSize": "1.25rem",
+          "fontWeight": 600,
+        },
+        "overline": Object {
+          "fontSize": "0.75rem",
+          "fontWeight": 400,
+        },
+        "subtitle1": Object {
+          "fontSize": "1rem",
+          "fontWeight": 400,
+        },
+        "subtitle2": Object {
+          "fontSize": "0.875rem",
+          "fontWeight": 500,
+        },
+      },
+      "iconSizes": Object {
+        "huge": 144,
+        "hugex": 192,
+        "hugexx": 256,
+        "large": 72,
+        "largex": 96,
+        "largexx": 128,
+        "medium": 64,
+        "micro": 16,
+        "small": 32,
+        "standard": 48,
+        "tiny": 24,
+      },
+      "opacity": Object {
+        "00": 0,
+        "04": 0.04,
+        "08": 0.08,
+        "12": 0.12,
+        "16": 0.16,
+        "24": 0.24,
+        "32": 0.32,
+        "48": 0.48,
+        "56": 0.56,
+        "64": 0.64,
+        "80": 0.8,
+      },
+      "overlay": Object {
+        "solidBlack": 0.56,
+      },
+      "radius": Object {
+        "circle": "50%",
+        "large": 8,
+        "medium": 4,
+        "none": 0,
+        "small": 2,
+      },
+      "sizes": Object {
+        "huge": 96,
+        "hugex": 128,
+        "hugexx": 144,
+        "hugexxx": 192,
+        "large": 64,
+        "largex": 72,
+        "largexx": 80,
+        "largexxx": 88,
+        "medium": 48,
+        "mediumx": 56,
+        "micro": 4,
+        "none": 0,
+        "semi": 32,
+        "semix": 40,
+        "small": 16,
+        "standard": 24,
+        "tiny": 8,
+        "veryhuge": 256,
+      },
+      "spacing": Object {
+        "spacing": 8,
+        "spacingHuge": 64,
+        "spacingLarge": 48,
+        "spacingMicro": 4,
+        "spacingNone": 0,
+        "spacingSemi": 32,
+        "spacingSmall": 16,
+        "spacingStandard": 24,
+        "spacingTiny": 8,
+      },
+    }
+  }
 >
   <TouchableOpacity
     onPress={[Function]}
@@ -21,7 +325,6 @@ exports[`Tab component Should render tab component without passing any type prop
       Array [
         Object {
           "alignItems": "center",
-          "backgroundColor": "#FFFFFF",
           "borderBottomColor": "#F4F4",
           "borderColor": "transparent",
           "borderStyle": "solid",
@@ -666,7 +969,6 @@ exports[`Tab component Should render tab component without passing any type prop
       Array [
         Object {
           "alignItems": "center",
-          "backgroundColor": "#FFFFFF",
           "borderColor": "transparent",
           "borderStyle": "solid",
           "borderWidth": 2,
@@ -1310,7 +1612,6 @@ exports[`Tab component Should render tab component without passing any type prop
       Array [
         Object {
           "alignItems": "center",
-          "backgroundColor": "#FFFFFF",
           "borderColor": "transparent",
           "borderStyle": "solid",
           "borderWidth": 2,
