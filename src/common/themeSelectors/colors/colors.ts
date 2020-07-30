@@ -15,6 +15,7 @@ export const getColorSuccess = (theme: Theme) => getColors(theme).colorSuccess;
 export const getColorOnSuccess = (theme: Theme) => getColors(theme).colorOnSuccess;
 
 export const getColorLowEmphasis = (theme: Theme) => getColors(theme).colorLowEmphasis;
+export const getColorMediumEmphasis = (theme: Theme) => getColors(theme).colorMediumEmphasis;
 export const getColorHighEmphasis = (theme: Theme) => getColors(theme).colorHighEmphasis;
 
 export const getColorSurface = (theme: Theme) => getColors(theme).colorSurface;

@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { View } from 'react-native';
-import { text as textKnob, select } from '@storybook/addon-knobs';
+import { text as textKnob, select, boolean } from '@storybook/addon-knobs';
 import { ContainerRow, ContainerWithTheme } from '../../common/HelperComponents/ThemeHelper.styles';
 import { Button, ButtonTypes } from './Button';
 
@@ -28,11 +28,31 @@ export const all = () => (
       <Button onPress={onPress} text="default" type="outlined" />
       <Button onPress={onPress} text="default" type="text" />
     </ContainerRow >
-    <ContainerWithTheme style={{ height: 200, justifyContent: 'space-between' }} >
+    <ContainerRow style={{ marginBottom: 30 }}>
+      <Button disabled onPress={onPress} text="default" />
+      <Button disabled onPress={onPress} text="default" type="outlined" />
+      <Button disabled onPress={onPress} text="default" type="text" />
+    </ContainerRow >
+    <ContainerWithTheme style={{ height: 200, justifyContent: 'space-between', marginBottom: 30 }} >
       <Button onPress={onPress} text="default" />
       <Button onPress={onPress} text="default" type="outlined" />
       <Button onPress={onPress} text="default" type="text" />
     </ContainerWithTheme >
+    <ContainerWithTheme style={{ height: 200, justifyContent: 'space-between', marginBottom: 30 }} >
+      <Button disabled onPress={onPress} text="default" />
+      <Button disabled onPress={onPress} text="default" type="outlined" />
+      <Button disabled onPress={onPress} text="default" type="text" />
+    </ContainerWithTheme >
+  </View>
+);
+
+export const disabled = () => (
+  <View style={{ maxWidth: 600, padding: 30 }}>
+    <ContainerRow style={{ marginBottom: 30 }}>
+      <Button disabled onPress={onPress} text="default" />
+      <Button disabled onPress={onPress} text="default" type="outlined" />
+      <Button disabled onPress={onPress} text="default" type="text" />
+    </ContainerRow >
   </View>
 );
 
@@ -60,6 +80,7 @@ export const interactive = () => (
       onPress={onPress}
       text={textKnob('Text', 'default')}
       type={select('Types', buttonTypes, 'contained') as ButtonTypes}
+      disabled={boolean('Disabled', false)}
     />
   </ContainerRow>
 );

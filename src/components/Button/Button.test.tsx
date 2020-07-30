@@ -13,6 +13,8 @@ jest.mock('../../common/themeSelectors', () => (
   {
     getButtonPropsBySize: () => ({ background: '#AEAEAE' }),
     getColorHighEmphasis: () => '#FAF3E3',
+    getColorLowEmphasis: () => '#FEEEEF',
+    getColorMediumEmphasis: () => '#FAFAEA',
     getColorOnPrimary: () => '#F4F4',
     getColorPrimary: () => '#FFFFFF',
     getColorPrimaryLight: () => '#BABABA',
@@ -38,6 +40,7 @@ describe('Button component', () => {
     const { queryByTestId } = renderButton(render, defaultProps);
 
     expect(queryByTestId('button')?.props).toHaveProperty('type', 'contained');
+    expect(queryByTestId('button')?.props).toHaveProperty('disabled', false);
   });
 
   it('Should render button with a uppercase text', () => {
@@ -69,27 +72,71 @@ describe('Button component', () => {
     expect(onPressMock).toHaveBeenCalledTimes(1);
   });
 
-  it('Should render button component outlined', () => {
-    const button = renderButton(renderer.create, {
+  it('Should not call the given onPress function when button is disabled', () => {
+    const onPressMock = jest.fn();
+    const { queryByTestId } = renderButton(render, {
       ...defaultProps,
-      type: 'outlined',
-    }).toJSON();
+      disabled: true,
+      onPress: onPressMock,
+    });
 
-    expect(button).toMatchSnapshot();
+    fireEvent.press(queryByTestId('button'));
+
+    expect(onPressMock).not.toHaveBeenCalled();
   });
 
-  it('Should render button component contained', () => {
-    const button = renderButton(renderer.create, defaultProps).toJSON();
+  describe('variants', () => {
+    it('Should render button component outlined', () => {
+      const button = renderButton(renderer.create, {
+        ...defaultProps,
+        type: 'outlined',
+      }).toJSON();
 
-    expect(button).toMatchSnapshot();
+      expect(button).toMatchSnapshot();
+    });
+
+    it('Should render button component contained', () => {
+      const button = renderButton(renderer.create, defaultProps).toJSON();
+
+      expect(button).toMatchSnapshot();
+    });
+
+    it('Should render button component text', () => {
+      const button = renderButton(renderer.create, {
+        ...defaultProps,
+        disabled: true,
+        type: 'text',
+      }).toJSON();
+
+      expect(button).toMatchSnapshot();
+    });
   });
 
-  it('Should render button component text', () => {
-    const button = renderButton(renderer.create, {
-      ...defaultProps,
-      type: 'text',
-    }).toJSON();
+  describe('disabled variants', () => {
+    it('Should render button component outlined disabled', () => {
+      const button = renderButton(renderer.create, {
+        ...defaultProps,
+        disabled: true,
+        type: 'outlined',
+      }).toJSON();
 
-    expect(button).toMatchSnapshot();
+      expect(button).toMatchSnapshot();
+    });
+
+    it('Should render button component contained disabled', () => {
+      const button = renderButton(renderer.create, defaultProps).toJSON();
+
+      expect(button).toMatchSnapshot();
+    });
+
+    it('Should render button component text disabled', () => {
+      const button = renderButton(renderer.create, {
+        ...defaultProps,
+        disabled: true,
+        type: 'text',
+      }).toJSON();
+
+      expect(button).toMatchSnapshot();
+    });
   });
 });
