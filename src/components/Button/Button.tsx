@@ -58,7 +58,7 @@ export interface ButtonProps {
   testID?: string,
 }
 
-interface ButonBase {
+interface ButtonBase {
   type: ButtonTypes
   disabled: boolean
   theme: Theme
@@ -89,13 +89,13 @@ const getButtonTextColor = (theme: Theme, type: ButtonTypes, disabled: boolean) 
   return disabled ? color.disabled : color.active;
 };
 
-const ButtonBase = styled.TouchableHighlight<ButonBase>(({ type, theme, disabled = false }) => ({
+const ButtonBase = styled.TouchableHighlight<ButtonBase>(({ type, theme, disabled = false }) => ({
   borderRadius: getRadiusBySize(theme, 'medium'),
   ...getButtonStyles(theme, type, disabled),
   ...getButtonPropsBySize(theme, 'medium'),
 }));
 
-const Text = styled.Text<ButonBase>`
+const Text = styled.Text<ButtonBase>`
   color: ${({ type, theme, disabled }) => getButtonTextColor(theme, type, disabled)};
   font-size: 14px;
   align-self: center;
