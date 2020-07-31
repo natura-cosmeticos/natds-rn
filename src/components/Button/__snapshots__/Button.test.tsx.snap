@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Button component disabled variants Should render button component contained disabled 1`] = `
+exports[`Button component Disabled variants should render disabled button component contained 1`] = `
 <TouchableHighlight
   activeOpacity={0.8}
   disabled={false}
@@ -42,7 +42,7 @@ exports[`Button component disabled variants Should render button component conta
 </TouchableHighlight>
 `;
 
-exports[`Button component disabled variants Should render button component outlined disabled 1`] = `
+exports[`Button component Disabled variants should render disabled button component outlined 1`] = `
 <TouchableHighlight
   activeOpacity={0.8}
   disabled={true}
@@ -84,7 +84,7 @@ exports[`Button component disabled variants Should render button component outli
 </TouchableHighlight>
 `;
 
-exports[`Button component disabled variants Should render button component text disabled 1`] = `
+exports[`Button component Disabled variants should render disabled button component text 1`] = `
 <TouchableHighlight
   activeOpacity={0.8}
   disabled={true}
@@ -124,7 +124,7 @@ exports[`Button component disabled variants Should render button component text 
 </TouchableHighlight>
 `;
 
-exports[`Button component variants Should render button component contained 1`] = `
+exports[`Button component Variants should render button component contained 1`] = `
 <TouchableHighlight
   activeOpacity={0.8}
   disabled={false}
@@ -166,7 +166,7 @@ exports[`Button component variants Should render button component contained 1`] 
 </TouchableHighlight>
 `;
 
-exports[`Button component variants Should render button component outlined 1`] = `
+exports[`Button component Variants should render button component outlined 1`] = `
 <TouchableHighlight
   activeOpacity={0.8}
   disabled={false}
@@ -208,7 +208,7 @@ exports[`Button component variants Should render button component outlined 1`] =
 </TouchableHighlight>
 `;
 
-exports[`Button component variants Should render button component text 1`] = `
+exports[`Button component Variants should render button component text 1`] = `
 <TouchableHighlight
   activeOpacity={0.8}
   disabled={true}

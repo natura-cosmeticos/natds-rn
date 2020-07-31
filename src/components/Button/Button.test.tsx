@@ -36,20 +36,15 @@ const defaultProps = ({
 });
 
 describe('Button component', () => {
-  it('Should render button with default props', () => {
+  it('should render button with default props', () => {
     const { queryByTestId } = renderButton(render, defaultProps);
 
     expect(queryByTestId('button')?.props).toHaveProperty('type', 'contained');
     expect(queryByTestId('button')?.props).toHaveProperty('disabled', false);
-  });
-
-  it('Should render button with a uppercase text', () => {
-    const { queryByTestId } = renderButton(render, defaultProps);
-
     expect(queryByTestId('button')).toHaveTextContent('LABEL BUTTON');
   });
 
-  it('Should render button with the given type prop', () => {
+  it('should render button with the given type prop', () => {
     const { queryByTestId } = renderButton(render, {
       ...defaultProps,
       type: 'outlined',
@@ -60,7 +55,7 @@ describe('Button component', () => {
     });
   });
 
-  it('Should call the given onPress function', () => {
+  it('should call the given onPress function', () => {
     const onPressMock = jest.fn();
     const { queryByTestId } = renderButton(render, {
       ...defaultProps,
@@ -72,7 +67,7 @@ describe('Button component', () => {
     expect(onPressMock).toHaveBeenCalledTimes(1);
   });
 
-  it('Should not call the given onPress function when button is disabled', () => {
+  it('should not call the given onPress function when button is disabled', () => {
     const onPressMock = jest.fn();
     const { queryByTestId } = renderButton(render, {
       ...defaultProps,
@@ -85,8 +80,8 @@ describe('Button component', () => {
     expect(onPressMock).not.toHaveBeenCalled();
   });
 
-  describe('variants', () => {
-    it('Should render button component outlined', () => {
+  describe('Variants', () => {
+    it('should render button component outlined', () => {
       const button = renderButton(renderer.create, {
         ...defaultProps,
         type: 'outlined',
@@ -95,13 +90,13 @@ describe('Button component', () => {
       expect(button).toMatchSnapshot();
     });
 
-    it('Should render button component contained', () => {
+    it('should render button component contained', () => {
       const button = renderButton(renderer.create, defaultProps).toJSON();
 
       expect(button).toMatchSnapshot();
     });
 
-    it('Should render button component text', () => {
+    it('should render button component text', () => {
       const button = renderButton(renderer.create, {
         ...defaultProps,
         disabled: true,
@@ -112,8 +107,8 @@ describe('Button component', () => {
     });
   });
 
-  describe('disabled variants', () => {
-    it('Should render button component outlined disabled', () => {
+  describe('Disabled variants', () => {
+    it('should render disabled button component outlined', () => {
       const button = renderButton(renderer.create, {
         ...defaultProps,
         disabled: true,
@@ -123,13 +118,13 @@ describe('Button component', () => {
       expect(button).toMatchSnapshot();
     });
 
-    it('Should render button component contained disabled', () => {
+    it('should render disabled button component contained', () => {
       const button = renderButton(renderer.create, defaultProps).toJSON();
 
       expect(button).toMatchSnapshot();
     });
 
-    it('Should render button component text disabled', () => {
+    it('should render disabled button component text', () => {
       const button = renderButton(renderer.create, {
         ...defaultProps,
         disabled: true,

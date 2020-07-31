@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { View } from 'react-native';
-import { text as textKnob, select, boolean } from '@storybook/addon-knobs';
+import { boolean, select, text as textKnob } from '@storybook/addon-knobs';
 import { ContainerRow, ContainerWithTheme } from '../../common/HelperComponents/ThemeHelper.styles';
 import { Button, ButtonTypes } from './Button';
 
