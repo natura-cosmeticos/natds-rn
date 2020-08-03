@@ -1,3 +1,4 @@
+import React from 'react';
 import styled from 'styled-components/native';
 import {
   getColorHighEmphasis,
@@ -37,18 +38,22 @@ export const DialogContainer = styled.View(({ theme }) => ({
   width: '100%',
 }));
 
-export const DialogTitle = styled.Text(({ theme }) => ({
+const DialogTitleComponent = styled.Text(({ theme }) => ({
   color: getColorHighEmphasis(theme),
-  fontFamily: getFont('bold'),
+  fontFamily: getFont(),
   fontSize: 20,
-  fontWeight: 600,
+
   marginBottom: getSpacingTiny(theme),
   marginHorizontal: getSpacingSmall(theme),
 }));
 
+export const DialogTitle = props => (
+  <DialogTitleComponent {...props} style={{ fontWeight: 'bold' }} />
+);
+
 export const DialogContentText = styled.Text(({ theme }) => ({
   color: getColorHighEmphasis(theme),
-  fontFamily: getFont('regular'),
+  fontFamily: getFont(),
   fontSize: 14,
   fontWeight: 400,
 }));
