@@ -28,8 +28,10 @@ exports[`Button component Should render button component contained 1`] = `
           "color": "#F4F4",
           "fontFamily": "doc robot",
           "fontSize": 14,
-          "fontWeight": "600",
           "letterSpacing": 1,
+        },
+        Object {
+          "fontWeight": "bold",
         },
       ]
     }
@@ -68,8 +70,10 @@ exports[`Button component Should render button component outlined 1`] = `
           "color": "#FAF3E3",
           "fontFamily": "doc robot",
           "fontSize": 14,
-          "fontWeight": "600",
           "letterSpacing": 1,
+        },
+        Object {
+          "fontWeight": "bold",
         },
       ]
     }
@@ -106,8 +110,10 @@ exports[`Button component Should render button component text 1`] = `
           "color": "#FAF3E3",
           "fontFamily": "doc robot",
           "fontSize": 14,
-          "fontWeight": "600",
           "letterSpacing": 1,
+        },
+        Object {
+          "fontWeight": "bold",
         },
       ]
     }

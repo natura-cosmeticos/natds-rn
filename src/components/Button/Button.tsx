@@ -44,9 +44,9 @@ export interface ButtonProps {
    * all the Text nodes separated by space.
    */
   accessibilityLabel?: string
-   /**
-   * Optional ID for testing
-   */
+  /**
+  * Optional ID for testing
+  */
   testID?: string,
 }
 
@@ -87,9 +87,8 @@ const Text = styled.Text<ButonBase>`
   color: ${({ type, theme }) => getButtonTextStyles(theme, type)};
   font-size: 14px;
   align-self: center;
-  font-weight: 600;
   letter-spacing: 1px;
-  font-family: ${getFont('bold')};
+  font-family: ${getFont()};
 `;
 
 const getShadowByType = (type: ButtonTypes, theme: Theme) => (
@@ -110,6 +109,7 @@ const ButtonComponent = ({
     activeOpacity={getOpacity10(theme)}
   >
     <Text
+      style={{ fontWeight: 'bold' }}
       accessibilityLabel={accessibilityLabel}
       accessibilityHint={accessibilityHint}
       accessibilityRole="button"
