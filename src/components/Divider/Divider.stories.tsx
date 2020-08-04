@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { View } from 'react-native';
 import { Divider } from './Divider';
 import { ContainerWithBorder, TextWithTheme } from '../../common/HelperComponents/ThemeHelper.styles';
 
