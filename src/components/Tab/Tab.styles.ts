@@ -2,7 +2,7 @@ import styled from 'styled-components/native';
 import {
   getColorMediumEmphasis,
   getColorOnBackground,
-  getColorSecondary,
+  getColorPrimary,
   getColorSurface,
   getFont,
   getSpacingSmall,
@@ -24,7 +24,7 @@ interface TabWrapperProp {
 const getTabButtonStyles = (theme: Theme, type: TabButtonTypes) => {
   const styles = {
     primary: {
-      borderBottomColor: getColorSecondary(theme),
+      borderBottomColor: getColorPrimary(theme),
     },
     secondary: {
       borderColor: 'transparent',
@@ -51,15 +51,15 @@ export const TabWrapper = styled.View<TabWrapperProp>(({ theme }) => ({
   backgroundColor: getColorSurface(theme),
   border: 'none',
   flexDirection: 'row',
-  ...getShadowBySize(theme, '6'),
+  ...getShadowBySize(theme, '1'),
 }));
 
 export const TabButton = styled.TouchableOpacity<TabBase>(({ type, theme }) => ({
   alignItems: 'center',
-  border: 'transparent',
+  borderBottomWidth: 2,
   borderStyle: 'solid',
-  borderWidth: 2,
   flex: 1,
+  justifyContent: 'center',
   padding: getSpacingSmall(theme),
   ...getTabButtonStyles(theme, type),
 }));
@@ -67,6 +67,7 @@ export const TabButton = styled.TouchableOpacity<TabBase>(({ type, theme }) => (
 export const TabText = styled.Text<TabBase>(({ type, theme }) => ({
   fontFamily: getFont('bold'),
   fontSize: 14,
+  fontWeight: 600,
   letterSpacing: 1.25,
   ...getTabTextStyles(theme, type),
 }));

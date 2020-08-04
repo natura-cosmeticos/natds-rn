@@ -1,7 +1,6 @@
 import React from 'react';
-import { Alert } from 'react-native';
+import { Alert, View } from 'react-native';
 
-import { ContainerRow } from '../../common/HelperComponents/ThemeHelper.styles';
 import { Tab } from '.';
 
 export default {
@@ -33,8 +32,8 @@ export const fixed = () => {
   };
 
   return (
-    <ContainerRow style={{ paddingBottom: 30 }}>
+    <View style={{ maxWidth: 600, paddingBottom: 30 }}>
       <Tab tabOptions={tabOptions} onChange={onChange} />
-    </ContainerRow>
+    </View>
   );
 };
