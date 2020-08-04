@@ -31,6 +31,6 @@ describe('Dialog component', () => {
   it('Should render a dialog with title, content and actions', () => {
     const dialog = renderDialog().toJSON();
 
-    expect(dialog).toMatchSnapshot();
+    expect(dialog).toHaveProperty('type', 'fullWidth');
   });
 });
