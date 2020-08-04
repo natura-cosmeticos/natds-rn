@@ -326,12 +326,12 @@ exports[`Tab component Should render tab component without passing any type prop
         Object {
           "alignItems": "center",
           "borderBottomColor": "#F4F4",
-          "borderColor": "transparent",
+          "borderBottomWidth": 2,
           "borderStyle": "solid",
-          "borderWidth": 2,
           "flexBasis": 0,
           "flexGrow": 1,
           "flexShrink": 1,
+          "justifyContent": "center",
           "paddingBottom": 16,
           "paddingLeft": 16,
           "paddingRight": 16,
@@ -651,6 +651,7 @@ exports[`Tab component Should render tab component without passing any type prop
             "color": "#333333",
             "fontFamily": "doc robot",
             "fontSize": 14,
+            "fontWeight": "600",
             "letterSpacing": 1.25,
           },
         ]
@@ -969,12 +970,13 @@ exports[`Tab component Should render tab component without passing any type prop
       Array [
         Object {
           "alignItems": "center",
+          "borderBottomWidth": 2,
           "borderColor": "transparent",
           "borderStyle": "solid",
-          "borderWidth": 2,
           "flexBasis": 0,
           "flexGrow": 1,
           "flexShrink": 1,
+          "justifyContent": "center",
           "paddingBottom": 16,
           "paddingLeft": 16,
           "paddingRight": 16,
@@ -1294,6 +1296,7 @@ exports[`Tab component Should render tab component without passing any type prop
             "color": "#777777",
             "fontFamily": "doc robot",
             "fontSize": 14,
+            "fontWeight": "600",
             "letterSpacing": 1.25,
           },
         ]
@@ -1612,12 +1615,13 @@ exports[`Tab component Should render tab component without passing any type prop
       Array [
         Object {
           "alignItems": "center",
+          "borderBottomWidth": 2,
           "borderColor": "transparent",
           "borderStyle": "solid",
-          "borderWidth": 2,
           "flexBasis": 0,
           "flexGrow": 1,
           "flexShrink": 1,
+          "justifyContent": "center",
           "paddingBottom": 16,
           "paddingLeft": 16,
           "paddingRight": 16,
@@ -1937,6 +1941,7 @@ exports[`Tab component Should render tab component without passing any type prop
             "color": "#777777",
             "fontFamily": "doc robot",
             "fontSize": 14,
+            "fontWeight": "600",
             "letterSpacing": 1.25,
           },
         ]
