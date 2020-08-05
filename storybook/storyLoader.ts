@@ -6,12 +6,14 @@
 function loadStories() {
 	require('../src/components/Button/Button.device');
 	require('../src/components/Dialog/Dialog.device');
+	require('../src/components/ProgressIndicator/ProgressIndicator.device');
 	require('../src/tokens/Tokens.device');
 }
 
 const stories = [
 	'../src/components/Button/Button.device',
 	'../src/components/Dialog/Dialog.device',
+	'../src/components/ProgressIndicator/ProgressIndicator.device',
 	'../src/tokens/Tokens.device'
 ];
 
