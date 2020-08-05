@@ -7,7 +7,6 @@ import {
   getOpacity56,
   getRadiusBySize,
   getSpacingSmall,
-  getFont,
   getSpacingTiny,
 } from '../../common/themeSelectors';
 
@@ -40,9 +39,7 @@ export const DialogContainer = styled.View(({ theme }) => ({
 
 const DialogTitleComponent = styled.Text(({ theme }) => ({
   color: getColorHighEmphasis(theme),
-  fontFamily: getFont(),
   fontSize: 20,
-
   marginBottom: getSpacingTiny(theme),
   marginHorizontal: getSpacingSmall(theme),
 }));
@@ -53,7 +50,6 @@ export const DialogTitle = props => (
 
 export const DialogContentText = styled.Text(({ theme }) => ({
   color: getColorHighEmphasis(theme),
-  fontFamily: getFont(),
   fontSize: 14,
   fontWeight: 400,
 }));

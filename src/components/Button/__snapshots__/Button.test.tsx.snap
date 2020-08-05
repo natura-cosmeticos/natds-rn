@@ -26,7 +26,6 @@ exports[`Button component Should render button component contained 1`] = `
         Object {
           "alignSelf": "center",
           "color": "#F4F4",
-          "fontFamily": "doc robot",
           "fontSize": 14,
           "letterSpacing": 1,
         },
@@ -68,7 +67,6 @@ exports[`Button component Should render button component outlined 1`] = `
         Object {
           "alignSelf": "center",
           "color": "#FAF3E3",
-          "fontFamily": "doc robot",
           "fontSize": 14,
           "letterSpacing": 1,
         },
@@ -108,7 +106,6 @@ exports[`Button component Should render button component text 1`] = `
         Object {
           "alignSelf": "center",
           "color": "#FAF3E3",
-          "fontFamily": "doc robot",
           "fontSize": 14,
           "letterSpacing": 1,
         },
