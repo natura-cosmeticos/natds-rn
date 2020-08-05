@@ -10,6 +10,8 @@ exports[`Tab component Should render tab component without passing any type prop
         "borderStyle": "solid",
         "borderWidth": 0,
         "flexDirection": "row",
+      },
+      Object {
         "shadowColor": "#AEAEAE",
       },
     ]
@@ -93,10 +95,9 @@ exports[`Tab component Should render tab component without passing any type prop
         "colorWarning": "#FCC433",
       },
       "elevation": Object {
-        "0": Object {},
         "1": Object {
-          "elevation": 2,
-          "shadowColor": "rgb(0, 0, 0)",
+          "elevation": 1,
+          "shadowColor": "#000000",
           "shadowOffset": Object {
             "height": 1,
             "width": 0,
@@ -104,39 +105,9 @@ exports[`Tab component Should render tab component without passing any type prop
           "shadowOpacity": 0.14,
           "shadowRadius": 1,
         },
-        "12": Object {
-          "elevation": 2,
-          "shadowColor": "rgb(0, 0, 0)",
-          "shadowOffset": Object {
-            "height": 12,
-            "width": 0,
-          },
-          "shadowOpacity": 0.14,
-          "shadowRadius": 17,
-        },
-        "16": Object {
-          "elevation": 2,
-          "shadowColor": "rgb(0, 0, 0)",
-          "shadowOffset": Object {
-            "height": 16,
-            "width": 0,
-          },
-          "shadowOpacity": 0.14,
-          "shadowRadius": 24,
-        },
-        "2": Object {
-          "elevation": 2,
-          "shadowColor": "rgb(0, 0, 0)",
-          "shadowOffset": Object {
-            "height": 2,
-            "width": 0,
-          },
-          "shadowOpacity": 0.14,
-          "shadowRadius": 2,
-        },
-        "24": Object {
-          "elevation": 2,
-          "shadowColor": "rgb(0, 0, 0)",
+        "10": Object {
+          "elevation": 10,
+          "shadowColor": "#000000",
           "shadowOffset": Object {
             "height": 24,
             "width": 0,
@@ -144,9 +115,19 @@ exports[`Tab component Should render tab component without passing any type prop
           "shadowOpacity": 0.14,
           "shadowRadius": 38,
         },
-        "3": Object {
+        "2": Object {
           "elevation": 2,
-          "shadowColor": "rgb(0, 0, 0)",
+          "shadowColor": "#000000",
+          "shadowOffset": Object {
+            "height": 2,
+            "width": 0,
+          },
+          "shadowOpacity": 0.14,
+          "shadowRadius": 2,
+        },
+        "3": Object {
+          "elevation": 3,
+          "shadowColor": "#000000",
           "shadowOffset": Object {
             "height": 3,
             "width": 0,
@@ -155,8 +136,8 @@ exports[`Tab component Should render tab component without passing any type prop
           "shadowRadius": 4,
         },
         "4": Object {
-          "elevation": 2,
-          "shadowColor": "rgb(0, 0, 0)",
+          "elevation": 4,
+          "shadowColor": "#000000",
           "shadowOffset": Object {
             "height": 4,
             "width": 0,
@@ -164,9 +145,9 @@ exports[`Tab component Should render tab component without passing any type prop
           "shadowOpacity": 0.14,
           "shadowRadius": 5,
         },
-        "6": Object {
-          "elevation": 2,
-          "shadowColor": "rgb(0, 0, 0)",
+        "5": Object {
+          "elevation": 5,
+          "shadowColor": "#000000",
           "shadowOffset": Object {
             "height": 6,
             "width": 0,
@@ -174,9 +155,9 @@ exports[`Tab component Should render tab component without passing any type prop
           "shadowOpacity": 0.14,
           "shadowRadius": 10,
         },
-        "8": Object {
-          "elevation": 2,
-          "shadowColor": "rgb(0, 0, 0)",
+        "6": Object {
+          "elevation": 6,
+          "shadowColor": "#000000",
           "shadowOffset": Object {
             "height": 8,
             "width": 0,
@@ -184,15 +165,35 @@ exports[`Tab component Should render tab component without passing any type prop
           "shadowOpacity": 0.14,
           "shadowRadius": 10,
         },
-        "9": Object {
-          "elevation": 2,
-          "shadowColor": "rgb(0, 0, 0)",
+        "7": Object {
+          "elevation": 7,
+          "shadowColor": "#000000",
           "shadowOffset": Object {
             "height": 9,
             "width": 0,
           },
           "shadowOpacity": 0.14,
           "shadowRadius": 12,
+        },
+        "8": Object {
+          "elevation": 8,
+          "shadowColor": "#000000",
+          "shadowOffset": Object {
+            "height": 12,
+            "width": 0,
+          },
+          "shadowOpacity": 0.14,
+          "shadowRadius": 17,
+        },
+        "9": Object {
+          "elevation": 9,
+          "shadowColor": "#000000",
+          "shadowOffset": Object {
+            "height": 16,
+            "width": 0,
+          },
+          "shadowOpacity": 0.14,
+          "shadowRadius": 24,
         },
       },
       "fontSize": Object {
@@ -417,10 +418,9 @@ exports[`Tab component Should render tab component without passing any type prop
           "colorWarning": "#FCC433",
         },
         "elevation": Object {
-          "0": Object {},
           "1": Object {
-            "elevation": 2,
-            "shadowColor": "rgb(0, 0, 0)",
+            "elevation": 1,
+            "shadowColor": "#000000",
             "shadowOffset": Object {
               "height": 1,
               "width": 0,
@@ -428,39 +428,9 @@ exports[`Tab component Should render tab component without passing any type prop
             "shadowOpacity": 0.14,
             "shadowRadius": 1,
           },
-          "12": Object {
-            "elevation": 2,
-            "shadowColor": "rgb(0, 0, 0)",
-            "shadowOffset": Object {
-              "height": 12,
-              "width": 0,
-            },
-            "shadowOpacity": 0.14,
-            "shadowRadius": 17,
-          },
-          "16": Object {
-            "elevation": 2,
-            "shadowColor": "rgb(0, 0, 0)",
-            "shadowOffset": Object {
-              "height": 16,
-              "width": 0,
-            },
-            "shadowOpacity": 0.14,
-            "shadowRadius": 24,
-          },
-          "2": Object {
-            "elevation": 2,
-            "shadowColor": "rgb(0, 0, 0)",
-            "shadowOffset": Object {
-              "height": 2,
-              "width": 0,
-            },
-            "shadowOpacity": 0.14,
-            "shadowRadius": 2,
-          },
-          "24": Object {
-            "elevation": 2,
-            "shadowColor": "rgb(0, 0, 0)",
+          "10": Object {
+            "elevation": 10,
+            "shadowColor": "#000000",
             "shadowOffset": Object {
               "height": 24,
               "width": 0,
@@ -468,9 +438,19 @@ exports[`Tab component Should render tab component without passing any type prop
             "shadowOpacity": 0.14,
             "shadowRadius": 38,
           },
-          "3": Object {
+          "2": Object {
             "elevation": 2,
-            "shadowColor": "rgb(0, 0, 0)",
+            "shadowColor": "#000000",
+            "shadowOffset": Object {
+              "height": 2,
+              "width": 0,
+            },
+            "shadowOpacity": 0.14,
+            "shadowRadius": 2,
+          },
+          "3": Object {
+            "elevation": 3,
+            "shadowColor": "#000000",
             "shadowOffset": Object {
               "height": 3,
               "width": 0,
@@ -479,8 +459,8 @@ exports[`Tab component Should render tab component without passing any type prop
             "shadowRadius": 4,
           },
           "4": Object {
-            "elevation": 2,
-            "shadowColor": "rgb(0, 0, 0)",
+            "elevation": 4,
+            "shadowColor": "#000000",
             "shadowOffset": Object {
               "height": 4,
               "width": 0,
@@ -488,9 +468,9 @@ exports[`Tab component Should render tab component without passing any type prop
             "shadowOpacity": 0.14,
             "shadowRadius": 5,
           },
-          "6": Object {
-            "elevation": 2,
-            "shadowColor": "rgb(0, 0, 0)",
+          "5": Object {
+            "elevation": 5,
+            "shadowColor": "#000000",
             "shadowOffset": Object {
               "height": 6,
               "width": 0,
@@ -498,9 +478,9 @@ exports[`Tab component Should render tab component without passing any type prop
             "shadowOpacity": 0.14,
             "shadowRadius": 10,
           },
-          "8": Object {
-            "elevation": 2,
-            "shadowColor": "rgb(0, 0, 0)",
+          "6": Object {
+            "elevation": 6,
+            "shadowColor": "#000000",
             "shadowOffset": Object {
               "height": 8,
               "width": 0,
@@ -508,15 +488,35 @@ exports[`Tab component Should render tab component without passing any type prop
             "shadowOpacity": 0.14,
             "shadowRadius": 10,
           },
-          "9": Object {
-            "elevation": 2,
-            "shadowColor": "rgb(0, 0, 0)",
+          "7": Object {
+            "elevation": 7,
+            "shadowColor": "#000000",
             "shadowOffset": Object {
               "height": 9,
               "width": 0,
             },
             "shadowOpacity": 0.14,
             "shadowRadius": 12,
+          },
+          "8": Object {
+            "elevation": 8,
+            "shadowColor": "#000000",
+            "shadowOffset": Object {
+              "height": 12,
+              "width": 0,
+            },
+            "shadowOpacity": 0.14,
+            "shadowRadius": 17,
+          },
+          "9": Object {
+            "elevation": 9,
+            "shadowColor": "#000000",
+            "shadowOffset": Object {
+              "height": 16,
+              "width": 0,
+            },
+            "shadowOpacity": 0.14,
+            "shadowRadius": 24,
           },
         },
         "fontSize": Object {
@@ -734,10 +734,9 @@ exports[`Tab component Should render tab component without passing any type prop
             "colorWarning": "#FCC433",
           },
           "elevation": Object {
-            "0": Object {},
             "1": Object {
-              "elevation": 2,
-              "shadowColor": "rgb(0, 0, 0)",
+              "elevation": 1,
+              "shadowColor": "#000000",
               "shadowOffset": Object {
                 "height": 1,
                 "width": 0,
@@ -745,39 +744,9 @@ exports[`Tab component Should render tab component without passing any type prop
               "shadowOpacity": 0.14,
               "shadowRadius": 1,
             },
-            "12": Object {
-              "elevation": 2,
-              "shadowColor": "rgb(0, 0, 0)",
-              "shadowOffset": Object {
-                "height": 12,
-                "width": 0,
-              },
-              "shadowOpacity": 0.14,
-              "shadowRadius": 17,
-            },
-            "16": Object {
-              "elevation": 2,
-              "shadowColor": "rgb(0, 0, 0)",
-              "shadowOffset": Object {
-                "height": 16,
-                "width": 0,
-              },
-              "shadowOpacity": 0.14,
-              "shadowRadius": 24,
-            },
-            "2": Object {
-              "elevation": 2,
-              "shadowColor": "rgb(0, 0, 0)",
-              "shadowOffset": Object {
-                "height": 2,
-                "width": 0,
-              },
-              "shadowOpacity": 0.14,
-              "shadowRadius": 2,
-            },
-            "24": Object {
-              "elevation": 2,
-              "shadowColor": "rgb(0, 0, 0)",
+            "10": Object {
+              "elevation": 10,
+              "shadowColor": "#000000",
               "shadowOffset": Object {
                 "height": 24,
                 "width": 0,
@@ -785,9 +754,19 @@ exports[`Tab component Should render tab component without passing any type prop
               "shadowOpacity": 0.14,
               "shadowRadius": 38,
             },
-            "3": Object {
+            "2": Object {
               "elevation": 2,
-              "shadowColor": "rgb(0, 0, 0)",
+              "shadowColor": "#000000",
+              "shadowOffset": Object {
+                "height": 2,
+                "width": 0,
+              },
+              "shadowOpacity": 0.14,
+              "shadowRadius": 2,
+            },
+            "3": Object {
+              "elevation": 3,
+              "shadowColor": "#000000",
               "shadowOffset": Object {
                 "height": 3,
                 "width": 0,
@@ -796,8 +775,8 @@ exports[`Tab component Should render tab component without passing any type prop
               "shadowRadius": 4,
             },
             "4": Object {
-              "elevation": 2,
-              "shadowColor": "rgb(0, 0, 0)",
+              "elevation": 4,
+              "shadowColor": "#000000",
               "shadowOffset": Object {
                 "height": 4,
                 "width": 0,
@@ -805,9 +784,9 @@ exports[`Tab component Should render tab component without passing any type prop
               "shadowOpacity": 0.14,
               "shadowRadius": 5,
             },
-            "6": Object {
-              "elevation": 2,
-              "shadowColor": "rgb(0, 0, 0)",
+            "5": Object {
+              "elevation": 5,
+              "shadowColor": "#000000",
               "shadowOffset": Object {
                 "height": 6,
                 "width": 0,
@@ -815,9 +794,9 @@ exports[`Tab component Should render tab component without passing any type prop
               "shadowOpacity": 0.14,
               "shadowRadius": 10,
             },
-            "8": Object {
-              "elevation": 2,
-              "shadowColor": "rgb(0, 0, 0)",
+            "6": Object {
+              "elevation": 6,
+              "shadowColor": "#000000",
               "shadowOffset": Object {
                 "height": 8,
                 "width": 0,
@@ -825,15 +804,35 @@ exports[`Tab component Should render tab component without passing any type prop
               "shadowOpacity": 0.14,
               "shadowRadius": 10,
             },
-            "9": Object {
-              "elevation": 2,
-              "shadowColor": "rgb(0, 0, 0)",
+            "7": Object {
+              "elevation": 7,
+              "shadowColor": "#000000",
               "shadowOffset": Object {
                 "height": 9,
                 "width": 0,
               },
               "shadowOpacity": 0.14,
               "shadowRadius": 12,
+            },
+            "8": Object {
+              "elevation": 8,
+              "shadowColor": "#000000",
+              "shadowOffset": Object {
+                "height": 12,
+                "width": 0,
+              },
+              "shadowOpacity": 0.14,
+              "shadowRadius": 17,
+            },
+            "9": Object {
+              "elevation": 9,
+              "shadowColor": "#000000",
+              "shadowOffset": Object {
+                "height": 16,
+                "width": 0,
+              },
+              "shadowOpacity": 0.14,
+              "shadowRadius": 24,
             },
           },
           "fontSize": Object {
@@ -1062,10 +1061,9 @@ exports[`Tab component Should render tab component without passing any type prop
           "colorWarning": "#FCC433",
         },
         "elevation": Object {
-          "0": Object {},
           "1": Object {
-            "elevation": 2,
-            "shadowColor": "rgb(0, 0, 0)",
+            "elevation": 1,
+            "shadowColor": "#000000",
             "shadowOffset": Object {
               "height": 1,
               "width": 0,
@@ -1073,39 +1071,9 @@ exports[`Tab component Should render tab component without passing any type prop
             "shadowOpacity": 0.14,
             "shadowRadius": 1,
           },
-          "12": Object {
-            "elevation": 2,
-            "shadowColor": "rgb(0, 0, 0)",
-            "shadowOffset": Object {
-              "height": 12,
-              "width": 0,
-            },
-            "shadowOpacity": 0.14,
-            "shadowRadius": 17,
-          },
-          "16": Object {
-            "elevation": 2,
-            "shadowColor": "rgb(0, 0, 0)",
-            "shadowOffset": Object {
-              "height": 16,
-              "width": 0,
-            },
-            "shadowOpacity": 0.14,
-            "shadowRadius": 24,
-          },
-          "2": Object {
-            "elevation": 2,
-            "shadowColor": "rgb(0, 0, 0)",
-            "shadowOffset": Object {
-              "height": 2,
-              "width": 0,
-            },
-            "shadowOpacity": 0.14,
-            "shadowRadius": 2,
-          },
-          "24": Object {
-            "elevation": 2,
-            "shadowColor": "rgb(0, 0, 0)",
+          "10": Object {
+            "elevation": 10,
+            "shadowColor": "#000000",
             "shadowOffset": Object {
               "height": 24,
               "width": 0,
@@ -1113,9 +1081,19 @@ exports[`Tab component Should render tab component without passing any type prop
             "shadowOpacity": 0.14,
             "shadowRadius": 38,
           },
-          "3": Object {
+          "2": Object {
             "elevation": 2,
-            "shadowColor": "rgb(0, 0, 0)",
+            "shadowColor": "#000000",
+            "shadowOffset": Object {
+              "height": 2,
+              "width": 0,
+            },
+            "shadowOpacity": 0.14,
+            "shadowRadius": 2,
+          },
+          "3": Object {
+            "elevation": 3,
+            "shadowColor": "#000000",
             "shadowOffset": Object {
               "height": 3,
               "width": 0,
@@ -1124,8 +1102,8 @@ exports[`Tab component Should render tab component without passing any type prop
             "shadowRadius": 4,
           },
           "4": Object {
-            "elevation": 2,
-            "shadowColor": "rgb(0, 0, 0)",
+            "elevation": 4,
+            "shadowColor": "#000000",
             "shadowOffset": Object {
               "height": 4,
               "width": 0,
@@ -1133,9 +1111,9 @@ exports[`Tab component Should render tab component without passing any type prop
             "shadowOpacity": 0.14,
             "shadowRadius": 5,
           },
-          "6": Object {
-            "elevation": 2,
-            "shadowColor": "rgb(0, 0, 0)",
+          "5": Object {
+            "elevation": 5,
+            "shadowColor": "#000000",
             "shadowOffset": Object {
               "height": 6,
               "width": 0,
@@ -1143,9 +1121,9 @@ exports[`Tab component Should render tab component without passing any type prop
             "shadowOpacity": 0.14,
             "shadowRadius": 10,
           },
-          "8": Object {
-            "elevation": 2,
-            "shadowColor": "rgb(0, 0, 0)",
+          "6": Object {
+            "elevation": 6,
+            "shadowColor": "#000000",
             "shadowOffset": Object {
               "height": 8,
               "width": 0,
@@ -1153,15 +1131,35 @@ exports[`Tab component Should render tab component without passing any type prop
             "shadowOpacity": 0.14,
             "shadowRadius": 10,
           },
-          "9": Object {
-            "elevation": 2,
-            "shadowColor": "rgb(0, 0, 0)",
+          "7": Object {
+            "elevation": 7,
+            "shadowColor": "#000000",
             "shadowOffset": Object {
               "height": 9,
               "width": 0,
             },
             "shadowOpacity": 0.14,
             "shadowRadius": 12,
+          },
+          "8": Object {
+            "elevation": 8,
+            "shadowColor": "#000000",
+            "shadowOffset": Object {
+              "height": 12,
+              "width": 0,
+            },
+            "shadowOpacity": 0.14,
+            "shadowRadius": 17,
+          },
+          "9": Object {
+            "elevation": 9,
+            "shadowColor": "#000000",
+            "shadowOffset": Object {
+              "height": 16,
+              "width": 0,
+            },
+            "shadowOpacity": 0.14,
+            "shadowRadius": 24,
           },
         },
         "fontSize": Object {
@@ -1379,10 +1377,9 @@ exports[`Tab component Should render tab component without passing any type prop
             "colorWarning": "#FCC433",
           },
           "elevation": Object {
-            "0": Object {},
             "1": Object {
-              "elevation": 2,
-              "shadowColor": "rgb(0, 0, 0)",
+              "elevation": 1,
+              "shadowColor": "#000000",
               "shadowOffset": Object {
                 "height": 1,
                 "width": 0,
@@ -1390,39 +1387,9 @@ exports[`Tab component Should render tab component without passing any type prop
               "shadowOpacity": 0.14,
               "shadowRadius": 1,
             },
-            "12": Object {
-              "elevation": 2,
-              "shadowColor": "rgb(0, 0, 0)",
-              "shadowOffset": Object {
-                "height": 12,
-                "width": 0,
-              },
-              "shadowOpacity": 0.14,
-              "shadowRadius": 17,
-            },
-            "16": Object {
-              "elevation": 2,
-              "shadowColor": "rgb(0, 0, 0)",
-              "shadowOffset": Object {
-                "height": 16,
-                "width": 0,
-              },
-              "shadowOpacity": 0.14,
-              "shadowRadius": 24,
-            },
-            "2": Object {
-              "elevation": 2,
-              "shadowColor": "rgb(0, 0, 0)",
-              "shadowOffset": Object {
-                "height": 2,
-                "width": 0,
-              },
-              "shadowOpacity": 0.14,
-              "shadowRadius": 2,
-            },
-            "24": Object {
-              "elevation": 2,
-              "shadowColor": "rgb(0, 0, 0)",
+            "10": Object {
+              "elevation": 10,
+              "shadowColor": "#000000",
               "shadowOffset": Object {
                 "height": 24,
                 "width": 0,
@@ -1430,9 +1397,19 @@ exports[`Tab component Should render tab component without passing any type prop
               "shadowOpacity": 0.14,
               "shadowRadius": 38,
             },
-            "3": Object {
+            "2": Object {
               "elevation": 2,
-              "shadowColor": "rgb(0, 0, 0)",
+              "shadowColor": "#000000",
+              "shadowOffset": Object {
+                "height": 2,
+                "width": 0,
+              },
+              "shadowOpacity": 0.14,
+              "shadowRadius": 2,
+            },
+            "3": Object {
+              "elevation": 3,
+              "shadowColor": "#000000",
               "shadowOffset": Object {
                 "height": 3,
                 "width": 0,
@@ -1441,8 +1418,8 @@ exports[`Tab component Should render tab component without passing any type prop
               "shadowRadius": 4,
             },
             "4": Object {
-              "elevation": 2,
-              "shadowColor": "rgb(0, 0, 0)",
+              "elevation": 4,
+              "shadowColor": "#000000",
               "shadowOffset": Object {
                 "height": 4,
                 "width": 0,
@@ -1450,9 +1427,9 @@ exports[`Tab component Should render tab component without passing any type prop
               "shadowOpacity": 0.14,
               "shadowRadius": 5,
             },
-            "6": Object {
-              "elevation": 2,
-              "shadowColor": "rgb(0, 0, 0)",
+            "5": Object {
+              "elevation": 5,
+              "shadowColor": "#000000",
               "shadowOffset": Object {
                 "height": 6,
                 "width": 0,
@@ -1460,9 +1437,9 @@ exports[`Tab component Should render tab component without passing any type prop
               "shadowOpacity": 0.14,
               "shadowRadius": 10,
             },
-            "8": Object {
-              "elevation": 2,
-              "shadowColor": "rgb(0, 0, 0)",
+            "6": Object {
+              "elevation": 6,
+              "shadowColor": "#000000",
               "shadowOffset": Object {
                 "height": 8,
                 "width": 0,
@@ -1470,15 +1447,35 @@ exports[`Tab component Should render tab component without passing any type prop
               "shadowOpacity": 0.14,
               "shadowRadius": 10,
             },
-            "9": Object {
-              "elevation": 2,
-              "shadowColor": "rgb(0, 0, 0)",
+            "7": Object {
+              "elevation": 7,
+              "shadowColor": "#000000",
               "shadowOffset": Object {
                 "height": 9,
                 "width": 0,
               },
               "shadowOpacity": 0.14,
               "shadowRadius": 12,
+            },
+            "8": Object {
+              "elevation": 8,
+              "shadowColor": "#000000",
+              "shadowOffset": Object {
+                "height": 12,
+                "width": 0,
+              },
+              "shadowOpacity": 0.14,
+              "shadowRadius": 17,
+            },
+            "9": Object {
+              "elevation": 9,
+              "shadowColor": "#000000",
+              "shadowOffset": Object {
+                "height": 16,
+                "width": 0,
+              },
+              "shadowOpacity": 0.14,
+              "shadowRadius": 24,
             },
           },
           "fontSize": Object {
@@ -1707,10 +1704,9 @@ exports[`Tab component Should render tab component without passing any type prop
           "colorWarning": "#FCC433",
         },
         "elevation": Object {
-          "0": Object {},
           "1": Object {
-            "elevation": 2,
-            "shadowColor": "rgb(0, 0, 0)",
+            "elevation": 1,
+            "shadowColor": "#000000",
             "shadowOffset": Object {
               "height": 1,
               "width": 0,
@@ -1718,39 +1714,9 @@ exports[`Tab component Should render tab component without passing any type prop
             "shadowOpacity": 0.14,
             "shadowRadius": 1,
           },
-          "12": Object {
-            "elevation": 2,
-            "shadowColor": "rgb(0, 0, 0)",
-            "shadowOffset": Object {
-              "height": 12,
-              "width": 0,
-            },
-            "shadowOpacity": 0.14,
-            "shadowRadius": 17,
-          },
-          "16": Object {
-            "elevation": 2,
-            "shadowColor": "rgb(0, 0, 0)",
-            "shadowOffset": Object {
-              "height": 16,
-              "width": 0,
-            },
-            "shadowOpacity": 0.14,
-            "shadowRadius": 24,
-          },
-          "2": Object {
-            "elevation": 2,
-            "shadowColor": "rgb(0, 0, 0)",
-            "shadowOffset": Object {
-              "height": 2,
-              "width": 0,
-            },
-            "shadowOpacity": 0.14,
-            "shadowRadius": 2,
-          },
-          "24": Object {
-            "elevation": 2,
-            "shadowColor": "rgb(0, 0, 0)",
+          "10": Object {
+            "elevation": 10,
+            "shadowColor": "#000000",
             "shadowOffset": Object {
               "height": 24,
               "width": 0,
@@ -1758,9 +1724,19 @@ exports[`Tab component Should render tab component without passing any type prop
             "shadowOpacity": 0.14,
             "shadowRadius": 38,
           },
-          "3": Object {
+          "2": Object {
             "elevation": 2,
-            "shadowColor": "rgb(0, 0, 0)",
+            "shadowColor": "#000000",
+            "shadowOffset": Object {
+              "height": 2,
+              "width": 0,
+            },
+            "shadowOpacity": 0.14,
+            "shadowRadius": 2,
+          },
+          "3": Object {
+            "elevation": 3,
+            "shadowColor": "#000000",
             "shadowOffset": Object {
               "height": 3,
               "width": 0,
@@ -1769,8 +1745,8 @@ exports[`Tab component Should render tab component without passing any type prop
             "shadowRadius": 4,
           },
           "4": Object {
-            "elevation": 2,
-            "shadowColor": "rgb(0, 0, 0)",
+            "elevation": 4,
+            "shadowColor": "#000000",
             "shadowOffset": Object {
               "height": 4,
               "width": 0,
@@ -1778,9 +1754,9 @@ exports[`Tab component Should render tab component without passing any type prop
             "shadowOpacity": 0.14,
             "shadowRadius": 5,
           },
-          "6": Object {
-            "elevation": 2,
-            "shadowColor": "rgb(0, 0, 0)",
+          "5": Object {
+            "elevation": 5,
+            "shadowColor": "#000000",
             "shadowOffset": Object {
               "height": 6,
               "width": 0,
@@ -1788,9 +1764,9 @@ exports[`Tab component Should render tab component without passing any type prop
             "shadowOpacity": 0.14,
             "shadowRadius": 10,
           },
-          "8": Object {
-            "elevation": 2,
-            "shadowColor": "rgb(0, 0, 0)",
+          "6": Object {
+            "elevation": 6,
+            "shadowColor": "#000000",
             "shadowOffset": Object {
               "height": 8,
               "width": 0,
@@ -1798,15 +1774,35 @@ exports[`Tab component Should render tab component without passing any type prop
             "shadowOpacity": 0.14,
             "shadowRadius": 10,
           },
-          "9": Object {
-            "elevation": 2,
-            "shadowColor": "rgb(0, 0, 0)",
+          "7": Object {
+            "elevation": 7,
+            "shadowColor": "#000000",
             "shadowOffset": Object {
               "height": 9,
               "width": 0,
             },
             "shadowOpacity": 0.14,
             "shadowRadius": 12,
+          },
+          "8": Object {
+            "elevation": 8,
+            "shadowColor": "#000000",
+            "shadowOffset": Object {
+              "height": 12,
+              "width": 0,
+            },
+            "shadowOpacity": 0.14,
+            "shadowRadius": 17,
+          },
+          "9": Object {
+            "elevation": 9,
+            "shadowColor": "#000000",
+            "shadowOffset": Object {
+              "height": 16,
+              "width": 0,
+            },
+            "shadowOpacity": 0.14,
+            "shadowRadius": 24,
           },
         },
         "fontSize": Object {
@@ -2024,10 +2020,9 @@ exports[`Tab component Should render tab component without passing any type prop
             "colorWarning": "#FCC433",
           },
           "elevation": Object {
-            "0": Object {},
             "1": Object {
-              "elevation": 2,
-              "shadowColor": "rgb(0, 0, 0)",
+              "elevation": 1,
+              "shadowColor": "#000000",
               "shadowOffset": Object {
                 "height": 1,
                 "width": 0,
@@ -2035,39 +2030,9 @@ exports[`Tab component Should render tab component without passing any type prop
               "shadowOpacity": 0.14,
               "shadowRadius": 1,
             },
-            "12": Object {
-              "elevation": 2,
-              "shadowColor": "rgb(0, 0, 0)",
-              "shadowOffset": Object {
-                "height": 12,
-                "width": 0,
-              },
-              "shadowOpacity": 0.14,
-              "shadowRadius": 17,
-            },
-            "16": Object {
-              "elevation": 2,
-              "shadowColor": "rgb(0, 0, 0)",
-              "shadowOffset": Object {
-                "height": 16,
-                "width": 0,
-              },
-              "shadowOpacity": 0.14,
-              "shadowRadius": 24,
-            },
-            "2": Object {
-              "elevation": 2,
-              "shadowColor": "rgb(0, 0, 0)",
-              "shadowOffset": Object {
-                "height": 2,
-                "width": 0,
-              },
-              "shadowOpacity": 0.14,
-              "shadowRadius": 2,
-            },
-            "24": Object {
-              "elevation": 2,
-              "shadowColor": "rgb(0, 0, 0)",
+            "10": Object {
+              "elevation": 10,
+              "shadowColor": "#000000",
               "shadowOffset": Object {
                 "height": 24,
                 "width": 0,
@@ -2075,9 +2040,19 @@ exports[`Tab component Should render tab component without passing any type prop
               "shadowOpacity": 0.14,
               "shadowRadius": 38,
             },
-            "3": Object {
+            "2": Object {
               "elevation": 2,
-              "shadowColor": "rgb(0, 0, 0)",
+              "shadowColor": "#000000",
+              "shadowOffset": Object {
+                "height": 2,
+                "width": 0,
+              },
+              "shadowOpacity": 0.14,
+              "shadowRadius": 2,
+            },
+            "3": Object {
+              "elevation": 3,
+              "shadowColor": "#000000",
               "shadowOffset": Object {
                 "height": 3,
                 "width": 0,
@@ -2086,8 +2061,8 @@ exports[`Tab component Should render tab component without passing any type prop
               "shadowRadius": 4,
             },
             "4": Object {
-              "elevation": 2,
-              "shadowColor": "rgb(0, 0, 0)",
+              "elevation": 4,
+              "shadowColor": "#000000",
               "shadowOffset": Object {
                 "height": 4,
                 "width": 0,
@@ -2095,9 +2070,9 @@ exports[`Tab component Should render tab component without passing any type prop
               "shadowOpacity": 0.14,
               "shadowRadius": 5,
             },
-            "6": Object {
-              "elevation": 2,
-              "shadowColor": "rgb(0, 0, 0)",
+            "5": Object {
+              "elevation": 5,
+              "shadowColor": "#000000",
               "shadowOffset": Object {
                 "height": 6,
                 "width": 0,
@@ -2105,9 +2080,9 @@ exports[`Tab component Should render tab component without passing any type prop
               "shadowOpacity": 0.14,
               "shadowRadius": 10,
             },
-            "8": Object {
-              "elevation": 2,
-              "shadowColor": "rgb(0, 0, 0)",
+            "6": Object {
+              "elevation": 6,
+              "shadowColor": "#000000",
               "shadowOffset": Object {
                 "height": 8,
                 "width": 0,
@@ -2115,15 +2090,35 @@ exports[`Tab component Should render tab component without passing any type prop
               "shadowOpacity": 0.14,
               "shadowRadius": 10,
             },
-            "9": Object {
-              "elevation": 2,
-              "shadowColor": "rgb(0, 0, 0)",
+            "7": Object {
+              "elevation": 7,
+              "shadowColor": "#000000",
               "shadowOffset": Object {
                 "height": 9,
                 "width": 0,
               },
               "shadowOpacity": 0.14,
               "shadowRadius": 12,
+            },
+            "8": Object {
+              "elevation": 8,
+              "shadowColor": "#000000",
+              "shadowOffset": Object {
+                "height": 12,
+                "width": 0,
+              },
+              "shadowOpacity": 0.14,
+              "shadowRadius": 17,
+            },
+            "9": Object {
+              "elevation": 9,
+              "shadowColor": "#000000",
+              "shadowOffset": Object {
+                "height": 16,
+                "width": 0,
+              },
+              "shadowOpacity": 0.14,
+              "shadowRadius": 24,
             },
           },
           "fontSize": Object {

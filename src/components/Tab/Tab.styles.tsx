@@ -1,3 +1,4 @@
+import React, { ReactNode } from 'react';
 import styled from 'styled-components/native';
 import {
   getColorMediumEmphasis,
@@ -18,7 +19,9 @@ interface TabBase {
 }
 
 interface TabWrapperProp {
-  theme: Theme
+  theme: Theme,
+  children: ReactNode,
+  testID?: string;
 }
 
 const getTabButtonStyles = (theme: Theme, type: TabButtonTypes) => {
@@ -47,12 +50,15 @@ const getTabTextStyles = (theme: Theme, type: TabButtonTypes) => {
   return styles[type];
 };
 
-export const TabWrapper = styled.View<TabWrapperProp>(({ theme }) => ({
+const TabWrapperComponent = styled.View<TabWrapperProp>(({ theme }) => ({
   backgroundColor: getColorSurface(theme),
   border: 'none',
   flexDirection: 'row',
-  ...getShadowBySize(theme, '1'),
 }));
+
+export const TabWrapper = (props: TabWrapperProp) => <TabWrapperComponent {...props} style={getShadowBySize(props.theme, '1')}>
+  {props.children}
+</TabWrapperComponent>;
 
 export const TabButton = styled.TouchableOpacity<TabBase>(({ type, theme }) => ({
   alignItems: 'center',
