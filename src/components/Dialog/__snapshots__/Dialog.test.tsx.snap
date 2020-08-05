@@ -59,7 +59,6 @@ exports[`Dialog component Should render a dialog with title, content and actions
           Array [
             Object {
               "color": "#333333",
-              "fontFamily": "System",
               "fontSize": 20,
               "marginBottom": 8,
               "marginHorizontal": 16,
@@ -86,7 +85,6 @@ exports[`Dialog component Should render a dialog with title, content and actions
             Array [
               Object {
                 "color": "#333333",
-                "fontFamily": "System",
                 "fontSize": 14,
                 "fontWeight": "400",
               },

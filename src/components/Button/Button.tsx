@@ -6,7 +6,6 @@ import {
   getColorOnPrimary,
   getColorHighEmphasis,
   getButtonPropsBySize,
-  getFont,
   getRadiusBySize,
   getShadowBySize,
   Theme,
@@ -88,7 +87,6 @@ const Text = styled.Text<ButonBase>`
   font-size: 14px;
   align-self: center;
   letter-spacing: 1px;
-  font-family: ${getFont()};
 `;
 
 const getShadowByType = (type: ButtonTypes, theme: Theme) => (
