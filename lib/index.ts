@@ -15,7 +15,6 @@ export { NatImage } from './components/NatImage';
 export { NatLink } from './components/NatLink';
 export { NatList } from './components/NatList';
 export { NatListItem } from './components/NatListItem';
-export { NatLoading } from './components/NatLoading';
 export { NatLogo } from './components/NatLogo';
 export { NatMenuItem } from './components/NatMenuItem';
 export { NatModalSelect } from './components/NatModalSelect';

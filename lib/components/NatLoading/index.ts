@@ -1,1 +1,0 @@
-export { NatLoading } from './NatLoading';
