@@ -4,7 +4,6 @@ import { storiesOf } from '@storybook/react-native';
 import {
   Login, Card, Form, FriendExchange,
 } from './ScreenSamples';
-import { StoryDivider } from './StoryDivider';
 import { StoryNatAppBar } from './StoryNatAppBar';
 import { StoryNatAppBarSearch } from './StoryNatAppBarSearch';
 import { StoryNatCard } from './StoryNatCard';
@@ -22,7 +21,6 @@ import { StoryTokenTypography } from './StoryTokenTypography';
 import { Welcome } from './Welcome';
 import iconArrowLeft from '../../lib/assets/icons/ic_arrow_left_white.png';
 import { StoryIcon } from './StoryIcon';
-import { StoryTabBar } from './StoryTabBar';
 import { StoryFAB } from './StoryFAB';
 import { StoryAvatar } from './StoryAvatar';
 
@@ -33,8 +31,6 @@ storiesOf('Welcome', module).add('NATDS', () => <Welcome />);
 storiesOf('Tokens', module)
   .add('Typography', () => <StoryTokenTypography />)
   .add('Space', () => <StoryTokenSpace />);
-storiesOf('Divider', module)
-  .add('All', () => <StoryDivider />);
 storiesOf('Images', module)
   .add('Icons', () => <StoryNatIcon />)
   .add('Logo', () => <StoryNatLogo />);
@@ -76,8 +72,6 @@ storiesOf('NatAppBar', module)
   .add('Search', () => <StoryNatAppBarSearch />);
 storiesOf('NatCard', module)
   .add('Default', () => <StoryNatCard />);
-storiesOf('TabBar', module)
-  .add('All', () => <StoryTabBar />);
 storiesOf('FAB', module)
   .add('All', () => <StoryFAB />);
 storiesOf('Avatar', module)

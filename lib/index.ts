@@ -1,7 +1,6 @@
 import * as Tokens from './tokens';
 import { ThemeNaturaLight } from './themes/ThemeNaturaLight';
 
-export { Divider } from './components/Divider';
 export { NatAppBar } from './components/NatAppBar';
 export { NatAppBarSearch } from './components/NatAppBarSearch';
 export { NatCard } from './components/NatCard';
@@ -27,6 +26,5 @@ export { NatTextInput } from './components/NatTextInput';
 export { Icon } from './components/Icon';
 export { Tokens };
 export { ThemeNaturaLight };
-export { TabBar } from './components/TabBar';
 export { FAB } from './components/FAB';
 export { Avatar } from './components/Avatar';

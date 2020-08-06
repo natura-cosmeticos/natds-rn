@@ -1,0 +1,80 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Divider component Should render divider component fullBleed 1`] = `
+<View>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#BBBBBB",
+          "height": 1,
+          "marginBottom": 0,
+          "marginLeft": 0,
+          "marginRight": 0,
+          "marginTop": 0,
+          "width": "100%",
+        },
+      ]
+    }
+    testID="divider"
+    type="fullBleed"
+  />
+</View>
+`;
+
+exports[`Divider component Should render divider component inset 1`] = `
+<View
+  style={
+    Object {
+      "marginLeft": 24,
+    }
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#BBBBBB",
+          "height": 1,
+          "marginBottom": 0,
+          "marginLeft": 0,
+          "marginRight": 0,
+          "marginTop": 0,
+          "width": "100%",
+        },
+      ]
+    }
+    testID="divider"
+    type="inset"
+  />
+</View>
+`;
+
+exports[`Divider component Should render divider component middle 1`] = `
+<View
+  style={
+    Object {
+      "marginLeft": 24,
+      "marginRight": 24,
+    }
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#BBBBBB",
+          "height": 1,
+          "marginBottom": 0,
+          "marginLeft": 0,
+          "marginRight": 0,
+          "marginTop": 0,
+          "width": "100%",
+        },
+      ]
+    }
+    testID="divider"
+    type="middle"
+  />
+</View>
+`;

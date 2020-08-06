@@ -196,104 +196,73 @@
     "colorOnAlert": "#FFFFFF"
   },
   "elevation": {
-    "0": {},
     "1": {
-      "elevation": 2,
-      "shadowColor": "rgb(0, 0, 0)",
-      "shadowOffset": {
-        "height": 1,
-        "width": 0
-      },
+      "elevation": 1,
+      "shadowColor": "#000000",
+      "shadowOffset": { "height": 1, "width": 0 },
       "shadowOpacity": 0.14,
       "shadowRadius": 1
     },
     "2": {
       "elevation": 2,
-      "shadowColor": "rgb(0, 0, 0)",
-      "shadowOffset": {
-        "height": 2,
-        "width": 0
-      },
+      "shadowColor": "#000000",
+      "shadowOffset": { "height": 2, "width": 0 },
       "shadowOpacity": 0.14,
       "shadowRadius": 2
     },
     "3": {
-      "elevation": 2,
-      "shadowColor": "rgb(0, 0, 0)",
-      "shadowOffset": {
-        "height": 3,
-        "width": 0
-      },
+      "elevation": 3,
+      "shadowColor": "#000000",
+      "shadowOffset": { "height": 3, "width": 0 },
       "shadowOpacity": 0.14,
       "shadowRadius": 4
     },
     "4": {
-      "elevation": 2,
-      "shadowColor": "rgb(0, 0, 0)",
-      "shadowOffset": {
-        "height": 4,
-        "width": 0
-      },
+      "elevation": 4,
+      "shadowColor": "#000000",
+      "shadowOffset": { "height": 4, "width": 0 },
       "shadowOpacity": 0.14,
       "shadowRadius": 5
     },
+    "5": {
+      "elevation": 5,
+      "shadowColor": "#000000",
+      "shadowOffset": { "height": 6, "width": 0 },
+      "shadowOpacity": 0.14,
+      "shadowRadius": 10
+    },
     "6": {
-      "elevation": 2,
-      "shadowColor": "rgb(0, 0, 0)",
-      "shadowOffset": {
-        "height": 6,
-        "width": 0
-      },
+      "elevation": 6,
+      "shadowColor": "#000000",
+      "shadowOffset": { "height": 8, "width": 0 },
       "shadowOpacity": 0.14,
       "shadowRadius": 10
     },
-    "8": {
-      "elevation": 2,
-      "shadowColor": "rgb(0, 0, 0)",
-      "shadowOffset": {
-        "height": 8,
-        "width": 0
-      },
-      "shadowOpacity": 0.14,
-      "shadowRadius": 10
-    },
-    "9": {
-      "elevation": 2,
-      "shadowColor": "rgb(0, 0, 0)",
-      "shadowOffset": {
-        "height": 9,
-        "width": 0
-      },
+    "7": {
+      "elevation": 7,
+      "shadowColor": "#000000",
+      "shadowOffset": { "height": 9, "width": 0 },
       "shadowOpacity": 0.14,
       "shadowRadius": 12
     },
-    "12": {
-      "elevation": 2,
-      "shadowColor": "rgb(0, 0, 0)",
-      "shadowOffset": {
-        "height": 12,
-        "width": 0
-      },
+    "8": {
+      "elevation": 8,
+      "shadowColor": "#000000",
+      "shadowOffset": { "height": 12, "width": 0 },
       "shadowOpacity": 0.14,
       "shadowRadius": 17
     },
-    "16": {
-      "elevation": 2,
-      "shadowColor": "rgb(0, 0, 0)",
-      "shadowOffset": {
-        "height": 16,
-        "width": 0
-      },
+    "9": {
+      "elevation": 9,
+      "shadowColor": "#000000",
+      "shadowOffset": { "height": 16, "width": 0 },
       "shadowOpacity": 0.14,
       "shadowRadius": 24
     },
-    "24": {
-      "elevation": 2,
-      "shadowColor": "rgb(0, 0, 0)",
-      "shadowOffset": {
-        "height": 24,
-        "width": 0
-      },
+    "10": {
+      "elevation": 10,
+      "shadowColor": "#000000",
+      "shadowOffset": { "height": 24, "width": 0 },
       "shadowOpacity": 0.14,
       "shadowRadius": 38
     }
