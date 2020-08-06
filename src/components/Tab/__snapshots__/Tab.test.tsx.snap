@@ -649,10 +649,11 @@ exports[`Tab component Should render tab component without passing any type prop
         Array [
           Object {
             "color": "#333333",
-            "fontFamily": "doc robot",
             "fontSize": 14,
-            "fontWeight": "600",
             "letterSpacing": 1.25,
+          },
+          Object {
+            "fontWeight": "bold",
           },
         ]
       }
@@ -1292,10 +1293,11 @@ exports[`Tab component Should render tab component without passing any type prop
         Array [
           Object {
             "color": "#777777",
-            "fontFamily": "doc robot",
             "fontSize": 14,
-            "fontWeight": "600",
             "letterSpacing": 1.25,
+          },
+          Object {
+            "fontWeight": "bold",
           },
         ]
       }
@@ -1935,10 +1937,11 @@ exports[`Tab component Should render tab component without passing any type prop
         Array [
           Object {
             "color": "#777777",
-            "fontFamily": "doc robot",
             "fontSize": 14,
-            "fontWeight": "600",
             "letterSpacing": 1.25,
+          },
+          Object {
+            "fontWeight": "bold",
           },
         ]
       }

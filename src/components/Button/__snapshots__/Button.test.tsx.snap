@@ -71,10 +71,11 @@ exports[`Button component Disabled variants should render disabled button compon
         Object {
           "alignSelf": "center",
           "color": "#FAFAEA",
-          "fontFamily": "doc robot",
           "fontSize": 14,
-          "fontWeight": "600",
           "letterSpacing": 1,
+        },
+        Object {
+          "fontWeight": "bold",
         },
       ]
     }
@@ -111,10 +112,11 @@ exports[`Button component Disabled variants should render disabled button compon
         Object {
           "alignSelf": "center",
           "color": "#FAFAEA",
-          "fontFamily": "doc robot",
           "fontSize": 14,
-          "fontWeight": "600",
           "letterSpacing": 1,
+        },
+        Object {
+          "fontWeight": "bold",
         },
       ]
     }
@@ -153,10 +155,11 @@ exports[`Button component Variants should render button component contained 1`] 
         Object {
           "alignSelf": "center",
           "color": "#F4F4",
-          "fontFamily": "doc robot",
           "fontSize": 14,
-          "fontWeight": "600",
           "letterSpacing": 1,
+        },
+        Object {
+          "fontWeight": "bold",
         },
       ]
     }

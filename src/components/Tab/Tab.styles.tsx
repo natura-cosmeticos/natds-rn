@@ -5,7 +5,6 @@ import {
   getColorOnBackground,
   getColorPrimary,
   getColorSurface,
-  getFont,
   getSpacingSmall,
   getShadowBySize,
   Theme,
@@ -71,9 +70,7 @@ export const TabButton = styled.TouchableOpacity<TabBase>(({ type, theme }) => (
 }));
 
 export const TabText = styled.Text<TabBase>(({ type, theme }) => ({
-  fontFamily: getFont('bold'),
   fontSize: 14,
-  fontWeight: 600,
   letterSpacing: 1.25,
   ...getTabTextStyles(theme, type),
 }));
