@@ -21,8 +21,9 @@ export interface CircularProgressIndicatorProps {
 const CircularIndicatorComponent = ({
   size, color, timer, theme,
 }: CircularProgressIndicatorProps) => {
-  const minCircularRange = '45deg';
-  const maxCircularRange = '765deg';
+  const fullCircularRange = 360;
+  const minCircularRange = '0deg';
+  const maxCircularRange = `${fullCircularRange}deg`;
 
   const layerStyle = {
     transform: [

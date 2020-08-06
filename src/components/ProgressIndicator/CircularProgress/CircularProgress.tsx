@@ -17,7 +17,7 @@ const CircularProgressComponent = ({
   size,
   color,
 }: CircularProgressProps) => {
-  const duration = 2000;
+  const duration = 1000;
   const timer = new Animated.Value(0);
   const rotation = Animated.timing(timer, {
     duration,
