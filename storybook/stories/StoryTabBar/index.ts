@@ -1,1 +1,0 @@
-export { StoryTabBar } from './StoryTabBar';
