@@ -1,41 +1,42 @@
 import {
   StyleSheet,
-  Animated,
 } from 'react-native';
+import styled from 'styled-components/native';
 
 import { Theme, getColorPrimary, getColorSecondary } from '../../../common/themeSelectors';
 
-export const getRootStyles = (size: number) => ({
+export const Root = styled.View(({ size }: { size: number }) => ({
   height: size,
   width: size,
-});
+}));
 
-export const getLayerStyles = (size: number, rotate: Animated.AnimatedInterpolation) => ({
+export const Layer = styled.View<{
+  size: number,
+}>(({ size }) => ({
   height: size,
-  transform: [
-    {
-      rotate,
-    },
-  ],
   width: size,
-});
+}));
 
-export const getLineLayerStyles = (color: string, theme: Theme, size: number) => ({
+export const Line = styled.View<{
+  color: string;
+  theme: Theme;
+  size: number;
+}>(({ color, theme, size }) => ({
   borderColor: color === 'primary' ? getColorPrimary(theme) : getColorSecondary(theme),
   borderRadius: size / 2,
   borderWidth: size / 10,
   height: size,
   width: size,
-});
+}));
 
-export const getContainerStyles = (size: number) => ({
+export const Container = styled.View(({ size }: { size: number }) => ({
   height: size / 2,
   overflow: 'hidden',
   width: size,
-});
+}));
 
-export const getLoopLayerStyles = () => ({
+export const Loop = styled.View(() => ({
   ...StyleSheet.absoluteFillObject,
   alignItems: 'center',
   justifyContent: 'center',
-});
+}));

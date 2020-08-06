@@ -4,7 +4,11 @@ import { withTheme } from 'styled-components/native';
 
 import { Theme } from '../../../common/themeSelectors';
 import {
-  getLayerStyles, getLineLayerStyles, getContainerStyles, getLoopLayerStyles, getRootStyles,
+  Root,
+  Loop,
+  Layer,
+  Container,
+  Line,
 } from './CircularProgress.styles';
 
 export interface CircularProgressIndicatorProps {
@@ -20,36 +24,39 @@ const CircularIndicatorComponent = ({
   const minCircularRange = '45deg';
   const maxCircularRange = '765deg';
 
-  const rootStyles = getRootStyles(size);
-  const loopLayerStyles = getLoopLayerStyles();
-  const layerStyle = getLayerStyles(size, timer.interpolate({
-    inputRange: [0, 1],
-    outputRange: [
-      minCircularRange,
-      maxCircularRange,
+  const layerStyle = {
+    transform: [
+      {
+        rotate: timer.interpolate({
+          inputRange: [0, 1],
+          outputRange: [
+            minCircularRange,
+            maxCircularRange,
+          ],
+        }),
+      },
     ],
-  }));
-  const containerStyle = getContainerStyles(size);
-  const lineStyle = getLineLayerStyles(color, theme, size);
+  };
 
   return (
-    <Animated.View
-      style={rootStyles}
-      collapsable={false}
-    >
-      <Animated.View style={loopLayerStyles}>
-        <Animated.View style={layerStyle}>
-          <Animated.View
-            style={containerStyle}
-            collapsable={false}
-          >
-            <Animated.View style={containerStyle} collapsable={false}>
-              <Animated.View style={lineStyle} />
-            </Animated.View>
-          </Animated.View>
-        </Animated.View>
-      </Animated.View>
-    </Animated.View>
+    <Root as={Animated.View} size={size}>
+      <Loop as={Animated.View}>
+        <Layer
+          as={Animated.View}
+          size={size}
+          style={layerStyle}
+        >
+          <Container as={Animated.View} size={size}>
+            <Line
+              as={Animated.View}
+              color={color}
+              size={size}
+              theme={theme}
+            />
+          </Container>
+        </Layer>
+      </Loop>
+    </Root >
   );
 };
 
