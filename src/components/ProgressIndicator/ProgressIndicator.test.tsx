@@ -26,11 +26,6 @@ const renderProgressIndicator = (props?: Omit<ProgressIndicatorProps, 'theme'>) 
 ));
 
 describe('ProgressIndicator component', () => {
-  beforeAll(() => {
-    // See https://github.com/facebook/jest/issues/6434
-    jest.useFakeTimers();
-  });
-
   it('Should throw error when trying to render with non supported type or variant', () => {
     const renderProgressIndicatorWithError = () => renderProgressIndicator({
       ...defaultProps,

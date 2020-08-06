@@ -5,6 +5,7 @@ import {
 } from 'react-native';
 import { tokens } from '@naturacosmeticos/natds-styles';
 
+import { withTheme } from 'styled-components/native';
 import { CircularIndicator } from './CircularIndicator';
 
 export interface CircularProgressProps {
@@ -12,7 +13,7 @@ export interface CircularProgressProps {
   color: string;
  }
 
-const CircularProgress = ({
+const CircularProgressComponent = ({
   size = tokens.sizes.standard,
   color,
 }: CircularProgressProps) => {
@@ -43,5 +44,7 @@ const CircularProgress = ({
     />
   );
 };
+
+const CircularProgress = withTheme(CircularProgressComponent);
 
 export { CircularProgress };

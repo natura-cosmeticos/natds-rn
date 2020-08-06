@@ -1,13 +1,13 @@
 import React from 'react';
 import { Animated } from 'react-native';
 
-import { withTheme } from 'styled-components';
+import { withTheme } from 'styled-components/native';
 import {
   getLayerStyles, getLineLayerStyles, getContainerStyles, getLoopLayerStyles,
 } from './CircularProgress.styles';
 import { Theme } from '../../../common/themeSelectors';
 
-interface CircularProgessIndicatorProps {
+export interface CircularProgessIndicatorProps {
   size: number;
   color: string;
   timer: Animated.Value;
