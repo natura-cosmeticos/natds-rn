@@ -27,6 +27,5 @@ export { NatTextInput } from './components/NatTextInput';
 export { Icon } from './components/Icon';
 export { Tokens };
 export { ThemeNaturaLight };
-export { TabBar } from './components/TabBar';
 export { FAB } from './components/FAB';
 export { Avatar } from './components/Avatar';
