@@ -4,7 +4,6 @@ import { storiesOf } from '@storybook/react-native';
 import {
   Login, Card, Form, FriendExchange,
 } from './ScreenSamples';
-import { StoryDivider } from './StoryDivider';
 import { StoryNatAppBar } from './StoryNatAppBar';
 import { StoryNatAppBarSearch } from './StoryNatAppBarSearch';
 import { StoryNatCard } from './StoryNatCard';
@@ -32,8 +31,6 @@ storiesOf('Welcome', module).add('NATDS', () => <Welcome />);
 storiesOf('Tokens', module)
   .add('Typography', () => <StoryTokenTypography />)
   .add('Space', () => <StoryTokenSpace />);
-storiesOf('Divider', module)
-  .add('All', () => <StoryDivider />);
 storiesOf('Images', module)
   .add('Icons', () => <StoryNatIcon />)
   .add('Logo', () => <StoryNatLogo />);
