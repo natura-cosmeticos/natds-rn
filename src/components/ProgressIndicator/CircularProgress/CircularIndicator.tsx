@@ -21,6 +21,9 @@ export interface CircularProgressIndicatorProps {
 const CircularIndicatorComponent = ({
   size, color, timer, theme,
 }: CircularProgressIndicatorProps) => {
+  /**
+   * The rotate animation will take from 0deg to 360deg to make a full lop around itself
+   */
   const fullCircularRange = 360;
   const minCircularRange = '0deg';
   const maxCircularRange = `${fullCircularRange}deg`;

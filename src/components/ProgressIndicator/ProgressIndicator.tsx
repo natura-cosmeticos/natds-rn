@@ -1,5 +1,4 @@
 import React from 'react';
-import { View } from 'react-native';
 import { tokens } from '@naturacosmeticos/natds-styles';
 
 import { CircularProgress } from './CircularProgress/CircularProgress';
@@ -38,11 +37,9 @@ export const ProgressIndicator = ({
   }
 
   return (
-    <View>
-      <CircularProgress
-        size={size}
-        color={color}
-      />
-    </View>
+    <CircularProgress
+      size={size}
+      color={color}
+    />
   );
 };
