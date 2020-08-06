@@ -4,18 +4,17 @@ import {
   Easing,
   Platform,
 } from 'react-native';
-import { tokens } from '@naturacosmeticos/natds-styles';
 import { withTheme } from 'styled-components/native';
 
 import { CircularIndicator } from './CircularIndicator';
 
 export interface CircularProgressProps {
-  size?: number;
+  size: number;
   color: string;
  }
 
 const CircularProgressComponent = ({
-  size = tokens.sizes.standard,
+  size,
   color,
 }: CircularProgressProps) => {
   const duration = 2000;
@@ -46,6 +45,4 @@ const CircularProgressComponent = ({
   );
 };
 
-const CircularProgress = withTheme(CircularProgressComponent);
-
-export { CircularProgress };
+export const CircularProgress = withTheme(CircularProgressComponent);

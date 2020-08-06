@@ -1,1 +1,1 @@
-export { ProgressIndicator } from './ProgressIndicator';
+export { ProgressIndicator, ProgressIndicatorVariants, ProgressIndicatorColors, ProgressIndicatorTypes } from './ProgressIndicator';

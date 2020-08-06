@@ -60,6 +60,4 @@ const CircularIndicatorComponent = ({
   );
 };
 
-const CircularIndicator = withTheme(CircularIndicatorComponent);
-
-export { CircularIndicator };
+export const CircularIndicator = withTheme(CircularIndicatorComponent);

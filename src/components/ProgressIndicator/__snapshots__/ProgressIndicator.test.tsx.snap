@@ -4,6 +4,7 @@ exports[`ProgressIndicator component circular Should render circular progress co
 <View>
   <CircularProgress
     color="primary"
+    size={24}
   />
 </View>
 `;
