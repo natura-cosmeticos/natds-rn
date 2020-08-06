@@ -6,6 +6,7 @@ export const getColorPrimary = (theme: Theme) => getColors(theme).colorPrimary;
 export const getColorOnPrimary = (theme: Theme) => getColors(theme).colorOnPrimary;
 export const getColorPrimaryLight = (theme: Theme) => getColors(theme).colorPrimaryLight;
 
+export const getColorSecondary = (theme: Theme) => getColors(theme).colorSecondary;
 export const getColorOnSecondary = (theme: Theme) => getColors(theme).colorOnSecondary;
 
 export const getColorBackground = (theme: Theme) => getColors(theme).colorBackground;
@@ -15,6 +16,7 @@ export const getColorSuccess = (theme: Theme) => getColors(theme).colorSuccess;
 export const getColorOnSuccess = (theme: Theme) => getColors(theme).colorOnSuccess;
 
 export const getColorLowEmphasis = (theme: Theme) => getColors(theme).colorLowEmphasis;
+export const getColorMediumEmphasis = (theme: Theme) => getColors(theme).colorMediumEmphasis;
 export const getColorHighEmphasis = (theme: Theme) => getColors(theme).colorHighEmphasis;
 
 export const getColorSurface = (theme: Theme) => getColors(theme).colorSurface;

@@ -21,7 +21,6 @@ import { StoryTokenTypography } from './StoryTokenTypography';
 import { Welcome } from './Welcome';
 import iconArrowLeft from '../../lib/assets/icons/ic_arrow_left_white.png';
 import { StoryIcon } from './StoryIcon';
-import { StoryTabBar } from './StoryTabBar';
 import { StoryFAB } from './StoryFAB';
 import { StoryAvatar } from './StoryAvatar';
 
@@ -73,8 +72,6 @@ storiesOf('NatAppBar', module)
   .add('Search', () => <StoryNatAppBarSearch />);
 storiesOf('NatCard', module)
   .add('Default', () => <StoryNatCard />);
-storiesOf('TabBar', module)
-  .add('All', () => <StoryTabBar />);
 storiesOf('FAB', module)
   .add('All', () => <StoryFAB />);
 storiesOf('Avatar', module)
