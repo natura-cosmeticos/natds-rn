@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CircularProgress component Should render circular progress with color primary correctly 1`] = `
+<CircularIndicator
+  color="primary"
+  size={24}
+  timer={0}
+/>
+`;
+
+exports[`CircularProgress component Should render circular progress with color primary secondary 1`] = `
+<CircularIndicator
+  color="secondary"
+  size={24}
+  timer={0}
+/>
+`;
+
+exports[`CircularProgress component Should render circular progress with default props correctly 1`] = `
+<CircularIndicator
+  color="primary"
+  size={24}
+  timer={0}
+/>
+`;
