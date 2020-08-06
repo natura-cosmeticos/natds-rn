@@ -5,6 +5,8 @@ import {
   getColorPrimary,
   getColorOnPrimary,
   getColorHighEmphasis,
+  getColorMediumEmphasis,
+  getColorLowEmphasis,
   getButtonPropsBySize,
   getRadiusBySize,
   getShadowBySize,
@@ -29,6 +31,12 @@ export interface ButtonProps {
    */
   type?: ButtonTypes
   /**
+   * A disabled button is unusable and un-clickable.
+   * The disabled attribute can be set to keep a user from clicking on the button until some
+   * other condition has been met (like selecting a checkbox, etc.).
+   */
+  disabled?: boolean
+  /**
    * The button theme
    */
   theme: Theme,
@@ -49,20 +57,21 @@ export interface ButtonProps {
   testID?: string,
 }
 
-interface ButonBase {
+interface ButtonBase {
   type: ButtonTypes
+  disabled: boolean
   theme: Theme
 }
 
 const isContained = (type: ButtonTypes) => type === 'contained';
 
-const getButtonStyles = (theme: Theme, type: ButtonTypes) => {
+const getButtonStyles = (theme: Theme, type: ButtonTypes, disabled: boolean) => {
   const styles = {
     contained: {
-      background: getColorPrimary(theme),
+      background: disabled ? getColorLowEmphasis(theme) : getColorPrimary(theme),
     },
     outlined: {
-      borderColor: getColorPrimary(theme),
+      borderColor: disabled ? getColorMediumEmphasis(theme) : getColorPrimary(theme),
       borderWidth: 1,
     },
   };
@@ -70,20 +79,23 @@ const getButtonStyles = (theme: Theme, type: ButtonTypes) => {
   return styles[type];
 };
 
-const getButtonTextStyles = (theme: Theme, type: ButtonTypes) => (
-  isContained(type)
-    ? getColorOnPrimary(theme)
-    : getColorHighEmphasis(theme)
-);
+const getButtonTextColor = (theme: Theme, type: ButtonTypes, disabled: boolean) => {
+  const color = {
+    active: isContained(type) ? getColorOnPrimary(theme) : getColorHighEmphasis(theme),
+    disabled: isContained(type) ? getColorHighEmphasis(theme) : getColorMediumEmphasis(theme),
+  };
 
-const ButtonBase = styled.TouchableHighlight<ButonBase>(({ type, theme }) => ({
+  return disabled ? color.disabled : color.active;
+};
+
+const ButtonBase = styled.TouchableHighlight<ButtonBase>(({ type, theme, disabled = false }) => ({
   borderRadius: getRadiusBySize(theme, 'medium'),
-  ...getButtonStyles(theme, type),
+  ...getButtonStyles(theme, type, disabled),
   ...getButtonPropsBySize(theme, 'medium'),
 }));
 
-const Text = styled.Text<ButonBase>`
-  color: ${({ type, theme }) => getButtonTextStyles(theme, type)};
+const Text = styled.Text<ButtonBase>`
+  color: ${({ type, theme, disabled }) => getButtonTextColor(theme, type, disabled)};
   font-size: 14px;
   align-self: center;
   letter-spacing: 1px;
@@ -96,15 +108,16 @@ const getShadowByType = (type: ButtonTypes, theme: Theme) => (
 );
 
 const ButtonComponent = ({
-  onPress, theme, text, type = 'contained', testID = 'button', accessibilityLabel, accessibilityHint,
+  onPress, theme, text, type = 'contained', disabled = false, testID = 'button', accessibilityLabel, accessibilityHint,
 }: ButtonProps) => (
   <ButtonBase
     testID={testID}
     type={type}
-    onPress={onPress}
+    onPress={disabled ? () => {} : onPress}
     style={getShadowByType(type, theme)}
     underlayColor={getColorPrimaryLight(theme)}
     activeOpacity={getOpacity10(theme)}
+    disabled={disabled}
   >
     <Text
       style={{ fontWeight: 'bold' }}
@@ -112,6 +125,7 @@ const ButtonComponent = ({
       accessibilityHint={accessibilityHint}
       accessibilityRole="button"
       type={type}
+      disabled={disabled}
     >{text.toUpperCase()}</Text>
   </ButtonBase>
 );

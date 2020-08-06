@@ -7,7 +7,7 @@ Check the guides bellow:
 
 - The *recommended* way to [organize folders](./ProjectStructure.md#source-code)
 - The *required* way of [naming files](./ProjectStructure.md#file-naming-conventions)
-- The *required* way of [doing commits](./Commiting.md)
+- The *required* way of [doing commits](./Committing.md)
 - The *recommended* way of [writing code](./MakingChanges.md)
 
 Read each doc above for a detailed documentation on each topic

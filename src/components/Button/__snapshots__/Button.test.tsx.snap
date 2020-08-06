@@ -1,8 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Button component Should render button component contained 1`] = `
+exports[`Button component Disabled variants should render disabled button component contained 1`] = `
 <TouchableHighlight
   activeOpacity={0.8}
+  disabled={false}
   onPress={[Function]}
   style={
     Array [
@@ -21,6 +22,7 @@ exports[`Button component Should render button component contained 1`] = `
 >
   <Text
     accessibilityRole="button"
+    disabled={false}
     style={
       Array [
         Object {
@@ -41,9 +43,134 @@ exports[`Button component Should render button component contained 1`] = `
 </TouchableHighlight>
 `;
 
-exports[`Button component Should render button component outlined 1`] = `
+exports[`Button component Disabled variants should render disabled button component outlined 1`] = `
 <TouchableHighlight
   activeOpacity={0.8}
+  disabled={true}
+  onPress={[Function]}
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#AEAEAE",
+        "borderColor": "#FAFAEA",
+        "borderRadius": 42,
+        "borderWidth": 1,
+      },
+      Object {},
+    ]
+  }
+  testID="button"
+  type="outlined"
+  underlayColor="#BABABA"
+>
+  <Text
+    accessibilityRole="button"
+    disabled={true}
+    style={
+      Array [
+        Object {
+          "alignSelf": "center",
+          "color": "#FAFAEA",
+          "fontFamily": "doc robot",
+          "fontSize": 14,
+          "fontWeight": "600",
+          "letterSpacing": 1,
+        },
+      ]
+    }
+    type="outlined"
+  >
+    LABEL BUTTON
+  </Text>
+</TouchableHighlight>
+`;
+
+exports[`Button component Disabled variants should render disabled button component text 1`] = `
+<TouchableHighlight
+  activeOpacity={0.8}
+  disabled={true}
+  onPress={[Function]}
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#AEAEAE",
+        "borderRadius": 42,
+      },
+      Object {},
+    ]
+  }
+  testID="button"
+  type="text"
+  underlayColor="#BABABA"
+>
+  <Text
+    accessibilityRole="button"
+    disabled={true}
+    style={
+      Array [
+        Object {
+          "alignSelf": "center",
+          "color": "#FAFAEA",
+          "fontFamily": "doc robot",
+          "fontSize": 14,
+          "fontWeight": "600",
+          "letterSpacing": 1,
+        },
+      ]
+    }
+    type="text"
+  >
+    LABEL BUTTON
+  </Text>
+</TouchableHighlight>
+`;
+
+exports[`Button component Variants should render button component contained 1`] = `
+<TouchableHighlight
+  activeOpacity={0.8}
+  disabled={false}
+  onPress={[Function]}
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#AEAEAE",
+        "borderRadius": 42,
+      },
+      Object {
+        "shadowColor": "#AEAEAE",
+      },
+    ]
+  }
+  testID="button"
+  type="contained"
+  underlayColor="#BABABA"
+>
+  <Text
+    accessibilityRole="button"
+    disabled={false}
+    style={
+      Array [
+        Object {
+          "alignSelf": "center",
+          "color": "#F4F4",
+          "fontFamily": "doc robot",
+          "fontSize": 14,
+          "fontWeight": "600",
+          "letterSpacing": 1,
+        },
+      ]
+    }
+    type="contained"
+  >
+    LABEL BUTTON
+  </Text>
+</TouchableHighlight>
+`;
+
+exports[`Button component Variants should render button component outlined 1`] = `
+<TouchableHighlight
+  activeOpacity={0.8}
+  disabled={false}
   onPress={[Function]}
   style={
     Array [
@@ -62,6 +189,7 @@ exports[`Button component Should render button component outlined 1`] = `
 >
   <Text
     accessibilityRole="button"
+    disabled={false}
     style={
       Array [
         Object {
@@ -82,9 +210,10 @@ exports[`Button component Should render button component outlined 1`] = `
 </TouchableHighlight>
 `;
 
-exports[`Button component Should render button component text 1`] = `
+exports[`Button component Variants should render button component text 1`] = `
 <TouchableHighlight
   activeOpacity={0.8}
+  disabled={true}
   onPress={[Function]}
   style={
     Array [
@@ -101,6 +230,7 @@ exports[`Button component Should render button component text 1`] = `
 >
   <Text
     accessibilityRole="button"
+    disabled={true}
     style={
       Array [
         Object {
