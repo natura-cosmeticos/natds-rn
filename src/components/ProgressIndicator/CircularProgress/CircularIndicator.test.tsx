@@ -25,7 +25,6 @@ const renderCircularIndicator = (props?: Omit<CircularProgressIndicatorProps, 't
 
 describe('CircularIndicator component', () => {
   beforeAll(() => {
-    // See https://github.com/facebook/jest/issues/6434
     jest.useFakeTimers();
   });
 

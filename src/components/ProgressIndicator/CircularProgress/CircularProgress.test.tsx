@@ -12,6 +12,7 @@ jest.mock('./CircularIndicator', () => ({
 
 const defaultProps = {
   color: 'primary',
+  size: 24,
   type: 'indeterminated',
   variant: 'circular',
 } as Omit<CircularProgressProps, 'theme'>;
@@ -33,13 +34,13 @@ describe('CircularProgress component', () => {
   });
 
   it('Should render circular progress with color primary correctly', () => {
-    const circularProgress = renderCircularProgress({ color: 'primary' }).toJSON();
+    const circularProgress = renderCircularProgress({ ...defaultProps, color: 'primary' }).toJSON();
 
     expect(circularProgress).toMatchSnapshot();
   });
 
   it('Should render circular progress with color primary secondary', () => {
-    const circularProgress = renderCircularProgress({ color: 'secondary' }).toJSON();
+    const circularProgress = renderCircularProgress({ ...defaultProps, color: 'secondary' }).toJSON();
 
     expect(circularProgress).toMatchSnapshot();
   });
