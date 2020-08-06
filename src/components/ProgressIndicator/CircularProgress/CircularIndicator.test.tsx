@@ -4,7 +4,7 @@ import { ThemeProvider } from 'styled-components/native';
 import renderer from 'react-test-renderer';
 
 import theme from '../../../common/themeSelectors/theme/mock-theme.json';
-import { CircularIndicator, CircularProgessIndicatorProps } from './CircularIndicator';
+import { CircularIndicator, CircularProgressIndicatorProps } from './CircularIndicator';
 
 const defaultProps = {
   color: 'primary',
@@ -12,9 +12,9 @@ const defaultProps = {
   timer: {
     interpolate: jest.fn(),
   },
-} as unknown as Omit<CircularProgessIndicatorProps, 'theme'>;
+} as unknown as Omit<CircularProgressIndicatorProps, 'theme'>;
 
-const renderCircularIndicator = (props?: Omit<CircularProgessIndicatorProps, 'theme'>) => (renderer.create(
+const renderCircularIndicator = (props?: Omit<CircularProgressIndicatorProps, 'theme'>) => (renderer.create(
   <ThemeProvider theme={theme}>
     <CircularIndicator
       {...defaultProps}

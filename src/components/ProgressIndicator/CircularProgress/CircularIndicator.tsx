@@ -7,7 +7,7 @@ import {
   getLayerStyles, getLineLayerStyles, getContainerStyles, getLoopLayerStyles, getRootStyles,
 } from './CircularProgress.styles';
 
-export interface CircularProgessIndicatorProps {
+export interface CircularProgressIndicatorProps {
   size: number;
   color: string;
   timer: Animated.Value;
@@ -16,7 +16,7 @@ export interface CircularProgessIndicatorProps {
 
 const CircularIndicatorComponent = ({
   size, color, timer, theme,
-}: CircularProgessIndicatorProps) => {
+}: CircularProgressIndicatorProps) => {
   const minCircularRange = '45deg';
   const maxCircularRange = '765deg';
 
