@@ -1,11 +1,11 @@
 import React from 'react';
 import { Animated } from 'react-native';
-
 import { withTheme } from 'styled-components/native';
-import {
-  getLayerStyles, getLineLayerStyles, getContainerStyles, getLoopLayerStyles,
-} from './CircularProgress.styles';
+
 import { Theme } from '../../../common/themeSelectors';
+import {
+  getLayerStyles, getLineLayerStyles, getContainerStyles, getLoopLayerStyles, getRootStyles,
+} from './CircularProgress.styles';
 
 export interface CircularProgessIndicatorProps {
   size: number;
@@ -20,6 +20,8 @@ const CircularIndicatorComponent = ({
   const minCircularRange = '45deg';
   const maxCircularRange = '765deg';
 
+  const rootStyles = getRootStyles(size);
+  const loopLayerStyles = getLoopLayerStyles();
   const layerStyle = getLayerStyles(size, timer.interpolate({
     inputRange: [0, 1],
     outputRange: [
@@ -29,17 +31,16 @@ const CircularIndicatorComponent = ({
   }));
   const containerStyle = getContainerStyles(size);
   const lineStyle = getLineLayerStyles(color, theme, size);
-  const loopLayerStyles = getLoopLayerStyles();
 
   return (
     <Animated.View
-      style={[{ height: size, width: size }]}
+      style={rootStyles}
       collapsable={false}
     >
       <Animated.View style={loopLayerStyles}>
         <Animated.View style={layerStyle}>
           <Animated.View
-            style={[containerStyle]}
+            style={containerStyle}
             collapsable={false}
           >
             <Animated.View style={containerStyle} collapsable={false}>

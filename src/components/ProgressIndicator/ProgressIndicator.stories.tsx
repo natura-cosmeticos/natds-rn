@@ -1,5 +1,6 @@
 import React from 'react';
 import { View } from 'react-native';
+
 import { ContainerWithTheme } from '../../common/HelperComponents/ThemeHelper.styles';
 import { ProgressIndicator } from './ProgressIndicator';
 

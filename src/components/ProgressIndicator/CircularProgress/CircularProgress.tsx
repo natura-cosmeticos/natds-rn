@@ -4,8 +4,8 @@ import {
   Easing,
 } from 'react-native';
 import { tokens } from '@naturacosmeticos/natds-styles';
-
 import { withTheme } from 'styled-components/native';
+
 import { CircularIndicator } from './CircularIndicator';
 
 export interface CircularProgressProps {

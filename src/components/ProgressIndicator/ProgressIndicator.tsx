@@ -1,6 +1,7 @@
 import React from 'react';
 import { View } from 'react-native';
 import { withTheme } from 'styled-components/native';
+
 import { Theme } from '../../common/themeSelectors';
 import { CircularProgress } from './CircularProgress/CircularProgress';
 

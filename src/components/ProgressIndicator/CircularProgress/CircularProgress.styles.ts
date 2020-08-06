@@ -2,7 +2,13 @@ import {
   StyleSheet,
   Animated,
 } from 'react-native';
+
 import { Theme, getColorPrimary, getColorSecondary } from '../../../common/themeSelectors';
+
+export const getRootStyles = (size: number) => ({
+  height: size,
+  width: size,
+});
 
 export const getLayerStyles = (size: number, rotate: Animated.AnimatedInterpolation) => ({
   height: size,
