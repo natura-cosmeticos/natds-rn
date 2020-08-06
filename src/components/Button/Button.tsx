@@ -101,8 +101,8 @@ const Text = styled.Text<ButtonBase>`
   letter-spacing: 1px;
 `;
 
-const getShadowByType = (type: ButtonTypes, theme: Theme) => (
-  isContained(type)
+const getShadowByType = (type: ButtonTypes, disabled: boolean, theme: Theme) => (
+  isContained(type) && !disabled
     ? getShadowBySize(theme, '2')
     : {}
 );
@@ -114,7 +114,7 @@ const ButtonComponent = ({
     testID={testID}
     type={type}
     onPress={disabled ? () => {} : onPress}
-    style={getShadowByType(type, theme)}
+    style={getShadowByType(type, disabled, theme)}
     underlayColor={getColorPrimaryLight(theme)}
     activeOpacity={getOpacity10(theme)}
     disabled={disabled}
