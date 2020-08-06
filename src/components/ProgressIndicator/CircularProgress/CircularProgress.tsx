@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import {
   Animated,
   Easing,
+  Platform,
 } from 'react-native';
 import { tokens } from '@naturacosmeticos/natds-styles';
 import { withTheme } from 'styled-components/native';
@@ -24,7 +25,7 @@ const CircularProgressComponent = ({
     easing: Easing.linear,
     isInteraction: false,
     toValue: 1,
-    useNativeDriver: true,
+    useNativeDriver: Platform.OS !== 'web',
   });
 
   function startRotation(): void {
