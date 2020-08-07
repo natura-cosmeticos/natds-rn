@@ -92,7 +92,7 @@ export const TouchableRipple = ({
    */
   function onPressTouchable() {
     if (onPress) {
-      onPress();
+      resetAnimations();
       Animated.parallel([
         Animated.timing(scaleValue, {
           duration: animationDuration,
@@ -114,6 +114,7 @@ export const TouchableRipple = ({
       disabled={disabled}
       onPressIn={onPressTouchable}
       onPressOut={onPressOutTouchable}
+      onPress={onPress}
       delayPressOut={animationDuration}
       testID={testID}
     >
