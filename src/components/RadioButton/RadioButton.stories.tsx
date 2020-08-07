@@ -35,6 +35,11 @@ export const all = () => {
         label="Disabled"
         disabled
       />
+      <RadioButton
+        selected={true}
+        label="Selected disabled"
+        disabled
+      />
     </View>
   );
 };

@@ -34,6 +34,18 @@ describe('RadioButton component', () => {
     expect(radioButton).toMatchSnapshot();
   });
 
+  it('should render radio button selected but disabled correctly', () => {
+    const radioButton = renderRadioButton(renderer.create, { disabled: true }).toJSON();
+
+    expect(radioButton).toMatchSnapshot();
+  });
+
+  it('should render radio button selected but disabled with label correctly', () => {
+    const radioButton = renderRadioButton(renderer.create, { disabled: true, label: 'My Label' }).toJSON();
+
+    expect(radioButton).toMatchSnapshot();
+  });
+
 
   it('should call the onPress function when the user touches the radio button', () => {
     const onPress = jest.fn();

@@ -9,7 +9,7 @@ import {
   getColorMediumEmphasis,
 } from '../../common/themeSelectors';
 
-function getCircleBorderColor(selected = false, disabled: boolean, color: string, theme: Theme) {
+function getCircleColor(selected = false, disabled: boolean, color: string, theme: Theme) {
   if (disabled) {
     return getColorLowEmphasis(theme);
   }
@@ -48,7 +48,7 @@ export const Circle = styled.View<{
   disabled,
 }) => ({
   alignItems: 'center',
-  borderColor: getCircleBorderColor(selected, disabled, color, theme),
+  borderColor: getCircleColor(selected, disabled, color, theme),
   borderRadius: 12,
   borderWidth: '2px',
   height: 20,
@@ -56,8 +56,18 @@ export const Circle = styled.View<{
   width: 20,
 }));
 
-export const Center = styled.View<{ theme: Theme; color: string }>(({ theme, color }) => ({
-  backgroundColor: color === 'primary' ? getColorPrimary(theme) : getColorSecondary(theme),
+export const Center = styled.View<{
+  theme: Theme;
+  color: string;
+  selected?: boolean;
+  disabled: boolean;
+}>(({
+  theme,
+  color,
+  selected,
+  disabled,
+}) => ({
+  backgroundColor: getCircleColor(selected, disabled, color, theme),
   borderRadius: 12,
   height: 10,
   width: 10,
