@@ -65,7 +65,7 @@ export const RadioButton = ({
       <Circle disabled={disabled} color={color} selected={selected}>
         {
           selected
-            ? <Center color={color} />
+            ? <Center disabled={disabled} color={color} selected={selected} />
             : null
         }
       </Circle>
