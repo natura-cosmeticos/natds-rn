@@ -4,6 +4,7 @@ exports[`TouchableRipple component Should render touchapple ripple correctly 1`]
 <TouchableWithoutFeedback
   delayPressOut={255}
   disabled={false}
+  onPress={[Function]}
   onPressIn={[Function]}
   onPressOut={[Function]}
   testID="touchable-ripple"
