@@ -4,7 +4,9 @@ import {
   getColorPrimary, Theme, getColorSecondary, getColorLowEmphasis, getColorOnBackground,
 } from '../../common/themeSelectors';
 
-export const Container = styled.TouchableOpacity`
+export const Container = styled.TouchableOpacity.attrs({
+  activeOpacity: 1,
+})`
   flex-direction: row;
   align-items: center;
 `;

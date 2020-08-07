@@ -1,5 +1,4 @@
 import React from 'react';
-import { GestureResponderEvent } from 'react-native';
 
 import { TouchableRipple } from '../TouchableRipple';
 import {
@@ -16,7 +15,7 @@ export interface RadioButtonProps {
   /**
    * Called when the touch is released, but not if cancelled
    */
-  onPress?: (event: GestureResponderEvent) => void;
+  onPress?: (value: string) => void;
   /**
    * Programmatically tell if the component is selected
    */
@@ -32,6 +31,10 @@ export interface RadioButtonProps {
    */
   label?: string;
   /**
+   * The value of the component.
+   */
+  value?: string;
+  /**
    * Optional testID
    */
   testID?: string;
@@ -43,13 +46,19 @@ export const RadioButton = ({
   selected,
   disabled = false,
   label,
+  value = '',
   testID = 'radio-button',
 }: RadioButtonProps) => {
+  const onPressWithValue = () => {
+    if (onPress) {
+      onPress(value);
+    }
+  };
   const radio = (
     <TouchableRipple
       size={20}
       color={color}
-      onPress={onPress}
+      onPress={onPressWithValue}
       disabled={disabled}
       testID={testID}
     >
@@ -65,7 +74,7 @@ export const RadioButton = ({
 
   if (label) {
     return (
-      <Container disabled={disabled} testID={`${testID}-label`} onPress={onPress}>
+      <Container disabled={disabled} testID={`${testID}-label`} onPress={onPressWithValue}>
         {radio}
         <Label disabled={disabled}>{label}</Label>
       </Container>

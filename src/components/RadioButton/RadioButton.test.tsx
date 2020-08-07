@@ -39,13 +39,14 @@ describe('RadioButton component', () => {
     const onPress = jest.fn();
     const { queryByTestId } = renderRadioButton(render, {
       onPress,
+      value: 'radio-button',
     });
 
     const radioButton = queryByTestId('radio-button');
 
     fireEvent.pressIn(radioButton);
 
-    expect(onPress).toHaveBeenCalled();
+    expect(onPress).toHaveBeenCalledWith('radio-button');
   });
 
   it('should call the onPress function when the user touches the radio button label', () => {
@@ -53,12 +54,13 @@ describe('RadioButton component', () => {
     const { queryByTestId } = renderRadioButton(render, {
       label: 'My label',
       onPress,
+      value: 'radio-button-label',
     });
 
     const label = queryByTestId('radio-button-label');
 
     fireEvent.press(label);
 
-    expect(onPress).toHaveBeenCalled();
+    expect(onPress).toHaveBeenCalledWith('radio-button-label');
   });
 });

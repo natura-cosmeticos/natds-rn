@@ -13,21 +13,23 @@ export default {
 
 
 export const all = () => {
-  const [selected, setSelected] = useState<number | null>(null);
+  const [selected, setSelected] = useState<string | null>(null);
 
   return (
     <View style={{ maxWidth: 600, padding: 30 }}>
       <RadioButton
         color="primary"
-        selected={selected === 1}
-        onPress={() => setSelected(1)}
+        selected={selected === '1'}
+        onPress={setSelected}
         label="Primary"
+        value='1'
       />
       <RadioButton
         color="secondary"
-        selected={selected === 2}
-        onPress={() => setSelected(2)}
+        selected={selected === '2'}
+        onPress={setSelected}
         label="Secondary"
+        value='2'
       />
       <RadioButton
         label="Disabled"

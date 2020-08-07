@@ -4,7 +4,6 @@ import {
   Animated,
   Easing,
   View,
-  GestureResponderEvent,
   Platform,
 } from 'react-native';
 
@@ -24,7 +23,7 @@ export interface TouchableRippleProps {
   /**
    * Will be called as soon the ripple animation start
    */
-  onPress?: (event: GestureResponderEvent) => void;
+  onPress?: () => void;
   /*
   * Deactivates the palpable effect, will not call the callback function when pressing;
   */
@@ -76,29 +75,33 @@ export const TouchableRipple = ({
    * On press touchable, scale the circle value to 1 making the ripple effect
    */
   function onPressTouchable() {
-    Animated.timing(scaleValue, {
-      duration: 255,
-      easing: Easing.bezier(0.0, 0.0, 0.2, 1),
-      toValue: 1,
-      useNativeDriver: Platform.OS !== 'web',
-    }).start();
+    if (onPress) {
+      onPress();
+      Animated.timing(scaleValue, {
+        duration: 255,
+        easing: Easing.bezier(0.0, 0.0, 0.2, 1),
+        toValue: 1,
+        useNativeDriver: Platform.OS !== 'web',
+      }).start();
+    }
   }
 
   /**
    *  After the touch, make the ripple disappear with opacity to its initial value.
    */
   function onPressOutTouchable() {
-    Animated.timing(opacityValue, {
-      toValue: 0,
-      useNativeDriver: Platform.OS !== 'web',
-    }).start(resetAnimations);
+    if (onPress) {
+      Animated.timing(opacityValue, {
+        toValue: 0,
+        useNativeDriver: Platform.OS !== 'web',
+      }).start(resetAnimations);
+    }
   }
 
   return (
     <TouchableWithoutFeedback
       disabled={disabled}
-      onPress={onPressTouchable}
-      onPressIn={onPress}
+      onPressIn={onPressTouchable}
       onPressOut={onPressOutTouchable}
       testID={testID}
     >
