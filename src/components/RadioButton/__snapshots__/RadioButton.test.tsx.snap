@@ -1,0 +1,143 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RadioButton component should render radio button correctly 1`] = `
+<TouchableWithoutFeedback
+  disabled={false}
+  onPress={[Function]}
+  onPressOut={[Function]}
+  testID="radio-button"
+>
+  <View
+    size={40}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "height": 40,
+          "justifyContent": "center",
+          "width": 40,
+        },
+      ]
+    }
+  >
+    <View
+      color="primary"
+      size={40}
+      style={
+        Object {
+          "backgroundColor": "#F4AB34",
+          "borderRadius": 20,
+          "height": 40,
+          "left": 0,
+          "opacity": 0.16,
+          "position": "absolute",
+          "top": 0,
+          "transform": Array [
+            Object {
+              "scale": 0,
+            },
+          ],
+          "width": 40,
+        }
+      }
+    />
+    <View>
+      <View
+        color="primary"
+        disabled={false}
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "borderColor": "#F4AB34",
+              "borderRadius": 12,
+              "borderWidth": 2,
+              "height": 20,
+              "justifyContent": "center",
+              "width": 20,
+            },
+          ]
+        }
+      />
+    </View>
+  </View>
+</TouchableWithoutFeedback>
+`;
+
+exports[`RadioButton component should render radio button selected correctly 1`] = `
+<TouchableWithoutFeedback
+  disabled={false}
+  onPress={[Function]}
+  onPressOut={[Function]}
+  testID="radio-button"
+>
+  <View
+    size={40}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "height": 40,
+          "justifyContent": "center",
+          "width": 40,
+        },
+      ]
+    }
+  >
+    <View
+      color="primary"
+      size={40}
+      style={
+        Object {
+          "backgroundColor": "#F4AB34",
+          "borderRadius": 20,
+          "height": 40,
+          "left": 0,
+          "opacity": 0.16,
+          "position": "absolute",
+          "top": 0,
+          "transform": Array [
+            Object {
+              "scale": 0,
+            },
+          ],
+          "width": 40,
+        }
+      }
+    />
+    <View>
+      <View
+        color="primary"
+        disabled={false}
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "borderColor": "#F4AB34",
+              "borderRadius": 12,
+              "borderWidth": 2,
+              "height": 20,
+              "justifyContent": "center",
+              "width": 20,
+            },
+          ]
+        }
+      >
+        <View
+          color="primary"
+          style={
+            Array [
+              Object {
+                "backgroundColor": "#F4AB34",
+                "borderRadius": 100,
+                "height": 10,
+                "width": 10,
+              },
+            ]
+          }
+        />
+      </View>
+    </View>
+  </View>
+</TouchableWithoutFeedback>
+`;
