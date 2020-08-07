@@ -2,6 +2,7 @@
 
 exports[`TouchableRipple component Should render touchapple ripple correctly 1`] = `
 <TouchableWithoutFeedback
+  delayPressOut={255}
   disabled={false}
   onPressIn={[Function]}
   onPressOut={[Function]}
@@ -29,7 +30,7 @@ exports[`TouchableRipple component Should render touchapple ripple correctly 1`]
           "borderRadius": 24,
           "height": 48,
           "left": 0,
-          "opacity": 0.16,
+          "opacity": 0,
           "position": "absolute",
           "top": 0,
           "transform": Array [
