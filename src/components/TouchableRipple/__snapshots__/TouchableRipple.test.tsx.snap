@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TouchableRipple component Should render touchapple ripple correctly 1`] = `
+<TouchableWithoutFeedback
+  disabled={false}
+  onPress={[Function]}
+  onPressIn={[Function]}
+  onPressOut={[Function]}
+  testID="touchable-ripple"
+>
+  <View
+    size={48}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "height": 48,
+          "justifyContent": "center",
+          "width": 48,
+        },
+      ]
+    }
+  >
+    <View
+      color="primary"
+      size={48}
+      style={
+        Object {
+          "backgroundColor": "#F4AB34",
+          "borderRadius": 24,
+          "height": 48,
+          "left": 0,
+          "opacity": 0.16,
+          "position": "absolute",
+          "top": 0,
+          "transform": Array [
+            Object {
+              "scale": 0,
+            },
+          ],
+          "width": 48,
+        }
+      }
+    />
+    <View>
+      <View />
+    </View>
+  </View>
+</TouchableWithoutFeedback>
+`;
