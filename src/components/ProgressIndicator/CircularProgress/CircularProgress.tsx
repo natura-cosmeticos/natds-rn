@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import {
   Animated,
   Easing,
@@ -25,7 +25,7 @@ export const CircularProgress = ({
   /**
    * This animation/Animated.timing, is responsible for looping the border around the view.
    */
-  const timer = new Animated.Value(0);
+  const timer = useRef(new Animated.Value(0)).current;
   const rotation = Animated.timing(timer, {
     duration,
     easing: Easing.linear,
@@ -48,7 +48,7 @@ export const CircularProgress = ({
    */
   useEffect(() => {
     startRotation();
-  });
+  }, []);
 
   return (
     <CircularIndicator
