@@ -50,6 +50,8 @@ export const TouchableRipple = ({
   testID = 'touchable-ripple', children,
 }: TouchableRippleProps) => {
   const maxOpacity = 0.16;
+  const animationDuration = 255;
+
   /**
    * The animation that makes the "scale" circle value over the children component
    */
@@ -57,7 +59,7 @@ export const TouchableRipple = ({
   /**
    * The animation that makes the "fade" effect on the circle animation after it ends
    */
-  const opacityValue = useRef(new Animated.Value(maxOpacity)).current;
+  const opacityValue = useRef(new Animated.Value(0)).current;
   /**
    * The ripple size will be `children size * 2`
    */
@@ -68,33 +70,42 @@ export const TouchableRipple = ({
    */
   function resetAnimations() {
     scaleValue.setValue(0);
-    opacityValue.setValue(maxOpacity);
+    opacityValue.setValue(0);
   }
 
   /**
-   * On press touchable, scale the circle value to 1 making the ripple effect
-   */
-  function onPressTouchable() {
+ *  After the touch, make the ripple disappear with opacity to its initial value.
+ */
+  function onPressOutTouchable() {
     if (onPress) {
-      onPress();
-      Animated.timing(scaleValue, {
-        duration: 255,
-        easing: Easing.bezier(0.0, 0.0, 0.2, 1),
-        toValue: 1,
+      Animated.timing(opacityValue, {
+        duration: animationDuration,
+        toValue: 0,
         useNativeDriver: Platform.OS !== 'web',
-      }).start();
+      }).start(resetAnimations);
     }
   }
 
   /**
-   *  After the touch, make the ripple disappear with opacity to its initial value.
+   * On press touchable scale the circle value to 1
+   * and the opacity to `maxOpacity` making the ripple effect.
    */
-  function onPressOutTouchable() {
+  function onPressTouchable() {
     if (onPress) {
-      Animated.timing(opacityValue, {
-        toValue: 0,
-        useNativeDriver: Platform.OS !== 'web',
-      }).start(resetAnimations);
+      onPress();
+      Animated.parallel([
+        Animated.timing(scaleValue, {
+          duration: animationDuration,
+          easing: Easing.bezier(0.0, 0.0, 0.2, 1),
+          toValue: 1,
+          useNativeDriver: Platform.OS !== 'web',
+        }),
+        Animated.timing(opacityValue, {
+          duration: animationDuration,
+          toValue: maxOpacity,
+          useNativeDriver: Platform.OS !== 'web',
+        }),
+      ]).start();
     }
   }
 
@@ -103,6 +114,7 @@ export const TouchableRipple = ({
       disabled={disabled}
       onPressIn={onPressTouchable}
       onPressOut={onPressOutTouchable}
+      delayPressOut={animationDuration}
       testID={testID}
     >
       <Container size={rippleSize}>
