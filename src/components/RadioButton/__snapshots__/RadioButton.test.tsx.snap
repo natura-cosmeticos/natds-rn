@@ -3,7 +3,7 @@
 exports[`RadioButton component should render radio button correctly 1`] = `
 <TouchableWithoutFeedback
   disabled={false}
-  onPress={[Function]}
+  onPressIn={[Function]}
   onPressOut={[Function]}
   testID="radio-button"
 >
@@ -67,7 +67,7 @@ exports[`RadioButton component should render radio button correctly 1`] = `
 exports[`RadioButton component should render radio button selected correctly 1`] = `
 <TouchableWithoutFeedback
   disabled={false}
-  onPress={[Function]}
+  onPressIn={[Function]}
   onPressOut={[Function]}
   testID="radio-button"
 >
@@ -144,7 +144,9 @@ exports[`RadioButton component should render radio button selected correctly 1`]
 
 exports[`RadioButton component should render radio button with label correctly 1`] = `
 <TouchableOpacity
+  activeOpacity={1}
   disabled={false}
+  onPress={[Function]}
   style={
     Array [
       Object {
@@ -157,7 +159,7 @@ exports[`RadioButton component should render radio button with label correctly 1
 >
   <TouchableWithoutFeedback
     disabled={false}
-    onPress={[Function]}
+    onPressIn={[Function]}
     onPressOut={[Function]}
     testID="radio-button"
   >
