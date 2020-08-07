@@ -4,6 +4,7 @@ exports[`RadioButton component should render radio button correctly 1`] = `
 <TouchableWithoutFeedback
   delayPressOut={255}
   disabled={false}
+  onPress={[Function]}
   onPressIn={[Function]}
   onPressOut={[Function]}
   testID="radio-button"
@@ -69,6 +70,7 @@ exports[`RadioButton component should render radio button selected but disabled 
 <TouchableWithoutFeedback
   delayPressOut={255}
   disabled={true}
+  onPress={[Function]}
   onPressIn={[Function]}
   onPressOut={[Function]}
   testID="radio-button"
@@ -148,6 +150,7 @@ exports[`RadioButton component should render radio button selected but disabled 
   <TouchableWithoutFeedback
     delayPressOut={255}
     disabled={true}
+    onPress={[Function]}
     onPressIn={[Function]}
     onPressOut={[Function]}
     testID="radio-button"
@@ -229,6 +232,7 @@ exports[`RadioButton component should render radio button selected correctly 1`]
 <TouchableWithoutFeedback
   delayPressOut={255}
   disabled={false}
+  onPress={[Function]}
   onPressIn={[Function]}
   onPressOut={[Function]}
   testID="radio-button"
@@ -325,6 +329,7 @@ exports[`RadioButton component should render radio button with label correctly 1
   <TouchableWithoutFeedback
     delayPressOut={255}
     disabled={false}
+    onPress={[Function]}
     onPressIn={[Function]}
     onPressOut={[Function]}
     testID="radio-button"

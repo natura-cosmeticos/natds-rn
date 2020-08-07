@@ -56,7 +56,7 @@ describe('RadioButton component', () => {
 
     const radioButton = queryByTestId('radio-button');
 
-    fireEvent.pressIn(radioButton);
+    fireEvent.press(radioButton);
 
     expect(onPress).toHaveBeenCalledWith('radio-button');
   });

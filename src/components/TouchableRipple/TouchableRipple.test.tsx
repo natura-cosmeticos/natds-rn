@@ -39,7 +39,7 @@ describe('TouchableRipple component', () => {
 
     const touchable = queryByTestId('touchable-ripple');
 
-    fireEvent.pressIn(touchable);
+    fireEvent.press(touchable);
 
     expect(onPress).toHaveBeenCalled();
   });
