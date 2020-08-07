@@ -2,7 +2,9 @@ import React from 'react';
 import { GestureResponderEvent } from 'react-native';
 
 import { TouchableRipple } from '../TouchableRipple';
-import { Circle, Center } from './RadioButton.styles';
+import {
+  Container, Circle, Center, Label,
+} from './RadioButton.styles';
 
 export type RadioButtonColors = 'primary' | 'secondary';
 
@@ -18,12 +20,17 @@ export interface RadioButtonProps {
   /**
    * Programmatically tell if the component is selected
    */
-  isSelected?: boolean;
+  selected?: boolean;
   /**
    * Optional property that tells if the select is disabled,
    * if so, the user cannot click on this item.
    */
   disabled?: boolean;
+  /**
+   * Optional label that appears to the right of the component,
+   * if the user clicks that label, the onPress function will be called
+   */
+  label?: string;
   /**
    * Optional testID
    */
@@ -33,10 +40,12 @@ export interface RadioButtonProps {
 export const RadioButton = ({
   color = 'primary',
   onPress,
-  isSelected,
+  selected,
   disabled = false,
+  label,
   testID = 'radio-button',
-}: RadioButtonProps) => (
+}: RadioButtonProps) => {
+  const radio = (
     <TouchableRipple
       size={20}
       color={color}
@@ -46,10 +55,22 @@ export const RadioButton = ({
     >
       <Circle disabled={disabled} color={color}>
         {
-          isSelected
+          selected
             ? <Center color={color} />
             : null
         }
       </Circle>
     </TouchableRipple>
-);
+  );
+
+  if (label) {
+    return (
+      <Container disabled={disabled} testID={`${testID}-label`} onPress={onPress}>
+        {radio}
+        <Label disabled={disabled}>{label}</Label>
+      </Container>
+    );
+  }
+
+  return radio;
+};

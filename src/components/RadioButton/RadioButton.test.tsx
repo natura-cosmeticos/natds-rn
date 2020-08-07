@@ -23,10 +23,17 @@ describe('RadioButton component', () => {
   });
 
   it('should render radio button selected correctly', () => {
-    const radioButton = renderRadioButton(renderer.create, { isSelected: true }).toJSON();
+    const radioButton = renderRadioButton(renderer.create, { selected: true }).toJSON();
 
     expect(radioButton).toMatchSnapshot();
   });
+
+  it('should render radio button with label correctly', () => {
+    const radioButton = renderRadioButton(renderer.create, { label: 'My Label' }).toJSON();
+
+    expect(radioButton).toMatchSnapshot();
+  });
+
 
   it('should call the onPress function when the user touches the radio button', () => {
     const onPress = jest.fn();
@@ -37,6 +44,20 @@ describe('RadioButton component', () => {
     const radioButton = queryByTestId('radio-button');
 
     fireEvent.pressIn(radioButton);
+
+    expect(onPress).toHaveBeenCalled();
+  });
+
+  it('should call the onPress function when the user touches the radio button label', () => {
+    const onPress = jest.fn();
+    const { queryByTestId } = renderRadioButton(render, {
+      label: 'My label',
+      onPress,
+    });
+
+    const label = queryByTestId('radio-button-label');
+
+    fireEvent.press(label);
 
     expect(onPress).toHaveBeenCalled();
   });
