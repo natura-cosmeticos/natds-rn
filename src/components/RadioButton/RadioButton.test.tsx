@@ -75,4 +75,30 @@ describe('RadioButton component', () => {
 
     expect(onPress).toHaveBeenCalledWith('radio-button-label');
   });
+
+  it('should render circle inside radio when selected is true', () => {
+    const onPress = jest.fn();
+    const { queryByTestId } = renderRadioButton(render, {
+      onPress,
+      selected: true,
+      value: 'radio-button',
+    });
+
+    const radioButtonCircle = queryByTestId('radio-button-circle');
+
+    expect(radioButtonCircle.props.children).not.toBeNull();
+  });
+
+  it('should render radio inside label container when label is different from null/undefined', () => {
+    const onPress = jest.fn();
+    const { queryByTestId } = renderRadioButton(render, {
+      label: 'My Label',
+      onPress,
+      value: 'radio-button',
+    });
+
+    const radioButtonLabel = queryByTestId('radio-button-label');
+
+    expect(radioButtonLabel).not.toBeNull();
+  });
 });

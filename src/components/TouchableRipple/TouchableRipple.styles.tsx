@@ -1,6 +1,7 @@
 import styled from 'styled-components/native';
 
 import { getColorPrimary, Theme, getColorSecondary } from '../../common/themeSelectors';
+import { TouchableRippleColors } from './TouchableRipple';
 
 export const Container = styled.View<{ size: number }>(({ size }) => ({
   alignItems: 'center',
@@ -12,9 +13,9 @@ export const Container = styled.View<{ size: number }>(({ size }) => ({
 export const Ripple = styled.View<{
   theme: Theme;
   size: number;
-  color: string;
+  color: TouchableRippleColors;
 }>(({ theme, size, color }) => ({
-  backgroundColor: color === 'primary' ? getColorPrimary(theme) : getColorSecondary(theme),
+  backgroundColor: color === 'secondary' ? getColorSecondary(theme) : getColorPrimary(theme),
   borderRadius: size / 2,
   height: size,
   left: 0,

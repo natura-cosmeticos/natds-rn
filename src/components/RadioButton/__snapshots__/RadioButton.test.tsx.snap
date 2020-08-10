@@ -60,6 +60,7 @@ exports[`RadioButton component should render radio button correctly 1`] = `
             },
           ]
         }
+        testID="radio-button-circle"
       />
     </View>
   </View>
@@ -126,6 +127,7 @@ exports[`RadioButton component should render radio button selected but disabled 
             },
           ]
         }
+        testID="radio-button-circle"
       />
     </View>
   </View>
@@ -206,6 +208,7 @@ exports[`RadioButton component should render radio button selected but disabled 
               },
             ]
           }
+          testID="radio-button-circle"
         />
       </View>
     </View>
@@ -289,6 +292,7 @@ exports[`RadioButton component should render radio button selected correctly 1`]
             },
           ]
         }
+        testID="radio-button-circle"
       >
         <View
           color="primary"
@@ -385,6 +389,7 @@ exports[`RadioButton component should render radio button with label correctly 1
               },
             ]
           }
+          testID="radio-button-circle"
         />
       </View>
     </View>

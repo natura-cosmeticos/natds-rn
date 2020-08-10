@@ -8,14 +8,20 @@ import {
   getColorOnBackground,
   getColorMediumEmphasis,
 } from '../../common/themeSelectors';
+import { RadioButtonColors } from './RadioButton';
 
-function getCircleColor(selected = false, disabled: boolean, color: string, theme: Theme) {
+function getCircleColor(
+  selected = false,
+  disabled: boolean,
+  color: RadioButtonColors,
+  theme: Theme,
+) {
   if (disabled) {
     return getColorLowEmphasis(theme);
   }
 
   if (selected) {
-    return color === 'primary' ? getColorPrimary(theme) : getColorSecondary(theme);
+    return color === 'secondary' ? getColorSecondary(theme) : getColorPrimary(theme);
   }
 
   return getColorMediumEmphasis(theme);
@@ -32,13 +38,13 @@ export const Label = styled.Text<{ theme: Theme; disabled: boolean }>(({ theme, 
   color: disabled ? getColorLowEmphasis(theme) : getColorOnBackground(theme),
   fontSize: 14,
   letterSpacing: 0.22,
-  marginLeft: 8,
+  marginLeft: theme.spacing.spacingTiny,
 }));
 
 
 export const Circle = styled.View<{
   theme: Theme;
-  color: string;
+  color: RadioButtonColors;
   selected?: boolean;
   disabled: boolean;
 }>(({
@@ -58,7 +64,7 @@ export const Circle = styled.View<{
 
 export const Center = styled.View<{
   theme: Theme;
-  color: string;
+  color: RadioButtonColors;
   selected?: boolean;
   disabled: boolean;
 }>(({
