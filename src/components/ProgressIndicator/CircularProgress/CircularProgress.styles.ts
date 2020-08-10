@@ -3,6 +3,7 @@ import {
 } from 'react-native';
 import styled from 'styled-components/native';
 
+import { ProgressIndicatorColors } from '../ProgressIndicator';
 import { Theme, getColorPrimary, getColorSecondary } from '../../../common/themeSelectors';
 
 export const Root = styled.View(({ size }: { size: number }) => ({
@@ -18,11 +19,11 @@ export const Layer = styled.View<{
 }));
 
 export const Line = styled.View<{
-  color: string;
+  color: ProgressIndicatorColors;
   theme: Theme;
   size: number;
 }>(({ color, theme, size }) => ({
-  borderColor: color === 'primary' ? getColorPrimary(theme) : getColorSecondary(theme),
+  borderColor: color === 'secondary' ? getColorSecondary(theme) : getColorPrimary(theme),
   borderRadius: size / 2,
   borderWidth: size / 10,
   height: size,
