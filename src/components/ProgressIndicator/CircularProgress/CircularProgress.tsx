@@ -5,11 +5,18 @@ import {
   Platform,
 } from 'react-native';
 
-import { CircularIndicator } from './CircularIndicator';
+import { ProgressIndicatorColors } from '../ProgressIndicator';
+import {
+  Root,
+  Loop,
+  Layer,
+  Container,
+  Line,
+} from './CircularProgress.styles';
 
 export interface CircularProgressProps {
   size: number;
-  color: string;
+  color: ProgressIndicatorColors;
 }
 
 export const CircularProgress = ({
@@ -33,6 +40,25 @@ export const CircularProgress = ({
     toValue: 1,
     useNativeDriver: Platform.OS !== 'web',
   });
+  /**
+ * The rotate animation will take from 0deg to 360deg to make a full loop around itself
+ */
+  const fullCircularRange = 360;
+  const minCircularRange = '0deg';
+  const maxCircularRange = `${fullCircularRange}deg`;
+  const layerStyle = {
+    transform: [
+      {
+        rotate: timer.interpolate({
+          inputRange: [0, 1],
+          outputRange: [
+            minCircularRange,
+            maxCircularRange,
+          ],
+        }),
+      },
+    ],
+  };
 
   /**
    * Loop rotation animation continuously,
@@ -51,10 +77,22 @@ export const CircularProgress = ({
   }, []);
 
   return (
-    <CircularIndicator
-      color={color}
-      size={size}
-      timer={timer}
-    />
+    <Root as={Animated.View} size={size}>
+      <Loop as={Animated.View}>
+        <Layer
+          as={Animated.View}
+          size={size}
+          style={layerStyle}
+        >
+          <Container as={Animated.View} size={size}>
+            <Line
+              as={Animated.View}
+              color={color}
+              size={size}
+            />
+          </Container>
+        </Layer>
+      </Loop>
+    </Root>
   );
 };

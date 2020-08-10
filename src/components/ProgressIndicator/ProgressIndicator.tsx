@@ -11,7 +11,7 @@ export interface ProgressIndicatorProps {
   /**
   * Variant of the progress indicator: `circular`
   */
-  variant: 'circular';
+  variant: ProgressIndicatorVariants;
   /**
   * Color of the progress indicator: `primary` | `secondary`
   */

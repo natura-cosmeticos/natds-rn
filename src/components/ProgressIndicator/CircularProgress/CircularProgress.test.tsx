@@ -6,10 +6,6 @@ import renderer from 'react-test-renderer';
 import theme from '../../../common/themeSelectors/theme/mock-theme.json';
 import { CircularProgress, CircularProgressProps } from './CircularProgress';
 
-jest.mock('./CircularIndicator', () => ({
-  CircularIndicator: 'CircularIndicator',
-}));
-
 const defaultProps = {
   color: 'primary',
   size: 24,
