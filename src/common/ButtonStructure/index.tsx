@@ -1,20 +1,30 @@
 import React from 'react';
 import styled, { withTheme } from 'styled-components/native';
-
+import { NativeSyntheticEvent, NativeTouchEvent } from 'react-native';
 import {
   getColorMediumEmphasis,
   getButtonPropsBySize,
   getShadowBySize,
   getColorLowEmphasis,
   getColorPrimary,
-  getColorPrimaryLight,
   getOpacity10,
+  Theme,
+  getColorPrimaryLight,
 } from '../themeSelectors';
 
-interface ButtonBase {
+export type ButtonTypes = 'contained' | 'outlined' | 'text'
+type AccessibilityRole = 'button'
+
+export interface ButtonStructureInterface {
+  testID: string
   type: ButtonTypes
+  onPress: (ev: NativeSyntheticEvent<NativeTouchEvent>) => void
+  borderRadius: number
   disabled: boolean
-  theme: Theme
+  accessibilityRole: AccessibilityRole
+  accessibilityLabel: string
+  accessibilityHint: string
+  underlayColor: string
 }
 
 const isContained = (type: ButtonTypes) => type === 'contained';
@@ -33,16 +43,15 @@ const getButtonStyles = (theme: Theme, type: ButtonTypes, disabled: boolean) => 
   return styles[type];
 };
 
-const ButtonBase = styled.TouchableHighlight<ButtonBase>(({
+const ButtonBase = styled.TouchableHighlight<ButtonStructureInterface>(({
   type,
   theme,
   borderRadius,
-  size = 'medium',
   disabled = false,
 }) => ({
   borderRadius,
   ...getButtonStyles(theme, type, disabled),
-  ...getButtonPropsBySize(theme, size),
+  ...getButtonPropsBySize(theme, 'medium'),
 }));
 
 const getShadowByType = (type: ButtonTypes, disabled: boolean, theme: Theme) => (
@@ -59,16 +68,21 @@ const ButtonStructure = ({
   borderRadius,
   testID = 'button',
   disabled = false,
+  accessibilityLabel,
+  accessibilityHint,
 }) => (
   <ButtonBase
     testID={testID}
     type={type}
     onPress={disabled ? () => {} : onPress}
     borderRadius={borderRadius}
-    underlayColor={getColorPrimaryLight(theme)}
     style={getShadowByType(type, disabled, theme)}
     activeOpacity={getOpacity10(theme)}
     disabled={disabled}
+    accessibilityRole="button"
+    accessibilityLabel={accessibilityLabel}
+    accessibilityHint={accessibilityHint}
+    underlayColor={getColorPrimaryLight(theme)}
   >
     {children}
   </ButtonBase>
