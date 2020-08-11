@@ -1,6 +1,7 @@
 import React from 'react';
 import styled, { withTheme } from 'styled-components/native';
 import { NativeSyntheticEvent, NativeTouchEvent } from 'react-native';
+import ButtonStructure from '../../common/ButtonStructure';
 import {
   getColorPrimary,
   getColorOnPrimary,
@@ -57,27 +58,7 @@ export interface ButtonProps {
   testID?: string,
 }
 
-interface ButtonBase {
-  type: ButtonTypes
-  disabled: boolean
-  theme: Theme
-}
-
 const isContained = (type: ButtonTypes) => type === 'contained';
-
-const getButtonStyles = (theme: Theme, type: ButtonTypes, disabled: boolean) => {
-  const styles = {
-    contained: {
-      background: disabled ? getColorLowEmphasis(theme) : getColorPrimary(theme),
-    },
-    outlined: {
-      borderColor: disabled ? getColorMediumEmphasis(theme) : getColorPrimary(theme),
-      borderWidth: 1,
-    },
-  };
-
-  return styles[type];
-};
 
 const getButtonTextColor = (theme: Theme, type: ButtonTypes, disabled: boolean) => {
   const color = {
@@ -87,12 +68,6 @@ const getButtonTextColor = (theme: Theme, type: ButtonTypes, disabled: boolean) 
 
   return disabled ? color.disabled : color.active;
 };
-
-const ButtonBase = styled.TouchableHighlight<ButtonBase>(({ type, theme, disabled = false }) => ({
-  borderRadius: getRadiusBySize(theme, 'medium'),
-  ...getButtonStyles(theme, type, disabled),
-  ...getButtonPropsBySize(theme, 'medium'),
-}));
 
 const Text = styled.Text<ButtonBase>`
   color: ${({ type, theme, disabled }) => getButtonTextColor(theme, type, disabled)};
@@ -108,15 +83,21 @@ const getShadowByType = (type: ButtonTypes, disabled: boolean, theme: Theme) => 
 );
 
 const ButtonComponent = ({
-  onPress, theme, text, type = 'contained', disabled = false, testID = 'button', accessibilityLabel, accessibilityHint,
+  onPress,
+  theme,
+  text,
+  type = 'contained',
+  disabled = false,
+  testID = 'button',
+  accessibilityLabel,
+  accessibilityHint,
 }: ButtonProps) => (
-  <ButtonBase
+  <ButtonStructure
     testID={testID}
     type={type}
-    onPress={disabled ? () => {} : onPress}
-    style={getShadowByType(type, disabled, theme)}
-    underlayColor={getColorPrimaryLight(theme)}
-    activeOpacity={getOpacity10(theme)}
+    theme={theme}
+    borderRadius={getRadiusBySize(theme, 'medium')}
+    onPress={onPress}
     disabled={disabled}
   >
     <Text
@@ -126,8 +107,10 @@ const ButtonComponent = ({
       accessibilityRole="button"
       type={type}
       disabled={disabled}
-    >{text.toUpperCase()}</Text>
-  </ButtonBase>
+    >
+      {text.toUpperCase()}
+    </Text>
+  </ButtonStructure>
 );
 
 export const Button = withTheme(ButtonComponent);

@@ -3,6 +3,7 @@
 exports[`Button component Disabled variants should render disabled button component contained 1`] = `
 <TouchableHighlight
   activeOpacity={0.8}
+  borderRadius={42}
   disabled={false}
   onPress={[Function]}
   style={
@@ -46,6 +47,7 @@ exports[`Button component Disabled variants should render disabled button compon
 exports[`Button component Disabled variants should render disabled button component outlined 1`] = `
 <TouchableHighlight
   activeOpacity={0.8}
+  borderRadius={42}
   disabled={true}
   onPress={[Function]}
   style={
@@ -89,6 +91,7 @@ exports[`Button component Disabled variants should render disabled button compon
 exports[`Button component Disabled variants should render disabled button component text 1`] = `
 <TouchableHighlight
   activeOpacity={0.8}
+  borderRadius={42}
   disabled={true}
   onPress={[Function]}
   style={
@@ -130,6 +133,7 @@ exports[`Button component Disabled variants should render disabled button compon
 exports[`Button component Variants should render button component contained 1`] = `
 <TouchableHighlight
   activeOpacity={0.8}
+  borderRadius={42}
   disabled={false}
   onPress={[Function]}
   style={
@@ -173,6 +177,7 @@ exports[`Button component Variants should render button component contained 1`] 
 exports[`Button component Variants should render button component outlined 1`] = `
 <TouchableHighlight
   activeOpacity={0.8}
+  borderRadius={42}
   disabled={false}
   onPress={[Function]}
   style={
@@ -216,6 +221,7 @@ exports[`Button component Variants should render button component outlined 1`] =
 exports[`Button component Variants should render button component text 1`] = `
 <TouchableHighlight
   activeOpacity={0.8}
+  borderRadius={42}
   disabled={true}
   onPress={[Function]}
   style={
@@ -238,7 +244,7 @@ exports[`Button component Variants should render button component text 1`] = `
       Array [
         Object {
           "alignSelf": "center",
-          "color": "#FAF3E3",
+          "color": "#FAFAEA",
           "fontSize": 14,
           "letterSpacing": 1,
         },
