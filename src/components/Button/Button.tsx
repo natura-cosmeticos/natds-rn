@@ -3,17 +3,11 @@ import styled, { withTheme } from 'styled-components/native';
 import { NativeSyntheticEvent, NativeTouchEvent } from 'react-native';
 import ButtonStructure from '../../common/ButtonStructure';
 import {
-  getColorPrimary,
   getColorOnPrimary,
   getColorHighEmphasis,
   getColorMediumEmphasis,
-  getColorLowEmphasis,
-  getButtonPropsBySize,
   getRadiusBySize,
-  getShadowBySize,
   Theme,
-  getOpacity10,
-  getColorPrimaryLight,
 } from '../../common/themeSelectors';
 
 export type ButtonTypes = 'contained' | 'outlined' | 'text'
@@ -69,18 +63,17 @@ const getButtonTextColor = (theme: Theme, type: ButtonTypes, disabled: boolean) 
   return disabled ? color.disabled : color.active;
 };
 
-const Text = styled.Text<ButtonBase>`
+interface LabelInterface {
+  type: ButtonTypes
+  disabled: boolean
+}
+
+const Label = styled.Text<LabelInterface>`
   color: ${({ type, theme, disabled }) => getButtonTextColor(theme, type, disabled)};
   font-size: 14px;
   align-self: center;
   letter-spacing: 1px;
 `;
-
-const getShadowByType = (type: ButtonTypes, disabled: boolean, theme: Theme) => (
-  isContained(type) && !disabled
-    ? getShadowBySize(theme, '2')
-    : {}
-);
 
 const ButtonComponent = ({
   onPress,
@@ -99,17 +92,16 @@ const ButtonComponent = ({
     borderRadius={getRadiusBySize(theme, 'medium')}
     onPress={onPress}
     disabled={disabled}
+    accessibilityLabel={accessibilityLabel}
+    accessibilityHint={accessibilityHint}
   >
-    <Text
+    <Label
       style={{ fontWeight: 'bold' }}
-      accessibilityLabel={accessibilityLabel}
-      accessibilityHint={accessibilityHint}
-      accessibilityRole="button"
       type={type}
       disabled={disabled}
     >
       {text.toUpperCase()}
-    </Text>
+    </Label>
   </ButtonStructure>
 );
 

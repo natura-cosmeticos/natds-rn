@@ -2,6 +2,7 @@
 
 exports[`Button component Disabled variants should render disabled button component contained 1`] = `
 <TouchableHighlight
+  accessibilityRole="button"
   activeOpacity={0.8}
   borderRadius={42}
   disabled={false}
@@ -22,7 +23,6 @@ exports[`Button component Disabled variants should render disabled button compon
   underlayColor="#BABABA"
 >
   <Text
-    accessibilityRole="button"
     disabled={false}
     style={
       Array [
@@ -46,6 +46,7 @@ exports[`Button component Disabled variants should render disabled button compon
 
 exports[`Button component Disabled variants should render disabled button component outlined 1`] = `
 <TouchableHighlight
+  accessibilityRole="button"
   activeOpacity={0.8}
   borderRadius={42}
   disabled={true}
@@ -66,7 +67,6 @@ exports[`Button component Disabled variants should render disabled button compon
   underlayColor="#BABABA"
 >
   <Text
-    accessibilityRole="button"
     disabled={true}
     style={
       Array [
@@ -90,6 +90,7 @@ exports[`Button component Disabled variants should render disabled button compon
 
 exports[`Button component Disabled variants should render disabled button component text 1`] = `
 <TouchableHighlight
+  accessibilityRole="button"
   activeOpacity={0.8}
   borderRadius={42}
   disabled={true}
@@ -108,7 +109,6 @@ exports[`Button component Disabled variants should render disabled button compon
   underlayColor="#BABABA"
 >
   <Text
-    accessibilityRole="button"
     disabled={true}
     style={
       Array [
@@ -132,6 +132,7 @@ exports[`Button component Disabled variants should render disabled button compon
 
 exports[`Button component Variants should render button component contained 1`] = `
 <TouchableHighlight
+  accessibilityRole="button"
   activeOpacity={0.8}
   borderRadius={42}
   disabled={false}
@@ -152,7 +153,6 @@ exports[`Button component Variants should render button component contained 1`] 
   underlayColor="#BABABA"
 >
   <Text
-    accessibilityRole="button"
     disabled={false}
     style={
       Array [
@@ -176,6 +176,7 @@ exports[`Button component Variants should render button component contained 1`] 
 
 exports[`Button component Variants should render button component outlined 1`] = `
 <TouchableHighlight
+  accessibilityRole="button"
   activeOpacity={0.8}
   borderRadius={42}
   disabled={false}
@@ -196,7 +197,6 @@ exports[`Button component Variants should render button component outlined 1`] =
   underlayColor="#BABABA"
 >
   <Text
-    accessibilityRole="button"
     disabled={false}
     style={
       Array [
@@ -220,6 +220,7 @@ exports[`Button component Variants should render button component outlined 1`] =
 
 exports[`Button component Variants should render button component text 1`] = `
 <TouchableHighlight
+  accessibilityRole="button"
   activeOpacity={0.8}
   borderRadius={42}
   disabled={true}
@@ -238,7 +239,6 @@ exports[`Button component Variants should render button component text 1`] = `
   underlayColor="#BABABA"
 >
   <Text
-    accessibilityRole="button"
     disabled={true}
     style={
       Array [
