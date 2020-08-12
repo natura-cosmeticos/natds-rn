@@ -46,9 +46,9 @@ const ButtonStructure = ({
   borderRadius,
   testID = 'button',
   disabled = false,
+  styles = {},
   accessibilityLabel,
   accessibilityHint,
-  styles,
 }) => (
   <ButtonBase
     type={type}

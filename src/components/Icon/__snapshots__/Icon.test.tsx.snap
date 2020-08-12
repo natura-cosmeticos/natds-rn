@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IconButton component should render Icon component with all possible icons: Icon component - name: filled-action-add 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#333333",
+      "fontFamily": "natds-icons",
+      "fontSize": 24,
+    }
+  }
+  testID="icon-filled-action-add"
+>
+  
+</Text>
+`;
+
+exports[`IconButton component should render Icon component with all possible icons: Icon component - name: outlined-action-micrec 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#333333",
+      "fontFamily": "natds-icons",
+      "fontSize": 24,
+    }
+  }
+  testID="icon-outlined-action-micrec"
+>
+  
+</Text>
+`;
+
+exports[`IconButton component should render Icon component with all possible icons: Icon component - name: outlined-content-wellness 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#333333",
+      "fontFamily": "natds-icons",
+      "fontSize": 24,
+    }
+  }
+  testID="icon-outlined-content-wellness"
+>
+  
+</Text>
+`;
+
+exports[`IconButton component should render Icon component with all possible icons: Icon component - name: outlined-finance-bank 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#333333",
+      "fontFamily": "natds-icons",
+      "fontSize": 24,
+    }
+  }
+  testID="icon-outlined-finance-bank"
+>
+  
+</Text>
+`;

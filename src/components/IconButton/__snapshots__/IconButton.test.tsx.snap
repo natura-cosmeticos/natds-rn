@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IconButton component should render Icon component 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+      },
+    ]
+  }
+>
+  <TouchableHighlight
+    accessibilityRole="button"
+    activeOpacity={0.8}
+    borderRadius={100}
+    disabled={false}
+    onPress={[Function]}
+    style={
+      Array [
+        Object {
+          "borderRadius": 100,
+          "minHeight": 40,
+          "paddingBottom": 12,
+          "paddingLeft": 16,
+          "paddingRight": 16,
+          "paddingTop": 12,
+        },
+      ]
+    }
+    styles={Object {}}
+    testID="icon-button"
+    type="icon"
+    underlayColor="#FEFDE8"
+  >
+    <Text
+      style={
+        Object {
+          "color": "#333333",
+          "fontFamily": "natds-icons",
+          "fontSize": 24,
+        }
+      }
+      testID="icon-outlined-finance-bank"
+    >
+      
+    </Text>
+  </TouchableHighlight>
+</View>
+`;
