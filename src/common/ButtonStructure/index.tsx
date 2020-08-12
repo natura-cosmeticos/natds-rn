@@ -2,22 +2,23 @@ import React from 'react';
 import styled, { withTheme } from 'styled-components/native';
 import { NativeSyntheticEvent, NativeTouchEvent } from 'react-native';
 import {
-  getColorMediumEmphasis,
   getButtonPropsBySize,
-  getShadowBySize,
-  getColorLowEmphasis,
-  getColorPrimary,
   getOpacity10,
   Theme,
   getColorPrimaryLight,
 } from '../themeSelectors';
 
-export type ButtonTypes = 'contained' | 'outlined' | 'text'
-type AccessibilityRole = 'button'
+export type AccessibilityRole = 'button'
 
-export interface ButtonStructureInterface {
+interface Dictionary<T> {
+  [Key: string]: T;
+}
+
+export interface IButtonStructure {
+  children: React.ReactNode
+  type: string
   testID: string
-  type: ButtonTypes
+  theme: Theme
   onPress: (ev: NativeSyntheticEvent<NativeTouchEvent>) => void
   borderRadius: number
   disabled: boolean
@@ -25,40 +26,18 @@ export interface ButtonStructureInterface {
   accessibilityLabel: string
   accessibilityHint: string
   underlayColor: string
+  styles: Dictionary<string>
 }
 
-const isContained = (type: ButtonTypes) => type === 'contained';
-
-const getButtonStyles = (theme: Theme, type: ButtonTypes, disabled: boolean) => {
-  const styles = {
-    contained: {
-      background: disabled ? getColorLowEmphasis(theme) : getColorPrimary(theme),
-    },
-    outlined: {
-      borderColor: disabled ? getColorMediumEmphasis(theme) : getColorPrimary(theme),
-      borderWidth: 1,
-    },
-  };
-
-  return styles[type];
-};
-
-const ButtonBase = styled.TouchableHighlight<ButtonStructureInterface>(({
-  type,
+const ButtonBase = styled.TouchableHighlight<IButtonStructure>(({
   theme,
   borderRadius,
-  disabled = false,
+  styles,
 }) => ({
   borderRadius,
-  ...getButtonStyles(theme, type, disabled),
+  ...styles,
   ...getButtonPropsBySize(theme, 'medium'),
 }));
-
-const getShadowByType = (type: ButtonTypes, disabled: boolean, theme: Theme) => (
-  isContained(type) && !disabled
-    ? getShadowBySize(theme, '2')
-    : {}
-);
 
 const ButtonStructure = ({
   children,
@@ -70,13 +49,14 @@ const ButtonStructure = ({
   disabled = false,
   accessibilityLabel,
   accessibilityHint,
+  styles,
 }) => (
   <ButtonBase
-    testID={testID}
     type={type}
+    testID={testID}
     onPress={disabled ? () => {} : onPress}
     borderRadius={borderRadius}
-    style={getShadowByType(type, disabled, theme)}
+    styles={styles}
     activeOpacity={getOpacity10(theme)}
     disabled={disabled}
     accessibilityRole="button"

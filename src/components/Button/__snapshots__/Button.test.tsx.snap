@@ -12,11 +12,15 @@ exports[`Button component Disabled variants should render disabled button compon
       Object {
         "backgroundColor": "#AEAEAE",
         "borderRadius": 42,
-      },
-      Object {
         "shadowColor": "#AEAEAE",
       },
     ]
+  }
+  styles={
+    Object {
+      "background": "#FFFFFF",
+      "shadowColor": "#AEAEAE",
+    }
   }
   testID="button"
   type="contained"
@@ -59,8 +63,13 @@ exports[`Button component Disabled variants should render disabled button compon
         "borderRadius": 42,
         "borderWidth": 1,
       },
-      Object {},
     ]
+  }
+  styles={
+    Object {
+      "borderColor": "#FAFAEA",
+      "borderWidth": 1,
+    }
   }
   testID="button"
   type="outlined"
@@ -101,9 +110,9 @@ exports[`Button component Disabled variants should render disabled button compon
         "backgroundColor": "#AEAEAE",
         "borderRadius": 42,
       },
-      Object {},
     ]
   }
+  styles={Object {}}
   testID="button"
   type="text"
   underlayColor="#BABABA"
@@ -142,11 +151,15 @@ exports[`Button component Variants should render button component contained 1`] 
       Object {
         "backgroundColor": "#AEAEAE",
         "borderRadius": 42,
-      },
-      Object {
         "shadowColor": "#AEAEAE",
       },
     ]
+  }
+  styles={
+    Object {
+      "background": "#FFFFFF",
+      "shadowColor": "#AEAEAE",
+    }
   }
   testID="button"
   type="contained"
@@ -189,8 +202,13 @@ exports[`Button component Variants should render button component outlined 1`] =
         "borderRadius": 42,
         "borderWidth": 1,
       },
-      Object {},
     ]
+  }
+  styles={
+    Object {
+      "borderColor": "#FFFFFF",
+      "borderWidth": 1,
+    }
   }
   testID="button"
   type="outlined"
@@ -231,9 +249,9 @@ exports[`Button component Variants should render button component text 1`] = `
         "backgroundColor": "#AEAEAE",
         "borderRadius": 42,
       },
-      Object {},
     ]
   }
+  styles={Object {}}
   testID="button"
   type="text"
   underlayColor="#BABABA"
