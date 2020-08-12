@@ -6,11 +6,6 @@ import styled from 'styled-components/native';
 import { ProgressIndicatorColors } from '../ProgressIndicator';
 import { Theme, getColorPrimary, getColorSecondary } from '../../../common/themeSelectors';
 
-export const Root = styled.View(({ size }: { size: number }) => ({
-  height: size,
-  width: size,
-}));
-
 export const Layer = styled.View<{
   size: number,
 }>(({ size }) => ({

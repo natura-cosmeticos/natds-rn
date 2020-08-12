@@ -7,7 +7,6 @@ import {
 
 import { ProgressIndicatorColors } from '../ProgressIndicator';
 import {
-  Root,
   Loop,
   Layer,
   Container,
@@ -77,7 +76,7 @@ export const CircularProgress = ({
   }, []);
 
   return (
-    <Root as={Animated.View} size={size}>
+    <Layer as={Animated.View} size={size}>
       <Loop as={Animated.View}>
         <Layer
           as={Animated.View}
@@ -93,6 +92,6 @@ export const CircularProgress = ({
           </Container>
         </Layer>
       </Loop>
-    </Root>
+    </Layer>
   );
 };
