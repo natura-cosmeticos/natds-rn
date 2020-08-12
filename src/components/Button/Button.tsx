@@ -66,13 +66,13 @@ const getButtonTextColor = (theme: Theme, type: ButtonTypes, disabled: boolean) 
   return disabled ? color.disabled : color.active;
 };
 
-interface LabelInterface {
+interface LabelProps {
   type: ButtonTypes
   disabled: boolean
 }
 
-const Label = styled.Text<LabelInterface>`
-  color: ${({ type, theme, disabled }) => getButtonTextColor(theme, type, disabled)};
+const Label = styled.Text<LabelProps>`
+  color: ${({ theme, type, disabled }) => getButtonTextColor(theme, type, disabled)};
   font-size: 14px;
   align-self: center;
   letter-spacing: 1px;
@@ -113,7 +113,7 @@ const ButtonComponent = ({
     testID={testID}
     theme={theme}
     borderRadius={getRadiusBySize(theme, 'medium')}
-    onPress={onPress}
+    onPress={disabled ? () => {} : onPress}
     disabled={disabled}
     styles={{
       ...getShadowByType(type, disabled, theme),
