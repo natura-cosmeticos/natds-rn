@@ -14,7 +14,7 @@ interface Dictionary<T> {
   [Key: string]: T;
 }
 
-export interface IButtonStructure {
+export interface ButtonStructureProps {
   children: React.ReactNode
   type: string
   testID: string
@@ -25,11 +25,10 @@ export interface IButtonStructure {
   accessibilityRole: AccessibilityRole
   accessibilityLabel: string
   accessibilityHint: string
-  underlayColor: string
   styles: Dictionary<string>
 }
 
-const ButtonBase = styled.TouchableHighlight<IButtonStructure>(({
+const ButtonBase = styled.TouchableHighlight<ButtonStructureProps>(({
   theme,
   borderRadius,
   styles,
@@ -54,7 +53,7 @@ const ButtonStructure = ({
   <ButtonBase
     type={type}
     testID={testID}
-    onPress={disabled ? () => {} : onPress}
+    onPress={onPress}
     borderRadius={borderRadius}
     styles={styles}
     activeOpacity={getOpacity10(theme)}
