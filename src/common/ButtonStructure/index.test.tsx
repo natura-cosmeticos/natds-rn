@@ -3,7 +3,7 @@ import { render, fireEvent } from '@testing-library/react-native';
 import '@testing-library/jest-native/extend-expect';
 import { ThemeProvider } from 'styled-components/native';
 import { Text } from 'react-native';
-import theme from '../../common/themeSelectors/theme/mock-theme.json';
+import theme from '../themeSelectors/theme/mock-theme.json';
 import ButtonStructure, { ButtonStructureProps, AccessibilityRole } from '.';
 
 jest.mock(
