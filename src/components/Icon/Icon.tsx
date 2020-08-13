@@ -6,6 +6,7 @@ import iconNames from '@naturacosmeticos/natds-icons/dist/natds-icons.json';
 import { Theme } from '../../common/themeSelectors';
 
 export type IconColors = 'default' | 'primary'
+export type IconSizes = 'small' | 'medium'
 
 export interface IconProps {
   /**
@@ -27,10 +28,12 @@ export interface IconProps {
   /**
    * Optional font size for the icon
    */
-  size?: number,
+  size?: IconSizes,
 }
 
 const defaultIconName = 'filled-brand-naturarosacea';
+
+const getIconSize = (theme) => theme.sizes['standard'];
 
 const getFontColor = (theme, color) => {
   const translatedColor = {
@@ -45,7 +48,7 @@ const IconComponent = ({
   color = 'default',
   name = defaultIconName,
   testID = `icon-${name}`,
-  size = 24,
+  size = 'small',
   theme,
 }: IconProps) => {
   const unicodeName = iconNames[name]
@@ -60,7 +63,7 @@ const IconComponent = ({
       style={{
         color: getFontColor(theme, color),
         fontFamily: 'natds-icons',
-        fontSize: size,
+        fontSize: getIconSize(theme),
       }}
     >
       {code}

@@ -63,7 +63,6 @@ const getSpacingBySize = (theme, size) => {
   return theme.spacing[spacing];
 };
 
-const getIconSize = (theme) => theme.sizes['standard'];
 
 interface IconContainerProps {
   theme: Theme,
@@ -95,12 +94,7 @@ const IconButtonComponent = ({
       accessibilityHint={accessibilityHint}
     >
       <IconContainer theme={theme} size={size}>
-        <Icon
-          name={icon}
-          size={getIconSize(theme)}
-          color={color}
-          theme={theme}
-        />
+        <Icon name={icon} size={size} color={color} theme={theme} />
       </IconContainer>
     </ButtonStructure>
   </IconButtonContainer>
