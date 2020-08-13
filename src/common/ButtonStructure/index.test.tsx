@@ -25,7 +25,7 @@ const renderButton = (fn, props: Omit<ButtonStructureProps, 'theme'>) => (fn(
 
 const props = {
   accessibilityHint: 'button',
-  accessibilityLabel: 'button-strucuture',
+  accessibilityLabel: 'button-structure',
   accessibilityRole: 'button' as AccessibilityRole,
   borderRadius: 10,
   children: <Text>LABEL BUTTON</Text>,
@@ -43,7 +43,7 @@ describe('ButtonStructure component', () => {
     const renderedProps = queryByTestId('button-structure').props;
 
     expect(renderedProps).toHaveProperty('accessibilityHint', 'button');
-    expect(renderedProps).toHaveProperty('accessibilityLabel', 'button-strucuture');
+    expect(renderedProps).toHaveProperty('accessibilityLabel', 'button-structure');
     expect(renderedProps).toHaveProperty('accessibilityRole', 'button');
     expect(renderedProps).toHaveProperty('borderRadius', 10);
     expect(renderedProps).toHaveProperty('type', 'random-type');
