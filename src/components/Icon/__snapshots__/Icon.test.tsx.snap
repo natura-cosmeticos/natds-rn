@@ -7,6 +7,8 @@ exports[`Icon component should render component with all possible icons: Icon co
       "color": "#333333",
       "fontFamily": "natds-icons",
       "fontSize": 24,
+      "paddingBottom": 3,
+      "paddingTop": 3,
     }
   }
   testID="icon-filled-action-add"
@@ -22,6 +24,8 @@ exports[`Icon component should render component with all possible icons: Icon co
       "color": "#333333",
       "fontFamily": "natds-icons",
       "fontSize": 24,
+      "paddingBottom": 3,
+      "paddingTop": 3,
     }
   }
   testID="icon-outlined-action-micrec"
@@ -37,6 +41,8 @@ exports[`Icon component should render component with all possible icons: Icon co
       "color": "#333333",
       "fontFamily": "natds-icons",
       "fontSize": 24,
+      "paddingBottom": 3,
+      "paddingTop": 3,
     }
   }
   testID="icon-outlined-content-wellness"
@@ -52,6 +58,8 @@ exports[`Icon component should render component with all possible icons: Icon co
       "color": "#333333",
       "fontFamily": "natds-icons",
       "fontSize": 24,
+      "paddingBottom": 3,
+      "paddingTop": 3,
     }
   }
   testID="icon-outlined-finance-bank"

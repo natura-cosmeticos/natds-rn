@@ -8,7 +8,7 @@ import {
   IconButton,
   IconButtonProps,
   IconButtonSizes,
-  IconButtonColors
+  IconButtonColors,
 } from './IconButton';
 
 jest.mock(

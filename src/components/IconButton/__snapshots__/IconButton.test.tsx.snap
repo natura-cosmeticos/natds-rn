@@ -356,6 +356,8 @@ exports[`IconButton component should render IconButton component 1`] = `
             "color": "#333333",
             "fontFamily": "natds-icons",
             "fontSize": 24,
+            "paddingBottom": 3,
+            "paddingTop": 3,
           }
         }
         testID="icon-outlined-finance-bank"

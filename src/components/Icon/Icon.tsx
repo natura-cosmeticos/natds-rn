@@ -33,7 +33,7 @@ export interface IconProps {
 
 const defaultIconName = 'filled-brand-naturarosacea';
 
-const getIconSize = (theme) => theme.sizes['standard'];
+const getIconSize = theme => theme.sizes.standard;
 
 const getFontColor = (theme, color) => {
   const translatedColor = {
@@ -64,6 +64,8 @@ const IconComponent = ({
         color: getFontColor(theme, color),
         fontFamily: 'natds-icons',
         fontSize: getIconSize(theme),
+        paddingBottom: 3,
+        paddingTop: 3,
       }}
     >
       {code}

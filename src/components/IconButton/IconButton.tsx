@@ -53,16 +53,14 @@ const IconButtonContainer = styled(View)`
   justify-content: space-between;
 `;
 
-
 const getSpacingBySize = (theme, size) => {
   const spacing = {
-    small: 'spacingMicro',
     medium: 'spacingTiny',
+    small: 'spacingMicro',
   }[size];
 
   return theme.spacing[spacing];
 };
-
 
 interface IconContainerProps {
   theme: Theme,
