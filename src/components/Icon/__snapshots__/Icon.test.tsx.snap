@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`IconButton component should render Icon component with all possible icons: Icon component - name: filled-action-add 1`] = `
+exports[`Icon component should render component with all possible icons: Icon component - name: filled-action-add 1`] = `
 <Text
   style={
     Object {
@@ -15,7 +15,7 @@ exports[`IconButton component should render Icon component with all possible ico
 </Text>
 `;
 
-exports[`IconButton component should render Icon component with all possible icons: Icon component - name: outlined-action-micrec 1`] = `
+exports[`Icon component should render component with all possible icons: Icon component - name: outlined-action-micrec 1`] = `
 <Text
   style={
     Object {
@@ -30,7 +30,7 @@ exports[`IconButton component should render Icon component with all possible ico
 </Text>
 `;
 
-exports[`IconButton component should render Icon component with all possible icons: Icon component - name: outlined-content-wellness 1`] = `
+exports[`Icon component should render component with all possible icons: Icon component - name: outlined-content-wellness 1`] = `
 <Text
   style={
     Object {
@@ -45,7 +45,7 @@ exports[`IconButton component should render Icon component with all possible ico
 </Text>
 `;
 
-exports[`IconButton component should render Icon component with all possible icons: Icon component - name: outlined-finance-bank 1`] = `
+exports[`Icon component should render component with all possible icons: Icon component - name: outlined-finance-bank 1`] = `
 <Text
   style={
     Object {

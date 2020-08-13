@@ -47,10 +47,31 @@ export interface IconButtonProps {
   accessibilityLabel?: string
 }
 
-const Container = styled(View)`
+const IconButtonContainer = styled(View)`
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
+`;
+
+
+const getSpacingBySize = (theme, size) => {
+  const spacing = {
+    small: 'spacingMicro',
+    medium: 'spacingTiny',
+  }[size];
+
+  return theme.spacing[spacing];
+};
+
+const getIconSize = (theme) => theme.sizes['standard'];
+
+interface IconContainerProps {
+  theme: Theme,
+  size: IconButtonSizes,
+}
+
+const IconContainer = styled.View<IconContainerProps>`
+  padding: ${({ theme, size }) => getSpacingBySize(theme, size)}px;
 `;
 
 const IconButtonComponent = ({
@@ -59,22 +80,30 @@ const IconButtonComponent = ({
   onPress,
   theme,
   testID,
+  size = 'small',
   accessibilityLabel,
   accessibilityHint,
 }: IconButtonProps) => (
-  <Container>
+  <IconButtonContainer>
     <ButtonStructure
       testID={testID}
       type="icon"
       theme={theme}
-      borderRadius={100}
+      borderRadius={50}
       onPress={onPress}
       accessibilityLabel={accessibilityLabel}
       accessibilityHint={accessibilityHint}
     >
-      <Icon name={icon} color={color} theme={theme} />
+      <IconContainer theme={theme} size={size}>
+        <Icon
+          name={icon}
+          size={getIconSize(theme)}
+          color={color}
+          theme={theme}
+        />
+      </IconContainer>
     </ButtonStructure>
-  </Container>
+  </IconButtonContainer>
 );
 
 export const IconButton = withTheme(IconButtonComponent);

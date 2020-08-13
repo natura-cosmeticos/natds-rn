@@ -24,9 +24,12 @@ export interface IconProps {
    * Optional ID for testing
    */
   testID?: string,
+  /**
+   * Optional font size for the icon
+   */
+  size?: number,
 }
 
-const getFontSizeBySize = (theme, size) => theme.sizes[size];
 const defaultIconName = 'filled-brand-naturarosacea';
 
 const getFontColor = (theme, color) => {
@@ -42,6 +45,7 @@ const IconComponent = ({
   color = 'default',
   name = defaultIconName,
   testID = `icon-${name}`,
+  size = 24,
   theme,
 }: IconProps) => {
   const unicodeName = iconNames[name]
@@ -56,7 +60,7 @@ const IconComponent = ({
       style={{
         color: getFontColor(theme, color),
         fontFamily: 'natds-icons',
-        fontSize: getFontSizeBySize(theme, 'standard'),
+        fontSize: size,
       }}
     >
       {code}
