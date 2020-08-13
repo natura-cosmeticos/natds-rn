@@ -1,0 +1,8 @@
+---
+dictionaries:
+  - en
+excluded_words:
+  - natds
+  - natura
+  - naturacosmeticos
+spellcheck_filenames: true
