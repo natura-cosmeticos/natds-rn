@@ -1,10 +1,11 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
 import { render, fireEvent } from '@testing-library/react-native';
 import '@testing-library/jest-native/extend-expect';
 import { ThemeProvider } from 'styled-components/native';
 import { Text } from 'react-native';
 import theme from '../themeSelectors/theme/mock-theme.json';
-import ButtonStructure, { ButtonStructureProps, AccessibilityRole } from '.';
+import ButtonStructure, { ButtonStructureProps } from '.';
 
 jest.mock(
   'react-native/Libraries/Components/Touchable/TouchableHighlight',
@@ -26,14 +27,13 @@ const renderButton = (fn, props: Omit<ButtonStructureProps, 'theme'>) => (fn(
 const props = {
   accessibilityHint: 'button',
   accessibilityLabel: 'button-structure',
-  accessibilityRole: 'button' as AccessibilityRole,
+  accessibilityRole: 'button',
   borderRadius: 10,
   children: <Text>LABEL BUTTON</Text>,
   disabled: false,
   onPress: () => {},
   styles: {},
   testID: 'button-structure',
-  type: 'random-type',
 };
 
 describe('ButtonStructure component', () => {

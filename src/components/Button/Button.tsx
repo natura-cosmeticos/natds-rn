@@ -17,28 +17,6 @@ export type ButtonTypes = 'contained' | 'outlined' | 'text'
 
 export interface ButtonProps {
   /**
-   * The onPress event handler
-   */
-  onPress: (ev: NativeSyntheticEvent<NativeTouchEvent>) => void,
-  /**
-   * The button text content
-   */
-  text: string
-  /**
-   * Button variants `contained` | `outlined` | `text`
-   */
-  type?: ButtonTypes
-  /**
-   * A disabled button is unusable and un-clickable.
-   * The disabled attribute can be set to keep a user from clicking on the button until some
-   * other condition has been met (like selecting a checkbox, etc.).
-   */
-  disabled?: boolean
-  /**
-   * The button theme
-   */
-  theme: Theme,
-  /**
    * An accessibility hint helps users understand what will happen when they perform an action
    * on the accessibility element when that result is not clear from the accessibility label.
    */
@@ -50,9 +28,31 @@ export interface ButtonProps {
    */
   accessibilityLabel?: string
   /**
+   * A disabled button is unusable and un-clickable.
+   * The disabled attribute can be set to keep a user from clicking on the button until some
+   * other condition has been met (like selecting a checkbox, etc.).
+   */
+  disabled?: boolean
+  /**
+   * The onPress event handler
+   */
+  onPress: (ev: NativeSyntheticEvent<NativeTouchEvent>) => void,
+  /**
   * Optional ID for testing
   */
   testID?: string,
+  /**
+   * The button text content
+   */
+  text: string
+  /**
+   * The button theme
+   */
+  theme: Theme,
+  /**
+   * Button variants `contained` | `outlined` | `text`
+   */
+  type?: ButtonTypes
 }
 
 const isContained = (type: ButtonTypes) => type === 'contained';
@@ -84,10 +84,14 @@ const getShadowByType = (type: ButtonTypes, disabled: boolean, theme: Theme) => 
     : {}
 );
 
-const getButtonStyles = (theme: Theme, type: ButtonTypes, disabled: boolean) => {
+const getButtonStyles = (
+  type: ButtonTypes,
+  disabled: boolean,
+  theme: Theme,
+) => {
   const styles = {
     contained: {
-      background: disabled ? getColorLowEmphasis(theme) : getColorPrimary(theme),
+      backgroundColor: disabled ? getColorLowEmphasis(theme) : getColorPrimary(theme),
     },
     outlined: {
       borderColor: disabled ? getColorMediumEmphasis(theme) : getColorPrimary(theme),
@@ -109,15 +113,14 @@ const ButtonComponent = ({
   accessibilityHint,
 }: ButtonProps) => (
   <ButtonStructure
-    type={type}
     testID={testID}
     theme={theme}
-    borderRadius={getRadiusBySize(theme, 'medium')}
     onPress={disabled ? () => {} : onPress}
     disabled={disabled}
-    styles={{
+    style={{
       ...getShadowByType(type, disabled, theme),
-      ...getButtonStyles(theme, type, disabled),
+      ...getButtonStyles(type, disabled, theme),
+      borderRadius: getRadiusBySize(theme, 'medium'),
     }}
     accessibilityLabel={accessibilityLabel}
     accessibilityHint={accessibilityHint}

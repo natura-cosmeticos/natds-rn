@@ -4,26 +4,16 @@ exports[`Button component Disabled variants should render disabled button compon
 <TouchableHighlight
   accessibilityRole="button"
   activeOpacity={0.8}
-  borderRadius={42}
   disabled={false}
   onPress={[Function]}
   style={
-    Array [
-      Object {
-        "backgroundColor": "#AEAEAE",
-        "borderRadius": 42,
-        "shadowColor": "#AEAEAE",
-      },
-    ]
-  }
-  styles={
     Object {
-      "background": "#FFFFFF",
+      "backgroundColor": "#FFFFFF",
+      "borderRadius": 42,
       "shadowColor": "#AEAEAE",
     }
   }
   testID="button"
-  type="contained"
   underlayColor="#BABABA"
 >
   <Text
@@ -52,27 +42,16 @@ exports[`Button component Disabled variants should render disabled button compon
 <TouchableHighlight
   accessibilityRole="button"
   activeOpacity={0.8}
-  borderRadius={42}
   disabled={true}
   onPress={[Function]}
   style={
-    Array [
-      Object {
-        "backgroundColor": "#AEAEAE",
-        "borderColor": "#FAFAEA",
-        "borderRadius": 42,
-        "borderWidth": 1,
-      },
-    ]
-  }
-  styles={
     Object {
       "borderColor": "#FAFAEA",
+      "borderRadius": 42,
       "borderWidth": 1,
     }
   }
   testID="button"
-  type="outlined"
   underlayColor="#BABABA"
 >
   <Text
@@ -101,20 +80,14 @@ exports[`Button component Disabled variants should render disabled button compon
 <TouchableHighlight
   accessibilityRole="button"
   activeOpacity={0.8}
-  borderRadius={42}
   disabled={true}
   onPress={[Function]}
   style={
-    Array [
-      Object {
-        "backgroundColor": "#AEAEAE",
-        "borderRadius": 42,
-      },
-    ]
+    Object {
+      "borderRadius": 42,
+    }
   }
-  styles={Object {}}
   testID="button"
-  type="text"
   underlayColor="#BABABA"
 >
   <Text
@@ -143,26 +116,16 @@ exports[`Button component Variants should render button component contained 1`] 
 <TouchableHighlight
   accessibilityRole="button"
   activeOpacity={0.8}
-  borderRadius={42}
   disabled={false}
   onPress={[Function]}
   style={
-    Array [
-      Object {
-        "backgroundColor": "#AEAEAE",
-        "borderRadius": 42,
-        "shadowColor": "#AEAEAE",
-      },
-    ]
-  }
-  styles={
     Object {
-      "background": "#FFFFFF",
+      "backgroundColor": "#FFFFFF",
+      "borderRadius": 42,
       "shadowColor": "#AEAEAE",
     }
   }
   testID="button"
-  type="contained"
   underlayColor="#BABABA"
 >
   <Text
@@ -191,27 +154,16 @@ exports[`Button component Variants should render button component outlined 1`] =
 <TouchableHighlight
   accessibilityRole="button"
   activeOpacity={0.8}
-  borderRadius={42}
   disabled={false}
   onPress={[Function]}
   style={
-    Array [
-      Object {
-        "backgroundColor": "#AEAEAE",
-        "borderColor": "#FFFFFF",
-        "borderRadius": 42,
-        "borderWidth": 1,
-      },
-    ]
-  }
-  styles={
     Object {
       "borderColor": "#FFFFFF",
+      "borderRadius": 42,
       "borderWidth": 1,
     }
   }
   testID="button"
-  type="outlined"
   underlayColor="#BABABA"
 >
   <Text
@@ -240,20 +192,14 @@ exports[`Button component Variants should render button component text 1`] = `
 <TouchableHighlight
   accessibilityRole="button"
   activeOpacity={0.8}
-  borderRadius={42}
   disabled={true}
   onPress={[Function]}
   style={
-    Array [
-      Object {
-        "backgroundColor": "#AEAEAE",
-        "borderRadius": 42,
-      },
-    ]
+    Object {
+      "borderRadius": 42,
+    }
   }
-  styles={Object {}}
   testID="button"
-  type="text"
   underlayColor="#BABABA"
 >
   <Text

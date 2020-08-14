@@ -1,70 +1,45 @@
 import React from 'react';
-import styled, { withTheme } from 'styled-components/native';
-import { NativeSyntheticEvent, NativeTouchEvent } from 'react-native';
-import {
-  getButtonPropsBySize,
-  getOpacity10,
-  Theme,
-  getColorPrimaryLight,
-} from '../themeSelectors';
-
-export type AccessibilityRole = 'button'
+import { withTheme } from 'styled-components';
+import { NativeSyntheticEvent, NativeTouchEvent, TouchableHighlight } from 'react-native';
+import { getOpacity10, Theme, getColorPrimaryLight } from '../themeSelectors';
 
 interface Dictionary<T> {
   [Key: string]: T;
 }
 
 export interface ButtonStructureProps {
-  children: React.ReactNode
-  type: string
-  testID: string
-  theme: Theme
-  onPress: (ev: NativeSyntheticEvent<NativeTouchEvent>) => void
-  borderRadius: number
-  disabled: boolean
-  accessibilityRole: AccessibilityRole
-  accessibilityLabel: string
-  accessibilityHint: string
-  styles: Dictionary<string>
+  accessibilityHint?: string;
+  accessibilityLabel?: string;
+  children: React.ReactNode;
+  disabled?: boolean;
+  onPress: (ev: NativeSyntheticEvent<NativeTouchEvent>) => void;
+  style?: Dictionary<string>;
+  testID?: string;
+  theme: Theme;
 }
 
-const ButtonBase = styled.TouchableHighlight<ButtonStructureProps>(({
-  theme,
-  borderRadius,
-  styles,
-}) => ({
-  borderRadius,
-  ...styles,
-  ...getButtonPropsBySize(theme, 'medium'),
-}));
-
-const ButtonStructure = ({
-  children,
-  type,
-  onPress,
-  theme,
-  borderRadius,
-  testID = 'button',
-  disabled = false,
-  accessibilityLabel,
+const ButtonStructure: React.FC<ButtonStructureProps> = ({
   accessibilityHint,
-  styles,
+  accessibilityLabel,
+  children,
+  disabled = false,
+  onPress,
+  style,
+  testID = 'button',
+  theme,
 }) => (
-  <ButtonBase
-    type={type}
-    testID={testID}
-    onPress={onPress}
-    borderRadius={borderRadius}
-    styles={styles}
+  <TouchableHighlight
+    accessibilityHint={accessibilityHint}
+    accessibilityLabel={accessibilityLabel}
+    accessibilityRole="button"
     activeOpacity={getOpacity10(theme)}
     disabled={disabled}
-    accessibilityRole="button"
-    accessibilityLabel={accessibilityLabel}
-    accessibilityHint={accessibilityHint}
-    underlayColor={getColorPrimaryLight(theme)}
-  >
+    onPress={onPress}
+    style={style}
+    testID={testID}
+    underlayColor={getColorPrimaryLight(theme)}>
     {children}
-  </ButtonBase>
+  </TouchableHighlight>
 );
 
 export default withTheme(ButtonStructure);
