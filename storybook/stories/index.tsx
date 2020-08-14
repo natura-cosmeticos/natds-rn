@@ -6,7 +6,6 @@ import {
 } from './ScreenSamples';
 import { StoryNatAppBar } from './StoryNatAppBar';
 import { StoryNatAppBarSearch } from './StoryNatAppBarSearch';
-import { StoryNatCard } from './StoryNatCard';
 import { StoryNatHeader } from './StoryNatHeader';
 import { StoryNatIcon } from './StoryNatIcon';
 import { StoryNatLink } from './StoryNatLink';
@@ -70,8 +69,6 @@ storiesOf('NatList', module)
 storiesOf('NatAppBar', module)
   .add('All', () => <StoryNatAppBar />)
   .add('Search', () => <StoryNatAppBarSearch />);
-storiesOf('NatCard', module)
-  .add('Default', () => <StoryNatCard />);
 storiesOf('FAB', module)
   .add('All', () => <StoryFAB />);
 storiesOf('Avatar', module)

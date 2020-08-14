@@ -3,7 +3,6 @@ import { ThemeNaturaLight } from './themes/ThemeNaturaLight';
 
 export { NatAppBar } from './components/NatAppBar';
 export { NatAppBarSearch } from './components/NatAppBarSearch';
-export { NatCard } from './components/NatCard';
 export { NatContainer } from './components/NatContainer';
 export { NatCounterToggler } from './components/NatCounterToggler';
 export { NatGenericCard } from './components/NatGenericCard';
