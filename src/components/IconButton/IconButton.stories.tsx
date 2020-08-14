@@ -7,13 +7,13 @@ import { IconButton, IconButtonColors, IconButtonSizes } from './IconButton';
 export default {
   component: IconButton,
   parameters: {
-    componentSubtitle: 'A button component with an icon from @naturacosmeticos-natds-icons package"',
+    componentSubtitle: 'A button component with an icon from @naturacosmeticos-natds-icons package',
   },
   title: 'Components|IconButton',
 };
 
 export const all = () => (
-  <ContainerRow style={{ justifyContent: 'flex-start' }}>
+  <ContainerRow style={{ justifyContent: 'space-around' }}>
     <IconButton
       onPress={() => {}}
       size="small"

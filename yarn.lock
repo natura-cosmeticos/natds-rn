@@ -1632,10 +1632,10 @@
     eslint-plugin-mocha "^5.3.0"
     snyk "^1.189.0"
 
-"@naturacosmeticos/natds-icons@^0.4.0":
-  version "0.4.4"
-  resolved "https://registry.yarnpkg.com/@naturacosmeticos/natds-icons/-/natds-icons-0.4.4.tgz#e03eb1356d8bfd70d71a96bb4be22738619ede0b"
-  integrity sha512-wAIXX0ts1omgpGTufdwDaHy/72s3twSKBRG4L+T824dDLwg69BC6nyQsK+QHzIJhzOU1ACQQVXH5AvCUXj9Ppg==
+"@naturacosmeticos/natds-icons@0.17.0":
+  version "0.17.0"
+  resolved "https://registry.yarnpkg.com/@naturacosmeticos/natds-icons/-/natds-icons-0.17.0.tgz#093ced8370a7fc040d8157dc2b0829f0dffd9806"
+  integrity sha512-DjBsFhOMocYccTbtbFW+JD6NSKGofm+odKm1blq9V2yEOL58+rFwlR+RelTIjel8ESVcHwQtgYKQy8YC7BerfQ==
 
 "@naturacosmeticos/natds-styles@0.5.5":
   version "0.5.5"

@@ -63,7 +63,7 @@
   },
   "dependencies": {
     "@naturacosmeticos/natds-styles": "0.5.5",
-    "@naturacosmeticos/natds-icons": "^0.4.0",
+    "@naturacosmeticos/natds-icons": "0.17.0",
     "react-native-gesture-handler": "1.6.0"
   },
   "devDependencies": {

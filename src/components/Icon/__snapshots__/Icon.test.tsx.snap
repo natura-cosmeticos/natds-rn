@@ -30,7 +30,7 @@ exports[`Icon component should render component with all possible icons: Icon co
   }
   testID="icon-outlined-action-micrec"
 >
-  
+  
 </Text>
 `;
 
@@ -47,7 +47,7 @@ exports[`Icon component should render component with all possible icons: Icon co
   }
   testID="icon-outlined-content-wellness"
 >
-  
+  
 </Text>
 `;
 
@@ -64,6 +64,23 @@ exports[`Icon component should render component with all possible icons: Icon co
   }
   testID="icon-outlined-finance-bank"
 >
-  
+  
+</Text>
+`;
+
+exports[`Icon component should render component with default icon: Icon component - name: default 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#333333",
+      "fontFamily": "natds-icons",
+      "fontSize": 24,
+      "paddingBottom": 3,
+      "paddingTop": 3,
+    }
+  }
+  testID="icon-outlined-default-mockup"
+>
+  
 </Text>
 `;

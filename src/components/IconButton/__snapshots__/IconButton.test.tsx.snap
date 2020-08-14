@@ -362,7 +362,7 @@ exports[`IconButton component should render IconButton component 1`] = `
         }
         testID="icon-outlined-finance-bank"
       >
-        
+        
       </Text>
     </View>
   </TouchableHighlight>

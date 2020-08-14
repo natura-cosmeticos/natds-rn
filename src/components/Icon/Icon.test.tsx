@@ -32,4 +32,12 @@ describe('Icon component', () => {
       expect(wrapper.toJSON()).toMatchSnapshot(`Icon component - name: ${name}`);
     });
   });
+
+  it('should render component with default icon', () => {
+    const props = { color: 'default' as IconColors };
+
+    const wrapper = renderIcon(renderer.create, props);
+
+    expect(wrapper.toJSON()).toMatchSnapshot('Icon component - name: default');
+  });
 });

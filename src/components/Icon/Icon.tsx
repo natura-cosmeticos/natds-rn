@@ -31,7 +31,7 @@ export interface IconProps {
   size?: IconSizes,
 }
 
-const defaultIconName = 'filled-brand-naturarosacea';
+const defaultIconName = 'outlined-default-mockup';
 
 const getIconSize = theme => theme.sizes.standard;
 
