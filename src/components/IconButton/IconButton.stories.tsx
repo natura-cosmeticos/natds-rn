@@ -1,18 +1,19 @@
 import React from 'react';
+import { select, text } from '@storybook/addon-knobs';
 
-import { View } from 'react-native';
-import { IconButton } from './IconButton';
+import { ContainerRow } from '../../common/HelperComponents/ThemeHelper.styles';
+import { IconButton, IconButtonColors, IconButtonSizes } from './IconButton';
 
 export default {
   component: IconButton,
   parameters: {
-    componentSubtitle: 'A button with an icon as the text',
+    componentSubtitle: 'A button component with an icon from @naturacosmeticos-natds-icons package"',
   },
-  title: 'Componentes|IconButton',
+  title: 'Components|IconButton',
 };
 
 export const all = () => (
-  <View>
+  <ContainerRow style={{ justifyContent: 'flex-start' }}>
     <IconButton
       onPress={() => {}}
       size="small"
@@ -25,5 +26,26 @@ export const all = () => (
       color="default"
       icon="outlined-finance-bank"
     />
-  </View>
+  </ContainerRow>
+);
+
+const iconButtonSizes = {
+  medium: 'medium',
+  small: 'small',
+};
+
+const iconButtonColors = {
+  default: 'default',
+  primary: 'primary',
+};
+
+export const interactive = () => (
+  <ContainerRow style={{ padding: 20 }} >
+    <IconButton
+      onPress={() => {}}
+      size={select('Sizes', iconButtonSizes, 'small') as IconButtonSizes}
+      color={select('Colors', iconButtonColors, 'default') as IconButtonColors}
+      icon={text('Icon name', 'outlined-finance-bank')}
+    />
+  </ContainerRow>
 );

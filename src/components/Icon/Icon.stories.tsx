@@ -1,23 +1,41 @@
 import React from 'react';
-import { View } from 'react-native';
+import { select, text } from '@storybook/addon-knobs';
 
 import { ContainerRow } from '../../common/HelperComponents/ThemeHelper.styles';
-import { Icon } from './Icon';
+import { Icon, IconColors, IconSizes } from './Icon';
 
 export default {
   component: Icon,
   parameters: {
-    componentSubtitle: 'An icon',
+    componentSubtitle: 'A helper component to display icons from @naturacosmeticos-natds-icons package"',
   },
-  title: 'Componentes|Icon',
+  title: 'Components|Icon',
 };
 
 export const all = () => (
-  <View style={{ padding: 20 }}>
-    <ContainerRow style={{ marginBottom: 10 }}>
-      <Icon color="primary" size="small" name="outlined-finance-bank" />
-      <Icon color="primary" size="small" name="filled-action-add" />
-      <Icon color="default" size="medium" name="filled-action-add" />
-    </ContainerRow>
-  </View>
+  <ContainerRow style={{ padding: 20 }}>
+    <Icon color="primary" size="small" name="outlined-finance-bank" />
+    <Icon color="primary" size="small" name="filled-action-add" />
+    <Icon color="default" size="medium" name="filled-action-add" />
+  </ContainerRow>
+);
+
+const iconColors = {
+  default: 'default',
+  primary: 'primary',
+};
+
+const iconSizes = {
+  medium: 'medium',
+  small: 'small',
+};
+
+export const interactive = () => (
+  <ContainerRow style={{ padding: 20 }} >
+    <Icon
+      size={select('Sizes', iconSizes, 'small') as IconSizes}
+      color={select('Colors', iconColors, 'default') as IconColors}
+      name={text('Icon name', 'outlined-finance-bank')}
+    />
+  </ContainerRow>
 );

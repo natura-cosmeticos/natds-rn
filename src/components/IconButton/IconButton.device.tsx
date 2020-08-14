@@ -1,5 +1,6 @@
 import { storiesOf } from '@storybook/react-native';
-import { all } from './IconButton.stories';
+import { all, interactive } from './IconButton.stories';
 
 storiesOf('IconButton', module)
-  .add('all', all);
+  .add('all', all)
+  .add('interactive', interactive);
