@@ -74,8 +74,8 @@ const IconButtonComponent = ({
   theme,
   testID,
   size = 'small',
-  accessibilityHint = '',
-  accessibilityLabel = '',
+  accessibilityHint,
+  accessibilityLabel,
 }: IconButtonProps) => (
   <TouchableRipple
     size={getIconSize(theme)}
@@ -83,7 +83,13 @@ const IconButtonComponent = ({
     testID={testID}
   >
     <IconContainer theme={theme} size={size}>
-      <Icon name={icon} color={color} theme={theme} />
+      <Icon
+        name={icon}
+        color={color}
+        theme={theme}
+        accessibilityHint={accessibilityHint}
+        accessibilityLabel={accessibilityLabel}
+      />
     </IconContainer>
   </TouchableRipple>
 );

@@ -47,7 +47,8 @@ export const TouchableRipple = ({
   color = 'primary',
   onPress,
   disabled = false,
-  testID = 'touchable-ripple', children,
+  testID = 'touchable-ripple',
+  children,
 }: TouchableRippleProps) => {
   const maxOpacity = 0.16;
   const animationDuration = 255;

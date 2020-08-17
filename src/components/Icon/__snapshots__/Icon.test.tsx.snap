@@ -2,6 +2,7 @@
 
 exports[`Icon component should render component with all possible icons: Icon component - name: filled-action-add 1`] = `
 <Text
+  accessibilityRole="text"
   style={
     Object {
       "color": "#333333",
@@ -17,6 +18,7 @@ exports[`Icon component should render component with all possible icons: Icon co
 
 exports[`Icon component should render component with all possible icons: Icon component - name: outlined-action-micrec 1`] = `
 <Text
+  accessibilityRole="text"
   style={
     Object {
       "color": "#333333",
@@ -32,6 +34,7 @@ exports[`Icon component should render component with all possible icons: Icon co
 
 exports[`Icon component should render component with all possible icons: Icon component - name: outlined-content-wellness 1`] = `
 <Text
+  accessibilityRole="text"
   style={
     Object {
       "color": "#333333",
@@ -47,6 +50,7 @@ exports[`Icon component should render component with all possible icons: Icon co
 
 exports[`Icon component should render component with all possible icons: Icon component - name: outlined-finance-bank 1`] = `
 <Text
+  accessibilityRole="text"
   style={
     Object {
       "color": "#333333",
@@ -62,6 +66,7 @@ exports[`Icon component should render component with all possible icons: Icon co
 
 exports[`Icon component should render component with default icon: Icon component - name: default 1`] = `
 <Text
+  accessibilityRole="text"
   style={
     Object {
       "color": "#333333",

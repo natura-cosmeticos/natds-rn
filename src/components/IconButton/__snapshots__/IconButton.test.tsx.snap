@@ -361,6 +361,7 @@ exports[`IconButton component should render IconButton component 1`] = `
         }
       >
         <Text
+          accessibilityRole="text"
           style={
             Object {
               "color": "#333333",
