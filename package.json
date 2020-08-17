@@ -62,6 +62,7 @@
     "tsc": "tsc --noEmit"
   },
   "dependencies": {
+    "@naturacosmeticos/natds-icons": "^0.4.0",
     "@naturacosmeticos/natds-styles": "0.5.5",
     "react-native-gesture-handler": "1.6.0"
   },
@@ -73,7 +74,6 @@
     "@commitlint/config-conventional": "^8.3.4",
     "@commitlint/read": "^8.3.4",
     "@naturacosmeticos/eslint-config-natura": "2.0.1",
-    "@naturacosmeticos/natds-icons": "^0.4.0",
     "@react-native-community/eslint-config": "0.0.5",
     "@storybook/addon-actions": "5.3.18",
     "@storybook/addon-docs": "^5.3.18",
