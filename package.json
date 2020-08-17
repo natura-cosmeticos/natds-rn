@@ -62,7 +62,7 @@
     "tsc": "tsc --noEmit"
   },
   "dependencies": {
-    "@naturacosmeticos/natds-icons": "^0.4.0",
+    "@naturacosmeticos/natds-icons": "0.17.0",
     "@naturacosmeticos/natds-styles": "0.5.5",
     "react-native-gesture-handler": "1.6.0"
   },
