@@ -25,10 +25,6 @@ export interface IconProps {
    * Optional ID for testing
    */
   testID?: string,
-  /**
-   * Optional font size for the icon
-   */
-  size?: IconSizes,
 }
 
 const defaultIconName = 'outlined-default-mockup';
@@ -48,7 +44,6 @@ const IconComponent = ({
   color = 'default',
   name = defaultIconName,
   testID = `icon-${name}`,
-  size = 'small',
   theme,
 }: IconProps) => {
   const unicodeName = iconNames[name]
@@ -64,8 +59,6 @@ const IconComponent = ({
         color: getFontColor(theme, color),
         fontFamily: 'natds-icons',
         fontSize: getIconSize(theme),
-        paddingBottom: 3,
-        paddingTop: 3,
       }}
     >
       {code}

@@ -220,7 +220,7 @@ exports[`Button component Variants should render button component outlined 1`] =
       Array [
         Object {
           "alignSelf": "center",
-          "color": "#FAFAEA",
+          "color": "#FAF3E3",
           "fontSize": 14,
           "letterSpacing": 1,
         },

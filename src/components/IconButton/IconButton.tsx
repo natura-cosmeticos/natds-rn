@@ -5,6 +5,7 @@ import { NativeSyntheticEvent, NativeTouchEvent, View } from 'react-native';
 import ButtonStructure from '../../common/ButtonStructure/index';
 import { Theme } from '../../common/themeSelectors';
 import { Icon } from '../Icon/Icon';
+import { TouchableRipple } from '../TouchableRipple/TouchableRipple';
 
 export type IconButtonSizes = 'small' | 'medium'
 export type IconButtonColors = 'default' | 'primary'
@@ -69,7 +70,10 @@ interface IconContainerProps {
 
 const IconContainer = styled.View<IconContainerProps>`
   padding: ${({ theme, size }) => getSpacingBySize(theme, size)}px;
+  borderRadius: 50;
 `;
+
+const getIconSize = theme => theme.sizes.standard;
 
 const IconButtonComponent = ({
   icon,
@@ -78,24 +82,16 @@ const IconButtonComponent = ({
   theme,
   testID,
   size = 'small',
-  accessibilityLabel,
-  accessibilityHint,
 }: IconButtonProps) => (
-  <IconButtonContainer>
-    <ButtonStructure
-      testID={testID}
-      type="icon"
-      theme={theme}
-      borderRadius={50}
-      onPress={onPress}
-      accessibilityLabel={accessibilityLabel}
-      accessibilityHint={accessibilityHint}
-    >
-      <IconContainer theme={theme} size={size}>
-        <Icon name={icon} size={size} color={color} theme={theme} />
-      </IconContainer>
-    </ButtonStructure>
-  </IconButtonContainer>
+  <TouchableRipple
+    size={getIconSize(theme)}
+    onPress={onPress}
+    testID={testID}
+  >
+    <IconContainer theme={theme} size={size}>
+      <Icon name={icon} color={color} theme={theme} />
+    </IconContainer>
+  </TouchableRipple>
 );
 
 export const IconButton = withTheme(IconButtonComponent);
