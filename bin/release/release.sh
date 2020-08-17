@@ -14,7 +14,7 @@ then
   echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/.npmrc
   npm publish --tag $TAG_NAME
   git push --tags
-  git push
+  git push origin HEAD:master
 else
   echo "No applicable changes since the previous tag, skipping..."
 fi
