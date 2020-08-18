@@ -1,5 +1,5 @@
 import theme from '../theme/mock-theme.json';
-import * as selectors from './sizes';
+import * as selectors from './buttonSizes';
 
 const scenarios = [
   {
@@ -18,7 +18,7 @@ const scenarios = [
   },
 ];
 
-describe('Sizes selectors', () => {
+describe('Button Sizes selectors', () => {
   /*  eslint-disable mocha/no-setup-in-describe */
   scenarios.forEach(scenario => (
     describe(scenario.name, () => {

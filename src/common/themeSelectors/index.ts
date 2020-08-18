@@ -1,4 +1,4 @@
-export * from './sizes/sizes';
+export * from './buttonSizes/buttonSizes';
 export * from './colors/colors';
 export * from './effects/effects';
 export * from './theme/theme';
