@@ -1,11 +1,11 @@
----
-dictionaries:
+--- 
+dictionaries: 
   - en
-excluded_files:
-  - *.js.map
+excluded_files: 
+  - "*.js.map"
   - storybook-web/static/dist/**/*
   - yarn.lock
-excluded_words:
+excluded_words: 
   - border
   - default
   - fw
