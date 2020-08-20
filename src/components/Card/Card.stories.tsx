@@ -10,7 +10,7 @@ export default {
     componentSubtitle:
       'Cards are surfaces that groups content and actions in the same space. Its construction must always create a visual hierarchy of the content and communicate its purposes clearly.',
   },
-  title: 'Components|Card',
+  title: 'Components/Card',
 };
 
 const cardTypes = {
@@ -22,12 +22,12 @@ export const base = () => (
     style={{
       alignContent: 'center',
       justifyContent: 'center',
-      margin: 30,
+      margin: 32,
       width: 328,
     }}>
     <TextWithTheme>Base</TextWithTheme>
     <Card>
-      <View style={{ minHeight: 216 }} />
+      <View style={{ minHeight: 192 }} />
     </Card>
   </View>
 );
@@ -37,16 +37,14 @@ export const interactive = () => (
     style={{
       alignContent: 'center',
       justifyContent: 'center',
-      margin: 30,
+      margin: 32,
       width: 328,
     }}>
+    <TextWithTheme>Interactive</TextWithTheme>
     <Card type={select('Types', cardTypes, 'base') as CardTypes}>
-      <View>
-        <TextWithTheme style={{ margin: 16, minHeight: 216 }}>
-          {textKnob(
-            'Content',
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc scelerisque metus nibh.',
-          )}
+      <View style={{ minHeight: 192 }}>
+        <TextWithTheme style={{ margin: 16 }}>
+          {textKnob('Content', 'Some content here.')}
         </TextWithTheme>
       </View>
     </Card>
