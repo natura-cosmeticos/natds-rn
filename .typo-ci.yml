@@ -1,12 +1,24 @@
 --- 
 dictionaries: 
   - en
-excluded_files: 
+excluded_files:
+  - "vendor/**/*"
+  - "node_modules/**/*"
+  - "*.key"
+  - "*.enc"
+  - "*.min.css"
+  - "*.css.map"
+  - "*.min.js"
   - "*.js.map"
-  - storybook-web/static/dist/**/*
-  - yarn.lock
+  - "*.mk"
+  - "package-lock.json"
+  - "yarn.lock"
+  - "Gemfile.lock"
+  - ".typo-ci.yml"
+  - "storybook-web/static/dist/**/*"
 excluded_words: 
   - border
+  - dedupe
   - default
   - fw
   - left
@@ -26,6 +38,7 @@ excluded_words:
   - NatdsIconsSvg
   - NatdsIconsTtf
   - NatdsIconsWoff
+  - natds-styles
   - natura
   - naturacosmeticos
   - NaturaReactComponents
@@ -33,6 +46,8 @@ excluded_words:
   - outlined-default-mockup
   - pull
   - right
+  - rnstl
   - sm
+  - typoci
   - xs
 spellcheck_filenames: true
