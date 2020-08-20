@@ -1,7 +1,7 @@
+import '@testing-library/jest-native/extend-expect';
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { render } from '@testing-library/react-native';
-import '@testing-library/jest-native/extend-expect';
 import { ThemeProvider } from 'styled-components/native';
 import { Text } from 'react-native';
 import theme from '../../common/themeSelectors/theme/mock-theme.json';
@@ -18,12 +18,12 @@ const renderCard = (fn, props?: CardTypes) => fn(
 );
 
 describe('Card component', () => {
-  it('Should render Base type as default', () => {
+  it('should render Base type as default', () => {
     const { queryByTestId } = renderCard(render);
 
     expect(queryByTestId('card')?.props).toHaveProperty('type', 'base');
   });
-  it('Should render Card component', () => {
+  it('should render Card component', () => {
     const card = renderCard(renderer.create);
 
     expect(card).toMatchSnapshot();
