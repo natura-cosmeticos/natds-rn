@@ -42,16 +42,16 @@ const CardBase = styled.View<CardBase>(({ theme }) => ({
 }));
 
 const CardComponent = ({
+  children,
+  testID = 'card',
   theme,
   type = 'base',
-  testID = 'card',
-  children,
 }: CardProps) => (
   <CardBase
-    type={type}
+    style={getShadowBySize(theme, '1')}
     testID={testID}
     theme={theme}
-    style={getShadowBySize(theme, '1')}>
+    type={type}>
     {children}
   </CardBase>
 );
