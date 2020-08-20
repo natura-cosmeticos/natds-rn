@@ -1,14 +1,38 @@
 ---
 dictionaries:
   - en
+excluded_files:
+  - *.js.map
+  - storybook-web/static/dist/**/*
+  - yarn.lock
 excluded_words:
+  - border
   - default
+  - fw
+  - left
+  - lg
   - mockup
   - natds
   - natds-icons
+  - natds-icons-
+  - natds-icons-border
+  - natds-icons-fw
+  - natds-icons-lg
+  - natds-icons-pull-left
+  - natds-icons-pull-right
+  - natds-icons-sm
+  - natds-icons-xs
+  - NatdsIconsEot
+  - NatdsIconsSvg
+  - NatdsIconsTtf
+  - NatdsIconsWoff
   - natura
   - naturacosmeticos
   - NaturaReactComponents
   - outlined
   - outlined-default-mockup
+  - pull
+  - right
+  - sm
+  - xs
 spellcheck_filenames: true
