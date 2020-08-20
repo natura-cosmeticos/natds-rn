@@ -3,6 +3,7 @@ dictionaries:
   - en
 excluded_words:
   - natds
+  - natds-icons
   - natura
   - naturacosmeticos
   - NaturaReactComponents
