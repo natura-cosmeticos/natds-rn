@@ -1,33 +1,22 @@
 import theme from '../theme/mock-theme.json';
 import * as selectors from './spacing';
 
-const scenarios = [
-  {
-    expectedResult: theme.spacing.spacingSmall,
-    name: 'getSpacingSmall',
-    selector: selectors.getSpacingSmall,
-    title: 'spacing small',
-  },
-  {
-    expectedResult: theme.spacing.spacingTiny,
-    name: 'getSpacingTiny',
-    selector: selectors.getSpacingTiny,
-    title: 'spacing tiny',
-  },
-];
-
-describe('Spacing selectors', () => {
+describe('Spacing', () => {
   /*  eslint-disable mocha/no-setup-in-describe */
-  scenarios.forEach(scenario => (
-    describe(scenario.name, () => {
-      (
-        it(`should return the spacing ${scenario.title}`, () => {
-          const result = scenario.selector(theme);
+  describe.each`
+  title         | selector                        | expected
+  ${'small'}    | ${selectors.getSpacingSmall}    | ${theme.spacing.spacingSmall}
+  ${'tiny'}     | ${selectors.getSpacingTiny}     | ${theme.spacing.spacingTiny}
+  ${'standard'} | ${selectors.getSpacingStandard} | ${theme.spacing.spacingStandard}
+  ${'none'}     | ${selectors.getSpacingNone}     | ${theme.spacing.spacingNone}
+  `('', ({
+  title, selector, expected,
+}) => {
+  it(`should return the ${title} spacing`, () => {
+    const result = selector(theme);
 
-          expect(result).toBe(scenario.expectedResult);
-        })
-      );
-    })
-  ));
+    expect(result).toBe(expected);
+  });
+});
   /* eslint-enable mocha/no-setup-in-describe */
 });

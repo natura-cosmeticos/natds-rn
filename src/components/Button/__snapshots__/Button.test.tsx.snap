@@ -5,6 +5,7 @@ exports[`Button component Disabled variants should render disabled button compon
   activeOpacity={0.8}
   disabled={false}
   onPress={[Function]}
+  size="medium"
   style={
     Array [
       Object {
@@ -12,6 +13,9 @@ exports[`Button component Disabled variants should render disabled button compon
         "borderRadius": 42,
       },
       Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "justifyContent": "center",
         "shadowColor": "#AEAEAE",
       },
     ]
@@ -26,7 +30,6 @@ exports[`Button component Disabled variants should render disabled button compon
     style={
       Array [
         Object {
-          "alignSelf": "center",
           "color": "#F4F4",
           "fontSize": 14,
           "letterSpacing": 1,
@@ -48,6 +51,7 @@ exports[`Button component Disabled variants should render disabled button compon
   activeOpacity={0.8}
   disabled={true}
   onPress={[Function]}
+  size="medium"
   style={
     Array [
       Object {
@@ -56,7 +60,11 @@ exports[`Button component Disabled variants should render disabled button compon
         "borderRadius": 42,
         "borderWidth": 1,
       },
-      Object {},
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "justifyContent": "center",
+      },
     ]
   }
   testID="button"
@@ -69,7 +77,6 @@ exports[`Button component Disabled variants should render disabled button compon
     style={
       Array [
         Object {
-          "alignSelf": "center",
           "color": "#FAFAEA",
           "fontSize": 14,
           "letterSpacing": 1,
@@ -91,13 +98,18 @@ exports[`Button component Disabled variants should render disabled button compon
   activeOpacity={0.8}
   disabled={true}
   onPress={[Function]}
+  size="medium"
   style={
     Array [
       Object {
         "backgroundColor": "#AEAEAE",
         "borderRadius": 42,
       },
-      Object {},
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "justifyContent": "center",
+      },
     ]
   }
   testID="button"
@@ -110,7 +122,6 @@ exports[`Button component Disabled variants should render disabled button compon
     style={
       Array [
         Object {
-          "alignSelf": "center",
           "color": "#FAFAEA",
           "fontSize": 14,
           "letterSpacing": 1,
@@ -132,6 +143,7 @@ exports[`Button component Variants should render button component contained 1`] 
   activeOpacity={0.8}
   disabled={false}
   onPress={[Function]}
+  size="medium"
   style={
     Array [
       Object {
@@ -139,6 +151,9 @@ exports[`Button component Variants should render button component contained 1`] 
         "borderRadius": 42,
       },
       Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "justifyContent": "center",
         "shadowColor": "#AEAEAE",
       },
     ]
@@ -153,7 +168,6 @@ exports[`Button component Variants should render button component contained 1`] 
     style={
       Array [
         Object {
-          "alignSelf": "center",
           "color": "#F4F4",
           "fontSize": 14,
           "letterSpacing": 1,
@@ -175,6 +189,7 @@ exports[`Button component Variants should render button component outlined 1`] =
   activeOpacity={0.8}
   disabled={false}
   onPress={[Function]}
+  size="medium"
   style={
     Array [
       Object {
@@ -183,7 +198,11 @@ exports[`Button component Variants should render button component outlined 1`] =
         "borderRadius": 42,
         "borderWidth": 1,
       },
-      Object {},
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "justifyContent": "center",
+      },
     ]
   }
   testID="button"
@@ -196,7 +215,6 @@ exports[`Button component Variants should render button component outlined 1`] =
     style={
       Array [
         Object {
-          "alignSelf": "center",
           "color": "#FAF3E3",
           "fontSize": 14,
           "letterSpacing": 1,
@@ -218,13 +236,18 @@ exports[`Button component Variants should render button component text 1`] = `
   activeOpacity={0.8}
   disabled={true}
   onPress={[Function]}
+  size="medium"
   style={
     Array [
       Object {
         "backgroundColor": "#AEAEAE",
         "borderRadius": 42,
       },
-      Object {},
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "justifyContent": "center",
+      },
     ]
   }
   testID="button"
@@ -237,7 +260,6 @@ exports[`Button component Variants should render button component text 1`] = `
     style={
       Array [
         Object {
-          "alignSelf": "center",
           "color": "#FAFAEA",
           "fontSize": 14,
           "letterSpacing": 1,
