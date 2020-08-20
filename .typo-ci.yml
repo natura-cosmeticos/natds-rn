@@ -21,8 +21,15 @@ excluded_words:
   - dedupe
   - default
   - fw
+  - getHugexSize
+  - getLargexSize
+  - getMediumxSize
+  - getSemixSize
+  - hugex
+  - largex
   - left
   - lg
+  - mediumx
   - mockup
   - natds
   - natds-icons
@@ -47,6 +54,7 @@ excluded_words:
   - pull
   - right
   - rnstl
+  - semix
   - sm
   - typoci
   - xs
