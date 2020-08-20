@@ -2,9 +2,13 @@
 dictionaries:
   - en
 excluded_words:
+  - default
+  - mockup
   - natds
   - natds-icons
   - natura
   - naturacosmeticos
   - NaturaReactComponents
+  - outlined
+  - outlined-default-mockup
 spellcheck_filenames: true
