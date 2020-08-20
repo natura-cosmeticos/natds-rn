@@ -1,129 +1,36 @@
 import theme from '../theme/mock-theme.json';
 import * as selectors from './sizes';
 
-const scenarios = [
-  {
-    expectedResult: theme.sizes.none,
-    name: 'getNoneSize',
-    selector: selectors.getNoneSize,
-    title: 'none',
-  },
-  {
-    expectedResult: theme.sizes.micro,
-    name: 'getMicroSize',
-    selector: selectors.getMicroSize,
-    title: 'micro',
-  },
-  {
-    expectedResult: theme.sizes.tiny,
-    name: 'getTinySize',
-    selector: selectors.getTinySize,
-    title: 'tiny',
-  },
-  {
-    expectedResult: theme.sizes.small,
-    name: 'getSmallSize',
-    selector: selectors.getSmallSize,
-    title: 'small',
-  },
-  {
-    expectedResult: theme.sizes.standard,
-    name: 'getStandardSize',
-    selector: selectors.getStandardSize,
-    title: 'standard',
-  },
-  {
-    expectedResult: theme.sizes.semi,
-    name: 'getSemiSize',
-    selector: selectors.getSemiSize,
-    title: 'semi',
-  },
-  {
-    expectedResult: theme.sizes.semix,
-    name: 'getSemixSize',
-    selector: selectors.getSemixSize,
-    title: 'semix',
-  },
-  {
-    expectedResult: theme.sizes.medium,
-    name: 'getMediumSize',
-    selector: selectors.getMediumSize,
-    title: 'medium',
-  },
-  {
-    expectedResult: theme.sizes.mediumx,
-    name: 'getMediumxSize',
-    selector: selectors.getMediumxSize,
-    title: 'mediumx',
-  },
-  {
-    expectedResult: theme.sizes.large,
-    name: 'getLargeSize',
-    selector: selectors.getLargeSize,
-    title: 'large',
-  },
-  {
-    expectedResult: theme.sizes.largex,
-    name: 'getLargexSize',
-    selector: selectors.getLargexSize,
-    title: 'largex',
-  },
-  {
-    expectedResult: theme.sizes.largexx,
-    name: 'getLargexxSize',
-    selector: selectors.getLargexxSize,
-    title: 'largexx',
-  },
-  {
-    expectedResult: theme.sizes.largexxx,
-    name: 'getLargexxxSize',
-    selector: selectors.getLargexxxSize,
-    title: 'largexxx',
-  },
-  {
-    expectedResult: theme.sizes.huge,
-    name: 'getHugeSize',
-    selector: selectors.getHugeSize,
-    title: 'huge',
-  },
-  {
-    expectedResult: theme.sizes.hugex,
-    name: 'getHugexSize',
-    selector: selectors.getHugexSize,
-    title: 'hugex',
-  },
-  {
-    expectedResult: theme.sizes.hugexx,
-    name: 'getHugexxSize',
-    selector: selectors.getHugexxSize,
-    title: 'hugexx',
-  },
-  {
-    expectedResult: theme.sizes.hugexxx,
-    name: 'getHugexxxSize',
-    selector: selectors.getHugexxxSize,
-    title: 'hugexxx',
-  },
-  {
-    expectedResult: theme.sizes.veryhuge,
-    name: 'getVeryhugeSize',
-    selector: selectors.getVeryhugeSize,
-    title: 'veryhuge',
-  },
-];
-
-describe('Color selectors', () => {
+describe('Sizes', () => {
   /*  eslint-disable mocha/no-setup-in-describe */
-  scenarios.forEach(scenario => (
-    describe(scenario.name, () => {
-      (
-        it(`should return the value for the ${scenario.title} size`, () => {
-          const result = scenario.selector(theme);
+  describe.each`
+  title         | selector                     | expected
+  ${'none'}     | ${selectors.getNoneSize}     | ${theme.sizes.none}
+  ${'micro'}    | ${selectors.getMicroSize}    | ${theme.sizes.micro}
+  ${'tiny'}     | ${selectors.getTinySize}     | ${theme.sizes.tiny}
+  ${'small'}    | ${selectors.getSmallSize}    | ${theme.sizes.small}
+  ${'standard'} | ${selectors.getStandardSize} | ${theme.sizes.standard}
+  ${'semi'}     | ${selectors.getSemiSize}     | ${theme.sizes.semi}
+  ${'semix'}    | ${selectors.getSemixSize}    | ${theme.sizes.semix}
+  ${'medium'}   | ${selectors.getMediumSize}   | ${theme.sizes.medium}
+  ${'mediumx'}  | ${selectors.getMediumxSize}  | ${theme.sizes.mediumx}
+  ${'large'}    | ${selectors.getLargeSize}    | ${theme.sizes.large}
+  ${'largex'}   | ${selectors.getLargexSize}   | ${theme.sizes.largex}
+  ${'largexx'}  | ${selectors.getLargexxSize}  | ${theme.sizes.largexx}
+  ${'largexxx'} | ${selectors.getLargexxxSize} | ${theme.sizes.largexxx}
+  ${'huge'}     | ${selectors.getHugeSize}     | ${theme.sizes.huge}
+  ${'hugex'}    | ${selectors.getHugexSize}    | ${theme.sizes.hugex}
+  ${'hugexx'}   | ${selectors.getHugexxSize}   | ${theme.sizes.hugexx}
+  ${'hugexxx'}  | ${selectors.getHugexxxSize}  | ${theme.sizes.hugexxx}
+  ${'veryhuge'} | ${selectors.getVeryhugeSize} | ${theme.sizes.veryhuge}
+  `('', ({
+  title, selector, expected,
+}) => {
+  it(`should return the value for the size ${title}`, () => {
+    const result = selector(theme);
 
-          expect(result).toBe(scenario.expectedResult);
-        })
-      );
-    })
-  ));
+    expect(result).toBe(expected);
+  });
+});
   /* eslint-enable mocha/no-setup-in-describe */
 });

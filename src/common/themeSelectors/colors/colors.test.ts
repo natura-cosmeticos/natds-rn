@@ -1,81 +1,46 @@
 import theme from '../theme/mock-theme.json';
 import * as selectors from './colors';
 
-const scenarios = [
-  {
-    expectedResult: theme.colorTokens.colorPrimary,
-    name: 'getColorPrimary',
-    selector: selectors.getColorPrimary,
-    title: 'primary',
-  },
-  {
-    expectedResult: theme.colorTokens.colorOnPrimary,
-    name: 'getColorOnPrimary',
-    selector: selectors.getColorOnPrimary,
-    title: 'on primary',
-  },
-  {
-    expectedResult: theme.colorTokens.colorBackground,
-    name: 'getColorBackground',
-    selector: selectors.getColorBackground,
-    title: 'background',
-  },
-  {
-    expectedResult: theme.colorTokens.colorOnBackground,
-    name: 'getColorOnBackground',
-    selector: selectors.getColorOnBackground,
-    title: 'on background',
-  },
-  {
-    expectedResult: theme.colorTokens.colorSuccess,
-    name: 'getColorSuccess',
-    selector: selectors.getColorSuccess,
-    title: 'success',
-  },
-  {
-    expectedResult: theme.colorTokens.colorOnSuccess,
-    name: 'getColorOnSuccess',
-    selector: selectors.getColorOnSuccess,
-    title: 'on success',
-  },
-  {
-    expectedResult: theme.colorTokens.colorLowEmphasis,
-    name: 'getColorLowEmphasis',
-    selector: selectors.getColorLowEmphasis,
-    title: 'low emphasis',
-  },
-  {
-    expectedResult: theme.colorTokens.colorOnSecondary,
-    name: 'getColorOnSecondary',
-    selector: selectors.getColorOnSecondary,
-    title: 'on secondary',
-  },
-  {
-    expectedResult: theme.colorTokens.colorHighEmphasis,
-    name: 'getColorHighEmphasis',
-    selector: selectors.getColorHighEmphasis,
-    title: 'high emphasis',
-  },
-  {
-    expectedResult: theme.colorTokens.colorPrimaryLight,
-    name: 'getColorPrimaryLight',
-    selector: selectors.getColorPrimaryLight,
-    title: 'primary light',
-  },
-];
-
-describe('Color selectors', () => {
+describe('Colors', () => {
   /*  eslint-disable mocha/no-setup-in-describe */
-  scenarios.forEach(scenario => (
-    describe(scenario.name, () => {
-      (
-        it(`should return the ${scenario.title} color`, () => {
-          const result = scenario.selector(theme);
+  describe.each`
+    title                   | selector                              | expected
+    ${'Primary'}            | ${selectors.getColorPrimary}          | ${theme.colorTokens.colorPrimary}
+    ${'on Primary'}         | ${selectors.getColorOnPrimary}        | ${theme.colorTokens.colorOnPrimary}
+    ${'Primary Light'}      | ${selectors.getColorPrimaryLight}     | ${theme.colorTokens.colorPrimaryLight}
+    ${'on Primary Light'}   | ${selectors.getColorOnPrimaryLight}   | ${theme.colorTokens.colorOnPrimaryLight}
+    ${'Primary Dark'}       | ${selectors.getColorPrimaryDark}      | ${theme.colorTokens.colorPrimaryDark}
+    ${'on Primary Dark'}    | ${selectors.getColorOnPrimaryDark}    | ${theme.colorTokens.colorOnPrimaryDark}
+    ${'Secondary'}          | ${selectors.getColorSecondary}        | ${theme.colorTokens.colorSecondary}
+    ${'on Secondary'}       | ${selectors.getColorOnSecondary}      | ${theme.colorTokens.colorOnSecondary}
+    ${'Secondary Light'}    | ${selectors.getColorSecondaryLight}   | ${theme.colorTokens.colorSecondaryLight}
+    ${'on Secondary Light'} | ${selectors.getColorOnSecondaryLight} | ${theme.colorTokens.colorOnSecondaryLight}
+    ${'Secondary Dark'}     | ${selectors.getColorSecondaryDark}    | ${theme.colorTokens.colorSecondaryDark}
+    ${'on Secondary Dark'}  | ${selectors.getColorOnSecondaryDark}  | ${theme.colorTokens.colorOnSecondaryDark}
+    ${'Background'}         | ${selectors.getColorBackground}       | ${theme.colorTokens.colorBackground}
+    ${'on Background'}      | ${selectors.getColorOnBackground}     | ${theme.colorTokens.colorOnBackground}
+    ${'Surface'}            | ${selectors.getColorSurface}          | ${theme.colorTokens.colorSurface}
+    ${'on Surface'}         | ${selectors.getColorOnSurface}        | ${theme.colorTokens.colorOnSurface}
+    ${'Highlight'}          | ${selectors.getColorHighlight}        | ${theme.colorTokens.colorHighlight}
+    ${'High Emphasis'}      | ${selectors.getColorHighEmphasis}     | ${theme.colorTokens.colorHighEmphasis}
+    ${'Medium Emphasis'}    | ${selectors.getColorMediumEmphasis}   | ${theme.colorTokens.colorMediumEmphasis}
+    ${'Low Emphasis'}       | ${selectors.getColorLowEmphasis}      | ${theme.colorTokens.colorLowEmphasis}
+    ${'Link'}               | ${selectors.getColorLink}             | ${theme.colorTokens.colorLink}
+    ${'on Link'}            | ${selectors.getColorOnLink}           | ${theme.colorTokens.colorOnLink}
+    ${'Success'}            | ${selectors.getColorSuccess}          | ${theme.colorTokens.colorSuccess}
+    ${'on Success'}         | ${selectors.getColorOnSuccess}        | ${theme.colorTokens.colorOnSuccess}
+    ${'Warning'}            | ${selectors.getColorWarning}          | ${theme.colorTokens.colorWarning}
+    ${'on Warning'}         | ${selectors.getColorOnWarning}        | ${theme.colorTokens.colorOnWarning}
+    ${'Alert'}              | ${selectors.getColorAlert}            | ${theme.colorTokens.colorAlert}
+    ${'on Alert'}           | ${selectors.getColorOnAlert}          | ${theme.colorTokens.colorOnAlert}
+    `('', ({
+  title, selector, expected,
+}) => {
+  it(`should return the color ${title}`, () => {
+    const result = selector(theme);
 
-          expect(result).toBe(scenario.expectedResult);
-        })
-      );
-    })
-  ));
+    expect(result).toBe(expected);
+  });
+});
   /* eslint-enable mocha/no-setup-in-describe */
 });

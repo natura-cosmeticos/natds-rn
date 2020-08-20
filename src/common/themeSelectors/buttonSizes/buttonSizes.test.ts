@@ -1,35 +1,21 @@
 import theme from '../theme/mock-theme.json';
 import * as selectors from './buttonSizes';
 
-const scenarios = [
-  {
-    expectedResult: theme.buttonSizes.medium,
-    name: 'getButtonPropsBySize',
-    params: 'medium',
-    selector: selectors.getButtonPropsBySize,
-    title: 'button',
-  },
-  {
-    expectedResult: theme.radius.medium,
-    name: 'getRadiusBySize',
-    params: 'medium',
-    selector: selectors.getRadiusBySize,
-    title: 'radius',
-  },
-];
-
-describe('Button Sizes selectors', () => {
+describe('Button sizes', () => {
   /*  eslint-disable mocha/no-setup-in-describe */
-  scenarios.forEach(scenario => (
-    describe(scenario.name, () => {
-      (
-        it(`should return the ${scenario.title} sizes`, () => {
-          const result = scenario.selector(theme, scenario.params as selectors.Size);
+  describe.each`
+    title       | selector                          | param       | expected
+    ${'small'}  | ${selectors.getButtonPropsBySize} | ${'small'}  | ${theme.buttonSizes.small}
+    ${'medium'} | ${selectors.getButtonPropsBySize} | ${'medium'} | ${theme.buttonSizes.medium}
+    ${'large'}  | ${selectors.getButtonPropsBySize} | ${'large'}  | ${theme.buttonSizes.large}
+  `('', ({
+  title, selector, param, expected,
+}) => {
+  it(`should return button props by size ${title}`, () => {
+    const result = selector(theme, param as selectors.Size);
 
-          expect(result).toBe(scenario.expectedResult);
-        })
-      );
-    })
-  ));
-  /* eslint-enable mocha/no-setup-in-describe */
+    expect(result).toBe(expected);
+  });
+});
+  /*  eslint-enable mocha/no-setup-in-describe */
 });
