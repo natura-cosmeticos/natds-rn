@@ -5,4 +5,5 @@ excluded_words:
   - natds
   - natura
   - naturacosmeticos
+  - NaturaReactComponents
 spellcheck_filenames: true
