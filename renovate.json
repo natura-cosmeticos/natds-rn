@@ -1,0 +1,10 @@
+{
+  "enabledManagers": [
+    "nodenv",
+    "npm",
+    "travis"
+  ],
+  "extends": [
+    "config:base"
+  ]
+}
