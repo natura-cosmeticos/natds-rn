@@ -1,3 +1,5 @@
+/* eslint-disable max-lines */
+
 import { tokens } from '@naturacosmeticos/natds-styles';
 import { IColorThemeTokens } from '@naturacosmeticos/natds-styles/dist/tokens/colors/themeBound/IColorThemeTokens';
 import { IElevation } from '@naturacosmeticos/natds-styles/dist/tokens/elevation/IElevation';
@@ -26,35 +28,77 @@ export type Theme = TokensWithoutElevation
 
 type ThemeMode = 'dark' | 'light';
 
-const parseElevation = (elevation: string) => {
-  const regEx = /(\d+(\.\d+)?)/g;
-  const matches = elevation.match(regEx);
-
-  if (matches) {
-    const [width, height, blurRadius, , r, g, b, alpha] = matches;
-
-    const toUnit = (prop: string) => parseInt(prop, 0);
-
-    return {
-      elevation: 2,
-      shadowColor: `rgb(${r}, ${g}, ${b})`,
-      shadowOffset: { height: toUnit(height), width: toUnit(width) },
-      shadowOpacity: parseFloat(alpha),
-      shadowRadius: toUnit(blurRadius),
-    };
-  }
-
-  return {};
-};
-
-const buidElevation = (elevation: IElevation) => {
-  const nativeElevation = {};
-
-  Object
-    .keys(elevation)
-    .forEach((key) => { nativeElevation[key] = parseElevation(elevation[key]); });
-
-  return nativeElevation;
+const elevation = {
+  1: {
+    elevation: 1,
+    shadowColor: '#000000',
+    shadowOffset: { height: 1, width: 0 },
+    shadowOpacity: 0.14,
+    shadowRadius: 1,
+  },
+  2: {
+    elevation: 2,
+    shadowColor: '#000000',
+    shadowOffset: { height: 2, width: 0 },
+    shadowOpacity: 0.14,
+    shadowRadius: 2,
+  },
+  3: {
+    elevation: 3,
+    shadowColor: '#000000',
+    shadowOffset: { height: 3, width: 0 },
+    shadowOpacity: 0.14,
+    shadowRadius: 4,
+  },
+  4: {
+    elevation: 4,
+    shadowColor: '#000000',
+    shadowOffset: { height: 4, width: 0 },
+    shadowOpacity: 0.14,
+    shadowRadius: 5,
+  },
+  5: {
+    elevation: 5,
+    shadowColor: '#000000',
+    shadowOffset: { height: 6, width: 0 },
+    shadowOpacity: 0.14,
+    shadowRadius: 10,
+  },
+  6: {
+    elevation: 6,
+    shadowColor: '#000000',
+    shadowOffset: { height: 8, width: 0 },
+    shadowOpacity: 0.14,
+    shadowRadius: 10,
+  },
+  7: {
+    elevation: 7,
+    shadowColor: '#000000',
+    shadowOffset: { height: 9, width: 0 },
+    shadowOpacity: 0.14,
+    shadowRadius: 12,
+  },
+  8: {
+    elevation: 8,
+    shadowColor: '#000000',
+    shadowOffset: { height: 12, width: 0 },
+    shadowOpacity: 0.14,
+    shadowRadius: 17,
+  },
+  9: {
+    elevation: 9,
+    shadowColor: '#000000',
+    shadowOffset: { height: 16, width: 0 },
+    shadowOpacity: 0.14,
+    shadowRadius: 24,
+  },
+  10: {
+    elevation: 10,
+    shadowColor: '#000000',
+    shadowOffset: { height: 24, width: 0 },
+    shadowOpacity: 0.14,
+    shadowRadius: 38,
+  },
 };
 
 export const buildTheme = (brand: string, mode: ThemeMode) => {
@@ -69,7 +113,7 @@ export const buildTheme = (brand: string, mode: ThemeMode) => {
   const theme: Theme = {
     ...localTokens,
     colorTokens: localTokens.colorTokens[colorThemeName],
-    elevation: buidElevation(localTokens.elevation),
+    elevation,
   };
 
   return theme;

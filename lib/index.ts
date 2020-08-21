@@ -1,7 +1,6 @@
 import * as Tokens from './tokens';
 import { ThemeNaturaLight } from './themes/ThemeNaturaLight';
 
-export { Divider } from './components/Divider';
 export { NatAppBar } from './components/NatAppBar';
 export { NatAppBarSearch } from './components/NatAppBarSearch';
 export { NatCard } from './components/NatCard';
@@ -15,7 +14,6 @@ export { NatImage } from './components/NatImage';
 export { NatLink } from './components/NatLink';
 export { NatList } from './components/NatList';
 export { NatListItem } from './components/NatListItem';
-export { NatLoading } from './components/NatLoading';
 export { NatLogo } from './components/NatLogo';
 export { NatMenuItem } from './components/NatMenuItem';
 export { NatModalSelect } from './components/NatModalSelect';
@@ -27,6 +25,5 @@ export { NatTextInput } from './components/NatTextInput';
 export { Icon } from './components/Icon';
 export { Tokens };
 export { ThemeNaturaLight };
-export { TabBar } from './components/TabBar';
 export { FAB } from './components/FAB';
 export { Avatar } from './components/Avatar';

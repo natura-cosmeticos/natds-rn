@@ -64,6 +64,12 @@ module.exports = {
   },
   "overrides": [
     {
+      "files": ["*.test.tsx", "*.test.ts"],
+      "rules": {
+        "max-lines": 0
+      }
+    },
+    {
       "files": ["*.tsx", "*.ts"],
       "rules": {
         "no-unused-vars": 0

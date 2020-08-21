@@ -13,10 +13,11 @@ jest.mock('../../common/themeSelectors', () => (
   {
     getButtonPropsBySize: () => ({ background: '#AEAEAE' }),
     getColorHighEmphasis: () => '#FAF3E3',
+    getColorLowEmphasis: () => '#FEEEEF',
+    getColorMediumEmphasis: () => '#FAFAEA',
     getColorOnPrimary: () => '#F4F4',
     getColorPrimary: () => '#FFFFFF',
     getColorPrimaryLight: () => '#BABABA',
-    getFont: () => 'doc robot',
     getOpacity10: () => 0.8,
     getRadiusBySize: () => 42,
     getShadowBySize: () => ({ shadowColor: '#AEAEAE' }),
@@ -34,19 +35,15 @@ const defaultProps = ({
 });
 
 describe('Button component', () => {
-  it('Should render button with default props', () => {
+  it('should render button with default props', () => {
     const { queryByTestId } = renderButton(render, defaultProps);
 
     expect(queryByTestId('button')?.props).toHaveProperty('type', 'contained');
-  });
-
-  it('Should render button with a uppercase text', () => {
-    const { queryByTestId } = renderButton(render, defaultProps);
-
+    expect(queryByTestId('button')?.props).toHaveProperty('disabled', false);
     expect(queryByTestId('button')).toHaveTextContent('LABEL BUTTON');
   });
 
-  it('Should render button with the given type prop', () => {
+  it('should render button with the given type prop', () => {
     const { queryByTestId } = renderButton(render, {
       ...defaultProps,
       type: 'outlined',
@@ -57,7 +54,7 @@ describe('Button component', () => {
     });
   });
 
-  it('Should call the given onPress function', () => {
+  it('should call the given onPress function', () => {
     const onPressMock = jest.fn();
     const { queryByTestId } = renderButton(render, {
       ...defaultProps,
@@ -69,27 +66,71 @@ describe('Button component', () => {
     expect(onPressMock).toHaveBeenCalledTimes(1);
   });
 
-  it('Should render button component outlined', () => {
-    const button = renderButton(renderer.create, {
+  it('should not call the given onPress function when button is disabled', () => {
+    const onPressMock = jest.fn();
+    const { queryByTestId } = renderButton(render, {
       ...defaultProps,
-      type: 'outlined',
-    }).toJSON();
+      disabled: true,
+      onPress: onPressMock,
+    });
 
-    expect(button).toMatchSnapshot();
+    fireEvent.press(queryByTestId('button'));
+
+    expect(onPressMock).not.toHaveBeenCalled();
   });
 
-  it('Should render button component contained', () => {
-    const button = renderButton(renderer.create, defaultProps).toJSON();
+  describe('Variants', () => {
+    it('should render button component outlined', () => {
+      const button = renderButton(renderer.create, {
+        ...defaultProps,
+        type: 'outlined',
+      }).toJSON();
 
-    expect(button).toMatchSnapshot();
+      expect(button).toMatchSnapshot();
+    });
+
+    it('should render button component contained', () => {
+      const button = renderButton(renderer.create, defaultProps).toJSON();
+
+      expect(button).toMatchSnapshot();
+    });
+
+    it('should render button component text', () => {
+      const button = renderButton(renderer.create, {
+        ...defaultProps,
+        disabled: true,
+        type: 'text',
+      }).toJSON();
+
+      expect(button).toMatchSnapshot();
+    });
   });
 
-  it('Should render button component text', () => {
-    const button = renderButton(renderer.create, {
-      ...defaultProps,
-      type: 'text',
-    }).toJSON();
+  describe('Disabled variants', () => {
+    it('should render disabled button component outlined', () => {
+      const button = renderButton(renderer.create, {
+        ...defaultProps,
+        disabled: true,
+        type: 'outlined',
+      }).toJSON();
 
-    expect(button).toMatchSnapshot();
+      expect(button).toMatchSnapshot();
+    });
+
+    it('should render disabled button component contained', () => {
+      const button = renderButton(renderer.create, defaultProps).toJSON();
+
+      expect(button).toMatchSnapshot();
+    });
+
+    it('should render disabled button component text', () => {
+      const button = renderButton(renderer.create, {
+        ...defaultProps,
+        disabled: true,
+        type: 'text',
+      }).toJSON();
+
+      expect(button).toMatchSnapshot();
+    });
   });
 });

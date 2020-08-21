@@ -1,0 +1,413 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RadioButton component should render radio button correctly 1`] = `
+<TouchableWithoutFeedback
+  delayPressOut={255}
+  disabled={false}
+  onPress={[Function]}
+  onPressIn={[Function]}
+  onPressOut={[Function]}
+  testID="radio-button"
+>
+  <View
+    size={40}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "height": 40,
+          "justifyContent": "center",
+          "width": 40,
+        },
+      ]
+    }
+  >
+    <View
+      color="primary"
+      size={40}
+      style={
+        Object {
+          "backgroundColor": "#F4AB34",
+          "borderRadius": 20,
+          "height": 40,
+          "left": 0,
+          "opacity": 0,
+          "position": "absolute",
+          "top": 0,
+          "transform": Array [
+            Object {
+              "scale": 0,
+            },
+          ],
+          "width": 40,
+        }
+      }
+    />
+    <View>
+      <View
+        color="primary"
+        disabled={false}
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "borderColor": "#777777",
+              "borderRadius": 12,
+              "borderWidth": 2,
+              "height": 20,
+              "justifyContent": "center",
+              "width": 20,
+            },
+          ]
+        }
+        testID="radio-button-circle"
+      />
+    </View>
+  </View>
+</TouchableWithoutFeedback>
+`;
+
+exports[`RadioButton component should render radio button selected but disabled correctly 1`] = `
+<TouchableWithoutFeedback
+  delayPressOut={255}
+  disabled={true}
+  onPress={[Function]}
+  onPressIn={[Function]}
+  onPressOut={[Function]}
+  testID="radio-button"
+>
+  <View
+    size={40}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "height": 40,
+          "justifyContent": "center",
+          "width": 40,
+        },
+      ]
+    }
+  >
+    <View
+      color="primary"
+      size={40}
+      style={
+        Object {
+          "backgroundColor": "#F4AB34",
+          "borderRadius": 20,
+          "height": 40,
+          "left": 0,
+          "opacity": 0,
+          "position": "absolute",
+          "top": 0,
+          "transform": Array [
+            Object {
+              "scale": 0,
+            },
+          ],
+          "width": 40,
+        }
+      }
+    />
+    <View>
+      <View
+        color="primary"
+        disabled={true}
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "borderColor": "#BBBBBB",
+              "borderRadius": 12,
+              "borderWidth": 2,
+              "height": 20,
+              "justifyContent": "center",
+              "width": 20,
+            },
+          ]
+        }
+        testID="radio-button-circle"
+      />
+    </View>
+  </View>
+</TouchableWithoutFeedback>
+`;
+
+exports[`RadioButton component should render radio button selected but disabled with label correctly 1`] = `
+<TouchableOpacity
+  activeOpacity={1}
+  disabled={true}
+  onPress={[Function]}
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+      },
+    ]
+  }
+  testID="radio-button-label"
+>
+  <TouchableWithoutFeedback
+    delayPressOut={255}
+    disabled={true}
+    onPress={[Function]}
+    onPressIn={[Function]}
+    onPressOut={[Function]}
+    testID="radio-button"
+  >
+    <View
+      size={40}
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "height": 40,
+            "justifyContent": "center",
+            "width": 40,
+          },
+        ]
+      }
+    >
+      <View
+        color="primary"
+        size={40}
+        style={
+          Object {
+            "backgroundColor": "#F4AB34",
+            "borderRadius": 20,
+            "height": 40,
+            "left": 0,
+            "opacity": 0,
+            "position": "absolute",
+            "top": 0,
+            "transform": Array [
+              Object {
+                "scale": 0,
+              },
+            ],
+            "width": 40,
+          }
+        }
+      />
+      <View>
+        <View
+          color="primary"
+          disabled={true}
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "borderColor": "#BBBBBB",
+                "borderRadius": 12,
+                "borderWidth": 2,
+                "height": 20,
+                "justifyContent": "center",
+                "width": 20,
+              },
+            ]
+          }
+          testID="radio-button-circle"
+        />
+      </View>
+    </View>
+  </TouchableWithoutFeedback>
+  <Text
+    disabled={true}
+    style={
+      Array [
+        Object {
+          "color": "#BBBBBB",
+          "fontSize": 14,
+          "letterSpacing": 0.22,
+          "marginLeft": 8,
+        },
+      ]
+    }
+  >
+    My Label
+  </Text>
+</TouchableOpacity>
+`;
+
+exports[`RadioButton component should render radio button selected correctly 1`] = `
+<TouchableWithoutFeedback
+  delayPressOut={255}
+  disabled={false}
+  onPress={[Function]}
+  onPressIn={[Function]}
+  onPressOut={[Function]}
+  testID="radio-button"
+>
+  <View
+    size={40}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "height": 40,
+          "justifyContent": "center",
+          "width": 40,
+        },
+      ]
+    }
+  >
+    <View
+      color="primary"
+      size={40}
+      style={
+        Object {
+          "backgroundColor": "#F4AB34",
+          "borderRadius": 20,
+          "height": 40,
+          "left": 0,
+          "opacity": 0,
+          "position": "absolute",
+          "top": 0,
+          "transform": Array [
+            Object {
+              "scale": 0,
+            },
+          ],
+          "width": 40,
+        }
+      }
+    />
+    <View>
+      <View
+        color="primary"
+        disabled={false}
+        selected={true}
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "borderColor": "#F4AB34",
+              "borderRadius": 12,
+              "borderWidth": 2,
+              "height": 20,
+              "justifyContent": "center",
+              "width": 20,
+            },
+          ]
+        }
+        testID="radio-button-circle"
+      >
+        <View
+          color="primary"
+          disabled={false}
+          selected={true}
+          style={
+            Array [
+              Object {
+                "backgroundColor": "#F4AB34",
+                "borderRadius": 12,
+                "height": 10,
+                "width": 10,
+              },
+            ]
+          }
+        />
+      </View>
+    </View>
+  </View>
+</TouchableWithoutFeedback>
+`;
+
+exports[`RadioButton component should render radio button with label correctly 1`] = `
+<TouchableOpacity
+  activeOpacity={1}
+  disabled={false}
+  onPress={[Function]}
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+      },
+    ]
+  }
+  testID="radio-button-label"
+>
+  <TouchableWithoutFeedback
+    delayPressOut={255}
+    disabled={false}
+    onPress={[Function]}
+    onPressIn={[Function]}
+    onPressOut={[Function]}
+    testID="radio-button"
+  >
+    <View
+      size={40}
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "height": 40,
+            "justifyContent": "center",
+            "width": 40,
+          },
+        ]
+      }
+    >
+      <View
+        color="primary"
+        size={40}
+        style={
+          Object {
+            "backgroundColor": "#F4AB34",
+            "borderRadius": 20,
+            "height": 40,
+            "left": 0,
+            "opacity": 0,
+            "position": "absolute",
+            "top": 0,
+            "transform": Array [
+              Object {
+                "scale": 0,
+              },
+            ],
+            "width": 40,
+          }
+        }
+      />
+      <View>
+        <View
+          color="primary"
+          disabled={false}
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "borderColor": "#777777",
+                "borderRadius": 12,
+                "borderWidth": 2,
+                "height": 20,
+                "justifyContent": "center",
+                "width": 20,
+              },
+            ]
+          }
+          testID="radio-button-circle"
+        />
+      </View>
+    </View>
+  </TouchableWithoutFeedback>
+  <Text
+    disabled={false}
+    style={
+      Array [
+        Object {
+          "color": "#333333",
+          "fontSize": 14,
+          "letterSpacing": 0.22,
+          "marginLeft": 8,
+        },
+      ]
+    }
+  >
+    My Label
+  </Text>
+</TouchableOpacity>
+`;
