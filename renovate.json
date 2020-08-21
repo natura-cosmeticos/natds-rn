@@ -7,5 +7,7 @@
   "extends": [
     "config:base"
   ],
-  "labels": ["dependencies", "renovate"]
+  "labels": ["dependencies", "renovate"],
+  "masterIssue": true,
+  "masterIssueAutoclose": true
 }
