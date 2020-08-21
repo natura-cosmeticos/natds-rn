@@ -5,7 +5,6 @@ import {
   getRadiusBySize,
   getShadowBySize,
   getColorSurface,
-  getSpacingSmall,
 } from '../../common/themeSelectors';
 
 export type CardTypes = 'base';
