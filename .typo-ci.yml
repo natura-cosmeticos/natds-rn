@@ -1,0 +1,62 @@
+--- 
+dictionaries: 
+  - en
+excluded_files:
+  - "vendor/**/*"
+  - "node_modules/**/*"
+  - "*.key"
+  - "*.enc"
+  - "*.min.css"
+  - "*.css.map"
+  - "*.min.js"
+  - "*.js.map"
+  - "*.mk"
+  - "package-lock.json"
+  - "yarn.lock"
+  - "Gemfile.lock"
+  - ".typo-ci.yml"
+  - "storybook-web/static/dist/**/*"
+excluded_words: 
+  - border
+  - dedupe
+  - default
+  - fw
+  - getHugexSize
+  - getLargexSize
+  - getMediumxSize
+  - getSemixSize
+  - hugex
+  - largex
+  - left
+  - lg
+  - mediumx
+  - mockup
+  - natds
+  - natds-icons
+  - natds-icons-
+  - natds-icons-border
+  - natds-icons-fw
+  - natds-icons-lg
+  - natds-icons-pull-left
+  - natds-icons-pull-right
+  - natds-icons-sm
+  - natds-icons-xs
+  - NatdsIconsEot
+  - NatdsIconsSvg
+  - NatdsIconsTtf
+  - NatdsIconsWoff
+  - natds-styles
+  - natura
+  - Natura
+  - naturacosmeticos
+  - NaturaReactComponents
+  - outlined
+  - outlined-default-mockup
+  - pull
+  - right
+  - rnstl
+  - semix
+  - sm
+  - typoci
+  - xs
+spellcheck_filenames: true
