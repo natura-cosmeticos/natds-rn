@@ -146,7 +146,7 @@
     "regenerator-runtime": "^0.13.5",
     "semantic-release": "17.0.4",
     "shelljs": "^0.8.3",
-    "standard-version": "^7.1.0",
+    "standard-version": "^8.0.1",
     "storybook-addon-designs": "^5.2.0",
     "styled-components": "^5.1.0",
     "ts-jest": "^25.4.0",
