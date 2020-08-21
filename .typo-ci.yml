@@ -50,6 +50,7 @@ excluded_words:
   - Natura
   - naturacosmeticos
   - NaturaReactComponents
+  - nodenv
   - outlined
   - outlined-default-mockup
   - pull
