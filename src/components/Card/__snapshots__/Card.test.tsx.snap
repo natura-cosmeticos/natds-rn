@@ -7,10 +7,6 @@ exports[`Card component should render Card component 1`] = `
       Object {
         "backgroundColor": "#FFFFFF",
         "borderRadius": 4,
-        "marginBottom": 16,
-        "marginLeft": 16,
-        "marginRight": 16,
-        "marginTop": 16,
       },
       Object {
         "elevation": 1,
