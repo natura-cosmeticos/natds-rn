@@ -38,7 +38,6 @@ const CardBase = styled.View<CardBase>(({ theme }) => ({
   backgroundColor: getColorSurface(theme),
   borderRadius: getRadiusBySize(theme, 'medium'),
   elevation: getShadowBySize(theme, '1'),
-  margin: getSpacingSmall(theme),
 }));
 
 const CardComponent = ({

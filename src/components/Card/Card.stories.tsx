@@ -25,7 +25,7 @@ export const base = () => (
       margin: 32,
       width: 328,
     }}>
-    <TextWithTheme>Base</TextWithTheme>
+    <TextWithTheme style={{ marginBottom: 8 }}>Base</TextWithTheme>
     <Card>
       <View style={{ minHeight: 192 }} />
     </Card>
@@ -40,7 +40,7 @@ export const interactive = () => (
       margin: 32,
       width: 328,
     }}>
-    <TextWithTheme>Interactive</TextWithTheme>
+    <TextWithTheme style={{ marginBottom: 8 }}>Base</TextWithTheme>
     <Card type={select('Types', cardTypes, 'base') as CardTypes}>
       <View style={{ minHeight: 192 }}>
         <TextWithTheme style={{ margin: 16 }}>
