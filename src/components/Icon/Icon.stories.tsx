@@ -7,9 +7,9 @@ import { Icon, IconColors } from './Icon';
 export default {
   component: Icon,
   parameters: {
-    componentSubtitle: 'A helper component to display icons from @naturacosmeticos-natds-icons package',
+    componentSubtitle: 'A helper component to display icons from @naturacosmeticos/natds-icons package',
   },
-  title: 'Components|Icon',
+  title: 'Components/Icon',
 };
 
 export const all = () => (

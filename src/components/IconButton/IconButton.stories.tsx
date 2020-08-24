@@ -7,24 +7,24 @@ import { IconButton, IconButtonColors, IconButtonSizes } from './IconButton';
 export default {
   component: IconButton,
   parameters: {
-    componentSubtitle: 'A button component with an icon from @naturacosmeticos-natds-icons package',
+    componentSubtitle: 'A button component with an icon from @naturacosmeticos/natds-icons package',
   },
-  title: 'Components|IconButton',
+  title: 'Components/IconButton',
 };
 
 export const all = () => (
   <ContainerRow style={{ justifyContent: 'space-around' }}>
     <IconButton
-      onPress={() => {}}
-      size="small"
       color="primary"
       icon="outlined-finance-bank"
+      size="small"
+      onPress={() => Function.prototype()}
     />
     <IconButton
-      onPress={() => {}}
-      size="medium"
       color="default"
+      size="medium"
       icon="outlined-finance-bank"
+      onPress={() => Function.prototype()}
     />
   </ContainerRow>
 );
@@ -42,10 +42,10 @@ const iconButtonColors = {
 export const interactive = () => (
   <ContainerRow style={{ padding: 20 }} >
     <IconButton
-      onPress={() => {}}
-      size={select('Sizes', iconButtonSizes, 'small') as IconButtonSizes}
       color={select('Colors', iconButtonColors, 'default') as IconButtonColors}
       icon={text('Icon name', 'outlined-finance-bank')}
+      size={select('Sizes', iconButtonSizes, 'small') as IconButtonSizes}
+      onPress={() => Function.prototype()}
     />
   </ContainerRow>
 );

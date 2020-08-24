@@ -13,29 +13,29 @@ export type TouchableRippleColors = 'primary' | 'secondary';
 
 export interface TouchableRippleProps {
   /**
-   * Size of the children, the ripple will have the double of this size.
+   * Children component
    */
-  size: number;
+  children: ReactElement;
   /**
    * Ripple color: `primary` | `secondary`
    */
   color?: TouchableRippleColors;
+  /*
+   * Deactivates the palpable effect, will not call the callback function when pressing;
+   */
+  disabled?: boolean;
+  /**
+   * Size of the children, the ripple will have the double of this size.
+   */
+  size: number;
   /**
    * Will be called as soon the ripple animation start
    */
   onPress?: () => void;
-  /*
-  * Deactivates the palpable effect, will not call the callback function when pressing;
-  */
-  disabled?: boolean;
   /**
    * Optional testID
    */
   testID?: string;
-  /**
-   * Children component
-   */
-  children: ReactElement;
 }
 
 /**
@@ -43,12 +43,12 @@ export interface TouchableRippleProps {
   * working on the same way both on android/ios.
   */
 export const TouchableRipple = ({
-  size,
-  color = 'primary',
-  onPress,
-  disabled = false,
-  testID = 'touchable-ripple',
   children,
+  color = 'primary',
+  disabled = false,
+  size,
+  onPress,
+  testID = 'touchable-ripple',
 }: TouchableRippleProps) => {
   const maxOpacity = 0.16;
   const animationDuration = 255;

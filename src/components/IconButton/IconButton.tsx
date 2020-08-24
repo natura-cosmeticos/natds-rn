@@ -10,30 +10,6 @@ export type IconButtonColors = 'default' | 'primary'
 
 export interface IconButtonProps {
   /**
-   * The onPress event handler
-   */
-  onPress: () => void,
-  /**
-   * The icon name
-   */
-  icon?: string,
-  /**
-   * Icon Button variants `small` | `medium`
-   */
-  size?: IconButtonSizes,
-  /**
-   * The button theme
-   */
-  theme: Theme,
-  /**
-   * Icon Button variants `default` | `primary`
-   */
-  color?: IconButtonColors,
-  /**
-   * Optional ID for testing
-   */
-  testID?: string,
-  /**
    * An accessibility hint helps users understand what will happen when they perform an action
    * on the accessibility element when that result is not clear from the accessibility label.
    */
@@ -44,6 +20,30 @@ export interface IconButtonProps {
    * all the Text nodes separated by space.
    */
   accessibilityLabel?: string
+  /**
+   * Icon Button variants `default` | `primary`
+   */
+  color?: IconButtonColors,
+  /**
+   * The icon name
+   */
+  icon?: string,
+  /**
+   * Icon Button variants `small` | `medium`
+   */
+  size?: IconButtonSizes,
+  /**
+   * The onPress event handler
+   */
+  onPress: () => void,
+  /**
+   * Optional ID for testing
+   */
+  testID?: string,
+  /**
+   * The button theme
+   */
+  theme: Theme,
 }
 
 const getSpacingBySize = (theme, size) => {
@@ -56,8 +56,8 @@ const getSpacingBySize = (theme, size) => {
 };
 
 interface IconContainerProps {
-  theme: Theme,
   size: IconButtonSizes,
+  theme: Theme,
 }
 
 const IconContainer = styled.View<IconContainerProps>`
@@ -68,27 +68,27 @@ const IconContainer = styled.View<IconContainerProps>`
 const getIconSize = theme => theme.sizes.standard;
 
 const IconButtonComponent = ({
-  icon,
-  color,
-  onPress,
-  theme,
-  testID,
-  size = 'small',
   accessibilityHint,
   accessibilityLabel,
+  color,
+  icon,
+  size = 'small',
+  onPress,
+  testID,
+  theme,
 }: IconButtonProps) => (
   <TouchableRipple
     size={getIconSize(theme)}
     onPress={onPress}
     testID={testID}
   >
-    <IconContainer theme={theme} size={size}>
+    <IconContainer size={size} theme={theme}>
       <Icon
-        name={icon}
-        color={color}
-        theme={theme}
         accessibilityHint={accessibilityHint}
         accessibilityLabel={accessibilityLabel}
+        color={color}
+        name={icon}
+        theme={theme}
       />
     </IconContainer>
   </TouchableRipple>

@@ -23,19 +23,15 @@ const sampleNames = [
 ];
 
 describe('Icon component', () => {
-  it('should render component with all possible icons', () => {
-    const props = { color: 'default' as IconColors };
+  const props = { color: 'default' as IconColors };
 
-    sampleNames.forEach((name) => {
-      const wrapper = renderIcon(renderer.create, { name, ...props });
+  it.each(sampleNames)("should render correctly when icon is %p", (name) => {
+    const wrapper = renderIcon(renderer.create, { name, ...props });
 
-      expect(wrapper.toJSON()).toMatchSnapshot(`Icon component - name: ${name}`);
-    });
+    expect(wrapper.toJSON()).toMatchSnapshot(`Icon component - name: ${name}`);
   });
 
   it('should render component with default icon', () => {
-    const props = { color: 'default' as IconColors };
-
     const wrapper = renderIcon(renderer.create, props);
 
     expect(wrapper.toJSON()).toMatchSnapshot('Icon component - name: default');

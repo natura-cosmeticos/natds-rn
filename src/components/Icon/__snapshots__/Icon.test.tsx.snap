@@ -1,6 +1,22 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Icon component should render component with all possible icons: Icon component - name: filled-action-add 1`] = `
+exports[`Icon component should render component with default icon: Icon component - name: default 1`] = `
+<Text
+  accessibilityRole="text"
+  style={
+    Object {
+      "color": "#333333",
+      "fontFamily": "natds-icons",
+      "fontSize": 24,
+    }
+  }
+  testID="icon-outlined-default-mockup"
+>
+  
+</Text>
+`;
+
+exports[`Icon component should render correctly when icon is "filled-action-add": Icon component - name: filled-action-add 1`] = `
 <Text
   accessibilityRole="text"
   style={
@@ -16,7 +32,7 @@ exports[`Icon component should render component with all possible icons: Icon co
 </Text>
 `;
 
-exports[`Icon component should render component with all possible icons: Icon component - name: outlined-action-micrec 1`] = `
+exports[`Icon component should render correctly when icon is "outlined-action-micrec": Icon component - name: outlined-action-micrec 1`] = `
 <Text
   accessibilityRole="text"
   style={
@@ -32,7 +48,7 @@ exports[`Icon component should render component with all possible icons: Icon co
 </Text>
 `;
 
-exports[`Icon component should render component with all possible icons: Icon component - name: outlined-content-wellness 1`] = `
+exports[`Icon component should render correctly when icon is "outlined-content-wellness": Icon component - name: outlined-content-wellness 1`] = `
 <Text
   accessibilityRole="text"
   style={
@@ -48,7 +64,7 @@ exports[`Icon component should render component with all possible icons: Icon co
 </Text>
 `;
 
-exports[`Icon component should render component with all possible icons: Icon component - name: outlined-finance-bank 1`] = `
+exports[`Icon component should render correctly when icon is "outlined-finance-bank": Icon component - name: outlined-finance-bank 1`] = `
 <Text
   accessibilityRole="text"
   style={
@@ -61,21 +77,5 @@ exports[`Icon component should render component with all possible icons: Icon co
   testID="icon-outlined-finance-bank"
 >
   
-</Text>
-`;
-
-exports[`Icon component should render component with default icon: Icon component - name: default 1`] = `
-<Text
-  accessibilityRole="text"
-  style={
-    Object {
-      "color": "#333333",
-      "fontFamily": "natds-icons",
-      "fontSize": 24,
-    }
-  }
-  testID="icon-outlined-default-mockup"
->
-  
 </Text>
 `;

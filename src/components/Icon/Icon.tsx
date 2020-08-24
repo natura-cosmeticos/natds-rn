@@ -10,22 +10,6 @@ export type IconSizes = 'small' | 'medium'
 
 export interface IconProps {
   /**
-   * Icon name
-   */
-  name?: string
-  /**
-   * Icon variants `default` | `primary`
-   */
-  color?: IconColors,
-  /**
-   * The theme
-   */
-  theme: Theme,
-  /**
-   * Optional ID for testing
-   */
-  testID?: string,
-  /**
    * An accessibility hint helps users understand what will happen when they perform an action
    * on the accessibility element when that result is not clear from the accessibility label.
    */
@@ -36,6 +20,22 @@ export interface IconProps {
    * all the Text nodes separated by space.
    */
   accessibilityLabel?: string
+  /**
+   * Icon variants `default` | `primary`
+   */
+  color?: IconColors,
+  /**
+   * Icon name
+   */
+  name?: string
+  /**
+   * Optional ID for testing
+   */
+  testID?: string,
+  /**
+   * The theme
+   */
+  theme: Theme,
 }
 
 const defaultIconName = 'outlined-default-mockup';
@@ -52,12 +52,12 @@ const getFontColor = (theme, color) => {
 };
 
 const IconComponent = ({
+  accessibilityHint,
+  accessibilityLabel,
   color = 'default',
   name = defaultIconName,
   testID = `icon-${name}`,
   theme,
-  accessibilityHint,
-  accessibilityLabel,
 }: IconProps) => {
   const unicodeName = iconNames[name]
     ? iconNames[name].replace('%', '\\')
@@ -67,15 +67,15 @@ const IconComponent = ({
 
   return (
     <Text
-      testID={testID}
-      accessibilityRole="text"
       accessibilityHint={accessibilityHint}
       accessibilityLabel={accessibilityLabel}
+      accessibilityRole="text"
       style={{
         color: getFontColor(theme, color),
         fontFamily: 'natds-icons',
         fontSize: getIconSize(theme),
       }}
+      testID={testID}
     >
       {code}
     </Text>
