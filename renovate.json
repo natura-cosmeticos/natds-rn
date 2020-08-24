@@ -1,0 +1,13 @@
+{
+  "enabledManagers": [
+    "nodenv",
+    "npm",
+    "travis"
+  ],
+  "extends": [
+    "config:base"
+  ],
+  "labels": ["dependencies", "renovate"],
+  "masterIssue": true,
+  "masterIssueAutoclose": true
+}
