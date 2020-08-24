@@ -77,3 +77,4 @@ lib/assets/fonts/natds-icons.*
 
 # files generated automatically from .md
 storybook-web/docs
+storybook-web/static/dist/*

@@ -25,7 +25,8 @@ const sampleNames = [
 describe('Icon component', () => {
   const props = { color: 'default' as IconColors };
 
-  it.each(sampleNames)("should render correctly when icon is %p", (name) => {
+  /* eslint-disable-next-line mocha/no-setup-in-describe */
+  it.each(sampleNames)('should render correctly when icon is %p', (name) => {
     const wrapper = renderIcon(renderer.create, { name, ...props });
 
     expect(wrapper.toJSON()).toMatchSnapshot(`Icon component - name: ${name}`);

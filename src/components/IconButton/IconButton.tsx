@@ -55,6 +55,8 @@ const getSpacingBySize = (theme, size) => {
   return theme.spacing[spacing];
 };
 
+const circleBorderRadius = 50;
+
 interface IconContainerProps {
   size: IconButtonSizes,
   theme: Theme,
@@ -62,7 +64,7 @@ interface IconContainerProps {
 
 const IconContainer = styled.View<IconContainerProps>`
   padding: ${({ theme, size }) => getSpacingBySize(theme, size)}px;
-  borderRadius: 50px;
+  borderRadius: ${circleBorderRadius}px;
 `;
 
 const getIconSize = theme => theme.sizes.standard;
