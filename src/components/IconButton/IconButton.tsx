@@ -70,7 +70,7 @@ const IconContainer = styled.View<IconContainerProps>`
 const getIconSize = theme => theme.sizes.standard;
 
 const getRippleColor = (color) => {
-  const colorMapping = { default: 'onSecondary', primary: 'primary' };
+  const colorMapping = { default: 'highlight', primary: 'primary' };
 
   return colorMapping[color];
 };

@@ -23,7 +23,7 @@ exports[`IconButton component should render IconButton component 1`] = `
     }
   >
     <View
-      color="onSecondary"
+      color="highlight"
       size={48}
       style={
         Object {

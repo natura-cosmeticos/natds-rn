@@ -9,7 +9,7 @@ import {
 
 import { Container, Ripple } from './TouchableRipple.styles';
 
-export type TouchableRippleColors = 'primary' | 'secondary' | 'onSecondary';
+export type TouchableRippleColors = 'primary' | 'secondary' | 'highlight';
 
 export interface TouchableRippleProps {
   /**

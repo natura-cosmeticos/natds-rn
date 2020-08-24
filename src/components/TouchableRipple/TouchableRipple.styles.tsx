@@ -1,7 +1,7 @@
 import styled from 'styled-components/native';
 
 import {
-  getColorPrimary, Theme, getColorSecondary, getColorOnSecondary,
+  getColorPrimary, Theme, getColorSecondary, getColorHighlight,
 } from '../../common/themeSelectors';
 import { TouchableRippleColors } from './TouchableRipple';
 
@@ -22,8 +22,8 @@ const getBackgroundColor = (color, theme) => {
     case 'primary':
       colorCode = getColorPrimary(theme);
       break;
-    case 'onSecondary':
-      colorCode = getColorOnSecondary(theme);
+    case 'highlight':
+      colorCode = getColorHighlight(theme);
       break;
     default:
       colorCode = getColorPrimary(theme);
