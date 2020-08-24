@@ -23,11 +23,11 @@ exports[`IconButton component should render IconButton component 1`] = `
     }
   >
     <View
-      color="primary"
+      color="onSecondary"
       size={48}
       style={
         Object {
-          "backgroundColor": "#F4AB34",
+          "backgroundColor": "#000000",
           "borderRadius": 24,
           "height": 48,
           "left": 0,

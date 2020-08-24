@@ -69,6 +69,12 @@ const IconContainer = styled.View<IconContainerProps>`
 
 const getIconSize = theme => theme.sizes.standard;
 
+const getRippleColor = (color) => {
+  const colorMapping = { default: 'onSecondary', primary: 'primary' };
+
+  return colorMapping[color];
+};
+
 const IconButtonComponent = ({
   accessibilityHint,
   accessibilityLabel,
@@ -80,6 +86,7 @@ const IconButtonComponent = ({
   theme,
 }: IconButtonProps) => (
   <TouchableRipple
+    color={getRippleColor(color)}
     size={getIconSize(theme)}
     onPress={onPress}
     testID={testID}

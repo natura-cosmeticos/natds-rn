@@ -1,6 +1,8 @@
 import styled from 'styled-components/native';
 
-import { getColorPrimary, Theme, getColorSecondary } from '../../common/themeSelectors';
+import {
+  getColorPrimary, Theme, getColorSecondary, getColorOnSecondary,
+} from '../../common/themeSelectors';
 import { TouchableRippleColors } from './TouchableRipple';
 
 export const Container = styled.View<{ size: number }>(({ size }) => ({
@@ -10,12 +12,32 @@ export const Container = styled.View<{ size: number }>(({ size }) => ({
   width: size,
 }));
 
+const getBackgroundColor = (color, theme) => {
+  let colorCode;
+
+  switch (color) {
+    case 'secondary':
+      colorCode = getColorSecondary(theme);
+      break;
+    case 'primary':
+      colorCode = getColorPrimary(theme);
+      break;
+    case 'onSecondary':
+      colorCode = getColorOnSecondary(theme);
+      break;
+    default:
+      colorCode = getColorPrimary(theme);
+  }
+
+  return colorCode;
+};
+
 export const Ripple = styled.View<{
   theme: Theme;
   size: number;
   color: TouchableRippleColors;
 }>(({ theme, size, color }) => ({
-  backgroundColor: color === 'secondary' ? getColorSecondary(theme) : getColorPrimary(theme),
+  backgroundColor: getBackgroundColor(color, theme),
   borderRadius: size / 2,
   height: size,
   left: 0,
