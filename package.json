@@ -32,7 +32,7 @@
     "build:sample:android": "rnstl && react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res",
     "build:sample:ios": "rnstl && react-native bundle --platform ios --dev false --entry-file index.js --bundle-output ios/NaturaReactComponents/main.jsbundle --assets-dest ios",
     "build:storybook:md": "node ./bin/docsToStories/buildStorybookDocs.js",
-    "build:storybook:web": "yarn build:storybook:md && build-storybook -c storybook-web -o build/storybook -s storybook-web/static",
+    "build:storybook:web": "yarn copy:storybook:assets && yarn build:storybook:md && build-storybook -c storybook-web -o build/storybook -s storybook-web/static",
     "build:version:info": "node ./bin/buildInfo/createBuildInfo.js",
     "build": "yarn clear:build:lib && yarn build:lib && yarn copy:assets",
     "clear:build:lib": "rm -rf build/lib",
