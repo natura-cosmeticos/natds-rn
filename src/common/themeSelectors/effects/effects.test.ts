@@ -1,34 +1,19 @@
 import theme from '../theme/mock-theme.json';
 import * as selectors from './effects';
 
-const scenarios = [
-  {
-    expectedResult: theme.elevation['2'],
-    name: 'getShadowBySize',
-    params: '2',
-    selector: selectors.getShadowBySize,
-    title: 'shadow',
-  },
-  {
-    expectedResult: theme.opacity[80],
-    name: 'getOpacity10',
-    selector: selectors.getOpacity10,
-    title: 'oa',
-  },
-];
-
 describe('Effects selectors', () => {
-  /*  eslint-disable mocha/no-setup-in-describe */
-  scenarios.forEach(scenario => (
-    describe(scenario.name, () => {
-      (
-        it(`should return the ${scenario.title} effect`, () => {
-          const result = scenario.selector(theme, scenario.params || '');
+  describe('getShadowBySize', () => {
+    it('should return the shadow effect', () => {
+      const result = selectors.getShadowBySize(theme, '2');
 
-          expect(result).toBe(scenario.expectedResult);
-        })
-      );
-    })
-  ));
-  /* eslint-enable mocha/no-setup-in-describe */
+      expect(result).toBe(theme.elevation['2']);
+    });
+  });
+  describe('getOpacity10', () => {
+    it('should return the opacity effect', () => {
+      const result = selectors.getOpacity10(theme);
+
+      expect(result).toBe(theme.opacity[80]);
+    });
+  });
 });
