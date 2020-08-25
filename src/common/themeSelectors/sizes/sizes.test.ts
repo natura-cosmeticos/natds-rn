@@ -1,9 +1,8 @@
 import theme from '../theme/mock-theme.json';
 import * as selectors from './sizes';
 
-describe('Sizes', () => {
-  /*  eslint-disable mocha/no-setup-in-describe */
-  describe.each`
+/*  eslint-disable mocha/no-setup-in-describe */
+describe.each`
   title         | selector                     | expected
   ${'none'}     | ${selectors.getNoneSize}     | ${theme.sizes.none}
   ${'micro'}    | ${selectors.getMicroSize}    | ${theme.sizes.micro}
@@ -23,7 +22,7 @@ describe('Sizes', () => {
   ${'hugexx'}   | ${selectors.getHugexxSize}   | ${theme.sizes.hugexx}
   ${'hugexxx'}  | ${selectors.getHugexxxSize}  | ${theme.sizes.hugexxx}
   ${'veryhuge'} | ${selectors.getVeryhugeSize} | ${theme.sizes.veryhuge}
-  `('', ({
+  `('Sizes', ({
   title, selector, expected,
 }) => {
   it(`should return the value for the size ${title}`, () => {
@@ -32,5 +31,4 @@ describe('Sizes', () => {
     expect(result).toBe(expected);
   });
 });
-  /* eslint-enable mocha/no-setup-in-describe */
-});
+/* eslint-enable mocha/no-setup-in-describe */

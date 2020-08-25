@@ -1,9 +1,8 @@
 import theme from '../theme/mock-theme.json';
 import * as selectors from './colors';
 
-describe('Colors', () => {
-  /*  eslint-disable mocha/no-setup-in-describe */
-  describe.each`
+/*  eslint-disable mocha/no-setup-in-describe */
+describe.each`
     title                   | selector                              | expected
     ${'Primary'}            | ${selectors.getColorPrimary}          | ${theme.colorTokens.colorPrimary}
     ${'on Primary'}         | ${selectors.getColorOnPrimary}        | ${theme.colorTokens.colorOnPrimary}
@@ -33,7 +32,7 @@ describe('Colors', () => {
     ${'on Warning'}         | ${selectors.getColorOnWarning}        | ${theme.colorTokens.colorOnWarning}
     ${'Alert'}              | ${selectors.getColorAlert}            | ${theme.colorTokens.colorAlert}
     ${'on Alert'}           | ${selectors.getColorOnAlert}          | ${theme.colorTokens.colorOnAlert}
-    `('', ({
+    `('Colors', ({
   title, selector, expected,
 }) => {
   it(`should return the color ${title}`, () => {
@@ -42,5 +41,4 @@ describe('Colors', () => {
     expect(result).toBe(expected);
   });
 });
-  /* eslint-enable mocha/no-setup-in-describe */
-});
+/* eslint-enable mocha/no-setup-in-describe */

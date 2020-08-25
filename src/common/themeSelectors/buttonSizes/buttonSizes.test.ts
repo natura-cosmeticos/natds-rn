@@ -1,14 +1,13 @@
 import theme from '../theme/mock-theme.json';
 import * as selectors from './buttonSizes';
 
-describe('Button sizes', () => {
-  /*  eslint-disable mocha/no-setup-in-describe */
-  describe.each`
+/*  eslint-disable mocha/no-setup-in-describe */
+describe.each`
     title       | selector                          | param       | expected
     ${'small'}  | ${selectors.getButtonPropsBySize} | ${'small'}  | ${theme.buttonSizes.small}
     ${'medium'} | ${selectors.getButtonPropsBySize} | ${'medium'} | ${theme.buttonSizes.medium}
     ${'large'}  | ${selectors.getButtonPropsBySize} | ${'large'}  | ${theme.buttonSizes.large}
-  `('', ({
+  `('Button sizes', ({
   title, selector, param, expected,
 }) => {
   it(`should return button props by size ${title}`, () => {
@@ -17,5 +16,4 @@ describe('Button sizes', () => {
     expect(result).toBe(expected);
   });
 });
-  /*  eslint-enable mocha/no-setup-in-describe */
-});
+/*  eslint-enable mocha/no-setup-in-describe */
