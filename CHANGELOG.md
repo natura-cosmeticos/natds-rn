@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.2.0](https://github.com/natura-cosmeticos/natds-rn/compare/v2.1.0...v2.2.0) (2020-08-25)
+
+
+### Features
+
+* **card:** adds card component ([20fccdc](https://github.com/natura-cosmeticos/natds-rn/commit/20fccdca01cf4e6675b590094b854c06a4f7a9c5))
+* **icon-button:** add IconButton and Icon components ([#70](https://github.com/natura-cosmeticos/natds-rn/issues/70)) ([9f793a9](https://github.com/natura-cosmeticos/natds-rn/commit/9f793a968d1b6b033b71a5f0f4a9dfee7024d556))
+
+
+### Bug Fixes
+
+* change styled components to peer, consume tokens internally ([42d947d](https://github.com/natura-cosmeticos/natds-rn/commit/42d947dd2e0afba95d63b464338fb42dc67bcd52))
+
 ## [2.1.0](https://github.com/natura-cosmeticos/natds-rn/compare/v2.0.1...v2.1.0) (2020-08-17)
 
 
