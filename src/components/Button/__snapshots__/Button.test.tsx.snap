@@ -9,13 +9,8 @@ exports[`Button component Disabled variants should render disabled button compon
   style={
     Array [
       Object {
-        "backgroundColor": "#AEAEAE",
+        "backgroundColor": "#FFFFFF",
         "borderRadius": 42,
-      },
-      Object {
-        "display": "flex",
-        "flexDirection": "column",
-        "justifyContent": "center",
         "shadowColor": "#AEAEAE",
       },
     ]
@@ -60,11 +55,6 @@ exports[`Button component Disabled variants should render disabled button compon
         "borderRadius": 42,
         "borderWidth": 1,
       },
-      Object {
-        "display": "flex",
-        "flexDirection": "column",
-        "justifyContent": "center",
-      },
     ]
   }
   testID="button"
@@ -105,11 +95,6 @@ exports[`Button component Disabled variants should render disabled button compon
         "backgroundColor": "#AEAEAE",
         "borderRadius": 42,
       },
-      Object {
-        "display": "flex",
-        "flexDirection": "column",
-        "justifyContent": "center",
-      },
     ]
   }
   testID="button"
@@ -147,13 +132,8 @@ exports[`Button component Variants should render button component contained 1`] 
   style={
     Array [
       Object {
-        "backgroundColor": "#AEAEAE",
+        "backgroundColor": "#FFFFFF",
         "borderRadius": 42,
-      },
-      Object {
-        "display": "flex",
-        "flexDirection": "column",
-        "justifyContent": "center",
         "shadowColor": "#AEAEAE",
       },
     ]
@@ -198,11 +178,6 @@ exports[`Button component Variants should render button component outlined 1`] =
         "borderRadius": 42,
         "borderWidth": 1,
       },
-      Object {
-        "display": "flex",
-        "flexDirection": "column",
-        "justifyContent": "center",
-      },
     ]
   }
   testID="button"
@@ -242,11 +217,6 @@ exports[`Button component Variants should render button component text 1`] = `
       Object {
         "backgroundColor": "#AEAEAE",
         "borderRadius": 42,
-      },
-      Object {
-        "display": "flex",
-        "flexDirection": "column",
-        "justifyContent": "center",
       },
     ]
   }
