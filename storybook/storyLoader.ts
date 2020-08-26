@@ -13,6 +13,7 @@ function loadStories() {
 	require('../src/components/ProgressIndicator/ProgressIndicator.device');
 	require('../src/components/RadioButton/RadioButton.device');
 	require('../src/components/ProgressIndicator/ProgressIndicator.device');
+	require('../src/components/RadioButton/RadioButton.device');
 	require('../src/components/Tab/Tab.device');
 	require('../src/tokens/Tokens.device');
 }
@@ -27,6 +28,7 @@ const stories = [
 	'../src/components/ProgressIndicator/ProgressIndicator.device',
 	'../src/components/RadioButton/RadioButton.device',
 	'../src/components/ProgressIndicator/ProgressIndicator.device',
+	'../src/components/RadioButton/RadioButton.device',
 	'../src/components/Tab/Tab.device',
 	'../src/tokens/Tokens.device'
 ];

@@ -88,6 +88,12 @@ const getButtonTextColor = (theme: Theme, type: ButtonTypes, disabled: boolean) 
   return disabled ? color.disabled : color.active;
 };
 
+const getShadowByType = (type: ButtonTypes, disabled: boolean, theme: Theme) => (
+  isContained(type) && !disabled
+    ? getShadowBySize(theme, '2')
+    : {}
+);
+
 const ButtonBase = styled.TouchableHighlight<{
   type: ButtonTypes
   disabled: boolean
@@ -96,9 +102,10 @@ const ButtonBase = styled.TouchableHighlight<{
 }>(({
   type, theme, disabled = false, size,
 }) => ({
-  borderRadius: getRadiusBySize(theme, 'medium'),
-  ...getButtonStyles(theme, type, disabled),
   ...getButtonPropsBySize(theme, size),
+  ...getButtonStyles(theme, type, disabled),
+  ...getShadowByType(type, disabled, theme),
+  borderRadius: getRadiusBySize(theme, 'medium'),
 }));
 
 const Text = styled.Text<{
@@ -111,12 +118,6 @@ const Text = styled.Text<{
   letterSpacing: 1,
 }));
 
-const getShadowByType = (type: ButtonTypes, disabled: boolean, theme: Theme) => (
-  isContained(type) && !disabled
-    ? getShadowBySize(theme, '2')
-    : {}
-);
-
 const ButtonComponent = ({
   onPress, theme, text, type = 'contained', disabled = false, testID = 'button', accessibilityLabel, accessibilityHint, size = 'medium',
 }: ButtonProps) => (
@@ -124,12 +125,6 @@ const ButtonComponent = ({
     testID={testID}
     type={type}
     onPress={disabled ? () => {} : onPress}
-    style={{
-      ...getShadowByType(type, disabled, theme),
-      display: 'flex',
-      flexDirection: 'column',
-      justifyContent: 'center',
-    }}
     underlayColor={getColorPrimaryLight(theme)}
     activeOpacity={getOpacity10(theme)}
     disabled={disabled}
