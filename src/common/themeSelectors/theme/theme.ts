@@ -120,7 +120,7 @@ export const buildTheme = (brand: string, mode: ThemeMode) => {
 };
 
 interface ThemeSelector {
-  (theme: Theme): string | undefined
+  (theme: Theme): string | undefined | number
 }
 
 export const getTheme = (selector: ThemeSelector) => (

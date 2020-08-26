@@ -1,6 +1,7 @@
 import React from 'react';
+import { View } from 'react-native';
 import { boolean, select, text as textKnob } from '@storybook/addon-knobs';
-import { ContainerRow, ContainerWithTheme, TextWithTheme } from '../../common/HelperComponents/ThemeHelper.styles';
+import { StoryContainer } from '../../common/HelperComponents/StoryContainer';
 import { Button, ButtonTypes, ButtonSizes } from './Button';
 
 export default {
@@ -24,24 +25,14 @@ const buttonSizes = {
   small: 'small',
 };
 
-
-const StoryContainer = ({ children, title }) => (
-  <ContainerWithTheme style={{ maxWidth: 600, padding: 30 }}>
-    <ContainerRow style={{ marginBottom: 10 }}>
-      <TextWithTheme>{title}</TextWithTheme>
-    </ContainerRow>
-    <ContainerRow style={{ marginBottom: 10 }}>{children}</ContainerRow>
-  </ContainerWithTheme>
-);
-
 export const Default = () => (
-  <StoryContainer title="_Default">
+  <StoryContainer title="Default">
     <Button onPress={onPress} text="default" />
   </StoryContainer>
 );
 
 export const Variants = () => (
-  <StoryContainer title="_Variants">
+  <StoryContainer title="Variants">
     <Button type="contained" onPress={onPress} text="default" />
     <Button type="outlined" onPress={onPress} text="default" />
     <Button type="text" onPress={onPress} text="default" />
@@ -49,7 +40,7 @@ export const Variants = () => (
 );
 
 export const Size = () => (
-  <StoryContainer title="_Sizes">
+  <StoryContainer title="Sizes">
     <Button onPress={onPress} text="default" size="large" />
     <Button onPress={onPress} text="default" size="medium" />
     <Button onPress={onPress} text="default" size="small" />
@@ -57,7 +48,7 @@ export const Size = () => (
 );
 
 export const Disabled = () => (
-  <StoryContainer title="_Disabled">
+  <StoryContainer title="Disabled">
     <Button disabled type="contained" onPress={onPress} text="default" />
     <Button disabled type="outlined" onPress={onPress} text="default" />
     <Button disabled type="text" onPress={onPress} text="default" />
@@ -65,20 +56,16 @@ export const Disabled = () => (
 );
 
 export const All = () => (
-  <ContainerWithTheme
-    style={{
-      display: 'flex',
-      flexDirection: 'column',
-    }}>
+  <View>
     <Default />
     <Variants />
     <Size />
     <Disabled />
-  </ContainerWithTheme>
+  </View>
 );
 
 export const Interactive = () => (
-  <ContainerRow style={{ padding: 30 }}>
+  <StoryContainer title="Interactive">
     <Button
       onPress={onPress}
       text={textKnob('Text', 'default')}
@@ -86,5 +73,5 @@ export const Interactive = () => (
       size={select('Size', buttonSizes, 'medium') as ButtonSizes}
       disabled={boolean('Disabled', false)}
     />
-  </ContainerRow>
+  </StoryContainer>
 );
