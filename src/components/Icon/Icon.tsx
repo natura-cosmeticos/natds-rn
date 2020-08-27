@@ -6,7 +6,7 @@ import iconNames from '@naturacosmeticos/natds-icons/dist/natds-icons.json';
 import { Theme } from '../../common/themeSelectors';
 
 export type IconColors = 'default' | 'primary'
-export type IconSizes = 'small' | 'medium'
+export type IconSizes = 'micro' | 'tiny' | 'small' | 'standard' | 'medium' | 'large' | 'largex' | 'largexx' | 'huge' | 'hugex' | 'hugexx'
 
 export interface IconProps {
   /**
@@ -29,6 +29,10 @@ export interface IconProps {
    */
   name?: string
   /**
+   * Icon size
+   */
+  size?: IconSizes
+  /**
    * Optional ID for testing
    */
   testID?: string,
@@ -40,7 +44,7 @@ export interface IconProps {
 
 const defaultIconName = 'outlined-default-mockup';
 
-const getIconSize = theme => theme.sizes.standard;
+const getIconSize = (theme, size) => theme.sizes[size];
 
 const getFontColor = (theme, color) => {
   const translatedColor = {
@@ -58,6 +62,7 @@ const IconComponent = ({
   name = defaultIconName,
   testID = `icon-${name}`,
   theme,
+  size = 'standard',
 }: IconProps) => {
   const unicodeName = iconNames[name]
     ? iconNames[name].replace('%', '\\')
@@ -73,7 +78,7 @@ const IconComponent = ({
       style={{
         color: getFontColor(theme, color),
         fontFamily: 'natds-icons',
-        fontSize: getIconSize(theme),
+        fontSize: getIconSize(theme, size),
       }}
       testID={testID}
     >
