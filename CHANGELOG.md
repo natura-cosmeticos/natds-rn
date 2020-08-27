@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.2.1](https://github.com/natura-cosmeticos/natds-rn/compare/v2.2.0...v2.2.1) (2020-08-27)
+
+
+### Bug Fixes
+
+* **icon:** add Icon and IconButton to the lib entry point ([#98](https://github.com/natura-cosmeticos/natds-rn/issues/98)) ([818c8b1](https://github.com/natura-cosmeticos/natds-rn/commit/818c8b119c756d76ff0a278b7edb583296665fa1))
+
 ## [2.2.0](https://github.com/natura-cosmeticos/natds-rn/compare/v2.1.0...v2.2.0) (2020-08-25)
 
 
