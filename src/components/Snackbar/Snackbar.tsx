@@ -47,7 +47,9 @@ class SnackbarComponent extends Component<SnackbarProps, SnackbarState> {
           Animated.timing(
             this.state.fadeAnim,
             { duration: 225, toValue: 1, useNativeDriver: true },
-          ).start(() => this.setState({ isAnimating: false }));
+          ).start(({ finished }) => {
+            if (finished) this.setState({ isAnimating: false });
+          });
         });
       } else {
         this.setState({ isAnimating: true }, () => {
@@ -55,7 +57,9 @@ class SnackbarComponent extends Component<SnackbarProps, SnackbarState> {
           Animated.timing(
             this.state.fadeAnim,
             { duration: 195, toValue: 0, useNativeDriver: true },
-          ).start(() => this.setState({ isAnimating: false, isOpen: false }));
+          ).start(({ finished }) => {
+            if (finished) this.setState({ isAnimating: false, isOpen: false });
+          });
         });
       }
     }
