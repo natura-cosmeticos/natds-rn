@@ -46,7 +46,7 @@ exports[`Avatar component should render avatar component 1`] = `
             "size": 32,
           },
           "standard": Object {
-            "fontSize": "1rem",
+            "fontSize": "16px",
             "size": 40,
           },
           "tiny": Object {
@@ -383,7 +383,7 @@ exports[`Avatar component should render avatar component anonymous 1`] = `
             "size": 32,
           },
           "standard": Object {
-            "fontSize": "1rem",
+            "fontSize": "16px",
             "size": 40,
           },
           "tiny": Object {
@@ -715,7 +715,7 @@ exports[`Avatar component should render avatar component image 1`] = `
             "size": 32,
           },
           "standard": Object {
-            "fontSize": "1rem",
+            "fontSize": "16px",
             "size": 40,
           },
           "tiny": Object {
@@ -1048,7 +1048,7 @@ exports[`Avatar component should render avatar component letter 1`] = `
             "size": 32,
           },
           "standard": Object {
-            "fontSize": "1rem",
+            "fontSize": "16px",
             "size": 40,
           },
           "tiny": Object {

@@ -11,5 +11,13 @@ export const getAvatarBySize = (size: string, theme: Theme) => {
     tiny: getAvatarSizes(theme).tiny,
   };
 
-  return sizes[size] || getAvatarSizes(theme).standard;
+  const fontSize = {
+    huge: '24px',
+    large: '16px',
+    small: '14px',
+    standard: '16px',
+    tiny: '12px',
+  };
+
+  return Object.assign(sizes[size], { fontSize: fontSize[size] });
 };

@@ -1,7 +1,7 @@
 import React from 'react';
 import { View } from 'react-native';
 import { select, text } from '@storybook/addon-knobs';
-import { Avatar, AvatarTypes } from './Avatar';
+import { Avatar } from './Avatar';
 import { ContainerRow, TextWithTheme } from '../../common/HelperComponents/ThemeHelper.styles';
 
 export default {
@@ -23,14 +23,9 @@ const avatarTypes = {
 };
 
 export const all = () => (
-  <View style={{ maxWidth: 300, padding: 30 }}>
+  <View>
     <TextWithTheme>image</TextWithTheme>
-    <ContainerRow
-      style={{
-        height: 80,
-        justifyContent: 'center',
-        marginBottom: 20,
-      }}>
+    <ContainerRow>
       <Avatar type="image" size="huge" imgSource={{ url: imgSource }} />
       <Avatar type="image" size="large" imgSource={{ url: imgSource }}/>
       <Avatar type="image" size="standard" imgSource={{ url: imgSource }}/>
@@ -38,12 +33,7 @@ export const all = () => (
       <Avatar type="image" size="tiny" imgSource={{ url: imgSource }}/>
     </ContainerRow>
     <TextWithTheme>letter</TextWithTheme>
-    <ContainerRow
-      style={{
-        height: 80,
-        justifyContent: 'center',
-        marginBottom: 20,
-      }}>
+    <ContainerRow>
       <Avatar type="letter" size="huge" text={textSample} />
       <Avatar type="letter" size="large" text={textSample}/>
       <Avatar type="letter" size="standard" text={textSample}/>
@@ -51,12 +41,7 @@ export const all = () => (
       <Avatar type="letter" size="tiny" text={textSample}/>
     </ContainerRow>
     <TextWithTheme>anonymous</TextWithTheme>
-    <ContainerRow
-      style={{
-        height: 80,
-        justifyContent: 'center',
-        marginBottom: 20,
-      }}>
+    <ContainerRow>
       <Avatar type="anonymous" size="huge"/>
       <Avatar type="anonymous" size="large"/>
       <Avatar type="anonymous" size="standard"/>
@@ -67,7 +52,7 @@ export const all = () => (
 );
 
 export const interactive = () => (
-  <View style={{ maxWidth: 300, padding: 30 }}>
+  <View>
     <TextWithTheme>interactive</TextWithTheme>
     <Avatar
       type={select('Type', avatarTypes, 'letter')}

@@ -13,8 +13,6 @@ import {
   getAvatarBySize,
 } from '../../common/themeSelectors';
 
-import { getPXfromERM } from '../../common/utils/sizes';
-
 export type AvatarSizes = keyof IAvatarSizes;
 export type AvatarColors = 'primary' | 'secondary' | 'default' | string;
 export type AvatarTypes = 'image' | 'letter' | 'anonymous' | string;
@@ -63,13 +61,7 @@ export interface AvatarProps {
   testID?: string;
 }
 
-const getAvatarFontSize = (theme, size) => {
-  let remSize = getAvatarBySize(size, theme).fontSize;
-
-  if (remSize[0] === '.') remSize = `0${remSize}`;
-
-  return getPXfromERM(parseFloat(remSize));
-};
+const getAvatarFontSize = (theme, size) => getAvatarBySize(size, theme).fontSize;
 
 const getAvatarSize = (theme, size) => getAvatarBySize(size, theme).size;
 
@@ -107,7 +99,7 @@ const AvatarImage = styled.Image<AvatarImage>(({ size, theme }) => ({
 
 const AvatarLetter = styled.Text<AvatarLetter>`
   color: ${({ theme }) => getColorOnPrimary(theme)};
-  font-size: ${({ size, theme }) => getAvatarFontSize(theme, size)}px;
+  font-size: ${({ size, theme }) => getAvatarFontSize(theme, size)};
   align-self: center;
   letter-spacing: 1px;
 `;

@@ -32,12 +32,6 @@ const scenarios = [
     selector: selectors.getAvatarBySize,
     title: 'size huge',
   },
-  {
-    expectedResult: theme.avatarSizes.standard,
-    name: 'other',
-    selector: selectors.getAvatarBySize,
-    title: 'site default: standard',
-  },
 ];
 
 describe('AvatarSizes selectors', () => {
