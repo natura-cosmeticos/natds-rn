@@ -96,7 +96,7 @@ class SnackbarComponent extends Component<SnackbarProps, SnackbarState> {
         // https://github.com/facebook/react-native/issues/23090
         // setting needsOffscreenAlphaCompositing to true during animations
         needsOffscreenAlphaCompositing={this.state.isAnimating}
-        style={{ opacity: this.state.fadeAnim, bottom: 0 }}
+        style={{ opacity: this.state.fadeAnim }}
         >
         <SnackbarWrapper type={type}>
           <SnackbarText
