@@ -10,7 +10,10 @@ import {
   getColorOnPrimary,
   getColorPrimary,
   getSpacingBySize,
+  getAvatarBySize,
 } from '../../common/themeSelectors';
+
+import { getPXfromERM } from '../../common/utils/sizes';
 
 export type AvatarSizes = keyof IAvatarSizes;
 export type AvatarColors = 'primary' | 'secondary' | 'default' | string;
@@ -60,27 +63,25 @@ export interface AvatarProps {
   testID?: string;
 }
 
+const getAvatarFontSize = (theme, size) => {
+  let remSize = getAvatarBySize(size, theme).fontSize;
+
+  if (remSize[0] === '.') remSize = `0${remSize}`;
+
+  return getPXfromERM(parseFloat(remSize));
+};
+
+const getAvatarSize = (theme, size) => getAvatarBySize(size, theme).size;
+
 const getViewStyles = (color: AvatarColors, size: AvatarSizes, theme: Theme) => ({
   alignItems: 'center',
   backgroundColor: getColorPrimary(theme),
-  borderRadius: getSpacingBySize(size, theme),
-  height: getSpacingBySize(size, theme),
+  borderRadius: getAvatarSize(theme, size),
+  height: getAvatarSize(theme, size),
   justifyContent: 'center',
-  width: getSpacingBySize(size, theme),
+  width: getAvatarSize(theme, size),
 });
 
-
-const getFontSize = (theme, size) => {
-  const sizeFont = {
-    huge: '24px',
-    large: '16px',
-    small: '14px',
-    standard: '16px',
-    tiny: '10px',
-  };
-
-  return sizeFont[size];
-};
 
 interface AvatarImage {
   size: AvatarSizes;
@@ -100,15 +101,16 @@ interface AvatarLetter {
 
 const AvatarImage = styled.Image<AvatarImage>(({ size, theme }) => ({
   borderRadius: getSpacingBySize(size, theme),
-  height: getSpacingBySize(size, theme),
-  width: getSpacingBySize(size, theme),
+  height: getAvatarSize(theme, size),
+  width: getAvatarSize(theme, size),
 }));
 
-const AvatarLetter = styled.Text<AvatarLetter>(({ size, theme }) => ({
-  alignSelf: 'center',
-  color: getColorOnPrimary(theme),
-  fontSize: getFontSize(theme, size),
-}));
+const AvatarLetter = styled.Text<AvatarLetter>`
+  color: ${({ theme }) => getColorOnPrimary(theme)};
+  font-size: ${({ size, theme }) => getAvatarFontSize(theme, size)}px;
+  align-self: center;
+  letter-spacing: 1px;
+`;
 
 /**
  * Get the first character from first and last word

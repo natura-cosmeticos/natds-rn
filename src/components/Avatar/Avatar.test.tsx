@@ -14,46 +14,46 @@ const renderAvatar = (fn, type?: AvatarTypes) => fn(
 );
 
 describe('Avatar component', () => {
-  it('Should render avatar with default type', () => {
+  it('should render avatar with default type', () => {
     const { queryByTestId } = renderAvatar(render);
 
     expect(queryByTestId('avatar')?.props).toHaveProperty('type', 'anonymous');
   });
-  it('Should render avatar with anonymous type', () => {
+  it('should render avatar with anonymous type', () => {
     const { queryByTestId } = renderAvatar(render, 'anonymous');
 
     expect(queryByTestId('avatar')?.props).toHaveProperty('type', 'anonymous');
   });
-  it('Should render avatar with image type', () => {
+  it('should render avatar with image type', () => {
     const { queryByTestId } = renderAvatar(render, 'image');
 
     expect(queryByTestId('avatar')?.props).toHaveProperty('type', 'image');
   });
-  it('Should render avatar with letter type', () => {
+  it('should render avatar with letter type', () => {
     const { queryByTestId } = renderAvatar(render, 'letter');
 
     expect(queryByTestId('avatar')?.props).toHaveProperty('type', 'letter');
   });
 
-  it('Should render avatar component', () => {
+  it('should render avatar component', () => {
     const avatar = renderAvatar(renderer.create);
 
     expect(avatar).toMatchSnapshot();
   });
 
-  it('Should render avatar component anonymous', () => {
+  it('should render avatar component anonymous', () => {
     const avatar = renderAvatar(renderer.create, 'anonymous').toJSON();
 
     expect(avatar).toMatchSnapshot();
   });
 
-  it('Should render avatar component image', () => {
+  it('should render avatar component image', () => {
     const avatar = renderAvatar(renderer.create, 'image').toJSON();
 
     expect(avatar).toMatchSnapshot();
   });
 
-  it('Should render avatar component letter', () => {
+  it('should render avatar component letter', () => {
     const avatar = renderAvatar(renderer.create, 'letter').toJSON();
 
     expect(avatar).toMatchSnapshot();

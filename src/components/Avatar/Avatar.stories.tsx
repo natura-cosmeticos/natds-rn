@@ -8,12 +8,12 @@ export default {
   component: Avatar,
   parameters: {
     componentSubtitle:
-      'Avatar.',
+      'Avatar',
   },
-  title: 'Components|Avatar',
+  title: 'Components/Avatar',
 };
 
-const imgSource = 'https://picsum.photos/id/1016/50/50';
+const imgSource = 'https://pbs.twimg.com/profile_images/1285932878795333632/Wl95KE_m_400x400.jpg';
 const textSample = 'NA';
 
 const avatarTypes = {

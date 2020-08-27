@@ -1,15 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Avatar component Should render avatar component 1`] = `
+exports[`Avatar component should render avatar component 1`] = `
 <View
   style={
     Object {
       "alignItems": "center",
       "backgroundColor": "#F4AB34",
-      "borderRadius": 24,
-      "height": 24,
+      "borderRadius": 40,
+      "height": 40,
       "justifyContent": "center",
-      "width": 24,
+      "width": 40,
     }
   }
 >
@@ -24,8 +24,8 @@ exports[`Avatar component Should render avatar component 1`] = `
       Array [
         Object {
           "borderRadius": 24,
-          "height": 24,
-          "width": 24,
+          "height": 40,
+          "width": 40,
         },
       ]
     }
@@ -337,16 +337,16 @@ exports[`Avatar component Should render avatar component 1`] = `
 </View>
 `;
 
-exports[`Avatar component Should render avatar component anonymous 1`] = `
+exports[`Avatar component should render avatar component anonymous 1`] = `
 <View
   style={
     Object {
       "alignItems": "center",
       "backgroundColor": "#F4AB34",
-      "borderRadius": 24,
-      "height": 24,
+      "borderRadius": 40,
+      "height": 40,
       "justifyContent": "center",
-      "width": 24,
+      "width": 40,
     }
   }
 >
@@ -361,8 +361,8 @@ exports[`Avatar component Should render avatar component anonymous 1`] = `
       Array [
         Object {
           "borderRadius": 24,
-          "height": 24,
-          "width": 24,
+          "height": 40,
+          "width": 40,
         },
       ]
     }
@@ -674,16 +674,16 @@ exports[`Avatar component Should render avatar component anonymous 1`] = `
 </View>
 `;
 
-exports[`Avatar component Should render avatar component image 1`] = `
+exports[`Avatar component should render avatar component image 1`] = `
 <View
   style={
     Object {
       "alignItems": "center",
       "backgroundColor": "#F4AB34",
-      "borderRadius": 24,
-      "height": 24,
+      "borderRadius": 40,
+      "height": 40,
       "justifyContent": "center",
-      "width": 24,
+      "width": 40,
     }
   }
 >
@@ -693,8 +693,8 @@ exports[`Avatar component Should render avatar component image 1`] = `
       Array [
         Object {
           "borderRadius": 24,
-          "height": 24,
-          "width": 24,
+          "height": 40,
+          "width": 40,
         },
       ]
     }
@@ -1006,16 +1006,16 @@ exports[`Avatar component Should render avatar component image 1`] = `
 </View>
 `;
 
-exports[`Avatar component Should render avatar component letter 1`] = `
+exports[`Avatar component should render avatar component letter 1`] = `
 <View
   style={
     Object {
       "alignItems": "center",
       "backgroundColor": "#F4AB34",
-      "borderRadius": 24,
-      "height": 24,
+      "borderRadius": 40,
+      "height": 40,
       "justifyContent": "center",
-      "width": 24,
+      "width": 40,
     }
   }
 >
@@ -1027,6 +1027,7 @@ exports[`Avatar component Should render avatar component letter 1`] = `
           "alignSelf": "center",
           "color": "#333333",
           "fontSize": 16,
+          "letterSpacing": 1,
         },
       ]
     }
