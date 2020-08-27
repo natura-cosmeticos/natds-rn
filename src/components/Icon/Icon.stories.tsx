@@ -2,7 +2,7 @@ import React from 'react';
 import { select, text } from '@storybook/addon-knobs';
 
 import { ContainerRow } from '../../common/HelperComponents/ThemeHelper.styles';
-import { Icon, IconColors } from './Icon';
+import { Icon, IconColors, IconSizes } from './Icon';
 
 export default {
   component: Icon,
@@ -25,11 +25,28 @@ const iconColors = {
   primary: 'primary',
 };
 
+/* eslint-disable sort-keys */
+const iconSizes = {
+  micro: 'micro',
+  tiny: 'tiny',
+  small: 'small',
+  standard: 'standard',
+  medium: 'medium',
+  large: 'large',
+  largex: 'largex',
+  largexx: 'largexx',
+  huge: 'huge',
+  hugex: 'hugex',
+  hugexx: 'hugexx',
+};
+/* eslint-enable sort-keys */
+
 export const interactive = () => (
   <ContainerRow style={{ padding: 20 }} >
     <Icon
       color={select('Colors', iconColors, 'default') as IconColors}
       name={text('Icon name', 'outlined-default-mockup')}
+      size={select('Sizes', iconSizes, 'standard') as IconSizes}
     />
   </ContainerRow>
 );
