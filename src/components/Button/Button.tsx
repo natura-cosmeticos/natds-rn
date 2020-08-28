@@ -104,7 +104,6 @@ const ButtonBase = styled.TouchableHighlight<{
 }) => ({
   ...getButtonPropsBySize(theme, size),
   ...getButtonStyles(theme, type, disabled),
-  ...getShadowByType(type, disabled, theme),
   borderRadius: getRadiusBySize(theme, 'medium'),
 }));
 
@@ -122,13 +121,14 @@ const ButtonComponent = ({
   onPress, theme, text, type = 'contained', disabled = false, testID = 'button', accessibilityLabel, accessibilityHint, size = 'medium',
 }: ButtonProps) => (
   <ButtonBase
-    testID={testID}
-    type={type}
-    onPress={disabled ? () => {} : onPress}
-    underlayColor={getColorPrimaryLight(theme)}
     activeOpacity={getOpacity10(theme)}
     disabled={disabled}
+    onPress={disabled ? () => {} : onPress}
     size={size}
+    style={getShadowByType(type, disabled, theme)}
+    testID={testID}
+    type={type}
+    underlayColor={getColorPrimaryLight(theme)}
   >
     <Text
       style={{ fontWeight: 'bold' }}
