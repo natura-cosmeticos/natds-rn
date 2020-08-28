@@ -11,6 +11,8 @@ exports[`Button component Disabled variants should render disabled button compon
       Object {
         "backgroundColor": "#FFFFFF",
         "borderRadius": 42,
+      },
+      Object {
         "shadowColor": "#AEAEAE",
       },
     ]
@@ -55,6 +57,7 @@ exports[`Button component Disabled variants should render disabled button compon
         "borderRadius": 42,
         "borderWidth": 1,
       },
+      Object {},
     ]
   }
   testID="button"
@@ -95,6 +98,7 @@ exports[`Button component Disabled variants should render disabled button compon
         "backgroundColor": "#AEAEAE",
         "borderRadius": 42,
       },
+      Object {},
     ]
   }
   testID="button"
@@ -134,6 +138,8 @@ exports[`Button component Variants should render button component contained 1`] 
       Object {
         "backgroundColor": "#FFFFFF",
         "borderRadius": 42,
+      },
+      Object {
         "shadowColor": "#AEAEAE",
       },
     ]
@@ -178,6 +184,7 @@ exports[`Button component Variants should render button component outlined 1`] =
         "borderRadius": 42,
         "borderWidth": 1,
       },
+      Object {},
     ]
   }
   testID="button"
@@ -218,6 +225,7 @@ exports[`Button component Variants should render button component text 1`] = `
         "backgroundColor": "#AEAEAE",
         "borderRadius": 42,
       },
+      Object {},
     ]
   }
   testID="button"
