@@ -44,22 +44,18 @@ class SnackbarComponent extends Component<SnackbarProps, SnackbarState> {
 
         this.setState({ isAnimating: true, isOpen: true }, () => {
           // fade in duration recommended by material-ui
-          Animated.timing(
-            this.state.fadeAnim,
-            { duration: 225, toValue: 1, useNativeDriver: true },
-          ).start(({ finished }) => {
-            if (finished) this.setState({ isAnimating: false });
-          });
+          Animated.timing(this.state.fadeAnim, { duration: 225, toValue: 1, useNativeDriver: true })
+            .start(({ finished }) => {
+              if (finished) this.setState({ isAnimating: false });
+            });
         });
       } else {
         this.setState({ isAnimating: true }, () => {
           // fade out duration recommended by material-ui
-          Animated.timing(
-            this.state.fadeAnim,
-            { duration: 195, toValue: 0, useNativeDriver: true },
-          ).start(({ finished }) => {
-            if (finished) this.setState({ isAnimating: false, isOpen: false });
-          });
+          Animated.timing(this.state.fadeAnim, { duration: 195, toValue: 0, useNativeDriver: true })
+            .start(({ finished }) => {
+              if (finished) this.setState({ isAnimating: false, isOpen: false });
+            });
         });
       }
     }
@@ -74,13 +70,9 @@ class SnackbarComponent extends Component<SnackbarProps, SnackbarState> {
   };
 
   setAutoHideTimer = (autoHideDurationParam?: number) => {
-    if (!this.props.onClose || autoHideDurationParam == null) {
-      return;
-    }
+    if (!this.props.onClose || autoHideDurationParam == null) return;
 
-    if (this.state.timerAutoHide) {
-      clearTimeout(this.state.timerAutoHide);
-    }
+    if (this.state.timerAutoHide) clearTimeout(this.state.timerAutoHide);
 
     this.setState({ timerAutoHide: setTimeout(() => this.handleClose(), autoHideDurationParam) });
   };
@@ -100,8 +92,13 @@ class SnackbarComponent extends Component<SnackbarProps, SnackbarState> {
         // https://github.com/facebook/react-native/issues/23090
         // setting needsOffscreenAlphaCompositing to true during animations
         needsOffscreenAlphaCompositing={this.state.isAnimating}
-        style={{ opacity: this.state.fadeAnim }}
-        >
+        style={{
+          bottom: 0,
+          opacity: this.state.fadeAnim,
+          position: 'absolute',
+          width: '100%',
+        }}
+      >
         <SnackbarWrapper type={type}>
           <SnackbarText
             type={type}
