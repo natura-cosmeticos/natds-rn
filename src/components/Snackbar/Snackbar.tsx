@@ -4,7 +4,7 @@ import { withTheme } from 'styled-components/native';
 import { Theme } from '../../common/themeSelectors';
 import { SnackbarWrapper, SnackbarText, SnackbarButton } from './Snackbar.styles';
 
-export type SnackbarType = 'default' | 'success' | 'error' | 'warning' | 'info';
+export type SnackbarType = 'standard' | 'success' | 'error' | 'warning' | 'info';
 
 export interface SnackbarProps {
   theme: Theme;
@@ -26,7 +26,7 @@ interface SnackbarState {
   isOpen: boolean;
 }
 
-class SnackbarComponent extends Component<SnackbarProps, SnackbarState> {
+export class SnackbarComponent extends Component<SnackbarProps, SnackbarState> {
   state = {
     fadeAnim: new Animated.Value(0),
     isAnimating: false,
@@ -79,7 +79,7 @@ class SnackbarComponent extends Component<SnackbarProps, SnackbarState> {
 
   render() {
     const {
-      type = 'default',
+      type = 'standard',
       numberOfLines = 2,
       buttonText,
       message,

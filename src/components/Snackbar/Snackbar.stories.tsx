@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import styled from 'styled-components/native';
 import { View, Button } from 'react-native';
+import { text, select, number } from '@storybook/addon-knobs';
 import { Snackbar, SnackbarType } from './Snackbar';
 
 export default {
@@ -12,67 +12,82 @@ export default {
   title: 'Components|Snackbar',
 };
 
-const Wrapper = styled.View`
-  borderColor: rgba(0, 0, 0, 0.12);
-  borderRadius: 4;
-  borderStyle: solid;
-  borderWidth: 1;
-  height: 200;
-  marginTop: 20;
-  width: 350;
-`;
+const snackbarTypeOptions = {
+  error: 'error',
+  info: 'info',
+  standard: 'standard',
+  success: 'success',
+  warning: 'warning',
+};
 
-interface SnackbarContainerProps {
-  buttonText: string,
-  snackbarMessage: string,
-  snackbarButtonText?: string,
-  snackbarType: SnackbarType,
-}
-
-const SnackbarContainer: React.FC<SnackbarContainerProps> = (props) => {
+export const interactive = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <Wrapper>
+    <View style={{ backgroundColor: 'gainsboro', flex: 1, height: 200 }}>
       <Snackbar
-        message={props.snackbarMessage}
-        buttonText={props.snackbarButtonText}
+        message={text('message', 'Lorem ipsum dolor sit amet')}
+        buttonText={text('button text', 'ok')}
+        type={select('type', snackbarTypeOptions, 'standard') as SnackbarType}
+        autoHideDuration={number('auto hide duration', 5000)}
         open={open}
-        onClose={() => setOpen(false)}
-        type={props.snackbarType}
-      />
-      <Button onPress={() => setOpen(!open)} title={props.buttonText} />
-    </Wrapper>
+        onClose={() => setOpen(false)} />
+      <Button onPress={() => setOpen(!open)} title='open standard snackbar' />
+    </View>
   );
 };
 
-export const all = () => {
+export const standard = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <View style={{ alignItems: 'center' }}>
-      <SnackbarContainer
-        buttonText='multiline snackbar with action'
-        snackbarMessage='This is a snackbar with multiple lines to show how it behaves when dealing with a longer message'
-        snackbarButtonText='ok'
-        snackbarType='info'
-      />
-      <SnackbarContainer
-        buttonText='multiline snackbar'
-        snackbarMessage='This is a snackbar with multiple lines to show how it behaves when dealing with a longer message'
-        snackbarType='info'
-      />
-      <SnackbarContainer
-        buttonText='default snackbar with action'
-        snackbarButtonText='ok'
-        snackbarMessage='This is a short snackbar'
-        snackbarType='default'
-      />
-      <SnackbarContainer buttonText='default snackbar' snackbarMessage='This is a short snackbar' snackbarType='default' />
-      <SnackbarContainer buttonText='info snackbar' snackbarMessage='This is a short snackbar' snackbarType='info' />
-      <SnackbarContainer buttonText='warning snackbar' snackbarMessage='This is a short snackbar' snackbarType='warning' />
-      <SnackbarContainer buttonText='error snackbar' snackbarMessage='This is a short snackbar' snackbarType='error' />
-      <SnackbarContainer buttonText='success snackbar' snackbarMessage='This is a short snackbar' snackbarType='success' />
+    <View style={{ backgroundColor: 'gainsboro', flex: 1, height: 200 }}>
+      <Snackbar message="Lorem ipsum dolor sit amet" open={open} onClose={() => setOpen(false)} />
+      <Button onPress={() => setOpen(!open)} title='open standard snackbar' />
+    </View>
+  );
+};
+
+export const info = () => {
+  const [open, setOpen] = useState(false);
+
+  return (
+    <View style={{ backgroundColor: 'gainsboro', flex: 1, height: 200 }}>
+      <Snackbar message="Lorem ipsum dolor sit amet" open={open} onClose={() => setOpen(false)} type="info" />
+      <Button onPress={() => setOpen(!open)} title='open info snackbar' />
+    </View>
+  );
+};
+
+export const warning = () => {
+  const [open, setOpen] = useState(false);
+
+  return (
+    <View style={{ backgroundColor: 'gainsboro', flex: 1, height: 200 }}>
+      <Snackbar message="Lorem ipsum dolor sit amet" open={open} onClose={() => setOpen(false)} type="warning" />
+      <Button onPress={() => setOpen(!open)} title='open warning snackbar' />
+    </View>
+  );
+};
+
+export const error = () => {
+  const [open, setOpen] = useState(false);
+
+  return (
+    <View style={{ backgroundColor: 'gainsboro', flex: 1, height: 200 }}>
+      <Snackbar message="Lorem ipsum dolor sit amet" open={open} onClose={() => setOpen(false)} type="error" />
+      <Button onPress={() => setOpen(!open)} title='open error snackbar' />
+    </View>
+  );
+};
+
+export const success = () => {
+  const [open, setOpen] = useState(false);
+
+  return (
+    <View style={{ backgroundColor: 'gainsboro', flex: 1, height: 200 }}>
+      <Snackbar message="Lorem ipsum dolor sit amet" open={open} onClose={() => setOpen(false)} type="success" />
+      <Button onPress={() => setOpen(!open)} title='open success snackbar' />
     </View>
   );
 };
