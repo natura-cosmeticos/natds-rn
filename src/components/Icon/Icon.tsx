@@ -1,12 +1,13 @@
 import React from 'react';
 import { withTheme } from 'styled-components/native';
 import { Text } from 'react-native';
-
 import iconNames from '@naturacosmeticos/natds-icons/dist/natds-icons.json';
-import { Theme } from '../../common/themeSelectors';
+import { ISizes } from '@naturacosmeticos/natds-styles';
+import { IColorThemeTokens } from '@naturacosmeticos/natds-styles/dist/tokens/colors/themeBound/IColorThemeTokens';
+import { Theme, getColorByName } from '../../common/themeSelectors';
 
-export type IconColors = 'default' | 'lowEmphasis' | 'primary'
-export type IconSizes = 'micro' | 'tiny' | 'small' | 'standard' | 'medium' | 'large' | 'largex' | 'largexx' | 'huge' | 'hugex' | 'hugexx'
+export type IconColors = keyof IColorThemeTokens
+export type IconSizes = keyof ISizes
 
 export interface IconProps {
   /**
@@ -21,7 +22,7 @@ export interface IconProps {
    */
   accessibilityLabel?: string
   /**
-   * Icon variants `default` | `lowEmphasis` | `primary`
+   * Icon color tokens
    */
   color?: IconColors,
   /**
@@ -46,20 +47,10 @@ const defaultIconName = 'outlined-default-mockup';
 
 const getIconSize = (theme, size) => theme.sizes[size];
 
-const getFontColor = (theme, color) => {
-  const translatedColor = {
-    default: 'colorHighEmphasis',
-    lowEmphasis: 'colorLowEmphasis',
-    primary: 'colorPrimary',
-  }[color];
-
-  return theme.colorTokens[translatedColor];
-};
-
 const IconComponent = ({
   accessibilityHint,
   accessibilityLabel,
-  color = 'default',
+  color = 'colorHighEmphasis',
   name = defaultIconName,
   testID = `icon-${name}`,
   theme,
@@ -77,7 +68,7 @@ const IconComponent = ({
       accessibilityLabel={accessibilityLabel}
       accessibilityRole="text"
       style={{
-        color: getFontColor(theme, color),
+        color: getColorByName(theme, color),
         fontFamily: 'natds-icons',
         fontSize: getIconSize(theme, size),
       }}

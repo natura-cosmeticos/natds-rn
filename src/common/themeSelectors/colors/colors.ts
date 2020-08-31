@@ -22,3 +22,5 @@ export const getColorHighEmphasis = (theme: Theme) => getColors(theme).colorHigh
 export const getColorSurface = (theme: Theme) => getColors(theme).colorSurface;
 
 export const getColorHighlight = (theme: Theme) => getColors(theme).colorHighlight;
+
+export const getColorByName = (theme: Theme, colorName: string) => getColors(theme)[colorName];

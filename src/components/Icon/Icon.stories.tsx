@@ -14,16 +14,44 @@ export default {
 
 export const all = () => (
   <ContainerRow style={{ justifyContent: 'space-around', padding: 20 }}>
-    <Icon color="primary" />
-    <Icon color="primary" name="filled-action-add" />
-    <Icon color="default" name="filled-action-add" />
+    <Icon color="colorPrimary" />
+    <Icon color="colorPrimary" name="filled-action-add" />
+    <Icon name="filled-action-add" />
   </ContainerRow>
 );
 
+/* eslint-disable sort-keys */
 const iconColors = {
-  default: 'default',
-  primary: 'primary',
+  colorPrimary: 'colorPrimary',
+  colorOnPrimary: 'colorOnPrimary',
+  colorPrimaryLight: 'colorPrimaryLight',
+  colorOnPrimaryLight: 'colorOnPrimaryLight',
+  colorPrimaryDark: 'colorPrimaryDark',
+  colorOnPrimaryDark: 'colorOnPrimaryDark',
+  colorSecondary: 'colorSecondary',
+  colorOnSecondary: 'colorOnSecondary',
+  colorSecondaryLight: 'colorSecondaryLight',
+  colorOnSecondaryLight: 'colorOnSecondaryLight',
+  colorSecondaryDark: 'colorSecondaryDark',
+  colorOnSecondaryDark: 'colorOnSecondaryDark',
+  colorBackground: 'colorBackground',
+  colorOnBackground: 'colorOnBackground',
+  colorSurface: 'colorSurface',
+  colorOnSurface: 'colorOnSurface',
+  colorHighlight: 'colorHighlight',
+  colorHighEmphasis: 'colorHighEmphasis',
+  colorMediumEmphasis: 'colorMediumEmphasis',
+  colorLowEmphasis: 'colorLowEmphasis',
+  colorLink: 'colorLink',
+  colorOnLink: 'colorOnLink',
+  colorSuccess: 'colorSuccess',
+  colorOnSuccess: 'colorOnSuccess',
+  colorWarning: 'colorWarning',
+  colorOnWarning: 'colorOnWarning',
+  colorAlert: 'colorAlert',
+  colorOnAlert: 'colorOnAlert',
 };
+/* eslint-enable sort-keys */
 
 /* eslint-disable sort-keys */
 const iconSizes = {
