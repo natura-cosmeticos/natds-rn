@@ -5,7 +5,7 @@ import { Text } from 'react-native';
 import iconNames from '@naturacosmeticos/natds-icons/dist/natds-icons.json';
 import { Theme } from '../../common/themeSelectors';
 
-export type IconColors = 'default' | 'primary'
+export type IconColors = 'default' | 'lowEmphasis' | 'primary'
 export type IconSizes = 'micro' | 'tiny' | 'small' | 'standard' | 'medium' | 'large' | 'largex' | 'largexx' | 'huge' | 'hugex' | 'hugexx'
 
 export interface IconProps {
@@ -21,7 +21,7 @@ export interface IconProps {
    */
   accessibilityLabel?: string
   /**
-   * Icon variants `default` | `primary`
+   * Icon variants `default` | `lowEmphasis` | `primary`
    */
   color?: IconColors,
   /**
@@ -49,6 +49,7 @@ const getIconSize = (theme, size) => theme.sizes[size];
 const getFontColor = (theme, color) => {
   const translatedColor = {
     default: 'colorHighEmphasis',
+    lowEmphasis: 'colorLowEmphasis',
     primary: 'colorPrimary',
   }[color];
 
