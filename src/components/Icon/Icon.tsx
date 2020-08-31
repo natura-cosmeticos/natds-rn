@@ -3,10 +3,37 @@ import { withTheme } from 'styled-components/native';
 import { Text } from 'react-native';
 import iconNames from '@naturacosmeticos/natds-icons/dist/natds-icons.json';
 import { ISizes } from '@naturacosmeticos/natds-styles';
-import { IColorThemeTokens } from '@naturacosmeticos/natds-styles/dist/tokens/colors/themeBound/IColorThemeTokens';
 import { Theme, getColorByName } from '../../common/themeSelectors';
 
-export type IconColors = keyof IColorThemeTokens
+export type IconColors = 'default'
+                        | 'primary'
+                        | 'onPrimary'
+                        | 'primaryLight'
+                        | 'onPrimaryLight'
+                        | 'primaryDark'
+                        | 'onPrimaryDark'
+                        | 'secondary'
+                        | 'onSecondary'
+                        | 'secondaryLight'
+                        | 'onSecondaryLight'
+                        | 'secondaryDark'
+                        | 'onSecondaryDark'
+                        | 'background'
+                        | 'onBackground'
+                        | 'surface'
+                        | 'onSurface'
+                        | 'highlight'
+                        | 'highEmphasis'
+                        | 'mediumEmphasis'
+                        | 'lowEmphasis'
+                        | 'link'
+                        | 'onLink'
+                        | 'success'
+                        | 'onSuccess'
+                        | 'warning'
+                        | 'onWarning'
+                        | 'alert'
+                        | 'onAlert'
 export type IconSizes = keyof ISizes
 
 export interface IconProps {
@@ -45,12 +72,19 @@ export interface IconProps {
 
 const defaultIconName = 'outlined-default-mockup';
 
-const getIconSize = (theme, size) => theme.sizes[size];
+const getIconSize = (theme: Theme, size: IconSizes) => theme.sizes[size];
+
+const getFontColor = (theme: Theme, color: IconColors) => {
+  const colorName = color === 'default' ? 'highEmphasis' : color;
+  const colorToken = `color${colorName.charAt(0).toUpperCase()}${colorName.slice(1)}`;
+
+  return getColorByName(theme, colorToken);
+};
 
 const IconComponent = ({
   accessibilityHint,
   accessibilityLabel,
-  color = 'colorHighEmphasis',
+  color = 'default',
   name = defaultIconName,
   testID = `icon-${name}`,
   theme,
@@ -68,7 +102,7 @@ const IconComponent = ({
       accessibilityLabel={accessibilityLabel}
       accessibilityRole="text"
       style={{
-        color: getColorByName(theme, color),
+        color: getFontColor(theme, color),
         fontFamily: 'natds-icons',
         fontSize: getIconSize(theme, size),
       }}

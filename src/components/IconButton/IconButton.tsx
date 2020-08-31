@@ -75,16 +75,10 @@ const getRippleColor = (color) => {
   return colorMapping[color];
 };
 
-const getIconColor = (color) => {
-  const colorMapping = { default: 'colorHighlight', primary: 'colorPrimary' };
-
-  return colorMapping[color];
-};
-
 const IconButtonComponent = ({
   accessibilityHint,
   accessibilityLabel,
-  color = 'default',
+  color,
   icon,
   size = 'small',
   onPress,
@@ -101,7 +95,7 @@ const IconButtonComponent = ({
       <Icon
         accessibilityHint={accessibilityHint}
         accessibilityLabel={accessibilityLabel}
-        color={getIconColor(color)}
+        color={color}
         name={icon}
         theme={theme}
       />
