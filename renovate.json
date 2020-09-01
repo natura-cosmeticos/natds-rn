@@ -1,4 +1,5 @@
 {
+  "enabled": false,
   "enabledManagers": [
     "nodenv",
     "npm",
@@ -9,5 +10,6 @@
   ],
   "labels": ["dependencies", "renovate"],
   "masterIssue": true,
-  "masterIssueAutoclose": true
+  "masterIssueAutoclose": true,
+  "prConcurrentLimit": 2
 }
