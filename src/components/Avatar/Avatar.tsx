@@ -1,6 +1,6 @@
 /* eslint-disable max-lines */
 import React from 'react';
-import { View } from 'react-native';
+import { View, ViewStyle } from 'react-native';
 import styled, { withTheme } from 'styled-components/native';
 import { IAvatarSizes } from '@naturacosmeticos/natds-styles';
 import IconAnonymous from '../../assets/images/anonymous.png';
@@ -52,10 +52,6 @@ export interface AvatarProps {
    */
   accessibilityHint?: string;
   /**
-   * Optional accessibilityRole
-   */
-  accessibilityRole?: string;
-  /**
    * Optional ID for testing
    */
   testID?: string;
@@ -65,7 +61,7 @@ const getAvatarFontSize = (theme, size) => getAvatarBySize(size, theme).fontSize
 
 const getAvatarSize = (theme, size) => getAvatarBySize(size, theme).size;
 
-const getViewStyles = (color: AvatarColors, size: AvatarSizes, theme: Theme) => ({
+const getViewStyles = (color: AvatarColors, size: AvatarSizes, theme: Theme):ViewStyle => ({
   alignItems: 'center',
   backgroundColor: getColorPrimary(theme),
   borderRadius: getAvatarSize(theme, size),
@@ -83,9 +79,9 @@ interface AvatarImage {
 }
 
 interface AvatarLetter {
-  accessibilityLabel: string;
-  accessibilityHint: string;
-  accessibilityRole: string;
+  accessibilityLabel?: string;
+  accessibilityHint?: string;
+  accessibilityRole?: string;
   size: AvatarSizes;
   theme: Theme;
   type: AvatarTypes;
@@ -134,7 +130,6 @@ const AvatarComponent = ({
   imgSource,
   accessibilityLabel,
   accessibilityHint,
-  accessibilityRole,
 }: AvatarProps) => (
   <View style={getViewStyles(color, size, theme)} >
     { type === 'anonymous' && <AvatarImage
@@ -156,7 +151,7 @@ const AvatarComponent = ({
     { type === 'letter' && <AvatarLetter
       accessibilityLabel={accessibilityLabel}
       accessibilityHint={accessibilityHint}
-      accessibilityRole={accessibilityRole}
+      accessibilityRole="text"
       size={size}
       theme={theme}
       testID={testID}
