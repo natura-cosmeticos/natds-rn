@@ -87,8 +87,8 @@ interface SnackbarTextProps extends TextProps {
 export const SnackbarText = styled.Text<SnackbarTextProps>`
   color: ${({ theme, type }) => getColorByType(theme, type)};
   flexGrow: 1;
-  paddingBottom: ${({ isTwoLineAction }) => (isTwoLineAction ? 8 : 14)};
-  paddingLeft: 16;
-  paddingRight: 16;
-  paddingTop: 14;
+  paddingBottom: ${({ isTwoLineAction }) => (isTwoLineAction ? 8 : 14)}px;
+  paddingLeft: 16px;
+  paddingRight: 16px;
+  paddingTop: 14px;
 `;

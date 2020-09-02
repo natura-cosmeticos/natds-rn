@@ -12,7 +12,7 @@ export interface SnackbarProps {
   buttonText?: string;
   type?: SnackbarType;
   autoHideDuration?: number;
-  open?: boolean;
+  open: boolean;
   numberOfLines?: number;
   onClose?: () => void;
 }
@@ -34,6 +34,15 @@ export class SnackbarComponent extends Component<SnackbarProps, SnackbarState> {
     isOpen: false,
     timerAutoHide: 0,
   };
+
+  componentDidMount() {
+    const { open, autoHideDuration = 5000 } = this.props;
+
+    if (open) {
+      this.setState({ isOpen: open });
+      this.setAutoHideTimer(autoHideDuration);
+    }
+  }
 
   componentDidUpdate(prevProps: SnackbarProps) {
     const { open, autoHideDuration = 5000 } = this.props;
@@ -66,7 +75,9 @@ export class SnackbarComponent extends Component<SnackbarProps, SnackbarState> {
   }
 
   handleClose = () => {
-    if (this.props.onClose) this.props.onClose();
+    this.setState({ isOpen: false }, () => {
+      if (this.props.onClose) this.props.onClose();
+    });
   };
 
   setAutoHideTimer = (autoHideDurationParam?: number) => {
@@ -99,7 +110,7 @@ export class SnackbarComponent extends Component<SnackbarProps, SnackbarState> {
           width: '100%',
         }}
       >
-        <SnackbarWrapper type={type}>
+        <SnackbarWrapper type={type} testID="natds-snackbar-wrapper">
           <SnackbarText
             type={type}
             numberOfLines={numberOfLines}
@@ -107,10 +118,11 @@ export class SnackbarComponent extends Component<SnackbarProps, SnackbarState> {
               this.setState({ isMultiLineText: lines.length >= numberOfLines });
             }}
             ellipsizeMode="tail"
-            isTwoLineAction={this.state.isMultiLineText && !!buttonText}>
+            isTwoLineAction={this.state.isMultiLineText && !!buttonText}
+            testID="natds-snackbar-text">
               {message}
           </SnackbarText>
-          {buttonText && <SnackbarButton type='text' text={buttonText} onPress={this.handleClose}/>}
+          {buttonText && <SnackbarButton type='text' text={buttonText} onPress={this.handleClose} testID="natds-snackbar-button"/>}
         </SnackbarWrapper>
       </Animated.View>
     );
