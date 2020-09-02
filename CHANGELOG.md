@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.3.0](https://github.com/natura-cosmeticos/natds-rn/compare/v2.2.1...v2.3.0) (2020-09-02)
+
+
+### Features
+
+* **icon:** add support to size and color ([28ed5b8](https://github.com/natura-cosmeticos/natds-rn/commit/28ed5b84f3284fa30944a97ffa741d0183d0cdfc))
+
 ### [2.2.1](https://github.com/natura-cosmeticos/natds-rn/compare/v2.2.0...v2.2.1) (2020-08-27)
 
 
