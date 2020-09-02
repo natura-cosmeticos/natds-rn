@@ -387,7 +387,7 @@ exports[`Alert component Should render alert with default props 1`] = `
         ]
       }
     >
-      Lorem ipsum dolor
+      Alert text message
     </Text>
   </View>
 </View>

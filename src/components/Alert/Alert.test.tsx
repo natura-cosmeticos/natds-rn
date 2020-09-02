@@ -24,7 +24,7 @@ const renderAlert = (fn, props: Omit<AlertProps, 'theme'>) => (fn(
 describe('Alert component', () => {
   it('Should render alert with default props', () => {
     const defaultProps = ({
-      message: 'Lorem ipsum dolor',
+      message: 'Alert text message',
       testID: 'alert',
       title: 'title',
       type: 'info' as Types,
@@ -38,7 +38,7 @@ describe('Alert component', () => {
 
   it('Should change icon when type changes', () => {
     const props = ({
-      message: 'Lorem ipsum dolor',
+      message: 'Alert text message',
       title: 'title',
       type: 'success' as Types,
       variant: 'standard' as Variants,
@@ -52,7 +52,7 @@ describe('Alert component', () => {
 
   it('Should change alert background color when type changes', () => {
     const props = ({
-      message: 'Lorem ipsum dolor',
+      message: 'Alert text message',
       title: 'title',
       type: 'warning' as Types,
       variant: 'standard' as Variants,
@@ -66,7 +66,7 @@ describe('Alert component', () => {
 
   it('Should hide title component when not informed', () => {
     const props = ({
-      message: 'Lorem ipsum dolor',
+      message: 'Alert text message',
       type: 'info' as Types,
       variant: 'standard' as Variants,
     });
