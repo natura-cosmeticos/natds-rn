@@ -1,12 +1,40 @@
 import React from 'react';
 import { withTheme } from 'styled-components/native';
 import { Text } from 'react-native';
-
 import iconNames from '@naturacosmeticos/natds-icons/dist/natds-icons.json';
-import { Theme } from '../../common/themeSelectors';
+import { ISizes } from '@naturacosmeticos/natds-styles';
+import { Theme, getColorByName } from '../../common/themeSelectors';
 
-export type IconColors = 'default' | 'primary'
-export type IconSizes = 'small' | 'medium'
+export type IconColors = 'default'
+                        | 'primary'
+                        | 'onPrimary'
+                        | 'primaryLight'
+                        | 'onPrimaryLight'
+                        | 'primaryDark'
+                        | 'onPrimaryDark'
+                        | 'secondary'
+                        | 'onSecondary'
+                        | 'secondaryLight'
+                        | 'onSecondaryLight'
+                        | 'secondaryDark'
+                        | 'onSecondaryDark'
+                        | 'background'
+                        | 'onBackground'
+                        | 'surface'
+                        | 'onSurface'
+                        | 'highlight'
+                        | 'highEmphasis'
+                        | 'mediumEmphasis'
+                        | 'lowEmphasis'
+                        | 'link'
+                        | 'onLink'
+                        | 'success'
+                        | 'onSuccess'
+                        | 'warning'
+                        | 'onWarning'
+                        | 'alert'
+                        | 'onAlert'
+export type IconSizes = keyof ISizes
 
 export interface IconProps {
   /**
@@ -21,13 +49,17 @@ export interface IconProps {
    */
   accessibilityLabel?: string
   /**
-   * Icon variants `default` | `primary`
+   * Icon color tokens
    */
   color?: IconColors,
   /**
    * Icon name
    */
   name?: string
+  /**
+   * Icon size
+   */
+  size?: IconSizes
   /**
    * Optional ID for testing
    */
@@ -40,15 +72,13 @@ export interface IconProps {
 
 const defaultIconName = 'outlined-default-mockup';
 
-const getIconSize = theme => theme.sizes.standard;
+const getIconSize = (theme: Theme, size: IconSizes) => theme.sizes[size];
 
-const getFontColor = (theme, color) => {
-  const translatedColor = {
-    default: 'colorHighEmphasis',
-    primary: 'colorPrimary',
-  }[color];
+const getFontColor = (theme: Theme, color: IconColors) => {
+  const colorName = color === 'default' ? 'highEmphasis' : color;
+  const colorToken = `color${colorName.charAt(0).toUpperCase()}${colorName.slice(1)}`;
 
-  return theme.colorTokens[translatedColor];
+  return getColorByName(theme, colorToken);
 };
 
 const IconComponent = ({
@@ -58,6 +88,7 @@ const IconComponent = ({
   name = defaultIconName,
   testID = `icon-${name}`,
   theme,
+  size = 'standard',
 }: IconProps) => {
   const unicodeName = iconNames[name]
     ? iconNames[name].replace('%', '\\')
@@ -73,7 +104,7 @@ const IconComponent = ({
       style={{
         color: getFontColor(theme, color),
         fontFamily: 'natds-icons',
-        fontSize: getIconSize(theme),
+        fontSize: getIconSize(theme, size),
       }}
       testID={testID}
     >
