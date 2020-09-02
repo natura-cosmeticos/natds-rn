@@ -7,10 +7,12 @@ import {
   Types,
 } from './Alert.styles';
 
+const alertDefinition: string = 'An alert displays a short, important message in a way that attracts the user\'s attention without interrupting the user\'s task.';
+
 export default {
   component: Alert,
   parameters: {
-    componentSubtitle: 'An alert displays a short, important message in a way that attracts the user\'s attention without interrupting the user\'s task.',
+    componentSubtitle: alertDefinition,
   },
   title: 'Components|Alert',
 };
@@ -26,14 +28,12 @@ const variants = {
   standard: 'standard',
 };
 
-const message: string = 'Lorem ipsum dolor sit amet consectetur adipisicing elit.';
-
 export const all = () => (
   <>
-    <Alert type='success' variant='standard' title='Title' message={message}/>
-    <Alert type='error' variant='standard' title='Title' message={message}/>
-    <Alert type='warning' variant='standard' title='Title' message={message}/>
-    <Alert type='info' variant='standard' title='Title' message={message}/>
+    <Alert type='success' variant='standard' title='Title' message={alertDefinition}/>
+    <Alert type='error' variant='standard' title='Title' message={alertDefinition}/>
+    <Alert type='warning' variant='standard' title='Title' message={alertDefinition}/>
+    <Alert type='info' variant='standard' title='Title' message={alertDefinition}/>
   </>
 );
 export const interactive = () => (
@@ -41,6 +41,6 @@ export const interactive = () => (
     title={textKnob('Text', 'Title')}
     variant={select('Variant', variants, 'standard') as Variants}
     type={select('Type', types, 'success') as Types}
-    message={message}
+    message={textKnob('Message', alertDefinition)}
     />
 );

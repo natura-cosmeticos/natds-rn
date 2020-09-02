@@ -38,7 +38,11 @@ addParameters({
 });
 
 addDecorator(withTheme);
-addDecorator(withKnobs);
+addDecorator(
+  withKnobs({
+    escapeHTML: false,
+  }),
+);
 
 // configure(() => {
 //   // eslint-disable-next-line global-require
