@@ -340,7 +340,7 @@ exports[`Alert component Should render alert with default props 1`] = `
       accessibilityRole="text"
       style={
         Object {
-          "color": "#333333",
+          "color": "red",
           "fontFamily": "natds-icons",
           "fontSize": 24,
         }
