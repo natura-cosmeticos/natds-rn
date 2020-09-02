@@ -7,8 +7,11 @@ import { Alert } from '.';
 import { AlertProps } from './Alert';
 import { Types, Variants } from './Alert.styles';
 
+jest.useFakeTimers();
+
 jest.mock('../../common/themeSelectors', () => (
   {
+    getColorByName: () => 'red',
     getColorOnPrimary: () => '#333333',
     getRadiusBySize: () => 8,
     getSpacingSmall: () => 16,
