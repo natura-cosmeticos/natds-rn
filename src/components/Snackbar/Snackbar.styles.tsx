@@ -49,7 +49,6 @@ export const SnackbarWrapper = styled.View<SnackbarWrapperProps>(({ theme, type 
   bottom: 0,
   flexDirection: 'row',
   flexWrap: 'wrap',
-  fontSize: theme.fontSize.body2,
   justifyContent: 'flex-end',
   left: 0,
   marginBottom: theme.spacing.spacingSmall,
@@ -94,4 +93,5 @@ export const SnackbarText = styled.Text<SnackbarTextProps>`
   paddingLeft: 16px;
   paddingRight: 16px;
   paddingTop: 16px;
+  fontSize: 14px;
 `;
