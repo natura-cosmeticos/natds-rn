@@ -64,7 +64,7 @@ export const interactive = () => (
     <TextWithTheme>interactive</TextWithTheme>
     <Avatar
       type={select('Type', avatarTypes, 'letter') as AvatarTypes}
-      text={text('Label', 'DS')}
+      text={text('Label', 'Natura Design System')}
       size="huge"
     />
   </View>
