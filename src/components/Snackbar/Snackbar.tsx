@@ -106,6 +106,8 @@ export const SnackbarComponent = ({
       as={Animated.View}
       style={{ opacity: fadeAnim, ...getShadowBySize(theme, '5') }}
       testID="natds-snackbar-wrapper"
+      // https://github.com/facebook/react-native/issues/23090
+      needsOffscreenAlphaCompositing
     >
       <SnackbarText
         type={type}
