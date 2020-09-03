@@ -120,7 +120,7 @@ export const SnackbarComponent = ({
         {message}
       </SnackbarText>
       {buttonText && (
-        <SnackbarButtonWrapper>
+        <SnackbarButtonWrapper isTwoLineAction={isMultiLineText && !!buttonText}>
           <Button text={buttonText} onPress={handleClose} testID="natds-snackbar-button"/>
         </SnackbarButtonWrapper>
       )}

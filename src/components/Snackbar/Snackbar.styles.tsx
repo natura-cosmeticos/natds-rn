@@ -33,8 +33,15 @@ const getColorByType = (theme: Theme, type: SnackbarType) => {
   }
 };
 
-export const SnackbarButtonWrapper = styled.View`
-  margin: 4px;
+interface SnackbarButtonWrapperProps {
+  isTwoLineAction?: boolean;
+}
+
+export const SnackbarButtonWrapper = styled.View<SnackbarButtonWrapperProps>`
+  marginTop: ${({ isTwoLineAction }) => (isTwoLineAction ? '0px' : '4px')};
+  marginBottom: 4px;
+  marginRight: 4px;
+  marginLeft: 4px;
 `;
 
 interface SnackbarWrapperProps {
