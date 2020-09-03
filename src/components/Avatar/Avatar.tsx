@@ -14,8 +14,7 @@ import {
 } from '../../common/themeSelectors';
 
 export type AvatarSizes = keyof IAvatarSizes;
-export type AvatarColors = 'primary' | 'secondary' | 'default' | string;
-export type AvatarTypes = 'image' | 'letter' | 'anonymous' | string;
+export type AvatarTypes = 'image' | 'letter' | 'anonymous';
 
 
 export interface AvatarProps {
@@ -35,10 +34,6 @@ export interface AvatarProps {
    * Optional URL image used com Image type
    */
   imgSource?: any;
-  /**
-   * Optional Color
-   */
-  color?: AvatarColors;
   /**
    * Optional Size
    */
@@ -61,7 +56,7 @@ const getAvatarFontSize = (theme, size) => getAvatarBySize(size, theme).fontSize
 
 const getAvatarSize = (theme, size) => getAvatarBySize(size, theme).size;
 
-const getViewStyles = (color: AvatarColors, size: AvatarSizes, theme: Theme):ViewStyle => ({
+const getViewStyles = (size: AvatarSizes, theme: Theme):ViewStyle => ({
   alignItems: 'center',
   backgroundColor: getColorPrimary(theme),
   borderRadius: getAvatarSize(theme, size),
@@ -105,25 +100,28 @@ const AvatarLetter = styled.Text<AvatarLetter>`
  * @param text string
  */
 const getTextValue = (text) => {
-  if (text.length < 3) {
-    return text.toUpperCase();
+  const textFormated = text.trim().toUpperCase();
+
+  if (textFormated.length < 3) {
+    return textFormated;
   }
 
-  // extract the first and last "first char" word
-  const firstLetters = text
+  if (!textFormated.includes(' ')) {
+    return `${textFormated.charAt(0)}${textFormated.charAt(textFormated.length - 1)}`;
+  }
+
+  const firstLetters = textFormated
     .trim()
     .split(' ')
-    .map(item => item[0]);
+    .map(item => item.charAt(0))
+    .join();
 
-  const firstAndLast = `${firstLetters[0]}${firstLetters[firstLetters.length - 1]}`;
-
-  return firstAndLast.toUpperCase();
+  return `${firstLetters.charAt(0)}${firstLetters.charAt(firstLetters.length - 1)}`;
 };
 
 const AvatarComponent = ({
   theme,
   size = 'standard',
-  color = 'primary',
   testID = 'avatar',
   type = 'anonymous',
   text = '',
@@ -131,31 +129,28 @@ const AvatarComponent = ({
   accessibilityLabel,
   accessibilityHint,
 }: AvatarProps) => (
-  <View style={getViewStyles(color, size, theme)} >
-    { type === 'anonymous' && <AvatarImage
-      accessibilityLabel={accessibilityLabel}
-      accessibilityHint={accessibilityHint}
-      testID={testID}
-      type={type}
-      source={IconAnonymous}
-      size={size}
-      theme={theme} /> }
-    { type === 'image' && <AvatarImage
-      accessibilityLabel={accessibilityLabel}
-      accessibilityHint={accessibilityHint}
-      testID={testID}
-      type={type}
-      source={imgSource}
-      size={size}
-      theme={theme} /> }
-    { type === 'letter' && <AvatarLetter
-      accessibilityLabel={accessibilityLabel}
-      accessibilityHint={accessibilityHint}
-      accessibilityRole="text"
-      size={size}
-      theme={theme}
-      testID={testID}
-      type={type} >{getTextValue(text)}</AvatarLetter> }
+  <View style={getViewStyles(size, theme)} >
+    { type === 'letter'
+      ? (
+        <AvatarLetter
+          accessibilityLabel={accessibilityLabel}
+          accessibilityHint={accessibilityHint}
+          accessibilityRole="text"
+          size={size}
+          theme={theme}
+          testID={testID}
+          type={type} >{getTextValue(text)}</AvatarLetter>
+      ) : (
+        <AvatarImage
+          accessibilityLabel={accessibilityLabel}
+          accessibilityHint={accessibilityHint}
+          testID={testID}
+          type={type}
+          source={type === 'image' ? imgSource : IconAnonymous}
+          size={size}
+          theme={theme} />
+      )
+    }
   </View>
 );
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import { View } from 'react-native';
 import { select, text } from '@storybook/addon-knobs';
-import { Avatar } from './Avatar';
+import { Avatar, AvatarTypes } from './Avatar';
 import { ContainerRow, TextWithTheme } from '../../common/HelperComponents/ThemeHelper.styles';
 
 export default {
@@ -40,6 +40,14 @@ export const all = () => (
       <Avatar type="letter" size="small" text={textSample}/>
       <Avatar type="letter" size="tiny" text={textSample}/>
     </ContainerRow>
+    <TextWithTheme>letter</TextWithTheme>
+    <ContainerRow>
+      <Avatar type="letter" size="huge" text="A" />
+      <Avatar type="letter" size="large" text="ASD"/>
+      <Avatar type="letter" size="standard" text="ASDF"/>
+      <Avatar type="letter" size="small" text="ASDF QWER"/>
+      <Avatar type="letter" size="tiny" text="ASD QWE ZXC"/>
+    </ContainerRow>
     <TextWithTheme>anonymous</TextWithTheme>
     <ContainerRow>
       <Avatar type="anonymous" size="huge"/>
@@ -55,7 +63,7 @@ export const interactive = () => (
   <View>
     <TextWithTheme>interactive</TextWithTheme>
     <Avatar
-      type={select('Type', avatarTypes, 'letter')}
+      type={select('Type', avatarTypes, 'letter') as AvatarTypes}
       text={text('Label', 'DS')}
       size="huge"
     />
