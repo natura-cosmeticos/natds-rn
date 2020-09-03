@@ -43,3 +43,5 @@ export const getColorOnWarning = (theme: Theme) => getColors(theme).colorOnWarni
 
 export const getColorAlert = (theme: Theme) => getColors(theme).colorAlert;
 export const getColorOnAlert = (theme: Theme) => getColors(theme).colorOnAlert;
+
+export const getColorByName = (theme: Theme, colorName: string) => getColors(theme)[colorName];
