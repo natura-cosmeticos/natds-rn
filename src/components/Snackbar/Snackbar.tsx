@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { Animated } from 'react-native';
+import { Animated, Platform } from 'react-native';
 import { withTheme } from 'styled-components/native';
 import { Theme, getShadowBySize } from '../../common/themeSelectors';
 import { SnackbarWrapper, SnackbarText, SnackbarButtonWrapper } from './Snackbar.styles';
@@ -65,7 +65,7 @@ export const SnackbarComponent = ({
   const show = () => {
     setIsOpen(true);
     // fade in duration recommended by material-ui
-    Animated.timing(fadeAnim, { duration: 225, toValue: 1, useNativeDriver: true })
+    Animated.timing(fadeAnim, { duration: 225, toValue: 1, useNativeDriver: Platform.OS !== 'web' })
       .start(({ finished }) => {
         if (finished) autoHideTimer.current = global.setTimeout(handleClose, autoHideDuration);
       });
@@ -73,7 +73,7 @@ export const SnackbarComponent = ({
 
   const hide = () => {
     // fade out duration recommended by material-ui
-    Animated.timing(fadeAnim, { duration: 195, toValue: 0, useNativeDriver: true })
+    Animated.timing(fadeAnim, { duration: 195, toValue: 0, useNativeDriver: Platform.OS !== 'web' })
       .start(({ finished }) => {
         if (finished) setIsOpen(false);
       });
