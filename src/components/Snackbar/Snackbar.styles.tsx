@@ -1,7 +1,6 @@
 import styled from 'styled-components/native';
 import { TextProps, NativeSyntheticEvent, TargetedEvent } from 'react-native';
 import { SnackbarType } from './Snackbar';
-import { Button, ButtonProps } from '../Button/Button';
 import { Theme, getShadowBySize } from '../../common/themeSelectors';
 
 const getBackgroundColorByType = (theme: Theme, type: SnackbarType) => {
@@ -34,7 +33,8 @@ const getColorByType = (theme: Theme, type: SnackbarType) => {
   }
 };
 
-export const SnackbarButton = styled(Button)<ButtonProps>`
+export const SnackbarButtonWrapper = styled.View`
+  margin: 4px;
 `;
 
 interface SnackbarWrapperProps {
@@ -91,8 +91,8 @@ interface SnackbarTextProps extends TextProps {
 export const SnackbarText = styled.Text<SnackbarTextProps>`
   color: ${({ theme, type }) => getColorByType(theme, type)};
   flexGrow: 1;
-  paddingBottom: ${({ isTwoLineAction }) => (isTwoLineAction ? 8 : 14)}px;
+  paddingBottom: ${({ isTwoLineAction }) => (isTwoLineAction ? 8 : 16)}px;
   paddingLeft: 16px;
   paddingRight: 16px;
-  paddingTop: 14px;
+  paddingTop: 16px;
 `;

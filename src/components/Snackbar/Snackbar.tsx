@@ -2,7 +2,8 @@ import React, { useEffect, useRef, useState } from 'react';
 import { Animated } from 'react-native';
 import { withTheme } from 'styled-components/native';
 import { Theme } from '../../common/themeSelectors';
-import { SnackbarWrapper, SnackbarText, SnackbarButton } from './Snackbar.styles';
+import { SnackbarWrapper, SnackbarText, SnackbarButtonWrapper } from './Snackbar.styles';
+import { Button } from '../Button/Button';
 
 export type SnackbarType = 'standard' | 'success' | 'error' | 'warning' | 'info';
 
@@ -112,7 +113,11 @@ export const SnackbarComponent = ({
       >
         {message}
       </SnackbarText>
-      {buttonText && <SnackbarButton text={buttonText} onPress={handleClose} testID="natds-snackbar-button"/>}
+      {buttonText && (
+        <SnackbarButtonWrapper>
+          <Button text={buttonText} onPress={handleClose} testID="natds-snackbar-button"/>
+        </SnackbarButtonWrapper>
+      )}
     </SnackbarWrapper>
   );
 };
