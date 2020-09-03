@@ -6,6 +6,8 @@ import {
   warning,
   error,
   success,
+  multiline,
+  multilineWithButton,
 } from './Snackbar.stories';
 
 storiesOf('Snackbar', module)
@@ -25,3 +27,9 @@ storiesOf('Snackbar', module)
 
 storiesOf('Snackbar', module)
   .add('success', success);
+
+storiesOf('Snackbar', module)
+  .add('multiline', multiline);
+
+storiesOf('Snackbar', module)
+  .add('multiline with button', multilineWithButton);
