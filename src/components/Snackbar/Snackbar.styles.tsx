@@ -46,13 +46,17 @@ export const SnackbarWrapper = styled.View<SnackbarWrapperProps>(({ theme, type 
   alignItems: 'center',
   backgroundColor: getBackgroundColorByType(theme, type),
   borderRadius: theme.radius.medium,
+  bottom: 0,
   flexDirection: 'row',
   flexWrap: 'wrap',
   fontSize: theme.fontSize.body2,
   justifyContent: 'flex-end',
+  left: 0,
   marginBottom: theme.spacing.spacingSmall,
   marginLeft: theme.spacing.spacingSmall,
   marginRight: theme.spacing.spacingSmall,
+  position: 'absolute',
+  right: 0,
   ...getShadowBySize(theme, '5'),
 }));
 

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Animated } from 'react-native';
 import { withTheme } from 'styled-components/native';
 import { Theme } from '../../common/themeSelectors';
@@ -7,126 +7,114 @@ import { SnackbarWrapper, SnackbarText, SnackbarButton } from './Snackbar.styles
 export type SnackbarType = 'standard' | 'success' | 'error' | 'warning' | 'info';
 
 export interface SnackbarProps {
+  /**
+   * Theme
+   */
   theme: Theme;
+  /**
+   * Snackbar's message content
+   */
   message: string;
+  /**
+   * Snackbar's button text content when available
+   */
   buttonText?: string;
+  /**
+   * Snackbar's type
+   */
   type?: SnackbarType;
+  /**
+   * Snackbar's shown duration.
+   */
   autoHideDuration?: number;
+  /**
+   * Whether the Snackbar is open
+   */
   open: boolean;
+  /**
+   * How many message lines to be shown before clipping
+   */
   numberOfLines?: number;
+  /**
+   * Callback when Snackbar is closed. The 'open' prop needs to be updated when this is called
+   */
   onClose?: () => void;
 }
 
-interface SnackbarState {
-  isMultiLineText: boolean;
-  isAnimating: boolean;
-  // workaround to solve setTimout and clearTimeout typings
-  timerAutoHide: number | NodeJS.Timeout;
-  fadeAnim: Animated.Value;
-  isOpen: boolean;
-}
+// eslint-disable-next-line max-statements
+export const SnackbarComponent = ({
+  message,
+  buttonText,
+  type = 'standard',
+  autoHideDuration = 5000,
+  open,
+  numberOfLines = 2,
+  onClose,
+}: SnackbarProps) => {
+  const fadeAnim = useRef(new Animated.Value(0)).current;
+  const [isOpen, setIsOpen] = useState(false);
+  const [isMultiLineText, setIsMultiLineText] = useState(false);
+  const autoHideTimer = React.useRef<NodeJS.Timeout>();
 
-export class SnackbarComponent extends Component<SnackbarProps, SnackbarState> {
-  state = {
-    fadeAnim: new Animated.Value(0),
-    isAnimating: false,
-    isMultiLineText: false,
-    isOpen: false,
-    timerAutoHide: 0,
+  const handleClose = () => {
+    if (onClose) onClose();
   };
 
-  componentDidMount() {
-    const { open, autoHideDuration = 5000 } = this.props;
+  const show = () => {
+    if (autoHideTimer.current) global.clearTimeout(autoHideTimer.current);
 
+    setIsOpen(true);
+    // fade in duration recommended by material-ui
+    Animated.timing(fadeAnim, { duration: 225, toValue: 1, useNativeDriver: true })
+      .start(({ finished }) => {
+        if (finished) autoHideTimer.current = global.setTimeout(handleClose, autoHideDuration);
+      });
+  };
+
+  const hide = () => {
+    if (autoHideTimer.current) global.clearTimeout(autoHideTimer.current);
+
+    // fade out duration recommended by material-ui
+    Animated.timing(fadeAnim, { duration: 195, toValue: 0, useNativeDriver: true })
+      .start(({ finished }) => {
+        if (finished) setIsOpen(false);
+      });
+  };
+
+  useEffect(() => {
     if (open) {
-      this.setState({ isOpen: open });
-      this.setAutoHideTimer(autoHideDuration);
+      show();
+    } else {
+      hide();
     }
-  }
+  }, [open, autoHideDuration]);
 
-  componentDidUpdate(prevProps: SnackbarProps) {
-    const { open, autoHideDuration = 5000 } = this.props;
+  // eslint-disable-next-line arrow-body-style
+  useEffect(() => {
+    return () => {
+      if (autoHideTimer.current) global.clearTimeout(autoHideTimer.current);
+    };
+  }, []);
 
-    if (prevProps.open !== open) {
-      if (open) {
-        this.setAutoHideTimer(autoHideDuration);
+  if (!isOpen) return null;
 
-        this.setState({ isAnimating: true, isOpen: true }, () => {
-          // fade in duration recommended by material-ui
-          Animated.timing(this.state.fadeAnim, { duration: 225, toValue: 1, useNativeDriver: true })
-            .start(({ finished }) => {
-              if (finished) this.setState({ isAnimating: false });
-            });
-        });
-      } else {
-        this.setState({ isAnimating: true }, () => {
-          // fade out duration recommended by material-ui
-          Animated.timing(this.state.fadeAnim, { duration: 195, toValue: 0, useNativeDriver: true })
-            .start(({ finished }) => {
-              if (finished) this.setState({ isAnimating: false, isOpen: false });
-            });
-        });
-      }
-    }
-  }
-
-  componentWillUnmount() {
-    clearTimeout(this.state.timerAutoHide);
-  }
-
-  handleClose = () => {
-    this.setState({ isOpen: false }, () => {
-      if (this.props.onClose) this.props.onClose();
-    });
-  };
-
-  setAutoHideTimer = (autoHideDurationParam?: number) => {
-    if (!this.props.onClose || autoHideDurationParam == null) return;
-
-    if (this.state.timerAutoHide) clearTimeout(this.state.timerAutoHide);
-
-    this.setState({ timerAutoHide: setTimeout(() => this.handleClose(), autoHideDurationParam) });
-  };
-
-  render() {
-    const {
-      type = 'standard',
-      numberOfLines = 2,
-      buttonText,
-      message,
-    } = this.props;
-
-    if (!this.state.isOpen) return null;
-
-    return (
-      <Animated.View
-        // https://github.com/facebook/react-native/issues/23090
-        // setting needsOffscreenAlphaCompositing to true during animations
-        needsOffscreenAlphaCompositing={this.state.isAnimating}
-        style={{
-          bottom: 0,
-          opacity: this.state.fadeAnim,
-          position: 'absolute',
-          width: '100%',
+  return (
+    <SnackbarWrapper type={type} as={Animated.View} style={{ opacity: fadeAnim }} testID="natds-snackbar-wrapper">
+      <SnackbarText
+        type={type}
+        testID="natds-snackbar-text"
+        numberOfLines={numberOfLines}
+        onTextLayout={({ nativeEvent: { lines } }) => {
+          setIsMultiLineText(lines.length >= numberOfLines);
         }}
+        ellipsizeMode="tail"
+        isTwoLineAction={isMultiLineText && !!buttonText}
       >
-        <SnackbarWrapper type={type} testID="natds-snackbar-wrapper">
-          <SnackbarText
-            type={type}
-            numberOfLines={numberOfLines}
-            onTextLayout={({ nativeEvent: { lines } }) => {
-              this.setState({ isMultiLineText: lines.length >= numberOfLines });
-            }}
-            ellipsizeMode="tail"
-            isTwoLineAction={this.state.isMultiLineText && !!buttonText}
-            testID="natds-snackbar-text">
-              {message}
-          </SnackbarText>
-          {buttonText && <SnackbarButton type='text' text={buttonText} onPress={this.handleClose} testID="natds-snackbar-button"/>}
-        </SnackbarWrapper>
-      </Animated.View>
-    );
-  }
-}
+        {message}
+      </SnackbarText>
+      {buttonText && <SnackbarButton text={buttonText} onPress={handleClose} testID="natds-snackbar-button"/>}
+    </SnackbarWrapper>
+  );
+};
 
 export const Snackbar = withTheme(SnackbarComponent);

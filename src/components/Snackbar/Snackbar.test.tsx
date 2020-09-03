@@ -141,15 +141,14 @@ describe('Snackbar', () => {
       const autoHideDuration = 5000;
 
       // when
-      const { props, result } = setup({ autoHideDuration });
+      const { props } = setup({ autoHideDuration });
 
       act(() => {
-        jest.advanceTimersByTime(autoHideDuration + 1);
+        jest.advanceTimersByTime(autoHideDuration);
       });
 
       // then
       expect(props.onClose).toHaveBeenCalled();
-      expect(result.container.children).toHaveLength(0);
     });
   });
 
@@ -182,7 +181,6 @@ describe('Snackbar', () => {
         await wait(() => {
           // then
           expect(props.onClose).toHaveBeenCalled();
-          expect(result.container.children).toHaveLength(0);
         });
       });
     });
