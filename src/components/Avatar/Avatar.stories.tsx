@@ -14,7 +14,7 @@ export default {
 };
 
 const imgSource = 'https://pbs.twimg.com/profile_images/1285932878795333632/Wl95KE_m_400x400.jpg';
-const textSample = 'NA';
+const textSample = 'Design System';
 
 const avatarTypes = {
   anonymous: 'anonymous',
@@ -39,14 +39,6 @@ export const all = () => (
       <Avatar type="letter" size="standard" text={textSample}/>
       <Avatar type="letter" size="small" text={textSample}/>
       <Avatar type="letter" size="tiny" text={textSample}/>
-    </ContainerRow>
-    <TextWithTheme>letter</TextWithTheme>
-    <ContainerRow>
-      <Avatar type="letter" size="huge" text="A" />
-      <Avatar type="letter" size="large" text="ASD"/>
-      <Avatar type="letter" size="standard" text="ASDF"/>
-      <Avatar type="letter" size="small" text="ASDF QWER"/>
-      <Avatar type="letter" size="tiny" text="ASD QWE ZXC"/>
     </ContainerRow>
     <TextWithTheme>anonymous</TextWithTheme>
     <ContainerRow>
