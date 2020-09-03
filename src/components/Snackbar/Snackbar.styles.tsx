@@ -1,7 +1,7 @@
 import styled from 'styled-components/native';
 import { TextProps, NativeSyntheticEvent, TargetedEvent } from 'react-native';
 import { SnackbarType } from './Snackbar';
-import { Theme, getShadowBySize } from '../../common/themeSelectors';
+import { Theme } from '../../common/themeSelectors';
 
 const getBackgroundColorByType = (theme: Theme, type: SnackbarType) => {
   switch (type) {
@@ -57,7 +57,6 @@ export const SnackbarWrapper = styled.View<SnackbarWrapperProps>(({ theme, type 
   marginRight: theme.spacing.spacingSmall,
   position: 'absolute',
   right: 0,
-  ...getShadowBySize(theme, '5'),
 }));
 
 // begin - onTextLayout missing typings @0.62.2

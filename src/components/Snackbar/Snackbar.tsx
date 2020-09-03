@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Animated } from 'react-native';
 import { withTheme } from 'styled-components/native';
-import { Theme } from '../../common/themeSelectors';
+import { Theme, getShadowBySize } from '../../common/themeSelectors';
 import { SnackbarWrapper, SnackbarText, SnackbarButtonWrapper } from './Snackbar.styles';
 import { Button } from '../Button/Button';
 
@@ -44,6 +44,7 @@ export interface SnackbarProps {
 
 // eslint-disable-next-line max-statements
 export const SnackbarComponent = ({
+  theme,
   message,
   buttonText,
   type = 'standard',
@@ -100,7 +101,12 @@ export const SnackbarComponent = ({
   if (!isOpen) return null;
 
   return (
-    <SnackbarWrapper type={type} as={Animated.View} style={{ opacity: fadeAnim }} testID="natds-snackbar-wrapper">
+    <SnackbarWrapper
+      type={type}
+      as={Animated.View}
+      style={{ opacity: fadeAnim, ...getShadowBySize(theme, '5') }}
+      testID="natds-snackbar-wrapper"
+    >
       <SnackbarText
         type={type}
         testID="natds-snackbar-text"
