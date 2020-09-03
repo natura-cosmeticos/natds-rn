@@ -106,8 +106,6 @@ export const SnackbarComponent = ({
       as={Animated.View}
       style={{ opacity: fadeAnim, ...getShadowBySize(theme, '5') }}
       testID="natds-snackbar-wrapper"
-      // https://github.com/facebook/react-native/issues/23090
-      needsOffscreenAlphaCompositing
     >
       <SnackbarText
         type={type}
@@ -123,7 +121,7 @@ export const SnackbarComponent = ({
       </SnackbarText>
       {buttonText && (
         <SnackbarButtonWrapper isTwoLineAction={isMultiLineText && !!buttonText}>
-          <Button text={buttonText} onPress={handleClose} testID="natds-snackbar-button"/>
+          <Button text={buttonText} type="text" onPress={handleClose} testID="natds-snackbar-button"/>
         </SnackbarButtonWrapper>
       )}
     </SnackbarWrapper>
