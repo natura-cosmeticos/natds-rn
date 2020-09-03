@@ -63,8 +63,6 @@ export const SnackbarComponent = ({
   };
 
   const show = () => {
-    if (autoHideTimer.current) global.clearTimeout(autoHideTimer.current);
-
     setIsOpen(true);
     // fade in duration recommended by material-ui
     Animated.timing(fadeAnim, { duration: 225, toValue: 1, useNativeDriver: true })
@@ -74,8 +72,6 @@ export const SnackbarComponent = ({
   };
 
   const hide = () => {
-    if (autoHideTimer.current) global.clearTimeout(autoHideTimer.current);
-
     // fade out duration recommended by material-ui
     Animated.timing(fadeAnim, { duration: 195, toValue: 0, useNativeDriver: true })
       .start(({ finished }) => {
@@ -83,20 +79,19 @@ export const SnackbarComponent = ({
       });
   };
 
-  useEffect(() => {
-    if (open) {
-      show();
-    } else {
-      hide();
-    }
-  }, [open, autoHideDuration]);
+  const toggle = () => {
+    if (open) return show();
 
-  // eslint-disable-next-line arrow-body-style
+    return hide();
+  };
+
   useEffect(() => {
+    toggle();
+
     return () => {
       if (autoHideTimer.current) global.clearTimeout(autoHideTimer.current);
     };
-  }, []);
+  }, [open, autoHideDuration]);
 
   if (!isOpen) return null;
 
