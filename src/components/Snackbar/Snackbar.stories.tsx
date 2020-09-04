@@ -12,13 +12,7 @@ export default {
   title: 'Components|Snackbar',
 };
 
-const snackbarTypeOptions = {
-  error: 'error',
-  info: 'info',
-  standard: 'standard',
-  success: 'success',
-  warning: 'warning',
-};
+const snackbarTypeOptions = ['error', 'info', 'standard', 'success', 'warning'];
 
 export const interactive = () => {
   const [open, setOpen] = useState(false);
