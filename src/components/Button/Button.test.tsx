@@ -11,7 +11,7 @@ jest.mock('react-native/Libraries/Components/Touchable/TouchableHighlight',
 
 jest.mock('../../common/themeSelectors', () => (
   {
-    getButtonPropsBySize: () => ({ background: '#AEAEAE' }),
+    getButtonPropsBySize: () => ({ minHeight: 48 }),
     getColorHighEmphasis: () => '#FAF3E3',
     getColorLowEmphasis: () => '#FEEEEF',
     getColorMediumEmphasis: () => '#FAFAEA',

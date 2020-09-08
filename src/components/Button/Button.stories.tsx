@@ -3,7 +3,8 @@ import React from 'react';
 import { View } from 'react-native';
 import { boolean, select, text as textKnob } from '@storybook/addon-knobs';
 import { ContainerRow, ContainerWithTheme } from '../../common/HelperComponents/ThemeHelper.styles';
-import { Button, ButtonTypes } from './Button';
+import { Button } from './Button';
+import { ButtonTypes } from './ButtonBase';
 
 export default {
   component: Button,
