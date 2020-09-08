@@ -8,8 +8,9 @@ exports[`Button component Disabled variants should render disabled button compon
   style={
     Array [
       Object {
-        "backgroundColor": "#AEAEAE",
+        "backgroundColor": "#FFFFFF",
         "borderRadius": 42,
+        "minHeight": 48,
       },
       Object {
         "shadowColor": "#AEAEAE",
@@ -29,13 +30,12 @@ exports[`Button component Disabled variants should render disabled button compon
           "alignSelf": "center",
           "color": "#F4F4",
           "fontSize": 14,
-          "letterSpacing": 1,
-        },
-        Object {
           "fontWeight": "bold",
+          "letterSpacing": 1,
         },
       ]
     }
+    textColor="default"
     type="contained"
   >
     LABEL BUTTON
@@ -51,10 +51,10 @@ exports[`Button component Disabled variants should render disabled button compon
   style={
     Array [
       Object {
-        "backgroundColor": "#AEAEAE",
         "borderColor": "#FAFAEA",
         "borderRadius": 42,
         "borderWidth": 1,
+        "minHeight": 48,
       },
       Object {},
     ]
@@ -72,13 +72,12 @@ exports[`Button component Disabled variants should render disabled button compon
           "alignSelf": "center",
           "color": "#FAFAEA",
           "fontSize": 14,
-          "letterSpacing": 1,
-        },
-        Object {
           "fontWeight": "bold",
+          "letterSpacing": 1,
         },
       ]
     }
+    textColor="default"
     type="outlined"
   >
     LABEL BUTTON
@@ -94,8 +93,8 @@ exports[`Button component Disabled variants should render disabled button compon
   style={
     Array [
       Object {
-        "backgroundColor": "#AEAEAE",
         "borderRadius": 42,
+        "minHeight": 48,
       },
       Object {},
     ]
@@ -113,13 +112,12 @@ exports[`Button component Disabled variants should render disabled button compon
           "alignSelf": "center",
           "color": "#FAFAEA",
           "fontSize": 14,
-          "letterSpacing": 1,
-        },
-        Object {
           "fontWeight": "bold",
+          "letterSpacing": 1,
         },
       ]
     }
+    textColor="default"
     type="text"
   >
     LABEL BUTTON
@@ -135,8 +133,9 @@ exports[`Button component Variants should render button component contained 1`] 
   style={
     Array [
       Object {
-        "backgroundColor": "#AEAEAE",
+        "backgroundColor": "#FFFFFF",
         "borderRadius": 42,
+        "minHeight": 48,
       },
       Object {
         "shadowColor": "#AEAEAE",
@@ -156,13 +155,12 @@ exports[`Button component Variants should render button component contained 1`] 
           "alignSelf": "center",
           "color": "#F4F4",
           "fontSize": 14,
-          "letterSpacing": 1,
-        },
-        Object {
           "fontWeight": "bold",
+          "letterSpacing": 1,
         },
       ]
     }
+    textColor="default"
     type="contained"
   >
     LABEL BUTTON
@@ -178,10 +176,10 @@ exports[`Button component Variants should render button component outlined 1`] =
   style={
     Array [
       Object {
-        "backgroundColor": "#AEAEAE",
         "borderColor": "#FFFFFF",
         "borderRadius": 42,
         "borderWidth": 1,
+        "minHeight": 48,
       },
       Object {},
     ]
@@ -199,13 +197,12 @@ exports[`Button component Variants should render button component outlined 1`] =
           "alignSelf": "center",
           "color": "#FAF3E3",
           "fontSize": 14,
-          "letterSpacing": 1,
-        },
-        Object {
           "fontWeight": "bold",
+          "letterSpacing": 1,
         },
       ]
     }
+    textColor="default"
     type="outlined"
   >
     LABEL BUTTON
@@ -221,8 +218,8 @@ exports[`Button component Variants should render button component text 1`] = `
   style={
     Array [
       Object {
-        "backgroundColor": "#AEAEAE",
         "borderRadius": 42,
+        "minHeight": 48,
       },
       Object {},
     ]
@@ -240,13 +237,12 @@ exports[`Button component Variants should render button component text 1`] = `
           "alignSelf": "center",
           "color": "#FAFAEA",
           "fontSize": 14,
-          "letterSpacing": 1,
-        },
-        Object {
           "fontWeight": "bold",
+          "letterSpacing": 1,
         },
       ]
     }
+    textColor="default"
     type="text"
   >
     LABEL BUTTON
