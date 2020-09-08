@@ -1,27 +1,17 @@
 import theme from '../theme/mock-theme.json';
 import * as selectors from './opacity';
 
-const scenarios = [
-  {
-    expectedResult: theme.opacity[56],
-    name: 'getOpacity56',
-    selector: selectors.getOpacity56,
-    title: 'opacity 56',
-  },
-];
+/*  eslint-disable mocha/no-setup-in-describe */
+describe.each`
+  title             | selector                          | expected
+  ${'Medium High'}  | ${selectors.getOpacityMediumHigh} | ${theme.opacity[56]}
+`('Opacity', ({
+  title, selector, expected,
+}) => {
+  it(`should return the opacity ${title}`, () => {
+    const result = selector(theme);
 
-describe('Opacity selectors', () => {
-  /*  eslint-disable mocha/no-setup-in-describe */
-  scenarios.forEach(scenario => (
-    describe(scenario.name, () => {
-      (
-        it(`should return the opacity ${scenario.title}`, () => {
-          const result = scenario.selector(theme);
-
-          expect(result).toBe(scenario.expectedResult);
-        })
-      );
-    })
-  ));
-  /* eslint-enable mocha/no-setup-in-describe */
+    expect(result).toBe(expected);
+  });
 });
+/* eslint-enable mocha/no-setup-in-describe */
