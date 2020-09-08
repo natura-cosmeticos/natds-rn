@@ -17,7 +17,7 @@ exports[`Avatar component should render avatar component 1`] = `
     size="standard"
     source={
       Object {
-        "testUri": "../../../src/assets/images/anonymous.png",
+        "testUri": "../../../src/assets/images/anonymous.jpg",
       }
     }
     style={
@@ -354,7 +354,7 @@ exports[`Avatar component should render avatar component anonymous 1`] = `
     size="standard"
     source={
       Object {
-        "testUri": "../../../src/assets/images/anonymous.png",
+        "testUri": "../../../src/assets/images/anonymous.jpg",
       }
     }
     style={

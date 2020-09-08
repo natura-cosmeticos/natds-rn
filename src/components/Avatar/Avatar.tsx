@@ -3,7 +3,8 @@ import React from 'react';
 import { View, ViewStyle } from 'react-native';
 import styled, { withTheme } from 'styled-components/native';
 import { IAvatarSizes } from '@naturacosmeticos/natds-styles';
-import IconAnonymous from '../../assets/images/anonymous.png';
+// @ts-ignore
+import IconAnonymous from '../../assets/images/anonymous.jpg';
 
 import {
   Theme,
