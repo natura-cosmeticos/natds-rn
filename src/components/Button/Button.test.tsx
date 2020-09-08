@@ -11,15 +11,18 @@ jest.mock('react-native/Libraries/Components/Touchable/TouchableHighlight',
 
 jest.mock('../../common/themeSelectors', () => (
   {
-    getButtonPropsBySize: () => ({ background: '#AEAEAE' }),
+    getButtonPropsBySize: () => ({ background: '#EEEEEE' }),
     getColorHighEmphasis: () => '#FAF3E3',
     getColorLowEmphasis: () => '#FEEEEF',
     getColorMediumEmphasis: () => '#FAFAEA',
     getColorOnPrimary: () => '#F4F4',
     getColorPrimary: () => '#FFFFFF',
     getColorPrimaryLight: () => '#BABABA',
+    getMediumSize: () => 66,
     getOpacity10: () => 0.8,
     getRadiusBySize: () => 42,
+    getSemiSize: () => 68,
+    getSemixSize: () => 67,
     getShadowBySize: () => ({ shadowColor: '#AEAEAE' }),
   }));
 
@@ -39,6 +42,7 @@ describe('Button component', () => {
     const { queryByTestId } = renderButton(render, defaultProps);
 
     expect(queryByTestId('button')?.props).toHaveProperty('type', 'contained');
+    expect(queryByTestId('button')?.props).toHaveProperty('size', 'medium');
     expect(queryByTestId('button')?.props).toHaveProperty('disabled', false);
     expect(queryByTestId('button')).toHaveTextContent('LABEL BUTTON');
   });
