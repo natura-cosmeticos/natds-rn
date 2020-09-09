@@ -365,6 +365,7 @@ exports[`Alert component Should render alert with default props 1`] = `
       style={
         Array [
           Object {
+            "color": "#333333",
             "flexWrap": "wrap",
             "fontSize": 20,
             "fontWeight": "600",
