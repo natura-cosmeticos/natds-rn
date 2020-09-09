@@ -1,5 +1,36 @@
 import { Theme, checkTheme } from '..';
 
+export interface IColors {
+  primary: string;
+  onPrimary: string;
+  primaryLight: string;
+  onPrimaryLight: string;
+  primaryDark: string;
+  onPrimaryDark: string;
+  secondary: string;
+  onSecondary: string;
+  secondaryLight: string;
+  onSecondaryLight: string;
+  secondaryDark: string;
+  onSecondaryDark: string;
+  background: string;
+  onBackground: string;
+  surface: string;
+  onSurface: string;
+  highlight: string;
+  highEmphasis: string;
+  mediumEmphasis: string;
+  lowEmphasis: string;
+  link: string;
+  onLink: string;
+  success: string;
+  onSuccess: string;
+  warning: string;
+  onWarning: string;
+  alert: string;
+  onAlert: string;
+}
+
 const getColors = (theme: Theme) => checkTheme(theme).colorTokens;
 
 export const getColorPrimary = (theme: Theme) => getColors(theme).colorPrimary;
@@ -23,4 +54,4 @@ export const getColorSurface = (theme: Theme) => getColors(theme).colorSurface;
 
 export const getColorHighlight = (theme: Theme) => getColors(theme).colorHighlight;
 
-export const getColorByName = (theme: Theme, colorName: string) => getColors(theme)[colorName];
+export const getColorByName = (theme: Theme, colorName: string) => getColors(theme)[`color${colorName.charAt(0).toUpperCase()}${colorName.slice(1)}`];

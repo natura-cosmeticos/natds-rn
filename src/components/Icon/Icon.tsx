@@ -3,37 +3,9 @@ import { withTheme } from 'styled-components/native';
 import { Text } from 'react-native';
 import iconNames from '@naturacosmeticos/natds-icons/dist/natds-icons.json';
 import { ISizes } from '@naturacosmeticos/natds-styles';
-import { Theme, getColorByName } from '../../common/themeSelectors';
+import { Theme, IColors, getColorByName } from '../../common/themeSelectors';
 
-export type IconColors = 'default'
-                        | 'primary'
-                        | 'onPrimary'
-                        | 'primaryLight'
-                        | 'onPrimaryLight'
-                        | 'primaryDark'
-                        | 'onPrimaryDark'
-                        | 'secondary'
-                        | 'onSecondary'
-                        | 'secondaryLight'
-                        | 'onSecondaryLight'
-                        | 'secondaryDark'
-                        | 'onSecondaryDark'
-                        | 'background'
-                        | 'onBackground'
-                        | 'surface'
-                        | 'onSurface'
-                        | 'highlight'
-                        | 'highEmphasis'
-                        | 'mediumEmphasis'
-                        | 'lowEmphasis'
-                        | 'link'
-                        | 'onLink'
-                        | 'success'
-                        | 'onSuccess'
-                        | 'warning'
-                        | 'onWarning'
-                        | 'alert'
-                        | 'onAlert'
+export type IconColors = keyof IColors | 'default'
 export type IconSizes = keyof ISizes
 
 export interface IconProps {
@@ -76,9 +48,8 @@ const getIconSize = (theme: Theme, size: IconSizes) => theme.sizes[size];
 
 const getFontColor = (theme: Theme, color: IconColors) => {
   const colorName = color === 'default' ? 'highEmphasis' : color;
-  const colorToken = `color${colorName.charAt(0).toUpperCase()}${colorName.slice(1)}`;
 
-  return getColorByName(theme, colorToken);
+  return getColorByName(theme, colorName);
 };
 
 const IconComponent = ({

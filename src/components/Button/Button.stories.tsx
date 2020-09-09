@@ -2,7 +2,8 @@ import React from 'react';
 import { View } from 'react-native';
 import { boolean, select, text as textKnob } from '@storybook/addon-knobs';
 import { StoryContainer } from '../../common/HelperComponents/StoryContainer';
-import { Button, ButtonTypes, ButtonSizes } from './Button';
+import { Button } from './Button';
+import { ButtonTypes, ButtonSizes } from './ButtonBase';
 
 export default {
   component: Button,
