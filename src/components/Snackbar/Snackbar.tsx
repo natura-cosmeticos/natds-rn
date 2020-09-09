@@ -2,8 +2,13 @@ import React, { useEffect, useRef, useState } from 'react';
 import { Animated, Platform } from 'react-native';
 import { withTheme } from 'styled-components/native';
 import { Theme, getShadowBySize } from '../../common/themeSelectors';
-import { SnackbarWrapper, SnackbarText, SnackbarButtonWrapper } from './Snackbar.styles';
-import { Button } from '../Button/Button';
+import {
+  SnackbarWrapper,
+  SnackbarText,
+  SnackbarButtonWrapper,
+  getColorNameByType,
+} from './Snackbar.styles';
+import { ButtonBase } from '../Button/ButtonBase';
 
 export type SnackbarType = 'standard' | 'success' | 'error' | 'warning' | 'info';
 
@@ -116,7 +121,13 @@ export const SnackbarComponent = ({
       </SnackbarText>
       {buttonText && (
         <SnackbarButtonWrapper isTwoLineAction={isMultiLineText && !!buttonText}>
-          <Button text={buttonText} type="text" onPress={handleClose} testID="natds-snackbar-button"/>
+          <ButtonBase
+            textColor={getColorNameByType(type)}
+            text={buttonText}
+            type="text"
+            onPress={handleClose}
+            testID="natds-snackbar-button"
+            />
         </SnackbarButtonWrapper>
       )}
     </SnackbarWrapper>

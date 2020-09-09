@@ -18,7 +18,7 @@ const getBackgroundColorByType = (theme: Theme, type: SnackbarType) => {
   }
 };
 
-const getColorByType = (theme: Theme, type: SnackbarType) => {
+export const getColorByType = (theme: Theme, type: SnackbarType) => {
   switch (type) {
     case 'info':
       return theme.colorTokens.colorOnLink;
@@ -33,9 +33,22 @@ const getColorByType = (theme: Theme, type: SnackbarType) => {
   }
 };
 
-interface SnackbarButtonWrapperProps {
-  isTwoLineAction?: boolean;
-}
+export const getColorNameByType = (type: SnackbarType) => {
+  switch (type) {
+    case 'info':
+      return 'onLink';
+    case 'warning':
+      return 'onWarning';
+    case 'error':
+      return 'onAlert';
+    case 'success':
+      return 'onSuccess';
+    default:
+      return 'surface';
+  }
+};
+
+interface SnackbarButtonWrapperProps { isTwoLineAction?: boolean; }
 
 export const SnackbarButtonWrapper = styled.View<SnackbarButtonWrapperProps>`
   marginTop: ${({ isTwoLineAction }) => (isTwoLineAction ? '0px' : '4px')};
