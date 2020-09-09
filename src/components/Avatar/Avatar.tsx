@@ -103,19 +103,13 @@ const AvatarLetter = styled.Text<AvatarLetter>`
 const getTextValue = (text) => {
   const textFormated = text.trim().toUpperCase();
 
-  if (textFormated.length < 3) {
-    return textFormated;
-  }
-
-  if (!textFormated.includes(' ')) {
-    return `${textFormated.charAt(0)}${textFormated.charAt(textFormated.length - 1)}`;
-  }
-
   const firstLetters = textFormated
     .trim()
     .split(' ')
     .map(item => item.charAt(0))
     .join();
+
+  if (firstLetters.length < 2) return firstLetters;
 
   return `${firstLetters.charAt(0)}${firstLetters.charAt(firstLetters.length - 1)}`;
 };
