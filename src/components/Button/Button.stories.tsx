@@ -3,7 +3,7 @@ import { View } from 'react-native';
 import { boolean, select, text as textKnob } from '@storybook/addon-knobs';
 import { StoryContainer } from '../../common/HelperComponents/StoryContainer';
 import { Button } from './Button';
-import { ButtonTypes, ButtonSizes } from './ButtonBase';
+import { ButtonTypes, ButtonSizes, DisplayTypes } from './ButtonBase';
 
 export default {
   component: Button,
@@ -20,10 +20,16 @@ const buttonTypes = {
   outlined: 'outlined',
   text: 'text',
 };
+
 const buttonSizes = {
   large: 'large',
   medium: 'medium',
   small: 'small',
+};
+
+const displayTypes = {
+  block: 'block',
+  inline: 'inline',
 };
 
 export const Default = () => (
@@ -56,12 +62,19 @@ export const Disabled = () => (
   </StoryContainer>
 );
 
+export const Display = () => (
+  <StoryContainer title="Display block">
+    <Button display="block" type="contained" onPress={onPress} text="default" />
+  </StoryContainer>
+);
+
 export const All = () => (
   <View>
     <Default />
     <Variants />
     <Size />
     <Disabled />
+    <Display />
   </View>
 );
 
@@ -72,6 +85,7 @@ export const Interactive = () => (
       text={textKnob('Text', 'default')}
       type={select('Types', buttonTypes, 'contained') as ButtonTypes}
       size={select('Size', buttonSizes, 'medium') as ButtonSizes}
+      display={select('Display type', displayTypes, 'inline') as DisplayTypes}
       disabled={boolean('Disabled', false)}
     />
   </StoryContainer>

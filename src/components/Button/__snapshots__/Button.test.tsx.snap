@@ -4,6 +4,7 @@ exports[`Button component Disabled variants should render disabled button compon
 <TouchableHighlight
   activeOpacity={0.8}
   disabled={false}
+  display="inline"
   onPress={[Function]}
   size="medium"
   style={
@@ -11,6 +12,7 @@ exports[`Button component Disabled variants should render disabled button compon
       Object {
         "backgroundColor": "#FFFFFF",
         "borderRadius": 42,
+        "flexGrow": 0,
         "minHeight": 48,
       },
       Object {
@@ -48,6 +50,7 @@ exports[`Button component Disabled variants should render disabled button compon
 <TouchableHighlight
   activeOpacity={0.8}
   disabled={true}
+  display="inline"
   onPress={[Function]}
   size="medium"
   style={
@@ -56,6 +59,7 @@ exports[`Button component Disabled variants should render disabled button compon
         "borderColor": "#FAFAEA",
         "borderRadius": 42,
         "borderWidth": 1,
+        "flexGrow": 0,
         "minHeight": 48,
       },
       Object {},
@@ -91,12 +95,14 @@ exports[`Button component Disabled variants should render disabled button compon
 <TouchableHighlight
   activeOpacity={0.8}
   disabled={true}
+  display="inline"
   onPress={[Function]}
   size="medium"
   style={
     Array [
       Object {
         "borderRadius": 42,
+        "flexGrow": 0,
         "minHeight": 48,
       },
       Object {},
@@ -132,6 +138,7 @@ exports[`Button component Variants should render button component contained 1`] 
 <TouchableHighlight
   activeOpacity={0.8}
   disabled={false}
+  display="inline"
   onPress={[Function]}
   size="medium"
   style={
@@ -139,6 +146,7 @@ exports[`Button component Variants should render button component contained 1`] 
       Object {
         "backgroundColor": "#FFFFFF",
         "borderRadius": 42,
+        "flexGrow": 0,
         "minHeight": 48,
       },
       Object {
@@ -176,6 +184,7 @@ exports[`Button component Variants should render button component outlined 1`] =
 <TouchableHighlight
   activeOpacity={0.8}
   disabled={false}
+  display="inline"
   onPress={[Function]}
   size="medium"
   style={
@@ -184,6 +193,7 @@ exports[`Button component Variants should render button component outlined 1`] =
         "borderColor": "#FFFFFF",
         "borderRadius": 42,
         "borderWidth": 1,
+        "flexGrow": 0,
         "minHeight": 48,
       },
       Object {},
@@ -219,12 +229,14 @@ exports[`Button component Variants should render button component text 1`] = `
 <TouchableHighlight
   activeOpacity={0.8}
   disabled={true}
+  display="inline"
   onPress={[Function]}
   size="medium"
   style={
     Array [
       Object {
         "borderRadius": 42,
+        "flexGrow": 0,
         "minHeight": 48,
       },
       Object {},

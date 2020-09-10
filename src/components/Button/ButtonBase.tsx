@@ -20,12 +20,14 @@ import {
 
 export type ButtonSizes = 'large' | 'medium' | 'small'
 export type ButtonTypes = 'contained' | 'outlined' | 'text'
+export type DisplayTypes = 'inline' | 'block'
 export type TextColors = keyof IColors | 'default'
 
 export interface ButtonProps {
   accessibilityHint?: string
   accessibilityLabel?: string
   disabled?: boolean
+  display?: DisplayTypes
   textColor: TextColors
   onPress: (ev: NativeSyntheticEvent<NativeTouchEvent>) => void,
   size: ButtonSizes
@@ -68,15 +70,17 @@ const getShadowByType = (type: ButtonTypes, disabled: boolean, theme: Theme) => 
 
 const Base = styled.TouchableHighlight<{
   disabled: boolean
+  display: DisplayTypes
   size: ButtonSizes
   theme: Theme
   type: ButtonTypes
 }>(({
-  type, theme, disabled = false, size,
+  type, theme, disabled, display, size,
 }) => ({
   ...getButtonPropsBySize(theme, size),
   ...getButtonStyles(theme, type, disabled),
   borderRadius: getRadiusBySize(theme, 'medium'),
+  flexGrow: display === 'block' ? 1 : 0,
 }));
 
 const Label = styled.Text<{
@@ -98,6 +102,7 @@ const ButtonComponent = ({
   accessibilityHint,
   accessibilityLabel,
   disabled = false,
+  display = 'inline',
   textColor,
   onPress,
   size = 'medium',
@@ -109,6 +114,7 @@ const ButtonComponent = ({
   <Base
     activeOpacity={getOpacity10(theme)}
     disabled={disabled}
+    display={display}
     onPress={disabled ? () => {} : onPress}
     size={size}
     style={getShadowByType(type, disabled, theme)}

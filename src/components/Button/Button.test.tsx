@@ -58,6 +58,17 @@ describe('Button component', () => {
     });
   });
 
+  it('should render button with the given display type', () => {
+    const { queryByTestId } = renderButton(render, {
+      ...defaultProps,
+      display: 'block',
+    });
+
+    expect(queryByTestId('button')).toHaveStyle({
+      flexGrow: 1,
+    });
+  });
+
   it('should call the given onPress function', () => {
     const onPressMock = jest.fn();
     const { queryByTestId } = renderButton(render, {

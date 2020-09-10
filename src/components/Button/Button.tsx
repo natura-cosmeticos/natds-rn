@@ -1,7 +1,9 @@
 /* eslint-disable max-lines */
 import React from 'react';
 import { NativeSyntheticEvent, NativeTouchEvent } from 'react-native';
-import { ButtonBase, ButtonSizes, ButtonTypes } from './ButtonBase';
+import {
+  ButtonBase, ButtonSizes, ButtonTypes, DisplayTypes,
+} from './ButtonBase';
 
 export interface ButtonProps {
   /**
@@ -21,6 +23,11 @@ export interface ButtonProps {
    * other condition has been met (like selecting a checkbox, etc.).
    */
   disabled?: boolean
+  /**
+   * An inline button takes only the minimum amount of space for its width, while a block
+   * button takes 100% of its container width
+   */
+  display?: DisplayTypes
   /**
    * The onPress event handler
    */
@@ -47,6 +54,7 @@ export const Button = ({
   accessibilityHint,
   accessibilityLabel,
   disabled = false,
+  display = 'inline',
   onPress,
   size = 'medium',
   testID = 'button',
@@ -57,6 +65,7 @@ export const Button = ({
     accessibilityHint={ accessibilityHint }
     accessibilityLabel={ accessibilityLabel }
     disabled={ disabled }
+    display={ display }
     textColor='default'
     onPress={ onPress }
     testID={ testID }

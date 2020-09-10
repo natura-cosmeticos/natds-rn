@@ -6,6 +6,7 @@ import {
   Interactive,
   Size,
   Disabled,
+  Display,
 } from './Button.stories';
 
 storiesOf('Button', module)
@@ -14,4 +15,5 @@ storiesOf('Button', module)
   .add('variants', Variants)
   .add('size', Size)
   .add('disabled', Disabled)
+  .add('display block', Display)
   .add('interactive', Interactive);
