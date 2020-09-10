@@ -62,7 +62,7 @@ const getButtonTextColor = (theme: Theme, type: ButtonTypes, disabled: boolean) 
 
 const getShadowByType = (type: ButtonTypes, disabled: boolean, theme: Theme) => (
   isContained(type) && !disabled
-    ? getShadowBySize(theme, '2')
+    ? getShadowBySize(theme, 'tiny')
     : {}
 );
 

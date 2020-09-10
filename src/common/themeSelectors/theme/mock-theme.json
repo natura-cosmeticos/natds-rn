@@ -1,270 +1,257 @@
 {
-  "avatarSizes": {
-    "tiny": {
-      "size": 24,
-      "fontSize": ".625rem"
-    },
-    "small": {
-      "size": 32,
-      "fontSize": ".875rem"
-    },
-    "standard": {
-      "size": 40,
-      "fontSize": "1rem"
-    },
-    "large": {
-      "size": 48,
-      "fontSize": "1rem"
-    },
-    "huge": {
-      "size": 80,
-      "fontSize": "1.5rem"
-    }
+  "color": {
+    "primary": "#f4ab34",
+    "onPrimary": "#333333",
+    "primaryLight": "#fefde8",
+    "onPrimaryLight": "#333333",
+    "primaryDark": "#ef8426",
+    "onPrimaryDark": "#333333",
+    "secondary": "#ff6b0b",
+    "onSecondary": "#000000",
+    "secondaryLight": "#fff8e1",
+    "onSecondaryLight": "#000000",
+    "secondaryDark": "#ff5808",
+    "onSecondaryDark": "#000000",
+    "background": "#fafafa",
+    "onBackground": "#333333",
+    "surface": "#ffffff",
+    "onSurface": "#333333",
+    "highlight": "#000000",
+    "highEmphasis": "#333333",
+    "mediumEmphasis": "#777777",
+    "lowEmphasis": "#bbbbbb",
+    "link": "#227bbd",
+    "onLink": "#ffffff",
+    "success": "#569a32",
+    "onSuccess": "#ffffff",
+    "warning": "#fcc433",
+    "onWarning": "#333333",
+    "alert": "#e74627",
+    "onAlert": "#ffffff"
   },
-  "buttonSizes": {
-    "small": {
-      "paddingTop": 8,
-      "paddingRight": 8,
-      "paddingBottom": 8,
-      "paddingLeft": 8,
-      "minHeight": 32
-    },
-    "medium": {
-      "paddingTop": 12,
-      "paddingRight": 16,
-      "paddingBottom": 12,
-      "paddingLeft": 16,
-      "minHeight": 40
-    },
-    "large": {
-      "paddingTop": 16,
-      "paddingRight": 16,
-      "paddingBottom": 16,
-      "paddingLeft": 16,
-      "minHeight": 48
-    }
-  },
-  "fontSize": {
-    "h1": {
-      "fontSize": "6rem",
-      "fontWeight": 300
-    },
-    "h2": {
-      "fontSize": "3.75rem",
-      "fontWeight": 300
-    },
-    "h3": {
-      "fontSize": "3rem",
-      "fontWeight": 400
-    },
-    "h4": {
-      "fontSize": "2.125rem",
-      "fontWeight": 400
-    },
-    "h5": {
-      "fontSize": "1.5rem",
-      "fontWeight": 400
-    },
-    "h6": {
-      "fontSize": "1.25rem",
-      "fontWeight": 600
-    },
-    "subtitle1": {
-      "fontSize": "1rem",
-      "fontWeight": 400
-    },
-    "subtitle2": {
-      "fontSize": "0.875rem",
-      "fontWeight": 500
-    },
-    "body1": {
-      "fontSize": "1rem",
-      "fontWeight": 400
-    },
-    "body2": {
-      "fontSize": "0.875rem",
-      "fontWeight": 400
-    },
-    "button": {
-      "fontSize": "0.875rem",
-      "fontWeight": 600
-    },
-    "caption": {
-      "fontSize": "0.75rem",
-      "fontWeight": 400
-    },
-    "overline": {
-      "fontSize": "0.75rem",
-      "fontWeight": 400
-    }
-  },
-  "iconSizes": {
-    "micro": 16,
-    "tiny": 24,
-    "small": 32,
-    "standard": 48,
-    "medium": 64,
-    "large": 72,
-    "largex": 96,
-    "largexx": 128,
-    "huge": 144,
-    "hugex": 192,
-    "hugexx": 256
-  },
-  "opacity": {
-    "12": 0.12,
-    "16": 0.16,
-    "24": 0.24,
-    "32": 0.32,
-    "48": 0.48,
-    "56": 0.56,
-    "64": 0.64,
-    "80": 0.8,
-    "00": 0,
-    "04": 0.04,
-    "08": 0.08
-  },
-  "overlay": {
-    "solidBlack": 0.56
-  },
-  "radius": {
+  "borderRadius": {
     "none": 0,
-    "circle": "50%",
     "small": 2,
     "medium": 4,
     "large": 8
   },
-  "sizes": {
+  "button": {
+    "default": {
+      "fontSize": 14,
+      "fontWeight": 500,
+      "letterSpacing": 1.23,
+      "lineHeight": 1.5
+    }
+  },
+  "heading1": {
+    "fontSize": 96,
+    "fontWeight": 400,
+    "letterSpacing": 0
+  },
+  "heading2": {
+    "fontSize": 60,
+    "fontWeight": 400,
+    "letterSpacing": 0
+  },
+  "heading3": {
+    "fontSize": 48,
+    "fontWeight": 400,
+    "letterSpacing": 0
+  },
+  "heading4": {
+    "fontSize": 34,
+    "fontWeight": 400,
+    "letterSpacing": 0.27
+  },
+  "heading5": {
+    "fontSize": 24,
+    "fontWeight": 400,
+    "letterSpacing": 0
+  },
+  "heading6": {
+    "fontSize": 20,
+    "fontWeight": 500,
+    "letterSpacing": 0.24
+  },
+  "subtitle1": {
+    "fontSize": 16,
+    "fontWeight": 500,
+    "letterSpacing": 0.13
+  },
+  "subtitle2": {
+    "fontSize": 14,
+    "fontWeight": 500,
+    "letterSpacing": 0.11
+  },
+  "body1": {
+    "fontSize": 16,
+    "fontWeight": 400,
+    "letterSpacing": 0.51
+  },
+  "body2": {
+    "fontSize": 14,
+    "fontWeight": 400,
+    "letterSpacing": 0.22
+  },
+  "caption": {
+    "fontSize": 12,
+    "fontWeight": 400,
+    "letterSpacing": 0.38
+  },
+  "overline": {
+    "fontSize": 12,
+    "fontWeight": 500,
+    "letterSpacing": 1.92
+  },
+  "opacity": {
+    "transparent": 0,
+    "lower": 0.04,
+    "veryLow": 0.08,
+    "low": 0.12,
+    "mediumLow": 0.16,
+    "disabledLow": 0.24,
+    "disabled": 0.32,
+    "medium": 0.48,
+    "mediumHigh": 0.56,
+    "high": 0.64,
+    "opaque": 1
+  },
+  "size": {
     "none": 0,
     "micro": 4,
     "tiny": 8,
     "small": 16,
     "standard": 24,
     "semi": 32,
-    "semix": 40,
+    "semiX": 40,
     "medium": 48,
-    "mediumx": 56,
+    "mediumX": 56,
     "large": 64,
-    "largex": 72,
-    "largexx": 80,
-    "largexxx": 88,
+    "largeX": 72,
+    "largeXX": 80,
+    "largeXXX": 88,
     "huge": 96,
-    "hugex": 128,
-    "hugexx": 144,
-    "hugexxx": 192,
-    "veryhuge": 256
+    "hugeX": 128,
+    "hugeXX": 144,
+    "hugeXXX": 192,
+    "veryHuge": 256
+  },
+  "typography": {
+    "fontFamily": {
+      "primary": "Roboto",
+      "secondary": "sans-serif",
+      "branding": "Helvetica Now",
+      "code": "Roboto Mono"
+    },
+    "lineHeight": {
+      "reset": 1,
+      "small": 1.25,
+      "medium": 1.5,
+      "large": 2
+    },
+    "fontWeight": {
+      "regular": 400,
+      "medium": 500
+    }
   },
   "spacing": {
-    "spacing": 8,
-    "spacingNone": 0,
-    "spacingMicro": 4,
-    "spacingTiny": 8,
-    "spacingSmall": 16,
-    "spacingStandard": 24,
-    "spacingSemi": 32,
-    "spacingLarge": 48,
-    "spacingHuge": 64
-  },
-  "colorTokens": {
-    "colorPrimary": "#F4AB34",
-    "colorOnPrimary": "#333333",
-    "colorPrimaryLight": "#FEFDE8",
-    "colorOnPrimaryLight": "#333333",
-    "colorPrimaryDark": "#EF8426",
-    "colorOnPrimaryDark": "#333333",
-    "colorSecondary": "#FF6B0B",
-    "colorOnSecondary": "#000000",
-    "colorSecondaryLight": "#FFF8E1",
-    "colorOnSecondaryLight": "#000000",
-    "colorSecondaryDark": "#FF5808",
-    "colorOnSecondaryDark": "#000000",
-    "colorBackground": "#FAFAFA",
-    "colorOnBackground": "#333333",
-    "colorSurface": "#FFFFFF",
-    "colorOnSurface": "#333333",
-    "colorHighlight": "#000000",
-    "colorHighEmphasis": "#333333",
-    "colorMediumEmphasis": "#777777",
-    "colorLowEmphasis": "#BBBBBB",
-    "colorLink": "#227BBD",
-    "colorOnLink": "#FFFFFF",
-    "colorSuccess": "#569A32",
-    "colorOnSuccess": "#FFFFFF",
-    "colorWarning": "#FCC433",
-    "colorOnWarning": "#333333",
-    "colorAlert": "#E74627",
-    "colorOnAlert": "#FFFFFF"
+    "none": 0,
+    "micro": 4,
+    "tiny": 8,
+    "small": 16,
+    "standard": 24,
+    "semi": 32,
+    "large": 48,
+    "xLarge": 64
   },
   "elevation": {
-    "1": {
-      "elevation": 1,
-      "shadowColor": "#000000",
-      "shadowOffset": { "height": 1, "width": 0 },
-      "shadowOpacity": 0.14,
-      "shadowRadius": 1
+    "none": {
+      "shadowColor": "nil",
+      "shadowOffsetWidth": 0,
+      "shadowOffsetHeight": -3,
+      "shadowRadius": 3,
+      "shadowOpacity": 0,
+      "elevation": 0
     },
-    "2": {
-      "elevation": 2,
+    "micro": {
       "shadowColor": "#000000",
-      "shadowOffset": { "height": 2, "width": 0 },
+      "shadowOffsetWidth": 0,
+      "shadowOffsetHeight": 1,
+      "shadowRadius": 1,
       "shadowOpacity": 0.14,
-      "shadowRadius": 2
+      "elevation": 1
     },
-    "3": {
-      "elevation": 3,
+    "tiny": {
       "shadowColor": "#000000",
-      "shadowOffset": { "height": 3, "width": 0 },
+      "shadowOffsetWidth": 0,
+      "shadowOffsetHeight": 2,
+      "shadowRadius": 2,
       "shadowOpacity": 0.14,
-      "shadowRadius": 4
+      "elevation": 2
     },
-    "4": {
-      "elevation": 4,
+    "small": {
       "shadowColor": "#000000",
-      "shadowOffset": { "height": 4, "width": 0 },
+      "shadowOffsetWidth": 0,
+      "shadowOffsetHeight": 3,
+      "shadowRadius": 4,
       "shadowOpacity": 0.14,
-      "shadowRadius": 5
+      "elevation": 3
     },
-    "5": {
-      "elevation": 5,
+    "medium": {
       "shadowColor": "#000000",
-      "shadowOffset": { "height": 6, "width": 0 },
+      "shadowOffsetWidth": 0,
+      "shadowOffsetHeight": 4,
+      "shadowRadius": 5,
       "shadowOpacity": 0.14,
-      "shadowRadius": 10
+      "elevation": 4
     },
-    "6": {
-      "elevation": 6,
+    "large": {
       "shadowColor": "#000000",
-      "shadowOffset": { "height": 8, "width": 0 },
+      "shadowOffsetWidth": 0,
+      "shadowOffsetHeight": 6,
+      "shadowRadius": 10,
       "shadowOpacity": 0.14,
-      "shadowRadius": 10
+      "elevation": 6
     },
-    "7": {
-      "elevation": 7,
+    "largeX": {
       "shadowColor": "#000000",
-      "shadowOffset": { "height": 9, "width": 0 },
+      "shadowOffsetWidth": 0,
+      "shadowOffsetHeight": 8,
+      "shadowRadius": 10,
       "shadowOpacity": 0.14,
-      "shadowRadius": 12
+      "elevation": 8
     },
-    "8": {
-      "elevation": 8,
+    "largeXX": {
       "shadowColor": "#000000",
-      "shadowOffset": { "height": 12, "width": 0 },
+      "shadowOffsetWidth": 0,
+      "shadowOffsetHeight": 9,
+      "shadowRadius": 12,
       "shadowOpacity": 0.14,
-      "shadowRadius": 17
+      "elevation": 9
     },
-    "9": {
-      "elevation": 9,
+    "huge": {
       "shadowColor": "#000000",
-      "shadowOffset": { "height": 16, "width": 0 },
+      "shadowOffsetWidth": 0,
+      "shadowOffsetHeight": 12,
+      "shadowRadius": 17,
       "shadowOpacity": 0.14,
-      "shadowRadius": 24
+      "elevation": 12
     },
-    "10": {
-      "elevation": 10,
+    "hugeX": {
       "shadowColor": "#000000",
-      "shadowOffset": { "height": 24, "width": 0 },
+      "shadowOffsetWidth": 0,
+      "shadowOffsetHeight": 16,
+      "shadowRadius": 24,
       "shadowOpacity": 0.14,
-      "shadowRadius": 38
+      "elevation": 16
+    },
+    "hugeXX": {
+      "shadowColor": "#000000",
+      "shadowOffsetWidth": 0,
+      "shadowOffsetHeight": 24,
+      "shadowRadius": 38,
+      "shadowOpacity": 0.14,
+      "elevation": 24
     }
   }
 }

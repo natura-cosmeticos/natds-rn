@@ -2,7 +2,6 @@ import {
   StyleSheet,
 } from 'react-native';
 import styled from 'styled-components/native';
-
 import { ProgressIndicatorColors } from '../ProgressIndicator';
 import { Theme, getColorPrimary, getColorSecondary } from '../../../common/themeSelectors';
 

@@ -1,6 +1,7 @@
 import React from 'react';
-import { tokens } from '@naturacosmeticos/natds-styles';
-
+import { withTheme } from 'styled-components/native';
+import { Theme } from '@naturacosmeticos/natds-themes/react-native';
+import { getSize } from '../../common/themeSelectors';
 import { CircularProgress } from './CircularProgress/CircularProgress';
 
 export type ProgressIndicatorVariants = 'circular';
@@ -24,13 +25,15 @@ export interface ProgressIndicatorProps {
    * Size to be used on circular progress
    */
   size?: number;
+  theme: Theme
 }
 
 export const ProgressIndicatorComponent = ({
   variant,
   color = 'primary',
   type = 'indeterminate',
-  size = tokens.sizes.standard,
+  size,
+  theme,
 }: ProgressIndicatorProps) => {
   if (type !== 'indeterminate' || variant !== 'circular') {
     throw new Error('Not implemented yet');
@@ -38,10 +41,10 @@ export const ProgressIndicatorComponent = ({
 
   return (
     <CircularProgress
-      size={size}
+      size={size || getSize(theme, 'standard')}
       color={color}
     />
   );
 };
 
-export const ProgressIndicator = React.memo(ProgressIndicatorComponent);
+export const ProgressIndicator = React.memo(withTheme(ProgressIndicatorComponent));

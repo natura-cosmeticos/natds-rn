@@ -3,14 +3,20 @@ import * as selectors from './sizes';
 
 const scenarios = [
   {
-    expectedResult: theme.buttonSizes.medium,
+    expectedResult: {
+      minHeight: 40,
+      paddingBottom: 12,
+      paddingLeft: 16,
+      paddingRight: 16,
+      paddingTop: 12,
+    },
     name: 'getButtonPropsBySize',
     params: 'medium',
     selector: selectors.getButtonPropsBySize,
     title: 'button',
   },
   {
-    expectedResult: theme.radius.medium,
+    expectedResult: theme.borderRadius.medium,
     name: 'getRadiusBySize',
     params: 'medium',
     selector: selectors.getRadiusBySize,
@@ -24,7 +30,7 @@ describe('Sizes selectors', () => {
     describe(scenario.name, () => {
       (
         it(`should return the ${scenario.title} sizes`, () => {
-          const result = scenario.selector(theme, scenario.params as selectors.Size);
+          const result = scenario.selector(theme, scenario.params as selectors.ButtonSize);
 
           expect(result).toBe(scenario.expectedResult);
         })

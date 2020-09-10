@@ -3,13 +3,13 @@ import * as selectors from './spacing';
 
 const scenarios = [
   {
-    expectedResult: theme.spacing.spacingSmall,
+    expectedResult: theme.spacing.small,
     name: 'getSpacingSmall',
     selector: selectors.getSpacingSmall,
     title: 'spacing small',
   },
   {
-    expectedResult: theme.spacing.spacingTiny,
+    expectedResult: theme.spacing.tiny,
     name: 'getSpacingTiny',
     selector: selectors.getSpacingTiny,
     title: 'spacing tiny',

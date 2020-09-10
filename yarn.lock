@@ -1694,6 +1694,11 @@
   dependencies:
     hex-to-rgba "2.0.1"
 
+"@naturacosmeticos/natds-themes@^0.3.1":
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/@naturacosmeticos/natds-themes/-/natds-themes-0.3.1.tgz#4a1b16ae46ef29a05b5691296e2b45e86f5f3035"
+  integrity sha512-1XHr7oMuTuOEZxMJkB2pH5ekueT1Dc5XuXoBjd2Nyg6HBo957qKlWrD3d9vhU8Yjmo+6uyf4bYi+64y53OaBzw==
+
 "@netlify/open-api@^0.13.2":
   version "0.13.3"
   resolved "https://registry.yarnpkg.com/@netlify/open-api/-/open-api-0.13.3.tgz#5941135c5b7b1ee04327c1572048d367cb66aad8"

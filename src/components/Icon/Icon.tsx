@@ -2,8 +2,8 @@ import React from 'react';
 import { withTheme } from 'styled-components/native';
 import { Text } from 'react-native';
 import iconNames from '@naturacosmeticos/natds-icons/dist/natds-icons.json';
-import { ISizes } from '@naturacosmeticos/natds-styles';
-import { Theme, IColors, getColorByName } from '../../common/themeSelectors';
+import { Size, Theme, Color } from '@naturacosmeticos/natds-themes/react-native';
+import { getColorByName, getSize } from '../../common/themeSelectors';
 
 export type IconColors = keyof IColors | 'default' | '#333333'
 export type IconSizes = keyof ISizes
@@ -44,12 +44,12 @@ export interface IconProps {
 
 const defaultIconName = 'outlined-default-mockup';
 
-const getIconSize = (theme: Theme, size: IconSizes) => theme.sizes[size];
+const getIconSize = (theme: Theme, size: IconSizes) => getSize(theme, size);
 
 const getFontColor = (theme: Theme, color: IconColors) => {
   const colorName = color === 'default' ? 'highEmphasis' : color;
 
-  return getColorByName(theme, colorName);
+  return getColorByName(theme, colorName as keyof Color);
 };
 
 const IconComponent = ({

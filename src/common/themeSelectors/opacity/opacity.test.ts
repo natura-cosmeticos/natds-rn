@@ -3,10 +3,16 @@ import * as selectors from './opacity';
 
 const scenarios = [
   {
-    expectedResult: theme.opacity[56],
-    name: 'getOpacity56',
-    selector: selectors.getOpacity56,
-    title: 'opacity 56',
+    expectedResult: theme.opacity.mediumHigh,
+    name: 'getOpacityMediumHigh',
+    selector: selectors.getOpacityMediumHigh,
+    title: 'opacity',
+  },
+  {
+    expectedResult: theme.opacity.high,
+    name: 'getOpacityHigh',
+    selector: selectors.getOpacityHigh,
+    title: 'opacity',
   },
 ];
 
