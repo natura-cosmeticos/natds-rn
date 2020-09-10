@@ -44,7 +44,7 @@ exports[`Dialog component Should render a dialog with title, content and actions
       style={
         Array [
           Object {
-            "backgroundColor": "#FFFFFF",
+            "backgroundColor": "#ffffff",
             "borderRadius": 4,
             "maxWidth": 328,
             "paddingVertical": 16,

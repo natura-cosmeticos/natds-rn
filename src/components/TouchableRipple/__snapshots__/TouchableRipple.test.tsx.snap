@@ -27,7 +27,7 @@ exports[`TouchableRipple component Should render touchapple ripple correctly 1`]
       size={48}
       style={
         Object {
-          "backgroundColor": "#F4AB34",
+          "backgroundColor": "#f4ab34",
           "borderRadius": 24,
           "height": 48,
           "left": 0,

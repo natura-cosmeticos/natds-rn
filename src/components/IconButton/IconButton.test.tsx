@@ -2,7 +2,6 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import { fireEvent, render } from '@testing-library/react-native';
 import { ThemeProvider } from 'styled-components/native';
-
 import theme from '../../common/themeSelectors/theme/mock-theme.json';
 import {
   IconButton,

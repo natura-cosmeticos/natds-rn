@@ -1,6 +1,5 @@
 import React from 'react';
 import styled, { withTheme } from 'styled-components/native';
-
 import { Theme } from '../../common/themeSelectors';
 import { Icon } from '../Icon/Icon';
 import { TouchableRipple } from '../TouchableRipple/TouchableRipple';
@@ -48,8 +47,8 @@ export interface IconButtonProps {
 
 const getSpacingBySize = (theme, size) => {
   const spacing = {
-    medium: 'spacingTiny',
-    small: 'spacingMicro',
+    medium: 'tiny',
+    small: 'micro',
   }[size];
 
   return theme.spacing[spacing];
@@ -67,7 +66,7 @@ const IconContainer = styled.View<IconContainerProps>`
   borderRadius: ${circleBorderRadius}px;
 `;
 
-const getIconSize = theme => theme.sizes.standard;
+const getIconSize = (theme: Theme) => theme.size.standard;
 
 const getRippleColor = (color) => {
   const colorMapping = { default: 'highlight', primary: 'primary' };

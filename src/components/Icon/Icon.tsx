@@ -44,8 +44,6 @@ export interface IconProps {
 
 const defaultIconName = 'outlined-default-mockup';
 
-const getIconSize = (theme: Theme, size: IconSizes) => getSize(theme, size);
-
 const getFontColor = (theme: Theme, color: IconColors) => {
   const colorName = color === 'default' ? 'highEmphasis' : color;
 
@@ -75,7 +73,7 @@ const IconComponent = ({
       style={{
         color: color === '#333333' ? color : getFontColor(theme, color),
         fontFamily: 'natds-icons',
-        fontSize: getIconSize(theme, size),
+        fontSize: getSize(theme, size),
       }}
       testID={testID}
     >

@@ -4,7 +4,16 @@ import * as selectors from './effects';
 
 const scenarios = [
   {
-    expectedResult: theme.elevation.tiny,
+    expectedResult: {
+      elevation: theme.elevation.tiny.elevation,
+      shadowColor: theme.elevation.tiny.shadowColor,
+      shadowOffset: {
+        height: theme.elevation.tiny.shadowOffsetHeight,
+        width: theme.elevation.tiny.shadowOffsetWidth,
+      },
+      shadowOpacity: theme.elevation.tiny.shadowOpacity,
+      shadowRadius: theme.elevation.tiny.shadowRadius,
+    },
     name: 'getShadowBySize',
     params: 'tiny' as keyof Elevation,
     selector: selectors.getShadowBySize,
@@ -20,7 +29,7 @@ describe('Effects selectors', () => {
         it(`should return the ${scenario.title} effect`, () => {
           const result = scenario.selector(theme, scenario.params);
 
-          expect(result).toBe(scenario.expectedResult);
+          expect(result).toEqual(scenario.expectedResult);
         })
       );
     })

@@ -8,7 +8,8 @@ const mosaicItemRendered = (
 ) => <TokenColor colorName={colorName} color={colors[colorName]} />;
 
 export const colors = ({ activeTheme, light }) => {
-  const brandTheme = buildTheme(activeTheme, light);
+  const mode = light ? 'light' : 'dark';
+  const brandTheme = buildTheme(activeTheme, mode);
 
   if (!brandTheme) return <Text>No colors found for this theme.</Text>;
 

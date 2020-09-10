@@ -15,7 +15,7 @@ const getRadiusSizes = (theme: Theme) => checkTheme(theme).borderRadius;
 
 export const getRadiusBySize = (theme: Theme, size: keyof Size) => getRadiusSizes(theme)[size];
 
-export const getSize = (theme: Theme, size: keyof Size) => checkTheme(theme)[size];
+export const getSize = (theme: Theme, size: keyof Size) => checkTheme(theme).size[size];
 
 export const getButtonPropsBySize = (
   theme: Theme, size: ButtonSize,

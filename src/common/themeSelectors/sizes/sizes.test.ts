@@ -32,7 +32,7 @@ describe('Sizes selectors', () => {
         it(`should return the ${scenario.title} sizes`, () => {
           const result = scenario.selector(theme, scenario.params as selectors.ButtonSize);
 
-          expect(result).toBe(scenario.expectedResult);
+          expect(result).toEqual(scenario.expectedResult);
         })
       );
     })

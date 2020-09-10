@@ -52,7 +52,7 @@ exports[`CircularProgress component Should render circular progress with color p
           size={24}
           style={
             Object {
-              "borderColor": "#F4AB34",
+              "borderColor": "#f4ab34",
               "borderRadius": 12,
               "borderWidth": 2.4,
               "height": 24,
@@ -118,7 +118,7 @@ exports[`CircularProgress component Should render circular progress with color p
           size={24}
           style={
             Object {
-              "borderColor": "#FF6B0B",
+              "borderColor": "#ff6b0b",
               "borderRadius": 12,
               "borderWidth": 2.4,
               "height": 24,
@@ -184,7 +184,7 @@ exports[`CircularProgress component Should render circular progress with default
           size={24}
           style={
             Object {
-              "borderColor": "#F4AB34",
+              "borderColor": "#f4ab34",
               "borderRadius": 12,
               "borderWidth": 2.4,
               "height": 24,

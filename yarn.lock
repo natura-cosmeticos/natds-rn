@@ -1694,10 +1694,10 @@
   dependencies:
     hex-to-rgba "2.0.1"
 
-"@naturacosmeticos/natds-themes@^0.3.1":
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/@naturacosmeticos/natds-themes/-/natds-themes-0.3.1.tgz#4a1b16ae46ef29a05b5691296e2b45e86f5f3035"
-  integrity sha512-1XHr7oMuTuOEZxMJkB2pH5ekueT1Dc5XuXoBjd2Nyg6HBo957qKlWrD3d9vhU8Yjmo+6uyf4bYi+64y53OaBzw==
+"@naturacosmeticos/natds-themes@^0.3.2":
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/@naturacosmeticos/natds-themes/-/natds-themes-0.3.2.tgz#6d34ee54c7561e3ceed9b5e90cb4ef76ba22ea44"
+  integrity sha512-CPotoOHVLYyD+a31UFqyORuxx+7XCRbyoMnu/BqWmCbB13HWq7nYJU7yhnKW52EODrbKl3viYfl2BC2ySsG/9g==
 
 "@netlify/open-api@^0.13.2":
   version "0.13.3"

@@ -27,7 +27,7 @@ exports[`RadioButton component should render radio button correctly 1`] = `
       size={40}
       style={
         Object {
-          "backgroundColor": "#F4AB34",
+          "backgroundColor": "#f4ab34",
           "borderRadius": 20,
           "height": 40,
           "left": 0,
@@ -94,7 +94,7 @@ exports[`RadioButton component should render radio button selected but disabled 
       size={40}
       style={
         Object {
-          "backgroundColor": "#F4AB34",
+          "backgroundColor": "#f4ab34",
           "borderRadius": 20,
           "height": 40,
           "left": 0,
@@ -118,7 +118,7 @@ exports[`RadioButton component should render radio button selected but disabled 
           Array [
             Object {
               "alignItems": "center",
-              "borderColor": "#BBBBBB",
+              "borderColor": "#bbbbbb",
               "borderRadius": 12,
               "borderWidth": 2,
               "height": 20,
@@ -175,7 +175,7 @@ exports[`RadioButton component should render radio button selected but disabled 
         size={40}
         style={
           Object {
-            "backgroundColor": "#F4AB34",
+            "backgroundColor": "#f4ab34",
             "borderRadius": 20,
             "height": 40,
             "left": 0,
@@ -199,7 +199,7 @@ exports[`RadioButton component should render radio button selected but disabled 
             Array [
               Object {
                 "alignItems": "center",
-                "borderColor": "#BBBBBB",
+                "borderColor": "#bbbbbb",
                 "borderRadius": 12,
                 "borderWidth": 2,
                 "height": 20,
@@ -218,7 +218,7 @@ exports[`RadioButton component should render radio button selected but disabled 
     style={
       Array [
         Object {
-          "color": "#BBBBBB",
+          "color": "#bbbbbb",
           "fontSize": 14,
           "letterSpacing": 0.22,
           "marginLeft": 8,
@@ -258,7 +258,7 @@ exports[`RadioButton component should render radio button selected correctly 1`]
       size={40}
       style={
         Object {
-          "backgroundColor": "#F4AB34",
+          "backgroundColor": "#f4ab34",
           "borderRadius": 20,
           "height": 40,
           "left": 0,
@@ -283,7 +283,7 @@ exports[`RadioButton component should render radio button selected correctly 1`]
           Array [
             Object {
               "alignItems": "center",
-              "borderColor": "#F4AB34",
+              "borderColor": "#f4ab34",
               "borderRadius": 12,
               "borderWidth": 2,
               "height": 20,
@@ -301,7 +301,7 @@ exports[`RadioButton component should render radio button selected correctly 1`]
           style={
             Array [
               Object {
-                "backgroundColor": "#F4AB34",
+                "backgroundColor": "#f4ab34",
                 "borderRadius": 12,
                 "height": 10,
                 "width": 10,
@@ -356,7 +356,7 @@ exports[`RadioButton component should render radio button with label correctly 1
         size={40}
         style={
           Object {
-            "backgroundColor": "#F4AB34",
+            "backgroundColor": "#f4ab34",
             "borderRadius": 20,
             "height": 40,
             "left": 0,
