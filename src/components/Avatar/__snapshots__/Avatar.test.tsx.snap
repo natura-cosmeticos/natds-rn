@@ -23,7 +23,7 @@ exports[`Avatar component should render avatar component 1`] = `
     style={
       Array [
         Object {
-          "borderRadius": 24,
+          "borderRadius": 48,
           "height": 40,
           "width": 40,
         },
@@ -360,7 +360,7 @@ exports[`Avatar component should render avatar component anonymous 1`] = `
     style={
       Array [
         Object {
-          "borderRadius": 24,
+          "borderRadius": 48,
           "height": 40,
           "width": 40,
         },
@@ -692,7 +692,7 @@ exports[`Avatar component should render avatar component image 1`] = `
     style={
       Array [
         Object {
-          "borderRadius": 24,
+          "borderRadius": 48,
           "height": 40,
           "width": 40,
         },

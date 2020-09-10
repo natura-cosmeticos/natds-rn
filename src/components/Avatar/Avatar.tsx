@@ -84,7 +84,7 @@ interface AvatarLetter {
 }
 
 const AvatarImage = styled.Image<AvatarImage>(({ size, theme }) => ({
-  borderRadius: getSpacingBySize(size, theme),
+  borderRadius: getSpacingBySize(size, theme) * 2,
   height: getAvatarSize(theme, size),
   width: getAvatarSize(theme, size),
 }));
