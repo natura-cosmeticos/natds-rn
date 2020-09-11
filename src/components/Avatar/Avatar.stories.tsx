@@ -57,6 +57,7 @@ export const interactive = () => (
     <Avatar
       type={select('Type', avatarTypes, 'letter') as AvatarTypes}
       text={text('Label', 'Natura Design System')}
+      imgSource={{ uri: imgSource }}
       size="huge"
     />
   </View>

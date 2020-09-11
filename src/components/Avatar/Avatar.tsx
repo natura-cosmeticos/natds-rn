@@ -121,8 +121,8 @@ const AvatarComponent = ({
   type = 'anonymous',
   text = '',
   imgSource,
-  accessibilityLabel,
-  accessibilityHint,
+  accessibilityLabel = '',
+  accessibilityHint = '',
 }: AvatarProps) => (
   <View style={getViewStyles(size, theme)} >
     { type === 'letter'

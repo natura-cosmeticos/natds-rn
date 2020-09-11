@@ -14,6 +14,8 @@ exports[`Avatar component should render avatar component 1`] = `
   }
 >
   <Image
+    accessibilityHint=""
+    accessibilityLabel=""
     size="standard"
     source={
       Object {
@@ -351,6 +353,8 @@ exports[`Avatar component should render avatar component anonymous 1`] = `
   }
 >
   <Image
+    accessibilityHint=""
+    accessibilityLabel=""
     size="standard"
     source={
       Object {
@@ -688,6 +692,8 @@ exports[`Avatar component should render avatar component image 1`] = `
   }
 >
   <Image
+    accessibilityHint=""
+    accessibilityLabel=""
     size="standard"
     style={
       Array [
@@ -1020,6 +1026,8 @@ exports[`Avatar component should render avatar component letter 1`] = `
   }
 >
   <Text
+    accessibilityHint=""
+    accessibilityLabel=""
     accessibilityRole="text"
     size="standard"
     style={
