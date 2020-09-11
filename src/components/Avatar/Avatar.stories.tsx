@@ -26,11 +26,11 @@ export const all = () => (
   <View>
     <TextWithTheme>image</TextWithTheme>
     <ContainerRow>
-      <Avatar type="image" size="huge" imgSource={{ url: imgSource }} />
-      <Avatar type="image" size="large" imgSource={{ url: imgSource }}/>
-      <Avatar type="image" size="standard" imgSource={{ url: imgSource }}/>
-      <Avatar type="image" size="small" imgSource={{ url: imgSource }}/>
-      <Avatar type="image" size="tiny" imgSource={{ url: imgSource }}/>
+      <Avatar type="image" size="huge" imgSource={{ uri: imgSource }} />
+      <Avatar type="image" size="large" imgSource={{ uri: imgSource }}/>
+      <Avatar type="image" size="standard" imgSource={{ uri: imgSource }}/>
+      <Avatar type="image" size="small" imgSource={{ uri: imgSource }}/>
+      <Avatar type="image" size="tiny" imgSource={{ uri: imgSource }}/>
     </ContainerRow>
     <TextWithTheme>letter</TextWithTheme>
     <ContainerRow>
