@@ -2,7 +2,7 @@
 import React from 'react';
 import { NativeSyntheticEvent, NativeTouchEvent } from 'react-native';
 import {
-  ButtonBase, ButtonSizes, ButtonTypes, DisplayTypes,
+  ButtonBase, ButtonSizes, ButtonTypes, DisplayTypes, IconPositions,
 } from './ButtonBase';
 
 export interface ButtonProps {
@@ -28,6 +28,14 @@ export interface ButtonProps {
    * button takes 100% of its container width
    */
   display?: DisplayTypes
+  /**
+   * The icon name
+   */
+  iconName?: string,
+  /**
+   * Icon position relative to text label `left` | `right`
+   */
+  iconPosition?: IconPositions
   /**
    * The onPress event handler
    */
@@ -55,6 +63,8 @@ export const Button = ({
   accessibilityLabel,
   disabled = false,
   display = 'inline',
+  iconName,
+  iconPosition,
   onPress,
   size = 'medium',
   testID = 'button',
@@ -66,11 +76,13 @@ export const Button = ({
     accessibilityLabel={ accessibilityLabel }
     disabled={ disabled }
     display={ display }
-    textColor='default'
+    iconName={ iconName }
+    iconPosition={ iconPosition }
     onPress={ onPress }
-    testID={ testID }
     size={ size }
+    testID={ testID }
     text={ text }
+    textColor='default'
     type={ type }
   />
 );

@@ -1,14 +1,24 @@
 import { Theme, checkTheme } from '..';
 
 interface ButtonProperties {
-  paddingTop: number;
-  paddingRight: number;
-  paddingBottom: number;
-  paddingLeft: number;
+  paddingHorizontal: number;
   minHeight: number;
 }
 
-const getButtonSizes = (theme: Theme) => checkTheme(theme).buttonSizes;
+const getButtonSizes = (theme: Theme) => ({
+  large: {
+    minHeight: theme.sizes.medium,
+    paddingHorizontal: theme.spacing.spacingSmall,
+  },
+  medium: {
+    minHeight: theme.sizes.semix,
+    paddingHorizontal: theme.spacing.spacingTiny + 4,
+  },
+  small: {
+    minHeight: theme.sizes.semi,
+    paddingHorizontal: theme.spacing.spacingTiny,
+  },
+});
 
 export type Size = 'large' | 'medium' | 'small'
 

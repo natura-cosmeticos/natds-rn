@@ -46,6 +46,13 @@ export const Variants = () => (
   </StoryContainer>
 );
 
+export const Icon = () => (
+  <StoryContainer title="Icon">
+    <Button onPress={onPress} text="default" iconPosition="left" iconName="outlined-default-mockup" />
+    <Button onPress={onPress} text="default" iconPosition="right" iconName="outlined-default-mockup" />
+  </StoryContainer>
+);
+
 export const Size = () => (
   <StoryContainer title="Sizes">
     <Button onPress={onPress} text="default" size="large" />
@@ -72,6 +79,7 @@ export const All = () => (
   <View>
     <Default />
     <Variants />
+    <Icon />
     <Size />
     <Disabled />
     <Display />

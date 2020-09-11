@@ -13,6 +13,7 @@ exports[`Button component Disabled variants should render disabled button compon
         "backgroundColor": "#FFFFFF",
         "borderRadius": 42,
         "flexGrow": 0,
+        "justifyContent": "center",
         "minHeight": 48,
       },
       Object {
@@ -60,6 +61,7 @@ exports[`Button component Disabled variants should render disabled button compon
         "borderRadius": 42,
         "borderWidth": 1,
         "flexGrow": 0,
+        "justifyContent": "center",
         "minHeight": 48,
       },
       Object {},
@@ -103,6 +105,7 @@ exports[`Button component Disabled variants should render disabled button compon
       Object {
         "borderRadius": 42,
         "flexGrow": 0,
+        "justifyContent": "center",
         "minHeight": 48,
       },
       Object {},
@@ -147,6 +150,7 @@ exports[`Button component Variants should render button component contained 1`] 
         "backgroundColor": "#FFFFFF",
         "borderRadius": 42,
         "flexGrow": 0,
+        "justifyContent": "center",
         "minHeight": 48,
       },
       Object {
@@ -194,6 +198,7 @@ exports[`Button component Variants should render button component outlined 1`] =
         "borderRadius": 42,
         "borderWidth": 1,
         "flexGrow": 0,
+        "justifyContent": "center",
         "minHeight": 48,
       },
       Object {},
@@ -237,6 +242,7 @@ exports[`Button component Variants should render button component text 1`] = `
       Object {
         "borderRadius": 42,
         "flexGrow": 0,
+        "justifyContent": "center",
         "minHeight": 48,
       },
       Object {},

@@ -1,7 +1,9 @@
 /* eslint-disable max-lines */
 import React from 'react';
 import styled, { withTheme } from 'styled-components/native';
-import { NativeSyntheticEvent, NativeTouchEvent } from 'react-native';
+import {
+  NativeSyntheticEvent, NativeTouchEvent, Text,
+} from 'react-native';
 import {
   IColors,
   Theme,
@@ -17,10 +19,12 @@ import {
   getShadowBySize,
   getColorByName,
 } from '../../common/themeSelectors';
+import { Icon } from '../Icon';
 
 export type ButtonSizes = 'large' | 'medium' | 'small'
 export type ButtonTypes = 'contained' | 'outlined' | 'text'
 export type DisplayTypes = 'inline' | 'block'
+export type IconPositions = 'left' | 'right'
 export type TextColors = keyof IColors | 'default'
 
 export interface ButtonProps {
@@ -28,6 +32,8 @@ export interface ButtonProps {
   accessibilityLabel?: string
   disabled?: boolean
   display?: DisplayTypes
+  iconName?: string | undefined,
+  iconPosition?: IconPositions
   textColor: TextColors
   onPress: (ev: NativeSyntheticEvent<NativeTouchEvent>) => void,
   size: ButtonSizes
@@ -81,6 +87,7 @@ const Base = styled.TouchableHighlight<{
   ...getButtonStyles(theme, type, disabled),
   borderRadius: getRadiusBySize(theme, 'medium'),
   flexGrow: display === 'block' ? 1 : 0,
+  justifyContent: 'center',
 }));
 
 const Label = styled.Text<{
@@ -98,16 +105,28 @@ const Label = styled.Text<{
   letterSpacing: 1,
 }));
 
+const labelContent = (text: string, iconName: string | undefined, iconPosition: IconPositions) => {
+  if (iconName) {
+    return iconPosition === 'left'
+      ? <Text><Icon name={iconName} size="small" />  {text.toUpperCase()}</Text>
+      : <Text>{text.toUpperCase()}  <Icon name={iconName} size="small" /></Text>;
+  }
+
+  return text.toUpperCase();
+};
+
 const ButtonComponent = ({
   accessibilityHint,
   accessibilityLabel,
   disabled = false,
   display = 'inline',
-  textColor,
+  iconName,
+  iconPosition = 'right',
   onPress,
   size = 'medium',
   testID = 'button',
   text,
+  textColor,
   theme,
   type = 'contained',
 }: ButtonProps) => (
@@ -129,7 +148,9 @@ const ButtonComponent = ({
       disabled={disabled}
       textColor={textColor}
       type={type}
-    >{text.toUpperCase()}</Label>
+    >
+      { labelContent(text, iconName, iconPosition) }
+    </Label>
   </Base>
 );
 

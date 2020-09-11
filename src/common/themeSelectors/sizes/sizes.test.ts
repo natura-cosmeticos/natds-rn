@@ -3,13 +3,6 @@ import * as selectors from './sizes';
 
 const scenarios = [
   {
-    expectedResult: theme.buttonSizes.medium,
-    name: 'getButtonPropsBySize',
-    params: 'medium',
-    selector: selectors.getButtonPropsBySize,
-    title: 'button',
-  },
-  {
     expectedResult: theme.radius.medium,
     name: 'getRadiusBySize',
     params: 'medium',
