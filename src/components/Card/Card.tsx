@@ -36,7 +36,7 @@ interface CardBase {
 const CardBase = styled.View<CardBase>(({ theme }) => ({
   backgroundColor: getColorSurface(theme),
   borderRadius: getRadiusBySize(theme, 'medium'),
-  elevation: getShadowBySize(theme, 'small'),
+  elevation: getShadowBySize(theme, 'micro'),
 }));
 
 const CardComponent = ({
@@ -46,7 +46,7 @@ const CardComponent = ({
   type = 'base',
 }: CardProps) => (
   <CardBase
-    style={getShadowBySize(theme, 'small')}
+    style={getShadowBySize(theme, 'micro')}
     testID={testID}
     theme={theme}
     type={type}>

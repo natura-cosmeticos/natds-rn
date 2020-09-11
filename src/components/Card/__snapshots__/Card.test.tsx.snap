@@ -9,14 +9,14 @@ exports[`Card component should render Card component 1`] = `
         "borderRadius": 4,
       },
       Object {
-        "elevation": 3,
+        "elevation": 1,
         "shadowColor": "#000000",
         "shadowOffset": Object {
-          "height": 3,
+          "height": 1,
           "width": 0,
         },
         "shadowOpacity": 0.14,
-        "shadowRadius": 4,
+        "shadowRadius": 1,
       },
     ]
   }
