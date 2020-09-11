@@ -70,9 +70,14 @@ export const Disabled = () => (
 );
 
 export const Display = () => (
-  <StoryContainer title="Display block">
-    <Button display="block" type="contained" onPress={onPress} text="default" />
-  </StoryContainer>
+  <View>
+    <StoryContainer title="Display inline">
+      <Button display="inline" type="contained" onPress={onPress} text="default" />
+    </StoryContainer>
+    <StoryContainer title="Display block">
+      <Button display="block" type="contained" onPress={onPress} text="default" />
+    </StoryContainer>
+  </View>
 );
 
 export const All = () => (
