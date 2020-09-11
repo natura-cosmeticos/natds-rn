@@ -1,17 +1,17 @@
 import { storiesOf } from '@storybook/react-native';
 import {
-  all,
-  contained,
-  disabled,
-  interactive,
-  outlined,
-  text,
+  All,
+  Default,
+  Variants,
+  Interactive,
+  Size,
+  Disabled,
 } from './Button.stories';
 
 storiesOf('Button', module)
-  .add('all', all)
-  .add('contained', contained)
-  .add('outlined', outlined)
-  .add('text', text)
-  .add('disabled', disabled)
-  .add('interactive', interactive);
+  .add('all', All)
+  .add('default', Default)
+  .add('variants', Variants)
+  .add('size', Size)
+  .add('disabled', Disabled)
+  .add('interactive', Interactive);

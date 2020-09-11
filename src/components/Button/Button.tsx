@@ -1,6 +1,7 @@
+/* eslint-disable max-lines */
 import React from 'react';
 import { NativeSyntheticEvent, NativeTouchEvent } from 'react-native';
-import { ButtonBase, ButtonTypes } from './ButtonBase';
+import { ButtonBase, ButtonSizes, ButtonTypes } from './ButtonBase';
 
 export interface ButtonProps {
   /**
@@ -29,6 +30,10 @@ export interface ButtonProps {
   */
   testID?: string,
   /**
+   * Button sizes `large` | `medium` | `small`
+   */
+  size?: ButtonSizes,
+  /**
    * The button text content
    */
   text: string
@@ -43,6 +48,7 @@ export const Button = ({
   accessibilityLabel,
   disabled = false,
   onPress,
+  size = 'medium',
   testID = 'button',
   text,
   type = 'contained',
@@ -54,6 +60,7 @@ export const Button = ({
     textColor='default'
     onPress={ onPress }
     testID={ testID }
+    size={ size }
     text={ text }
     type={ type }
   />

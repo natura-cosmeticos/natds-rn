@@ -1,10 +1,9 @@
-
 import React from 'react';
 import { View } from 'react-native';
 import { boolean, select, text as textKnob } from '@storybook/addon-knobs';
-import { ContainerRow, ContainerWithTheme } from '../../common/HelperComponents/ThemeHelper.styles';
+import { StoryContainer } from '../../common/HelperComponents/StoryContainer';
 import { Button } from './Button';
-import { ButtonTypes } from './ButtonBase';
+import { ButtonTypes, ButtonSizes } from './ButtonBase';
 
 export default {
   component: Button,
@@ -14,74 +13,66 @@ export default {
   title: 'Components|Button',
 };
 
-const onPress = () => { };
+const onPress = () => {};
 
 const buttonTypes = {
   contained: 'contained',
   outlined: 'outlined',
   text: 'text',
 };
+const buttonSizes = {
+  large: 'large',
+  medium: 'medium',
+  small: 'small',
+};
 
-export const all = () => (
-  <View style={{ maxWidth: 600, padding: 30 }}>
-    <ContainerRow style={{ marginBottom: 30 }}>
-      <Button onPress={onPress} text="default" />
-      <Button onPress={onPress} text="default" type="outlined" />
-      <Button onPress={onPress} text="default" type="text" />
-    </ContainerRow >
-    <ContainerRow style={{ marginBottom: 30 }}>
-      <Button disabled onPress={onPress} text="default" />
-      <Button disabled onPress={onPress} text="default" type="outlined" />
-      <Button disabled onPress={onPress} text="default" type="text" />
-    </ContainerRow >
-    <ContainerWithTheme style={{ height: 200, justifyContent: 'space-between', marginBottom: 30 }} >
-      <Button onPress={onPress} text="default" />
-      <Button onPress={onPress} text="default" type="outlined" />
-      <Button onPress={onPress} text="default" type="text" />
-    </ContainerWithTheme >
-    <ContainerWithTheme style={{ height: 200, justifyContent: 'space-between', marginBottom: 30 }} >
-      <Button disabled onPress={onPress} text="default" />
-      <Button disabled onPress={onPress} text="default" type="outlined" />
-      <Button disabled onPress={onPress} text="default" type="text" />
-    </ContainerWithTheme >
+export const Default = () => (
+  <StoryContainer title="Default">
+    <Button onPress={onPress} text="default" />
+  </StoryContainer>
+);
+
+export const Variants = () => (
+  <StoryContainer title="Variants">
+    <Button type="contained" onPress={onPress} text="default" />
+    <Button type="outlined" onPress={onPress} text="default" />
+    <Button type="text" onPress={onPress} text="default" />
+  </StoryContainer>
+);
+
+export const Size = () => (
+  <StoryContainer title="Sizes">
+    <Button onPress={onPress} text="default" size="large" />
+    <Button onPress={onPress} text="default" size="medium" />
+    <Button onPress={onPress} text="default" size="small" />
+  </StoryContainer>
+);
+
+export const Disabled = () => (
+  <StoryContainer title="Disabled">
+    <Button disabled type="contained" onPress={onPress} text="default" />
+    <Button disabled type="outlined" onPress={onPress} text="default" />
+    <Button disabled type="text" onPress={onPress} text="default" />
+  </StoryContainer>
+);
+
+export const All = () => (
+  <View>
+    <Default />
+    <Variants />
+    <Size />
+    <Disabled />
   </View>
 );
 
-export const disabled = () => (
-  <View style={{ maxWidth: 600, padding: 30 }}>
-    <ContainerRow style={{ marginBottom: 30 }}>
-      <Button disabled onPress={onPress} text="default" />
-      <Button disabled onPress={onPress} text="default" type="outlined" />
-      <Button disabled onPress={onPress} text="default" type="text" />
-    </ContainerRow >
-  </View>
-);
-
-export const contained = () => (
-  <ContainerRow style={{ padding: 30 }} >
-    <Button onPress={onPress} text="default" type="contained" />
-  </ContainerRow>
-);
-
-export const outlined = () => (
-  <ContainerRow style={{ padding: 30 }}>
-    <Button onPress={onPress} text="default" type="outlined" />
-  </ContainerRow>
-);
-
-export const text = () => (
-  <ContainerRow style={{ padding: 30 }}>
-    <Button onPress={onPress} text="default" type="text" />
-  </ContainerRow>
-);
-
-export const interactive = () => (
-  <ContainerRow style={{ padding: 30 }} >
+export const Interactive = () => (
+  <StoryContainer title="Interactive">
     <Button
       onPress={onPress}
       text={textKnob('Text', 'default')}
       type={select('Types', buttonTypes, 'contained') as ButtonTypes}
+      size={select('Size', buttonSizes, 'medium') as ButtonSizes}
       disabled={boolean('Disabled', false)}
     />
-  </ContainerRow>
+  </StoryContainer>
 );

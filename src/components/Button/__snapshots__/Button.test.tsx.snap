@@ -5,6 +5,7 @@ exports[`Button component Disabled variants should render disabled button compon
   activeOpacity={0.8}
   disabled={false}
   onPress={[Function]}
+  size="medium"
   style={
     Array [
       Object {
@@ -48,6 +49,7 @@ exports[`Button component Disabled variants should render disabled button compon
   activeOpacity={0.8}
   disabled={true}
   onPress={[Function]}
+  size="medium"
   style={
     Array [
       Object {
@@ -90,6 +92,7 @@ exports[`Button component Disabled variants should render disabled button compon
   activeOpacity={0.8}
   disabled={true}
   onPress={[Function]}
+  size="medium"
   style={
     Array [
       Object {
@@ -130,6 +133,7 @@ exports[`Button component Variants should render button component contained 1`] 
   activeOpacity={0.8}
   disabled={false}
   onPress={[Function]}
+  size="medium"
   style={
     Array [
       Object {
@@ -173,6 +177,7 @@ exports[`Button component Variants should render button component outlined 1`] =
   activeOpacity={0.8}
   disabled={false}
   onPress={[Function]}
+  size="medium"
   style={
     Array [
       Object {
@@ -215,6 +220,7 @@ exports[`Button component Variants should render button component text 1`] = `
   activeOpacity={0.8}
   disabled={true}
   onPress={[Function]}
+  size="medium"
   style={
     Array [
       Object {

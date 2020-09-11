@@ -18,6 +18,7 @@ import {
   getColorByName,
 } from '../../common/themeSelectors';
 
+export type ButtonSizes = 'large' | 'medium' | 'small'
 export type ButtonTypes = 'contained' | 'outlined' | 'text'
 export type TextColors = keyof IColors | 'default'
 
@@ -27,6 +28,7 @@ export interface ButtonProps {
   disabled?: boolean
   textColor: TextColors
   onPress: (ev: NativeSyntheticEvent<NativeTouchEvent>) => void,
+  size: ButtonSizes
   testID?: string
   text: string
   theme: Theme
@@ -65,13 +67,14 @@ const getShadowByType = (type: ButtonTypes, disabled: boolean, theme: Theme) => 
 );
 
 const Base = styled.TouchableHighlight<{
-  type: ButtonTypes
   disabled: boolean
+  size: ButtonSizes
   theme: Theme
+  type: ButtonTypes
 }>(({
-  type, theme, disabled = false,
+  type, theme, disabled = false, size,
 }) => ({
-  ...getButtonPropsBySize(theme, 'medium'),
+  ...getButtonPropsBySize(theme, size),
   ...getButtonStyles(theme, type, disabled),
   borderRadius: getRadiusBySize(theme, 'medium'),
 }));
@@ -97,6 +100,7 @@ const ButtonComponent = ({
   disabled = false,
   textColor,
   onPress,
+  size = 'medium',
   testID = 'button',
   text,
   theme,
@@ -106,6 +110,7 @@ const ButtonComponent = ({
     activeOpacity={getOpacity10(theme)}
     disabled={disabled}
     onPress={disabled ? () => {} : onPress}
+    size={size}
     style={getShadowByType(type, disabled, theme)}
     testID={testID}
     type={type}
