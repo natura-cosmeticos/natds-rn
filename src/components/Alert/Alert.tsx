@@ -73,7 +73,7 @@ const AlertComponent = ({
         <Icon name={getIcon(type).name} ></Icon>
       </IconContent>
       <AlertContent testID={`${testID}-content`}>
-        {title && <AlertTitle>{title}</AlertTitle>}
+        {!!title && <AlertTitle>{title}</AlertTitle>}
         <AlertText>{message}</AlertText>
       </AlertContent>
     </AlertWrapper>

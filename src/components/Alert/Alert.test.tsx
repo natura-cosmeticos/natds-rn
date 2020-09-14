@@ -77,6 +77,6 @@ describe('Alert component', () => {
     const { queryByTestId } = renderAlert(render, props);
     const alertTitle = queryByTestId('alert-content')?.props?.children[0];
 
-    expect(alertTitle).toBeUndefined();
+    expect(alertTitle).toBeFalsy();
   });
 });
