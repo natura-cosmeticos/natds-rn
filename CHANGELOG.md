@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.4.0](https://github.com/natura-cosmeticos/natds-rn/compare/v2.3.0...v2.4.0) (2020-09-15)
+
+
+### Features
+
+* **button:** add support to button sizes ([8ae2297](https://github.com/natura-cosmeticos/natds-rn/commit/8ae229747e0c5192c3aa6db3493487697614a0ac))
+
 ## [2.3.0](https://github.com/natura-cosmeticos/natds-rn/compare/v2.2.1...v2.3.0) (2020-09-02)
 
 
