@@ -17,7 +17,7 @@ jest.mock('react-native/Libraries/Components/Touchable/TouchableHighlight',
   () => 'TouchableHighlight');
 
 const defaultProps = {
-  message: 'lorem ipsum',
+  message: 'A short snackbar message',
   onClose: jest.fn(),
   open: true,
   type: 'standard',
