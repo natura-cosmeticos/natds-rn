@@ -4,6 +4,7 @@
 // https://github.com/elderfo/react-native-storybook-loader.git
 
 function loadStories() {
+	require('../src/components/Avatar/Avatar.device');
 	require('../src/components/Button/Button.device');
 	require('../src/components/Card/Card.device');
 	require('../src/components/Dialog/Dialog.device');
@@ -17,6 +18,7 @@ function loadStories() {
 }
 
 const stories = [
+	'../src/components/Avatar/Avatar.device',
 	'../src/components/Button/Button.device',
 	'../src/components/Card/Card.device',
 	'../src/components/Dialog/Dialog.device',
