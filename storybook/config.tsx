@@ -7,7 +7,11 @@ import { loadStories } from './storyLoader';
 
 console.disableYellowBox = true; // eslint-disable-line no-console
 
-addDecorator(withKnobs);
+addDecorator(
+  withKnobs({
+    escapeHTML: false,
+  }),
+);
 addDecorator(story => <StoriesWrapper story={story} />);
 
 configure(() => {

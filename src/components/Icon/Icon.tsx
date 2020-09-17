@@ -5,7 +5,7 @@ import iconNames from '@naturacosmeticos/natds-icons/dist/natds-icons.json';
 import { ISizes } from '@naturacosmeticos/natds-styles';
 import { Theme, IColors, getColorByName } from '../../common/themeSelectors';
 
-export type IconColors = keyof IColors | 'default'
+export type IconColors = keyof IColors | 'default' | '#333333'
 export type IconSizes = keyof ISizes
 
 export interface IconProps {
@@ -73,7 +73,7 @@ const IconComponent = ({
       accessibilityLabel={accessibilityLabel}
       accessibilityRole="text"
       style={{
-        color: getFontColor(theme, color),
+        color: color === '#333333' ? color : getFontColor(theme, color),
         fontFamily: 'natds-icons',
         fontSize: getIconSize(theme, size),
       }}
