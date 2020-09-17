@@ -4,7 +4,6 @@ import {
   getSpacingSmall,
   getSpacingTiny,
   getRadiusBySize,
-  getColorOnPrimary,
   Theme,
 } from '../../common/themeSelectors';
 
@@ -73,7 +72,7 @@ export const AlertTitle = styled.Text<BaseAlert>(({ theme }) => ({
 }));
 
 export const AlertText = styled.Text<BaseAlert>(({ theme }) => ({
-  color: getColorOnPrimary(theme),
+  color: '#333333',
   fontSize: 16,
   letterSpacing: 0.51,
 }));
