@@ -11,25 +11,11 @@ import {
 } from './Snackbar.stories';
 
 storiesOf('Snackbar', module)
-  .add('interactive', interactive);
-
-storiesOf('Snackbar', module)
-  .add('standard', standard);
-
-storiesOf('Snackbar', module)
-  .add('info', info);
-
-storiesOf('Snackbar', module)
-  .add('warning', warning);
-
-storiesOf('Snackbar', module)
-  .add('error', error);
-
-storiesOf('Snackbar', module)
-  .add('success', success);
-
-storiesOf('Snackbar', module)
-  .add('multiline', multiline);
-
-storiesOf('Snackbar', module)
+  .add('interactive', interactive)
+  .add('standard', standard)
+  .add('info', info)
+  .add('warning', warning)
+  .add('error', error)
+  .add('success', success)
+  .add('multiline', multiline)
   .add('multiline with button', multilineWithButton);
