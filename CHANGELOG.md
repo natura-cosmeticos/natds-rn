@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.5.0](https://github.com/natura-cosmeticos/natds-rn/compare/v2.4.0...v2.5.0) (2020-09-17)
+
+
+### Features
+
+* **alert:** add Alert component ([43ecf2e](https://github.com/natura-cosmeticos/natds-rn/commit/43ecf2e3605ab951448e83d27428120ac36efef4))
+* **avatar:** add Avatar component, test and stories ([bf19f87](https://github.com/natura-cosmeticos/natds-rn/commit/bf19f875abd531062ac10ef33c86aa9a26c3bbf9))
+
 ## [2.4.0](https://github.com/natura-cosmeticos/natds-rn/compare/v2.3.0...v2.4.0) (2020-09-15)
 
 
