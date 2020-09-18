@@ -127,6 +127,7 @@ export const SnackbarComponent = ({
             type="text"
             onPress={handleClose}
             testID="natds-snackbar-button"
+            size="medium"
             />
         </SnackbarButtonWrapper>
       )}
