@@ -26,7 +26,7 @@ export const interactive = () => {
         autoHideDuration={number('auto hide duration', 5000)}
         open={open}
         onClose={() => setOpen(false)} />
-      <Button onPress={() => setOpen(!open)} title='open standard snackbar' />
+      <Button onPress={() => setOpen(!open)} title='open snackbar' />
     </View>
   );
 };
