@@ -135,4 +135,4 @@ If you want to add a new component or feature to `natds-rn` check our [contribut
 
 # License
 
-MIT
+ISC

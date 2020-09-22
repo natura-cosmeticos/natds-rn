@@ -1,7 +1,7 @@
 {
   "name": "@naturacosmeticos/natds-rn",
   "version": "2.6.0",
-  "license": "MIT",
+  "license": "ISC",
   "main": "build/lib/index.js",
   "keywords": [
     "Design System",
