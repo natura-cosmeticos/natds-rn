@@ -8,4 +8,5 @@ export * from './Icon';
 export * from './IconButton';
 export * from './ProgressIndicator';
 export * from './RadioButton';
+export * from './Snackbar';
 export * from './Tab';
