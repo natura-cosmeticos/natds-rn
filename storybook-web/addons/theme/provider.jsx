@@ -42,7 +42,7 @@ const wrapper = (getStory, storyContext, { parameters }) => {
 
   const background = disableBackground
     ? DEFAULT_BACKGROUND
-    : theme.colorTokens.colorBackground;
+    : theme.color.background;
 
   return (
     <ThemeProvider theme={theme}>

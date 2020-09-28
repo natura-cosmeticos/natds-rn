@@ -14,6 +14,7 @@ jest.mock('../../common/themeSelectors', () => (
     getColorByName: () => 'red',
     getColorOnPrimary: () => '#333333',
     getRadiusBySize: () => 8,
+    getSize: () => 24,
     getSpacingSmall: () => 16,
     getSpacingTiny: () => 8,
   }));

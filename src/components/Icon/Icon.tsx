@@ -5,8 +5,8 @@ import iconNames from '@naturacosmeticos/natds-icons/dist/natds-icons.json';
 import { Size, Theme, Color } from '@naturacosmeticos/natds-themes/react-native';
 import { getColorByName, getSize } from '../../common/themeSelectors';
 
-export type IconColors = keyof IColors | 'default' | '#333333'
-export type IconSizes = keyof ISizes
+export type IconColors = keyof Color | 'default' | '#333333'
+export type IconSizes = keyof Size
 
 export interface IconProps {
   /**

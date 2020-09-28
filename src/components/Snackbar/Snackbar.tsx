@@ -104,7 +104,7 @@ export const SnackbarComponent = ({
     <SnackbarWrapper
       type={type}
       as={Animated.View}
-      style={{ opacity: fadeAnim, ...getShadowBySize(theme, '5') }}
+      style={{ opacity: fadeAnim, ...getShadowBySize(theme, 'large') }}
       testID="natds-snackbar-wrapper"
     >
       <SnackbarText

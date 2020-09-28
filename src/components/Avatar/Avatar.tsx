@@ -10,7 +10,6 @@ import {
   Theme,
   getColorOnPrimary,
   getColorPrimary,
-  getSpacingBySize,
   getAvatarBySize,
 } from '../../common/themeSelectors';
 
@@ -84,7 +83,7 @@ interface AvatarLetter {
 }
 
 const AvatarImage = styled.Image<AvatarImage>(({ size, theme }) => ({
-  borderRadius: getSpacingBySize(size, theme) * 2,
+  borderRadius: getAvatarSize(theme, size),
   height: getAvatarSize(theme, size),
   width: getAvatarSize(theme, size),
 }));

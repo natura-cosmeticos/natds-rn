@@ -1,17 +1,17 @@
 /* eslint-disable sort-keys */
-import { Theme, checkTheme } from '..';
+import { Size } from '@naturacosmeticos/natds-themes/react-native';
+import { Theme, getSize } from '..';
 
-const getAvatarSizes = (theme: Theme) => checkTheme(theme).avatarSizes;
 
-export type AvatarSize = 'tiny'| 'small'| 'standard' | 'large' | 'huge'
+export type AvatarSize = 'tiny' | 'small' | 'standard' | 'large' | 'huge'
 
-export const getAvatarBySize = (size: string, theme: Theme) => {
+export const getAvatarBySize = (size: AvatarSize, theme: Theme) => {
   const sizes = {
-    tiny: getAvatarSizes(theme).tiny,
-    small: getAvatarSizes(theme).small,
-    standard: getAvatarSizes(theme).standard,
-    large: getAvatarSizes(theme).large,
-    huge: getAvatarSizes(theme).huge,
+    tiny: 'standard',
+    small: 'semi',
+    standard: 'semiX',
+    large: 'medium',
+    huge: 'largeXX',
   };
 
   const fontSize = {
@@ -22,5 +22,8 @@ export const getAvatarBySize = (size: string, theme: Theme) => {
     huge: '24px',
   };
 
-  return Object.assign(sizes[size], { fontSize: fontSize[size] });
+  return {
+    size: getSize(theme, sizes[size] as keyof Size),
+    fontSize: fontSize[size],
+  };
 };
