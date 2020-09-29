@@ -209,6 +209,7 @@ exports[`Tab component Should render tab component without passing any type prop
         "mediumLow": 0.16,
         "opaque": 1,
         "transparent": 0,
+        "veryHigh": 0.8,
         "veryLow": 0.08,
       },
       "overline": Object {
@@ -489,6 +490,7 @@ exports[`Tab component Should render tab component without passing any type prop
           "mediumLow": 0.16,
           "opaque": 1,
           "transparent": 0,
+          "veryHigh": 0.8,
           "veryLow": 0.08,
         },
         "overline": Object {
@@ -763,6 +765,7 @@ exports[`Tab component Should render tab component without passing any type prop
             "mediumLow": 0.16,
             "opaque": 1,
             "transparent": 0,
+            "veryHigh": 0.8,
             "veryLow": 0.08,
           },
           "overline": Object {
@@ -1047,6 +1050,7 @@ exports[`Tab component Should render tab component without passing any type prop
           "mediumLow": 0.16,
           "opaque": 1,
           "transparent": 0,
+          "veryHigh": 0.8,
           "veryLow": 0.08,
         },
         "overline": Object {
@@ -1321,6 +1325,7 @@ exports[`Tab component Should render tab component without passing any type prop
             "mediumLow": 0.16,
             "opaque": 1,
             "transparent": 0,
+            "veryHigh": 0.8,
             "veryLow": 0.08,
           },
           "overline": Object {
@@ -1605,6 +1610,7 @@ exports[`Tab component Should render tab component without passing any type prop
           "mediumLow": 0.16,
           "opaque": 1,
           "transparent": 0,
+          "veryHigh": 0.8,
           "veryLow": 0.08,
         },
         "overline": Object {
@@ -1879,6 +1885,7 @@ exports[`Tab component Should render tab component without passing any type prop
             "mediumLow": 0.16,
             "opaque": 1,
             "transparent": 0,
+            "veryHigh": 0.8,
             "veryLow": 0.08,
           },
           "overline": Object {

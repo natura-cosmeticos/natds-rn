@@ -224,6 +224,7 @@ exports[`Avatar component should render avatar component 1`] = `
           "mediumLow": 0.16,
           "opaque": 1,
           "transparent": 0,
+          "veryHigh": 0.8,
           "veryLow": 0.08,
         },
         "overline": Object {
@@ -520,6 +521,7 @@ exports[`Avatar component should render avatar component anonymous 1`] = `
           "mediumLow": 0.16,
           "opaque": 1,
           "transparent": 0,
+          "veryHigh": 0.8,
           "veryLow": 0.08,
         },
         "overline": Object {
@@ -811,6 +813,7 @@ exports[`Avatar component should render avatar component image 1`] = `
           "mediumLow": 0.16,
           "opaque": 1,
           "transparent": 0,
+          "veryHigh": 0.8,
           "veryLow": 0.08,
         },
         "overline": Object {
@@ -1104,6 +1107,7 @@ exports[`Avatar component should render avatar component letter 1`] = `
           "mediumLow": 0.16,
           "opaque": 1,
           "transparent": 0,
+          "veryHigh": 0.8,
           "veryLow": 0.08,
         },
         "overline": Object {

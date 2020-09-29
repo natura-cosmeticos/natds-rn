@@ -114,6 +114,7 @@
     "medium": 0.48,
     "mediumHigh": 0.56,
     "high": 0.64,
+    "veryHigh": 0.8,
     "opaque": 1
   },
   "size": {

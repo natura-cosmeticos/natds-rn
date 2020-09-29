@@ -2,7 +2,6 @@
 import React from 'react';
 import { View, ViewStyle } from 'react-native';
 import styled, { withTheme } from 'styled-components/native';
-import { IAvatarSizes } from '@naturacosmeticos/natds-styles';
 // @ts-ignore
 import IconAnonymous from '../../assets/images/anonymous.jpg';
 
@@ -13,7 +12,7 @@ import {
   getAvatarBySize,
 } from '../../common/themeSelectors';
 
-export type AvatarSizes = keyof IAvatarSizes;
+export type AvatarSizes = 'tiny' | 'small' | 'standard' | 'large' | 'huge';
 export type AvatarTypes = 'image' | 'letter' | 'anonymous';
 
 
@@ -56,7 +55,7 @@ const getAvatarFontSize = (theme, size) => getAvatarBySize(size, theme).fontSize
 
 const getAvatarSize = (theme, size) => getAvatarBySize(size, theme).size;
 
-const getViewStyles = (size: AvatarSizes, theme: Theme):ViewStyle => ({
+const getViewStyles = (size: AvatarSizes, theme: Theme): ViewStyle => ({
   alignItems: 'center',
   backgroundColor: getColorPrimary(theme),
   borderRadius: getAvatarSize(theme, size),
@@ -123,29 +122,29 @@ const AvatarComponent = ({
   accessibilityLabel = '',
   accessibilityHint = '',
 }: AvatarProps) => (
-  <View style={getViewStyles(size, theme)} >
-    { type === 'letter'
-      ? (
-        <AvatarLetter
-          accessibilityLabel={accessibilityLabel}
-          accessibilityHint={accessibilityHint}
-          accessibilityRole="text"
-          size={size}
-          theme={theme}
-          testID={testID}
-          type={type} >{getTextValue(text)}</AvatarLetter>
-      ) : (
-        <AvatarImage
-          accessibilityLabel={accessibilityLabel}
-          accessibilityHint={accessibilityHint}
-          testID={testID}
-          type={type}
-          source={type === 'image' ? imgSource : IconAnonymous}
-          size={size}
-          theme={theme} />
-      )
-    }
-  </View>
+    <View style={getViewStyles(size, theme)} >
+      {type === 'letter'
+        ? (
+          <AvatarLetter
+            accessibilityLabel={accessibilityLabel}
+            accessibilityHint={accessibilityHint}
+            accessibilityRole="text"
+            size={size}
+            theme={theme}
+            testID={testID}
+            type={type} >{getTextValue(text)}</AvatarLetter>
+        ) : (
+          <AvatarImage
+            accessibilityLabel={accessibilityLabel}
+            accessibilityHint={accessibilityHint}
+            testID={testID}
+            type={type}
+            source={type === 'image' ? imgSource : IconAnonymous}
+            size={size}
+            theme={theme} />
+        )
+      }
+    </View>
 );
 
 export const Avatar = withTheme(AvatarComponent);

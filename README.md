@@ -48,7 +48,7 @@ yarn add @naturacosmeticos/natds-rn
 
 **Dependencies**
 
-This package currently depend on `natds-styles` and `styled-components`. This packages will be installed automatically with the command above.
+This package currently depend on `natds-themes` and `styled-components`. This packages will be installed automatically with the command above.
 
 > If you have currently installed versions of this packages, be sure to check the installation logs for version incompatibilities
 
@@ -63,7 +63,6 @@ On your application entry point, add the `<Provider />` and choose the `theme` t
 ```javascript
 import React from 'react';
 import { ThemeProvider } from 'styled-components/native';
-import { tokens } from '@naturacosmeticos/natds-styles';
 import { buildTheme } from '@naturacosmeticos/natds-rn';
 import { App } from './app';
 
@@ -71,11 +70,10 @@ export const Main = () => {
   /**
    * The `buildTheme` function accepts three parameters:
    *
-   * tokens: `@naturacosmeticos/natds-styles` tokens
    * brand: the name of the brand to applied ('natura' | 'avon' | 'theBodyShop')
    * mode: the color scheme for the current branch ('light' | 'dark')
    */
-  const theme = buildTheme(tokens, 'natura', 'light');
+  const theme = buildTheme('natura', 'light');
 
   return (
     <ThemeProvider theme={theme}>
