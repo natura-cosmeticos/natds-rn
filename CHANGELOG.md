@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.0.0](https://github.com/natura-cosmeticos/natds-rn/compare/v2.6.0...v3.0.0) (2020-10-01)
+
+
+### ⚠ BREAKING CHANGES
+
+* The theme contract has changed. We replaced `natds-styles` with `natds-themes`. Read the migration guide [here](./docs/MigratingToV3.md)
+
+### Features
+
+* change theme library ([8f90f55](https://github.com/natura-cosmeticos/natds-rn/commit/8f90f55318fa7c632f1c9c757e292f001e701a0b))
+
 ## [2.6.0](https://github.com/natura-cosmeticos/natds-rn/compare/v2.5.0...v2.6.0) (2020-09-22)
 
 
