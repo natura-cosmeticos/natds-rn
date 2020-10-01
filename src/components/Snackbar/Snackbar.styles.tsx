@@ -1,35 +1,35 @@
 import styled from 'styled-components/native';
 import { TextProps, NativeSyntheticEvent, TargetedEvent } from 'react-native';
 import { SnackbarType } from './Snackbar';
-import { Theme } from '../../common/themeSelectors';
+import { Theme, getSpacingSmall, getRadiusBySize } from '../../common/themeSelectors';
 
 const getBackgroundColorByType = (theme: Theme, type: SnackbarType) => {
   switch (type) {
     case 'info':
-      return theme.colorTokens.colorLink;
+      return theme.color.link;
     case 'warning':
-      return theme.colorTokens.colorWarning;
+      return theme.color.warning;
     case 'error':
-      return theme.colorTokens.colorAlert;
+      return theme.color.alert;
     case 'success':
-      return theme.colorTokens.colorSuccess;
+      return theme.color.success;
     default:
-      return theme.colorTokens.colorOnSurface;
+      return theme.color.onSurface;
   }
 };
 
 export const getColorByType = (theme: Theme, type: SnackbarType) => {
   switch (type) {
     case 'info':
-      return theme.colorTokens.colorOnLink;
+      return theme.color.onLink;
     case 'warning':
-      return theme.colorTokens.colorOnWarning;
+      return theme.color.onWarning;
     case 'error':
-      return theme.colorTokens.colorOnAlert;
+      return theme.color.onAlert;
     case 'success':
-      return theme.colorTokens.colorOnSuccess;
+      return theme.color.onSuccess;
     default:
-      return theme.colorTokens.colorSurface;
+      return theme.color.surface;
   }
 };
 
@@ -65,15 +65,15 @@ interface SnackbarWrapperProps {
 export const SnackbarWrapper = styled.View<SnackbarWrapperProps>(({ theme, type }) => ({
   alignItems: 'center',
   backgroundColor: getBackgroundColorByType(theme, type),
-  borderRadius: theme.radius.medium,
+  borderRadius: getRadiusBySize(theme, 'medium'),
   bottom: 0,
   flexDirection: 'row',
   flexWrap: 'wrap',
   justifyContent: 'flex-end',
   left: 0,
-  marginBottom: theme.spacing.spacingSmall,
-  marginLeft: theme.spacing.spacingSmall,
-  marginRight: theme.spacing.spacingSmall,
+  marginBottom: getSpacingSmall(theme),
+  marginLeft: getSpacingSmall(theme),
+  marginRight: getSpacingSmall(theme),
   position: 'absolute',
   right: 0,
 }));

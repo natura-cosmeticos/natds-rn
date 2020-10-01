@@ -1,23 +1,21 @@
 import React from 'react';
 import { Text } from 'react-native';
-import { tokens } from '@naturacosmeticos/natds-styles';
 import { TokenColor, TokenMosaic } from '../../common/HelperComponents/TokenMosaic';
+import { buildTheme } from '../..';
 
 const mosaicItemRendered = (
   colorName: string, colors: Record<string, string>,
 ) => <TokenColor colorName={colorName} color={colors[colorName]} />;
 
 export const colors = ({ activeTheme, light }) => {
-  const brandColorName = `${activeTheme}${light ? 'Light' : 'Dark'}ColorTokens`;
-  const colorByTheme = tokens.colorTokens[brandColorName];
+  const mode = light ? 'light' : 'dark';
+  const brandTheme = buildTheme(activeTheme, mode);
 
-  if (!colorByTheme) return <Text>No colors found for this theme.</Text>;
-
-  delete colorByTheme.gradient;
+  if (!brandTheme) return <Text>No colors found for this theme.</Text>;
 
   return (
     <TokenMosaic
-      data={colorByTheme}
+      data={{ ...brandTheme.color }}
       itemRenderer={mosaicItemRendered}
     />
   );

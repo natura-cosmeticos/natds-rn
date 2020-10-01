@@ -7,6 +7,7 @@ import {
   getColorLowEmphasis,
   getColorOnBackground,
   getColorMediumEmphasis,
+  getSpacingTiny,
 } from '../../common/themeSelectors';
 import { RadioButtonColors } from './RadioButton';
 
@@ -38,7 +39,7 @@ export const Label = styled.Text<{ theme: Theme; disabled: boolean }>(({ theme, 
   color: disabled ? getColorLowEmphasis(theme) : getColorOnBackground(theme),
   fontSize: 14,
   letterSpacing: 0.22,
-  marginLeft: theme.spacing.spacingTiny,
+  marginLeft: getSpacingTiny(theme),
 }));
 
 

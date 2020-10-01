@@ -1687,12 +1687,10 @@
   resolved "https://registry.yarnpkg.com/@naturacosmeticos/natds-icons/-/natds-icons-0.17.0.tgz#093ced8370a7fc040d8157dc2b0829f0dffd9806"
   integrity sha512-DjBsFhOMocYccTbtbFW+JD6NSKGofm+odKm1blq9V2yEOL58+rFwlR+RelTIjel8ESVcHwQtgYKQy8YC7BerfQ==
 
-"@naturacosmeticos/natds-styles@0.5.5":
-  version "0.5.5"
-  resolved "https://registry.yarnpkg.com/@naturacosmeticos/natds-styles/-/natds-styles-0.5.5.tgz#cb32b7de3bc71bd68c66ee1f4a188f7ac98d76cc"
-  integrity sha512-o6Fp9jljqT8vbMJAOmNvfnOimAsw+vuoG3LfWt3BMUcSNZGR3B5kyC1dwgftrgCphQLUsKRlnSfZjddcQxfA6g==
-  dependencies:
-    hex-to-rgba "2.0.1"
+"@naturacosmeticos/natds-themes@^0.4.1":
+  version "0.4.1"
+  resolved "https://registry.yarnpkg.com/@naturacosmeticos/natds-themes/-/natds-themes-0.4.1.tgz#900ff504bbd137935c6e78fca67805b3ffc5e53b"
+  integrity sha512-8KDmNHTZhyZDwZvVRWhK/HpxLiog6UWNqMCHpLTIgrhWovDZv8WLazmE88MsiNdxhR675qELjfNLaYBoU+ACFg==
 
 "@netlify/open-api@^0.13.2":
   version "0.13.3"
@@ -10470,11 +10468,6 @@ hermes-engine@~0.4.0:
   version "0.4.1"
   resolved "https://registry.yarnpkg.com/hermes-engine/-/hermes-engine-0.4.1.tgz#2d02b295596298643c4d24b86687eb554db9e950"
   integrity sha512-Y3JFC8PD7eN3KpnrzrmvMAqp0IwnZrmP/oGOptvaSu33d7Zq/8b/2lHlZZkNvRl7/I1Q0umTX8TByK7zzLfTXA==
-
-hex-to-rgba@2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/hex-to-rgba/-/hex-to-rgba-2.0.1.tgz#4176977882a1cb32b83ce5ab1db6828ab84d5a13"
-  integrity sha512-5XqPJBpsEUMsseJUi2w2Hl7cHFFi3+OO10M2pzAvKB1zL6fc+koGMhmBqoDOCB4GemiRM/zvDMRIhVw6EkB8dQ==
 
 highlight.js@~9.13.0:
   version "9.13.1"

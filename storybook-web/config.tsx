@@ -3,7 +3,7 @@ import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
 import { withKnobs } from '@storybook/addon-knobs';
 import { DocsPage, DocsContainer } from '@storybook/addon-docs/blocks';
 import { addons } from '@storybook/addons';
-import { themes as dsThemes } from '@naturacosmeticos/natds-styles';
+import dsThemes from '@naturacosmeticos/natds-themes';
 import { withTheme } from './addons/theme/provider';
 import { dark, light } from './theme';
 

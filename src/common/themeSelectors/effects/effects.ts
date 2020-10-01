@@ -1,9 +1,26 @@
-import { Theme, checkTheme } from '..';
+import { Elevation, Theme } from '@naturacosmeticos/natds-themes/react-native';
+import { checkTheme } from '..';
 
 const getElevation = (theme: Theme) => checkTheme(theme).elevation;
 
-export const getShadowBySize = (theme: Theme, size: string) => getElevation(theme)[size];
+export const getShadowBySize = (theme: Theme, size: keyof Elevation) => {
+  const {
+    elevation,
+    shadowColor,
+    shadowOffsetHeight,
+    shadowOffsetWidth,
+    shadowOpacity,
+    shadowRadius,
+  } = getElevation(theme)[size];
 
-const getOpacity = (theme: Theme) => theme.opacity;
-
-export const getOpacity10 = (theme: Theme) => getOpacity(theme)[80];
+  return {
+    elevation,
+    shadowColor,
+    shadowOffset: {
+      height: shadowOffsetHeight,
+      width: shadowOffsetWidth,
+    },
+    shadowOpacity,
+    shadowRadius,
+  };
+};

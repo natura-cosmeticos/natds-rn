@@ -1,3 +1,4 @@
+import { Color } from '@naturacosmeticos/natds-themes/react-native';
 import { Theme, checkTheme } from '..';
 
 export interface IColors {
@@ -31,27 +32,27 @@ export interface IColors {
   onAlert: string;
 }
 
-const getColors = (theme: Theme) => checkTheme(theme).colorTokens;
+const getColors = (theme: Theme) => checkTheme(theme).color;
 
-export const getColorPrimary = (theme: Theme) => getColors(theme).colorPrimary;
-export const getColorOnPrimary = (theme: Theme) => getColors(theme).colorOnPrimary;
-export const getColorPrimaryLight = (theme: Theme) => getColors(theme).colorPrimaryLight;
+export const getColorPrimary = (theme: Theme) => getColors(theme).primary;
+export const getColorOnPrimary = (theme: Theme) => getColors(theme).onPrimary;
+export const getColorPrimaryLight = (theme: Theme) => getColors(theme).primaryLight;
 
-export const getColorSecondary = (theme: Theme) => getColors(theme).colorSecondary;
-export const getColorOnSecondary = (theme: Theme) => getColors(theme).colorOnSecondary;
+export const getColorSecondary = (theme: Theme) => getColors(theme).secondary;
+export const getColorOnSecondary = (theme: Theme) => getColors(theme).onSecondary;
 
-export const getColorBackground = (theme: Theme) => getColors(theme).colorBackground;
-export const getColorOnBackground = (theme: Theme) => getColors(theme).colorOnBackground;
+export const getColorBackground = (theme: Theme) => getColors(theme).background;
+export const getColorOnBackground = (theme: Theme) => getColors(theme).onBackground;
 
-export const getColorSuccess = (theme: Theme) => getColors(theme).colorSuccess;
-export const getColorOnSuccess = (theme: Theme) => getColors(theme).colorOnSuccess;
+export const getColorSuccess = (theme: Theme) => getColors(theme).success;
+export const getColorOnSuccess = (theme: Theme) => getColors(theme).onSuccess;
 
-export const getColorLowEmphasis = (theme: Theme) => getColors(theme).colorLowEmphasis;
-export const getColorMediumEmphasis = (theme: Theme) => getColors(theme).colorMediumEmphasis;
-export const getColorHighEmphasis = (theme: Theme) => getColors(theme).colorHighEmphasis;
+export const getColorLowEmphasis = (theme: Theme) => getColors(theme).lowEmphasis;
+export const getColorMediumEmphasis = (theme: Theme) => getColors(theme).mediumEmphasis;
+export const getColorHighEmphasis = (theme: Theme) => getColors(theme).highEmphasis;
 
-export const getColorSurface = (theme: Theme) => getColors(theme).colorSurface;
+export const getColorSurface = (theme: Theme) => getColors(theme).surface;
 
-export const getColorHighlight = (theme: Theme) => getColors(theme).colorHighlight;
+export const getColorHighlight = (theme: Theme) => getColors(theme).highlight;
 
-export const getColorByName = (theme: Theme, colorName: string) => getColors(theme)[`color${colorName.charAt(0).toUpperCase()}${colorName.slice(1)}`];
+export const getColorByName = (theme: Theme, colorName: keyof Color) => getColors(theme)[colorName];

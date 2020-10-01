@@ -52,126 +52,100 @@ describe('Snackbar', () => {
   });
 
   it('message is presented correctly', () => {
-    // given
     const expectedMessage = 'A snackbar message';
 
-    // when
     const { result } = setup({ message: expectedMessage });
     const element = result.queryByTestId('natds-snackbar-text');
 
-    // then
     expect(element).toHaveTextContent(expectedMessage);
   });
 
   describe('when setting a type', () => {
     it('displays a warning type correctly', () => {
-      // given
       const type = 'warning';
 
-      // when
       const { result } = setup({ type });
       const wrapperElement = result.queryByTestId('natds-snackbar-wrapper');
       const textElement = result.queryByTestId('natds-snackbar-text');
 
-      // then
-      expect(wrapperElement).toHaveStyle({ backgroundColor: theme.colorTokens.colorWarning });
-      expect(textElement).toHaveStyle({ color: theme.colorTokens.colorOnWarning });
+      expect(wrapperElement).toHaveStyle({ backgroundColor: theme.color.warning });
+      expect(textElement).toHaveStyle({ color: theme.color.onWarning });
     });
 
     it('displays a error type correctly', () => {
-      // given
       const type = 'error';
 
-      // when
       const { result } = setup({ type });
       const wrapperElement = result.queryByTestId('natds-snackbar-wrapper');
       const textElement = result.queryByTestId('natds-snackbar-text');
 
-      // then
-      expect(wrapperElement).toHaveStyle({ backgroundColor: theme.colorTokens.colorAlert });
-      expect(textElement).toHaveStyle({ color: theme.colorTokens.colorOnAlert });
+      expect(wrapperElement).toHaveStyle({ backgroundColor: theme.color.alert });
+      expect(textElement).toHaveStyle({ color: theme.color.onAlert });
     });
 
     it('displays a success type correctly', () => {
-      // given
       const type = 'success';
 
-      // when
       const { result } = setup({ type });
       const wrapperElement = result.queryByTestId('natds-snackbar-wrapper');
       const textElement = result.queryByTestId('natds-snackbar-text');
 
-      // then
-      expect(wrapperElement).toHaveStyle({ backgroundColor: theme.colorTokens.colorSuccess });
-      expect(textElement).toHaveStyle({ color: theme.colorTokens.colorOnSuccess });
+      expect(wrapperElement).toHaveStyle({ backgroundColor: theme.color.success });
+      expect(textElement).toHaveStyle({ color: theme.color.onSuccess });
     });
 
     it('displays a info type correctly', () => {
-      // given
       const type = 'info';
 
-      // when
       const { result } = setup({ type });
       const wrapperElement = result.queryByTestId('natds-snackbar-wrapper');
       const textElement = result.queryByTestId('natds-snackbar-text');
 
-      // then
-      expect(wrapperElement).toHaveStyle({ backgroundColor: theme.colorTokens.colorLink });
-      expect(textElement).toHaveStyle({ color: theme.colorTokens.colorOnLink });
+      expect(wrapperElement).toHaveStyle({ backgroundColor: theme.color.link });
+      expect(textElement).toHaveStyle({ color: theme.color.onLink });
     });
 
     it('displays a standard type correctly', () => {
-      // given
       const type = 'standard';
 
-      // when
       const { result } = setup({ type });
       const wrapperElement = result.queryByTestId('natds-snackbar-wrapper');
       const textElement = result.queryByTestId('natds-snackbar-text');
 
-      // then
-      expect(wrapperElement).toHaveStyle({ backgroundColor: theme.colorTokens.colorOnSurface });
-      expect(textElement).toHaveStyle({ color: theme.colorTokens.colorSurface });
+      expect(wrapperElement).toHaveStyle({ backgroundColor: theme.color.onSurface });
+      expect(textElement).toHaveStyle({ color: theme.color.surface });
     });
   });
 
   describe('when past a certain period of time', () => {
     it('hides snackbar automatically', () => {
-      // given
       const autoHideDuration = 5000;
 
-      // when
       const { props } = setup({ autoHideDuration });
 
       act(() => {
         jest.advanceTimersByTime(autoHideDuration);
       });
 
-      // then
       expect(props.onClose).toHaveBeenCalled();
     });
   });
 
   describe('when setting a button text', () => {
     it('displays correctly', () => {
-      // given
       const expectedButtonText = 'OK';
 
-      // when
       const { result } = setup({ buttonText: expectedButtonText });
       const element = result.queryByTestId('natds-snackbar-button');
 
-      // then
       expect(element).not.toBeNull();
       expect(element).toHaveTextContent(expectedButtonText);
     });
 
     describe('when pressing it', () => {
       it('dismisses the snackbar', async () => {
-        // given
         const expectedButtonText = 'OK';
 
-        // when
         const { props, result } = setup({ buttonText: expectedButtonText });
         const element = result.getByTestId('natds-snackbar-button');
 
@@ -179,7 +153,6 @@ describe('Snackbar', () => {
 
         // eslint-disable-next-line max-nested-callbacks
         await wait(() => {
-          // then
           expect(props.onClose).toHaveBeenCalled();
         });
       });
@@ -188,42 +161,32 @@ describe('Snackbar', () => {
 
   describe('when not setting a button text', () => {
     it('displays correctly', () => {
-      // given
-      // when
       const { result } = setup();
       const element = result.queryByTestId('natds-snackbar-button');
 
-      // then
       expect(element).toBeNull();
     });
   });
 
   describe('when setting to be open', () => {
     it('displays correctly', () => {
-      // given
-      // when
       const { result } = setup({ open: true });
       const element = result.queryByTestId('natds-snackbar-wrapper');
 
-      // then
       expect(element).not.toBeNull();
     });
 
     describe('when setting it back to be closed', () => {
       it('displays correctly', () => {
-        // given
         const { props, result } = setup({ open: true });
 
-        // when
         result.rerender(<Snackbar {...props} open={false} />);
         // eslint-disable-next-line max-nested-callbacks
         act(() => {
-          // taking into account animation duration
           jest.advanceTimersByTime(195);
         });
         const element = result.queryByTestId('natds-snackbar-wrapper');
 
-        // then
         expect(element).toBeNull();
       });
     });
@@ -231,12 +194,9 @@ describe('Snackbar', () => {
 
   describe('when setting to be closed', () => {
     it('displays correctly', () => {
-      // given
-      // when
       const { result } = setup({ open: false });
       const element = result.queryByTestId('natds-snackbar-wrapper');
 
-      // then
       expect(element).toBeNull();
     });
   });

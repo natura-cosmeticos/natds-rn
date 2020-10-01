@@ -6,7 +6,7 @@ exports[`Divider component Should render divider component fullBleed 1`] = `
     style={
       Array [
         Object {
-          "backgroundColor": "#BBBBBB",
+          "backgroundColor": "#bbbbbb",
           "height": 1,
           "marginBottom": 0,
           "marginLeft": 0,
@@ -34,7 +34,7 @@ exports[`Divider component Should render divider component inset 1`] = `
     style={
       Array [
         Object {
-          "backgroundColor": "#BBBBBB",
+          "backgroundColor": "#bbbbbb",
           "height": 1,
           "marginBottom": 0,
           "marginLeft": 0,
@@ -63,7 +63,7 @@ exports[`Divider component Should render divider component middle 1`] = `
     style={
       Array [
         Object {
-          "backgroundColor": "#BBBBBB",
+          "backgroundColor": "#bbbbbb",
           "height": 1,
           "marginBottom": 0,
           "marginLeft": 0,

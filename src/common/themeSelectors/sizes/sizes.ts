@@ -1,4 +1,5 @@
-import { Theme, checkTheme } from '..';
+import { Size, Theme } from '@naturacosmeticos/natds-themes/react-native';
+import { checkTheme, getSpacingTiny, getSpacingSmall } from '..';
 
 interface ButtonProperties {
   paddingTop: number;
@@ -8,14 +9,43 @@ interface ButtonProperties {
   minHeight: number;
 }
 
-const getButtonSizes = (theme: Theme) => checkTheme(theme).buttonSizes;
+export type ButtonSize = 'large' | 'medium' | 'small'
 
-export type Size = 'large' | 'medium' | 'small'
+const getRadiusSizes = (theme: Theme) => checkTheme(theme).borderRadius;
+
+export const getRadiusBySize = (theme: Theme, size: keyof Size) => getRadiusSizes(theme)[size];
+
+export const getSize = (theme: Theme, size: keyof Size) => checkTheme(theme).size[size];
 
 export const getButtonPropsBySize = (
-  theme: Theme, size: Size,
-): ButtonProperties => getButtonSizes(theme)[size];
+  theme: Theme, size: ButtonSize,
+): ButtonProperties => {
+  const tiny = getSpacingTiny(theme);
+  const small = getSpacingSmall(theme);
 
-const getRadiusSizes = (theme: Theme) => checkTheme(theme).radius;
+  const buttonSizes = {
+    large: {
+      minHeight: getSize(theme, 'medium'),
+      paddingBottom: small,
+      paddingLeft: small,
+      paddingRight: small,
+      paddingTop: small,
+    },
+    medium: {
+      minHeight: getSize(theme, 'semiX'),
+      paddingBottom: 12,
+      paddingLeft: small,
+      paddingRight: small,
+      paddingTop: 12,
+    },
+    small: {
+      minHeight: getSize(theme, 'semi'),
+      paddingBottom: tiny,
+      paddingLeft: tiny,
+      paddingRight: tiny,
+      paddingTop: tiny,
+    },
+  };
 
-export const getRadiusBySize = (theme: Theme, size: Size) => getRadiusSizes(theme)[size];
+  return buttonSizes[size];
+};

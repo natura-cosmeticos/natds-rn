@@ -55,9 +55,11 @@ const TabWrapperComponent = styled.View<TabWrapperProp>(({ theme }) => ({
   flexDirection: 'row',
 }));
 
-export const TabWrapper = (props: TabWrapperProp) => <TabWrapperComponent {...props} style={getShadowBySize(props.theme, '1')}>
-  {props.children}
-</TabWrapperComponent>;
+export const TabWrapper = (props: TabWrapperProp) => (
+  <TabWrapperComponent {...props} style={getShadowBySize(props.theme, 'micro')}>
+    {props.children}
+  </TabWrapperComponent>
+);
 
 export const TabButton = styled.TouchableOpacity<TabBase>(({ type, theme }) => ({
   alignItems: 'center',
