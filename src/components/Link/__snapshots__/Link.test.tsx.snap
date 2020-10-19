@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Link component should take a snapshot 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <TouchableOpacity>
+    <Text
+      style={
+        Object {
+          "color": "#227bbd",
+          "textDecorationLine": "none",
+        }
+      }
+      testID="link"
+    >
+      something
+    </Text>
+  </TouchableOpacity>
+</View>
+`;
