@@ -12,6 +12,7 @@ function loadStories() {
 	require('../src/components/Divider/Divider.device');
 	require('../src/components/Icon/Icon.device');
 	require('../src/components/IconButton/IconButton.device');
+	require('../src/components/Link/Link.device');
 	require('../src/components/ProgressIndicator/ProgressIndicator.device');
 	require('../src/components/RadioButton/RadioButton.device');
 	require('../src/components/Snackbar/Snackbar.device');
@@ -28,6 +29,7 @@ const stories = [
 	'../src/components/Divider/Divider.device',
 	'../src/components/Icon/Icon.device',
 	'../src/components/IconButton/IconButton.device',
+	'../src/components/Link/Link.device',
 	'../src/components/ProgressIndicator/ProgressIndicator.device',
 	'../src/components/RadioButton/RadioButton.device',
 	'../src/components/Snackbar/Snackbar.device',
