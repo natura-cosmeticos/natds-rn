@@ -1,4 +1,4 @@
-import { Theme, checkTheme } from '..';
+import { Theme, checkTheme } from '../theme/theme';
 
 const getSpacings = (theme: Theme) => checkTheme(theme).spacing;
 

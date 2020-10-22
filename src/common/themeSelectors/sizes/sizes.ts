@@ -1,5 +1,6 @@
 import { Size, Theme } from '@naturacosmeticos/natds-themes/react-native';
-import { checkTheme, getSpacingTiny, getSpacingSmall } from '..';
+import { checkTheme } from '../theme/theme';
+import { getSpacingTiny, getSpacingSmall } from '../spacing/spacing';
 
 interface ButtonProperties {
   paddingTop: number;

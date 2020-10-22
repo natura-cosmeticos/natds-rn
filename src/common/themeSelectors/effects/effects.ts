@@ -1,5 +1,5 @@
 import { Elevation, Theme } from '@naturacosmeticos/natds-themes/react-native';
-import { checkTheme } from '..';
+import { checkTheme } from '../theme/theme';
 
 const getElevation = (theme: Theme) => checkTheme(theme).elevation;
 

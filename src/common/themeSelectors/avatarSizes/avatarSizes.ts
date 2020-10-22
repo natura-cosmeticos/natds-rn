@@ -1,6 +1,7 @@
 /* eslint-disable sort-keys */
 import { Size } from '@naturacosmeticos/natds-themes/react-native';
-import { Theme, getSize } from '..';
+import { Theme } from '../theme/theme';
+import { getSize } from '../sizes/sizes';
 
 
 export type AvatarSize = 'tiny' | 'small' | 'standard' | 'large' | 'huge'
