@@ -1,4 +1,4 @@
-import { Theme, checkTheme } from '..';
+import { Theme, checkTheme } from '../theme/theme';
 
 const getOpacity = (theme: Theme) => checkTheme(theme).opacity;
 

@@ -1,5 +1,5 @@
 import { Color } from '@naturacosmeticos/natds-themes/react-native';
-import { Theme, checkTheme } from '..';
+import { Theme, checkTheme } from '../theme/theme';
 
 export interface IColors {
   primary: string;

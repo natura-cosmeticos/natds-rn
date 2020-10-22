@@ -5,6 +5,7 @@ module.exports = {
 
     newConfig.resolve.alias = {
       ...(config.resolve.alias || {}),
+      '../../common/Modal': 'modal-react-native-web',
       '@storybook/react-native': '@storybook/react',
       'react-native$': 'react-native-web',
       'react-native-svg': 'react-native-svg/lib/commonjs/ReactNativeSVG.web',
