@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.0.1](https://github.com/natura-cosmeticos/natds-rn/compare/v3.0.0...v3.0.1) (2020-10-22)
+
+
+### Bug Fixes
+
+* remove cyclic dependency warnings ([fa3c3e8](https://github.com/natura-cosmeticos/natds-rn/commit/fa3c3e85662f22f1ec0c5025fd299841d07a4821))
+* remove react dom error from consumer ([92606bb](https://github.com/natura-cosmeticos/natds-rn/commit/92606bb38dc1ec4ac3c8bb2d47274abbed5ac6bc))
+
 ## [3.0.0](https://github.com/natura-cosmeticos/natds-rn/compare/v2.6.0...v3.0.0) (2020-10-01)
 
 
