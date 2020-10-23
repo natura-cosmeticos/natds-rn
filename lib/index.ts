@@ -10,7 +10,6 @@ export { NatGridItem } from './components/NatGridItem';
 export { NatHeader } from './components/NatHeader';
 export { NatIcon } from './components/NatIcon';
 export { NatImage } from './components/NatImage';
-export { NatLink } from './components/NatLink';
 export { NatList } from './components/NatList';
 export { NatListItem } from './components/NatListItem';
 export { NatLogo } from './components/NatLogo';
