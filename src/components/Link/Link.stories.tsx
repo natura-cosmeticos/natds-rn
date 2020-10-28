@@ -9,7 +9,7 @@ export default {
 };
 
 const onPress = () => {
-  Alert.alert('something happend');
+  Alert.alert('something happened');
 };
 
 export const all = () => (
@@ -18,11 +18,7 @@ export const all = () => (
       The link component allows you to have a pattern for anchor text. It is
       intended to be used <Link onPress={onPress}>inside paragraphs </Link>
       and have the same text styles (size, letter spacing, etc) as the rest of
-      the{' '}
-      <Link onPress={onPress} type="underline">
-        text content
-      </Link>
-      .
+      the <Link onPress={onPress} type="underline"> text content </Link>.
     </TextWithTheme>
   </View>
 );
