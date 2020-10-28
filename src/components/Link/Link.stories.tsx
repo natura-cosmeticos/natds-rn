@@ -1,5 +1,6 @@
 import React from 'react';
-import { Text, View } from 'react-native';
+import { Alert, View } from 'react-native';
+import { TextWithTheme } from '../../common/HelperComponents/ThemeHelper.styles';
 import { Link } from './Link';
 
 export default {
@@ -7,15 +8,21 @@ export default {
   title: 'Components/Link',
 };
 
-const onPress = () => {};
+const onPress = () => {
+  Alert.alert('something happend');
+};
 
 export const all = () => (
-  <View style={{ padding: 24 }}>
-    <Link onPress={onPress}>
-      <Text>some content here</Text>
-    </Link>
-    <Link type="underline" onPress={onPress}>
-      <Text>some content here</Text>
-    </Link>
+  <View style={{ padding: 24, width: 336 }}>
+    <TextWithTheme>
+      The link component allows you to have a pattern for anchor text. It is
+      intended to be used <Link onPress={onPress}>inside paragraphs </Link>
+      and have the same text styles (size, letter spacing, etc) as the rest of
+      the{' '}
+      <Link onPress={onPress} type="underline">
+        text content
+      </Link>
+      .
+    </TextWithTheme>
   </View>
 );
