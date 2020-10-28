@@ -10,18 +10,16 @@ exports[`Link component should take a snapshot 1`] = `
     }
   }
 >
-  <TouchableOpacity>
-    <Text
-      style={
-        Object {
-          "color": "#227bbd",
-          "textDecorationLine": "none",
-        }
+  <Text
+    style={
+      Object {
+        "color": "#227bbd",
+        "textDecorationLine": "none",
       }
-      testID="link"
-    >
-      something
-    </Text>
-  </TouchableOpacity>
+    }
+    testID="link"
+  >
+    something
+  </Text>
 </View>
 `;
