@@ -55,4 +55,6 @@ export const getColorSurface = (theme: Theme) => getColors(theme).surface;
 
 export const getColorHighlight = (theme: Theme) => getColors(theme).highlight;
 
+export const getColorLink = (theme: Theme) => getColors(theme).link;
+
 export const getColorByName = (theme: Theme, colorName: keyof Color) => getColors(theme)[colorName];
