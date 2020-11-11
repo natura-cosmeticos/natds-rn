@@ -1,3 +1,7 @@
+# Natura Design System for `React-Native`
+
+[![Build Status](https://app.bitrise.io/app/2c91a0037aed90db/status.svg?token=BG3viyrEObiVtyL99gVNfQ&branch=master)](https://app.bitrise.io/app/2c91a0037aed90db) [![npm version](https://badge.fury.io/js/%40naturacosmeticos%2Fnatds-rn.svg)](https://badge.fury.io/js/%40naturacosmeticos%2Fnatds-rn) ![npm](https://img.shields.io/npm/dm/@naturacosmeticos/natds-rn?label=npm%20downloads) ![GitHub issues](https://img.shields.io/github/issues/natura-cosmeticos/natds-rn) ![NPM](https://img.shields.io/npm/l/@naturacosmeticos/natds-rn)
+
 ```
 ███╗   ██╗ █████╗ ████████╗██████╗ ███████╗      ██████╗ ███╗   ██╗
 ████╗  ██║██╔══██╗╚══██╔══╝██╔══██╗██╔════╝      ██╔══██╗████╗  ██║
@@ -7,26 +11,24 @@
 ╚═╝  ╚═══╝╚═╝  ╚═╝   ╚═╝   ╚═════╝ ╚══════╝      ╚═╝  ╚═╝╚═╝  ╚═══╝
 ```
 
-The Natura Design system for `react-native`
-
-[![Build Status](https://app.bitrise.io/app/2c91a0037aed90db/status.svg?token=BG3viyrEObiVtyL99gVNfQ&branch=master)](https://app.bitrise.io/app/2c91a0037aed90db) [![npm version](https://badge.fury.io/js/%40naturacosmeticos%2Fnatds-rn.svg)](https://badge.fury.io/js/%40naturacosmeticos%2Fnatds-rn) ![npm](https://img.shields.io/npm/dm/@naturacosmeticos/natds-rn?label=npm%20downloads) ![GitHub issues](https://img.shields.io/github/issues/natura-cosmeticos/natds-rn) ![NPM](https://img.shields.io/npm/l/@naturacosmeticos/natds-rn)
-
-:bowtie: [Check out our component docs](https://natds-rn.netlify.app/)
+### 🧩 [Check out our component docs](https://natds-rn.netlify.app/) 😎📋
 
 You can also install our sample apps in your iOS or android device, check the [information version page](https://natds-rn.netlify.app/?path=/docs/documentation-version-information--page) to get the latest versions of the sample apps
 
 > For `iOS` you will need to have your device registered as a beta tester.
-> you can request access opening an issue or at your slack channel
+> You can request access opening an issue or at your slack channel
 
 ---
 
-# Get started
+## What for
+Library with **React Native** components defined by [Natura Group Design System Team](https://zeroheight.com/28db352be/p/35bf2e-natds--natura-design-system).
 
-Our library is made to be used with `react-native` and because of this, we usume that you already have a few things setup and a `react-native` project up and running.
+## How to use
+Our library is made to be used with `react-native` and because of this, we assume you already have a few things setup and a `react-native` project up and running.
 
 If that is not the case, we strongly recommend that you finish the [get started](https://reactnative.dev/docs/getting-started) and [environment setup](https://reactnative.dev/docs/environment-setup) from the official `react-native` docs.
 
-## Prerequisites
+### Prerequisites
 
 - `node`
 - `yarn` or `npm`
@@ -34,29 +36,25 @@ If that is not the case, we strongly recommend that you finish the [get started]
   - `react@>=16.8.0`
   - `react-native@>=0.59.10`
 
-## Installation
+### How to add it as a dependency
 
 To start using the `natds-rn` components on you project, first you will need to install it
 
 ```sh
 npm install --save @naturacosmeticos/natds-rn
-
-# OR
-
+```
+*or*
+```sh
 yarn add @naturacosmeticos/natds-rn
 ```
 
-**Dependencies**
+### Dependencies
 
 This package currently depend on `natds-themes` and `styled-components`. This packages will be installed automatically with the command above.
 
 > If you have currently installed versions of this packages, be sure to check the installation logs for version incompatibilities
 
-## Usage
-
-You can edit [this live example](https://snack.expo.io/@arielwb/natds-rn:button) to test component props and theme setup
-
-### Setup the theme
+### How to setup the theme
 
 On your application entry point, add the `<Provider />` and choose the `theme` to be applied to the components
 
@@ -83,54 +81,19 @@ export const Main = () => {
 };
 ```
 
-### Using the components in your app
+You can edit [this live example](https://snack.expo.io/@arielwb/natds-rn:button) to test component props and theme setup
 
-```javascript
-import React from 'react';
-import { View, Text } from 'react-native';
-import { Button } from '@naturacosmeticos/natds-rn';
+## Getting Started
+[Start using our lib](./docs/GettingStarted.md)
 
-export const App = () => {
-  const onPress = () => console.log('I am pressed!');
+## How to contribute
 
-  return (
-    <View>
-      <Text>A page title</Text>
-      <Button onPress={onPress} text="default" type="contained" />
-    </View>
-  );
-};
-```
+If you want to add a new component or feature to `natds-rn` check our [contributing docs](./CONTRIBUTING.md) 🎉🎉
 
-## Icons
-
-We have the icons package `@naturacosmeticos/natds-icons` as a dependency of this library, so you have the font icon files available in your `node_modules` folder after installation.
-To use the fonts in your app, you need to add the font icons path to your `react-native.config.js` file:
-
-```javascript
-module.exports = {
-  assets: [
-    'node_modules/@naturacosmeticos/natds-icons/dist/fonts',
-  ],
-};
-```
-
-and the run:
-
-```shell
-npx react-native link
-```
-
-> For component detailed API and usage examples, check out the [docs](https://natds-rn.netlify.app/).
-
-# Issues
+## Issues
 
 Have an issue, need help or have a feature request? [create a issue](https://github.com/natura-cosmeticos/natds-rn/issues)
 
-# Contributing
-
-If you want to add a new component or feature to `natds-rn` check our [contributing docs](./CONTRIBUTING.md) :tada: :tada:
-
-# License
+## License
 
 ISC
