@@ -1,5 +1,5 @@
 {
-  "name": "@naturacosmeticos/natds-rn",
+  "name": "@naturacosmeticos/natds-rn-legacy",
   "version": "0.0.0-development",
   "license": "MIT",
   "main": "lib/index.js",
