@@ -18,7 +18,6 @@ if \
 then
   yarn bump:version $PRE_RELEASE
   echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/.npmrc
-  npm publish --tag $TAG_NAME
 
   if [ -z "${PRE_RELEASE}" ]
   then git push --follow-tags origin HEAD
