@@ -50,7 +50,7 @@
     "publish:pre:release": "node ./bin/release/pre-release.js",
     "publish:release": "./bin/release/release.sh",
     "publish:storybook:web": "node ./bin/netlify/deploy.js",
-    "bump:version": "standard-version",
+    "bump:version": "standard-version --releaseCommitMessageFormat 'chore(release): {{currentTag}} [ci skip]'",
     "start:clear:cache": "rm -rf /tmp/metro-* && watchman watch-del-all && yarn start:clear",
     "start:clear": "concurrently --names 'auto-import-stories,react-native' 'rnstl' 'yarn start --reset-cache'",
     "start": "concurrently --names 'auto-import-stories,react-native' 'rnstl' 'react-native start'",
