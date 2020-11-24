@@ -18,12 +18,10 @@ then
   echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/.npmrc
   npm publish --tag $TAG_NAME
 
-  if [ -z "${PRE_RELEASE}" ]; then
-    git push --follow-tags origin HEAD
+  if [ -z "${PRE_RELEASE}" ]
+  then git push --follow-tags origin HEAD
+  else git push origin HEAD
   fi
-
-  git push origin HEAD
-  git log -3
 
 else
   echo "No applicable changes since the previous tag, skipping..."
