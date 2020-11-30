@@ -8,6 +8,7 @@ PRE_RELEASE_NAME=$(node ./bin/release/getPreReleaseName.js)
 [[ $PRE_RELEASE = "" ]] && TAG_NAME="latest" || TAG_NAME=$PRE_RELEASE_NAME
 
 git checkout $BITRISE_GIT_BRANCH
+git log "$( git describe --tags --abbrev=0 )..HEAD"
 
 if \
   { git log "$( git describe --tags --abbrev=0 )..HEAD" --format='%s' | cut -d: -f1 | sort -u | sed -e 's/([^)]*)//' | grep -q -i -E '^feat|fix|perf|refactor|revert$' ; } || \
