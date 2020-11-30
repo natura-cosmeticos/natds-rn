@@ -7,6 +7,7 @@ PRE_RELEASE_NAME=$(node ./bin/release/getPreReleaseName.js)
 [[ $1 = "pre-release" ]] && PRE_RELEASE="--prerelease ${PRE_RELEASE_NAME} --skip.tag --skip.changelog" || PRE_RELEASE=""
 [[ $PRE_RELEASE = "" ]] && TAG_NAME="latest" || TAG_NAME=$PRE_RELEASE_NAME
 
+git log "$( git describe --tags --abbrev=0 )..HEAD"
 git checkout $BITRISE_GIT_BRANCH
 git log "$( git describe --tags --abbrev=0 )..HEAD"
 
