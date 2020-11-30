@@ -1,9 +1,7 @@
 /* eslint-disable max-lines */
 import React from 'react';
 import { storiesOf } from '@storybook/react-native';
-import {
-  Login, Card, Form, FriendExchange,
-} from './ScreenSamples';
+import { Login, Card, Form, FriendExchange } from './ScreenSamples';
 import { StoryNatAppBar } from './StoryNatAppBar';
 import { StoryNatAppBarSearch } from './StoryNatAppBarSearch';
 import { StoryNatHeader } from './StoryNatHeader';

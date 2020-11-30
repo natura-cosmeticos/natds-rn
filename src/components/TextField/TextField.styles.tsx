@@ -90,13 +90,11 @@ const getInputStyles = (
 ) => {
   if (disabled) {
     const style = disabledStyles(theme);
-
     return style;
   }
 
   if (feedback) {
     const style = feedbackStyles(theme, feedback);
-
     return style;
   }
 
