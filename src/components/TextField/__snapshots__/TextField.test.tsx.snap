@@ -1,0 +1,117 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TextField component should match snapshot 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "marginBottom": 16,
+          "width": "100%",
+        },
+      ]
+    }
+    testID="textField"
+  >
+    <Text
+      disabled={false}
+      state="filled"
+      style={
+        Array [
+          Object {
+            "color": "#FAFAEA",
+            "fontSize": 14,
+            "marginBottom": 5,
+          },
+        ]
+      }
+    >
+      <Text>
+        Label
+      </Text>
+    </Text>
+    <View
+      disabled={false}
+      size="small"
+      state="filled"
+      style={
+        Array [
+          Object {
+            "borderColor": "#FAF3E3",
+            "borderRadius": 4,
+            "borderStyle": "solid",
+            "borderWidth": 1,
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "paddingBottom": 0,
+            "paddingLeft": 16,
+            "paddingRight": 16,
+            "paddingTop": 0,
+          },
+        ]
+      }
+      testID="textField-inputWrapper"
+    >
+      <TextInput
+        allowFontScaling={true}
+        autoCapitalize="none"
+        autoCorrect={false}
+        disabled={false}
+        editable={true}
+        multiline={false}
+        numberOfLines={1}
+        placeholder="Placeholder"
+        placeholderTextColor="#FAFAEA"
+        rejectResponderTermination={true}
+        required={false}
+        secureTextEntry={false}
+        size="small"
+        style={
+          Array [
+            Object {
+              "alignSelf": "center",
+              "color": "#FAF3E3",
+              "flexBasis": 0,
+              "flexGrow": 1,
+              "flexShrink": 1,
+              "fontSize": 16,
+              "paddingBottom": 16,
+              "paddingTop": 16,
+              "textAlignVertical": "center",
+            },
+          ]
+        }
+        testID="textField-input"
+        type="text"
+        underlineColorAndroid="transparent"
+        value="test"
+      />
+    </View>
+    <Text
+      disabled={false}
+      state="filled"
+      style={
+        Array [
+          Object {
+            "color": "#FAFAEA",
+            "fontSize": 12,
+            "height": 20,
+            "marginBottom": 5,
+            "marginLeft": 0,
+            "marginRight": 0,
+            "marginTop": 5,
+          },
+        ]
+      }
+    />
+  </View>
+</View>
+`;

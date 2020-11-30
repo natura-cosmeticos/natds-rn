@@ -1,9 +1,7 @@
 /* eslint-disable max-lines */
 import React from 'react';
 import { storiesOf } from '@storybook/react-native';
-import {
-  Login, Card, Form, FriendExchange,
-} from './ScreenSamples';
+import { Login, Card, Form, FriendExchange } from './ScreenSamples';
 import { StoryNatAppBar } from './StoryNatAppBar';
 import { StoryNatAppBarSearch } from './StoryNatAppBarSearch';
 import { StoryNatHeader } from './StoryNatHeader';
@@ -14,7 +12,6 @@ import { StoryNatListItem } from './StoryNatListItem';
 import { StoryNatLogo } from './StoryNatLogo';
 import { StoryNatMenuItem } from './StoryNatMenuItem';
 import { StoryNatSelectInput } from './StoryNatSelectInput';
-import { StoryNatTextInput } from './StoryNatTextInput';
 import { StoryTokenSpace } from './StoryTokenSpace';
 import { StoryTokenTypography } from './StoryTokenTypography';
 import { Welcome } from './Welcome';
@@ -33,8 +30,7 @@ storiesOf('Tokens', module)
 storiesOf('Images', module)
   .add('Icons', () => <StoryNatIcon />)
   .add('Logo', () => <StoryNatLogo />);
-storiesOf('Link', module)
-  .add('All', () => <StoryNatLink />);
+storiesOf('Link', module).add('All', () => <StoryNatLink />);
 storiesOf('NatTextInput', module)
   .add('Default', () => <StoryNatTextInput type="default" />)
   .add('Error', () => <StoryNatTextInput type="error" />)
@@ -61,22 +57,17 @@ storiesOf('NatSelectInput', module)
   .add('Default', () => <StoryNatSelectInput type="default" />)
   .add('Error', () => <StoryNatSelectInput type="error" />)
   .add('Disabled', () => <StoryNatSelectInput type="disabled" />);
-storiesOf('NatMenuItem', module)
-  .add('All', () => <StoryNatMenuItem />);
+storiesOf('NatMenuItem', module).add('All', () => <StoryNatMenuItem />);
 storiesOf('NatList', module)
   .add('List', () => <StoryNatList />)
   .add('Only ListItem', () => <StoryNatListItem />);
 storiesOf('NatAppBar', module)
   .add('All', () => <StoryNatAppBar />)
   .add('Search', () => <StoryNatAppBarSearch />);
-storiesOf('FAB', module)
-  .add('All', () => <StoryFAB />);
-storiesOf('Avatar', module)
-  .add('All', () => <StoryAvatar />);
-storiesOf('NatHeader - OLD', module)
-  .add('All', () => <StoryNatHeader />);
-storiesOf('Icons', module)
-  .add('All', () => <StoryIcon />);
+storiesOf('FAB', module).add('All', () => <StoryFAB />);
+storiesOf('Avatar', module).add('All', () => <StoryAvatar />);
+storiesOf('NatHeader - OLD', module).add('All', () => <StoryNatHeader />);
+storiesOf('Icons', module).add('All', () => <StoryIcon />);
 storiesOf('Screen Samples', module)
   .add('Login', () => <Login />)
   .add('Form', () => <Form />)
