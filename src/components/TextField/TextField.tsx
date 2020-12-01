@@ -14,25 +14,44 @@ import {
 export type TextFieldStates = 'enabled' | 'focus' | 'active' | 'filled';
 
 export interface TextFieldProps {
+  // Define the size of the input: tiny | small
   size?: 'tiny' | 'small';
+  // Style the input field according to the data provided by the user to give a visual feedback about the validation of the data
   feedback?: 'error' | 'success';
+  // TextField states: 'enabled' | 'focus' | 'active' | 'filled'
   state?: TextFieldStates;
+  // Show a visual indication if the input is required: Label*
   required?: boolean;
+  // A disabled input is unusable
   disabled?: boolean;
+  // When this prop is set, the value of the input can not be changed
   readOnly?: boolean;
+  // Show a helper text bellow the input field
   helperText?: string;
+  // Id for testing
   testID?: string;
+  // Define if the input has more than one line or not
   multiline?: boolean;
+  // Number of lines the input has
   numberOfLines?: number;
+  // Type of the input
   type: 'text' | 'password';
-  theme: Theme;
+  // Descriptive text above the input field
   label: string;
+  // Input placeholder
   placeholder: string;
+  // Input value
   value: string;
+  // onChangeText event handler
   onChangeText: (ev: string) => void;
+  // Custom function to handle input focus
   onFocus?: (func: () => void) => void;
+  // Custom function to handle input blur
   onBlur?: (func: () => void) => void;
+  // onSubmitEditing handler
   onSubmitEditing: () => void;
+  // app theme
+  theme: Theme;
 }
 
 const TextFieldComponent = ({
@@ -57,22 +76,26 @@ const TextFieldComponent = ({
   onBlur,
 }: TextFieldProps) => {
   const [currentState, setCurrentState] = useState<TextFieldStates>(() => {
+    // If a state is provided, use it as the current state
     if (state) {
       return state;
     }
 
+    // If value or readOnly is truthy, set the state as filled, else set as enabled
     return value || readOnly ? 'filled' : 'enabled';
   });
 
   const handleOnFocus = (func: () => void) => {
     setCurrentState('active');
 
+    // If a custom onFocus function is provided call it
     onFocus && onFocus(func);
   };
 
   const handleOnBlur = (func: () => void) => {
     setCurrentState(value ? 'filled' : 'enabled');
 
+    // If a custom onBlur function is provided call it
     onBlur && onBlur(func);
   };
 
