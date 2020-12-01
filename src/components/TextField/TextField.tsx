@@ -1,3 +1,4 @@
+/* eslint-disable max-lines */
 import React, { useState } from 'react';
 import { Text } from 'react-native';
 import { withTheme } from 'styled-components';
@@ -14,44 +15,47 @@ import {
 export type TextFieldStates = 'enabled' | 'focus' | 'active' | 'filled';
 
 export interface TextFieldProps {
-  // Define the size of the input: tiny | small
-  size?: 'tiny' | 'small';
-  // Style the input field according to the data provided by the user to give a visual feedback about the validation of the data
-  feedback?: 'error' | 'success';
-  // TextField states: 'enabled' | 'focus' | 'active' | 'filled'
-  state?: TextFieldStates;
-  // Show a visual indication if the input is required: Label*
-  required?: boolean;
   // A disabled input is unusable
   disabled?: boolean;
-  // When this prop is set, the value of the input can not be changed
-  readOnly?: boolean;
+  // Style the input field according to the data provided by the user to give a visual feedback
+  // about the validation of the data
+  feedback?: 'error' | 'success';
   // Show a helper text bellow the input field
   helperText?: string;
-  // Id for testing
-  testID?: string;
+  // Descriptive text above the input field
+  label: string;
   // Define if the input has more than one line or not
   multiline?: boolean;
   // Number of lines the input has
   numberOfLines?: number;
-  // Type of the input
-  type: 'text' | 'password';
-  // Descriptive text above the input field
-  label: string;
-  // Input placeholder
-  placeholder: string;
-  // Input value
-  value: string;
+
+  // Custom function to handle input blur
+  onBlur?: (func: () => void) => void;
   // onChangeText event handler
   onChangeText: (ev: string) => void;
   // Custom function to handle input focus
   onFocus?: (func: () => void) => void;
-  // Custom function to handle input blur
-  onBlur?: (func: () => void) => void;
   // onSubmitEditing handler
   onSubmitEditing: () => void;
+
+  // Input placeholder
+  placeholder: string;
+  // When this prop is set, the value of the input can not be changed
+  readOnly?: boolean;
+  // Show a visual indication if the input is required: Label*
+  required?: boolean;
+  // Define the size of the input: tiny | small
+  size?: 'tiny' | 'small';
+  // TextField states: 'enabled' | 'focus' | 'active' | 'filled'
+  state?: TextFieldStates;
+  // Id for testing
+  testID?: string;
   // app theme
   theme: Theme;
+  // Type of the input
+  type: 'text' | 'password';
+  // Input value
+  value: string;
 }
 
 const TextFieldComponent = ({
@@ -89,14 +93,18 @@ const TextFieldComponent = ({
     setCurrentState('active');
 
     // If a custom onFocus function is provided call it
-    onFocus && onFocus(func);
+    if (onFocus) {
+      onFocus(func);
+    }
   };
 
   const handleOnBlur = (func: () => void) => {
     setCurrentState(value ? 'filled' : 'enabled');
 
     // If a custom onBlur function is provided call it
-    onBlur && onBlur(func);
+    if (onBlur) {
+      onBlur(func);
+    }
   };
 
   return (
@@ -115,7 +123,7 @@ const TextFieldComponent = ({
         feedback={feedback}>
         <Input
           testID={`${testID}-input`}
-          secureTextEntry={type === 'password' ? true : false}
+          secureTextEntry={type === 'password'}
           onChangeText={onChangeText}
           placeholder={placeholder}
           required={required}
@@ -129,7 +137,7 @@ const TextFieldComponent = ({
           onFocus={handleOnFocus}
           onBlur={handleOnBlur}
           onSubmitEditing={onSubmitEditing}
-          editable={readOnly || disabled ? false : true}
+          editable={readOnly || disabled}
           disabled={disabled}
         />
       </InputWrapper>

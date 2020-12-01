@@ -8,7 +8,6 @@ import {
   Wrapper,
 } from './NatSelectInput.styles';
 import { NatModalSelect } from '../NatModalSelect';
-import { NatTextInput } from '../NatTextInput';
 import { ThemeNaturaLight } from '../../themes/ThemeNaturaLight';
 
 
@@ -78,19 +77,7 @@ export const NatSelectInput = ({
         options={options}
         multiSelect={multiSelect}
       />
-      <TouchableOpacity onPress={onPressInputField}>
-        <NatTextInput
-          label={label}
-          placeholder={placeholder}
-          assistiveText={assistiveText}
-          onChangeText={onChangeValues}
-          onFocus={onPressInputField}
-          value={showSelectedOptions()}
-          size={size}
-          type={type}
-          icon={icon}
-        />
-      </TouchableOpacity>
+      <TouchableOpacity onPress={onPressInputField} />
     </Wrapper>
   );
 };

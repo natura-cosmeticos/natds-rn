@@ -1,7 +1,9 @@
 /* eslint-disable max-lines */
 import React from 'react';
 import { storiesOf } from '@storybook/react-native';
-import { Login, Card, Form, FriendExchange } from './ScreenSamples';
+import {
+  Login, Card, Form, FriendExchange,
+} from './ScreenSamples';
 import { StoryNatAppBar } from './StoryNatAppBar';
 import { StoryNatAppBarSearch } from './StoryNatAppBarSearch';
 import { StoryNatHeader } from './StoryNatHeader';
@@ -31,28 +33,6 @@ storiesOf('Images', module)
   .add('Icons', () => <StoryNatIcon />)
   .add('Logo', () => <StoryNatLogo />);
 storiesOf('Link', module).add('All', () => <StoryNatLink />);
-storiesOf('NatTextInput', module)
-  .add('Default', () => <StoryNatTextInput type="default" />)
-  .add('Error', () => <StoryNatTextInput type="error" />)
-  .add('Disabled', () => <StoryNatTextInput type="disabled" />)
-  .add('With icon - URL', () => (
-    <StoryNatTextInput
-      type="default"
-      icon={{
-        uri:
-          'https://s3-sa-east-1.amazonaws.com/somos-natura-prd/files/menus/generic_menu/img_url_tmp_generic_menu_20170822160140.png',
-      }}
-    />
-  ))
-  .add('With icon - image', () => (
-    <StoryNatTextInput type="default" icon={{ content: iconArrowLeft }} />
-  ))
-  .add('With icon - SVG', () => (
-    <StoryNatTextInput
-      type="default"
-      icon={{ svg: { name: 'filled-action-check' } }}
-    />
-  ));
 storiesOf('NatSelectInput', module)
   .add('Default', () => <StoryNatSelectInput type="default" />)
   .add('Error', () => <StoryNatSelectInput type="error" />)

@@ -1,6 +1,7 @@
+/* eslint-disable max-lines */
 import React, { useState } from 'react';
 import { View } from 'react-native';
-import { boolean, select, text as textKnob } from '@storybook/addon-knobs';
+import { select, text as textKnob } from '@storybook/addon-knobs';
 import { StoryContainer } from '../../common/HelperComponents/StoryContainer';
 import { TextField } from './TextField';
 
@@ -32,7 +33,7 @@ export const Variants = () => (
 
 export const Size = () => (
   <StoryContainer title="Sizes">
-    <View style={{ flexDirection: 'column', flex: 1 }}>
+    <View style={{ flex: 1, flexDirection: 'column' }}>
       <TextField
         type="text"
         onChangeText={onChangeText}
@@ -59,7 +60,7 @@ export const Size = () => (
 
 export const State = () => (
   <StoryContainer title="States">
-    <View style={{ flexDirection: 'column', flex: 1 }}>
+    <View style={{ flex: 1, flexDirection: 'column' }}>
       <TextField
         type="text"
         onChangeText={onChangeText}
@@ -98,7 +99,7 @@ export const State = () => (
 
 export const Feedback = () => (
   <StoryContainer title="Feedback">
-    <View style={{ flexDirection: 'column', flex: 1 }}>
+    <View style={{ flex: 1, flexDirection: 'column' }}>
       <TextField
         type="text"
         onChangeText={onChangeText}
@@ -171,7 +172,7 @@ export const ReadOnly = () => (
 
 export const HelperText = () => (
   <StoryContainer title="Helper Text">
-    <View style={{ flexDirection: 'column', flex: 1 }}>
+    <View style={{ flex: 1, flexDirection: 'column' }}>
       <TextField
         type="text"
         onChangeText={onChangeText}
@@ -196,7 +197,7 @@ export const HelperText = () => (
 
 export const Type = () => (
   <StoryContainer title="Type">
-    <View style={{ flexDirection: 'column', flex: 1 }}>
+    <View style={{ flex: 1, flexDirection: 'column' }}>
       <TextField
         type="text"
         onChangeText={onChangeText}
@@ -226,7 +227,7 @@ export const Interactive = () => {
   return (
     <StoryContainer title="Interactive">
       <TextField
-        type={select('Types', { text: 'text', password: 'password' }, 'text')}
+        type={select('Types', { password: 'password', text: 'text' }, 'text')}
         onChangeText={(ev: string) => setValue(ev)}
         onSubmitEditing={onSubmitEditing}
         label={textKnob('Text', 'Label')}

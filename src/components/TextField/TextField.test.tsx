@@ -8,36 +8,37 @@ import theme from '../../common/themeSelectors/theme/mock-theme.json';
 import { TextField, TextFieldProps } from './TextField';
 
 jest.mock('../../common/themeSelectors', () => ({
+  getColorByName: () => '#FFFFFF',
   getColorHighEmphasis: () => '#FAF3E3',
   getColorLowEmphasis: () => '#FEEEEF',
   getColorMediumEmphasis: () => '#FAFAEA',
   getColorOnPrimary: () => '#F4F4',
   getColorPrimary: () => '#FFFFFF',
   getColorPrimaryLight: () => '#BABABA',
-  getColorByName: () => '#FFFFFF',
   getColorSuccess: () => '#569a32',
   getSpacingBySize: () => 16,
 }));
 
-const renderTextField = (fn, props: TextFieldProps) =>
+const renderTextField = (fn, props: TextFieldProps) => (
   fn(
     <ThemeProvider theme={theme}>
       <TextField {...props} />
     </ThemeProvider>,
-  );
+  )
+);
 
 const defaultProps: TextFieldProps = {
   label: 'Label',
-  placeholder: 'Placeholder',
-  value: 'test',
-  theme,
-  type: 'text',
-  testID: 'textField',
-
   onChangeText: () => {},
   onSubmitEditing: () => {},
+  placeholder: 'Placeholder',
+  testID: 'textField',
+  theme,
+  type: 'text',
+  value: 'test',
 };
 
+/* eslint-disable max-statements */
 describe('TextField component', () => {
   it('should render textField with default props', () => {
     const { getByTestId } = renderTextField(render, defaultProps);
@@ -59,8 +60,8 @@ describe('TextField component', () => {
     const textFieldInput = getByTestId('textField-inputWrapper');
 
     expect(textFieldInput).toHaveStyle({
-      borderWidth: 2,
       borderColor: '#FFFFFF',
+      borderWidth: 2,
     });
   });
 
@@ -72,8 +73,8 @@ describe('TextField component', () => {
     const textFieldInput = getByTestId('textField-inputWrapper');
 
     expect(textFieldInput).toHaveStyle({
-      borderWidth: 2,
       borderColor: '#569a32',
+      borderWidth: 2,
     });
   });
 
@@ -96,8 +97,8 @@ describe('TextField component', () => {
 
     const { getByTestId } = renderTextField(render, {
       ...defaultProps,
-      onChangeText: onChangeTextMock,
       disabled: true,
+      onChangeText: onChangeTextMock,
     });
     const textFieldInput = getByTestId('textField-input');
 
@@ -125,8 +126,8 @@ describe('TextField component', () => {
 
     const { getByTestId } = renderTextField(render, {
       ...defaultProps,
-      onFocus: onFocusMock,
       disabled: true,
+      onFocus: onFocusMock,
     });
     const textFieldInput = getByTestId('textField-input');
 
@@ -154,8 +155,8 @@ describe('TextField component', () => {
 
     const { getByTestId } = renderTextField(render, {
       ...defaultProps,
-      onBlur: onBlurMock,
       disabled: true,
+      onBlur: onBlurMock,
     });
     const textFieldInput = getByTestId('textField-input');
 

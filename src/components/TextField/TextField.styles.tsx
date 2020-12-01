@@ -1,11 +1,14 @@
+/* eslint-disable max-lines */
+/* eslint-disable implicit-arrow-linebreak */
+/* eslint-disable object-curly-newline */
 import styled from 'styled-components/native';
 import {
   Theme,
+  getColorByName,
   getColorHighEmphasis,
   getColorLowEmphasis,
   getColorMediumEmphasis,
   getColorPrimary,
-  getColorByName,
   getColorSuccess,
   getSpacingBySize,
 } from '../../common/themeSelectors';
@@ -14,9 +17,9 @@ import { TextFieldStates } from './TextField';
 
 const disabledStyles = (theme: Theme) => {
   const style = {
-    color: getColorLowEmphasis(theme),
-    borderColor: getColorLowEmphasis(theme),
     border: '1px',
+    borderColor: getColorLowEmphasis(theme),
+    color: getColorLowEmphasis(theme),
   };
 
   return style;
@@ -24,15 +27,15 @@ const disabledStyles = (theme: Theme) => {
 
 const feedbackStyles = (theme: Theme, feedback: string) => {
   const style = {
-    success: {
-      color: getColorSuccess(theme),
-      borderColor: getColorSuccess(theme),
-      border: '2px',
-    },
     error: {
-      color: getColorByName(theme, 'alert'),
-      borderColor: getColorByName(theme, 'alert'),
       border: '2px',
+      borderColor: getColorByName(theme, 'alert'),
+      color: getColorByName(theme, 'alert'),
+    },
+    success: {
+      border: '2px',
+      borderColor: getColorSuccess(theme),
+      color: getColorSuccess(theme),
     },
   };
 
@@ -41,25 +44,25 @@ const feedbackStyles = (theme: Theme, feedback: string) => {
 
 const stateStyles = (theme: Theme, state: TextFieldStates) => {
   const style = {
-    enabled: {
-      color: getColorMediumEmphasis(theme),
-      borderColor: getColorLowEmphasis(theme),
-      border: '1px',
-    },
-    focus: {
-      color: getColorMediumEmphasis(theme),
-      borderColor: getColorPrimary(theme),
-      border: '2px',
-    },
     active: {
-      color: getColorMediumEmphasis(theme),
-      borderColor: getColorPrimary(theme),
       border: '2px',
+      borderColor: getColorPrimary(theme),
+      color: getColorMediumEmphasis(theme),
+    },
+    enabled: {
+      border: '1px',
+      borderColor: getColorLowEmphasis(theme),
+      color: getColorMediumEmphasis(theme),
     },
     filled: {
-      color: getColorMediumEmphasis(theme),
-      borderColor: getColorHighEmphasis(theme),
       border: '1px',
+      borderColor: getColorHighEmphasis(theme),
+      color: getColorMediumEmphasis(theme),
+    },
+    focus: {
+      border: '2px',
+      borderColor: getColorPrimary(theme),
+      color: getColorMediumEmphasis(theme),
     },
   };
 
@@ -74,15 +77,18 @@ const getInputStyles = (
 ) => {
   if (disabled) {
     const style = disabledStyles(theme);
+
     return style;
   }
 
   if (feedback) {
     const style = feedbackStyles(theme, feedback);
+
     return style;
   }
 
   const style = stateStyles(theme, state);
+
   return style;
 };
 
