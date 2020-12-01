@@ -47,6 +47,7 @@ export interface TextFieldProps extends TextInputProps {
    * Number of lines the input has
    */
   numberOfLines?: number;
+<<<<<<< HEAD
   /**
    * onBlur event handler
    */
@@ -98,6 +99,35 @@ export interface TextFieldProps extends TextInputProps {
   /**
    * Input value
    */
+=======
+
+  // Custom function to handle input blur
+  onBlur?: (func: () => void) => void;
+  // onChangeText event handler
+  onChangeText: (ev: string) => void;
+  // Custom function to handle input focus
+  onFocus?: (func: () => void) => void;
+  // onSubmitEditing handler
+  onSubmitEditing: () => void;
+
+  // Input placeholder
+  placeholder: string;
+  // When this prop is set, the value of the input can not be changed
+  readOnly?: boolean;
+  // Show a visual indication if the input is required: Label*
+  required?: boolean;
+  // Define the size of the input: tiny | small
+  size?: 'tiny' | 'small';
+  // TextField states: 'enabled' | 'focus' | 'active' | 'filled'
+  state?: TextFieldStates;
+  // Id for testing
+  testID?: string;
+  // app theme
+  theme: Theme;
+  // Type of the input
+  type: 'text' | 'password';
+  // Input value
+>>>>>>> 74f181a... refactor: fixed lint errors
   value: string;
 }
 
