@@ -7,7 +7,9 @@ PRE_RELEASE_NAME=$(node ./bin/release/getPreReleaseName.js)
 [[ $1 = "pre-release" ]] && PRE_RELEASE="--prerelease ${PRE_RELEASE_NAME} --skip.tag --skip.changelog" || PRE_RELEASE=""
 [[ $PRE_RELEASE = "" ]] && TAG_NAME="latest" || TAG_NAME=$PRE_RELEASE_NAME
 
+git log "$( git describe --tags --abbrev=0 )..HEAD"
 git checkout $BITRISE_GIT_BRANCH
+git log "$( git describe --tags --abbrev=0 )..HEAD"
 
 if \
   { git log "$( git describe --tags --abbrev=0 )..HEAD" --format='%s' | cut -d: -f1 | sort -u | sed -e 's/([^)]*)//' | grep -q -i -E '^feat|fix|perf|refactor|revert$' ; } || \
@@ -18,11 +20,11 @@ then
   echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/.npmrc
   npm publish --tag $TAG_NAME
 
-  if [ -z "${PRE_RELEASE}" ]; then
-    git push --tags
+  if [ -z "${PRE_RELEASE}" ]
+  then git push --follow-tags origin HEAD
+  else git push origin HEAD
   fi
 
-  git push
 else
   echo "No applicable changes since the previous tag, skipping..."
 fi
