@@ -23,6 +23,7 @@ exports[`TextField component should match snapshot 1`] = `
   >
     <Text
       disabled={false}
+      size="small"
       state="filled"
       style={
         Array [
@@ -65,13 +66,13 @@ exports[`TextField component should match snapshot 1`] = `
         autoCapitalize="none"
         autoCorrect={false}
         disabled={false}
-        editable={false}
+        editable={true}
+        label="Label"
         multiline={false}
         numberOfLines={1}
         placeholder="Placeholder"
         placeholderTextColor="#FAFAEA"
         rejectResponderTermination={true}
-        required={false}
         secureTextEntry={false}
         size="small"
         style={
@@ -97,6 +98,7 @@ exports[`TextField component should match snapshot 1`] = `
     </View>
     <Text
       disabled={false}
+      size="small"
       state="filled"
       style={
         Array [

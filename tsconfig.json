@@ -7,7 +7,7 @@
       "es5",
       "es6",
       "es7",
-      "es2017"
+      "es2017",
     ],
     "sourceMap": true,
     "allowJs": true,
@@ -25,7 +25,7 @@
     "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true,
     "experimentalDecorators": true,
-    "emitDecoratorMetadata": true
+    "emitDecoratorMetadata": true,
   },
   "include": [
     "types/**/*",

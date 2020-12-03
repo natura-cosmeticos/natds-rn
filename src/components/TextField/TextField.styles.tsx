@@ -1,6 +1,5 @@
 /* eslint-disable max-lines */
-/* eslint-disable implicit-arrow-linebreak */
-/* eslint-disable object-curly-newline */
+
 import styled from 'styled-components/native';
 import {
   Theme,
@@ -13,7 +12,20 @@ import {
   getSpacingBySize,
 } from '../../common/themeSelectors';
 
-import { TextFieldStates } from './TextField';
+import { TextFieldStates, TextFieldProps as TextField } from './TextField';
+
+interface TextFieldProps {
+  feedback: string | undefined;
+  theme: Theme;
+  state: TextFieldStates;
+  disabled: boolean;
+  size: 'tiny' | 'small';
+}
+
+interface AttrsProps {
+  theme: Theme;
+  disabled: boolean;
+}
 
 const disabledStyles = (theme: Theme) => {
   const style = {
@@ -97,20 +109,32 @@ export const Wrapper = styled.View`
   margin-bottom: 16px;
 `;
 
-export const Label = styled.Text`
+export const Label = styled.Text<TextFieldProps>`
   font-size: 14px;
   margin-bottom: 5px;
 
-  color: ${({ state, feedback, disabled, theme }) =>
-    getInputStyles(state, feedback, disabled, theme).color};
+  color: ${({
+    state,
+    feedback,
+    disabled,
+    theme,
+  }) => getInputStyles(state, feedback, disabled, theme).color};
 `;
 
-export const InputWrapper = styled.View`
-  border: ${({ state, feedback, disabled, theme }) =>
-    getInputStyles(state, feedback, disabled, theme).border};
+export const InputWrapper = styled.View<TextFieldProps>`
+  border: ${({
+    state,
+    feedback,
+    disabled,
+    theme,
+  }) => getInputStyles(state, feedback, disabled, theme).border};
 
-  border-color: ${({ state, feedback, disabled, theme }) =>
-    getInputStyles(state, feedback, disabled, theme).borderColor};
+  border-color: ${({
+    state,
+    feedback,
+    disabled,
+    theme,
+  }) => getInputStyles(state, feedback, disabled, theme).borderColor};
 
   padding: 0 ${({ theme, size }) => getSpacingBySize(size, theme)}px;
 
@@ -119,27 +143,31 @@ export const InputWrapper = styled.View`
   justify-content: space-between;
 `;
 
-export const Input = styled.TextInput.attrs(({ theme, disabled }) => ({
+export const Input = styled.TextInput.attrs<AttrsProps>(({ theme, disabled }) => ({
   placeholderTextColor: disabled
     ? getColorLowEmphasis(theme)
     : getColorMediumEmphasis(theme),
-}))`
+}))<TextField>`
   font-size: 16px;
   flex: 1;
   align-self: center;
 
   text-align-vertical: ${({ multiline }) => (multiline ? 'top' : 'center')};
-  padding-top: ${({ theme, size }) => getSpacingBySize(size, theme)}px;
-  padding-bottom: ${({ theme, size }) => getSpacingBySize(size, theme)}px;
+  padding-top: ${({ theme, size = 'small' }) => getSpacingBySize(size, theme)}px;
+  padding-bottom: ${({ theme, size = 'small' }) => getSpacingBySize(size, theme)}px;
 
   color: ${({ theme }) => getColorHighEmphasis(theme)};
 `;
 
-export const HelperText = styled.Text`
+export const HelperText = styled.Text<TextFieldProps>`
   margin: 5px 0;
   font-size: 12px;
   height: 20px;
 
-  color: ${({ state, feedback, disabled, theme }) =>
-    getInputStyles(state, feedback, disabled, theme).color};
+  color: ${({
+    state,
+    feedback,
+    disabled,
+    theme,
+  }) => getInputStyles(state, feedback, disabled, theme).color};
 `;

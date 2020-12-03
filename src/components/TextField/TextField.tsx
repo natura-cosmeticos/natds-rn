@@ -1,6 +1,8 @@
 /* eslint-disable max-lines */
+/* eslint-disable complexity */
+/* eslint-disable no-unneeded-ternary */
 import React, { useState } from 'react';
-import { Text } from 'react-native';
+import { Text, TextInputProps } from 'react-native';
 import { withTheme } from 'styled-components';
 import { Theme } from '../../common/themeSelectors';
 
@@ -14,7 +16,7 @@ import {
 
 export type TextFieldStates = 'enabled' | 'focus' | 'active' | 'filled';
 
-export interface TextFieldProps {
+export interface TextFieldProps extends TextInputProps {
   // A disabled input is unusable
   disabled?: boolean;
   // Style the input field according to the data provided by the user to give a visual feedback
@@ -29,12 +31,12 @@ export interface TextFieldProps {
   // Number of lines the input has
   numberOfLines?: number;
 
-  // Custom function to handle input blur
-  onBlur?: (func: () => void) => void;
+  // onBlur event handler
+  onBlur?: (func) => void;
   // onChangeText event handler
   onChangeText: (ev: string) => void;
-  // Custom function to handle input focus
-  onFocus?: (func: () => void) => void;
+  // onFocus event handler
+  onFocus?: (func) => void;
   // onSubmitEditing handler
   onSubmitEditing: () => void;
 
@@ -58,7 +60,7 @@ export interface TextFieldProps {
   value: string;
 }
 
-const TextFieldComponent = ({
+const TextFieldComponent: React.FC<TextFieldProps> = ({
   size = 'small',
   testID = 'textField',
   required = false,
@@ -74,11 +76,12 @@ const TextFieldComponent = ({
   label,
   placeholder,
   value,
-  onChangeText,
-  onSubmitEditing,
-  onFocus,
   onBlur,
-}: TextFieldProps) => {
+  onChangeText,
+  onFocus,
+  onSubmitEditing,
+  ...props
+}) => {
   const [currentState, setCurrentState] = useState<TextFieldStates>(() => {
     // If a state is provided, use it as the current state
     if (state) {
@@ -89,19 +92,17 @@ const TextFieldComponent = ({
     return value || readOnly ? 'filled' : 'enabled';
   });
 
-  const handleOnFocus = (func: () => void) => {
+  const handleOnFocus = (func) => {
     setCurrentState('active');
 
-    // If a custom onFocus function is provided call it
     if (onFocus) {
       onFocus(func);
     }
   };
 
-  const handleOnBlur = (func: () => void) => {
+  const handleOnBlur = (func) => {
     setCurrentState(value ? 'filled' : 'enabled');
 
-    // If a custom onBlur function is provided call it
     if (onBlur) {
       onBlur(func);
     }
@@ -110,7 +111,7 @@ const TextFieldComponent = ({
   return (
     <Wrapper testID={testID}>
       {label !== '' && (
-        <Label disabled={disabled} state={currentState} feedback={feedback}>
+        <Label disabled={disabled} state={currentState} feedback={feedback} size={size}>
           <Text>{required ? `${label}*` : label}</Text>
         </Label>
       )}
@@ -126,23 +127,25 @@ const TextFieldComponent = ({
           secureTextEntry={type === 'password'}
           onChangeText={onChangeText}
           placeholder={placeholder}
-          required={required}
           size={size}
           value={value}
           autoCapitalize="none"
           autoCorrect={false}
           multiline={multiline}
           numberOfLines={numberOfLines}
-          type={type}
           onFocus={handleOnFocus}
           onBlur={handleOnBlur}
           onSubmitEditing={onSubmitEditing}
-          editable={readOnly || disabled}
+          editable={disabled || readOnly ? false : true}
           disabled={disabled}
+          feedback={feedback}
+          type={type}
+          label={label}
+          {...props}
         />
       </InputWrapper>
 
-      <HelperText disabled={disabled} feedback={feedback} state={currentState}>
+      <HelperText disabled={disabled} feedback={feedback} state={currentState} size={size}>
         {helperText !== '' && <Text>{helperText}</Text>}
       </HelperText>
     </Wrapper>
