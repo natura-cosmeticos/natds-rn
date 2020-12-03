@@ -38,7 +38,7 @@ export interface TextFieldProps extends TextInputProps {
   // onFocus event handler
   onFocus?: (func) => void;
   // onSubmitEditing handler
-  onSubmitEditing: () => void;
+  onSubmitEditing?: () => void;
 
   // Input placeholder
   placeholder: string;
@@ -111,7 +111,11 @@ const TextFieldComponent: React.FC<TextFieldProps> = ({
   return (
     <Wrapper testID={testID}>
       {label !== '' && (
-        <Label disabled={disabled} state={currentState} feedback={feedback} size={size}>
+        <Label
+          disabled={disabled}
+          state={currentState}
+          feedback={feedback}
+          size={size}>
           <Text>{required ? `${label}*` : label}</Text>
         </Label>
       )}
@@ -145,7 +149,11 @@ const TextFieldComponent: React.FC<TextFieldProps> = ({
         />
       </InputWrapper>
 
-      <HelperText disabled={disabled} feedback={feedback} state={currentState} size={size}>
+      <HelperText
+        disabled={disabled}
+        feedback={feedback}
+        state={currentState}
+        size={size}>
         {helperText !== '' && <Text>{helperText}</Text>}
       </HelperText>
     </Wrapper>
