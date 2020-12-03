@@ -108,7 +108,7 @@ export interface TextFieldProps extends TextInputProps {
   // onFocus event handler
   onFocus?: (func) => void;
   // onSubmitEditing handler
-  onSubmitEditing: () => void;
+  onSubmitEditing?: () => void;
 
   // Input placeholder
   placeholder: string;
