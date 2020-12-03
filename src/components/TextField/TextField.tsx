@@ -101,12 +101,12 @@ export interface TextFieldProps extends TextInputProps {
    */
 =======
 
-  // Custom function to handle input blur
-  onBlur?: (func: () => void) => void;
+  // onBlur event handler
+  onBlur?: (func) => void;
   // onChangeText event handler
   onChangeText: (ev: string) => void;
-  // Custom function to handle input focus
-  onFocus?: (func: () => void) => void;
+  // onFocus event handler
+  onFocus?: (func) => void;
   // onSubmitEditing handler
   onSubmitEditing: () => void;
 
