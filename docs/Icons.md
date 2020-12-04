@@ -18,7 +18,7 @@ and then run:
 npx react-native link
 ```
 
-After this, you can use our `Icon` component to display this icons. It receives `color`, `name` and `size` as props, using our tokens and the icon names provided.
+After this, you can use our `Icon` component to display those icons. It receives `color`, `name` and `size` as props, using our Size and Color tokens, and the icon names provided.
 
 To find out more about those you can check:
 - [Color tokens](https://xd.adobe.com/view/f66ea4ed-358a-4d49-9276-2b813655253f-a33d/screen/2a6fb13c-32e0-4f4c-8fe5-dc2ef0d0fe72/)
