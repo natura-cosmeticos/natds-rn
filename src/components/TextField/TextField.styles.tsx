@@ -3,7 +3,7 @@
 import styled from 'styled-components/native';
 import {
   Theme,
-  getColorByName,
+  getColorAlert,
   getColorHighEmphasis,
   getColorLowEmphasis,
   getColorMediumEmphasis,
@@ -41,8 +41,8 @@ const feedbackStyles = (theme: Theme, feedback: string) => {
   const style = {
     error: {
       border: '2px',
-      borderColor: getColorByName(theme, 'alert'),
-      color: getColorByName(theme, 'alert'),
+      borderColor: getColorAlert(theme),
+      color: getColorAlert(theme),
     },
     success: {
       border: '2px',

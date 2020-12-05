@@ -7,7 +7,7 @@ import theme from '../../common/themeSelectors/theme/mock-theme.json';
 import { TextField, TextFieldProps } from './TextField';
 
 jest.mock('../../common/themeSelectors', () => ({
-  getColorByName: () => '#FFFFFF',
+  getColorAlert: () => '#FFFFFF',
   getColorHighEmphasis: () => '#FAF3E3',
   getColorLowEmphasis: () => '#FEEEEF',
   getColorMediumEmphasis: () => '#FAFAEA',

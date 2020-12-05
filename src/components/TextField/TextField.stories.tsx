@@ -9,7 +9,7 @@ export default {
   component: TextField,
   parameters: {
     componentSubtitle:
-      'TextField allow users to take actions, and make choices, with a single tap.',
+      'TextField let users enter and edit text.',
   },
   title: 'Components|TextField',
 };
@@ -230,10 +230,10 @@ export const Interactive = () => {
         type={select('Types', { password: 'password', text: 'text' }, 'text')}
         onChangeText={(ev: string) => setValue(ev)}
         onSubmitEditing={onSubmitEditing}
-        label={textKnob('Text', 'Label')}
-        placeholder="Placeholder"
+        label={textKnob('Label', 'Label')}
+        placeholder={textKnob('Placeholder', 'Placeholder')}
         value={value}
-        helperText="Helper Text"
+        helperText={textKnob('HelperText', 'HelperText')}
       />
     </StoryContainer>
   );
