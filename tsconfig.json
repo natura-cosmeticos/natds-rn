@@ -7,7 +7,7 @@
       "es5",
       "es6",
       "es7",
-      "es2017",
+      "es2017"
     ],
     "sourceMap": true,
     "allowJs": true,
