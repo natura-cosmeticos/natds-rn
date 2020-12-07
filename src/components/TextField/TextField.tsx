@@ -17,50 +17,86 @@ import {
 export type TextFieldStates = 'enabled' | 'focus' | 'active' | 'filled';
 
 export interface TextFieldProps extends TextInputProps {
-  // A disabled input is unusable
+  /**
+   * A disabled input is unusable
+   */
   disabled?: boolean;
-  // Style the input field according to the data provided by the user to give a visual feedback
-  // about the validation of the data
+  /**
+   * Style the input field according to the data  provided by the user to give a visual feedback
+   * about the validation of the data
+   */
   feedback?: 'error' | 'success';
-  // Show a helper text bellow the input field
+  /**
+   * Show a helper text below the input field
+   */
   helperText?: string;
-  // Descriptive text above the input field
+  /**
+   * Descriptive text above the input field
+   */
   label: string;
-  // Define if the input has more than one line or not
+  /**
+   * Define if the input has more than one line or not
+   */
   multiline?: boolean;
-  // Number of lines the input has
+  /**
+   * Number of lines the input has
+   */
   numberOfLines?: number;
-
-  // onBlur event handler
+  /**
+   * onBlur event handler
+   */
   onBlur?: (func) => void;
-  // onChangeText event handler
+  /**
+   * onChangeText event handler
+   */
   onChangeText: (ev: string) => void;
-  // onFocus event handler
+  /**
+   * onFocus event handler
+   */
   onFocus?: (func) => void;
-  // onSubmitEditing handler
+  /**
+   * onSubmitEditing handler
+   */
   onSubmitEditing?: () => void;
-
-  // Input placeholder
+  /**
+   * Input placeholder
+   */
   placeholder: string;
-  // When this prop is set, the value of the input can not be changed
+  /**
+   * When this prop is set, the value of the input can not be changed
+   */
   readOnly?: boolean;
-  // Show a visual indication if the input is required: Label*
+  /**
+   * Show a visual indication if the input is required: Label*
+   */
   required?: boolean;
-  // Define the size of the input: tiny | small
+  /**
+   * Define the size of the input: tiny | small
+   */
   size?: 'tiny' | 'small';
-  // TextField states: 'enabled' | 'focus' | 'active' | 'filled'
+  /**
+   * TextField states: 'enabled' | 'focus' | 'active' | 'filled'
+   */
   state?: TextFieldStates;
-  // Id for testing
+  /**
+   * Id for testing
+   */
   testID?: string;
-  // app theme
+  /**
+   * app theme
+   */
   theme: Theme;
-  // Type of the input
+  /**
+   * Type of the input
+   */
   type: 'text' | 'password';
-  // Input value
+  /**
+   * Input value
+   */
   value: string;
 }
 
-const TextFieldComponent: React.FC<TextFieldProps> = ({
+const TextFieldComponent = ({
   size = 'small',
   testID = 'textField',
   required = false,
@@ -81,7 +117,7 @@ const TextFieldComponent: React.FC<TextFieldProps> = ({
   onFocus,
   onSubmitEditing,
   ...props
-}) => {
+}: TextFieldProps) => {
   const [currentState, setCurrentState] = useState<TextFieldStates>(() => {
     // If a state is provided, use it as the current state
     if (state) {
