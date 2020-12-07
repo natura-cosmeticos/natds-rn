@@ -15,7 +15,7 @@ jest.mock('../../common/themeSelectors', () => ({
   getColorPrimary: () => '#FFFFFF',
   getColorPrimaryLight: () => '#BABABA',
   getColorSuccess: () => '#569a32',
-  getSpacingBySize: () => 16,
+  getSize: () => 56,
 }));
 
 const renderTextField = (fn, props: TextFieldProps) => (

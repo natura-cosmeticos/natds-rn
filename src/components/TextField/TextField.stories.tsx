@@ -8,8 +8,7 @@ import { TextField } from './TextField';
 export default {
   component: TextField,
   parameters: {
-    componentSubtitle:
-      'TextField let users enter and edit text.',
+    componentSubtitle: 'TextField let users enter and edit text.',
   },
   title: 'Components|TextField',
 };
@@ -17,128 +16,152 @@ export default {
 const onChangeText = (ev: string) => {};
 const onSubmitEditing = () => {};
 
-export const Variants = () => (
-  <StoryContainer title="Variants">
-    <TextField
-      type="text"
-      onChangeText={onChangeText}
-      onSubmitEditing={onSubmitEditing}
-      label="Label"
-      placeholder="Placeholder"
-      value=""
-      helperText="Helper Text"
-    />
-  </StoryContainer>
-);
+export const Variants = () => {
+  const [value, setValue] = useState('');
 
-export const Size = () => (
-  <StoryContainer title="Sizes">
-    <View style={{ flex: 1, flexDirection: 'column' }}>
+  return (
+    <StoryContainer title="Variants">
       <TextField
         type="text"
-        onChangeText={onChangeText}
+        onChangeText={(ev: string) => setValue(ev)}
         onSubmitEditing={onSubmitEditing}
         label="Label"
         placeholder="Placeholder"
-        value=""
-        size="tiny"
+        value={value}
         helperText="Helper Text"
       />
+    </StoryContainer>
+  );
+};
 
+export const Size = () => {
+  const [firstValue, setFirstValue] = useState('');
+  const [secondValue, setSecondValue] = useState('');
+
+  return (
+    <StoryContainer title="Sizes">
+      <View style={{ flex: 1, flexDirection: 'column' }}>
+        <TextField
+          type="text"
+          onChangeText={(ev: string) => setFirstValue(ev)}
+          onSubmitEditing={onSubmitEditing}
+          label="Label"
+          placeholder="Placeholder"
+          value={firstValue}
+          size="small"
+          helperText="Helper Text"
+        />
+
+        <TextField
+          type="text"
+          onChangeText={(ev: string) => setSecondValue(ev)}
+          onSubmitEditing={onSubmitEditing}
+          label="Label"
+          placeholder="Placeholder"
+          value={secondValue}
+          helperText="Helper Text"
+        />
+      </View>
+    </StoryContainer>
+  );
+};
+
+export const State = () => {
+  const [firstValue, setFirstValue] = useState('');
+  const [secondValue, setSecondValue] = useState('');
+  const [thirdValue, setThirdValue] = useState('Hello World');
+
+  return (
+    <StoryContainer title="States">
+      <View style={{ flex: 1, flexDirection: 'column' }}>
+        <TextField
+          type="text"
+          onChangeText={(ev: string) => setFirstValue(ev)}
+          onSubmitEditing={onSubmitEditing}
+          label="Enabled"
+          placeholder="Placeholder"
+          value={firstValue}
+          state="enabled"
+          helperText="Helper Text"
+        />
+
+        <TextField
+          type="text"
+          onChangeText={(ev: string) => setSecondValue(ev)}
+          onSubmitEditing={onSubmitEditing}
+          label="Active"
+          placeholder="Placeholder"
+          value={secondValue}
+          state="active"
+          helperText="Helper Text"
+        />
+
+        <TextField
+          type="text"
+          onChangeText={(ev: string) => setThirdValue(ev)}
+          onSubmitEditing={onSubmitEditing}
+          label="Filled"
+          placeholder="Placeholder"
+          value={thirdValue}
+          state="filled"
+          helperText="Helper Text"
+        />
+      </View>
+    </StoryContainer>
+  );
+};
+
+export const Feedback = () => {
+  const [firstValue, setFirstValue] = useState('');
+  const [secondValue, setSecondValue] = useState('');
+
+  return (
+    <StoryContainer title="Feedback">
+      <View style={{ flex: 1, flexDirection: 'column' }}>
+        <TextField
+          type="text"
+          onChangeText={(ev: string) => setFirstValue(ev)}
+          onSubmitEditing={onSubmitEditing}
+          label="Label"
+          placeholder="Placeholder"
+          value={firstValue}
+          feedback="success"
+          helperText="Helper Text"
+        />
+
+        <TextField
+          type="text"
+          onChangeText={(ev: string) => setSecondValue(ev)}
+          onSubmitEditing={onSubmitEditing}
+          label="Label"
+          placeholder="Placeholder"
+          value={secondValue}
+          feedback="error"
+          helperText="Helper Text"
+        />
+      </View>
+    </StoryContainer>
+  );
+};
+
+export const Required = () => {
+  const [value, setValue] = useState('');
+
+  return (
+    <StoryContainer title="Required">
       <TextField
         type="text"
-        onChangeText={onChangeText}
+        onChangeText={(ev: string) => setValue(ev)}
         onSubmitEditing={onSubmitEditing}
         label="Label"
         placeholder="Placeholder"
-        value=""
+        value={value}
+        required
         helperText="Helper Text"
       />
-    </View>
-  </StoryContainer>
-);
-
-export const State = () => (
-  <StoryContainer title="States">
-    <View style={{ flex: 1, flexDirection: 'column' }}>
-      <TextField
-        type="text"
-        onChangeText={onChangeText}
-        onSubmitEditing={onSubmitEditing}
-        label="Enabled"
-        placeholder="Placeholder"
-        value=""
-        state="enabled"
-        helperText="Helper Text"
-      />
-
-      <TextField
-        type="text"
-        onChangeText={onChangeText}
-        onSubmitEditing={onSubmitEditing}
-        label="Active"
-        placeholder="Placeholder"
-        value=""
-        state="active"
-        helperText="Helper Text"
-      />
-
-      <TextField
-        type="text"
-        onChangeText={onChangeText}
-        onSubmitEditing={onSubmitEditing}
-        label="Filled"
-        placeholder="Placeholder"
-        value="Hello World"
-        state="filled"
-        helperText="Helper Text"
-      />
-    </View>
-  </StoryContainer>
-);
-
-export const Feedback = () => (
-  <StoryContainer title="Feedback">
-    <View style={{ flex: 1, flexDirection: 'column' }}>
-      <TextField
-        type="text"
-        onChangeText={onChangeText}
-        onSubmitEditing={onSubmitEditing}
-        label="Label"
-        placeholder="Placeholder"
-        value=""
-        feedback="success"
-        helperText="Helper Text"
-      />
-
-      <TextField
-        type="text"
-        onChangeText={onChangeText}
-        onSubmitEditing={onSubmitEditing}
-        label="Label"
-        placeholder="Placeholder"
-        value=""
-        feedback="error"
-        helperText="Helper Text"
-      />
-    </View>
-  </StoryContainer>
-);
-
-export const Required = () => (
-  <StoryContainer title="Required">
-    <TextField
-      type="text"
-      onChangeText={onChangeText}
-      onSubmitEditing={onSubmitEditing}
-      label="Label"
-      placeholder="Placeholder"
-      value=""
-      required
-      helperText="Helper Text"
-    />
-  </StoryContainer>
-);
+    </StoryContainer>
+  );
+};
 
 export const Disabled = () => (
   <StoryContainer title="Disabled">
@@ -170,56 +193,66 @@ export const ReadOnly = () => (
   </StoryContainer>
 );
 
-export const HelperText = () => (
-  <StoryContainer title="Helper Text">
-    <View style={{ flex: 1, flexDirection: 'column' }}>
-      <TextField
-        type="text"
-        onChangeText={onChangeText}
-        onSubmitEditing={onSubmitEditing}
-        label="Label"
-        placeholder="Placeholder"
-        value=""
-        helperText="Helper Text"
-      />
+export const HelperText = () => {
+  const [firstValue, setFirstValue] = useState('');
+  const [secondValue, setSecondValue] = useState('');
 
-      <TextField
-        type="text"
-        onChangeText={onChangeText}
-        onSubmitEditing={onSubmitEditing}
-        label="Label"
-        placeholder="Placeholder"
-        value=""
-      />
-    </View>
-  </StoryContainer>
-);
+  return (
+    <StoryContainer title="Helper Text">
+      <View style={{ flex: 1, flexDirection: 'column' }}>
+        <TextField
+          type="text"
+          onChangeText={(ev: string) => setFirstValue(ev)}
+          onSubmitEditing={onSubmitEditing}
+          label="Label"
+          placeholder="Placeholder"
+          value={firstValue}
+          helperText="Helper Text"
+        />
 
-export const Type = () => (
-  <StoryContainer title="Type">
-    <View style={{ flex: 1, flexDirection: 'column' }}>
-      <TextField
-        type="text"
-        onChangeText={onChangeText}
-        onSubmitEditing={onSubmitEditing}
-        label="Label"
-        placeholder="Placeholder"
-        value="Text"
-        helperText="Helper Text"
-      />
+        <TextField
+          type="text"
+          onChangeText={(ev: string) => setSecondValue(ev)}
+          onSubmitEditing={onSubmitEditing}
+          label="Label"
+          placeholder="Placeholder"
+          value={secondValue}
+        />
+      </View>
+    </StoryContainer>
+  );
+};
 
-      <TextField
-        type="password"
-        onChangeText={onChangeText}
-        onSubmitEditing={onSubmitEditing}
-        label="Label"
-        placeholder="Placeholder"
-        value="password"
-        helperText="Helper Text"
-      />
-    </View>
-  </StoryContainer>
-);
+export const Type = () => {
+  const [firstValue, setFirstValue] = useState('Text');
+  const [secondValue, setSecondValue] = useState('Password');
+
+  return (
+    <StoryContainer title="Type">
+      <View style={{ flex: 1, flexDirection: 'column' }}>
+        <TextField
+          type="text"
+          onChangeText={(ev: string) => setFirstValue(ev)}
+          onSubmitEditing={onSubmitEditing}
+          label="Label"
+          placeholder="Placeholder"
+          value={firstValue}
+          helperText="Helper Text"
+        />
+
+        <TextField
+          type="password"
+          onChangeText={(ev: string) => setSecondValue(ev)}
+          onSubmitEditing={onSubmitEditing}
+          label="Label"
+          placeholder="Placeholder"
+          value={secondValue}
+          helperText="Helper Text"
+        />
+      </View>
+    </StoryContainer>
+  );
+};
 
 export const Interactive = () => {
   const [value, setValue] = useState('');

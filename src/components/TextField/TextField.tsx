@@ -73,7 +73,7 @@ export interface TextFieldProps extends TextInputProps {
   /**
    * Define the size of the input: tiny | small
    */
-  size?: 'tiny' | 'small';
+  size?: 'small' | 'regular';
   /**
    * TextField states: 'enabled' | 'focus' | 'active' | 'filled'
    */
@@ -97,7 +97,7 @@ export interface TextFieldProps extends TextInputProps {
 }
 
 const TextFieldComponent = ({
-  size = 'small',
+  size = 'regular',
   testID = 'textField',
   required = false,
   disabled = false,

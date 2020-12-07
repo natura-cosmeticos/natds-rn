@@ -9,7 +9,7 @@ import {
   getColorMediumEmphasis,
   getColorPrimary,
   getColorSuccess,
-  getSpacingBySize,
+  getSize,
 } from '../../common/themeSelectors';
 
 import { TextFieldStates, TextFieldProps as TextField } from './TextField';
@@ -19,7 +19,7 @@ interface TextFieldProps {
   theme: Theme;
   state: TextFieldStates;
   disabled: boolean;
-  size: 'tiny' | 'small';
+  size: 'small' | 'regular';
 }
 
 interface AttrsProps {
@@ -104,6 +104,12 @@ const getInputStyles = (
   return style;
 };
 
+const getHeight = (size, theme) => {
+  const sizeName = size === 'regular' ? 'mediumX' : 'medium';
+
+  return getSize(theme, sizeName);
+};
+
 export const Wrapper = styled.View`
   width: 100%;
   margin-bottom: 16px;
@@ -136,7 +142,9 @@ export const InputWrapper = styled.View<TextFieldProps>`
     theme,
   }) => getInputStyles(state, feedback, disabled, theme).borderColor};
 
-  padding: 0 ${({ theme, size }) => getSpacingBySize(size, theme)}px;
+  padding: 0 16px;
+
+  height: ${({ theme, size = 'regular' }) => getHeight(size, theme)}px;
 
   border-radius: 4px;
   flex-direction: row;
@@ -153,8 +161,6 @@ export const Input = styled.TextInput.attrs<AttrsProps>(({ theme, disabled }) =>
   align-self: center;
 
   text-align-vertical: ${({ multiline }) => (multiline ? 'top' : 'center')};
-  padding-top: ${({ theme, size = 'small' }) => getSpacingBySize(size, theme)}px;
-  padding-bottom: ${({ theme, size = 'small' }) => getSpacingBySize(size, theme)}px;
 
   color: ${({ theme }) => getColorHighEmphasis(theme)};
 `;

@@ -23,7 +23,7 @@ exports[`TextField component should match snapshot 1`] = `
   >
     <Text
       disabled={false}
-      size="small"
+      size="regular"
       state="filled"
       style={
         Array [
@@ -41,7 +41,7 @@ exports[`TextField component should match snapshot 1`] = `
     </Text>
     <View
       disabled={false}
-      size="small"
+      size="regular"
       state="filled"
       style={
         Array [
@@ -51,6 +51,7 @@ exports[`TextField component should match snapshot 1`] = `
             "borderStyle": "solid",
             "borderWidth": 1,
             "flexDirection": "row",
+            "height": 56,
             "justifyContent": "space-between",
             "paddingBottom": 0,
             "paddingLeft": 16,
@@ -72,7 +73,7 @@ exports[`TextField component should match snapshot 1`] = `
         placeholderTextColor="#FAFAEA"
         rejectResponderTermination={true}
         secureTextEntry={false}
-        size="small"
+        size="regular"
         style={
           Array [
             Object {
@@ -82,8 +83,6 @@ exports[`TextField component should match snapshot 1`] = `
               "flexGrow": 1,
               "flexShrink": 1,
               "fontSize": 16,
-              "paddingBottom": 16,
-              "paddingTop": 16,
               "textAlignVertical": "center",
             },
           ]
@@ -96,7 +95,7 @@ exports[`TextField component should match snapshot 1`] = `
     </View>
     <Text
       disabled={false}
-      size="small"
+      size="regular"
       state="filled"
       style={
         Array [
