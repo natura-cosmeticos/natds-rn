@@ -17,6 +17,7 @@ function loadStories() {
 	require('../src/components/RadioButton/RadioButton.device');
 	require('../src/components/Snackbar/Snackbar.device');
 	require('../src/components/Tab/Tab.device');
+	require('../src/components/TextField/TextField.device');
 	require('../src/tokens/Tokens.device');
 }
 
@@ -34,6 +35,7 @@ const stories = [
 	'../src/components/RadioButton/RadioButton.device',
 	'../src/components/Snackbar/Snackbar.device',
 	'../src/components/Tab/Tab.device',
+	'../src/components/TextField/TextField.device',
 	'../src/tokens/Tokens.device'
 ];
 
