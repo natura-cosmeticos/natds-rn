@@ -3,7 +3,6 @@ import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 
 import { NatAppBar } from '../NatAppBar';
-import { NatTextInput } from '../NatTextInput';
 import { HeaderWrapper } from './NatAppBarSearch.styles';
 
 export const NatAppBarSearch = ({
@@ -35,18 +34,7 @@ export const NatAppBarSearch = ({
     setInputSearch(text);
   };
 
-  const getInput = () => (
-    <NatTextInput
-      label=""
-      placeholder={title}
-      onChangeText={changeInputSearch}
-      value={inputSearch}
-      size="normal"
-      type="none"
-      icon={null}
-      onSubmitEditing={submitCommand}
-    />
-  );
+  const getInput = () => {};
 
   useEffect(() => {
     if (inputSearch.length > 0) {
@@ -78,7 +66,7 @@ export const NatAppBarSearch = ({
         iconRight={{ svg: { name: iconRightLocal } }}
         onPressLeft={() => onPressLeft()}
         onPressRight={localPressRight}
-        node={getInput()}
+        // node={getInput()}
       />
     </HeaderWrapper>
   );

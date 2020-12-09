@@ -47,6 +47,9 @@ export const getColorOnBackground = (theme: Theme) => getColors(theme).onBackgro
 export const getColorSuccess = (theme: Theme) => getColors(theme).success;
 export const getColorOnSuccess = (theme: Theme) => getColors(theme).onSuccess;
 
+export const getColorAlert = (theme: Theme) => getColors(theme).alert;
+export const getColorOnAlert = (theme: Theme) => getColors(theme).onAlert;
+
 export const getColorLowEmphasis = (theme: Theme) => getColors(theme).lowEmphasis;
 export const getColorMediumEmphasis = (theme: Theme) => getColors(theme).mediumEmphasis;
 export const getColorHighEmphasis = (theme: Theme) => getColors(theme).highEmphasis;
