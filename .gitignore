@@ -82,3 +82,6 @@ storybook-web/static/dist/*
 # Vim
 *.swp
 *.swo
+
+# storybook folder for s3 deploy
+public
