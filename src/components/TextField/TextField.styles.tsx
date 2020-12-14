@@ -19,7 +19,8 @@ interface TextFieldProps {
   theme: Theme;
   state: TextFieldStates;
   disabled: boolean;
-  size: 'small' | 'regular';
+  size?: 'small' | 'regular';
+  numberOfLines?: number;
 }
 
 interface AttrsProps {
@@ -104,15 +105,20 @@ const getInputStyles = (
   return style;
 };
 
-const getHeight = (size, theme) => {
+const getHeight = (size, theme, numberOfLines) => {
   const sizeName = size === 'regular' ? 'mediumX' : 'medium';
+  const sizeInPixels = getSize(theme, sizeName);
 
-  return getSize(theme, sizeName);
+  if (numberOfLines) {
+    return numberOfLines * sizeInPixels;
+  }
+
+  return sizeInPixels;
 };
 
 export const Wrapper = styled.View`
   width: 100%;
-  margin-bottom: 16px;
+  margin-bottom: 5px;
 `;
 
 export const Label = styled.Text<TextFieldProps>`
@@ -144,29 +150,32 @@ export const InputWrapper = styled.View<TextFieldProps>`
 
   padding: 0 16px;
 
-  height: ${({ theme, size = 'regular' }) => getHeight(size, theme)}px;
+  height: ${({ theme, size = 'regular', numberOfLines }) => getHeight(size, theme, numberOfLines)}px;
 
   border-radius: 4px;
   flex-direction: row;
   justify-content: space-between;
 `;
 
-export const Input = styled.TextInput.attrs<AttrsProps>(({ theme, disabled }) => ({
-  placeholderTextColor: disabled
-    ? getColorLowEmphasis(theme)
-    : getColorMediumEmphasis(theme),
-}))<TextField>`
+export const Input = styled.TextInput.attrs<AttrsProps>(
+  ({ theme, disabled }) => ({
+    placeholderTextColor: disabled
+      ? getColorLowEmphasis(theme)
+      : getColorMediumEmphasis(theme),
+  }),
+)<TextField>`
   font-size: 16px;
   flex: 1;
   align-self: center;
 
   text-align-vertical: ${({ multiline }) => (multiline ? 'top' : 'center')};
+  height: ${({ theme, size = 'regular', numberOfLines }) => getHeight(size, theme, numberOfLines)}px;
 
   color: ${({ theme }) => getColorHighEmphasis(theme)};
 `;
 
 export const HelperText = styled.Text<TextFieldProps>`
-  margin: 5px 0;
+  margin-top: 5px;
   font-size: 12px;
   height: 20px;
 
