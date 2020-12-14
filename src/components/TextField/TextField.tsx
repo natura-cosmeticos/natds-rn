@@ -161,6 +161,7 @@ const TextFieldComponent: React.RefForwardingComponent<
 
   const inputElementRef = useRef<any>(null);
 
+  // Call the .focus() function from the passed reference
   useImperativeHandle(ref, () => ({
     focus() {
       inputElementRef.current.focus();
