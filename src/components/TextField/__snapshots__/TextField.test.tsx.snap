@@ -14,7 +14,7 @@ exports[`TextField component should match snapshot 1`] = `
     style={
       Array [
         Object {
-          "marginBottom": 16,
+          "marginBottom": 5,
           "width": "100%",
         },
       ]
@@ -23,7 +23,6 @@ exports[`TextField component should match snapshot 1`] = `
   >
     <Text
       disabled={false}
-      size="regular"
       state="filled"
       style={
         Array [
@@ -41,6 +40,7 @@ exports[`TextField component should match snapshot 1`] = `
     </Text>
     <View
       disabled={false}
+      numberOfLines={1}
       size="regular"
       state="filled"
       style={
@@ -83,6 +83,7 @@ exports[`TextField component should match snapshot 1`] = `
               "flexGrow": 1,
               "flexShrink": 1,
               "fontSize": 16,
+              "height": 56,
               "textAlignVertical": "center",
             },
           ]
@@ -95,7 +96,6 @@ exports[`TextField component should match snapshot 1`] = `
     </View>
     <Text
       disabled={false}
-      size="regular"
       state="filled"
       style={
         Array [
@@ -103,9 +103,6 @@ exports[`TextField component should match snapshot 1`] = `
             "color": "#FAFAEA",
             "fontSize": 12,
             "height": 20,
-            "marginBottom": 5,
-            "marginLeft": 0,
-            "marginRight": 0,
             "marginTop": 5,
           },
         ]
