@@ -14,7 +14,7 @@ exports[`TextField component should match snapshot 1`] = `
     style={
       Array [
         Object {
-          "marginBottom": 5,
+          "marginBottom": 2,
           "width": "100%",
         },
       ]
