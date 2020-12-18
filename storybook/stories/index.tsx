@@ -9,8 +9,6 @@ import { StoryNatAppBarSearch } from './StoryNatAppBarSearch';
 import { StoryNatHeader } from './StoryNatHeader';
 import { StoryNatIcon } from './StoryNatIcon';
 import { StoryNatLink } from './StoryNatLink';
-import { StoryNatList } from './StoryNatList';
-import { StoryNatListItem } from './StoryNatListItem';
 import { StoryNatLogo } from './StoryNatLogo';
 import { StoryNatMenuItem } from './StoryNatMenuItem';
 import { StoryNatSelectInput } from './StoryNatSelectInput';
@@ -38,9 +36,6 @@ storiesOf('NatSelectInput', module)
   .add('Error', () => <StoryNatSelectInput type="error" />)
   .add('Disabled', () => <StoryNatSelectInput type="disabled" />);
 storiesOf('NatMenuItem', module).add('All', () => <StoryNatMenuItem />);
-storiesOf('NatList', module)
-  .add('List', () => <StoryNatList />)
-  .add('Only ListItem', () => <StoryNatListItem />);
 storiesOf('NatAppBar', module)
   .add('All', () => <StoryNatAppBar />)
   .add('Search', () => <StoryNatAppBarSearch />);
