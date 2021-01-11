@@ -11,8 +11,7 @@ jest.mock('../../common/themeSelectors', () => ({
   getColorHighEmphasis: () => '#FAF3E3',
   getColorLowEmphasis: () => '#FEEEEF',
   getColorPrimary: () => '#FFFFFF',
-  getSpacingNone: () => 0,
-  getSpacingStandard: () => 10,
+  getSpacingTiny: () => 10,
 }));
 
 const renderList = (fn, props: ListProps) => (

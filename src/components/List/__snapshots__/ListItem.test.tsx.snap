@@ -92,16 +92,10 @@ exports[`ListItem component Should render ListItem component correctly: ListItem
           Object {
             "backgroundColor": "#FEEEEF",
             "height": 1,
-            "marginBottom": 0,
-            "marginLeft": 0,
-            "marginRight": 0,
-            "marginTop": 0,
             "width": "100%",
           },
         ]
       }
-      testID="divider"
-      type="fullBleed"
     />
   </View>
 </View>

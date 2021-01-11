@@ -4,6 +4,8 @@ import {
   getColorBackground,
   getColorHighEmphasis,
   getColorLowEmphasis,
+  getSpacingTiny,
+  Theme,
 } from '../../common/themeSelectors';
 
 interface HeaderProps {
@@ -22,6 +24,28 @@ interface TitleProps {
 interface IconProps {
   position: string;
 }
+
+interface DividerContainerProps {
+  dividerType?: 'full-bleed' | 'inset' | 'middle';
+  theme: Theme;
+}
+
+export const dividerContainerStyles = ({
+  dividerType = 'full-bleed',
+  theme,
+}: DividerContainerProps) => {
+  const styles = {
+    inset: {
+      marginLeft: getSpacingTiny(theme),
+    },
+    middle: {
+      marginLeft: getSpacingTiny(theme),
+      marginRight: getSpacingTiny(theme),
+    },
+  };
+
+  return styles[dividerType];
+};
 
 export const HeaderWrapper = styled.View<HeaderProps>`
   flex: 1;
@@ -66,4 +90,10 @@ export const TouchableOpacity = styled.TouchableOpacity`
   justify-content: center;
   flex: 1;
   align-self: stretch;
+`;
+
+export const Divider = styled.View`
+  background-color: ${({ theme }) => getColorLowEmphasis(theme)};
+  height: 1;
+  width: 100%;
 `;

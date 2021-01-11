@@ -1,10 +1,10 @@
+/* eslint-disable max-lines */
 import React from 'react';
 import { View } from 'react-native';
 import { withTheme } from 'styled-components';
 
 import { Theme } from '../../common/themeSelectors';
 import { Icon } from '../Icon';
-import { Divider } from '../Divider';
 
 import {
   HeaderWrapper,
@@ -12,6 +12,8 @@ import {
   IconPress,
   TouchableOpacity,
   HeaderTitleView,
+  dividerContainerStyles,
+  Divider,
 } from './ListItem.styles';
 
 export interface ListItemProps {
@@ -30,7 +32,7 @@ export interface ListItemProps {
   /**
    * Divider's type options
    */
-  dividerType?: 'fullBleed' | 'inset' | 'middle';
+  dividerType?: 'full-bleed' | 'inset' | 'middle';
   /**
    * Wether show or not the left icon
    */
@@ -93,7 +95,7 @@ const ListItemComponent = ({
     throw new Error('Title should not be an empty string');
   }
 
-  const renderIcon = (iconData, iconPress, position) => {
+  const renderIcon = (iconData, iconPress, position, disabledIcon) => {
     let styleCustom = {};
 
     if (position === 'right') {
@@ -107,8 +109,13 @@ const ListItemComponent = ({
         <IconPress
           testID={`${testID}-icon-${position}`}
           onPress={iconPress}
+          disabled={disabledIcon}
           position={position}>
-          <Icon color={disabled ? 'lowEmphasis' : 'default'} size="standard" name={iconData} />
+          <Icon
+            color={disabledIcon ? 'lowEmphasis' : 'default'}
+            size="standard"
+            name={iconData}
+          />
         </IconPress>
       </View>
     );
@@ -127,20 +134,29 @@ const ListItemComponent = ({
         accessibilityRole="header"
         testID={testID}
         active={active}>
-        {!hideIconLeft && renderIcon(iconLeft, onPressLeft, 'left')}
+        {!hideIconLeft && renderIcon(iconLeft, onPressLeft, 'left', disabled)}
 
         <HeaderTitleView
           hideIconLeft={hideIconLeft}
           hideIconRight={hideIconRight}>
-          <TouchableOpacity disabled={disabled} onPress={localPress} testID={`${testID}-title`}>
-            <HeaderTitle disabled={disabled} accessibilityLabel={`${title}`}>{title}</HeaderTitle>
+          <TouchableOpacity
+            disabled={disabled}
+            onPress={localPress}
+            testID={`${testID}-title`}>
+            <HeaderTitle disabled={disabled} accessibilityLabel={`${title}`}>
+              {title}
+            </HeaderTitle>
           </TouchableOpacity>
         </HeaderTitleView>
 
-        {!hideIconRight && renderIcon(iconRight, onPressRight, 'right')}
+        {!hideIconRight && renderIcon(iconRight, onPressRight, 'right', disabled)}
       </HeaderWrapper>
 
-      {divider && <Divider type={dividerType} />}
+      {divider && (
+        <View style={dividerContainerStyles({ dividerType, theme })}>
+          <Divider />
+        </View>
+      )}
     </>
   );
 };

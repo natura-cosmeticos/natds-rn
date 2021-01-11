@@ -13,8 +13,7 @@ jest.mock('../../common/themeSelectors', () => ({
   getColorLowEmphasis: () => '#FEEEEF',
   getColorPrimary: () => '#FFFFFF',
   getSize: () => 50,
-  getSpacingNone: () => 0,
-  getSpacingStandard: () => 10,
+  getSpacingTiny: () => 10,
 }));
 
 jest.mock(

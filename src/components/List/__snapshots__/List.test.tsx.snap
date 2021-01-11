@@ -95,16 +95,10 @@ exports[`List component Should render List component correctly: List snapshot 1`
             Object {
               "backgroundColor": "#FEEEEF",
               "height": 1,
-              "marginBottom": 0,
-              "marginLeft": 0,
-              "marginRight": 0,
-              "marginTop": 0,
               "width": "100%",
             },
           ]
         }
-        testID="divider"
-        type="fullBleed"
       />
     </View>
     <View
@@ -189,16 +183,10 @@ exports[`List component Should render List component correctly: List snapshot 1`
             Object {
               "backgroundColor": "#FEEEEF",
               "height": 1,
-              "marginBottom": 0,
-              "marginLeft": 0,
-              "marginRight": 0,
-              "marginTop": 0,
               "width": "100%",
             },
           ]
         }
-        testID="divider"
-        type="fullBleed"
       />
     </View>
     <View
@@ -283,16 +271,10 @@ exports[`List component Should render List component correctly: List snapshot 1`
             Object {
               "backgroundColor": "#FEEEEF",
               "height": 1,
-              "marginBottom": 0,
-              "marginLeft": 0,
-              "marginRight": 0,
-              "marginTop": 0,
               "width": "100%",
             },
           ]
         }
-        testID="divider"
-        type="fullBleed"
       />
     </View>
     <View
@@ -377,16 +359,10 @@ exports[`List component Should render List component correctly: List snapshot 1`
             Object {
               "backgroundColor": "#FEEEEF",
               "height": 1,
-              "marginBottom": 0,
-              "marginLeft": 0,
-              "marginRight": 0,
-              "marginTop": 0,
               "width": "100%",
             },
           ]
         }
-        testID="divider"
-        type="fullBleed"
       />
     </View>
   </ScrollView>
