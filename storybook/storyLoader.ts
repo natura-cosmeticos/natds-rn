@@ -8,6 +8,7 @@ function loadStories() {
 	require('../src/components/Avatar/Avatar.device');
 	require('../src/components/Button/Button.device');
 	require('../src/components/Card/Card.device');
+	require('../src/components/Checkbox/Checkbox.device');
 	require('../src/components/Dialog/Dialog.device');
 	require('../src/components/Divider/Divider.device');
 	require('../src/components/Icon/Icon.device');
@@ -26,6 +27,7 @@ const stories = [
 	'../src/components/Avatar/Avatar.device',
 	'../src/components/Button/Button.device',
 	'../src/components/Card/Card.device',
+	'../src/components/Checkbox/Checkbox.device',
 	'../src/components/Dialog/Dialog.device',
 	'../src/components/Divider/Divider.device',
 	'../src/components/Icon/Icon.device',
