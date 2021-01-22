@@ -22,6 +22,7 @@ const styles = {
 
 export const StoryNatAppBar = () => {
   const logo = () => (<NatLogo name="logo-natura-horizontal" width={150} height={56} />);
+  const logoAvon = () => (<NatLogo name="logo-avon" width={150} height={56} />);
 
   return (
     <SafeAreaView style={styles.defaultScreen}>
@@ -100,6 +101,13 @@ export const StoryNatAppBar = () => {
             title="Exclusive"
             showIconLeft={false}
             showIconRight={false}
+            onPress={() => Alert.alert('press')}
+          />
+          <View style={{ height: 60 }} />
+          <NatAppBar
+            title="Avon"
+            node={logoAvon()}
+            theme="avon"
             onPress={() => Alert.alert('press')}
           />
         </ScrollView>
