@@ -7,15 +7,18 @@ import React, {
   useImperativeHandle,
   forwardRef,
 } from 'react';
-import { Text, TextInputProps } from 'react-native';
+import { Text, TextInputProps, View } from 'react-native';
 import { withTheme } from 'styled-components';
+
 import { Theme } from '../../common/themeSelectors';
+import { Icon } from '../Icon';
 
 import {
   Wrapper,
   InputWrapper,
   Input,
   Label,
+  IconPress,
   HelperText,
 } from './TextField.styles';
 
@@ -142,6 +145,9 @@ const TextFieldComponent: React.RefForwardingComponent<
     // If value or readOnly is truthy, set the state as filled, else set as enabled
     return value || readOnly ? 'filled' : 'enabled';
   });
+  const [showPassword, setShowPassword] = useState(() => (type === 'password' ? true : false));
+
+  const inputElementRef = useRef<any>(null);
 
   const handleOnFocus = (func) => {
     setCurrentState('active');
@@ -159,14 +165,37 @@ const TextFieldComponent: React.RefForwardingComponent<
     }
   };
 
-  const inputElementRef = useRef<any>(null);
-
   // Call the .focus() function from the passed reference
   useImperativeHandle(ref, () => ({
     focus() {
       inputElementRef.current.focus();
     },
   }));
+
+  const renderPasswordIcon = () => (
+    <View style={{
+      height: '100%',
+      justifyContent: 'center',
+      position: 'absolute',
+      right: 0,
+    }}>
+      <IconPress
+        testID={`${testID}-icon-password`}
+        onPress={() => {
+          if (showPassword) {
+            setShowPassword(false);
+          } else {
+            setShowPassword(true);
+          }
+        }}>
+        <Icon
+          color='default'
+          size="standard"
+          name='outlined-action-visibility'
+        />
+      </IconPress>
+    </View>
+  );
 
   return (
     <Wrapper testID={testID}>
@@ -186,7 +215,7 @@ const TextFieldComponent: React.RefForwardingComponent<
         <Input
           ref={inputElementRef}
           testID={`${testID}-input`}
-          secureTextEntry={type === 'password'}
+          secureTextEntry={showPassword}
           onChangeText={onChangeText}
           placeholder={placeholder}
           size={size}
@@ -203,6 +232,7 @@ const TextFieldComponent: React.RefForwardingComponent<
           label={label}
           {...props}
         />
+        {type === 'password' && renderPasswordIcon()}
       </InputWrapper>
 
       <HelperText disabled={disabled} feedback={feedback} state={currentState}>

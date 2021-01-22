@@ -174,6 +174,13 @@ export const Input = styled.TextInput.attrs<AttrsProps>(
   color: ${({ theme }) => getColorHighEmphasis(theme)};
 `;
 
+export const IconPress = styled.TouchableOpacity`
+  align-self: center;
+  /* flex: 1; */
+  /* padding-top: 15px; */
+  padding-right: 16px;
+`;
+
 export const HelperText = styled.Text<TextFieldProps>`
   margin-top: 5px;
   font-size: 12px;

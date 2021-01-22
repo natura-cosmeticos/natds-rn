@@ -8,6 +8,7 @@ import { TextField, TextFieldProps } from './TextField';
 
 jest.mock('../../common/themeSelectors', () => ({
   getColorAlert: () => '#FFFFFF',
+  getColorByName: () => '#ffffff',
   getColorHighEmphasis: () => '#FAF3E3',
   getColorLowEmphasis: () => '#FEEEEF',
   getColorMediumEmphasis: () => '#FAFAEA',
@@ -17,6 +18,11 @@ jest.mock('../../common/themeSelectors', () => ({
   getColorSuccess: () => '#569a32',
   getSize: () => 56,
 }));
+
+jest.mock(
+  'react-native/Libraries/Components/Touchable/TouchableOpacity.js',
+  () => 'TouchableOpacity',
+);
 
 const renderTextField = (fn, props: TextFieldProps) => (
   fn(
@@ -183,5 +189,15 @@ describe('TextField component', () => {
     fireEvent.change(textFieldInput);
 
     expect(onChangeTextMock).not.toHaveBeenCalled();
+  });
+
+  it('Should render TextField type password with icon', () => {
+    const { getByTestId } = renderTextField(render, {
+      ...defaultProps,
+      type: 'password',
+    });
+    const textFieldIcon = getByTestId('textField-icon-password');
+
+    expect(textFieldIcon).toBeTruthy();
   });
 });
