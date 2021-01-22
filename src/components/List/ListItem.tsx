@@ -130,6 +130,7 @@ const ListItemComponent = ({
   return (
     <>
       <HeaderWrapper
+        style={dividerContainerStyles({ dividerType, theme })}
         accessible
         accessibilityRole="header"
         testID={testID}

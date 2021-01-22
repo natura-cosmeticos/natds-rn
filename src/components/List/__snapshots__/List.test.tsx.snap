@@ -28,7 +28,6 @@ exports[`List component Should render List component correctly: List snapshot 1`
             "paddingLeft": 0,
             "paddingRight": 0,
             "paddingTop": 0,
-            "width": "100%",
           },
         ]
       }
@@ -116,7 +115,6 @@ exports[`List component Should render List component correctly: List snapshot 1`
             "paddingLeft": 0,
             "paddingRight": 0,
             "paddingTop": 0,
-            "width": "100%",
           },
         ]
       }
@@ -204,7 +202,6 @@ exports[`List component Should render List component correctly: List snapshot 1`
             "paddingLeft": 0,
             "paddingRight": 0,
             "paddingTop": 0,
-            "width": "100%",
           },
         ]
       }
@@ -292,7 +289,6 @@ exports[`List component Should render List component correctly: List snapshot 1`
             "paddingLeft": 0,
             "paddingRight": 0,
             "paddingTop": 0,
-            "width": "100%",
           },
         ]
       }

@@ -25,7 +25,6 @@ exports[`ListItem component Should render ListItem component correctly: ListItem
           "paddingLeft": 0,
           "paddingRight": 0,
           "paddingTop": 0,
-          "width": "100%",
         },
       ]
     }
