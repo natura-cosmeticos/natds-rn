@@ -22,7 +22,10 @@ const styles = {
 
 export const StoryNatAppBar = () => {
   const logo = () => (<NatLogo name="logo-natura-horizontal" width={150} height={56} />);
-  const logoAvon = () => (<NatLogo name="logo-avon" width={150} height={56} />);
+  const logoAvon = () => (<NatLogo name="logo-avon" width={120} height={56} />);
+  const logoAesop = () => (<NatLogo name="logo-aesop" width={100} height={56} />);
+  const logoTheBodyShop = () => (<NatLogo name="logo-the-body-shop" width={200} height={56} />);
+  const logoNaturaco = () => (<NatLogo name="logo-naturaco" width={150} height={56} />);
 
   return (
     <SafeAreaView style={styles.defaultScreen}>
@@ -107,7 +110,24 @@ export const StoryNatAppBar = () => {
           <NatAppBar
             title="Avon"
             node={logoAvon()}
-            theme="avon"
+            onPress={() => Alert.alert('press')}
+          />
+          <View style={{ height: 60 }} />
+          <NatAppBar
+            title="Aesop"
+            node={logoAesop()}
+            onPress={() => Alert.alert('press')}
+          />
+          <View style={{ height: 60 }} />
+          <NatAppBar
+            title="The Body Shop"
+            node={logoTheBodyShop()}
+            onPress={() => Alert.alert('press')}
+          />
+          <View style={{ height: 60 }} />
+          <NatAppBar
+            title="NaturaCo"
+            node={logoNaturaco()}
             onPress={() => Alert.alert('press')}
           />
         </ScrollView>
