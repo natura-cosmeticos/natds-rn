@@ -1455,6 +1455,590 @@ exports[`StoryNatAppBar component Should render StoryNatAppBar component : Story
             </View>
           </View>
         </View>
+        <View
+          style={
+            Object {
+              "height": 60,
+            }
+          }
+        />
+        <View
+          style={
+            Array [
+              Object {
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
+                "position": "relative",
+              },
+            ]
+          }
+        >
+          <View
+            accessibilityRole="header"
+            accessible={true}
+            style={
+              Array [
+                Object {
+                  "alignItems": "stretch",
+                  "backgroundColor": "#FFFFFF",
+                  "bottom": 0,
+                  "flexBasis": 0,
+                  "flexDirection": "row",
+                  "flexGrow": 1,
+                  "flexShrink": 1,
+                  "height": 56,
+                  "position": "absolute",
+                  "width": "100%",
+                  "zIndex": 1,
+                },
+              ]
+            }
+          >
+            <View
+              style={Object {}}
+            >
+              <View
+                accessible={true}
+                focusable={true}
+                isTVSelectable={true}
+                onClick={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "alignSelf": "center",
+                    "flexBasis": 0,
+                    "flexGrow": 1,
+                    "flexShrink": 1,
+                    "height": 56,
+                    "justifyContent": "center",
+                    "opacity": 1,
+                    "paddingBottom": 16,
+                    "paddingLeft": 16,
+                    "paddingRight": 0,
+                    "paddingTop": 16,
+                    "width": 40,
+                  }
+                }
+              />
+            </View>
+            <View
+              style={
+                Object {
+                  "alignItems": "flex-start",
+                  "bottom": 0,
+                  "justifyContent": "flex-start",
+                  "left": 40,
+                  "position": "absolute",
+                  "right": 40,
+                  "top": 0,
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "bottom": 0,
+                    "justifyContent": "flex-start",
+                    "left": 0,
+                    "paddingLeft": 16,
+                    "paddingRight": 16,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                  }
+                }
+              >
+                <SvgMock
+                  height={56}
+                  width={120}
+                />
+              </View>
+            </View>
+            <View
+              style={
+                Object {
+                  "position": "absolute",
+                  "right": 0,
+                }
+              }
+            >
+              <View
+                accessible={true}
+                focusable={true}
+                isTVSelectable={true}
+                onClick={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "alignSelf": "center",
+                    "flexBasis": 0,
+                    "flexGrow": 1,
+                    "flexShrink": 1,
+                    "height": 56,
+                    "justifyContent": "center",
+                    "opacity": 1,
+                    "paddingBottom": 16,
+                    "paddingLeft": 0,
+                    "paddingRight": 16,
+                    "paddingTop": 16,
+                    "width": 40,
+                  }
+                }
+              />
+            </View>
+          </View>
+        </View>
+        <View
+          style={
+            Object {
+              "height": 60,
+            }
+          }
+        />
+        <View
+          style={
+            Array [
+              Object {
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
+                "position": "relative",
+              },
+            ]
+          }
+        >
+          <View
+            accessibilityRole="header"
+            accessible={true}
+            style={
+              Array [
+                Object {
+                  "alignItems": "stretch",
+                  "backgroundColor": "#FFFFFF",
+                  "bottom": 0,
+                  "flexBasis": 0,
+                  "flexDirection": "row",
+                  "flexGrow": 1,
+                  "flexShrink": 1,
+                  "height": 56,
+                  "position": "absolute",
+                  "width": "100%",
+                  "zIndex": 1,
+                },
+              ]
+            }
+          >
+            <View
+              style={Object {}}
+            >
+              <View
+                accessible={true}
+                focusable={true}
+                isTVSelectable={true}
+                onClick={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "alignSelf": "center",
+                    "flexBasis": 0,
+                    "flexGrow": 1,
+                    "flexShrink": 1,
+                    "height": 56,
+                    "justifyContent": "center",
+                    "opacity": 1,
+                    "paddingBottom": 16,
+                    "paddingLeft": 16,
+                    "paddingRight": 0,
+                    "paddingTop": 16,
+                    "width": 40,
+                  }
+                }
+              />
+            </View>
+            <View
+              style={
+                Object {
+                  "alignItems": "flex-start",
+                  "bottom": 0,
+                  "justifyContent": "flex-start",
+                  "left": 40,
+                  "position": "absolute",
+                  "right": 40,
+                  "top": 0,
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "bottom": 0,
+                    "justifyContent": "flex-start",
+                    "left": 0,
+                    "paddingLeft": 16,
+                    "paddingRight": 16,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                  }
+                }
+              >
+                <SvgMock
+                  height={56}
+                  width={100}
+                />
+              </View>
+            </View>
+            <View
+              style={
+                Object {
+                  "position": "absolute",
+                  "right": 0,
+                }
+              }
+            >
+              <View
+                accessible={true}
+                focusable={true}
+                isTVSelectable={true}
+                onClick={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "alignSelf": "center",
+                    "flexBasis": 0,
+                    "flexGrow": 1,
+                    "flexShrink": 1,
+                    "height": 56,
+                    "justifyContent": "center",
+                    "opacity": 1,
+                    "paddingBottom": 16,
+                    "paddingLeft": 0,
+                    "paddingRight": 16,
+                    "paddingTop": 16,
+                    "width": 40,
+                  }
+                }
+              />
+            </View>
+          </View>
+        </View>
+        <View
+          style={
+            Object {
+              "height": 60,
+            }
+          }
+        />
+        <View
+          style={
+            Array [
+              Object {
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
+                "position": "relative",
+              },
+            ]
+          }
+        >
+          <View
+            accessibilityRole="header"
+            accessible={true}
+            style={
+              Array [
+                Object {
+                  "alignItems": "stretch",
+                  "backgroundColor": "#FFFFFF",
+                  "bottom": 0,
+                  "flexBasis": 0,
+                  "flexDirection": "row",
+                  "flexGrow": 1,
+                  "flexShrink": 1,
+                  "height": 56,
+                  "position": "absolute",
+                  "width": "100%",
+                  "zIndex": 1,
+                },
+              ]
+            }
+          >
+            <View
+              style={Object {}}
+            >
+              <View
+                accessible={true}
+                focusable={true}
+                isTVSelectable={true}
+                onClick={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "alignSelf": "center",
+                    "flexBasis": 0,
+                    "flexGrow": 1,
+                    "flexShrink": 1,
+                    "height": 56,
+                    "justifyContent": "center",
+                    "opacity": 1,
+                    "paddingBottom": 16,
+                    "paddingLeft": 16,
+                    "paddingRight": 0,
+                    "paddingTop": 16,
+                    "width": 40,
+                  }
+                }
+              />
+            </View>
+            <View
+              style={
+                Object {
+                  "alignItems": "flex-start",
+                  "bottom": 0,
+                  "justifyContent": "flex-start",
+                  "left": 40,
+                  "position": "absolute",
+                  "right": 40,
+                  "top": 0,
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "bottom": 0,
+                    "justifyContent": "flex-start",
+                    "left": 0,
+                    "paddingLeft": 16,
+                    "paddingRight": 16,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                  }
+                }
+              >
+                <SvgMock
+                  height={56}
+                  width={200}
+                />
+              </View>
+            </View>
+            <View
+              style={
+                Object {
+                  "position": "absolute",
+                  "right": 0,
+                }
+              }
+            >
+              <View
+                accessible={true}
+                focusable={true}
+                isTVSelectable={true}
+                onClick={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "alignSelf": "center",
+                    "flexBasis": 0,
+                    "flexGrow": 1,
+                    "flexShrink": 1,
+                    "height": 56,
+                    "justifyContent": "center",
+                    "opacity": 1,
+                    "paddingBottom": 16,
+                    "paddingLeft": 0,
+                    "paddingRight": 16,
+                    "paddingTop": 16,
+                    "width": 40,
+                  }
+                }
+              />
+            </View>
+          </View>
+        </View>
+        <View
+          style={
+            Object {
+              "height": 60,
+            }
+          }
+        />
+        <View
+          style={
+            Array [
+              Object {
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
+                "position": "relative",
+              },
+            ]
+          }
+        >
+          <View
+            accessibilityRole="header"
+            accessible={true}
+            style={
+              Array [
+                Object {
+                  "alignItems": "stretch",
+                  "backgroundColor": "#FFFFFF",
+                  "bottom": 0,
+                  "flexBasis": 0,
+                  "flexDirection": "row",
+                  "flexGrow": 1,
+                  "flexShrink": 1,
+                  "height": 56,
+                  "position": "absolute",
+                  "width": "100%",
+                  "zIndex": 1,
+                },
+              ]
+            }
+          >
+            <View
+              style={Object {}}
+            >
+              <View
+                accessible={true}
+                focusable={true}
+                isTVSelectable={true}
+                onClick={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "alignSelf": "center",
+                    "flexBasis": 0,
+                    "flexGrow": 1,
+                    "flexShrink": 1,
+                    "height": 56,
+                    "justifyContent": "center",
+                    "opacity": 1,
+                    "paddingBottom": 16,
+                    "paddingLeft": 16,
+                    "paddingRight": 0,
+                    "paddingTop": 16,
+                    "width": 40,
+                  }
+                }
+              />
+            </View>
+            <View
+              style={
+                Object {
+                  "alignItems": "flex-start",
+                  "bottom": 0,
+                  "justifyContent": "flex-start",
+                  "left": 40,
+                  "position": "absolute",
+                  "right": 40,
+                  "top": 0,
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "bottom": 0,
+                    "justifyContent": "flex-start",
+                    "left": 0,
+                    "paddingLeft": 16,
+                    "paddingRight": 16,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                  }
+                }
+              >
+                <SvgMock
+                  height={56}
+                  width={150}
+                />
+              </View>
+            </View>
+            <View
+              style={
+                Object {
+                  "position": "absolute",
+                  "right": 0,
+                }
+              }
+            >
+              <View
+                accessible={true}
+                focusable={true}
+                isTVSelectable={true}
+                onClick={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "alignSelf": "center",
+                    "flexBasis": 0,
+                    "flexGrow": 1,
+                    "flexShrink": 1,
+                    "height": 56,
+                    "justifyContent": "center",
+                    "opacity": 1,
+                    "paddingBottom": 16,
+                    "paddingLeft": 0,
+                    "paddingRight": 16,
+                    "paddingTop": 16,
+                    "width": 40,
+                  }
+                }
+              />
+            </View>
+          </View>
+        </View>
       </View>
     </RCTScrollView>
   </View>

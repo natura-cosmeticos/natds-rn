@@ -852,6 +852,7 @@ exports[`NatModalSelect and its variants NatModalSelect Should match snapshot: N
                         onFocus={[Function]}
                         onSubmitEditing={[Function]}
                         placeholder="Search"
+                        placeholderTextColor="#777777"
                         rejectResponderTermination={true}
                         size="normal"
                         state="default"

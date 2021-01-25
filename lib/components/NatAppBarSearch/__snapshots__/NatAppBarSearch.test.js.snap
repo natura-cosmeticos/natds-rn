@@ -814,6 +814,7 @@ exports[`Header component Should render container component correctly: NatAppBar
                 onFocus={[Function]}
                 onSubmitEditing={[Function]}
                 placeholder="Title test"
+                placeholderTextColor="#777777"
                 rejectResponderTermination={true}
                 size="normal"
                 state="default"

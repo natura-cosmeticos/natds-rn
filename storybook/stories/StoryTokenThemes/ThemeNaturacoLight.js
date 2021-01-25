@@ -10,8 +10,8 @@ import {
 import {
   NatContainer,
   NatText,
-  ThemeNaturaLight as Theme,
-} from '../../../../lib';
+  ThemeNaturacoLight as Theme,
+} from '../../../lib';
 
 const styles = {
   defaultScreen: {
@@ -20,7 +20,7 @@ const styles = {
   },
 };
 
-export const ThemeNaturaLight = () => {
+export const ThemeNaturacoLight = () => {
   const renderItem = (name, color) => (
     <View style={{ flexDirection: 'row' }}>
       <NatText type="body1" value={name} />
@@ -96,5 +96,5 @@ export const ThemeNaturaLight = () => {
   );
 };
 
-ThemeNaturaLight.propTypes = {
+ThemeNaturacoLight.propTypes = {
 };

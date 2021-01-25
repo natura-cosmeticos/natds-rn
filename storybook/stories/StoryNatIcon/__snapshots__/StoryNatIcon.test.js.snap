@@ -763,6 +763,7 @@ exports[`StoryNatIcon component Should render StoryNatIcon component : StoryNatI
               onChangeText={[Function]}
               onFocus={[Function]}
               placeholder="Search"
+              placeholderTextColor="#777777"
               rejectResponderTermination={true}
               size="normal"
               state="default"

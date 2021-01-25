@@ -24,7 +24,13 @@ import { StoryNatTextInput } from './StoryNatTextInput';
 import { StoryTokenColors } from './StoryTokenColors';
 import { StoryTokenSpace } from './StoryTokenSpace';
 import { StoryTokenTypography } from './StoryTokenTypography';
-import { ThemeNaturaLight } from './StoryTokenThemes/ThemeNaturaLight';
+import {
+  ThemeNaturaLight,
+  ThemeAvonLight,
+  ThemeAesopLight,
+  ThemeTheBodyShopLight,
+  ThemeNaturacoLight,
+} from './StoryTokenThemes';
 import CenterView from './CenterView';
 import { Welcome } from './Welcome';
 import iconArrowLeft from '../../lib/assets/icons/ic_arrow_left_white.png';
@@ -40,7 +46,11 @@ storiesOf('Tokens', module)
   .add('Typography', () => <StoryTokenTypography />)
   .add('Colors', () => <StoryTokenColors />)
   .add('Space', () => <StoryTokenSpace />)
-  .add('Theme Natura Light', () => <ThemeNaturaLight />);
+  .add('ThemeNaturaLight', () => <ThemeNaturaLight />)
+  .add('ThemeAvonLight', () => <ThemeAvonLight />)
+  .add('ThemeAesopLight', () => <ThemeAesopLight />)
+  .add('ThemeTheBodyShopLight', () => <ThemeTheBodyShopLight />)
+  .add('ThemeNaturacoLight', () => <ThemeNaturacoLight />);
 
 storiesOf('Divider', module)
   .addDecorator(getStory => <CenterView>{getStory()}</CenterView>)

@@ -267,6 +267,7 @@ exports[`NatSelectInput component default Should render textInput component : Na
       },
       "typography": Object {
         "body1": Object {
+          "color": "#333333",
           "fontSize": 16,
           "fontWeight": 400,
           "lineHeight": 24,
@@ -766,6 +767,7 @@ exports[`NatSelectInput component default Should render textInput component : Na
                           },
                           "typography": Object {
                             "body1": Object {
+                              "color": "#333333",
                               "fontSize": 16,
                               "fontWeight": 400,
                               "lineHeight": 24,
@@ -1109,6 +1111,7 @@ exports[`NatSelectInput component default Should render textInput component : Na
                             },
                             "typography": Object {
                               "body1": Object {
+                                "color": "#333333",
                                 "fontSize": 16,
                                 "fontWeight": 400,
                                 "lineHeight": 24,
@@ -1189,6 +1192,7 @@ exports[`NatSelectInput component default Should render textInput component : Na
                           onFocus={[Function]}
                           onSubmitEditing={[Function]}
                           placeholder="Search"
+                          placeholderTextColor="#777777"
                           rejectResponderTermination={true}
                           size="normal"
                           state="default"
@@ -1467,6 +1471,7 @@ exports[`NatSelectInput component default Should render textInput component : Na
                               },
                               "typography": Object {
                                 "body1": Object {
+                                  "color": "#333333",
                                   "fontSize": 16,
                                   "fontWeight": 400,
                                   "lineHeight": 24,
@@ -1898,6 +1903,7 @@ exports[`NatSelectInput component default Should render textInput component : Na
                     },
                     "typography": Object {
                       "body1": Object {
+                        "color": "#333333",
                         "fontSize": 16,
                         "fontWeight": 400,
                         "lineHeight": 24,
@@ -2297,6 +2303,7 @@ exports[`NatSelectInput component default Should render textInput component : Na
           },
           "typography": Object {
             "body1": Object {
+              "color": "#333333",
               "fontSize": 16,
               "fontWeight": 400,
               "lineHeight": 24,
@@ -2418,6 +2425,7 @@ exports[`NatSelectInput component default Should render textInput component : Na
               "justifyContent": "space-between",
               "paddingBottom": 0,
               "paddingLeft": 16,
+              "width": "100%",
             },
           ]
         }
@@ -2676,6 +2684,7 @@ exports[`NatSelectInput component default Should render textInput component : Na
             },
             "typography": Object {
               "body1": Object {
+                "color": "#333333",
                 "fontSize": 16,
                 "fontWeight": 400,
                 "lineHeight": 24,
@@ -2746,28 +2755,16 @@ exports[`NatSelectInput component default Should render textInput component : Na
         }
         type="default"
       >
-        <TextInput
-          allowFontScaling={true}
-          editable={true}
-          multiline={false}
-          numberOfLines={1}
-          onBlur={[Function]}
-          onChangeText={[Function]}
-          onFocus={[Function]}
-          placeholder=""
-          rejectResponderTermination={true}
+        <View
           state="default"
           style={
             Array [
               Object {
-                "alignSelf": "center",
-                "color": "#777777",
+                "alignSelf": "flex-start",
                 "flexBasis": 0,
                 "flexGrow": 7,
                 "flexShrink": 1,
-                "fontSize": 16,
                 "height": 56,
-                "letterSpacing": 0,
                 "paddingBottom": 16,
                 "paddingTop": 16,
                 "textAlignVertical": "top",
@@ -3032,6 +3029,7 @@ exports[`NatSelectInput component default Should render textInput component : Na
               },
               "typography": Object {
                 "body1": Object {
+                  "color": "#333333",
                   "fontSize": 16,
                   "fontWeight": 400,
                   "lineHeight": 24,
@@ -3101,9 +3099,44 @@ exports[`NatSelectInput component default Should render textInput component : Na
             }
           }
           type="default"
-          underlineColorAndroid="transparent"
-          value=""
-        />
+        >
+          <View
+            margin={0}
+            style={
+              Array [
+                Object {
+                  "marginBottom": 0,
+                  "marginLeft": 0,
+                  "marginRight": 0,
+                  "marginTop": 0,
+                  "paddingBottom": 0,
+                  "paddingLeft": 0,
+                  "paddingRight": 0,
+                  "paddingTop": 0,
+                },
+              ]
+            }
+          >
+            <Text
+              color="#333333"
+              style={
+                Array [
+                  Object {
+                    "color": "#333333",
+                    "fontSize": 16,
+                    "fontWeight": "400",
+                    "lineHeight": 24,
+                    "textAlign": "left",
+                  },
+                ]
+              }
+              textAlign="left"
+              type="body1"
+            >
+              
+            </Text>
+          </View>
+        </View>
         <View
           accessible={true}
           focusable={true}
@@ -3409,6 +3442,7 @@ exports[`NatSelectInput component default Should render textInput with icon and 
       },
       "typography": Object {
         "body1": Object {
+          "color": "#333333",
           "fontSize": 16,
           "fontWeight": 400,
           "lineHeight": 24,
@@ -3909,6 +3943,7 @@ exports[`NatSelectInput component default Should render textInput with icon and 
                           },
                           "typography": Object {
                             "body1": Object {
+                              "color": "#333333",
                               "fontSize": 16,
                               "fontWeight": 400,
                               "lineHeight": 24,
@@ -4253,6 +4288,7 @@ exports[`NatSelectInput component default Should render textInput with icon and 
                             },
                             "typography": Object {
                               "body1": Object {
+                                "color": "#333333",
                                 "fontSize": 16,
                                 "fontWeight": 400,
                                 "lineHeight": 24,
@@ -4334,6 +4370,7 @@ exports[`NatSelectInput component default Should render textInput with icon and 
                           onFocus={[Function]}
                           onSubmitEditing={[Function]}
                           placeholder="Search"
+                          placeholderTextColor="#777777"
                           rejectResponderTermination={true}
                           size="normal"
                           state="default"
@@ -4612,6 +4649,7 @@ exports[`NatSelectInput component default Should render textInput with icon and 
                               },
                               "typography": Object {
                                 "body1": Object {
+                                  "color": "#333333",
                                   "fontSize": 16,
                                   "fontWeight": 400,
                                   "lineHeight": 24,
@@ -5044,6 +5082,7 @@ exports[`NatSelectInput component default Should render textInput with icon and 
                     },
                     "typography": Object {
                       "body1": Object {
+                        "color": "#333333",
                         "fontSize": 16,
                         "fontWeight": 400,
                         "lineHeight": 24,
@@ -5444,6 +5483,7 @@ exports[`NatSelectInput component default Should render textInput with icon and 
           },
           "typography": Object {
             "body1": Object {
+              "color": "#333333",
               "fontSize": 16,
               "fontWeight": 400,
               "lineHeight": 24,
@@ -5566,6 +5606,7 @@ exports[`NatSelectInput component default Should render textInput with icon and 
               "justifyContent": "space-between",
               "paddingBottom": 0,
               "paddingLeft": 16,
+              "width": "100%",
             },
           ]
         }
@@ -5824,6 +5865,7 @@ exports[`NatSelectInput component default Should render textInput with icon and 
             },
             "typography": Object {
               "body1": Object {
+                "color": "#333333",
                 "fontSize": 16,
                 "fontWeight": 400,
                 "lineHeight": 24,
@@ -5895,28 +5937,16 @@ exports[`NatSelectInput component default Should render textInput with icon and 
         }
         type="default"
       >
-        <TextInput
-          allowFontScaling={true}
-          editable={true}
-          multiline={false}
-          numberOfLines={1}
-          onBlur={[Function]}
-          onChangeText={[Function]}
-          onFocus={[Function]}
-          placeholder=""
-          rejectResponderTermination={true}
+        <View
           state="default"
           style={
             Array [
               Object {
-                "alignSelf": "center",
-                "color": "#777777",
+                "alignSelf": "flex-start",
                 "flexBasis": 0,
                 "flexGrow": 7,
                 "flexShrink": 1,
-                "fontSize": 16,
                 "height": 56,
-                "letterSpacing": 0,
                 "paddingBottom": 16,
                 "paddingTop": 16,
                 "textAlignVertical": "top",
@@ -6181,6 +6211,7 @@ exports[`NatSelectInput component default Should render textInput with icon and 
               },
               "typography": Object {
                 "body1": Object {
+                  "color": "#333333",
                   "fontSize": 16,
                   "fontWeight": 400,
                   "lineHeight": 24,
@@ -6251,9 +6282,44 @@ exports[`NatSelectInput component default Should render textInput with icon and 
             }
           }
           type="default"
-          underlineColorAndroid="transparent"
-          value=""
-        />
+        >
+          <View
+            margin={0}
+            style={
+              Array [
+                Object {
+                  "marginBottom": 0,
+                  "marginLeft": 0,
+                  "marginRight": 0,
+                  "marginTop": 0,
+                  "paddingBottom": 0,
+                  "paddingLeft": 0,
+                  "paddingRight": 0,
+                  "paddingTop": 0,
+                },
+              ]
+            }
+          >
+            <Text
+              color="#333333"
+              style={
+                Array [
+                  Object {
+                    "color": "#333333",
+                    "fontSize": 16,
+                    "fontWeight": "400",
+                    "lineHeight": 24,
+                    "textAlign": "left",
+                  },
+                ]
+              }
+              textAlign="left"
+              type="body1"
+            >
+              
+            </Text>
+          </View>
+        </View>
         <View
           accessible={true}
           focusable={true}

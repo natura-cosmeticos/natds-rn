@@ -1270,6 +1270,7 @@ exports[`StoryNatSelectInput component Should render StoryNatSelectInput compone
                                   onFocus={[Function]}
                                   onSubmitEditing={[Function]}
                                   placeholder="search"
+                                  placeholderTextColor="#777777"
                                   rejectResponderTermination={true}
                                   size="normal"
                                   state="default"
@@ -3862,6 +3863,7 @@ exports[`StoryNatSelectInput component Should render StoryNatSelectInput compone
                       "justifyContent": "space-between",
                       "paddingBottom": 0,
                       "paddingLeft": 16,
+                      "width": "100%",
                     },
                   ]
                 }
@@ -4193,29 +4195,17 @@ exports[`StoryNatSelectInput component Should render StoryNatSelectInput compone
                 }
                 type="default"
               >
-                <TextInput
-                  allowFontScaling={true}
-                  editable={true}
-                  multiline={false}
-                  numberOfLines={1}
-                  onBlur={[Function]}
-                  onChangeText={[Function]}
-                  onFocus={[Function]}
-                  placeholder="placeholder"
-                  rejectResponderTermination={true}
+                <View
                   size="normal"
                   state="default"
                   style={
                     Array [
                       Object {
-                        "alignSelf": "center",
-                        "color": "#777777",
+                        "alignSelf": "flex-start",
                         "flexBasis": 0,
                         "flexGrow": 7,
                         "flexShrink": 1,
-                        "fontSize": 16,
                         "height": 56,
-                        "letterSpacing": 0,
                         "paddingBottom": 16,
                         "paddingTop": 16,
                         "textAlignVertical": "top",
@@ -4552,9 +4542,44 @@ exports[`StoryNatSelectInput component Should render StoryNatSelectInput compone
                     }
                   }
                   type="default"
-                  underlineColorAndroid="transparent"
-                  value=""
-                />
+                >
+                  <View
+                    margin={0}
+                    style={
+                      Array [
+                        Object {
+                          "marginBottom": 0,
+                          "marginLeft": 0,
+                          "marginRight": 0,
+                          "marginTop": 0,
+                          "paddingBottom": 0,
+                          "paddingLeft": 0,
+                          "paddingRight": 0,
+                          "paddingTop": 0,
+                        },
+                      ]
+                    }
+                  >
+                    <Text
+                      color="#333333"
+                      style={
+                        Array [
+                          Object {
+                            "color": "#333333",
+                            "fontSize": 16,
+                            "fontWeight": "400",
+                            "lineHeight": 24,
+                            "textAlign": "left",
+                          },
+                        ]
+                      }
+                      textAlign="left"
+                      type="body1"
+                    >
+                      
+                    </Text>
+                  </View>
+                </View>
                 <View
                   accessible={true}
                   focusable={true}
@@ -5896,6 +5921,7 @@ exports[`StoryNatSelectInput component Should render StoryNatSelectInput compone
                                   onFocus={[Function]}
                                   onSubmitEditing={[Function]}
                                   placeholder="search"
+                                  placeholderTextColor="#777777"
                                   rejectResponderTermination={true}
                                   size="normal"
                                   state="default"
@@ -8488,6 +8514,7 @@ exports[`StoryNatSelectInput component Should render StoryNatSelectInput compone
                       "justifyContent": "space-between",
                       "paddingBottom": 0,
                       "paddingLeft": 16,
+                      "width": "100%",
                     },
                   ]
                 }
@@ -8819,29 +8846,17 @@ exports[`StoryNatSelectInput component Should render StoryNatSelectInput compone
                 }
                 type="default"
               >
-                <TextInput
-                  allowFontScaling={true}
-                  editable={true}
-                  multiline={false}
-                  numberOfLines={1}
-                  onBlur={[Function]}
-                  onChangeText={[Function]}
-                  onFocus={[Function]}
-                  placeholder="placeholder"
-                  rejectResponderTermination={true}
+                <View
                   size="normal"
                   state="filled"
                   style={
                     Array [
                       Object {
-                        "alignSelf": "center",
-                        "color": "#777777",
+                        "alignSelf": "flex-start",
                         "flexBasis": 0,
                         "flexGrow": 7,
                         "flexShrink": 1,
-                        "fontSize": 16,
                         "height": 56,
-                        "letterSpacing": 0,
                         "paddingBottom": 16,
                         "paddingTop": 16,
                         "textAlignVertical": "top",
@@ -9178,9 +9193,44 @@ exports[`StoryNatSelectInput component Should render StoryNatSelectInput compone
                     }
                   }
                   type="default"
-                  underlineColorAndroid="transparent"
-                  value="Option 2"
-                />
+                >
+                  <View
+                    margin={0}
+                    style={
+                      Array [
+                        Object {
+                          "marginBottom": 0,
+                          "marginLeft": 0,
+                          "marginRight": 0,
+                          "marginTop": 0,
+                          "paddingBottom": 0,
+                          "paddingLeft": 0,
+                          "paddingRight": 0,
+                          "paddingTop": 0,
+                        },
+                      ]
+                    }
+                  >
+                    <Text
+                      color="#333333"
+                      style={
+                        Array [
+                          Object {
+                            "color": "#333333",
+                            "fontSize": 16,
+                            "fontWeight": "400",
+                            "lineHeight": 24,
+                            "textAlign": "left",
+                          },
+                        ]
+                      }
+                      textAlign="left"
+                      type="body1"
+                    >
+                      Option 2
+                    </Text>
+                  </View>
+                </View>
                 <View
                   accessible={true}
                   focusable={true}
@@ -10522,6 +10572,7 @@ exports[`StoryNatSelectInput component Should render StoryNatSelectInput compone
                                   onFocus={[Function]}
                                   onSubmitEditing={[Function]}
                                   placeholder="search"
+                                  placeholderTextColor="#777777"
                                   rejectResponderTermination={true}
                                   size="normal"
                                   state="default"
@@ -13114,6 +13165,7 @@ exports[`StoryNatSelectInput component Should render StoryNatSelectInput compone
                       "justifyContent": "space-between",
                       "paddingBottom": 0,
                       "paddingLeft": 16,
+                      "width": "100%",
                     },
                   ]
                 }
@@ -13445,29 +13497,17 @@ exports[`StoryNatSelectInput component Should render StoryNatSelectInput compone
                 }
                 type="default"
               >
-                <TextInput
-                  allowFontScaling={true}
-                  editable={true}
-                  multiline={false}
-                  numberOfLines={1}
-                  onBlur={[Function]}
-                  onChangeText={[Function]}
-                  onFocus={[Function]}
-                  placeholder="placeholder"
-                  rejectResponderTermination={true}
+                <View
                   size="normal"
                   state="default"
                   style={
                     Array [
                       Object {
-                        "alignSelf": "center",
-                        "color": "#777777",
+                        "alignSelf": "flex-start",
                         "flexBasis": 0,
                         "flexGrow": 7,
                         "flexShrink": 1,
-                        "fontSize": 16,
                         "height": 56,
-                        "letterSpacing": 0,
                         "paddingBottom": 16,
                         "paddingTop": 16,
                         "textAlignVertical": "top",
@@ -13804,9 +13844,44 @@ exports[`StoryNatSelectInput component Should render StoryNatSelectInput compone
                     }
                   }
                   type="default"
-                  underlineColorAndroid="transparent"
-                  value=""
-                />
+                >
+                  <View
+                    margin={0}
+                    style={
+                      Array [
+                        Object {
+                          "marginBottom": 0,
+                          "marginLeft": 0,
+                          "marginRight": 0,
+                          "marginTop": 0,
+                          "paddingBottom": 0,
+                          "paddingLeft": 0,
+                          "paddingRight": 0,
+                          "paddingTop": 0,
+                        },
+                      ]
+                    }
+                  >
+                    <Text
+                      color="#333333"
+                      style={
+                        Array [
+                          Object {
+                            "color": "#333333",
+                            "fontSize": 16,
+                            "fontWeight": "400",
+                            "lineHeight": 24,
+                            "textAlign": "left",
+                          },
+                        ]
+                      }
+                      textAlign="left"
+                      type="body1"
+                    >
+                      
+                    </Text>
+                  </View>
+                </View>
                 <View
                   accessible={true}
                   focusable={true}
@@ -15148,6 +15223,7 @@ exports[`StoryNatSelectInput component Should render StoryNatSelectInput compone
                                   onFocus={[Function]}
                                   onSubmitEditing={[Function]}
                                   placeholder="search"
+                                  placeholderTextColor="#777777"
                                   rejectResponderTermination={true}
                                   size="normal"
                                   state="default"
@@ -17740,6 +17816,7 @@ exports[`StoryNatSelectInput component Should render StoryNatSelectInput compone
                       "justifyContent": "space-between",
                       "paddingBottom": 0,
                       "paddingLeft": 16,
+                      "width": "100%",
                     },
                   ]
                 }
@@ -18071,29 +18148,17 @@ exports[`StoryNatSelectInput component Should render StoryNatSelectInput compone
                 }
                 type="default"
               >
-                <TextInput
-                  allowFontScaling={true}
-                  editable={true}
-                  multiline={false}
-                  numberOfLines={1}
-                  onBlur={[Function]}
-                  onChangeText={[Function]}
-                  onFocus={[Function]}
-                  placeholder="placeholder"
-                  rejectResponderTermination={true}
+                <View
                   size="normal"
                   state="filled"
                   style={
                     Array [
                       Object {
-                        "alignSelf": "center",
-                        "color": "#777777",
+                        "alignSelf": "flex-start",
                         "flexBasis": 0,
                         "flexGrow": 7,
                         "flexShrink": 1,
-                        "fontSize": 16,
                         "height": 56,
-                        "letterSpacing": 0,
                         "paddingBottom": 16,
                         "paddingTop": 16,
                         "textAlignVertical": "top",
@@ -18430,9 +18495,44 @@ exports[`StoryNatSelectInput component Should render StoryNatSelectInput compone
                     }
                   }
                   type="default"
-                  underlineColorAndroid="transparent"
-                  value="Option 2,Option 10"
-                />
+                >
+                  <View
+                    margin={0}
+                    style={
+                      Array [
+                        Object {
+                          "marginBottom": 0,
+                          "marginLeft": 0,
+                          "marginRight": 0,
+                          "marginTop": 0,
+                          "paddingBottom": 0,
+                          "paddingLeft": 0,
+                          "paddingRight": 0,
+                          "paddingTop": 0,
+                        },
+                      ]
+                    }
+                  >
+                    <Text
+                      color="#333333"
+                      style={
+                        Array [
+                          Object {
+                            "color": "#333333",
+                            "fontSize": 16,
+                            "fontWeight": "400",
+                            "lineHeight": 24,
+                            "textAlign": "left",
+                          },
+                        ]
+                      }
+                      textAlign="left"
+                      type="body1"
+                    >
+                      Option 2,Option 10
+                    </Text>
+                  </View>
+                </View>
                 <View
                   accessible={true}
                   focusable={true}
@@ -19826,6 +19926,7 @@ exports[`StoryNatSelectInput component Should render StoryNatSelectInput compone
                                       onFocus={[Function]}
                                       onSubmitEditing={[Function]}
                                       placeholder="search"
+                                      placeholderTextColor="#777777"
                                       rejectResponderTermination={true}
                                       size="normal"
                                       state="default"
@@ -22418,6 +22519,7 @@ exports[`StoryNatSelectInput component Should render StoryNatSelectInput compone
                           "justifyContent": "space-between",
                           "paddingBottom": 0,
                           "paddingLeft": 16,
+                          "width": "100%",
                         },
                       ]
                     }
@@ -22749,29 +22851,17 @@ exports[`StoryNatSelectInput component Should render StoryNatSelectInput compone
                     }
                     type="default"
                   >
-                    <TextInput
-                      allowFontScaling={true}
-                      editable={true}
-                      multiline={false}
-                      numberOfLines={1}
-                      onBlur={[Function]}
-                      onChangeText={[Function]}
-                      onFocus={[Function]}
-                      placeholder="placeholder"
-                      rejectResponderTermination={true}
+                    <View
                       size="normal"
                       state="filled"
                       style={
                         Array [
                           Object {
-                            "alignSelf": "center",
-                            "color": "#777777",
+                            "alignSelf": "flex-start",
                             "flexBasis": 0,
                             "flexGrow": 7,
                             "flexShrink": 1,
-                            "fontSize": 16,
                             "height": 56,
-                            "letterSpacing": 0,
                             "paddingBottom": 16,
                             "paddingTop": 16,
                             "textAlignVertical": "top",
@@ -23108,9 +23198,44 @@ exports[`StoryNatSelectInput component Should render StoryNatSelectInput compone
                         }
                       }
                       type="default"
-                      underlineColorAndroid="transparent"
-                      value="Option 2,Option 7,Option 9"
-                    />
+                    >
+                      <View
+                        margin={0}
+                        style={
+                          Array [
+                            Object {
+                              "marginBottom": 0,
+                              "marginLeft": 0,
+                              "marginRight": 0,
+                              "marginTop": 0,
+                              "paddingBottom": 0,
+                              "paddingLeft": 0,
+                              "paddingRight": 0,
+                              "paddingTop": 0,
+                            },
+                          ]
+                        }
+                      >
+                        <Text
+                          color="#333333"
+                          style={
+                            Array [
+                              Object {
+                                "color": "#333333",
+                                "fontSize": 16,
+                                "fontWeight": "400",
+                                "lineHeight": 24,
+                                "textAlign": "left",
+                              },
+                            ]
+                          }
+                          textAlign="left"
+                          type="body1"
+                        >
+                          Option 2,Option 7,Option 9
+                        </Text>
+                      </View>
+                    </View>
                     <View
                       accessible={true}
                       focusable={true}
@@ -24425,6 +24550,7 @@ exports[`StoryNatSelectInput component Should render StoryNatSelectInput compone
                                       onFocus={[Function]}
                                       onSubmitEditing={[Function]}
                                       placeholder="search"
+                                      placeholderTextColor="#777777"
                                       rejectResponderTermination={true}
                                       size="normal"
                                       state="default"
@@ -27017,6 +27143,7 @@ exports[`StoryNatSelectInput component Should render StoryNatSelectInput compone
                           "justifyContent": "space-between",
                           "paddingBottom": 0,
                           "paddingLeft": 16,
+                          "width": "100%",
                         },
                       ]
                     }
@@ -27348,29 +27475,17 @@ exports[`StoryNatSelectInput component Should render StoryNatSelectInput compone
                     }
                     type="default"
                   >
-                    <TextInput
-                      allowFontScaling={true}
-                      editable={true}
-                      multiline={false}
-                      numberOfLines={1}
-                      onBlur={[Function]}
-                      onChangeText={[Function]}
-                      onFocus={[Function]}
-                      placeholder="placeholder"
-                      rejectResponderTermination={true}
+                    <View
                       size="normal"
                       state="filled"
                       style={
                         Array [
                           Object {
-                            "alignSelf": "center",
-                            "color": "#777777",
+                            "alignSelf": "flex-start",
                             "flexBasis": 0,
                             "flexGrow": 7,
                             "flexShrink": 1,
-                            "fontSize": 16,
                             "height": 56,
-                            "letterSpacing": 0,
                             "paddingBottom": 16,
                             "paddingTop": 16,
                             "textAlignVertical": "top",
@@ -27707,9 +27822,44 @@ exports[`StoryNatSelectInput component Should render StoryNatSelectInput compone
                         }
                       }
                       type="default"
-                      underlineColorAndroid="transparent"
-                      value="Option 2,Option 10"
-                    />
+                    >
+                      <View
+                        margin={0}
+                        style={
+                          Array [
+                            Object {
+                              "marginBottom": 0,
+                              "marginLeft": 0,
+                              "marginRight": 0,
+                              "marginTop": 0,
+                              "paddingBottom": 0,
+                              "paddingLeft": 0,
+                              "paddingRight": 0,
+                              "paddingTop": 0,
+                            },
+                          ]
+                        }
+                      >
+                        <Text
+                          color="#333333"
+                          style={
+                            Array [
+                              Object {
+                                "color": "#333333",
+                                "fontSize": 16,
+                                "fontWeight": "400",
+                                "lineHeight": 24,
+                                "textAlign": "left",
+                              },
+                            ]
+                          }
+                          textAlign="left"
+                          type="body1"
+                        >
+                          Option 2,Option 10
+                        </Text>
+                      </View>
+                    </View>
                     <View
                       accessible={true}
                       focusable={true}

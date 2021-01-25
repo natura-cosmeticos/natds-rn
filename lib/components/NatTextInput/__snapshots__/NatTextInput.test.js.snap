@@ -724,6 +724,7 @@ exports[`TextInput component default Should render textInput component : TextInp
       onBlur={[Function]}
       onChangeText={[MockFunction]}
       onFocus={[Function]}
+      placeholderTextColor="#777777"
       rejectResponderTermination={true}
       state="default"
       style={
@@ -1803,6 +1804,7 @@ exports[`TextInput component default Should render textInput with icon and assis
       onBlur={[Function]}
       onChangeText={[MockFunction]}
       onFocus={[Function]}
+      placeholderTextColor="#777777"
       rejectResponderTermination={true}
       state="default"
       style={

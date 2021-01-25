@@ -852,6 +852,7 @@ exports[`StoryNatAppBarSearch component Should render StoryNatAppBarSearch compo
                         onFocus={[Function]}
                         onSubmitEditing={[Function]}
                         placeholder="Search1"
+                        placeholderTextColor="#777777"
                         rejectResponderTermination={true}
                         size="normal"
                         state="default"
@@ -2060,6 +2061,7 @@ exports[`StoryNatAppBarSearch component Should render StoryNatAppBarSearch compo
                         onFocus={[Function]}
                         onSubmitEditing={[Function]}
                         placeholder="Search2"
+                        placeholderTextColor="#777777"
                         rejectResponderTermination={true}
                         size="normal"
                         state="default"
@@ -3225,6 +3227,7 @@ exports[`StoryNatAppBarSearch component Should render StoryNatAppBarSearch compo
                         onFocus={[Function]}
                         onSubmitEditing={[Function]}
                         placeholder="Search3"
+                        placeholderTextColor="#777777"
                         rejectResponderTermination={true}
                         size="normal"
                         state="default"
@@ -4390,6 +4393,7 @@ exports[`StoryNatAppBarSearch component Should render StoryNatAppBarSearch compo
                         onFocus={[Function]}
                         onSubmitEditing={[Function]}
                         placeholder="Search4"
+                        placeholderTextColor="#777777"
                         rejectResponderTermination={true}
                         size="normal"
                         state="default"
@@ -5555,6 +5559,7 @@ exports[`StoryNatAppBarSearch component Should render StoryNatAppBarSearch compo
                         onFocus={[Function]}
                         onSubmitEditing={[Function]}
                         placeholder="Search5 - submit on each tap"
+                        placeholderTextColor="#777777"
                         rejectResponderTermination={true}
                         size="normal"
                         state="default"
