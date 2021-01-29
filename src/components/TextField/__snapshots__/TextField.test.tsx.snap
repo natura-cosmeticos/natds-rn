@@ -84,6 +84,7 @@ exports[`TextField component should match snapshot 1`] = `
               "flexShrink": 1,
               "fontSize": 16,
               "height": 56,
+              "marginRight": 24,
               "textAlignVertical": "center",
             },
           ]

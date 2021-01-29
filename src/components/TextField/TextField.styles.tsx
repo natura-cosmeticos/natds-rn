@@ -167,6 +167,7 @@ export const Input = styled.TextInput.attrs<AttrsProps>(
   font-size: 16px;
   flex: 1;
   align-self: center;
+  margin-right: 24px;
 
   text-align-vertical: ${({ multiline }) => (multiline ? 'top' : 'center')};
   height: ${({ theme, size = 'regular', numberOfLines }) => getHeight(size, theme, numberOfLines)}px;
@@ -176,9 +177,7 @@ export const Input = styled.TextInput.attrs<AttrsProps>(
 
 export const IconPress = styled.TouchableOpacity`
   align-self: center;
-  /* flex: 1; */
-  /* padding-top: 15px; */
-  padding-right: 16px;
+  margin-right: 16px;
 `;
 
 export const HelperText = styled.Text<TextFieldProps>`
