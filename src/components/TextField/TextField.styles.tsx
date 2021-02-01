@@ -167,7 +167,7 @@ export const Input = styled.TextInput.attrs<AttrsProps>(
   font-size: 16px;
   flex: 1;
   align-self: center;
-  margin-right: 24px;
+  margin-right: ${({ type }) => (type === 'password' ? '24px' : '0')};
 
   text-align-vertical: ${({ multiline }) => (multiline ? 'top' : 'center')};
   height: ${({ theme, size = 'regular', numberOfLines }) => getHeight(size, theme, numberOfLines)}px;
