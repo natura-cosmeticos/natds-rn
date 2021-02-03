@@ -128,7 +128,7 @@ const ListItemComponent = ({
   };
 
   return (
-    <>
+    <View>
       <HeaderWrapper
         style={dividerContainerStyles({ dividerType, theme })}
         accessible
@@ -158,7 +158,7 @@ const ListItemComponent = ({
           <Divider />
         </View>
       )}
-    </>
+    </View>
   );
 };
 
