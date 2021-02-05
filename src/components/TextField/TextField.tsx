@@ -1,16 +1,24 @@
 /* eslint-disable max-lines */
 /* eslint-disable complexity */
 /* eslint-disable no-unneeded-ternary */
-import React, { useState } from 'react';
-import { Text, TextInputProps } from 'react-native';
+import React, {
+  useState,
+  useRef,
+  useImperativeHandle,
+  forwardRef,
+} from 'react';
+import { Text, TextInputProps, View } from 'react-native';
 import { withTheme } from 'styled-components';
+
 import { Theme } from '../../common/themeSelectors';
+import { Icon } from '../Icon';
 
 import {
   Wrapper,
   InputWrapper,
   Input,
   Label,
+  IconPress,
   HelperText,
 } from './TextField.styles';
 
@@ -96,28 +104,38 @@ export interface TextFieldProps extends TextInputProps {
   value: string;
 }
 
-const TextFieldComponent = ({
-  size = 'regular',
-  testID = 'textField',
-  required = false,
-  disabled = false,
-  readOnly = false,
-  helperText = '',
-  multiline = false,
-  numberOfLines = 1,
-  type,
-  feedback,
-  state,
-  theme,
-  label,
-  placeholder,
-  value,
-  onBlur,
-  onChangeText,
-  onFocus,
-  onSubmitEditing,
-  ...props
-}: TextFieldProps) => {
+export interface InputRef {
+  focus(): void;
+}
+
+const TextFieldComponent: React.RefForwardingComponent<
+  InputRef,
+  TextFieldProps
+> = (
+  {
+    size = 'regular',
+    testID = 'textField',
+    required = false,
+    disabled = false,
+    readOnly = false,
+    helperText = '',
+    multiline = false,
+    numberOfLines = 1,
+    type,
+    feedback,
+    state,
+    theme,
+    label,
+    placeholder,
+    value,
+    onBlur,
+    onChangeText,
+    onFocus,
+    onSubmitEditing,
+    ...props
+  },
+  ref,
+) => {
   const [currentState, setCurrentState] = useState<TextFieldStates>(() => {
     // If a state is provided, use it as the current state
     if (state) {
@@ -127,6 +145,9 @@ const TextFieldComponent = ({
     // If value or readOnly is truthy, set the state as filled, else set as enabled
     return value || readOnly ? 'filled' : 'enabled';
   });
+  const [showPassword, setShowPassword] = useState(() => (type === 'password' ? true : false));
+
+  const inputElementRef = useRef<any>(null);
 
   const handleOnFocus = (func) => {
     setCurrentState('active');
@@ -144,14 +165,42 @@ const TextFieldComponent = ({
     }
   };
 
+  // Call the .focus() function from the passed reference
+  useImperativeHandle(ref, () => ({
+    focus() {
+      inputElementRef.current.focus();
+    },
+  }));
+
+  const renderPasswordIcon = () => (
+    <View style={{
+      height: '100%',
+      justifyContent: 'center',
+      position: 'absolute',
+      right: 0,
+    }}>
+      <IconPress
+        testID={`${testID}-icon-password`}
+        onPress={() => {
+          if (showPassword) {
+            setShowPassword(false);
+          } else {
+            setShowPassword(true);
+          }
+        }}>
+        <Icon
+          color='default'
+          size="standard"
+          name='outlined-action-visibility'
+        />
+      </IconPress>
+    </View>
+  );
+
   return (
     <Wrapper testID={testID}>
       {label !== '' && (
-        <Label
-          disabled={disabled}
-          state={currentState}
-          feedback={feedback}
-          size={size}>
+        <Label disabled={disabled} state={currentState} feedback={feedback}>
           <Text>{required ? `${label}*` : label}</Text>
         </Label>
       )}
@@ -160,11 +209,13 @@ const TextFieldComponent = ({
         disabled={disabled}
         state={currentState}
         size={size}
+        numberOfLines={numberOfLines}
         testID={`${testID}-inputWrapper`}
         feedback={feedback}>
         <Input
+          ref={inputElementRef}
           testID={`${testID}-input`}
-          secureTextEntry={type === 'password'}
+          secureTextEntry={showPassword}
           onChangeText={onChangeText}
           placeholder={placeholder}
           size={size}
@@ -181,17 +232,14 @@ const TextFieldComponent = ({
           label={label}
           {...props}
         />
+        {type === 'password' && renderPasswordIcon()}
       </InputWrapper>
 
-      <HelperText
-        disabled={disabled}
-        feedback={feedback}
-        state={currentState}
-        size={size}>
+      <HelperText disabled={disabled} feedback={feedback} state={currentState}>
         {helperText !== '' && <Text>{helperText}</Text>}
       </HelperText>
     </Wrapper>
   );
 };
 
-export const TextField = withTheme(TextFieldComponent);
+export const TextField = withTheme(forwardRef(TextFieldComponent));
