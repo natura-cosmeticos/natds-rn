@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.3.0](https://github.com/natura-cosmeticos/natds-rn/compare/v3.2.1...v3.3.0) (2021-02-05)
+
+
+### Features
+
+* **list:** implemented List component ([4c48bb4](https://github.com/natura-cosmeticos/natds-rn/commit/4c48bb4b6d9d786bb6cf653aea5943e0a23bd8c1))
+* **textfield:** textField accepts refs ([bf7df3a](https://github.com/natura-cosmeticos/natds-rn/commit/bf7df3ad05bdca500ea275856d15041b791a4406))
+
 ### [3.2.1](https://github.com/natura-cosmeticos/natds-rn/compare/v3.2.0...v3.2.1) (2020-12-14)
 
 
