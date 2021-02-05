@@ -2,7 +2,6 @@
 import React, { useState } from 'react';
 import { Modal, SafeAreaView, View } from 'react-native';
 import { ModalContent } from './NatModalSelect.styles';
-import { NatList } from '../NatList';
 import { NatAppBarSearch } from '../NatAppBarSearch';
 import { Button } from '../../../src/components/Button';
 
@@ -71,14 +70,6 @@ export const NatModalSelect: React.SFC<NatModalSelectProps> = ({
               onPressLeft={() => onClose(inputSelected)}
               iconLeft={{ svg: { name: 'outlined-naviagtion-directionright' } }}
               submitOnChange
-            />
-          </View>
-          <View style={{ flex: 1 }}>
-            <NatList
-              items={optionsList()}
-              selected={inputSelected}
-              onChange={closeOnChange}
-              multiSelect={multiSelect}
             />
           </View>
           <View style={{ height: 48 }}>
