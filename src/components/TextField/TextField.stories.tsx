@@ -1,7 +1,7 @@
 /* eslint-disable max-lines */
 import React, { useState } from 'react';
 import { View } from 'react-native';
-import { select, text as textKnob } from '@storybook/addon-knobs';
+import { select, text as textKnob, boolean as booleanKnob } from '@storybook/addon-knobs';
 import { StoryContainer } from '../../common/HelperComponents/StoryContainer';
 import { TextField } from './TextField';
 
@@ -267,6 +267,7 @@ export const Interactive = () => {
         placeholder={textKnob('Placeholder', 'Placeholder')}
         value={value}
         helperText={textKnob('HelperText', 'HelperText')}
+        multiline={booleanKnob('Multiline', false)}
       />
     </StoryContainer>
   );
