@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.3.1](https://github.com/natura-cosmeticos/natds-rn/compare/v3.3.0...v3.3.1) (2021-02-09)
+
+
+### Bug Fixes
+
+* **list:** fix component export ([0cde099](https://github.com/natura-cosmeticos/natds-rn/commit/0cde0999e31dbed3831c4428ec25aa1fb4b024ce))
+
 ## [3.3.0](https://github.com/natura-cosmeticos/natds-rn/compare/v3.2.1...v3.3.0) (2021-02-05)
 
 
