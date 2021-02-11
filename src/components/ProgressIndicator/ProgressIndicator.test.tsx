@@ -6,10 +6,6 @@ import renderer from 'react-test-renderer';
 import theme from '../../common/themeSelectors/theme/mock-theme.json';
 import { ProgressIndicator, ProgressIndicatorProps } from './ProgressIndicator';
 
-jest.mock('./CircularProgress/CircularProgress', () => ({
-  CircularProgress: 'CircularProgress',
-}));
-
 const renderProgressIndicator = (
   props?: Omit<ProgressIndicatorProps, 'theme'>,
 ) => renderer.create(
@@ -21,6 +17,30 @@ const renderProgressIndicator = (
 describe('ProgressIndicator component', () => {
   it('Should render progress indicator correctly', () => {
     const progressIndicator = renderProgressIndicator().toJSON();
+
+    expect(progressIndicator).toMatchSnapshot();
+  });
+
+  it('Should render progress indicator - size standard', () => {
+    const progressIndicator = renderProgressIndicator({
+      size: 'standard',
+    }).toJSON();
+
+    expect(progressIndicator).toMatchSnapshot();
+  });
+
+  it('Should render progress indicator - size semi', () => {
+    const progressIndicator = renderProgressIndicator({
+      size: 'semi',
+    }).toJSON();
+
+    expect(progressIndicator).toMatchSnapshot();
+  });
+
+  it('Should render progress indicator - size large', () => {
+    const progressIndicator = renderProgressIndicator({
+      size: 'large',
+    }).toJSON();
 
     expect(progressIndicator).toMatchSnapshot();
   });

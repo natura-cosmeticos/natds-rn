@@ -1,21 +1,16 @@
 import { StyleSheet } from 'react-native';
 import styled from 'styled-components/native';
-import {
-  Theme,
-  getColorPrimary,
-  getSize,
-} from '../../../common/themeSelectors';
+import { Theme, getColorPrimary } from '../../common/themeSelectors';
 
 export const Layer = styled.View<{
   size: number;
-  theme: Theme;
-}>(({ theme, size = getSize(theme, size) }) => ({
+}>(({ size }) => ({
   height: size,
   width: size,
 }));
 
 export const Line = styled.View<{ theme: Theme; size: number }>(
-  ({ theme, size = getSize(theme, size) }) => ({
+  ({ theme, size }) => ({
     borderColor: getColorPrimary(theme),
     borderRadius: size / 2,
     borderWidth: size / 10,
@@ -25,9 +20,8 @@ export const Line = styled.View<{ theme: Theme; size: number }>(
 );
 
 export const Container = styled.View<{
-  theme: Theme;
   size: number;
-}>(({ theme, size = getSize(theme, size) }) => ({
+}>(({ size }) => ({
   height: size / 2,
   overflow: 'hidden',
   width: size,
