@@ -1,27 +1,15 @@
 import React, { useEffect, useRef } from 'react';
-import {
-  Animated,
-  Easing,
-  Platform,
-} from 'react-native';
+import { Animated, Easing, Platform } from 'react-native';
 
-import { ProgressIndicatorColors } from '../ProgressIndicator';
 import {
-  Loop,
-  Layer,
-  Container,
-  Line,
+  Loop, Layer, Container, Line,
 } from './CircularProgress.styles';
 
 export interface CircularProgressProps {
   size: number;
-  color: ProgressIndicatorColors;
 }
 
-export const CircularProgress = ({
-  size,
-  color,
-}: CircularProgressProps) => {
+export const CircularProgress = ({ size }: CircularProgressProps) => {
   /**
    * Duration specify how much the circle will take to make a 360deg loop around itself,
    * decrease it will speed up the animation speed and increase will slow the animation speed
@@ -40,8 +28,8 @@ export const CircularProgress = ({
     useNativeDriver: Platform.OS !== 'web',
   });
   /**
- * The rotate animation will take from 0deg to 360deg to make a full loop around itself
- */
+   * The rotate animation will take from 0deg to 360deg to make a full loop around itself
+   */
   const fullCircularRange = 360;
   const minCircularRange = '0deg';
   const maxCircularRange = `${fullCircularRange}deg`;
@@ -50,10 +38,7 @@ export const CircularProgress = ({
       {
         rotate: timer.interpolate({
           inputRange: [0, 1],
-          outputRange: [
-            minCircularRange,
-            maxCircularRange,
-          ],
+          outputRange: [minCircularRange, maxCircularRange],
         }),
       },
     ],
@@ -78,17 +63,9 @@ export const CircularProgress = ({
   return (
     <Layer as={Animated.View} size={size}>
       <Loop as={Animated.View}>
-        <Layer
-          as={Animated.View}
-          size={size}
-          style={layerStyle}
-        >
+        <Layer as={Animated.View} size={size} style={layerStyle}>
           <Container as={Animated.View} size={size}>
-            <Line
-              as={Animated.View}
-              color={color}
-              size={size}
-            />
+            <Line as={Animated.View} size={size} />
           </Container>
         </Layer>
       </Loop>

@@ -1,30 +1,33 @@
-import {
-  StyleSheet,
-} from 'react-native';
+import { StyleSheet } from 'react-native';
 import styled from 'styled-components/native';
-import { ProgressIndicatorColors } from '../ProgressIndicator';
-import { Theme, getColorPrimary, getColorSecondary } from '../../../common/themeSelectors';
+import {
+  Theme,
+  getColorPrimary,
+  getSize,
+} from '../../../common/themeSelectors';
 
 export const Layer = styled.View<{
-  size: number,
-}>(({ size }) => ({
+  size: number;
+  theme: Theme;
+}>(({ theme, size = getSize(theme, size) }) => ({
   height: size,
   width: size,
 }));
 
-export const Line = styled.View<{
-  color: ProgressIndicatorColors;
+export const Line = styled.View<{ theme: Theme; size: number }>(
+  ({ theme, size = getSize(theme, size) }) => ({
+    borderColor: getColorPrimary(theme),
+    borderRadius: size / 2,
+    borderWidth: size / 10,
+    height: size,
+    width: size,
+  }),
+);
+
+export const Container = styled.View<{
   theme: Theme;
   size: number;
-}>(({ color, theme, size }) => ({
-  borderColor: color === 'secondary' ? getColorSecondary(theme) : getColorPrimary(theme),
-  borderRadius: size / 2,
-  borderWidth: size / 10,
-  height: size,
-  width: size,
-}));
-
-export const Container = styled.View(({ size }: { size: number }) => ({
+}>(({ theme, size = getSize(theme, size) }) => ({
   height: size / 2,
   overflow: 'hidden',
   width: size,

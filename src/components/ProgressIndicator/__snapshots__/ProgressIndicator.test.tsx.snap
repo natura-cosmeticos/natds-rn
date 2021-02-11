@@ -1,8 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ProgressIndicator component circular Should render circular progress correctly 1`] = `
+exports[`ProgressIndicator component Should render progress indicator correctly 1`] = `
 <CircularProgress
-  color="primary"
-  size={24}
+  size={48}
 />
 `;

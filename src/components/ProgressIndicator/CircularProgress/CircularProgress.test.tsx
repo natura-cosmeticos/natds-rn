@@ -7,36 +7,18 @@ import theme from '../../../common/themeSelectors/theme/mock-theme.json';
 import { CircularProgress, CircularProgressProps } from './CircularProgress';
 
 const defaultProps = {
-  color: 'primary',
-  size: 24,
-  type: 'indeterminate',
-  variant: 'circular',
+  size: 48,
 } as Omit<CircularProgressProps, 'theme'>;
 
-const renderCircularProgress = (props?: Omit<CircularProgressProps, 'theme'>) => (renderer.create(
-  <ThemeProvider theme={theme}>
-    <CircularProgress
-      {...defaultProps}
-      {...props}
-    />
-  </ThemeProvider>,
-));
+const renderCircularProgress = (props?: Omit<CircularProgressProps, 'theme'>) => renderer.create(
+    <ThemeProvider theme={theme}>
+      <CircularProgress {...defaultProps} {...props} />
+    </ThemeProvider>,
+);
 
 describe('CircularProgress component', () => {
   it('Should render circular progress with default props correctly', () => {
     const circularProgress = renderCircularProgress().toJSON();
-
-    expect(circularProgress).toMatchSnapshot();
-  });
-
-  it('Should render circular progress with color primary correctly', () => {
-    const circularProgress = renderCircularProgress({ ...defaultProps, color: 'primary' }).toJSON();
-
-    expect(circularProgress).toMatchSnapshot();
-  });
-
-  it('Should render circular progress with color primary secondary', () => {
-    const circularProgress = renderCircularProgress({ ...defaultProps, color: 'secondary' }).toJSON();
 
     expect(circularProgress).toMatchSnapshot();
   });
