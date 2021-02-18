@@ -44,4 +44,12 @@ describe('ProgressIndicator component', () => {
 
     expect(progressIndicator).toMatchSnapshot();
   });
+
+  it('Should render progress indicator - show layer', () => {
+    const progressIndicator = renderProgressIndicator({
+      showLayer: true,
+    }).toJSON();
+
+    expect(progressIndicator).toMatchSnapshot();
+  });
 });

@@ -3,7 +3,7 @@ import { withTheme } from 'styled-components/native';
 import { Theme } from '@naturacosmeticos/natds-themes/react-native';
 import { Animated, Easing, Platform } from 'react-native';
 import {
-  Container, Layer, Line, Loop,
+  Container, Layer, Line, Loop, View,
 } from './ProgressIndicator.styles';
 import { getSize } from '../../common/themeSelectors';
 
@@ -11,9 +11,13 @@ export type ProgressIndicatorSizes = 'standard' | 'semi' | 'medium' | 'large';
 
 export interface ProgressIndicatorProps {
   /**
-   * Size to be used on circular progress
+   * Size to be used on progress indicator
    */
   size?: ProgressIndicatorSizes;
+  /**
+   * Show a layer behind the progress indicator
+   */
+  showLayer?: boolean;
   /**
    * Default theme
    */
@@ -22,6 +26,7 @@ export interface ProgressIndicatorProps {
 
 export const ProgressIndicatorComponent = ({
   size = 'medium',
+  showLayer = false,
   theme,
 }: ProgressIndicatorProps) => {
   /**
@@ -75,15 +80,17 @@ export const ProgressIndicatorComponent = ({
   }, []);
 
   return (
-    <Layer as={Animated.View} size={getSize(theme, size)}>
-      <Loop as={Animated.View}>
-        <Layer as={Animated.View} size={getSize(theme, size)} style={layerStyle}>
-          <Container as={Animated.View} size={getSize(theme, size)}>
-            <Line as={Animated.View} size={getSize(theme, size)} />
-          </Container>
-        </Layer>
-      </Loop>
-    </Layer>
+    <View size={getSize(theme, size)} showLayer={showLayer}>
+      <Layer as={Animated.View} size={getSize(theme, size)}>
+        <Loop as={Animated.View}>
+          <Layer as={Animated.View} size={getSize(theme, size)} style={layerStyle}>
+            <Container as={Animated.View} size={getSize(theme, size)}>
+              <Line as={Animated.View} size={getSize(theme, size)} />
+            </Container>
+          </Layer>
+        </Loop>
+      </Layer>
+    </View>
   );
 };
 

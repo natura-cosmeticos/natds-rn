@@ -1,5 +1,5 @@
 import React from 'react';
-import { select } from '@storybook/addon-knobs';
+import { boolean, select } from '@storybook/addon-knobs';
 import { View } from 'react-native';
 import { ContainerWithTheme } from '../../common/HelperComponents/ThemeHelper.styles';
 import {
@@ -40,6 +40,7 @@ export const interactive = () => (
       <View style={{ margin: 15 }}>
         <ProgressIndicator
           size={select('Size', sizesTypes, 'medium') as ProgressIndicatorSizes}
+          showLayer={boolean('ShowLayer', false)}
         />
       </View>
     </ContainerWithTheme>

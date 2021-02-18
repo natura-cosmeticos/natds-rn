@@ -1,6 +1,19 @@
+/* eslint-disable max-len */
 import { StyleSheet } from 'react-native';
 import styled from 'styled-components/native';
-import { Theme, getColorPrimary } from '../../common/themeSelectors';
+import { Theme, getColorPrimary, getColorSurface } from '../../common/themeSelectors';
+
+export const View = styled.View<{size: number; showLayer: boolean; theme: Theme}>(
+  ({ size, showLayer, theme }) => ({
+    alignItems: 'center',
+    backgroundColor: showLayer ? getColorSurface(theme) : 'transparent',
+    borderRadius: (size + 4) / 2,
+    display: 'flex',
+    height: size + 4,
+    justifyContent: 'center',
+    width: size + 4,
+  }),
+);
 
 export const Layer = styled.View<{
   size: number;
