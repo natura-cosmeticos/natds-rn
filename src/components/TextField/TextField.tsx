@@ -235,9 +235,7 @@ const TextFieldComponent: React.RefForwardingComponent<
         {type === 'password' && renderPasswordIcon()}
       </InputWrapper>
 
-      <HelperText disabled={disabled} feedback={feedback} state={currentState}>
-        {helperText !== '' && <Text>{helperText}</Text>}
-      </HelperText>
+      {helperText !== '' && <HelperText disabled={disabled} feedback={feedback} state={currentState}>{helperText}</HelperText>}
     </Wrapper>
   );
 };
