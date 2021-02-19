@@ -183,8 +183,7 @@ export const IconPress = styled.TouchableOpacity`
 export const HelperText = styled.Text<TextFieldProps>`
   margin-top: 5px;
   font-size: 12px;
-  height: 20px;
-
+  min-height: 20px;
   color: ${({
     state,
     feedback,
