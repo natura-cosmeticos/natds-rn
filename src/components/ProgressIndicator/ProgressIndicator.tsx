@@ -30,28 +30,28 @@ export const ProgressIndicatorComponent = ({
   theme,
 }: ProgressIndicatorProps) => {
   /**
-   * Duration specify how much the circle will take to make a 360deg loop around itself,
+   * Duration specify how much the circle will take to make a 720deg loop around itself,
    * decrease it will speed up the animation speed and increase will slow the animation speed
-   * The default speed is 1 second per loop
+   * The default speed is 1.4 second per loop
    */
-  const duration = 1000;
+  const duration = 1300;
   /**
    * This animation/Animated.timing, is responsible for looping the border around the view.
    */
   const timer = useRef(new Animated.Value(0)).current;
   const rotation = Animated.timing(timer, {
     duration,
-    easing: Easing.linear,
+    easing: Easing.inOut(Easing.quad),
     isInteraction: false,
     toValue: 1,
     useNativeDriver: Platform.OS !== 'web',
   });
   /**
-   * The rotate animation will take from 0deg to 360deg to make a full loop around itself
+   * The rotate animation will take from 0deg to 720deg to make a full loop around itself
    */
-  const fullCircularRange = 360;
   const minCircularRange = '0deg';
-  const maxCircularRange = `${fullCircularRange}deg`;
+  const maxCircularRange = '720deg';
+
   const layerStyle = {
     transform: [
       {
