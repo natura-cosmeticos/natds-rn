@@ -28,7 +28,7 @@ If that is not the case, we strongly recommend that you finish the [get started]
 
 ## Prerequisites
 
-- `node`
+- `node>=12`
 - `yarn` or `npm`
 - a working project with:
   - `react@>=16.8.0`

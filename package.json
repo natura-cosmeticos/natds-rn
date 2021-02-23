@@ -1,6 +1,6 @@
 {
   "name": "@naturacosmeticos/natds-rn",
-  "version": "3.3.2-DSY-1896.0",
+  "version": "3.3.2-DSY-1896.3",
   "license": "ISC",
   "main": "build/lib/index.js",
   "keywords": [
@@ -158,8 +158,9 @@
     "webpack": "4.43.0"
   },
   "peerDependencies": {
-    "react": ">=16.8.0",
+    "node": ">=12",
     "react-native": ">=0.59.10",
+    "react": ">=16.8.0",
     "styled-components": ">=5"
   },
   "husky": {
