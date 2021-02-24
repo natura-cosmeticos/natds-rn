@@ -95,20 +95,6 @@ exports[`TextField component should match snapshot 1`] = `
         value="test"
       />
     </View>
-    <Text
-      disabled={false}
-      state="filled"
-      style={
-        Array [
-          Object {
-            "color": "#FAFAEA",
-            "fontSize": 12,
-            "height": 20,
-            "marginTop": 5,
-          },
-        ]
-      }
-    />
   </View>
 </View>
 `;
