@@ -24,7 +24,7 @@ export interface AlertProps {
     */
   variant: Variants;
   /**
-    * Color types 'check' | 'cancel' | 'warning' | 'info'
+    * Color types 'success' | 'error' | 'warning' | 'info'
     */
   type: Types;
   /**
