@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.4.0](https://github.com/natura-cosmeticos/natds-rn/compare/v3.3.3...v3.4.0) (2021-02-24)
+
+
+### Features
+
+* **checkbox:** add checkbox component ([2f209b1](https://github.com/natura-cosmeticos/natds-rn/commit/2f209b173696175bdac01c9a2308d6af0c4e0f83))
+
 ### [3.3.3](https://github.com/natura-cosmeticos/natds-rn/compare/v3.3.2...v3.3.3) (2021-02-19)
 
 
