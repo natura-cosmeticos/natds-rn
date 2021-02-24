@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.3.3](https://github.com/natura-cosmeticos/natds-rn/compare/v3.3.2...v3.3.3) (2021-02-19)
+
+
+### Bug Fixes
+
+* **text field:** allows helperText with more than on line ([8fff003](https://github.com/natura-cosmeticos/natds-rn/commit/8fff0030cedc2dc1d31b59e36060306e7b0d15d5))
+
+### [3.3.2](https://github.com/natura-cosmeticos/natds-rn/compare/v3.3.1...v3.3.2) (2021-02-19)
+
 ### [3.3.1](https://github.com/natura-cosmeticos/natds-rn/compare/v3.3.0...v3.3.1) (2021-02-09)
 
 
