@@ -34,7 +34,7 @@ export const ProgressIndicatorComponent = ({
    * decrease it will speed up the animation speed and increase will slow the animation speed
    * The default speed is 1.4 second per loop
    */
-  const duration = 1300;
+  const duration = 1400;
   /**
    * This animation/Animated.timing, is responsible for looping the border around the view.
    */
