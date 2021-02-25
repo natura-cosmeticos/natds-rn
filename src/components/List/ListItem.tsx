@@ -144,7 +144,7 @@ const ListItemComponent = ({
             disabled={disabled}
             onPress={localPress}
             testID={`${testID}-title`}
-            style={{ flexBasis: 'auto'}}
+            style={{ flexBasis: 'auto' }}
           >
             <HeaderTitle disabled={disabled} accessibilityLabel={`${title}`}>
               {title}
