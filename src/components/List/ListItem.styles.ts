@@ -49,9 +49,8 @@ export const dividerContainerStyles = ({
 
 export const HeaderWrapper = styled.View<HeaderProps>`
   flex: 1;
-  padding: 0px;
-  /* width: 100%; */
-
+  flex-basis: auto;
+  padding: 0;
   background-color: ${({ active, theme }) => (active ? `${getColorPrimary(theme)}29` : `${getColorBackground(theme)}29`)};
 `;
 
@@ -66,6 +65,7 @@ export const HeaderTitleView = styled.View<HeaderTitleProps>`
 
 export const HeaderTitle = styled.Text<TitleProps>`
   flex: 1;
+  flex-basis: auto;
   justify-content: center;
   font-size: 16px;
   margin-left: 0px;
@@ -78,8 +78,6 @@ export const HeaderTitle = styled.Text<TitleProps>`
 export const IconPress = styled.TouchableOpacity<IconProps>`
   align-self: center;
   flex: 1;
-  /* height: 40;
-  width: 40; */
   padding-top: 12px;
   padding-bottom: 12px;
   padding-right: ${({ position }) => (position === 'right' ? '16px' : '0px')};
