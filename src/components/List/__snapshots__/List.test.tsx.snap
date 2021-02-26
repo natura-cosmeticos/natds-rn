@@ -22,7 +22,7 @@ exports[`List component Should render List component correctly: List snapshot 1`
           Array [
             Object {
               "backgroundColor": "#FFFFFF29",
-              "flexBasis": 0,
+              "flexBasis": "auto",
               "flexGrow": 1,
               "flexShrink": 1,
               "paddingBottom": 0,
@@ -60,6 +60,9 @@ exports[`List component Should render List component correctly: List snapshot 1`
                   "flexShrink": 1,
                   "justifyContent": "center",
                 },
+                Object {
+                  "flexBasis": "auto",
+                },
               ]
             }
             testID="listId-title"
@@ -70,7 +73,7 @@ exports[`List component Should render List component correctly: List snapshot 1`
                 Array [
                   Object {
                     "color": "#FAF3E3",
-                    "flexBasis": 0,
+                    "flexBasis": "auto",
                     "flexGrow": 1,
                     "flexShrink": 1,
                     "fontSize": 16,
@@ -111,7 +114,7 @@ exports[`List component Should render List component correctly: List snapshot 1`
           Array [
             Object {
               "backgroundColor": "#FFFFFF29",
-              "flexBasis": 0,
+              "flexBasis": "auto",
               "flexGrow": 1,
               "flexShrink": 1,
               "paddingBottom": 0,
@@ -149,6 +152,9 @@ exports[`List component Should render List component correctly: List snapshot 1`
                   "flexShrink": 1,
                   "justifyContent": "center",
                 },
+                Object {
+                  "flexBasis": "auto",
+                },
               ]
             }
             testID="listId-title"
@@ -159,7 +165,7 @@ exports[`List component Should render List component correctly: List snapshot 1`
                 Array [
                   Object {
                     "color": "#FAF3E3",
-                    "flexBasis": 0,
+                    "flexBasis": "auto",
                     "flexGrow": 1,
                     "flexShrink": 1,
                     "fontSize": 16,
@@ -200,7 +206,7 @@ exports[`List component Should render List component correctly: List snapshot 1`
           Array [
             Object {
               "backgroundColor": "#FFFFFF29",
-              "flexBasis": 0,
+              "flexBasis": "auto",
               "flexGrow": 1,
               "flexShrink": 1,
               "paddingBottom": 0,
@@ -238,6 +244,9 @@ exports[`List component Should render List component correctly: List snapshot 1`
                   "flexShrink": 1,
                   "justifyContent": "center",
                 },
+                Object {
+                  "flexBasis": "auto",
+                },
               ]
             }
             testID="listId-title"
@@ -248,7 +257,7 @@ exports[`List component Should render List component correctly: List snapshot 1`
                 Array [
                   Object {
                     "color": "#FAF3E3",
-                    "flexBasis": 0,
+                    "flexBasis": "auto",
                     "flexGrow": 1,
                     "flexShrink": 1,
                     "fontSize": 16,
@@ -289,7 +298,7 @@ exports[`List component Should render List component correctly: List snapshot 1`
           Array [
             Object {
               "backgroundColor": "#FFFFFF29",
-              "flexBasis": 0,
+              "flexBasis": "auto",
               "flexGrow": 1,
               "flexShrink": 1,
               "paddingBottom": 0,
@@ -327,6 +336,9 @@ exports[`List component Should render List component correctly: List snapshot 1`
                   "flexShrink": 1,
                   "justifyContent": "center",
                 },
+                Object {
+                  "flexBasis": "auto",
+                },
               ]
             }
             testID="listId-title"
@@ -337,7 +349,7 @@ exports[`List component Should render List component correctly: List snapshot 1`
                 Array [
                   Object {
                     "color": "#FAF3E3",
-                    "flexBasis": 0,
+                    "flexBasis": "auto",
                     "flexGrow": 1,
                     "flexShrink": 1,
                     "fontSize": 16,
