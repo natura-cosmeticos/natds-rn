@@ -12,7 +12,6 @@ exports[`ListItem component Should render ListItem component correctly: ListItem
 >
   <View>
     <View
-      accessibilityRole="header"
       accessible={true}
       active={false}
       style={

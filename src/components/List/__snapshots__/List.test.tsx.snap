@@ -15,7 +15,6 @@ exports[`List component Should render List component correctly: List snapshot 1`
   >
     <View>
       <View
-        accessibilityRole="header"
         accessible={true}
         active={true}
         style={
@@ -107,7 +106,6 @@ exports[`List component Should render List component correctly: List snapshot 1`
     </View>
     <View>
       <View
-        accessibilityRole="header"
         accessible={true}
         active={false}
         style={
@@ -199,7 +197,6 @@ exports[`List component Should render List component correctly: List snapshot 1`
     </View>
     <View>
       <View
-        accessibilityRole="header"
         accessible={true}
         active={false}
         style={
@@ -291,7 +288,6 @@ exports[`List component Should render List component correctly: List snapshot 1`
     </View>
     <View>
       <View
-        accessibilityRole="header"
         accessible={true}
         active={false}
         style={
