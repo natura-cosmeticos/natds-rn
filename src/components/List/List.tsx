@@ -1,7 +1,7 @@
 /* eslint-disable max-lines */
 import React, { useState } from 'react';
 import { ScrollView } from 'react-native';
-import { withTheme } from 'styled-components';
+import { withTheme } from 'styled-components/native';
 import { Theme } from '../../common/themeSelectors';
 
 import { ListItem } from './ListItem';

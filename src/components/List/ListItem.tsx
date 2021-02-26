@@ -143,7 +143,9 @@ const ListItemComponent = ({
           <TouchableOpacity
             disabled={disabled}
             onPress={localPress}
-            testID={`${testID}-title`}>
+            testID={`${testID}-title`}
+            style={{ flexBasis: 'auto' }}
+          >
             <HeaderTitle disabled={disabled} accessibilityLabel={`${title}`}>
               {title}
             </HeaderTitle>
