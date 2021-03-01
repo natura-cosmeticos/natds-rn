@@ -1,45 +1,36 @@
 import React from 'react';
+import { boolean, select } from '@storybook/addon-knobs';
 import { View } from 'react-native';
-import { select } from '@storybook/addon-knobs';
-
 import { ContainerWithTheme } from '../../common/HelperComponents/ThemeHelper.styles';
 import {
   ProgressIndicator,
   ProgressIndicatorComponent,
-  ProgressIndicatorVariants,
-  ProgressIndicatorTypes,
-  ProgressIndicatorColors,
+  ProgressIndicatorSizes,
 } from './ProgressIndicator';
 
 export default {
   component: ProgressIndicatorComponent,
   parameters: {
-    componentSubtitle: 'Progress indicators express an unspecified wait time or display the length of a process.',
+    componentSubtitle:
+      'Progress indicators express an unspecified wait time or display the length of a process.',
   },
   title: 'Components|ProgressIndicator',
 };
 
-const variantTypes = {
-  variant: 'circular',
-};
-const types = {
-  indeterminate: 'indeterminate',
-};
-const colorTypes = {
-  primary: 'primary',
-  secondary: 'secondary',
+const sizesTypes = {
+  large: 'large',
+  medium: 'medium',
+  semi: 'semi',
+  standard: 'standard',
 };
 
-export const circular = () => (
+export const all = () => (
   <View style={{ maxWidth: 600 }}>
     <ContainerWithTheme>
       <View style={{ margin: 15 }}>
-        <ProgressIndicator variant="circular" type="indeterminate" color="primary" />
+        <ProgressIndicator />
       </View>
-      <View style={{ margin: 15 }}>
-        <ProgressIndicator variant="circular" type="indeterminate" color="secondary" />
-      </View>
-    </ContainerWithTheme >
+    </ContainerWithTheme>
   </View>
 );
 
@@ -48,11 +39,10 @@ export const interactive = () => (
     <ContainerWithTheme>
       <View style={{ margin: 15 }}>
         <ProgressIndicator
-          variant={select('Variant', variantTypes, 'circular') as ProgressIndicatorVariants}
-          type={select('Type', types, 'indeterminate') as ProgressIndicatorTypes}
-          color={select('Color', colorTypes, 'primary') as ProgressIndicatorColors}
+          size={select('Size', sizesTypes, 'medium') as ProgressIndicatorSizes}
+          showLayer={boolean('ShowLayer', false)}
         />
       </View>
-    </ContainerWithTheme >
+    </ContainerWithTheme>
   </View>
 );

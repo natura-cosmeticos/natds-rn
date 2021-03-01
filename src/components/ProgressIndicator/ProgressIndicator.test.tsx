@@ -6,43 +6,50 @@ import renderer from 'react-test-renderer';
 import theme from '../../common/themeSelectors/theme/mock-theme.json';
 import { ProgressIndicator, ProgressIndicatorProps } from './ProgressIndicator';
 
-jest.mock('./CircularProgress/CircularProgress', () => ({
-  CircularProgress: 'CircularProgress',
-}));
-
-const defaultProps = {
-  color: 'primary',
-  type: 'indeterminate',
-  variant: 'circular',
-} as Omit<ProgressIndicatorProps, 'theme'>;
-
-const renderProgressIndicator = (props?: Omit<ProgressIndicatorProps, 'theme'>) => (renderer.create(
-  <ThemeProvider theme={theme}>
-    <ProgressIndicator
-      {...defaultProps}
-      {...props}
-    />
-  </ThemeProvider>,
-));
+const renderProgressIndicator = (
+  props?: Omit<ProgressIndicatorProps, 'theme'>,
+) => renderer.create(
+    <ThemeProvider theme={theme}>
+      <ProgressIndicator {...props} />
+    </ThemeProvider>,
+);
 
 describe('ProgressIndicator component', () => {
-  it('Should throw error when trying to render with non supported type or variant', () => {
-    const renderProgressIndicatorWithError = () => renderProgressIndicator({
-      ...defaultProps,
-      type: 'unknown-type' as any,
-      variant: 'unknown-variant' as any,
-    });
+  it('Should render progress indicator correctly', () => {
+    const progressIndicator = renderProgressIndicator().toJSON();
 
-    const error = new Error('Not implemented yet');
-
-    expect(renderProgressIndicatorWithError).toThrow(error);
+    expect(progressIndicator).toMatchSnapshot();
   });
 
-  describe('circular', () => {
-    it('Should render circular progress correctly', () => {
-      const circularProgress = renderProgressIndicator().toJSON();
+  it('Should render progress indicator - size standard', () => {
+    const progressIndicator = renderProgressIndicator({
+      size: 'standard',
+    }).toJSON();
 
-      expect(circularProgress).toMatchSnapshot();
-    });
+    expect(progressIndicator).toMatchSnapshot();
+  });
+
+  it('Should render progress indicator - size semi', () => {
+    const progressIndicator = renderProgressIndicator({
+      size: 'semi',
+    }).toJSON();
+
+    expect(progressIndicator).toMatchSnapshot();
+  });
+
+  it('Should render progress indicator - size large', () => {
+    const progressIndicator = renderProgressIndicator({
+      size: 'large',
+    }).toJSON();
+
+    expect(progressIndicator).toMatchSnapshot();
+  });
+
+  it('Should render progress indicator - show layer', () => {
+    const progressIndicator = renderProgressIndicator({
+      showLayer: true,
+    }).toJSON();
+
+    expect(progressIndicator).toMatchSnapshot();
   });
 });
