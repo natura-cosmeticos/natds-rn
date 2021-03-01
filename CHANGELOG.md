@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.5.0](https://github.com/natura-cosmeticos/natds-rn/compare/v3.4.0...v3.5.0) (2021-03-01)
+
+
+### Features
+
+* **progress indicator:** adds showLayer props ([c598e6e](https://github.com/natura-cosmeticos/natds-rn/commit/c598e6e95e9691fd08db527529cc395eec9d7249))
+
 ## [3.4.0](https://github.com/natura-cosmeticos/natds-rn/compare/v3.3.3...v3.4.0) (2021-02-24)
 
 
