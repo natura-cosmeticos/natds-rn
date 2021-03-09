@@ -1,66 +1,31 @@
 /* eslint-disable max-lines */
-import React from 'react';
-import { View } from 'react-native';
-import { withTheme } from 'styled-components';
-
+import React, { Fragment, ReactNode, useState } from 'react';
+import { LayoutChangeEvent } from 'react-native';
 import { Theme } from '../../common/themeSelectors';
-import { Icon } from '../Icon';
-
-import {
-  HeaderWrapper,
-  HeaderTitle,
-  IconPress,
-  TouchableOpacity,
-  HeaderTitleView,
-  dividerContainerStyles,
-  Divider,
-} from './ListItem.styles';
+import { TouchableRipple } from '../TouchableRipple';
+import { ListItem as ListItemComponent } from './ListItem.styles';
 
 export interface ListItemProps {
   /**
-   * An active item is usable
+   * The children list item elements
    */
-  active: boolean;
+  children: ReactNode;
   /**
-   * A disabled item is unusable
+   * Controls the element selected styles
+   */
+  selected?: boolean;
+  /**
+   * Controls the element disabled state
    */
   disabled?: boolean;
   /**
-   * Show a separator between the items
+   * Helper to evenly distribute child elements in one line
    */
-  divider: boolean;
-  /**
-   * Divider's type options
-   */
-  dividerType?: 'full-bleed' | 'inset' | 'middle';
-  /**
-   * Wether show or not the left icon
-   */
-  hideIconLeft: boolean;
-  /**
-   * Wether show or not the right icon
-   */
-  hideIconRight: boolean;
-  /**
-   * Left icon name
-   */
-  iconLeft?: string;
-  /**
-   * Right icon name
-   */
-  iconRight?: string;
+  inline?: boolean;
   /**
    * onPress event handler
    */
   onPress?(): void;
-  /**
-   * Handle click on the left icon
-   */
-  onPressLeft?(): void;
-  /**
-   * Handle click on the right icon
-   */
-  onPressRight?(): void;
   /**
    * Id for testing
    */
@@ -68,100 +33,34 @@ export interface ListItemProps {
   /**
    * App's theme
    */
-  theme: Theme;
-  /**
-   * Item's title
-   */
-  title: string;
+  theme?: Theme;
 }
 
-const ListItemComponent = ({
-  title,
-  disabled,
-  iconLeft,
-  iconRight,
-  hideIconLeft,
-  hideIconRight,
-  onPressRight,
-  onPressLeft,
+export const ListItem = ({
+  children,
   onPress,
-  divider,
-  dividerType,
-  active,
-  theme,
-  testID = 'listId',
+  disabled,
+  ...rest
 }: ListItemProps) => {
-  if (!title) {
-    throw new Error('Title should not be an empty string');
-  }
+  const ListElement = onPress && !disabled ? TouchableRipple : Fragment;
+  const [size, setSize] = useState(0);
 
-  const renderIcon = (iconData, iconPress, position, disabledIcon) => {
-    let styleCustom = {};
+  const onLayout = (event: LayoutChangeEvent) => {
+    const { layout: { width, height } } = event.nativeEvent;
+    const biggerSide = width >= height ? width : height;
 
-    if (position === 'right') {
-      styleCustom = { position: 'absolute', right: 0 };
-    } else {
-      styleCustom = { left: 0, position: 'absolute' };
-    }
-
-    return (
-      <View style={styleCustom}>
-        <IconPress
-          testID={`${testID}-icon-${position}`}
-          onPress={iconPress}
-          disabled={disabledIcon}
-          position={position}>
-          <Icon
-            color={disabledIcon ? 'lowEmphasis' : 'default'}
-            size="standard"
-            name={iconData}
-          />
-        </IconPress>
-      </View>
-    );
-  };
-
-  const localPress = () => {
-    if (onPress) {
-      onPress();
-    }
+    setSize((biggerSide / 2));
   };
 
   return (
-    <View>
-      <HeaderWrapper
-        style={dividerContainerStyles({ dividerType, theme })}
-        accessible
-        accessibilityRole="header"
-        testID={testID}
-        active={active}>
-        {!hideIconLeft && renderIcon(iconLeft, onPressLeft, 'left', disabled)}
-
-        <HeaderTitleView
-          hideIconLeft={hideIconLeft}
-          hideIconRight={hideIconRight}>
-          <TouchableOpacity
-            disabled={disabled}
-            onPress={localPress}
-            testID={`${testID}-title`}
-            style={{ flexBasis: 'auto' }}
-          >
-            <HeaderTitle disabled={disabled} accessibilityLabel={`${title}`}>
-              {title}
-            </HeaderTitle>
-          </TouchableOpacity>
-        </HeaderTitleView>
-
-        {!hideIconRight && renderIcon(iconRight, onPressRight, 'right', disabled)}
-      </HeaderWrapper>
-
-      {divider && (
-        <View style={dividerContainerStyles({ dividerType, theme })}>
-          <Divider />
-        </View>
-      )}
-    </View>
+    <ListElement size={size} hideOverflow onPress={onPress}>
+      <ListItemComponent
+        onLayout={onLayout}
+        onPress={onPress}
+        {...rest}
+      >
+        {children}
+      </ListItemComponent >
+    </ListElement >
   );
 };
-
-export const ListItem = withTheme(ListItemComponent);

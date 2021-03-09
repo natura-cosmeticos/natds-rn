@@ -43,7 +43,7 @@ export const ProgressIndicatorComponent = ({
     duration,
     easing: Easing.inOut(Easing.quad),
     isInteraction: false,
-    toValue: 1,
+    toValue: 300,
     useNativeDriver: Platform.OS !== 'web',
   });
   /**

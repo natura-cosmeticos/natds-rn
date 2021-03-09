@@ -1,10 +1,15 @@
 /* eslint-disable max-lines */
-import React, { useState } from 'react';
-import { View } from 'react-native';
-import { array, boolean } from '@storybook/addon-knobs';
-import { StoryContainer } from '../../common/HelperComponents/StoryContainer';
-
-import { List, ItemProps } from './List';
+import React, { useState, useRef, useEffect } from 'react';
+import {
+  View, FlatList, Text, Animated, Easing,
+} from 'react-native';
+import { Card } from '../Card';
+import { Divider } from '../Divider';
+import { List } from './List';
+import { ListItem } from './ListItem';
+import { Checkbox } from '../Checkbox';
+import { Icon } from '../Icon';
+import { TextWithTheme } from '../../common/HelperComponents/ThemeHelper.styles';
 
 export default {
   component: List,
@@ -14,224 +19,138 @@ export default {
   title: 'Components|List',
 };
 
-export const Variants = () => {
-  const [brand, setBrand] = useState('');
+const data = [
+  { title: 'A Game of Thrones ', key: 'item1' },
+  { title: 'A Clash of Kings', key: 'item2' },
+  { title: 'A Storm of Swords', key: 'item3' },
+  { title: 'A Feast for Crows', key: 'item4' },
+  { title: 'A Dance with Dragons', key: 'item5', extraInfo: { releaseDate: '2000', author: 'George R.R. Marting', rating: 10 } },
+  { title: 'The Winds of Winter', key: 'item6', unreleased: true },
+  { title: 'A Dream of Spring', key: 'item7', unreleased: true },
+];
 
-  const brands = ['natura', 'avon', 'theBodyShop', 'aesop'];
-  const listBrands: ItemProps[] = brands.map(brandItem => ({
-    divider: true,
-    hideIconLeft: true,
-    hideIconRight: true,
-    id: brandItem,
-    onPress: () => setBrand(brandItem),
-    title: brandItem,
-  }));
-
+export const Base = () => {
   return (
-    <StoryContainer title="Variants">
-      <List items={listBrands} selected={[brand]} onChange={() => {}} />
-    </StoryContainer>
+    <FlatList
+      data={data}
+      renderItem={({ item }) => (
+        <ListItem>
+          <TextWithTheme>{item.title}</TextWithTheme>
+        </ListItem>
+      )}
+    />
   );
 };
 
-export const State = () => {
-  const [brand, setBrand] = useState('natura');
-
-  const brands = ['natura', 'avon', 'theBodyShop', 'aesop'];
-  const listBrands: ItemProps[] = brands.map(brandItem => ({
-    divider: true,
-    hideIconLeft: true,
-    hideIconRight: true,
-    id: brandItem,
-    onPress: () => setBrand(brandItem),
-    title: brandItem,
-  }));
+export const States = () => {
+  const [selected, setSelected] = useState('');
 
   return (
-    <StoryContainer title="States">
-      <List items={listBrands} selected={[brand]} onChange={() => {}} />
-    </StoryContainer>
+    <FlatList
+      ItemSeparatorComponent={Divider}
+      data={data}
+      renderItem={({ item }) => (
+        <ListItem
+          onPress={() => setSelected(item.key)}
+          disabled={item.unreleased}
+          selected={item.key === selected}
+        >
+          <TextWithTheme>{item.title}</TextWithTheme>
+          <Checkbox
+            selected={item.key === selected}
+            onPress={() => setSelected(item.key)}
+            disabled={item.unreleased}
+          />
+        </ListItem>
+      )}
+    />
   );
 };
 
-export const Icons = () => {
-  const [brand, setBrand] = useState('');
-  const [brandIconRight, setBrandIconRight] = useState('');
-  const [brandIconLeft, setBrandIconLeft] = useState('');
-  const brands = ['natura', 'avon', 'theBodyShop', 'aesop'];
+const Collapse = ({ children, collapsed = true }) => {
+  const height = useRef(new Animated.Value(0)).current;
 
-  const listBrands: ItemProps[] = brands.map(brandItem => ({
-    divider: true,
-    hideIconLeft: false,
-    hideIconRight: false,
-    iconLeft: 'filled-action-add',
-    iconRight: 'filled-action-add',
-    id: brandItem,
-    onPress: () => setBrand(brandItem),
-    title: brandItem,
-  }));
-  const listBrandsIconRight: ItemProps[] = brands.map(brandItem => ({
-    divider: true,
-    hideIconLeft: true,
-    hideIconRight: false,
-    iconRight: 'filled-action-add',
-    id: brandItem,
-    onPress: () => setBrandIconRight(brandItem),
-    title: brandItem,
-  }));
-  const listBrandsIconLeft: ItemProps[] = brands.map(brandItem => ({
-    divider: true,
-    hideIconLeft: false,
-    hideIconRight: true,
-    iconLeft: 'filled-action-add',
-    id: brandItem,
-    onPress: () => setBrandIconLeft(brandItem),
-    title: brandItem,
-  }));
+  useEffect(() => {
+    Animated.timing(height, {
+      duration: 600,
+      easing: Easing.inOut(Easing.quad),
+      toValue: collapsed ? 0 : 150,
+      useNativeDriver: false,
+    }).start();
+  }, [collapsed]);
+
+  const collapseStyles = {
+    backgroundColor: '#eaeaea',
+    overflow: 'hidden',
+  };
 
   return (
-    <StoryContainer title="Icons">
-      <View style={{ flex: 1, flexDirection: 'column' }}>
-        <List
-          items={listBrandsIconRight}
-          selected={[brandIconRight]}
-          onChange={() => {}}
-        />
-        <View style={{ height: 20 }} />
-
-        <List
-          items={listBrandsIconLeft}
-          selected={[brandIconLeft]}
-          onChange={() => {}}
-        />
-        <View style={{ height: 20 }} />
-
-        <List items={listBrands} selected={[brand]} onChange={() => {}} />
-      </View>
-    </StoryContainer>
+    <Animated.View style={{ ...collapseStyles, height }}>
+      {children}
+    </Animated.View>
   );
+}
+
+const renderExtraInfo = (extraInfo) => {
+  if (!extraInfo) return null;
+
+  const extraInfoData = Object
+    .keys(extraInfo)
+    .map((item, index) => (
+      <>
+        <ListItem inline>
+          <TextWithTheme>{item}</TextWithTheme>
+          <TextWithTheme>{extraInfo[item]}</TextWithTheme>
+        </ListItem>
+        {index < Object.keys(extraInfo).length - 1 ? <Divider type="inset" /> : null}
+      </>
+    ));
+
+  return extraInfoData;
 };
 
-export const Disabled = () => {
-  const [brandDisabled, setBrandDisabled] = useState('');
-  const brands = ['natura', 'avon', 'theBodyShop', 'aesop'];
-
-  const listBrandsDisabled: ItemProps[] = brands.map(brandItem => ({
-    divider: true,
-    hideIconLeft: false,
-    hideIconRight: true,
-    iconLeft: 'filled-action-add',
-    id: brandItem,
-    onPress: () => setBrandDisabled(brandItem),
-    title: brandItem,
-  }));
-
-  return (
-    <StoryContainer title="Disabled">
-        <List
-          items={listBrandsDisabled}
-          selected={[brandDisabled]}
-          onChange={() => {}}
-          disabled
-        />
-    </StoryContainer>
-  );
-};
 
 export const Dividers = () => {
-  const [brandType1, setBrandType1] = useState('');
-  const [brandType2, setBrandType2] = useState('');
-  const [brandType3, setBrandType3] = useState('');
+  const [isCollapsed, setCollapse] = useState('jjjjj');
 
-  const brands = ['natura', 'avon', 'theBodyShop', 'aesop'];
-  const listBrandsType1: ItemProps[] = brands.map(brandItem => ({
-    divider: true,
-    dividerType: 'fullBleed',
-    hideIconLeft: true,
-    hideIconRight: true,
-    id: brandItem,
-    onPress: () => setBrandType1(brandItem),
-    title: brandItem,
-  }));
-  const listBrandsType2: ItemProps[] = brands.map(brandItem => ({
-    divider: true,
-    dividerType: 'inset',
-    hideIconLeft: true,
-    hideIconRight: true,
-    id: brandItem,
-    onPress: () => setBrandType2(brandItem),
-    title: brandItem,
-  }));
-  const listBrandsType3: ItemProps[] = brands.map(brandItem => ({
-    divider: true,
-    dividerType: 'middle',
-    hideIconLeft: true,
-    hideIconRight: true,
-    id: brandItem,
-    onPress: () => setBrandType3(brandItem),
-    title: brandItem,
-  }));
+  const toggleCollapse = (id) => {
+    const newValue = isCollapsed === id ? '' : id;
+
+    setCollapse(newValue);
+  };
 
   return (
-    <StoryContainer title="Dividers">
-      <View style={{ flex: 1, flexDirection: 'column' }}>
-        <List
-          items={listBrandsType1}
-          selected={[brandType1]}
-          onChange={() => {}}
+    <View style={{ flex: 1, paddingVertical: 100 }}>
+      <Card>
+        <FlatList
+          ItemSeparatorComponent={Divider}
+          data={data}
+          renderItem={({ item, index, separators }) => (
+            <>
+              <ListItem inline onPress={() => toggleCollapse(item.key)}>
+                <Text>{item.title}</Text>
+                {
+                  item.extraInfo
+                    ?
+                    <Icon
+                      size="small"
+                      name={`outlined-navigation-arrow${isCollapsed === item.key ? 'bottom' : 'left'}`}
+                    /> : null
+                }
+              </ListItem>
+              {
+                item.extraInfo
+                  ? (
+                    <Collapse collapsed={!(isCollapsed === item.key)}>
+                      {renderExtraInfo(item.extraInfo)}
+                    </Collapse>
+                  )
+                  : null
+              }
+            </>
+          )}
         />
-        <View style={{ height: 20 }} />
-
-        <List
-          items={listBrandsType2}
-          selected={[brandType2]}
-          onChange={() => {}}
-        />
-        <View style={{ height: 20 }} />
-
-        <List
-          items={listBrandsType3}
-          selected={[brandType3]}
-          onChange={() => {}}
-        />
-      </View>
-    </StoryContainer>
+      </Card>
+    </View>
   );
 };
-
-export const Interactive = () => {
-  const [brand, setBrand] = useState('natura');
-
-  const brands = ['natura', 'avon', 'theBodyShop', 'aesop'];
-  const brandsKnob = array('Brands', brands);
-
-  const listBrands: ItemProps[] = brandsKnob.map(brandItem => ({
-    divider: boolean('Divider', true),
-    hideIconLeft: boolean('HideIconLeft', true),
-    hideIconRight: boolean('HideIconRight', true),
-    id: brandItem,
-    onPress: () => setBrand(brandItem),
-    title: brandItem,
-  }));
-
-  return (
-    <StoryContainer title="Interactive">
-      <List
-        items={listBrands}
-        selected={[brand]}
-        onChange={() => {}}
-        isRequired
-      />
-    </StoryContainer>
-  );
-};
-
-export const All = () => (
-  <View>
-    <Variants />
-    <State />
-    <Disabled />
-    <Icons />
-    <Dividers />
-  </View>
-);

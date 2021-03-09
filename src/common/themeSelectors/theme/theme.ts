@@ -6,7 +6,7 @@ export type Theme = ExternalTheme;
 export type ThemeMode = 'dark' | 'light';
 export type Brand = 'natura' | 'theBodyShop' | 'avon' | 'aesop';
 interface ThemeSelector {
-  (theme: Theme): string | undefined
+  (theme: Theme): string | number | undefined
 }
 
 export const buildTheme = (brand: Brand, mode: ThemeMode) => {
