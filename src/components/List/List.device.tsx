@@ -1,19 +1,11 @@
 import { storiesOf } from '@storybook/react-native';
 import {
-  All,
-  Variants,
-  State,
-  Disabled,
-  Icons,
+  Base,
   Dividers,
-  Interactive,
+  States,
 } from './List.stories';
 
 storiesOf('List', module)
-  .add('all', All)
-  .add('variants', Variants)
-  .add('states', State)
-  .add('disabled', Disabled)
-  .add('icons', Icons)
-  .add('dividers', Dividers)
-  .add('interactive', Interactive);
+  .add('Base', Base)
+  .add('States', States)
+  .add('Dividers', Dividers);

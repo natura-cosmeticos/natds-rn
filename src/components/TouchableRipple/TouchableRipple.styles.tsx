@@ -1,18 +1,19 @@
 import styled from 'styled-components/native';
-
 import {
-  getColorPrimary, Theme, getColorSecondary, getColorHighlight,
+  getColorPrimary,
+  getColorSecondary,
+  getColorHighlight,
+  Theme,
 } from '../../common/themeSelectors';
-import { TouchableRippleColors } from './TouchableRipple';
+import { TouchableRippleProps, TouchableRippleColors } from './TouchableRipple';
 
-export const Container = styled.View<{ size: number }>(({ size }) => ({
-  alignItems: 'center',
-  height: size,
-  justifyContent: 'center',
-  width: size,
+type ContainerProps = Pick<TouchableRippleProps, 'hideOverflow'>
+
+export const Container = styled.View<ContainerProps>(({ hideOverflow }) => ({
+  overflow: hideOverflow ? 'hidden' : 'visible',
 }));
 
-const getBackgroundColor = (color, theme) => {
+const getBackgroundColor = (color: TouchableRippleColors, theme: Theme) => {
   let colorCode;
 
   switch (color) {
@@ -32,16 +33,15 @@ const getBackgroundColor = (color, theme) => {
   return colorCode;
 };
 
-export const Ripple = styled.View<{
-  theme: Theme;
-  size: number;
-  color: TouchableRippleColors;
-}>(({ theme, size, color }) => ({
+type RippleProps = Pick<TouchableRippleProps, 'theme'>
+  & Pick<TouchableRippleProps, 'size'>
+  & Pick<TouchableRippleProps, 'color'>
+
+export const Ripple = styled.View<Required<RippleProps>>(({ theme, size, color }) => ({
   backgroundColor: getBackgroundColor(color, theme),
   borderRadius: size / 2,
   height: size,
-  left: 0,
   position: 'absolute',
-  top: 0,
   width: size,
+  zIndex: 999,
 }));

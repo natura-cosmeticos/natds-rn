@@ -1,13 +1,16 @@
-import React, { ReactElement, useRef } from 'react';
+/* eslint-disable max-statements, max-lines */
+
+import React, { ReactElement, useRef, useState } from 'react';
 import {
   TouchableWithoutFeedback,
   Animated,
   Easing,
-  View,
   Platform,
+  findNodeHandle,
+  UIManager,
 } from 'react-native';
-
 import { Container, Ripple } from './TouchableRipple.styles';
+import { Theme } from '../../common/themeSelectors';
 
 export type TouchableRippleColors = 'primary' | 'secondary' | 'highlight';
 
@@ -17,13 +20,18 @@ export interface TouchableRippleProps {
    */
   children: ReactElement;
   /**
-   * Ripple color: `primary` | `secondary`
+   * Ripple color: `primary` | `secondary` | `highlight`
+   * @default: `primary`
    */
   color?: TouchableRippleColors;
   /*
    * Deactivates the palpable effect, will not call the callback function when pressing;
    */
   disabled?: boolean;
+  /**
+   * Controls if the ripple should overflow the content of not
+   */
+  hideOverflow?: boolean;
   /**
    * Size of the children, the ripple will have the double of this size.
    */
@@ -36,12 +44,23 @@ export interface TouchableRippleProps {
    * Optional testID
    */
   testID?: string;
+  /**
+   * Optional testID
+   */
+  theme?: Theme;
 }
 
-/**
-  * This component makes a ripple effect with the react native Animated API
-  * working on the same way both on android/ios.
-  */
+const getChildrenPosition = (ref, setPosition) => {
+  if (ref && ref._children[0]) {
+    UIManager.measure(
+      findNodeHandle(ref._children[0]) || 0,
+      (elX, elY, width, height) => {
+        setPosition({ left: elX + (width / 2), top: elY + (height / 2) });
+      },
+    );
+  }
+};
+
 export const TouchableRipple = ({
   children,
   color = 'primary',
@@ -49,48 +68,36 @@ export const TouchableRipple = ({
   size,
   onPress,
   testID = 'touchable-ripple',
+  hideOverflow = false,
 }: TouchableRippleProps) => {
   const maxOpacity = 0.16;
   const animationDuration = 255;
+  const isNative = Platform.OS !== 'web';
 
-  /**
-   * The animation that makes the "scale" circle value over the children component
-   */
   const scaleValue = useRef(new Animated.Value(0)).current;
-  /**
-   * The animation that makes the "fade" effect on the circle animation after it ends
-   */
   const opacityValue = useRef(new Animated.Value(0)).current;
-  /**
-   * The ripple size will be `children size * 2`
-   */
   const rippleSize = size * 2;
 
-  /**
-   * Reset opacity values to default
-   */
+  const [position, setPosition] = useState({
+    left: '50%',
+    top: '50%',
+  });
+
   function resetAnimations() {
     scaleValue.setValue(0);
     opacityValue.setValue(0);
   }
 
-  /**
- *  After the touch, make the ripple disappear with opacity to its initial value.
- */
   function onPressOutTouchable() {
     if (onPress) {
       Animated.timing(opacityValue, {
         duration: animationDuration,
         toValue: 0,
-        useNativeDriver: Platform.OS !== 'web',
+        useNativeDriver: isNative,
       }).start(resetAnimations);
     }
   }
 
-  /**
-   * On press touchable scale the circle value to 1
-   * and the opacity to `maxOpacity` making the ripple effect.
-   */
   function onPressTouchable() {
     if (onPress) {
       resetAnimations();
@@ -99,12 +106,12 @@ export const TouchableRipple = ({
           duration: animationDuration,
           easing: Easing.bezier(0.0, 0.0, 0.2, 1),
           toValue: 1,
-          useNativeDriver: Platform.OS !== 'web',
+          useNativeDriver: isNative,
         }),
         Animated.timing(opacityValue, {
           duration: animationDuration,
           toValue: maxOpacity,
-          useNativeDriver: Platform.OS !== 'web',
+          useNativeDriver: isNative,
         }),
       ]).start();
     }
@@ -116,20 +123,28 @@ export const TouchableRipple = ({
       onPressIn={onPressTouchable}
       onPressOut={onPressOutTouchable}
       onPress={onPress}
-      delayPressOut={animationDuration}
       testID={testID}
     >
-      <Container size={rippleSize}>
+      <Container
+        hideOverflow={hideOverflow}
+        ref={ref => getChildrenPosition(ref, setPosition)}
+      >
+        {children}
         <Ripple
           as={Animated.View}
           size={rippleSize}
           color={color}
           style={{
+            left: position.left,
             opacity: opacityValue,
-            transform: [{ scale: scaleValue }],
+            top: position.top,
+            transform: [
+              { translateX: -(rippleSize / 2) },
+              { translateY: -(rippleSize / 2) },
+              { scale: scaleValue },
+            ],
           }}
         />
-        <View>{children}</View>
       </Container>
     </TouchableWithoutFeedback>
   );
