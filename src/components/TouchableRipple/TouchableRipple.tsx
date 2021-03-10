@@ -123,6 +123,7 @@ export const TouchableRipple = ({
       onPressIn={onPressTouchable}
       onPressOut={onPressOutTouchable}
       onPress={onPress}
+      delayPressOut={animationDuration}
       testID={testID}
     >
       <Container

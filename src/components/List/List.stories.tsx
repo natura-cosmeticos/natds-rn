@@ -51,6 +51,7 @@ export const States = () => {
       data={data}
       renderItem={({ item }) => (
         <ListItem
+          inline
           onPress={() => setSelected(item.key)}
           disabled={item.unreleased}
           selected={item.key === selected}
@@ -109,7 +110,6 @@ const renderExtraInfo = (extraInfo) => {
   return extraInfoData;
 };
 
-
 export const Dividers = () => {
   const [isCollapsed, setCollapse] = useState('jjjjj');
 
@@ -120,7 +120,7 @@ export const Dividers = () => {
   };
 
   return (
-    <View style={{ flex: 1, paddingVertical: 100 }}>
+    <View style={{ flex: 1, paddingVertical: 100, paddingHorizontal: 20 }}>
       <Card>
         <FlatList
           ItemSeparatorComponent={Divider}
@@ -152,5 +152,20 @@ export const Dividers = () => {
         />
       </Card>
     </View>
+  );
+};
+
+export const Vertical = () => {
+  return (
+    <FlatList
+      data={data}
+      ItemSeparatorComponent={Divider}
+      renderItem={({ item }) => (
+        <ListItem onPress={() => console.log('foi')}>
+          <TextWithTheme>{item.title}</TextWithTheme>
+          <View style={{ height: 200, backgroundColor: '#eaeaea' }} />
+        </ListItem>
+      )}
+    />
   );
 };
