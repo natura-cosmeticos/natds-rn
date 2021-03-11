@@ -1,13 +1,15 @@
 import React from 'react';
-
 import { ThemeProvider } from 'styled-components/native';
 import { fireEvent, render } from '@testing-library/react-native';
 import renderer from 'react-test-renderer';
 import theme from '../../common/themeSelectors/theme/mock-theme.json';
 import { RadioButton, RadioButtonProps } from './RadioButton';
 
-jest.mock('react-native/Libraries/Components/Touchable/TouchableOpacity',
-  () => 'TouchableOpacity');
+jest.mock('../TouchableRipple/TouchableRipple');
+jest.mock(
+  'react-native/Libraries/Components/Touchable/TouchableOpacity',
+  () => 'TouchableOpacity',
+);
 
 const renderRadioButton = (fn, props?: Omit<RadioButtonProps, 'theme'>) => (fn(
   <ThemeProvider theme={theme}>

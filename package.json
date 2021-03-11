@@ -45,7 +45,7 @@
     "ios": "concurrently --names 'auto-import-stories,react-native' 'rnstl' 'react-native run-ios'",
     "lint:commits": "commitlint --from=master",
     "lint:fix": "eslint --fix .",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx src/ types/",
     "postinstall": "npm dedupe && rm package-lock.json && rm -rf node_modules/@types/reach__router",
     "publish:pre:release": "node ./bin/release/pre-release.js",
     "publish:release": "./bin/release/release.sh",

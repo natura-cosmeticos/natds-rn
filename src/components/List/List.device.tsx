@@ -3,7 +3,7 @@ import {
   Base,
   Dividers,
   States,
-  Vertical
+  Vertical,
 } from './List.stories';
 
 storiesOf('List', module)

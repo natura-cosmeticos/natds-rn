@@ -21,7 +21,6 @@ const selectedBackground = ({ selected, theme }: Required<ListItemProps>) => (
 
 
 export const ListItem = styled.View<ListItemProps>`
-  padding: ${getTheme(getSpacingSmall)}px;
   background: ${selectedBackground};
   ${inlineStyles}
 `;

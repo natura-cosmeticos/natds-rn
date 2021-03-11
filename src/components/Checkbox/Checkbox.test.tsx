@@ -1,13 +1,16 @@
 import React from 'react';
-
 import { ThemeProvider } from 'styled-components/native';
 import { fireEvent, render } from '@testing-library/react-native';
 import renderer from 'react-test-renderer';
 import theme from '../../common/themeSelectors/theme/mock-theme.json';
 import { Checkbox, CheckboxProps } from './Checkbox';
+// import * as TouchableRipple from '../TouchableRipple/TouchableRipple';
 
-jest.mock('react-native/Libraries/Components/Touchable/TouchableOpacity',
-  () => 'TouchableOpacity');
+jest.mock('../TouchableRipple/TouchableRipple');
+jest.mock(
+  'react-native/Libraries/Components/Touchable/TouchableOpacity',
+  () => 'TouchableOpacity',
+);
 
 const renderCheckbox = (fn, props?: Omit<CheckboxProps, 'theme'>) => (fn(
   <ThemeProvider theme={theme}>
@@ -35,13 +38,20 @@ describe('Checkbox component', () => {
   });
 
   it('should render checkbox selected but disabled correctly', () => {
-    const checkbox = renderCheckbox(renderer.create, { disabled: true }).toJSON();
+    const checkbox = renderCheckbox(renderer.create, {
+      disabled: true,
+      selected: true,
+    }).toJSON();
 
     expect(checkbox).toMatchSnapshot();
   });
 
   it('should render checkbox selected but disabled with label correctly', () => {
-    const checkbox = renderCheckbox(renderer.create, { disabled: true, label: 'My Label' }).toJSON();
+    const checkbox = renderCheckbox(renderer.create, {
+      disabled: true,
+      label: 'My Label',
+      selected: true,
+    }).toJSON();
 
     expect(checkbox).toMatchSnapshot();
   });

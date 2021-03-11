@@ -1,4 +1,4 @@
-/* eslint-disable max-lines */
+/* eslint-disable */
 import React, { useState, useRef, useEffect } from 'react';
 import {
   View, FlatList, Text, Animated, Easing,

@@ -10,6 +10,8 @@ import {
   IconButtonColors,
 } from './IconButton';
 
+jest.mock('../TouchableRipple/TouchableRipple');
+
 const renderButton = (fn, props: Omit<IconButtonProps, 'theme'>) => (fn(
   <ThemeProvider theme={theme}>
     <IconButton {...props} />
