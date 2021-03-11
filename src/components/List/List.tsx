@@ -155,11 +155,9 @@ const ListComponent = ({
       item.onPress(item);
     }
   };
-
-  const renderItem = item => (
-    <ListItem
-      disabled={disabled}
-      title={item.title}
+  /* eslint-disable */
+  // @ts-ignore
+  const renderItem = item => ( <ListItem disabled={disabled} title={item.title}
       iconLeft={item.iconLeft}
       iconRight={item.iconRight}
       hideIconLeft={item.hideIconLeft}

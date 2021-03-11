@@ -1,5 +1,5 @@
 import React from 'react';
-import { TouchableRipple } from '../TouchableRipple';
+import { TouchableRipple } from '../TouchableRipple/TouchableRipple';
 import {
   Container, Box, Check, Label,
 } from './Checkbox.styles';
