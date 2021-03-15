@@ -1,5 +1,4 @@
 const { defaults: tsjPreset } = require('ts-jest/presets');
-const jestPreset = require('@testing-library/react-native/jest-preset');
 
 module.exports = {
   cacheDirectory: '.jest/cache',
@@ -17,6 +16,11 @@ module.exports = {
       statements: 75,
     },
   },
+  preset: 'react-native',
+  moduleDirectories: [
+    'node_modules',
+    'test',
+  ],
   moduleFileExtensions: [
     'ts',
     'tsx',
@@ -28,10 +32,11 @@ module.exports = {
   moduleNameMapper: {
     '\\.svg': '<rootDir>/__mocks__/svgMock.js',
   },
-  preset: '@testing-library/react-native',
   setupFiles: [
-    ...jestPreset.setupFiles,
     '<rootDir>/test-setup.js',
+  ],
+  setupFilesAfterEnv: [
+    "@testing-library/jest-native/extend-expect"
   ],
   testMatch: [
     '**/__tests__/**/*.+(ts|tsx|js)',

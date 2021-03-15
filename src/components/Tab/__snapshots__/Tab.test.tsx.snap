@@ -298,6 +298,7 @@ exports[`Tab component Should render tab component without passing any type prop
         },
       ]
     }
+    testID="tab-item-0"
     theme={
       Object {
         "body1": Object {
@@ -858,6 +859,7 @@ exports[`Tab component Should render tab component without passing any type prop
         },
       ]
     }
+    testID="tab-item-1"
     theme={
       Object {
         "body1": Object {
@@ -1418,6 +1420,7 @@ exports[`Tab component Should render tab component without passing any type prop
         },
       ]
     }
+    testID="tab-item-2"
     theme={
       Object {
         "body1": Object {

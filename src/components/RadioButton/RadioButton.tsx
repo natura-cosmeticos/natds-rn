@@ -65,8 +65,14 @@ export const RadioButton = ({
       <Circle disabled={disabled} color={color} selected={selected} testID={`${testID}-circle`}>
         {
           selected
-            ? <Center disabled={disabled} color={color} selected={selected} />
-            : null
+            ? (
+              <Center
+                disabled={disabled}
+                color={color}
+                selected={selected}
+                testID={`${testID}-circle-selected`}
+              />
+            ) : null
         }
       </Circle>
     </TouchableRipple>

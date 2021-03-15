@@ -1,25 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Link component should take a snapshot 1`] = `
-<View
-  collapsable={true}
-  pointerEvents="box-none"
+<Text
+  onPress={[MockFunction]}
   style={
     Object {
-      "flex": 1,
+      "color": "#227bbd",
+      "textDecorationLine": "none",
     }
   }
+  testID="link"
 >
-  <Text
-    style={
-      Object {
-        "color": "#227bbd",
-        "textDecorationLine": "none",
-      }
-    }
-    testID="link"
-  >
-    something
-  </Text>
-</View>
+  something
+</Text>
 `;

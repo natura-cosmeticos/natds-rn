@@ -5,7 +5,6 @@ import {
   cleanup,
   fireEvent,
   render,
-  wait,
 } from '@testing-library/react-native';
 
 import { ThemeProvider } from 'styled-components/native';
@@ -32,7 +31,7 @@ const ProviderWrapper = ({ children }) => (
 const setup = (propOverrides?: Partial<SnackbarProps>) => {
   const props = { ...defaultProps, ...propOverrides };
 
-  const result = render(<Snackbar {...props}/>, { wrapper: ProviderWrapper });
+  const result = render(<Snackbar {...props} />, { wrapper: ProviderWrapper });
 
   return {
     props,
@@ -150,11 +149,7 @@ describe('Snackbar', () => {
         const element = result.getByTestId('natds-snackbar-button');
 
         fireEvent.press(element);
-
-        // eslint-disable-next-line max-nested-callbacks
-        await wait(() => {
-          expect(props.onClose).toHaveBeenCalled();
-        });
+        expect(props.onClose).toHaveBeenCalled();
       });
     });
   });

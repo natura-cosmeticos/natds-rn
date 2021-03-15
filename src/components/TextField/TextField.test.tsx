@@ -1,8 +1,7 @@
-import '@testing-library/jest-native/extend-expect';
 import React from 'react';
-import { fireEvent, render } from '@testing-library/react-native';
-import { ThemeProvider } from 'styled-components/native';
+import { fireEvent } from '@testing-library/react-native';
 import theme from '../../common/themeSelectors/theme/mock-theme.json';
+import { render } from '../../../test/testHelpers';
 
 import { TextField, TextFieldProps } from './TextField';
 
@@ -24,18 +23,10 @@ jest.mock(
   () => 'TouchableOpacity',
 );
 
-const renderTextField = (fn, props: TextFieldProps) => (
-  fn(
-    <ThemeProvider theme={theme}>
-      <TextField {...props} />
-    </ThemeProvider>,
-  )
-);
-
 const defaultProps: TextFieldProps = {
   label: 'Label',
-  onChangeText: () => {},
-  onSubmitEditing: () => {},
+  onChangeText: () => { },
+  onSubmitEditing: () => { },
   placeholder: 'Placeholder',
   testID: 'textField',
   theme,
@@ -46,7 +37,7 @@ const defaultProps: TextFieldProps = {
 /* eslint-disable max-statements */
 describe('TextField component', () => {
   it('should render textField with default props', () => {
-    const { getByTestId } = renderTextField(render, defaultProps);
+    const { getByTestId } = render(<TextField {...defaultProps} />);
 
     const textFieldWrapper = getByTestId('textField');
     const textFieldInput = getByTestId('textField-input');
@@ -58,10 +49,10 @@ describe('TextField component', () => {
   });
 
   it('should render textField with the given state prop', () => {
-    const { getByTestId } = renderTextField(render, {
-      ...defaultProps,
-      state: 'active',
-    });
+    const { getByTestId } = render(
+      <TextField {...defaultProps} state="active" />,
+    );
+
     const textFieldInput = getByTestId('textField-inputWrapper');
 
     expect(textFieldInput).toHaveStyle({
@@ -71,10 +62,10 @@ describe('TextField component', () => {
   });
 
   it('should render textField with the given feedback prop', () => {
-    const { getByTestId } = renderTextField(render, {
-      ...defaultProps,
-      feedback: 'success',
-    });
+    const { getByTestId } = render(
+      <TextField {...defaultProps} feedback="success" />,
+    );
+
     const textFieldInput = getByTestId('textField-inputWrapper');
 
     expect(textFieldInput).toHaveStyle({
@@ -83,13 +74,24 @@ describe('TextField component', () => {
     });
   });
 
+  it('should render textField disabled', () => {
+    const { toJSON, getByTestId } = render(
+      <TextField {...defaultProps} disabled />,
+    );
+
+    const textFieldInput = getByTestId('textField-inputWrapper');
+
+    expect(textFieldInput).toBeDisabled();
+    expect(toJSON()).toMatchSnapshot();
+  });
+
   it('should call the given onChangeText function', () => {
     const onChangeTextMock = jest.fn();
 
-    const { getByTestId } = renderTextField(render, {
-      ...defaultProps,
-      onChangeText: onChangeTextMock,
-    });
+    const { getByTestId } = render(
+      <TextField {...defaultProps} onChangeText={onChangeTextMock} />,
+    );
+
     const textFieldInput = getByTestId('textField-input');
 
     fireEvent.changeText(textFieldInput);
@@ -97,105 +99,70 @@ describe('TextField component', () => {
     expect(onChangeTextMock).toHaveBeenCalled();
   });
 
-  it('should not call the given onChangeText function when TextField is disabled', () => {
-    const onChangeTextMock = jest.fn();
-
-    const { getByTestId } = renderTextField(render, {
-      ...defaultProps,
-      disabled: true,
-      onChangeText: onChangeTextMock,
-    });
-    const textFieldInput = getByTestId('textField-input');
-
-    fireEvent.changeText(textFieldInput);
-
-    expect(onChangeTextMock).not.toHaveBeenCalled();
-  });
-
   it('should call the given onFocus function', () => {
     const onFocusMock = jest.fn();
 
-    const { getByTestId } = renderTextField(render, {
-      ...defaultProps,
-      onFocus: onFocusMock,
-    });
+    const { getByTestId } = render(
+      <TextField
+        {...defaultProps}
+        onFocus={onFocusMock}
+      />,
+    );
+
     const textFieldInput = getByTestId('textField-input');
 
-    fireEvent.focus(textFieldInput);
+    fireEvent(textFieldInput, 'onFocus');
 
     expect(onFocusMock).toHaveBeenCalled();
   });
 
-  it('should not call the given onFocus function when TextField is disabled', () => {
-    const onFocusMock = jest.fn();
-
-    const { getByTestId } = renderTextField(render, {
-      ...defaultProps,
-      disabled: true,
-      onFocus: onFocusMock,
-    });
-    const textFieldInput = getByTestId('textField-input');
-
-    fireEvent.focus(textFieldInput);
-
-    expect(onFocusMock).not.toHaveBeenCalled();
-  });
 
   it('should call the given onBlur function', () => {
     const onBlurMock = jest.fn();
 
-    const { getByTestId } = renderTextField(render, {
-      ...defaultProps,
-      onBlur: onBlurMock,
-    });
+    const { getByTestId } = render(
+      <TextField
+        {...defaultProps}
+        onBlur={onBlurMock}
+      />,
+    );
+
     const textFieldInput = getByTestId('textField-input');
 
-    fireEvent.blur(textFieldInput);
+    fireEvent(textFieldInput, 'onBlur');
 
     expect(onBlurMock).toHaveBeenCalled();
   });
 
-  it('should not call the given onBlur function when TextField is disabled', () => {
-    const onBlurMock = jest.fn();
-
-    const { getByTestId } = renderTextField(render, {
-      ...defaultProps,
-      disabled: true,
-      onBlur: onBlurMock,
-    });
-    const textFieldInput = getByTestId('textField-input');
-
-    fireEvent.focus(textFieldInput);
-
-    expect(onBlurMock).not.toHaveBeenCalled();
-  });
-
   it('should match snapshot', () => {
-    const textField = renderTextField(render, defaultProps).asJSON();
+    const { toJSON } = render(
+      <TextField {...defaultProps} />,
+    );
 
-    expect(textField).toMatchSnapshot();
+    expect(toJSON()).toMatchSnapshot();
   });
 
-  it('should not call the given onChangeText function when TextField is readOnly', () => {
-    const onChangeTextMock = jest.fn();
+  it('should not be editable when read only', () => {
+    const { getByTestId } = render(
+      <TextField
+        {...defaultProps}
+        readOnly
+      />,
+    );
 
-    const { getByTestId } = renderTextField(render, {
-      ...defaultProps,
-      onChangeText: onChangeTextMock,
-      readOnly: true,
-    });
     const textFieldInput = getByTestId('textField-input');
 
-    fireEvent.change(textFieldInput);
-
-    expect(onChangeTextMock).not.toHaveBeenCalled();
+    expect(textFieldInput).toHaveProp('editable', false);
   });
 
-  it('Should render TextField type password with icon', () => {
-    const { getByTestId } = renderTextField(render, {
-      ...defaultProps,
-      type: 'password',
-    });
+  it('should render TextField type password with icon', () => {
+    const { getByTestId } = render(
+      <TextField
+        {...defaultProps}
+        type="password"
+      />,
+    );
+
     const textFieldIcon = getByTestId('textField-icon-password');
 
     expect(textFieldIcon).toBeTruthy();

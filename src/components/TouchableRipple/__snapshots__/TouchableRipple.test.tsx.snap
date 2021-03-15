@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`TouchableRipple component Should render touchapple ripple correctly 1`] = `
+exports[`TouchableRipple component Should render touchable ripple correctly 1`] = `
 <TouchableWithoutFeedback
   delayPressOut={255}
   disabled={false}
@@ -10,18 +10,18 @@ exports[`TouchableRipple component Should render touchapple ripple correctly 1`]
   testID="touchable-ripple"
 >
   <View
-    size={48}
+    hideOverflow={false}
     style={
       Array [
         Object {
-          "alignItems": "center",
-          "height": 48,
-          "justifyContent": "center",
-          "width": 48,
+          "overflow": "visible",
         },
       ]
     }
   >
+    <Text>
+      I have a ripple!
+    </Text>
     <View
       color="primary"
       size={48}
@@ -30,22 +30,188 @@ exports[`TouchableRipple component Should render touchapple ripple correctly 1`]
           "backgroundColor": "#f4ab34",
           "borderRadius": 24,
           "height": 48,
-          "left": 0,
+          "left": "50%",
           "opacity": 0,
           "position": "absolute",
-          "top": 0,
+          "top": "50%",
           "transform": Array [
+            Object {
+              "translateX": -24,
+            },
+            Object {
+              "translateY": -24,
+            },
             Object {
               "scale": 0,
             },
           ],
           "width": 48,
+          "zIndex": 999,
         }
       }
     />
-    <View>
-      <View />
-    </View>
+  </View>
+</TouchableWithoutFeedback>
+`;
+
+exports[`TouchableRipple component Should render touchable ripple with color 1`] = `
+<TouchableWithoutFeedback
+  delayPressOut={255}
+  disabled={false}
+  onPress={[Function]}
+  onPressIn={[Function]}
+  onPressOut={[Function]}
+  testID="touchable-ripple"
+>
+  <View
+    hideOverflow={false}
+    style={
+      Array [
+        Object {
+          "overflow": "visible",
+        },
+      ]
+    }
+  >
+    <Text>
+      I have a ripple!
+    </Text>
+    <View
+      color="secondary"
+      size={48}
+      style={
+        Object {
+          "backgroundColor": "#ff6b0b",
+          "borderRadius": 24,
+          "height": 48,
+          "left": "50%",
+          "opacity": 0,
+          "position": "absolute",
+          "top": "50%",
+          "transform": Array [
+            Object {
+              "translateX": -24,
+            },
+            Object {
+              "translateY": -24,
+            },
+            Object {
+              "scale": 0,
+            },
+          ],
+          "width": 48,
+          "zIndex": 999,
+        }
+      }
+    />
+  </View>
+</TouchableWithoutFeedback>
+`;
+
+exports[`TouchableRipple component Should render touchable ripple with disabled 1`] = `
+<TouchableWithoutFeedback
+  delayPressOut={255}
+  disabled={true}
+  onPress={[Function]}
+  onPressIn={[Function]}
+  onPressOut={[Function]}
+  testID="touchable-ripple"
+>
+  <View
+    hideOverflow={false}
+    style={
+      Array [
+        Object {
+          "overflow": "visible",
+        },
+      ]
+    }
+  >
+    <Text>
+      I have a ripple!
+    </Text>
+    <View
+      color="primary"
+      size={48}
+      style={
+        Object {
+          "backgroundColor": "#f4ab34",
+          "borderRadius": 24,
+          "height": 48,
+          "left": "50%",
+          "opacity": 0,
+          "position": "absolute",
+          "top": "50%",
+          "transform": Array [
+            Object {
+              "translateX": -24,
+            },
+            Object {
+              "translateY": -24,
+            },
+            Object {
+              "scale": 0,
+            },
+          ],
+          "width": 48,
+          "zIndex": 999,
+        }
+      }
+    />
+  </View>
+</TouchableWithoutFeedback>
+`;
+
+exports[`TouchableRipple component Should render touchable ripple with hideOverflow 1`] = `
+<TouchableWithoutFeedback
+  delayPressOut={255}
+  disabled={false}
+  onPress={[Function]}
+  onPressIn={[Function]}
+  onPressOut={[Function]}
+  testID="touchable-ripple"
+>
+  <View
+    hideOverflow={true}
+    style={
+      Array [
+        Object {
+          "overflow": "hidden",
+        },
+      ]
+    }
+  >
+    <Text>
+      I have a ripple!
+    </Text>
+    <View
+      color="primary"
+      size={48}
+      style={
+        Object {
+          "backgroundColor": "#f4ab34",
+          "borderRadius": 24,
+          "height": 48,
+          "left": "50%",
+          "opacity": 0,
+          "position": "absolute",
+          "top": "50%",
+          "transform": Array [
+            Object {
+              "translateX": -24,
+            },
+            Object {
+              "translateY": -24,
+            },
+            Object {
+              "scale": 0,
+            },
+          ],
+          "width": 48,
+          "zIndex": 999,
+        }
+      }
+    />
   </View>
 </TouchableWithoutFeedback>
 `;

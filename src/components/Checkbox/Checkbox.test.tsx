@@ -4,7 +4,6 @@ import { fireEvent, render } from '@testing-library/react-native';
 import renderer from 'react-test-renderer';
 import theme from '../../common/themeSelectors/theme/mock-theme.json';
 import { Checkbox, CheckboxProps } from './Checkbox';
-// import * as TouchableRipple from '../TouchableRipple/TouchableRipple';
 
 jest.mock('../TouchableRipple/TouchableRipple');
 jest.mock(

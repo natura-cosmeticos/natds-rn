@@ -53,7 +53,7 @@ describe('Link component', () => {
     expect(onPress).toHaveBeenCalled();
   });
   it('should take a snapshot', () => {
-    const component = render(link(defaultProps)).asJSON();
+    const component = render(link(defaultProps)).toJSON();
 
     expect(component).toMatchSnapshot();
   });

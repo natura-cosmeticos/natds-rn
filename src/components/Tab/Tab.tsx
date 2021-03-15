@@ -57,6 +57,7 @@ const TabComponent = ({
           onPress={() => handlePress(index)}
           theme={theme}
           type={getCurrentType(index)}
+          testID={`${testID}-item-${index}`}
         >
           <TabText theme={theme} type={getCurrentType(index)} style={{ fontWeight: 'bold' }}>
             {tabOption.label.toUpperCase()}

@@ -8,6 +8,7 @@ import {
   Platform,
   findNodeHandle,
   UIManager,
+  View,
 } from 'react-native';
 import { Container, Ripple } from './TouchableRipple.styles';
 import { Theme } from '../../common/themeSelectors';
@@ -18,7 +19,7 @@ export interface TouchableRippleProps {
   /**
    * Children component
    */
-  children: ReactElement;
+  children?: ReactElement;
   /**
    * Ripple color: `primary` | `secondary` | `highlight`
    * @default: `primary`
@@ -50,8 +51,8 @@ export interface TouchableRippleProps {
   theme?: Theme;
 }
 
-const getChildrenPosition = (ref, setPosition) => {
-  if (ref && ref._children[0]) {
+export const getChildrenPosition = (ref, setPosition: Function) => {
+  if (ref && ref._children && ref._children[0]) {
     UIManager.measure(
       findNodeHandle(ref._children[0]) || 0,
       (elX, elY, width, height) => {
@@ -60,6 +61,12 @@ const getChildrenPosition = (ref, setPosition) => {
     );
   }
 };
+// hightlight
+
+interface State {
+  left: string
+  top: string
+}
 
 export const TouchableRipple = ({
   children,
@@ -78,7 +85,7 @@ export const TouchableRipple = ({
   const opacityValue = useRef(new Animated.Value(0)).current;
   const rippleSize = size * 2;
 
-  const [position, setPosition] = useState({
+  const [position, setPosition] = useState<State>({
     left: '50%',
     top: '50%',
   });
