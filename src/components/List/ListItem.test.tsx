@@ -12,33 +12,28 @@ jest.mock('../../common/themeSelectors', () => ({
   getColorHighEmphasis: () => '#FAF3E3',
   getColorLowEmphasis: () => '#FEEEEF',
   getColorPrimary: () => '#FFFFFF',
+  getOpacityMediumLow: () => 0.5,
   getSize: () => 50,
+  getSpacingSmall: () => 16,
   getSpacingTiny: () => 10,
   getTheme: () => ({}),
 }));
 
-jest.mock(
-  'react-native/Libraries/Components/Touchable/TouchableOpacity.js',
-  () => 'TouchableOpacity',
-);
+jest.mock('../TouchableRipple/TouchableRipple');
 
 const renderList = (fn, props: ListItemProps) => (
   fn(
     <ThemeProvider theme={theme}>
-      <ListItem {...props} />
+      <ListItem {...props}>
+        <div>text</div>
+      </ListItem>
     </ThemeProvider>,
   )
 );
 
-const props: ListItemProps = {
-  // @ts-ignore
-  active: false,
-  divider: true,
-  hideIconLeft: true,
-  hideIconRight: true,
+const props = {
   onPress: jest.fn(),
-  theme,
-  title: 'Test',
+  selected: true,
 };
 
 /* eslint-disable */
@@ -49,72 +44,72 @@ describe.skip('ListItem component', () => {
     expect(listItem).toMatchSnapshot('ListItem snapshot');
   });
 
-  it('Should throw exception when title prop is not provided', () => {
-    expect(() => renderList(render, {
-      ...props,
-      // @ts-ignore
-      title: '',
-    })).toThrow(
-      'Title should not be an empty string',
-    );
-  });
+  // it('Should throw exception when title prop is not provided', () => {
+  //   expect(() => renderList(render, {
+  //     ...props,
+  //     // @ts-ignore
+  //     title: '',
+  //   })).toThrow(
+  //     'Title should not be an empty string',
+  //   );
+  // });
 
-  it('Should render ListItem component with icon', () => {
-    const { getByTestId } = renderList(render, {
-      ...props,
-      // @ts-ignore
-      hideIconLeft: false,
-      iconLeft: 'filled-action-add',
-    });
-    const iconListItem = getByTestId('listId-icon-left');
+  // it('Should render ListItem component with icon', () => {
+  //   const { getByTestId } = renderList(render, {
+  //     ...props,
+  //     // @ts-ignore
+  //     hideIconLeft: false,
+  //     iconLeft: 'filled-action-add',
+  //   });
+  //   const iconListItem = getByTestId('listId-icon-left');
 
-    expect(iconListItem).toBeTruthy();
-  });
+  //   expect(iconListItem).toBeTruthy();
+  // });
 
-  it('Should call the given onPress function', () => {
-    const onPressMock = jest.fn();
+  // it('Should call the given onPress function', () => {
+  //   const onPressMock = jest.fn();
 
-    const { getByTestId } = renderList(render, {
-      ...props,
-      onPress: onPressMock,
-    });
-    const listItem = getByTestId('listId-title');
+  //   const { getByTestId } = renderList(render, {
+  //     ...props,
+  //     onPress: onPressMock,
+  //   });
+  //   const listItem = getByTestId('listId-title');
 
-    fireEvent.press(listItem);
+  //   fireEvent.press(listItem);
 
-    expect(onPressMock).toHaveBeenCalled();
-  });
+  //   expect(onPressMock).toHaveBeenCalled();
+  // });
 
-  it('Should not call the given onPress function when list is disabled', () => {
-    const onPressMock = jest.fn();
+  // it('Should not call the given onPress function when list is disabled', () => {
+  //   const onPressMock = jest.fn();
 
-    const { getByTestId } = renderList(render, {
-      ...props,
-      disabled: true,
-      onPress: onPressMock,
-    });
-    const listItem = getByTestId('listId-title');
+  //   const { getByTestId } = renderList(render, {
+  //     ...props,
+  //     disabled: true,
+  //     onPress: onPressMock,
+  //   });
+  //   const listItem = getByTestId('listId-title');
 
-    fireEvent.press(listItem);
+  //   fireEvent.press(listItem);
 
-    expect(onPressMock).not.toHaveBeenCalled();
-  });
+  //   expect(onPressMock).not.toHaveBeenCalled();
+  // });
 
-  it('Should call the given icon onPress function', () => {
-    const onPressLeftMock = jest.fn();
+  // it('Should call the given icon onPress function', () => {
+  //   const onPressLeftMock = jest.fn();
 
 
-    const { getByTestId } = renderList(render, {
-      ...props,
-      // @ts-ignore
-      hideIconLeft: false,
-      iconLeft: 'filled-action-add',
-      onPressLeft: onPressLeftMock,
-    });
-    const listItem = getByTestId('listId-icon-left');
+  //   const { getByTestId } = renderList(render, {
+  //     ...props,
+  //     // @ts-ignore
+  //     hideIconLeft: false,
+  //     iconLeft: 'filled-action-add',
+  //     onPressLeft: onPressLeftMock,
+  //   });
+  //   const listItem = getByTestId('listId-icon-left');
 
-    fireEvent.press(listItem);
+  //   fireEvent.press(listItem);
 
-    expect(onPressLeftMock).toHaveBeenCalled();
-  });
+  //   expect(onPressLeftMock).toHaveBeenCalled();
+  // });
 });

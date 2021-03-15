@@ -86,9 +86,9 @@ describe('RadioButton component', () => {
       value: 'radio-button',
     });
 
-    const radioButtonCircle = queryByTestId('radio-button-circle');
+    const radioButtonCircle = queryByTestId('radio-button-circle-selected');
 
-    expect(radioButtonCircle.props.children).not.toBeNull();
+    expect(radioButtonCircle).not.toBeNull();
   });
 
   it('should render radio inside label container when label is different from null/undefined', () => {

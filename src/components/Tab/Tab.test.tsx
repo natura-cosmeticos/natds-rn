@@ -62,7 +62,7 @@ describe('Tab component', () => {
   it('Should have bottom border on the first tab as default', () => {
     const { queryByTestId } = renderTab(render, defaultProps);
 
-    const firstTab = queryByTestId('tab').children[0];
+    const firstTab = queryByTestId('tab-item-0');
 
     expect(firstTab).toHaveStyle({
       borderBottomColor: '#F4F4',
@@ -72,7 +72,7 @@ describe('Tab component', () => {
   it('Should add bottom border on tab item when the given tab is pressed', () => {
     const { queryByTestId } = renderTab(render, defaultProps);
 
-    const thirdTab = queryByTestId('tab').children[2];
+    const thirdTab = queryByTestId('tab-item-2');
 
     fireEvent.press(thirdTab);
 
