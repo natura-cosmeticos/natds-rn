@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.5.1](https://github.com/natura-cosmeticos/natds-rn/compare/v3.5.0...v3.5.1) (2021-03-15)
+
+
+### Bug Fixes
+
+* **textfield:** fixes multiline margin/padding ([#145](https://github.com/natura-cosmeticos/natds-rn/issues/145)) ([385af7d](https://github.com/natura-cosmeticos/natds-rn/commit/385af7d6003ab19559c34aa9f2baae574199e7e1))
+
 ## [3.5.0](https://github.com/natura-cosmeticos/natds-rn/compare/v3.4.0...v3.5.0) (2021-03-01)
 
 
