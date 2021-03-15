@@ -148,13 +148,10 @@ export const InputWrapper = styled.View<TextFieldProps>`
     theme,
   }) => getInputStyles(state, feedback, disabled, theme).borderColor};
 
-  padding: 0 16px;
 
+  padding: 8px 16px;
   height: ${({ theme, size = 'regular', numberOfLines }) => getHeight(size, theme, numberOfLines)}px;
-
   border-radius: 4px;
-  flex-direction: row;
-  justify-content: space-between;
 `;
 
 export const Input = styled.TextInput.attrs<AttrsProps>(
@@ -166,12 +163,9 @@ export const Input = styled.TextInput.attrs<AttrsProps>(
 )<TextField>`
   font-size: 16px;
   flex: 1;
-  align-self: center;
-  margin-right: ${({ type }) => (type === 'password' ? '24px' : '0')};
-
+  margin-right: ${({ type }) => (type === 'password' ? '40px' : '0')};
   text-align-vertical: ${({ multiline }) => (multiline ? 'top' : 'center')};
   height: ${({ theme, size = 'regular', numberOfLines }) => getHeight(size, theme, numberOfLines)}px;
-
   color: ${({ theme }) => getColorHighEmphasis(theme)};
 `;
 

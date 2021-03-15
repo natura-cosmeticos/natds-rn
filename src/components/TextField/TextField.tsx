@@ -174,10 +174,11 @@ const TextFieldComponent: React.RefForwardingComponent<
 
   const renderPasswordIcon = () => (
     <View style={{
-      height: '100%',
+      bottom: 0,
       justifyContent: 'center',
       position: 'absolute',
       right: 0,
+      top: 0,
     }}>
       <IconPress
         testID={`${testID}-icon-password`}

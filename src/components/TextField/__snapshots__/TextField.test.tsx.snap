@@ -50,13 +50,11 @@ exports[`TextField component should match snapshot 1`] = `
             "borderRadius": 4,
             "borderStyle": "solid",
             "borderWidth": 1,
-            "flexDirection": "row",
             "height": 56,
-            "justifyContent": "space-between",
-            "paddingBottom": 0,
+            "paddingBottom": 8,
             "paddingLeft": 16,
             "paddingRight": 16,
-            "paddingTop": 0,
+            "paddingTop": 8,
           },
         ]
       }
@@ -77,7 +75,6 @@ exports[`TextField component should match snapshot 1`] = `
         style={
           Array [
             Object {
-              "alignSelf": "center",
               "color": "#FAF3E3",
               "flexBasis": 0,
               "flexGrow": 1,
