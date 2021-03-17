@@ -142,7 +142,7 @@ describe('Snackbar', () => {
     });
 
     describe('when pressing it', () => {
-      it('dismisses the snackbar', async () => {
+      it('dismisses the snackbar', () => {
         const expectedButtonText = 'OK';
 
         const { props, result } = setup({ buttonText: expectedButtonText });

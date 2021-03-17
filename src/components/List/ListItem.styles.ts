@@ -1,26 +1,23 @@
 import styled from 'styled-components/native';
 import {
-  getTheme,
-  getSpacingSmall,
   getColorPrimary,
   getOpacityMediumLow,
+  buildColorWithOpacity,
+  getSize,
+  getTheme,
 } from '../../common/themeSelectors';
 import { ListItemProps } from './ListItem';
 
-const inlineStyles = ({ inline }: ListItemProps) => (
-  inline
-    ? 'flex-direction: row; justify-content: space-between;'
-    : ''
-);
-
-const selectedBackground = ({ selected, theme }: Required<ListItemProps>) => (
+const backgroundStyles = ({ selected, theme }: Required<ListItemProps>) => (
   selected
-    ? getColorPrimary(theme) + getOpacityMediumLow(theme) * 100
+    ? buildColorWithOpacity(getColorPrimary, getOpacityMediumLow, theme)
     : 'transparent'
 );
 
+const getSizeMedium = getTheme(theme => getSize(theme, 'medium'));
+
 
 export const ListItem = styled.View<ListItemProps>`
-  background: ${selectedBackground};
-  ${inlineStyles}
+  background: ${backgroundStyles};
+  min-height: ${getSizeMedium}
 `;

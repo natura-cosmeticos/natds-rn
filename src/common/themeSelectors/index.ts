@@ -4,4 +4,5 @@ export * from './effects/effects';
 export * from './opacity/opacity';
 export * from './sizes/sizes';
 export * from './spacing/spacing';
+export * from './helpers/helpers';
 export * from './theme/theme';

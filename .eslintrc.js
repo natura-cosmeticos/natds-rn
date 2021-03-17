@@ -50,7 +50,8 @@ module.exports = {
           "storybook/**/*",
           "storybook-web/**/*",
           "bin/**/*",
-          "lib/**/*"
+          "lib/**/*",
+          "test/**/*"
         ]
       }
     ],

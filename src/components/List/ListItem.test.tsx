@@ -1,115 +1,76 @@
+/* eslint-disable id-length */
 import '@testing-library/jest-native/extend-expect';
 import React from 'react';
-import { render, fireEvent } from '@testing-library/react-native';
-import { ThemeProvider } from 'styled-components/native';
-import theme from '../../common/themeSelectors/theme/mock-theme.json';
-
-import { ListItem, ListItemProps } from './ListItem';
-
-jest.mock('../../common/themeSelectors', () => ({
-  getColorBackground: () => '#FFFFFF',
-  getColorByName: () => '#FFFFFF',
-  getColorHighEmphasis: () => '#FAF3E3',
-  getColorLowEmphasis: () => '#FEEEEF',
-  getColorPrimary: () => '#FFFFFF',
-  getOpacityMediumLow: () => 0.5,
-  getSize: () => 50,
-  getSpacingSmall: () => 16,
-  getSpacingTiny: () => 10,
-  getTheme: () => ({}),
-}));
+import { Text, LayoutChangeEvent } from 'react-native';
+import { fireEvent } from '@testing-library/react-native';
+import { render } from '../../../test/testHelpers';
+import { ListItem, ListItemProps, getRippleSize } from './ListItem';
 
 jest.mock('../TouchableRipple/TouchableRipple');
 
-const renderList = (fn, props: ListItemProps) => (
-  fn(
-    <ThemeProvider theme={theme}>
-      <ListItem {...props}>
-        <div>text</div>
-      </ListItem>
-    </ThemeProvider>,
+const renderList = (props?: Omit<ListItemProps, 'children'>) => (
+  render(
+    <ListItem {...props}>
+      <Text>Text</Text>
+    </ListItem>,
   )
 );
 
-const props = {
-  onPress: jest.fn(),
-  selected: true,
-};
-
-/* eslint-disable */
-describe.skip('ListItem component', () => {
+describe('ListItem component', () => {
   it('Should render ListItem component correctly', () => {
-    const listItem = renderList(render, props).asJSON();
+    const { toJSON } = renderList();
 
-    expect(listItem).toMatchSnapshot('ListItem snapshot');
+    expect(toJSON()).toMatchSnapshot();
   });
 
-  // it('Should throw exception when title prop is not provided', () => {
-  //   expect(() => renderList(render, {
-  //     ...props,
-  //     // @ts-ignore
-  //     title: '',
-  //   })).toThrow(
-  //     'Title should not be an empty string',
-  //   );
-  // });
+  it('Should render ListItem with state selected', () => {
+    const { toJSON } = renderList({ selected: true });
 
-  // it('Should render ListItem component with icon', () => {
-  //   const { getByTestId } = renderList(render, {
-  //     ...props,
-  //     // @ts-ignore
-  //     hideIconLeft: false,
-  //     iconLeft: 'filled-action-add',
-  //   });
-  //   const iconListItem = getByTestId('listId-icon-left');
+    expect(toJSON()).toMatchSnapshot();
+  });
 
-  //   expect(iconListItem).toBeTruthy();
-  // });
+  it('Should render ListItem with ripple if is clickable', () => {
+    const { toJSON } = renderList({ onPress: jest.fn() });
 
-  // it('Should call the given onPress function', () => {
-  //   const onPressMock = jest.fn();
+    expect(toJSON()).toMatchSnapshot();
+  });
 
-  //   const { getByTestId } = renderList(render, {
-  //     ...props,
-  //     onPress: onPressMock,
-  //   });
-  //   const listItem = getByTestId('listId-title');
+  it('Should not render ListItem with ripple if is selected', () => {
+    const { toJSON } = renderList({ onPress: jest.fn(), selected: true });
 
-  //   fireEvent.press(listItem);
+    expect(toJSON()).toMatchSnapshot();
+  });
 
-  //   expect(onPressMock).toHaveBeenCalled();
-  // });
+  it('Should call the given onPress function', () => {
+    const onPress = jest.fn();
+    const { queryByTestId } = renderList({ onPress });
 
-  // it('Should not call the given onPress function when list is disabled', () => {
-  //   const onPressMock = jest.fn();
+    const listItem = queryByTestId('list-item-wrapper');
 
-  //   const { getByTestId } = renderList(render, {
-  //     ...props,
-  //     disabled: true,
-  //     onPress: onPressMock,
-  //   });
-  //   const listItem = getByTestId('listId-title');
+    if (listItem) {
+      fireEvent.press(listItem);
+    }
 
-  //   fireEvent.press(listItem);
+    expect(onPress).toHaveBeenCalled();
+  });
+});
 
-  //   expect(onPressMock).not.toHaveBeenCalled();
-  // });
+describe('getRippleSize', () => {
+  it('Should calculate the ripple size based on the list item layout', () => {
+    const setSizeMock = jest.fn();
+    const event: LayoutChangeEvent = {
+      nativeEvent: {
+        layout: {
+          height: 80,
+          width: 20,
+          x: 0,
+          y: 0,
+        },
+      },
+    };
 
-  // it('Should call the given icon onPress function', () => {
-  //   const onPressLeftMock = jest.fn();
+    getRippleSize(event, setSizeMock);
 
-
-  //   const { getByTestId } = renderList(render, {
-  //     ...props,
-  //     // @ts-ignore
-  //     hideIconLeft: false,
-  //     iconLeft: 'filled-action-add',
-  //     onPressLeft: onPressLeftMock,
-  //   });
-  //   const listItem = getByTestId('listId-icon-left');
-
-  //   fireEvent.press(listItem);
-
-  //   expect(onPressLeftMock).toHaveBeenCalled();
-  // });
+    expect(setSizeMock).toHaveBeenCalledWith(40);
+  });
 });
