@@ -63,7 +63,7 @@ interface IconContainerProps {
 
 const IconContainer = styled.View<IconContainerProps>`
   padding: ${({ theme, size }) => getSpacingBySize(theme, size)}px;
-  borderRadius: ${circleBorderRadius}px;
+  border-radius: ${circleBorderRadius}px;
 `;
 
 const getIconSize = (theme: Theme) => theme.size.standard;

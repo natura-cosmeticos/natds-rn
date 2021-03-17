@@ -1,0 +1,103 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ListItem component Should not render ListItem with ripple if is selected 1`] = `
+<View
+  accessible={true}
+  focusable={true}
+  onClick={[Function]}
+  onLayout={[Function]}
+  onPress={[MockFunction]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  selected={true}
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#f4ab3416",
+        "minHeight": 48,
+      },
+    ]
+  }
+  testID="list-item-wrapper"
+>
+  <Text>
+    Text
+  </Text>
+</View>
+`;
+
+exports[`ListItem component Should render ListItem component correctly 1`] = `
+<View>
+  <View
+    onLayout={[Function]}
+    style={
+      Array [
+        Object {
+          "backgroundColor": "transparent",
+          "minHeight": 48,
+        },
+      ]
+    }
+    testID="list-item"
+  >
+    <Text>
+      Text
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`ListItem component Should render ListItem with ripple if is clickable 1`] = `
+<View
+  accessible={true}
+  focusable={true}
+  onClick={[Function]}
+  onLayout={[Function]}
+  onPress={[MockFunction]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Array [
+      Object {
+        "backgroundColor": "transparent",
+        "minHeight": 48,
+      },
+    ]
+  }
+  testID="list-item-wrapper"
+>
+  <Text>
+    Text
+  </Text>
+</View>
+`;
+
+exports[`ListItem component Should render ListItem with state selected 1`] = `
+<View>
+  <View
+    onLayout={[Function]}
+    selected={true}
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#f4ab3416",
+          "minHeight": 48,
+        },
+      ]
+    }
+    testID="list-item"
+  >
+    <Text>
+      Text
+    </Text>
+  </View>
+</View>
+`;

@@ -7,6 +7,7 @@ module.exports = {
     '!<rootDir>/src/**/**/*.test.+(ts|tsx|js)',
     '!<rootDir>/src/**/**/*.device.+(ts|tsx|js)',
     '!<rootDir>/src/**/**/*.stories.+(ts|tsx|js)',
+    '!<rootDir>/src/**/**/*.data.+(ts|tsx|js)',
   ],
   coverageThreshold: {
     global: {

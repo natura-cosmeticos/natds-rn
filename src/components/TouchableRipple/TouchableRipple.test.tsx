@@ -1,5 +1,5 @@
-import React, { createRef } from 'react';
-import { View, Text, Animated, UIManager } from 'react-native';
+import React from 'react';
+import { View, Text, Animated } from 'react-native';
 import { fireEvent } from '@testing-library/react-native';
 import { TouchableRipple, TouchableRippleProps, getChildrenPosition } from './TouchableRipple';
 import { render as customRender } from '../../../test/testHelpers';

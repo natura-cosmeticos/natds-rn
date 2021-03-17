@@ -8,7 +8,6 @@ import {
   Platform,
   findNodeHandle,
   UIManager,
-  View,
 } from 'react-native';
 import { Container, Ripple } from './TouchableRipple.styles';
 import { Theme } from '../../common/themeSelectors';
@@ -61,7 +60,6 @@ export const getChildrenPosition = (ref, setPosition: Function) => {
     );
   }
 };
-// hightlight
 
 interface State {
   left: string

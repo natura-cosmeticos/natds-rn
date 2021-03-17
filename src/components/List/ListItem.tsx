@@ -1,27 +1,18 @@
-/* eslint-disable max-lines */
-import React, { Fragment, ReactNode, useState } from 'react';
-import { LayoutChangeEvent } from 'react-native';
+import React, { useState, ReactElement } from 'react';
+import { LayoutChangeEvent, View } from 'react-native';
 import { Theme } from '../../common/themeSelectors';
-import { TouchableRipple } from '../TouchableRipple';
+import { TouchableRipple, TouchableRippleProps } from '../TouchableRipple/TouchableRipple';
 import { ListItem as ListItemComponent } from './ListItem.styles';
 
 export interface ListItemProps {
   /**
    * The children list item elements
    */
-  children: ReactNode;
+  children: ReactElement;
   /**
    * Controls the element selected styles
    */
   selected?: boolean;
-  /**
-   * Controls the element disabled state
-   */
-  disabled?: boolean;
-  /**
-   * Helper to evenly distribute child elements in one line
-   */
-  inline?: boolean;
   /**
    * onPress event handler
    */
@@ -36,31 +27,56 @@ export interface ListItemProps {
   theme?: Theme;
 }
 
+export const getRippleSize = (
+  event: LayoutChangeEvent,
+  setSize: React.Dispatch<React.SetStateAction<number>>,
+) => {
+  const { layout: { width, height } } = event.nativeEvent;
+  const biggerSide = width >= height ? width : height;
+
+  setSize((biggerSide / 2));
+};
+
+const ListWrapper = ({ onPress, children, ...props }: TouchableRippleProps) => {
+  if (onPress) {
+    return (
+      <TouchableRipple onPress={onPress} {...props}>
+        {children}
+      </TouchableRipple>
+    );
+  }
+
+  return (
+    <View>
+      {children}
+    </View>
+  );
+};
+
 export const ListItem = ({
   children,
   onPress,
-  disabled,
+  testID = 'list-item',
   ...rest
 }: ListItemProps) => {
-  const ListElement = onPress && !disabled ? TouchableRipple : Fragment;
   const [size, setSize] = useState(0);
 
-  const onLayout = (event: LayoutChangeEvent) => {
-    const { layout: { width, height } } = event.nativeEvent;
-    const biggerSide = width >= height ? width : height;
-
-    setSize((biggerSide / 2));
-  };
-
   return (
-    <ListElement size={size} hideOverflow onPress={onPress}>
+    <ListWrapper
+      color="highlight"
+      hideOverflow
+      size={size}
+      onPress={onPress}
+      testID={`${testID}-wrapper`}
+    >
       <ListItemComponent
-        onLayout={onLayout}
+        testID={testID}
+        onLayout={event => onPress && getRippleSize(event, setSize)}
         onPress={onPress}
         {...rest}
       >
         {children}
       </ListItemComponent >
-    </ListElement >
+    </ListWrapper >
   );
 };
