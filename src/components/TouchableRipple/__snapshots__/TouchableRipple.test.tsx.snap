@@ -2,7 +2,7 @@
 
 exports[`TouchableRipple component Should render touchable ripple correctly 1`] = `
 <TouchableWithoutFeedback
-  delayPressOut={255}
+  delayPressOut={100}
   disabled={false}
   onPress={[Function]}
   onPressIn={[Function]}
@@ -56,7 +56,7 @@ exports[`TouchableRipple component Should render touchable ripple correctly 1`] 
 
 exports[`TouchableRipple component Should render touchable ripple with color 1`] = `
 <TouchableWithoutFeedback
-  delayPressOut={255}
+  delayPressOut={100}
   disabled={false}
   onPress={[Function]}
   onPressIn={[Function]}
@@ -110,7 +110,7 @@ exports[`TouchableRipple component Should render touchable ripple with color 1`]
 
 exports[`TouchableRipple component Should render touchable ripple with disabled 1`] = `
 <TouchableWithoutFeedback
-  delayPressOut={255}
+  delayPressOut={100}
   disabled={true}
   onPress={[Function]}
   onPressIn={[Function]}
@@ -164,7 +164,7 @@ exports[`TouchableRipple component Should render touchable ripple with disabled 
 
 exports[`TouchableRipple component Should render touchable ripple with hideOverflow 1`] = `
 <TouchableWithoutFeedback
-  delayPressOut={255}
+  delayPressOut={100}
   disabled={false}
   onPress={[Function]}
   onPressIn={[Function]}

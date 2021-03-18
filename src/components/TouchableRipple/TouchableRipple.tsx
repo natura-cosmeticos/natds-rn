@@ -76,7 +76,7 @@ export const TouchableRipple = ({
   hideOverflow = false,
 }: TouchableRippleProps) => {
   const maxOpacity = 0.16;
-  const animationDuration = 255;
+  const animationDuration = 100;
   const isNative = Platform.OS !== 'web';
 
   const scaleValue = useRef(new Animated.Value(0)).current;
