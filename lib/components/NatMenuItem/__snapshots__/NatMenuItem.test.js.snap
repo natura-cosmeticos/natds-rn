@@ -22,22 +22,45 @@ exports[`NatMenuItem component default Should render NatMenuItem NatMenuItem : N
     }
   }
 >
-  <Text
+  <View
+    accessible={true}
+    focusable={false}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
     style={
-      Array [
-        Object {
-          "alignSelf": "center",
-          "color": "#333333",
-          "flexBasis": 0,
-          "flexGrow": 1,
-          "flexShrink": 1,
-          "marginLeft": 32,
-        },
-      ]
+      Object {
+        "alignItems": "center",
+        "flex": 1,
+        "flexDirection": "row",
+        "height": 48,
+        "justifyContent": "space-between",
+        "marginLeft": 16,
+        "marginRight": 5,
+        "opacity": 1,
+      }
     }
-    type="default"
   >
-    Teste
-  </Text>
+    <Text
+      style={
+        Array [
+          Object {
+            "alignSelf": "center",
+            "color": "#333333",
+            "flexBasis": 0,
+            "flexGrow": 1,
+            "flexShrink": 1,
+          },
+        ]
+      }
+      type="default"
+    >
+      Teste
+    </Text>
+  </View>
 </View>
 `;

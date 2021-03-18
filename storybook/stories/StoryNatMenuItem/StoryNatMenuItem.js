@@ -165,11 +165,39 @@ export const StoryNatMenuItem = () => {
             <NatMenuItem
               title={item.name}
               icon={{ svg: item.svg }}
+              iconLeft={{ svg: item.svg }}
               key={item.id}
               level={item.levell}
               onPress={() => {
                 Alert.alert('click event');
               }}
+            />
+          ))}
+          <Text>Use SVG</Text>
+          {menuListSvg.map(item => (
+            <NatMenuItem
+              title={item.name}
+              icon={{ svg: item.svg }}
+              key={item.id}
+              level={item.levell}
+              onPress={() => {
+                Alert.alert('click event');
+              }}
+              showNotification={true}
+            />
+          ))}
+          <Text>Use SVG</Text>
+          {menuListSvg.map(item => (
+            <NatMenuItem
+              title={item.name}
+              icon={{ svg: item.svg }}
+              iconLeft={{ svg: item.svg }}
+              key={item.id}
+              level={item.levell}
+              onPress={() => {
+                Alert.alert('click event');
+              }}
+              showNotification={true}
             />
           ))}
           <Text>With External Icon URL</Text>

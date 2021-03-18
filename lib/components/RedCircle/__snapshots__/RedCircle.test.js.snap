@@ -7,9 +7,6 @@ exports[`RedCircle component default Should render RedCircle RedCircle : RedCirc
       "backgroundColor": "#E74627",
       "borderRadius": 50,
       "height": 10,
-      "position": "absolute",
-      "right": 0,
-      "top": 13,
       "width": 10,
     }
   }

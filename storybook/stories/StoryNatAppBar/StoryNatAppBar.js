@@ -7,11 +7,7 @@ import {
   Dimensions,
   Alert,
 } from 'react-native';
-import {
-  NatContainer,
-  NatAppBar,
-  NatLogo,
-} from '../../../lib';
+import { NatContainer, NatAppBar, NatLogo } from '../../../lib';
 
 const styles = {
   defaultScreen: {
@@ -21,11 +17,17 @@ const styles = {
 };
 
 export const StoryNatAppBar = () => {
-  const logo = () => (<NatLogo name="logo-natura-horizontal" width={150} height={56} />);
-  const logoAvon = () => (<NatLogo name="logo-avon" width={100} height={56} />);
-  const logoAesop = () => (<NatLogo name="logo-aesop" width={100} height={56} />);
-  const logoTheBodyShop = () => (<NatLogo name="logo-the-body-shop" width={200} height={56} />);
-  const logoNaturaco = () => (<NatLogo name="logo-naturaco" width={150} height={56} />);
+  const logo = () => (
+    <NatLogo name="logo-natura-horizontal" width={150} height={56} />
+  );
+  const logoAvon = () => <NatLogo name="logo-avon" width={120} height={56} />;
+  const logoAesop = () => <NatLogo name="logo-aesop" width={100} height={56} />;
+  const logoTheBodyShop = () => (
+    <NatLogo name="logo-the-body-shop" width={200} height={56} />
+  );
+  const logoNaturaco = () => (
+    <NatLogo name="logo-naturaco" width={150} height={56} />
+  );
 
   return (
     <SafeAreaView style={styles.defaultScreen}>
@@ -46,6 +48,7 @@ export const StoryNatAppBar = () => {
             iconRight={{ svg: { name: 'outlined-action-autofilter' } }}
             onPressLeft={() => Alert.alert('press')}
             onPressRight={() => Alert.alert('press')}
+            showNotification={true}
           />
           <View style={{ height: 60 }} />
           <NatAppBar
@@ -55,10 +58,7 @@ export const StoryNatAppBar = () => {
             onPress={() => Alert.alert('press')}
           />
           <View style={{ height: 60 }} />
-          <NatAppBar
-            title="Title Text"
-            onPress={() => Alert.alert('press')}
-          />
+          <NatAppBar title="Title Text" onPress={() => Alert.alert('press')} />
           <View style={{ height: 60 }} />
           <NatAppBar
             title="Title Text"
@@ -136,5 +136,4 @@ export const StoryNatAppBar = () => {
   );
 };
 
-StoryNatAppBar.propTypes = {
-};
+StoryNatAppBar.propTypes = {};
