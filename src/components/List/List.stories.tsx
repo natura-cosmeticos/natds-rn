@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { View, FlatList, Text } from 'react-native';
 import { Card } from '../Card';
 import { Divider } from '../Divider';
-import { ListItem } from './ListItem';
+import { ListItem, ListItemFeedback } from './ListItem';
 import { Checkbox } from '../Checkbox';
 import { TextWithTheme } from '../../common/HelperComponents/ThemeHelper.styles';
 import { data } from './stories.data';
@@ -29,11 +29,25 @@ export const Base = () => (
   />
 );
 
-export const States = () => {
+export const RippleFeedback = () => (
+  <FlatList
+    data={data}
+    renderItem={({ item }) => (
+      <ListItem feedback="ripple" onPress={() => console.log('I was pressed')}>
+        <View style={{ padding: 16 }}>
+          <TextWithTheme>{item.title}</TextWithTheme>
+        </View>
+      </ListItem>
+    )}
+  />
+);
+
+export const SelectionFeedback = () => {
   const [selected, setSelected] = useState('');
 
   const renderItem = ({ item }) => {
     const listItemProps = {
+      feedback: 'selection' as ListItemFeedback,
       selected: item.key === selected,
       ...(item.unreleased ? {} : { onPress: () => setSelected(item.key) }),
     };

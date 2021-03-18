@@ -1,8 +1,10 @@
 import React, { useState, ReactElement } from 'react';
-import { LayoutChangeEvent, View } from 'react-native';
+import { LayoutChangeEvent, View, TouchableWithoutFeedback } from 'react-native';
 import { Theme } from '../../common/themeSelectors';
 import { TouchableRipple, TouchableRippleProps } from '../TouchableRipple/TouchableRipple';
 import { ListItem as ListItemComponent } from './ListItem.styles';
+
+export type ListItemFeedback = 'ripple' | 'selection'
 
 export interface ListItemProps {
   /**
@@ -10,7 +12,13 @@ export interface ListItemProps {
    */
   children: ReactElement;
   /**
-   * Controls the element selected styles
+   * Controls the element feedback type
+   * @Default ripple
+   */
+  feedback?: ListItemFeedback;
+  /**
+   * Controls the element selected styles feedback type is selection
+   * @Default false
    */
   selected?: boolean;
   /**
@@ -37,8 +45,20 @@ export const getRippleSize = (
   setSize((biggerSide / 2));
 };
 
-const ListWrapper = ({ onPress, children, ...props }: TouchableRippleProps) => {
-  if (onPress) {
+type ListWrapper = TouchableRippleProps & Pick<ListItemProps, 'feedback'>
+
+const ListWrapper = ({
+  onPress, children, feedback, ...props
+}: ListWrapper) => {
+  if (!onPress) {
+    return (
+      <View>
+        {children}
+      </View>
+    );
+  }
+
+  if (feedback === 'ripple') {
     return (
       <TouchableRipple onPress={onPress} {...props}>
         {children}
@@ -47,9 +67,9 @@ const ListWrapper = ({ onPress, children, ...props }: TouchableRippleProps) => {
   }
 
   return (
-    <View>
+    <TouchableWithoutFeedback onPress={onPress} {...props}>
       {children}
-    </View>
+    </TouchableWithoutFeedback>
   );
 };
 
@@ -57,6 +77,7 @@ export const ListItem = ({
   children,
   onPress,
   testID = 'list-item',
+  feedback = 'ripple',
   ...rest
 }: ListItemProps) => {
   const [size, setSize] = useState(0);
@@ -68,6 +89,7 @@ export const ListItem = ({
       size={size}
       onPress={onPress}
       testID={`${testID}-wrapper`}
+      feedback={feedback}
     >
       <ListItemComponent
         testID={testID}

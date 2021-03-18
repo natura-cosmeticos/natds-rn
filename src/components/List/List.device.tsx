@@ -2,10 +2,12 @@ import { storiesOf } from '@storybook/react-native';
 import {
   Base,
   Dividers,
-  States,
+  RippleFeedback,
+  SelectionFeedback,
 } from './List.stories';
 
 storiesOf('List', module)
   .add('Base', Base)
-  .add('States', States)
+  .add('FeedbackRipple', RippleFeedback)
+  .add('FeedbackSelection', SelectionFeedback)
   .add('Dividers', Dividers);
