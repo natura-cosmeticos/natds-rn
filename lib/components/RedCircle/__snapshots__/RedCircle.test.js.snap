@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RedCircle component default Should render RedCircle RedCircle : RedCircle snapshot 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#E74627",
+      "borderRadius": 50,
+      "height": 10,
+      "position": "absolute",
+      "right": 0,
+      "top": 13,
+      "width": 10,
+    }
+  }
+/>
+`;
