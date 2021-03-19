@@ -8,7 +8,7 @@ export * from './Divider';
 export * from './Icon';
 export * from './IconButton';
 export * from './Link';
-export * from './List';
+export * from './ListItem';
 export * from './ProgressIndicator';
 export * from './RadioButton';
 export * from './Snackbar';

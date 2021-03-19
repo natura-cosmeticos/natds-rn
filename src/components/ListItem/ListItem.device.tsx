@@ -4,7 +4,7 @@ import {
   Dividers,
   RippleFeedback,
   SelectionFeedback,
-} from './List.stories';
+} from './ListItem.stories';
 
 storiesOf('List', module)
   .add('Base', Base)

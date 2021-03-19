@@ -17,7 +17,7 @@ export const data = [
   },
   {
     extraInfo: {
-      author: 'George R.R. Marting',
+      author: 'George R.R. Martin',
       rating: 10,
       releaseDate: '2000',
     },
