@@ -158,10 +158,12 @@
     "webpack": "4.43.0"
   },
   "peerDependencies": {
-    "node": ">=12",
     "react": ">=16.8.0",
     "react-native": ">=0.59.10",
     "styled-components": ">=5"
+  },
+  "engines": {
+    "node": ">=12"
   },
   "husky": {
     "hooks": {
