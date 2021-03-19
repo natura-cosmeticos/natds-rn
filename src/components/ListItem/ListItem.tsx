@@ -12,7 +12,7 @@ export interface ListItemProps {
    */
   children: ReactElement;
   /**
-   * Controls the element feedback type
+   * Controls the element feedback type `ripple` | `selection`
    * @Default ripple
    */
   feedback?: ListItemFeedback;
