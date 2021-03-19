@@ -85,3 +85,6 @@ storybook-web/static/dist/*
 
 # storybook folder for s3 deploy
 public
+
+# auto generated storybook main file
+storybook/storyLoader.ts

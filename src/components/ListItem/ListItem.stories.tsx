@@ -11,7 +11,7 @@ import { data } from './stories.data';
 export default {
   component: ListItem,
   parameters: {
-    componentSubtitle: 'List let users choose between several items',
+    componentSubtitle: 'List items are rows information that can have user interactions or not',
   },
   title: 'Components|List',
 };
