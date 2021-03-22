@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text, Animated } from 'react-native';
 import { fireEvent } from '@testing-library/react-native';
 import { TouchableRipple, TouchableRippleProps, getChildrenPosition } from './TouchableRipple';
-import { render as customRender } from '../../../test/testHelpers';
+import { renderWithTheme } from '../../../test/testHelpers';
 
 jest.mock('react-native', () => {
   const RN = jest.requireActual('react-native');
@@ -33,7 +33,7 @@ const defaultProps = {
 
 const renderTouchableRipple = (
   props?: Partial<TouchableRippleProps>,
-) => customRender<TouchableRippleProps>(
+) => renderWithTheme(
   <TouchableRipple {...defaultProps} {...props} >
     <Text>I have a ripple!</Text>
   </TouchableRipple>,
