@@ -2,6 +2,28 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [5.0.0](https://github.com/natura-cosmeticos/natds-rn/compare/v3.3.1...v5.0.0) (2021-03-22)
+
+
+### ⚠ BREAKING CHANGES
+
+* **list-item:** the List component was removed. Also, the ListItem props and usage have changed. Refer to the component docs for more information
+
+DSY-1948
+
+### Features
+
+* **checkbox:** add checkbox component ([935201f](https://github.com/natura-cosmeticos/natds-rn/commit/935201f3800b432baf24b155280af12a10405a22))
+* **progress indicator:** adds showLayer props ([29d19ff](https://github.com/natura-cosmeticos/natds-rn/commit/29d19ff7251a98f27d97f6446b87ef9b25c51d0b))
+
+
+### Bug Fixes
+
+* remove unit warnings ([d5a3983](https://github.com/natura-cosmeticos/natds-rn/commit/d5a39830134a21b0d53a18fa3d3cad5f35838f75))
+* **list-item:** change list item to work with native list implementation ([22e0751](https://github.com/natura-cosmeticos/natds-rn/commit/22e075120022ef07cb42c836b49fca17fef0d1a4))
+* **text field:** allows helperText with more than on line ([cbbaaa0](https://github.com/natura-cosmeticos/natds-rn/commit/cbbaaa0dee0d59b6c09cd8fb4d736c20292d457c))
+* **textfield:** fixes multiline margin/padding ([#145](https://github.com/natura-cosmeticos/natds-rn/issues/145)) ([c1008d8](https://github.com/natura-cosmeticos/natds-rn/commit/c1008d86a8147fe861ad2063107891f9255137fe))
+
 ## [4.0.0](https://github.com/natura-cosmeticos/natds-rn/compare/v3.5.1...v4.0.0) (2021-03-22)
 
 
