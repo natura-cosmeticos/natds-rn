@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.0.0](https://github.com/natura-cosmeticos/natds-rn/compare/v3.5.1...v4.0.0) (2021-03-22)
+
+
+### ⚠ BREAKING CHANGES
+
+* the List component was removed. Also, the ListItem props and usage have changed. Refer to the component docs for more information
+
+DSY-1948
+
+### Bug Fixes
+
+* change list item behaviour to work with native list implementations ([74b9396](https://github.com/natura-cosmeticos/natds-rn/commit/74b9396dbae8798ecf1d19ee8d9d1611c394a641))
+
 ### [3.5.1](https://github.com/natura-cosmeticos/natds-rn/compare/v3.5.0...v3.5.1) (2021-03-15)
 
 
