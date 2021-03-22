@@ -3,13 +3,13 @@ import '@testing-library/jest-native/extend-expect';
 import React from 'react';
 import { Text, LayoutChangeEvent } from 'react-native';
 import { fireEvent } from '@testing-library/react-native';
-import { render } from '../../../test/testHelpers';
+import { renderWithTheme } from '../../../test/testHelpers';
 import { ListItem, ListItemProps, getRippleSize } from './ListItem';
 
 jest.mock('../TouchableRipple/TouchableRipple');
 
 const renderList = (props?: Omit<ListItemProps, 'children'>) => (
-  render(
+  renderWithTheme(
     <ListItem {...props}>
       <Text>Text</Text>
     </ListItem>,

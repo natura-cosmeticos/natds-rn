@@ -1,7 +1,7 @@
 import React from 'react';
 import { fireEvent } from '@testing-library/react-native';
 import theme from '../../common/themeSelectors/theme/mock-theme.json';
-import { render } from '../../../test/testHelpers';
+import { renderWithTheme } from '../../../test/testHelpers';
 
 import { TextField, TextFieldProps } from './TextField';
 
@@ -37,7 +37,7 @@ const defaultProps: TextFieldProps = {
 /* eslint-disable max-statements */
 describe('TextField component', () => {
   it('should render textField with default props', () => {
-    const { getByTestId } = render(<TextField {...defaultProps} />);
+    const { getByTestId } = renderWithTheme(<TextField {...defaultProps} />);
 
     const textFieldWrapper = getByTestId('textField');
     const textFieldInput = getByTestId('textField-input');
@@ -49,7 +49,7 @@ describe('TextField component', () => {
   });
 
   it('should render textField with the given state prop', () => {
-    const { getByTestId } = render(
+    const { getByTestId } = renderWithTheme(
       <TextField {...defaultProps} state="active" />,
     );
 
@@ -62,7 +62,7 @@ describe('TextField component', () => {
   });
 
   it('should render textField with the given feedback prop', () => {
-    const { getByTestId } = render(
+    const { getByTestId } = renderWithTheme(
       <TextField {...defaultProps} feedback="success" />,
     );
 
@@ -75,7 +75,7 @@ describe('TextField component', () => {
   });
 
   it('should render textField disabled', () => {
-    const { toJSON, getByTestId } = render(
+    const { toJSON, getByTestId } = renderWithTheme(
       <TextField {...defaultProps} disabled />,
     );
 
@@ -88,7 +88,7 @@ describe('TextField component', () => {
   it('should call the given onChangeText function', () => {
     const onChangeTextMock = jest.fn();
 
-    const { getByTestId } = render(
+    const { getByTestId } = renderWithTheme(
       <TextField {...defaultProps} onChangeText={onChangeTextMock} />,
     );
 
@@ -102,7 +102,7 @@ describe('TextField component', () => {
   it('should call the given onFocus function', () => {
     const onFocusMock = jest.fn();
 
-    const { getByTestId } = render(
+    const { getByTestId } = renderWithTheme(
       <TextField
         {...defaultProps}
         onFocus={onFocusMock}
@@ -120,7 +120,7 @@ describe('TextField component', () => {
   it('should call the given onBlur function', () => {
     const onBlurMock = jest.fn();
 
-    const { getByTestId } = render(
+    const { getByTestId } = renderWithTheme(
       <TextField
         {...defaultProps}
         onBlur={onBlurMock}
@@ -135,7 +135,7 @@ describe('TextField component', () => {
   });
 
   it('should match snapshot', () => {
-    const { toJSON } = render(
+    const { toJSON } = renderWithTheme(
       <TextField {...defaultProps} />,
     );
 
@@ -143,7 +143,7 @@ describe('TextField component', () => {
   });
 
   it('should not be editable when read only', () => {
-    const { getByTestId } = render(
+    const { getByTestId } = renderWithTheme(
       <TextField
         {...defaultProps}
         readOnly
@@ -156,7 +156,7 @@ describe('TextField component', () => {
   });
 
   it('should render TextField type password with icon', () => {
-    const { getByTestId } = render(
+    const { getByTestId } = renderWithTheme(
       <TextField
         {...defaultProps}
         type="password"

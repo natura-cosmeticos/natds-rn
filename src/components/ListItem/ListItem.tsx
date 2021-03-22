@@ -17,7 +17,7 @@ export interface ListItemProps {
    */
   feedback?: ListItemFeedback;
   /**
-   * Controls the element selected styles feedback type is selection
+   * Controls the element selected styles when feedback type is `selection`
    * @Default false
    */
   selected?: boolean;
