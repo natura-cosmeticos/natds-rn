@@ -16,8 +16,7 @@ const backgroundStyles = ({ selected, theme }: Required<ListItemProps>) => (
 
 const getSizeMedium = getTheme(theme => getSize(theme, 'medium'));
 
-
 export const ListItem = styled.View<ListItemProps>`
   background: ${backgroundStyles};
-  min-height: ${getSizeMedium}
+  min-height: ${getSizeMedium}px;
 `;
