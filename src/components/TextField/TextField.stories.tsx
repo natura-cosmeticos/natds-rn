@@ -7,10 +7,50 @@ import {
 import { StoryContainer } from '../../common/HelperComponents/StoryContainer';
 import { TextField } from './TextField';
 
+const description = () => `
+  ### NOTE:
+  This component is available in the following variants:
+
+  - ✅ Standard
+
+With the following attribute statuses:
+
+  - **Size:**
+    - ✅ \`Medium\`
+    - ✅ \`MediumX\`
+  - **Style:**
+    - ✅ \`outlined\`
+  - **States:**
+    - ✅ \`enabled\`
+    - ✅ \`active\`
+    - ✅ \`filled\`
+  - **Feedback:**
+    - ✅ \`Error\`
+    - ✅ \`Success\`
+  - **Required** ✅
+  - **Disabled** ✅
+  - **Read Only** ✅
+  - **Helper Text** ✅
+  - **Action:**
+    - ❌ \`none\`
+    - ❌ \`icon button\`
+    - ❌ \`image\`
+  - **Type:**
+    - ✅ \`Text\`
+    - ✅ \`Password\`
+    - ✅ \`Multi-line\`
+    - ❌ \`Number\`
+
+- - -
+`;
+
 export default {
   component: TextField,
   parameters: {
     componentSubtitle: 'TextField let users enter and edit text.',
+    docs: {
+      extractComponentDescription: description,
+    },
   },
   title: 'Components|TextField',
 };
