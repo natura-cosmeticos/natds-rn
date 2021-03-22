@@ -1,7 +1,17 @@
+import React from 'react';
 import { configure, addDecorator, addParameters } from '@storybook/react';
 import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
 import { withKnobs } from '@storybook/addon-knobs';
-import { DocsPage, DocsContainer } from '@storybook/addon-docs/blocks';
+import {
+  DocsContainer,
+  Title,
+  Subtitle,
+  Description,
+  Primary,
+  Props,
+  Stories,
+} from '@storybook/addon-docs/blocks';
+
 import { addons } from '@storybook/addons';
 import dsThemes from '@naturacosmeticos/natds-themes';
 import { withTheme } from './addons/theme/provider';
@@ -15,10 +25,21 @@ addons.setConfig({
   theme: activeTheme,
 });
 
+const DocsPageTemplate = () => (
+  <>
+    <Description />
+    <Title />
+    <Subtitle />
+    <Primary />
+    <Props />
+    <Stories />
+  </>
+);
+
 addParameters({
   docs: {
     container: DocsContainer,
-    page: DocsPage,
+    page: DocsPageTemplate,
   },
   options: {
     enableShortcuts: true,
@@ -43,11 +64,6 @@ addDecorator(
     escapeHTML: false,
   }),
 );
-
-// configure(() => {
-//   // eslint-disable-next-line global-require
-//   require('../storybook/stories');
-// }, module);
 
 const docs = require.context('./docs', true, /\.stories.mdx/);
 const tokens = require.context('../src/tokens', true, /\.stories.(ts|md)x?$/);
