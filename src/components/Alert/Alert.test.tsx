@@ -7,8 +7,6 @@ import { Alert } from '.';
 import { AlertProps } from './Alert';
 import { Types, Variants } from './Alert.styles';
 
-jest.useFakeTimers();
-
 jest.mock('../../common/themeSelectors', () => (
   {
     getColorByName: () => 'red',

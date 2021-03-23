@@ -1,5 +1,4 @@
 /* eslint-disable id-length */
-import '@testing-library/jest-native/extend-expect';
 import React from 'react';
 import { Text, LayoutChangeEvent } from 'react-native';
 import { fireEvent } from '@testing-library/react-native';

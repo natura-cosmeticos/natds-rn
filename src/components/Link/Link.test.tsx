@@ -1,5 +1,4 @@
 import React from 'react';
-import '@testing-library/jest-native/extend-expect';
 import { fireEvent, render } from '@testing-library/react-native';
 import { ThemeProvider } from 'styled-components/native';
 import theme from '../../common/themeSelectors/theme/mock-theme.json';

@@ -1,4 +1,3 @@
-import '@testing-library/jest-native/extend-expect';
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { render } from '@testing-library/react-native';
@@ -6,8 +5,6 @@ import { ThemeProvider } from 'styled-components/native';
 import { Text } from 'react-native';
 import theme from '../../common/themeSelectors/theme/mock-theme.json';
 import { Card, CardTypes } from './Card';
-
-jest.useFakeTimers();
 
 const renderCard = (fn, props?: CardTypes) => fn(
     <ThemeProvider theme={theme}>

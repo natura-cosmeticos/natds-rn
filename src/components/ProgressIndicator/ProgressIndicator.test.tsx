@@ -1,17 +1,17 @@
 import React from 'react';
-
 import { ThemeProvider } from 'styled-components/native';
 import renderer from 'react-test-renderer';
-
 import theme from '../../common/themeSelectors/theme/mock-theme.json';
 import { ProgressIndicator, ProgressIndicatorProps } from './ProgressIndicator';
+
+jest.useFakeTimers();
 
 const renderProgressIndicator = (
   props?: Omit<ProgressIndicatorProps, 'theme'>,
 ) => renderer.create(
-    <ThemeProvider theme={theme}>
-      <ProgressIndicator {...props} />
-    </ThemeProvider>,
+  <ThemeProvider theme={theme}>
+    <ProgressIndicator {...props} />
+  </ThemeProvider>,
 );
 
 describe('ProgressIndicator component', () => {

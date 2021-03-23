@@ -34,7 +34,7 @@ module.exports = {
     '\\.svg': '<rootDir>/__mocks__/svgMock.js',
   },
   setupFilesAfterEnv: [
-    "@testing-library/jest-native/extend-expect"
+    '<rootDir>/test/testSetup.ts',
   ],
   testMatch: [
     '**/__tests__/**/*.+(ts|tsx|js)',
