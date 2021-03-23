@@ -5,5 +5,7 @@
     "src/**/*.device.*",
     "src/**/*.stories.*",
     "src/**/*.story.*",
+    "src/**/__mocks__/**",
+    "test/**",
   ]
 }

@@ -1,6 +1,5 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import '@testing-library/jest-native/extend-expect';
 import { ThemeProvider } from 'styled-components/native';
 
 import { Text } from 'react-native';
