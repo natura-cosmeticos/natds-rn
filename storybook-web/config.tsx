@@ -44,11 +44,6 @@ addDecorator(
   }),
 );
 
-// configure(() => {
-//   // eslint-disable-next-line global-require
-//   require('../storybook/stories');
-// }, module);
-
 const docs = require.context('./docs', true, /\.stories.mdx/);
 const tokens = require.context('../src/tokens', true, /\.stories.(ts|md)x?$/);
 const components = require.context('../src/components', true, /\.stories.(ts|md)x?$/);

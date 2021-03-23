@@ -22,8 +22,6 @@ module.exports = {
 
     newConfig.resolve.extensions.push('.ts', '.tsx');
 
-    // console.dir(newConfig, { depth: null });
-
     return newConfig;
   },
 };

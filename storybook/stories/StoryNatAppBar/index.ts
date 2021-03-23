@@ -1,1 +1,0 @@
-export { StoryNatAppBar } from './StoryNatAppBar';

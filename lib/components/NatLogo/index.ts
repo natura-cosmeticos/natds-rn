@@ -1,1 +1,0 @@
-export { NatLogo } from './NatLogo';
