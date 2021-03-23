@@ -1,1 +1,0 @@
-export { NatImage } from './NatImage';

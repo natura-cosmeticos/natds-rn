@@ -1,1 +1,0 @@
-export { NatPeriodButton } from './NatPeriodButton';
