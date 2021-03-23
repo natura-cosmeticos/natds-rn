@@ -29,6 +29,7 @@ exports[`TouchableRipple component Should render touchable ripple correctly 1`] 
         Object {
           "backgroundColor": "#f4ab34",
           "borderRadius": 24,
+          "elevation": 999,
           "height": 48,
           "left": "50%",
           "opacity": 0,
@@ -83,6 +84,7 @@ exports[`TouchableRipple component Should render touchable ripple with color 1`]
         Object {
           "backgroundColor": "#ff6b0b",
           "borderRadius": 24,
+          "elevation": 999,
           "height": 48,
           "left": "50%",
           "opacity": 0,
@@ -137,6 +139,7 @@ exports[`TouchableRipple component Should render touchable ripple with disabled 
         Object {
           "backgroundColor": "#f4ab34",
           "borderRadius": 24,
+          "elevation": 999,
           "height": 48,
           "left": "50%",
           "opacity": 0,
@@ -191,6 +194,7 @@ exports[`TouchableRipple component Should render touchable ripple with hideOverf
         Object {
           "backgroundColor": "#f4ab34",
           "borderRadius": 24,
+          "elevation": 999,
           "height": 48,
           "left": "50%",
           "opacity": 0,

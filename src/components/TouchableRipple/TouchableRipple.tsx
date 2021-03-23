@@ -2,12 +2,13 @@
 
 import React, { ReactElement, useRef, useState } from 'react';
 import {
-  TouchableWithoutFeedback,
   Animated,
   Easing,
+  LayoutChangeEvent,
   Platform,
-  findNodeHandle,
+  TouchableWithoutFeedback,
   UIManager,
+  findNodeHandle,
 } from 'react-native';
 import { Container, Ripple } from './TouchableRipple.styles';
 import { Theme } from '../../common/themeSelectors';
@@ -59,6 +60,16 @@ export const getChildrenPosition = (ref, setPosition: Function) => {
       },
     );
   }
+};
+
+export const getRippleSizeForHorizontalComponents = (
+  event: LayoutChangeEvent,
+  setSize: React.Dispatch<React.SetStateAction<number>>,
+) => {
+  const { layout: { width, height } } = event.nativeEvent;
+  const biggerSide = width >= height ? width : height;
+
+  setSize((biggerSide / 2));
 };
 
 interface State {

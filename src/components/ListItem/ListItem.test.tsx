@@ -1,9 +1,8 @@
-/* eslint-disable id-length */
 import React from 'react';
-import { Text, LayoutChangeEvent } from 'react-native';
+import { Text } from 'react-native';
 import { fireEvent } from '@testing-library/react-native';
 import { renderWithTheme } from '../../../test/testHelpers';
-import { ListItem, ListItemProps, getRippleSize } from './ListItem';
+import { ListItem, ListItemProps } from './ListItem';
 
 jest.mock('../TouchableRipple/TouchableRipple');
 
@@ -51,25 +50,5 @@ describe('ListItem component', () => {
     }
 
     expect(onPress).toHaveBeenCalled();
-  });
-});
-
-describe('getRippleSize', () => {
-  it('Should calculate the ripple size based on the list item layout', () => {
-    const setSizeMock = jest.fn();
-    const event: LayoutChangeEvent = {
-      nativeEvent: {
-        layout: {
-          height: 80,
-          width: 20,
-          x: 0,
-          y: 0,
-        },
-      },
-    };
-
-    getRippleSize(event, setSizeMock);
-
-    expect(setSizeMock).toHaveBeenCalledWith(40);
   });
 });

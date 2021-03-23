@@ -1,7 +1,6 @@
 /* eslint-disable max-lines */
-import React from 'react';
+import React, { useState } from 'react';
 import styled, { withTheme } from 'styled-components/native';
-import { NativeSyntheticEvent, NativeTouchEvent } from 'react-native';
 import {
   IColors,
   Theme,
@@ -11,12 +10,11 @@ import {
   getColorMediumEmphasis,
   getColorOnPrimary,
   getColorPrimary,
-  getColorPrimaryLight,
-  getOpacity10,
   getRadiusBySize,
   getShadowBySize,
   getColorByName,
 } from '../../common/themeSelectors';
+import { TouchableRipple, getRippleSizeForHorizontalComponents } from '../TouchableRipple/TouchableRipple';
 
 export type ButtonSizes = 'large' | 'medium' | 'small'
 export type ButtonTypes = 'contained' | 'outlined' | 'text'
@@ -27,7 +25,7 @@ export interface ButtonProps {
   accessibilityLabel?: string
   disabled?: boolean
   textColor: TextColors
-  onPress: (ev: NativeSyntheticEvent<NativeTouchEvent>) => void,
+  onPress: () => void
   size: ButtonSizes
   testID?: string
   text: string
@@ -66,7 +64,7 @@ const getShadowByType = (type: ButtonTypes, disabled: boolean, theme: Theme) => 
     : {}
 );
 
-const Base = styled.TouchableHighlight<{
+const Base = styled.View<{
   disabled: boolean
   size: ButtonSizes
   theme: Theme
@@ -101,30 +99,41 @@ const ButtonComponent = ({
   textColor,
   onPress,
   size = 'medium',
-  testID = 'button',
+  testID = 'button-base',
   text,
   theme,
   type = 'contained',
-}: ButtonProps) => (
-  <Base
-    activeOpacity={getOpacity10(theme)}
-    disabled={disabled}
-    onPress={disabled ? () => {} : onPress}
-    size={size}
-    style={getShadowByType(type, disabled, theme)}
-    testID={testID}
-    type={type}
-    underlayColor={getColorPrimaryLight(theme)}
-  >
-    <Label
-      accessibilityHint={accessibilityHint}
-      accessibilityLabel={accessibilityLabel}
-      accessibilityRole="button"
-      disabled={disabled}
-      textColor={textColor}
-      type={type}
-    >{text.toUpperCase()}</Label>
-  </Base>
-);
+}: ButtonProps) => {
+  const [rippleSize, setRippleSize] = useState(0);
+
+  return (
+    <TouchableRipple
+        color="highlight"
+        disabled={disabled}
+        hideOverflow={true}
+        onPress={disabled ? () => {} : onPress}
+        size={rippleSize}
+        >
+      <Base
+        disabled={disabled}
+        onLayout={event => getRippleSizeForHorizontalComponents(event, setRippleSize)}
+        size={size}
+        style={getShadowByType(type, disabled, theme)}
+        testID={testID}
+        type={type}
+      >
+        <Label
+          accessibilityHint={accessibilityHint}
+          accessibilityLabel={accessibilityLabel}
+          accessibilityRole="button"
+          disabled={disabled}
+          textColor={textColor}
+          type={type}
+        >{text.toUpperCase()}</Label>
+      </Base>
+      </TouchableRipple>
+  );
+};
+
 
 export const ButtonBase = withTheme(ButtonComponent);

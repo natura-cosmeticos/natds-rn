@@ -40,6 +40,7 @@ type RippleProps = Pick<TouchableRippleProps, 'theme'>
 export const Ripple = styled.View<Required<RippleProps>>(({ theme, size, color }) => ({
   backgroundColor: getBackgroundColor(color, theme),
   borderRadius: size / 2,
+  elevation: 999,
   height: size,
   position: 'absolute',
   width: size,

@@ -1,6 +1,5 @@
 /* eslint-disable max-lines */
 import React from 'react';
-import { NativeSyntheticEvent, NativeTouchEvent } from 'react-native';
 import { ButtonBase, ButtonSizes, ButtonTypes } from './ButtonBase';
 
 export interface ButtonProps {
@@ -24,7 +23,7 @@ export interface ButtonProps {
   /**
    * The onPress event handler
    */
-  onPress: (ev: NativeSyntheticEvent<NativeTouchEvent>) => void,
+  onPress: () => void,
   /**
   * Optional ID for testing
   */
