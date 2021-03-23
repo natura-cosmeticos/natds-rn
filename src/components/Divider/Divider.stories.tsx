@@ -4,12 +4,16 @@ import { Divider } from './Divider';
 import { ContainerWithBorder, TextWithTheme } from '../../common/HelperComponents/ThemeHelper.styles';
 
 const description = () => `
-  ### NOTE:
+- - -
+
+### NOTE:
   This component is available in the following variants:
 
   - ✅ Full-bleed
   - ✅ Inset
   - ✅ Middle
+
+- - -
 `;
 
 export default {
