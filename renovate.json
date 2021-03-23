@@ -1,15 +1,59 @@
 {
-  "enabled": false,
+  "enabled": true,
   "enabledManagers": [
     "nodenv",
-    "npm",
-    "travis"
+    "npm"
   ],
   "extends": [
     "config:base"
   ],
+  "vulnerabilityAlerts": {
+    "enabled": true
+  },
+  "ignoreDeps": ["semantic-release"],
   "labels": ["dependencies", "renovate"],
   "masterIssue": true,
+  "lockFileMaintenance": true,
   "masterIssueAutoclose": true,
-  "prConcurrentLimit": 2
+  "prConcurrentLimit": 3,
+  "packageRules": [
+    {
+      "packagePatterns": [ "eslint" ],
+      "groupName": "eslint",
+      "automerge": true
+    },
+    {
+      "packageNames": [ "babel-jest", "ts-jest", "react-test-renderer" ],
+      "packagePatterns": [ "^jest", "^@testing-library" ],
+      "groupName": "test",
+      "automerge": true
+    },
+    {
+      "packageNames": [ "typescript", "ts-loader" ],
+      "groupName": "ts",
+      "automerge": true
+    },
+    {
+      "packagePatterns": [ "^@babel", "^babel" ],
+      "groupName": "babel",
+      "automerge": true
+    },
+    {
+      "packageNames": [ "cz-conventional-changelog" ],
+      "packagePatterns": [ "^@commitlint"  ],
+      "groupName": "changelog",
+      "automerge": true
+    },
+    {
+      "packageNames": [ "react-native-storybook-loader", "react-native-web", "react-native-storybook-loader", "react-docgen-typescript-loader", "modal-react-native-web" ],
+      "packagePatterns": [ "^@storybook"  ],
+      "groupName": "storybook",
+      "automerge": true
+    },
+    {
+      "packageNames": [ "husky", "shelljs", "concurrently" ],
+      "groupName": "tools",
+      "automerge": true
+    }
+  ]
 }
