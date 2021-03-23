@@ -27,9 +27,9 @@ addons.setConfig({
 
 const DocsPageTemplate = () => (
   <>
-    <Description />
     <Title />
     <Subtitle />
+    <Description />
     <Primary />
     <Props />
     <Stories />

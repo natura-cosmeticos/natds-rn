@@ -8,33 +8,35 @@ import { StoryContainer } from '../../common/HelperComponents/StoryContainer';
 import { TextField } from './TextField';
 
 const description = () => `
+- - -
+
   ### NOTE:
   This component is available in the following variants:
 
   - ✅ Standard
 
-With the following attribute statuses:
+With the following attribute status:
 
   - **Size:**
     - ✅ \`Medium\`
     - ✅ \`MediumX\`
   - **Style:**
-    - ✅ \`outlined\`
+    - ✅ \`Outlined\`
   - **States:**
-    - ✅ \`enabled\`
-    - ✅ \`active\`
-    - ✅ \`filled\`
+    - ✅ \`Enabled\`
+    - ✅ \`Active\`
+    - ✅ \`Filled\`
   - **Feedback:**
     - ✅ \`Error\`
     - ✅ \`Success\`
-  - **Required** ✅
-  - **Disabled** ✅
-  - **Read Only** ✅
-  - **Helper Text** ✅
+  - ✅ **Required**
+  - ✅ **Disabled**
+  - ✅ **Read Only**
+  - ✅ **Helper Text**
   - **Action:**
-    - ❌ \`none\`
-    - ❌ \`icon button\`
-    - ❌ \`image\`
+    - ❌ \`None\`
+    - ❌ \`Icon Button\`
+    - ❌ \`Image\`
   - **Type:**
     - ✅ \`Text\`
     - ✅ \`Password\`
