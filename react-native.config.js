@@ -3,6 +3,6 @@ require('./hooks/prelink');
 
 module.exports = {
   assets: [
-    './lib/assets/fonts',
+    './src/assets/fonts',
   ],
 };
