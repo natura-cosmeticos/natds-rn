@@ -145,6 +145,45 @@ export const StoryNatMenuItem = () => {
     },
   ];
 
+  const menuListString = [
+    {
+      icon: 'outlined-content-bellringing',
+      id: 12,
+      level: 1,
+      name: 'outlined-content-bellringing',
+    },
+    {
+      icon: 'outlined-action-gridsquare',
+      id: 8,
+      level: 1,
+      name: 'outlined-action-gridsquare',
+    },
+    {
+      icon: 'outlined-action-rating',
+      id: 9,
+      level: 1,
+      name: 'outlined-action-rating',
+    },
+    {
+      icon: 'outlined-place-forklift',
+      id: 10,
+      level: 1,
+      name: 'outlined-place-forklift',
+    },
+    {
+      icon: 'outlined-content-consistency',
+      id: 11,
+      level: 1,
+      name: 'outlined-content-consistency',
+    },
+    {
+      icon: 'outlined-product-vegan',
+      id: 1,
+      level: 1,
+      name: 'outlined-product-vegan',
+    },
+  ];
+
   return (
     <SafeAreaView style={styles.defaultScreen}>
       <NatContainer>
@@ -160,6 +199,19 @@ export const StoryNatMenuItem = () => {
               }}
             />
           ))}
+
+          <Text>Use SVG</Text>
+          {menuListSvg.map(item => (
+            <NatMenuItem
+              title={item.name}
+              icon={{ svg: item.svg }}
+              key={item.id}
+              level={item.levell}
+              onPress={() => {
+                Alert.alert('click event');
+              }}
+            />
+          ))}
           <Text>Use SVG</Text>
           {menuListSvg.map(item => (
             <NatMenuItem
@@ -171,6 +223,20 @@ export const StoryNatMenuItem = () => {
               onPress={() => {
                 Alert.alert('click event');
               }}
+            />
+          ))}
+          <Text>Use SVG</Text>
+          {menuListSvg.map(item => (
+            <NatMenuItem
+              title={item.name}
+              icon={{ svg: item.svg }}
+              iconLeft={{ svg: item.svg }}
+              key={item.id}
+              level={item.levell}
+              onPress={() => {
+                Alert.alert('click event');
+              }}
+              showNotification={true}
             />
           ))}
           <Text>Use SVG</Text>
@@ -186,12 +252,38 @@ export const StoryNatMenuItem = () => {
               showNotification={true}
             />
           ))}
-          <Text>Use SVG</Text>
-          {menuListSvg.map(item => (
+
+          <Text>Use String</Text>
+          {menuListString.map(item => (
             <NatMenuItem
               title={item.name}
-              icon={{ svg: item.svg }}
-              iconLeft={{ svg: item.svg }}
+              icon={{ name: item.icon }}
+              key={item.id}
+              level={item.levell}
+              onPress={() => {
+                Alert.alert('click event');
+              }}
+            />
+          ))}
+          <Text>Use String</Text>
+          {menuListString.map(item => (
+            <NatMenuItem
+              title={item.name}
+              icon={{ name: item.icon }}
+              iconLeft={{ name: item.icon }}
+              key={item.id}
+              level={item.levell}
+              onPress={() => {
+                Alert.alert('click event');
+              }}
+            />
+          ))}
+          <Text>Use String</Text>
+          {menuListString.map(item => (
+            <NatMenuItem
+              title={item.name}
+              icon={{ name: item.icon }}
+              iconLeft={{ name: item.icon }}
               key={item.id}
               level={item.levell}
               onPress={() => {
@@ -200,6 +292,20 @@ export const StoryNatMenuItem = () => {
               showNotification={true}
             />
           ))}
+          <Text>Use String</Text>
+          {menuListString.map(item => (
+            <NatMenuItem
+              title={item.name}
+              icon={{ name: item.icon }}
+              key={item.id}
+              level={item.levell}
+              onPress={() => {
+                Alert.alert('click event');
+              }}
+              showNotification={true}
+            />
+          ))}
+
           <Text>With External Icon URL</Text>
           {menuListIconUri.map(item => (
             <NatMenuItem
@@ -212,6 +318,7 @@ export const StoryNatMenuItem = () => {
               }}
             />
           ))}
+
           <Text>With Submenu indicator</Text>
           <NatMenuItem
             title={'Compras'}

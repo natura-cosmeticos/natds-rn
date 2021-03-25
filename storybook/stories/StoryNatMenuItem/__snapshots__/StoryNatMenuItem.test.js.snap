@@ -63,7 +63,7 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component : S
         >
           <View
             accessible={true}
-            focusable={false}
+            focusable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -125,7 +125,7 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component : S
         >
           <View
             accessible={true}
-            focusable={false}
+            focusable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -187,7 +187,7 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component : S
         >
           <View
             accessible={true}
-            focusable={false}
+            focusable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -249,7 +249,7 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component : S
         >
           <View
             accessible={true}
-            focusable={false}
+            focusable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -323,7 +323,791 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component : S
           />
           <View
             accessible={true}
-            focusable={false}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "flex": 1,
+                "flexDirection": "row",
+                "height": 48,
+                "justifyContent": "space-between",
+                "marginLeft": 16,
+                "marginRight": 5,
+                "opacity": 1,
+              }
+            }
+          >
+            <Text
+              style={
+                Array [
+                  Object {
+                    "alignSelf": "center",
+                    "color": "#333333",
+                    "flexBasis": 0,
+                    "flexGrow": 1,
+                    "flexShrink": 1,
+                  },
+                ]
+              }
+              type="default"
+            >
+              outlined-navigation-home
+            </Text>
+          </View>
+        </View>
+        <View
+          accessible={true}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "height": 48,
+              "justifyContent": "space-between",
+              "marginLeft": 16,
+              "opacity": 1,
+            }
+          }
+        >
+          <SvgMock
+            height={24}
+            style={
+              Object {
+                "fill": "#333333",
+              }
+            }
+            width={24}
+          />
+          <View
+            accessible={true}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "flex": 1,
+                "flexDirection": "row",
+                "height": 48,
+                "justifyContent": "space-between",
+                "marginLeft": 16,
+                "marginRight": 5,
+                "opacity": 1,
+              }
+            }
+          >
+            <Text
+              style={
+                Array [
+                  Object {
+                    "alignSelf": "center",
+                    "color": "#333333",
+                    "flexBasis": 0,
+                    "flexGrow": 1,
+                    "flexShrink": 1,
+                  },
+                ]
+              }
+              type="default"
+            >
+              outlined-content-lock
+            </Text>
+          </View>
+        </View>
+        <View
+          accessible={true}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "height": 48,
+              "justifyContent": "space-between",
+              "marginLeft": 16,
+              "opacity": 1,
+            }
+          }
+        >
+          <SvgMock
+            height={24}
+            style={
+              Object {
+                "fill": "#333333",
+              }
+            }
+            width={24}
+          />
+          <View
+            accessible={true}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "flex": 1,
+                "flexDirection": "row",
+                "height": 48,
+                "justifyContent": "space-between",
+                "marginLeft": 16,
+                "marginRight": 5,
+                "opacity": 1,
+              }
+            }
+          >
+            <Text
+              style={
+                Array [
+                  Object {
+                    "alignSelf": "center",
+                    "color": "#333333",
+                    "flexBasis": 0,
+                    "flexGrow": 1,
+                    "flexShrink": 1,
+                  },
+                ]
+              }
+              type="default"
+            >
+              outlined-content-wifi
+            </Text>
+          </View>
+        </View>
+        <View
+          accessible={true}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "height": 48,
+              "justifyContent": "space-between",
+              "marginLeft": 16,
+              "opacity": 1,
+            }
+          }
+        >
+          <SvgMock
+            height={24}
+            style={
+              Object {
+                "fill": "#333333",
+              }
+            }
+            width={24}
+          />
+          <View
+            accessible={true}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "flex": 1,
+                "flexDirection": "row",
+                "height": 48,
+                "justifyContent": "space-between",
+                "marginLeft": 16,
+                "marginRight": 5,
+                "opacity": 1,
+              }
+            }
+          >
+            <Text
+              style={
+                Array [
+                  Object {
+                    "alignSelf": "center",
+                    "color": "#333333",
+                    "flexBasis": 0,
+                    "flexGrow": 1,
+                    "flexShrink": 1,
+                  },
+                ]
+              }
+              type="default"
+            >
+              outlined-content-adddocument
+            </Text>
+          </View>
+        </View>
+        <View
+          accessible={true}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "height": 48,
+              "justifyContent": "space-between",
+              "marginLeft": 16,
+              "opacity": 1,
+            }
+          }
+        >
+          <SvgMock
+            height={24}
+            style={
+              Object {
+                "fill": "#333333",
+              }
+            }
+            width={24}
+          />
+          <View
+            accessible={true}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "flex": 1,
+                "flexDirection": "row",
+                "height": 48,
+                "justifyContent": "space-between",
+                "marginLeft": 16,
+                "marginRight": 5,
+                "opacity": 1,
+              }
+            }
+          >
+            <Text
+              style={
+                Array [
+                  Object {
+                    "alignSelf": "center",
+                    "color": "#333333",
+                    "flexBasis": 0,
+                    "flexGrow": 1,
+                    "flexShrink": 1,
+                  },
+                ]
+              }
+              type="default"
+            >
+              outlined-communication-chat
+            </Text>
+          </View>
+        </View>
+        <View
+          accessible={true}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "height": 48,
+              "justifyContent": "space-between",
+              "marginLeft": 16,
+              "opacity": 1,
+            }
+          }
+        >
+          <SvgMock
+            height={24}
+            style={
+              Object {
+                "fill": "#333333",
+              }
+            }
+            width={24}
+          />
+          <View
+            accessible={true}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "flex": 1,
+                "flexDirection": "row",
+                "height": 48,
+                "justifyContent": "space-between",
+                "marginLeft": 16,
+                "marginRight": 5,
+                "opacity": 1,
+              }
+            }
+          >
+            <Text
+              style={
+                Array [
+                  Object {
+                    "alignSelf": "center",
+                    "color": "#333333",
+                    "flexBasis": 0,
+                    "flexGrow": 1,
+                    "flexShrink": 1,
+                  },
+                ]
+              }
+              type="default"
+            >
+              outlined-content-channel
+            </Text>
+          </View>
+        </View>
+        <View
+          accessible={true}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "height": 48,
+              "justifyContent": "space-between",
+              "marginLeft": 16,
+              "opacity": 1,
+            }
+          }
+        >
+          <SvgMock
+            height={24}
+            style={
+              Object {
+                "fill": "#333333",
+              }
+            }
+            width={24}
+          />
+          <View
+            accessible={true}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "flex": 1,
+                "flexDirection": "row",
+                "height": 48,
+                "justifyContent": "space-between",
+                "marginLeft": 16,
+                "marginRight": 5,
+                "opacity": 1,
+              }
+            }
+          >
+            <Text
+              style={
+                Array [
+                  Object {
+                    "alignSelf": "center",
+                    "color": "#333333",
+                    "flexBasis": 0,
+                    "flexGrow": 1,
+                    "flexShrink": 1,
+                  },
+                ]
+              }
+              type="default"
+            >
+              outlined-finance-moneypaper
+            </Text>
+          </View>
+        </View>
+        <View
+          accessible={true}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "height": 48,
+              "justifyContent": "space-between",
+              "marginLeft": 16,
+              "opacity": 1,
+            }
+          }
+        >
+          <SvgMock
+            height={24}
+            style={
+              Object {
+                "fill": "#333333",
+              }
+            }
+            width={24}
+          />
+          <View
+            accessible={true}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "flex": 1,
+                "flexDirection": "row",
+                "height": 48,
+                "justifyContent": "space-between",
+                "marginLeft": 16,
+                "marginRight": 5,
+                "opacity": 1,
+              }
+            }
+          >
+            <Text
+              style={
+                Array [
+                  Object {
+                    "alignSelf": "center",
+                    "color": "#333333",
+                    "flexBasis": 0,
+                    "flexGrow": 1,
+                    "flexShrink": 1,
+                  },
+                ]
+              }
+              type="default"
+            >
+              outlined-communication-speaker
+            </Text>
+          </View>
+        </View>
+        <View
+          accessible={true}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "height": 48,
+              "justifyContent": "space-between",
+              "marginLeft": 16,
+              "opacity": 1,
+            }
+          }
+        >
+          <SvgMock
+            height={24}
+            style={
+              Object {
+                "fill": "#333333",
+              }
+            }
+            width={24}
+          />
+          <View
+            accessible={true}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "flex": 1,
+                "flexDirection": "row",
+                "height": 48,
+                "justifyContent": "space-between",
+                "marginLeft": 16,
+                "marginRight": 5,
+                "opacity": 1,
+              }
+            }
+          >
+            <Text
+              style={
+                Array [
+                  Object {
+                    "alignSelf": "center",
+                    "color": "#333333",
+                    "flexBasis": 0,
+                    "flexGrow": 1,
+                    "flexShrink": 1,
+                  },
+                ]
+              }
+              type="default"
+            >
+              outlined-place-bus
+            </Text>
+          </View>
+        </View>
+        <View
+          accessible={true}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "height": 48,
+              "justifyContent": "space-between",
+              "marginLeft": 16,
+              "opacity": 1,
+            }
+          }
+        >
+          <SvgMock
+            height={24}
+            style={
+              Object {
+                "fill": "#333333",
+              }
+            }
+            width={24}
+          />
+          <View
+            accessible={true}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "flex": 1,
+                "flexDirection": "row",
+                "height": 48,
+                "justifyContent": "space-between",
+                "marginLeft": 16,
+                "marginRight": 5,
+                "opacity": 1,
+              }
+            }
+          >
+            <Text
+              style={
+                Array [
+                  Object {
+                    "alignSelf": "center",
+                    "color": "#333333",
+                    "flexBasis": 0,
+                    "flexGrow": 1,
+                    "flexShrink": 1,
+                  },
+                ]
+              }
+              type="default"
+            >
+              outlined-alert-info
+            </Text>
+          </View>
+        </View>
+        <View
+          accessible={true}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "height": 48,
+              "justifyContent": "space-between",
+              "marginLeft": 16,
+              "opacity": 1,
+            }
+          }
+        >
+          <SvgMock
+            height={24}
+            style={
+              Object {
+                "fill": "#333333",
+              }
+            }
+            width={24}
+          />
+          <View
+            accessible={true}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "flex": 1,
+                "flexDirection": "row",
+                "height": 48,
+                "justifyContent": "space-between",
+                "marginLeft": 16,
+                "marginRight": 5,
+                "opacity": 1,
+              }
+            }
+          >
+            <Text
+              style={
+                Array [
+                  Object {
+                    "alignSelf": "center",
+                    "color": "#333333",
+                    "flexBasis": 0,
+                    "flexGrow": 1,
+                    "flexShrink": 1,
+                  },
+                ]
+              }
+              type="default"
+            >
+              outlined-navigation-exit
+            </Text>
+          </View>
+        </View>
+        <Text>
+          Use SVG
+        </Text>
+        <View
+          accessible={true}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "height": 48,
+              "justifyContent": "space-between",
+              "marginLeft": 16,
+              "opacity": 1,
+            }
+          }
+        >
+          <SvgMock
+            height="24"
+            style={
+              Object {
+                "fill": "#333333",
+              }
+            }
+            width="24"
+          />
+          <View
+            accessible={true}
+            focusable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -403,7 +1187,7 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component : S
           />
           <View
             accessible={true}
-            focusable={false}
+            focusable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -483,7 +1267,7 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component : S
           />
           <View
             accessible={true}
-            focusable={false}
+            focusable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -563,7 +1347,7 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component : S
           />
           <View
             accessible={true}
-            focusable={false}
+            focusable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -643,7 +1427,7 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component : S
           />
           <View
             accessible={true}
-            focusable={false}
+            focusable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -723,7 +1507,7 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component : S
           />
           <View
             accessible={true}
-            focusable={false}
+            focusable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -803,7 +1587,7 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component : S
           />
           <View
             accessible={true}
-            focusable={false}
+            focusable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -883,7 +1667,7 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component : S
           />
           <View
             accessible={true}
-            focusable={false}
+            focusable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -963,7 +1747,7 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component : S
           />
           <View
             accessible={true}
-            focusable={false}
+            focusable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -1043,7 +1827,7 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component : S
           />
           <View
             accessible={true}
-            focusable={false}
+            focusable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -1123,7 +1907,7 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component : S
           />
           <View
             accessible={true}
-            focusable={false}
+            focusable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -1206,7 +1990,1000 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component : S
           />
           <View
             accessible={true}
-            focusable={false}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "flex": 1,
+                "flexDirection": "row",
+                "height": 48,
+                "justifyContent": "space-between",
+                "marginLeft": 16,
+                "marginRight": 5,
+                "opacity": 1,
+              }
+            }
+          >
+            <Text
+              style={
+                Array [
+                  Object {
+                    "alignSelf": "center",
+                    "color": "#333333",
+                    "flexBasis": 0,
+                    "flexGrow": 1,
+                    "flexShrink": 1,
+                  },
+                ]
+              }
+              type="default"
+            >
+              outlined-navigation-home
+            </Text>
+            <View
+              style={
+                Object {
+                  "backgroundColor": "#E74627",
+                  "borderRadius": 50,
+                  "height": 10,
+                  "width": 10,
+                }
+              }
+            />
+          </View>
+          <SvgMock
+            height="24"
+            style={
+              Object {
+                "fill": "#333333",
+              }
+            }
+            width="24"
+          />
+        </View>
+        <View
+          accessible={true}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "height": 48,
+              "justifyContent": "space-between",
+              "marginLeft": 16,
+              "opacity": 1,
+            }
+          }
+        >
+          <SvgMock
+            height={24}
+            style={
+              Object {
+                "fill": "#333333",
+              }
+            }
+            width={24}
+          />
+          <View
+            accessible={true}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "flex": 1,
+                "flexDirection": "row",
+                "height": 48,
+                "justifyContent": "space-between",
+                "marginLeft": 16,
+                "marginRight": 5,
+                "opacity": 1,
+              }
+            }
+          >
+            <Text
+              style={
+                Array [
+                  Object {
+                    "alignSelf": "center",
+                    "color": "#333333",
+                    "flexBasis": 0,
+                    "flexGrow": 1,
+                    "flexShrink": 1,
+                  },
+                ]
+              }
+              type="default"
+            >
+              outlined-content-lock
+            </Text>
+            <View
+              style={
+                Object {
+                  "backgroundColor": "#E74627",
+                  "borderRadius": 50,
+                  "height": 10,
+                  "width": 10,
+                }
+              }
+            />
+          </View>
+          <SvgMock
+            height={24}
+            style={
+              Object {
+                "fill": "#333333",
+              }
+            }
+            width={24}
+          />
+        </View>
+        <View
+          accessible={true}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "height": 48,
+              "justifyContent": "space-between",
+              "marginLeft": 16,
+              "opacity": 1,
+            }
+          }
+        >
+          <SvgMock
+            height={24}
+            style={
+              Object {
+                "fill": "#333333",
+              }
+            }
+            width={24}
+          />
+          <View
+            accessible={true}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "flex": 1,
+                "flexDirection": "row",
+                "height": 48,
+                "justifyContent": "space-between",
+                "marginLeft": 16,
+                "marginRight": 5,
+                "opacity": 1,
+              }
+            }
+          >
+            <Text
+              style={
+                Array [
+                  Object {
+                    "alignSelf": "center",
+                    "color": "#333333",
+                    "flexBasis": 0,
+                    "flexGrow": 1,
+                    "flexShrink": 1,
+                  },
+                ]
+              }
+              type="default"
+            >
+              outlined-content-wifi
+            </Text>
+            <View
+              style={
+                Object {
+                  "backgroundColor": "#E74627",
+                  "borderRadius": 50,
+                  "height": 10,
+                  "width": 10,
+                }
+              }
+            />
+          </View>
+          <SvgMock
+            height={24}
+            style={
+              Object {
+                "fill": "#333333",
+              }
+            }
+            width={24}
+          />
+        </View>
+        <View
+          accessible={true}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "height": 48,
+              "justifyContent": "space-between",
+              "marginLeft": 16,
+              "opacity": 1,
+            }
+          }
+        >
+          <SvgMock
+            height={24}
+            style={
+              Object {
+                "fill": "#333333",
+              }
+            }
+            width={24}
+          />
+          <View
+            accessible={true}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "flex": 1,
+                "flexDirection": "row",
+                "height": 48,
+                "justifyContent": "space-between",
+                "marginLeft": 16,
+                "marginRight": 5,
+                "opacity": 1,
+              }
+            }
+          >
+            <Text
+              style={
+                Array [
+                  Object {
+                    "alignSelf": "center",
+                    "color": "#333333",
+                    "flexBasis": 0,
+                    "flexGrow": 1,
+                    "flexShrink": 1,
+                  },
+                ]
+              }
+              type="default"
+            >
+              outlined-content-adddocument
+            </Text>
+            <View
+              style={
+                Object {
+                  "backgroundColor": "#E74627",
+                  "borderRadius": 50,
+                  "height": 10,
+                  "width": 10,
+                }
+              }
+            />
+          </View>
+          <SvgMock
+            height={24}
+            style={
+              Object {
+                "fill": "#333333",
+              }
+            }
+            width={24}
+          />
+        </View>
+        <View
+          accessible={true}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "height": 48,
+              "justifyContent": "space-between",
+              "marginLeft": 16,
+              "opacity": 1,
+            }
+          }
+        >
+          <SvgMock
+            height={24}
+            style={
+              Object {
+                "fill": "#333333",
+              }
+            }
+            width={24}
+          />
+          <View
+            accessible={true}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "flex": 1,
+                "flexDirection": "row",
+                "height": 48,
+                "justifyContent": "space-between",
+                "marginLeft": 16,
+                "marginRight": 5,
+                "opacity": 1,
+              }
+            }
+          >
+            <Text
+              style={
+                Array [
+                  Object {
+                    "alignSelf": "center",
+                    "color": "#333333",
+                    "flexBasis": 0,
+                    "flexGrow": 1,
+                    "flexShrink": 1,
+                  },
+                ]
+              }
+              type="default"
+            >
+              outlined-communication-chat
+            </Text>
+            <View
+              style={
+                Object {
+                  "backgroundColor": "#E74627",
+                  "borderRadius": 50,
+                  "height": 10,
+                  "width": 10,
+                }
+              }
+            />
+          </View>
+          <SvgMock
+            height={24}
+            style={
+              Object {
+                "fill": "#333333",
+              }
+            }
+            width={24}
+          />
+        </View>
+        <View
+          accessible={true}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "height": 48,
+              "justifyContent": "space-between",
+              "marginLeft": 16,
+              "opacity": 1,
+            }
+          }
+        >
+          <SvgMock
+            height={24}
+            style={
+              Object {
+                "fill": "#333333",
+              }
+            }
+            width={24}
+          />
+          <View
+            accessible={true}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "flex": 1,
+                "flexDirection": "row",
+                "height": 48,
+                "justifyContent": "space-between",
+                "marginLeft": 16,
+                "marginRight": 5,
+                "opacity": 1,
+              }
+            }
+          >
+            <Text
+              style={
+                Array [
+                  Object {
+                    "alignSelf": "center",
+                    "color": "#333333",
+                    "flexBasis": 0,
+                    "flexGrow": 1,
+                    "flexShrink": 1,
+                  },
+                ]
+              }
+              type="default"
+            >
+              outlined-content-channel
+            </Text>
+            <View
+              style={
+                Object {
+                  "backgroundColor": "#E74627",
+                  "borderRadius": 50,
+                  "height": 10,
+                  "width": 10,
+                }
+              }
+            />
+          </View>
+          <SvgMock
+            height={24}
+            style={
+              Object {
+                "fill": "#333333",
+              }
+            }
+            width={24}
+          />
+        </View>
+        <View
+          accessible={true}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "height": 48,
+              "justifyContent": "space-between",
+              "marginLeft": 16,
+              "opacity": 1,
+            }
+          }
+        >
+          <SvgMock
+            height={24}
+            style={
+              Object {
+                "fill": "#333333",
+              }
+            }
+            width={24}
+          />
+          <View
+            accessible={true}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "flex": 1,
+                "flexDirection": "row",
+                "height": 48,
+                "justifyContent": "space-between",
+                "marginLeft": 16,
+                "marginRight": 5,
+                "opacity": 1,
+              }
+            }
+          >
+            <Text
+              style={
+                Array [
+                  Object {
+                    "alignSelf": "center",
+                    "color": "#333333",
+                    "flexBasis": 0,
+                    "flexGrow": 1,
+                    "flexShrink": 1,
+                  },
+                ]
+              }
+              type="default"
+            >
+              outlined-finance-moneypaper
+            </Text>
+            <View
+              style={
+                Object {
+                  "backgroundColor": "#E74627",
+                  "borderRadius": 50,
+                  "height": 10,
+                  "width": 10,
+                }
+              }
+            />
+          </View>
+          <SvgMock
+            height={24}
+            style={
+              Object {
+                "fill": "#333333",
+              }
+            }
+            width={24}
+          />
+        </View>
+        <View
+          accessible={true}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "height": 48,
+              "justifyContent": "space-between",
+              "marginLeft": 16,
+              "opacity": 1,
+            }
+          }
+        >
+          <SvgMock
+            height={24}
+            style={
+              Object {
+                "fill": "#333333",
+              }
+            }
+            width={24}
+          />
+          <View
+            accessible={true}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "flex": 1,
+                "flexDirection": "row",
+                "height": 48,
+                "justifyContent": "space-between",
+                "marginLeft": 16,
+                "marginRight": 5,
+                "opacity": 1,
+              }
+            }
+          >
+            <Text
+              style={
+                Array [
+                  Object {
+                    "alignSelf": "center",
+                    "color": "#333333",
+                    "flexBasis": 0,
+                    "flexGrow": 1,
+                    "flexShrink": 1,
+                  },
+                ]
+              }
+              type="default"
+            >
+              outlined-communication-speaker
+            </Text>
+            <View
+              style={
+                Object {
+                  "backgroundColor": "#E74627",
+                  "borderRadius": 50,
+                  "height": 10,
+                  "width": 10,
+                }
+              }
+            />
+          </View>
+          <SvgMock
+            height={24}
+            style={
+              Object {
+                "fill": "#333333",
+              }
+            }
+            width={24}
+          />
+        </View>
+        <View
+          accessible={true}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "height": 48,
+              "justifyContent": "space-between",
+              "marginLeft": 16,
+              "opacity": 1,
+            }
+          }
+        >
+          <SvgMock
+            height={24}
+            style={
+              Object {
+                "fill": "#333333",
+              }
+            }
+            width={24}
+          />
+          <View
+            accessible={true}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "flex": 1,
+                "flexDirection": "row",
+                "height": 48,
+                "justifyContent": "space-between",
+                "marginLeft": 16,
+                "marginRight": 5,
+                "opacity": 1,
+              }
+            }
+          >
+            <Text
+              style={
+                Array [
+                  Object {
+                    "alignSelf": "center",
+                    "color": "#333333",
+                    "flexBasis": 0,
+                    "flexGrow": 1,
+                    "flexShrink": 1,
+                  },
+                ]
+              }
+              type="default"
+            >
+              outlined-place-bus
+            </Text>
+            <View
+              style={
+                Object {
+                  "backgroundColor": "#E74627",
+                  "borderRadius": 50,
+                  "height": 10,
+                  "width": 10,
+                }
+              }
+            />
+          </View>
+          <SvgMock
+            height={24}
+            style={
+              Object {
+                "fill": "#333333",
+              }
+            }
+            width={24}
+          />
+        </View>
+        <View
+          accessible={true}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "height": 48,
+              "justifyContent": "space-between",
+              "marginLeft": 16,
+              "opacity": 1,
+            }
+          }
+        >
+          <SvgMock
+            height={24}
+            style={
+              Object {
+                "fill": "#333333",
+              }
+            }
+            width={24}
+          />
+          <View
+            accessible={true}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "flex": 1,
+                "flexDirection": "row",
+                "height": 48,
+                "justifyContent": "space-between",
+                "marginLeft": 16,
+                "marginRight": 5,
+                "opacity": 1,
+              }
+            }
+          >
+            <Text
+              style={
+                Array [
+                  Object {
+                    "alignSelf": "center",
+                    "color": "#333333",
+                    "flexBasis": 0,
+                    "flexGrow": 1,
+                    "flexShrink": 1,
+                  },
+                ]
+              }
+              type="default"
+            >
+              outlined-alert-info
+            </Text>
+            <View
+              style={
+                Object {
+                  "backgroundColor": "#E74627",
+                  "borderRadius": 50,
+                  "height": 10,
+                  "width": 10,
+                }
+              }
+            />
+          </View>
+          <SvgMock
+            height={24}
+            style={
+              Object {
+                "fill": "#333333",
+              }
+            }
+            width={24}
+          />
+        </View>
+        <View
+          accessible={true}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "height": 48,
+              "justifyContent": "space-between",
+              "marginLeft": 16,
+              "opacity": 1,
+            }
+          }
+        >
+          <SvgMock
+            height={24}
+            style={
+              Object {
+                "fill": "#333333",
+              }
+            }
+            width={24}
+          />
+          <View
+            accessible={true}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "flex": 1,
+                "flexDirection": "row",
+                "height": 48,
+                "justifyContent": "space-between",
+                "marginLeft": 16,
+                "marginRight": 5,
+                "opacity": 1,
+              }
+            }
+          >
+            <Text
+              style={
+                Array [
+                  Object {
+                    "alignSelf": "center",
+                    "color": "#333333",
+                    "flexBasis": 0,
+                    "flexGrow": 1,
+                    "flexShrink": 1,
+                  },
+                ]
+              }
+              type="default"
+            >
+              outlined-navigation-exit
+            </Text>
+            <View
+              style={
+                Object {
+                  "backgroundColor": "#E74627",
+                  "borderRadius": 50,
+                  "height": 10,
+                  "width": 10,
+                }
+              }
+            />
+          </View>
+          <SvgMock
+            height={24}
+            style={
+              Object {
+                "fill": "#333333",
+              }
+            }
+            width={24}
+          />
+        </View>
+        <Text>
+          Use SVG
+        </Text>
+        <View
+          accessible={true}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "height": 48,
+              "justifyContent": "space-between",
+              "marginLeft": 16,
+              "opacity": 1,
+            }
+          }
+        >
+          <SvgMock
+            height="24"
+            style={
+              Object {
+                "fill": "#333333",
+              }
+            }
+            width="24"
+          />
+          <View
+            accessible={true}
+            focusable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -1287,7 +3064,7 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component : S
           />
           <View
             accessible={true}
-            focusable={false}
+            focusable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -1368,7 +3145,7 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component : S
           />
           <View
             accessible={true}
-            focusable={false}
+            focusable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -1449,7 +3226,7 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component : S
           />
           <View
             accessible={true}
-            focusable={false}
+            focusable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -1530,7 +3307,7 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component : S
           />
           <View
             accessible={true}
-            focusable={false}
+            focusable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -1611,7 +3388,7 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component : S
           />
           <View
             accessible={true}
-            focusable={false}
+            focusable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -1692,7 +3469,7 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component : S
           />
           <View
             accessible={true}
-            focusable={false}
+            focusable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -1773,7 +3550,7 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component : S
           />
           <View
             accessible={true}
-            focusable={false}
+            focusable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -1854,7 +3631,7 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component : S
           />
           <View
             accessible={true}
-            focusable={false}
+            focusable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -1935,7 +3712,7 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component : S
           />
           <View
             accessible={true}
-            focusable={false}
+            focusable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -2016,7 +3793,7 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component : S
           />
           <View
             accessible={true}
-            focusable={false}
+            focusable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -2066,7 +3843,7 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component : S
           </View>
         </View>
         <Text>
-          Use SVG
+          Use String
         </Text>
         <View
           accessible={true}
@@ -2089,18 +3866,20 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component : S
             }
           }
         >
-          <SvgMock
-            height="24"
+          <Text
             style={
               Object {
-                "fill": "#333333",
+                "color": "#333333",
+                "fontFamily": "natds-icons",
+                "fontSize": 24,
               }
             }
-            width="24"
-          />
+          >
+            
+          </Text>
           <View
             accessible={true}
-            focusable={false}
+            focusable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -2135,28 +3914,9 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component : S
               }
               type="default"
             >
-              outlined-navigation-home
+              outlined-content-bellringing
             </Text>
-            <View
-              style={
-                Object {
-                  "backgroundColor": "#E74627",
-                  "borderRadius": 50,
-                  "height": 10,
-                  "width": 10,
-                }
-              }
-            />
           </View>
-          <SvgMock
-            height="24"
-            style={
-              Object {
-                "fill": "#333333",
-              }
-            }
-            width="24"
-          />
         </View>
         <View
           accessible={true}
@@ -2179,18 +3939,20 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component : S
             }
           }
         >
-          <SvgMock
-            height={24}
+          <Text
             style={
               Object {
-                "fill": "#333333",
+                "color": "#333333",
+                "fontFamily": "natds-icons",
+                "fontSize": 24,
               }
             }
-            width={24}
-          />
+          >
+            
+          </Text>
           <View
             accessible={true}
-            focusable={false}
+            focusable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -2225,28 +3987,9 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component : S
               }
               type="default"
             >
-              outlined-content-lock
+              outlined-action-gridsquare
             </Text>
-            <View
-              style={
-                Object {
-                  "backgroundColor": "#E74627",
-                  "borderRadius": 50,
-                  "height": 10,
-                  "width": 10,
-                }
-              }
-            />
           </View>
-          <SvgMock
-            height={24}
-            style={
-              Object {
-                "fill": "#333333",
-              }
-            }
-            width={24}
-          />
         </View>
         <View
           accessible={true}
@@ -2269,18 +4012,20 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component : S
             }
           }
         >
-          <SvgMock
-            height={24}
+          <Text
             style={
               Object {
-                "fill": "#333333",
+                "color": "#333333",
+                "fontFamily": "natds-icons",
+                "fontSize": 24,
               }
             }
-            width={24}
-          />
+          >
+            
+          </Text>
           <View
             accessible={true}
-            focusable={false}
+            focusable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -2315,28 +4060,9 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component : S
               }
               type="default"
             >
-              outlined-content-wifi
+              outlined-action-rating
             </Text>
-            <View
-              style={
-                Object {
-                  "backgroundColor": "#E74627",
-                  "borderRadius": 50,
-                  "height": 10,
-                  "width": 10,
-                }
-              }
-            />
           </View>
-          <SvgMock
-            height={24}
-            style={
-              Object {
-                "fill": "#333333",
-              }
-            }
-            width={24}
-          />
         </View>
         <View
           accessible={true}
@@ -2359,18 +4085,20 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component : S
             }
           }
         >
-          <SvgMock
-            height={24}
+          <Text
             style={
               Object {
-                "fill": "#333333",
+                "color": "#333333",
+                "fontFamily": "natds-icons",
+                "fontSize": 24,
               }
             }
-            width={24}
-          />
+          >
+            
+          </Text>
           <View
             accessible={true}
-            focusable={false}
+            focusable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -2405,28 +4133,9 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component : S
               }
               type="default"
             >
-              outlined-content-adddocument
+              outlined-place-forklift
             </Text>
-            <View
-              style={
-                Object {
-                  "backgroundColor": "#E74627",
-                  "borderRadius": 50,
-                  "height": 10,
-                  "width": 10,
-                }
-              }
-            />
           </View>
-          <SvgMock
-            height={24}
-            style={
-              Object {
-                "fill": "#333333",
-              }
-            }
-            width={24}
-          />
         </View>
         <View
           accessible={true}
@@ -2449,18 +4158,20 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component : S
             }
           }
         >
-          <SvgMock
-            height={24}
+          <Text
             style={
               Object {
-                "fill": "#333333",
+                "color": "#333333",
+                "fontFamily": "natds-icons",
+                "fontSize": 24,
               }
             }
-            width={24}
-          />
+          >
+            
+          </Text>
           <View
             accessible={true}
-            focusable={false}
+            focusable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -2495,28 +4206,9 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component : S
               }
               type="default"
             >
-              outlined-communication-chat
+              outlined-content-consistency
             </Text>
-            <View
-              style={
-                Object {
-                  "backgroundColor": "#E74627",
-                  "borderRadius": 50,
-                  "height": 10,
-                  "width": 10,
-                }
-              }
-            />
           </View>
-          <SvgMock
-            height={24}
-            style={
-              Object {
-                "fill": "#333333",
-              }
-            }
-            width={24}
-          />
         </View>
         <View
           accessible={true}
@@ -2539,18 +4231,20 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component : S
             }
           }
         >
-          <SvgMock
-            height={24}
+          <Text
             style={
               Object {
-                "fill": "#333333",
+                "color": "#333333",
+                "fontFamily": "natds-icons",
+                "fontSize": 24,
               }
             }
-            width={24}
-          />
+          >
+            
+          </Text>
           <View
             accessible={true}
-            focusable={false}
+            focusable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -2585,28 +4279,96 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component : S
               }
               type="default"
             >
-              outlined-content-channel
+              outlined-product-vegan
             </Text>
-            <View
-              style={
-                Object {
-                  "backgroundColor": "#E74627",
-                  "borderRadius": 50,
-                  "height": 10,
-                  "width": 10,
-                }
-              }
-            />
           </View>
-          <SvgMock
-            height={24}
+        </View>
+        <Text>
+          Use String
+        </Text>
+        <View
+          accessible={true}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "height": 48,
+              "justifyContent": "space-between",
+              "marginLeft": 16,
+              "opacity": 1,
+            }
+          }
+        >
+          <Text
             style={
               Object {
-                "fill": "#333333",
+                "color": "#333333",
+                "fontFamily": "natds-icons",
+                "fontSize": 24,
               }
             }
-            width={24}
-          />
+          >
+            
+          </Text>
+          <View
+            accessible={true}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "flex": 1,
+                "flexDirection": "row",
+                "height": 48,
+                "justifyContent": "space-between",
+                "marginLeft": 16,
+                "marginRight": 5,
+                "opacity": 1,
+              }
+            }
+          >
+            <Text
+              style={
+                Array [
+                  Object {
+                    "alignSelf": "center",
+                    "color": "#333333",
+                    "flexBasis": 0,
+                    "flexGrow": 1,
+                    "flexShrink": 1,
+                  },
+                ]
+              }
+              type="default"
+            >
+              outlined-content-bellringing
+            </Text>
+          </View>
+          <Text
+            style={
+              Object {
+                "color": "#333333",
+                "fontFamily": "natds-icons",
+                "fontSize": 24,
+              }
+            }
+          >
+            
+          </Text>
         </View>
         <View
           accessible={true}
@@ -2629,18 +4391,20 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component : S
             }
           }
         >
-          <SvgMock
-            height={24}
+          <Text
             style={
               Object {
-                "fill": "#333333",
+                "color": "#333333",
+                "fontFamily": "natds-icons",
+                "fontSize": 24,
               }
             }
-            width={24}
-          />
+          >
+            
+          </Text>
           <View
             accessible={true}
-            focusable={false}
+            focusable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -2675,28 +4439,20 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component : S
               }
               type="default"
             >
-              outlined-finance-moneypaper
+              outlined-action-gridsquare
             </Text>
-            <View
-              style={
-                Object {
-                  "backgroundColor": "#E74627",
-                  "borderRadius": 50,
-                  "height": 10,
-                  "width": 10,
-                }
-              }
-            />
           </View>
-          <SvgMock
-            height={24}
+          <Text
             style={
               Object {
-                "fill": "#333333",
+                "color": "#333333",
+                "fontFamily": "natds-icons",
+                "fontSize": 24,
               }
             }
-            width={24}
-          />
+          >
+            
+          </Text>
         </View>
         <View
           accessible={true}
@@ -2719,18 +4475,20 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component : S
             }
           }
         >
-          <SvgMock
-            height={24}
+          <Text
             style={
               Object {
-                "fill": "#333333",
+                "color": "#333333",
+                "fontFamily": "natds-icons",
+                "fontSize": 24,
               }
             }
-            width={24}
-          />
+          >
+            
+          </Text>
           <View
             accessible={true}
-            focusable={false}
+            focusable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -2765,28 +4523,20 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component : S
               }
               type="default"
             >
-              outlined-communication-speaker
+              outlined-action-rating
             </Text>
-            <View
-              style={
-                Object {
-                  "backgroundColor": "#E74627",
-                  "borderRadius": 50,
-                  "height": 10,
-                  "width": 10,
-                }
-              }
-            />
           </View>
-          <SvgMock
-            height={24}
+          <Text
             style={
               Object {
-                "fill": "#333333",
+                "color": "#333333",
+                "fontFamily": "natds-icons",
+                "fontSize": 24,
               }
             }
-            width={24}
-          />
+          >
+            
+          </Text>
         </View>
         <View
           accessible={true}
@@ -2809,18 +4559,20 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component : S
             }
           }
         >
-          <SvgMock
-            height={24}
+          <Text
             style={
               Object {
-                "fill": "#333333",
+                "color": "#333333",
+                "fontFamily": "natds-icons",
+                "fontSize": 24,
               }
             }
-            width={24}
-          />
+          >
+            
+          </Text>
           <View
             accessible={true}
-            focusable={false}
+            focusable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -2855,28 +4607,20 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component : S
               }
               type="default"
             >
-              outlined-place-bus
+              outlined-place-forklift
             </Text>
-            <View
-              style={
-                Object {
-                  "backgroundColor": "#E74627",
-                  "borderRadius": 50,
-                  "height": 10,
-                  "width": 10,
-                }
-              }
-            />
           </View>
-          <SvgMock
-            height={24}
+          <Text
             style={
               Object {
-                "fill": "#333333",
+                "color": "#333333",
+                "fontFamily": "natds-icons",
+                "fontSize": 24,
               }
             }
-            width={24}
-          />
+          >
+            
+          </Text>
         </View>
         <View
           accessible={true}
@@ -2899,18 +4643,20 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component : S
             }
           }
         >
-          <SvgMock
-            height={24}
+          <Text
             style={
               Object {
-                "fill": "#333333",
+                "color": "#333333",
+                "fontFamily": "natds-icons",
+                "fontSize": 24,
               }
             }
-            width={24}
-          />
+          >
+            
+          </Text>
           <View
             accessible={true}
-            focusable={false}
+            focusable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -2945,28 +4691,20 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component : S
               }
               type="default"
             >
-              outlined-alert-info
+              outlined-content-consistency
             </Text>
-            <View
-              style={
-                Object {
-                  "backgroundColor": "#E74627",
-                  "borderRadius": 50,
-                  "height": 10,
-                  "width": 10,
-                }
-              }
-            />
           </View>
-          <SvgMock
-            height={24}
+          <Text
             style={
               Object {
-                "fill": "#333333",
+                "color": "#333333",
+                "fontFamily": "natds-icons",
+                "fontSize": 24,
               }
             }
-            width={24}
-          />
+          >
+            
+          </Text>
         </View>
         <View
           accessible={true}
@@ -2989,18 +4727,20 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component : S
             }
           }
         >
-          <SvgMock
-            height={24}
+          <Text
             style={
               Object {
-                "fill": "#333333",
+                "color": "#333333",
+                "fontFamily": "natds-icons",
+                "fontSize": 24,
               }
             }
-            width={24}
-          />
+          >
+            
+          </Text>
           <View
             accessible={true}
-            focusable={false}
+            focusable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -3035,7 +4775,94 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component : S
               }
               type="default"
             >
-              outlined-navigation-exit
+              outlined-product-vegan
+            </Text>
+          </View>
+          <Text
+            style={
+              Object {
+                "color": "#333333",
+                "fontFamily": "natds-icons",
+                "fontSize": 24,
+              }
+            }
+          >
+            
+          </Text>
+        </View>
+        <Text>
+          Use String
+        </Text>
+        <View
+          accessible={true}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "height": 48,
+              "justifyContent": "space-between",
+              "marginLeft": 16,
+              "opacity": 1,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#333333",
+                "fontFamily": "natds-icons",
+                "fontSize": 24,
+              }
+            }
+          >
+            
+          </Text>
+          <View
+            accessible={true}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "flex": 1,
+                "flexDirection": "row",
+                "height": 48,
+                "justifyContent": "space-between",
+                "marginLeft": 16,
+                "marginRight": 5,
+                "opacity": 1,
+              }
+            }
+          >
+            <Text
+              style={
+                Array [
+                  Object {
+                    "alignSelf": "center",
+                    "color": "#333333",
+                    "flexBasis": 0,
+                    "flexGrow": 1,
+                    "flexShrink": 1,
+                  },
+                ]
+              }
+              type="default"
+            >
+              outlined-content-bellringing
             </Text>
             <View
               style={
@@ -3048,15 +4875,988 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component : S
               }
             />
           </View>
-          <SvgMock
-            height={24}
+          <Text
             style={
               Object {
-                "fill": "#333333",
+                "color": "#333333",
+                "fontFamily": "natds-icons",
+                "fontSize": 24,
               }
             }
-            width={24}
-          />
+          >
+            
+          </Text>
+        </View>
+        <View
+          accessible={true}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "height": 48,
+              "justifyContent": "space-between",
+              "marginLeft": 16,
+              "opacity": 1,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#333333",
+                "fontFamily": "natds-icons",
+                "fontSize": 24,
+              }
+            }
+          >
+            
+          </Text>
+          <View
+            accessible={true}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "flex": 1,
+                "flexDirection": "row",
+                "height": 48,
+                "justifyContent": "space-between",
+                "marginLeft": 16,
+                "marginRight": 5,
+                "opacity": 1,
+              }
+            }
+          >
+            <Text
+              style={
+                Array [
+                  Object {
+                    "alignSelf": "center",
+                    "color": "#333333",
+                    "flexBasis": 0,
+                    "flexGrow": 1,
+                    "flexShrink": 1,
+                  },
+                ]
+              }
+              type="default"
+            >
+              outlined-action-gridsquare
+            </Text>
+            <View
+              style={
+                Object {
+                  "backgroundColor": "#E74627",
+                  "borderRadius": 50,
+                  "height": 10,
+                  "width": 10,
+                }
+              }
+            />
+          </View>
+          <Text
+            style={
+              Object {
+                "color": "#333333",
+                "fontFamily": "natds-icons",
+                "fontSize": 24,
+              }
+            }
+          >
+            
+          </Text>
+        </View>
+        <View
+          accessible={true}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "height": 48,
+              "justifyContent": "space-between",
+              "marginLeft": 16,
+              "opacity": 1,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#333333",
+                "fontFamily": "natds-icons",
+                "fontSize": 24,
+              }
+            }
+          >
+            
+          </Text>
+          <View
+            accessible={true}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "flex": 1,
+                "flexDirection": "row",
+                "height": 48,
+                "justifyContent": "space-between",
+                "marginLeft": 16,
+                "marginRight": 5,
+                "opacity": 1,
+              }
+            }
+          >
+            <Text
+              style={
+                Array [
+                  Object {
+                    "alignSelf": "center",
+                    "color": "#333333",
+                    "flexBasis": 0,
+                    "flexGrow": 1,
+                    "flexShrink": 1,
+                  },
+                ]
+              }
+              type="default"
+            >
+              outlined-action-rating
+            </Text>
+            <View
+              style={
+                Object {
+                  "backgroundColor": "#E74627",
+                  "borderRadius": 50,
+                  "height": 10,
+                  "width": 10,
+                }
+              }
+            />
+          </View>
+          <Text
+            style={
+              Object {
+                "color": "#333333",
+                "fontFamily": "natds-icons",
+                "fontSize": 24,
+              }
+            }
+          >
+            
+          </Text>
+        </View>
+        <View
+          accessible={true}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "height": 48,
+              "justifyContent": "space-between",
+              "marginLeft": 16,
+              "opacity": 1,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#333333",
+                "fontFamily": "natds-icons",
+                "fontSize": 24,
+              }
+            }
+          >
+            
+          </Text>
+          <View
+            accessible={true}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "flex": 1,
+                "flexDirection": "row",
+                "height": 48,
+                "justifyContent": "space-between",
+                "marginLeft": 16,
+                "marginRight": 5,
+                "opacity": 1,
+              }
+            }
+          >
+            <Text
+              style={
+                Array [
+                  Object {
+                    "alignSelf": "center",
+                    "color": "#333333",
+                    "flexBasis": 0,
+                    "flexGrow": 1,
+                    "flexShrink": 1,
+                  },
+                ]
+              }
+              type="default"
+            >
+              outlined-place-forklift
+            </Text>
+            <View
+              style={
+                Object {
+                  "backgroundColor": "#E74627",
+                  "borderRadius": 50,
+                  "height": 10,
+                  "width": 10,
+                }
+              }
+            />
+          </View>
+          <Text
+            style={
+              Object {
+                "color": "#333333",
+                "fontFamily": "natds-icons",
+                "fontSize": 24,
+              }
+            }
+          >
+            
+          </Text>
+        </View>
+        <View
+          accessible={true}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "height": 48,
+              "justifyContent": "space-between",
+              "marginLeft": 16,
+              "opacity": 1,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#333333",
+                "fontFamily": "natds-icons",
+                "fontSize": 24,
+              }
+            }
+          >
+            
+          </Text>
+          <View
+            accessible={true}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "flex": 1,
+                "flexDirection": "row",
+                "height": 48,
+                "justifyContent": "space-between",
+                "marginLeft": 16,
+                "marginRight": 5,
+                "opacity": 1,
+              }
+            }
+          >
+            <Text
+              style={
+                Array [
+                  Object {
+                    "alignSelf": "center",
+                    "color": "#333333",
+                    "flexBasis": 0,
+                    "flexGrow": 1,
+                    "flexShrink": 1,
+                  },
+                ]
+              }
+              type="default"
+            >
+              outlined-content-consistency
+            </Text>
+            <View
+              style={
+                Object {
+                  "backgroundColor": "#E74627",
+                  "borderRadius": 50,
+                  "height": 10,
+                  "width": 10,
+                }
+              }
+            />
+          </View>
+          <Text
+            style={
+              Object {
+                "color": "#333333",
+                "fontFamily": "natds-icons",
+                "fontSize": 24,
+              }
+            }
+          >
+            
+          </Text>
+        </View>
+        <View
+          accessible={true}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "height": 48,
+              "justifyContent": "space-between",
+              "marginLeft": 16,
+              "opacity": 1,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#333333",
+                "fontFamily": "natds-icons",
+                "fontSize": 24,
+              }
+            }
+          >
+            
+          </Text>
+          <View
+            accessible={true}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "flex": 1,
+                "flexDirection": "row",
+                "height": 48,
+                "justifyContent": "space-between",
+                "marginLeft": 16,
+                "marginRight": 5,
+                "opacity": 1,
+              }
+            }
+          >
+            <Text
+              style={
+                Array [
+                  Object {
+                    "alignSelf": "center",
+                    "color": "#333333",
+                    "flexBasis": 0,
+                    "flexGrow": 1,
+                    "flexShrink": 1,
+                  },
+                ]
+              }
+              type="default"
+            >
+              outlined-product-vegan
+            </Text>
+            <View
+              style={
+                Object {
+                  "backgroundColor": "#E74627",
+                  "borderRadius": 50,
+                  "height": 10,
+                  "width": 10,
+                }
+              }
+            />
+          </View>
+          <Text
+            style={
+              Object {
+                "color": "#333333",
+                "fontFamily": "natds-icons",
+                "fontSize": 24,
+              }
+            }
+          >
+            
+          </Text>
+        </View>
+        <Text>
+          Use String
+        </Text>
+        <View
+          accessible={true}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "height": 48,
+              "justifyContent": "space-between",
+              "marginLeft": 16,
+              "opacity": 1,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#333333",
+                "fontFamily": "natds-icons",
+                "fontSize": 24,
+              }
+            }
+          >
+            
+          </Text>
+          <View
+            accessible={true}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "flex": 1,
+                "flexDirection": "row",
+                "height": 48,
+                "justifyContent": "space-between",
+                "marginLeft": 16,
+                "marginRight": 5,
+                "opacity": 1,
+              }
+            }
+          >
+            <Text
+              style={
+                Array [
+                  Object {
+                    "alignSelf": "center",
+                    "color": "#333333",
+                    "flexBasis": 0,
+                    "flexGrow": 1,
+                    "flexShrink": 1,
+                  },
+                ]
+              }
+              type="default"
+            >
+              outlined-content-bellringing
+            </Text>
+            <View
+              style={
+                Object {
+                  "backgroundColor": "#E74627",
+                  "borderRadius": 50,
+                  "height": 10,
+                  "width": 10,
+                }
+              }
+            />
+          </View>
+        </View>
+        <View
+          accessible={true}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "height": 48,
+              "justifyContent": "space-between",
+              "marginLeft": 16,
+              "opacity": 1,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#333333",
+                "fontFamily": "natds-icons",
+                "fontSize": 24,
+              }
+            }
+          >
+            
+          </Text>
+          <View
+            accessible={true}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "flex": 1,
+                "flexDirection": "row",
+                "height": 48,
+                "justifyContent": "space-between",
+                "marginLeft": 16,
+                "marginRight": 5,
+                "opacity": 1,
+              }
+            }
+          >
+            <Text
+              style={
+                Array [
+                  Object {
+                    "alignSelf": "center",
+                    "color": "#333333",
+                    "flexBasis": 0,
+                    "flexGrow": 1,
+                    "flexShrink": 1,
+                  },
+                ]
+              }
+              type="default"
+            >
+              outlined-action-gridsquare
+            </Text>
+            <View
+              style={
+                Object {
+                  "backgroundColor": "#E74627",
+                  "borderRadius": 50,
+                  "height": 10,
+                  "width": 10,
+                }
+              }
+            />
+          </View>
+        </View>
+        <View
+          accessible={true}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "height": 48,
+              "justifyContent": "space-between",
+              "marginLeft": 16,
+              "opacity": 1,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#333333",
+                "fontFamily": "natds-icons",
+                "fontSize": 24,
+              }
+            }
+          >
+            
+          </Text>
+          <View
+            accessible={true}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "flex": 1,
+                "flexDirection": "row",
+                "height": 48,
+                "justifyContent": "space-between",
+                "marginLeft": 16,
+                "marginRight": 5,
+                "opacity": 1,
+              }
+            }
+          >
+            <Text
+              style={
+                Array [
+                  Object {
+                    "alignSelf": "center",
+                    "color": "#333333",
+                    "flexBasis": 0,
+                    "flexGrow": 1,
+                    "flexShrink": 1,
+                  },
+                ]
+              }
+              type="default"
+            >
+              outlined-action-rating
+            </Text>
+            <View
+              style={
+                Object {
+                  "backgroundColor": "#E74627",
+                  "borderRadius": 50,
+                  "height": 10,
+                  "width": 10,
+                }
+              }
+            />
+          </View>
+        </View>
+        <View
+          accessible={true}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "height": 48,
+              "justifyContent": "space-between",
+              "marginLeft": 16,
+              "opacity": 1,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#333333",
+                "fontFamily": "natds-icons",
+                "fontSize": 24,
+              }
+            }
+          >
+            
+          </Text>
+          <View
+            accessible={true}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "flex": 1,
+                "flexDirection": "row",
+                "height": 48,
+                "justifyContent": "space-between",
+                "marginLeft": 16,
+                "marginRight": 5,
+                "opacity": 1,
+              }
+            }
+          >
+            <Text
+              style={
+                Array [
+                  Object {
+                    "alignSelf": "center",
+                    "color": "#333333",
+                    "flexBasis": 0,
+                    "flexGrow": 1,
+                    "flexShrink": 1,
+                  },
+                ]
+              }
+              type="default"
+            >
+              outlined-place-forklift
+            </Text>
+            <View
+              style={
+                Object {
+                  "backgroundColor": "#E74627",
+                  "borderRadius": 50,
+                  "height": 10,
+                  "width": 10,
+                }
+              }
+            />
+          </View>
+        </View>
+        <View
+          accessible={true}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "height": 48,
+              "justifyContent": "space-between",
+              "marginLeft": 16,
+              "opacity": 1,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#333333",
+                "fontFamily": "natds-icons",
+                "fontSize": 24,
+              }
+            }
+          >
+            
+          </Text>
+          <View
+            accessible={true}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "flex": 1,
+                "flexDirection": "row",
+                "height": 48,
+                "justifyContent": "space-between",
+                "marginLeft": 16,
+                "marginRight": 5,
+                "opacity": 1,
+              }
+            }
+          >
+            <Text
+              style={
+                Array [
+                  Object {
+                    "alignSelf": "center",
+                    "color": "#333333",
+                    "flexBasis": 0,
+                    "flexGrow": 1,
+                    "flexShrink": 1,
+                  },
+                ]
+              }
+              type="default"
+            >
+              outlined-content-consistency
+            </Text>
+            <View
+              style={
+                Object {
+                  "backgroundColor": "#E74627",
+                  "borderRadius": 50,
+                  "height": 10,
+                  "width": 10,
+                }
+              }
+            />
+          </View>
+        </View>
+        <View
+          accessible={true}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "height": 48,
+              "justifyContent": "space-between",
+              "marginLeft": 16,
+              "opacity": 1,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#333333",
+                "fontFamily": "natds-icons",
+                "fontSize": 24,
+              }
+            }
+          >
+            
+          </Text>
+          <View
+            accessible={true}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "flex": 1,
+                "flexDirection": "row",
+                "height": 48,
+                "justifyContent": "space-between",
+                "marginLeft": 16,
+                "marginRight": 5,
+                "opacity": 1,
+              }
+            }
+          >
+            <Text
+              style={
+                Array [
+                  Object {
+                    "alignSelf": "center",
+                    "color": "#333333",
+                    "flexBasis": 0,
+                    "flexGrow": 1,
+                    "flexShrink": 1,
+                  },
+                ]
+              }
+              type="default"
+            >
+              outlined-product-vegan
+            </Text>
+            <View
+              style={
+                Object {
+                  "backgroundColor": "#E74627",
+                  "borderRadius": 50,
+                  "height": 10,
+                  "width": 10,
+                }
+              }
+            />
+          </View>
         </View>
         <Text>
           With External Icon URL
@@ -3097,7 +5897,7 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component : S
           />
           <View
             accessible={true}
-            focusable={false}
+            focusable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -3172,7 +5972,7 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component : S
           />
           <View
             accessible={true}
-            focusable={false}
+            focusable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -3246,7 +6046,7 @@ exports[`StoryNatMenuItem component Should render StoryNatMenuItem component : S
           />
           <View
             accessible={true}
-            focusable={false}
+            focusable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
