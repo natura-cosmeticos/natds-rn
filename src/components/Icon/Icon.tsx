@@ -1,7 +1,7 @@
 import React from 'react';
 import { withTheme } from 'styled-components/native';
 import { Text } from 'react-native';
-import { icons } from '@naturacosmeticos/natds-icons';
+import { IconName, icons } from '@naturacosmeticos/natds-icons';
 import { Size, Theme, Color } from '@naturacosmeticos/natds-themes/react-native';
 import { getColorByName, getSize } from '../../common/themeSelectors';
 
@@ -27,7 +27,7 @@ export interface IconProps {
   /**
    * Icon name
    */
-  name?: string
+  name?: IconName
   /**
    * Icon size
    */

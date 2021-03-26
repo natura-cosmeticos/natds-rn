@@ -6,7 +6,7 @@ import {
   SelectionFeedback,
 } from './ListItem.stories';
 
-storiesOf('List', module)
+storiesOf('ListItem', module)
   .add('Base', Base)
   .add('FeedbackRipple', RippleFeedback)
   .add('FeedbackSelection', SelectionFeedback)

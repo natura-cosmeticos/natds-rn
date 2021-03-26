@@ -5,6 +5,7 @@ const getOpacity = (theme: Theme) => checkTheme(theme).opacity;
 export const getOpacityMediumHigh = (theme: Theme) => getOpacity(theme).mediumHigh;
 export const getOpacityHigh = (theme: Theme) => getOpacity(theme).high;
 export const getOpacityMediumLow = (theme: Theme) => getOpacity(theme).mediumLow;
+export const getOpacityVeryHigh = (theme: Theme) => getOpacity(theme).veryHigh;
 
 /**
  * @Deprecated use `getOpacityMediumHigh` instead
