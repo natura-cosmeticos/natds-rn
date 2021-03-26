@@ -4,6 +4,7 @@ exports[`NatMenuItem component default Should render NatMenuItem NatMenuItem : N
 <View
   accessible={true}
   focusable={true}
+  isTVSelectable={true}
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -24,7 +25,8 @@ exports[`NatMenuItem component default Should render NatMenuItem NatMenuItem : N
 >
   <View
     accessible={true}
-    focusable={false}
+    focusable={true}
+    isTVSelectable={true}
     onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}

@@ -32,7 +32,7 @@
     "archive:sample:ios": "xcodebuild -project ./ios/NaturaReactComponents.xcodeproj -scheme 'NaturaReactComponents' -derivedDataPath ./ios/build -archivePath ./ios/archive/NaturaReactComponents.xcarchive archive"
   },
   "dependencies": {
-    "@naturacosmeticos/natds-icons": "^0.4.0",
+    "@naturacosmeticos/natds-icons": "^1.2.2",
     "jest-styled-components": "6.3.4",
     "prop-types": "15.7.2",
     "react-native-gesture-handler": "1.6.0",

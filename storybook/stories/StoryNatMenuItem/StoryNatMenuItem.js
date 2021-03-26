@@ -177,10 +177,10 @@ export const StoryNatMenuItem = () => {
       name: 'outlined-content-consistency',
     },
     {
-      icon: 'outlined-product-vegan',
+      icon: 'outlined-action-visibility',
       id: 1,
       level: 1,
-      name: 'outlined-product-vegan',
+      name: 'outlined-action-visibility',
     },
   ];
 
@@ -257,52 +257,12 @@ export const StoryNatMenuItem = () => {
           {menuListString.map(item => (
             <NatMenuItem
               title={item.name}
-              icon={{ name: item.icon }}
+              icon={{ svg: { name: item.icon } }}
               key={item.id}
               level={item.levell}
               onPress={() => {
                 Alert.alert('click event');
               }}
-            />
-          ))}
-          <Text>Use String</Text>
-          {menuListString.map(item => (
-            <NatMenuItem
-              title={item.name}
-              icon={{ name: item.icon }}
-              iconLeft={{ name: item.icon }}
-              key={item.id}
-              level={item.levell}
-              onPress={() => {
-                Alert.alert('click event');
-              }}
-            />
-          ))}
-          <Text>Use String</Text>
-          {menuListString.map(item => (
-            <NatMenuItem
-              title={item.name}
-              icon={{ name: item.icon }}
-              iconLeft={{ name: item.icon }}
-              key={item.id}
-              level={item.levell}
-              onPress={() => {
-                Alert.alert('click event');
-              }}
-              showNotification={true}
-            />
-          ))}
-          <Text>Use String</Text>
-          {menuListString.map(item => (
-            <NatMenuItem
-              title={item.name}
-              icon={{ name: item.icon }}
-              key={item.id}
-              level={item.levell}
-              onPress={() => {
-                Alert.alert('click event');
-              }}
-              showNotification={true}
             />
           ))}
 

@@ -63,8 +63,18 @@ export const StoryNatAppBar = () => {
           <NatAppBar
             title="Title Text"
             iconLeft={{ svg: { name: 'outlined-navigation-menu' } }}
+            iconRight={{ svg: { name: 'outlined-content-bellringing' } }}
             onPressLeft={() => Alert.alert('press')}
             onPress={() => Alert.alert('press')}
+          />
+          <View style={{ height: 60 }} />
+          <NatAppBar
+            title="Title Text"
+            iconLeft={{ svg: { name: 'outlined-navigation-menu' } }}
+            iconRight={{ svg: { name: 'outlined-content-bellringing' } }}
+            onPressLeft={() => Alert.alert('press')}
+            onPress={() => Alert.alert('press')}
+            showNotification={true}
           />
           <View style={{ height: 60 }} />
           <NatAppBar title="Title Text" onPress={() => Alert.alert('press')} />
