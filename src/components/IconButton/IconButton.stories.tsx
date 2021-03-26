@@ -1,90 +1,109 @@
 import React from 'react';
-import { select, text } from '@storybook/addon-knobs';
-
-import { ContainerRow } from '../../common/HelperComponents/ThemeHelper.styles';
+import { select, boolean } from '@storybook/addon-knobs';
+import { iconNames, IconName } from '@naturacosmeticos/natds-icons';
 import { IconButton } from './IconButton';
+import { StoryContainer } from '../../common/HelperComponents/StoryContainer';
+import {
+  iconButtonBackgroundStylesOptions,
+  iconButtonSizesOptions,
+  iconButtonColorsOptions,
+} from './IconButton.types';
+
+const extractComponentDescription = () => `
+- - -
+
+  ### NOTE:
+  This component is available in the following variants:
+
+  - ✅ Standard
+
+With the following attribute status:
+
+  - **Icon Color:**
+    - ✅ \`Hight Emphasis\`
+    - ✅ \`Primary\`
+    - ✅ \`Light\`
+  - **Background Style:**
+    - ✅ \`None (inherit)\`
+    - ✅ \`Float\`
+    - ✅ \`Overlay\`
+  - ✅ **Disabled**
+  - **Size:**
+    - ✅ \`Semi\`
+    - ✅ \`SemiX\`
+    - ✅ \`Medium\`
+  - ✅ **OnPress (OnClick)**
+  - ✅ **Icon**
+
+- - -
+`;
 
 export default {
   component: IconButton,
   parameters: {
     componentSubtitle: 'A button component with an icon from @naturacosmeticos/natds-icons package',
+    docs: {
+      extractComponentDescription,
+    },
   },
   title: 'Components/IconButton',
 };
 
 export const Base = () => (
-  <ContainerRow style={{ padding: 20 }}>
+  <StoryContainer title="Base">
     <IconButton onPress={() => { }} />
-  </ContainerRow>
+  </StoryContainer>
 );
 
 export const IconColor = () => (
-  <ContainerRow style={{ backgroundColor: '#eaeaea', padding: 20 }}>
-    <IconButton onPress={() => { }} iconColor="highEmphasis" />
-    <IconButton onPress={() => { }} iconColor="primary" />
-    <IconButton onPress={() => { }} iconColor="light" />
-  </ContainerRow>
+    <StoryContainer title="IconColor" style={{ backgroundColor: '#eaeaea' }}>
+      <IconButton onPress={() => { }} iconColor="highEmphasis" />
+      <IconButton onPress={() => { }} iconColor="primary" />
+      <IconButton onPress={() => { }} iconColor="light" />
+    </StoryContainer>
 );
 
 export const BackgroundStyle = () => (
-  <ContainerRow style={{ backgroundColor: '#eaeaea', padding: 20 }}>
+  <StoryContainer title="BackgroundStyle">
     <IconButton onPress={() => { }} iconColor="highEmphasis" backgroundStyle="none" />
     <IconButton onPress={() => { }} iconColor="primary" backgroundStyle="float" />
     <IconButton onPress={() => { }} iconColor="light" backgroundStyle="overlay" />
-  </ContainerRow>
+  </StoryContainer>
 );
 
 export const Disabled = () => (
-  <ContainerRow style={{ backgroundColor: '#eaeaea', padding: 20 }}>
+  <StoryContainer title="Disabled">
     <IconButton onPress={() => { }} disabled iconColor="highEmphasis" backgroundStyle="none" />
     <IconButton onPress={() => { }} disabled iconColor="primary" backgroundStyle="float" />
     <IconButton onPress={() => { }} disabled iconColor="light" backgroundStyle="overlay" />
-  </ContainerRow>
+  </StoryContainer>
 );
 
 export const Size = () => (
-  <ContainerRow style={{ backgroundColor: '#eaeaea', padding: 20 }}>
-    <IconButton onPress={() => { }} size="semi" iconColor="highEmphasis" backgroundStyle="none" />
-    <IconButton onPress={() => { }} size="semiX" iconColor="primary" backgroundStyle="float" />
-    <IconButton onPress={() => { }} size="medium" iconColor="light" backgroundStyle="overlay" />
-  </ContainerRow>
+  <StoryContainer title="Sizes">
+    <IconButton onPress={() => { }} size="semi" />
+    <IconButton onPress={() => { }} size="semiX" />
+    <IconButton onPress={() => { }} size="medium" />
+  </StoryContainer>
 );
 
-export const all = () => (
-  <ContainerRow style={{ justifyContent: 'space-around' }}>
-    <IconButton onPress={() => { }} />
-    <IconButton
-      color="primary"
-      icon="outlined-finance-bank"
-      size="small"
-      onPress={() => Function.prototype()}
-    />
-    <IconButton
-      color="default"
-      size="medium"
-      icon="outlined-finance-bank"
-      onPress={() => Function.prototype()}
-    />
-  </ContainerRow>
+export const Icon = () => (
+  <StoryContainer title="Icon">
+    <IconButton onPress={() => { }} size="medium" icon="outlined-finance-charging" />
+    <IconButton onPress={() => { }} size="medium" icon="outlined-place-forklift" />
+    <IconButton onPress={() => { }} size="medium" icon="outlined-social-network" />
+  </StoryContainer>
 );
-
-const iconButtonSizes = {
-  medium: 'medium',
-  small: 'small',
-};
-
-const iconButtonColors = {
-  default: 'default',
-  primary: 'primary',
-};
 
 export const interactive = () => (
-  <ContainerRow style={{ padding: 20 }} >
+  <StoryContainer title="Interactive">
     <IconButton
-      color={select('Colors', iconButtonColors, 'default')}
-      icon={text('Icon name', 'outlined-finance-bank')}
-      size={select('Sizes', iconButtonSizes, 'small')}
-      onPress={() => Function.prototype()}
+      iconColor={select('Colors', iconButtonColorsOptions, 'default')}
+      icon={select('Icon name', iconNames as Array<IconName>, 'outlined-finance-bank' as IconName)}
+      size={select('Sizes', iconButtonSizesOptions, 'small')}
+      disabled={boolean('Disabled', false)}
+      onPress={() => { }}
+      backgroundStyle={select('BackgroundStyle', iconButtonBackgroundStylesOptions, iconButtonBackgroundStylesOptions.none)}
     />
-  </ContainerRow>
+  </StoryContainer>
 );

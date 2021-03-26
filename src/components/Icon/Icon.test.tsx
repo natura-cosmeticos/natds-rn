@@ -1,7 +1,7 @@
+import { IconName } from '@naturacosmeticos/natds-icons';
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { ThemeProvider } from 'styled-components/native';
-
 import theme from '../../common/themeSelectors/theme/mock-theme.json';
 import {
   Icon,
@@ -15,7 +15,7 @@ const renderIcon = (fn, props: Omit<IconProps, 'theme'>) => (fn(
   </ThemeProvider>,
 ));
 
-const sampleNames = [
+const sampleNames: Array<IconName> = [
   'filled-action-add',
   'outlined-action-micrec',
   'outlined-content-wellness',

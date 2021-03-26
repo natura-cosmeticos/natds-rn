@@ -1,84 +1,26 @@
 import React from 'react';
-import styled, { withTheme } from 'styled-components/native';
-import { Icon, IconColors } from '../Icon/Icon';
+import styled, { useTheme } from 'styled-components/native';
+import { Icon } from '../Icon/Icon';
 import { TouchableRipple } from '../TouchableRipple/TouchableRipple';
+import { getSize } from '../../common/themeSelectors';
+import { IconButtonProps, IconContainerProps } from './IconButton.types';
 import {
-  getSize,
-  getColorByName,
-  buildColorWithOpacity,
-  getColorHighlight,
-  getOpacityVeryHigh,
-  getShadowBySize,
-  Theme,
-} from '../../common/themeSelectors';
-import {
-  IconButtonColors,
-  IconButtonProps,
-  IconContainerProps,
-  IconButtonBackgroundStyle,
-  IconButtonSizes,
-} from './IconButton.types';
+  getContainerElevation,
+  getIconColor,
+  getIconSize,
+  getContainerBackgroundColor,
+} from './IconButton.helpers';
 
-const getBackgroundColor = ({
-  theme,
-  backgroundStyle,
-  disabled,
-}: IconContainerProps) => {
-  const float = disabled
-    ? getColorByName(theme, 'lowEmphasis')
-    : getColorByName(theme, 'surface');
-
-  const backgroundColor = {
-    float,
-    none: 'transparent',
-    overlay: buildColorWithOpacity(getColorHighlight, getOpacityVeryHigh, theme),
-  };
-
-  return backgroundColor[backgroundStyle];
-};
-
-const getIconSize = (theme: Theme, size: IconButtonSizes) => {
-  const iconSize = {
-    medium: 'semiX',
-    semi: 'standard',
-    semiX: 'semi',
-  };
-
-  return iconSize[size];
-};
-
-const IconContainer = styled.View<IconContainerProps>`
+export const IconContainer = styled.View<IconContainerProps>`
   height: ${({ size, theme }) => getSize(theme, size)}px;
   width: ${({ size, theme }) => getSize(theme, size)}px;
-  background-color: ${getBackgroundColor};
+  background-color: ${({ backgroundStyle, disabled, theme }) => getContainerBackgroundColor({ backgroundStyle, disabled, theme })};
   border-radius: 50px;
   justify-content: center;
   align-items: center;
 `;
 
-const getIconColor = (color: IconButtonColors, disabled: boolean) => {
-  const highEmphasis = disabled ? 'mediumEmphasis' : 'highEmphasis';
-
-  const colorMapping = {
-    default: highEmphasis,
-    highEmphasis,
-    light: disabled ? 'lowEmphasis' : 'surface',
-    primary: disabled ? 'mediumEmphasis' : 'primary',
-  };
-
-  return colorMapping[color] as IconColors;
-};
-
-const getElevation = (
-  backgroundStyle: IconButtonBackgroundStyle,
-  theme: Theme,
-) => (
-  backgroundStyle === 'float'
-    ? getShadowBySize(theme, 'micro')
-    : {}
-);
-
-const IconButtonComponent = ({
+export const IconButton = ({
   accessibilityHint,
   accessibilityLabel,
   color = 'highEmphasis',
@@ -88,32 +30,33 @@ const IconButtonComponent = ({
   backgroundStyle = 'none',
   disabled = false,
   onPress,
-  testID,
-  theme,
-}: IconButtonProps) => (
-  <TouchableRipple
-    color="highlight"
-    size={getSize(theme, size) / 2 + 5}
-    onPress={disabled ? undefined : onPress}
-    testID={testID}
-  >
-    <IconContainer
-      disabled={disabled}
-      size={size}
-      theme={theme}
-      backgroundStyle={backgroundStyle}
-      style={getElevation(backgroundStyle, theme)}
-    >
-      <Icon
-        accessibilityHint={accessibilityHint}
-        accessibilityLabel={accessibilityLabel}
-        size={getIconSize(theme, size)}
-        color={getIconColor(iconColor, disabled)}
-        name={icon}
-        theme={theme}
-      />
-    </IconContainer>
-  </TouchableRipple>
-);
+  testID = 'icon-button',
+}: IconButtonProps) => {
+  const theme = useTheme();
 
-export const IconButton = withTheme(IconButtonComponent);
+  return (
+    <TouchableRipple
+      color="highlight"
+      size={getSize(theme, size) / 2 + 5}
+      onPress={disabled ? undefined : onPress}
+      testID={testID}
+    >
+      <IconContainer
+        disabled={disabled}
+        size={size}
+        backgroundStyle={backgroundStyle}
+        style={getContainerElevation(backgroundStyle, theme)}
+        testID={`${testID}-background`}
+      >
+        <Icon
+          accessibilityHint={accessibilityHint}
+          accessibilityLabel={accessibilityLabel}
+          size={getIconSize(size)}
+          color={getIconColor(iconColor, disabled)}
+          name={icon}
+          testID={`${testID}-icon`}
+        />
+      </IconContainer>
+    </TouchableRipple>
+  );
+};

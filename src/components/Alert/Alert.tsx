@@ -1,3 +1,4 @@
+import { IconName } from '@naturacosmeticos/natds-icons';
 import React from 'react';
 import { withTheme } from 'styled-components/native';
 import { Theme } from '../../common/themeSelectors';
@@ -42,7 +43,7 @@ export interface AlertProps {
 }
 
 const getIcon = (type: Types) => {
-  const icons = {
+  const icons: Record<Types, { name: IconName }> = {
     error: {
       name: 'outlined-alert-cancel',
     },
@@ -68,15 +69,15 @@ const AlertComponent = ({
   title,
   message,
 }: AlertProps) => (
-    <AlertWrapper theme={theme} testID={testID} variant={variant} type={type}>
-      <IconContent testID={`${testID}-icon`}>
-        <Icon color="#333333" name={getIcon(type).name} ></Icon>
-      </IconContent>
-      <AlertContent testID={`${testID}-content`}>
-        {!!title && <AlertTitle>{title}</AlertTitle>}
-        <AlertText>{message}</AlertText>
-      </AlertContent>
-    </AlertWrapper>
+  <AlertWrapper theme={theme} testID={testID} variant={variant} type={type}>
+    <IconContent testID={`${testID}-icon`}>
+      <Icon color="#333333" name={getIcon(type).name} ></Icon>
+    </IconContent>
+    <AlertContent testID={`${testID}-content`}>
+      {!!title && <AlertTitle>{title}</AlertTitle>}
+      <AlertText>{message}</AlertText>
+    </AlertContent>
+  </AlertWrapper>
 );
 
 export const Alert = withTheme(AlertComponent);

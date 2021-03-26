@@ -1,5 +1,5 @@
+/* eslint-disable max-len */
 import { IconName } from '@naturacosmeticos/natds-icons';
-import { Theme } from '../../common/themeSelectors';
 
 /**
  * @deprecated Use 'semi'
@@ -15,7 +15,7 @@ export type IconButtonColors = 'primary' | 'highEmphasis' | 'light' | IconButton
 
 export type IconButtonBackgroundStyle = 'none' | 'float' | 'overlay';
 
-export type IconContainerProps = Required<Pick<IconButtonProps, 'size' | 'backgroundStyle' | 'theme' | 'disabled'>>;
+export type IconContainerProps = Required<Pick<IconButtonProps, 'size' | 'backgroundStyle' | 'disabled'>>;
 
 export interface IconButtonProps {
   /**
@@ -30,16 +30,15 @@ export interface IconButtonProps {
    */
   accessibilityLabel?: string
   /**
-   * Icon Button variants `primary` | `highEmphasis` | `light`
-   * @deprecated - Use iconColor instead
-   */
-  color?: IconButtonColors,
-  /**
-   * Icon Button variants `primary` | `highEmphasis` | `light`
-   * @default `highEmphasis`
-   * @deprecated - variant `default` is deprecated, use `highEmphasis` instead
+   * Icon Button variants `primary` | `highEmphasis` | `light` | `default` - variant `default` is deprecated, use `highEmphasis` instead
+   * @default highEmphasis
    */
   iconColor?: IconButtonColors,
+  /**
+   * Icon Button variants `primary` | `highEmphasis` | `light` | `default` - deprecated use iconColor instead
+   * @default highEmphasis
+   */
+  color?: IconButtonColors,
   /**
    * Icon background style `none` | `float` | `overlay`
    * @default `none`
@@ -68,8 +67,32 @@ export interface IconButtonProps {
    * Optional ID for testing
    */
   testID?: string,
-  /**
-   * The button theme
-   */
-  theme: Theme,
 }
+
+export const iconButtonSizesOptions: Record<IconButtonSizes, IconButtonSizes> = {
+  medium: 'medium',
+  semi: 'semiX',
+  semiX: 'semiX',
+  small: 'small',
+};
+
+export const iconButtonColorsOptions: Record<IconButtonColors, IconButtonColors> = {
+  default: 'default',
+  highEmphasis: 'highEmphasis',
+  light: 'light',
+  primary: 'primary',
+};
+
+export const iconButtonBackgroundStylesOptions: Record<
+  IconButtonBackgroundStyle,
+  IconButtonBackgroundStyle
+> = {
+  float: 'float',
+  none: 'none',
+  overlay: 'overlay',
+};
+
+export const iconButtonBackgroundStyles = Object
+  .keys(iconButtonBackgroundStylesOptions) as Array<IconButtonBackgroundStyle>;
+export const iconButtonColors = Object.keys(iconButtonColorsOptions) as Array<IconButtonColors>;
+export const iconButtonSizes = Object.keys(iconButtonSizesOptions) as Array<IconButtonSizes>;
