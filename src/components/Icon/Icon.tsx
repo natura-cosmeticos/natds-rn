@@ -1,7 +1,7 @@
 import React from 'react';
 import { withTheme } from 'styled-components/native';
 import { Text } from 'react-native';
-import iconNames from '@naturacosmeticos/natds-icons/dist/natds-icons.json';
+import { icons } from '@naturacosmeticos/natds-icons';
 import { Size, Theme, Color } from '@naturacosmeticos/natds-themes/react-native';
 import { getColorByName, getSize } from '../../common/themeSelectors';
 
@@ -59,9 +59,9 @@ const IconComponent = ({
   theme,
   size = 'standard',
 }: IconProps) => {
-  const unicodeName = iconNames[name]
-    ? iconNames[name].replace('%', '\\')
-    : iconNames[defaultIconName];
+  const unicodeName = icons[name]
+    ? icons[name].replace('%', '\\')
+    : icons[defaultIconName];
 
   const code = JSON.parse(`["${unicodeName}"]`)[0];
 

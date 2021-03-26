@@ -305,7 +305,7 @@ exports[`Alert component Should render alert with default props 1`] = `
       }
       testID="icon-outlined-alert-info"
     >
-      
+      
     </Text>
   </View>
   <View
