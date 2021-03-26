@@ -12,7 +12,7 @@ exports[`Icon component should render component with default icon: Icon componen
   }
   testID="icon-outlined-default-mockup"
 >
-  
+  
 </Text>
 `;
 
@@ -44,7 +44,7 @@ exports[`Icon component should render correctly when icon is "outlined-action-mi
   }
   testID="icon-outlined-action-micrec"
 >
-  
+  
 </Text>
 `;
 
@@ -60,7 +60,7 @@ exports[`Icon component should render correctly when icon is "outlined-content-w
   }
   testID="icon-outlined-content-wellness"
 >
-  
+  
 </Text>
 `;
 
@@ -76,6 +76,6 @@ exports[`Icon component should render correctly when icon is "outlined-finance-b
   }
   testID="icon-outlined-finance-bank"
 >
-  
+  
 </Text>
 `;
