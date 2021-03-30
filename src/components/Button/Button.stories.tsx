@@ -34,9 +34,9 @@ export const Default = () => (
 
 export const Variants = () => (
   <StoryContainer title="Variants">
-    <Button type="contained" onPress={onPress} text="default" />
-    <Button type="outlined" onPress={onPress} text="default" />
-    <Button type="text" onPress={onPress} text="default" />
+    <Button type="contained" onPress={onPress} text="contained" />
+    <Button type="outlined" onPress={onPress} text="outlined" />
+    <Button type="text" onPress={onPress} text="text" />
   </StoryContainer>
 );
 
