@@ -1,5 +1,6 @@
 /* eslint-disable max-lines */
 import React, { useState } from 'react';
+import { Text, View } from 'react-native';
 import styled, { withTheme } from 'styled-components/native';
 import {
   IColors,
@@ -35,7 +36,7 @@ export interface ButtonProps {
 
 const isContained = (type: ButtonTypes) => type === 'contained';
 
-const getButtonStyles = (theme: Theme, type: ButtonTypes, disabled: boolean) => {
+const getButtonColors = (theme: Theme, type: ButtonTypes, disabled: boolean) => {
   const styles = {
     contained: {
       background: disabled ? getColorLowEmphasis(theme) : getColorPrimary(theme),
@@ -73,8 +74,11 @@ const Base = styled.View<{
   type, theme, disabled = false, size,
 }) => ({
   ...getButtonPropsBySize(theme, size),
-  ...getButtonStyles(theme, type, disabled),
+  ...getButtonColors(theme, type, disabled),
+  alignContent: 'center',
   borderRadius: getRadiusBySize(theme, 'medium'),
+  flexDirection: (iconPosition === 'right' ? 'row' : 'row-reverse'),
+  justifyContent: 'center',
 }));
 
 const Label = styled.Text<{
@@ -91,6 +95,47 @@ const Label = styled.Text<{
   fontWeight: 'bold',
   letterSpacing: 1,
 }));
+
+interface LabelProps {
+  disabled: boolean,
+  iconName: string | undefined,
+  text: string,
+  textColor: TextColors,
+  theme: Theme,
+  type: ButtonTypes
+}
+const Label: React.FC<LabelProps> = ({
+  disabled,
+  iconName,
+  text,
+  textColor,
+  theme,
+  type,
+}) => (iconName ? (
+  <View style={{ alignItems: 'center', flexDirection: 'row' }}>
+    <LabelText
+      disabled={disabled}
+      textColor={textColor}
+      type={type}
+    >
+      {text.toUpperCase()}
+    </LabelText>
+    <Text> </Text>
+    <Icon
+      color={getButtonTextColor(theme, type, disabled) as unknown as IconColors}
+      name={iconName}
+      size="small" />
+  </View>
+) : (
+  <LabelText
+    disabled={disabled}
+    textColor={textColor}
+    testID="label-text"
+    type={type}
+  >
+    {text.toUpperCase()}
+  </LabelText>
+));
 
 const ButtonComponent = ({
   accessibilityHint,

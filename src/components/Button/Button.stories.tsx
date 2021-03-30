@@ -46,6 +46,7 @@ export const All = () => (
     <Size />
     <Icon />
     <Disabled />
+    <Display />
   </View>
 );
 
@@ -112,13 +113,30 @@ export const Disabled = () => (
   </StoryContainer>
 );
 
-export const All = () => (
-  <View>
-    <Default />
-    <Variants />
-    <Size />
-    <Disabled />
-  </View>
+export const Display = () => (
+  <StoryContainer title="Display">
+    <ContainerColumn>
+      <View style={{ alignItems: 'flex-start', marginBottom: 14 }}>
+        <Button type="contained" onPress={onPress} text="display inline" />
+      </View>
+      <View style={{ alignItems: 'flex-start', marginBottom: 14 }}>
+        <Button type="outlined" onPress={onPress} text="display inline" />
+      </View>
+      <View style={{ alignItems: 'flex-start', marginBottom: 14 }}>
+        <Button type="text" onPress={onPress} text="display inline" />
+      </View>
+
+      <View style={{ marginBottom: 14 }}>
+        <Button type="contained" onPress={onPress} text="display block" />
+      </View>
+      <View style={{ marginBottom: 14 }}>
+        <Button type="outlined" onPress={onPress} text="display block" />
+      </View>
+      <View>
+        <Button type="text" onPress={onPress} text="display block" />
+      </View>
+    </ContainerColumn>
+  </StoryContainer>
 );
 
 export const Interactive = () => (

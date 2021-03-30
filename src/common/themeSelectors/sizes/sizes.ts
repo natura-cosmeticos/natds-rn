@@ -1,13 +1,10 @@
 import { Size, Theme } from '@naturacosmeticos/natds-themes/react-native';
 import { checkTheme } from '../theme/theme';
-import { getSpacingTiny, getSpacingSmall } from '../spacing/spacing';
+import { getSpacingMicro, getSpacingSmall, getSpacingTiny } from '../spacing/spacing';
 
 interface ButtonProperties {
-  paddingTop: number;
-  paddingRight: number;
-  paddingBottom: number;
-  paddingLeft: number;
   minHeight: number;
+  paddingHorizontal: number;
 }
 
 export type ButtonSize = 'large' | 'medium' | 'small'
@@ -21,30 +18,18 @@ export const getSize = (theme: Theme, size: keyof Size) => checkTheme(theme).siz
 export const getButtonPropsBySize = (
   theme: Theme, size: ButtonSize,
 ): ButtonProperties => {
-  const tiny = getSpacingTiny(theme);
-  const small = getSpacingSmall(theme);
-
   const buttonSizes = {
     large: {
       minHeight: getSize(theme, 'medium'),
-      paddingBottom: small,
-      paddingLeft: small,
-      paddingRight: small,
-      paddingTop: small,
+      paddingHorizontal: getSpacingSmall(theme),
     },
     medium: {
       minHeight: getSize(theme, 'semiX'),
-      paddingBottom: 12,
-      paddingLeft: small,
-      paddingRight: small,
-      paddingTop: 12,
+      paddingHorizontal: getSpacingSmall(theme) - getSpacingMicro(theme),
     },
     small: {
       minHeight: getSize(theme, 'semi'),
-      paddingBottom: tiny,
-      paddingLeft: tiny,
-      paddingRight: tiny,
-      paddingTop: tiny,
+      paddingHorizontal: getSpacingTiny(theme),
     },
   };
 

@@ -28,13 +28,13 @@ exports[`Button component Disabled variants should render disabled button compon
     style={
       Array [
         Object {
+          "alignContent": "center",
           "backgroundColor": "#bbbbbb",
           "borderRadius": 4,
+          "flexDirection": "row",
+          "justifyContent": "center",
           "minHeight": 40,
-          "paddingBottom": 12,
-          "paddingLeft": 16,
-          "paddingRight": 16,
-          "paddingTop": 12,
+          "paddingHorizontal": 12,
         },
         Object {},
       ]
@@ -122,14 +122,14 @@ exports[`Button component Disabled variants should render disabled button compon
     style={
       Array [
         Object {
+          "alignContent": "center",
           "borderColor": "#777777",
           "borderRadius": 4,
           "borderWidth": 1,
+          "flexDirection": "row",
+          "justifyContent": "center",
           "minHeight": 40,
-          "paddingBottom": 12,
-          "paddingLeft": 16,
-          "paddingRight": 16,
-          "paddingTop": 12,
+          "paddingHorizontal": 12,
         },
         Object {},
       ]
@@ -217,12 +217,12 @@ exports[`Button component Disabled variants should render disabled button compon
     style={
       Array [
         Object {
+          "alignContent": "center",
           "borderRadius": 4,
+          "flexDirection": "row",
+          "justifyContent": "center",
           "minHeight": 40,
-          "paddingBottom": 12,
-          "paddingLeft": 16,
-          "paddingRight": 16,
-          "paddingTop": 12,
+          "paddingHorizontal": 12,
         },
         Object {},
       ]
@@ -310,13 +310,13 @@ exports[`Button component Variants should render button component contained 1`] 
     style={
       Array [
         Object {
+          "alignContent": "center",
           "backgroundColor": "#f4ab34",
           "borderRadius": 4,
+          "flexDirection": "row",
+          "justifyContent": "center",
           "minHeight": 40,
-          "paddingBottom": 12,
-          "paddingLeft": 16,
-          "paddingRight": 16,
-          "paddingTop": 12,
+          "paddingHorizontal": 12,
         },
         Object {
           "elevation": 2,
@@ -413,14 +413,14 @@ exports[`Button component Variants should render button component outlined 1`] =
     style={
       Array [
         Object {
+          "alignContent": "center",
           "borderColor": "#f4ab34",
           "borderRadius": 4,
           "borderWidth": 1,
+          "flexDirection": "row",
+          "justifyContent": "center",
           "minHeight": 40,
-          "paddingBottom": 12,
-          "paddingLeft": 16,
-          "paddingRight": 16,
-          "paddingTop": 12,
+          "paddingHorizontal": 12,
         },
         Object {},
       ]
@@ -508,12 +508,12 @@ exports[`Button component Variants should render button component text 1`] = `
     style={
       Array [
         Object {
+          "alignContent": "center",
           "borderRadius": 4,
+          "flexDirection": "row",
+          "justifyContent": "center",
           "minHeight": 40,
-          "paddingBottom": 12,
-          "paddingLeft": 16,
-          "paddingRight": 16,
-          "paddingTop": 12,
+          "paddingHorizontal": 12,
         },
         Object {},
       ]

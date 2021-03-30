@@ -2,7 +2,9 @@ import { storiesOf } from '@storybook/react-native';
 import {
   All,
   Default,
-  Variants,
+  Disabled,
+  Display,
+  Icon,
   Interactive,
   Size,
   Disabled,
@@ -14,4 +16,5 @@ storiesOf('Button', module)
   .add('variants', Variants)
   .add('size', Size)
   .add('disabled', Disabled)
+  .add('display', Display)
   .add('interactive', Interactive);
