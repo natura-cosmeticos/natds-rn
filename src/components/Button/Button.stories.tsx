@@ -26,6 +26,29 @@ const buttonSizes = {
   small: 'small',
 };
 
+const ContainerRow = styled.View`
+  align-items: flex-end;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: ${getTheme(theme => getSpacingStandard(theme))};
+  width: 100%;
+`;
+
+const ContainerColumn = styled.View`
+  flex-direction: column;
+  width: 100%;
+`;
+
+export const All = () => (
+  <View>
+    <Default />
+    <Variants />
+    <Size />
+    <Icon />
+    <Disabled />
+  </View>
+);
+
 export const Default = () => (
   <StoryContainer title="Default">
     <Button onPress={onPress} text="default" />
@@ -42,9 +65,42 @@ export const Variants = () => (
 
 export const Size = () => (
   <StoryContainer title="Sizes">
-    <Button onPress={onPress} text="default" size="large" />
-    <Button onPress={onPress} text="default" size="medium" />
-    <Button onPress={onPress} text="default" size="small" />
+    <ContainerColumn>
+      <ContainerRow>
+        <Button onPress={onPress} text="large" size="large" type="contained" />
+        <Button onPress={onPress} text="medium" size="medium" type="contained" />
+        <Button onPress={onPress} text="small" size="small" type="contained" />
+      </ContainerRow>
+      <ContainerRow>
+        <Button onPress={onPress} text="large" size="large" type="outlined" />
+        <Button onPress={onPress} text="medium" size="medium" type="outlined" />
+        <Button onPress={onPress} text="small" size="small" type="outlined" />
+      </ContainerRow>
+      <ContainerRow style={{ marginBottom: 0 }}>
+        <Button onPress={onPress} text="large" size="large" type="text" />
+        <Button onPress={onPress} text="medium" size="medium" type="text" />
+        <Button onPress={onPress} text="small" size="small" type="text" />
+      </ContainerRow>
+    </ContainerColumn>
+  </StoryContainer>
+);
+
+export const Icon = () => (
+  <StoryContainer title="Icon">
+    <ContainerColumn>
+      <ContainerRow>
+        <Button onPress={onPress} iconName="outlined-default-mockup" iconPosition="left" text="left icon" type="contained" />
+        <Button onPress={onPress} iconName="outlined-default-mockup" iconPosition="right" text="right icon" type="contained" />
+      </ContainerRow>
+      <ContainerRow>
+        <Button onPress={onPress} iconName="outlined-default-mockup" iconPosition="left" text="left icon" type="outlined" />
+        <Button onPress={onPress} iconName="outlined-default-mockup" iconPosition="right" text="right icon" type="outlined" />
+      </ContainerRow>
+      <ContainerRow style={{ marginBottom: 0 }}>
+        <Button onPress={onPress} iconName="outlined-default-mockup" iconPosition="left" text="left icon" type="text" />
+        <Button onPress={onPress} iconName="outlined-default-mockup" iconPosition="right" text="right icon" type="text" />
+      </ContainerRow>
+    </ContainerColumn>
   </StoryContainer>
 );
 
