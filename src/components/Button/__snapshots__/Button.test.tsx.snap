@@ -29,6 +29,7 @@ exports[`Button component Disabled variants should render disabled button compon
       Array [
         Object {
           "alignContent": "center",
+          "alignItems": "center",
           "backgroundColor": "#bbbbbb",
           "borderRadius": 4,
           "flexDirection": "row",
@@ -123,6 +124,7 @@ exports[`Button component Disabled variants should render disabled button compon
       Array [
         Object {
           "alignContent": "center",
+          "alignItems": "center",
           "borderColor": "#777777",
           "borderRadius": 4,
           "borderWidth": 1,
@@ -218,6 +220,7 @@ exports[`Button component Disabled variants should render disabled button compon
       Array [
         Object {
           "alignContent": "center",
+          "alignItems": "center",
           "borderRadius": 4,
           "flexDirection": "row",
           "justifyContent": "center",
@@ -311,6 +314,7 @@ exports[`Button component Variants should render button component contained 1`] 
       Array [
         Object {
           "alignContent": "center",
+          "alignItems": "center",
           "backgroundColor": "#f4ab34",
           "borderRadius": 4,
           "flexDirection": "row",
@@ -414,6 +418,7 @@ exports[`Button component Variants should render button component outlined 1`] =
       Array [
         Object {
           "alignContent": "center",
+          "alignItems": "center",
           "borderColor": "#f4ab34",
           "borderRadius": 4,
           "borderWidth": 1,
@@ -509,6 +514,7 @@ exports[`Button component Variants should render button component text 1`] = `
       Array [
         Object {
           "alignContent": "center",
+          "alignItems": "center",
           "borderRadius": 4,
           "flexDirection": "row",
           "justifyContent": "center",

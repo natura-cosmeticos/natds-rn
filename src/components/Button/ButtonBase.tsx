@@ -1,6 +1,6 @@
 /* eslint-disable max-lines */
 import React, { useState } from 'react';
-import { Text, View } from 'react-native';
+import { Text } from 'react-native';
 import styled, { withTheme } from 'styled-components/native';
 import {
   IColors,
@@ -76,6 +76,7 @@ const Base = styled.View<{
   ...getButtonPropsBySize(theme, size),
   ...getButtonColors(theme, type, disabled),
   alignContent: 'center',
+  alignItems: 'center',
   borderRadius: getRadiusBySize(theme, 'medium'),
   flexDirection: (iconPosition === 'right' ? 'row' : 'row-reverse'),
   justifyContent: 'center',
@@ -112,7 +113,7 @@ const Label: React.FC<LabelProps> = ({
   theme,
   type,
 }) => (iconName ? (
-  <View style={{ alignItems: 'center', flexDirection: 'row' }}>
+  <>
     <LabelText
       disabled={disabled}
       textColor={textColor}
@@ -125,7 +126,7 @@ const Label: React.FC<LabelProps> = ({
       color={getButtonTextColor(theme, type, disabled) as unknown as IconColors}
       name={iconName}
       size="small" />
-  </View>
+  </>
 ) : (
   <LabelText
     disabled={disabled}
