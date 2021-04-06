@@ -25,11 +25,11 @@ export const getButtonPropsBySize = (
     },
     medium: {
       minHeight: getSize(theme, 'semiX'),
-      paddingHorizontal: getSpacingSmall(theme) - getSpacingMicro(theme),
+      paddingHorizontal: getSpacingTiny(theme),
     },
     small: {
       minHeight: getSize(theme, 'semi'),
-      paddingHorizontal: getSpacingTiny(theme),
+      paddingHorizontal: getSpacingMicro(theme),
     },
   };
 

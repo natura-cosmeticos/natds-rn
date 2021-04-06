@@ -5,7 +5,7 @@ const scenarios = [
   {
     expectedResult: {
       minHeight: 40,
-      paddingHorizontal: 12,
+      paddingHorizontal: 8,
     },
     name: 'getButtonPropsBySize',
     params: 'medium',
