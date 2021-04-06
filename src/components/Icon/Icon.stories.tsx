@@ -1,6 +1,6 @@
 import React from 'react';
 import { select, text } from '@storybook/addon-knobs';
-
+import { IconName } from '@naturacosmeticos/natds-icons';
 import { ContainerRow } from '../../common/HelperComponents/ThemeHelper.styles';
 import { Icon, IconColors, IconSizes } from './Icon';
 
@@ -75,7 +75,7 @@ export const interactive = () => (
   <ContainerRow style={{ padding: 20 }} >
     <Icon
       color={select('Colors', iconColors, 'default') as IconColors}
-      name={text('Icon name', 'outlined-default-mockup')}
+      name={text('Icon name', 'outlined-default-mockup') as IconName}
       size={select('Sizes', iconSizes, 'standard') as IconSizes}
     />
   </ContainerRow>

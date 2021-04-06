@@ -1,8 +1,10 @@
 import React from 'react';
-import { TouchableWithoutFeedback } from 'react-native';
+import { TouchableWithoutFeedback, View } from 'react-native';
 
 export const TouchableRipple = ({ children, ...props }) => (
   <TouchableWithoutFeedback {...props}>
-    {typeof children === 'function' ? '[Child as a function]' : children}
+    <View {...props}>
+      {children}
+    </View>
   </TouchableWithoutFeedback>
 );

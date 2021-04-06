@@ -65,10 +65,6 @@ buck-out/
 # Coverage
 coverage
 
-
-# Fonts copies before linking
-lib/assets/fonts/natds-icons.*
-
 #jest
 .jest/
 
@@ -88,3 +84,12 @@ public
 
 # auto generated storybook main file
 storybook/storyLoader.ts
+
+# assets managed by the react-native link hook
+android/app/src/main/assets/
+ios/assets/
+src/assets/fonts/natds-icons.eot
+src/assets/fonts/natds-icons.svg
+src/assets/fonts/natds-icons.ttf
+src/assets/fonts/natds-icons.woff
+src/assets/fonts/natds-icons.woff2

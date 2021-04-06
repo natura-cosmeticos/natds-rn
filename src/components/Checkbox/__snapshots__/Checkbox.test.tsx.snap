@@ -7,28 +7,36 @@ exports[`Checkbox component should render checkbox correctly 1`] = `
   disabled={false}
   focusable={true}
   onClick={[Function]}
+  onPress={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
   onResponderTerminate={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
-  style={
-    Array [
-      Object {
-        "alignItems": "center",
-        "backgroundColor": "transparent",
-        "borderColor": "#777777",
-        "borderRadius": 3,
-        "borderWidth": 2,
-        "height": 20,
-        "justifyContent": "center",
-        "width": 20,
-      },
-    ]
-  }
+  size={20}
   testID="checkbox"
-/>
+>
+  <View
+    color="primary"
+    disabled={false}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "transparent",
+          "borderColor": "#777777",
+          "borderRadius": 3,
+          "borderWidth": 2,
+          "height": 20,
+          "justifyContent": "center",
+          "width": 20,
+        },
+      ]
+    }
+    testID="checkbox-circle"
+  />
+</View>
 `;
 
 exports[`Checkbox component should render checkbox selected but disabled correctly 1`] = `
@@ -38,50 +46,58 @@ exports[`Checkbox component should render checkbox selected but disabled correct
   disabled={true}
   focusable={true}
   onClick={[Function]}
+  onPress={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
   onResponderTerminate={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
-  selected={true}
-  style={
-    Array [
-      Object {
-        "alignItems": "center",
-        "backgroundColor": "#bbbbbb",
-        "borderColor": "#bbbbbb",
-        "borderRadius": 3,
-        "borderWidth": 2,
-        "height": 20,
-        "justifyContent": "center",
-        "width": 20,
-      },
-    ]
-  }
+  size={20}
   testID="checkbox"
 >
   <View
+    color="primary"
+    disabled={true}
+    selected={true}
     style={
       Array [
         Object {
-          "borderBottomWidth": 2,
-          "borderColor": "#fafafa",
-          "borderLeftWidth": 2,
-          "height": 8,
-          "transform": Array [
-            Object {
-              "translateY": -2,
-            },
-            Object {
-              "rotate": "-45deg",
-            },
-          ],
-          "width": 14,
+          "alignItems": "center",
+          "backgroundColor": "#bbbbbb",
+          "borderColor": "#bbbbbb",
+          "borderRadius": 3,
+          "borderWidth": 2,
+          "height": 20,
+          "justifyContent": "center",
+          "width": 20,
         },
       ]
     }
-  />
+    testID="checkbox-circle"
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "borderBottomWidth": 2,
+            "borderColor": "#fafafa",
+            "borderLeftWidth": 2,
+            "height": 8,
+            "transform": Array [
+              Object {
+                "translateY": -2,
+              },
+              Object {
+                "rotate": "-45deg",
+              },
+            ],
+            "width": 14,
+          },
+        ]
+      }
+    />
+  </View>
 </View>
 `;
 
@@ -106,50 +122,58 @@ exports[`Checkbox component should render checkbox selected but disabled with la
     disabled={true}
     focusable={true}
     onClick={[Function]}
+    onPress={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}
     onResponderTerminate={[Function]}
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
-    selected={true}
-    style={
-      Array [
-        Object {
-          "alignItems": "center",
-          "backgroundColor": "#bbbbbb",
-          "borderColor": "#bbbbbb",
-          "borderRadius": 3,
-          "borderWidth": 2,
-          "height": 20,
-          "justifyContent": "center",
-          "width": 20,
-        },
-      ]
-    }
+    size={20}
     testID="checkbox"
   >
     <View
+      color="primary"
+      disabled={true}
+      selected={true}
       style={
         Array [
           Object {
-            "borderBottomWidth": 2,
-            "borderColor": "#fafafa",
-            "borderLeftWidth": 2,
-            "height": 8,
-            "transform": Array [
-              Object {
-                "translateY": -2,
-              },
-              Object {
-                "rotate": "-45deg",
-              },
-            ],
-            "width": 14,
+            "alignItems": "center",
+            "backgroundColor": "#bbbbbb",
+            "borderColor": "#bbbbbb",
+            "borderRadius": 3,
+            "borderWidth": 2,
+            "height": 20,
+            "justifyContent": "center",
+            "width": 20,
           },
         ]
       }
-    />
+      testID="checkbox-circle"
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "borderBottomWidth": 2,
+              "borderColor": "#fafafa",
+              "borderLeftWidth": 2,
+              "height": 8,
+              "transform": Array [
+                Object {
+                  "translateY": -2,
+                },
+                Object {
+                  "rotate": "-45deg",
+                },
+              ],
+              "width": 14,
+            },
+          ]
+        }
+      />
+    </View>
   </View>
   <Text
     disabled={true}
@@ -176,50 +200,58 @@ exports[`Checkbox component should render checkbox selected correctly 1`] = `
   disabled={false}
   focusable={true}
   onClick={[Function]}
+  onPress={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
   onResponderTerminate={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
-  selected={true}
-  style={
-    Array [
-      Object {
-        "alignItems": "center",
-        "backgroundColor": "#f4ab34",
-        "borderColor": "#f4ab34",
-        "borderRadius": 3,
-        "borderWidth": 2,
-        "height": 20,
-        "justifyContent": "center",
-        "width": 20,
-      },
-    ]
-  }
+  size={20}
   testID="checkbox"
 >
   <View
+    color="primary"
+    disabled={false}
+    selected={true}
     style={
       Array [
         Object {
-          "borderBottomWidth": 2,
-          "borderColor": "#fafafa",
-          "borderLeftWidth": 2,
-          "height": 8,
-          "transform": Array [
-            Object {
-              "translateY": -2,
-            },
-            Object {
-              "rotate": "-45deg",
-            },
-          ],
-          "width": 14,
+          "alignItems": "center",
+          "backgroundColor": "#f4ab34",
+          "borderColor": "#f4ab34",
+          "borderRadius": 3,
+          "borderWidth": 2,
+          "height": 20,
+          "justifyContent": "center",
+          "width": 20,
         },
       ]
     }
-  />
+    testID="checkbox-circle"
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "borderBottomWidth": 2,
+            "borderColor": "#fafafa",
+            "borderLeftWidth": 2,
+            "height": 8,
+            "transform": Array [
+              Object {
+                "translateY": -2,
+              },
+              Object {
+                "rotate": "-45deg",
+              },
+            ],
+            "width": 14,
+          },
+        ]
+      }
+    />
+  </View>
 </View>
 `;
 
@@ -244,28 +276,36 @@ exports[`Checkbox component should render checkbox with label correctly 1`] = `
     disabled={false}
     focusable={true}
     onClick={[Function]}
+    onPress={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}
     onResponderTerminate={[Function]}
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
-    style={
-      Array [
-        Object {
-          "alignItems": "center",
-          "backgroundColor": "transparent",
-          "borderColor": "#777777",
-          "borderRadius": 3,
-          "borderWidth": 2,
-          "height": 20,
-          "justifyContent": "center",
-          "width": 20,
-        },
-      ]
-    }
+    size={20}
     testID="checkbox"
-  />
+  >
+    <View
+      color="primary"
+      disabled={false}
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "transparent",
+            "borderColor": "#777777",
+            "borderRadius": 3,
+            "borderWidth": 2,
+            "height": 20,
+            "justifyContent": "center",
+            "width": 20,
+          },
+        ]
+      }
+      testID="checkbox-circle"
+    />
+  </View>
   <Text
     disabled={false}
     style={
