@@ -1,4 +1,4 @@
-/* eslint-disable max-lines */
+/* eslint-disable max-lines, complexity */
 import React, { useState } from 'react';
 import { Text } from 'react-native';
 import styled, { withTheme } from 'styled-components/native';
@@ -15,6 +15,7 @@ import {
   getShadowBySize,
   getColorByName,
   getSpacingTiny,
+  getDefaultButtonProps,
 } from '../../common/themeSelectors';
 import { TouchableRipple, getRippleSizeForHorizontalComponents } from '../TouchableRipple/TouchableRipple';
 
@@ -89,11 +90,11 @@ const Label = ({
   <>
     <Text
       style={{
+        ...getDefaultButtonProps(theme),
         alignSelf: 'center',
         color: getLabelColor(disabled, textColor, theme, type),
-        fontSize: 14,
-        fontWeight: 'bold',
-        letterSpacing: 1,
+        fontWeight: '500', // override of broken styles in Theme.button
+        lineHeight: undefined, // override of broken styles in Theme.button
         marginEnd: iconPosition === 'right' ? getSpacingTiny(theme) : 0,
         marginStart: iconPosition === 'left' ? getSpacingTiny(theme) : 0,
       }}
@@ -109,11 +110,11 @@ const Label = ({
 ) : (
   <Text
     style={{
+      ...getDefaultButtonProps(theme),
       alignSelf: 'center',
       color: getLabelColor(disabled, textColor, theme, type),
-      fontSize: 14,
-      fontWeight: 'bold',
-      letterSpacing: 1,
+      fontWeight: '500', // override of broken styles in Theme.button
+      lineHeight: undefined, // override of broken styles in Theme.button
     }}
     testID="label-text"
   >
