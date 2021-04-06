@@ -14,6 +14,7 @@ import {
   getRadiusBySize,
   getShadowBySize,
   getColorByName,
+  getSpacingTiny,
 } from '../../common/themeSelectors';
 import { TouchableRipple, getRippleSizeForHorizontalComponents } from '../TouchableRipple/TouchableRipple';
 
@@ -21,7 +22,7 @@ export type ButtonSizes = 'large' | 'medium' | 'small'
 export type ButtonTypes = 'contained' | 'outlined' | 'text'
 export type TextColors = keyof IColors | 'default'
 
-export interface ButtonProps {
+export interface ButtonBaseProps {
   accessibilityHint?: string
   accessibilityLabel?: string
   disabled?: boolean
@@ -82,60 +83,42 @@ const Base = styled.View<{
   justifyContent: 'center',
 }));
 
-const Label = styled.Text<{
-  type: ButtonTypes
-  disabled: boolean
-  textColor: TextColors
-  theme: Theme
-}>(({
-  type, theme, disabled, textColor,
-}) => ({
-  alignSelf: 'center',
-  color: textColor === 'default' ? getButtonTextColor(theme, type, disabled) : getColorByName(theme, textColor),
-  fontSize: 14,
-  fontWeight: 'bold',
-  letterSpacing: 1,
-}));
-
-interface LabelProps {
-  disabled: boolean,
-  iconName: string | undefined,
-  text: string,
-  textColor: TextColors,
-  theme: Theme,
-  type: ButtonTypes
-}
-const Label: React.FC<LabelProps> = ({
-  disabled,
-  iconName,
-  text,
-  textColor,
-  theme,
-  type,
-}) => (iconName ? (
+const Label = ({
+  disabled = false, iconName, iconPosition, text, textColor, theme, type = 'contained',
+}: Pick<ButtonBaseProps, 'disabled' | 'iconName' | 'iconPosition' | 'text' | 'textColor' | 'theme' | 'type'>) => (iconName ? (
   <>
-    <LabelText
-      disabled={disabled}
-      textColor={textColor}
-      type={type}
+    <Text
+      style={{
+        alignSelf: 'center',
+        color: getLabelColor(disabled, textColor, theme, type),
+        fontSize: 14,
+        fontWeight: 'bold',
+        letterSpacing: 1,
+        marginEnd: iconPosition === 'right' ? getSpacingTiny(theme) : 0,
+        marginStart: iconPosition === 'left' ? getSpacingTiny(theme) : 0,
+      }}
+      testID="label-text"
     >
       {text.toUpperCase()}
-    </LabelText>
-    <Text> </Text>
+    </Text>
     <Icon
       color={getButtonTextColor(theme, type, disabled) as unknown as IconColors}
       name={iconName}
       size="small" />
   </>
 ) : (
-  <LabelText
-    disabled={disabled}
-    textColor={textColor}
+  <Text
+    style={{
+      alignSelf: 'center',
+      color: getLabelColor(disabled, textColor, theme, type),
+      fontSize: 14,
+      fontWeight: 'bold',
+      letterSpacing: 1,
+    }}
     testID="label-text"
-    type={type}
   >
     {text.toUpperCase()}
-  </LabelText>
+  </Text>
 ));
 
 const ButtonComponent = ({
@@ -149,7 +132,7 @@ const ButtonComponent = ({
   text,
   theme,
   type = 'contained',
-}: ButtonProps) => {
+}: ButtonBaseProps) => {
   const [rippleSize, setRippleSize] = useState(0);
 
   return (
@@ -173,9 +156,12 @@ const ButtonComponent = ({
           accessibilityLabel={accessibilityLabel}
           accessibilityRole="button"
           disabled={disabled}
+          iconName={iconName}
+          iconPosition={iconPosition}
+          text={text}
           textColor={textColor}
           type={type}
-        >{text.toUpperCase()}</Label>
+        />
       </Base>
       </TouchableRipple>
   );

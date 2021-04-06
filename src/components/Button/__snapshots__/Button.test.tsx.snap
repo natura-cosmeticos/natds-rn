@@ -44,21 +44,16 @@ exports[`Button component Disabled variants should render disabled button compon
     type="contained"
   >
     <Text
-      accessibilityRole="button"
-      disabled={true}
       style={
-        Array [
-          Object {
-            "alignSelf": "center",
-            "color": "#333333",
-            "fontSize": 14,
-            "fontWeight": "bold",
-            "letterSpacing": 1,
-          },
-        ]
+        Object {
+          "alignSelf": "center",
+          "color": "#333333",
+          "fontSize": 14,
+          "fontWeight": "bold",
+          "letterSpacing": 1,
+        }
       }
-      textColor="default"
-      type="contained"
+      testID="label-text"
     >
       LABEL BUTTON
     </Text>
@@ -140,21 +135,16 @@ exports[`Button component Disabled variants should render disabled button compon
     type="outlined"
   >
     <Text
-      accessibilityRole="button"
-      disabled={true}
       style={
-        Array [
-          Object {
-            "alignSelf": "center",
-            "color": "#777777",
-            "fontSize": 14,
-            "fontWeight": "bold",
-            "letterSpacing": 1,
-          },
-        ]
+        Object {
+          "alignSelf": "center",
+          "color": "#777777",
+          "fontSize": 14,
+          "fontWeight": "bold",
+          "letterSpacing": 1,
+        }
       }
-      textColor="default"
-      type="outlined"
+      testID="label-text"
     >
       LABEL BUTTON
     </Text>
@@ -234,21 +224,16 @@ exports[`Button component Disabled variants should render disabled button compon
     type="text"
   >
     <Text
-      accessibilityRole="button"
-      disabled={true}
       style={
-        Array [
-          Object {
-            "alignSelf": "center",
-            "color": "#777777",
-            "fontSize": 14,
-            "fontWeight": "bold",
-            "letterSpacing": 1,
-          },
-        ]
+        Object {
+          "alignSelf": "center",
+          "color": "#777777",
+          "fontSize": 14,
+          "fontWeight": "bold",
+          "letterSpacing": 1,
+        }
       }
-      textColor="default"
-      type="text"
+      testID="label-text"
     >
       LABEL BUTTON
     </Text>
@@ -338,21 +323,16 @@ exports[`Button component Variants should render button component contained 1`] 
     type="contained"
   >
     <Text
-      accessibilityRole="button"
-      disabled={false}
       style={
-        Array [
-          Object {
-            "alignSelf": "center",
-            "color": "#333333",
-            "fontSize": 14,
-            "fontWeight": "bold",
-            "letterSpacing": 1,
-          },
-        ]
+        Object {
+          "alignSelf": "center",
+          "color": "#333333",
+          "fontSize": 14,
+          "fontWeight": "bold",
+          "letterSpacing": 1,
+        }
       }
-      textColor="default"
-      type="contained"
+      testID="label-text"
     >
       LABEL BUTTON
     </Text>
@@ -434,21 +414,16 @@ exports[`Button component Variants should render button component outlined 1`] =
     type="outlined"
   >
     <Text
-      accessibilityRole="button"
-      disabled={false}
       style={
-        Array [
-          Object {
-            "alignSelf": "center",
-            "color": "#333333",
-            "fontSize": 14,
-            "fontWeight": "bold",
-            "letterSpacing": 1,
-          },
-        ]
+        Object {
+          "alignSelf": "center",
+          "color": "#333333",
+          "fontSize": 14,
+          "fontWeight": "bold",
+          "letterSpacing": 1,
+        }
       }
-      textColor="default"
-      type="outlined"
+      testID="label-text"
     >
       LABEL BUTTON
     </Text>
@@ -528,21 +503,16 @@ exports[`Button component Variants should render button component text 1`] = `
     type="text"
   >
     <Text
-      accessibilityRole="button"
-      disabled={false}
       style={
-        Array [
-          Object {
-            "alignSelf": "center",
-            "color": "#333333",
-            "fontSize": 14,
-            "fontWeight": "bold",
-            "letterSpacing": 1,
-          },
-        ]
+        Object {
+          "alignSelf": "center",
+          "color": "#333333",
+          "fontSize": 14,
+          "fontWeight": "bold",
+          "letterSpacing": 1,
+        }
       }
-      textColor="default"
-      type="text"
+      testID="label-text"
     >
       LABEL BUTTON
     </Text>
