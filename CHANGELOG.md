@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [5.1.0](https://github.com/natura-cosmeticos/natds-rn/compare/v5.0.1...v5.1.0) (2021-04-06)
+
+
+### Features
+
+* **icon-button:** add new options to icon button ([13a9397](https://github.com/natura-cosmeticos/natds-rn/commit/13a939754d7b7a31bb33a85f0b87faf9f802e9f2))
+
 ### [5.0.1](https://github.com/natura-cosmeticos/natds-rn/compare/v5.0.0...v5.0.1) (2021-03-26)
 
 ## [5.0.0](https://github.com/natura-cosmeticos/natds-rn/compare/v3.3.1...v5.0.0) (2021-03-22)
