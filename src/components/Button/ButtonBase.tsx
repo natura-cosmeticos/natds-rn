@@ -1,9 +1,9 @@
-/* eslint-disable max-lines, complexity */
+/* eslint-disable max-lines */
 import React, { useState } from 'react';
+import { Color } from '@naturacosmeticos/natds-themes/react-native';
 import { Text } from 'react-native';
 import styled, { withTheme } from 'styled-components/native';
 import {
-  IColors,
   Theme,
   getButtonPropsBySize,
   getColorHighEmphasis,
@@ -17,11 +17,12 @@ import {
   getSpacingTiny,
   getDefaultButtonProps,
 } from '../../common/themeSelectors';
+import { Icon } from '../Icon';
 import { TouchableRipple, getRippleSizeForHorizontalComponents } from '../TouchableRipple/TouchableRipple';
 
 export type ButtonSizes = 'large' | 'medium' | 'small'
 export type ButtonTypes = 'contained' | 'outlined' | 'text'
-export type TextColors = keyof IColors | 'default'
+export type IconPositions = 'left' | 'right'
 
 export interface ButtonBaseProps {
   accessibilityHint?: string
@@ -32,13 +33,12 @@ export interface ButtonBaseProps {
   size: ButtonSizes
   testID?: string
   text: string
+  textColor: keyof Color
   theme: Theme
   type?: ButtonTypes
 }
 
-const isContained = (type: ButtonTypes) => type === 'contained';
-
-const getButtonColors = (theme: Theme, type: ButtonTypes, disabled: boolean) => {
+const getButtonPropsByType = (theme: Theme, type: ButtonTypes, disabled: boolean) => {
   const styles = {
     contained: {
       background: disabled ? getColorLowEmphasis(theme) : getColorPrimary(theme),
@@ -52,31 +52,17 @@ const getButtonColors = (theme: Theme, type: ButtonTypes, disabled: boolean) => 
   return styles[type];
 };
 
-const getButtonTextColor = (theme: Theme, type: ButtonTypes, disabled: boolean) => {
-  const color = {
-    active: isContained(type) ? getColorOnPrimary(theme) : getColorHighEmphasis(theme),
-    disabled: isContained(type) ? getColorHighEmphasis(theme) : getColorMediumEmphasis(theme),
-  };
-
-  return disabled ? color.disabled : color.active;
-};
-
 const getShadowByType = (type: ButtonTypes, disabled: boolean, theme: Theme) => (
-  isContained(type) && !disabled
+  type === 'contained' && !disabled
     ? getShadowBySize(theme, 'tiny')
     : {}
 );
 
-const Base = styled.View<{
-  disabled: boolean
-  size: ButtonSizes
-  theme: Theme
-  type: ButtonTypes
-}>(({
-  type, theme, disabled = false, size,
+const Base = styled.View<Pick<ButtonBaseProps, 'type' | 'iconPosition' | 'theme' | 'disabled' | 'size'>>(({
+  type = 'contained', iconPosition, theme, disabled = false, size,
 }) => ({
   ...getButtonPropsBySize(theme, size),
-  ...getButtonColors(theme, type, disabled),
+  ...getButtonPropsByType(theme, type, disabled),
   alignContent: 'center',
   alignItems: 'center',
   borderRadius: getRadiusBySize(theme, 'medium'),
@@ -85,14 +71,14 @@ const Base = styled.View<{
 }));
 
 const Label = ({
-  disabled = false, iconName, iconPosition, text, textColor, theme, type = 'contained',
-}: Pick<ButtonBaseProps, 'disabled' | 'iconName' | 'iconPosition' | 'text' | 'textColor' | 'theme' | 'type'>) => (iconName ? (
+  iconName, iconPosition, text, textColor, theme,
+}: Pick<ButtonBaseProps, 'iconName' | 'iconPosition' | 'text' | 'textColor' | 'theme'>) => (iconName ? (
   <>
     <Text
       style={{
         ...getDefaultButtonProps(theme),
         alignSelf: 'center',
-        color: getLabelColor(disabled, textColor, theme, type),
+        color: getColorByName(theme, textColor),
         fontWeight: '500', // override of broken styles in Theme.button
         lineHeight: undefined, // override of broken styles in Theme.button
         marginEnd: iconPosition === 'right' ? getSpacingTiny(theme) : 0,
@@ -103,7 +89,7 @@ const Label = ({
       {text.toUpperCase()}
     </Text>
     <Icon
-      color={getButtonTextColor(theme, type, disabled) as unknown as IconColors}
+      color={textColor}
       name={iconName}
       size="small" />
   </>
@@ -112,7 +98,7 @@ const Label = ({
     style={{
       ...getDefaultButtonProps(theme),
       alignSelf: 'center',
-      color: getLabelColor(disabled, textColor, theme, type),
+      color: getColorByName(theme, textColor),
       fontWeight: '500', // override of broken styles in Theme.button
       lineHeight: undefined, // override of broken styles in Theme.button
     }}
@@ -153,15 +139,11 @@ const ButtonComponent = ({
         type={type}
       >
         <Label
-          accessibilityHint={accessibilityHint}
-          accessibilityLabel={accessibilityLabel}
-          accessibilityRole="button"
-          disabled={disabled}
           iconName={iconName}
           iconPosition={iconPosition}
           text={text}
           textColor={textColor}
-          type={type}
+          theme={theme}
         />
       </Base>
       </TouchableRipple>

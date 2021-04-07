@@ -1,6 +1,9 @@
 /* eslint-disable max-lines */
 import React from 'react';
-import { ButtonBase, ButtonSizes, ButtonTypes } from './ButtonBase';
+import { Color } from '@naturacosmeticos/natds-themes/react-native';
+import {
+  ButtonBase, ButtonSizes, ButtonTypes, IconPositions,
+} from './ButtonBase';
 
 export interface ButtonProps {
   /**
@@ -42,6 +45,18 @@ export interface ButtonProps {
   type?: ButtonTypes
 }
 
+const getButtonTextColor = (type: ButtonTypes, disabled: boolean) => {
+  const color: {
+    active: keyof Color,
+    disabled: keyof Color,
+  } = {
+    active: type === 'contained' ? 'onPrimary' : 'highEmphasis',
+    disabled: type === 'contained' ? 'highEmphasis' : 'mediumEmphasis',
+  };
+
+  return disabled ? color.disabled : color.active;
+};
+
 export const Button = ({
   accessibilityHint,
   accessibilityLabel,
@@ -61,6 +76,7 @@ export const Button = ({
     testID={ testID }
     size={ size }
     text={ text }
+    textColor={ getButtonTextColor(type, disabled) }
     type={ type }
   />
 );
