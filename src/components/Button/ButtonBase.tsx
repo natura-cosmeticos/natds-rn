@@ -58,8 +58,8 @@ const getShadowByType = (type: ButtonTypes, disabled: boolean, theme: Theme) => 
     : {}
 );
 
-const Base = styled.View<Pick<ButtonBaseProps, 'type' | 'iconPosition' | 'theme' | 'disabled' | 'size'>>(({
-  type = 'contained', iconPosition, theme, disabled = false, size,
+const Base = styled.View<Pick<ButtonBaseProps, 'type' | 'theme' | 'disabled' | 'size'>>(({
+  type = 'contained', theme, disabled = false, size,
 }) => ({
   ...getButtonPropsBySize(theme, size),
   ...getButtonPropsByType(theme, type, disabled),
@@ -71,7 +71,7 @@ const Base = styled.View<Pick<ButtonBaseProps, 'type' | 'iconPosition' | 'theme'
 
 const Label = ({
   iconName, iconPosition, text, textColor, theme,
-}: Pick<ButtonBaseProps, 'iconName' | 'iconPosition' | 'text' | 'textColor' | 'theme'>) => (
+}: Omit<ButtonBaseProps, 'onPress' | 'size'>) => (
   iconName
     ? (
       <View style={{
