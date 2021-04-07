@@ -48,7 +48,8 @@ export const StoryNatAppBar = () => {
             iconRight={{ svg: { name: 'outlined-action-autofilter' } }}
             onPressLeft={() => Alert.alert('press')}
             onPressRight={() => Alert.alert('press')}
-            showNotification={true}
+            showNotificationRight={true}
+            showNotificationLeft={true}
           />
           <View style={{ height: 60 }} />
           <NatAppBar
@@ -57,7 +58,7 @@ export const StoryNatAppBar = () => {
             iconRight={{ svg: { name: 'outlined-action-autofilter' } }}
             onPressLeft={() => Alert.alert('press')}
             onPressRight={() => Alert.alert('press')}
-            showNotification={true}
+            showNotificationLeft={true}
           />
           <View style={{ height: 60 }} />
           <NatAppBar
@@ -66,6 +67,7 @@ export const StoryNatAppBar = () => {
             iconRight={{ svg: { name: 'outlined-content-bellringing' } }}
             onPressLeft={() => Alert.alert('press')}
             onPress={() => Alert.alert('press')}
+            showNotificationLeft={true}
           />
           <View style={{ height: 60 }} />
           <NatAppBar
@@ -74,7 +76,7 @@ export const StoryNatAppBar = () => {
             iconRight={{ svg: { name: 'outlined-content-bellringing' } }}
             onPressLeft={() => Alert.alert('press')}
             onPress={() => Alert.alert('press')}
-            showNotification={true}
+            showNotificationRight={true}
           />
           <View style={{ height: 60 }} />
           <NatAppBar title="Title Text" onPress={() => Alert.alert('press')} />
