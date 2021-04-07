@@ -1,25 +1,18 @@
 import React from 'react';
 import { fireEvent } from '@testing-library/react-native';
-import { ThemeProvider } from 'styled-components/native';
-import theme from '../../common/themeSelectors/theme/mock-theme.json';
 import { Button, ButtonProps } from './Button';
 import { renderWithTheme } from '../../../test/testHelpers';
 
-jest.mock('react-native/Libraries/Components/Touchable/TouchableHighlight',
-  () => 'TouchableHighlight');
+jest.mock('../TouchableRipple/TouchableRipple');
 
 const defaultProps = ({
-  onPress: () => {},
+  onPress: () => { },
   text: 'label button',
 });
 
-const renderButton = (
-  props?: Partial<ButtonProps>,
-) => (renderWithTheme(
-  <ThemeProvider theme={theme}>
-    <Button {...defaultProps} {...props} />
-  </ThemeProvider>,
-));
+const renderButton = (props?: Partial<ButtonProps>) => (
+  renderWithTheme(<Button {...defaultProps} {...props} />)
+);
 
 describe('Button component', () => {
   it('should render button with default props', () => {
