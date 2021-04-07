@@ -308,3 +308,167 @@ exports[`Button component Variants should render button component text 1`] = `
   </Text>
 </View>
 `;
+
+exports[`Button component with Icon should render the icon to the left 1`] = `
+<View
+  accessibilityRole="button"
+  accessible={true}
+  disabled={false}
+  focusable={true}
+  onClick={[Function]}
+  onLayout={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  size="medium"
+  style={
+    Array [
+      Object {
+        "alignContent": "center",
+        "alignItems": "center",
+        "backgroundColor": "#f4ab34",
+        "borderRadius": 4,
+        "justifyContent": "center",
+        "minHeight": 40,
+        "paddingHorizontal": 8,
+      },
+      Object {
+        "elevation": 2,
+        "shadowColor": "#000000",
+        "shadowOffset": Object {
+          "height": 2,
+          "width": 0,
+        },
+        "shadowOpacity": 0.14,
+        "shadowRadius": 2,
+      },
+    ]
+  }
+  testID="button"
+  type="contained"
+>
+  <View
+    style={
+      Object {
+        "flexDirection": "row-reverse",
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "alignSelf": "center",
+          "color": "#333333",
+          "fontSize": 14,
+          "fontWeight": "500",
+          "letterSpacing": 1.23,
+          "lineHeight": undefined,
+          "marginEnd": 0,
+          "marginStart": 8,
+        }
+      }
+      testID="label-text"
+    >
+      LABEL BUTTON
+    </Text>
+    <Text
+      accessibilityRole="text"
+      style={
+        Object {
+          "color": "#333333",
+          "fontFamily": "natds-icons",
+          "fontSize": 16,
+        }
+      }
+      testID="icon-outlined-default-mockup"
+    >
+      
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Button component with Icon should render the icon to the right by default 1`] = `
+<View
+  accessibilityRole="button"
+  accessible={true}
+  disabled={false}
+  focusable={true}
+  onClick={[Function]}
+  onLayout={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  size="medium"
+  style={
+    Array [
+      Object {
+        "alignContent": "center",
+        "alignItems": "center",
+        "backgroundColor": "#f4ab34",
+        "borderRadius": 4,
+        "justifyContent": "center",
+        "minHeight": 40,
+        "paddingHorizontal": 8,
+      },
+      Object {
+        "elevation": 2,
+        "shadowColor": "#000000",
+        "shadowOffset": Object {
+          "height": 2,
+          "width": 0,
+        },
+        "shadowOpacity": 0.14,
+        "shadowRadius": 2,
+      },
+    ]
+  }
+  testID="button"
+  type="contained"
+>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "alignSelf": "center",
+          "color": "#333333",
+          "fontSize": 14,
+          "fontWeight": "500",
+          "letterSpacing": 1.23,
+          "lineHeight": undefined,
+          "marginEnd": 8,
+          "marginStart": 0,
+        }
+      }
+      testID="label-text"
+    >
+      LABEL BUTTON
+    </Text>
+    <Text
+      accessibilityRole="text"
+      style={
+        Object {
+          "color": "#333333",
+          "fontFamily": "natds-icons",
+          "fontSize": 16,
+        }
+      }
+      testID="icon-outlined-default-mockup"
+    >
+      
+    </Text>
+  </View>
+</View>
+`;

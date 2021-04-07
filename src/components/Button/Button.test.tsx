@@ -34,26 +34,18 @@ describe('Button component', () => {
 
   it('should call the given onPress function', () => {
     const onPress = jest.fn();
-    const { queryByTestId } = renderButton({ onPress });
+    const { getByTestId } = renderButton({ onPress });
 
-    const button = queryByTestId('button');
-
-    if (button) {
-      fireEvent.press(button);
-    }
+    fireEvent.press(getByTestId('button'));
 
     expect(onPress).toHaveBeenCalledTimes(1);
   });
 
   it('should not call the given onPress function when button is disabled', () => {
     const onPress = jest.fn();
-    const { queryByTestId } = renderButton({ disabled: true, onPress });
+    const { getByTestId } = renderButton({ disabled: true, onPress });
 
-    const button = queryByTestId('button');
-
-    if (button) {
-      fireEvent.press(button);
-    }
+    fireEvent.press(getByTestId('button'));
 
     expect(onPress).not.toHaveBeenCalled();
   });
@@ -93,6 +85,19 @@ describe('Button component', () => {
 
     it('should render disabled button component text', () => {
       const { toJSON } = renderButton({ disabled: true, type: 'text' });
+
+      expect(toJSON()).toMatchSnapshot();
+    });
+  });
+
+  describe('with Icon', () => {
+    it('should render the icon to the right by default', () => {
+      const { toJSON } = renderButton({ iconName: 'outlined-default-mockup' });
+
+      expect(toJSON()).toMatchSnapshot();
+    });
+    it('should render the icon to the left', () => {
+      const { toJSON } = renderButton({ iconName: 'outlined-default-mockup', iconPosition: 'left' });
 
       expect(toJSON()).toMatchSnapshot();
     });
