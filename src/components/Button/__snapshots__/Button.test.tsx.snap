@@ -26,27 +26,39 @@ exports[`Button component Disabled variants should render disabled button compon
         "minHeight": 40,
         "paddingHorizontal": 8,
       },
-      Object {},
     ]
   }
   testID="button"
   type="contained"
 >
-  <Text
+  <View
+    iconPosition="right"
     style={
-      Object {
-        "alignSelf": "center",
-        "color": "#333333",
-        "fontSize": 14,
-        "fontWeight": "500",
-        "letterSpacing": 1.23,
-        "lineHeight": undefined,
-      }
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+        },
+      ]
     }
-    testID="label-text"
   >
-    LABEL BUTTON
-  </Text>
+    <Text
+      iconPosition="right"
+      style={
+        Array [
+          Object {
+            "color": "#333333",
+            "fontWeight": "500",
+            "lineHeight": 21,
+          },
+        ]
+      }
+      testID="button-label"
+      textColor="highEmphasis"
+    >
+      LABEL BUTTON
+    </Text>
+  </View>
 </View>
 `;
 
@@ -77,27 +89,39 @@ exports[`Button component Disabled variants should render disabled button compon
         "minHeight": 40,
         "paddingHorizontal": 8,
       },
-      Object {},
     ]
   }
   testID="button"
   type="outlined"
 >
-  <Text
+  <View
+    iconPosition="right"
     style={
-      Object {
-        "alignSelf": "center",
-        "color": "#777777",
-        "fontSize": 14,
-        "fontWeight": "500",
-        "letterSpacing": 1.23,
-        "lineHeight": undefined,
-      }
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+        },
+      ]
     }
-    testID="label-text"
   >
-    LABEL BUTTON
-  </Text>
+    <Text
+      iconPosition="right"
+      style={
+        Array [
+          Object {
+            "color": "#777777",
+            "fontWeight": "500",
+            "lineHeight": 21,
+          },
+        ]
+      }
+      testID="button-label"
+      textColor="mediumEmphasis"
+    >
+      LABEL BUTTON
+    </Text>
+  </View>
 </View>
 `;
 
@@ -126,27 +150,39 @@ exports[`Button component Disabled variants should render disabled button compon
         "minHeight": 40,
         "paddingHorizontal": 8,
       },
-      Object {},
     ]
   }
   testID="button"
   type="text"
 >
-  <Text
+  <View
+    iconPosition="right"
     style={
-      Object {
-        "alignSelf": "center",
-        "color": "#777777",
-        "fontSize": 14,
-        "fontWeight": "500",
-        "letterSpacing": 1.23,
-        "lineHeight": undefined,
-      }
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+        },
+      ]
     }
-    testID="label-text"
   >
-    LABEL BUTTON
-  </Text>
+    <Text
+      iconPosition="right"
+      style={
+        Array [
+          Object {
+            "color": "#777777",
+            "fontWeight": "500",
+            "lineHeight": 21,
+          },
+        ]
+      }
+      testID="button-label"
+      textColor="mediumEmphasis"
+    >
+      LABEL BUTTON
+    </Text>
+  </View>
 </View>
 `;
 
@@ -172,17 +208,11 @@ exports[`Button component Variants should render button component contained 1`] 
         "alignItems": "center",
         "backgroundColor": "#f4ab34",
         "borderRadius": 4,
+        "elevation": 2,
         "justifyContent": "center",
         "minHeight": 40,
         "paddingHorizontal": 8,
-      },
-      Object {
-        "elevation": 2,
         "shadowColor": "#000000",
-        "shadowOffset": Object {
-          "height": 2,
-          "width": 0,
-        },
         "shadowOpacity": 0.14,
         "shadowRadius": 2,
       },
@@ -191,21 +221,34 @@ exports[`Button component Variants should render button component contained 1`] 
   testID="button"
   type="contained"
 >
-  <Text
+  <View
+    iconPosition="right"
     style={
-      Object {
-        "alignSelf": "center",
-        "color": "#333333",
-        "fontSize": 14,
-        "fontWeight": "500",
-        "letterSpacing": 1.23,
-        "lineHeight": undefined,
-      }
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+        },
+      ]
     }
-    testID="label-text"
   >
-    LABEL BUTTON
-  </Text>
+    <Text
+      iconPosition="right"
+      style={
+        Array [
+          Object {
+            "color": "#333333",
+            "fontWeight": "500",
+            "lineHeight": 21,
+          },
+        ]
+      }
+      testID="button-label"
+      textColor="onPrimary"
+    >
+      LABEL BUTTON
+    </Text>
+  </View>
 </View>
 `;
 
@@ -236,27 +279,39 @@ exports[`Button component Variants should render button component outlined 1`] =
         "minHeight": 40,
         "paddingHorizontal": 8,
       },
-      Object {},
     ]
   }
   testID="button"
   type="outlined"
 >
-  <Text
+  <View
+    iconPosition="right"
     style={
-      Object {
-        "alignSelf": "center",
-        "color": "#333333",
-        "fontSize": 14,
-        "fontWeight": "500",
-        "letterSpacing": 1.23,
-        "lineHeight": undefined,
-      }
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+        },
+      ]
     }
-    testID="label-text"
   >
-    LABEL BUTTON
-  </Text>
+    <Text
+      iconPosition="right"
+      style={
+        Array [
+          Object {
+            "color": "#333333",
+            "fontWeight": "500",
+            "lineHeight": 21,
+          },
+        ]
+      }
+      testID="button-label"
+      textColor="highEmphasis"
+    >
+      LABEL BUTTON
+    </Text>
+  </View>
 </View>
 `;
 
@@ -285,27 +340,39 @@ exports[`Button component Variants should render button component text 1`] = `
         "minHeight": 40,
         "paddingHorizontal": 8,
       },
-      Object {},
     ]
   }
   testID="button"
   type="text"
 >
-  <Text
+  <View
+    iconPosition="right"
     style={
-      Object {
-        "alignSelf": "center",
-        "color": "#333333",
-        "fontSize": 14,
-        "fontWeight": "500",
-        "letterSpacing": 1.23,
-        "lineHeight": undefined,
-      }
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+        },
+      ]
     }
-    testID="label-text"
   >
-    LABEL BUTTON
-  </Text>
+    <Text
+      iconPosition="right"
+      style={
+        Array [
+          Object {
+            "color": "#333333",
+            "fontWeight": "500",
+            "lineHeight": 21,
+          },
+        ]
+      }
+      testID="button-label"
+      textColor="highEmphasis"
+    >
+      LABEL BUTTON
+    </Text>
+  </View>
 </View>
 `;
 
@@ -331,17 +398,11 @@ exports[`Button component with Icon should render the icon to the left 1`] = `
         "alignItems": "center",
         "backgroundColor": "#f4ab34",
         "borderRadius": 4,
+        "elevation": 2,
         "justifyContent": "center",
         "minHeight": 40,
         "paddingHorizontal": 8,
-      },
-      Object {
-        "elevation": 2,
         "shadowColor": "#000000",
-        "shadowOffset": Object {
-          "height": 2,
-          "width": 0,
-        },
         "shadowOpacity": 0.14,
         "shadowRadius": 2,
       },
@@ -351,26 +412,31 @@ exports[`Button component with Icon should render the icon to the left 1`] = `
   type="contained"
 >
   <View
+    iconPosition="left"
     style={
-      Object {
-        "flexDirection": "row-reverse",
-      }
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row-reverse",
+        },
+      ]
     }
   >
     <Text
+      iconName="outlined-default-mockup"
+      iconPosition="left"
       style={
-        Object {
-          "alignSelf": "center",
-          "color": "#333333",
-          "fontSize": 14,
-          "fontWeight": "500",
-          "letterSpacing": 1.23,
-          "lineHeight": undefined,
-          "marginEnd": 0,
-          "marginStart": 8,
-        }
+        Array [
+          Object {
+            "color": "#333333",
+            "fontWeight": "500",
+            "lineHeight": 21,
+            "marginStart": 8,
+          },
+        ]
       }
-      testID="label-text"
+      testID="button-label"
+      textColor="onPrimary"
     >
       LABEL BUTTON
     </Text>
@@ -413,17 +479,11 @@ exports[`Button component with Icon should render the icon to the right by defau
         "alignItems": "center",
         "backgroundColor": "#f4ab34",
         "borderRadius": 4,
+        "elevation": 2,
         "justifyContent": "center",
         "minHeight": 40,
         "paddingHorizontal": 8,
-      },
-      Object {
-        "elevation": 2,
         "shadowColor": "#000000",
-        "shadowOffset": Object {
-          "height": 2,
-          "width": 0,
-        },
         "shadowOpacity": 0.14,
         "shadowRadius": 2,
       },
@@ -433,26 +493,31 @@ exports[`Button component with Icon should render the icon to the right by defau
   type="contained"
 >
   <View
+    iconPosition="right"
     style={
-      Object {
-        "flexDirection": "row",
-      }
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+        },
+      ]
     }
   >
     <Text
+      iconName="outlined-default-mockup"
+      iconPosition="right"
       style={
-        Object {
-          "alignSelf": "center",
-          "color": "#333333",
-          "fontSize": 14,
-          "fontWeight": "500",
-          "letterSpacing": 1.23,
-          "lineHeight": undefined,
-          "marginEnd": 8,
-          "marginStart": 0,
-        }
+        Array [
+          Object {
+            "color": "#333333",
+            "fontWeight": "500",
+            "lineHeight": 21,
+            "marginEnd": 8,
+          },
+        ]
       }
-      testID="label-text"
+      testID="button-label"
+      textColor="onPrimary"
     >
       LABEL BUTTON
     </Text>
