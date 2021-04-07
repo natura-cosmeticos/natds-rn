@@ -1,7 +1,7 @@
 import React, { useState, ReactElement } from 'react';
 import { View, TouchableWithoutFeedback } from 'react-native';
 import { Theme } from '../../common/themeSelectors';
-import { getRippleSizeForHorizontalComponents, TouchableRipple, TouchableRippleProps } from '../TouchableRipple/TouchableRipple';
+import { showRipple, TouchableRipple, TouchableRippleProps } from '../TouchableRipple/TouchableRipple';
 import { ListItem as ListItemComponent } from './ListItem.styles';
 
 export type ListItemFeedback = 'ripple' | 'selection'
@@ -83,7 +83,7 @@ export const ListItem = ({
     >
       <ListItemComponent
         testID={testID}
-        onLayout={event => onPress && getRippleSizeForHorizontalComponents(event, setSize)}
+        onLayout={event => onPress && showRipple(event, setSize)}
         onPress={onPress}
         {...rest}
       >

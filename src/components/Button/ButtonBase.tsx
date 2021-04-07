@@ -18,7 +18,7 @@ import {
   getDefaultButtonProps,
 } from '../../common/themeSelectors';
 import { Icon } from '../Icon';
-import { TouchableRipple, getRippleSizeForHorizontalComponents } from '../TouchableRipple/TouchableRipple';
+import { TouchableRipple, showRipple } from '../TouchableRipple/TouchableRipple';
 
 export type ButtonSizes = 'large' | 'medium' | 'small'
 export type ButtonTypes = 'contained' | 'outlined' | 'text'
@@ -136,7 +136,7 @@ const ButtonComponent = ({
         >
       <Base
         disabled={disabled}
-        onLayout={event => getRippleSizeForHorizontalComponents(event, setRippleSize)}
+        onLayout={event => showRipple(event, setRippleSize)}
         size={size}
         style={getShadowByType(type, disabled, theme)}
         testID={testID}

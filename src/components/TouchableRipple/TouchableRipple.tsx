@@ -62,14 +62,19 @@ export const getChildrenPosition = (ref, setPosition: Function) => {
   }
 };
 
-export const getRippleSizeForHorizontalComponents = (
+type Size = { width: number, height: number }
+export const getBiggestSide = ({ width, height }: Size) => (
+  width > height ? width : height
+);
+
+export const showRipple = (
   event: LayoutChangeEvent,
-  setSize: React.Dispatch<React.SetStateAction<number>>,
+  setRippleSize: React.Dispatch<React.SetStateAction<number>>,
 ) => {
   const { layout: { width, height } } = event.nativeEvent;
-  const biggerSide = width >= height ? width : height;
+  const rippleSize = getBiggestSide({ height, width }) / 2;
 
-  setSize((biggerSide / 2));
+  setRippleSize(rippleSize);
 };
 
 interface State {
