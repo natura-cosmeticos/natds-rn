@@ -1,7 +1,7 @@
 /* eslint-disable max-lines */
 import React, { useState } from 'react';
 import { Color } from '@naturacosmeticos/natds-themes/react-native';
-import { Text } from 'react-native';
+import { Text, View } from 'react-native';
 import styled, { withTheme } from 'styled-components/native';
 import {
   Theme,
@@ -66,47 +66,51 @@ const Base = styled.View<Pick<ButtonBaseProps, 'type' | 'iconPosition' | 'theme'
   alignContent: 'center',
   alignItems: 'center',
   borderRadius: getRadiusBySize(theme, 'medium'),
-  flexDirection: (iconPosition === 'right' ? 'row' : 'row-reverse'),
   justifyContent: 'center',
 }));
 
 const Label = ({
   iconName, iconPosition, text, textColor, theme,
-}: Pick<ButtonBaseProps, 'iconName' | 'iconPosition' | 'text' | 'textColor' | 'theme'>) => (iconName ? (
-  <>
-    <Text
-      style={{
-        ...getDefaultButtonProps(theme),
-        alignSelf: 'center',
-        color: getColorByName(theme, textColor),
-        fontWeight: '500', // override of broken styles in Theme.button
-        lineHeight: undefined, // override of broken styles in Theme.button
-        marginEnd: iconPosition === 'right' ? getSpacingTiny(theme) : 0,
-        marginStart: iconPosition === 'left' ? getSpacingTiny(theme) : 0,
-      }}
-      testID="label-text"
-    >
-      {text.toUpperCase()}
-    </Text>
-    <Icon
-      color={textColor}
-      name={iconName}
-      size="small" />
-  </>
-) : (
-  <Text
-    style={{
-      ...getDefaultButtonProps(theme),
-      alignSelf: 'center',
-      color: getColorByName(theme, textColor),
-      fontWeight: '500', // override of broken styles in Theme.button
-      lineHeight: undefined, // override of broken styles in Theme.button
-    }}
-    testID="label-text"
-  >
-    {text.toUpperCase()}
-  </Text>
-));
+}: Pick<ButtonBaseProps, 'iconName' | 'iconPosition' | 'text' | 'textColor' | 'theme'>) => (
+  iconName
+    ? (
+      <View style={{
+        flexDirection: (iconPosition === 'right' ? 'row' : 'row-reverse'),
+      }}>
+        <Text
+          style={{
+            ...getDefaultButtonProps(theme),
+            alignSelf: 'center',
+            color: getColorByName(theme, textColor),
+            fontWeight: '500', // override of broken styles in Theme.button
+            lineHeight: undefined, // override of broken styles in Theme.button
+            marginEnd: iconPosition === 'right' ? getSpacingTiny(theme) : 0,
+            marginStart: iconPosition === 'left' ? getSpacingTiny(theme) : 0,
+          }}
+          testID="label-text"
+        >
+          {text.toUpperCase()}
+        </Text>
+        <Icon
+          color={textColor}
+          name={iconName}
+          size="small" />
+      </View>
+    ) : (
+      <Text
+        style={{
+          ...getDefaultButtonProps(theme),
+          alignSelf: 'center',
+          color: getColorByName(theme, textColor),
+          fontWeight: '500', // override of broken styles in Theme.button
+          lineHeight: undefined, // override of broken styles in Theme.button
+        }}
+        testID="label-text"
+      >
+        {text.toUpperCase()}
+      </Text>
+    )
+);
 
 const ButtonComponent = ({
   accessibilityHint,
