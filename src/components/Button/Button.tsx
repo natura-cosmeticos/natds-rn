@@ -1,6 +1,7 @@
 /* eslint-disable max-lines */
 import React from 'react';
 import { Color } from '@naturacosmeticos/natds-themes/react-native';
+import { IconName } from '@naturacosmeticos/natds-icons';
 import {
   ButtonBase, ButtonSizes, ButtonTypes, IconPositions,
 } from './ButtonBase';
@@ -23,6 +24,14 @@ export interface ButtonProps {
    * other condition has been met (like selecting a checkbox, etc.).
    */
   disabled?: boolean
+  /**
+   * The icon name
+   */
+  iconName?: IconName,
+  /**
+   * Icon position relative to text label `left` | `right`
+   */
+  iconPosition?: IconPositions
   /**
    * The onPress event handler
    */
