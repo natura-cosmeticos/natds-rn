@@ -5,6 +5,19 @@ import { renderWithTheme } from '../../../test/testHelpers';
 
 jest.mock('../TouchableRipple/TouchableRipple');
 
+jest.mock('../../common/themeSelectors', () => (
+  {
+    getButtonPropsBySize: () => ({ minHeight: 48 }),
+    getColorByName: () => '#BBBBBB',
+    getColorLowEmphasis: () => '#FEEEEF',
+    getColorMediumEmphasis: () => '#FAFAEA',
+    getColorPrimary: () => '#FFFFFF',
+    getRadiusBySize: () => 42,
+    getShadowBySize: () => ({ shadowColor: '#AEAEAE' }),
+    getSize: () => 16,
+    getSpacingTiny: () => 8,
+  }));
+
 const defaultProps = ({
   onPress: () => { },
   text: 'label button',

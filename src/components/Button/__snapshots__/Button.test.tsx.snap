@@ -20,11 +20,10 @@ exports[`Button component Disabled variants should render disabled button compon
       Object {
         "alignContent": "center",
         "alignItems": "center",
-        "backgroundColor": "#bbbbbb",
-        "borderRadius": 4,
+        "backgroundColor": "#FEEEEF",
+        "borderRadius": 42,
         "justifyContent": "center",
-        "minHeight": 40,
-        "paddingHorizontal": 8,
+        "minHeight": 48,
       },
     ]
   }
@@ -47,7 +46,7 @@ exports[`Button component Disabled variants should render disabled button compon
       style={
         Array [
           Object {
-            "color": "#333333",
+            "color": "#BBBBBB",
             "fontWeight": "500",
             "lineHeight": 21,
           },
@@ -82,12 +81,11 @@ exports[`Button component Disabled variants should render disabled button compon
       Object {
         "alignContent": "center",
         "alignItems": "center",
-        "borderColor": "#777777",
-        "borderRadius": 4,
+        "borderColor": "#FAFAEA",
+        "borderRadius": 42,
         "borderWidth": 1,
         "justifyContent": "center",
-        "minHeight": 40,
-        "paddingHorizontal": 8,
+        "minHeight": 48,
       },
     ]
   }
@@ -110,7 +108,7 @@ exports[`Button component Disabled variants should render disabled button compon
       style={
         Array [
           Object {
-            "color": "#777777",
+            "color": "#BBBBBB",
             "fontWeight": "500",
             "lineHeight": 21,
           },
@@ -145,10 +143,9 @@ exports[`Button component Disabled variants should render disabled button compon
       Object {
         "alignContent": "center",
         "alignItems": "center",
-        "borderRadius": 4,
+        "borderRadius": 42,
         "justifyContent": "center",
-        "minHeight": 40,
-        "paddingHorizontal": 8,
+        "minHeight": 48,
       },
     ]
   }
@@ -171,7 +168,7 @@ exports[`Button component Disabled variants should render disabled button compon
       style={
         Array [
           Object {
-            "color": "#777777",
+            "color": "#BBBBBB",
             "fontWeight": "500",
             "lineHeight": 21,
           },
@@ -206,15 +203,11 @@ exports[`Button component Variants should render button component contained 1`] 
       Object {
         "alignContent": "center",
         "alignItems": "center",
-        "backgroundColor": "#f4ab34",
-        "borderRadius": 4,
-        "elevation": 2,
+        "backgroundColor": "#FFFFFF",
+        "borderRadius": 42,
         "justifyContent": "center",
-        "minHeight": 40,
-        "paddingHorizontal": 8,
-        "shadowColor": "#000000",
-        "shadowOpacity": 0.14,
-        "shadowRadius": 2,
+        "minHeight": 48,
+        "shadowColor": "#AEAEAE",
       },
     ]
   }
@@ -237,7 +230,7 @@ exports[`Button component Variants should render button component contained 1`] 
       style={
         Array [
           Object {
-            "color": "#333333",
+            "color": "#BBBBBB",
             "fontWeight": "500",
             "lineHeight": 21,
           },
@@ -272,12 +265,11 @@ exports[`Button component Variants should render button component outlined 1`] =
       Object {
         "alignContent": "center",
         "alignItems": "center",
-        "borderColor": "#f4ab34",
-        "borderRadius": 4,
+        "borderColor": "#FFFFFF",
+        "borderRadius": 42,
         "borderWidth": 1,
         "justifyContent": "center",
-        "minHeight": 40,
-        "paddingHorizontal": 8,
+        "minHeight": 48,
       },
     ]
   }
@@ -300,7 +292,7 @@ exports[`Button component Variants should render button component outlined 1`] =
       style={
         Array [
           Object {
-            "color": "#333333",
+            "color": "#BBBBBB",
             "fontWeight": "500",
             "lineHeight": 21,
           },
@@ -335,10 +327,9 @@ exports[`Button component Variants should render button component text 1`] = `
       Object {
         "alignContent": "center",
         "alignItems": "center",
-        "borderRadius": 4,
+        "borderRadius": 42,
         "justifyContent": "center",
-        "minHeight": 40,
-        "paddingHorizontal": 8,
+        "minHeight": 48,
       },
     ]
   }
@@ -361,7 +352,7 @@ exports[`Button component Variants should render button component text 1`] = `
       style={
         Array [
           Object {
-            "color": "#333333",
+            "color": "#BBBBBB",
             "fontWeight": "500",
             "lineHeight": 21,
           },
@@ -396,15 +387,11 @@ exports[`Button component with Icon should render the icon to the left 1`] = `
       Object {
         "alignContent": "center",
         "alignItems": "center",
-        "backgroundColor": "#f4ab34",
-        "borderRadius": 4,
-        "elevation": 2,
+        "backgroundColor": "#FFFFFF",
+        "borderRadius": 42,
         "justifyContent": "center",
-        "minHeight": 40,
-        "paddingHorizontal": 8,
-        "shadowColor": "#000000",
-        "shadowOpacity": 0.14,
-        "shadowRadius": 2,
+        "minHeight": 48,
+        "shadowColor": "#AEAEAE",
       },
     ]
   }
@@ -428,7 +415,7 @@ exports[`Button component with Icon should render the icon to the left 1`] = `
       style={
         Array [
           Object {
-            "color": "#333333",
+            "color": "#BBBBBB",
             "fontWeight": "500",
             "lineHeight": 21,
             "marginStart": 8,
@@ -444,7 +431,7 @@ exports[`Button component with Icon should render the icon to the left 1`] = `
       accessibilityRole="text"
       style={
         Object {
-          "color": "#333333",
+          "color": "#BBBBBB",
           "fontFamily": "natds-icons",
           "fontSize": 16,
         }
@@ -477,15 +464,11 @@ exports[`Button component with Icon should render the icon to the right by defau
       Object {
         "alignContent": "center",
         "alignItems": "center",
-        "backgroundColor": "#f4ab34",
-        "borderRadius": 4,
-        "elevation": 2,
+        "backgroundColor": "#FFFFFF",
+        "borderRadius": 42,
         "justifyContent": "center",
-        "minHeight": 40,
-        "paddingHorizontal": 8,
-        "shadowColor": "#000000",
-        "shadowOpacity": 0.14,
-        "shadowRadius": 2,
+        "minHeight": 48,
+        "shadowColor": "#AEAEAE",
       },
     ]
   }
@@ -509,7 +492,7 @@ exports[`Button component with Icon should render the icon to the right by defau
       style={
         Array [
           Object {
-            "color": "#333333",
+            "color": "#BBBBBB",
             "fontWeight": "500",
             "lineHeight": 21,
             "marginEnd": 8,
@@ -525,7 +508,7 @@ exports[`Button component with Icon should render the icon to the right by defau
       accessibilityRole="text"
       style={
         Object {
-          "color": "#333333",
+          "color": "#BBBBBB",
           "fontFamily": "natds-icons",
           "fontSize": 16,
         }
