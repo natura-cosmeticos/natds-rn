@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { withTheme } from 'styled-components/native';
 import { Color } from '@naturacosmeticos/natds-themes/react-native';
+import { IconName } from '@naturacosmeticos/natds-icons';
 import { Icon } from '../Icon';
 import { Label, LabelText, Surface } from './ButtonStyles';
 import { Theme } from '../../common/themeSelectors';
@@ -14,7 +15,8 @@ export interface ButtonBaseProps {
   accessibilityHint?: string
   accessibilityLabel?: string
   disabled?: boolean
-  textColor: TextColors
+  iconName?: IconName
+  iconPosition?: IconPositions
   onPress: () => void
   size: ButtonSizes
   testID?: string
