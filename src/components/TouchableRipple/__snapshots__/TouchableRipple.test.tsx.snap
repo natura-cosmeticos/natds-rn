@@ -13,9 +13,7 @@ exports[`TouchableRipple component Should render touchable ripple correctly 1`] 
     hideOverflow={false}
     style={
       Array [
-        Object {
-          "overflow": "visible",
-        },
+        Object {},
       ]
     }
   >
@@ -23,34 +21,50 @@ exports[`TouchableRipple component Should render touchable ripple correctly 1`] 
       I have a ripple!
     </Text>
     <View
-      color="primary"
-      size={48}
+      hideOverflow={false}
       style={
-        Object {
-          "backgroundColor": "#f4ab34",
-          "borderRadius": 24,
-          "elevation": 999,
-          "height": 48,
-          "left": "50%",
-          "opacity": 0,
-          "position": "absolute",
-          "top": "50%",
-          "transform": Array [
-            Object {
-              "translateX": -24,
-            },
-            Object {
-              "translateY": -24,
-            },
-            Object {
-              "scale": 0,
-            },
-          ],
-          "width": 48,
-          "zIndex": 999,
-        }
+        Array [
+          Object {
+            "bottom": 0,
+            "left": 0,
+            "overflow": "visible",
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+        ]
       }
-    />
+    >
+      <View
+        color="primary"
+        size={48}
+        style={
+          Object {
+            "backgroundColor": "#f4ab34",
+            "borderRadius": 24,
+            "elevation": 999,
+            "height": 48,
+            "left": "50%",
+            "opacity": 0,
+            "position": "absolute",
+            "top": "50%",
+            "transform": Array [
+              Object {
+                "translateX": -24,
+              },
+              Object {
+                "translateY": -24,
+              },
+              Object {
+                "scale": 0,
+              },
+            ],
+            "width": 48,
+            "zIndex": 999,
+          }
+        }
+      />
+    </View>
   </View>
 </TouchableWithoutFeedback>
 `;
@@ -68,9 +82,7 @@ exports[`TouchableRipple component Should render touchable ripple with color 1`]
     hideOverflow={false}
     style={
       Array [
-        Object {
-          "overflow": "visible",
-        },
+        Object {},
       ]
     }
   >
@@ -78,34 +90,50 @@ exports[`TouchableRipple component Should render touchable ripple with color 1`]
       I have a ripple!
     </Text>
     <View
-      color="secondary"
-      size={48}
+      hideOverflow={false}
       style={
-        Object {
-          "backgroundColor": "#ff6b0b",
-          "borderRadius": 24,
-          "elevation": 999,
-          "height": 48,
-          "left": "50%",
-          "opacity": 0,
-          "position": "absolute",
-          "top": "50%",
-          "transform": Array [
-            Object {
-              "translateX": -24,
-            },
-            Object {
-              "translateY": -24,
-            },
-            Object {
-              "scale": 0,
-            },
-          ],
-          "width": 48,
-          "zIndex": 999,
-        }
+        Array [
+          Object {
+            "bottom": 0,
+            "left": 0,
+            "overflow": "visible",
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+        ]
       }
-    />
+    >
+      <View
+        color="secondary"
+        size={48}
+        style={
+          Object {
+            "backgroundColor": "#ff6b0b",
+            "borderRadius": 24,
+            "elevation": 999,
+            "height": 48,
+            "left": "50%",
+            "opacity": 0,
+            "position": "absolute",
+            "top": "50%",
+            "transform": Array [
+              Object {
+                "translateX": -24,
+              },
+              Object {
+                "translateY": -24,
+              },
+              Object {
+                "scale": 0,
+              },
+            ],
+            "width": 48,
+            "zIndex": 999,
+          }
+        }
+      />
+    </View>
   </View>
 </TouchableWithoutFeedback>
 `;
@@ -123,9 +151,7 @@ exports[`TouchableRipple component Should render touchable ripple with disabled 
     hideOverflow={false}
     style={
       Array [
-        Object {
-          "overflow": "visible",
-        },
+        Object {},
       ]
     }
   >
@@ -133,34 +159,50 @@ exports[`TouchableRipple component Should render touchable ripple with disabled 
       I have a ripple!
     </Text>
     <View
-      color="primary"
-      size={48}
+      hideOverflow={false}
       style={
-        Object {
-          "backgroundColor": "#f4ab34",
-          "borderRadius": 24,
-          "elevation": 999,
-          "height": 48,
-          "left": "50%",
-          "opacity": 0,
-          "position": "absolute",
-          "top": "50%",
-          "transform": Array [
-            Object {
-              "translateX": -24,
-            },
-            Object {
-              "translateY": -24,
-            },
-            Object {
-              "scale": 0,
-            },
-          ],
-          "width": 48,
-          "zIndex": 999,
-        }
+        Array [
+          Object {
+            "bottom": 0,
+            "left": 0,
+            "overflow": "visible",
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+        ]
       }
-    />
+    >
+      <View
+        color="primary"
+        size={48}
+        style={
+          Object {
+            "backgroundColor": "#f4ab34",
+            "borderRadius": 24,
+            "elevation": 999,
+            "height": 48,
+            "left": "50%",
+            "opacity": 0,
+            "position": "absolute",
+            "top": "50%",
+            "transform": Array [
+              Object {
+                "translateX": -24,
+              },
+              Object {
+                "translateY": -24,
+              },
+              Object {
+                "scale": 0,
+              },
+            ],
+            "width": 48,
+            "zIndex": 999,
+          }
+        }
+      />
+    </View>
   </View>
 </TouchableWithoutFeedback>
 `;
@@ -178,9 +220,7 @@ exports[`TouchableRipple component Should render touchable ripple with hideOverf
     hideOverflow={true}
     style={
       Array [
-        Object {
-          "overflow": "hidden",
-        },
+        Object {},
       ]
     }
   >
@@ -188,34 +228,50 @@ exports[`TouchableRipple component Should render touchable ripple with hideOverf
       I have a ripple!
     </Text>
     <View
-      color="primary"
-      size={48}
+      hideOverflow={true}
       style={
-        Object {
-          "backgroundColor": "#f4ab34",
-          "borderRadius": 24,
-          "elevation": 999,
-          "height": 48,
-          "left": "50%",
-          "opacity": 0,
-          "position": "absolute",
-          "top": "50%",
-          "transform": Array [
-            Object {
-              "translateX": -24,
-            },
-            Object {
-              "translateY": -24,
-            },
-            Object {
-              "scale": 0,
-            },
-          ],
-          "width": 48,
-          "zIndex": 999,
-        }
+        Array [
+          Object {
+            "bottom": 0,
+            "left": 0,
+            "overflow": "hidden",
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+        ]
       }
-    />
+    >
+      <View
+        color="primary"
+        size={48}
+        style={
+          Object {
+            "backgroundColor": "#f4ab34",
+            "borderRadius": 24,
+            "elevation": 999,
+            "height": 48,
+            "left": "50%",
+            "opacity": 0,
+            "position": "absolute",
+            "top": "50%",
+            "transform": Array [
+              Object {
+                "translateX": -24,
+              },
+              Object {
+                "translateY": -24,
+              },
+              Object {
+                "scale": 0,
+              },
+            ],
+            "width": 48,
+            "zIndex": 999,
+          }
+        }
+      />
+    </View>
   </View>
 </TouchableWithoutFeedback>
 `;
