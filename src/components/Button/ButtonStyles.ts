@@ -1,3 +1,4 @@
+import { Color } from '@naturacosmeticos/natds-themes/react-native';
 import styled from 'styled-components/native';
 import {
   getButtonPropsBySize,
@@ -9,7 +10,7 @@ import {
   getColorByName,
   getSpacingTiny,
 } from '../../common/themeSelectors';
-import { ButtonBaseProps } from './Button.types';
+import { ButtonBaseProps, ButtonTypes } from './Button.types';
 
 const getButtonStylesByType = ({ disabled, theme, type = 'contained' }: Omit<SurfaceProps, 'size'>) => {
   const styles = {
@@ -25,11 +26,23 @@ const getButtonStylesByType = ({ disabled, theme, type = 'contained' }: Omit<Sur
   return styles[type];
 };
 
-const getButtonShadowByType = ({ disabled, theme, type }: Omit<SurfaceProps, 'size'>) => (
+export const getButtonShadowByType = ({ disabled, theme, type }: Omit<SurfaceProps, 'size'>) => (
   type === 'contained' && !disabled
     ? getShadowBySize(theme, 'tiny')
     : {}
 );
+
+export const getButtonTextColor = (type: ButtonTypes, disabled: boolean) => {
+  const color: {
+    active: keyof Color,
+    disabled: keyof Color,
+  } = {
+    active: type === 'contained' ? 'onPrimary' : 'highEmphasis',
+    disabled: type === 'contained' ? 'highEmphasis' : 'mediumEmphasis',
+  };
+
+  return disabled ? color.disabled : color.active;
+};
 
 type SurfaceProps = Required<Pick<ButtonBaseProps, 'type' | 'theme' | 'disabled' | 'size'>>
 
@@ -38,7 +51,6 @@ export const Surface = styled.View<SurfaceProps>(({
 }) => ({
   ...getButtonPropsBySize(theme, size),
   ...getButtonStylesByType({ disabled, theme, type }),
-  ...getButtonShadowByType({ disabled, theme, type }),
   alignContent: 'center',
   alignItems: 'center',
   borderRadius: getRadiusBySize(theme, 'medium'),

@@ -1,20 +1,8 @@
 /* eslint-disable max-lines */
 import React from 'react';
-import { Color } from '@naturacosmeticos/natds-themes/react-native';
 import { ButtonBase } from './ButtonBase';
-import { ButtonProps, ButtonTypes } from './Button.types';
-
-const getButtonTextColor = (type: ButtonTypes, disabled: boolean) => {
-  const color: {
-    active: keyof Color,
-    disabled: keyof Color,
-  } = {
-    active: type === 'contained' ? 'onPrimary' : 'highEmphasis',
-    disabled: type === 'contained' ? 'highEmphasis' : 'mediumEmphasis',
-  };
-
-  return disabled ? color.disabled : color.active;
-};
+import { ButtonProps } from './Button.types';
+import { getButtonTextColor } from './ButtonStyles';
 
 export const Button = ({
   accessibilityHint,
