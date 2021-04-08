@@ -9,14 +9,7 @@ exports[`TouchableRipple component Should render touchable ripple correctly 1`] 
   onPressOut={[Function]}
   testID="touchable-ripple"
 >
-  <View
-    hideOverflow={false}
-    style={
-      Array [
-        Object {},
-      ]
-    }
-  >
+  <View>
     <Text>
       I have a ripple!
     </Text>
@@ -26,11 +19,13 @@ exports[`TouchableRipple component Should render touchable ripple correctly 1`] 
         Array [
           Object {
             "bottom": 0,
+            "elevation": 999,
             "left": 0,
             "overflow": "visible",
             "position": "absolute",
             "right": 0,
             "top": 0,
+            "zIndex": 999,
           },
         ]
       }
@@ -42,7 +37,6 @@ exports[`TouchableRipple component Should render touchable ripple correctly 1`] 
           Object {
             "backgroundColor": "#f4ab34",
             "borderRadius": 24,
-            "elevation": 999,
             "height": 48,
             "left": "50%",
             "opacity": 0,
@@ -60,7 +54,6 @@ exports[`TouchableRipple component Should render touchable ripple correctly 1`] 
               },
             ],
             "width": 48,
-            "zIndex": 999,
           }
         }
       />
@@ -78,14 +71,7 @@ exports[`TouchableRipple component Should render touchable ripple with color 1`]
   onPressOut={[Function]}
   testID="touchable-ripple"
 >
-  <View
-    hideOverflow={false}
-    style={
-      Array [
-        Object {},
-      ]
-    }
-  >
+  <View>
     <Text>
       I have a ripple!
     </Text>
@@ -95,11 +81,13 @@ exports[`TouchableRipple component Should render touchable ripple with color 1`]
         Array [
           Object {
             "bottom": 0,
+            "elevation": 999,
             "left": 0,
             "overflow": "visible",
             "position": "absolute",
             "right": 0,
             "top": 0,
+            "zIndex": 999,
           },
         ]
       }
@@ -111,7 +99,6 @@ exports[`TouchableRipple component Should render touchable ripple with color 1`]
           Object {
             "backgroundColor": "#ff6b0b",
             "borderRadius": 24,
-            "elevation": 999,
             "height": 48,
             "left": "50%",
             "opacity": 0,
@@ -129,7 +116,6 @@ exports[`TouchableRipple component Should render touchable ripple with color 1`]
               },
             ],
             "width": 48,
-            "zIndex": 999,
           }
         }
       />
@@ -147,14 +133,7 @@ exports[`TouchableRipple component Should render touchable ripple with disabled 
   onPressOut={[Function]}
   testID="touchable-ripple"
 >
-  <View
-    hideOverflow={false}
-    style={
-      Array [
-        Object {},
-      ]
-    }
-  >
+  <View>
     <Text>
       I have a ripple!
     </Text>
@@ -164,11 +143,13 @@ exports[`TouchableRipple component Should render touchable ripple with disabled 
         Array [
           Object {
             "bottom": 0,
+            "elevation": 999,
             "left": 0,
             "overflow": "visible",
             "position": "absolute",
             "right": 0,
             "top": 0,
+            "zIndex": 999,
           },
         ]
       }
@@ -180,7 +161,6 @@ exports[`TouchableRipple component Should render touchable ripple with disabled 
           Object {
             "backgroundColor": "#f4ab34",
             "borderRadius": 24,
-            "elevation": 999,
             "height": 48,
             "left": "50%",
             "opacity": 0,
@@ -198,7 +178,6 @@ exports[`TouchableRipple component Should render touchable ripple with disabled 
               },
             ],
             "width": 48,
-            "zIndex": 999,
           }
         }
       />
@@ -216,14 +195,7 @@ exports[`TouchableRipple component Should render touchable ripple with hideOverf
   onPressOut={[Function]}
   testID="touchable-ripple"
 >
-  <View
-    hideOverflow={true}
-    style={
-      Array [
-        Object {},
-      ]
-    }
-  >
+  <View>
     <Text>
       I have a ripple!
     </Text>
@@ -233,11 +205,13 @@ exports[`TouchableRipple component Should render touchable ripple with hideOverf
         Array [
           Object {
             "bottom": 0,
+            "elevation": 999,
             "left": 0,
             "overflow": "hidden",
             "position": "absolute",
             "right": 0,
             "top": 0,
+            "zIndex": 999,
           },
         ]
       }
@@ -249,7 +223,6 @@ exports[`TouchableRipple component Should render touchable ripple with hideOverf
           Object {
             "backgroundColor": "#f4ab34",
             "borderRadius": 24,
-            "elevation": 999,
             "height": 48,
             "left": "50%",
             "opacity": 0,
@@ -267,7 +240,6 @@ exports[`TouchableRipple component Should render touchable ripple with hideOverf
               },
             ],
             "width": 48,
-            "zIndex": 999,
           }
         }
       />

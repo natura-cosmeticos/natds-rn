@@ -9,8 +9,9 @@ import {
   TouchableWithoutFeedback,
   UIManager,
   findNodeHandle,
+  View,
 } from 'react-native';
-import { Container, Ripple, RippleWrapper } from './TouchableRipple.styles';
+import { Ripple, RippleWrapper } from './TouchableRipple.styles';
 import { Theme } from '../../common/themeSelectors';
 
 export type TouchableRippleColors = 'primary' | 'secondary' | 'highlight';
@@ -147,9 +148,8 @@ export const TouchableRipple = ({
       delayPressOut={animationDuration}
       testID={testID}
     >
-      <Container
+      <View
         ref={ref => getChildrenPosition(ref, setPosition)}
-        hideOverflow={hideOverflow}
       >
         {children}
         <RippleWrapper hideOverflow={hideOverflow}>
@@ -169,7 +169,7 @@ export const TouchableRipple = ({
           }}
         />
         </RippleWrapper>
-      </Container>
+      </View>
     </TouchableWithoutFeedback>
   );
 };

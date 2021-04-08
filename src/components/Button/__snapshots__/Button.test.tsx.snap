@@ -2,521 +2,585 @@
 
 exports[`Button component Disabled variants should render disabled button component contained 1`] = `
 <View
-  accessibilityRole="button"
   accessible={true}
+  color="highlight"
   disabled={true}
   focusable={true}
+  hideOverflow={true}
   onClick={[Function]}
-  onLayout={[Function]}
+  onPress={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
   onResponderTerminate={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
-  size="medium"
-  style={
-    Array [
-      Object {
-        "alignContent": "center",
-        "alignItems": "center",
-        "backgroundColor": "#FEEEEF",
-        "borderRadius": 42,
-        "justifyContent": "center",
-        "minHeight": 48,
-      },
-    ]
-  }
-  testID="button"
-  type="contained"
+  size={0}
 >
   <View
-    iconPosition="right"
+    accessibilityRole="button"
+    disabled={true}
+    onLayout={[Function]}
+    size="medium"
     style={
       Array [
         Object {
+          "alignContent": "center",
           "alignItems": "center",
-          "flexDirection": "row",
+          "backgroundColor": "#FEEEEF",
+          "borderRadius": 42,
+          "justifyContent": "center",
+          "minHeight": 48,
         },
       ]
     }
+    testID="button"
+    type="contained"
   >
-    <Text
+    <View
       iconPosition="right"
       style={
         Array [
           Object {
-            "color": "#BBBBBB",
-            "fontWeight": "500",
-            "lineHeight": 21,
+            "alignItems": "center",
+            "flexDirection": "row",
           },
         ]
       }
-      testID="button-label"
-      textColor="highEmphasis"
     >
-      LABEL BUTTON
-    </Text>
+      <Text
+        iconPosition="right"
+        style={
+          Array [
+            Object {
+              "color": "#BBBBBB",
+              "fontWeight": "500",
+              "lineHeight": 21,
+            },
+          ]
+        }
+        testID="button-label"
+        textColor="highEmphasis"
+      >
+        LABEL BUTTON
+      </Text>
+    </View>
   </View>
 </View>
 `;
 
 exports[`Button component Disabled variants should render disabled button component outlined 1`] = `
 <View
-  accessibilityRole="button"
   accessible={true}
+  color="highlight"
   disabled={true}
   focusable={true}
+  hideOverflow={true}
   onClick={[Function]}
-  onLayout={[Function]}
+  onPress={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
   onResponderTerminate={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
-  size="medium"
-  style={
-    Array [
-      Object {
-        "alignContent": "center",
-        "alignItems": "center",
-        "borderColor": "#FAFAEA",
-        "borderRadius": 42,
-        "borderWidth": 1,
-        "justifyContent": "center",
-        "minHeight": 48,
-      },
-    ]
-  }
-  testID="button"
-  type="outlined"
+  size={0}
 >
   <View
-    iconPosition="right"
+    accessibilityRole="button"
+    disabled={true}
+    onLayout={[Function]}
+    size="medium"
     style={
       Array [
         Object {
+          "alignContent": "center",
           "alignItems": "center",
-          "flexDirection": "row",
+          "borderColor": "#FAFAEA",
+          "borderRadius": 42,
+          "borderWidth": 1,
+          "justifyContent": "center",
+          "minHeight": 48,
         },
       ]
     }
+    testID="button"
+    type="outlined"
   >
-    <Text
+    <View
       iconPosition="right"
       style={
         Array [
           Object {
-            "color": "#BBBBBB",
-            "fontWeight": "500",
-            "lineHeight": 21,
+            "alignItems": "center",
+            "flexDirection": "row",
           },
         ]
       }
-      testID="button-label"
-      textColor="mediumEmphasis"
     >
-      LABEL BUTTON
-    </Text>
+      <Text
+        iconPosition="right"
+        style={
+          Array [
+            Object {
+              "color": "#BBBBBB",
+              "fontWeight": "500",
+              "lineHeight": 21,
+            },
+          ]
+        }
+        testID="button-label"
+        textColor="mediumEmphasis"
+      >
+        LABEL BUTTON
+      </Text>
+    </View>
   </View>
 </View>
 `;
 
 exports[`Button component Disabled variants should render disabled button component text 1`] = `
 <View
-  accessibilityRole="button"
   accessible={true}
+  color="highlight"
   disabled={true}
   focusable={true}
+  hideOverflow={true}
   onClick={[Function]}
-  onLayout={[Function]}
+  onPress={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
   onResponderTerminate={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
-  size="medium"
-  style={
-    Array [
-      Object {
-        "alignContent": "center",
-        "alignItems": "center",
-        "borderRadius": 42,
-        "justifyContent": "center",
-        "minHeight": 48,
-      },
-    ]
-  }
-  testID="button"
-  type="text"
+  size={0}
 >
   <View
-    iconPosition="right"
+    accessibilityRole="button"
+    disabled={true}
+    onLayout={[Function]}
+    size="medium"
     style={
       Array [
         Object {
+          "alignContent": "center",
           "alignItems": "center",
-          "flexDirection": "row",
+          "borderRadius": 42,
+          "justifyContent": "center",
+          "minHeight": 48,
         },
       ]
     }
+    testID="button"
+    type="text"
   >
-    <Text
+    <View
       iconPosition="right"
       style={
         Array [
           Object {
-            "color": "#BBBBBB",
-            "fontWeight": "500",
-            "lineHeight": 21,
+            "alignItems": "center",
+            "flexDirection": "row",
           },
         ]
       }
-      testID="button-label"
-      textColor="mediumEmphasis"
     >
-      LABEL BUTTON
-    </Text>
+      <Text
+        iconPosition="right"
+        style={
+          Array [
+            Object {
+              "color": "#BBBBBB",
+              "fontWeight": "500",
+              "lineHeight": 21,
+            },
+          ]
+        }
+        testID="button-label"
+        textColor="mediumEmphasis"
+      >
+        LABEL BUTTON
+      </Text>
+    </View>
   </View>
 </View>
 `;
 
 exports[`Button component Variants should render button component contained 1`] = `
 <View
-  accessibilityRole="button"
   accessible={true}
+  color="highlight"
   disabled={false}
   focusable={true}
+  hideOverflow={true}
   onClick={[Function]}
-  onLayout={[Function]}
+  onPress={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
   onResponderTerminate={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
-  size="medium"
-  style={
-    Array [
-      Object {
-        "alignContent": "center",
-        "alignItems": "center",
-        "backgroundColor": "#FFFFFF",
-        "borderRadius": 42,
-        "justifyContent": "center",
-        "minHeight": 48,
-        "shadowColor": "#AEAEAE",
-      },
-    ]
-  }
-  testID="button"
-  type="contained"
+  size={0}
 >
   <View
-    iconPosition="right"
+    accessibilityRole="button"
+    disabled={false}
+    onLayout={[Function]}
+    size="medium"
     style={
       Array [
         Object {
+          "alignContent": "center",
           "alignItems": "center",
-          "flexDirection": "row",
+          "backgroundColor": "#FFFFFF",
+          "borderRadius": 42,
+          "justifyContent": "center",
+          "minHeight": 48,
+          "shadowColor": "#AEAEAE",
         },
       ]
     }
+    testID="button"
+    type="contained"
   >
-    <Text
+    <View
       iconPosition="right"
       style={
         Array [
           Object {
-            "color": "#BBBBBB",
-            "fontWeight": "500",
-            "lineHeight": 21,
+            "alignItems": "center",
+            "flexDirection": "row",
           },
         ]
       }
-      testID="button-label"
-      textColor="onPrimary"
     >
-      LABEL BUTTON
-    </Text>
+      <Text
+        iconPosition="right"
+        style={
+          Array [
+            Object {
+              "color": "#BBBBBB",
+              "fontWeight": "500",
+              "lineHeight": 21,
+            },
+          ]
+        }
+        testID="button-label"
+        textColor="onPrimary"
+      >
+        LABEL BUTTON
+      </Text>
+    </View>
   </View>
 </View>
 `;
 
 exports[`Button component Variants should render button component outlined 1`] = `
 <View
-  accessibilityRole="button"
   accessible={true}
+  color="highlight"
   disabled={false}
   focusable={true}
+  hideOverflow={true}
   onClick={[Function]}
-  onLayout={[Function]}
+  onPress={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
   onResponderTerminate={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
-  size="medium"
-  style={
-    Array [
-      Object {
-        "alignContent": "center",
-        "alignItems": "center",
-        "borderColor": "#FFFFFF",
-        "borderRadius": 42,
-        "borderWidth": 1,
-        "justifyContent": "center",
-        "minHeight": 48,
-      },
-    ]
-  }
-  testID="button"
-  type="outlined"
+  size={0}
 >
   <View
-    iconPosition="right"
+    accessibilityRole="button"
+    disabled={false}
+    onLayout={[Function]}
+    size="medium"
     style={
       Array [
         Object {
+          "alignContent": "center",
           "alignItems": "center",
-          "flexDirection": "row",
+          "borderColor": "#FFFFFF",
+          "borderRadius": 42,
+          "borderWidth": 1,
+          "justifyContent": "center",
+          "minHeight": 48,
         },
       ]
     }
+    testID="button"
+    type="outlined"
   >
-    <Text
+    <View
       iconPosition="right"
       style={
         Array [
           Object {
-            "color": "#BBBBBB",
-            "fontWeight": "500",
-            "lineHeight": 21,
+            "alignItems": "center",
+            "flexDirection": "row",
           },
         ]
       }
-      testID="button-label"
-      textColor="highEmphasis"
     >
-      LABEL BUTTON
-    </Text>
+      <Text
+        iconPosition="right"
+        style={
+          Array [
+            Object {
+              "color": "#BBBBBB",
+              "fontWeight": "500",
+              "lineHeight": 21,
+            },
+          ]
+        }
+        testID="button-label"
+        textColor="highEmphasis"
+      >
+        LABEL BUTTON
+      </Text>
+    </View>
   </View>
 </View>
 `;
 
 exports[`Button component Variants should render button component text 1`] = `
 <View
-  accessibilityRole="button"
   accessible={true}
+  color="highlight"
   disabled={false}
   focusable={true}
+  hideOverflow={true}
   onClick={[Function]}
-  onLayout={[Function]}
+  onPress={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
   onResponderTerminate={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
-  size="medium"
-  style={
-    Array [
-      Object {
-        "alignContent": "center",
-        "alignItems": "center",
-        "borderRadius": 42,
-        "justifyContent": "center",
-        "minHeight": 48,
-      },
-    ]
-  }
-  testID="button"
-  type="text"
+  size={0}
 >
   <View
-    iconPosition="right"
+    accessibilityRole="button"
+    disabled={false}
+    onLayout={[Function]}
+    size="medium"
     style={
       Array [
         Object {
+          "alignContent": "center",
           "alignItems": "center",
-          "flexDirection": "row",
+          "borderRadius": 42,
+          "justifyContent": "center",
+          "minHeight": 48,
         },
       ]
     }
+    testID="button"
+    type="text"
   >
-    <Text
+    <View
       iconPosition="right"
       style={
         Array [
           Object {
-            "color": "#BBBBBB",
-            "fontWeight": "500",
-            "lineHeight": 21,
+            "alignItems": "center",
+            "flexDirection": "row",
           },
         ]
       }
-      testID="button-label"
-      textColor="highEmphasis"
     >
-      LABEL BUTTON
-    </Text>
+      <Text
+        iconPosition="right"
+        style={
+          Array [
+            Object {
+              "color": "#BBBBBB",
+              "fontWeight": "500",
+              "lineHeight": 21,
+            },
+          ]
+        }
+        testID="button-label"
+        textColor="highEmphasis"
+      >
+        LABEL BUTTON
+      </Text>
+    </View>
   </View>
 </View>
 `;
 
 exports[`Button component with Icon should render the icon to the left 1`] = `
 <View
-  accessibilityRole="button"
   accessible={true}
+  color="highlight"
   disabled={false}
   focusable={true}
+  hideOverflow={true}
   onClick={[Function]}
-  onLayout={[Function]}
+  onPress={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
   onResponderTerminate={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
-  size="medium"
-  style={
-    Array [
-      Object {
-        "alignContent": "center",
-        "alignItems": "center",
-        "backgroundColor": "#FFFFFF",
-        "borderRadius": 42,
-        "justifyContent": "center",
-        "minHeight": 48,
-        "shadowColor": "#AEAEAE",
-      },
-    ]
-  }
-  testID="button"
-  type="contained"
+  size={0}
 >
   <View
-    iconPosition="left"
+    accessibilityRole="button"
+    disabled={false}
+    onLayout={[Function]}
+    size="medium"
     style={
       Array [
         Object {
+          "alignContent": "center",
           "alignItems": "center",
-          "flexDirection": "row-reverse",
+          "backgroundColor": "#FFFFFF",
+          "borderRadius": 42,
+          "justifyContent": "center",
+          "minHeight": 48,
+          "shadowColor": "#AEAEAE",
         },
       ]
     }
+    testID="button"
+    type="contained"
   >
-    <Text
-      iconName="outlined-default-mockup"
+    <View
       iconPosition="left"
       style={
         Array [
           Object {
-            "color": "#BBBBBB",
-            "fontWeight": "500",
-            "lineHeight": 21,
-            "marginStart": 8,
+            "alignItems": "center",
+            "flexDirection": "row-reverse",
           },
         ]
       }
-      testID="button-label"
-      textColor="onPrimary"
     >
-      LABEL BUTTON
-    </Text>
-    <Text
-      accessibilityRole="text"
-      style={
-        Object {
-          "color": "#BBBBBB",
-          "fontFamily": "natds-icons",
-          "fontSize": 16,
+      <Text
+        iconName="outlined-default-mockup"
+        iconPosition="left"
+        style={
+          Array [
+            Object {
+              "color": "#BBBBBB",
+              "fontWeight": "500",
+              "lineHeight": 21,
+              "marginStart": 8,
+            },
+          ]
         }
-      }
-      testID="icon-outlined-default-mockup"
-    >
-      
-    </Text>
+        testID="button-label"
+        textColor="onPrimary"
+      >
+        LABEL BUTTON
+      </Text>
+      <Text
+        accessibilityRole="text"
+        style={
+          Object {
+            "color": "#BBBBBB",
+            "fontFamily": "natds-icons",
+            "fontSize": 16,
+          }
+        }
+        testID="icon-outlined-default-mockup"
+      >
+        
+      </Text>
+    </View>
   </View>
 </View>
 `;
 
 exports[`Button component with Icon should render the icon to the right by default 1`] = `
 <View
-  accessibilityRole="button"
   accessible={true}
+  color="highlight"
   disabled={false}
   focusable={true}
+  hideOverflow={true}
   onClick={[Function]}
-  onLayout={[Function]}
+  onPress={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
   onResponderTerminate={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
-  size="medium"
-  style={
-    Array [
-      Object {
-        "alignContent": "center",
-        "alignItems": "center",
-        "backgroundColor": "#FFFFFF",
-        "borderRadius": 42,
-        "justifyContent": "center",
-        "minHeight": 48,
-        "shadowColor": "#AEAEAE",
-      },
-    ]
-  }
-  testID="button"
-  type="contained"
+  size={0}
 >
   <View
-    iconPosition="right"
+    accessibilityRole="button"
+    disabled={false}
+    onLayout={[Function]}
+    size="medium"
     style={
       Array [
         Object {
+          "alignContent": "center",
           "alignItems": "center",
-          "flexDirection": "row",
+          "backgroundColor": "#FFFFFF",
+          "borderRadius": 42,
+          "justifyContent": "center",
+          "minHeight": 48,
+          "shadowColor": "#AEAEAE",
         },
       ]
     }
+    testID="button"
+    type="contained"
   >
-    <Text
-      iconName="outlined-default-mockup"
+    <View
       iconPosition="right"
       style={
         Array [
           Object {
-            "color": "#BBBBBB",
-            "fontWeight": "500",
-            "lineHeight": 21,
-            "marginEnd": 8,
+            "alignItems": "center",
+            "flexDirection": "row",
           },
         ]
       }
-      testID="button-label"
-      textColor="onPrimary"
     >
-      LABEL BUTTON
-    </Text>
-    <Text
-      accessibilityRole="text"
-      style={
-        Object {
-          "color": "#BBBBBB",
-          "fontFamily": "natds-icons",
-          "fontSize": 16,
+      <Text
+        iconName="outlined-default-mockup"
+        iconPosition="right"
+        style={
+          Array [
+            Object {
+              "color": "#BBBBBB",
+              "fontWeight": "500",
+              "lineHeight": 21,
+              "marginEnd": 8,
+            },
+          ]
         }
-      }
-      testID="icon-outlined-default-mockup"
-    >
-      
-    </Text>
+        testID="button-label"
+        textColor="onPrimary"
+      >
+        LABEL BUTTON
+      </Text>
+      <Text
+        accessibilityRole="text"
+        style={
+          Object {
+            "color": "#BBBBBB",
+            "fontFamily": "natds-icons",
+            "fontSize": 16,
+          }
+        }
+        testID="icon-outlined-default-mockup"
+      >
+        
+      </Text>
+    </View>
   </View>
 </View>
 `;
