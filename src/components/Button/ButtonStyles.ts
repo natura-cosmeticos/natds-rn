@@ -9,7 +9,7 @@ import {
   getColorByName,
   getSpacingTiny,
 } from '../../common/themeSelectors';
-import { ButtonBaseProps } from './ButtonBase';
+import { ButtonBaseProps } from './Button.types';
 
 const getButtonStylesByType = ({ disabled, theme, type = 'contained' }: Omit<SurfaceProps, 'size'>) => {
   const styles = {
@@ -31,7 +31,7 @@ const getButtonShadowByType = ({ disabled, theme, type }: Omit<SurfaceProps, 'si
     : {}
 );
 
-type SurfaceProps = Pick<ButtonBaseProps, 'type' | 'theme' | 'disabled' | 'size'>
+type SurfaceProps = Required<Pick<ButtonBaseProps, 'type' | 'theme' | 'disabled' | 'size'>>
 
 export const Surface = styled.View<SurfaceProps>(({
   type = 'contained', theme, disabled = false, size,

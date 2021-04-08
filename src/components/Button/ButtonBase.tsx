@@ -1,30 +1,9 @@
 import React, { useState } from 'react';
 import { withTheme } from 'styled-components/native';
-import { Color } from '@naturacosmeticos/natds-themes/react-native';
-import { IconName } from '@naturacosmeticos/natds-icons';
 import { Icon } from '../Icon';
 import { Label, LabelText, Surface } from './ButtonStyles';
-import { Theme } from '../../common/themeSelectors';
 import { TouchableRipple, showRipple } from '../TouchableRipple/TouchableRipple';
-
-export type ButtonSizes = 'large' | 'medium' | 'small'
-export type ButtonTypes = 'contained' | 'outlined' | 'text'
-export type IconPositions = 'left' | 'right'
-
-export interface ButtonBaseProps {
-  accessibilityHint?: string
-  accessibilityLabel?: string
-  disabled?: boolean
-  iconName?: IconName
-  iconPosition?: IconPositions
-  onPress: () => void
-  size: ButtonSizes
-  testID?: string
-  text: string
-  textColor: keyof Color
-  theme: Theme
-  type?: ButtonTypes
-}
+import { ButtonBaseProps } from './Button.types';
 
 const ButtonComponent = ({
   accessibilityHint,
@@ -35,7 +14,7 @@ const ButtonComponent = ({
   size = 'medium',
   testID = 'button-base',
   text,
-  theme,
+  textColor,
   type = 'contained',
 }: ButtonBaseProps) => {
   const [rippleSize, setRippleSize] = useState(0);

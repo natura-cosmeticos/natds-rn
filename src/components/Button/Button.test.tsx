@@ -1,7 +1,8 @@
 import React from 'react';
 import { fireEvent } from '@testing-library/react-native';
-import { Button, ButtonProps } from './Button';
+import { Button } from './Button';
 import { renderWithTheme } from '../../../test/testHelpers';
+import { ButtonProps } from './Button.types';
 
 jest.mock('../TouchableRipple/TouchableRipple');
 
