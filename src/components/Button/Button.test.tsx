@@ -5,23 +5,27 @@ import { renderWithTheme } from '../../../test/testHelpers';
 import { ButtonProps } from './Button.types';
 
 jest.mock('../TouchableRipple/TouchableRipple');
+jest.mock('../Icon/Icon');
 
 jest.mock('../../common/themeSelectors', () => (
   {
-    getButtonPropsBySize: () => ({ minHeight: 48 }),
     getColorByName: () => '#BBBBBB',
     getColorLowEmphasis: () => '#FEEEEF',
     getColorMediumEmphasis: () => '#FAFAEA',
     getColorPrimary: () => '#FFFFFF',
     getRadiusBySize: () => 42,
     getShadowBySize: () => ({ shadowColor: '#AEAEAE' }),
-    getSize: () => 16,
+    getSizeMedium: () => 48,
+    getSizeSemi: () => 32,
+    getSizeSemiX: () => 40,
+    getSpacingMicro: () => 4,
+    getSpacingSmall: () => 16,
     getSpacingTiny: () => 8,
   }));
 
 const defaultProps = ({
   onPress: () => { },
-  text: 'label button',
+  text: 'button label',
 });
 
 const renderButton = (props?: Partial<ButtonProps>) => (
@@ -33,9 +37,9 @@ describe('Button component', () => {
     const { queryByTestId } = renderButton({});
 
     expect(queryByTestId('button')?.props).toHaveProperty('type', 'contained');
-    expect(queryByTestId('button')?.props).toHaveProperty('size', 'medium');
+    expect(queryByTestId('button')?.props).toHaveProperty('size', 'semiX');
     expect(queryByTestId('button')?.props).toHaveProperty('disabled', false);
-    expect(queryByTestId('button-label')).toHaveTextContent('LABEL BUTTON');
+    expect(queryByTestId('button-label')).toHaveTextContent('BUTTON LABEL');
   });
 
   it('should render button with the given type prop', () => {

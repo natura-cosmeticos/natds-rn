@@ -1,7 +1,12 @@
 import { IconName } from '@naturacosmeticos/natds-icons';
 import { Color, Theme } from '@naturacosmeticos/natds-themes/react-native';
 
-export type ButtonSizes = 'large' | 'medium' | 'small'
+/**
+ * @deprecated Use 'semi' and 'medium'
+ */
+type ButtonSizesDeprecated = 'small' | 'large'
+export type ButtonSizes = 'semi' | 'semiX' | 'medium' | ButtonSizesDeprecated
+
 export type ButtonTypes = 'contained' | 'outlined' | 'text'
 export type IconPositions = 'left' | 'right'
 
@@ -45,7 +50,10 @@ export interface ButtonProps {
   */
   testID?: string,
   /**
-   * Button sizes `large` | `medium` | `small`
+   * Icon Button sizes `semi` | `semiX` | `medium`
+   *
+   * #### deprecated sizes: `small` and `large`:
+   * - use `semi` and `medium` instead
    */
   size?: ButtonSizes,
   /**

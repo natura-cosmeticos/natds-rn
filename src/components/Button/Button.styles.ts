@@ -1,16 +1,24 @@
+/* eslint-disable max-lines */
 import { Color } from '@naturacosmeticos/natds-themes/react-native';
 import styled from 'styled-components/native';
 import {
-  getButtonPropsBySize,
+  getColorByName,
   getColorLowEmphasis,
   getColorMediumEmphasis,
   getColorPrimary,
   getRadiusBySize,
   getShadowBySize,
-  getColorByName,
+  getSizeMedium,
+  getSizeSemi,
+  getSizeSemiX,
+  getSpacingMicro,
+  getSpacingSmall,
   getSpacingTiny,
 } from '../../common/themeSelectors';
-import { ButtonBaseProps, ButtonTypes } from './Button.types';
+import { ButtonBaseProps } from './Button.types';
+
+type SurfaceProps = Required<Pick<ButtonBaseProps, 'type' | 'theme' | 'disabled' | 'size'>>
+type LabelProps = Pick<ButtonBaseProps, 'iconName' | 'iconPosition' | 'textColor' | 'theme' | 'disabled'| 'type'>
 
 const getButtonStylesByType = ({ disabled, theme, type = 'contained' }: Omit<SurfaceProps, 'size'>) => {
   const styles = {
@@ -26,13 +34,41 @@ const getButtonStylesByType = ({ disabled, theme, type = 'contained' }: Omit<Sur
   return styles[type];
 };
 
+export const getButtonStylesBySize = ({ size, theme }: Pick<SurfaceProps, 'size' | 'theme'>) => {
+  const buttonSizes = {
+    large: {
+      minHeight: getSizeMedium(theme),
+      paddingHorizontal: getSpacingSmall(theme),
+    },
+    medium: {
+      minHeight: getSizeMedium(theme),
+      paddingHorizontal: getSpacingSmall(theme),
+    },
+    semiX: {
+      minHeight: getSizeSemiX(theme),
+      paddingHorizontal: getSpacingTiny(theme),
+    },
+    // eslint-disable-next-line sort-keys
+    semi: {
+      minHeight: getSizeSemi(theme),
+      paddingHorizontal: getSpacingMicro(theme),
+    },
+    small: {
+      minHeight: getSizeSemi(theme),
+      paddingHorizontal: getSpacingMicro(theme),
+    },
+  };
+
+  return buttonSizes[size];
+};
+
 export const getButtonShadowByType = ({ disabled, theme, type }: Omit<SurfaceProps, 'size'>) => (
   type === 'contained' && !disabled
     ? getShadowBySize(theme, 'tiny')
     : {}
 );
 
-export const getButtonTextColor = (type: ButtonTypes, disabled: boolean) => {
+export const getButtonTextColor = ({ disabled, type }: Pick<LabelProps, 'disabled'| 'type'>) => {
   const color: {
     active: keyof Color,
     disabled: keyof Color,
@@ -44,12 +80,10 @@ export const getButtonTextColor = (type: ButtonTypes, disabled: boolean) => {
   return disabled ? color.disabled : color.active;
 };
 
-type SurfaceProps = Required<Pick<ButtonBaseProps, 'type' | 'theme' | 'disabled' | 'size'>>
-
 export const Surface = styled.View<SurfaceProps>(({
   type = 'contained', theme, disabled = false, size,
 }) => ({
-  ...getButtonPropsBySize(theme, size),
+  ...getButtonStylesBySize({ size, theme }),
   ...getButtonStylesByType({ disabled, theme, type }),
   alignContent: 'center',
   alignItems: 'center',
@@ -57,7 +91,7 @@ export const Surface = styled.View<SurfaceProps>(({
   justifyContent: 'center',
 }));
 
-const iconMargin = ({ theme, iconName, iconPosition }: Omit<LabelProps, 'textColor'>) => {
+const iconMargin = ({ theme, iconName, iconPosition }: Pick<LabelProps, 'theme' | 'iconName' | 'iconPosition'>) => {
   if (!iconName) {
     return {};
   }
@@ -70,8 +104,6 @@ const iconMargin = ({ theme, iconName, iconPosition }: Omit<LabelProps, 'textCol
 const labelOrder = ({ iconPosition }: Pick<LabelProps, 'iconPosition'>) => (
   iconPosition === 'right' ? 'row' : 'row-reverse'
 );
-
-type LabelProps = Pick<ButtonBaseProps, 'iconName' | 'iconPosition' | 'textColor' | 'theme'>
 
 export const Label = styled.View<Pick<LabelProps, 'iconPosition'>>(({ iconPosition }) => (
   { alignItems: 'center', flexDirection: labelOrder({ iconPosition }) }

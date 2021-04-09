@@ -24,9 +24,10 @@ const buttonTypes = {
   text: 'text',
 };
 const buttonSizes = {
-  large: 'large',
+  semi: 'semi',
+  semiX: 'semiX',
+  // eslint-disable-next-line sort-keys
   medium: 'medium',
-  small: 'small',
 };
 
 const ContainerRow = styled.View`
@@ -71,19 +72,19 @@ export const Size = () => (
   <StoryContainer title="Sizes">
     <ContainerColumn>
       <ContainerRow>
-        <Button onPress={onPress} text="large" size="large" type="contained" />
         <Button onPress={onPress} text="medium" size="medium" type="contained" />
-        <Button onPress={onPress} text="small" size="small" type="contained" />
+        <Button onPress={onPress} text="semiX" size="semiX" type="contained" />
+        <Button onPress={onPress} text="semi" size="semi" type="contained" />
       </ContainerRow>
       <ContainerRow>
-        <Button onPress={onPress} text="large" size="large" type="outlined" />
         <Button onPress={onPress} text="medium" size="medium" type="outlined" />
-        <Button onPress={onPress} text="small" size="small" type="outlined" />
+        <Button onPress={onPress} text="semiX" size="semiX" type="outlined" />
+        <Button onPress={onPress} text="semi" size="semi" type="outlined" />
       </ContainerRow>
       <ContainerRow style={{ marginBottom: 0 }}>
-        <Button onPress={onPress} text="large" size="large" type="text" />
         <Button onPress={onPress} text="medium" size="medium" type="text" />
-        <Button onPress={onPress} text="small" size="small" type="text" />
+        <Button onPress={onPress} text="semiX" size="semiX" type="text" />
+        <Button onPress={onPress} text="semi" size="semi" type="text" />
       </ContainerRow>
     </ContainerColumn>
   </StoryContainer>
@@ -147,7 +148,7 @@ export const Interactive = () => (
     <Button
       disabled={boolean('Disabled', false)}
       onPress={onPress}
-      size={select('Size', buttonSizes, 'medium') as ButtonSizes}
+      size={select('Size', buttonSizes, 'semiX') as ButtonSizes}
       text={textKnob('Text', 'default')}
       type={select('Types', buttonTypes, 'contained') as ButtonTypes}
     />

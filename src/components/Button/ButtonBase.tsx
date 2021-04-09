@@ -3,7 +3,7 @@ import { withTheme } from 'styled-components/native';
 import { Icon } from '../Icon';
 import {
   getButtonShadowByType, Label, LabelText, Surface,
-} from './ButtonStyles';
+} from './Button.styles';
 import { TouchableRipple, showRipple } from '../TouchableRipple/TouchableRipple';
 import { ButtonBaseProps } from './Button.types';
 

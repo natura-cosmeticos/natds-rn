@@ -2,7 +2,7 @@
 import React from 'react';
 import { ButtonBase } from './ButtonBase';
 import { ButtonProps } from './Button.types';
-import { getButtonTextColor } from './ButtonStyles';
+import { getButtonTextColor } from './Button.styles';
 
 export const Button = ({
   accessibilityHint,
@@ -11,7 +11,7 @@ export const Button = ({
   iconName,
   iconPosition,
   onPress,
-  size = 'medium',
+  size = 'semiX',
   testID = 'button',
   text,
   type = 'contained',
@@ -26,7 +26,7 @@ export const Button = ({
     size={size}
     testID={testID}
     text={text}
-    textColor={getButtonTextColor(type, disabled)}
+    textColor={getButtonTextColor({ disabled, type })}
     type={type}
   />
 );
