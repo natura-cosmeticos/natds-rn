@@ -1,8 +1,8 @@
 import React from 'react';
 import { View, Modal } from 'react-native';
-import { TextWithTheme } from '../HelperComponents/ThemeHelper.styles';
+import { Button } from '../../components';
 import {
-  ModalContainer, BlockButton, Title,
+  ModalContainer, Title,
 } from './StoryWrapper.styles';
 import { SwitchWithLabel } from './SwitchWithLabel';
 
@@ -24,9 +24,9 @@ export const ThemeSelectorModal = ({
             />))
         }
       </View>
-      <BlockButton style={{ marginTop: 20 }} onPress={() => setModalVisible(!modalVisible)}>
-        <TextWithTheme style={{ textAlign: 'center' }}>Close</TextWithTheme>
-      </BlockButton>
+      <View style={{ marginTop: 20, width: '100%' }}>
+        <Button onPress={() => setModalVisible(!modalVisible)} text="Close" />
+      </View>
     </ModalContainer>
   </Modal>
 );

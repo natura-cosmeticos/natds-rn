@@ -4,9 +4,10 @@ import { ThemeProvider } from 'styled-components/native';
 import {
   ScrollView, SafeAreaView, Dimensions, StyleSheet, Platform, View,
 } from 'react-native';
-import { TextWithTheme, ContainerWithTheme } from '../HelperComponents/ThemeHelper.styles';
+import { Button } from '../../components/Button';
+import { ContainerWithTheme } from '../HelperComponents/ThemeHelper.styles';
 import { buildTheme, Brand } from '../themeSelectors';
-import { Container, Button } from './StoryWrapper.styles';
+import { Container } from './StoryWrapper.styles';
 import { ThemeSelectorModal } from './ThemeSelectorModal';
 import { SwitchWithLabel } from './SwitchWithLabel';
 
@@ -37,9 +38,11 @@ export const StoriesWrapperNative = ({ story }) => {
             changeTheme={changeTheme}
             setModalVisible={setModalVisible}
           />
-          <Button onPress={() => setModalVisible(true)}>
-            <TextWithTheme>Change Theme</TextWithTheme>
-          </Button>
+          <Button
+            onPress={() => setModalVisible(true)}
+            text='Change Theme'
+            type="outlined"
+          />
           <SwitchWithLabel
             onChange={changeMode}
             label="Light"
