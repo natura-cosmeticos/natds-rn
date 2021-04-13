@@ -11,7 +11,8 @@ const ButtonComponent = ({
   accessibilityHint,
   accessibilityLabel,
   disabled = false,
-  textColor,
+  iconName,
+  iconPosition = 'right',
   onPress,
   size = 'medium',
   testID = 'button-base',
@@ -24,12 +25,12 @@ const ButtonComponent = ({
 
   return (
     <TouchableRipple
-        color="highlight"
-        disabled={disabled}
-        hideOverflow={true}
-        onPress={disabled ? () => {} : onPress}
-        size={rippleSize}
-        >
+      color="highlight"
+      disabled={disabled}
+      hideOverflow={true}
+      onPress={disabled ? () => { } : onPress}
+      size={rippleSize}
+    >
       <Surface
         accessibilityHint={accessibilityHint}
         accessibilityLabel={accessibilityLabel}
@@ -50,7 +51,7 @@ const ButtonComponent = ({
           >
             {text.toUpperCase()}
           </LabelText>
-          { iconName
+          {iconName
             && <Icon
               color={textColor}
               name={iconName}
@@ -61,6 +62,5 @@ const ButtonComponent = ({
     </TouchableRipple>
   );
 };
-
 
 export const ButtonBase = withTheme(ButtonComponent);

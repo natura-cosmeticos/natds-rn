@@ -1,6 +1,8 @@
+/* eslint-disable max-lines */
 import React from 'react';
 import { View } from 'react-native';
 import { boolean, select, text as textKnob } from '@storybook/addon-knobs';
+import styled from 'styled-components/native';
 import { StoryContainer } from '../../common/HelperComponents/StoryContainer';
 import { Button } from './Button';
 import { getSpacingStandard, getTheme } from '../../common/themeSelectors';
@@ -14,7 +16,7 @@ export default {
   title: 'Components|Button',
 };
 
-const onPress = () => {};
+const onPress = () => { };
 
 const buttonTypes = {
   contained: 'contained',
@@ -143,11 +145,11 @@ export const Display = () => (
 export const Interactive = () => (
   <StoryContainer title="Interactive">
     <Button
+      disabled={boolean('Disabled', false)}
       onPress={onPress}
+      size={select('Size', buttonSizes, 'medium') as ButtonSizes}
       text={textKnob('Text', 'default')}
       type={select('Types', buttonTypes, 'contained') as ButtonTypes}
-      size={select('Size', buttonSizes, 'medium') as ButtonSizes}
-      disabled={boolean('Disabled', false)}
     />
   </StoryContainer>
 );

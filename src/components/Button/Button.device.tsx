@@ -7,7 +7,7 @@ import {
   Icon,
   Interactive,
   Size,
-  Disabled,
+  Variants,
 } from './Button.stories';
 
 storiesOf('Button', module)
@@ -15,6 +15,7 @@ storiesOf('Button', module)
   .add('default', Default)
   .add('variants', Variants)
   .add('size', Size)
+  .add('icon', Icon)
   .add('disabled', Disabled)
   .add('display', Display)
   .add('interactive', Interactive);

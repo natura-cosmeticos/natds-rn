@@ -8,6 +8,8 @@ export const Button = ({
   accessibilityHint,
   accessibilityLabel,
   disabled = false,
+  iconName,
+  iconPosition,
   onPress,
   size = 'medium',
   testID = 'button',
