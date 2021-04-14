@@ -15,15 +15,14 @@ export default {
 export const all = () => (
   <ContainerRow style={{ justifyContent: 'space-around', padding: 20 }}>
     <Icon />
+    <Icon name="filled-action-add" />
     <Icon color="primary" />
     <Icon color="primary" name="filled-action-add" />
-    <Icon color="default" name="filled-action-add" />
   </ContainerRow>
 );
 
 /* eslint-disable sort-keys */
 const iconColors = {
-  default: 'default',
   primary: 'primary',
   onPrimary: 'onPrimary',
   primaryLight: 'primaryLight',
@@ -74,7 +73,7 @@ const iconSizes = {
 export const interactive = () => (
   <ContainerRow style={{ padding: 20 }} >
     <Icon
-      color={select('Colors', iconColors, 'default') as IconColors}
+      color={select('Colors', iconColors, 'highlight') as IconColors}
       name={text('Icon name', 'outlined-default-mockup') as IconName}
       size={select('Sizes', iconSizes, 'standard') as IconSizes}
     />

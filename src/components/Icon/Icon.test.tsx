@@ -1,19 +1,20 @@
 import { IconName } from '@naturacosmeticos/natds-icons';
 import React from 'react';
-import renderer from 'react-test-renderer';
-import { ThemeProvider } from 'styled-components/native';
-import theme from '../../common/themeSelectors/theme/mock-theme.json';
 import {
   Icon,
   IconProps,
-  IconColors,
 } from './Icon';
+import { renderWithTheme } from '../../../test/testHelpers';
 
-const renderIcon = (fn, props: Omit<IconProps, 'theme'>) => (fn(
-  <ThemeProvider theme={theme}>
-    <Icon {...props} />
-  </ThemeProvider>,
-));
+jest.mock('../../common/themeSelectors', () => (
+  {
+    getColorByName: () => '#BBBBBB',
+    getSize: () => 24,
+  }));
+
+const renderIcon = (props?: Partial<IconProps>) => (
+  renderWithTheme(<Icon {...props} />)
+);
 
 const sampleNames: Array<IconName> = [
   'filled-action-add',
@@ -23,18 +24,22 @@ const sampleNames: Array<IconName> = [
 ];
 
 describe('Icon component', () => {
-  const props = { color: 'default' as IconColors };
+  it('should render component with default props', () => {
+    const { toJSON } = renderIcon();
+
+    expect(toJSON()).toMatchSnapshot('Icon component - name: outlined-default-mockup');
+  });
+
+  it('should render component with given props', () => {
+    const { toJSON } = renderIcon();
+
+    expect(toJSON()).toMatchSnapshot('Icon component - name: outlined-default-mockup');
+  });
 
   /* eslint-disable-next-line mocha/no-setup-in-describe */
   it.each(sampleNames)('should render correctly when icon is %p', (name) => {
-    const wrapper = renderIcon(renderer.create, { name, ...props });
+    const { toJSON } = renderIcon({ name });
 
-    expect(wrapper.toJSON()).toMatchSnapshot(`Icon component - name: ${name}`);
-  });
-
-  it('should render component with default icon', () => {
-    const wrapper = renderIcon(renderer.create, props);
-
-    expect(wrapper.toJSON()).toMatchSnapshot('Icon component - name: default');
+    expect(toJSON()).toMatchSnapshot(`Icon component - name: ${name}`);
   });
 });

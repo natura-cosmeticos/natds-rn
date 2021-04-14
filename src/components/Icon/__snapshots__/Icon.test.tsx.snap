@@ -1,11 +1,27 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Icon component should render component with default icon: Icon component - name: default 1`] = `
+exports[`Icon component should render component with default props: Icon component - name: outlined-default-mockup 1`] = `
 <Text
   accessibilityRole="text"
   style={
     Object {
-      "color": "#333333",
+      "color": "#BBBBBB",
+      "fontFamily": "natds-icons",
+      "fontSize": 24,
+    }
+  }
+  testID="icon-outlined-default-mockup"
+>
+  
+</Text>
+`;
+
+exports[`Icon component should render component with given props: Icon component - name: outlined-default-mockup 1`] = `
+<Text
+  accessibilityRole="text"
+  style={
+    Object {
+      "color": "#BBBBBB",
       "fontFamily": "natds-icons",
       "fontSize": 24,
     }
@@ -21,7 +37,7 @@ exports[`Icon component should render correctly when icon is "filled-action-add"
   accessibilityRole="text"
   style={
     Object {
-      "color": "#333333",
+      "color": "#BBBBBB",
       "fontFamily": "natds-icons",
       "fontSize": 24,
     }
@@ -37,7 +53,7 @@ exports[`Icon component should render correctly when icon is "outlined-action-mi
   accessibilityRole="text"
   style={
     Object {
-      "color": "#333333",
+      "color": "#BBBBBB",
       "fontFamily": "natds-icons",
       "fontSize": 24,
     }
@@ -53,7 +69,7 @@ exports[`Icon component should render correctly when icon is "outlined-content-w
   accessibilityRole="text"
   style={
     Object {
-      "color": "#333333",
+      "color": "#BBBBBB",
       "fontFamily": "natds-icons",
       "fontSize": 24,
     }
@@ -69,7 +85,7 @@ exports[`Icon component should render correctly when icon is "outlined-finance-b
   accessibilityRole="text"
   style={
     Object {
-      "color": "#333333",
+      "color": "#BBBBBB",
       "fontFamily": "natds-icons",
       "fontSize": 24,
     }

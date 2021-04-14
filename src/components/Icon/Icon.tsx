@@ -5,7 +5,7 @@ import { IconName, icons } from '@naturacosmeticos/natds-icons';
 import { Size, Theme, Color } from '@naturacosmeticos/natds-themes/react-native';
 import { getColorByName, getSize } from '../../common/themeSelectors';
 
-export type IconColors = keyof Color | 'default' | '#333333'
+export type IconColors = keyof Color | '#333333'
 export type IconSizes = keyof Size
 
 export interface IconProps {
@@ -13,7 +13,7 @@ export interface IconProps {
    * An accessibility hint helps users understand what will happen when they perform an action
    * on the accessibility element when that result is not clear from the accessibility label.
    */
-  accessibilityHint?: string,
+  accessibilityHint?: string
   /**
    * Overrides the text that's read by the screen reader when the user interacts with the element.
    * By default, the label is constructed by traversing all the children and accumulating
@@ -23,7 +23,7 @@ export interface IconProps {
   /**
    * Icon color tokens
    */
-  color?: IconColors,
+  color?: IconColors
   /**
    * Icon name
    */
@@ -35,25 +35,20 @@ export interface IconProps {
   /**
    * Optional ID for testing
    */
-  testID?: string,
+  testID?: string
   /**
    * The theme
    */
-  theme: Theme,
+  theme: Theme
 }
 
 const defaultIconName = 'outlined-default-mockup';
-
-const getFontColor = (theme: Theme, color: IconColors) => {
-  const colorName = color === 'default' ? 'highEmphasis' : color;
-
-  return getColorByName(theme, colorName as keyof Color);
-};
+const defaulColor = 'highlight';
 
 const IconComponent = ({
   accessibilityHint,
   accessibilityLabel,
-  color = 'default',
+  color = defaulColor,
   name = defaultIconName,
   testID = `icon-${name}`,
   theme,
@@ -71,7 +66,7 @@ const IconComponent = ({
       accessibilityLabel={accessibilityLabel}
       accessibilityRole="text"
       style={{
-        color: color === '#333333' ? color : getFontColor(theme, color),
+        color: color === '#333333' ? color : getColorByName(theme, color),
         fontFamily: 'natds-icons',
         fontSize: getSize(theme, size),
       }}

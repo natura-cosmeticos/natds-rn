@@ -190,7 +190,6 @@ const TextFieldComponent: React.RefForwardingComponent<
           }
         }}>
         <Icon
-          color='default'
           size="standard"
           name='outlined-action-visibility'
         />
