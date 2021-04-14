@@ -1,56 +1,49 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
-import { fireEvent, render } from '@testing-library/react-native';
-import { ThemeProvider } from 'styled-components/native';
-import theme from '../../common/themeSelectors/theme/mock-theme.json';
-import { Button, ButtonProps } from './Button';
+import { fireEvent } from '@testing-library/react-native';
+import { Button } from './Button';
+import { renderWithTheme } from '../../../test/testHelpers';
+import { ButtonProps } from './Button.types';
 
-jest.mock('react-native/Libraries/Components/Touchable/TouchableHighlight',
-  () => 'TouchableHighlight');
+jest.mock('../TouchableRipple/TouchableRipple');
+jest.mock('../Icon/Icon');
 
 jest.mock('../../common/themeSelectors', () => (
   {
-    getButtonPropsBySize: () => ({ minHeight: 48 }),
-    getColorHighEmphasis: () => '#FAF3E3',
+    getColorByName: () => '#BBBBBB',
     getColorLowEmphasis: () => '#FEEEEF',
     getColorMediumEmphasis: () => '#FAFAEA',
-    getColorOnPrimary: () => '#F4F4',
     getColorPrimary: () => '#FFFFFF',
-    getColorPrimaryLight: () => '#BABABA',
-    getMediumSize: () => 66,
-    getOpacity10: () => 0.8,
     getRadiusBySize: () => 42,
-    getSemiSize: () => 68,
-    getSemixSize: () => 67,
     getShadowBySize: () => ({ shadowColor: '#AEAEAE' }),
+    getSizeMedium: () => 48,
+    getSizeSemi: () => 32,
+    getSizeSemiX: () => 40,
+    getSpacingMicro: () => 4,
+    getSpacingSmall: () => 16,
+    getSpacingTiny: () => 8,
   }));
 
-const renderButton = (fn, props: Omit<ButtonProps, 'theme'>) => (fn(
-  <ThemeProvider theme={theme}>
-    <Button {...props} />
-  </ThemeProvider>,
-));
-
 const defaultProps = ({
-  onPress: () => {},
-  text: 'label button',
+  onPress: () => { },
+  text: 'button label',
 });
+
+const renderButton = (props?: Partial<ButtonProps>) => (
+  renderWithTheme(<Button {...defaultProps} {...props} />)
+);
 
 describe('Button component', () => {
   it('should render button with default props', () => {
-    const { queryByTestId } = renderButton(render, defaultProps);
+    const { queryByTestId } = renderButton({});
 
     expect(queryByTestId('button')?.props).toHaveProperty('type', 'contained');
-    expect(queryByTestId('button')?.props).toHaveProperty('size', 'medium');
+    expect(queryByTestId('button')?.props).toHaveProperty('size', 'semiX');
     expect(queryByTestId('button')?.props).toHaveProperty('disabled', false);
-    expect(queryByTestId('button')).toHaveTextContent('LABEL BUTTON');
+    expect(queryByTestId('button-label')).toHaveTextContent('BUTTON LABEL');
   });
 
   it('should render button with the given type prop', () => {
-    const { queryByTestId } = renderButton(render, {
-      ...defaultProps,
-      type: 'outlined',
-    });
+    const { queryByTestId } = renderButton({ type: 'outlined' });
 
     expect(queryByTestId('button')).toHaveStyle({
       borderWidth: 1,
@@ -58,82 +51,73 @@ describe('Button component', () => {
   });
 
   it('should call the given onPress function', () => {
-    const onPressMock = jest.fn();
-    const { queryByTestId } = renderButton(render, {
-      ...defaultProps,
-      onPress: onPressMock,
-    });
+    const onPress = jest.fn();
+    const { getByTestId } = renderButton({ onPress });
 
-    fireEvent.press(queryByTestId('button'));
+    fireEvent.press(getByTestId('button'));
 
-    expect(onPressMock).toHaveBeenCalledTimes(1);
+    expect(onPress).toHaveBeenCalledTimes(1);
   });
 
   it('should not call the given onPress function when button is disabled', () => {
-    const onPressMock = jest.fn();
-    const { queryByTestId } = renderButton(render, {
-      ...defaultProps,
-      disabled: true,
-      onPress: onPressMock,
-    });
+    const onPress = jest.fn();
+    const { getByTestId } = renderButton({ disabled: true, onPress });
 
-    fireEvent.press(queryByTestId('button'));
+    fireEvent.press(getByTestId('button'));
 
-    expect(onPressMock).not.toHaveBeenCalled();
+    expect(onPress).not.toHaveBeenCalled();
   });
 
   describe('Variants', () => {
     it('should render button component outlined', () => {
-      const button = renderButton(renderer.create, {
-        ...defaultProps,
-        type: 'outlined',
-      }).toJSON();
+      const { toJSON } = renderButton({ type: 'outlined' });
 
-      expect(button).toMatchSnapshot();
+      expect(toJSON()).toMatchSnapshot();
     });
 
     it('should render button component contained', () => {
-      const button = renderButton(renderer.create, defaultProps).toJSON();
+      const { toJSON } = renderButton({ type: 'contained' });
 
-      expect(button).toMatchSnapshot();
+      expect(toJSON()).toMatchSnapshot();
     });
 
     it('should render button component text', () => {
-      const button = renderButton(renderer.create, {
-        ...defaultProps,
-        disabled: true,
-        type: 'text',
-      }).toJSON();
+      const { toJSON } = renderButton({ type: 'text' });
 
-      expect(button).toMatchSnapshot();
+      expect(toJSON()).toMatchSnapshot();
     });
   });
 
   describe('Disabled variants', () => {
     it('should render disabled button component outlined', () => {
-      const button = renderButton(renderer.create, {
-        ...defaultProps,
-        disabled: true,
-        type: 'outlined',
-      }).toJSON();
+      const { toJSON } = renderButton({ disabled: true, type: 'outlined' });
 
-      expect(button).toMatchSnapshot();
+      expect(toJSON()).toMatchSnapshot();
     });
 
     it('should render disabled button component contained', () => {
-      const button = renderButton(renderer.create, defaultProps).toJSON();
+      const { toJSON } = renderButton({ disabled: true, type: 'contained' });
 
-      expect(button).toMatchSnapshot();
+      expect(toJSON()).toMatchSnapshot();
     });
 
     it('should render disabled button component text', () => {
-      const button = renderButton(renderer.create, {
-        ...defaultProps,
-        disabled: true,
-        type: 'text',
-      }).toJSON();
+      const { toJSON } = renderButton({ disabled: true, type: 'text' });
 
-      expect(button).toMatchSnapshot();
+      expect(toJSON()).toMatchSnapshot();
+    });
+  });
+
+  describe('with Icon', () => {
+    it('should render the icon to the right by default', () => {
+      const { toJSON } = renderButton({ iconName: 'outlined-default-mockup' });
+
+      expect(toJSON()).toMatchSnapshot();
+    });
+    it('should render the icon to the left', () => {
+      const { toJSON } = renderButton({ iconName: 'outlined-default-mockup', iconPosition: 'left' });
+
+      expect(toJSON()).toMatchSnapshot();
     });
   });
 });

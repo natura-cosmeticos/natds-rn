@@ -134,7 +134,7 @@ describe('Snackbar', () => {
       const expectedButtonText = 'OK';
 
       const { result } = setup({ buttonText: expectedButtonText });
-      const element = result.queryByTestId('natds-snackbar-button');
+      const element = result.queryByTestId('button-label');
 
       expect(element).not.toBeNull();
       expect(element).toHaveTextContent(expectedButtonText);

@@ -86,7 +86,6 @@ public
 storybook/storyLoader.ts
 
 # assets managed by the react-native link hook
-android/app/src/main/assets/
 ios/assets/
 src/assets/fonts/natds-icons.eot
 src/assets/fonts/natds-icons.svg

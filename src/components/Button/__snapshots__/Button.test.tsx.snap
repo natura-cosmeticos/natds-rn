@@ -1,257 +1,593 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Button component Disabled variants should render disabled button component contained 1`] = `
-<TouchableHighlight
-  activeOpacity={0.8}
-  disabled={false}
+<View
+  accessible={true}
+  color="highlight"
+  disabled={true}
+  focusable={true}
+  hideOverflow={true}
+  onClick={[Function]}
   onPress={[Function]}
-  size="medium"
-  style={
-    Array [
-      Object {
-        "backgroundColor": "#FFFFFF",
-        "borderRadius": 42,
-        "minHeight": 48,
-      },
-      Object {
-        "shadowColor": "#AEAEAE",
-      },
-    ]
-  }
-  testID="button"
-  type="contained"
-  underlayColor="#BABABA"
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  size={0}
 >
-  <Text
+  <View
     accessibilityRole="button"
-    disabled={false}
+    disabled={true}
+    onLayout={[Function]}
+    size="semiX"
     style={
       Array [
         Object {
-          "alignSelf": "center",
-          "color": "#F4F4",
-          "fontSize": 14,
-          "fontWeight": "bold",
-          "letterSpacing": 1,
+          "alignContent": "center",
+          "alignItems": "center",
+          "backgroundColor": "#FEEEEF",
+          "borderRadius": 42,
+          "justifyContent": "center",
+          "minHeight": 40,
+          "paddingHorizontal": 8,
         },
+        Object {},
       ]
     }
-    textColor="default"
+    testID="button"
     type="contained"
   >
-    LABEL BUTTON
-  </Text>
-</TouchableHighlight>
+    <View
+      iconPosition="right"
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+          },
+        ]
+      }
+    >
+      <Text
+        iconPosition="right"
+        style={
+          Array [
+            Object {
+              "color": "#BBBBBB",
+              "fontWeight": "500",
+              "lineHeight": 21,
+            },
+          ]
+        }
+        testID="button-label"
+        textColor="highEmphasis"
+      >
+        BUTTON LABEL
+      </Text>
+    </View>
+  </View>
+</View>
 `;
 
 exports[`Button component Disabled variants should render disabled button component outlined 1`] = `
-<TouchableHighlight
-  activeOpacity={0.8}
+<View
+  accessible={true}
+  color="highlight"
   disabled={true}
+  focusable={true}
+  hideOverflow={true}
+  onClick={[Function]}
   onPress={[Function]}
-  size="medium"
-  style={
-    Array [
-      Object {
-        "borderColor": "#FAFAEA",
-        "borderRadius": 42,
-        "borderWidth": 1,
-        "minHeight": 48,
-      },
-      Object {},
-    ]
-  }
-  testID="button"
-  type="outlined"
-  underlayColor="#BABABA"
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  size={0}
 >
-  <Text
+  <View
     accessibilityRole="button"
     disabled={true}
+    onLayout={[Function]}
+    size="semiX"
     style={
       Array [
         Object {
-          "alignSelf": "center",
-          "color": "#FAFAEA",
-          "fontSize": 14,
-          "fontWeight": "bold",
-          "letterSpacing": 1,
+          "alignContent": "center",
+          "alignItems": "center",
+          "borderColor": "#FAFAEA",
+          "borderRadius": 42,
+          "borderWidth": 1,
+          "justifyContent": "center",
+          "minHeight": 40,
+          "paddingHorizontal": 8,
         },
+        Object {},
       ]
     }
-    textColor="default"
+    testID="button"
     type="outlined"
   >
-    LABEL BUTTON
-  </Text>
-</TouchableHighlight>
+    <View
+      iconPosition="right"
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+          },
+        ]
+      }
+    >
+      <Text
+        iconPosition="right"
+        style={
+          Array [
+            Object {
+              "color": "#BBBBBB",
+              "fontWeight": "500",
+              "lineHeight": 21,
+            },
+          ]
+        }
+        testID="button-label"
+        textColor="mediumEmphasis"
+      >
+        BUTTON LABEL
+      </Text>
+    </View>
+  </View>
+</View>
 `;
 
 exports[`Button component Disabled variants should render disabled button component text 1`] = `
-<TouchableHighlight
-  activeOpacity={0.8}
+<View
+  accessible={true}
+  color="highlight"
   disabled={true}
+  focusable={true}
+  hideOverflow={true}
+  onClick={[Function]}
   onPress={[Function]}
-  size="medium"
-  style={
-    Array [
-      Object {
-        "borderRadius": 42,
-        "minHeight": 48,
-      },
-      Object {},
-    ]
-  }
-  testID="button"
-  type="text"
-  underlayColor="#BABABA"
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  size={0}
 >
-  <Text
+  <View
     accessibilityRole="button"
     disabled={true}
+    onLayout={[Function]}
+    size="semiX"
     style={
       Array [
         Object {
-          "alignSelf": "center",
-          "color": "#FAFAEA",
-          "fontSize": 14,
-          "fontWeight": "bold",
-          "letterSpacing": 1,
+          "alignContent": "center",
+          "alignItems": "center",
+          "borderRadius": 42,
+          "justifyContent": "center",
+          "minHeight": 40,
+          "paddingHorizontal": 8,
         },
+        Object {},
       ]
     }
-    textColor="default"
+    testID="button"
     type="text"
   >
-    LABEL BUTTON
-  </Text>
-</TouchableHighlight>
+    <View
+      iconPosition="right"
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+          },
+        ]
+      }
+    >
+      <Text
+        iconPosition="right"
+        style={
+          Array [
+            Object {
+              "color": "#BBBBBB",
+              "fontWeight": "500",
+              "lineHeight": 21,
+            },
+          ]
+        }
+        testID="button-label"
+        textColor="mediumEmphasis"
+      >
+        BUTTON LABEL
+      </Text>
+    </View>
+  </View>
+</View>
 `;
 
 exports[`Button component Variants should render button component contained 1`] = `
-<TouchableHighlight
-  activeOpacity={0.8}
+<View
+  accessible={true}
+  color="highlight"
   disabled={false}
+  focusable={true}
+  hideOverflow={true}
+  onClick={[Function]}
   onPress={[Function]}
-  size="medium"
-  style={
-    Array [
-      Object {
-        "backgroundColor": "#FFFFFF",
-        "borderRadius": 42,
-        "minHeight": 48,
-      },
-      Object {
-        "shadowColor": "#AEAEAE",
-      },
-    ]
-  }
-  testID="button"
-  type="contained"
-  underlayColor="#BABABA"
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  size={0}
 >
-  <Text
+  <View
     accessibilityRole="button"
     disabled={false}
+    onLayout={[Function]}
+    size="semiX"
     style={
       Array [
         Object {
-          "alignSelf": "center",
-          "color": "#F4F4",
-          "fontSize": 14,
-          "fontWeight": "bold",
-          "letterSpacing": 1,
+          "alignContent": "center",
+          "alignItems": "center",
+          "backgroundColor": "#FFFFFF",
+          "borderRadius": 42,
+          "justifyContent": "center",
+          "minHeight": 40,
+          "paddingHorizontal": 8,
+        },
+        Object {
+          "shadowColor": "#AEAEAE",
         },
       ]
     }
-    textColor="default"
+    testID="button"
     type="contained"
   >
-    LABEL BUTTON
-  </Text>
-</TouchableHighlight>
+    <View
+      iconPosition="right"
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+          },
+        ]
+      }
+    >
+      <Text
+        iconPosition="right"
+        style={
+          Array [
+            Object {
+              "color": "#BBBBBB",
+              "fontWeight": "500",
+              "lineHeight": 21,
+            },
+          ]
+        }
+        testID="button-label"
+        textColor="onPrimary"
+      >
+        BUTTON LABEL
+      </Text>
+    </View>
+  </View>
+</View>
 `;
 
 exports[`Button component Variants should render button component outlined 1`] = `
-<TouchableHighlight
-  activeOpacity={0.8}
+<View
+  accessible={true}
+  color="highlight"
   disabled={false}
+  focusable={true}
+  hideOverflow={true}
+  onClick={[Function]}
   onPress={[Function]}
-  size="medium"
-  style={
-    Array [
-      Object {
-        "borderColor": "#FFFFFF",
-        "borderRadius": 42,
-        "borderWidth": 1,
-        "minHeight": 48,
-      },
-      Object {},
-    ]
-  }
-  testID="button"
-  type="outlined"
-  underlayColor="#BABABA"
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  size={0}
 >
-  <Text
+  <View
     accessibilityRole="button"
     disabled={false}
+    onLayout={[Function]}
+    size="semiX"
     style={
       Array [
         Object {
-          "alignSelf": "center",
-          "color": "#FAF3E3",
-          "fontSize": 14,
-          "fontWeight": "bold",
-          "letterSpacing": 1,
+          "alignContent": "center",
+          "alignItems": "center",
+          "borderColor": "#FFFFFF",
+          "borderRadius": 42,
+          "borderWidth": 1,
+          "justifyContent": "center",
+          "minHeight": 40,
+          "paddingHorizontal": 8,
         },
+        Object {},
       ]
     }
-    textColor="default"
+    testID="button"
     type="outlined"
   >
-    LABEL BUTTON
-  </Text>
-</TouchableHighlight>
+    <View
+      iconPosition="right"
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+          },
+        ]
+      }
+    >
+      <Text
+        iconPosition="right"
+        style={
+          Array [
+            Object {
+              "color": "#BBBBBB",
+              "fontWeight": "500",
+              "lineHeight": 21,
+            },
+          ]
+        }
+        testID="button-label"
+        textColor="highEmphasis"
+      >
+        BUTTON LABEL
+      </Text>
+    </View>
+  </View>
+</View>
 `;
 
 exports[`Button component Variants should render button component text 1`] = `
-<TouchableHighlight
-  activeOpacity={0.8}
-  disabled={true}
+<View
+  accessible={true}
+  color="highlight"
+  disabled={false}
+  focusable={true}
+  hideOverflow={true}
+  onClick={[Function]}
   onPress={[Function]}
-  size="medium"
-  style={
-    Array [
-      Object {
-        "borderRadius": 42,
-        "minHeight": 48,
-      },
-      Object {},
-    ]
-  }
-  testID="button"
-  type="text"
-  underlayColor="#BABABA"
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  size={0}
 >
-  <Text
+  <View
     accessibilityRole="button"
-    disabled={true}
+    disabled={false}
+    onLayout={[Function]}
+    size="semiX"
     style={
       Array [
         Object {
-          "alignSelf": "center",
-          "color": "#FAFAEA",
-          "fontSize": 14,
-          "fontWeight": "bold",
-          "letterSpacing": 1,
+          "alignContent": "center",
+          "alignItems": "center",
+          "borderRadius": 42,
+          "justifyContent": "center",
+          "minHeight": 40,
+          "paddingHorizontal": 8,
+        },
+        Object {},
+      ]
+    }
+    testID="button"
+    type="text"
+  >
+    <View
+      iconPosition="right"
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+          },
+        ]
+      }
+    >
+      <Text
+        iconPosition="right"
+        style={
+          Array [
+            Object {
+              "color": "#BBBBBB",
+              "fontWeight": "500",
+              "lineHeight": 21,
+            },
+          ]
+        }
+        testID="button-label"
+        textColor="highEmphasis"
+      >
+        BUTTON LABEL
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Button component with Icon should render the icon to the left 1`] = `
+<View
+  accessible={true}
+  color="highlight"
+  disabled={false}
+  focusable={true}
+  hideOverflow={true}
+  onClick={[Function]}
+  onPress={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  size={0}
+>
+  <View
+    accessibilityRole="button"
+    disabled={false}
+    onLayout={[Function]}
+    size="semiX"
+    style={
+      Array [
+        Object {
+          "alignContent": "center",
+          "alignItems": "center",
+          "backgroundColor": "#FFFFFF",
+          "borderRadius": 42,
+          "justifyContent": "center",
+          "minHeight": 40,
+          "paddingHorizontal": 8,
+        },
+        Object {
+          "shadowColor": "#AEAEAE",
         },
       ]
     }
-    textColor="default"
-    type="text"
+    testID="button"
+    type="contained"
   >
-    LABEL BUTTON
-  </Text>
-</TouchableHighlight>
+    <View
+      iconPosition="left"
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row-reverse",
+          },
+        ]
+      }
+    >
+      <Text
+        iconName="outlined-default-mockup"
+        iconPosition="left"
+        style={
+          Array [
+            Object {
+              "color": "#BBBBBB",
+              "fontWeight": "500",
+              "lineHeight": 21,
+              "marginStart": 8,
+            },
+          ]
+        }
+        testID="button-label"
+        textColor="onPrimary"
+      >
+        BUTTON LABEL
+      </Text>
+      <Text
+        color="onPrimary"
+        name="outlined-default-mockup"
+        size="small"
+      >
+        outlined-default-mockup
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Button component with Icon should render the icon to the right by default 1`] = `
+<View
+  accessible={true}
+  color="highlight"
+  disabled={false}
+  focusable={true}
+  hideOverflow={true}
+  onClick={[Function]}
+  onPress={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  size={0}
+>
+  <View
+    accessibilityRole="button"
+    disabled={false}
+    onLayout={[Function]}
+    size="semiX"
+    style={
+      Array [
+        Object {
+          "alignContent": "center",
+          "alignItems": "center",
+          "backgroundColor": "#FFFFFF",
+          "borderRadius": 42,
+          "justifyContent": "center",
+          "minHeight": 40,
+          "paddingHorizontal": 8,
+        },
+        Object {
+          "shadowColor": "#AEAEAE",
+        },
+      ]
+    }
+    testID="button"
+    type="contained"
+  >
+    <View
+      iconPosition="right"
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+          },
+        ]
+      }
+    >
+      <Text
+        iconName="outlined-default-mockup"
+        iconPosition="right"
+        style={
+          Array [
+            Object {
+              "color": "#BBBBBB",
+              "fontWeight": "500",
+              "lineHeight": 21,
+              "marginEnd": 8,
+            },
+          ]
+        }
+        testID="button-label"
+        textColor="onPrimary"
+      >
+        BUTTON LABEL
+      </Text>
+      <Text
+        color="onPrimary"
+        name="outlined-default-mockup"
+        size="small"
+      >
+        outlined-default-mockup
+      </Text>
+    </View>
+  </View>
+</View>
 `;

@@ -1,7 +1,12 @@
+/* eslint-disable id-length */
 import React from 'react';
-import { View, Text, Animated } from 'react-native';
+import {
+  View, Text, Animated,
+} from 'react-native';
 import { fireEvent } from '@testing-library/react-native';
-import { TouchableRipple, TouchableRippleProps, getChildrenPosition } from './TouchableRipple';
+import {
+  TouchableRipple, TouchableRippleProps, getChildrenPosition, showRipple,
+} from './TouchableRipple';
 import { renderWithTheme } from '../../../test/testHelpers';
 
 jest.mock('react-native', () => {
@@ -140,5 +145,30 @@ describe('getChildrenPosition', () => {
       left: 6,
       top: 7,
     });
+  });
+});
+
+describe('showRipple', () => {
+  it('Should calculate the ripple size based on the biggest side of the element', () => {
+    const setSizeMock = jest.fn();
+    const horizontalLayout = {
+      height: 20,
+      width: 80,
+      x: 0,
+      y: 0,
+    };
+
+    const verticalLayout = {
+      height: 80,
+      width: 20,
+      x: 0,
+      y: 0,
+    };
+
+    showRipple({ nativeEvent: { layout: horizontalLayout } }, setSizeMock);
+    expect(setSizeMock).toHaveBeenCalledWith(horizontalLayout.width / 2);
+
+    showRipple({ nativeEvent: { layout: verticalLayout } }, setSizeMock);
+    expect(setSizeMock).toHaveBeenCalledWith(verticalLayout.height / 2);
   });
 });

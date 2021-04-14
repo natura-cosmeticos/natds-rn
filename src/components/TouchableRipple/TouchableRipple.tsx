@@ -2,14 +2,16 @@
 
 import React, { ReactElement, useRef, useState } from 'react';
 import {
-  TouchableWithoutFeedback,
   Animated,
   Easing,
+  LayoutChangeEvent,
   Platform,
-  findNodeHandle,
+  TouchableWithoutFeedback,
   UIManager,
+  findNodeHandle,
+  View,
 } from 'react-native';
-import { Container, Ripple } from './TouchableRipple.styles';
+import { Ripple, RippleWrapper } from './TouchableRipple.styles';
 import { Theme } from '../../common/themeSelectors';
 
 export type TouchableRippleColors = 'primary' | 'secondary' | 'highlight';
@@ -59,6 +61,21 @@ export const getChildrenPosition = (ref, setPosition: Function) => {
       },
     );
   }
+};
+
+type Size = { width: number, height: number }
+export const getBiggestSide = ({ width, height }: Size) => (
+  width > height ? width : height
+);
+
+export const showRipple = (
+  event: LayoutChangeEvent,
+  setRippleSize: React.Dispatch<React.SetStateAction<number>>,
+) => {
+  const { layout: { width, height } } = event.nativeEvent;
+  const rippleSize = getBiggestSide({ height, width }) / 2;
+
+  setRippleSize(rippleSize);
 };
 
 interface State {
@@ -131,11 +148,11 @@ export const TouchableRipple = ({
       delayPressOut={animationDuration}
       testID={testID}
     >
-      <Container
-        hideOverflow={hideOverflow}
+      <View
         ref={ref => getChildrenPosition(ref, setPosition)}
       >
         {children}
+        <RippleWrapper hideOverflow={hideOverflow}>
         <Ripple
           as={Animated.View}
           size={rippleSize}
@@ -151,7 +168,8 @@ export const TouchableRipple = ({
             ],
           }}
         />
-      </Container>
+        </RippleWrapper>
+      </View>
     </TouchableWithoutFeedback>
   );
 };
