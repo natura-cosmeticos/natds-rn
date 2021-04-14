@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [6.0.0](https://github.com/natura-cosmeticos/natds-rn/compare/v5.1.0...v6.0.0) (2021-04-14)
+
+
+### ⚠ BREAKING CHANGES
+
+* **button:** the button sizes has changed to 'semi', 'semiX' and 'medium'. The previous sizes has been ***deprecated***.
+
+For previous names compatibility, use:
+* small  -> semi
+* medium -> semix
+* large  -> medium
+
+Co-authored-by: Design system Natura in behalf of Design System Team <designsystem@natura.net>
+Co-authored-by: Yasminn Vaz <yasminnvaz@gmail.com>
+
+### feature
+
+* **button:** update component to add new options ([49fc912](https://github.com/natura-cosmeticos/natds-rn/commit/49fc912f8d88aa61659bf66fe22ca893efad8c42))
+
 ## [5.1.0](https://github.com/natura-cosmeticos/natds-rn/compare/v5.0.1...v5.1.0) (2021-04-06)
 
 
