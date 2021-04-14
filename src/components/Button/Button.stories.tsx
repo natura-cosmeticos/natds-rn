@@ -8,10 +8,40 @@ import { Button } from './Button';
 import { getSpacingStandard, getTheme } from '../../common/themeSelectors';
 import { ButtonSizes, ButtonTypes } from './Button.types';
 
+const description = () => `
+---
+
+**NOTE**: This component is available in the following variants:
+
+  - ✅ contained
+  - ✅ outlined
+  - ✅ text
+
+With the following attribute status:
+
+- **Size:**
+    - ✅ \`semi\`
+    - ✅ \`semiX\`
+    - ✅ \`medium\`
+- **Icon**
+  - ✅ \`left\`
+  - ✅ \`right\`
+- ✅ **Disabled**
+- **Display**:
+    - ✅ \`inline\`
+    - ✅ \`block\`
+
+---
+`;
+
+
 export default {
   component: Button,
   parameters: {
     componentSubtitle: 'Buttons allow users to take actions, and make choices, with a single tap.',
+    docs: {
+      extractComponentDescription: description,
+    },
   },
   title: 'Components|Button',
 };
@@ -24,10 +54,9 @@ const buttonTypes = {
   text: 'text',
 };
 const buttonSizes = {
+  medium: 'medium',
   semi: 'semi',
   semiX: 'semiX',
-  // eslint-disable-next-line sort-keys
-  medium: 'medium',
 };
 
 const ContainerRow = styled.View`
