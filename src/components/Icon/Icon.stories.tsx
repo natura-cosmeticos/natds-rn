@@ -62,11 +62,11 @@ const iconSizes = {
   standard: 'standard',
   medium: 'medium',
   large: 'large',
-  largex: 'largex',
-  largexx: 'largexx',
+  largeX: 'largeX',
+  largeXX: 'largeXX',
   huge: 'huge',
-  hugex: 'hugex',
-  hugexx: 'hugexx',
+  hugeX: 'hugeX',
+  hugeXX: 'hugeXX',
 };
 /* eslint-enable sort-keys */
 
