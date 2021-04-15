@@ -2,7 +2,8 @@ import React from 'react';
 import { select, text } from '@storybook/addon-knobs';
 import { IconName } from '@naturacosmeticos/natds-icons';
 import { ContainerRow } from '../../common/HelperComponents/ThemeHelper.styles';
-import { Icon, IconColors, IconSizes } from './Icon';
+import { Icon } from './Icon';
+import { IconColors, IconSizes } from './Icon.types';
 
 export default {
   component: Icon,

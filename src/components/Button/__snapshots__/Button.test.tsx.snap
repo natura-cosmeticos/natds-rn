@@ -499,6 +499,7 @@ exports[`Button component with Icon should render the icon to the left 1`] = `
         BUTTON LABEL
       </Text>
       <Text
+        accessibilityRole="imagebutton"
         color="onPrimary"
         name="outlined-default-mockup"
         size="small"
@@ -581,6 +582,7 @@ exports[`Button component with Icon should render the icon to the right by defau
         BUTTON LABEL
       </Text>
       <Text
+        accessibilityRole="imagebutton"
         color="onPrimary"
         name="outlined-default-mockup"
         size="small"
