@@ -2,8 +2,21 @@ import React from 'react';
 import { withTheme } from 'styled-components/native';
 import { Text } from 'react-native';
 import { icons } from '@naturacosmeticos/natds-icons';
-import { getColorByName, getSize } from '../../common/themeSelectors';
-import { IconProps } from './Icon.types';
+import {
+  getColorByName, getSize, getColorHighEmphasis, Theme,
+} from '../../common/themeSelectors';
+import { IconColors, IconProps } from './Icon.types';
+
+const getIconColor = (theme: Theme, color: IconColors) => {
+  switch (color) {
+    case '#333333':
+      return color;
+    case 'default':
+      return getColorHighEmphasis(theme);
+    default:
+      return getColorByName(theme, color);
+  }
+};
 
 const IconComponent = ({
   accessibilityHint,
@@ -24,7 +37,7 @@ const IconComponent = ({
       accessibilityLabel={accessibilityLabel}
       accessibilityRole={accessibilityRole}
       style={{
-        color: color === '#333333' ? color : getColorByName(theme, color),
+        color: getIconColor(theme, color),
         fontFamily: 'natds-icons',
         fontSize: getSize(theme, size),
       }}

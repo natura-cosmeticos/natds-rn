@@ -2,7 +2,11 @@ import { IconName } from '@naturacosmeticos/natds-icons';
 import { Color, Size } from '@naturacosmeticos/natds-themes/react-native';
 import { Theme } from '../..';
 
-export type IconColors = keyof Color | '#333333'
+/**
+ * @deprecated Use only natds-themes color tokens
+ */
+type IconsColorsDeprecated = 'default' | '#333333'
+export type IconColors = keyof Color | IconsColorsDeprecated
 export type IconSizes = keyof Size
 
 export interface IconProps {
@@ -23,6 +27,8 @@ export interface IconProps {
   accessibilityRole?: 'imagebutton' | 'image'
   /**
    * Icon color tokens
+   * #### deprecated colors: `default` and `#333333`:
+   * Use natds-themes color tokens instead
    */
   color?: IconColors
   /**
