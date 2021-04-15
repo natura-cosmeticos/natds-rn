@@ -31,9 +31,13 @@ describe('Icon component', () => {
   });
 
   it('should render component with given props', () => {
-    const { toJSON } = renderIcon();
+    const { queryByTestId, toJSON } = renderIcon({
+      accessibilityRole: 'search',
+      name: 'outlined-finance-bank',
+    });
 
-    expect(toJSON()).toMatchSnapshot('Icon component - name: outlined-default-mockup');
+    expect(toJSON()).toMatchSnapshot('Icon component - name: outlined-finance-bank');
+    expect(queryByTestId('icon-outlined-finance-bank')?.props).toHaveProperty('accessibilityRole', 'search');
   });
 
   /* eslint-disable-next-line mocha/no-setup-in-describe */

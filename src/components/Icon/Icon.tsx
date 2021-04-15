@@ -1,6 +1,6 @@
 import React from 'react';
 import { withTheme } from 'styled-components/native';
-import { Text } from 'react-native';
+import { AccessibilityRole, Text } from 'react-native';
 import { IconName, icons } from '@naturacosmeticos/natds-icons';
 import { Size, Theme, Color } from '@naturacosmeticos/natds-themes/react-native';
 import { getColorByName, getSize } from '../../common/themeSelectors';
@@ -20,6 +20,10 @@ export interface IconProps {
    * all the Text nodes separated by space.
    */
   accessibilityLabel?: string
+  /**
+   * Communicates the purpose of a component to the user of an assistive technology
+   */
+  accessibilityRole?: AccessibilityRole
   /**
    * Icon color tokens
    */
@@ -48,6 +52,7 @@ const defaulColor = 'highlight';
 const IconComponent = ({
   accessibilityHint,
   accessibilityLabel,
+  accessibilityRole = 'image',
   color = defaulColor,
   name = defaultIconName,
   testID = `icon-${name}`,
@@ -64,7 +69,7 @@ const IconComponent = ({
     <Text
       accessibilityHint={accessibilityHint}
       accessibilityLabel={accessibilityLabel}
-      accessibilityRole="text"
+      accessibilityRole={accessibilityRole}
       style={{
         color: color === '#333333' ? color : getColorByName(theme, color),
         fontFamily: 'natds-icons',
