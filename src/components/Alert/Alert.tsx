@@ -71,7 +71,7 @@ const AlertComponent = ({
 }: AlertProps) => (
   <AlertWrapper theme={theme} testID={testID} variant={variant} type={type}>
     <IconContent testID={`${testID}-icon`}>
-      <Icon color="#333333" name={getIcon(type).name} ></Icon>
+      <Icon color="#333333" name={getIcon(type).name} accessibilityRole="imagebutton" />
     </IconContent>
     <AlertContent testID={`${testID}-content`}>
       {!!title && <AlertTitle>{title}</AlertTitle>}

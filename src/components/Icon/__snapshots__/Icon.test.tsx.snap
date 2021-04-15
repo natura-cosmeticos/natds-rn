@@ -18,7 +18,7 @@ exports[`Icon component should render component with default props: Icon compone
 
 exports[`Icon component should render component with given props: Icon component - name: outlined-finance-bank 1`] = `
 <Text
-  accessibilityRole="search"
+  accessibilityRole="imagebutton"
   style={
     Object {
       "color": "#BBBBBB",

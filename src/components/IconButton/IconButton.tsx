@@ -51,6 +51,7 @@ export const IconButton = ({
         <Icon
           accessibilityHint={accessibilityHint}
           accessibilityLabel={accessibilityLabel}
+          accessibilityRole="imagebutton"
           size={getIconSize(size)}
           color={getIconColor(iconColor, disabled)}
           name={icon}

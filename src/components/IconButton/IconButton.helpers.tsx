@@ -1,5 +1,5 @@
 
-import { IconColors, IconSizes } from '../Icon/Icon';
+import { IconColors, IconSizes } from '../Icon/Icon.types';
 import {
   getColorByName,
   buildColorWithOpacity,

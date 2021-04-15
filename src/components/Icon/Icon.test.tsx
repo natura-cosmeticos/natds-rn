@@ -1,10 +1,8 @@
 import { IconName } from '@naturacosmeticos/natds-icons';
 import React from 'react';
-import {
-  Icon,
-  IconProps,
-} from './Icon';
+import { Icon } from './Icon';
 import { renderWithTheme } from '../../../test/testHelpers';
+import { IconProps } from './Icon.types';
 
 jest.mock('../../common/themeSelectors', () => (
   {
@@ -32,12 +30,12 @@ describe('Icon component', () => {
 
   it('should render component with given props', () => {
     const { queryByTestId, toJSON } = renderIcon({
-      accessibilityRole: 'search',
+      accessibilityRole: 'imagebutton',
       name: 'outlined-finance-bank',
     });
 
     expect(toJSON()).toMatchSnapshot('Icon component - name: outlined-finance-bank');
-    expect(queryByTestId('icon-outlined-finance-bank')?.props).toHaveProperty('accessibilityRole', 'search');
+    expect(queryByTestId('icon-outlined-finance-bank')?.props).toHaveProperty('accessibilityRole', 'imagebutton');
   });
 
   /* eslint-disable-next-line mocha/no-setup-in-describe */
