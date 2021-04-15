@@ -295,7 +295,7 @@ exports[`Alert component Should render alert with default props 1`] = `
     testID="alert-icon"
   >
     <Text
-      accessibilityRole="text"
+      accessibilityRole="image"
       style={
         Object {
           "color": "#333333",
