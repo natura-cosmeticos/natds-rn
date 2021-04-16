@@ -1,7 +1,7 @@
 import React from 'react';
 import { withTheme } from 'styled-components/native';
 import { Text } from 'react-native';
-import { icons } from '@naturacosmeticos/natds-icons';
+import { IconName, icons } from '@naturacosmeticos/natds-icons';
 import {
   getColorByName, getSize, getColorHighEmphasis, Theme,
 } from '../../common/themeSelectors';
@@ -18,17 +18,23 @@ const getIconColor = (theme: Theme, color: IconColors) => {
   }
 };
 
+const defaultIconName = 'outlined-default-mockup';
+
+export const checkIconName = (iconName: IconName) => (icons[iconName]
+  ? icons[iconName].replace('%', '\\')
+  : icons[defaultIconName]).replace('%', '\\');
+
 const IconComponent = ({
   accessibilityHint,
   accessibilityLabel,
   accessibilityRole = 'image',
   color = 'highlight',
-  name = 'outlined-default-mockup',
-  testID = `icon-${name}`,
+  name = defaultIconName,
+  testID = 'natds-icon',
   theme,
   size = 'standard',
 }: IconProps) => {
-  const unicodeName = icons[name].replace('%', '\\');
+  const unicodeName = checkIconName(name);
   const code = JSON.parse(`["${unicodeName}"]`)[0];
 
   return (

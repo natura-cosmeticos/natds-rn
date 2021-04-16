@@ -1,6 +1,6 @@
 import { IconName } from '@naturacosmeticos/natds-icons';
 import React from 'react';
-import { Icon } from './Icon';
+import { checkIconName, Icon } from './Icon';
 import { renderWithTheme } from '../../../test/testHelpers';
 import { IconProps } from './Icon.types';
 
@@ -35,7 +35,16 @@ describe('Icon component', () => {
     });
 
     expect(toJSON()).toMatchSnapshot('Icon component - name: outlined-finance-bank');
-    expect(queryByTestId('icon-outlined-finance-bank')?.props).toHaveProperty('accessibilityRole', 'imagebutton');
+    expect(queryByTestId('natds-icon')?.props).toHaveProperty('accessibilityRole', 'imagebutton');
+  });
+
+  it('should render deafult icon if the icon name is incorrect', () => {
+    const defaultIconName = 'outlined-default-mockup';
+
+    const anyIncorrectIconName = checkIconName('incorrect-icon-name' as IconName);
+    const expectedIconName = checkIconName(defaultIconName);
+
+    expect(anyIncorrectIconName).toBe(expectedIconName);
   });
 
   /* eslint-disable-next-line mocha/no-setup-in-describe */

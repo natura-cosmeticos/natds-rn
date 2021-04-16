@@ -10,7 +10,7 @@ exports[`Icon component should render component with default props: Icon compone
       "fontSize": 24,
     }
   }
-  testID="icon-outlined-default-mockup"
+  testID="natds-icon"
 >
   
 </Text>
@@ -26,7 +26,7 @@ exports[`Icon component should render component with given props: Icon component
       "fontSize": 24,
     }
   }
-  testID="icon-outlined-finance-bank"
+  testID="natds-icon"
 >
   
 </Text>
@@ -42,7 +42,7 @@ exports[`Icon component should render correctly when icon is "filled-action-add"
       "fontSize": 24,
     }
   }
-  testID="icon-filled-action-add"
+  testID="natds-icon"
 >
   
 </Text>
@@ -58,7 +58,7 @@ exports[`Icon component should render correctly when icon is "outlined-action-mi
       "fontSize": 24,
     }
   }
-  testID="icon-outlined-action-micrec"
+  testID="natds-icon"
 >
   
 </Text>
@@ -74,7 +74,7 @@ exports[`Icon component should render correctly when icon is "outlined-content-w
       "fontSize": 24,
     }
   }
-  testID="icon-outlined-content-wellness"
+  testID="natds-icon"
 >
   
 </Text>
@@ -90,7 +90,7 @@ exports[`Icon component should render correctly when icon is "outlined-finance-b
       "fontSize": 24,
     }
   }
-  testID="icon-outlined-finance-bank"
+  testID="natds-icon"
 >
   
 </Text>
