@@ -145,9 +145,9 @@
     "webpack": "4.43.0"
   },
   "peerDependencies": {
-    "react": ">=16.8.0",
-    "react-native": ">=0.59.10",
-    "styled-components": ">=5"
+    "react": "^16.8.0",
+    "react-native": "^0.59.10",
+    "styled-components": "^5"
   },
   "engines": {
     "node": ">=12"
