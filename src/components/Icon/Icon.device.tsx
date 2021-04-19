@@ -1,11 +1,8 @@
 import { storiesOf } from '@storybook/react-native';
 import {
-  All, Name, Color, Size, Interactive,
+  Default, Interactive,
 } from './Icon.stories';
 
 storiesOf('Icon', module)
-  .add('all', All)
-  .add('name', Name)
-  .add('color', Color)
-  .add('size', Size)
+  .add('Default', Default)
   .add('interactive', Interactive);
