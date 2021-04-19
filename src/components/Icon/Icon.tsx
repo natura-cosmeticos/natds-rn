@@ -7,7 +7,7 @@ import {
 } from '../../common/themeSelectors';
 import { IconColors, IconProps } from './Icon.types';
 
-const getIconColor = (theme: Theme, color: IconColors) => {
+export const getIconColor = (theme: Theme, color: IconColors) => {
   switch (color) {
     case '#333333':
       return color;

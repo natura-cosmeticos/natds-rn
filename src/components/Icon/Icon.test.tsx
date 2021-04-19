@@ -1,12 +1,15 @@
 import { IconName } from '@naturacosmeticos/natds-icons';
 import React from 'react';
-import { checkIconName, Icon } from './Icon';
+import { checkIconName, getIconColor, Icon } from './Icon';
 import { renderWithTheme } from '../../../test/testHelpers';
 import { IconProps } from './Icon.types';
+import { getColorByName, getColorHighEmphasis } from '../../common/themeSelectors';
+import theme from '../../common/themeSelectors/theme/mock-theme.json';
 
 jest.mock('../../common/themeSelectors', () => (
   {
-    getColorByName: () => '#BBBBBB',
+    getColorByName: jest.fn().mockReturnValue('#BBBBBB'),
+    getColorHighEmphasis: jest.fn().mockReturnValue('#000000'),
     getSize: () => 24,
   }));
 
@@ -22,6 +25,18 @@ const sampleNames: Array<IconName> = [
 ];
 
 describe('Icon component', () => {
+  afterEach(() => {
+    jest.restoreAllMocks();
+    jest.clearAllMocks();
+  });
+
+  /* eslint-disable-next-line mocha/no-setup-in-describe */
+  it.each(sampleNames)('should render correctly when icon is %p', (name) => {
+    const { toJSON } = renderIcon({ name });
+
+    expect(toJSON()).toMatchSnapshot(`Icon component - name: ${name}`);
+  });
+
   it('should render component with default props', () => {
     const { toJSON } = renderIcon();
 
@@ -37,7 +52,9 @@ describe('Icon component', () => {
     expect(toJSON()).toMatchSnapshot('Icon component - name: outlined-finance-bank');
     expect(queryByTestId('natds-icon')?.props).toHaveProperty('accessibilityRole', 'imagebutton');
   });
+});
 
+describe('checkIconName', () => {
   it('should render deafult icon if the icon name is incorrect', () => {
     const defaultIconName = 'outlined-default-mockup';
 
@@ -46,11 +63,25 @@ describe('Icon component', () => {
 
     expect(anyIncorrectIconName).toBe(expectedIconName);
   });
+});
 
-  /* eslint-disable-next-line mocha/no-setup-in-describe */
-  it.each(sampleNames)('should render correctly when icon is %p', (name) => {
-    const { toJSON } = renderIcon({ name });
+describe('getIconColor', () => {
+  it('should return #333333 as icon color when it is given as param', () => {
+    const getHexColor = getIconColor(theme, '#333333');
 
-    expect(toJSON()).toMatchSnapshot(`Icon component - name: ${name}`);
+    expect(getHexColor).toEqual('#333333');
+  });
+  it('should return highEmphasis color token as icon color when "default" is given as param', () => {
+    const getDefaultColor = getIconColor(theme, 'default');
+
+    expect(getDefaultColor).toEqual('#000000');
+    expect(getColorHighEmphasis).toHaveBeenCalled();
+  });
+
+  it('should return correct given color', () => {
+    const getThemeColor = getIconColor(theme, 'primary');
+
+    expect(getThemeColor).toEqual('#BBBBBB');
+    expect(getColorByName).toHaveBeenCalled();
   });
 });
