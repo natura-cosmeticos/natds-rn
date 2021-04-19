@@ -55,7 +55,7 @@ describe('Icon component', () => {
 });
 
 describe('checkIconName', () => {
-  it('should render deafult icon if the icon name is incorrect', () => {
+  it('should render default icon if the icon name is incorrect', () => {
     const defaultIconName = 'outlined-default-mockup';
 
     const anyIncorrectIconName = checkIconName('incorrect-icon-name' as IconName);
