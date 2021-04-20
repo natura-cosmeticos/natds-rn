@@ -53,6 +53,7 @@ const ButtonComponent = ({
           </LabelText>
           {iconName
             && <Icon
+              accessibilityRole="imagebutton"
               color={textColor}
               name={iconName}
               size="small" />

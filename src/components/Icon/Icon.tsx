@@ -2,76 +2,48 @@ import React from 'react';
 import { withTheme } from 'styled-components/native';
 import { Text } from 'react-native';
 import { IconName, icons } from '@naturacosmeticos/natds-icons';
-import { Size, Theme, Color } from '@naturacosmeticos/natds-themes/react-native';
-import { getColorByName, getSize } from '../../common/themeSelectors';
+import {
+  getColorByName, getSize, getColorHighEmphasis, Theme,
+} from '../../common/themeSelectors';
+import { IconColors, IconProps } from './Icon.types';
 
-export type IconColors = keyof Color | 'default' | '#333333'
-export type IconSizes = keyof Size
-
-export interface IconProps {
-  /**
-   * An accessibility hint helps users understand what will happen when they perform an action
-   * on the accessibility element when that result is not clear from the accessibility label.
-   */
-  accessibilityHint?: string,
-  /**
-   * Overrides the text that's read by the screen reader when the user interacts with the element.
-   * By default, the label is constructed by traversing all the children and accumulating
-   * all the Text nodes separated by space.
-   */
-  accessibilityLabel?: string
-  /**
-   * Icon color tokens
-   */
-  color?: IconColors,
-  /**
-   * Icon name
-   */
-  name?: IconName
-  /**
-   * Icon size
-   */
-  size?: IconSizes
-  /**
-   * Optional ID for testing
-   */
-  testID?: string,
-  /**
-   * The theme
-   */
-  theme: Theme,
-}
+export const getIconColor = (theme: Theme, color: IconColors) => {
+  switch (color) {
+    case '#333333':
+      return color;
+    case 'default':
+      return getColorHighEmphasis(theme);
+    default:
+      return getColorByName(theme, color);
+  }
+};
 
 const defaultIconName = 'outlined-default-mockup';
 
-const getFontColor = (theme: Theme, color: IconColors) => {
-  const colorName = color === 'default' ? 'highEmphasis' : color;
-
-  return getColorByName(theme, colorName as keyof Color);
-};
+export const checkIconName = (iconName: IconName) => (icons[iconName]
+  ? icons[iconName].replace('%', '\\')
+  : icons[defaultIconName]).replace('%', '\\');
 
 const IconComponent = ({
   accessibilityHint,
   accessibilityLabel,
-  color = 'default',
+  accessibilityRole = 'image',
+  color = 'highlight',
   name = defaultIconName,
-  testID = `icon-${name}`,
+  testID = 'natds-icon',
   theme,
   size = 'standard',
 }: IconProps) => {
-  const unicodeName = icons[name]
-    ? icons[name].replace('%', '\\')
-    : icons[defaultIconName];
-
+  const unicodeName = checkIconName(name);
   const code = JSON.parse(`["${unicodeName}"]`)[0];
 
   return (
     <Text
       accessibilityHint={accessibilityHint}
       accessibilityLabel={accessibilityLabel}
-      accessibilityRole="text"
+      accessibilityRole={accessibilityRole}
       style={{
-        color: color === '#333333' ? color : getFontColor(theme, color),
+        color: getIconColor(theme, color),
         fontFamily: 'natds-icons',
         fontSize: getSize(theme, size),
       }}
