@@ -1,0 +1,280 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Badge component Colors should render badge component alert 1`] = `
+<View
+  color="alert"
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#e74627",
+        "borderRadius": 50,
+        "height": 10,
+        "justifyContent": "center",
+        "minWidth": 10,
+        "paddingHorizontal": 0,
+        "paddingVertical": 0,
+      },
+    ]
+  }
+  testID="badge"
+  type="dot"
+/>
+`;
+
+exports[`Badge component Colors should render badge component primary 1`] = `
+<View
+  color="primary"
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#f4ab34",
+        "borderRadius": 50,
+        "height": 10,
+        "justifyContent": "center",
+        "minWidth": 10,
+        "paddingHorizontal": 0,
+        "paddingVertical": 0,
+      },
+    ]
+  }
+  testID="badge"
+  type="dot"
+/>
+`;
+
+exports[`Badge component Colors should render badge component secondary 1`] = `
+<View
+  color="secondary"
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#ff6b0b",
+        "borderRadius": 50,
+        "height": 10,
+        "justifyContent": "center",
+        "minWidth": 10,
+        "paddingHorizontal": 0,
+        "paddingVertical": 0,
+      },
+    ]
+  }
+  testID="badge"
+  type="dot"
+/>
+`;
+
+exports[`Badge component Colors should render badge component success 1`] = `
+<View
+  color="success"
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#569a32",
+        "borderRadius": 50,
+        "height": 10,
+        "justifyContent": "center",
+        "minWidth": 10,
+        "paddingHorizontal": 0,
+        "paddingVertical": 0,
+      },
+    ]
+  }
+  testID="badge"
+  type="dot"
+/>
+`;
+
+exports[`Badge component Content should render badge component with content 1`] = `
+<View
+  color="alert"
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#e74627",
+        "borderRadius": 50,
+        "height": 10,
+        "justifyContent": "center",
+        "minWidth": 10,
+        "paddingHorizontal": 5,
+        "paddingVertical": 8,
+      },
+    ]
+  }
+  testID="badge"
+  type="standard"
+>
+  <Text
+    color="alert"
+    style={
+      Array [
+        Object {
+          "color": "#fff",
+          "fontSize": 12,
+        },
+      ]
+    }
+  >
+    9
+  </Text>
+</View>
+`;
+
+exports[`Badge component Limit should render badge component with limit 9 1`] = `
+<View
+  color="alert"
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#e74627",
+        "borderRadius": 50,
+        "height": 10,
+        "justifyContent": "center",
+        "minWidth": 10,
+        "paddingHorizontal": 5,
+        "paddingVertical": 8,
+      },
+    ]
+  }
+  testID="badge"
+  type="standard"
+>
+  <Text
+    color="alert"
+    style={
+      Array [
+        Object {
+          "color": "#fff",
+          "fontSize": 12,
+        },
+      ]
+    }
+  >
+    9
+    +
+  </Text>
+</View>
+`;
+
+exports[`Badge component Limit should render badge component with limit 99 1`] = `
+<View
+  color="alert"
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#e74627",
+        "borderRadius": 50,
+        "height": 10,
+        "justifyContent": "center",
+        "minWidth": 10,
+        "paddingHorizontal": 5,
+        "paddingVertical": 8,
+      },
+    ]
+  }
+  testID="badge"
+  type="standard"
+>
+  <Text
+    color="alert"
+    style={
+      Array [
+        Object {
+          "color": "#fff",
+          "fontSize": 12,
+        },
+      ]
+    }
+  >
+    99
+    +
+  </Text>
+</View>
+`;
+
+exports[`Badge component Limit should render badge component with limit unlimited 1`] = `
+<View
+  color="alert"
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#e74627",
+        "borderRadius": 50,
+        "height": 10,
+        "justifyContent": "center",
+        "minWidth": 10,
+        "paddingHorizontal": 5,
+        "paddingVertical": 8,
+      },
+    ]
+  }
+  testID="badge"
+  type="standard"
+>
+  <Text
+    color="alert"
+    style={
+      Array [
+        Object {
+          "color": "#fff",
+          "fontSize": 12,
+        },
+      ]
+    }
+  >
+    9999
+    +
+  </Text>
+</View>
+`;
+
+exports[`Badge component Types should render badge component dot 1`] = `
+<View
+  color="alert"
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#e74627",
+        "borderRadius": 50,
+        "height": 10,
+        "justifyContent": "center",
+        "minWidth": 10,
+        "paddingHorizontal": 0,
+        "paddingVertical": 0,
+      },
+    ]
+  }
+  testID="badge"
+  type="dot"
+/>
+`;
+
+exports[`Badge component Types should render badge component standard 1`] = `
+<View
+  color="alert"
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#e74627",
+        "borderRadius": 50,
+        "height": 10,
+        "justifyContent": "center",
+        "minWidth": 10,
+        "paddingHorizontal": 5,
+        "paddingVertical": 8,
+      },
+    ]
+  }
+  testID="badge"
+  type="standard"
+/>
+`;
