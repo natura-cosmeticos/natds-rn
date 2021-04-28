@@ -8,12 +8,10 @@ exports[`Badge component Colors should render badge component alert 1`] = `
       Object {
         "alignItems": "center",
         "backgroundColor": "#e74627",
-        "borderRadius": 50,
-        "height": 10,
+        "borderRadius": 8,
+        "height": 8,
         "justifyContent": "center",
-        "minWidth": 10,
-        "paddingHorizontal": 0,
-        "paddingVertical": 0,
+        "width": 8,
       },
     ]
   }
@@ -30,12 +28,10 @@ exports[`Badge component Colors should render badge component primary 1`] = `
       Object {
         "alignItems": "center",
         "backgroundColor": "#f4ab34",
-        "borderRadius": 50,
-        "height": 10,
+        "borderRadius": 8,
+        "height": 8,
         "justifyContent": "center",
-        "minWidth": 10,
-        "paddingHorizontal": 0,
-        "paddingVertical": 0,
+        "width": 8,
       },
     ]
   }
@@ -52,12 +48,10 @@ exports[`Badge component Colors should render badge component secondary 1`] = `
       Object {
         "alignItems": "center",
         "backgroundColor": "#ff6b0b",
-        "borderRadius": 50,
-        "height": 10,
+        "borderRadius": 8,
+        "height": 8,
         "justifyContent": "center",
-        "minWidth": 10,
-        "paddingHorizontal": 0,
-        "paddingVertical": 0,
+        "width": 8,
       },
     ]
   }
@@ -74,12 +68,10 @@ exports[`Badge component Colors should render badge component success 1`] = `
       Object {
         "alignItems": "center",
         "backgroundColor": "#569a32",
-        "borderRadius": 50,
-        "height": 10,
+        "borderRadius": 8,
+        "height": 8,
         "justifyContent": "center",
-        "minWidth": 10,
-        "paddingHorizontal": 0,
-        "paddingVertical": 0,
+        "width": 8,
       },
     ]
   }
@@ -96,11 +88,11 @@ exports[`Badge component Content should render badge component with content 1`] 
       Object {
         "alignItems": "center",
         "backgroundColor": "#e74627",
-        "borderRadius": 50,
-        "height": 10,
+        "borderRadius": 8,
+        "height": 8,
         "justifyContent": "center",
-        "minWidth": 10,
-        "paddingHorizontal": 5,
+        "maxWidth": 48,
+        "paddingHorizontal": 4,
         "paddingVertical": 8,
       },
     ]
@@ -113,124 +105,13 @@ exports[`Badge component Content should render badge component with content 1`] 
     style={
       Array [
         Object {
-          "color": "#fff",
+          "color": "#fafafa",
           "fontSize": 12,
         },
       ]
     }
   >
     9
-  </Text>
-</View>
-`;
-
-exports[`Badge component Limit should render badge component with limit 9 1`] = `
-<View
-  color="alert"
-  style={
-    Array [
-      Object {
-        "alignItems": "center",
-        "backgroundColor": "#e74627",
-        "borderRadius": 50,
-        "height": 10,
-        "justifyContent": "center",
-        "minWidth": 10,
-        "paddingHorizontal": 5,
-        "paddingVertical": 8,
-      },
-    ]
-  }
-  testID="badge"
-  type="standard"
->
-  <Text
-    color="alert"
-    style={
-      Array [
-        Object {
-          "color": "#fff",
-          "fontSize": 12,
-        },
-      ]
-    }
-  >
-    9
-    +
-  </Text>
-</View>
-`;
-
-exports[`Badge component Limit should render badge component with limit 99 1`] = `
-<View
-  color="alert"
-  style={
-    Array [
-      Object {
-        "alignItems": "center",
-        "backgroundColor": "#e74627",
-        "borderRadius": 50,
-        "height": 10,
-        "justifyContent": "center",
-        "minWidth": 10,
-        "paddingHorizontal": 5,
-        "paddingVertical": 8,
-      },
-    ]
-  }
-  testID="badge"
-  type="standard"
->
-  <Text
-    color="alert"
-    style={
-      Array [
-        Object {
-          "color": "#fff",
-          "fontSize": 12,
-        },
-      ]
-    }
-  >
-    99
-    +
-  </Text>
-</View>
-`;
-
-exports[`Badge component Limit should render badge component with limit unlimited 1`] = `
-<View
-  color="alert"
-  style={
-    Array [
-      Object {
-        "alignItems": "center",
-        "backgroundColor": "#e74627",
-        "borderRadius": 50,
-        "height": 10,
-        "justifyContent": "center",
-        "minWidth": 10,
-        "paddingHorizontal": 5,
-        "paddingVertical": 8,
-      },
-    ]
-  }
-  testID="badge"
-  type="standard"
->
-  <Text
-    color="alert"
-    style={
-      Array [
-        Object {
-          "color": "#fff",
-          "fontSize": 12,
-        },
-      ]
-    }
-  >
-    9999
-    +
   </Text>
 </View>
 `;
@@ -243,12 +124,10 @@ exports[`Badge component Types should render badge component dot 1`] = `
       Object {
         "alignItems": "center",
         "backgroundColor": "#e74627",
-        "borderRadius": 50,
-        "height": 10,
+        "borderRadius": 8,
+        "height": 8,
         "justifyContent": "center",
-        "minWidth": 10,
-        "paddingHorizontal": 0,
-        "paddingVertical": 0,
+        "width": 8,
       },
     ]
   }
@@ -265,11 +144,11 @@ exports[`Badge component Types should render badge component standard 1`] = `
       Object {
         "alignItems": "center",
         "backgroundColor": "#e74627",
-        "borderRadius": 50,
-        "height": 10,
+        "borderRadius": 8,
+        "height": 8,
         "justifyContent": "center",
-        "minWidth": 10,
-        "paddingHorizontal": 5,
+        "maxWidth": 48,
+        "paddingHorizontal": 4,
         "paddingVertical": 8,
       },
     ]

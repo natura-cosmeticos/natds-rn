@@ -5,6 +5,7 @@ import {
   content,
   limit,
   type,
+  interactive,
 } from './Badge.stories';
 
 storiesOf('Badge', module)
@@ -12,5 +13,5 @@ storiesOf('Badge', module)
   .add('type', type)
   .add('color', color)
   .add('content', content)
-  .add('limit', limit);
-// .add('interactive', interactive);
+  .add('limit', limit)
+  .add('interactive', interactive);

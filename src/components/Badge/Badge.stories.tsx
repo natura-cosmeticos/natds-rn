@@ -1,82 +1,82 @@
 import React from 'react';
-import styled from 'styled-components/native';
-import { View } from 'react-native';
+import { select, number as numberKnob } from '@storybook/addon-knobs';
 
 import { StoryContainer } from '../../common/HelperComponents/StoryContainer';
-import { Badge } from './Badge';
+import {
+  Badge,
+  BadgeTypes,
+  BadgeLimit,
+  BadgeColors,
+} from './Badge';
 
-const BadgesContainer = styled.View`
-  flex-direction: row;
-  justify-content: flex-start;
-`;
-
-const badgeDefinition: string = 'Notify the user by calling their attention to an update or something important';
+const badgeDefinition = 'Notify the user by calling their attention to an update or something important';
 
 export default {
   component: Badge,
   parameters: {
     componentSubtitle: badgeDefinition,
   },
+  status: 'Still not implemeted: type pulse, motion: pulse',
   title: 'Components|Badge',
+};
+
+const types = {
+  dot: 'dot',
+  standard: 'standard',
+};
+
+const limits = {
+  9: 9,
+  99: 99,
+  9999: 9999,
+};
+
+const colors = {
+  alert: 'alert',
+  primary: 'primary',
+  secondary: 'secondary',
+  success: 'success',
 };
 
 export const type = () => (
   <StoryContainer title="Types">
-    <BadgesContainer>
-      <Badge type="standard" content={9} />
-      <View style={{ marginRight: 16 }} />
+    <Badge type="standard" content={9} />
 
-      <Badge type="dot" />
-      <View style={{ marginRight: 16 }} />
-    </BadgesContainer>
+    <Badge type="dot" />
   </StoryContainer>
 );
 
 export const color = () => (
   <StoryContainer title="Colors">
-    <BadgesContainer>
-      <Badge type="dot" />
-      <View style={{ marginRight: 16 }} />
+    <Badge type="dot" />
 
-      <Badge type="dot" color="primary" />
-      <View style={{ marginRight: 16 }} />
+    <Badge type="dot" color="primary" />
 
-      <Badge type="dot" color="success" />
-      <View style={{ marginRight: 16 }} />
+    <Badge type="dot" color="success" />
 
-      <Badge type="dot" color="secondary" />
-    </BadgesContainer>
+    <Badge type="dot" color="secondary" />
   </StoryContainer>
 );
 
 export const content = () => (
   <StoryContainer title="Content">
-    <BadgesContainer>
-      <Badge type="standard" content={9} />
-      <View style={{ marginRight: 16 }} />
+    <Badge type="standard" content={9} />
 
-      <Badge type="standard" content={9} color="primary" />
-      <View style={{ marginRight: 16 }} />
+    <Badge type="standard" content={9} color="primary" />
 
-      <Badge type="standard" content={9} color="success" />
-      <View style={{ marginRight: 16 }} />
+    <Badge type="standard" content={9} color="success" />
 
-      <Badge type="standard" content={9} color="secondary" />
-    </BadgesContainer>
+    <Badge type="standard" content={9} color="secondary" />
   </StoryContainer>
 );
 
 export const limit = () => (
   <StoryContainer title="Limit">
-    <BadgesContainer>
-      <Badge type="standard" content={10} limit="9" />
-      <View style={{ marginRight: 16 }} />
+    <Badge type="standard" content={10} limit={9} />
 
-      <Badge type="standard" content={100} limit="99" />
-      <View style={{ marginRight: 16 }} />
+    <Badge type="standard" content={100} limit={99} />
 
-      <Badge type="standard" content={10000} />
-    </BadgesContainer>
+    <Badge type="standard" content={10000} />
   </StoryContainer>
 );
 
@@ -89,11 +89,13 @@ export const all = () => (
   </>
 );
 
-// export const interactive = () => (
-//   <Alert
-//     title={textKnob('Text', 'Title')}
-//     variant={select('Variant', variants, 'standard') as Variants}
-//     type={select('Type', types, 'success') as Types}
-//     message={textKnob('Message', alertDefinition)}
-//     />
-// );
+export const interactive = () => (
+  <StoryContainer title="Interactive">
+    <Badge
+      type={select('Type', types, 'standard') as BadgeTypes}
+      content={numberKnob('Content', 10)}
+      limit={select('Limit', limits, 9) as BadgeLimit}
+      color={select('Color', colors, 'alert') as BadgeColors}
+    />
+  </StoryContainer>
+);

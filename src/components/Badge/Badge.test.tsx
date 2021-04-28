@@ -66,33 +66,39 @@ describe('Badge component', () => {
 
   describe('Limit', () => {
     it('should render badge component with limit 9', () => {
-      const { toJSON } = renderBadge({
+      const { getByTestId } = renderBadge({
         content: 10,
-        limit: '9',
+        limit: 9,
         type: 'standard',
       });
 
-      expect(toJSON()).toMatchSnapshot();
+      const badgeComponent = getByTestId('badge');
+
+      expect(badgeComponent).toHaveTextContent('9+');
     });
 
     it('should render badge component with limit 99', () => {
-      const { toJSON } = renderBadge({
+      const { getByTestId } = renderBadge({
         content: 100,
-        limit: '99',
+        limit: 99,
         type: 'standard',
       });
 
-      expect(toJSON()).toMatchSnapshot();
+      const badgeComponent = getByTestId('badge');
+
+      expect(badgeComponent).toHaveTextContent('99+');
     });
 
-    it('should render badge component with limit unlimited', () => {
-      const { toJSON } = renderBadge({
+    it('should render badge component with limit 9999', () => {
+      const { getByTestId } = renderBadge({
         content: 10000,
-        limit: 'unlimited',
+        limit: 9999,
         type: 'standard',
       });
 
-      expect(toJSON()).toMatchSnapshot();
+      const badgeComponent = getByTestId('badge');
+
+      expect(badgeComponent).toHaveTextContent('9999+');
     });
   });
 });
