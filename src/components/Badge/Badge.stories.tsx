@@ -16,7 +16,7 @@ export default {
   parameters: {
     componentSubtitle: badgeDefinition,
   },
-  status: 'Still not implemetend: type pulse, motion: pulse',
+  status: 'Still not implemented: type pulse, motion: pulse',
   title: 'Components|Badge',
 };
 
