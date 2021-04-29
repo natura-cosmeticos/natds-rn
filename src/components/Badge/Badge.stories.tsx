@@ -52,7 +52,7 @@ const types = {
 const limits = {
   9: 9,
   99: 99,
-  9999: 9999,
+  unlimited: 'unlimited',
 };
 
 const colors = {
