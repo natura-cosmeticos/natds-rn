@@ -98,7 +98,7 @@ describe('Badge component', () => {
 
       const badgeComponent = getByTestId('badge');
 
-      expect(badgeComponent).toHaveTextContent('9999+');
+      expect(badgeComponent).toHaveTextContent('10000');
     });
 
     it('should render badge component with default limit', () => {
@@ -109,7 +109,7 @@ describe('Badge component', () => {
 
       const badgeComponent = getByTestId('badge');
 
-      expect(badgeComponent).toHaveTextContent('9999+');
+      expect(badgeComponent).toHaveTextContent('10000');
     });
   });
 });

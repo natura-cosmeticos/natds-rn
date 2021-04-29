@@ -49,16 +49,13 @@ const BadgeComponent = ({
   testID = 'badge',
   type,
 }: BadgeProps) => {
-  const maximumLimit = 9999;
-  const localLimit = limit === 'unlimited' ? maximumLimit : limit;
-
-  const formatContent = Number(content) > localLimit ? `${localLimit}+` : `${content}`;
+  const useLimit = limit !== 'unlimited';
 
   return (
     <BadgeContainer color={color} type={type} testID={testID}>
       {content && type === 'standard' && (
         <BadgeContent color={color}>
-          {formatContent}
+          {useLimit && content > limit ? `${limit}+` : `${content}`}
         </BadgeContent>
       )}
     </BadgeContainer>
