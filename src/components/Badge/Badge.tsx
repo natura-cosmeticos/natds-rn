@@ -1,6 +1,7 @@
 /* eslint-disable complexity */
 import React from 'react';
 import { withTheme } from 'styled-components/native';
+import { Color } from '@naturacosmeticos/natds-themes/react-native';
 
 import {
   Theme,
@@ -9,13 +10,13 @@ import {
 import { BadgeContainer, BadgeContent } from './Badge.style';
 
 export type BadgeTypes = 'dot' | 'standard';
-export type BadgeColors = 'alert' | 'primary' | 'secondary' | 'success';
-export type BadgeLimit = 9 | 99 | 9999;
+export type BadgeColors = keyof Pick<Color, 'alert' | 'primary' | 'secondary' | 'success'>;
+export type BadgeLimit = 9 | 99 | 'unlimited';
 
 export interface BadgeProps {
   /**
    * Badge color: alert, primary, secondary, success
-   * Default: alert
+   * @default: `alert`
   */
   color?: BadgeColors;
   /**
@@ -24,7 +25,7 @@ export interface BadgeProps {
   content?: number;
   /**
    * Maximum number that can be displayed in the badge
-   * Default: 9999
+   * @default: `9999`
   */
   limit?: BadgeLimit;
   /**
@@ -44,12 +45,14 @@ export interface BadgeProps {
 const BadgeComponent = ({
   color = 'alert',
   content,
-  limit = 9999,
+  limit = 'unlimited',
   testID = 'badge',
   type,
-  theme,
 }: BadgeProps) => {
-  const formatContent = Number(content) > limit ? `${limit}+` : content;
+  const maximumLimit = 9999;
+  const localLimit = limit === 'unlimited' ? maximumLimit : limit;
+
+  const formatContent = Number(content) > localLimit ? `${localLimit}+` : `${content}`;
 
   return (
     <BadgeContainer color={color} type={type} testID={testID}>

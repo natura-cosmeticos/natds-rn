@@ -1,3 +1,4 @@
+/* eslint-disable max-lines */
 import React from 'react';
 import { select, number as numberKnob } from '@storybook/addon-knobs';
 
@@ -11,12 +12,35 @@ import {
 
 const badgeDefinition = 'Notify the user by calling their attention to an update or something important';
 
+const description = () => `
+---
+**NOTE**: This component is available in the following variants:
+  - ✅ dot
+  - ✅ standard
+  - ❌ pulse
+With the following attribute status:
+- **Color:**
+   - ✅  \`alert\`
+   - ✅  \`primary\`
+   - ✅  \`secondary\`
+   - ✅  \`success\`
+ - **Limit**
+   - ✅  \`9\`
+   - ✅  \`99\`
+   - ✅  \`unlimited\`
+ - **Motion**
+   - ❌  \`pulse\`
+---
+`;
+
 export default {
   component: Badge,
   parameters: {
     componentSubtitle: badgeDefinition,
+    docs: {
+      extractComponentDescription: description,
+    },
   },
-  status: 'Still not implemented: type pulse, motion: pulse',
   title: 'Components|Badge',
 };
 
@@ -38,7 +62,7 @@ const colors = {
   success: 'success',
 };
 
-export const type = () => (
+export const Type = () => (
   <StoryContainer title="Types">
     <Badge type="standard" content={9} />
 
@@ -46,7 +70,7 @@ export const type = () => (
   </StoryContainer>
 );
 
-export const color = () => (
+export const Color = () => (
   <StoryContainer title="Colors">
     <Badge type="dot" />
 
@@ -58,7 +82,7 @@ export const color = () => (
   </StoryContainer>
 );
 
-export const content = () => (
+export const Content = () => (
   <StoryContainer title="Content">
     <Badge type="standard" content={9} />
 
@@ -70,7 +94,7 @@ export const content = () => (
   </StoryContainer>
 );
 
-export const limit = () => (
+export const Limit = () => (
   <StoryContainer title="Limit">
     <Badge type="standard" content={10} limit={9} />
 
@@ -82,10 +106,10 @@ export const limit = () => (
 
 export const all = () => (
   <>
-    {type()}
-    {color()}
-    {content()}
-    {limit()}
+    <Type />
+    <Color />
+    <Content />
+    <Limit />
   </>
 );
 

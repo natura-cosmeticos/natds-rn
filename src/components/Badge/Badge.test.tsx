@@ -89,10 +89,21 @@ describe('Badge component', () => {
       expect(badgeComponent).toHaveTextContent('99+');
     });
 
-    it('should render badge component with limit 9999', () => {
+    it('should render badge component with unlimited limit', () => {
       const { getByTestId } = renderBadge({
         content: 10000,
-        limit: 9999,
+        limit: 'unlimited',
+        type: 'standard',
+      });
+
+      const badgeComponent = getByTestId('badge');
+
+      expect(badgeComponent).toHaveTextContent('9999+');
+    });
+
+    it('should render badge component with default limit', () => {
+      const { getByTestId } = renderBadge({
+        content: 10000,
         type: 'standard',
       });
 

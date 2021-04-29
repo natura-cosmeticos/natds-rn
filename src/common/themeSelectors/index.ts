@@ -2,6 +2,7 @@ export * from './avatarSizes/avatarSizes';
 export * from './button/button';
 export * from './colors/colors';
 export * from './effects/effects';
+export * from './fonts/fonts';
 export * from './opacity/opacity';
 export * from './sizes/sizes';
 export * from './spacing/spacing';

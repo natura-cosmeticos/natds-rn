@@ -1,17 +1,17 @@
 import { storiesOf } from '@storybook/react-native';
 import {
   all,
-  color,
-  content,
-  limit,
-  type,
+  Color,
+  Content,
+  Limit,
+  Type,
   interactive,
 } from './Badge.stories';
 
 storiesOf('Badge', module)
   .add('all', all)
-  .add('type', type)
-  .add('color', color)
-  .add('content', content)
-  .add('limit', limit)
+  .add('type', Type)
+  .add('color', Color)
+  .add('content', Content)
+  .add('limit', Limit)
   .add('interactive', interactive);

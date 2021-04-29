@@ -1,27 +1,21 @@
+/* eslint-disable default-case */
+/* eslint-disable consistent-return */
 import styled from 'styled-components/native';
 
 import {
   Theme,
   getSize,
   getRadiusBySize,
-  getAvatarBySize,
   getColorByName,
+  getCaptionFont,
 } from '../../common/themeSelectors';
 
-import { BadgeColors, BadgeTypes } from './Badge';
+import { BadgeColors, BadgeTypes, BadgeProps } from './Badge';
 
+type ContainerProps = Required<Pick<BadgeProps, 'color' | 'theme' | 'type'>>;
+type ContentProps = Required<Pick<BadgeProps, 'color' | 'theme'>>;
 
-interface ContainerProps {
-  color: BadgeColors;
-  theme: Theme;
-  type: BadgeTypes;
-}
-
-interface ContentProps {
-  color: BadgeColors;
-}
-
-const getFontSize = (theme, size) => getAvatarBySize(size, theme).fontSize;
+const getFontSize = (theme: Theme) => getCaptionFont(theme).fontSize;
 
 const typeDimensions = (type: BadgeTypes, theme: Theme) => {
   const dimensions = {
@@ -38,6 +32,19 @@ const typeDimensions = (type: BadgeTypes, theme: Theme) => {
   return dimensions[type];
 };
 
+const getFontColor = (theme: Theme, color: BadgeColors) => {
+  switch (color) {
+    case 'alert':
+      return getColorByName(theme, 'onAlert');
+    case 'primary':
+      return getColorByName(theme, 'onPrimary');
+    case 'secondary':
+      return getColorByName(theme, 'onSecondary');
+    case 'success':
+      return getColorByName(theme, 'onSuccess');
+  }
+};
+
 export const BadgeContainer = styled.View<ContainerProps>(({ type, color, theme }) => ({
   ...typeDimensions(type, theme),
   alignItems: 'center',
@@ -48,6 +55,6 @@ export const BadgeContainer = styled.View<ContainerProps>(({ type, color, theme 
 }));
 
 export const BadgeContent = styled.Text<ContentProps>`
-  font-size: ${({ theme }) => getFontSize(theme, 'tiny')};
-  color: ${({ theme }) => getColorByName(theme, 'background')};
+  font-size: ${({ theme }) => getFontSize(theme)}px;
+  color: ${({ theme, color }) => getFontColor(theme, color)};
 `;
