@@ -1,5 +1,5 @@
 import theme from '../theme/mock-theme.json';
-import * as selectors from './fonts';
+import * as selectors from './typography';
 
 const scenarios = [
   {
@@ -10,7 +10,7 @@ const scenarios = [
   },
 ];
 
-describe('Color selectors', () => {
+describe('Typography selectors', () => {
   /*  eslint-disable mocha/no-setup-in-describe */
   scenarios.forEach(scenario => (
     describe(scenario.name, () => {
