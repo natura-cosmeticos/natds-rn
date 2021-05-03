@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [7.0.0](https://github.com/natura-cosmeticos/natds-rn/compare/v6.1.2...v7.0.0) (2021-05-03)
+
+
+### ⚠ BREAKING CHANGES
+
+* **deps:** change Avon main colors
+
+DSY-2079
+
+Co-authored-by: Renovate Bot <bot@renovateapp.com>
+
+### Bug Fixes
+
+* **deps:** update dependency @naturacosmeticos/natds-themes to ^0.5.0 ([#175](https://github.com/natura-cosmeticos/natds-rn/issues/175)) ([e094d15](https://github.com/natura-cosmeticos/natds-rn/commit/e094d154acdfe5314f4e0b74da3ebc275bd262bc))
+
 ### [6.1.2](https://github.com/natura-cosmeticos/natds-rn/compare/v6.1.1...v6.1.2) (2021-05-03)
 
 ### [6.1.1](https://github.com/natura-cosmeticos/natds-rn/compare/v6.1.0...v6.1.1) (2021-05-03)
