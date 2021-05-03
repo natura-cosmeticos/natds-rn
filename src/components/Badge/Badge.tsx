@@ -54,11 +54,11 @@ const BadgeComponent = ({
 
   return (
     <BadgeContainer color={color} type={type} testID={testID}>
-      {content !== undefined && type === 'standard' && (
+      {content !== undefined && type === 'standard' ? (
         <BadgeContent color={color}>
           {useLimit && content > limit ? `${limit}+` : `${content}`}
         </BadgeContent>
-      )}
+      ) : null}
     </BadgeContainer>
   );
 };
