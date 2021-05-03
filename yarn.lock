@@ -1905,10 +1905,10 @@
   resolved "https://registry.yarnpkg.com/@naturacosmeticos/natds-icons/-/natds-icons-1.3.0.tgz#d1d62d0a21672b0b5bb7eca8df83f3d22f999b63"
   integrity sha512-vy1VW+1jFwrQAT19/PvnXSr7Wh/NthcrtY4BWZ+I1Tt+wSqrteSprP5pFBgPdGf8Jy64N9KVhtE9wnmX9byP6g==
 
-"@naturacosmeticos/natds-themes@^0.4.1":
-  version "0.4.1"
-  resolved "https://registry.yarnpkg.com/@naturacosmeticos/natds-themes/-/natds-themes-0.4.1.tgz#900ff504bbd137935c6e78fca67805b3ffc5e53b"
-  integrity sha512-8KDmNHTZhyZDwZvVRWhK/HpxLiog6UWNqMCHpLTIgrhWovDZv8WLazmE88MsiNdxhR675qELjfNLaYBoU+ACFg==
+"@naturacosmeticos/natds-themes@^0.5.0":
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/@naturacosmeticos/natds-themes/-/natds-themes-0.5.0.tgz#4c19565edfc64b3cbea2c57058243cc33a7b578c"
+  integrity sha512-D8CpGv5wKi0/dF3KZpY4oftnUz5R/o7sU3aW4shbD0JzAMdhoam0Vg/1j4PXmzX8Uol5mThFEuM15t4z+S3ZAg==
 
 "@nodelib/fs.scandir@2.1.3":
   version "2.1.3"
