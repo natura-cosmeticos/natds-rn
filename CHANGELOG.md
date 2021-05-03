@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [6.1.1](https://github.com/natura-cosmeticos/natds-rn/compare/v6.1.0...v6.1.1) (2021-05-03)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @naturacosmeticos/natds-themes to ^0.5.0 ([#172](https://github.com/natura-cosmeticos/natds-rn/issues/172)) ([4da5c55](https://github.com/natura-cosmeticos/natds-rn/commit/4da5c551d6cb046753e5b71b6938a40fd0c210dc))
+
 ## [6.1.0](https://github.com/natura-cosmeticos/natds-rn/compare/v6.0.0...v6.1.0) (2021-04-20)
 
 
