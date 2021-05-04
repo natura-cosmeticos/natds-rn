@@ -26,7 +26,7 @@ export interface BadgeProps {
   content?: number;
   /**
    * Maximum number that can be displayed in the badge
-   * @default: `9999`
+   * @default: `unlimited`
    */
   limit?: BadgeLimit;
   /**
