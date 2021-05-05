@@ -7,3 +7,4 @@ export * from './sizes/sizes';
 export * from './spacing/spacing';
 export * from './helpers/helpers';
 export * from './theme/theme';
+export * from './typography/typography';
