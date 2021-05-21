@@ -1,243 +1,132 @@
 /* eslint-disable max-lines */
-/* eslint-disable complexity */
-/* eslint-disable no-unneeded-ternary */
-import React, {
-  useState,
-  useRef,
-  useImperativeHandle,
-  forwardRef,
-} from 'react';
-import { Text, TextInputProps, View } from 'react-native';
-import { withTheme } from 'styled-components';
-
-import { Theme } from '../../common/themeSelectors';
-import { Icon } from '../Icon';
-
+import React from 'react';
 import {
-  Wrapper,
-  InputWrapper,
-  Input,
-  Label,
-  IconPress,
-  HelperText,
-} from './TextField.styles';
+  View,
+  Image,
+  TextInput,
+} from 'react-native';
+import { useTheme } from 'styled-components/native';
+import {
+  buildColorWithOpacity,
+  getBorderRadiusMedium,
+  getColorHighEmphasis,
+  getColorLowEmphasis,
+  getColorSurface,
+  getOpacityDisabledLow,
+  getSizeLarge,
+  getSizeMedium,
+  getSizeMediumX,
+  getSizeSemi,
+  getSpacingSmall,
+  getSpacingTiny,
+} from '../../common/themeSelectors';
+import { InputFeedbackContainer } from '../InputFeedbackContainer';
+import { IconButton } from '../IconButton';
+// @ts-ignore
+import placeholderImage from '../../assets/images/anonymous.jpg';
+import { TextFieldProps } from './TextField.types';
 
-export type TextFieldStates = 'enabled' | 'focus' | 'active' | 'filled';
-
-export interface TextFieldProps extends TextInputProps {
-  /**
-   * A disabled input is unusable
-   */
-  disabled?: boolean;
-  /**
-   * Style the input field according to the data  provided by the user to give a visual feedback
-   * about the validation of the data
-   */
-  feedback?: 'error' | 'success';
-  /**
-   * Show a helper text below the input field
-   */
-  helperText?: string;
-  /**
-   * Descriptive text above the input field
-   */
-  label: string;
-  /**
-   * Define if the input has more than one line or not
-   */
-  multiline?: boolean;
-  /**
-   * Number of lines the input has
-   */
-  numberOfLines?: number;
-  /**
-   * onBlur event handler
-   */
-  onBlur?: (func) => void;
-  /**
-   * onChangeText event handler
-   */
-  onChangeText: (ev: string) => void;
-  /**
-   * onFocus event handler
-   */
-  onFocus?: (func) => void;
-  /**
-   * onSubmitEditing handler
-   */
-  onSubmitEditing?: () => void;
-  /**
-   * Input placeholder
-   */
-  placeholder: string;
-  /**
-   * When this prop is set, the value of the input can not be changed
-   */
-  readOnly?: boolean;
-  /**
-   * Show a visual indication if the input is required: Label*
-   */
-  required?: boolean;
-  /**
-   * Define the size of the input: tiny | small
-   */
-  size?: 'small' | 'regular';
-  /**
-   * TextField states: 'enabled' | 'focus' | 'active' | 'filled'
-   */
-  state?: TextFieldStates;
-  /**
-   * Id for testing
-   */
-  testID?: string;
-  /**
-   * app theme
-   */
-  theme: Theme;
-  /**
-   * Type of the input
-   */
-  type: 'text' | 'password';
-  /**
-   * Input value
-   */
-  value: string;
-}
-
-export interface InputRef {
-  focus(): void;
-}
-
-const TextFieldComponent: React.RefForwardingComponent<
-  InputRef,
-  TextFieldProps
-> = (
-  {
-    size = 'regular',
-    testID = 'textField',
-    required = false,
+/* eslint-disable complexity */
+export const TextField = (props: TextFieldProps) => {
+  const theme = useTheme();
+  const {
+    action,
     disabled = false,
-    readOnly = false,
-    helperText = '',
-    multiline = false,
-    numberOfLines = 1,
-    type,
     feedback,
-    state,
-    theme,
+    helperText,
     label,
     placeholder,
-    value,
+    readonly,
+    required = false,
+    size = 'mediumX',
+    value = '',
+
     onBlur,
+    onChange,
     onChangeText,
     onFocus,
-    onSubmitEditing,
-    ...props
-  },
-  ref,
-) => {
-  const [currentState, setCurrentState] = useState<TextFieldStates>(() => {
-    // If a state is provided, use it as the current state
-    if (state) {
-      return state;
-    }
-
-    // If value or readOnly is truthy, set the state as filled, else set as enabled
-    return value || readOnly ? 'filled' : 'enabled';
-  });
-  const [showPassword, setShowPassword] = useState(() => (type === 'password' ? true : false));
-
-  const inputElementRef = useRef<any>(null);
-
-  const handleOnFocus = (func) => {
-    setCurrentState('active');
-
-    if (onFocus) {
-      onFocus(func);
-    }
+    secureTextEntry,
+    defaultValue,
+    keyboardType,
+  }: TextFieldProps = props;
+  const [active, setActive] = React.useState(false);
+  const filled = !readonly && value !== '';
+  const iconWidthWithPadding = getSpacingTiny(theme) + getSizeSemi(theme);
+  const imageWidth = getSizeLarge(theme);
+  const focusHandler = (nativeEvent) => {
+    setActive(true);
+    if (onFocus) onFocus(nativeEvent);
   };
-
-  const handleOnBlur = (func) => {
-    setCurrentState(value ? 'filled' : 'enabled');
-
-    if (onBlur) {
-      onBlur(func);
-    }
+  const blurHandler = (nativeEvent) => {
+    setActive(false);
+    if (onBlur) onBlur(nativeEvent);
   };
+  const getContainerProps = () => {
+    if (disabled) {
+      return {
+        disabled,
+      };
+    }
 
-  // Call the .focus() function from the passed reference
-  useImperativeHandle(ref, () => ({
-    focus() {
-      inputElementRef.current.focus();
-    },
-  }));
-
-  const renderPasswordIcon = () => (
-    <View style={{
-      bottom: 0,
-      justifyContent: 'center',
-      position: 'absolute',
-      right: 0,
-      top: 0,
-    }}>
-      <IconPress
-        testID={`${testID}-icon-password`}
-        onPress={() => {
-          if (showPassword) {
-            setShowPassword(false);
-          } else {
-            setShowPassword(true);
-          }
-        }}>
-        <Icon
-          size="standard"
-          name='outlined-action-visibility'
-        />
-      </IconPress>
-    </View>
-  );
+    return {
+      active, feedback,
+    };
+  };
 
   return (
-    <Wrapper testID={testID}>
-      {label !== '' && (
-        <Label disabled={disabled} state={currentState} feedback={feedback}>
-          <Text>{required ? `${label}*` : label}</Text>
-        </Label>
-      )}
-
-      <InputWrapper
-        disabled={disabled}
-        state={currentState}
-        size={size}
-        numberOfLines={numberOfLines}
-        testID={`${testID}-inputWrapper`}
-        feedback={feedback}>
-        <Input
-          ref={inputElementRef}
-          testID={`${testID}-input`}
-          secureTextEntry={showPassword}
-          onChangeText={onChangeText}
-          placeholder={placeholder}
-          size={size}
-          value={value}
-          multiline={multiline}
-          numberOfLines={numberOfLines}
-          onFocus={handleOnFocus}
-          onBlur={handleOnBlur}
-          onSubmitEditing={onSubmitEditing}
-          editable={disabled || readOnly ? false : true}
-          disabled={disabled}
-          feedback={feedback}
-          type={type}
-          label={label}
-          {...props}
-        />
-        {type === 'password' && renderPasswordIcon()}
-      </InputWrapper>
-
-      {helperText !== '' && <HelperText disabled={disabled} feedback={feedback} state={currentState}>{helperText}</HelperText>}
-    </Wrapper>
+  <InputFeedbackContainer
+    filled={filled}
+    helperText={helperText}
+    label={label}
+    required={required}
+    {...getContainerProps()}
+  >
+    <TextInput testID="input"
+      style={{
+        backgroundColor: readonly
+          ? buildColorWithOpacity(getColorLowEmphasis, getOpacityDisabledLow, theme)
+          : getColorSurface(theme),
+        borderRadius: getBorderRadiusMedium(theme),
+        color: disabled ? getColorLowEmphasis(theme) : getColorHighEmphasis(theme),
+        flexGrow: 1,
+        height: size === 'mediumX' ? getSizeMediumX(theme) : getSizeMedium(theme),
+        paddingLeft: getSpacingSmall(theme),
+        paddingRight: action
+          ? getSpacingTiny(theme) + iconWidthWithPadding
+          : getSpacingSmall(theme),
+        width: '100%',
+      }}
+      defaultValue={defaultValue}
+      editable={!disabled && !readonly}
+      keyboardType={keyboardType}
+      onBlur={nativeEvent => blurHandler(nativeEvent)}
+      onChange={onChange}
+      onChangeText={onChangeText}
+      onFocus={nativeEvent => focusHandler(nativeEvent)}
+      placeholder={placeholder}
+      secureTextEntry={secureTextEntry}
+      value={value}
+    />
+    { action
+      && <View style={{
+        right: action === 'icon' ? iconWidthWithPadding : imageWidth,
+      }}>
+        { action === 'icon'
+          ? <IconButton testID='action-icon' onPress={() => {}} />
+          : <Image
+              testID='action-image'
+              style={{
+                borderBottomRightRadius: getBorderRadiusMedium(theme),
+                borderTopRightRadius: getBorderRadiusMedium(theme),
+                height: size === 'mediumX' ? getSizeMediumX(theme) : getSizeMedium(theme),
+                width: imageWidth,
+              }}
+              source={placeholderImage}
+            />
+        }
+      </View>
+    }
+  </InputFeedbackContainer>
   );
 };
-
-export const TextField = withTheme(forwardRef(TextFieldComponent));
+/* eslint-enabled complexity */

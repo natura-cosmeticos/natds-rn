@@ -1,9 +1,6 @@
 /* eslint-disable max-lines */
-import React, { useState } from 'react';
+import React from 'react';
 import { View } from 'react-native';
-import {
-  select, text as textKnob, boolean as booleanKnob, number as numberKnob,
-} from '@storybook/addon-knobs';
 import { StoryContainer } from '../../common/HelperComponents/StoryContainer';
 import { TextField } from './TextField';
 
@@ -34,14 +31,14 @@ With the following attribute status:
   - ✅ **Read Only**
   - ✅ **Helper Text**
   - **Action:**
-    - ❌ \`None\`
-    - ❌ \`Icon Button\`
-    - ❌ \`Image\`
+    - ✅ \`None\`
+    - ✅ \`Icon Button\`
+    - ✅ \`Image\`
   - **Type:**
     - ✅ \`Text\`
     - ✅ \`Password\`
     - ✅ \`Multi-line\`
-    - ❌ \`Number\`
+    - ✅ \`Number\`
 
 - - -
 `;
@@ -49,7 +46,7 @@ With the following attribute status:
 export default {
   component: TextField,
   parameters: {
-    componentSubtitle: 'TextField let users enter and edit text.',
+    componentSubtitle: 'Story Teste',
     docs: {
       extractComponentDescription: description,
     },
@@ -57,277 +54,167 @@ export default {
   title: 'Components|TextField',
 };
 
-const onChangeText = (ev: string) => {};
-const onSubmitEditing = () => {};
-
-export const Variants = () => {
-  const [value, setValue] = useState('');
+export const Default = () => {
+  const [value, setValue] = React.useState('');
 
   return (
-    <StoryContainer title="Variants">
+    <>
+      <StoryContainer title='Default'>
+        <TextField
+          helperText="Helper text"
+          label="Label"
+          placeholder="Placeholder"
+          onChangeText={text => setValue(text)}
+          value={value}
+        />
+      </StoryContainer>
+    </>
+  );
+};
+
+export const Sizes = () => (
+  <>
+    <StoryContainer title='Sizes' style={{ flexDirection: 'column' }}>
+        <TextField
+          helperText="Helper text"
+          label="Label"
+          placeholder="Placeholder"
+          value="This is the default size: MediumX"
+        />
+      <View style={{ marginBottom: 8 }}></View>
       <TextField
-        type="text"
-        onChangeText={(ev: string) => setValue(ev)}
-        onSubmitEditing={onSubmitEditing}
+        helperText="Helper text"
         label="Label"
         placeholder="Placeholder"
-        value={value}
-        helperText="Helper Text"
+        size='medium'
+        value="This is the size: Medium"
       />
     </StoryContainer>
-  );
-};
+  </>
+);
 
-export const Size = () => {
-  const [firstValue, setFirstValue] = useState('');
-  const [secondValue, setSecondValue] = useState('');
-
-  return (
-    <StoryContainer title="Sizes">
-      <View style={{ flex: 1, flexDirection: 'column' }}>
+export const States = () => (
+  <>
+    <StoryContainer title='States' style={{ flexDirection: 'column' }}>
         <TextField
-          type="text"
-          onChangeText={(ev: string) => setFirstValue(ev)}
-          onSubmitEditing={onSubmitEditing}
+          helperText="Helper text"
           label="Label"
-          placeholder="Placeholder"
-          value={firstValue}
-          size="small"
-          helperText="Helper Text"
+          placeholder="This field is not filled yet"
         />
-
-        <TextField
-          type="text"
-          onChangeText={(ev: string) => setSecondValue(ev)}
-          onSubmitEditing={onSubmitEditing}
-          label="Label"
-          placeholder="Placeholder"
-          value={secondValue}
-          helperText="Helper Text"
-        />
-      </View>
-    </StoryContainer>
-  );
-};
-
-export const State = () => {
-  const [firstValue, setFirstValue] = useState('');
-  const [secondValue, setSecondValue] = useState('');
-  const [thirdValue, setThirdValue] = useState('Hello World');
-
-  return (
-    <StoryContainer title="States">
-      <View style={{ flex: 1, flexDirection: 'column' }}>
-        <TextField
-          type="text"
-          onChangeText={(ev: string) => setFirstValue(ev)}
-          onSubmitEditing={onSubmitEditing}
-          label="Enabled"
-          placeholder="Placeholder"
-          value={firstValue}
-          state="enabled"
-          helperText="Helper Text"
-        />
-
-        <TextField
-          type="text"
-          onChangeText={(ev: string) => setSecondValue(ev)}
-          onSubmitEditing={onSubmitEditing}
-          label="Active"
-          placeholder="Placeholder"
-          value={secondValue}
-          state="active"
-          helperText="Helper Text"
-        />
-
-        <TextField
-          type="text"
-          onChangeText={(ev: string) => setThirdValue(ev)}
-          onSubmitEditing={onSubmitEditing}
-          label="Filled"
-          placeholder="Placeholder"
-          value={thirdValue}
-          state="filled"
-          helperText="Helper Text"
-        />
-      </View>
-    </StoryContainer>
-  );
-};
-
-export const Feedback = () => {
-  const [firstValue, setFirstValue] = useState('');
-  const [secondValue, setSecondValue] = useState('');
-
-  return (
-    <StoryContainer title="Feedback">
-      <View style={{ flex: 1, flexDirection: 'column' }}>
-        <TextField
-          type="text"
-          onChangeText={(ev: string) => setFirstValue(ev)}
-          onSubmitEditing={onSubmitEditing}
-          label="Label"
-          placeholder="Placeholder"
-          value={firstValue}
-          feedback="success"
-          helperText="Helper Text"
-        />
-
-        <TextField
-          type="text"
-          onChangeText={(ev: string) => setSecondValue(ev)}
-          onSubmitEditing={onSubmitEditing}
-          label="Label"
-          placeholder="Placeholder"
-          value={secondValue}
-          feedback="error"
-          helperText="Helper Text"
-        />
-      </View>
-    </StoryContainer>
-  );
-};
-
-export const Required = () => {
-  const [value, setValue] = useState('');
-
-  return (
-    <StoryContainer title="Required">
+      <View style={{ marginBottom: 8 }}></View>
       <TextField
-        type="text"
-        onChangeText={(ev: string) => setValue(ev)}
-        onSubmitEditing={onSubmitEditing}
+        helperText="Helper text"
         label="Label"
         placeholder="Placeholder"
-        value={value}
+        value="This field has already been filled"
+      />
+    </StoryContainer>
+  </>
+);
+
+export const Feedback = () => (
+  <>
+    <StoryContainer title='Feedback' style={{ flexDirection: 'column' }}>
+        <TextField
+          helperText="Helper text"
+          label="Label"
+          placeholder="Placeholder"
+          feedback='error'
+          value="This value does not fit the field's validation rules"
+        />
+      <View style={{ marginBottom: 8 }}></View>
+      <TextField
+        helperText="Helper text"
+        label="Label"
+        placeholder="Placeholder"
+        feedback='success'
+        value="This value fits the field's validation rules"
+      />
+    </StoryContainer>
+  </>
+);
+
+export const Required = () => (
+  <>
+    <StoryContainer title='Required'>
+      <TextField
+        helperText="Helper text"
+        label="Label"
+        placeholder="Placeholder"
         required
-        helperText="Helper Text"
+        value="This field is required to move on to the next step"
       />
     </StoryContainer>
-  );
-};
+  </>
+);
 
 export const Disabled = () => (
-  <StoryContainer title="Disabled">
-    <TextField
-      type="text"
-      onChangeText={onChangeText}
-      onSubmitEditing={onSubmitEditing}
-      label="Label"
-      placeholder="Placeholder"
-      value=""
-      disabled
-      helperText="Helper Text"
-    />
-  </StoryContainer>
-);
-
-export const ReadOnly = () => (
-  <StoryContainer title="Read Only">
-    <TextField
-      type="text"
-      onChangeText={onChangeText}
-      onSubmitEditing={onSubmitEditing}
-      label="Label"
-      placeholder="Placeholder"
-      value="Hello World"
-      readOnly
-      helperText="Helper Text"
-    />
-  </StoryContainer>
-);
-
-export const HelperText = () => {
-  const [firstValue, setFirstValue] = useState('');
-  const [secondValue, setSecondValue] = useState('');
-
-  return (
-    <StoryContainer title="Helper Text">
-      <View style={{ flex: 1, flexDirection: 'column' }}>
-        <TextField
-          type="text"
-          onChangeText={(ev: string) => setFirstValue(ev)}
-          onSubmitEditing={onSubmitEditing}
-          label="Label"
-          placeholder="Placeholder"
-          value={firstValue}
-          helperText="Helper Text"
-        />
-
-        <TextField
-          type="text"
-          onChangeText={(ev: string) => setSecondValue(ev)}
-          onSubmitEditing={onSubmitEditing}
-          label="Label"
-          placeholder="Placeholder"
-          value={secondValue}
-        />
-      </View>
-    </StoryContainer>
-  );
-};
-
-export const Type = () => {
-  const [firstValue, setFirstValue] = useState('Text');
-  const [secondValue, setSecondValue] = useState('Password');
-
-  return (
-    <StoryContainer title="Type">
-      <View style={{ flex: 1, flexDirection: 'column' }}>
-        <TextField
-          type="text"
-          onChangeText={(ev: string) => setFirstValue(ev)}
-          onSubmitEditing={onSubmitEditing}
-          label="Label"
-          placeholder="Placeholder"
-          value={firstValue}
-          helperText="Helper Text"
-        />
-
-        <TextField
-          type="password"
-          onChangeText={(ev: string) => setSecondValue(ev)}
-          onSubmitEditing={onSubmitEditing}
-          label="Label"
-          placeholder="Placeholder"
-          value={secondValue}
-          helperText="Helper Text"
-        />
-      </View>
-    </StoryContainer>
-  );
-};
-
-export const Interactive = () => {
-  const [value, setValue] = useState('');
-
-  return (
-    <StoryContainer title="Interactive">
+  <>
+    <StoryContainer title='Disabled'>
       <TextField
-        type={select('Types', { password: 'password', text: 'text' }, 'text')}
-        onChangeText={(ev: string) => setValue(ev)}
-        onSubmitEditing={onSubmitEditing}
-        label={textKnob('Label', 'Label')}
-        placeholder={textKnob('Placeholder', 'Placeholder')}
-        value={value}
-        helperText={textKnob('HelperText', 'HelperText')}
-        multiline={booleanKnob('Multiline', false)}
-        numberOfLines={numberKnob('number of lines', 1)}
+        disabled
+        helperText="Helper text"
+        label="Label"
+        placeholder="Placeholder"
+        value="This field is disabled, the user can't fill it"
       />
     </StoryContainer>
+  </>
+);
+
+export const Readonly = () => (
+  <>
+    <StoryContainer title='Read Only'>
+      <TextField
+        helperText="Helper text"
+        label="Label"
+        placeholder="Placeholder"
+        value="This content is read only, the user can't change it"
+        readonly
+      />
+    </StoryContainer>
+  </>
+);
+
+export const Action = () => {
+  const initialValue = '';
+  const [actionIconValue, setActionIconValue] = React.useState(initialValue);
+  const [actionImageValue, setActionImageValue] = React.useState(initialValue);
+
+  return (
+    <>
+      <StoryContainer title='Action' style={{ flexDirection: 'column' }}>
+        <TextField
+          action='icon'
+          helperText="Helper text"
+          label="Label"
+          placeholder="Placeholder"
+          onChangeText={text => setActionIconValue(text)}
+          value={actionIconValue}
+        />
+        <View style={{ marginBottom: 8 }}></View>
+        <TextField
+          action='image'
+          helperText="Helper text"
+          label="Label"
+          placeholder="Placeholder"
+          onChangeText={text => setActionImageValue(text)}
+          value={actionImageValue}
+        />
+      </StoryContainer>
+    </>
   );
 };
 
 export const All = () => (
-  <View>
-    <Variants />
-    <Size />
-    <State />
-    <Feedback />
+  <>
+    <Action />
+    <Default />
+    <Sizes />
+    <States />
+    <Feedback/>
     <Required />
     <Disabled />
-    <ReadOnly />
-    <HelperText />
-    <Type />
-  </View>
+    <Readonly />
+  </>
 );
