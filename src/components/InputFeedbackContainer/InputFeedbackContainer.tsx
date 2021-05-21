@@ -40,33 +40,33 @@ type FeedbackProps =
 export type InputFeedbackContainerProps = ContentProps & FeedbackProps
 
 const getTextElementsColor = ({
-  disabled, feedback: validation,
+  disabled, feedback,
 }: InputFeedbackContainerProps, theme: Theme) => {
   if (disabled) return getColorLowEmphasis(theme);
-  if (validation === 'success') return getColorSuccess(theme);
-  if (validation === 'error') return getColorAlert(theme);
+  if (feedback === 'success') return getColorSuccess(theme);
+  if (feedback === 'error') return getColorAlert(theme);
 
   return getColorMediumEmphasis(theme);
 };
 
 /* eslint-disable complexity */
 const getBoxColor = ({
-  active, disabled, filled, feedback: validation,
+  active, disabled, filled, feedback,
 }: InputFeedbackContainerProps, theme: Theme) => {
   if (disabled) return getColorLowEmphasis(theme);
   if (active) return getColorPrimary(theme);
-  if (validation === 'success') return getColorSuccess(theme);
-  if (validation === 'error') return getColorAlert(theme);
+  if (feedback === 'success') return getColorSuccess(theme);
+  if (feedback === 'error') return getColorAlert(theme);
   if (filled) return getColorHighEmphasis(theme);
 
   return getColorLowEmphasis(theme);
 };
 /* eslint-enable complexity */
 
-const HelperText = ({ children, color, validation }) => {
+const HelperText = ({ children, color, feedback }) => {
   const theme = useTheme();
-  const iconName = (validation === 'success' ? 'outlined-action-check' : 'outlined-action-cancel');
-  const iconColor = (validation === 'success' ? 'success' : 'alert');
+  const iconName = (feedback === 'success' ? 'outlined-action-check' : 'outlined-action-cancel');
+  const iconColor = (feedback === 'success' ? 'success' : 'alert');
   const { caption } = getTypographyStyles(theme);
 
   return (
@@ -77,7 +77,7 @@ const HelperText = ({ children, color, validation }) => {
           marginTop: getSpacingMicro(theme),
         }}
       >
-        { validation
+        { feedback
           && <View style={{
             marginRight: getSpacingMicro(theme),
           }}>
@@ -115,7 +115,7 @@ const Label = ({ children, color, required }) => {
 export const InputFeedbackContainer = (props: InputFeedbackContainerProps) => {
   const theme = useTheme();
   const {
-    active, children, helperText, label, required, feedback: validation,
+    active, children, helperText, label, required, feedback,
   } = props;
   const textElementsColor = getTextElementsColor(props, theme);
   const boxColor = getBoxColor(props, theme);
@@ -126,15 +126,17 @@ export const InputFeedbackContainer = (props: InputFeedbackContainerProps) => {
         && <Label color={textElementsColor} required={required}>{label}</Label>
       }
       <View testID="box" style={{
+        alignItems: 'center',
         backgroundColor: getColorSurface(theme),
         borderColor: boxColor,
         borderRadius: getBorderRadiusMedium(theme),
         borderWidth: active ? 2 : 1,
+        flexDirection: 'row',
       }}>
         { children }
       </View>
       { helperText
-        && <HelperText color={textElementsColor} validation={validation}>
+        && <HelperText color={textElementsColor} feedback={feedback}>
           { helperText }
         </HelperText>
       }
