@@ -125,15 +125,21 @@ export const InputFeedbackContainer = (props: InputFeedbackContainerProps) => {
       { label
         && <Label color={textElementsColor} required={required}>{label}</Label>
       }
-      <View testID="box" style={{
-        alignItems: 'center',
-        backgroundColor: getColorSurface(theme),
-        borderColor: boxColor,
+      <View style={{
+        borderColor: 'transparent',
         borderRadius: getBorderRadiusMedium(theme),
-        borderWidth: active ? 2 : 1,
-        flexDirection: 'row',
+        borderWidth: active ? 0 : 1,
       }}>
-        { children }
+        <View testID="box" style={{
+          alignItems: 'center',
+          backgroundColor: getColorSurface(theme),
+          borderColor: boxColor,
+          borderRadius: getBorderRadiusMedium(theme),
+          borderWidth: active ? 2 : 1,
+          flexDirection: 'row',
+        }}>
+          { children }
+        </View>
       </View>
       { helperText
         && <HelperText color={textElementsColor} feedback={feedback}>
