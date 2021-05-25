@@ -374,8 +374,6 @@ export const TextField = (props: TextFieldProps) => {
               <Image
                 testID='action-image'
                 style={{
-                  borderBottomRightRadius: getBorderRadiusMedium(theme),
-                  borderTopRightRadius: getBorderRadiusMedium(theme),
                   height: fieldHeight,
                   width: imageWidth,
                 }}

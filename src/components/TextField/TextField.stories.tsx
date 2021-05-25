@@ -1,10 +1,10 @@
 /* eslint-disable max-lines */
 import React from 'react';
-import { View } from 'react-native';
+import { ImageSourcePropType, View } from 'react-native';
 import { StoryContainer } from '../../common/HelperComponents/StoryContainer';
 import { TextField } from './TextField';
 // @ts-ignore
-import placeholderImage from '../../assets/images/anonymous.jpg';
+import placeholderImage from '../../assets/images/textfield_image_arealimit.png';
 
 const description = () => `
 - - -
@@ -226,7 +226,7 @@ export const Action = () => {
         <TextField
           action='icon'
           actionOnPress={() => {}}
-          iconName="outlined-action-edit"
+          iconName="outlined-default-mockup"
           helperText="Helper text"
           label="Label"
           placeholder="Placeholder"
@@ -237,7 +237,7 @@ export const Action = () => {
         <TextField
           action='image'
           actionOnPress={() => {}}
-          imageSource={placeholderImage}
+          imageSource={placeholderImage as ImageSourcePropType}
           helperText="Helper text"
           label="Label"
           placeholder="Placeholder"
