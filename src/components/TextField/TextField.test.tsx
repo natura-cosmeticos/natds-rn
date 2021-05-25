@@ -2,6 +2,9 @@ import { fireEvent } from '@testing-library/react-native';
 import React from 'react';
 import { renderWithTheme } from '../../../test/testHelpers';
 import { TextField } from './TextField';
+// @ts-ignore
+import placeholderImage from '../../assets/images/anonymous.jpg';
+
 
 jest.mock('../../common/themeSelectors', () => (
   {
@@ -93,13 +96,25 @@ describe('Input', () => {
   });
 
   it('should render an icon button when receives action icon', () => {
-    const { getByTestId } = renderWithTheme(<TextField action="icon" />);
+    const { getByTestId } = renderWithTheme(
+      <TextField
+        action="icon"
+        actionOnPress={() => {}}
+        iconName="filled-action-clock"
+      />,
+    );
 
     expect(getByTestId('action-icon')).toBeTruthy();
   });
 
   it('should render an image button when receives action image', () => {
-    const { getByTestId } = renderWithTheme(<TextField action="image" />);
+    const { getByTestId } = renderWithTheme(
+      <TextField
+        action="image"
+        actionOnPress={() => {}}
+        imageSource={placeholderImage}
+      />,
+    );
 
     expect(getByTestId('action-image')).toBeTruthy();
   });
