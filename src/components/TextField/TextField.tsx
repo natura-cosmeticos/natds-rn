@@ -18,6 +18,7 @@ import {
   getBorderRadiusMedium,
   getColorHighEmphasis,
   getColorLowEmphasis,
+  getColorMediumEmphasis,
   getColorSurface,
   getOpacityDisabledLow,
   getSizeLarge,
@@ -344,6 +345,7 @@ export const TextField = (props: TextFieldProps) => {
         onTextInput={onTextInput}
         passwordRules={passwordRules}
         placeholder={placeholder}
+        placeholderTextColor={disabled ? getColorLowEmphasis(theme) : getColorMediumEmphasis(theme)}
         rejectResponderTermination={rejectResponderTermination}
         returnKeyLabel={returnKeyLabel}
         returnKeyType={returnKeyType}
