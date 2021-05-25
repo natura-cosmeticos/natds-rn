@@ -41,6 +41,7 @@ describe('Input', () => {
       color: '#333333',
       flexGrow: 1,
       height: 32,
+      overflow: 'hidden',
       paddingLeft: 8,
       paddingRight: 8,
       width: '100%',

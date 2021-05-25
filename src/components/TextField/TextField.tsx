@@ -304,6 +304,7 @@ export const TextField = (props: TextFieldProps) => {
           color: disabled ? getColorLowEmphasis(theme) : getColorHighEmphasis(theme),
           flexGrow: 1,
           height: fieldHeight,
+          overflow: 'hidden',
           paddingLeft: getSpacingSmall(theme),
           paddingRight: action
             ? getSpacingTiny(theme) + iconWidthWithPadding
@@ -376,6 +377,8 @@ export const TextField = (props: TextFieldProps) => {
               <Image
                 testID='action-image'
                 style={{
+                  borderBottomRightRadius: getBorderRadiusMedium(theme),
+                  borderTopRightRadius: getBorderRadiusMedium(theme),
                   height: fieldHeight,
                   width: imageWidth,
                 }}
