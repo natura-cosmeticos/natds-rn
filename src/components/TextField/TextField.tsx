@@ -47,6 +47,7 @@ export const TextField = (props: TextFieldProps) => {
     enablesReturnKeyAutomatically,
     feedback,
     helperText = '',
+    iconColor,
     iconName,
     imageSource,
     importantForAutofill,
@@ -189,7 +190,7 @@ export const TextField = (props: TextFieldProps) => {
       />
       { action === 'icon' && actionOnPress
         && <View style={{ paddingRight: getSpacingTiny(theme) }}>
-            <IconButton testID='action-icon' icon={iconName} onPress={actionOnPress} />
+            <IconButton testID='action-icon' iconColor={iconColor} icon={iconName} onPress={actionOnPress} />
           </View>
       }
       { action === 'image' && imageSource

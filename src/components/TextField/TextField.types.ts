@@ -7,7 +7,7 @@ import {
   TextInputProps,
 } from 'react-native';
 import { IconName } from '@naturacosmeticos/natds-icons';
-import { Size } from '@naturacosmeticos/natds-themes/react-native';
+import { Color, Size } from '@naturacosmeticos/natds-themes/react-native';
 
 type AndroidProps = Pick<TextInputAndroidProps,
   | 'autoCompleteType'
@@ -82,7 +82,6 @@ interface BaseProps extends
   MultiPlatformProps,
   AndroidProps,
   IOSProps {
-    iconName?: IconName;
     /**
      * Disabled TextField's are used when the user needs to perform
      * another action before being able to interact with the field.
@@ -141,6 +140,7 @@ interface WithoutFeedbackProps {
 interface ActionImageProps {
   action: 'image';
   actionOnPress: () => void;
+  iconColor?: never;
   iconName?: never;
   imageSource: ImageSourcePropType;
 }
@@ -148,6 +148,15 @@ interface ActionImageProps {
 interface ActionIconProps {
   action: 'icon';
   actionOnPress: () => void;
+  /**
+   * Set the color of the icon.
+   * @default highEmphasis
+   */
+  iconColor?: keyof Pick<Color, 'primary' | 'highEmphasis'>;
+  /**
+   * Set the icon to be rendered.
+   * Check all available names in [Icon Library](https://natds.natura.design/icon-library)
+   */
   iconName: IconName;
   imageSource?: never;
 }
@@ -155,6 +164,7 @@ interface ActionIconProps {
 interface WithoutActionProps {
   action?: never;
   actionOnPress?: never;
+  iconColor?: never;
   iconName?: never;
   imageSource?: never;
 }
