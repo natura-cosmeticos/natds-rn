@@ -42,9 +42,7 @@ describe('Input', () => {
       flexGrow: 1,
       height: 32,
       overflow: 'hidden',
-      paddingLeft: 8,
-      paddingRight: 8,
-      width: '100%',
+      paddingHorizontal: 8,
     };
 
     expect(getByTestId('input').props.style).toEqual(deafultStyles);

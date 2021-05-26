@@ -17,7 +17,6 @@ import {
   getSizeLarge,
   getSizeMedium,
   getSizeMediumX,
-  getSizeSemi,
   getSpacingSmall,
   getSpacingTiny,
 } from '../../common/themeSelectors';
@@ -91,8 +90,6 @@ export const TextField = (props: TextFieldProps) => {
   }: TextFieldProps = props;
   const [active, setActive] = React.useState(false);
   const filled = !readonly && value !== '';
-  const iconWidthWithPadding = getSpacingTiny(theme) + getSizeSemi(theme);
-  const imageWidth = getSizeLarge(theme);
   const focusHandler = (nativeEvent) => {
     setActive(true);
     if (onFocus) onFocus(nativeEvent);
@@ -138,11 +135,7 @@ export const TextField = (props: TextFieldProps) => {
           flexGrow: 1,
           height: fieldHeight,
           overflow: 'hidden',
-          paddingLeft: getSpacingSmall(theme),
-          paddingRight: action
-            ? getSpacingTiny(theme) + iconWidthWithPadding
-            : getSpacingSmall(theme),
-          width: '100%',
+          paddingHorizontal: getSpacingSmall(theme),
         }}
         allowFontScaling={allowFontScaling}
         autoCapitalize={autoCapitalize}
@@ -194,32 +187,28 @@ export const TextField = (props: TextFieldProps) => {
         textContentType={textContentType}
         value={value}
       />
-      { action
-        && <View style={{
-          right: action === 'icon' ? iconWidthWithPadding : imageWidth,
-        }}>
-          { action === 'icon' && actionOnPress
-            && <IconButton testID='action-icon' icon={iconName} onPress={actionOnPress} />
-          }
-          { action === 'image' && imageSource
-            && <TouchableRipple
-              color="highlight"
-              size={fieldHeight / 2 + 5}
-              onPress={actionOnPress}
-            >
-              <Image
-                testID='action-image'
-                style={{
-                  borderBottomRightRadius: getBorderRadiusMedium(theme),
-                  borderTopRightRadius: getBorderRadiusMedium(theme),
-                  height: fieldHeight,
-                  width: imageWidth,
-                }}
-                source={imageSource}
-              />
-            </TouchableRipple>
-          }
-        </View>
+      { action === 'icon' && actionOnPress
+        && <View style={{ paddingRight: getSpacingTiny(theme) }}>
+            <IconButton testID='action-icon' icon={iconName} onPress={actionOnPress} />
+          </View>
+      }
+      { action === 'image' && imageSource
+        && <TouchableRipple
+          color="highlight"
+          size={fieldHeight / 2 + 5}
+          onPress={actionOnPress}
+        >
+          <Image
+            testID='action-image'
+            style={{
+              borderBottomRightRadius: getBorderRadiusMedium(theme),
+              borderTopRightRadius: getBorderRadiusMedium(theme),
+              height: fieldHeight,
+              width: getSizeLarge(theme),
+            }}
+            source={imageSource}
+          />
+        </TouchableRipple>
       }
     </InputFeedbackContainer>
   );
