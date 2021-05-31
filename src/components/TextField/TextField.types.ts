@@ -13,14 +13,10 @@ type AndroidProps = Pick<TextInputAndroidProps,
   | 'autoCompleteType'
   | 'disableFullscreenUI'
   | 'importantForAutofill'
-  // | 'inlineImageLeft'
-  // | 'inlineImagePadding'
   | 'numberOfLines'
   | 'returnKeyLabel'
   | 'showSoftInputOnFocus'
-  // | 'textAlignVertical'
   | 'textBreakStrategy'
-  // | 'underlineColorAndroid'
 >
 
 type IOSProps = Pick<TextInputIOSProps,
@@ -43,10 +39,8 @@ type MultiPlatformProps = Pick<TextInputProps,
   | 'autoCorrect'
   | 'autoFocus'
   | 'blurOnSubmit'
-  // | 'caretHidden'
   | 'contextMenuHidden'
   | 'defaultValue'
-  // | 'editable'
   | 'inputAccessoryViewID'
   | 'keyboardType'
   | 'maxFontSizeMultiplier'
@@ -64,18 +58,24 @@ type MultiPlatformProps = Pick<TextInputProps,
   | 'onSubmitEditing'
   | 'onTextInput'
   | 'placeholder'
-  // | 'placeholderTextColor'
   | 'returnKeyType'
   | 'secureTextEntry'
   | 'selectTextOnFocus'
   | 'selection'
-  // | 'selectionColor'
-  // | 'style'
   | 'testID'
   | 'value'
 >
 
-type InputSizes = keyof Pick<Size, 'medium' | 'mediumX'>
+/**
+ * @deprecated Use 'medium' and 'mediumX' instead
+ */
+type DeprecatedInputSizes = 'small' | 'regular';
+type InputSizes = keyof Pick<Size, 'medium' | 'mediumX'> | DeprecatedInputSizes
+/**
+ * @deprecated These are no longer necessary. This component now handles
+ * its own state.
+ */
+type TextFieldStates = 'enabled' | 'focus' | 'active' | 'filled';
 
 interface BaseProps extends
   AccessibilityProps,
@@ -85,22 +85,11 @@ interface BaseProps extends
     /**
      * Disabled TextField's are used when the user needs to perform
      * another action before being able to interact with the field.
-     * When `true` the TextField is not editable and presents label,
-     * border and helper text in a different color
+     * When `true` the TextField is not editable and presents contents,
+     * label, border and helper text in a less contrasting color.
      * @default false
      */
     disabled?: boolean;
-    /**
-     * When provided this shows the user visual feedback using bright
-     * characteristic colors and icons. It's used to indicate validation
-     * status.
-     */
-    // feedback?: 'error' | 'success';
-    /**
-     * When provided this shows below the field. It's used to provide
-     * further information about how to fill in the field.
-     */
-    // helperText?: string;
     /**
      * When provided this shows above the field. It's used to identify
      * what the field is about.
@@ -114,21 +103,37 @@ interface BaseProps extends
      */
     readonly?: boolean;
     /**
-     * Required TextField's need to be filled for the user to move on to
-     * the next step. When `true` the TextField is not editable and presents
-     * an asterisk after the label.
+     * When `true` the TextField's Label presents an asterisk after it.
+     * Required TextField's are used when the user needs to fill it before moving
+     * on to a next step.
      * @default false
      */
     required?: boolean;
     /**
-     * This defines the height of the field.
+     * This defines the height of the field, according to corresponding theme
+     * Size token.
      * @default 'mediumX'
      */
     size?: InputSizes;
+    /**
+     * @deprecated
+     * This prop should not be used as it is no longer necessary for the
+     * field to identify its state. This component now handles its own state.
+     */
+    state?: TextFieldStates;
   }
 
 interface FeedbackProps {
+  /**
+   * When provided this shows the user visual feedback using bright
+   * characteristic colors and icons. It's used to indicate validation
+   * status.
+   */
   feedback: 'error' | 'success';
+  /**
+   * When provided this shows below the field. It's used to provide
+   * further information about how to fill in the field.
+   */
   helperText: string;
 }
 
