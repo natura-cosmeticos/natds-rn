@@ -12,7 +12,7 @@ ${'veryHigh'}    | ${selectors.getOpacityVeryHigh}    | ${theme.opacity.veryHigh
 `('Opacity selectors', ({
   title, selector, expected,
 }) => {
-  it(`should return equivalent hex code for opacity ${title}`, () => {
+  it(`should return the opacity ${title}`, () => {
     const result = selector(theme);
 
     expect(result).toBe(expected);
