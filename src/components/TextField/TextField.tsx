@@ -165,7 +165,7 @@ export const TextField = (props: TextFieldProps) => {
         onChangeText={onChangeText}
         onContentSizeChange={onContentSizeChange}
         onEndEditing={onEndEditing}
-        onFocus={nativeEvent => focusHandler(nativeEvent)}
+        onFocus={nativeEvent => !readonly && focusHandler(nativeEvent)}
         onKeyPress={onKeyPress}
         onScroll={onScroll}
         onSelectionChange={onSelectionChange}
