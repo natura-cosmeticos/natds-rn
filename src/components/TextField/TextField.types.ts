@@ -144,7 +144,7 @@ interface WithoutFeedbackProps {
 
 interface ActionImageProps {
   action: 'image';
-  actionOnPress: () => void;
+  actionOnPress?: () => void;
   iconColor?: never;
   iconName?: never;
   imageSource: ImageSourcePropType;
