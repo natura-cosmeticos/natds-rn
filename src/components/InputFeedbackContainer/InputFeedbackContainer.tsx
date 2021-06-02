@@ -1,5 +1,5 @@
 /* eslint-disable max-lines */
-import React, { ReactNode } from 'react';
+import React from 'react';
 import { Text, View } from 'react-native';
 import { useTheme } from 'styled-components/native';
 import {
@@ -16,28 +16,7 @@ import {
   getColorSurface,
 } from '../../common/themeSelectors';
 import { Icon } from '../Icon';
-
-type ContentProps = {
-  children: ReactNode;
-  filled?: boolean;
-  helperText?: string;
-  label?: string;
-  required?: boolean;
-}
-
-type FeedbackProps =
-  | {
-    active?: boolean;
-    disabled?: never;
-    feedback?: 'error' | 'success';
-  }
-  | {
-    active?: never;
-    disabled?: boolean;
-    feedback?: never;
-  }
-
-export type InputFeedbackContainerProps = ContentProps & FeedbackProps
+import { InputFeedbackContainerProps } from './InputFeedbackContainer.types';
 
 const getTextElementsColor = ({
   disabled, feedback,
