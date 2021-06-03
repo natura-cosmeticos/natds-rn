@@ -1,4 +1,4 @@
-type InputStates = 'active' | 'default' | 'disabled' | 'error' | 'filled' | 'success'
+export type InputStates = 'active' | 'default' | 'disabled' | 'error' | 'filled' | 'success'
 
 export interface InputFeedbackProps {
   active?: boolean,
