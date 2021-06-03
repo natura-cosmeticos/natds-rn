@@ -10,12 +10,14 @@ jest.mock('../../common/themeSelectors', () => (
   {
     buildColorWithOpacity: () => '#BBBBBB00',
     getBorderRadiusMedium: () => 8,
+    getColorAlert: () => '#FF0000',
     getColorByName: () => '#0F0F0F',
     getColorHighEmphasis: () => '#333333',
     getColorHighlight: () => '#333333',
     getColorLowEmphasis: () => '#BBBBBB',
     getColorMediumEmphasis: () => '#777777',
     getColorPrimary: () => '#FFAA33',
+    getColorSuccess: () => '#00FF00',
     getColorSurface: () => '#000000',
     getOpacityDisabledLow: () => 0.5,
     getSize: () => 16,
@@ -26,6 +28,7 @@ jest.mock('../../common/themeSelectors', () => (
     getSpacingMicro: () => 4,
     getSpacingSmall: () => 8,
     getSpacingTiny: () => 2,
+    getTheme: () => {},
     getTypographyStyles: () => ({
       caption: {}, subtitle2: {},
     }),

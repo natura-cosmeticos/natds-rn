@@ -1,80 +1,73 @@
-import React from 'react';
-import { View } from 'react-native';
-import { useTheme } from 'styled-components/native';
+import { Theme } from '@naturacosmeticos/natds-themes/react-native';
+import React, { ReactNode } from 'react';
+import { CSSObject } from 'styled-components';
+import styled, { useTheme } from 'styled-components/native';
 import {
-  Theme,
-  getBorderRadiusMedium,
   getColorAlert,
   getColorHighEmphasis,
   getColorLowEmphasis,
   getColorMediumEmphasis,
   getColorPrimary,
   getColorSuccess,
-  getColorSurface,
 } from '../../common/themeSelectors';
+import { InputBox } from '../InputBox';
 import { InputHelperText } from '../InputHelperText';
 import { InputLabel } from '../InputLabel';
-import { InputFeedbackContainerProps } from './InputFeedbackContainer.types';
+import { buildInputState, InputStates } from './InputFeedbackHelper';
 
-const getTextElementsColor = ({
-  disabled, feedback,
-}: InputFeedbackContainerProps, theme: Theme) => {
-  if (disabled) return getColorLowEmphasis(theme);
-  if (feedback === 'success') return getColorSuccess(theme);
-  if (feedback === 'error') return getColorAlert(theme);
+type ContentProps = {
+  children: ReactNode;
+  filled?: boolean;
+  helperText?: string;
+  label?: string;
+  required?: boolean;
+}
 
-  return getColorMediumEmphasis(theme);
+type FeedbackProps =
+  | { active?: boolean; disabled?: never; feedback?: 'error' | 'success'; }
+  | { active?: never; disabled?: boolean; feedback?: never; }
+
+export type InputFeedbackContainerProps = ContentProps & FeedbackProps
+
+export const getElementsColorsByState = (element: 'box' | 'text', theme: Theme) => (state: InputStates) => {
+  const colors = {
+    active: { box: getColorPrimary(theme), text: getColorMediumEmphasis(theme) },
+    default: { box: getColorLowEmphasis(theme), text: getColorMediumEmphasis(theme) },
+    disabled: { box: getColorLowEmphasis(theme), text: getColorLowEmphasis(theme) },
+    error: { box: getColorAlert(theme), text: getColorAlert(theme) },
+    filled: { box: getColorHighEmphasis(theme), text: getColorMediumEmphasis(theme) },
+    success: { box: getColorSuccess(theme), text: getColorSuccess(theme) },
+  };
+
+  return colors[state || 'default'][element];
 };
 
-/* eslint-disable complexity */
-const getBoxColor = ({
-  active, disabled, filled, feedback,
-}: InputFeedbackContainerProps, theme: Theme) => {
-  if (disabled) return getColorLowEmphasis(theme);
-  if (active) return getColorPrimary(theme);
-  if (feedback === 'success') return getColorSuccess(theme);
-  if (feedback === 'error') return getColorAlert(theme);
-  if (filled) return getColorHighEmphasis(theme);
-
-  return getColorLowEmphasis(theme);
-};
-/* eslint-enable complexity */
+const Container = styled.View((): CSSObject => ({ width: '100%' }));
 
 export const InputFeedbackContainer = (props: InputFeedbackContainerProps) => {
-  const theme = useTheme();
   const {
-    active, children, helperText, label, required, feedback,
+    active, children, disabled, helperText, label, required, feedback, filled,
   } = props;
-  const textElementsColor = getTextElementsColor(props, theme);
-  const boxColor = getBoxColor(props, theme);
+  const theme = useTheme();
+  const boxState = buildInputState({
+    active, disabled, feedback, filled,
+  });
+  const boxColor = getElementsColorsByState('box', theme)(boxState);
+
+  const textState = buildInputState({ disabled, feedback, filled });
+  const textColor = getElementsColorsByState('text', theme)(textState);
 
   return (
-    <View style={{ width: '100%' }}>
+    <Container>
       { label
-          && <InputLabel color={textElementsColor} content={label} required={required} />
+          && <InputLabel color={textColor} content={label} required={required} />
       }
-      <View style={{
-        borderColor: 'transparent',
-        borderRadius: getBorderRadiusMedium(theme),
-        borderWidth: active ? 0 : 1,
-      }}>
-        <View testID="box" style={{
-          alignItems: 'center',
-          backgroundColor: getColorSurface(theme),
-          borderColor: boxColor,
-          borderRadius: getBorderRadiusMedium(theme),
-          borderWidth: active ? 2 : 1,
-          flexDirection: 'row',
-        }}>
+      <InputBox boxColor={boxColor} boxState={boxState === 'active' ? boxState : undefined }>
           { children }
-        </View>
-      </View>
+      </InputBox>
       { helperText
-        && <InputHelperText
-          color={textElementsColor}
-          content={helperText}
-          feedback={feedback} />
+        && <InputHelperText color={textColor} content={helperText} feedback={feedback} />
       }
-    </View>
+    </Container>
   );
 };
