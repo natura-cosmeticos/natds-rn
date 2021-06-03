@@ -1,6 +1,5 @@
-/* eslint-disable max-lines */
 import React from 'react';
-import { Text, View } from 'react-native';
+import { View } from 'react-native';
 import { useTheme } from 'styled-components/native';
 import {
   Theme,
@@ -11,11 +10,10 @@ import {
   getColorMediumEmphasis,
   getColorPrimary,
   getColorSuccess,
-  getSpacingMicro,
-  getTypographyStyles,
   getColorSurface,
 } from '../../common/themeSelectors';
-import { Icon } from '../Icon';
+import { InputHelperText } from '../InputHelperText';
+import { InputLabel } from '../InputLabel';
 import { InputFeedbackContainerProps } from './InputFeedbackContainer.types';
 
 const getTextElementsColor = ({
@@ -42,55 +40,6 @@ const getBoxColor = ({
 };
 /* eslint-enable complexity */
 
-const HelperText = ({ children, color, feedback }) => {
-  const theme = useTheme();
-  const iconName = (feedback === 'success' ? 'outlined-action-check' : 'outlined-action-cancel');
-  const iconColor = (feedback === 'success' ? 'success' : 'alert');
-  const { caption } = getTypographyStyles(theme);
-
-  return (
-    <View style={{ width: '100%' }}>
-      <View
-        style={{
-          flexDirection: 'row',
-          marginTop: getSpacingMicro(theme),
-        }}
-      >
-        { feedback
-          && <View style={{
-            marginRight: getSpacingMicro(theme),
-          }}>
-            <Icon testID="icon" name={iconName} color={iconColor} size="small" />
-          </View>
-        }
-        <Text testID="helper-text" style={{
-          color,
-          ...caption,
-        }}>{ children }</Text>
-      </View>
-    </View>
-  );
-};
-
-const Label = ({ children, color, required }) => {
-  const theme = useTheme();
-  const { subtitle2 } = getTypographyStyles(theme);
-
-  return (
-    <Text
-      testID="label"
-      style={{
-        color,
-        marginBottom: getSpacingMicro(theme),
-        ...subtitle2,
-      }}
-    >
-      { children }
-      { required && '*' }
-    </Text>
-  );
-};
-
 export const InputFeedbackContainer = (props: InputFeedbackContainerProps) => {
   const theme = useTheme();
   const {
@@ -102,7 +51,7 @@ export const InputFeedbackContainer = (props: InputFeedbackContainerProps) => {
   return (
     <View style={{ width: '100%' }}>
       { label
-        && <Label color={textElementsColor} required={required}>{label}</Label>
+          && <InputLabel color={textElementsColor} content={label} required={required} />
       }
       <View style={{
         borderColor: 'transparent',
@@ -121,9 +70,10 @@ export const InputFeedbackContainer = (props: InputFeedbackContainerProps) => {
         </View>
       </View>
       { helperText
-        && <HelperText color={textElementsColor} feedback={feedback}>
-          { helperText }
-        </HelperText>
+        && <InputHelperText
+          color={textElementsColor}
+          content={helperText}
+          feedback={feedback} />
       }
     </View>
   );

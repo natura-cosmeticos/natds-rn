@@ -26,15 +26,20 @@ const defaultProps = {
 
 describe('InputFeedbackContainer', () => {
   it('should render with default props', () => {
-    const { getByTestId, queryByTestId } = renderWithTheme(
+    const { getByTestId } = renderWithTheme(
       <InputFeedbackContainer {...defaultProps} />,
     );
 
-    expect(getByTestId('label').props.style.color).toEqual('#777');
-    expect(getByTestId('box').props.style.borderColor).toEqual('#BBB');
-    expect(getByTestId('box').props.style.borderRadius).toEqual(8);
-    expect(getByTestId('helper-text').props.style.color).toEqual('#777');
-    expect(queryByTestId('icon')).toBeFalsy();
+    expect(getByTestId('label')).toHaveStyle({ color: '#777' });
+    expect(getByTestId('box')).toHaveStyle({
+      alignItems: 'center',
+      backgroundColor: '#000',
+      borderColor: '#BBB',
+      borderRadius: 8,
+      borderWidth: 1,
+      flexDirection: 'row',
+    });
+    expect(getByTestId('helper-text')).toHaveStyle({ color: '#777' });
   });
 
   it('should render given text elements correctly', () => {
@@ -46,45 +51,34 @@ describe('InputFeedbackContainer', () => {
     expect(getByTestId('helper-text')).toHaveTextContent('testing helper text');
   });
 
-  it('should render given Label with asterisk when required', () => {
-    const { getByTestId } = renderWithTheme(
-      <InputFeedbackContainer {...defaultProps} required />,
-    );
-
-    expect(getByTestId('label')).toHaveTextContent('testing label*');
-  });
-
   it('should render with correct props when filled', () => {
     const { getByTestId } = renderWithTheme(
       <InputFeedbackContainer {...defaultProps} filled />,
     );
 
-    expect(getByTestId('label').props.style.color).toEqual('#777');
-    expect(getByTestId('box').props.style.borderColor).toEqual('#333');
-    expect(getByTestId('box').props.style.borderRadius).toEqual(8);
-    expect(getByTestId('helper-text').props.style.color).toEqual('#777');
+    expect(getByTestId('label')).toHaveStyle({ color: '#777' });
+    expect(getByTestId('box')).toHaveStyle({ borderColor: '#333', borderWidth: 1 });
+    expect(getByTestId('helper-text')).toHaveStyle({ color: '#777' });
   });
 
   it('should render with correct props to give feedback for error', () => {
-    const { getByTestId, queryByTestId } = renderWithTheme(
+    const { getByTestId } = renderWithTheme(
       <InputFeedbackContainer {...defaultProps} feedback='error' />,
     );
 
-    expect(getByTestId('label').props.style.color).toEqual('#F00');
-    expect(getByTestId('box').props.style.borderColor).toEqual('#F00');
-    expect(getByTestId('helper-text').props.style.color).toEqual('#F00');
-    expect(queryByTestId('icon')).toBeTruthy();
+    expect(getByTestId('label')).toHaveStyle({ color: '#F00' });
+    expect(getByTestId('box')).toHaveStyle({ borderColor: '#F00', borderWidth: 1 });
+    expect(getByTestId('helper-text')).toHaveStyle({ color: '#F00' });
   });
 
   it('should render with correct props to give feedback for success', () => {
-    const { getByTestId, queryByTestId } = renderWithTheme(
+    const { getByTestId } = renderWithTheme(
       <InputFeedbackContainer {...defaultProps} feedback='success' />,
     );
 
-    expect(getByTestId('label').props.style.color).toEqual('#0F0');
-    expect(getByTestId('box').props.style.borderColor).toEqual('#0F0');
-    expect(getByTestId('helper-text').props.style.color).toEqual('#0F0');
-    expect(queryByTestId('icon')).toBeTruthy();
+    expect(getByTestId('label')).toHaveStyle({ color: '#0F0' });
+    expect(getByTestId('box')).toHaveStyle({ borderColor: '#0F0', borderWidth: 1 });
+    expect(getByTestId('helper-text')).toHaveStyle({ color: '#0F0' });
   });
 
   it('should render with correct props when disabled', () => {
@@ -92,9 +86,9 @@ describe('InputFeedbackContainer', () => {
       <InputFeedbackContainer {...defaultProps} disabled />,
     );
 
-    expect(getByTestId('label').props.style.color).toEqual('#BBB');
-    expect(getByTestId('box').props.style.borderColor).toEqual('#BBB');
-    expect(getByTestId('helper-text').props.style.color).toEqual('#BBB');
+    expect(getByTestId('label')).toHaveStyle({ color: '#BBB' });
+    expect(getByTestId('box')).toHaveStyle({ borderColor: '#BBB', borderWidth: 1 });
+    expect(getByTestId('helper-text')).toHaveStyle({ color: '#BBB' });
   });
 
 
@@ -103,9 +97,6 @@ describe('InputFeedbackContainer', () => {
       <InputFeedbackContainer {...defaultProps} active />,
     );
 
-    expect(getByTestId('label').props.style.color).toEqual('#777');
-    expect(getByTestId('box').props.style.borderColor).toEqual('#FA3');
-    expect(getByTestId('box').props.style.borderWidth).toEqual(2);
-    expect(getByTestId('helper-text').props.style.color).toEqual('#777');
+    expect(getByTestId('box')).toHaveStyle({ borderColor: '#FA3', borderWidth: 2 });
   });
 });
