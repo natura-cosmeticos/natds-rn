@@ -14,7 +14,7 @@ export interface HelperTextProps {
   feedback?: 'success' | 'error'
 }
 
-const HelperText = styled.View<Pick<HelperTextProps, 'color' | 'feedback'>>(({ color, feedback, theme }): CSSObject => {
+const HelperText = styled.Text<Pick<HelperTextProps, 'color' | 'feedback'>>(({ color, feedback, theme }): CSSObject => {
   const { caption } = getTypographyStyles(theme);
 
   return ({
