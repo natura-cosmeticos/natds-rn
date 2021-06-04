@@ -97,50 +97,28 @@ describe('InputFeedbackContainer', () => {
 });
 
 /*  eslint-disable mocha/no-setup-in-describe */
-describe('getElementsColorsByState', () => {
-  describe('element "box"', () => {
+describe.each`
+  title           | state         | expectedBoxColor  | expectedTextColor
+  ${'"active"'}   | ${'active'}   | ${'#FA3'}         | ${'#777'}
+  ${'"default"'}  | ${'default'}  | ${'#BBB'}         | ${'#777'}
+  ${'"disabled"'} | ${'disabled'} | ${'#BBB'}         | ${'#BBB'}
+  ${'"error"'}    | ${'error'}    | ${'#F00'}         | ${'#F00'}
+  ${'"filled"'}   | ${'filled'}   | ${'#333'}         | ${'#777'}
+  ${'"success"'}  | ${'success'}  | ${'#0F0'}         | ${'#0F0'}
+`('getElementsColorsByState', ({
+  expectedBoxColor, expectedTextColor, state, title,
+}) => {
+  it(`should return correct box color for state ${title}`, () => {
     const getBoxColorByState = getElementsColorsByState('box', mockTheme);
+    const boxColor = getBoxColorByState(state);
 
-    it('should return correct color for state "active"', () => {
-      expect(getBoxColorByState('active')).toBe('#FA3');
-    });
-    it('should return correct color for state "default"', () => {
-      expect(getBoxColorByState('default')).toBe('#BBB');
-    });
-    it('should return correct color for state "disabled"', () => {
-      expect(getBoxColorByState('disabled')).toBe('#BBB');
-    });
-    it('should return correct color for state "error"', () => {
-      expect(getBoxColorByState('error')).toBe('#F00');
-    });
-    it('should return correct color for state "filled"', () => {
-      expect(getBoxColorByState('filled')).toBe('#333');
-    });
-    it('should return correct color for state "success"', () => {
-      expect(getBoxColorByState('success')).toBe('#0F0');
-    });
+    expect(boxColor).toBe(expectedBoxColor);
   });
-  describe('element "text"', () => {
+  it(`should return correct text color for state ${title}`, () => {
     const getTextColorByState = getElementsColorsByState('text', mockTheme);
+    const textColor = getTextColorByState(state);
 
-    it('should return correct color for state "active"', () => {
-      expect(getTextColorByState('active')).toBe('#777');
-    });
-    it('should return correct color for state "default"', () => {
-      expect(getTextColorByState('default')).toBe('#777');
-    });
-    it('should return correct color for state "disabled"', () => {
-      expect(getTextColorByState('disabled')).toBe('#BBB');
-    });
-    it('should return correct color for state "error"', () => {
-      expect(getTextColorByState('error')).toBe('#F00');
-    });
-    it('should return correct color for state "filled"', () => {
-      expect(getTextColorByState('filled')).toBe('#777');
-    });
-    it('should return correct color for state "success"', () => {
-      expect(getTextColorByState('success')).toBe('#0F0');
-    });
+    expect(textColor).toBe(expectedTextColor);
   });
 });
 /* eslint-enable mocha/no-setup-in-describe */
