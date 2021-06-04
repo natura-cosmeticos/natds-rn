@@ -10,11 +10,10 @@ export interface InputFeedbackProps {
 export const buildInputState = ({
   active, disabled, feedback, filled,
 }: InputFeedbackProps) => {
-  let state: InputStates = filled ? 'filled' : 'default';
+  if (disabled) return 'disabled';
+  if (active) return 'active';
+  if (feedback) return feedback;
+  if (filled) return 'filled';
 
-  state = feedback || state;
-  state = active ? 'active' : state;
-  state = disabled ? 'disabled' : state;
-
-  return state;
+  return 'default';
 };
