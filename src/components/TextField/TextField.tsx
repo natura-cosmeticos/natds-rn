@@ -2,7 +2,9 @@
 import React from 'react';
 import {
   Image,
+  NativeSyntheticEvent,
   TextInput,
+  TextInputFocusEventData,
   View,
 } from 'react-native';
 import { useTheme } from 'styled-components/native';
@@ -25,97 +27,88 @@ import { IconButton } from '../IconButton';
 import { TouchableRipple } from '../TouchableRipple';
 import { TextFieldProps } from './TextField.types';
 
-/* eslint-disable complexity, max-statements */
+/* eslint-disable complexity */
 export const TextField = (props: TextFieldProps) => {
   const theme = useTheme();
+  const inheritedProps = {
+    allowFontScaling: props.allowFontScaling,
+    autoCapitalize: props.autoCapitalize,
+    autoCompleteType: props.autoCompleteType,
+    autoCorrect: props.autoCorrect,
+    autoFocus: props.autoFocus,
+    blurOnSubmit: props.blurOnSubmit,
+    clearButtonMode: props.clearButtonMode,
+    clearTextOnFocus: props.clearTextOnFocus,
+    contextMenuHidden: props.contextMenuHidden,
+    dataDetectorTypes: props.dataDetectorTypes,
+    defaultValue: props.defaultValue,
+    disableFullscreenUI: props.disableFullscreenUI,
+    enablesReturnKeyAutomatically: props.enablesReturnKeyAutomatically,
+    importantForAutofill: props.importantForAutofill,
+    inputAccessoryViewID: props.inputAccessoryViewID,
+    keyboardAppearance: props.keyboardAppearance,
+    keyboardType: props.keyboardType,
+    maxFontSizeMultiplier: props.maxFontSizeMultiplier,
+    maxLength: props.maxLength,
+    multiline: props.multiline,
+    numberOfLines: props.numberOfLines,
+    onChange: props.onChange,
+    onChangeText: props.onChangeText,
+    onContentSizeChange: props.onContentSizeChange,
+    onEndEditing: props.onEndEditing,
+    onKeyPress: props.onKeyPress,
+    onScroll: props.onScroll,
+    onSelectionChange: props.onSelectionChange,
+    onSubmitEditing: props.onSubmitEditing,
+    onTextInput: props.onTextInput,
+    passwordRules: props.passwordRules,
+    placeholder: props.placeholder,
+    rejectResponderTermination: props.rejectResponderTermination,
+    returnKeyLabel: props.returnKeyLabel,
+    returnKeyType: props.returnKeyType,
+    scrollEnabled: props.scrollEnabled,
+    secureTextEntry: props.secureTextEntry,
+    selection: props.selection,
+    selectionState: props.selectionState,
+    selectTextOnFocus: props.selectTextOnFocus,
+    showSoftInputOnFocus: props.showSoftInputOnFocus,
+    spellCheck: props.spellCheck,
+    textBreakStrategy: props.textBreakStrategy,
+    textContentType: props.textContentType,
+  };
   const {
     action,
     actionOnPress,
-    allowFontScaling,
-    autoCapitalize,
-    autoCompleteType,
-    autoCorrect,
-    autoFocus,
-    blurOnSubmit,
-    clearButtonMode,
-    clearTextOnFocus,
-    contextMenuHidden,
-    dataDetectorTypes,
-    defaultValue,
-    disableFullscreenUI,
     disabled = false,
-    enablesReturnKeyAutomatically,
     feedback,
     helperText = '',
     iconColor,
     iconName,
     imageSource,
-    importantForAutofill,
-    inputAccessoryViewID,
-    keyboardAppearance,
-    keyboardType,
     label,
-    maxFontSizeMultiplier,
-    maxLength,
-    multiline,
-    numberOfLines,
-    onBlur,
-    onChange,
-    onChangeText,
-    onContentSizeChange,
-    onEndEditing,
-    onFocus,
-    onKeyPress,
-    onScroll,
-    onSelectionChange,
-    onSubmitEditing,
-    onTextInput,
-    passwordRules,
-    placeholder,
+    onBlur = () => {},
+    onFocus = () => {},
     readonly,
-    rejectResponderTermination,
     required = false,
-    returnKeyLabel,
-    returnKeyType,
-    scrollEnabled,
-    secureTextEntry,
-    selectTextOnFocus,
-    selection,
-    selectionState,
-    showSoftInputOnFocus,
     size = 'mediumX',
-    spellCheck,
-    textBreakStrategy,
-    textContentType,
     value = '',
   }: TextFieldProps = props;
   const [active, setActive] = React.useState(false);
   const filled = !readonly && value !== '';
-  const focusHandler = (nativeEvent) => {
-    setActive(true);
-    if (onFocus) onFocus(nativeEvent);
-  };
-  const blurHandler = (nativeEvent) => {
-    setActive(false);
-    if (onBlur) onBlur(nativeEvent);
+  const statusActiveHandler = (
+    event: (e: NativeSyntheticEvent<TextInputFocusEventData>) => void,
+    nativeEvent: NativeSyntheticEvent<TextInputFocusEventData>,
+    status: boolean,
+  ) => {
+    setActive(status);
+    if (event) event(nativeEvent);
   };
   const fieldHeight = size === 'mediumX' ? getSizeMediumX(theme) : getSizeMedium(theme);
   const getContainerProps = () => {
-    if (disabled) {
-      return {
-        disabled, helperText,
-      };
-    }
+    if (disabled) return { disabled, helperText };
+    if (feedback) return { active, feedback, helperText };
 
-    if (feedback) {
-      return {
-        active, feedback, helperText,
-      };
-    }
-
-    return {
-      active,
-    };
+    return { active };
   };
 
   return (
@@ -138,55 +131,12 @@ export const TextField = (props: TextFieldProps) => {
           overflow: 'hidden',
           paddingHorizontal: getSpacingSmall(theme),
         }}
-        allowFontScaling={allowFontScaling}
-        autoCapitalize={autoCapitalize}
-        autoCompleteType={autoCompleteType}
-        autoCorrect={autoCorrect}
-        autoFocus={autoFocus}
-        blurOnSubmit={blurOnSubmit}
-        clearButtonMode={clearButtonMode}
-        clearTextOnFocus={clearTextOnFocus}
-        contextMenuHidden={contextMenuHidden}
-        dataDetectorTypes={dataDetectorTypes}
-        defaultValue={defaultValue}
-        disableFullscreenUI={disableFullscreenUI}
         editable={!disabled && !readonly}
-        enablesReturnKeyAutomatically={enablesReturnKeyAutomatically}
-        importantForAutofill={importantForAutofill}
-        inputAccessoryViewID={inputAccessoryViewID}
-        keyboardAppearance={keyboardAppearance}
-        keyboardType={keyboardType}
-        maxFontSizeMultiplier={maxFontSizeMultiplier}
-        maxLength={maxLength}
-        multiline={multiline}
-        numberOfLines={numberOfLines}
-        onBlur={nativeEvent => blurHandler(nativeEvent)}
-        onChange={onChange}
-        onChangeText={onChangeText}
-        onContentSizeChange={onContentSizeChange}
-        onEndEditing={onEndEditing}
-        onFocus={nativeEvent => !readonly && focusHandler(nativeEvent)}
-        onKeyPress={onKeyPress}
-        onScroll={onScroll}
-        onSelectionChange={onSelectionChange}
-        onSubmitEditing={onSubmitEditing}
-        onTextInput={onTextInput}
-        passwordRules={passwordRules}
-        placeholder={placeholder}
+        onBlur={nativeEvent => statusActiveHandler(onBlur, nativeEvent, false)}
+        onFocus={nativeEvent => !readonly && statusActiveHandler(onFocus, nativeEvent, true)}
         placeholderTextColor={disabled ? getColorLowEmphasis(theme) : getColorMediumEmphasis(theme)}
-        rejectResponderTermination={rejectResponderTermination}
-        returnKeyLabel={returnKeyLabel}
-        returnKeyType={returnKeyType}
-        scrollEnabled={scrollEnabled}
-        secureTextEntry={secureTextEntry}
-        selectTextOnFocus={selectTextOnFocus}
-        selection={selection}
-        selectionState={selectionState}
-        showSoftInputOnFocus={showSoftInputOnFocus}
-        spellCheck={spellCheck}
-        textBreakStrategy={textBreakStrategy}
-        textContentType={textContentType}
         value={value}
+        { ...inheritedProps }
       />
       { action === 'icon' && actionOnPress
         && <View style={{ paddingRight: getSpacingTiny(theme) }}>
@@ -214,4 +164,3 @@ export const TextField = (props: TextFieldProps) => {
     </InputFeedbackContainer>
   );
 };
-/* eslint-enable complexity, max-statements */
