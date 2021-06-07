@@ -1,31 +1,22 @@
 /* eslint-disable max-lines */
 import React from 'react';
-import {
-  Image,
-  NativeSyntheticEvent,
-  TextInput,
-  TextInputFocusEventData,
-  View,
-} from 'react-native';
+import { NativeSyntheticEvent, TextInputFocusEventData } from 'react-native';
 import { useTheme } from 'styled-components/native';
 import {
   buildColorWithOpacity,
-  getBorderRadiusMedium,
   getColorHighEmphasis,
   getColorLowEmphasis,
   getColorMediumEmphasis,
   getColorSurface,
   getOpacityDisabledLow,
-  getSizeLarge,
   getSizeMedium,
   getSizeMediumX,
-  getSpacingSmall,
-  getSpacingTiny,
 } from '../../common/themeSelectors';
+import { ActionIcon, ActionImage, Input } from './TextField.styles';
 import { InputFeedbackContainer } from '../InputFeedbackContainer';
-import { IconButton } from '../IconButton';
-import { TouchableRipple } from '../TouchableRipple';
 import { TextFieldProps } from './TextField.types';
+import { TouchableRipple } from '../TouchableRipple';
+import { IconButton } from '../IconButton';
 
 /* eslint-disable complexity */
 export const TextField = (props: TextFieldProps) => {
@@ -95,6 +86,9 @@ export const TextField = (props: TextFieldProps) => {
   }: TextFieldProps = props;
   const [active, setActive] = React.useState(false);
   const filled = !readonly && value !== '';
+  const readonlyColor = buildColorWithOpacity(getColorLowEmphasis, getOpacityDisabledLow, theme);
+  const fieldHeight = size === 'mediumX' ? getSizeMediumX(theme) : getSizeMedium(theme);
+
   const statusActiveHandler = (
     event: (e: NativeSyntheticEvent<TextInputFocusEventData>) => void,
     nativeEvent: NativeSyntheticEvent<TextInputFocusEventData>,
@@ -103,7 +97,6 @@ export const TextField = (props: TextFieldProps) => {
     setActive(status);
     if (event) event(nativeEvent);
   };
-  const fieldHeight = size === 'mediumX' ? getSizeMediumX(theme) : getSizeMedium(theme);
   const getContainerProps = () => {
     if (disabled) return { disabled, helperText };
     if (feedback) return { active, feedback, helperText };
@@ -119,18 +112,10 @@ export const TextField = (props: TextFieldProps) => {
       required={required}
       {...getContainerProps()}
     >
-      <TextInput testID="input"
-        style={{
-          backgroundColor: readonly
-            ? buildColorWithOpacity(getColorLowEmphasis, getOpacityDisabledLow, theme)
-            : getColorSurface(theme),
-          borderRadius: getBorderRadiusMedium(theme),
-          color: disabled ? getColorLowEmphasis(theme) : getColorHighEmphasis(theme),
-          flexGrow: 1,
-          height: fieldHeight,
-          overflow: 'hidden',
-          paddingHorizontal: getSpacingSmall(theme),
-        }}
+      <Input testID="input"
+        backgroundColor={readonly ? readonlyColor : getColorSurface(theme)}
+        color={disabled ? getColorLowEmphasis(theme) : getColorHighEmphasis(theme)}
+        height={fieldHeight}
         editable={!disabled && !readonly}
         onBlur={nativeEvent => statusActiveHandler(onBlur, nativeEvent, false)}
         onFocus={nativeEvent => !readonly && statusActiveHandler(onFocus, nativeEvent, true)}
@@ -139,26 +124,13 @@ export const TextField = (props: TextFieldProps) => {
         { ...inheritedProps }
       />
       { action === 'icon' && actionOnPress
-        && <View style={{ paddingRight: getSpacingTiny(theme) }}>
+        && <ActionIcon>
             <IconButton testID='action-icon' iconColor={iconColor} icon={iconName} onPress={actionOnPress} />
-          </View>
+          </ActionIcon>
       }
       { action === 'image' && imageSource
-        && <TouchableRipple
-          color="highlight"
-          size={fieldHeight / 2 + 5}
-          onPress={actionOnPress}
-        >
-          <Image
-            testID='action-image'
-            style={{
-              borderBottomRightRadius: getBorderRadiusMedium(theme),
-              borderTopRightRadius: getBorderRadiusMedium(theme),
-              height: fieldHeight,
-              width: getSizeLarge(theme),
-            }}
-            source={imageSource}
-          />
+        && <TouchableRipple color="highlight" size={fieldHeight / 2 + 5} onPress={actionOnPress}>
+          <ActionImage testID='action-image' height={fieldHeight} source={imageSource} />
         </TouchableRipple>
       }
     </InputFeedbackContainer>
