@@ -1,26 +1,30 @@
 /* eslint-disable max-lines */
-import React from 'react';
+import React, { Dispatch, SetStateAction } from 'react';
 import { NativeSyntheticEvent, TextInputFocusEventData } from 'react-native';
 import { useTheme } from 'styled-components/native';
 import {
-  buildColorWithOpacity,
-  getColorHighEmphasis,
-  getColorLowEmphasis,
-  getColorMediumEmphasis,
-  getColorSurface,
-  getOpacityDisabledLow,
-  getSizeMedium,
-  getSizeMediumX,
-} from '../../common/themeSelectors';
-import { ActionIcon, ActionImage, Input } from './TextField.styles';
+  ActionIcon, ActionImage, getPlaceholderTextColor, Input,
+} from './TextField.styles';
 import { InputFeedbackContainer } from '../InputFeedbackContainer';
 import { TextFieldProps } from './TextField.types';
-import { TouchableRipple } from '../TouchableRipple';
 import { IconButton } from '../IconButton';
 
-/* eslint-disable complexity */
+const statusActiveHandler = (
+  event: (e: NativeSyntheticEvent<TextInputFocusEventData>) => void,
+  nativeEvent: NativeSyntheticEvent<TextInputFocusEventData>,
+  status: boolean,
+  setActive: Dispatch<SetStateAction<boolean>>,
+) => {
+  setActive(status);
+  if (event) event(nativeEvent);
+};
+
+const isFieldFilled = ({ readonly, value }: Pick<TextFieldProps, 'readonly' | 'value'>) => !readonly && value !== '';
+const isEditable = ({ disabled, readonly }: Pick<TextFieldProps, 'disabled' | 'readonly'>) => !disabled && !readonly;
+
 export const TextField = (props: TextFieldProps) => {
   const theme = useTheme();
+  const [active, setActive] = React.useState(false);
   const inheritedProps = {
     allowFontScaling: props.allowFontScaling,
     autoCapitalize: props.autoCapitalize,
@@ -79,24 +83,11 @@ export const TextField = (props: TextFieldProps) => {
     label,
     onBlur = () => {},
     onFocus = () => {},
-    readonly,
+    readonly = false,
     required = false,
     size = 'mediumX',
     value = '',
   }: TextFieldProps = props;
-  const [active, setActive] = React.useState(false);
-  const filled = !readonly && value !== '';
-  const readonlyColor = buildColorWithOpacity(getColorLowEmphasis, getOpacityDisabledLow, theme);
-  const fieldHeight = size === 'mediumX' ? getSizeMediumX(theme) : getSizeMedium(theme);
-
-  const statusActiveHandler = (
-    event: (e: NativeSyntheticEvent<TextInputFocusEventData>) => void,
-    nativeEvent: NativeSyntheticEvent<TextInputFocusEventData>,
-    status: boolean,
-  ) => {
-    setActive(status);
-    if (event) event(nativeEvent);
-  };
   const getContainerProps = () => {
     if (disabled) return { disabled, helperText };
     if (feedback) return { active, feedback, helperText };
@@ -106,20 +97,21 @@ export const TextField = (props: TextFieldProps) => {
 
   return (
     <InputFeedbackContainer
-      filled={filled}
+      filled={isFieldFilled({ readonly, value })}
       helperText={helperText}
       label={label}
       required={required}
       {...getContainerProps()}
     >
       <Input testID="input"
-        backgroundColor={readonly ? readonlyColor : getColorSurface(theme)}
-        color={disabled ? getColorLowEmphasis(theme) : getColorHighEmphasis(theme)}
-        height={fieldHeight}
-        editable={!disabled && !readonly}
-        onBlur={nativeEvent => statusActiveHandler(onBlur, nativeEvent, false)}
-        onFocus={nativeEvent => !readonly && statusActiveHandler(onFocus, nativeEvent, true)}
-        placeholderTextColor={disabled ? getColorLowEmphasis(theme) : getColorMediumEmphasis(theme)}
+        disabled={disabled}
+        editable={isEditable({ disabled, readonly })}
+        onBlur={nativeEvent => statusActiveHandler(onBlur, nativeEvent, false, setActive)}
+        onFocus={nativeEvent => !readonly
+          && statusActiveHandler(onFocus, nativeEvent, true, setActive)}
+        placeholderTextColor={getPlaceholderTextColor(disabled, theme)}
+        readonly={readonly}
+        size={size}
         value={value}
         { ...inheritedProps }
       />
@@ -129,9 +121,7 @@ export const TextField = (props: TextFieldProps) => {
           </ActionIcon>
       }
       { action === 'image' && imageSource
-        && <TouchableRipple color="highlight" size={fieldHeight / 2 + 5} onPress={actionOnPress}>
-          <ActionImage testID='action-image' height={fieldHeight} source={imageSource} />
-        </TouchableRipple>
+        && <ActionImage testID='action-image' size={size} source={imageSource} />
       }
     </InputFeedbackContainer>
   );

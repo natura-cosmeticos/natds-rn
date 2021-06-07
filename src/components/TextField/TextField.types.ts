@@ -70,7 +70,7 @@ type MultiPlatformProps = Pick<TextInputProps,
  * @deprecated Use 'medium' and 'mediumX' instead
  */
 type DeprecatedInputSizes = 'small' | 'regular';
-type InputSizes = keyof Pick<Size, 'medium' | 'mediumX'> | DeprecatedInputSizes
+export type InputSizes = keyof Pick<Size, 'medium' | 'mediumX'> | DeprecatedInputSizes
 /**
  * @deprecated These are no longer necessary. This component now handles
  * its own state.
