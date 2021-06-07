@@ -5,6 +5,7 @@ import {
   Default,
   Disabled,
   Feedback,
+  Password,
   Readonly,
   Required,
   Sizes,
@@ -20,4 +21,5 @@ storiesOf('TextField', module)
   .add('Required', Required)
   .add('Disabled', Disabled)
   .add('Readonly', Readonly)
-  .add('Action', Action);
+  .add('Action', Action)
+  .add('Password', Password);

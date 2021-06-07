@@ -48,7 +48,7 @@ With the following attribute status:
 export default {
   component: TextField,
   parameters: {
-    componentSubtitle: 'Story Teste',
+    componentSubtitle: 'TextField let users enter and edit text.',
     docs: {
       extractComponentDescription: description,
     },
@@ -67,6 +67,33 @@ export const Default = () => {
           label="Label"
           onChangeText={text => setValue(text)}
           placeholder="Placeholder"
+          value={value}
+        />
+      </StoryContainer>
+    </>
+  );
+};
+export const Password = () => {
+  const [value, setValue] = React.useState('');
+  const [secureState, setSecureState] = React.useState(true);
+  const onPress = () => {
+    setSecureState(!secureState);
+  };
+
+  return (
+    <>
+      <StoryContainer title='Example'>
+        <TextField
+          action="icon"
+          actionOnPress={onPress}
+          helperText="The eye icon on the right side will change your password visibility"
+          iconName={!secureState
+            ? 'outlined-action-visibility'
+            : 'outlined-action-visibilityoff'}
+          label="Password"
+          onChangeText={text => setValue(text)}
+          placeholder="Type here your password"
+          secureTextEntry={secureState}
           value={value}
         />
       </StoryContainer>
