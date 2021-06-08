@@ -29,52 +29,6 @@ const hasActionIcon = (
 export const TextField = (props: TextFieldProps) => {
   const theme = useTheme();
   const [active, setActive] = React.useState(false);
-  const inheritedProps = {
-    allowFontScaling: props.allowFontScaling,
-    autoCapitalize: props.autoCapitalize,
-    autoCompleteType: props.autoCompleteType,
-    autoCorrect: props.autoCorrect,
-    autoFocus: props.autoFocus,
-    blurOnSubmit: props.blurOnSubmit,
-    clearButtonMode: props.clearButtonMode,
-    clearTextOnFocus: props.clearTextOnFocus,
-    contextMenuHidden: props.contextMenuHidden,
-    dataDetectorTypes: props.dataDetectorTypes,
-    defaultValue: props.defaultValue,
-    disableFullscreenUI: props.disableFullscreenUI,
-    enablesReturnKeyAutomatically: props.enablesReturnKeyAutomatically,
-    importantForAutofill: props.importantForAutofill,
-    inputAccessoryViewID: props.inputAccessoryViewID,
-    keyboardAppearance: props.keyboardAppearance,
-    keyboardType: props.keyboardType,
-    maxFontSizeMultiplier: props.maxFontSizeMultiplier,
-    maxLength: props.maxLength,
-    multiline: props.multiline,
-    numberOfLines: props.numberOfLines,
-    onChange: props.onChange,
-    onChangeText: props.onChangeText,
-    onContentSizeChange: props.onContentSizeChange,
-    onEndEditing: props.onEndEditing,
-    onKeyPress: props.onKeyPress,
-    onScroll: props.onScroll,
-    onSelectionChange: props.onSelectionChange,
-    onSubmitEditing: props.onSubmitEditing,
-    onTextInput: props.onTextInput,
-    passwordRules: props.passwordRules,
-    placeholder: props.placeholder,
-    rejectResponderTermination: props.rejectResponderTermination,
-    returnKeyLabel: props.returnKeyLabel,
-    returnKeyType: props.returnKeyType,
-    scrollEnabled: props.scrollEnabled,
-    secureTextEntry: props.secureTextEntry,
-    selection: props.selection,
-    selectionState: props.selectionState,
-    selectTextOnFocus: props.selectTextOnFocus,
-    showSoftInputOnFocus: props.showSoftInputOnFocus,
-    spellCheck: props.spellCheck,
-    textBreakStrategy: props.textBreakStrategy,
-    textContentType: props.textContentType,
-  };
   const {
     action,
     actionOnPress,
@@ -118,7 +72,50 @@ export const TextField = (props: TextFieldProps) => {
         readonly={readonly}
         size={size}
         value={value}
-        { ...inheritedProps }
+        allowFontScaling={props.allowFontScaling}
+        autoCapitalize={props.autoCapitalize}
+        autoCompleteType={props.autoCompleteType}
+        autoCorrect={props.autoCorrect}
+        autoFocus={props.autoFocus}
+        blurOnSubmit={props.blurOnSubmit}
+        clearButtonMode={props.clearButtonMode}
+        clearTextOnFocus={props.clearTextOnFocus}
+        contextMenuHidden={props.contextMenuHidden}
+        dataDetectorTypes={props.dataDetectorTypes}
+        defaultValue={props.defaultValue}
+        disableFullscreenUI={props.disableFullscreenUI}
+        enablesReturnKeyAutomatically={props.enablesReturnKeyAutomatically}
+        importantForAutofill={props.importantForAutofill}
+        inputAccessoryViewID={props.inputAccessoryViewID}
+        keyboardAppearance={props.keyboardAppearance}
+        keyboardType={props.keyboardType}
+        maxFontSizeMultiplier={props.maxFontSizeMultiplier}
+        maxLength={props.maxLength}
+        multiline={props.multiline}
+        numberOfLines={props.numberOfLines}
+        onChange={props.onChange}
+        onChangeText={props.onChangeText}
+        onContentSizeChange={props.onContentSizeChange}
+        onEndEditing={props.onEndEditing}
+        onKeyPress={props.onKeyPress}
+        onScroll={props.onScroll}
+        onSelectionChange={props.onSelectionChange}
+        onSubmitEditing={props.onSubmitEditing}
+        onTextInput={props.onTextInput}
+        passwordRules={props.passwordRules}
+        placeholder={props.placeholder}
+        rejectResponderTermination={props.rejectResponderTermination}
+        returnKeyLabel={props.returnKeyLabel}
+        returnKeyType={props.returnKeyType}
+        scrollEnabled={props.scrollEnabled}
+        secureTextEntry={props.secureTextEntry}
+        selection={props.selection}
+        selectionState={props.selectionState}
+        selectTextOnFocus={props.selectTextOnFocus}
+        showSoftInputOnFocus={props.showSoftInputOnFocus}
+        spellCheck={props.spellCheck}
+        textBreakStrategy={props.textBreakStrategy}
+        textContentType={props.textContentType}
       />
       { action === 'icon' && actionOnPress
         && <ActionIcon>
