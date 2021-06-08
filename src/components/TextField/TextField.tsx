@@ -22,6 +22,10 @@ const statusActiveHandler = (
 const isFieldFilled = ({ readonly, value }: Pick<TextFieldProps, 'readonly' | 'value'>) => !readonly && value !== '';
 const isEditable = ({ disabled, readonly }: Pick<TextFieldProps, 'disabled' | 'readonly'>) => !disabled && !readonly;
 
+const hasActionIcon = (
+  { action, actionOnPress }: Pick<TextFieldProps, 'action' | 'actionOnPress'>,
+): boolean => !!(action === 'icon' && actionOnPress);
+
 export const TextField = (props: TextFieldProps) => {
   const theme = useTheme();
   const [active, setActive] = React.useState(false);
@@ -106,6 +110,7 @@ export const TextField = (props: TextFieldProps) => {
       <Input testID="input"
         disabled={disabled}
         editable={isEditable({ disabled, readonly })}
+        hasActionIcon={hasActionIcon({ action, actionOnPress })}
         onBlur={nativeEvent => statusActiveHandler(onBlur, nativeEvent, false, setActive)}
         onFocus={nativeEvent => !readonly
           && statusActiveHandler(onFocus, nativeEvent, true, setActive)}

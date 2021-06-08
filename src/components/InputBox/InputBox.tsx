@@ -26,6 +26,7 @@ const Box = styled.View<{
   borderRadius: getBorderRadiusMedium(theme),
   borderWidth,
   flexDirection: 'row',
+  maxWidth: '100%',
 }));
 
 export const InputBox = ({ boxColor, boxState, children }: InputBoxProps) => {

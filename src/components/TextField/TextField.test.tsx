@@ -44,8 +44,11 @@ describe('Input', () => {
         color: '#333333',
         flexGrow: 1,
         height: 32,
+        maxWidth: '100%',
         overflow: 'hidden',
-        paddingHorizontal: 8,
+        paddingLeft: 8,
+        paddingRight: 8,
+        width: 10,
       };
 
       expect(getByTestId('input')).toHaveStyle(defaultStyles);

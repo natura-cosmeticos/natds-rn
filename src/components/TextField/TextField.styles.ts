@@ -1,5 +1,5 @@
 import { Theme } from '@naturacosmeticos/natds-themes/react-native';
-import { CSSObject } from 'styled-components';
+import { CSSObject, CSSProperties } from 'styled-components';
 import styled from 'styled-components/native';
 import {
   buildColorWithOpacity,
@@ -19,6 +19,7 @@ import { InputSizes } from './TextField.types';
 
 interface InputStyleProps {
   disabled: boolean,
+  hasActionIcon: boolean,
   readonly: boolean,
   size: InputSizes,
   theme: Theme,
@@ -38,19 +39,22 @@ export const getPlaceholderTextColor = (disabled: boolean, theme: Theme) => (
   disabled ? getColorLowEmphasis(theme) : getColorMediumEmphasis(theme)
 );
 
-export const Input = styled.TextInput<InputStyleProps>(({
-  disabled, readonly, size, theme,
+export const Input = styled.TextInput<InputStyleProps & CSSProperties>(({
+  disabled, hasActionIcon, readonly, size, theme,
 }): CSSObject => ({
   backgroundColor: readonly ? getReadonlyColor(theme) : getColorSurface(theme),
   borderRadius: getBorderRadiusMedium(theme),
   color: getTextColor(disabled, theme),
   flexGrow: 1,
   height: getFieldHeight(size, theme),
+  maxWidth: '100%',
   overflow: 'hidden',
-  paddingHorizontal: getSpacingSmall(theme),
+  paddingLeft: getSpacingSmall(theme),
+  paddingRight: hasActionIcon ? getSpacingTiny(theme) : getSpacingSmall(theme),
+  width: 10,
 }));
 
-export const ActionImage = styled.Image<Omit<InputStyleProps, 'disabled' | 'readonly'>>(
+export const ActionImage = styled.Image<Omit<InputStyleProps, 'disabled' | 'hasActionIcon' | 'readonly'>>(
   ({ size, theme }): CSSObject => ({
     borderBottomRightRadius: getBorderRadiusMedium(theme),
     borderTopRightRadius: getBorderRadiusMedium(theme),
