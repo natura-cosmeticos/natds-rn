@@ -36,22 +36,16 @@ jest.mock('../../common/themeSelectors', () => (
 describe('Input', () => {
   describe('render', () => {
     it('should render with default props', () => {
-      const { getByTestId } = renderWithTheme(<TextField />);
+      const { getByTestId, toJSON } = renderWithTheme(<TextField />);
 
       const defaultStyles = {
         backgroundColor: '#000000',
-        borderRadius: 8,
         color: '#333333',
-        flexGrow: 1,
         height: 32,
-        maxWidth: '100%',
-        overflow: 'hidden',
-        paddingLeft: 8,
-        paddingRight: 8,
-        width: 10,
       };
 
       expect(getByTestId('input')).toHaveStyle(defaultStyles);
+      expect(toJSON()).toMatchSnapshot();
     });
     it('should render with given size', () => {
       const { getByTestId } = renderWithTheme(<TextField size="medium" />);

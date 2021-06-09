@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input render should render with default props 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "width": "100%",
+      },
+    ]
+  }
+>
+  <View
+    borderWidth={1}
+    style={
+      Array [
+        Object {
+          "borderColor": "transparent",
+          "borderRadius": 8,
+          "borderWidth": 1,
+        },
+      ]
+    }
+    testID="box-container"
+  >
+    <View
+      borderColor="#BBBBBB"
+      borderWidth={1}
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#000000",
+            "borderColor": "#BBBBBB",
+            "borderRadius": 8,
+            "borderWidth": 1,
+            "flexDirection": "row",
+            "maxWidth": "100%",
+          },
+        ]
+      }
+      testID="box"
+    >
+      <TextInput
+        allowFontScaling={true}
+        disabled={false}
+        editable={true}
+        hasActionIcon={false}
+        onBlur={[Function]}
+        onFocus={[Function]}
+        placeholderTextColor="#777777"
+        readonly={false}
+        rejectResponderTermination={true}
+        size="mediumX"
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#000000",
+              "borderRadius": 8,
+              "color": "#333333",
+              "flexGrow": 1,
+              "height": 32,
+              "maxWidth": "100%",
+              "overflow": "hidden",
+              "paddingLeft": 8,
+              "paddingRight": 8,
+              "width": 10,
+            },
+          ]
+        }
+        testID="input"
+        underlineColorAndroid="transparent"
+        value=""
+      />
+    </View>
+  </View>
+  
+</View>
+`;
