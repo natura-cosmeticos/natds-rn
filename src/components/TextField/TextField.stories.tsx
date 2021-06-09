@@ -73,33 +73,6 @@ export const Default = () => {
     </>
   );
 };
-export const Password = () => {
-  const [value, setValue] = React.useState('');
-  const [secureState, setSecureState] = React.useState(true);
-  const onPress = () => {
-    setSecureState(!secureState);
-  };
-
-  return (
-    <>
-      <StoryContainer title='Example'>
-        <TextField
-          action="icon"
-          actionOnPress={onPress}
-          helperText="The eye icon on the right side will change your password visibility"
-          iconName={!secureState
-            ? 'outlined-action-visibility'
-            : 'outlined-action-visibilityoff'}
-          label="Password"
-          onChangeText={text => setValue(text)}
-          placeholder="Type here your password"
-          secureTextEntry={secureState}
-          value={value}
-        />
-      </StoryContainer>
-    </>
-  );
-};
 
 export const Sizes = () => {
   const [mediumXValue, setMediumXValue] = React.useState('This is the default size: MediumX');
@@ -276,9 +249,36 @@ export const Action = () => {
   );
 };
 
+export const Password = () => {
+  const [value, setValue] = React.useState('');
+  const [secureState, setSecureState] = React.useState(true);
+  const onPress = () => {
+    setSecureState(!secureState);
+  };
+
+  return (
+    <>
+      <StoryContainer title='Example'>
+        <TextField
+          action="icon"
+          actionOnPress={onPress}
+          helperText="The eye icon on the right side will change your password visibility"
+          iconName={!secureState
+            ? 'outlined-action-visibility'
+            : 'outlined-action-visibilityoff'}
+          label="Password"
+          onChangeText={text => setValue(text)}
+          placeholder="Type here your password"
+          secureTextEntry={secureState}
+          value={value}
+        />
+      </StoryContainer>
+    </>
+  );
+};
+
 export const All = () => (
   <>
-    <Action />
     <Default />
     <Sizes />
     <States />
@@ -286,5 +286,6 @@ export const All = () => (
     <Required />
     <Disabled />
     <Readonly />
+    <Action />
   </>
 );
