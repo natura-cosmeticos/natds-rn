@@ -262,7 +262,7 @@ export const Password = () => {
         <TextField
           action="icon"
           actionOnPress={onPress}
-          helperText="The eye icon on the right side will change your password visibility"
+          helperText="The eye button on the right side will change your password visibility"
           iconName={!secureState
             ? 'outlined-action-visibility'
             : 'outlined-action-visibilityoff'}
