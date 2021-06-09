@@ -72,6 +72,14 @@ export const TextField = (props: TextFieldProps) => {
         readonly={readonly}
         size={size}
         value={value}
+        accessible={props.accessible}
+        accessibilityActions={props.accessibilityActions}
+        accessibilityLabel={props.accessibilityLabel}
+        accessibilityRole={props.accessibilityRole}
+        accessibilityState={props.accessibilityState}
+        accessibilityHint={props.accessibilityHint}
+        accessibilityValue={props.accessibilityValue}
+        onAccessibilityAction={props.onAccessibilityAction}
         allowFontScaling={props.allowFontScaling}
         autoCapitalize={props.autoCapitalize}
         autoCompleteType={props.autoCompleteType}
