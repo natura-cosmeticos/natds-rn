@@ -54,7 +54,7 @@ export const Input = styled.TextInput<InputStyleProps & CSSProperties>(({
   width: 10,
 }));
 
-export const ActionImage = styled.Image<Omit<InputStyleProps, 'disabled' | 'hasActionIcon' | 'readonly'>>(
+export const ActionImage = styled.View<Pick<InputStyleProps, 'size' | 'theme'>>(
   ({ size, theme }): CSSObject => ({
     borderBottomRightRadius: getBorderRadiusMedium(theme),
     borderTopRightRadius: getBorderRadiusMedium(theme),

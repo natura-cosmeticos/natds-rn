@@ -1,10 +1,11 @@
 /* eslint-disable max-lines */
 import React from 'react';
-import { ImageSourcePropType, View } from 'react-native';
+import { Image, ImageSourcePropType, View } from 'react-native';
 import { StoryContainer } from '../../common/HelperComponents/StoryContainer';
 import { TextField } from './TextField';
 // @ts-ignore
 import placeholderImage from '../../assets/images/textfield_image_arealimit.png';
+import { IconButton } from '../IconButton';
 
 const description = () => `
 - - -
@@ -225,8 +226,7 @@ export const Action = () => {
       <StoryContainer title='Action' style={{ flexDirection: 'column' }}>
         <TextField
           action='icon'
-          actionOnPress={() => {}}
-          iconName="outlined-default-mockup"
+          actionComponent={<IconButton onPress={() => {}} />}
           helperText="Helper text"
           label="Label"
           placeholder="Placeholder"
@@ -236,8 +236,8 @@ export const Action = () => {
         <View style={{ marginBottom: 8 }}></View>
         <TextField
           action='image'
-          actionOnPress={() => {}}
-          imageSource={placeholderImage as ImageSourcePropType}
+          actionComponent={
+            <Image source={placeholderImage as ImageSourcePropType} />}
           helperText="Helper text"
           label="Label"
           placeholder="Placeholder"
@@ -261,11 +261,13 @@ export const Password = () => {
       <StoryContainer title='Example'>
         <TextField
           action="icon"
-          actionOnPress={onPress}
+          actionComponent={
+            <IconButton onPress={onPress}
+              icon={!secureState
+                ? 'outlined-action-visibility'
+                : 'outlined-action-visibilityoff'} />
+          }
           helperText="The eye button on the right side will change your password visibility"
-          iconName={!secureState
-            ? 'outlined-action-visibility'
-            : 'outlined-action-visibilityoff'}
           label="Password"
           onChangeText={text => setValue(text)}
           placeholder="Type here your password"

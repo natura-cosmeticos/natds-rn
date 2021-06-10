@@ -7,7 +7,6 @@ import {
 } from './TextField.styles';
 import { InputFeedbackContainer } from '../InputFeedbackContainer';
 import { TextFieldProps } from './TextField.types';
-import { IconButton } from '../IconButton';
 
 const statusActiveHandler = (
   event: (e: NativeSyntheticEvent<TextInputFocusEventData>) => void,
@@ -23,21 +22,18 @@ const isFieldFilled = ({ readonly, value }: Pick<TextFieldProps, 'readonly' | 'v
 const isEditable = ({ disabled, readonly }: Pick<TextFieldProps, 'disabled' | 'readonly'>) => !disabled && !readonly;
 
 const hasActionIcon = (
-  { action, actionOnPress }: Pick<TextFieldProps, 'action' | 'actionOnPress'>,
-): boolean => !!(action === 'icon' && actionOnPress);
+  { action, actionComponent }: Pick<TextFieldProps, 'action' | 'actionComponent'>,
+): boolean => !!(action === 'icon' && actionComponent);
 
 export const TextField = (props: TextFieldProps) => {
   const theme = useTheme();
   const [active, setActive] = React.useState(false);
   const {
     action,
-    actionOnPress,
+    actionComponent,
     disabled = false,
     feedback,
     helperText = '',
-    iconColor,
-    iconName,
-    imageSource,
     label,
     onBlur = () => {},
     onFocus = () => {},
@@ -64,7 +60,7 @@ export const TextField = (props: TextFieldProps) => {
       <Input testID="input"
         disabled={disabled}
         editable={isEditable({ disabled, readonly })}
-        hasActionIcon={hasActionIcon({ action, actionOnPress })}
+        hasActionIcon={hasActionIcon({ action, actionComponent })}
         onBlur={nativeEvent => statusActiveHandler(onBlur, nativeEvent, false, setActive)}
         onFocus={nativeEvent => !readonly
           && statusActiveHandler(onFocus, nativeEvent, true, setActive)}
@@ -125,13 +121,11 @@ export const TextField = (props: TextFieldProps) => {
         textBreakStrategy={props.textBreakStrategy}
         textContentType={props.textContentType}
       />
-      { action === 'icon' && actionOnPress
-        && <ActionIcon>
-            <IconButton testID='action-icon' iconColor={iconColor} icon={iconName} onPress={actionOnPress} />
-          </ActionIcon>
+      { action === 'icon' && actionComponent
+        && <ActionIcon testID="action-icon">{ actionComponent }</ActionIcon>
       }
-      { action === 'image' && imageSource
-        && <ActionImage testID='action-image' size={size} source={imageSource} />
+      { action === 'image' && actionComponent
+        && <ActionImage testID="action-image" size={size}>{ actionComponent }</ActionImage>
       }
     </InputFeedbackContainer>
   );

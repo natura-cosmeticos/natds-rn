@@ -98,22 +98,14 @@ describe('Input', () => {
   describe('action', () => {
     it('should render an icon button when receives action icon', () => {
       const { getByTestId } = renderWithTheme(
-        <TextField
-          action="icon"
-          actionOnPress={() => {}}
-          iconName="filled-action-clock"
-        />,
+        <TextField action="icon" actionComponent={<></>} />,
       );
 
       expect(getByTestId('action-icon')).toBeTruthy();
     });
     it('should render an image button when receives action image', () => {
       const { getByTestId } = renderWithTheme(
-        <TextField
-          action="image"
-          actionOnPress={() => {}}
-          imageSource={placeholderImage}
-        />,
+        <TextField action="image" actionComponent={<></>} />,
       );
 
       expect(getByTestId('action-image')).toBeTruthy();

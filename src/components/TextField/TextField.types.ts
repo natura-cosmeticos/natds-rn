@@ -1,13 +1,14 @@
 /* eslint-disable max-lines */
+import { JSXElementConstructor } from 'react';
 import {
   AccessibilityProps,
-  ImageSourcePropType,
+  Image,
   TextInputAndroidProps,
   TextInputIOSProps,
   TextInputProps,
 } from 'react-native';
-import { IconName } from '@naturacosmeticos/natds-icons';
-import { Color, Size } from '@naturacosmeticos/natds-themes/react-native';
+import { Size } from '@naturacosmeticos/natds-themes/react-native';
+import { IconButtonProps } from '../IconButton/IconButton.types';
 
 type AndroidProps = Pick<TextInputAndroidProps,
   | 'autoCompleteType'
@@ -144,34 +145,17 @@ interface WithoutFeedbackProps {
 
 interface ActionImageProps {
   action: 'image';
-  actionOnPress?: () => void;
-  iconColor?: never;
-  iconName?: never;
-  imageSource: ImageSourcePropType;
+  actionComponent: React.ReactComponentElement<JSXElementConstructor<Image>>;
 }
 
 interface ActionIconProps {
   action: 'icon';
-  actionOnPress: () => void;
-  /**
-   * Set the color of the icon.
-   * @default highEmphasis
-   */
-  iconColor?: keyof Pick<Color, 'primary' | 'highEmphasis'>;
-  /**
-   * Set the icon to be rendered.
-   * Check all available names in [Icon Library](https://natds.natura.design/icon-library)
-   */
-  iconName: IconName;
-  imageSource?: never;
+  actionComponent: React.ReactComponentElement<JSXElementConstructor<IconButtonProps>>;
 }
 
 interface WithoutActionProps {
   action?: never;
-  actionOnPress?: never;
-  iconColor?: never;
-  iconName?: never;
-  imageSource?: never;
+  actionComponent?: never;
 }
 
 export type TextFieldProps = BaseProps
