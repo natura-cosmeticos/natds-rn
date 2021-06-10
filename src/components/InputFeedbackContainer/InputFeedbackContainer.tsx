@@ -29,8 +29,12 @@ type FeedbackProps =
 
 export type InputFeedbackContainerProps = ContentProps & FeedbackProps
 
+type ColorsObject = {
+  [state in InputStates]: { box: string; text: string; };
+}
+
 export const getElementsColorsByState = (element: 'box' | 'text', theme: Theme) => (state: InputStates) => {
-  const colors = {
+  const colors: ColorsObject = {
     active: { box: getColorPrimary(theme), text: getColorMediumEmphasis(theme) },
     default: { box: getColorLowEmphasis(theme), text: getColorMediumEmphasis(theme) },
     disabled: { box: getColorLowEmphasis(theme), text: getColorLowEmphasis(theme) },
@@ -39,7 +43,7 @@ export const getElementsColorsByState = (element: 'box' | 'text', theme: Theme) 
     success: { box: getColorSuccess(theme), text: getColorSuccess(theme) },
   };
 
-  return colors[state || 'default'][element];
+  return colors[state][element];
 };
 
 const Container = styled.View((): CSSObject => ({ width: '100%' }));
