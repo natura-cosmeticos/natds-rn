@@ -1283,10 +1283,10 @@
     eslint-plugin-mocha "^5.3.0"
     snyk "^1.189.0"
 
-"@naturacosmeticos/natds-icons@^0.4.0":
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/@naturacosmeticos/natds-icons/-/natds-icons-0.4.0.tgz#3bc57978b7a75a3ade10663f7d2cfcfaa5e309ea"
-  integrity sha512-4qwtkucI4XfJZi2EIYsmPyXaRlYXR0Pg4O5doASmujwtgQx7VdqzoTUqVFcOQK85INmFjTu9KxW3G1U6a9Ssyg==
+"@naturacosmeticos/natds-icons@^1.2.2":
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/@naturacosmeticos/natds-icons/-/natds-icons-1.5.0.tgz#c211280c135a0915c4d9705c58febe94b1882918"
+  integrity sha512-qbjCps6NMygcW4Uq6YoE3CWBI8Dx2KYVb+kuHBm1pPycTIYEz4dP91WpbQ1akRymcwx/11gG1UAgkXe7evjzzw==
 
 "@nodelib/fs.scandir@2.1.3":
   version "2.1.3"

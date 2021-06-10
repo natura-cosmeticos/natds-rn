@@ -20,7 +20,7 @@ export const StoryNatAppBar = () => {
   const logo = () => (
     <NatLogo name="logo-natura-horizontal" width={150} height={56} />
   );
-  const logoAvon = () => <NatLogo name="logo-avon" width={120} height={56} />;
+  const logoAvon = () => <NatLogo name="logo-avon" width={208} height={47} />;
   const logoAesop = () => <NatLogo name="logo-aesop" width={100} height={56} />;
   const logoTheBodyShop = () => (
     <NatLogo name="logo-the-body-shop" width={200} height={56} />
