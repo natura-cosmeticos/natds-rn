@@ -254,32 +254,30 @@ export const Action = () => {
   );
 };
 
-export const Password = () => {
-  const [value, setValue] = React.useState('');
-  const [secureState, setSecureState] = React.useState(true);
-  const onPress = () => {
-    setSecureState(!secureState);
-  };
+export const Type = () => {
+  const [textValue, setTextValue] = React.useState('');
+  const [passwordValue, setPasswordValue] = React.useState('');
 
   return (
     <>
-      <StoryContainer title='Example'>
+      <VerticalStoryContainer title='Type'>
         <TextField
-          action="icon"
-          actionComponent={
-            <IconButton onPress={onPress}
-              icon={!secureState
-                ? 'outlined-action-visibility'
-                : 'outlined-action-visibilityoff'} />
-          }
+          helperText="This is the default type"
+          label="Text"
+          onChangeText={text => setTextValue(text)}
+          placeholder="Type anything here"
+          value={textValue}
+        />
+        <Separator />
+        <TextField
+          type="password"
           helperText="The eye button on the right side will change your password visibility"
           label="Password"
-          onChangeText={text => setValue(text)}
+          onChangeText={text => setPasswordValue(text)}
           placeholder="Type here your password"
-          secureTextEntry={secureState}
-          value={value}
+          value={passwordValue}
         />
-      </StoryContainer>
+      </VerticalStoryContainer>
     </>
   );
 };
@@ -294,5 +292,6 @@ export const All = () => (
     <Disabled />
     <Readonly />
     <Action />
+    <Type />
   </>
 );

@@ -2,11 +2,10 @@
 import React, { Dispatch, SetStateAction } from 'react';
 import { NativeSyntheticEvent, TextInputFocusEventData } from 'react-native';
 import { useTheme } from 'styled-components/native';
-import {
-  ActionIcon, ActionImage, getPlaceholderTextColor, Input,
-} from './TextField.styles';
+import { getPlaceholderTextColor, Input } from './TextField.styles';
 import { InputFeedbackContainer } from '../InputFeedbackContainer';
-import { TextFieldProps } from './TextField.types';
+import { TextFieldProps, TextFieldTypes } from './TextField.types';
+import { TextFieldAction, TextFieldPasswordAction } from './TextFieldAction';
 
 const statusActiveHandler = (
   event: (e: NativeSyntheticEvent<TextInputFocusEventData>) => void,
@@ -25,6 +24,20 @@ const hasActionIcon = (
   { action, actionComponent }: Pick<TextFieldProps, 'action' | 'actionComponent'>,
 ): boolean => !!(action === 'icon' && actionComponent);
 
+const isPasswordType = (type: TextFieldTypes) => type === 'password';
+const isSecureText = ({ secureState, secureTextEntry, type }: {
+  secureState: boolean, secureTextEntry: boolean, type: TextFieldTypes,
+}) => (isPasswordType(type) ? secureState : secureTextEntry);
+
+const getContainerProps = ({
+  active, disabled, feedback, helperText,
+}) => {
+  if (disabled) return { disabled, helperText };
+  if (feedback) return { active, feedback, helperText };
+
+  return { active };
+};
+
 export const TextField = (props: TextFieldProps) => {
   const theme = useTheme();
   const [active, setActive] = React.useState(false);
@@ -39,15 +52,12 @@ export const TextField = (props: TextFieldProps) => {
     onFocus = () => {},
     readonly = false,
     required = false,
+    secureTextEntry = false,
     size = 'mediumX',
+    type = 'text',
     value = '',
   }: TextFieldProps = props;
-  const getContainerProps = () => {
-    if (disabled) return { disabled, helperText };
-    if (feedback) return { active, feedback, helperText };
-
-    return { active };
-  };
+  const [secureState, setSecureState] = React.useState(isPasswordType(type));
 
   return (
     <InputFeedbackContainer
@@ -55,7 +65,9 @@ export const TextField = (props: TextFieldProps) => {
       helperText={helperText}
       label={label}
       required={required}
-      {...getContainerProps()}
+      {...getContainerProps({
+        active, disabled, feedback, helperText,
+      })}
     >
       <Input testID="input"
         disabled={disabled}
@@ -66,6 +78,7 @@ export const TextField = (props: TextFieldProps) => {
           && statusActiveHandler(onFocus, nativeEvent, true, setActive)}
         placeholderTextColor={getPlaceholderTextColor(disabled, theme)}
         readonly={readonly}
+        secureTextEntry={isSecureText({ secureState, secureTextEntry, type })}
         size={size}
         value={value}
         accessible={props.accessible}
@@ -112,7 +125,6 @@ export const TextField = (props: TextFieldProps) => {
         returnKeyLabel={props.returnKeyLabel}
         returnKeyType={props.returnKeyType}
         scrollEnabled={props.scrollEnabled}
-        secureTextEntry={props.secureTextEntry}
         selection={props.selection}
         selectionState={props.selectionState}
         selectTextOnFocus={props.selectTextOnFocus}
@@ -121,11 +133,18 @@ export const TextField = (props: TextFieldProps) => {
         textBreakStrategy={props.textBreakStrategy}
         textContentType={props.textContentType}
       />
-      { action === 'icon' && actionComponent
-        && <ActionIcon testID="action-icon">{ actionComponent }</ActionIcon>
+      { actionComponent && !!action
+        && <TextFieldAction
+            action={action}
+            actionComponent={actionComponent}
+            size={size}
+        />
       }
-      { action === 'image' && actionComponent
-        && <ActionImage testID="action-image" size={size}>{ actionComponent }</ActionImage>
+      { !actionComponent && type === 'password'
+        && <TextFieldPasswordAction
+          secureState={secureState}
+          onPress={() => setSecureState(!secureState)}
+        />
       }
     </InputFeedbackContainer>
   );

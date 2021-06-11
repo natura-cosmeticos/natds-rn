@@ -51,6 +51,7 @@ exports[`Input render should render with default props 1`] = `
         placeholderTextColor="#777777"
         readonly={false}
         rejectResponderTermination={true}
+        secureTextEntry={false}
         size="mediumX"
         style={
           Array [

@@ -78,6 +78,8 @@ export type InputSizes = keyof Pick<Size, 'medium' | 'mediumX'> | DeprecatedInpu
  */
 type TextFieldStates = 'enabled' | 'focus' | 'active' | 'filled';
 
+export type TextFieldTypes = 'text' | 'password';
+
 interface BaseProps extends
   AccessibilityProps,
   MultiPlatformProps,
@@ -118,10 +120,15 @@ interface BaseProps extends
     size?: InputSizes;
     /**
      * @deprecated
-     * This prop should not be used as it is no longer necessary for the
-     * field to identify its state. This component now handles its own state.
+     * This prop should not be used as providing states is no longer necessary.
+     * This component now handles its own state.
      */
     state?: TextFieldStates;
+    /**
+     * This provides the most common behavior expected for this component without
+     * the need to customize it.
+     */
+    type?: TextFieldTypes;
   }
 
 interface FeedbackProps {
