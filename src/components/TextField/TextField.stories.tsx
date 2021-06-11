@@ -1,7 +1,7 @@
 /* eslint-disable max-lines */
 import React from 'react';
-import { Image, ImageSourcePropType, View } from 'react-native';
-import { StoryContainer } from '../../common/HelperComponents/StoryContainer';
+import { Image, ImageSourcePropType } from 'react-native';
+import { Separator, StoryContainer, VerticalStoryContainer } from '../../common/HelperComponents/StoryContainer';
 import { TextField } from './TextField';
 // @ts-ignore
 import placeholderImage from '../../assets/images/textfield_image_arealimit.png';
@@ -81,7 +81,7 @@ export const Sizes = () => {
 
   return (
   <>
-    <StoryContainer title='Sizes' style={{ flexDirection: 'column' }}>
+    <VerticalStoryContainer title='Sizes'>
       <TextField
         helperText="Helper text"
         label="Label"
@@ -89,7 +89,7 @@ export const Sizes = () => {
         placeholder="Placeholder"
         value={mediumXValue}
       />
-      <View style={{ marginBottom: 8 }}></View>
+      <Separator />
       <TextField
         helperText="Helper text"
         label="Label"
@@ -98,7 +98,7 @@ export const Sizes = () => {
         size='medium'
         value={mediumValue}
       />
-    </StoryContainer>
+    </VerticalStoryContainer>
   </>
   );
 };
@@ -109,7 +109,7 @@ export const States = () => {
 
   return (
     <>
-      <StoryContainer title='States' style={{ flexDirection: 'column' }}>
+      <VerticalStoryContainer title='States'>
           <TextField
             helperText="Helper text"
             label="Label"
@@ -117,7 +117,7 @@ export const States = () => {
             placeholder="This field is not filled yet"
             value={blankValue}
           />
-        <View style={{ marginBottom: 8 }}></View>
+        <Separator />
         <TextField
           helperText="Helper text"
           label="Label"
@@ -125,7 +125,7 @@ export const States = () => {
           placeholder="Placeholder"
           value={filledValue}
         />
-      </StoryContainer>
+      </VerticalStoryContainer>
     </>
   );
 };
@@ -136,7 +136,7 @@ export const Feedback = () => {
 
   return (
     <>
-      <StoryContainer title='Feedback' style={{ flexDirection: 'column' }}>
+      <VerticalStoryContainer title='Feedback'>
           <TextField
             feedback='error'
             helperText="Helper text"
@@ -145,7 +145,7 @@ export const Feedback = () => {
             placeholder="Placeholder"
             value={errorValue}
           />
-        <View style={{ marginBottom: 8 }}></View>
+        <Separator />
         <TextField
           feedback='success'
           helperText="Helper text"
@@ -154,7 +154,7 @@ export const Feedback = () => {
           placeholder="Placeholder"
           value={successValue}
         />
-      </StoryContainer>
+      </VerticalStoryContainer>
     </>
   );
 };
@@ -225,7 +225,7 @@ export const Action = () => {
 
   return (
     <>
-      <StoryContainer title='Action' style={{ flexDirection: 'column' }}>
+      <VerticalStoryContainer title='Action'>
         <TextField
           action='icon'
           actionComponent={<IconButton onPress={() => {}} />}
@@ -235,7 +235,7 @@ export const Action = () => {
           onChangeText={text => setActionIconValue(text)}
           value={actionIconValue}
         />
-        <View style={{ marginBottom: 8 }}></View>
+        <Separator />
         <TextField
           action='image'
           actionComponent={
@@ -249,7 +249,7 @@ export const Action = () => {
           onChangeText={text => setActionImageValue(text)}
           value={actionImageValue}
         />
-      </StoryContainer>
+      </VerticalStoryContainer>
     </>
   );
 };
