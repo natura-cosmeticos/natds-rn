@@ -216,6 +216,8 @@ export const Readonly = () => {
   );
 };
 
+const imageStyle = { height: 56 };
+
 export const Action = () => {
   const initialValue = '';
   const [actionIconValue, setActionIconValue] = React.useState(initialValue);
@@ -237,7 +239,10 @@ export const Action = () => {
         <TextField
           action='image'
           actionComponent={
-            <Image source={placeholderImage as ImageSourcePropType} />}
+            <Image
+              source={placeholderImage as ImageSourcePropType}
+              style={imageStyle}
+            />}
           helperText="Helper text"
           label="Label"
           placeholder="Placeholder"

@@ -50,7 +50,7 @@ export const Input = styled.TextInput<InputStyleProps & CSSProperties>(({
   maxWidth: '100%',
   overflow: 'hidden',
   paddingLeft: getSpacingSmall(theme),
-  paddingRight: hasActionIcon ? getSpacingTiny(theme) : getSpacingSmall(theme),
+  paddingRight: hasActionIcon ? 0 : getSpacingSmall(theme),
   width: 10,
 }));
 
@@ -58,11 +58,12 @@ export const ActionImage = styled.View<Pick<InputStyleProps, 'size' | 'theme'>>(
   ({ size, theme }): CSSObject => ({
     borderBottomRightRadius: getBorderRadiusMedium(theme),
     borderTopRightRadius: getBorderRadiusMedium(theme),
-    height: getFieldHeight(size, theme),
+    maxHeight: getFieldHeight(size, theme),
+    overflow: 'hidden',
     width: getSizeLarge(theme),
   }),
 );
 
 export const ActionIcon = styled.View(({ theme }): CSSObject => ({
-  paddingRight: getSpacingTiny(theme),
+  paddingHorizontal: getSpacingTiny(theme),
 }));
