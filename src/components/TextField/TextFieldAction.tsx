@@ -6,7 +6,7 @@ import { ActionIcon, ActionImage } from './TextField.styles';
 export const TextFieldPasswordAction = ({ secureState, onPress }: {
   secureState: boolean, onPress: () => void
 }) => (
-  <ActionIcon testID="action-icon">
+  <ActionIcon testID="password-action-icon" >
     <IconButton onPress={onPress}
       icon={secureState
         ? 'outlined-action-visibilityoff'

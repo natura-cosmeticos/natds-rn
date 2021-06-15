@@ -33,7 +33,7 @@ jest.mock('../../common/themeSelectors', () => (
     }),
   }));
 
-describe('Input', () => {
+describe('TextField', () => {
   describe('render', () => {
     it('should render with default props', () => {
       const { getByTestId, toJSON } = renderWithTheme(<TextField />);
@@ -109,6 +109,24 @@ describe('Input', () => {
       );
 
       expect(getByTestId('action-image')).toBeTruthy();
+    });
+  });
+  describe('type password', () => {
+    it('should render with correct props when type is password', () => {
+      const { getByTestId } = renderWithTheme(<TextField type="password" />);
+      const iconName = getByTestId('password-action-icon').props.children.props.icon;
+
+      expect(iconName).toBe('outlined-action-visibilityoff');
+      expect(getByTestId('input')).toHaveProp('secureTextEntry', true);
+    });
+    it('should handle value visibility when type is password', () => {
+      const { getByTestId } = renderWithTheme(<TextField type="password" />);
+
+      fireEvent(getByTestId('password-action-icon'), 'press');
+      const iconName = getByTestId('password-action-icon').props.children.props.icon;
+
+      expect(iconName).toBe('outlined-action-visibility');
+      expect(getByTestId('input')).toHaveProp('secureTextEntry', false);
     });
   });
 });

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Input render should render with default props 1`] = `
+exports[`TextField render should render with default props 1`] = `
 <View
   style={
     Array [
