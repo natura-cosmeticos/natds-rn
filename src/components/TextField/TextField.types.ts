@@ -78,7 +78,7 @@ export type InputSizes = keyof Pick<Size, 'medium' | 'mediumX'> | DeprecatedInpu
  */
 type TextFieldStates = 'enabled' | 'focus' | 'active' | 'filled';
 
-export type TextFieldTypes = 'text' | 'password';
+export type TextFieldTypes = 'text' | 'password' | 'number';
 
 interface BaseProps extends
   AccessibilityProps,

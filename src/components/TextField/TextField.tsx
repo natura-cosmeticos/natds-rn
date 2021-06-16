@@ -1,6 +1,6 @@
 /* eslint-disable max-lines */
 import React, { Dispatch, SetStateAction } from 'react';
-import { NativeSyntheticEvent, TextInputFocusEventData } from 'react-native';
+import { KeyboardTypeOptions, NativeSyntheticEvent, TextInputFocusEventData } from 'react-native';
 import { useTheme } from 'styled-components/native';
 import { getPlaceholderTextColor, Input } from './TextField.styles';
 import { InputFeedbackContainer } from '../InputFeedbackContainer';
@@ -24,6 +24,24 @@ const hasActionIcon = (
   { action, actionComponent }: Pick<TextFieldProps, 'action' | 'actionComponent'>,
 ): boolean => !!(action === 'icon' && actionComponent);
 
+const isNumberType = (type: TextFieldTypes) => type === 'number';
+const getKeyboardType = ({ keyboardType, type }: {
+  keyboardType: KeyboardTypeOptions, type: TextFieldTypes,
+}) => (isNumberType(type) ? 'numeric' : keyboardType);
+const handleOnChangeText = ({
+  onChangeText, text, type, setNumberValue,
+}: {
+  onChangeText: (text: string) => void,
+  text: string,
+  type: TextFieldTypes,
+  setNumberValue: Dispatch<SetStateAction<string>>,
+}) => (isNumberType(type) ? setNumberValue(text.replace(/\D/g, '')) : onChangeText(text));
+const getFieldValue = ({ numberValue, type, value }: {
+  numberValue: string, type: TextFieldTypes, value: string,
+}) => (
+  isNumberType(type) ? numberValue : value
+);
+
 const isPasswordType = (type: TextFieldTypes) => type === 'password';
 const isSecureText = ({ secureState, secureTextEntry, type }: {
   secureState: boolean, secureTextEntry: boolean, type: TextFieldTypes,
@@ -41,14 +59,18 @@ const getContainerProps = ({
 export const TextField = (props: TextFieldProps) => {
   const theme = useTheme();
   const [active, setActive] = React.useState(false);
+  const [numberValue, setNumberValue] = React.useState('');
+
   const {
     action,
     actionComponent,
     disabled = false,
     feedback,
     helperText = '',
+    keyboardType = 'default',
     label,
     onBlur = () => {},
+    onChangeText = () => {},
     onFocus = () => {},
     readonly = false,
     required = false,
@@ -58,6 +80,7 @@ export const TextField = (props: TextFieldProps) => {
     value = '',
   }: TextFieldProps = props;
   const [secureState, setSecureState] = React.useState(isPasswordType(type));
+  const fieldValue = getFieldValue({ numberValue, type, value });
 
   return (
     <InputFeedbackContainer
@@ -73,14 +96,18 @@ export const TextField = (props: TextFieldProps) => {
         disabled={disabled}
         editable={isEditable({ disabled, readonly })}
         hasActionIcon={hasActionIcon({ action, actionComponent })}
+        keyboardType={getKeyboardType({ keyboardType, type })}
         onBlur={nativeEvent => statusActiveHandler(onBlur, nativeEvent, false, setActive)}
+        onChangeText={text => handleOnChangeText({
+          onChangeText, setNumberValue, text, type,
+        })}
         onFocus={nativeEvent => !readonly
           && statusActiveHandler(onFocus, nativeEvent, true, setActive)}
         placeholderTextColor={getPlaceholderTextColor(disabled, theme)}
         readonly={readonly}
         secureTextEntry={isSecureText({ secureState, secureTextEntry, type })}
         size={size}
-        value={value}
+        value={fieldValue}
         accessible={props.accessible}
         accessibilityActions={props.accessibilityActions}
         accessibilityLabel={props.accessibilityLabel}
@@ -105,13 +132,11 @@ export const TextField = (props: TextFieldProps) => {
         importantForAutofill={props.importantForAutofill}
         inputAccessoryViewID={props.inputAccessoryViewID}
         keyboardAppearance={props.keyboardAppearance}
-        keyboardType={props.keyboardType}
         maxFontSizeMultiplier={props.maxFontSizeMultiplier}
         maxLength={props.maxLength}
         multiline={props.multiline}
         numberOfLines={props.numberOfLines}
         onChange={props.onChange}
-        onChangeText={props.onChangeText}
         onContentSizeChange={props.onContentSizeChange}
         onEndEditing={props.onEndEditing}
         onKeyPress={props.onKeyPress}

@@ -129,4 +129,18 @@ describe('TextField', () => {
       expect(getByTestId('input')).toHaveProp('secureTextEntry', false);
     });
   });
+  describe('type number', () => {
+    it('should show keyboard type number when active', () => {
+      const { getByTestId } = renderWithTheme(<TextField type="number" />);
+
+      expect(getByTestId('input')).toHaveProp('keyboardType', 'numeric');
+    });
+    it('should only accept numbers', () => {
+      const { getByTestId } = renderWithTheme(<TextField type="number" />);
+
+      fireEvent(getByTestId('input'), 'changeText', '1234abc567');
+
+      expect(getByTestId('input')).toHaveProp('value', '1234567');
+    });
+  });
 });

@@ -257,6 +257,7 @@ export const Action = () => {
 export const Type = () => {
   const [textValue, setTextValue] = React.useState('');
   const [passwordValue, setPasswordValue] = React.useState('');
+  const [numberValue, setNumberValue] = React.useState('');
 
   return (
     <>
@@ -276,6 +277,15 @@ export const Type = () => {
           onChangeText={text => setPasswordValue(text)}
           placeholder="Type here your password"
           value={passwordValue}
+        />
+        <Separator />
+        <TextField
+          type="number"
+          helperText="This field will only accept numbers"
+          label="Number"
+          onChangeText={text => setNumberValue(text)}
+          placeholder="Type numbers here"
+          value={numberValue}
         />
       </VerticalStoryContainer>
     </>
