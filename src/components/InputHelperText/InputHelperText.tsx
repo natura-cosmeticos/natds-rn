@@ -11,22 +11,28 @@ import {
 export interface HelperTextProps {
   color?: string;
   content: string;
-  feedback?: 'success' | 'error'
+  feedback?: 'success' | 'error';
 }
 
-const HelperText = styled.Text<Pick<HelperTextProps, 'color' | 'feedback'>>(({ color, feedback, theme }): CSSObject => {
-  const { caption } = getTypographyStyles(theme);
+const HelperTextContainer = styled.View(({ theme }): CSSObject => ({
+  alignItems: 'center',
+  flexDirection: 'row',
+  marginTop: getSpacingMicro(theme),
+}));
 
-  return ({
-    color: color || getColorMediumEmphasis(theme),
-    flexDirection: 'row',
-    fontSize: caption.fontSize,
-    fontWeight: caption.fontWeight,
-    letterSpacing: caption.letterSpacing,
-    marginLeft: feedback && getSpacingMicro(theme),
-    marginTop: getSpacingMicro(theme),
-  });
-});
+const HelperText = styled.Text<Pick<HelperTextProps, 'feedback' | 'color'>>(
+  ({ color, feedback, theme }): CSSObject => {
+    const { caption } = getTypographyStyles(theme);
+
+    return ({
+      color: color || getColorMediumEmphasis(theme),
+      fontSize: caption.fontSize,
+      fontWeight: caption.fontWeight,
+      letterSpacing: caption.letterSpacing,
+      marginLeft: feedback && getSpacingMicro(theme),
+    });
+  },
+);
 
 export const InputHelperText = ({ color, content, feedback }: HelperTextProps) => {
   const theme = useTheme();
@@ -43,7 +49,7 @@ export const InputHelperText = ({ color, content, feedback }: HelperTextProps) =
   const iconProps = feedback && feedbackProps[feedback];
 
   return (
-    <HelperText testID="helper-text" feedback={feedback} color={color} theme={theme}>
+    <HelperTextContainer theme={theme}>
       { iconProps
         && <Icon
           color={iconProps.iconColor as keyof Color}
@@ -52,7 +58,9 @@ export const InputHelperText = ({ color, content, feedback }: HelperTextProps) =
           testID="icon"
         />
       }
-      { content }
-  </HelperText>
+      <HelperText testID="helper-text" color={color} feedback={feedback}>
+        { content }
+      </HelperText>
+  </HelperTextContainer>
   );
 };

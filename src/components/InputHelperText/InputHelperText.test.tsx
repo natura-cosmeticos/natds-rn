@@ -22,7 +22,7 @@ describe('InputHelperText', () => {
     );
 
     expect(getByTestId('helper-text')).toHaveStyle({
-      color: '#777', flexDirection: 'row', fontSize: 12, marginTop: 2,
+      color: '#777', fontSize: 12,
     });
     expect(getByTestId('helper-text')).not.toHaveStyle({ marginLeft: 2 });
     expect(queryByTestId('icon')).toBeFalsy();
