@@ -1,170 +1,146 @@
-import React from 'react';
 import { fireEvent } from '@testing-library/react-native';
-import theme from '../../common/themeSelectors/theme/mock-theme.json';
+import React from 'react';
 import { renderWithTheme } from '../../../test/testHelpers';
+import { TextField } from './TextField';
+// @ts-ignore
+import placeholderImage from '../../assets/images/anonymous.jpg';
 
-import { TextField, TextFieldProps } from './TextField';
+jest.mock('../../common/themeSelectors', () => (
+  {
+    buildColorWithOpacity: () => '#BBBBBB00',
+    getBorderRadiusMedium: () => 8,
+    getColorAlert: () => '#FF0000',
+    getColorByName: () => '#0F0F0F',
+    getColorHighEmphasis: () => '#333333',
+    getColorHighlight: () => '#333333',
+    getColorLowEmphasis: () => '#BBBBBB',
+    getColorMediumEmphasis: () => '#777777',
+    getColorPrimary: () => '#FFAA33',
+    getColorSuccess: () => '#00FF00',
+    getColorSurface: () => '#000000',
+    getOpacityDisabledLow: () => 0.5,
+    getSize: () => 16,
+    getSizeLarge: () => 42,
+    getSizeMedium: () => 24,
+    getSizeMediumX: () => 32,
+    getSizeSemi: () => 14,
+    getSpacingMicro: () => 4,
+    getSpacingSmall: () => 8,
+    getSpacingTiny: () => 2,
+    getTheme: () => {},
+    getTypographyStyles: () => ({
+      caption: {}, subtitle2: {},
+    }),
+  }));
 
-jest.mock('../../common/themeSelectors', () => ({
-  getColorAlert: () => '#FFFFFF',
-  getColorByName: () => '#ffffff',
-  getColorHighEmphasis: () => '#FAF3E3',
-  getColorLowEmphasis: () => '#FEEEEF',
-  getColorMediumEmphasis: () => '#FAFAEA',
-  getColorOnPrimary: () => '#F4F4',
-  getColorPrimary: () => '#FFFFFF',
-  getColorPrimaryLight: () => '#BABABA',
-  getColorSuccess: () => '#569a32',
-  getSize: () => 56,
-}));
+describe('TextField', () => {
+  describe('render', () => {
+    it('should render with default props', () => {
+      const { getByTestId, toJSON } = renderWithTheme(<TextField />);
 
-jest.mock(
-  'react-native/Libraries/Components/Touchable/TouchableOpacity.js',
-  () => 'TouchableOpacity',
-);
+      const defaultStyles = {
+        backgroundColor: '#000000',
+        color: '#333333',
+        height: 32,
+      };
 
-const defaultProps: TextFieldProps = {
-  label: 'Label',
-  onChangeText: () => { },
-  onSubmitEditing: () => { },
-  placeholder: 'Placeholder',
-  testID: 'textField',
-  theme,
-  type: 'text',
-  value: 'test',
-};
+      expect(getByTestId('input')).toHaveStyle(defaultStyles);
+      expect(toJSON()).toMatchSnapshot();
+    });
+    it('should render with given size', () => {
+      const { getByTestId } = renderWithTheme(<TextField size="medium" />);
 
-/* eslint-disable max-statements */
-describe('TextField component', () => {
-  it('should render textField with default props', () => {
-    const { getByTestId } = renderWithTheme(<TextField {...defaultProps} />);
+      expect(getByTestId('input')).toHaveStyle({ height: 24 });
+    });
+    it('should render with correct props when disabled', () => {
+      const { getByTestId } = renderWithTheme(<TextField disabled />);
 
-    const textFieldWrapper = getByTestId('textField');
-    const textFieldInput = getByTestId('textField-input');
+      expect(getByTestId('input')).toHaveStyle({ color: '#BBBBBB' });
+      expect(getByTestId('input')).toHaveProp('editable', false);
+    });
+    it('should render with correct props when readonly', () => {
+      const { getByTestId } = renderWithTheme(<TextField readonly />);
 
-    expect(textFieldWrapper).toHaveTextContent('Label');
-    expect(textFieldInput).toHaveProp('placeholder', 'Placeholder');
-    expect(textFieldInput).toHaveProp('value', 'test');
-    expect(textFieldInput).toHaveProp('type', 'text');
-  });
-
-  it('should render textField with the given state prop', () => {
-    const { getByTestId } = renderWithTheme(
-      <TextField {...defaultProps} state="active" />,
-    );
-
-    const textFieldInput = getByTestId('textField-inputWrapper');
-
-    expect(textFieldInput).toHaveStyle({
-      borderColor: '#FFFFFF',
-      borderWidth: 2,
+      expect(getByTestId('input')).toHaveStyle({ backgroundColor: '#BBBBBB00' });
+      expect(getByTestId('input')).toHaveProp('editable', false);
     });
   });
+  describe('content', () => {
+    it('should get given value', () => {
+      const { getByTestId } = renderWithTheme(<TextField value="testing value" />);
 
-  it('should render textField with the given feedback prop', () => {
-    const { getByTestId } = renderWithTheme(
-      <TextField {...defaultProps} feedback="success" />,
-    );
+      expect(getByTestId('input')).toHaveProp('value', 'testing value');
+    });
+    it('should get given placeholder', () => {
+      const { getByTestId } = renderWithTheme(<TextField placeholder="testing placeholder" />);
 
-    const textFieldInput = getByTestId('textField-inputWrapper');
-
-    expect(textFieldInput).toHaveStyle({
-      borderColor: '#569a32',
-      borderWidth: 2,
+      expect(getByTestId('input')).toHaveProp('placeholder', 'testing placeholder');
     });
   });
+  describe('status events', () => {
+    it('should call onFocus when focused', () => {
+      const onFocusMock = jest.fn();
+      const { getByTestId } = renderWithTheme(<TextField onFocus={onFocusMock} />);
 
-  it('should render textField disabled', () => {
-    const { toJSON, getByTestId } = renderWithTheme(
-      <TextField {...defaultProps} disabled />,
-    );
+      fireEvent(getByTestId('input'), 'focus');
 
-    const textFieldInput = getByTestId('textField-inputWrapper');
+      expect(onFocusMock).toHaveBeenCalled();
+    });
+    it('should call onBlur when loses focus', () => {
+      const onBlurMock = jest.fn();
+      const { getByTestId } = renderWithTheme(<TextField onBlur={onBlurMock} />);
 
-    expect(textFieldInput).toBeDisabled();
-    expect(toJSON()).toMatchSnapshot();
+      fireEvent(getByTestId('input'), 'blur');
+
+      expect(onBlurMock).toHaveBeenCalled();
+    });
   });
+  describe('action', () => {
+    it('should render an icon button when receives action icon', () => {
+      const { getByTestId } = renderWithTheme(
+        <TextField action="icon" actionComponent={<></>} />,
+      );
 
-  it('should call the given onChangeText function', () => {
-    const onChangeTextMock = jest.fn();
+      expect(getByTestId('action-icon')).toBeTruthy();
+    });
+    it('should render an image button when receives action image', () => {
+      const { getByTestId } = renderWithTheme(
+        <TextField action="image" actionComponent={<></>} />,
+      );
 
-    const { getByTestId } = renderWithTheme(
-      <TextField {...defaultProps} onChangeText={onChangeTextMock} />,
-    );
-
-    const textFieldInput = getByTestId('textField-input');
-
-    fireEvent.changeText(textFieldInput);
-
-    expect(onChangeTextMock).toHaveBeenCalled();
+      expect(getByTestId('action-image')).toBeTruthy();
+    });
   });
+  describe('type password', () => {
+    it('should render with correct props when type is password', () => {
+      const { getByTestId } = renderWithTheme(<TextField type="password" />);
+      const iconName = getByTestId('password-action-icon').props.children.props.icon;
 
-  it('should call the given onFocus function', () => {
-    const onFocusMock = jest.fn();
+      expect(iconName).toBe('outlined-action-visibilityoff');
+      expect(getByTestId('input')).toHaveProp('secureTextEntry', true);
+    });
+    it('should handle value visibility when type is password', () => {
+      const { getByTestId } = renderWithTheme(<TextField type="password" />);
 
-    const { getByTestId } = renderWithTheme(
-      <TextField
-        {...defaultProps}
-        onFocus={onFocusMock}
-      />,
-    );
+      fireEvent(getByTestId('password-action-icon'), 'press');
+      const iconName = getByTestId('password-action-icon').props.children.props.icon;
 
-    const textFieldInput = getByTestId('textField-input');
-
-    fireEvent(textFieldInput, 'onFocus');
-
-    expect(onFocusMock).toHaveBeenCalled();
+      expect(iconName).toBe('outlined-action-visibility');
+      expect(getByTestId('input')).toHaveProp('secureTextEntry', false);
+    });
   });
+  describe('type number', () => {
+    it('should show keyboard type number when active', () => {
+      const { getByTestId } = renderWithTheme(<TextField type="number" />);
 
+      expect(getByTestId('input')).toHaveProp('keyboardType', 'numeric');
+    });
+    it('should only accept numbers', () => {
+      const { getByTestId } = renderWithTheme(<TextField type="number" />);
 
-  it('should call the given onBlur function', () => {
-    const onBlurMock = jest.fn();
+      fireEvent(getByTestId('input'), 'changeText', '1234abc567');
 
-    const { getByTestId } = renderWithTheme(
-      <TextField
-        {...defaultProps}
-        onBlur={onBlurMock}
-      />,
-    );
-
-    const textFieldInput = getByTestId('textField-input');
-
-    fireEvent(textFieldInput, 'onBlur');
-
-    expect(onBlurMock).toHaveBeenCalled();
-  });
-
-  it('should match snapshot', () => {
-    const { toJSON } = renderWithTheme(
-      <TextField {...defaultProps} />,
-    );
-
-    expect(toJSON()).toMatchSnapshot();
-  });
-
-  it('should not be editable when read only', () => {
-    const { getByTestId } = renderWithTheme(
-      <TextField
-        {...defaultProps}
-        readOnly
-      />,
-    );
-
-    const textFieldInput = getByTestId('textField-input');
-
-    expect(textFieldInput).toHaveProp('editable', false);
-  });
-
-  it('should render TextField type password with icon', () => {
-    const { getByTestId } = renderWithTheme(
-      <TextField
-        {...defaultProps}
-        type="password"
-      />,
-    );
-
-    const textFieldIcon = getByTestId('textField-icon-password');
-
-    expect(textFieldIcon).toBeTruthy();
+      expect(getByTestId('input')).toHaveProp('value', '1234567');
+    });
   });
 });

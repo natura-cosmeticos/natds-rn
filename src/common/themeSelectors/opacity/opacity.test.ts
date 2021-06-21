@@ -1,33 +1,21 @@
 import theme from '../theme/mock-theme.json';
 import * as selectors from './opacity';
 
-const scenarios = [
-  {
-    expectedResult: theme.opacity.mediumHigh,
-    name: 'getOpacityMediumHigh',
-    selector: selectors.getOpacityMediumHigh,
-    title: 'opacity',
-  },
-  {
-    expectedResult: theme.opacity.high,
-    name: 'getOpacityHigh',
-    selector: selectors.getOpacityHigh,
-    title: 'opacity',
-  },
-];
+/*  eslint-disable mocha/no-setup-in-describe */
+describe.each`
+title            | selector                           | expected
+${'mediumLow'}   | ${selectors.getOpacityMediumLow}   | ${theme.opacity.mediumLow}
+${'disabledLow'} | ${selectors.getOpacityDisabledLow} | ${theme.opacity.disabledLow}
+${'mediumHigh'}  | ${selectors.getOpacityMediumHigh}  | ${theme.opacity.mediumHigh}
+${'high'}        | ${selectors.getOpacityHigh}        | ${theme.opacity.high}
+${'veryHigh'}    | ${selectors.getOpacityVeryHigh}    | ${theme.opacity.veryHigh}
+`('Opacity selectors', ({
+  title, selector, expected,
+}) => {
+  it(`should return the opacity ${title}`, () => {
+    const result = selector(theme);
 
-describe('Opacity selectors', () => {
-  /*  eslint-disable mocha/no-setup-in-describe */
-  scenarios.forEach(scenario => (
-    describe(scenario.name, () => {
-      (
-        it(`should return the opacity ${scenario.title}`, () => {
-          const result = scenario.selector(theme);
-
-          expect(result).toBe(scenario.expectedResult);
-        })
-      );
-    })
-  ));
-  /* eslint-enable mocha/no-setup-in-describe */
+    expect(result).toBe(expected);
+  });
 });
+/* eslint-enable mocha/no-setup-in-describe */

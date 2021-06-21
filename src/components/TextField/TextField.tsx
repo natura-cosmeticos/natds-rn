@@ -1,243 +1,176 @@
 /* eslint-disable max-lines */
-/* eslint-disable complexity */
-/* eslint-disable no-unneeded-ternary */
-import React, {
-  useState,
-  useRef,
-  useImperativeHandle,
-  forwardRef,
-} from 'react';
-import { Text, TextInputProps, View } from 'react-native';
-import { withTheme } from 'styled-components';
+import React, { Dispatch, SetStateAction } from 'react';
+import { KeyboardTypeOptions, NativeSyntheticEvent, TextInputFocusEventData } from 'react-native';
+import { useTheme } from 'styled-components/native';
+import { getPlaceholderTextColor, Input } from './TextField.styles';
+import { InputFeedbackContainer } from '../InputFeedbackContainer';
+import { TextFieldProps, TextFieldTypes } from './TextField.types';
+import { TextFieldAction, TextFieldPasswordAction } from './TextFieldAction';
 
-import { Theme } from '../../common/themeSelectors';
-import { Icon } from '../Icon';
-
-import {
-  Wrapper,
-  InputWrapper,
-  Input,
-  Label,
-  IconPress,
-  HelperText,
-} from './TextField.styles';
-
-export type TextFieldStates = 'enabled' | 'focus' | 'active' | 'filled';
-
-export interface TextFieldProps extends TextInputProps {
-  /**
-   * A disabled input is unusable
-   */
-  disabled?: boolean;
-  /**
-   * Style the input field according to the data  provided by the user to give a visual feedback
-   * about the validation of the data
-   */
-  feedback?: 'error' | 'success';
-  /**
-   * Show a helper text below the input field
-   */
-  helperText?: string;
-  /**
-   * Descriptive text above the input field
-   */
-  label: string;
-  /**
-   * Define if the input has more than one line or not
-   */
-  multiline?: boolean;
-  /**
-   * Number of lines the input has
-   */
-  numberOfLines?: number;
-  /**
-   * onBlur event handler
-   */
-  onBlur?: (func) => void;
-  /**
-   * onChangeText event handler
-   */
-  onChangeText: (ev: string) => void;
-  /**
-   * onFocus event handler
-   */
-  onFocus?: (func) => void;
-  /**
-   * onSubmitEditing handler
-   */
-  onSubmitEditing?: () => void;
-  /**
-   * Input placeholder
-   */
-  placeholder: string;
-  /**
-   * When this prop is set, the value of the input can not be changed
-   */
-  readOnly?: boolean;
-  /**
-   * Show a visual indication if the input is required: Label*
-   */
-  required?: boolean;
-  /**
-   * Define the size of the input: tiny | small
-   */
-  size?: 'small' | 'regular';
-  /**
-   * TextField states: 'enabled' | 'focus' | 'active' | 'filled'
-   */
-  state?: TextFieldStates;
-  /**
-   * Id for testing
-   */
-  testID?: string;
-  /**
-   * app theme
-   */
-  theme: Theme;
-  /**
-   * Type of the input
-   */
-  type: 'text' | 'password';
-  /**
-   * Input value
-   */
-  value: string;
-}
-
-export interface InputRef {
-  focus(): void;
-}
-
-const TextFieldComponent: React.RefForwardingComponent<
-  InputRef,
-  TextFieldProps
-> = (
-  {
-    size = 'regular',
-    testID = 'textField',
-    required = false,
-    disabled = false,
-    readOnly = false,
-    helperText = '',
-    multiline = false,
-    numberOfLines = 1,
-    type,
-    feedback,
-    state,
-    theme,
-    label,
-    placeholder,
-    value,
-    onBlur,
-    onChangeText,
-    onFocus,
-    onSubmitEditing,
-    ...props
-  },
-  ref,
+const statusActiveHandler = (
+  event: (e: NativeSyntheticEvent<TextInputFocusEventData>) => void,
+  nativeEvent: NativeSyntheticEvent<TextInputFocusEventData>,
+  status: boolean,
+  setActive: Dispatch<SetStateAction<boolean>>,
 ) => {
-  const [currentState, setCurrentState] = useState<TextFieldStates>(() => {
-    // If a state is provided, use it as the current state
-    if (state) {
-      return state;
-    }
-
-    // If value or readOnly is truthy, set the state as filled, else set as enabled
-    return value || readOnly ? 'filled' : 'enabled';
-  });
-  const [showPassword, setShowPassword] = useState(() => (type === 'password' ? true : false));
-
-  const inputElementRef = useRef<any>(null);
-
-  const handleOnFocus = (func) => {
-    setCurrentState('active');
-
-    if (onFocus) {
-      onFocus(func);
-    }
-  };
-
-  const handleOnBlur = (func) => {
-    setCurrentState(value ? 'filled' : 'enabled');
-
-    if (onBlur) {
-      onBlur(func);
-    }
-  };
-
-  // Call the .focus() function from the passed reference
-  useImperativeHandle(ref, () => ({
-    focus() {
-      inputElementRef.current.focus();
-    },
-  }));
-
-  const renderPasswordIcon = () => (
-    <View style={{
-      bottom: 0,
-      justifyContent: 'center',
-      position: 'absolute',
-      right: 0,
-      top: 0,
-    }}>
-      <IconPress
-        testID={`${testID}-icon-password`}
-        onPress={() => {
-          if (showPassword) {
-            setShowPassword(false);
-          } else {
-            setShowPassword(true);
-          }
-        }}>
-        <Icon
-          size="standard"
-          name='outlined-action-visibility'
-        />
-      </IconPress>
-    </View>
-  );
-
-  return (
-    <Wrapper testID={testID}>
-      {label !== '' && (
-        <Label disabled={disabled} state={currentState} feedback={feedback}>
-          <Text>{required ? `${label}*` : label}</Text>
-        </Label>
-      )}
-
-      <InputWrapper
-        disabled={disabled}
-        state={currentState}
-        size={size}
-        numberOfLines={numberOfLines}
-        testID={`${testID}-inputWrapper`}
-        feedback={feedback}>
-        <Input
-          ref={inputElementRef}
-          testID={`${testID}-input`}
-          secureTextEntry={showPassword}
-          onChangeText={onChangeText}
-          placeholder={placeholder}
-          size={size}
-          value={value}
-          multiline={multiline}
-          numberOfLines={numberOfLines}
-          onFocus={handleOnFocus}
-          onBlur={handleOnBlur}
-          onSubmitEditing={onSubmitEditing}
-          editable={disabled || readOnly ? false : true}
-          disabled={disabled}
-          feedback={feedback}
-          type={type}
-          label={label}
-          {...props}
-        />
-        {type === 'password' && renderPasswordIcon()}
-      </InputWrapper>
-
-      {helperText !== '' && <HelperText disabled={disabled} feedback={feedback} state={currentState}>{helperText}</HelperText>}
-    </Wrapper>
-  );
+  setActive(status);
+  if (event) event(nativeEvent);
 };
 
-export const TextField = withTheme(forwardRef(TextFieldComponent));
+const isFieldFilled = ({ readonly, value }: Pick<TextFieldProps, 'readonly' | 'value'>) => !readonly && value !== '';
+const isEditable = ({ disabled, readonly }: Pick<TextFieldProps, 'disabled' | 'readonly'>) => !disabled && !readonly;
+
+const hasActionIcon = (
+  { action, actionComponent }: Pick<TextFieldProps, 'action' | 'actionComponent'>,
+): boolean => !!(action === 'icon' && actionComponent);
+
+const isNumberType = (type: TextFieldTypes) => type === 'number';
+const getKeyboardType = ({ keyboardType, type }: {
+  keyboardType: KeyboardTypeOptions, type: TextFieldTypes,
+}) => (isNumberType(type) ? 'numeric' : keyboardType);
+const handleOnChangeText = ({
+  onChangeText, text, type, setNumberValue,
+}: {
+  onChangeText: (text: string) => void,
+  text: string,
+  type: TextFieldTypes,
+  setNumberValue: Dispatch<SetStateAction<string>>,
+}) => (isNumberType(type) ? setNumberValue(text.replace(/\D/g, '')) : onChangeText(text));
+const getFieldValue = ({ numberValue, type, value }: {
+  numberValue: string, type: TextFieldTypes, value: string,
+}) => (
+  isNumberType(type) ? numberValue : value
+);
+
+const isPasswordType = (type: TextFieldTypes) => type === 'password';
+const isSecureText = ({ secureState, secureTextEntry, type }: {
+  secureState: boolean, secureTextEntry: boolean, type: TextFieldTypes,
+}) => (isPasswordType(type) ? secureState : secureTextEntry);
+
+const getContainerProps = ({
+  active, disabled, feedback, helperText,
+}) => {
+  if (disabled) return { disabled, helperText };
+  if (feedback) return { active, feedback, helperText };
+
+  return { active };
+};
+
+export const TextField = (props: TextFieldProps) => {
+  const theme = useTheme();
+  const [active, setActive] = React.useState(false);
+  const [numberValue, setNumberValue] = React.useState('');
+
+  const {
+    action,
+    actionComponent,
+    disabled = false,
+    feedback,
+    helperText = '',
+    keyboardType = 'default',
+    label,
+    onBlur = () => {},
+    onChangeText = () => {},
+    onFocus = () => {},
+    readonly = false,
+    required = false,
+    secureTextEntry = false,
+    size = 'mediumX',
+    type = 'text',
+    value = '',
+  }: TextFieldProps = props;
+  const [secureState, setSecureState] = React.useState(isPasswordType(type));
+  const fieldValue = getFieldValue({ numberValue, type, value });
+
+  return (
+    <InputFeedbackContainer
+      filled={isFieldFilled({ readonly, value })}
+      helperText={helperText}
+      label={label}
+      required={required}
+      {...getContainerProps({
+        active, disabled, feedback, helperText,
+      })}
+    >
+      <Input testID="input"
+        disabled={disabled}
+        editable={isEditable({ disabled, readonly })}
+        hasActionIcon={hasActionIcon({ action, actionComponent })}
+        keyboardType={getKeyboardType({ keyboardType, type })}
+        onBlur={nativeEvent => statusActiveHandler(onBlur, nativeEvent, false, setActive)}
+        onChangeText={text => handleOnChangeText({
+          onChangeText, setNumberValue, text, type,
+        })}
+        onFocus={nativeEvent => !readonly
+          && statusActiveHandler(onFocus, nativeEvent, true, setActive)}
+        placeholderTextColor={getPlaceholderTextColor(disabled, theme)}
+        readonly={readonly}
+        secureTextEntry={isSecureText({ secureState, secureTextEntry, type })}
+        size={size}
+        value={fieldValue}
+        accessible={props.accessible}
+        accessibilityActions={props.accessibilityActions}
+        accessibilityLabel={props.accessibilityLabel}
+        accessibilityRole={props.accessibilityRole}
+        accessibilityState={props.accessibilityState}
+        accessibilityHint={props.accessibilityHint}
+        accessibilityValue={props.accessibilityValue}
+        onAccessibilityAction={props.onAccessibilityAction}
+        allowFontScaling={props.allowFontScaling}
+        autoCapitalize={props.autoCapitalize}
+        autoCompleteType={props.autoCompleteType}
+        autoCorrect={props.autoCorrect}
+        autoFocus={props.autoFocus}
+        blurOnSubmit={props.blurOnSubmit}
+        clearButtonMode={props.clearButtonMode}
+        clearTextOnFocus={props.clearTextOnFocus}
+        contextMenuHidden={props.contextMenuHidden}
+        dataDetectorTypes={props.dataDetectorTypes}
+        defaultValue={props.defaultValue}
+        disableFullscreenUI={props.disableFullscreenUI}
+        enablesReturnKeyAutomatically={props.enablesReturnKeyAutomatically}
+        importantForAutofill={props.importantForAutofill}
+        inputAccessoryViewID={props.inputAccessoryViewID}
+        keyboardAppearance={props.keyboardAppearance}
+        maxFontSizeMultiplier={props.maxFontSizeMultiplier}
+        maxLength={props.maxLength}
+        multiline={props.multiline}
+        numberOfLines={props.numberOfLines}
+        onChange={props.onChange}
+        onContentSizeChange={props.onContentSizeChange}
+        onEndEditing={props.onEndEditing}
+        onKeyPress={props.onKeyPress}
+        onScroll={props.onScroll}
+        onSelectionChange={props.onSelectionChange}
+        onSubmitEditing={props.onSubmitEditing}
+        onTextInput={props.onTextInput}
+        passwordRules={props.passwordRules}
+        placeholder={props.placeholder}
+        rejectResponderTermination={props.rejectResponderTermination}
+        returnKeyLabel={props.returnKeyLabel}
+        returnKeyType={props.returnKeyType}
+        scrollEnabled={props.scrollEnabled}
+        selection={props.selection}
+        selectionState={props.selectionState}
+        selectTextOnFocus={props.selectTextOnFocus}
+        showSoftInputOnFocus={props.showSoftInputOnFocus}
+        spellCheck={props.spellCheck}
+        textBreakStrategy={props.textBreakStrategy}
+        textContentType={props.textContentType}
+      />
+      { actionComponent && !!action
+        && <TextFieldAction
+            action={action}
+            actionComponent={actionComponent}
+            size={size}
+        />
+      }
+      { !actionComponent && type === 'password'
+        && <TextFieldPasswordAction
+          secureState={secureState}
+          onPress={() => setSecureState(!secureState)}
+        />
+      }
+    </InputFeedbackContainer>
+  );
+};
