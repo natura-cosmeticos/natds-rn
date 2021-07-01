@@ -64,7 +64,7 @@
   "dependencies": {
     "@naturacosmeticos/natds-icons": "^1.3.0",
     "@naturacosmeticos/natds-themes": "^0.5.0",
-    "react-native-gesture-handler": "1.6.0"
+    "react-native-gesture-handler": "^1.10.3"
   },
   "devDependencies": {
     "@babel/core": "7.13.15",
@@ -124,11 +124,11 @@
     "metro-react-native-babel-preset": "0.58.0",
     "modal-react-native-web": "0.2.0",
     "prop-types": "15.7.2",
-    "react": "16.11.0",
+    "react": "17.0.1",
     "react-docgen-typescript-loader": "3.7.2",
     "react-dom": "16.8.3",
     "react-is": "16.13.1",
-    "react-native": "0.62.2",
+    "react-native": "0.64.2",
     "react-native-storybook-loader": "1.8.1",
     "react-native-svg": "11.0.1",
     "react-native-svg-transformer": "0.14.3",

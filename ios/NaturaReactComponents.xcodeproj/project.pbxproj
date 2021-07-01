@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* NaturaReactComponentsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* NaturaReactComponentsTests.m */; };
 		07F5EE2230844252BBD64B59 /* natds-icons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5ED5C123FCC0423FB744A60B /* natds-icons.ttf */; };
-		124A1A797EB518E0E9DD9F04 /* libPods-NaturaReactComponents-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BAE456EA6301DEF9A2FBDB8 /* libPods-NaturaReactComponents-tvOSTests.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
@@ -26,7 +25,6 @@
 		5C96EAA6293349B6A4397C28 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C0A38195C340458CBD005485 /* Roboto-Medium.ttf */; };
 		5D389829DB484069A3E1AE4B /* natds-icons.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = 9C08C4BFD0F3490E95B4EEF7 /* natds-icons.woff2 */; };
 		62D3E23A7FF3411A98FDB9F2 /* Roboto-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9F6853E3AEB74490A6980355 /* Roboto-MediumItalic.ttf */; };
-		6D1EC731990120E5459AAB33 /* libPods-NaturaReactComponents-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AB6FA3FA759A014609CA1F6 /* libPods-NaturaReactComponents-tvOS.a */; };
 		73DC076346D740D3887341C1 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1326B5EB47CB4F22A63330D6 /* Roboto-Bold.ttf */; };
 		7D4CCDAB995640A4A1449A6C /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EE52BED68DDB4E798C637857 /* Roboto-BlackItalic.ttf */; };
 		857A4ED000354135860F7F84 /* natds-icons.woff in Resources */ = {isa = PBXBuildFile; fileRef = 1C3465D3A474434DB588B8EC /* natds-icons.woff */; };
@@ -63,7 +61,6 @@
 		00E356F21AD99517003FC87E /* NaturaReactComponentsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NaturaReactComponentsTests.m; sourceTree = "<group>"; };
 		050D9437388C4967BBD965C5 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Regular.ttf"; path = "../lib/assets/fonts/Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		069512BDB7C40A41FA8BC2DA /* Pods-NaturaReactComponents.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NaturaReactComponents.release.xcconfig"; path = "Target Support Files/Pods-NaturaReactComponents/Pods-NaturaReactComponents.release.xcconfig"; sourceTree = "<group>"; };
-		0BAE456EA6301DEF9A2FBDB8 /* libPods-NaturaReactComponents-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NaturaReactComponents-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		12337F190283475F806789B3 /* Roboto-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Black.ttf"; path = "../lib/assets/fonts/Roboto-Black.ttf"; sourceTree = "<group>"; };
 		1326B5EB47CB4F22A63330D6 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Bold.ttf"; path = "../src/assets/fonts/Roboto-Bold.ttf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* NatDSRNSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NatDSRNSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,24 +77,20 @@
 		2144776E004340A89CBE79EA /* Roboto-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Medium.ttf"; path = "../lib/assets/fonts/Roboto-Medium.ttf"; sourceTree = "<group>"; };
 		225BA6C76C944F62A4966326 /* Roboto-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Light.ttf"; path = "../lib/assets/fonts/Roboto-Light.ttf"; sourceTree = "<group>"; };
 		22692A50068B4318BFA631E4 /* Roboto-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Light.ttf"; path = "../src/assets/fonts/Roboto-Light.ttf"; sourceTree = "<group>"; };
-		2AB6FA3FA759A014609CA1F6 /* libPods-NaturaReactComponents-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NaturaReactComponents-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B4E0DCFE25D49FB95F38DFE /* natds-icons.woff */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "natds-icons.woff"; path = "../lib/assets/fonts/natds-icons.woff"; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* NaturaReactComponents-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NaturaReactComponents-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* NaturaReactComponents-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NaturaReactComponents-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E2A08D0DE3741EC9BDA9B91 /* NaturaSans-Light.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "NaturaSans-Light.otf"; path = "../lib/assets/fonts/NaturaSans-Light.otf"; sourceTree = "<group>"; };
-		45F3F7D0861EC8D9705F8CEC /* Pods-NaturaReactComponents-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NaturaReactComponents-tvOS.release.xcconfig"; path = "Target Support Files/Pods-NaturaReactComponents-tvOS/Pods-NaturaReactComponents-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		4F910D4E2675543E64B2CC57 /* Pods-NaturaReactComponents-NaturaReactComponentsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NaturaReactComponents-NaturaReactComponentsTests.release.xcconfig"; path = "Target Support Files/Pods-NaturaReactComponents-NaturaReactComponentsTests/Pods-NaturaReactComponents-NaturaReactComponentsTests.release.xcconfig"; sourceTree = "<group>"; };
 		50080117856C46C1A7B7FE46 /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-ThinItalic.ttf"; path = "../lib/assets/fonts/Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
 		53D48A21423C4BB78C57A8B6 /* Roboto-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Italic.ttf"; path = "../src/assets/fonts/Roboto-Italic.ttf"; sourceTree = "<group>"; };
 		5ED5C123FCC0423FB744A60B /* natds-icons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "natds-icons.ttf"; path = "../src/assets/fonts/natds-icons.ttf"; sourceTree = "<group>"; };
-		65B93365A66EC7F11406C820 /* Pods-NaturaReactComponents-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NaturaReactComponents-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-NaturaReactComponents-tvOSTests/Pods-NaturaReactComponents-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		6DC94B83174C4234A68172DF /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-MediumItalic.ttf"; path = "../lib/assets/fonts/Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
 		70B97FA3DC984789943D17F8 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Regular.ttf"; path = "../src/assets/fonts/Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		76D066C242E343FB80C2336E /* Roboto-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Italic.ttf"; path = "../lib/assets/fonts/Roboto-Italic.ttf"; sourceTree = "<group>"; };
 		7963EBFC3063ED00E8AB01D9 /* libPods-NaturaReactComponents.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NaturaReactComponents.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9542ADA36A9F4B55A7CC1360 /* natds-icons.svg */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "natds-icons.svg"; path = "../src/assets/fonts/natds-icons.svg"; sourceTree = "<group>"; };
 		96943E1C18F84E1DAE1BB400 /* Roboto-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Black.ttf"; path = "../src/assets/fonts/Roboto-Black.ttf"; sourceTree = "<group>"; };
-		9AB9825B85A9221EAF6D988E /* Pods-NaturaReactComponents-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NaturaReactComponents-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-NaturaReactComponents-tvOSTests/Pods-NaturaReactComponents-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9C08C4BFD0F3490E95B4EEF7 /* natds-icons.woff2 */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "natds-icons.woff2"; path = "../src/assets/fonts/natds-icons.woff2"; sourceTree = "<group>"; };
 		9E6A91FA379DB03038A5E6D4 /* Pods-NaturaReactComponentsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NaturaReactComponentsTests.release.xcconfig"; path = "Target Support Files/Pods-NaturaReactComponentsTests/Pods-NaturaReactComponentsTests.release.xcconfig"; sourceTree = "<group>"; };
 		9F6853E3AEB74490A6980355 /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-MediumItalic.ttf"; path = "../src/assets/fonts/Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
@@ -118,7 +111,6 @@
 		D0642809588A67508E542E26 /* Pods-NaturaReactComponents-NaturaReactComponentsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NaturaReactComponents-NaturaReactComponentsTests.debug.xcconfig"; path = "Target Support Files/Pods-NaturaReactComponents-NaturaReactComponentsTests/Pods-NaturaReactComponents-NaturaReactComponentsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D4FDBDC81C6749B18D159638 /* natds-icons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "natds-icons.ttf"; path = "../lib/assets/fonts/natds-icons.ttf"; sourceTree = "<group>"; };
 		DFF9F16ED7B344AEB8BB33D7 /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-BoldItalic.ttf"; path = "../src/assets/fonts/Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
-		EAD3FF4D8536237F0F67159A /* Pods-NaturaReactComponents-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NaturaReactComponents-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-NaturaReactComponents-tvOS/Pods-NaturaReactComponents-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 		EE52BED68DDB4E798C637857 /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-BlackItalic.ttf"; path = "../src/assets/fonts/Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
@@ -147,7 +139,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D1EC731990120E5459AAB33 /* libPods-NaturaReactComponents-tvOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,7 +146,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				124A1A797EB518E0E9DD9F04 /* libPods-NaturaReactComponents-tvOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,10 +190,6 @@
 			children = (
 				ACB3C07D040D928D77136F03 /* Pods-NaturaReactComponents.debug.xcconfig */,
 				069512BDB7C40A41FA8BC2DA /* Pods-NaturaReactComponents.release.xcconfig */,
-				EAD3FF4D8536237F0F67159A /* Pods-NaturaReactComponents-tvOS.debug.xcconfig */,
-				45F3F7D0861EC8D9705F8CEC /* Pods-NaturaReactComponents-tvOS.release.xcconfig */,
-				9AB9825B85A9221EAF6D988E /* Pods-NaturaReactComponents-tvOSTests.debug.xcconfig */,
-				65B93365A66EC7F11406C820 /* Pods-NaturaReactComponents-tvOSTests.release.xcconfig */,
 				B6D5F433DF0F1985CD52ACBB /* Pods-NaturaReactComponentsTests.debug.xcconfig */,
 				9E6A91FA379DB03038A5E6D4 /* Pods-NaturaReactComponentsTests.release.xcconfig */,
 				D0642809588A67508E542E26 /* Pods-NaturaReactComponents-NaturaReactComponentsTests.debug.xcconfig */,
@@ -218,8 +204,6 @@
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
 				7963EBFC3063ED00E8AB01D9 /* libPods-NaturaReactComponents.a */,
-				2AB6FA3FA759A014609CA1F6 /* libPods-NaturaReactComponents-tvOS.a */,
-				0BAE456EA6301DEF9A2FBDB8 /* libPods-NaturaReactComponents-tvOSTests.a */,
 				18207638E48A5EB947EC2897 /* libPods-NaturaReactComponents-NaturaReactComponentsTests.a */,
 			);
 			name = Frameworks;
@@ -313,6 +297,8 @@
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
+				07463EE6DC59B2F8AD6226B7 /* [CP] Embed Pods Frameworks */,
+				6754B80F4A4D5C413A7EA476 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -334,6 +320,8 @@
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				6D8506C07BBDB6A8C81966F8 /* [CP] Embed Pods Frameworks */,
+				36589991FF2F4D1D444B0D94 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -348,7 +336,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "NaturaReactComponents-tvOS" */;
 			buildPhases = (
-				95B08F6F5850B32952E15C2E /* [CP] Check Pods Manifest.lock */,
 				FD10A7F122414F3F0027D42C /* Start Packager */,
 				2D02E4771E0B4A5D006451C7 /* Sources */,
 				2D02E4781E0B4A5D006451C7 /* Frameworks */,
@@ -368,7 +355,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "NaturaReactComponents-tvOSTests" */;
 			buildPhases = (
-				BA4A1E98AF80E3381D7D99ED /* [CP] Check Pods Manifest.lock */,
 				2D02E48C1E0B4A5D006451C7 /* Sources */,
 				2D02E48D1E0B4A5D006451C7 /* Frameworks */,
 				2D02E48E1E0B4A5D006451C7 /* Resources */,
@@ -498,6 +484,24 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
+		07463EE6DC59B2F8AD6226B7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NaturaReactComponents-NaturaReactComponentsTests/Pods-NaturaReactComponents-NaturaReactComponentsTests-frameworks.sh",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OpenSSL/OpenSSL.framework/OpenSSL",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OpenSSL.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NaturaReactComponents-NaturaReactComponentsTests/Pods-NaturaReactComponents-NaturaReactComponentsTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -511,6 +515,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+		};
+		36589991FF2F4D1D444B0D94 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NaturaReactComponents/Pods-NaturaReactComponents-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NaturaReactComponents/Pods-NaturaReactComponents-resources.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 		650D5C9D1E21F91D9EBE81DC /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -534,48 +556,40 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		95B08F6F5850B32952E15C2E /* [CP] Check Pods Manifest.lock */ = {
+		6754B80F4A4D5C413A7EA476 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
+				"${PODS_ROOT}/Target Support Files/Pods-NaturaReactComponents-NaturaReactComponentsTests/Pods-NaturaReactComponents-NaturaReactComponentsTests-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
 			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-NaturaReactComponents-tvOS-checkManifestLockResult.txt",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NaturaReactComponents-NaturaReactComponentsTests/Pods-NaturaReactComponents-NaturaReactComponentsTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		BA4A1E98AF80E3381D7D99ED /* [CP] Check Pods Manifest.lock */ = {
+		6D8506C07BBDB6A8C81966F8 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
+				"${PODS_ROOT}/Target Support Files/Pods-NaturaReactComponents/Pods-NaturaReactComponents-frameworks.sh",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OpenSSL/OpenSSL.framework/OpenSSL",
 			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-NaturaReactComponents-tvOSTests-checkManifestLockResult.txt",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OpenSSL.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NaturaReactComponents/Pods-NaturaReactComponents-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F6E624C3BDC343714B851699 /* [CP] Check Pods Manifest.lock */ = {
@@ -821,7 +835,6 @@
 		};
 		2D02E4971E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EAD3FF4D8536237F0F67159A /* Pods-NaturaReactComponents-tvOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -853,7 +866,6 @@
 		};
 		2D02E4981E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 45F3F7D0861EC8D9705F8CEC /* Pods-NaturaReactComponents-tvOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -885,7 +897,6 @@
 		};
 		2D02E4991E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9AB9825B85A9221EAF6D988E /* Pods-NaturaReactComponents-tvOSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -916,7 +927,6 @@
 		};
 		2D02E49A1E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 65B93365A66EC7F11406C820 /* Pods-NaturaReactComponents-tvOSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -978,6 +988,7 @@
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "arm64 ";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -1039,6 +1050,7 @@
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "arm64 ";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
