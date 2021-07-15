@@ -34,6 +34,18 @@ exports[`Avatar component should render avatar component 1`] = `
     testID="avatar"
     theme={
       Object {
+        "asset": Object {
+          "brand": Object {
+            "custom": Object {
+              "a": "natura-a-custom",
+              "b": "natura-b-custom",
+            },
+            "neutral": Object {
+              "a": "natura-a-official",
+              "b": "natura-b-official",
+            },
+          },
+        },
         "body1": Object {
           "fontSize": 16,
           "fontWeight": 400,
@@ -331,6 +343,18 @@ exports[`Avatar component should render avatar component anonymous 1`] = `
     testID="avatar"
     theme={
       Object {
+        "asset": Object {
+          "brand": Object {
+            "custom": Object {
+              "a": "natura-a-custom",
+              "b": "natura-b-custom",
+            },
+            "neutral": Object {
+              "a": "natura-a-official",
+              "b": "natura-b-official",
+            },
+          },
+        },
         "body1": Object {
           "fontSize": 16,
           "fontWeight": 400,
@@ -623,6 +647,18 @@ exports[`Avatar component should render avatar component image 1`] = `
     testID="avatar"
     theme={
       Object {
+        "asset": Object {
+          "brand": Object {
+            "custom": Object {
+              "a": "natura-a-custom",
+              "b": "natura-b-custom",
+            },
+            "neutral": Object {
+              "a": "natura-a-official",
+              "b": "natura-b-official",
+            },
+          },
+        },
         "body1": Object {
           "fontSize": 16,
           "fontWeight": 400,
@@ -917,6 +953,18 @@ exports[`Avatar component should render avatar component letter 1`] = `
     testID="avatar"
     theme={
       Object {
+        "asset": Object {
+          "brand": Object {
+            "custom": Object {
+              "a": "natura-a-custom",
+              "b": "natura-b-custom",
+            },
+            "neutral": Object {
+              "a": "natura-a-official",
+              "b": "natura-b-official",
+            },
+          },
+        },
         "body1": Object {
           "fontSize": 16,
           "fontWeight": 400,

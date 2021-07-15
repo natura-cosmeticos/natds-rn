@@ -49,7 +49,7 @@
     "postinstall": "npm dedupe && rm package-lock.json && rm -rf node_modules/@types/reach__router",
     "publish:release": "./bin/release/release.sh",
     "bump:version": "standard-version --releaseCommitMessageFormat 'chore(release): {{currentTag}} [ci skip]'",
-    "start:clear:cache": "rm -rf /tmp/metro-* && watchman watch-del-all && yarn start:clear",
+    "start:clear:cache": "rm -rf /tmp/metro-* && watchman watch-del-all && watchman shutdown-server && yarn start:clear",
     "start:clear": "concurrently --names 'auto-import-stories,react-native' 'rnstl' 'yarn start --reset-cache'",
     "start": "concurrently --names 'auto-import-stories,react-native' 'rnstl' 'react-native start'",
     "storybook:web": "yarn build:storybook:md && yarn copy:storybook:assets && node ./node_modules/@storybook/react/bin/index.js start-storybook -p 9001 -c storybook-web -s storybook-web/static",
@@ -59,11 +59,12 @@
     "test:watch": "jest --watch --collectCoverage",
     "test": "jest",
     "tsc": "tsc --noEmit",
-    "check:build": "yarn test && yarn tsc && yarn lint && yarn build"
+    "check:build": "yarn test && yarn tsc && yarn lint && yarn build",
+    "pod:install": "cd ios && rm -rf Pods && pod install && cd .."
   },
   "dependencies": {
     "@naturacosmeticos/natds-icons": "^1.3.0",
-    "@naturacosmeticos/natds-themes": "^0.5.0",
+    "@naturacosmeticos/natds-themes": "^0.6.2",
     "react-native-gesture-handler": "^1.10.3",
     "react-native-svg": "^12.1.1"
   },

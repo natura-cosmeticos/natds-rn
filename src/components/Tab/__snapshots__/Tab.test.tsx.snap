@@ -19,6 +19,18 @@ exports[`Tab component Should render tab component without passing any type prop
   testID="tab"
   theme={
     Object {
+      "asset": Object {
+        "brand": Object {
+          "custom": Object {
+            "a": "natura-a-custom",
+            "b": "natura-b-custom",
+          },
+          "neutral": Object {
+            "a": "natura-a-official",
+            "b": "natura-b-official",
+          },
+        },
+      },
       "body1": Object {
         "fontSize": 16,
         "fontWeight": 400,
@@ -301,6 +313,18 @@ exports[`Tab component Should render tab component without passing any type prop
     testID="tab-item-0"
     theme={
       Object {
+        "asset": Object {
+          "brand": Object {
+            "custom": Object {
+              "a": "natura-a-custom",
+              "b": "natura-b-custom",
+            },
+            "neutral": Object {
+              "a": "natura-a-official",
+              "b": "natura-b-official",
+            },
+          },
+        },
         "body1": Object {
           "fontSize": 16,
           "fontWeight": 400,
@@ -576,6 +600,18 @@ exports[`Tab component Should render tab component without passing any type prop
       }
       theme={
         Object {
+          "asset": Object {
+            "brand": Object {
+              "custom": Object {
+                "a": "natura-a-custom",
+                "b": "natura-b-custom",
+              },
+              "neutral": Object {
+                "a": "natura-a-official",
+                "b": "natura-b-official",
+              },
+            },
+          },
           "body1": Object {
             "fontSize": 16,
             "fontWeight": 400,
@@ -862,6 +898,18 @@ exports[`Tab component Should render tab component without passing any type prop
     testID="tab-item-1"
     theme={
       Object {
+        "asset": Object {
+          "brand": Object {
+            "custom": Object {
+              "a": "natura-a-custom",
+              "b": "natura-b-custom",
+            },
+            "neutral": Object {
+              "a": "natura-a-official",
+              "b": "natura-b-official",
+            },
+          },
+        },
         "body1": Object {
           "fontSize": 16,
           "fontWeight": 400,
@@ -1137,6 +1185,18 @@ exports[`Tab component Should render tab component without passing any type prop
       }
       theme={
         Object {
+          "asset": Object {
+            "brand": Object {
+              "custom": Object {
+                "a": "natura-a-custom",
+                "b": "natura-b-custom",
+              },
+              "neutral": Object {
+                "a": "natura-a-official",
+                "b": "natura-b-official",
+              },
+            },
+          },
           "body1": Object {
             "fontSize": 16,
             "fontWeight": 400,
@@ -1423,6 +1483,18 @@ exports[`Tab component Should render tab component without passing any type prop
     testID="tab-item-2"
     theme={
       Object {
+        "asset": Object {
+          "brand": Object {
+            "custom": Object {
+              "a": "natura-a-custom",
+              "b": "natura-b-custom",
+            },
+            "neutral": Object {
+              "a": "natura-a-official",
+              "b": "natura-b-official",
+            },
+          },
+        },
         "body1": Object {
           "fontSize": 16,
           "fontWeight": 400,
@@ -1698,6 +1770,18 @@ exports[`Tab component Should render tab component without passing any type prop
       }
       theme={
         Object {
+          "asset": Object {
+            "brand": Object {
+              "custom": Object {
+                "a": "natura-a-custom",
+                "b": "natura-b-custom",
+              },
+              "neutral": Object {
+                "a": "natura-a-official",
+                "b": "natura-b-official",
+              },
+            },
+          },
           "body1": Object {
             "fontSize": 16,
             "fontWeight": 400,
