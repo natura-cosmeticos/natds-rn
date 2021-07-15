@@ -23,6 +23,18 @@ exports[`Card component should render Card component 1`] = `
   testID="card"
   theme={
     Object {
+      "asset": Object {
+        "brand": Object {
+          "custom": Object {
+            "a": "natura-a-custom",
+            "b": "natura-b-custom",
+          },
+          "neutral": Object {
+            "a": "natura-a-official",
+            "b": "natura-b-official",
+          },
+        },
+      },
       "body1": Object {
         "fontSize": 16,
         "fontWeight": 400,

@@ -31,7 +31,7 @@ module.exports = {
     'node',
   ],
   moduleNameMapper: {
-    '\\.svg': '<rootDir>/__mocks__/svgMock.js',
+    '/\.svg/': '<rootDir>/__mocks__/svgMock.js',
   },
   setupFilesAfterEnv: [
     '<rootDir>/test/testSetup.ts',

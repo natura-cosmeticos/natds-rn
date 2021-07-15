@@ -1,34 +1,4 @@
 {
-  "color": {
-    "primary": "#f4ab34",
-    "onPrimary": "#333333",
-    "primaryLight": "#fefde8",
-    "onPrimaryLight": "#333333",
-    "primaryDark": "#ef8426",
-    "onPrimaryDark": "#333333",
-    "secondary": "#ff6b0b",
-    "onSecondary": "#000000",
-    "secondaryLight": "#fff8e1",
-    "onSecondaryLight": "#000000",
-    "secondaryDark": "#ff5808",
-    "onSecondaryDark": "#000000",
-    "background": "#fafafa",
-    "onBackground": "#333333",
-    "surface": "#ffffff",
-    "onSurface": "#333333",
-    "highlight": "#000000",
-    "highEmphasis": "#333333",
-    "mediumEmphasis": "#777777",
-    "lowEmphasis": "#bbbbbb",
-    "link": "#227bbd",
-    "onLink": "#ffffff",
-    "success": "#569a32",
-    "onSuccess": "#ffffff",
-    "warning": "#fcc433",
-    "onWarning": "#333333",
-    "alert": "#e74627",
-    "onAlert": "#ffffff"
-  },
   "borderRadius": {
     "none": 0,
     "small": 2,
@@ -164,6 +134,48 @@
     "semi": 32,
     "large": 48,
     "xLarge": 64
+  },
+  "color": {
+    "primary": "#f4ab34",
+    "onPrimary": "#333333",
+    "primaryLight": "#fefde8",
+    "onPrimaryLight": "#333333",
+    "primaryDark": "#ef8426",
+    "onPrimaryDark": "#333333",
+    "secondary": "#ff6b0b",
+    "onSecondary": "#000000",
+    "secondaryLight": "#fff8e1",
+    "onSecondaryLight": "#000000",
+    "secondaryDark": "#ff5808",
+    "onSecondaryDark": "#000000",
+    "background": "#fafafa",
+    "onBackground": "#333333",
+    "surface": "#ffffff",
+    "onSurface": "#333333",
+    "highlight": "#000000",
+    "highEmphasis": "#333333",
+    "mediumEmphasis": "#777777",
+    "lowEmphasis": "#bbbbbb",
+    "link": "#227bbd",
+    "onLink": "#ffffff",
+    "success": "#569a32",
+    "onSuccess": "#ffffff",
+    "warning": "#fcc433",
+    "onWarning": "#333333",
+    "alert": "#e74627",
+    "onAlert": "#ffffff"
+  },
+  "asset": {
+    "brand": {
+      "neutral": {
+        "a": "natura-a-official",
+        "b": "natura-b-official"
+      },
+      "custom": {
+        "a": "natura-a-custom",
+        "b": "natura-b-custom"
+      }
+    }
   },
   "elevation": {
     "none": {
