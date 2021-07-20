@@ -1,9 +1,7 @@
 import React from 'react';
-import { ThemeProvider } from 'styled-components/native';
-import { fireEvent, render } from '@testing-library/react-native';
-import renderer from 'react-test-renderer';
-import theme from '../../common/themeSelectors/theme/mock-theme.json';
-import { Checkbox, CheckboxProps } from './Checkbox';
+import { fireEvent } from '@testing-library/react-native';
+import { Checkbox } from './Checkbox';
+import { renderWithTheme } from '../../../test/testHelpers';
 
 jest.mock('../TouchableRipple/TouchableRipple');
 jest.mock(
@@ -11,103 +9,78 @@ jest.mock(
   () => 'TouchableOpacity',
 );
 
-const renderCheckbox = (fn, props?: Omit<CheckboxProps, 'theme'>) => (fn(
-  <ThemeProvider theme={theme}>
-    <Checkbox {...props} />
-  </ThemeProvider>,
-));
-
 describe('Checkbox component', () => {
-  it('should render checkbox correctly', () => {
-    const checkbox = renderCheckbox(renderer.create).toJSON();
+  describe('render', () => {
+    it('should render checkbox correctly', () => {
+      const { toJSON } = renderWithTheme(<Checkbox />);
 
-    expect(checkbox).toMatchSnapshot();
-  });
-
-  it('should render checkbox selected correctly', () => {
-    const checkbox = renderCheckbox(renderer.create, { selected: true }).toJSON();
-
-    expect(checkbox).toMatchSnapshot();
-  });
-
-  it('should render checkbox with label correctly', () => {
-    const checkbox = renderCheckbox(renderer.create, { label: 'My Label' }).toJSON();
-
-    expect(checkbox).toMatchSnapshot();
-  });
-
-  it('should render checkbox selected but disabled correctly', () => {
-    const checkbox = renderCheckbox(renderer.create, {
-      disabled: true,
-      selected: true,
-    }).toJSON();
-
-    expect(checkbox).toMatchSnapshot();
-  });
-
-  it('should render checkbox selected but disabled with label correctly', () => {
-    const checkbox = renderCheckbox(renderer.create, {
-      disabled: true,
-      label: 'My Label',
-      selected: true,
-    }).toJSON();
-
-    expect(checkbox).toMatchSnapshot();
-  });
-
-
-  it('should call the onPress function when the user touches the checkbox', () => {
-    const onPress = jest.fn();
-    const { queryByTestId } = renderCheckbox(render, {
-      onPress,
-      value: 'checkbox',
+      expect(toJSON()).toMatchSnapshot();
     });
 
-    const checkbox = queryByTestId('checkbox');
+    it('should render checkbox selected correctly', () => {
+      const { toJSON } = renderWithTheme(<Checkbox selected />);
 
-    fireEvent.press(checkbox);
-
-    expect(onPress).toHaveBeenCalledWith('checkbox');
-  });
-
-  it('should call the onPress function when the user touches the checkbox label', () => {
-    const onPress = jest.fn();
-    const { queryByTestId } = renderCheckbox(render, {
-      label: 'My label',
-      onPress,
-      value: 'checkbox-label',
+      expect(toJSON()).toMatchSnapshot();
     });
 
-    const label = queryByTestId('checkbox-label');
+    it('should render checkbox indeterminate selected correctly', () => {
+      const { toJSON } = renderWithTheme(<Checkbox indeterminate selected />);
 
-    fireEvent.press(label);
-
-    expect(onPress).toHaveBeenCalledWith('checkbox-label');
-  });
-
-  it('should render check inside box when selected is true', () => {
-    const onPress = jest.fn();
-    const { queryByTestId } = renderCheckbox(render, {
-      onPress,
-      selected: true,
-      value: 'checkbox',
+      expect(toJSON()).toMatchSnapshot();
     });
 
-    const checkbox = queryByTestId('checkbox');
+    it('should render checkbox with label correctly', () => {
+      const { getByTestId } = renderWithTheme(<Checkbox label="testing-label" />);
 
-    expect(checkbox.props.children).not.toBeNull();
-  });
-
-  it('should render text inside label container when label is different from null/undefined', () => {
-    const onPress = jest.fn();
-    const { queryByTestId } = renderCheckbox(render, {
-      label: 'My Label',
-      onPress,
-      value: 'checkbox',
+      expect(getByTestId('checkbox-label')).toHaveTextContent('testing-label');
     });
 
-    const checkboxLabel = queryByTestId('checkbox-label');
+    it('should render checkbox disabled correctly', () => {
+      const { toJSON } = renderWithTheme(<Checkbox disabled />);
 
-    expect(checkboxLabel).not.toBeNull();
+      expect(toJSON()).toMatchSnapshot();
+    });
+
+    it('should render checkbox selected but disabled correctly', () => {
+      const { toJSON } = renderWithTheme(<Checkbox disabled selected />);
+
+      expect(toJSON()).toMatchSnapshot();
+    });
+
+    it('should render checkbox indeterminate selected but disabled correctly', () => {
+      const { toJSON } = renderWithTheme(<Checkbox disabled selected />);
+
+      expect(toJSON()).toMatchSnapshot();
+    });
+
+    it('should render icon inside box when selected is true', () => {
+      const { getByTestId } = renderWithTheme(<Checkbox selected />);
+
+      expect(getByTestId('natds-icon')).toBeTruthy();
+    });
+  });
+
+  describe('actions', () => {
+    it('should call the onPress function when the user touches the checkbox', () => {
+      const onPress = jest.fn();
+      const { getByTestId } = renderWithTheme(<Checkbox onPress={onPress} value="testing-value" />);
+
+      const checkbox = getByTestId('checkbox');
+
+      fireEvent.press(checkbox);
+
+      expect(onPress).toHaveBeenCalledWith('testing-value');
+    });
+
+    it('should call the onPress function when the user touches the checkbox label', () => {
+      const onPress = jest.fn();
+      const { getByTestId } = renderWithTheme(<Checkbox onPress={onPress} value="testing-value" label="testing-label" />);
+
+      const checkboxLabel = getByTestId('checkbox-label');
+
+      fireEvent.press(checkboxLabel);
+
+      expect(onPress).toHaveBeenCalledWith('testing-value');
+    });
   });
 });
