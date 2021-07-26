@@ -2,31 +2,38 @@
 
 Clone or fork the project
 
-```shell
+```sh
 git clone https://github.com/natura-cosmeticos/natds-rn.git
 ```
 
-Install dependencies
+### Install dependencies
 
-```shell
+```sh
 yarn install
+```
+
+### If you intend to run on an iOS device/simulator
+```sh
 cd ios
-pod install // if you intend to run on an ios device/simulator
+pod install
 ```
 
 ## Check your Installation
 
-We use `storybook` to build our native samples for ios and android, and also the [web docs](https://natds-rn.netlify.app/).
+We use `storybook` to build our native samples for ios and android, and also the [web docs](https://natds-rn.natura.design/).
 
 To preview your changes on the device/simulator run:
 
-```shell
-yarn ios //or
+```sh
+yarn ios
+
+# OR
+
 yarn android
 ```
 
 To preview your documentation changes on the browser run:
 
-```shell
+```sh
 yarn storybook:web
 ```
