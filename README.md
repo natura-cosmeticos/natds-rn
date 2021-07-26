@@ -31,8 +31,11 @@ If that is not the case, we strongly recommend that you finish the [get started]
 - `node>=12`
 - `yarn` or `npm`
 - a working project with:
-  - `react@>=16.8.0`
-  - `react-native@>=0.59.10`
+  - `react` >=16.8.0
+  - `react-native` >=0.59.10
+  - `styled-components` >=5.0.0
+
+###### ⚠️ You will need to install the `styled-components` package before the installation, as it is a prerequisite and it will not be installed automatically.
 
 ## Installation
 
@@ -48,7 +51,7 @@ yarn add @naturacosmeticos/natds-rn
 
 **Dependencies**
 
-This package currently depend on `natds-themes` and `styled-components`. This packages will be installed automatically with the command above.
+This package currently depend on `natds-themes`, `natds-icons` and `react-native-gesture-handler`. This packages will be installed automatically with the command above.
 
 > If you have currently installed versions of this packages, be sure to check the installation logs for version incompatibilities
 
