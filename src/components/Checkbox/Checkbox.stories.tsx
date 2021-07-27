@@ -40,60 +40,37 @@ const colorTypes = {
 };
 
 export const all = () => {
-  const [selected1, setSelected1] = useState<boolean>(false);
-  const [selected2, setSelected2] = useState<boolean>(false);
-  const [selected3, setSelected3] = useState<boolean>(false);
-  const [selected4, setSelected4] = useState<boolean>(false);
-  const [selected5, setSelected5] = useState<boolean>(false);
-  const [selected6, setSelected6] = useState<boolean>(true);
-  const [selected7, setSelected7] = useState<boolean>(true);
+  const [firstOptionStatus, setFirstOptionStatus] = useState<boolean>(true);
+  const [secondOptionStatus, setSecondOptionStatus] = useState<boolean>(true);
+  const [thirdOptionStatus, setThirdOptionStatus] = useState<boolean>(false);
+  const [fourthOptionStatus, setFourthOptionStatus] = useState<boolean>(true);
+  const [fifthOptionStatus, setFifthOptionStatus] = useState<boolean>(true);
 
   return (
     <VerticalStoryContainer title="Checkbox">
       <ListItem>
         <Checkbox
-          color="primary"
-          label="Primary"
-          onPress={value => setSelected1(!selected1)}
-          selected={selected1}
+          label="Standard"
+          onPress={value => setFirstOptionStatus(!firstOptionStatus)}
+          selected={firstOptionStatus}
           value='1'
         />
       </ListItem>
       <ListItem>
         <Checkbox
-          color="primary"
           indeterminate
-          label="Primary indeterminate"
-          onPress={value => setSelected2(!selected2)}
-          selected={selected2}
+          label="Indeterminate"
+          onPress={value => setSecondOptionStatus(!secondOptionStatus)}
+          selected={secondOptionStatus}
           value='2'
         />
       </ListItem>
       <ListItem>
         <Checkbox
-          color="secondary"
-          label="Secondary"
-          onPress={value => setSelected3(!selected3)}
-          selected={selected3}
-          value='3'
-        />
-      </ListItem>
-      <ListItem>
-        <Checkbox
-          color="secondary"
-          indeterminate
-          label="Secondary indeterminate"
-          onPress={value => setSelected4(!selected4)}
-          selected={selected4}
-          value='4'
-          />
-      </ListItem>
-      <ListItem>
-        <Checkbox
           disabled
           label="Disabled"
-          onPress={value => setSelected5(!selected5)}
-          selected={selected5}
+          onPress={value => setThirdOptionStatus(!thirdOptionStatus)}
+          selected={thirdOptionStatus}
           value='5'
           />
       </ListItem>
@@ -102,8 +79,8 @@ export const all = () => {
           disabled
           indeterminate
           label="Disabled selected"
-          onPress={value => setSelected6(!selected6)}
-          selected={selected6}
+          onPress={value => setFourthOptionStatus(!fourthOptionStatus)}
+          selected={fourthOptionStatus}
           value='6'
           />
       </ListItem>
@@ -111,8 +88,8 @@ export const all = () => {
         <Checkbox
           disabled
           label="Disabled indeterminate"
-          onPress={value => setSelected7(!selected7)}
-          selected={selected7}
+          onPress={value => setFifthOptionStatus(!fifthOptionStatus)}
+          selected={fifthOptionStatus}
           value='7'
         />
       </ListItem>
