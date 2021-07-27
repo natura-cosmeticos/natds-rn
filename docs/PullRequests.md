@@ -23,10 +23,17 @@ The main processes are:
 Our pull request pipeline will run the following steps:
 
 - code quality (tests, lint, type checking)
-- build and publish the `ios` sample app on the iTunes connect for review
-- build the `android` sample app and distribute via bitrise install page for review
-- build and publish a test version the storybook documentation on netlify for review (accessible by the url `natds-rn-your-branch-name.netlify.app`)
-- build and publish our lib on npm as a pre-release for a integrated test (installable using a tag, `npm install @naturacosmeticos/natds-rn@DSY-<your component issue number>`)
+- build and publish a new version of the `ios` sample app on TestFlight
+- build a new version of the `android` sample app and distribute via bitrise install page for review
+- build and publish a test version of the storybook documentation for review (accessible by the url `https://natds-rn.natura.design/[_your_branch_name_]/index.html`)
+- build and publish a pre-release version of the library on [NPM](https://www.npmjs.com/package/@naturacosmeticos/natds-rn) for an integrated test (installable using the version that will be updated on your `package.json` file after the pipeline finishes). Ex.:
+    ```sh
+    npm install --save @naturacosmeticos/natds-rn@7.2.0-DSY-1216.0
+
+    # OR
+
+    yarn add @naturacosmeticos/natds-rn@7.2.0-DSY-1216.0
+    ```
 
 > Are you working with a fork and does not have access to our pipelines?
 > [Contact us](https://github.com/natura-cosmeticos/natds-rn/issues)

@@ -41,5 +41,4 @@ export default App = () => (
 );
 ```
 
-> For component detailed API and usage examples, check out the [docs](https://natds-rn.netlify.app/) of the component you are using.
-
+> For component detailed API and usage examples, check out the [docs](https://natds-rn.natura.design/) of the component you are using.

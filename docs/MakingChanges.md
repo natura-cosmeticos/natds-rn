@@ -1,6 +1,6 @@
 # Writing your contribution
 
-Before your start writing code, recommend that you read your [contributing guidelines](./ContributionGuidelines.md) to help you get started.
+Before your start writing code, we recommend that you read our [contributing guidelines](./ContributionGuidelines.md) to help you get started.
 
 ## Writing a new component
 
@@ -8,7 +8,7 @@ Before your start writing code, recommend that you read your [contributing guide
 
 Create your component boilerplate following de [folder and file conventions](./ProjectStructure.md)
 
-- Check the components name. The component names are decided by the Design System team and are the same for all the platforms. Its important to follow the component name of your jira issue. If you have any doubts, please contact us :)
+- Check the components name. The component names are decided by the Design System team and are the same for all the platforms. It's important to follow the component name of your jira issue. If you have any doubts, please contact us :)
 - Create a new folder for your component in the `src/components` folder
 - Create a `.test.tsx` file and write your first test
 - Create a file for your component and write make the test pass
@@ -17,13 +17,13 @@ Create your component boilerplate following de [folder and file conventions](./P
 
 #### About Storybook
 
-We use storybook to write stories for our native sample apps (ios and android) and also for the web docs.
+We use storybook to write stories for our native sample apps (iOS and Android) and also for the web docs.
 Unfortunately, some functionality is only available to the web version and not the native.
 Because of this, we have to separate our native stories from our web stories, and this is done by the file names
 
-`.device` files are for the native sample apps
+- `.device` files are for the native sample apps
 
-`.stories` files are loaded in the web docs
+- `.stories` files are loaded in the web docs
 
 To prevent duplicating stories on the docs and native, we simply import our web stories into the `.device` files.
 You can view examples in the [Button](../src/components/Button/) and [Dialog](../src/components/Dialog/) folder.
@@ -40,7 +40,7 @@ Open your device or simulator and [run the app](./Installation.md#check-your-ins
 
 ### Step Four: Add documentation to your component
 
-As mentioned earlier, `.stories` represent your web docs file and will render like [this](https://natds-rn.netlify.app/?path=/docs/components-button--all)
+As mentioned earlier, `.stories` represent your web docs file and will render like [this](https://natds-rn.natura.design/?path=/docs/components-button--all)
 The information from the example above comes from some places:
 
 **The global story config**
