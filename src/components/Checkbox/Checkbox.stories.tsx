@@ -12,12 +12,12 @@ const description = () => `
   ### NOTE:
   This component is available in the following variants:
 
-  - ✅ Selected
+  - ✅ Standard
   - ✅ Indeterminate
 
 With the following attribute status:
 
-  - **Disabled**
+  - ✅ **Disabled**
 
 - - -
 `;
