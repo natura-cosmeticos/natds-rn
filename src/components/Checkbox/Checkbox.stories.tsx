@@ -40,19 +40,25 @@ const colorTypes = {
 };
 
 export const all = () => {
-  const [firstOptionStatus, setFirstOptionStatus] = useState<boolean>(true);
-  const [secondOptionStatus, setSecondOptionStatus] = useState<boolean>(true);
-  const [thirdOptionStatus, setThirdOptionStatus] = useState<boolean>(false);
-  const [fourthOptionStatus, setFourthOptionStatus] = useState<boolean>(true);
-  const [fifthOptionStatus, setFifthOptionStatus] = useState<boolean>(true);
+  const initialState = {
+    disabled: false,
+    disabledIndeterminate: true,
+    disabledSelected: true,
+    indeterminate: false,
+    standard: false,
+  };
+
+  const [state, setState] = useState<typeof initialState>(initialState);
 
   return (
     <VerticalStoryContainer title="Checkbox">
       <ListItem>
         <Checkbox
           label="Standard"
-          onPress={value => setFirstOptionStatus(!firstOptionStatus)}
-          selected={firstOptionStatus}
+          onPress={
+            value => setState({ ...state, standard: !state.standard })
+          }
+          selected={state.standard}
           value='1'
         />
       </ListItem>
@@ -60,8 +66,10 @@ export const all = () => {
         <Checkbox
           indeterminate
           label="Indeterminate"
-          onPress={value => setSecondOptionStatus(!secondOptionStatus)}
-          selected={secondOptionStatus}
+          onPress={
+            value => setState({ ...state, indeterminate: !state.indeterminate })
+          }
+          selected={state.indeterminate}
           value='2'
         />
       </ListItem>
@@ -69,8 +77,10 @@ export const all = () => {
         <Checkbox
           disabled
           label="Disabled"
-          onPress={value => setThirdOptionStatus(!thirdOptionStatus)}
-          selected={thirdOptionStatus}
+          onPress={
+            value => setState({ ...state, disabled: !state.disabled })
+          }
+          selected={state.disabled}
           value='5'
           />
       </ListItem>
@@ -79,8 +89,10 @@ export const all = () => {
           disabled
           indeterminate
           label="Disabled selected"
-          onPress={value => setFourthOptionStatus(!fourthOptionStatus)}
-          selected={fourthOptionStatus}
+          onPress={
+            value => setState({ ...state, disabledSelected: !state.disabledSelected })
+          }
+          selected={state.disabledSelected}
           value='6'
           />
       </ListItem>
@@ -88,8 +100,10 @@ export const all = () => {
         <Checkbox
           disabled
           label="Disabled indeterminate"
-          onPress={value => setFifthOptionStatus(!fifthOptionStatus)}
-          selected={fifthOptionStatus}
+          onPress={
+            value => setState({ ...state, disabledIndeterminate: !state.disabledIndeterminate })
+          }
+          selected={state.disabledIndeterminate}
           value='7'
         />
       </ListItem>
