@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [7.2.0](https://github.com/natura-cosmeticos/natds-rn/compare/v7.1.0...v7.2.0) (2021-07-29)
+
+
+### Features
+
+* **checkbox:** create indeterminate variant ([#182](https://github.com/natura-cosmeticos/natds-rn/issues/182)) ([8f4833f](https://github.com/natura-cosmeticos/natds-rn/commit/8f4833fd7be237ef765bae1381cde6b322629d56))
+
 ## [7.1.0](https://github.com/natura-cosmeticos/natds-rn/compare/v7.0.0...v7.1.0) (2021-06-21)
 
 
