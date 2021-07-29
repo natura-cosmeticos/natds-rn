@@ -12,8 +12,8 @@ const description = () => `
   ### NOTE:
   This component is available in the following variants:
 
-  - ✅ Standard
-  - ✅ Indeterminate
+  - ✅ **Standard**
+  - ✅ **Indeterminate**
 
 With the following attribute status:
 
