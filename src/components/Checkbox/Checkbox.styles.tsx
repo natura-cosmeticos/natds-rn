@@ -8,7 +8,6 @@ import {
   getColorPrimary,
   getColorSecondary,
   getSpacingTiny,
-  getColorBackground,
 } from '../../common/themeSelectors';
 import { CheckboxColors } from './Checkbox';
 
@@ -63,17 +62,4 @@ export const Box = styled.View<{
   height: 20,
   justifyContent: 'center',
   width: 20,
-}));
-
-export const Check = styled.View<{
-  theme: Theme;
-}>(({
-  theme,
-}) => ({
-  borderBottomWidth: 2,
-  borderColor: getColorBackground(theme),
-  borderLeftWidth: 2,
-  height: 8,
-  transform: 'rotate(-45deg) translateY(-2px)',
-  width: 14,
 }));

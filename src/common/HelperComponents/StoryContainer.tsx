@@ -13,7 +13,7 @@ export const StoryContainer = ({ children, title, ...props }) => (
 );
 
 export const VerticalStoryContainer = ({ children, title }) => {
-  const verticalStyle = { flexDirection: 'column' };
+  const verticalStyle = { alignItems: 'flex-start', flexDirection: 'column' };
 
   return <StoryContainer {...{ children, title }} style={verticalStyle} />;
 };
