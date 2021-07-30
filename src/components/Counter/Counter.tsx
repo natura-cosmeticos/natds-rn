@@ -13,7 +13,7 @@ import {
   getSpacingSmall,
   getTypographyStyles,
 } from '../../common/themeSelectors';
-import { IconButton } from '../IconButton';
+import { Button } from '../Button';
 
 type CounterSizes = keyof Pick<Size, 'medium' | 'semiX'>;
 
@@ -93,9 +93,9 @@ export const Counter = ({
       </Label>
     }
     <Container size={size} testID={testID}>
-      <IconButton icon="outlined-action-subtract" onPress={() => {}}/>
+      <Button size={size} type="text" text="-" onPress={() => {}} disabled={disabled} testID="button-subtract" />
       <Input testID="counter-input" value={value.toString()} />
-      <IconButton icon="outlined-action-add" onPress={() => {}} />
+      <Button size={size} type="text" text="+" onPress={() => {}} disabled={disabled} testID="button-add" />
     </Container>
   </View>
 );

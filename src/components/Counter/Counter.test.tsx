@@ -23,4 +23,10 @@ describe('Counter', () => {
 
     expect(getByTestId('counter')).toHaveStyle({ height: 40 });
   });
+  it('should render with disabled buttons if disabled', () => {
+    const { getByText } = renderWithTheme(<Counter disabled />);
+
+    expect(getByText('-')).toBeDisabled();
+    expect(getByText('+')).toBeDisabled();
+  });
 });

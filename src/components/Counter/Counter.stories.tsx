@@ -51,7 +51,7 @@ export const Size = () => (
 
 export const Disabled = () => (
   <StoryContainer title='Disabled'>
-    <Counter />
+    <Counter disabled />
   </StoryContainer>
 );
 
