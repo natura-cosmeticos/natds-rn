@@ -37,8 +37,15 @@ export const Default = () => (
 );
 
 export const Label = () => (
-  <StoryContainer title='Label'>
-    <Counter />
+  <StoryContainer title='With label'>
+    <Counter label="Label" />
+  </StoryContainer>
+);
+
+export const Size = () => (
+  <StoryContainer title='Sizes'>
+    <Counter label="medium" size="medium" />
+    <Counter label="semiX" size="semiX" />
   </StoryContainer>
 );
 
@@ -52,6 +59,7 @@ export const All = () => (
   <>
     <Default />
     <Label />
+    <Size />
     <Disabled />
   </>
 );
