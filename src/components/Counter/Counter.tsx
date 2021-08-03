@@ -1,32 +1,38 @@
-import React, { Dispatch, SetStateAction, useState } from 'react';
+import React, { useState } from 'react';
 import { View } from 'react-native';
 import { Button } from '../Button';
 import { Container, Input, Label } from './Counter.styles';
 import { CounterProps } from './Counter.types';
 
 const transformTextToNumber = (value: string) => parseFloat(value.replace(/\D/g, ''));
-const validateNumber = (value: number) => {
-  if (value > 99) return 99;
-  if (value < 0) return 0;
+const validateNumber = (value: number, minValue: number, maxValue: number) => {
+  if (value > maxValue) return maxValue;
+  if (value < minValue) return minValue;
 
   return value;
 };
-const validateUserInput = (userInput: string) => validateNumber(transformTextToNumber(userInput));
-const handleValidInput = (
-  handlerFunction: Dispatch<SetStateAction<number>>,
-) => (userInput: string) => handlerFunction(validateUserInput(userInput));
 
 export const Counter = ({
   disabled, label, size = 'medium', testID = 'counter', value = 0,
 }: CounterProps) => {
+  const minValue = 0;
+  const maxValue = 99;
   const [currentValue, setCurrentValue] = useState(value);
-  const addItem = () => currentValue < 99 && setCurrentValue(currentValue + 1);
-  const subtractItem = () => currentValue > 0 && setCurrentValue(currentValue - 1);
-  const handleUserInput = handleValidInput(setCurrentValue);
+
+  const addItem = () => currentValue < maxValue && setCurrentValue(currentValue + 1);
+  const subtractItem = () => currentValue > minValue && setCurrentValue(currentValue - 1);
+
+  const handleUserInput = (userInput: string) => {
+    const userInputValue = transformTextToNumber(userInput);
+    const validatedValue = validateNumber(userInputValue, minValue, maxValue);
+
+    setCurrentValue(validatedValue);
+  };
+
   const disableButton = (buttonAction: 'add' | 'subtract') => {
     const isDisabled = {
-      add: disabled || currentValue === 99,
-      subtract: disabled || currentValue === 0,
+      add: disabled || currentValue === maxValue,
+      subtract: disabled || currentValue === minValue,
     };
 
     return isDisabled[buttonAction];
