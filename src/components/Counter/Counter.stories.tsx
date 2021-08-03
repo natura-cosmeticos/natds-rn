@@ -1,4 +1,5 @@
 import React from 'react';
+import { boolean, number, text } from '@storybook/addon-knobs';
 import { StoryContainer } from '../../common/HelperComponents/StoryContainer';
 import { Counter } from './Counter';
 
@@ -13,7 +14,7 @@ const description = () => `
 With the following attribute status:
 
   - ✅ **Label**
-  - ✅ **Size:** \`Medium\`
+  - ✅ **Size:**
   - ✅ **Disabled**
 
 ---
@@ -55,11 +56,28 @@ export const Disabled = () => (
   </StoryContainer>
 );
 
+export const Value = () => (
+  <StoryContainer title='Value'>
+    <Counter label="you can set an initial value other than 0" value={42} />
+  </StoryContainer>
+);
+
+export const Interactive = () => (
+  <StoryContainer title='Interactive'>
+    <Counter
+      label={text('Label', 'Interactive example')}
+      value={number('Value', 0)}
+      disabled={boolean('Disabled', false)}
+    />
+  </StoryContainer>
+);
+
 export const All = () => (
   <>
     <Default />
     <Label />
     <Size />
     <Disabled />
+    <Value />
   </>
 );

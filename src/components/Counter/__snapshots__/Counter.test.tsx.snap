@@ -8,6 +8,7 @@ exports[`Counter should render with default props 1`] = `
       Array [
         Object {
           "alignItems": "center",
+          "alignSelf": "flex-start",
           "backgroundColor": "#ffffff",
           "borderColor": "#bbbbbb",
           "borderRadius": 4,

@@ -3,8 +3,10 @@ import {
   All,
   Default,
   Disabled,
+  Interactive,
   Label,
   Size,
+  Value,
 } from './Counter.stories';
 
 storiesOf('Counter', module)
@@ -12,4 +14,6 @@ storiesOf('Counter', module)
   .add('Default', Default)
   .add('Label', Label)
   .add('Size', Size)
-  .add('Disabled', Disabled);
+  .add('Disabled', Disabled)
+  .add('Value', Value)
+  .add('Interactive', Interactive);
