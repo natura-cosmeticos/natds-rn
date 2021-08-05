@@ -40,25 +40,25 @@ describe('Counter', () => {
     it('should render with enabled buttons when value is between 0 and 99', () => {
       const { getByText } = renderWithTheme(<Counter value={10} />);
 
-      expect(getByText('-')).not.toBeDisabled();
+      expect(getByText('−')).not.toBeDisabled();
       expect(getByText('+')).not.toBeDisabled();
     });
     it('should disable subtract button when value is 0', () => {
       const { getByText } = renderWithTheme(<Counter value={0} />);
 
-      expect(getByText('-')).toBeDisabled();
+      expect(getByText('−')).toBeDisabled();
       expect(getByText('+')).not.toBeDisabled();
     });
     it('should disable add button when value is 99', () => {
       const { getByText } = renderWithTheme(<Counter value={99} />);
 
-      expect(getByText('-')).not.toBeDisabled();
+      expect(getByText('−')).not.toBeDisabled();
       expect(getByText('+')).toBeDisabled();
     });
     it('should render with disabled buttons if disabled', () => {
       const { getByText } = renderWithTheme(<Counter disabled />);
 
-      expect(getByText('-')).toBeDisabled();
+      expect(getByText('−')).toBeDisabled();
       expect(getByText('+')).toBeDisabled();
     });
   });
@@ -104,14 +104,14 @@ describe('Counter', () => {
     it('should subtract an item when subtract button is pressed and value is more than 0', () => {
       const { getByTestId, getByText } = renderWithTheme(<Counter value={10} />);
 
-      fireEvent.press(getByText('-'));
+      fireEvent.press(getByText('−'));
 
       expect(getByTestId('counter-input').props.value).toBe('9');
     });
     it('should not subtract an item when subtract button is pressed and value is 0', () => {
       const { getByTestId, getByText } = renderWithTheme(<Counter value={0} />);
 
-      fireEvent.press(getByText('-'));
+      fireEvent.press(getByText('−'));
 
       expect(getByTestId('counter-input').props.value).toBe('0');
     });

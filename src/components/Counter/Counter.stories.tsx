@@ -58,7 +58,12 @@ export const Disabled = () => (
 
 export const Value = () => (
   <StoryContainer title='Value'>
-    <Counter label="you can set an initial value other than 0" value={42} />
+    <Counter
+      decrementButtonAccessibilityLabel="decrement button"
+      decrementButtonAccessibilityHint="decrement the value of the counter"
+      incrementButtonAccessibilityLabel="increment button"
+      incrementButtonAccessibilityHint="increment the value of the counter"
+      label="you can set an initial value other than 0" value={42} />
   </StoryContainer>
 );
 

@@ -13,7 +13,15 @@ const validateNumber = (value: number, minValue: number, maxValue: number) => {
 };
 
 export const Counter = ({
-  disabled, label, size = 'medium', testID = 'counter', value = 0,
+  decrementButtonAccessibilityHint,
+  decrementButtonAccessibilityLabel,
+  incrementButtonAccessibilityHint,
+  incrementButtonAccessibilityLabel,
+  disabled,
+  label,
+  size = 'medium',
+  testID = 'counter',
+  value = 0,
 }: CounterProps) => {
   const minValue = 0;
   const maxValue = 99;
@@ -46,14 +54,33 @@ export const Counter = ({
         </Label>
       }
       <Container size={size} testID={testID}>
-        <Button size={size} type="text" text="-" onPress={subtractItem} disabled={disableButton('subtract')} testID="button-subtract" />
-        <Input testID="counter-input"
+        <Button
+          accessibilityHint={decrementButtonAccessibilityHint}
+          accessibilityLabel={decrementButtonAccessibilityLabel}
+          size={size}
+          type="text"
+          text="−"
+          onPress={subtractItem}
+          disabled={disableButton('subtract')}
+        />
+        <Input
+          accessibilityLiveRegion="assertive"
+          accessibilityValue={{ max: maxValue, min: minValue, now: currentValue }}
           editable={!disabled}
           keyboardType="numeric"
           onChangeText={text => handleUserInput(text)}
           value={currentValue.toString()}
+          testID="counter-input"
         />
-        <Button size={size} type="text" text="+" onPress={addItem} disabled={disableButton('add')} />
+        <Button
+          accessibilityHint={incrementButtonAccessibilityHint}
+          accessibilityLabel={incrementButtonAccessibilityLabel}
+          size={size}
+          type="text"
+          text="+"
+          onPress={addItem}
+          disabled={disableButton('add')}
+        />
       </Container>
     </View>
   );

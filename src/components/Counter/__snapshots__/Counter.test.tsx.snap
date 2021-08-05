@@ -50,7 +50,7 @@ exports[`Counter should render with default props 1`] = `
             Object {},
           ]
         }
-        testID="button-subtract"
+        testID="button"
         type="text"
       >
         <View
@@ -78,7 +78,7 @@ exports[`Counter should render with default props 1`] = `
             testID="button-label"
             textColor="mediumEmphasis"
           >
-            -
+            −
           </Text>
         </View>
       </View>
@@ -129,6 +129,14 @@ exports[`Counter should render with default props 1`] = `
       </View>
     </View>
     <TextInput
+      accessibilityLiveRegion="assertive"
+      accessibilityValue={
+        Object {
+          "max": 99,
+          "min": 0,
+          "now": 0,
+        }
+      }
       allowFontScaling={true}
       editable={true}
       keyboardType="numeric"
