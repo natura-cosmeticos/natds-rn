@@ -1,3 +1,4 @@
+/* eslint-disable max-lines */
 import React from 'react';
 import { boolean, number, text } from '@storybook/addon-knobs';
 import { StoryContainer } from '../../common/HelperComponents/StoryContainer';
@@ -31,51 +32,106 @@ export default {
   title: 'Components|Counter',
 };
 
-export const Default = () => (
-  <StoryContainer title='Default'>
-    <Counter />
-  </StoryContainer>
-);
+export const Default = () => {
+  const [value, setValue] = React.useState(0);
 
-export const Label = () => (
-  <StoryContainer title='With label'>
-    <Counter label="Label" />
-  </StoryContainer>
-);
+  return (
+    <StoryContainer title='Default'>
+      <Counter
+        onChangeText={() => {}}
+        onDecrement={() => setValue(value - 1)}
+        onIncrement={() => setValue(value + 1)}
+        value={value}
+      />
+    </StoryContainer>
+  );
+};
 
-export const Size = () => (
-  <StoryContainer title='Sizes'>
-    <Counter label="medium" size="medium" />
-    <Counter label="semiX" size="semiX" />
-  </StoryContainer>
-);
+export const Label = () => {
+  const [value, setValue] = React.useState(0);
 
-export const Disabled = () => (
-  <StoryContainer title='Disabled'>
-    <Counter disabled />
-  </StoryContainer>
-);
+  return (
+    <StoryContainer title='With label'>
+      <Counter
+        onChangeText={() => {}}
+        onDecrement={() => setValue(value - 1)}
+        onIncrement={() => setValue(value + 1)}
+        label="Label"
+      />
+    </StoryContainer>
+  );
+};
 
-export const Value = () => (
-  <StoryContainer title='Value'>
-    <Counter
-      decrementButtonAccessibilityLabel="decrement button"
-      decrementButtonAccessibilityHint="decrement the value of the counter"
-      incrementButtonAccessibilityLabel="increment button"
-      incrementButtonAccessibilityHint="increment the value of the counter"
-      label="you can set an initial value other than 0" value={42} />
-  </StoryContainer>
-);
+export const Size = () => {
+  const [mediumValue, setMediumValue] = React.useState(0);
+  const [semiXValue, setSemiXValue] = React.useState(0);
 
-export const Interactive = () => (
-  <StoryContainer title='Interactive'>
-    <Counter
-      label={text('Label', 'Interactive example')}
-      value={number('Value', 0)}
-      disabled={boolean('Disabled', false)}
-    />
-  </StoryContainer>
-);
+  return (
+    <StoryContainer title='Sizes'>
+      <Counter
+        onChangeText={() => {}}
+        onDecrement={() => setMediumValue(mediumValue - 1)}
+        onIncrement={() => setMediumValue(mediumValue + 1)}
+        label="medium" size="medium" />
+      <Counter
+        onChangeText={() => {}}
+        onDecrement={() => setSemiXValue(semiXValue - 1)}
+        onIncrement={() => setSemiXValue(semiXValue + 1)}
+        label="semiX" size="semiX" />
+    </StoryContainer>
+  );
+};
+export const Disabled = () => {
+  const [value, setValue] = React.useState(0);
+
+  return (
+    <StoryContainer title='Disabled'>
+      <Counter
+        onChangeText={() => {}}
+        onDecrement={() => setValue(value - 1)}
+        onIncrement={() => setValue(value + 1)}
+        disabled
+      />
+    </StoryContainer>
+  );
+};
+
+export const Value = () => {
+  const [value, setValue] = React.useState(0);
+
+  return (
+    <StoryContainer title='Value'>
+      <Counter
+        onChangeText={() => {}}
+        onDecrement={() => setValue(value - 1)}
+        onIncrement={() => setValue(value + 1)}
+        decrementButtonAccessibilityLabel="decrement button"
+        decrementButtonAccessibilityHint="decrement the value of the counter"
+        incrementButtonAccessibilityLabel="increment button"
+        incrementButtonAccessibilityHint="increment the value of the counter"
+        label="you can set an initial value other than 0"
+        value={42}
+      />
+    </StoryContainer>
+  );
+};
+
+export const Interactive = () => {
+  const [value, setValue] = React.useState(0);
+
+  return (
+    <StoryContainer title='Interactive'>
+      <Counter
+        onChangeText={() => {}}
+        onDecrement={() => setValue(value - 1)}
+        onIncrement={() => setValue(value + 1)}
+        label={text('Label', 'Interactive example')}
+        value={number('Value', 0)}
+        disabled={boolean('Disabled', false)}
+      />
+    </StoryContainer>
+  );
+};
 
 export const All = () => (
   <>

@@ -35,6 +35,18 @@ export interface CounterProps {
    */
   label?: string,
   /**
+   * Callback that is called when the text input's text changes.
+   */
+  onChangeText: (text: string) => void;
+  /**
+   * Callback that is called when the decrement button is pressed.
+  */
+  onDecrement: () => void,
+  /**
+   * Callback that is called when the increment button is pressed.
+  */
+  onIncrement: () => void,
+  /**
    * This defines the height of the component, according to
    * corresponding theme Size token.
    * @default 'medium'

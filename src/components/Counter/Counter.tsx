@@ -1,15 +1,18 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { View } from 'react-native';
 import { Button } from '../Button';
 import { Container, Input, Label } from './Counter.styles';
 import { CounterProps } from './Counter.types';
 
-const transformTextToNumber = (value: string) => parseFloat(value.replace(/\D/g, ''));
-const validateNumber = (value: number, minValue: number, maxValue: number) => {
-  if (value > maxValue) return maxValue;
-  if (value < minValue) return minValue;
+const validateNumber = (textValue: string, minValue: number, maxValue: number) => {
+  const value = parseFloat(textValue);
+  const max = maxValue;
+  const min = minValue;
 
-  return value;
+  if (value > max) return max.toString();
+  if (value < min) return min.toString();
+
+  return value.toString();
 };
 
 export const Counter = ({
@@ -19,28 +22,20 @@ export const Counter = ({
   incrementButtonAccessibilityLabel,
   disabled,
   label,
+  onChangeText,
+  onDecrement,
+  onIncrement,
   size = 'medium',
   testID = 'counter',
   value = 0,
 }: CounterProps) => {
   const minValue = 0;
   const maxValue = 99;
-  const [currentValue, setCurrentValue] = useState(value);
 
-  const addItem = () => currentValue < maxValue && setCurrentValue(currentValue + 1);
-  const subtractItem = () => currentValue > minValue && setCurrentValue(currentValue - 1);
-
-  const handleUserInput = (userInput: string) => {
-    const userInputValue = transformTextToNumber(userInput);
-    const validatedValue = validateNumber(userInputValue, minValue, maxValue);
-
-    setCurrentValue(validatedValue);
-  };
-
-  const disableButton = (buttonAction: 'add' | 'subtract') => {
+  const disableButton = (buttonAction: 'increment' | 'decrement') => {
     const isDisabled = {
-      add: disabled || currentValue === maxValue,
-      subtract: disabled || currentValue === minValue,
+      decrement: disabled || value === minValue,
+      increment: disabled || value === maxValue,
     };
 
     return isDisabled[buttonAction];
@@ -53,23 +48,21 @@ export const Counter = ({
         { label }
         </Label>
       }
-      <Container size={size} testID={testID}>
+      <Container size={size} testID={testID} accessibilityLiveRegion="assertive">
         <Button
           accessibilityHint={decrementButtonAccessibilityHint}
           accessibilityLabel={decrementButtonAccessibilityLabel}
           size={size}
           type="text"
           text="−"
-          onPress={subtractItem}
-          disabled={disableButton('subtract')}
+          onPress={onDecrement}
+          disabled={disableButton('decrement')}
         />
         <Input
-          accessibilityLiveRegion="assertive"
-          accessibilityValue={{ max: maxValue, min: minValue, now: currentValue }}
           editable={!disabled}
           keyboardType="numeric"
-          onChangeText={text => handleUserInput(text)}
-          value={currentValue.toString()}
+          onChangeText={text => onChangeText(text.replace(/\D/g, '')) }
+          value={validateNumber(value.toString(), minValue, maxValue)}
           testID="counter-input"
         />
         <Button
@@ -78,8 +71,8 @@ export const Counter = ({
           size={size}
           type="text"
           text="+"
-          onPress={addItem}
-          disabled={disableButton('add')}
+          onPress={onIncrement}
+          disabled={disableButton('increment')}
         />
       </Container>
     </View>
