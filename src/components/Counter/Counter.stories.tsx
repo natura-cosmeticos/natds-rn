@@ -38,7 +38,7 @@ export const Default = () => {
   return (
     <StoryContainer title='Default'>
       <Counter
-        onChangeText={() => {}}
+        onChangeText={textValue => setValue(parseFloat(textValue))}
         onDecrement={() => setValue(value - 1)}
         onIncrement={() => setValue(value + 1)}
         value={value}
@@ -53,7 +53,7 @@ export const Label = () => {
   return (
     <StoryContainer title='With label'>
       <Counter
-        onChangeText={() => {}}
+        onChangeText={textValue => setValue(parseFloat(textValue))}
         onDecrement={() => setValue(value - 1)}
         onIncrement={() => setValue(value + 1)}
         label="Label"
@@ -69,12 +69,12 @@ export const Size = () => {
   return (
     <StoryContainer title='Sizes'>
       <Counter
-        onChangeText={() => {}}
+        onChangeText={textValue => setMediumValue(parseFloat(textValue))}
         onDecrement={() => setMediumValue(mediumValue - 1)}
         onIncrement={() => setMediumValue(mediumValue + 1)}
         label="medium" size="medium" />
       <Counter
-        onChangeText={() => {}}
+        onChangeText={textValue => setSemiXValue(parseFloat(textValue))}
         onDecrement={() => setSemiXValue(semiXValue - 1)}
         onIncrement={() => setSemiXValue(semiXValue + 1)}
         label="semiX" size="semiX" />
@@ -87,7 +87,7 @@ export const Disabled = () => {
   return (
     <StoryContainer title='Disabled'>
       <Counter
-        onChangeText={() => {}}
+        onChangeText={textValue => setValue(parseFloat(textValue))}
         onDecrement={() => setValue(value - 1)}
         onIncrement={() => setValue(value + 1)}
         disabled
@@ -102,7 +102,7 @@ export const Value = () => {
   return (
     <StoryContainer title='Value'>
       <Counter
-        onChangeText={() => {}}
+        onChangeText={textValue => setValue(parseFloat(textValue))}
         onDecrement={() => setValue(value - 1)}
         onIncrement={() => setValue(value + 1)}
         decrementButtonAccessibilityLabel="decrement button"
@@ -122,7 +122,7 @@ export const Interactive = () => {
   return (
     <StoryContainer title='Interactive'>
       <Counter
-        onChangeText={() => {}}
+        onChangeText={textValue => setValue(parseFloat(textValue))}
         onDecrement={() => setValue(value - 1)}
         onIncrement={() => setValue(value + 1)}
         label={text('Label', 'Interactive example')}

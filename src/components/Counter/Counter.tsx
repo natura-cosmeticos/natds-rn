@@ -15,6 +15,10 @@ const validateNumber = (textValue: string, minValue: number, maxValue: number) =
   return value.toString();
 };
 
+const handleOnChangeText = ({ onChangeText, text }: {
+  onChangeText: (text: string) => void, text: string,
+  }) => onChangeText(text.replace(/\D/g, ''));
+
 export const Counter = ({
   decrementButtonAccessibilityHint,
   decrementButtonAccessibilityLabel,
@@ -65,7 +69,7 @@ export const Counter = ({
           accessibilityLabel={inputAccessibilityLabel}
           editable={!disabled}
           keyboardType="numeric"
-          onChangeText={text => onChangeText(text.replace(/\D/g, '')) }
+          onChangeText={text => handleOnChangeText({ onChangeText, text })}
           value={validateNumber(value.toString(), minValue, maxValue)}
           testID="counter-input"
         />
