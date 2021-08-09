@@ -132,7 +132,6 @@ exports[`Counter should render with default props 1`] = `
     <TextInput
       allowFontScaling={true}
       editable={false}
-      onChangeText={[Function]}
       rejectResponderTermination={true}
       style={
         Array [

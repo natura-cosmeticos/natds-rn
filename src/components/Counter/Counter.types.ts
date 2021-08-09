@@ -66,10 +66,6 @@ export interface CounterProps {
    */
   maxValue?: number,
   /**
-   * Callback that is called when the text input's text changes.
-   */
-  onChangeText: (text: string) => void;
-  /**
    * Callback that is called when the decrement button is pressed.
    */
   onDecrement: () => void,

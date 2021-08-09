@@ -81,21 +81,6 @@ describe('Counter', () => {
 
       expect(getByTestId('counter-input').props.value).toBe('10');
     });
-    it('should accept only numeric values ', () => {
-      const onChangeTextMock = jest.fn();
-      const CHANGE_TEXT = '5abc0def';
-      const { getByTestId } = renderWithTheme(
-        <Counter
-          onChangeText={onChangeTextMock}
-          onIncrement={defaultProps.onIncrement}
-          onDecrement={defaultProps.onDecrement}
-        />,
-      );
-
-      fireEvent.changeText(getByTestId('counter-input'), CHANGE_TEXT);
-
-      expect(onChangeTextMock).toHaveBeenCalledWith('50');
-    });
     it('should replace values greater than maximum value with maximum value', () => {
       const { getByTestId } = renderWithTheme(
         <Counter {...defaultProps} maxValue={99} value={500} />,
@@ -116,7 +101,6 @@ describe('Counter', () => {
       const onDecrement = jest.fn();
       const { getByText } = renderWithTheme(
         <Counter
-          onChangeText={defaultProps.onChangeText}
           onIncrement={defaultProps.onIncrement}
           onDecrement={onDecrement}
         />,
@@ -130,7 +114,6 @@ describe('Counter', () => {
       const onIncrement = jest.fn();
       const { getByText } = renderWithTheme(
         <Counter
-          onChangeText={defaultProps.onChangeText}
           onIncrement={onIncrement}
           onDecrement={defaultProps.onDecrement}
         />,
@@ -139,21 +122,6 @@ describe('Counter', () => {
       fireEvent.press(getByText('+'));
 
       expect(onIncrement).toHaveBeenCalled();
-    });
-    it('should call `onChangeText` when value changes', () => {
-      const onChangeTextMock = jest.fn();
-      const CHANGE_TEXT = '50';
-      const { getByTestId } = renderWithTheme(
-        <Counter
-          onChangeText={onChangeTextMock}
-          onIncrement={defaultProps.onIncrement}
-          onDecrement={defaultProps.onDecrement}
-        />,
-      );
-
-      fireEvent.changeText(getByTestId('counter-input'), CHANGE_TEXT);
-
-      expect(onChangeTextMock).toHaveBeenCalledWith('50');
     });
   });
 });

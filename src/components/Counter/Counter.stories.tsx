@@ -40,7 +40,6 @@ export const Default = () => {
   return (
     <StoryContainer title='Default'>
       <Counter
-        onChangeText={textValue => setValue(parseFloat(textValue))}
         onDecrement={() => setValue(value - 1)}
         onIncrement={() => setValue(value + 1)}
         value={value}
@@ -61,7 +60,6 @@ export const Label = () => {
         incrementButtonAccessibilityLabel="increment button"
         inputAccessibilityHint="you can set the quantity you want editing this field"
         inputAccessibilityLabel={`you have ${value} items in your shopping cart`}
-        onChangeText={textValue => setValue(parseFloat(textValue))}
         onDecrement={() => setValue(value - 1)}
         onIncrement={() => setValue(value + 1)}
         label="Label"
@@ -84,7 +82,6 @@ export const Size = () => {
         incrementButtonAccessibilityLabel="increment button"
         inputAccessibilityHint="you can set the quantity you want editing this field"
         inputAccessibilityLabel={`you have ${mediumValue} items in your shopping cart`}
-        onChangeText={textValue => setMediumValue(parseFloat(textValue))}
         onDecrement={() => setMediumValue(mediumValue - 1)}
         onIncrement={() => setMediumValue(mediumValue + 1)}
         label="medium" size="medium"
@@ -97,7 +94,6 @@ export const Size = () => {
         incrementButtonAccessibilityLabel="increment button"
         inputAccessibilityHint="you can set the quantity you want editing this field"
         inputAccessibilityLabel={`you have ${semiXValue} items in your shopping cart`}
-        onChangeText={textValue => setSemiXValue(parseFloat(textValue))}
         onDecrement={() => setSemiXValue(semiXValue - 1)}
         onIncrement={() => setSemiXValue(semiXValue + 1)}
         label="semiX" size="semiX"
@@ -118,7 +114,6 @@ export const Disabled = () => {
         incrementButtonAccessibilityLabel="increment button"
         inputAccessibilityHint="you can set the quantity you want editing this field"
         inputAccessibilityLabel={`you have ${value} items in your shopping cart`}
-        onChangeText={textValue => setValue(parseFloat(textValue))}
         onDecrement={() => setValue(value - 1)}
         onIncrement={() => setValue(value + 1)}
         value={value}
@@ -142,7 +137,6 @@ export const Value = () => {
         inputAccessibilityHint="you can set the quantity you want editing this field"
         inputAccessibilityLabel={`you have ${value} items in your shopping cart`}
         label="you can set an initial value other than 0"
-        onChangeText={textValue => setValue(parseFloat(textValue))}
         onDecrement={() => setValue(value - 1)}
         onIncrement={() => setValue(value + 1)}
         value={value}
@@ -169,7 +163,6 @@ export const Interactive = () => {
         label={text('Label', 'Interactive example')}
         maxValue={number('Maximum value for the counter', 99)}
         minValue={number('Minimum value for the counter', 0)}
-        onChangeText={textValue => setValue(parseFloat(textValue))}
         onDecrement={() => setValue(value - 1)}
         onIncrement={() => setValue(value + 1)}
         value={value}
