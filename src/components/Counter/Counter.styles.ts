@@ -52,8 +52,8 @@ export const Input = styled.TextInput<{ theme: Theme }>(({ theme }): CSSObject =
     fontWeight: body1.fontWeight,
     height: '100%',
     letterSpacing: body1.letterSpacing,
-    minWidth: getSizeMediumX(theme),
     paddingHorizontal: getSpacingSmall(theme),
     textAlign: 'center',
+    width: getSizeMediumX(theme),
   });
 });
