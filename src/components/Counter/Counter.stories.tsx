@@ -1,7 +1,8 @@
 /* eslint-disable max-lines */
 import React from 'react';
 import { boolean, number, text } from '@storybook/addon-knobs';
-import { StoryContainer } from '../../common/HelperComponents/StoryContainer';
+import { Text } from 'react-native';
+import { StoryContainer, VerticalStoryContainer } from '../../common/HelperComponents/StoryContainer';
 import { Counter } from './Counter';
 
 const description = () => `
@@ -128,20 +129,25 @@ export const Value = () => {
   const [value, setValue] = React.useState(initialValue);
 
   return (
-    <StoryContainer title='Value'>
+    <VerticalStoryContainer title='Value'>
+      <Text style={{ paddingBottom: 16 }}>
+        You can set a minimum, maximum and initial value for the component
+      </Text>
       <Counter
         decrementButtonAccessibilityHint="decrement the value of the counter"
         decrementButtonAccessibilityLabel="decrement button"
         incrementButtonAccessibilityHint="increment the value of the counter"
         incrementButtonAccessibilityLabel="increment button"
-        inputAccessibilityHint="you can set the quantity you want editing this field"
+        inputAccessibilityHint="this shows the quantity of items you have in your shopping cart"
         inputAccessibilityLabel={`you have ${value} items in your shopping cart`}
-        label="you can set an initial value other than 0"
+        label="Fixed range of value"
         onDecrement={() => setValue(value - 1)}
         onIncrement={() => setValue(value + 1)}
+        maxValue={45}
+        minValue={40}
         value={value}
-      />
-    </StoryContainer>
+        />
+    </VerticalStoryContainer>
   );
 };
 
