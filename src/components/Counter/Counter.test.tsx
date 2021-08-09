@@ -47,23 +47,31 @@ describe('Counter', () => {
       expect(getByText('−')).toBeEnabled();
       expect(getByText('+')).toBeEnabled();
     });
-    it('should disable decrement button when disableDecrementButton is true', () => {
+    it('should render with enabled buttons when value is between minimum and maximum values', () => {
       const { getByText } = renderWithTheme(
-        <Counter {...defaultProps} disableDecrementButton />,
+        <Counter {...defaultProps} minValue={1} value={2} maxValue={3} />,
+      );
+
+      expect(getByText('−')).toBeEnabled();
+      expect(getByText('+')).toBeEnabled();
+    });
+    it('should disable decrement button when value is equal to minimum', () => {
+      const { getByText } = renderWithTheme(
+        <Counter {...defaultProps} minValue={1} value={1} maxValue={3} />,
       );
 
       expect(getByText('−')).toBeDisabled();
       expect(getByText('+')).toBeEnabled();
     });
-    it('should disable increment button when disableIncrementButton is true', () => {
+    it('should disable increment button when value is equal to maximum', () => {
       const { getByText } = renderWithTheme(
-        <Counter {...defaultProps} disableIncrementButton />,
+        <Counter {...defaultProps} minValue={1} value={3} maxValue={3} />,
       );
 
       expect(getByText('−')).toBeEnabled();
       expect(getByText('+')).toBeDisabled();
     });
-    it('should render with both buttons disabled if disabled is true', () => {
+    it('should render with disabled buttons if disabled', () => {
       const { getByText } = renderWithTheme(<Counter {...defaultProps} disabled />);
 
       expect(getByText('−')).toBeDisabled();
@@ -81,28 +89,15 @@ describe('Counter', () => {
 
       expect(getByTestId('counter-input').props.value).toBe('10');
     });
-    it('should replace values greater than maximum value with maximum value', () => {
-      const { getByTestId } = renderWithTheme(
-        <Counter {...defaultProps} maxValue={99} value={500} />,
-      );
-
-      expect(getByTestId('counter-input').props.value).toBe('99');
-    });
-    it('should replace values less than minimum value with minimum value', () => {
-      const { getByTestId } = renderWithTheme(
-        <Counter {...defaultProps} minValue={10} value={5} />,
-      );
-
-      expect(getByTestId('counter-input').props.value).toBe('10');
-    });
   });
   describe('actions', () => {
-    it('should call `onDecrement` when decrement button is pressed', () => {
+    it('should call `onDecrement` when decrement button is pressed and value is greater than minimum value', () => {
       const onDecrement = jest.fn();
       const { getByText } = renderWithTheme(
         <Counter
           onIncrement={defaultProps.onIncrement}
           onDecrement={onDecrement}
+          value={1}
         />,
       );
 
@@ -110,12 +105,13 @@ describe('Counter', () => {
 
       expect(onDecrement).toHaveBeenCalled();
     });
-    it('should call `onIncrement` when decrement button is pressed', () => {
+    it('should call `onIncrement` when decrement button is pressed and value is less than maximum value', () => {
       const onIncrement = jest.fn();
       const { getByText } = renderWithTheme(
         <Counter
           onIncrement={onIncrement}
           onDecrement={defaultProps.onDecrement}
+          value={1}
         />,
       );
 

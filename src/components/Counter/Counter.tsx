@@ -4,17 +4,6 @@ import { Button } from '../Button';
 import { Container, Input, Label } from './Counter.styles';
 import { CounterProps } from './Counter.types';
 
-const validateNumber = (textValue: string, minValue: number, maxValue: number) => {
-  const value = parseFloat(textValue);
-  const max = maxValue;
-  const min = minValue;
-
-  if (value > max) return max.toString();
-  if (value < min) return min.toString();
-
-  return value.toString();
-};
-
 export const Counter = ({
   decrementButtonAccessibilityHint,
   decrementButtonAccessibilityLabel,
@@ -22,8 +11,6 @@ export const Counter = ({
   incrementButtonAccessibilityLabel,
   inputAccessibilityHint,
   inputAccessibilityLabel,
-  disableDecrementButton,
-  disableIncrementButton,
   disabled,
   label,
   minValue = 0,
@@ -48,13 +35,13 @@ export const Counter = ({
           type="text"
           text="−"
           onPress={onDecrement}
-          disabled={disabled || disableDecrementButton}
+          disabled={disabled || value <= minValue}
         />
         <Input
           accessibilityHint={inputAccessibilityHint}
           accessibilityLabel={inputAccessibilityLabel}
           editable={false}
-          value={validateNumber(value.toString(), minValue, maxValue)}
+          value={value.toString()}
           testID="counter-input"
         />
         <Button
@@ -64,7 +51,7 @@ export const Counter = ({
           type="text"
           text="+"
           onPress={onIncrement}
-          disabled={disabled || disableIncrementButton}
+          disabled={disabled || value >= maxValue}
         />
       </Container>
     </View>

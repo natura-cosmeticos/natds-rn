@@ -163,8 +163,6 @@ export const Interactive = () => {
         incrementButtonAccessibilityLabel={text('Increment button Accessibility Label', 'Description of what the increment button does')}
         inputAccessibilityHint={text('Input Accessibility Hint', 'A hint about what the input does')}
         inputAccessibilityLabel={text('Input Accessibility Label', 'Description of what the input does')}
-        disableDecrementButton={boolean('Disable Decrement Button', false)}
-        disableIncrementButton={boolean('Disable Increment Button', false)}
         disabled={boolean('Disabled', false)}
         label={text('Label', 'Interactive example')}
         maxValue={number('Maximum value for the counter', 99)}

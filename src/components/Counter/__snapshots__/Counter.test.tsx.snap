@@ -35,7 +35,7 @@ exports[`Counter should render with default props 1`] = `
     >
       <View
         accessibilityRole="button"
-        disabled={false}
+        disabled={true}
         onLayout={[Function]}
         size="medium"
         style={
@@ -70,14 +70,14 @@ exports[`Counter should render with default props 1`] = `
             style={
               Array [
                 Object {
-                  "color": "#333333",
+                  "color": "#777777",
                   "fontWeight": "500",
                   "lineHeight": 21,
                 },
               ]
             }
             testID="button-label"
-            textColor="highEmphasis"
+            textColor="mediumEmphasis"
           >
             −
           </Text>
@@ -144,9 +144,9 @@ exports[`Counter should render with default props 1`] = `
             "fontWeight": "400",
             "height": "100%",
             "letterSpacing": 0.51,
-            "minWidth": 56,
             "paddingHorizontal": 16,
             "textAlign": "center",
+            "width": 56,
           },
         ]
       }

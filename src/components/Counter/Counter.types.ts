@@ -37,16 +37,6 @@ export interface CounterProps {
    */
   inputAccessibilityLabel?: string,
   /**
-   * When `true` the decrement button is disabled.
-   * @default false
-   */
-  disableDecrementButton?: boolean,
-  /**
-   * When `true` the increment button is disabled.
-   * @default false
-   */
-  disableIncrementButton?: boolean,
-  /**
    * When `true` both the decrement and increment button are disabled.
    * @default false
    */
