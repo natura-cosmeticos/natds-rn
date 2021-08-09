@@ -1,6 +1,6 @@
 {
   "name": "@naturacosmeticos/natds-rn",
-  "version": "7.2.0-DSY-1129.8",
+  "version": "7.2.0-DSY-1129.9",
   "license": "ISC",
   "main": "build/lib/index.js",
   "keywords": [
