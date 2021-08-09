@@ -1,6 +1,6 @@
 /* eslint-disable max-lines */
 import React from 'react';
-import { boolean, number, text } from '@storybook/addon-knobs';
+import { boolean, text } from '@storybook/addon-knobs';
 import { StoryContainer } from '../../common/HelperComponents/StoryContainer';
 import { Counter } from './Counter';
 
@@ -65,6 +65,7 @@ export const Label = () => {
         onDecrement={() => setValue(value - 1)}
         onIncrement={() => setValue(value + 1)}
         label="Label"
+        value={value}
       />
     </StoryContainer>
   );
@@ -86,7 +87,9 @@ export const Size = () => {
         onChangeText={textValue => setMediumValue(parseFloat(textValue))}
         onDecrement={() => setMediumValue(mediumValue - 1)}
         onIncrement={() => setMediumValue(mediumValue + 1)}
-        label="medium" size="medium" />
+        label="medium" size="medium"
+        value={mediumValue}
+      />
       <Counter
         decrementButtonAccessibilityHint="decrement the value of the counter"
         decrementButtonAccessibilityLabel="decrement button"
@@ -97,7 +100,9 @@ export const Size = () => {
         onChangeText={textValue => setSemiXValue(parseFloat(textValue))}
         onDecrement={() => setSemiXValue(semiXValue - 1)}
         onIncrement={() => setSemiXValue(semiXValue + 1)}
-        label="semiX" size="semiX" />
+        label="semiX" size="semiX"
+        value={semiXValue}
+      />
     </StoryContainer>
   );
 };
@@ -116,6 +121,7 @@ export const Disabled = () => {
         onChangeText={textValue => setValue(parseFloat(textValue))}
         onDecrement={() => setValue(value - 1)}
         onIncrement={() => setValue(value + 1)}
+        value={value}
         disabled
       />
     </StoryContainer>
@@ -139,7 +145,7 @@ export const Value = () => {
         onChangeText={textValue => setValue(parseFloat(textValue))}
         onDecrement={() => setValue(value - 1)}
         onIncrement={() => setValue(value + 1)}
-        value={initialValue}
+        value={value}
       />
     </StoryContainer>
   );
@@ -157,14 +163,14 @@ export const Interactive = () => {
         incrementButtonAccessibilityLabel={text('Increment button Accessibility Label', 'Description of what the increment button does')}
         inputAccessibilityHint={text('Input Accessibility Hint', 'A hint about what the input does')}
         inputAccessibilityLabel={text('Input Accessibility Label', 'Description of what the input does')}
-        onChangeText={textValue => setValue(parseFloat(textValue))}
-        onDecrement={() => setValue(value - 1)}
-        onIncrement={() => setValue(value + 1)}
-        label={text('Label', 'Interactive example')}
-        value={number('Value', 0)}
         disableDecrementButton={boolean('Disable Decrement Button', false)}
         disableIncrementButton={boolean('Disable Increment Button', false)}
         disabled={boolean('Disabled', false)}
+        label={text('Label', 'Interactive example')}
+        onChangeText={textValue => setValue(parseFloat(textValue))}
+        onDecrement={() => setValue(value - 1)}
+        onIncrement={() => setValue(value + 1)}
+        value={value}
       />
     </StoryContainer>
   );
