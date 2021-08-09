@@ -162,6 +162,8 @@ export const Interactive = () => {
         onIncrement={() => setValue(value + 1)}
         label={text('Label', 'Interactive example')}
         value={number('Value', 0)}
+        disableDecrementButton={boolean('Disable Decrement Button', false)}
+        disableIncrementButton={boolean('Disable Increment Button', false)}
         disabled={boolean('Disabled', false)}
       />
     </StoryContainer>
