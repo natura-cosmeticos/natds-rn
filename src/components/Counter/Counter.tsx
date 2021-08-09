@@ -26,6 +26,8 @@ export const Counter = ({
   incrementButtonAccessibilityLabel,
   inputAccessibilityHint,
   inputAccessibilityLabel,
+  disableDecrementButton,
+  disableIncrementButton,
   disabled,
   label,
   onChangeText,
@@ -40,8 +42,8 @@ export const Counter = ({
 
   const disableButton = (buttonAction: 'increment' | 'decrement') => {
     const isDisabled = {
-      decrement: disabled || value === minValue,
-      increment: disabled || value === maxValue,
+      decrement: disabled || disableDecrementButton || value === minValue,
+      increment: disabled || disableIncrementButton || value === maxValue,
     };
 
     return isDisabled[buttonAction];

@@ -61,6 +61,22 @@ describe('Counter', () => {
       expect(getByText('−')).not.toBeDisabled();
       expect(getByText('+')).toBeDisabled();
     });
+    it('should disable decrement button when disableDecrementButton is true', () => {
+      const { getByText } = renderWithTheme(
+        <Counter {...defaultProps} value={10} disableDecrementButton />,
+      );
+
+      expect(getByText('−')).toBeDisabled();
+      expect(getByText('+')).not.toBeDisabled();
+    });
+    it('should disable increment button when disableIncrementButton is true', () => {
+      const { getByText } = renderWithTheme(
+        <Counter {...defaultProps} value={10} disableIncrementButton />,
+      );
+
+      expect(getByText('−')).not.toBeDisabled();
+      expect(getByText('+')).toBeDisabled();
+    });
     it('should render with disabled buttons if disabled', () => {
       const { getByText } = renderWithTheme(<Counter {...defaultProps} disabled />);
 
