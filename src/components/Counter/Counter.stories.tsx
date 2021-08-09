@@ -15,7 +15,9 @@ const description = () => `
 With the following attribute status:
 
   - ✅ **Label**
-  - ✅ **Size:**
+  - **Size:**
+    - ✅ \`Medium\`
+    - ✅ \`SemiX\`
   - ✅ **Disabled**
 
 ---
@@ -53,6 +55,12 @@ export const Label = () => {
   return (
     <StoryContainer title='With label'>
       <Counter
+        decrementButtonAccessibilityHint="decrement the value of the counter"
+        decrementButtonAccessibilityLabel="decrement button"
+        incrementButtonAccessibilityHint="increment the value of the counter"
+        incrementButtonAccessibilityLabel="increment button"
+        inputAccessibilityHint="you can set the quantity you want editing this field"
+        inputAccessibilityLabel={`you have ${value} items in your shopping cart`}
         onChangeText={textValue => setValue(parseFloat(textValue))}
         onDecrement={() => setValue(value - 1)}
         onIncrement={() => setValue(value + 1)}
@@ -69,11 +77,23 @@ export const Size = () => {
   return (
     <StoryContainer title='Sizes'>
       <Counter
+        decrementButtonAccessibilityHint="decrement the value of the counter"
+        decrementButtonAccessibilityLabel="decrement button"
+        incrementButtonAccessibilityHint="increment the value of the counter"
+        incrementButtonAccessibilityLabel="increment button"
+        inputAccessibilityHint="you can set the quantity you want editing this field"
+        inputAccessibilityLabel={`you have ${mediumValue} items in your shopping cart`}
         onChangeText={textValue => setMediumValue(parseFloat(textValue))}
         onDecrement={() => setMediumValue(mediumValue - 1)}
         onIncrement={() => setMediumValue(mediumValue + 1)}
         label="medium" size="medium" />
       <Counter
+        decrementButtonAccessibilityHint="decrement the value of the counter"
+        decrementButtonAccessibilityLabel="decrement button"
+        incrementButtonAccessibilityHint="increment the value of the counter"
+        incrementButtonAccessibilityLabel="increment button"
+        inputAccessibilityHint="you can set the quantity you want editing this field"
+        inputAccessibilityLabel={`you have ${semiXValue} items in your shopping cart`}
         onChangeText={textValue => setSemiXValue(parseFloat(textValue))}
         onDecrement={() => setSemiXValue(semiXValue - 1)}
         onIncrement={() => setSemiXValue(semiXValue + 1)}
@@ -87,6 +107,12 @@ export const Disabled = () => {
   return (
     <StoryContainer title='Disabled'>
       <Counter
+        decrementButtonAccessibilityHint="decrement the value of the counter"
+        decrementButtonAccessibilityLabel="decrement button"
+        incrementButtonAccessibilityHint="increment the value of the counter"
+        incrementButtonAccessibilityLabel="increment button"
+        inputAccessibilityHint="you can set the quantity you want editing this field"
+        inputAccessibilityLabel={`you have ${value} items in your shopping cart`}
         onChangeText={textValue => setValue(parseFloat(textValue))}
         onDecrement={() => setValue(value - 1)}
         onIncrement={() => setValue(value + 1)}
@@ -97,20 +123,23 @@ export const Disabled = () => {
 };
 
 export const Value = () => {
-  const [value, setValue] = React.useState(0);
+  const initialValue = 42;
+  const [value, setValue] = React.useState(initialValue);
 
   return (
     <StoryContainer title='Value'>
       <Counter
+        decrementButtonAccessibilityHint="decrement the value of the counter"
+        decrementButtonAccessibilityLabel="decrement button"
+        incrementButtonAccessibilityHint="increment the value of the counter"
+        incrementButtonAccessibilityLabel="increment button"
+        inputAccessibilityHint="you can set the quantity you want editing this field"
+        inputAccessibilityLabel={`you have ${value} items in your shopping cart`}
+        label="you can set an initial value other than 0"
         onChangeText={textValue => setValue(parseFloat(textValue))}
         onDecrement={() => setValue(value - 1)}
         onIncrement={() => setValue(value + 1)}
-        decrementButtonAccessibilityLabel="decrement button"
-        decrementButtonAccessibilityHint="decrement the value of the counter"
-        incrementButtonAccessibilityLabel="increment button"
-        incrementButtonAccessibilityHint="increment the value of the counter"
-        label="you can set an initial value other than 0"
-        value={42}
+        value={initialValue}
       />
     </StoryContainer>
   );
@@ -122,6 +151,12 @@ export const Interactive = () => {
   return (
     <StoryContainer title='Interactive'>
       <Counter
+        decrementButtonAccessibilityHint={text('Decrement button Accessibility Hint', 'A hint about what the decrement button does')}
+        decrementButtonAccessibilityLabel={text('Decrement button Accessibility Label', 'Description of what the decrement button does')}
+        incrementButtonAccessibilityHint={text('Increment button Accessibility Hint', 'A hint about what the increment button does')}
+        incrementButtonAccessibilityLabel={text('Increment button Accessibility Label', 'Description of what the increment button does')}
+        inputAccessibilityHint={text('Input Accessibility Hint', 'A hint about what the input does')}
+        inputAccessibilityLabel={text('Input Accessibility Label', 'Description of what the input does')}
         onChangeText={textValue => setValue(parseFloat(textValue))}
         onDecrement={() => setValue(value - 1)}
         onIncrement={() => setValue(value + 1)}
