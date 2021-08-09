@@ -47,8 +47,7 @@ export interface CounterProps {
    */
   disableIncrementButton?: boolean,
   /**
-   * When `true` both the decrement and increment button are disabled and the value of the
-   * counter is not editable.
+   * When `true` both the decrement and increment button are disabled.
    * @default false
    */
   disabled?: boolean,
@@ -56,6 +55,16 @@ export interface CounterProps {
    * When provided this shows above the counter.
    */
   label?: string,
+  /**
+   * The minimum valid value for the component
+   * @default 0
+   */
+  minValue?: number,
+  /**
+   * The maximum valid value for the component
+   * @default 99
+   */
+  maxValue?: number,
   /**
    * Callback that is called when the text input's text changes.
    */

@@ -1,6 +1,6 @@
 /* eslint-disable max-lines */
 import React from 'react';
-import { boolean, text } from '@storybook/addon-knobs';
+import { boolean, number, text } from '@storybook/addon-knobs';
 import { StoryContainer } from '../../common/HelperComponents/StoryContainer';
 import { Counter } from './Counter';
 
@@ -167,6 +167,8 @@ export const Interactive = () => {
         disableIncrementButton={boolean('Disable Increment Button', false)}
         disabled={boolean('Disabled', false)}
         label={text('Label', 'Interactive example')}
+        maxValue={number('Maximum value for the counter', 99)}
+        minValue={number('Minimum value for the counter', 0)}
         onChangeText={textValue => setValue(parseFloat(textValue))}
         onDecrement={() => setValue(value - 1)}
         onIncrement={() => setValue(value + 1)}

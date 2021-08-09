@@ -30,26 +30,15 @@ export const Counter = ({
   disableIncrementButton,
   disabled,
   label,
+  minValue = 0,
+  maxValue = 99,
   onChangeText,
   onDecrement,
   onIncrement,
   size = 'medium',
   testID = 'counter',
   value = 0,
-}: CounterProps) => {
-  const minValue = 0;
-  const maxValue = 99;
-
-  const disableButton = (buttonAction: 'increment' | 'decrement') => {
-    const isDisabled = {
-      decrement: disabled || disableDecrementButton || value === minValue,
-      increment: disabled || disableIncrementButton || value === maxValue,
-    };
-
-    return isDisabled[buttonAction];
-  };
-
-  return (
+}: CounterProps) => (
     <View>
       { label
         && <Label testID="counter-label">
@@ -64,13 +53,12 @@ export const Counter = ({
           type="text"
           text="−"
           onPress={onDecrement}
-          disabled={disableButton('decrement')}
+          disabled={disabled || disableDecrementButton}
         />
         <Input
           accessibilityHint={inputAccessibilityHint}
           accessibilityLabel={inputAccessibilityLabel}
-          editable={!disabled}
-          keyboardType="numeric"
+          editable={false}
           onChangeText={text => handleOnChangeText({ onChangeText, text })}
           value={validateNumber(value.toString(), minValue, maxValue)}
           testID="counter-input"
@@ -82,9 +70,8 @@ export const Counter = ({
           type="text"
           text="+"
           onPress={onIncrement}
-          disabled={disableButton('increment')}
+          disabled={disabled || disableIncrementButton}
         />
       </Container>
     </View>
-  );
-};
+);
