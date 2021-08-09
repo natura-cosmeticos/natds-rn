@@ -20,6 +20,8 @@ export const Counter = ({
   decrementButtonAccessibilityLabel,
   incrementButtonAccessibilityHint,
   incrementButtonAccessibilityLabel,
+  inputAccessibilityHint,
+  inputAccessibilityLabel,
   disabled,
   label,
   onChangeText,
@@ -59,6 +61,8 @@ export const Counter = ({
           disabled={disableButton('decrement')}
         />
         <Input
+          accessibilityHint={inputAccessibilityHint}
+          accessibilityLabel={inputAccessibilityLabel}
           editable={!disabled}
           keyboardType="numeric"
           onChangeText={text => onChangeText(text.replace(/\D/g, '')) }

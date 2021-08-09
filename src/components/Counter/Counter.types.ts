@@ -26,6 +26,17 @@ export interface CounterProps {
  */
   incrementButtonAccessibilityLabel?: string,
   /**
+   * An accessibility hint helps users understand what will happen when they perform an action
+   * on the accessibility element when that result is not clear from the accessibility label.
+   */
+  inputAccessibilityHint?: string,
+  /**
+  * An accessibility label overrides the text that's read by the screen reader when the user
+  * interacts with the element. By default, the label is constructed by traversing all the
+  * children and accumulating all the Text nodes separated by space.
+ */
+  inputAccessibilityLabel?: string,
+  /**
    * When `true` the value of the counter is not editable.
    * @default false
    */
