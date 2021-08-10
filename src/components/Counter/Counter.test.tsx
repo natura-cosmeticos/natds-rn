@@ -5,7 +5,6 @@ import { Counter } from './Counter';
 import mockTheme from '../../common/themeSelectors/theme/mock-theme.json';
 
 const defaultProps = {
-  onChangeText: () => {},
   onDecrement: () => {},
   onIncrement: () => {},
 };
@@ -105,7 +104,7 @@ describe('Counter', () => {
 
       expect(onDecrement).toHaveBeenCalled();
     });
-    it('should call `onIncrement` when decrement button is pressed and value is less than maximum value', () => {
+    it('should call `onIncrement` when increment button is pressed and value is less than maximum value', () => {
       const onIncrement = jest.fn();
       const { getByText } = renderWithTheme(
         <Counter
