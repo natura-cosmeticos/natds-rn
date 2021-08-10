@@ -3,8 +3,15 @@ import {
 } from '@naturacosmeticos/natds-themes/react-native';
 import { checkTheme } from '../theme/theme';
 
+const getTypographyBody1 = (theme: Theme): Caption => checkTheme(theme).body1;
 const getTypographyCaption = (theme: Theme): Caption => checkTheme(theme).caption;
 const getTypographySubtitle2 = (theme: Theme): Subtitle2 => checkTheme(theme).subtitle2;
+
+const getBody1Styles = (theme: Theme) => ({
+  fontSize: getTypographyBody1(theme).fontSize,
+  fontWeight: getTypographyBody1(theme).fontWeight,
+  letterSpacing: getTypographyBody1(theme).letterSpacing,
+});
 
 const getCaptionStyles = (theme: Theme) => ({
   fontSize: getTypographyCaption(theme).fontSize,
@@ -19,6 +26,7 @@ const getSubtitle2Styles = (theme: Theme) => ({
 });
 
 export const getTypographyStyles = (theme: Theme) => ({
+  body1: getBody1Styles(theme),
   caption: getCaptionStyles(theme),
   subtitle2: getSubtitle2Styles(theme),
 });

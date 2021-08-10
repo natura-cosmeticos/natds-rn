@@ -4,6 +4,13 @@ import {
 } from './typography';
 
 describe('Typography', () => {
+  it('should return props for Body1 typography', () => {
+    expect(getTypographyStyles(theme).body1).toStrictEqual({
+      fontSize: theme.body1.fontSize,
+      fontWeight: theme.body1.fontWeight,
+      letterSpacing: theme.body1.letterSpacing,
+    });
+  });
   it('should return props for Caption typography', () => {
     expect(getTypographyStyles(theme).caption).toStrictEqual({
       fontSize: theme.caption.fontSize,
