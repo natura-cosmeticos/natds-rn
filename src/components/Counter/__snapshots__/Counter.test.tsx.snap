@@ -1,0 +1,267 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Counter should render with default props 1`] = `
+<View>
+  <View
+    accessibilityLiveRegion="assertive"
+    size="medium"
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "alignSelf": "flex-start",
+          "backgroundColor": "#ffffff",
+          "borderColor": "#bbbbbb",
+          "borderRadius": 4,
+          "borderWidth": 1,
+          "flexDirection": "row",
+          "height": 48,
+        },
+      ]
+    }
+    testID="counter"
+  >
+    <View
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      testID="touchable-ripple"
+    >
+      <View
+        accessibilityRole="button"
+        disabled={true}
+        onLayout={[Function]}
+        size="medium"
+        style={
+          Array [
+            Object {
+              "alignContent": "center",
+              "alignItems": "center",
+              "borderRadius": 4,
+              "justifyContent": "center",
+              "minHeight": 48,
+              "paddingHorizontal": 16,
+            },
+            Object {},
+          ]
+        }
+        testID="button"
+        type="text"
+      >
+        <View
+          iconPosition="right"
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "flexDirection": "row",
+              },
+            ]
+          }
+        >
+          <Text
+            iconPosition="right"
+            style={
+              Array [
+                Object {
+                  "color": "#777777",
+                  "fontWeight": "500",
+                  "lineHeight": 21,
+                },
+              ]
+            }
+            testID="button-label"
+            textColor="mediumEmphasis"
+          >
+            −
+          </Text>
+        </View>
+      </View>
+      <View
+        hideOverflow={true}
+        style={
+          Array [
+            Object {
+              "bottom": 0,
+              "elevation": 999,
+              "left": 0,
+              "overflow": "hidden",
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+              "zIndex": 999,
+            },
+          ]
+        }
+      >
+        <View
+          color="highlight"
+          size={0}
+          style={
+            Object {
+              "backgroundColor": "#000000",
+              "borderRadius": 0,
+              "height": 0,
+              "left": "50%",
+              "opacity": 0,
+              "position": "absolute",
+              "top": "50%",
+              "transform": Array [
+                Object {
+                  "translateX": -0,
+                },
+                Object {
+                  "translateY": -0,
+                },
+                Object {
+                  "scale": 0,
+                },
+              ],
+              "width": 0,
+            }
+          }
+        />
+      </View>
+    </View>
+    <TextInput
+      allowFontScaling={true}
+      editable={false}
+      rejectResponderTermination={true}
+      style={
+        Array [
+          Object {
+            "borderColor": "#bbbbbb",
+            "borderLeftWidth": 1,
+            "borderRightWidth": 1,
+            "color": "#333333",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "height": "100%",
+            "letterSpacing": 0.51,
+            "paddingHorizontal": 16,
+            "textAlign": "center",
+            "width": 56,
+          },
+        ]
+      }
+      testID="counter-input"
+      underlineColorAndroid="transparent"
+      value="0"
+    />
+    <View
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      testID="touchable-ripple"
+    >
+      <View
+        accessibilityRole="button"
+        disabled={false}
+        onLayout={[Function]}
+        size="medium"
+        style={
+          Array [
+            Object {
+              "alignContent": "center",
+              "alignItems": "center",
+              "borderRadius": 4,
+              "justifyContent": "center",
+              "minHeight": 48,
+              "paddingHorizontal": 16,
+            },
+            Object {},
+          ]
+        }
+        testID="button"
+        type="text"
+      >
+        <View
+          iconPosition="right"
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "flexDirection": "row",
+              },
+            ]
+          }
+        >
+          <Text
+            iconPosition="right"
+            style={
+              Array [
+                Object {
+                  "color": "#333333",
+                  "fontWeight": "500",
+                  "lineHeight": 21,
+                },
+              ]
+            }
+            testID="button-label"
+            textColor="highEmphasis"
+          >
+            +
+          </Text>
+        </View>
+      </View>
+      <View
+        hideOverflow={true}
+        style={
+          Array [
+            Object {
+              "bottom": 0,
+              "elevation": 999,
+              "left": 0,
+              "overflow": "hidden",
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+              "zIndex": 999,
+            },
+          ]
+        }
+      >
+        <View
+          color="highlight"
+          size={0}
+          style={
+            Object {
+              "backgroundColor": "#000000",
+              "borderRadius": 0,
+              "height": 0,
+              "left": "50%",
+              "opacity": 0,
+              "position": "absolute",
+              "top": "50%",
+              "transform": Array [
+                Object {
+                  "translateX": -0,
+                },
+                Object {
+                  "translateY": -0,
+                },
+                Object {
+                  "scale": 0,
+                },
+              ],
+              "width": 0,
+            }
+          }
+        />
+      </View>
+    </View>
+  </View>
+</View>
+`;
