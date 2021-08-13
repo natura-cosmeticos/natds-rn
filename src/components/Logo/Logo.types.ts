@@ -19,7 +19,7 @@ export interface LogoProps {
   model?: LogoModels;
   /**
    * Sets the size of the logo
-   * @default veryhuge
+   * @default veryHuge
    */
   size?: LogoSizes
 }

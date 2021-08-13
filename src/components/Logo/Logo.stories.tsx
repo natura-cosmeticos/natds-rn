@@ -1,6 +1,8 @@
 import React from 'react';
 import { View } from 'react-native';
+import { useTheme } from 'styled-components/native';
 import { VerticalStoryContainer } from '../../common/HelperComponents/StoryContainer';
+import { getColorOnSurface } from '../../common/themeSelectors';
 import { Logo } from './Logo';
 
 const description = () => `
@@ -9,13 +11,13 @@ const description = () => `
   ### NOTE:
   This component is available in the following variants:
 
-  - ❌ Base
+  - ✅ Base
 
 With the following attribute status:
 
-  - ❌ **Model**
-  - ❌ **Color**
-  - ❌ **Size**
+  - ✅ **Model**
+  - ✅ **Color**
+  - ✅ **Size**
 
 - - -
 `;
@@ -44,17 +46,24 @@ export const Models = () => (
   </VerticalStoryContainer>
 );
 
-export const Colors = () => (
-  <VerticalStoryContainer title='Colors'>
-    <Logo />
-    <Logo color="primary" />
-    <Logo color="secondary" />
-    <Logo color="highlight" />
-    <View style={{ backgroundColor: 'pink' }}>
-      <Logo color="surface" />
-    </View>
-  </VerticalStoryContainer>
-);
+export const Colors = () => {
+  const theme = useTheme();
+
+  return (
+    <VerticalStoryContainer title='Colors'>
+      <Logo />
+      <Logo color="primary" />
+      <Logo color="secondary" />
+      <Logo color="highlight" />
+      <View style={{
+        backgroundColor: getColorOnSurface(theme),
+        flex: 1,
+      }}>
+        <Logo color="surface" />
+      </View>
+    </VerticalStoryContainer>
+  );
+};
 
 export const Sizes = () => (
   <VerticalStoryContainer title='Sizes'>

@@ -1,5 +1,3 @@
-/* eslint-disable mocha/no-setup-in-describe */
-/* eslint-disable mocha/no-skipped-tests */
 import React from 'react';
 import { Logo } from './Logo';
 import { renderWithTheme } from '../../../test/testHelpers';
