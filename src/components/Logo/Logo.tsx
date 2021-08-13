@@ -1,8 +1,7 @@
 /* eslint-disable max-lines */
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
-import { SvgXml, SvgCss } from 'react-native-svg';
-import themes from '@naturacosmeticos/natds-themes/dist/index';
+import { SvgCss } from 'react-native-svg';
 import { LogoProps } from './Logo.types';
 
 const setStyle = ({ color, width, height }, svg) => {
@@ -118,8 +117,6 @@ export const Logo = (props: LogoProps) => {
 
   return (
     <View style={styles.container}>
-      <SvgXml scale="2" xml={themes.aesop.light.asset.brand.neutral.a} />
-      <SvgXml xml={themes.natura.light.asset.brand.neutral.a} />
       <SvgCss xml={natura} />
       <SvgCss xml={naturaAndroid} />
       <SvgCss testID="logo" xml={logo}/>
