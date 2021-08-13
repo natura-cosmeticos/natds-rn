@@ -15,9 +15,27 @@ const description = () => `
 
 With the following attribute status:
 
-  - ✅ **Model**
-  - ✅ **Color**
-  - ✅ **Size**
+- **Model**
+    - ✅ \`primary\`
+    - ✅ \`secondary\`
+- **Color**
+    - ✅ \`neutral\`
+    - ✅ \`primary\`
+    - ✅ \`secondary\`
+    - ✅ \`highlight\`
+    - ✅ \`surface\`
+- **Size**
+    - ✅ \`medium\`
+    - ✅ \`mediumx\`
+    - ✅ \`large\`
+    - ✅ \`largex\`
+    - ✅ \`largexx\`
+    - ✅ \`largexxx\`
+    - ✅ \`huge\`
+    - ✅ \`hugex\`
+    - ✅ \`hugexx\`
+    - ✅ \`hugexxx\`
+    - ✅ \`veryhuge\`
 
 - - -
 `;
