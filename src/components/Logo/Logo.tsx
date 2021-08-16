@@ -56,7 +56,9 @@ const Container = styled.View((): CSSObject => (
   }
 ));
 
-export const Logo = ({ color = 'neutral', model = 'a', size = 'veryHuge' }: LogoProps) => {
+export const Logo = ({
+  accessibilityLabel, color = 'neutral', model = 'a', size = 'veryHuge',
+}: LogoProps) => {
   const theme = useTheme();
   const { file, height, width } = getLogoByProps(color, model, theme);
 
@@ -68,7 +70,13 @@ export const Logo = ({ color = 'neutral', model = 'a', size = 'veryHuge' }: Logo
 
   return (
     <Container>
-      <SvgCss testID="logo" xml={logo}/>
+      <SvgCss
+        accessible={!!accessibilityLabel}
+        accessibilityLabel={accessibilityLabel}
+        accessibilityRole="image"
+        testID="logo"
+        xml={logo}
+      />
     </Container>
   );
 };

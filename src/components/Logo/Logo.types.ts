@@ -7,6 +7,12 @@ export type LogoModels = 'a' | 'b'
 
 export interface LogoProps {
   /**
+   * Overrides the text that's read by the screen reader when the user interacts
+   * with the element. By default, the label is constructed by traversing all the
+   * children and accumulating all the Text nodes separated by space.
+   */
+  accessibilityLabel?: string;
+  /**
    * This selects the color in which the logo will be displayed, `neutral` being
    * its official color.
    * @default neutral
