@@ -64,13 +64,15 @@ export const InputFeedbackContainer = (props: InputFeedbackContainerProps) => {
   return (
     <Container>
       { label
-          && <InputLabel color={textColor} content={label} required={required} />
+        ? <InputLabel color={textColor} content={label} required={required} />
+        : null
       }
       <InputBox boxColor={boxColor} boxState={boxState === 'active' ? boxState : undefined }>
           { children }
       </InputBox>
       { helperText
-        && <InputHelperText color={textColor} content={helperText} feedback={feedback} />
+        ? <InputHelperText color={textColor} content={helperText} feedback={feedback} />
+        : null
       }
     </Container>
   );
