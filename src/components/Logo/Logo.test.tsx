@@ -4,23 +4,23 @@ import { renderWithTheme } from '../../../test/testHelpers';
 
 describe('Logo component', () => {
   it('should render correctly with default props', () => {
-    const { getByTestId } = renderWithTheme(<Logo />);
+    const { toJSON } = renderWithTheme(<Logo />);
 
-    expect(getByTestId('logo')).toBeTruthy();
+    expect(toJSON()).toMatchSnapshot();
   });
   it('should render correctly with given model', () => {
-    const { getByTestId } = renderWithTheme(<Logo model="b" />);
+    const { toJSON } = renderWithTheme(<Logo model="b" />);
 
-    expect(getByTestId('logo')).toBeTruthy();
+    expect(toJSON()).toMatchSnapshot();
   });
   it('should render correctly with given color', () => {
-    const { getByTestId } = renderWithTheme(<Logo color="primary" />);
+    const { toJSON } = renderWithTheme(<Logo color="primary" />);
 
-    expect(getByTestId('logo')).toBeTruthy();
+    expect(toJSON()).toMatchSnapshot();
   });
   it('should render correctly with given size', () => {
-    const { getByTestId } = renderWithTheme(<Logo size="medium" />);
+    const { toJSON } = renderWithTheme(<Logo size="medium" />);
 
-    expect(getByTestId('logo')).toBeTruthy();
+    expect(toJSON()).toMatchSnapshot();
   });
 });
