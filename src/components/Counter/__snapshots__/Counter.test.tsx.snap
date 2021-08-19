@@ -71,8 +71,10 @@ exports[`Counter should render with default props 1`] = `
               Array [
                 Object {
                   "color": "#777777",
+                  "fontSize": 14,
                   "fontWeight": "500",
-                  "lineHeight": 21,
+                  "letterSpacing": 1.23,
+                  "lineHeight": 19,
                 },
               ]
             }
@@ -204,8 +206,10 @@ exports[`Counter should render with default props 1`] = `
               Array [
                 Object {
                   "color": "#333333",
+                  "fontSize": 14,
                   "fontWeight": "500",
-                  "lineHeight": 21,
+                  "letterSpacing": 1.23,
+                  "lineHeight": 19,
                 },
               ]
             }
