@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [7.3.1](https://github.com/natura-cosmeticos/natds-rn/compare/v7.3.0...v7.3.1) (2021-08-20)
+
+
+### Bug Fixes
+
+* **button:** update button letterspacing ([#187](https://github.com/natura-cosmeticos/natds-rn/issues/187)) ([999ac4e](https://github.com/natura-cosmeticos/natds-rn/commit/999ac4e4526733d0c83a930435035d1760c04ac5))
+
 ## [7.3.0](https://github.com/natura-cosmeticos/natds-rn/compare/v7.2.0...v7.3.0) (2021-08-11)
 
 
