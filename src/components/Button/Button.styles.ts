@@ -114,6 +114,8 @@ export const LabelText = styled.Text<LabelProps>(({
 }) => ({
   ...iconMargin({ iconName, iconPosition, theme }),
   color: getColorByName(theme, textColor),
-  fontWeight: theme.typography.fontWeight.medium,
-  lineHeight: theme.typography.lineHeight.medium * theme.body2.fontSize,
+  fontSize: 14,
+  fontWeight: 500,
+  letterSpacing: 1.23,
+  lineHeight: 19,
 }));

@@ -56,8 +56,10 @@ exports[`Button component Disabled variants should render disabled button compon
           Array [
             Object {
               "color": "#BBBBBB",
+              "fontSize": 14,
               "fontWeight": "500",
-              "lineHeight": 21,
+              "letterSpacing": 1.23,
+              "lineHeight": 19,
             },
           ]
         }
@@ -128,8 +130,10 @@ exports[`Button component Disabled variants should render disabled button compon
           Array [
             Object {
               "color": "#BBBBBB",
+              "fontSize": 14,
               "fontWeight": "500",
-              "lineHeight": 21,
+              "letterSpacing": 1.23,
+              "lineHeight": 19,
             },
           ]
         }
@@ -198,8 +202,10 @@ exports[`Button component Disabled variants should render disabled button compon
           Array [
             Object {
               "color": "#BBBBBB",
+              "fontSize": 14,
               "fontWeight": "500",
-              "lineHeight": 21,
+              "letterSpacing": 1.23,
+              "lineHeight": 19,
             },
           ]
         }
@@ -271,8 +277,10 @@ exports[`Button component Variants should render button component contained 1`] 
           Array [
             Object {
               "color": "#BBBBBB",
+              "fontSize": 14,
               "fontWeight": "500",
-              "lineHeight": 21,
+              "letterSpacing": 1.23,
+              "lineHeight": 19,
             },
           ]
         }
@@ -343,8 +351,10 @@ exports[`Button component Variants should render button component outlined 1`] =
           Array [
             Object {
               "color": "#BBBBBB",
+              "fontSize": 14,
               "fontWeight": "500",
-              "lineHeight": 21,
+              "letterSpacing": 1.23,
+              "lineHeight": 19,
             },
           ]
         }
@@ -413,8 +423,10 @@ exports[`Button component Variants should render button component text 1`] = `
           Array [
             Object {
               "color": "#BBBBBB",
+              "fontSize": 14,
               "fontWeight": "500",
-              "lineHeight": 21,
+              "letterSpacing": 1.23,
+              "lineHeight": 19,
             },
           ]
         }
@@ -487,8 +499,10 @@ exports[`Button component with Icon should render the icon to the left 1`] = `
           Array [
             Object {
               "color": "#BBBBBB",
+              "fontSize": 14,
               "fontWeight": "500",
-              "lineHeight": 21,
+              "letterSpacing": 1.23,
+              "lineHeight": 19,
               "marginStart": 8,
             },
           ]
@@ -570,8 +584,10 @@ exports[`Button component with Icon should render the icon to the right by defau
           Array [
             Object {
               "color": "#BBBBBB",
+              "fontSize": 14,
               "fontWeight": "500",
-              "lineHeight": 21,
+              "letterSpacing": 1.23,
+              "lineHeight": 19,
               "marginEnd": 8,
             },
           ]
