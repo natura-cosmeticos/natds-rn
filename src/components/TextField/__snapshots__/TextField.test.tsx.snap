@@ -77,6 +77,5 @@ exports[`TextField render should render with default props 1`] = `
       />
     </View>
   </View>
-  
 </View>
 `;
