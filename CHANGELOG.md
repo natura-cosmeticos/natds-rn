@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [7.3.2](https://github.com/natura-cosmeticos/natds-rn/compare/v7.3.1...v7.3.2) (2021-08-20)
+
+
+### Bug Fixes
+
+* **textfield:** fix string validation for label and helpertext ([#186](https://github.com/natura-cosmeticos/natds-rn/issues/186)) ([ac242a7](https://github.com/natura-cosmeticos/natds-rn/commit/ac242a7ebd0113917c13c7127fbe44bf094f7daf))
+
 ### [7.3.1](https://github.com/natura-cosmeticos/natds-rn/compare/v7.3.0...v7.3.1) (2021-08-20)
 
 
