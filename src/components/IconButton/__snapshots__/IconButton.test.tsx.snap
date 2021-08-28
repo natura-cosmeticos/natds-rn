@@ -3,7 +3,6 @@
 exports[`IconButton component should render IconButton component disabled 1`] = `
 <View
   accessible={true}
-  color="highlight"
   focusable={false}
   onClick={[Function]}
   onResponderGrant={[Function]}
@@ -12,7 +11,11 @@ exports[`IconButton component should render IconButton component disabled 1`] = 
   onResponderTerminate={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
-  size={15}
+  style={
+    Object {
+      "opacity": 1,
+    }
+  }
   testID="icon-button"
 >
   <View
@@ -25,9 +28,9 @@ exports[`IconButton component should render IconButton component disabled 1`] = 
           "alignItems": "center",
           "backgroundColor": "transparent",
           "borderRadius": 50,
-          "height": 20,
+          "height": "px",
           "justifyContent": "center",
-          "width": 20,
+          "width": "px",
         },
         Object {
           "elevation": 1,
@@ -54,17 +57,19 @@ exports[`IconButton component should render IconButton component disabled 1`] = 
 exports[`IconButton component should render IconButton component with background style "float" 1`] = `
 <View
   accessible={true}
-  color="highlight"
   focusable={true}
   onClick={[Function]}
-  onPress={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
   onResponderTerminate={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
-  size={15}
+  style={
+    Object {
+      "opacity": 1,
+    }
+  }
   testID="icon-button"
 >
   <View
@@ -77,9 +82,9 @@ exports[`IconButton component should render IconButton component with background
           "alignItems": "center",
           "backgroundColor": "transparent",
           "borderRadius": 50,
-          "height": 20,
+          "height": "px",
           "justifyContent": "center",
-          "width": 20,
+          "width": "px",
         },
         Object {
           "elevation": 1,
@@ -106,17 +111,19 @@ exports[`IconButton component should render IconButton component with background
 exports[`IconButton component should render IconButton component with background style "none" 1`] = `
 <View
   accessible={true}
-  color="highlight"
   focusable={true}
   onClick={[Function]}
-  onPress={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
   onResponderTerminate={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
-  size={15}
+  style={
+    Object {
+      "opacity": 1,
+    }
+  }
   testID="icon-button"
 >
   <View
@@ -129,9 +136,9 @@ exports[`IconButton component should render IconButton component with background
           "alignItems": "center",
           "backgroundColor": "transparent",
           "borderRadius": 50,
-          "height": 20,
+          "height": "px",
           "justifyContent": "center",
-          "width": 20,
+          "width": "px",
         },
         Object {
           "elevation": 1,
@@ -158,17 +165,19 @@ exports[`IconButton component should render IconButton component with background
 exports[`IconButton component should render IconButton component with background style "overlay" 1`] = `
 <View
   accessible={true}
-  color="highlight"
   focusable={true}
   onClick={[Function]}
-  onPress={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
   onResponderTerminate={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
-  size={15}
+  style={
+    Object {
+      "opacity": 1,
+    }
+  }
   testID="icon-button"
 >
   <View
@@ -181,9 +190,9 @@ exports[`IconButton component should render IconButton component with background
           "alignItems": "center",
           "backgroundColor": "transparent",
           "borderRadius": 50,
-          "height": 20,
+          "height": "px",
           "justifyContent": "center",
-          "width": 20,
+          "width": "px",
         },
         Object {
           "elevation": 1,
@@ -210,17 +219,19 @@ exports[`IconButton component should render IconButton component with background
 exports[`IconButton component should render IconButton component with color "default" 1`] = `
 <View
   accessible={true}
-  color="highlight"
   focusable={true}
   onClick={[Function]}
-  onPress={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
   onResponderTerminate={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
-  size={15}
+  style={
+    Object {
+      "opacity": 1,
+    }
+  }
   testID="icon-button"
 >
   <View
@@ -233,9 +244,9 @@ exports[`IconButton component should render IconButton component with color "def
           "alignItems": "center",
           "backgroundColor": "transparent",
           "borderRadius": 50,
-          "height": 20,
+          "height": "px",
           "justifyContent": "center",
-          "width": 20,
+          "width": "px",
         },
         Object {
           "elevation": 1,
@@ -262,17 +273,19 @@ exports[`IconButton component should render IconButton component with color "def
 exports[`IconButton component should render IconButton component with color "highEmphasis" 1`] = `
 <View
   accessible={true}
-  color="highlight"
   focusable={true}
   onClick={[Function]}
-  onPress={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
   onResponderTerminate={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
-  size={15}
+  style={
+    Object {
+      "opacity": 1,
+    }
+  }
   testID="icon-button"
 >
   <View
@@ -285,9 +298,9 @@ exports[`IconButton component should render IconButton component with color "hig
           "alignItems": "center",
           "backgroundColor": "transparent",
           "borderRadius": 50,
-          "height": 20,
+          "height": "px",
           "justifyContent": "center",
-          "width": 20,
+          "width": "px",
         },
         Object {
           "elevation": 1,
@@ -314,17 +327,19 @@ exports[`IconButton component should render IconButton component with color "hig
 exports[`IconButton component should render IconButton component with color "light" 1`] = `
 <View
   accessible={true}
-  color="highlight"
   focusable={true}
   onClick={[Function]}
-  onPress={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
   onResponderTerminate={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
-  size={15}
+  style={
+    Object {
+      "opacity": 1,
+    }
+  }
   testID="icon-button"
 >
   <View
@@ -337,9 +352,9 @@ exports[`IconButton component should render IconButton component with color "lig
           "alignItems": "center",
           "backgroundColor": "transparent",
           "borderRadius": 50,
-          "height": 20,
+          "height": "px",
           "justifyContent": "center",
-          "width": 20,
+          "width": "px",
         },
         Object {
           "elevation": 1,
@@ -366,17 +381,19 @@ exports[`IconButton component should render IconButton component with color "lig
 exports[`IconButton component should render IconButton component with color "primary" 1`] = `
 <View
   accessible={true}
-  color="highlight"
   focusable={true}
   onClick={[Function]}
-  onPress={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
   onResponderTerminate={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
-  size={15}
+  style={
+    Object {
+      "opacity": 1,
+    }
+  }
   testID="icon-button"
 >
   <View
@@ -389,9 +406,9 @@ exports[`IconButton component should render IconButton component with color "pri
           "alignItems": "center",
           "backgroundColor": "transparent",
           "borderRadius": 50,
-          "height": 20,
+          "height": "px",
           "justifyContent": "center",
-          "width": 20,
+          "width": "px",
         },
         Object {
           "elevation": 1,
@@ -418,17 +435,19 @@ exports[`IconButton component should render IconButton component with color "pri
 exports[`IconButton component should render IconButton component with size "medium" 1`] = `
 <View
   accessible={true}
-  color="highlight"
   focusable={true}
   onClick={[Function]}
-  onPress={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
   onResponderTerminate={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
-  size={15}
+  style={
+    Object {
+      "opacity": 1,
+    }
+  }
   testID="icon-button"
 >
   <View
@@ -441,9 +460,9 @@ exports[`IconButton component should render IconButton component with size "medi
           "alignItems": "center",
           "backgroundColor": "transparent",
           "borderRadius": 50,
-          "height": 20,
+          "height": "px",
           "justifyContent": "center",
-          "width": 20,
+          "width": "px",
         },
         Object {
           "elevation": 1,
@@ -470,17 +489,19 @@ exports[`IconButton component should render IconButton component with size "medi
 exports[`IconButton component should render IconButton component with size "semi" 1`] = `
 <View
   accessible={true}
-  color="highlight"
   focusable={true}
   onClick={[Function]}
-  onPress={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
   onResponderTerminate={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
-  size={15}
+  style={
+    Object {
+      "opacity": 1,
+    }
+  }
   testID="icon-button"
 >
   <View
@@ -493,9 +514,9 @@ exports[`IconButton component should render IconButton component with size "semi
           "alignItems": "center",
           "backgroundColor": "transparent",
           "borderRadius": 50,
-          "height": 20,
+          "height": "px",
           "justifyContent": "center",
-          "width": 20,
+          "width": "px",
         },
         Object {
           "elevation": 1,
@@ -522,17 +543,19 @@ exports[`IconButton component should render IconButton component with size "semi
 exports[`IconButton component should render IconButton component with size "semiX" 1`] = `
 <View
   accessible={true}
-  color="highlight"
   focusable={true}
   onClick={[Function]}
-  onPress={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
   onResponderTerminate={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
-  size={15}
+  style={
+    Object {
+      "opacity": 1,
+    }
+  }
   testID="icon-button"
 >
   <View
@@ -545,9 +568,9 @@ exports[`IconButton component should render IconButton component with size "semi
           "alignItems": "center",
           "backgroundColor": "transparent",
           "borderRadius": 50,
-          "height": 20,
+          "height": "px",
           "justifyContent": "center",
-          "width": 20,
+          "width": "px",
         },
         Object {
           "elevation": 1,
@@ -574,17 +597,19 @@ exports[`IconButton component should render IconButton component with size "semi
 exports[`IconButton component should render IconButton component with size "small" 1`] = `
 <View
   accessible={true}
-  color="highlight"
   focusable={true}
   onClick={[Function]}
-  onPress={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
   onResponderTerminate={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
-  size={15}
+  style={
+    Object {
+      "opacity": 1,
+    }
+  }
   testID="icon-button"
 >
   <View
@@ -597,9 +622,9 @@ exports[`IconButton component should render IconButton component with size "smal
           "alignItems": "center",
           "backgroundColor": "transparent",
           "borderRadius": 50,
-          "height": 20,
+          "height": "px",
           "justifyContent": "center",
-          "width": 20,
+          "width": "px",
         },
         Object {
           "elevation": 1,

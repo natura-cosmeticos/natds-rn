@@ -5,7 +5,6 @@ import renderer from 'react-test-renderer';
 import theme from '../../common/themeSelectors/theme/mock-theme.json';
 import { RadioButton, RadioButtonProps } from './RadioButton';
 
-jest.mock('../TouchableRipple/TouchableRipple');
 jest.mock(
   'react-native/Libraries/Components/Touchable/TouchableOpacity',
   () => 'TouchableOpacity',

@@ -2,13 +2,11 @@
 import React from 'react';
 import { fireEvent } from '@testing-library/react-native';
 import mockTheme from '../../common/themeSelectors/theme/mock-theme.json';
-import { getSize } from '../../common/themeSelectors';
 import { renderWithTheme } from '../../../test/testHelpers';
 import { IconButton } from './IconButton';
 import * as helpers from './IconButton.helpers';
 import { iconButtonSizes, iconButtonColors, iconButtonBackgroundStyles } from './IconButton.types';
 
-jest.mock('../TouchableRipple/TouchableRipple');
 jest.mock('../Icon/Icon');
 jest.mock('../../common/themeSelectors');
 
@@ -17,7 +15,6 @@ describe('IconButton component', () => {
   let getContainerBackgroundColorMock: jest.SpyInstance;
   let getIconColorMock: jest.SpyInstance;
   let getIconSizeMock: jest.SpyInstance;
-  let getSizeMock: jest.SpyInstance;
 
   afterEach(() => {
     jest.restoreAllMocks();
@@ -40,8 +37,6 @@ describe('IconButton component', () => {
     getContainerBackgroundColorMock = jest
       .spyOn(helpers, 'getContainerBackgroundColor')
       .mockReturnValue('transparent');
-    // @ts-ignore
-    getSizeMock = getSize.mockReturnValue(20);
   });
 
   it('should render the correct background', () => {
@@ -86,25 +81,6 @@ describe('IconButton component', () => {
     expect(getIconSizeMock).toHaveBeenCalledWith('semiX');
     expect(getIconColorMock).toHaveBeenCalledWith('primary', false);
   });
-
-  it('should render the ripple effect', () => {
-    const { queryByTestId } = renderWithTheme(
-      <IconButton
-        iconColor="primary"
-        icon="outlined-finance-bank"
-        size="semiX"
-        onPress={() => { }}
-      />,
-    );
-
-    const ripple = queryByTestId('icon-button');
-
-    expect(ripple?.props).toHaveProperty('color', 'highlight');
-    expect(ripple?.props).toHaveProperty('size', 15);
-    expect(ripple?.props).toHaveProperty('onPress', expect.any(Function));
-    expect(getSizeMock).toHaveBeenCalledWith(mockTheme, 'semiX');
-  });
-
   it('should call onPress when item is pressed', () => {
     const onPressMock = jest.fn();
 

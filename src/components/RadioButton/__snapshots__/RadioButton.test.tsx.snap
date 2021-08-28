@@ -1,20 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`RadioButton component should render radio button correctly 1`] = `
-<View
-  accessible={true}
-  color="primary"
+<TouchableOpacity
   disabled={false}
-  focusable={true}
-  onClick={[Function]}
   onPress={[Function]}
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
-  size={20}
   testID="radio-button"
 >
   <View
@@ -35,24 +24,13 @@ exports[`RadioButton component should render radio button correctly 1`] = `
     }
     testID="radio-button-circle"
   />
-</View>
+</TouchableOpacity>
 `;
 
 exports[`RadioButton component should render radio button selected but disabled correctly 1`] = `
-<View
-  accessible={true}
-  color="primary"
+<TouchableOpacity
   disabled={true}
-  focusable={true}
-  onClick={[Function]}
   onPress={[Function]}
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
-  size={20}
   testID="radio-button"
 >
   <View
@@ -73,7 +51,7 @@ exports[`RadioButton component should render radio button selected but disabled 
     }
     testID="radio-button-circle"
   />
-</View>
+</TouchableOpacity>
 `;
 
 exports[`RadioButton component should render radio button selected but disabled with label correctly 1`] = `
@@ -91,20 +69,9 @@ exports[`RadioButton component should render radio button selected but disabled 
   }
   testID="radio-button-label"
 >
-  <View
-    accessible={true}
-    color="primary"
+  <TouchableOpacity
     disabled={true}
-    focusable={true}
-    onClick={[Function]}
     onPress={[Function]}
-    onResponderGrant={[Function]}
-    onResponderMove={[Function]}
-    onResponderRelease={[Function]}
-    onResponderTerminate={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
-    size={20}
     testID="radio-button"
   >
     <View
@@ -125,7 +92,7 @@ exports[`RadioButton component should render radio button selected but disabled 
       }
       testID="radio-button-circle"
     />
-  </View>
+  </TouchableOpacity>
   <Text
     disabled={true}
     style={
@@ -145,20 +112,9 @@ exports[`RadioButton component should render radio button selected but disabled 
 `;
 
 exports[`RadioButton component should render radio button selected correctly 1`] = `
-<View
-  accessible={true}
-  color="primary"
+<TouchableOpacity
   disabled={false}
-  focusable={true}
-  onClick={[Function]}
   onPress={[Function]}
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
-  size={20}
   testID="radio-button"
 >
   <View
@@ -197,7 +153,7 @@ exports[`RadioButton component should render radio button selected correctly 1`]
       testID="radio-button-circle-selected"
     />
   </View>
-</View>
+</TouchableOpacity>
 `;
 
 exports[`RadioButton component should render radio button with label correctly 1`] = `
@@ -215,20 +171,9 @@ exports[`RadioButton component should render radio button with label correctly 1
   }
   testID="radio-button-label"
 >
-  <View
-    accessible={true}
-    color="primary"
+  <TouchableOpacity
     disabled={false}
-    focusable={true}
-    onClick={[Function]}
     onPress={[Function]}
-    onResponderGrant={[Function]}
-    onResponderMove={[Function]}
-    onResponderRelease={[Function]}
-    onResponderTerminate={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
-    size={20}
     testID="radio-button"
   >
     <View
@@ -249,7 +194,7 @@ exports[`RadioButton component should render radio button with label correctly 1
       }
       testID="radio-button-circle"
     />
-  </View>
+  </TouchableOpacity>
   <Text
     disabled={false}
     style={

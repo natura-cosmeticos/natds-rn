@@ -3,22 +3,22 @@
 exports[`ListItem component Should not render ListItem with ripple if is selected 1`] = `
 <View
   accessible={true}
-  color="highlight"
   focusable={true}
-  hideOverflow={true}
   onClick={[Function]}
-  onPress={[MockFunction]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
   onResponderTerminate={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
-  size={0}
+  style={
+    Object {
+      "opacity": 1,
+    }
+  }
   testID="list-item-wrapper"
 >
   <View
-    onLayout={[Function]}
     onPress={[MockFunction]}
     selected={true}
     style={
@@ -41,7 +41,6 @@ exports[`ListItem component Should not render ListItem with ripple if is selecte
 exports[`ListItem component Should render ListItem component correctly 1`] = `
 <View>
   <View
-    onLayout={[Function]}
     style={
       Array [
         Object {
@@ -62,22 +61,22 @@ exports[`ListItem component Should render ListItem component correctly 1`] = `
 exports[`ListItem component Should render ListItem with ripple if is clickable 1`] = `
 <View
   accessible={true}
-  color="highlight"
   focusable={true}
-  hideOverflow={true}
   onClick={[Function]}
-  onPress={[MockFunction]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
   onResponderTerminate={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
-  size={0}
+  style={
+    Object {
+      "opacity": 1,
+    }
+  }
   testID="list-item-wrapper"
 >
   <View
-    onLayout={[Function]}
     onPress={[MockFunction]}
     style={
       Array [
@@ -99,7 +98,6 @@ exports[`ListItem component Should render ListItem with ripple if is clickable 1
 exports[`ListItem component Should render ListItem with state selected 1`] = `
 <View>
   <View
-    onLayout={[Function]}
     selected={true}
     style={
       Array [

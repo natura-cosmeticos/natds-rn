@@ -1,7 +1,7 @@
-import React, { useState, ReactElement } from 'react';
+import React, { ReactElement } from 'react';
 import { View, TouchableWithoutFeedback } from 'react-native';
 import { Theme } from '../../common/themeSelectors';
-import { showRipple, TouchableRipple, TouchableRippleProps } from '../TouchableRipple/TouchableRipple';
+import { TouchableRipple, TouchableRippleProps } from '../TouchableRipple/TouchableRipple';
 import { ListItem as ListItemComponent } from './ListItem.styles';
 
 export type ListItemFeedback = 'ripple' | 'selection'
@@ -69,26 +69,20 @@ export const ListItem = ({
   testID = 'list-item',
   feedback = 'ripple',
   ...rest
-}: ListItemProps) => {
-  const [size, setSize] = useState(0);
-
-  return (
+}: ListItemProps) => (
     <ListWrapper
       color="highlight"
       hideOverflow
-      size={size}
       onPress={onPress}
       testID={`${testID}-wrapper`}
       feedback={feedback}
     >
       <ListItemComponent
         testID={testID}
-        onLayout={event => onPress && showRipple(event, setSize)}
         onPress={onPress}
         {...rest}
       >
         {children}
       </ListItemComponent >
     </ListWrapper >
-  );
-};
+);

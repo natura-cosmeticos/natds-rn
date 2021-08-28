@@ -4,7 +4,6 @@ import { Button } from './Button';
 import { renderWithTheme } from '../../../test/testHelpers';
 import { ButtonProps } from './Button.types';
 
-jest.mock('../TouchableRipple/TouchableRipple');
 jest.mock('../Icon/Icon');
 
 jest.mock('../../common/themeSelectors', () => (

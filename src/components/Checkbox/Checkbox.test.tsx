@@ -3,7 +3,6 @@ import { fireEvent } from '@testing-library/react-native';
 import { Checkbox } from './Checkbox';
 import { renderWithTheme } from '../../../test/testHelpers';
 
-jest.mock('../TouchableRipple/TouchableRipple');
 jest.mock(
   'react-native/Libraries/Components/Touchable/TouchableOpacity',
   () => 'TouchableOpacity',

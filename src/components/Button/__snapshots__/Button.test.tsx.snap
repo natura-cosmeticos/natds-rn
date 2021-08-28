@@ -3,24 +3,24 @@
 exports[`Button component Disabled variants should render disabled button component contained 1`] = `
 <View
   accessible={true}
-  color="highlight"
-  disabled={true}
   focusable={true}
-  hideOverflow={true}
   onClick={[Function]}
-  onPress={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
   onResponderTerminate={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
-  size={0}
+  style={
+    Object {
+      "opacity": 1,
+    }
+  }
+  testID="touchable-ripple"
 >
   <View
     accessibilityRole="button"
     disabled={true}
-    onLayout={[Function]}
     size="semiX"
     style={
       Array [
@@ -33,7 +33,6 @@ exports[`Button component Disabled variants should render disabled button compon
           "minHeight": 40,
           "paddingHorizontal": 8,
         },
-        Object {},
       ]
     }
     testID="button"
@@ -76,24 +75,24 @@ exports[`Button component Disabled variants should render disabled button compon
 exports[`Button component Disabled variants should render disabled button component outlined 1`] = `
 <View
   accessible={true}
-  color="highlight"
-  disabled={true}
   focusable={true}
-  hideOverflow={true}
   onClick={[Function]}
-  onPress={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
   onResponderTerminate={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
-  size={0}
+  style={
+    Object {
+      "opacity": 1,
+    }
+  }
+  testID="touchable-ripple"
 >
   <View
     accessibilityRole="button"
     disabled={true}
-    onLayout={[Function]}
     size="semiX"
     style={
       Array [
@@ -107,7 +106,6 @@ exports[`Button component Disabled variants should render disabled button compon
           "minHeight": 40,
           "paddingHorizontal": 8,
         },
-        Object {},
       ]
     }
     testID="button"
@@ -150,24 +148,24 @@ exports[`Button component Disabled variants should render disabled button compon
 exports[`Button component Disabled variants should render disabled button component text 1`] = `
 <View
   accessible={true}
-  color="highlight"
-  disabled={true}
   focusable={true}
-  hideOverflow={true}
   onClick={[Function]}
-  onPress={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
   onResponderTerminate={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
-  size={0}
+  style={
+    Object {
+      "opacity": 1,
+    }
+  }
+  testID="touchable-ripple"
 >
   <View
     accessibilityRole="button"
     disabled={true}
-    onLayout={[Function]}
     size="semiX"
     style={
       Array [
@@ -179,7 +177,6 @@ exports[`Button component Disabled variants should render disabled button compon
           "minHeight": 40,
           "paddingHorizontal": 8,
         },
-        Object {},
       ]
     }
     testID="button"
@@ -222,24 +219,25 @@ exports[`Button component Disabled variants should render disabled button compon
 exports[`Button component Variants should render button component contained 1`] = `
 <View
   accessible={true}
-  color="highlight"
-  disabled={false}
   focusable={true}
-  hideOverflow={true}
   onClick={[Function]}
-  onPress={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
   onResponderTerminate={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
-  size={0}
+  style={
+    Object {
+      "opacity": 1,
+      "shadowColor": "#AEAEAE",
+    }
+  }
+  testID="touchable-ripple"
 >
   <View
     accessibilityRole="button"
     disabled={false}
-    onLayout={[Function]}
     size="semiX"
     style={
       Array [
@@ -251,9 +249,6 @@ exports[`Button component Variants should render button component contained 1`] 
           "justifyContent": "center",
           "minHeight": 40,
           "paddingHorizontal": 8,
-        },
-        Object {
-          "shadowColor": "#AEAEAE",
         },
       ]
     }
@@ -297,24 +292,24 @@ exports[`Button component Variants should render button component contained 1`] 
 exports[`Button component Variants should render button component outlined 1`] = `
 <View
   accessible={true}
-  color="highlight"
-  disabled={false}
   focusable={true}
-  hideOverflow={true}
   onClick={[Function]}
-  onPress={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
   onResponderTerminate={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
-  size={0}
+  style={
+    Object {
+      "opacity": 1,
+    }
+  }
+  testID="touchable-ripple"
 >
   <View
     accessibilityRole="button"
     disabled={false}
-    onLayout={[Function]}
     size="semiX"
     style={
       Array [
@@ -328,7 +323,6 @@ exports[`Button component Variants should render button component outlined 1`] =
           "minHeight": 40,
           "paddingHorizontal": 8,
         },
-        Object {},
       ]
     }
     testID="button"
@@ -371,24 +365,24 @@ exports[`Button component Variants should render button component outlined 1`] =
 exports[`Button component Variants should render button component text 1`] = `
 <View
   accessible={true}
-  color="highlight"
-  disabled={false}
   focusable={true}
-  hideOverflow={true}
   onClick={[Function]}
-  onPress={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
   onResponderTerminate={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
-  size={0}
+  style={
+    Object {
+      "opacity": 1,
+    }
+  }
+  testID="touchable-ripple"
 >
   <View
     accessibilityRole="button"
     disabled={false}
-    onLayout={[Function]}
     size="semiX"
     style={
       Array [
@@ -400,7 +394,6 @@ exports[`Button component Variants should render button component text 1`] = `
           "minHeight": 40,
           "paddingHorizontal": 8,
         },
-        Object {},
       ]
     }
     testID="button"
@@ -443,24 +436,25 @@ exports[`Button component Variants should render button component text 1`] = `
 exports[`Button component with Icon should render the icon to the left 1`] = `
 <View
   accessible={true}
-  color="highlight"
-  disabled={false}
   focusable={true}
-  hideOverflow={true}
   onClick={[Function]}
-  onPress={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
   onResponderTerminate={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
-  size={0}
+  style={
+    Object {
+      "opacity": 1,
+      "shadowColor": "#AEAEAE",
+    }
+  }
+  testID="touchable-ripple"
 >
   <View
     accessibilityRole="button"
     disabled={false}
-    onLayout={[Function]}
     size="semiX"
     style={
       Array [
@@ -472,9 +466,6 @@ exports[`Button component with Icon should render the icon to the left 1`] = `
           "justifyContent": "center",
           "minHeight": 40,
           "paddingHorizontal": 8,
-        },
-        Object {
-          "shadowColor": "#AEAEAE",
         },
       ]
     }
@@ -528,24 +519,25 @@ exports[`Button component with Icon should render the icon to the left 1`] = `
 exports[`Button component with Icon should render the icon to the right by default 1`] = `
 <View
   accessible={true}
-  color="highlight"
-  disabled={false}
   focusable={true}
-  hideOverflow={true}
   onClick={[Function]}
-  onPress={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
   onResponderTerminate={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
-  size={0}
+  style={
+    Object {
+      "opacity": 1,
+      "shadowColor": "#AEAEAE",
+    }
+  }
+  testID="touchable-ripple"
 >
   <View
     accessibilityRole="button"
     disabled={false}
-    onLayout={[Function]}
     size="semiX"
     style={
       Array [
@@ -557,9 +549,6 @@ exports[`Button component with Icon should render the icon to the right by defau
           "justifyContent": "center",
           "minHeight": 40,
           "paddingHorizontal": 8,
-        },
-        Object {
-          "shadowColor": "#AEAEAE",
         },
       ]
     }

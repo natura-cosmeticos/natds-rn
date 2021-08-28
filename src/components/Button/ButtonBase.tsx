@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { withTheme } from 'styled-components/native';
 import { Icon } from '../Icon';
 import {
   getButtonShadowByType, Label, LabelText, Surface,
 } from './Button.styles';
-import { TouchableRipple, showRipple } from '../TouchableRipple/TouchableRipple';
+import { TouchableRipple } from '../TouchableRipple/TouchableRipple';
 import { ButtonBaseProps } from './Button.types';
 
 const ButtonComponent = ({
@@ -20,24 +20,19 @@ const ButtonComponent = ({
   textColor,
   theme,
   type = 'contained',
-}: ButtonBaseProps) => {
-  const [rippleSize, setRippleSize] = useState(0);
-
-  return (
+}: ButtonBaseProps) => (
     <TouchableRipple
       color="highlight"
       disabled={disabled}
       hideOverflow={true}
       onPress={disabled ? () => { } : onPress}
-      size={rippleSize}
+      style={getButtonShadowByType({ disabled, theme, type })}
     >
       <Surface
         accessibilityHint={accessibilityHint}
         accessibilityLabel={accessibilityLabel}
         accessibilityRole="button"
         disabled={disabled}
-        onLayout={event => showRipple(event, setRippleSize)}
-        style={getButtonShadowByType({ disabled, theme, type })}
         size={size}
         testID={testID}
         type={type}
@@ -61,7 +56,6 @@ const ButtonComponent = ({
         </Label>
       </Surface>
     </TouchableRipple>
-  );
-};
+);
 
 export const ButtonBase = withTheme(ButtonComponent);
