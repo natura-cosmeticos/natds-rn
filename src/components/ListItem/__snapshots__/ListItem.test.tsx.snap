@@ -11,11 +11,6 @@ exports[`ListItem component Should not render ListItem with ripple if is selecte
   onResponderTerminate={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
-  style={
-    Object {
-      "opacity": 1,
-    }
-  }
   testID="list-item-wrapper"
 >
   <View
@@ -69,11 +64,6 @@ exports[`ListItem component Should render ListItem with ripple if is clickable 1
   onResponderTerminate={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
-  style={
-    Object {
-      "opacity": 1,
-    }
-  }
   testID="list-item-wrapper"
 >
   <View

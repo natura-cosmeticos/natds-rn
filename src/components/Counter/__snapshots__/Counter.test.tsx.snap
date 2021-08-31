@@ -31,11 +31,6 @@ exports[`Counter should render with default props 1`] = `
       onResponderTerminate={[Function]}
       onResponderTerminationRequest={[Function]}
       onStartShouldSetResponder={[Function]}
-      style={
-        Object {
-          "opacity": 1,
-        }
-      }
       testID="touchable-ripple"
     >
       <View
@@ -52,6 +47,7 @@ exports[`Counter should render with default props 1`] = `
               "minHeight": 48,
               "paddingHorizontal": 16,
             },
+            Object {},
           ]
         }
         testID="button"
@@ -124,11 +120,6 @@ exports[`Counter should render with default props 1`] = `
       onResponderTerminate={[Function]}
       onResponderTerminationRequest={[Function]}
       onStartShouldSetResponder={[Function]}
-      style={
-        Object {
-          "opacity": 1,
-        }
-      }
       testID="touchable-ripple"
     >
       <View
@@ -145,6 +136,7 @@ exports[`Counter should render with default props 1`] = `
               "minHeight": 48,
               "paddingHorizontal": 16,
             },
+            Object {},
           ]
         }
         testID="button"

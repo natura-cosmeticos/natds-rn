@@ -15,9 +15,16 @@ exports[`Checkbox component render should render checkbox correctly 1`] = `
   }
   testID="checkbox"
 >
-  <TouchableOpacity
-    disabled={false}
-    onPress={[Function]}
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
     testID="touchable-ripple"
   >
     <View
@@ -40,7 +47,7 @@ exports[`Checkbox component render should render checkbox correctly 1`] = `
       }
       testID="checkbox-box"
     />
-  </TouchableOpacity>
+  </View>
 </TouchableOpacity>
 `;
 
@@ -59,9 +66,16 @@ exports[`Checkbox component render should render checkbox disabled correctly 1`]
   }
   testID="checkbox"
 >
-  <TouchableOpacity
-    disabled={true}
-    onPress={[Function]}
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
     testID="touchable-ripple"
   >
     <View
@@ -84,7 +98,7 @@ exports[`Checkbox component render should render checkbox disabled correctly 1`]
       }
       testID="checkbox-box"
     />
-  </TouchableOpacity>
+  </View>
 </TouchableOpacity>
 `;
 
@@ -103,9 +117,16 @@ exports[`Checkbox component render should render checkbox indeterminate selected
   }
   testID="checkbox"
 >
-  <TouchableOpacity
-    disabled={true}
-    onPress={[Function]}
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
     testID="touchable-ripple"
   >
     <View
@@ -142,7 +163,7 @@ exports[`Checkbox component render should render checkbox indeterminate selected
         
       </Text>
     </View>
-  </TouchableOpacity>
+  </View>
 </TouchableOpacity>
 `;
 
@@ -161,9 +182,16 @@ exports[`Checkbox component render should render checkbox indeterminate selected
   }
   testID="checkbox"
 >
-  <TouchableOpacity
-    disabled={false}
-    onPress={[Function]}
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
     testID="touchable-ripple"
   >
     <View
@@ -200,7 +228,7 @@ exports[`Checkbox component render should render checkbox indeterminate selected
         
       </Text>
     </View>
-  </TouchableOpacity>
+  </View>
 </TouchableOpacity>
 `;
 
@@ -219,9 +247,16 @@ exports[`Checkbox component render should render checkbox selected but disabled 
   }
   testID="checkbox"
 >
-  <TouchableOpacity
-    disabled={true}
-    onPress={[Function]}
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
     testID="touchable-ripple"
   >
     <View
@@ -258,7 +293,7 @@ exports[`Checkbox component render should render checkbox selected but disabled 
         
       </Text>
     </View>
-  </TouchableOpacity>
+  </View>
 </TouchableOpacity>
 `;
 
@@ -277,9 +312,16 @@ exports[`Checkbox component render should render checkbox selected correctly 1`]
   }
   testID="checkbox"
 >
-  <TouchableOpacity
-    disabled={false}
-    onPress={[Function]}
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
     testID="touchable-ripple"
   >
     <View
@@ -316,6 +358,6 @@ exports[`Checkbox component render should render checkbox selected correctly 1`]
         
       </Text>
     </View>
-  </TouchableOpacity>
+  </View>
 </TouchableOpacity>
 `;

@@ -26,13 +26,13 @@ const ButtonComponent = ({
       disabled={disabled}
       hideOverflow={true}
       onPress={disabled ? () => { } : onPress}
-      style={getButtonShadowByType({ disabled, theme, type })}
     >
       <Surface
         accessibilityHint={accessibilityHint}
         accessibilityLabel={accessibilityLabel}
         accessibilityRole="button"
         disabled={disabled}
+        style={getButtonShadowByType({ disabled, theme, type })}
         size={size}
         testID={testID}
         type={type}

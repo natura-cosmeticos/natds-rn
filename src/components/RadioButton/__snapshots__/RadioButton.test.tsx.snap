@@ -1,9 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`RadioButton component should render radio button correctly 1`] = `
-<TouchableOpacity
-  disabled={false}
-  onPress={[Function]}
+<View
+  accessible={true}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
   testID="radio-button"
 >
   <View
@@ -24,13 +31,20 @@ exports[`RadioButton component should render radio button correctly 1`] = `
     }
     testID="radio-button-circle"
   />
-</TouchableOpacity>
+</View>
 `;
 
 exports[`RadioButton component should render radio button selected but disabled correctly 1`] = `
-<TouchableOpacity
-  disabled={true}
-  onPress={[Function]}
+<View
+  accessible={true}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
   testID="radio-button"
 >
   <View
@@ -51,7 +65,7 @@ exports[`RadioButton component should render radio button selected but disabled 
     }
     testID="radio-button-circle"
   />
-</TouchableOpacity>
+</View>
 `;
 
 exports[`RadioButton component should render radio button selected but disabled with label correctly 1`] = `
@@ -69,9 +83,16 @@ exports[`RadioButton component should render radio button selected but disabled 
   }
   testID="radio-button-label"
 >
-  <TouchableOpacity
-    disabled={true}
-    onPress={[Function]}
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
     testID="radio-button"
   >
     <View
@@ -92,7 +113,7 @@ exports[`RadioButton component should render radio button selected but disabled 
       }
       testID="radio-button-circle"
     />
-  </TouchableOpacity>
+  </View>
   <Text
     disabled={true}
     style={
@@ -112,9 +133,16 @@ exports[`RadioButton component should render radio button selected but disabled 
 `;
 
 exports[`RadioButton component should render radio button selected correctly 1`] = `
-<TouchableOpacity
-  disabled={false}
-  onPress={[Function]}
+<View
+  accessible={true}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
   testID="radio-button"
 >
   <View
@@ -153,7 +181,7 @@ exports[`RadioButton component should render radio button selected correctly 1`]
       testID="radio-button-circle-selected"
     />
   </View>
-</TouchableOpacity>
+</View>
 `;
 
 exports[`RadioButton component should render radio button with label correctly 1`] = `
@@ -171,9 +199,16 @@ exports[`RadioButton component should render radio button with label correctly 1
   }
   testID="radio-button-label"
 >
-  <TouchableOpacity
-    disabled={false}
-    onPress={[Function]}
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
     testID="radio-button"
   >
     <View
@@ -194,7 +229,7 @@ exports[`RadioButton component should render radio button with label correctly 1
       }
       testID="radio-button-circle"
     />
-  </TouchableOpacity>
+  </View>
   <Text
     disabled={false}
     style={

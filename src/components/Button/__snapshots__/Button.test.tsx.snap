@@ -11,11 +11,6 @@ exports[`Button component Disabled variants should render disabled button compon
   onResponderTerminate={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
-  style={
-    Object {
-      "opacity": 1,
-    }
-  }
   testID="touchable-ripple"
 >
   <View
@@ -33,6 +28,7 @@ exports[`Button component Disabled variants should render disabled button compon
           "minHeight": 40,
           "paddingHorizontal": 8,
         },
+        Object {},
       ]
     }
     testID="button"
@@ -83,11 +79,6 @@ exports[`Button component Disabled variants should render disabled button compon
   onResponderTerminate={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
-  style={
-    Object {
-      "opacity": 1,
-    }
-  }
   testID="touchable-ripple"
 >
   <View
@@ -106,6 +97,7 @@ exports[`Button component Disabled variants should render disabled button compon
           "minHeight": 40,
           "paddingHorizontal": 8,
         },
+        Object {},
       ]
     }
     testID="button"
@@ -156,11 +148,6 @@ exports[`Button component Disabled variants should render disabled button compon
   onResponderTerminate={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
-  style={
-    Object {
-      "opacity": 1,
-    }
-  }
   testID="touchable-ripple"
 >
   <View
@@ -177,6 +164,7 @@ exports[`Button component Disabled variants should render disabled button compon
           "minHeight": 40,
           "paddingHorizontal": 8,
         },
+        Object {},
       ]
     }
     testID="button"
@@ -227,12 +215,6 @@ exports[`Button component Variants should render button component contained 1`] 
   onResponderTerminate={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
-  style={
-    Object {
-      "opacity": 1,
-      "shadowColor": "#AEAEAE",
-    }
-  }
   testID="touchable-ripple"
 >
   <View
@@ -249,6 +231,9 @@ exports[`Button component Variants should render button component contained 1`] 
           "justifyContent": "center",
           "minHeight": 40,
           "paddingHorizontal": 8,
+        },
+        Object {
+          "shadowColor": "#AEAEAE",
         },
       ]
     }
@@ -300,11 +285,6 @@ exports[`Button component Variants should render button component outlined 1`] =
   onResponderTerminate={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
-  style={
-    Object {
-      "opacity": 1,
-    }
-  }
   testID="touchable-ripple"
 >
   <View
@@ -323,6 +303,7 @@ exports[`Button component Variants should render button component outlined 1`] =
           "minHeight": 40,
           "paddingHorizontal": 8,
         },
+        Object {},
       ]
     }
     testID="button"
@@ -373,11 +354,6 @@ exports[`Button component Variants should render button component text 1`] = `
   onResponderTerminate={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
-  style={
-    Object {
-      "opacity": 1,
-    }
-  }
   testID="touchable-ripple"
 >
   <View
@@ -394,6 +370,7 @@ exports[`Button component Variants should render button component text 1`] = `
           "minHeight": 40,
           "paddingHorizontal": 8,
         },
+        Object {},
       ]
     }
     testID="button"
@@ -444,12 +421,6 @@ exports[`Button component with Icon should render the icon to the left 1`] = `
   onResponderTerminate={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
-  style={
-    Object {
-      "opacity": 1,
-      "shadowColor": "#AEAEAE",
-    }
-  }
   testID="touchable-ripple"
 >
   <View
@@ -466,6 +437,9 @@ exports[`Button component with Icon should render the icon to the left 1`] = `
           "justifyContent": "center",
           "minHeight": 40,
           "paddingHorizontal": 8,
+        },
+        Object {
+          "shadowColor": "#AEAEAE",
         },
       ]
     }
@@ -527,12 +501,6 @@ exports[`Button component with Icon should render the icon to the right by defau
   onResponderTerminate={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
-  style={
-    Object {
-      "opacity": 1,
-      "shadowColor": "#AEAEAE",
-    }
-  }
   testID="touchable-ripple"
 >
   <View
@@ -549,6 +517,9 @@ exports[`Button component with Icon should render the icon to the right by defau
           "justifyContent": "center",
           "minHeight": 40,
           "paddingHorizontal": 8,
+        },
+        Object {
+          "shadowColor": "#AEAEAE",
         },
       ]
     }

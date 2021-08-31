@@ -1,8 +1,9 @@
 /* eslint-disable max-statements, max-lines, no-underscore-dangle */
 
 import React, { ReactElement } from 'react';
-import { StyleProp, TouchableOpacity, ViewStyle } from 'react-native';
-import { Theme } from '../../common/themeSelectors';
+import { TouchableHighlight } from 'react-native';
+import { useTheme } from 'styled-components/native';
+import { getColorByName, Theme } from '../../common/themeSelectors';
 
 export type TouchableRippleColors = 'primary' | 'secondary' | 'highlight';
 
@@ -40,26 +41,26 @@ export interface TouchableRippleProps {
    * App's theme
    */
   theme?: Theme;
-  /**
-   * Additional styles
-   */
-  style?: StyleProp<ViewStyle>;
 }
 
 
 export const TouchableRipple = ({
+  color = 'highlight',
   children,
   disabled = false,
   onPress,
   testID = 'touchable-ripple',
-  style,
-}: TouchableRippleProps) => (
-  <TouchableOpacity
-    disabled={disabled}
-    onPress={onPress}
-    testID={testID}
-    style={style}
-  >
-    {children}
-  </TouchableOpacity>
-);
+}: TouchableRippleProps) => {
+  const theme = useTheme();
+
+  return (
+    <TouchableHighlight
+      underlayColor={getColorByName(theme, color)}
+      disabled={disabled}
+      onPress={onPress}
+      testID={testID}
+    >
+      {children}
+    </TouchableHighlight>
+  );
+};

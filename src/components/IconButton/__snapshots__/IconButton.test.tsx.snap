@@ -11,11 +11,6 @@ exports[`IconButton component should render IconButton component disabled 1`] = 
   onResponderTerminate={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
-  style={
-    Object {
-      "opacity": 1,
-    }
-  }
   testID="icon-button"
 >
   <View
@@ -65,11 +60,6 @@ exports[`IconButton component should render IconButton component with background
   onResponderTerminate={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
-  style={
-    Object {
-      "opacity": 1,
-    }
-  }
   testID="icon-button"
 >
   <View
@@ -119,11 +109,6 @@ exports[`IconButton component should render IconButton component with background
   onResponderTerminate={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
-  style={
-    Object {
-      "opacity": 1,
-    }
-  }
   testID="icon-button"
 >
   <View
@@ -173,11 +158,6 @@ exports[`IconButton component should render IconButton component with background
   onResponderTerminate={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
-  style={
-    Object {
-      "opacity": 1,
-    }
-  }
   testID="icon-button"
 >
   <View
@@ -227,11 +207,6 @@ exports[`IconButton component should render IconButton component with color "def
   onResponderTerminate={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
-  style={
-    Object {
-      "opacity": 1,
-    }
-  }
   testID="icon-button"
 >
   <View
@@ -281,11 +256,6 @@ exports[`IconButton component should render IconButton component with color "hig
   onResponderTerminate={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
-  style={
-    Object {
-      "opacity": 1,
-    }
-  }
   testID="icon-button"
 >
   <View
@@ -335,11 +305,6 @@ exports[`IconButton component should render IconButton component with color "lig
   onResponderTerminate={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
-  style={
-    Object {
-      "opacity": 1,
-    }
-  }
   testID="icon-button"
 >
   <View
@@ -389,11 +354,6 @@ exports[`IconButton component should render IconButton component with color "pri
   onResponderTerminate={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
-  style={
-    Object {
-      "opacity": 1,
-    }
-  }
   testID="icon-button"
 >
   <View
@@ -443,11 +403,6 @@ exports[`IconButton component should render IconButton component with size "medi
   onResponderTerminate={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
-  style={
-    Object {
-      "opacity": 1,
-    }
-  }
   testID="icon-button"
 >
   <View
@@ -497,11 +452,6 @@ exports[`IconButton component should render IconButton component with size "semi
   onResponderTerminate={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
-  style={
-    Object {
-      "opacity": 1,
-    }
-  }
   testID="icon-button"
 >
   <View
@@ -551,11 +501,6 @@ exports[`IconButton component should render IconButton component with size "semi
   onResponderTerminate={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
-  style={
-    Object {
-      "opacity": 1,
-    }
-  }
   testID="icon-button"
 >
   <View
@@ -605,11 +550,6 @@ exports[`IconButton component should render IconButton component with size "smal
   onResponderTerminate={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
-  style={
-    Object {
-      "opacity": 1,
-    }
-  }
   testID="icon-button"
 >
   <View
