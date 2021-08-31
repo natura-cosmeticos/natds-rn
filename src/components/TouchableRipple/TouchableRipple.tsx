@@ -3,7 +3,7 @@
 import React, { ReactElement } from 'react';
 import { TouchableHighlight } from 'react-native';
 import { useTheme } from 'styled-components/native';
-import { getColorByName, Theme } from '../../common/themeSelectors';
+import { getColorLowEmphasis, Theme } from '../../common/themeSelectors';
 
 export type TouchableRippleColors = 'primary' | 'secondary' | 'highlight';
 
@@ -45,7 +45,6 @@ export interface TouchableRippleProps {
 
 
 export const TouchableRipple = ({
-  color = 'highlight',
   children,
   disabled = false,
   onPress,
@@ -55,7 +54,7 @@ export const TouchableRipple = ({
 
   return (
     <TouchableHighlight
-      underlayColor={getColorByName(theme, color)}
+      underlayColor={getColorLowEmphasis(theme)}
       disabled={disabled}
       onPress={onPress}
       testID={testID}
