@@ -112,6 +112,25 @@ export const App = () => {
 };
 ```
 
+## Fonts
+
+We have the themes package `@naturacosmeticos/natds-theme` as a dependency of this library, so you have the font files available in your `node_modules` folder after installation.
+To use the fonts in your app, you need to add the files path to your `react-native.config.js` file:
+
+```javascript
+module.exports = {
+  assets: [
+    'node_modules/@naturacosmeticos/natds-themes/react-native/assets',
+  ],
+};
+```
+
+and then run:
+
+```shell
+npx react-native link
+```
+
 ## Icons
 
 We have the icons package `@naturacosmeticos/natds-icons` as a dependency of this library, so you have the font icon files available in your `node_modules` folder after installation.
