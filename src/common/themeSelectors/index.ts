@@ -1,5 +1,5 @@
+export * from './assets/assets';
 export * from './avatarSizes/avatarSizes';
-export * from './button/button';
 export * from './colors/colors';
 export * from './effects/effects';
 export * from './helpers/helpers';
