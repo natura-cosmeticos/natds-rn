@@ -11,6 +11,11 @@ exports[`Button component Disabled variants should render disabled button compon
   onResponderTerminate={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "borderRadius": 42,
+    }
+  }
   testID="touchable-ripple"
 >
   <View
@@ -79,6 +84,11 @@ exports[`Button component Disabled variants should render disabled button compon
   onResponderTerminate={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "borderRadius": 42,
+    }
+  }
   testID="touchable-ripple"
 >
   <View
@@ -148,6 +158,11 @@ exports[`Button component Disabled variants should render disabled button compon
   onResponderTerminate={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "borderRadius": 42,
+    }
+  }
   testID="touchable-ripple"
 >
   <View
@@ -215,6 +230,11 @@ exports[`Button component Variants should render button component contained 1`] 
   onResponderTerminate={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "borderRadius": 42,
+    }
+  }
   testID="touchable-ripple"
 >
   <View
@@ -285,6 +305,11 @@ exports[`Button component Variants should render button component outlined 1`] =
   onResponderTerminate={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "borderRadius": 42,
+    }
+  }
   testID="touchable-ripple"
 >
   <View
@@ -354,6 +379,11 @@ exports[`Button component Variants should render button component text 1`] = `
   onResponderTerminate={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "borderRadius": 42,
+    }
+  }
   testID="touchable-ripple"
 >
   <View
@@ -421,6 +451,11 @@ exports[`Button component with Icon should render the icon to the left 1`] = `
   onResponderTerminate={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "borderRadius": 42,
+    }
+  }
   testID="touchable-ripple"
 >
   <View
@@ -501,6 +536,11 @@ exports[`Button component with Icon should render the icon to the right by defau
   onResponderTerminate={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "borderRadius": 42,
+    }
+  }
   testID="touchable-ripple"
 >
   <View

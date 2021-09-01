@@ -31,6 +31,11 @@ exports[`Counter should render with default props 1`] = `
       onResponderTerminate={[Function]}
       onResponderTerminationRequest={[Function]}
       onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "borderRadius": 4,
+        }
+      }
       testID="touchable-ripple"
     >
       <View
@@ -120,6 +125,11 @@ exports[`Counter should render with default props 1`] = `
       onResponderTerminate={[Function]}
       onResponderTerminationRequest={[Function]}
       onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "borderRadius": 4,
+        }
+      }
       testID="touchable-ripple"
     >
       <View

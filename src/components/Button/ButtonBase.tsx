@@ -6,6 +6,7 @@ import {
 } from './Button.styles';
 import { TouchableRipple } from '../TouchableRipple/TouchableRipple';
 import { ButtonBaseProps } from './Button.types';
+import { getRadiusBySize } from '../../common/themeSelectors';
 
 const ButtonComponent = ({
   accessibilityHint,
@@ -26,6 +27,7 @@ const ButtonComponent = ({
       disabled={disabled}
       hideOverflow={true}
       onPress={disabled ? () => { } : onPress}
+      style={{ borderRadius: getRadiusBySize(theme, 'medium') }}
     >
       <Surface
         accessibilityHint={accessibilityHint}

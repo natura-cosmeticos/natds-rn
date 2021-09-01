@@ -1,7 +1,7 @@
 /* eslint-disable max-statements, max-lines, no-underscore-dangle */
 
 import React, { ReactElement } from 'react';
-import { TouchableHighlight } from 'react-native';
+import { TouchableHighlight, StyleProp, ViewStyle } from 'react-native';
 import { useTheme } from 'styled-components/native';
 import { getColorLowEmphasis, Theme } from '../../common/themeSelectors';
 
@@ -41,6 +41,10 @@ export interface TouchableRippleProps {
    * App's theme
    */
   theme?: Theme;
+  /**
+   *
+   */
+  style?: StyleProp<ViewStyle>
 }
 
 
@@ -49,11 +53,13 @@ export const TouchableRipple = ({
   disabled = false,
   onPress,
   testID = 'touchable-ripple',
+  style,
 }: TouchableRippleProps) => {
   const theme = useTheme();
 
   return (
     <TouchableHighlight
+      style={style}
       underlayColor={getColorLowEmphasis(theme)}
       disabled={disabled}
       onPress={onPress}
