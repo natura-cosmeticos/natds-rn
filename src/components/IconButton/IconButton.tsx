@@ -40,6 +40,7 @@ export const IconButton = ({
       size={getSize(theme, size) / 2 + 5}
       onPress={disabled ? undefined : onPress}
       testID={testID}
+      style={{ borderRadius: 50 }}
     >
       <IconContainer
         disabled={disabled}

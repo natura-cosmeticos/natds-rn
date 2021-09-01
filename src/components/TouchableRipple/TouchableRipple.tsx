@@ -3,7 +3,9 @@
 import React, { ReactElement } from 'react';
 import { TouchableHighlight, StyleProp, ViewStyle } from 'react-native';
 import { useTheme } from 'styled-components/native';
-import { getColorLowEmphasis, Theme } from '../../common/themeSelectors';
+import {
+  Theme, getColorByName, buildColorWithOpacity, getOpacityMedium,
+} from '../../common/themeSelectors';
 
 export type TouchableRippleColors = 'primary' | 'secondary' | 'highlight';
 
@@ -54,13 +56,16 @@ export const TouchableRipple = ({
   onPress,
   testID = 'touchable-ripple',
   style,
+  color = 'highlight',
 }: TouchableRippleProps) => {
   const theme = useTheme();
+
+  const getColor = () => getColorByName(theme, color);
 
   return (
     <TouchableHighlight
       style={style}
-      underlayColor={getColorLowEmphasis(theme)}
+      underlayColor={buildColorWithOpacity(getColor, getOpacityMedium, theme)}
       disabled={disabled}
       onPress={onPress}
       testID={testID}

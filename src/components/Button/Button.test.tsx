@@ -8,6 +8,7 @@ jest.mock('../Icon/Icon');
 
 jest.mock('../../common/themeSelectors', () => (
   {
+    buildColorWithOpacity: () => '#BBBBBB00',
     getColorByName: () => '#BBBBBB',
     getColorLowEmphasis: () => '#FEEEEF',
     getColorMediumEmphasis: () => '#FAFAEA',

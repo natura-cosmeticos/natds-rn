@@ -3,6 +3,7 @@ import { Theme, checkTheme } from '../theme/theme';
 const getOpacity = (theme: Theme) => checkTheme(theme).opacity;
 
 export const getOpacityMediumLow = (theme: Theme) => getOpacity(theme).mediumLow;
+export const getOpacityMedium = (theme: Theme) => getOpacity(theme).medium;
 export const getOpacityDisabledLow = (theme: Theme) => getOpacity(theme).disabledLow;
 export const getOpacityMediumHigh = (theme: Theme) => getOpacity(theme).mediumHigh;
 export const getOpacityHigh = (theme: Theme) => getOpacity(theme).high;
