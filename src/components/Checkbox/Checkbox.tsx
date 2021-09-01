@@ -3,7 +3,7 @@ import { IconName } from '@naturacosmeticos/natds-icons';
 import { Icon } from '../Icon';
 import { TouchableRipple } from '../TouchableRipple/TouchableRipple';
 import {
-  Container, Box, Label,
+  Container, Box, Label, Wrapper,
 } from './Checkbox.styles';
 
 export type CheckboxColors = 'primary' | 'secondary';
@@ -87,18 +87,21 @@ export const Checkbox = ({
         color={color}
         onPress={onPressWithValue}
         disabled={disabled}
+        style={{ borderRadius: 50 }}
       >
-        <Box disabled={disabled} color={color} selected={selected} testID={`${testID}-box`}>
-          {
-            selected
-              ? <SelectedIcon indeterminate={indeterminate} />
-              : null
-          }
-        </Box>
+        <Wrapper>
+          <Box disabled={disabled} color={color} selected={selected} testID={`${testID}-box`}>
+            {
+              selected
+                ? <SelectedIcon indeterminate={indeterminate} />
+                : null
+            }
+          </Box>
+        </Wrapper>
       </TouchableRipple>
       {
         label
-          && <Label testID={`${testID}-label`} disabled={disabled}>{label}</Label>
+        && <Label testID={`${testID}-label`} disabled={disabled}>{label}</Label>
       }
     </Container>
   );

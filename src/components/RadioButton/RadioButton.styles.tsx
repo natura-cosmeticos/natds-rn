@@ -79,3 +79,10 @@ export const Center = styled.View<{
   height: 10,
   width: 10,
 }));
+
+export const Wrapper = styled.View(() => ({
+  alignItems: 'center',
+  display: 'flex',
+  justifyContent: 'center',
+  padding: 8,
+}));
