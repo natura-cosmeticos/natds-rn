@@ -9,9 +9,7 @@ categories:
       - 'fix'
       - 'bugfix'
       - 'bug'
-change-template:  |
-  - $TITLE (in PR #$NUMBER)
-    $BODY
+change-template: '- $TITLE (in PR #$NUMBER)'
 template: |
   ## What’s Changed
 
