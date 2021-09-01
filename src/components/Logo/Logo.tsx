@@ -65,7 +65,7 @@ export const Logo = ({
   const logo = setStyle({
     height: getSize(theme, size) * height / width,
     hexColor: getCustomColor(color, theme),
-    width,
+    width: getSize(theme, size),
   }, file);
 
   return (
