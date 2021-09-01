@@ -4,19 +4,19 @@ import styled, { useTheme } from 'styled-components/native';
 import { Theme } from '@naturacosmeticos/natds-themes/react-native';
 import { CSSObject } from 'styled-components';
 import {
-  getColorByName, getNeutralLogoA, getNeutralLogoB, getSize,
+  getColorByName, getCustomLogoA, getCustomLogoB, getNeutralLogoA, getNeutralLogoB, getSize,
 } from '../../common/themeSelectors';
 import { LogoColors, LogoModels, LogoProps } from './Logo.types';
 
-const setStyle = ({ hexColor, width, height }, svg) => {
-  const fillPattern = /fill="(#[a-zA-Z\d]{3,8})"/;
-  const gradientFillPattern = /fill="(url\(#a\))"/;
+const setStyle = ({ hexColor, width, height }: {
+  hexColor?: string, width: number, height: number,
+}, svg: string): string => {
+  const fillPattern = /path\s+?\{\s+?fill:\s+?(#[a-zA-Z\d]{6,8})\s+?\}/gm;
   const widthPattern = /width="(\d+)"/;
   const heightPattern = /height="(\d+)"/;
 
   return svg
-    .replace(fillPattern, `fill="${hexColor || '$1'}"`)
-    .replace(gradientFillPattern, `fill="${hexColor || '$1'}"`)
+    .replace(fillPattern, `path { fill: ${hexColor || '$1'} }`)
     .replace(widthPattern, `width="${width || '$1'}"`)
     .replace(heightPattern, `height="${height || '$1'}"`);
 };
@@ -34,8 +34,8 @@ const getLogoByProps = (color: LogoColors, model: LogoModels, theme: Theme) => {
   /* eslint-disable id-length */
   const logo = {
     custom: {
-      a: getNeutralLogoA(theme),
-      b: getNeutralLogoB(theme),
+      a: getCustomLogoA(theme),
+      b: getCustomLogoB(theme),
     },
     neutral: {
       a: getNeutralLogoA(theme),
