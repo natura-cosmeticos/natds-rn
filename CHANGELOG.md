@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [7.3.3](https://github.com/natura-cosmeticos/natds-rn/compare/v7.3.2...v7.3.3) (2021-09-02)
+
 ### [7.3.2](https://github.com/natura-cosmeticos/natds-rn/compare/v7.3.1...v7.3.2) (2021-08-20)
 
 
