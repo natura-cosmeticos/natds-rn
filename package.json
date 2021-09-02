@@ -132,7 +132,7 @@
     "react-native-storybook-loader": "1.8.1",
     "react-native-svg": "11.0.1",
     "react-native-svg-transformer": "0.14.3",
-    "react-native-svg-web": "1.0.1",
+    "react-native-svg-web": "1.0.9",
     "react-native-web": "0.12.2",
     "react-test-renderer": "16.11.0",
     "regenerator-runtime": "0.13.5",
