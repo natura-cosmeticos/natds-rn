@@ -2,7 +2,7 @@ import React from 'react';
 
 import { TouchableRipple } from '../TouchableRipple/TouchableRipple';
 import {
-  Container, Circle, Center, Label,
+  Container, Circle, Center, Label, Wrapper,
 } from './RadioButton.styles';
 
 export type RadioButtonColors = 'primary' | 'secondary';
@@ -61,20 +61,23 @@ export const RadioButton = ({
       onPress={onPressWithValue}
       disabled={disabled}
       testID={testID}
+      style={{ borderRadius: 50 }}
     >
-      <Circle disabled={disabled} color={color} selected={selected} testID={`${testID}-circle`}>
-        {
-          selected
-            ? (
-              <Center
-                disabled={disabled}
-                color={color}
-                selected={selected}
-                testID={`${testID}-circle-selected`}
-              />
-            ) : null
-        }
-      </Circle>
+      <Wrapper>
+        <Circle disabled={disabled} color={color} selected={selected} testID={`${testID}-circle`}>
+          {
+            selected
+              ? (
+                <Center
+                  disabled={disabled}
+                  color={color}
+                  selected={selected}
+                  testID={`${testID}-circle-selected`}
+                />
+              ) : null
+          }
+        </Circle>
+      </Wrapper>
     </TouchableRipple>
   );
 

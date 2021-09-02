@@ -4,8 +4,6 @@ import { fireEvent } from '@testing-library/react-native';
 import { renderWithTheme } from '../../../test/testHelpers';
 import { ListItem, ListItemProps } from './ListItem';
 
-jest.mock('../TouchableRipple/TouchableRipple');
-
 const renderList = (props?: Omit<ListItemProps, 'children'>) => (
   renderWithTheme(
     <ListItem {...props}>

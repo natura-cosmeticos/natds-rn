@@ -63,3 +63,10 @@ export const Box = styled.View<{
   justifyContent: 'center',
   width: 20,
 }));
+
+export const Wrapper = styled.View(({
+  alignItems: 'center',
+  display: 'flex',
+  justifyContent: 'center',
+  padding: 8,
+}));

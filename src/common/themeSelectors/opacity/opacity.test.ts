@@ -9,6 +9,7 @@ ${'disabledLow'} | ${selectors.getOpacityDisabledLow} | ${theme.opacity.disabled
 ${'mediumHigh'}  | ${selectors.getOpacityMediumHigh}  | ${theme.opacity.mediumHigh}
 ${'high'}        | ${selectors.getOpacityHigh}        | ${theme.opacity.high}
 ${'veryHigh'}    | ${selectors.getOpacityVeryHigh}    | ${theme.opacity.veryHigh}
+${'medium'}      | ${selectors.getOpacityMedium}      | ${theme.opacity.medium}
 `('Opacity selectors', ({
   title, selector, expected,
 }) => {
