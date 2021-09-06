@@ -34,6 +34,7 @@ If that is not the case, we strongly recommend that you follow the [getting star
   - `react` >=16.8.0
   - `react-native` >=0.59.10
   - `styled-components` >=5.0.0
+  - `react-native-svg` >=12.1.1
 
 ###### ⚠️ You will need to install the `styled-components` package before the installation, as it is a prerequisite and it will not be installed automatically.
 
