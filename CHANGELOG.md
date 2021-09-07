@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [7.4.0](https://github.com/natura-cosmeticos/natds-rn/compare/v7.3.3...v7.4.0) (2021-09-07)
+
+
+### Features
+
+* **logo:** create new component ([#181](https://github.com/natura-cosmeticos/natds-rn/issues/181)) ([e3feb36](https://github.com/natura-cosmeticos/natds-rn/commit/e3feb3675c80dd64f6e8b4ba501ab6c5718d1c04))
+
 ### [7.3.3](https://github.com/natura-cosmeticos/natds-rn/compare/v7.3.2...v7.3.3) (2021-09-02)
 
 ### [7.3.2](https://github.com/natura-cosmeticos/natds-rn/compare/v7.3.1...v7.3.2) (2021-08-20)
