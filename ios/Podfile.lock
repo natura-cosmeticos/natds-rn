@@ -318,7 +318,7 @@ PODS:
     - React-perflogger (= 0.64.2)
   - RNGestureHandler (1.10.3):
     - React-Core
-  - RNSVG (11.0.1):
+  - RNSVG (12.1.1):
     - React
   - Yoga (1.14.0)
   - YogaKit (1.18.1):
@@ -494,7 +494,7 @@ SPEC CHECKSUMS:
   React-runtimeexecutor: a9904c6d0218fb9f8b19d6dd88607225927668f9
   ReactCommon: 149906e01aa51142707a10665185db879898e966
   RNGestureHandler: a479ebd5ed4221a810967000735517df0d2db211
-  RNSVG: 67f1f12dae2cef6ed59a42cae74a6b8f5a9e7b46
+  RNSVG: 551acb6562324b1d52a4e0758f7ca0ec234e278f
   Yoga: 575c581c63e0d35c9a83f4b46d01d63abc1100ac
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
 

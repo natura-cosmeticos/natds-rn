@@ -17,39 +17,57 @@ exports[`Checkbox component render should render checkbox correctly 1`] = `
 >
   <View
     accessible={true}
-    color="primary"
-    disabled={false}
     focusable={true}
     onClick={[Function]}
-    onPress={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}
     onResponderTerminate={[Function]}
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
-    size={20}
+    style={
+      Object {
+        "borderRadius": 50,
+      }
+    }
+    testID="touchable-ripple"
   >
     <View
-      color="primary"
-      disabled={false}
-      selected={false}
       style={
         Array [
           Object {
             "alignItems": "center",
-            "backgroundColor": "transparent",
-            "borderColor": "#777777",
-            "borderRadius": 3,
-            "borderWidth": 2,
-            "height": 20,
+            "display": "flex",
             "justifyContent": "center",
-            "width": 20,
+            "paddingBottom": 8,
+            "paddingLeft": 8,
+            "paddingRight": 8,
+            "paddingTop": 8,
           },
         ]
       }
-      testID="checkbox-box"
-    />
+    >
+      <View
+        color="primary"
+        disabled={false}
+        selected={false}
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "transparent",
+              "borderColor": "#777777",
+              "borderRadius": 3,
+              "borderWidth": 2,
+              "height": 20,
+              "justifyContent": "center",
+              "width": 20,
+            },
+          ]
+        }
+        testID="checkbox-box"
+      />
+    </View>
   </View>
 </TouchableOpacity>
 `;
@@ -71,39 +89,57 @@ exports[`Checkbox component render should render checkbox disabled correctly 1`]
 >
   <View
     accessible={true}
-    color="primary"
-    disabled={true}
     focusable={true}
     onClick={[Function]}
-    onPress={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}
     onResponderTerminate={[Function]}
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
-    size={20}
+    style={
+      Object {
+        "borderRadius": 50,
+      }
+    }
+    testID="touchable-ripple"
   >
     <View
-      color="primary"
-      disabled={true}
-      selected={false}
       style={
         Array [
           Object {
             "alignItems": "center",
-            "backgroundColor": "transparent",
-            "borderColor": "#bbbbbb",
-            "borderRadius": 3,
-            "borderWidth": 2,
-            "height": 20,
+            "display": "flex",
             "justifyContent": "center",
-            "width": 20,
+            "paddingBottom": 8,
+            "paddingLeft": 8,
+            "paddingRight": 8,
+            "paddingTop": 8,
           },
         ]
       }
-      testID="checkbox-box"
-    />
+    >
+      <View
+        color="primary"
+        disabled={true}
+        selected={false}
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "transparent",
+              "borderColor": "#bbbbbb",
+              "borderRadius": 3,
+              "borderWidth": 2,
+              "height": 20,
+              "justifyContent": "center",
+              "width": 20,
+            },
+          ]
+        }
+        testID="checkbox-box"
+      />
+    </View>
   </View>
 </TouchableOpacity>
 `;
@@ -125,52 +161,70 @@ exports[`Checkbox component render should render checkbox indeterminate selected
 >
   <View
     accessible={true}
-    color="primary"
-    disabled={true}
     focusable={true}
     onClick={[Function]}
-    onPress={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}
     onResponderTerminate={[Function]}
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
-    size={20}
+    style={
+      Object {
+        "borderRadius": 50,
+      }
+    }
+    testID="touchable-ripple"
   >
     <View
-      color="primary"
-      disabled={true}
-      selected={true}
       style={
         Array [
           Object {
             "alignItems": "center",
-            "backgroundColor": "#bbbbbb",
-            "borderColor": "#bbbbbb",
-            "borderRadius": 3,
-            "borderWidth": 2,
-            "height": 20,
+            "display": "flex",
             "justifyContent": "center",
-            "width": 20,
+            "paddingBottom": 8,
+            "paddingLeft": 8,
+            "paddingRight": 8,
+            "paddingTop": 8,
           },
         ]
       }
-      testID="checkbox-box"
     >
-      <Text
-        accessibilityRole="image"
+      <View
+        color="primary"
+        disabled={true}
+        selected={true}
         style={
-          Object {
-            "color": "#ffffff",
-            "fontFamily": "natds-icons",
-            "fontSize": 16,
-          }
+          Array [
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "#bbbbbb",
+              "borderColor": "#bbbbbb",
+              "borderRadius": 3,
+              "borderWidth": 2,
+              "height": 20,
+              "justifyContent": "center",
+              "width": 20,
+            },
+          ]
         }
-        testID="natds-icon"
+        testID="checkbox-box"
       >
-        
-      </Text>
+        <Text
+          accessibilityRole="image"
+          style={
+            Object {
+              "color": "#ffffff",
+              "fontFamily": "natds-icons",
+              "fontSize": 16,
+            }
+          }
+          testID="natds-icon"
+        >
+          
+        </Text>
+      </View>
     </View>
   </View>
 </TouchableOpacity>
@@ -193,52 +247,70 @@ exports[`Checkbox component render should render checkbox indeterminate selected
 >
   <View
     accessible={true}
-    color="primary"
-    disabled={false}
     focusable={true}
     onClick={[Function]}
-    onPress={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}
     onResponderTerminate={[Function]}
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
-    size={20}
+    style={
+      Object {
+        "borderRadius": 50,
+      }
+    }
+    testID="touchable-ripple"
   >
     <View
-      color="primary"
-      disabled={false}
-      selected={true}
       style={
         Array [
           Object {
             "alignItems": "center",
-            "backgroundColor": "#f4ab34",
-            "borderColor": "#f4ab34",
-            "borderRadius": 3,
-            "borderWidth": 2,
-            "height": 20,
+            "display": "flex",
             "justifyContent": "center",
-            "width": 20,
+            "paddingBottom": 8,
+            "paddingLeft": 8,
+            "paddingRight": 8,
+            "paddingTop": 8,
           },
         ]
       }
-      testID="checkbox-box"
     >
-      <Text
-        accessibilityRole="image"
+      <View
+        color="primary"
+        disabled={false}
+        selected={true}
         style={
-          Object {
-            "color": "#ffffff",
-            "fontFamily": "natds-icons",
-            "fontSize": 16,
-          }
+          Array [
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "#f4ab34",
+              "borderColor": "#f4ab34",
+              "borderRadius": 3,
+              "borderWidth": 2,
+              "height": 20,
+              "justifyContent": "center",
+              "width": 20,
+            },
+          ]
         }
-        testID="natds-icon"
+        testID="checkbox-box"
       >
-        
-      </Text>
+        <Text
+          accessibilityRole="image"
+          style={
+            Object {
+              "color": "#ffffff",
+              "fontFamily": "natds-icons",
+              "fontSize": 16,
+            }
+          }
+          testID="natds-icon"
+        >
+          
+        </Text>
+      </View>
     </View>
   </View>
 </TouchableOpacity>
@@ -261,52 +333,70 @@ exports[`Checkbox component render should render checkbox selected but disabled 
 >
   <View
     accessible={true}
-    color="primary"
-    disabled={true}
     focusable={true}
     onClick={[Function]}
-    onPress={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}
     onResponderTerminate={[Function]}
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
-    size={20}
+    style={
+      Object {
+        "borderRadius": 50,
+      }
+    }
+    testID="touchable-ripple"
   >
     <View
-      color="primary"
-      disabled={true}
-      selected={true}
       style={
         Array [
           Object {
             "alignItems": "center",
-            "backgroundColor": "#bbbbbb",
-            "borderColor": "#bbbbbb",
-            "borderRadius": 3,
-            "borderWidth": 2,
-            "height": 20,
+            "display": "flex",
             "justifyContent": "center",
-            "width": 20,
+            "paddingBottom": 8,
+            "paddingLeft": 8,
+            "paddingRight": 8,
+            "paddingTop": 8,
           },
         ]
       }
-      testID="checkbox-box"
     >
-      <Text
-        accessibilityRole="image"
+      <View
+        color="primary"
+        disabled={true}
+        selected={true}
         style={
-          Object {
-            "color": "#ffffff",
-            "fontFamily": "natds-icons",
-            "fontSize": 16,
-          }
+          Array [
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "#bbbbbb",
+              "borderColor": "#bbbbbb",
+              "borderRadius": 3,
+              "borderWidth": 2,
+              "height": 20,
+              "justifyContent": "center",
+              "width": 20,
+            },
+          ]
         }
-        testID="natds-icon"
+        testID="checkbox-box"
       >
-        
-      </Text>
+        <Text
+          accessibilityRole="image"
+          style={
+            Object {
+              "color": "#ffffff",
+              "fontFamily": "natds-icons",
+              "fontSize": 16,
+            }
+          }
+          testID="natds-icon"
+        >
+          
+        </Text>
+      </View>
     </View>
   </View>
 </TouchableOpacity>
@@ -329,52 +419,70 @@ exports[`Checkbox component render should render checkbox selected correctly 1`]
 >
   <View
     accessible={true}
-    color="primary"
-    disabled={false}
     focusable={true}
     onClick={[Function]}
-    onPress={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}
     onResponderTerminate={[Function]}
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
-    size={20}
+    style={
+      Object {
+        "borderRadius": 50,
+      }
+    }
+    testID="touchable-ripple"
   >
     <View
-      color="primary"
-      disabled={false}
-      selected={true}
       style={
         Array [
           Object {
             "alignItems": "center",
-            "backgroundColor": "#f4ab34",
-            "borderColor": "#f4ab34",
-            "borderRadius": 3,
-            "borderWidth": 2,
-            "height": 20,
+            "display": "flex",
             "justifyContent": "center",
-            "width": 20,
+            "paddingBottom": 8,
+            "paddingLeft": 8,
+            "paddingRight": 8,
+            "paddingTop": 8,
           },
         ]
       }
-      testID="checkbox-box"
     >
-      <Text
-        accessibilityRole="image"
+      <View
+        color="primary"
+        disabled={false}
+        selected={true}
         style={
-          Object {
-            "color": "#ffffff",
-            "fontFamily": "natds-icons",
-            "fontSize": 16,
-          }
+          Array [
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "#f4ab34",
+              "borderColor": "#f4ab34",
+              "borderRadius": 3,
+              "borderWidth": 2,
+              "height": 20,
+              "justifyContent": "center",
+              "width": 20,
+            },
+          ]
         }
-        testID="natds-icon"
+        testID="checkbox-box"
       >
-        
-      </Text>
+        <Text
+          accessibilityRole="image"
+          style={
+            Object {
+              "color": "#ffffff",
+              "fontFamily": "natds-icons",
+              "fontSize": 16,
+            }
+          }
+          testID="natds-icon"
+        >
+          
+        </Text>
+      </View>
     </View>
   </View>
 </TouchableOpacity>

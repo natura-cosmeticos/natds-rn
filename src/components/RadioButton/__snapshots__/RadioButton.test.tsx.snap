@@ -3,76 +3,110 @@
 exports[`RadioButton component should render radio button correctly 1`] = `
 <View
   accessible={true}
-  color="primary"
-  disabled={false}
   focusable={true}
   onClick={[Function]}
-  onPress={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
   onResponderTerminate={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
-  size={20}
+  style={
+    Object {
+      "borderRadius": 50,
+    }
+  }
   testID="radio-button"
 >
   <View
-    color="primary"
-    disabled={false}
     style={
       Array [
         Object {
           "alignItems": "center",
-          "borderColor": "#777777",
-          "borderRadius": 12,
-          "borderWidth": 2,
-          "height": 20,
+          "display": "flex",
           "justifyContent": "center",
-          "width": 20,
+          "paddingBottom": 8,
+          "paddingLeft": 8,
+          "paddingRight": 8,
+          "paddingTop": 8,
         },
       ]
     }
-    testID="radio-button-circle"
-  />
+  >
+    <View
+      color="primary"
+      disabled={false}
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "borderColor": "#777777",
+            "borderRadius": 12,
+            "borderWidth": 2,
+            "height": 20,
+            "justifyContent": "center",
+            "width": 20,
+          },
+        ]
+      }
+      testID="radio-button-circle"
+    />
+  </View>
 </View>
 `;
 
 exports[`RadioButton component should render radio button selected but disabled correctly 1`] = `
 <View
   accessible={true}
-  color="primary"
-  disabled={true}
   focusable={true}
   onClick={[Function]}
-  onPress={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
   onResponderTerminate={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
-  size={20}
+  style={
+    Object {
+      "borderRadius": 50,
+    }
+  }
   testID="radio-button"
 >
   <View
-    color="primary"
-    disabled={true}
     style={
       Array [
         Object {
           "alignItems": "center",
-          "borderColor": "#bbbbbb",
-          "borderRadius": 12,
-          "borderWidth": 2,
-          "height": 20,
+          "display": "flex",
           "justifyContent": "center",
-          "width": 20,
+          "paddingBottom": 8,
+          "paddingLeft": 8,
+          "paddingRight": 8,
+          "paddingTop": 8,
         },
       ]
     }
-    testID="radio-button-circle"
-  />
+  >
+    <View
+      color="primary"
+      disabled={true}
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "borderColor": "#bbbbbb",
+            "borderRadius": 12,
+            "borderWidth": 2,
+            "height": 20,
+            "justifyContent": "center",
+            "width": 20,
+          },
+        ]
+      }
+      testID="radio-button-circle"
+    />
+  </View>
 </View>
 `;
 
@@ -93,38 +127,55 @@ exports[`RadioButton component should render radio button selected but disabled 
 >
   <View
     accessible={true}
-    color="primary"
-    disabled={true}
     focusable={true}
     onClick={[Function]}
-    onPress={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}
     onResponderTerminate={[Function]}
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
-    size={20}
+    style={
+      Object {
+        "borderRadius": 50,
+      }
+    }
     testID="radio-button"
   >
     <View
-      color="primary"
-      disabled={true}
       style={
         Array [
           Object {
             "alignItems": "center",
-            "borderColor": "#bbbbbb",
-            "borderRadius": 12,
-            "borderWidth": 2,
-            "height": 20,
+            "display": "flex",
             "justifyContent": "center",
-            "width": 20,
+            "paddingBottom": 8,
+            "paddingLeft": 8,
+            "paddingRight": 8,
+            "paddingTop": 8,
           },
         ]
       }
-      testID="radio-button-circle"
-    />
+    >
+      <View
+        color="primary"
+        disabled={true}
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "borderColor": "#bbbbbb",
+              "borderRadius": 12,
+              "borderWidth": 2,
+              "height": 20,
+              "justifyContent": "center",
+              "width": 20,
+            },
+          ]
+        }
+        testID="radio-button-circle"
+      />
+    </View>
   </View>
   <Text
     disabled={true}
@@ -147,38 +198,35 @@ exports[`RadioButton component should render radio button selected but disabled 
 exports[`RadioButton component should render radio button selected correctly 1`] = `
 <View
   accessible={true}
-  color="primary"
-  disabled={false}
   focusable={true}
   onClick={[Function]}
-  onPress={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
   onResponderTerminate={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
-  size={20}
+  style={
+    Object {
+      "borderRadius": 50,
+    }
+  }
   testID="radio-button"
 >
   <View
-    color="primary"
-    disabled={false}
-    selected={true}
     style={
       Array [
         Object {
           "alignItems": "center",
-          "borderColor": "#f4ab34",
-          "borderRadius": 12,
-          "borderWidth": 2,
-          "height": 20,
+          "display": "flex",
           "justifyContent": "center",
-          "width": 20,
+          "paddingBottom": 8,
+          "paddingLeft": 8,
+          "paddingRight": 8,
+          "paddingTop": 8,
         },
       ]
     }
-    testID="radio-button-circle"
   >
     <View
       color="primary"
@@ -187,15 +235,35 @@ exports[`RadioButton component should render radio button selected correctly 1`]
       style={
         Array [
           Object {
-            "backgroundColor": "#f4ab34",
+            "alignItems": "center",
+            "borderColor": "#f4ab34",
             "borderRadius": 12,
-            "height": 10,
-            "width": 10,
+            "borderWidth": 2,
+            "height": 20,
+            "justifyContent": "center",
+            "width": 20,
           },
         ]
       }
-      testID="radio-button-circle-selected"
-    />
+      testID="radio-button-circle"
+    >
+      <View
+        color="primary"
+        disabled={false}
+        selected={true}
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#f4ab34",
+              "borderRadius": 12,
+              "height": 10,
+              "width": 10,
+            },
+          ]
+        }
+        testID="radio-button-circle-selected"
+      />
+    </View>
   </View>
 </View>
 `;
@@ -217,38 +285,55 @@ exports[`RadioButton component should render radio button with label correctly 1
 >
   <View
     accessible={true}
-    color="primary"
-    disabled={false}
     focusable={true}
     onClick={[Function]}
-    onPress={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}
     onResponderTerminate={[Function]}
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
-    size={20}
+    style={
+      Object {
+        "borderRadius": 50,
+      }
+    }
     testID="radio-button"
   >
     <View
-      color="primary"
-      disabled={false}
       style={
         Array [
           Object {
             "alignItems": "center",
-            "borderColor": "#777777",
-            "borderRadius": 12,
-            "borderWidth": 2,
-            "height": 20,
+            "display": "flex",
             "justifyContent": "center",
-            "width": 20,
+            "paddingBottom": 8,
+            "paddingLeft": 8,
+            "paddingRight": 8,
+            "paddingTop": 8,
           },
         ]
       }
-      testID="radio-button-circle"
-    />
+    >
+      <View
+        color="primary"
+        disabled={false}
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "borderColor": "#777777",
+              "borderRadius": 12,
+              "borderWidth": 2,
+              "height": 20,
+              "justifyContent": "center",
+              "width": 20,
+            },
+          ]
+        }
+        testID="radio-button-circle"
+      />
+    </View>
   </View>
   <Text
     disabled={false}
