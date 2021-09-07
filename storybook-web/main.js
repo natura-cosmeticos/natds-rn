@@ -8,7 +8,7 @@ module.exports = {
       '../../common/Modal': 'modal-react-native-web',
       '@storybook/react-native': '@storybook/react',
       'react-native$': 'react-native-web',
-      'react-native-svg': 'react-native-svg/lib/commonjs/ReactNativeSVG.web',
+      'react-native-svg': './Logo.web',
     };
 
     newConfig.module.rules[0].use[0].options.plugins.push(['@babel/plugin-proposal-optional-chaining']);
@@ -40,7 +40,7 @@ module.exports = {
       ],
     });
 
-    newConfig.resolve.extensions.push('.ts', '.tsx', '.mdx');
+    newConfig.resolve.extensions.push('.ts', '.tsx', '.mdx', '.web.js');
 
     // console.dir(newConfig, { depth: null });
 

@@ -1,6 +1,6 @@
 {
   "name": "@naturacosmeticos/natds-rn",
-  "version": "7.3.3",
+  "version": "7.4.0-DSY-1216.0",
   "license": "ISC",
   "main": "build/lib/index.js",
   "keywords": [
@@ -49,7 +49,7 @@
     "postinstall": "npm dedupe && rm package-lock.json && rm -rf node_modules/@types/reach__router",
     "publish:release": "./bin/release/release.sh",
     "bump:version": "standard-version --releaseCommitMessageFormat 'chore(release): {{currentTag}} [ci skip]'",
-    "start:clear:cache": "rm -rf /tmp/metro-* && watchman watch-del-all && yarn start:clear",
+    "start:clear:cache": "rm -rf /tmp/metro-* && watchman watch-del-all && watchman shutdown-server && yarn start:clear",
     "start:clear": "concurrently --names 'auto-import-stories,react-native' 'rnstl' 'yarn start --reset-cache'",
     "start": "concurrently --names 'auto-import-stories,react-native' 'rnstl' 'react-native start'",
     "storybook:web": "yarn build:storybook:md && yarn copy:storybook:assets && node ./node_modules/@storybook/react/bin/index.js start-storybook -p 9001 -c storybook-web -s storybook-web/static",
@@ -59,12 +59,14 @@
     "test:watch": "jest --watch --collectCoverage",
     "test": "jest",
     "tsc": "tsc --noEmit",
-    "check:build": "yarn test && yarn tsc && yarn lint && yarn build"
+    "check:build": "yarn test && yarn tsc && yarn lint && yarn build",
+    "pod:install": "cd ios && rm -rf Pods && pod install && cd .."
   },
   "dependencies": {
     "@naturacosmeticos/natds-icons": "^1.3.0",
-    "@naturacosmeticos/natds-themes": "^0.5.0",
-    "react-native-gesture-handler": "^1.10.3"
+    "@naturacosmeticos/natds-themes": "^0.8.3",
+    "react-native-gesture-handler": "^1.10.3",
+    "react-native-svg": "^12.1.1"
   },
   "devDependencies": {
     "@babel/core": "7.13.15",
@@ -130,15 +132,15 @@
     "react-is": "16.13.1",
     "react-native": "0.64.2",
     "react-native-storybook-loader": "1.8.1",
-    "react-native-svg": "11.0.1",
     "react-native-svg-transformer": "0.14.3",
-    "react-native-svg-web": "1.0.1",
+    "react-native-svg-web": "^1.0.9",
     "react-native-web": "0.12.2",
     "react-test-renderer": "16.11.0",
     "regenerator-runtime": "0.13.5",
     "semantic-release": "17.0.4",
     "standard-version": "8.0.1",
     "styled-components": "5.1.0",
+    "svg-react-loader": "^0.4.6",
     "ts-jest": "26.5.4",
     "ts-loader": "7.0.1",
     "typescript": "3.8.3",

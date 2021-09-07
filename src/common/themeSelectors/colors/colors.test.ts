@@ -1,81 +1,34 @@
 import theme from '../theme/mock-theme.json';
 import * as selectors from './colors';
 
-const scenarios = [
-  {
-    expectedResult: theme.color.primary,
-    name: 'getColorPrimary',
-    selector: selectors.getColorPrimary,
-    title: 'primary',
-  },
-  {
-    expectedResult: theme.color.onPrimary,
-    name: 'getColorOnPrimary',
-    selector: selectors.getColorOnPrimary,
-    title: 'on primary',
-  },
-  {
-    expectedResult: theme.color.background,
-    name: 'getColorBackground',
-    selector: selectors.getColorBackground,
-    title: 'background',
-  },
-  {
-    expectedResult: theme.color.onBackground,
-    name: 'getColorOnBackground',
-    selector: selectors.getColorOnBackground,
-    title: 'on background',
-  },
-  {
-    expectedResult: theme.color.success,
-    name: 'getColorSuccess',
-    selector: selectors.getColorSuccess,
-    title: 'success',
-  },
-  {
-    expectedResult: theme.color.onSuccess,
-    name: 'getColorOnSuccess',
-    selector: selectors.getColorOnSuccess,
-    title: 'on success',
-  },
-  {
-    expectedResult: theme.color.lowEmphasis,
-    name: 'getColorLowEmphasis',
-    selector: selectors.getColorLowEmphasis,
-    title: 'low emphasis',
-  },
-  {
-    expectedResult: theme.color.onSecondary,
-    name: 'getColorOnSecondary',
-    selector: selectors.getColorOnSecondary,
-    title: 'on secondary',
-  },
-  {
-    expectedResult: theme.color.highEmphasis,
-    name: 'getColorHighEmphasis',
-    selector: selectors.getColorHighEmphasis,
-    title: 'high emphasis',
-  },
-  {
-    expectedResult: theme.color.primaryLight,
-    name: 'getColorPrimaryLight',
-    selector: selectors.getColorPrimaryLight,
-    title: 'primary light',
-  },
-];
+/*  eslint-disable mocha/no-setup-in-describe */
+describe.each`
+title               | selector                            | expected
+${'primary'}        | ${selectors.getColorPrimary}        | ${theme.color.primary}
+${'onPrimary'}      | ${selectors.getColorOnPrimary}      | ${theme.color.onPrimary}
+${'primaryLight'}   | ${selectors.getColorPrimaryLight}   | ${theme.color.primaryLight}
+${'secondary'}      | ${selectors.getColorSecondary}      | ${theme.color.secondary}
+${'onSecondary'}    | ${selectors.getColorOnSecondary}    | ${theme.color.onSecondary}
+${'background'}     | ${selectors.getColorBackground}     | ${theme.color.background}
+${'onBackground'}   | ${selectors.getColorOnBackground}   | ${theme.color.onBackground}
+${'success'}        | ${selectors.getColorSuccess}        | ${theme.color.success}
+${'onSuccess'}      | ${selectors.getColorOnSuccess}      | ${theme.color.onSuccess}
+${'alert'}          | ${selectors.getColorAlert}          | ${theme.color.alert}
+${'onAlert'}        | ${selectors.getColorOnAlert}        | ${theme.color.onAlert}
+${'lowEmphasis'}    | ${selectors.getColorLowEmphasis}    | ${theme.color.lowEmphasis}
+${'mediumEmphasis'} | ${selectors.getColorMediumEmphasis} | ${theme.color.mediumEmphasis}
+${'highEmphasis'}   | ${selectors.getColorHighEmphasis}   | ${theme.color.highEmphasis}
+${'surface'}        | ${selectors.getColorSurface}        | ${theme.color.surface}
+${'onSurface'}      | ${selectors.getColorOnSurface}      | ${theme.color.onSurface}
+${'highlight'}      | ${selectors.getColorHighlight}      | ${theme.color.highlight}
+${'link'}           | ${selectors.getColorLink}           | ${theme.color.link}
+`('Color selectors', ({
+  title, model, selector, expected,
+}) => {
+  it(`should color ${title}`, () => {
+    const result = selector(theme);
 
-describe('Color selectors', () => {
-  /*  eslint-disable mocha/no-setup-in-describe */
-  scenarios.forEach(scenario => (
-    describe(scenario.name, () => {
-      (
-        it(`should return the ${scenario.title} color`, () => {
-          const result = scenario.selector(theme);
-
-          expect(result).toBe(scenario.expectedResult);
-        })
-      );
-    })
-  ));
-  /* eslint-enable mocha/no-setup-in-describe */
+    expect(result).toEqual(expected);
+  });
 });
+/* eslint-enable mocha/no-setup-in-describe */
