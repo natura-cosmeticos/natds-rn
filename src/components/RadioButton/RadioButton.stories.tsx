@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { View } from 'react-native';
-import { boolean, select, text } from '@storybook/addon-knobs';
+import { boolean, text } from '@storybook/addon-knobs';
 
-import { RadioButton, RadioButtonColors } from './RadioButton';
+import { RadioButton } from './RadioButton';
 
 export default {
   component: RadioButton,
@@ -10,11 +10,6 @@ export default {
     componentSubtitle: 'Selection controls allow the user to select options.',
   },
   title: 'Components|RadioButton',
-};
-
-const colorTypes = {
-  primary: 'primary',
-  secondary: 'secondary',
 };
 
 export const all = () => {
