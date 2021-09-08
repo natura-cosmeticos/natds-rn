@@ -30,13 +30,6 @@ export const all = () => {
         value='1'
       />
       <RadioButton
-        color="secondary"
-        selected={selected === '2'}
-        onPress={setSelected}
-        label="Secondary"
-        value='2'
-      />
-      <RadioButton
         label="Disabled"
         disabled
       />
@@ -53,7 +46,6 @@ export const all = () => {
 export const interactive = () => (
   <View style={{ maxWidth: 600, padding: 30 }}>
     <RadioButton
-      color={select('Color', colorTypes, 'primary') as RadioButtonColors}
       selected={boolean('Selected', true)}
       disabled={boolean('Disabled', false)}
       onPress={() => null}

@@ -5,11 +5,17 @@ import {
   Container, Circle, Center, Label, Wrapper,
 } from './RadioButton.styles';
 
-export type RadioButtonColors = 'primary' | 'secondary';
+/**
+ * @deprecated use `primary` instead
+ */
+type RadioButtonDeprecatedColor = 'secondary'
+export type RadioButtonColors = 'primary' | RadioButtonDeprecatedColor;
 
 export interface RadioButtonProps {
   /**
-   * RadioButton color: `primary` | `secondary`
+   * RadioButton color: `primary`
+   *
+   * deprecated color: `secondary`
    */
   color?: RadioButtonColors;
   /**
