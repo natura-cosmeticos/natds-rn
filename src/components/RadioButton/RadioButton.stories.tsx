@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { View } from 'react-native';
-import { boolean, select, text } from '@storybook/addon-knobs';
+import { boolean, text } from '@storybook/addon-knobs';
 
-import { RadioButton, RadioButtonColors } from './RadioButton';
+import { RadioButton } from './RadioButton';
 
 export default {
   component: RadioButton,
@@ -10,11 +10,6 @@ export default {
     componentSubtitle: 'Selection controls allow the user to select options.',
   },
   title: 'Components|RadioButton',
-};
-
-const colorTypes = {
-  primary: 'primary',
-  secondary: 'secondary',
 };
 
 export const all = () => {
@@ -28,13 +23,6 @@ export const all = () => {
         onPress={setSelected}
         label="Primary"
         value='1'
-      />
-      <RadioButton
-        color="secondary"
-        selected={selected === '2'}
-        onPress={setSelected}
-        label="Secondary"
-        value='2'
       />
       <RadioButton
         label="Disabled"
@@ -53,7 +41,6 @@ export const all = () => {
 export const interactive = () => (
   <View style={{ maxWidth: 600, padding: 30 }}>
     <RadioButton
-      color={select('Color', colorTypes, 'primary') as RadioButtonColors}
       selected={boolean('Selected', true)}
       disabled={boolean('Disabled', false)}
       onPress={() => null}
