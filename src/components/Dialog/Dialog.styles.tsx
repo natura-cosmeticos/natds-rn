@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components/native';
+import { Dimensions } from 'react-native';
 import {
   getColorHighEmphasis,
   getColorSurface,
@@ -9,6 +10,8 @@ import {
   getSpacingSmall,
   getSpacingTiny,
 } from '../../common/themeSelectors';
+
+const { height } = Dimensions.get('window');
 
 export const DialogOverlay = styled.View(({ theme }) => ({
   background: getColorHighlight(theme),
@@ -32,7 +35,7 @@ export const DialogWrapper = styled.View(({ theme }) => ({
 export const DialogContainer = styled.View(({ theme }) => ({
   backgroundColor: getColorSurface(theme),
   borderRadius: getRadiusBySize(theme, 'medium'),
-  maxWidth: '328px',
+  maxHeight: height * 0.7,
   paddingVertical: getSpacingSmall(theme),
   width: '100%',
 }));
@@ -44,32 +47,29 @@ const DialogTitleComponent = styled.Text(({ theme }) => ({
   marginHorizontal: getSpacingSmall(theme),
 }));
 
+
+/**
+ * @deprecated `DialogTitle` since 7.4.0
+ * use DialogHeader instead
+ */
 export const DialogTitle = props => (
   <DialogTitleComponent {...props} style={{ fontWeight: 'bold' }} />
 );
 
+/**
+ * @deprecated `DialogContentText` since 7.4.0
+ * use DialogBody instead
+ */
 export const DialogContentText = styled.Text(({ theme }) => ({
   color: getColorHighEmphasis(theme),
   fontSize: 14,
   fontWeight: 400,
 }));
 
+/**
+ * @deprecated `DialogContent` since 7.4.0
+ * use DialogBody instead
+ */
 export const DialogContent = styled.View(({ theme }) => ({
   paddingHorizontal: getSpacingSmall(theme),
-}));
-
-export type AlignmentOptions = 'side-by-side' | 'stacked';
-export interface DialogActionsProps {
-  actionsAlignment?: AlignmentOptions
-}
-
-const buildDialogAlignment = (actionsAlignment: AlignmentOptions) => (actionsAlignment === 'side-by-side' ? 'row' : 'column');
-
-export const DialogActions = styled.View<DialogActionsProps>(({ theme, actionsAlignment = 'side-by-side' }) => ({
-  alignContent: 'stretch',
-  flexDirection: buildDialogAlignment(actionsAlignment),
-  flexWrap: 'wrap',
-  justifyContent: 'flex-end',
-  paddingHorizontal: getSpacingSmall(theme),
-  paddingTop: getSpacingTiny(theme),
 }));
