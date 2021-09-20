@@ -1,5 +1,148 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Dialog component Should render a dialog body with divider 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "flexShrink": 1,
+      },
+    ]
+  }
+  testID="dialog-body"
+>
+  <View>
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#bbbbbb",
+            "height": 1,
+            "marginBottom": 0,
+            "marginLeft": 0,
+            "marginRight": 0,
+            "marginTop": 0,
+            "width": "100%",
+          },
+        ]
+      }
+      testID="divider"
+      type="fullBleed"
+    />
+  </View>
+  <RCTScrollView
+    style={
+      Array [
+        Object {},
+      ]
+    }
+  >
+    <View>
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#333333",
+              "fontSize": 14,
+              "fontWeight": "400",
+              "paddingHorizontal": 16,
+              "paddingVertical": 16,
+            },
+          ]
+        }
+      >
+        something...
+      </Text>
+    </View>
+  </RCTScrollView>
+  <View>
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#bbbbbb",
+            "height": 1,
+            "marginBottom": 0,
+            "marginLeft": 0,
+            "marginRight": 0,
+            "marginTop": 0,
+            "width": "100%",
+          },
+        ]
+      }
+      testID="divider"
+      type="fullBleed"
+    />
+  </View>
+</View>
+`;
+
+exports[`Dialog component Should render a dialog header with title and optional test id 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "color": "#333333",
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "paddingBottom": 8,
+        "paddingHorizontal": 16,
+      },
+    ]
+  }
+  testID="dialog-header"
+>
+  <Text
+    style={
+      Array [
+        Object {
+          "color": "#333333",
+          "flexBasis": 0,
+          "flexGrow": 0.85,
+          "flexShrink": 1,
+          "fontSize": 20,
+          "fontWeight": "bold",
+        },
+      ]
+    }
+  >
+    something...
+  </Text>
+  <View
+    style={
+      Array [
+        Object {
+          "flexDirection": "row",
+          "height": "100%",
+        },
+      ]
+    }
+  />
+</View>
+`;
+
+exports[`Dialog component Should render a dialog passing alignment action 1`] = `
+<View
+  actionsAlignment="stacked"
+  style={
+    Array [
+      Object {
+        "alignContent": "stretch",
+        "flexDirection": "column",
+        "flexWrap": "wrap",
+        "justifyContent": "flex-end",
+        "paddingHorizontal": 16,
+        "paddingTop": 8,
+      },
+    ]
+  }
+  testID="dialog-footer"
+>
+  something...
+</View>
+`;
+
 exports[`Dialog component Should render a dialog with title, content and actions 1`] = `
 <Modal
   animationType="fade"
@@ -46,13 +189,13 @@ exports[`Dialog component Should render a dialog with title, content and actions
           Object {
             "backgroundColor": "#ffffff",
             "borderRadius": 4,
-            "maxWidth": 328,
+            "maxHeight": 933.8,
             "paddingVertical": 16,
             "width": "100%",
           },
         ]
       }
-      testID="dialog"
+      testID="ds-dialog"
     >
       <Text
         style={
@@ -107,6 +250,7 @@ exports[`Dialog component Should render a dialog with title, content and actions
             },
           ]
         }
+        testID="ds-dialog-footer"
       >
         <Text>
           actions
@@ -116,3 +260,5 @@ exports[`Dialog component Should render a dialog with title, content and actions
   </View>
 </Modal>
 `;
+
+exports[`Dialog component Should render a new dialog with header, body and actions 1`] = `[Function]`;
