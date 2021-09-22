@@ -6,7 +6,7 @@ import {
 } from '.';
 import { Button } from '../Button';
 import {
-  IconButton, DialogHeader, DialogBody,
+  IconButton, DialogHeader,
 } from '..';
 
 const description = () => `
@@ -36,7 +36,6 @@ export default {
   },
   subcomponents: {
     DialogActions,
-    DialogBody,
     DialogContent,
     DialogContentText,
     DialogHeader,
@@ -60,12 +59,6 @@ export const all = () => (
     </View>
     <View style={{ maxWidth: 300 }}>
       {
-        // for implementation samples view `standard with stacked button` story bellow
-        standardStackedButton()
-      }
-    </View>
-    <View style={{ maxWidth: 300 }}>
-      {
         // for implemantation samples view `alert` story bellow
         alert()
       }
@@ -80,10 +73,12 @@ export const alert = () => {
     <View style={{ flexDirection: 'row' }} >
       <Button text="alert dialog" onPress={() => setModalVisible(!modalVisible)} />
       <Dialog visible={modalVisible} onRequestClose={() => setModalVisible(false)}>
-        <DialogBody>
+        <DialogContent>
+          <DialogContentText>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc scelerisque metus nibh.
             Suspendisse varius gravida ex. Praesent consequat, nibh non semper mattis
-        </DialogBody>
+          </DialogContentText>
+        </DialogContent>
         <DialogActions>
           <Button text="cancel" type="text" onPress={() => setModalVisible(!modalVisible)} />
           <Button text="ok" type="text" onPress={() => setModalVisible(!modalVisible)} />
@@ -95,52 +90,31 @@ export const alert = () => {
 
 export const standard = () => {
   const [modalVisible, setModalVisible] = useState(false);
+  const icons = (
+    <>
+      <IconButton onPress={() => {}} />
+      <IconButton onPress={() => {}} />
+      <IconButton onPress={() => {}} />
+    </>
+  );
 
   return (
     <View style={{ flexDirection: 'row' }} >
       <Button text="standard dialog" onPress={() => setModalVisible(!modalVisible)} />
       <Dialog visible={modalVisible}>
-        <DialogHeader title="Title">
-          <IconButton onPress={() => {}} />
-          <IconButton onPress={() => {}} />
-          <IconButton onPress={() => {}} />
+        <DialogHeader icon={icons}>
+          <DialogTitle>Title</DialogTitle>
         </DialogHeader>
-        <DialogBody divider >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc scelerisque metus nibh.
-          Suspendisse varius gravida ex. Praesent consequat, nibh non semper mattis, lorem purus
-          pellentesque sapien, vitae facilisis tellus sem et enim. Sed eget nunc nec eros gravida
-          egestas. Phasellus nec ipsum dolor. Donec justo ipsum, vehicula vel lacus at, facilisis
-          bibendum tellus. Duis ornare in tellus vel scelerisque.
-        </DialogBody>
+          <DialogContent divider>
+            <DialogContentText>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc scelerisque metus nibh.
+              Suspendisse varius gravida ex. Praesent consequat, nibh non semper mattis, lorem purus
+              pellentesque sapien, vitae facilisis tellus sem et enim. Sed eget nunc nec eros gravida
+              egestas. Phasellus nec ipsum dolor. Donec justo ipsum, vehicula vel lacus at, facilisis
+              bibendum tellus. Duis ornare in tellus vel scelerisque.
+            </DialogContentText>
+          </DialogContent>
         <DialogActions>
-          <Button text="cancel" type="text" onPress={() => setModalVisible(!modalVisible)} />
-          <Button text="ok" onPress={() => setModalVisible(!modalVisible)} />
-        </DialogActions>
-      </Dialog>
-    </View>
-  );
-};
-
-export const standardStackedButton = () => {
-  const [modalVisible, setModalVisible] = useState(false);
-
-  return (
-    <View style={{ flexDirection: 'row' }} >
-      <Button text="standard stacked button dialog" onPress={() => setModalVisible(!modalVisible)} />
-      <Dialog visible={modalVisible}>
-        <DialogHeader title="Title">
-          <IconButton onPress={() => {}} />
-          <IconButton onPress={() => {}} />
-          <IconButton onPress={() => {}} />
-        </DialogHeader>
-        <DialogBody divider >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc scelerisque metus nibh.
-          Suspendisse varius gravida ex. Praesent consequat, nibh non semper mattis, lorem purus
-          pellentesque sapien, vitae facilisis tellus sem et enim. Sed eget nunc nec eros gravida
-          egestas. Phasellus nec ipsum dolor. Donec justo ipsum, vehicula vel lacus at, facilisis
-          bibendum tellus. Duis ornare in tellus vel scelerisque.
-        </DialogBody>
-        <DialogActions actionsAlignment="stacked">
           <Button text="cancel" type="text" onPress={() => setModalVisible(!modalVisible)} />
           <Button text="ok" onPress={() => setModalVisible(!modalVisible)} />
         </DialogActions>

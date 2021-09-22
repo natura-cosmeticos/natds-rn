@@ -1,16 +1,16 @@
 import React from 'react';
 import {
-  DialogHeaderContainer, DialogHeaderContent, DialogHeaderTitle,
+  DialogHeaderContainer, DialogHeaderContent,
 } from './DialogHeader.styles';
 import { DialogHeaderProps } from './DialogHeader.props';
 
 export const DialogHeader = ({
   children,
   testID = 'ds-dialog-header',
-  title,
+  icon,
 }: DialogHeaderProps) => (
   <DialogHeaderContainer testID={testID}>
-    <DialogHeaderTitle>{title}</DialogHeaderTitle>
-    <DialogHeaderContent>{children}</DialogHeaderContent>
+    {children}
+    <DialogHeaderContent>{icon}</DialogHeaderContent>
   </DialogHeaderContainer>
 );

@@ -1,7 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Dialog component Should render a dialog body with divider 1`] = `
-<View
+exports[`Dialog component Should render a dialog content with divider 1`] = `
+<RCTScrollView
+  bounces={false}
   style={
     Array [
       Object {
@@ -9,72 +10,63 @@ exports[`Dialog component Should render a dialog body with divider 1`] = `
       },
     ]
   }
-  testID="dialog-body"
 >
   <View>
-    <View
-      style={
-        Array [
-          Object {
-            "backgroundColor": "#bbbbbb",
-            "height": 1,
-            "marginBottom": 0,
-            "marginLeft": 0,
-            "marginRight": 0,
-            "marginTop": 0,
-            "width": "100%",
-          },
-        ]
-      }
-      testID="divider"
-      type="fullBleed"
-    />
-  </View>
-  <RCTScrollView
-    style={
-      Array [
-        Object {},
-      ]
-    }
-  >
     <View>
-      <Text
+      <View
         style={
           Array [
             Object {
-              "color": "#333333",
-              "fontSize": 14,
-              "fontWeight": "400",
-              "paddingHorizontal": 16,
-              "paddingVertical": 16,
+              "backgroundColor": "#bbbbbb",
+              "height": 1,
+              "marginBottom": 0,
+              "marginLeft": 0,
+              "marginRight": 0,
+              "marginTop": 0,
+              "width": "100%",
             },
           ]
         }
-      >
-        something...
-      </Text>
+        testID="divider"
+        type="fullBleed"
+      />
     </View>
-  </RCTScrollView>
-  <View>
-    <View
+    <Text
       style={
         Array [
           Object {
-            "backgroundColor": "#bbbbbb",
-            "height": 1,
-            "marginBottom": 0,
-            "marginLeft": 0,
-            "marginRight": 0,
-            "marginTop": 0,
-            "width": "100%",
+            "color": "#333333",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "paddingHorizontal": 16,
+            "paddingVertical": 16,
           },
         ]
       }
-      testID="divider"
-      type="fullBleed"
-    />
+    >
+      something...
+    </Text>
+    <View>
+      <View
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#bbbbbb",
+              "height": 1,
+              "marginBottom": 0,
+              "marginLeft": 0,
+              "marginRight": 0,
+              "marginTop": 0,
+              "width": "100%",
+            },
+          ]
+        }
+        testID="divider"
+        type="fullBleed"
+      />
+    </View>
   </View>
-</View>
+</RCTScrollView>
 `;
 
 exports[`Dialog component Should render a dialog header with title and optional test id 1`] = `
@@ -102,6 +94,8 @@ exports[`Dialog component Should render a dialog header with title and optional 
           "flexGrow": 0.85,
           "flexShrink": 1,
           "fontSize": 20,
+        },
+        Object {
           "fontWeight": "bold",
         },
       ]
@@ -137,7 +131,7 @@ exports[`Dialog component Should render a dialog passing alignment action 1`] = 
       },
     ]
   }
-  testID="dialog-footer"
+  testID="dialog-actions"
 >
   something...
 </View>
@@ -202,9 +196,10 @@ exports[`Dialog component Should render a dialog with title, content and actions
           Array [
             Object {
               "color": "#333333",
+              "flexBasis": 0,
+              "flexGrow": 0.85,
+              "flexShrink": 1,
               "fontSize": 20,
-              "marginBottom": 8,
-              "marginHorizontal": 16,
             },
             Object {
               "fontWeight": "bold",
@@ -214,29 +209,34 @@ exports[`Dialog component Should render a dialog with title, content and actions
       >
         Title
       </Text>
-      <View
+      <RCTScrollView
+        bounces={false}
         style={
           Array [
             Object {
-              "paddingHorizontal": 16,
+              "flexShrink": 1,
             },
           ]
         }
       >
-        <Text
-          style={
-            Array [
-              Object {
-                "color": "#333333",
-                "fontSize": 14,
-                "fontWeight": "400",
-              },
-            ]
-          }
-        >
-          content
-        </Text>
-      </View>
+        <View>
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#333333",
+                  "fontSize": 14,
+                  "fontWeight": "400",
+                  "paddingHorizontal": 16,
+                  "paddingVertical": 16,
+                },
+              ]
+            }
+          >
+            content
+          </Text>
+        </View>
+      </RCTScrollView>
       <View
         style={
           Array [
@@ -250,7 +250,6 @@ exports[`Dialog component Should render a dialog with title, content and actions
             },
           ]
         }
-        testID="ds-dialog-footer"
       >
         <Text>
           actions
@@ -261,4 +260,4 @@ exports[`Dialog component Should render a dialog with title, content and actions
 </Modal>
 `;
 
-exports[`Dialog component Should render a new dialog with header, body and actions 1`] = `[Function]`;
+exports[`Dialog component Should render a new dialog with header, content and actions 1`] = `[Function]`;

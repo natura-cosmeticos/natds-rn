@@ -2,9 +2,9 @@ import { ReactNode } from 'react';
 
 export interface DialogHeaderProps {
   /**
-   * The header text
+   * The optional icon content
    */
-  title: string
+  icon?: ReactNode
   /**
    * The optional header content
    */

@@ -14,13 +14,6 @@ export const DialogHeaderContainer = styled.View(({ theme }) => ({
   paddingHorizontal: getSpacingSmall(theme),
 }));
 
-export const DialogHeaderTitle = styled.Text(({ theme }) => ({
-  color: getColorHighEmphasis(theme),
-  flex: 0.85,
-  fontSize: 20,
-  fontWeight: 'bold',
-}));
-
 export const DialogHeaderContent = styled.View(({ theme }) => ({
   flexDirection: 'row',
   height: '100%',

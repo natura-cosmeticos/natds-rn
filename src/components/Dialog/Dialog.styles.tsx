@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import styled from 'styled-components/native';
 import { Dimensions } from 'react-native';
 import {
@@ -10,6 +10,7 @@ import {
   getSpacingSmall,
   getSpacingTiny,
 } from '../../common/themeSelectors';
+import { Divider } from '..';
 
 const { height } = Dimensions.get('window');
 
@@ -42,34 +43,54 @@ export const DialogContainer = styled.View(({ theme }) => ({
 
 const DialogTitleComponent = styled.Text(({ theme }) => ({
   color: getColorHighEmphasis(theme),
+  flex: 0.85,
   fontSize: 20,
-  marginBottom: getSpacingTiny(theme),
-  marginHorizontal: getSpacingSmall(theme),
 }));
 
-
-/**
- * @deprecated `DialogTitle` since 7.4.0
- * use DialogHeader instead
- */
 export const DialogTitle = props => (
   <DialogTitleComponent {...props} style={{ fontWeight: 'bold' }} />
 );
 
-/**
- * @deprecated `DialogContentText` since 7.4.0
- * use DialogBody instead
- */
 export const DialogContentText = styled.Text(({ theme }) => ({
   color: getColorHighEmphasis(theme),
   fontSize: 14,
   fontWeight: 400,
+  paddingHorizontal: getSpacingSmall(theme),
+  paddingVertical: getSpacingSmall(theme),
 }));
 
-/**
- * @deprecated `DialogContent` since 7.4.0
- * use DialogBody instead
- */
-export const DialogContent = styled.View(({ theme }) => ({
+export interface DialogContentProps {
+  children?: ReactNode
+  divider?: boolean
+}
+
+const DialogContentComponent = styled.ScrollView<DialogContentProps>(({ theme }) => ({
+  flexShrink: 1,
+}));
+
+export const DialogContent = ({ children, divider = false }) => (
+  <DialogContentComponent bounces={false} >
+    {divider && <Divider/>}
+      {children}
+    {divider && <Divider/>}
+  </DialogContentComponent>
+);
+
+export type AlignmentOptions = 'side-by-side' | 'stacked';
+export interface DialogActionsProps {
+  /**
+   * @deprecated `actionsAlignment` prop since 7.4.0
+   */
+  actionsAlignment?: AlignmentOptions
+}
+
+const buildDialogAlignment = (actionsAlignment: AlignmentOptions) => (actionsAlignment === 'side-by-side' ? 'row' : 'column');
+
+export const DialogActions = styled.View<DialogActionsProps>(({ theme, actionsAlignment = 'side-by-side' }) => ({
+  alignContent: 'stretch',
+  flexDirection: buildDialogAlignment(actionsAlignment),
+  flexWrap: 'wrap',
+  justifyContent: 'flex-end',
   paddingHorizontal: getSpacingSmall(theme),
+  paddingTop: getSpacingTiny(theme),
 }));

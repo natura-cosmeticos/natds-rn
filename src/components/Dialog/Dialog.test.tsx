@@ -5,10 +5,9 @@ import { ThemeProvider } from 'styled-components/native';
 import { Text } from 'react-native';
 import theme from '../../common/themeSelectors/theme/mock-theme.json';
 import {
-  Dialog, DialogTitle, DialogContent, DialogContentText, DialogActions, DialogHeader, DialogBody,
+  Dialog, DialogTitle, DialogContent, DialogContentText, DialogActions, DialogHeader,
 } from '.';
 import { renderWithTheme } from '../../../test/testHelpers';
-import DialogFooter from './DialogFooter';
 
 const renderOldDialog = () => (renderer.create(
   <ThemeProvider theme={theme}>
@@ -35,13 +34,17 @@ describe('Dialog component', () => {
     expect(dialog).toMatchSnapshot();
   });
 
-  it('Should render a new dialog with header, body and actions', () => {
+  it('Should render a new dialog with header, content and actions', () => {
     const { getByTestId, toJSON } = renderWithTheme(
       <Dialog visible={true} testID='dialog' >
-        <DialogHeader title='Title' />
-        <DialogBody>
-          content
-        </DialogBody>
+        <DialogHeader>
+          <DialogTitle>Title</DialogTitle>
+        </DialogHeader>
+        <DialogContent>
+          <DialogContentText>
+            content
+          </DialogContentText>
+        </DialogContent>
         <DialogActions>
           actions
         </DialogActions>
@@ -54,21 +57,35 @@ describe('Dialog component', () => {
     expect(toJSON).toMatchSnapshot();
   });
 
-  it('Should render a dialog passing alignment action', () => {
-    const { getByTestId, toJSON } = renderWithTheme(<DialogFooter testID='dialog-footer' actionsAlignment='stacked' >something...</DialogFooter>);
+  it('Should render a dialog content with divider', () => {
+    const content = (
+      <DialogContent divider >
+        <DialogContentText>
+          something...
+        </DialogContentText>
+      </DialogContent>
+    );
 
-    expect(getByTestId('dialog-footer')).toHaveProp('actionsAlignment', 'stacked');
+    const { toJSON } = renderWithTheme(content);
+
     expect(toJSON()).toMatchSnapshot();
   });
 
-  it('Should render a dialog body with divider', () => {
-    const { toJSON } = renderWithTheme(<DialogBody testID='dialog-body' divider >something...</DialogBody>);
+  it('Should render a dialog passing alignment action', () => {
+    const { getByTestId, toJSON } = renderWithTheme(<DialogActions testID='dialog-actions' actionsAlignment='stacked' >something...</DialogActions>);
 
+    expect(getByTestId('dialog-actions')).toHaveProp('actionsAlignment', 'stacked');
     expect(toJSON()).toMatchSnapshot();
   });
 
   it('Should render a dialog header with title and optional test id', () => {
-    const { getByTestId, toJSON } = renderWithTheme(<DialogHeader testID='dialog-header' title='something...' />);
+    const header = (
+      <DialogHeader testID='dialog-header'>
+        <DialogTitle>something...</DialogTitle>
+      </DialogHeader>
+    );
+
+    const { getByTestId, toJSON } = renderWithTheme(header);
 
     expect(getByTestId('dialog-header')).toHaveTextContent('something...');
     expect(toJSON()).toMatchSnapshot();
