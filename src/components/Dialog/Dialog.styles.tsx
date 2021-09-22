@@ -60,7 +60,15 @@ export const DialogContentText = styled.Text(({ theme }) => ({
 }));
 
 export interface DialogContentProps {
+  /**
+   * The optional children
+   * Can receive any component as a child to be used as content
+   */
   children?: ReactNode
+  /**
+   * The optional divider
+   * When true, a top and bottom line of content will appear
+   */
   divider?: boolean
 }
 
@@ -87,7 +95,6 @@ export interface DialogActionsProps {
 const buildDialogAlignment = (actionsAlignment: AlignmentOptions) => (actionsAlignment === 'side-by-side' ? 'row' : 'column');
 
 export const DialogActions = styled.View<DialogActionsProps>(({ theme, actionsAlignment = 'side-by-side' }) => ({
-  alignContent: 'stretch',
   flexDirection: buildDialogAlignment(actionsAlignment),
   flexWrap: 'wrap',
   justifyContent: 'flex-end',

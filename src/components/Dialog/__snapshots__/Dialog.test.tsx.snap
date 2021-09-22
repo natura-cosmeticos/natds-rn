@@ -122,7 +122,6 @@ exports[`Dialog component Should render a dialog passing alignment action 1`] = 
   style={
     Array [
       Object {
-        "alignContent": "stretch",
         "flexDirection": "column",
         "flexWrap": "wrap",
         "justifyContent": "flex-end",
@@ -241,7 +240,6 @@ exports[`Dialog component Should render a dialog with title, content and actions
         style={
           Array [
             Object {
-              "alignContent": "stretch",
               "flexDirection": "row",
               "flexWrap": "wrap",
               "justifyContent": "flex-end",

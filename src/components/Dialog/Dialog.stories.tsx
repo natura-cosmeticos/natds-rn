@@ -1,3 +1,5 @@
+/* eslint-disable max-lines */
+/* eslint-disable max-len */
 /* eslint-disable no-use-before-define, max-lines */
 import React, { useState } from 'react';
 import { View } from 'react-native';
@@ -80,7 +82,9 @@ export const alert = () => {
           </DialogContentText>
         </DialogContent>
         <DialogActions>
-          <Button text="cancel" type="text" onPress={() => setModalVisible(!modalVisible)} />
+          <View style={{ paddingRight: 16 }}>
+            <Button text="cancel" type="text" onPress={() => setModalVisible(!modalVisible)} />
+          </View>
           <Button text="ok" type="text" onPress={() => setModalVisible(!modalVisible)} />
         </DialogActions>
       </Dialog>
@@ -115,7 +119,9 @@ export const standard = () => {
             </DialogContentText>
           </DialogContent>
         <DialogActions>
-          <Button text="cancel" type="text" onPress={() => setModalVisible(!modalVisible)} />
+          <View style={{ paddingRight: 16 }}>
+            <Button text="cancel" type="text" onPress={() => setModalVisible(!modalVisible)} />
+          </View>
           <Button text="ok" onPress={() => setModalVisible(!modalVisible)} />
         </DialogActions>
       </Dialog>
