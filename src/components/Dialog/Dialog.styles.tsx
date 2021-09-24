@@ -55,8 +55,7 @@ export const DialogContentText = styled.Text(({ theme }) => ({
   color: getColorHighEmphasis(theme),
   fontSize: 14,
   fontWeight: 400,
-  paddingHorizontal: getSpacingSmall(theme),
-  paddingVertical: getSpacingSmall(theme),
+  padding: getSpacingSmall(theme),
 }));
 
 export interface DialogContentProps {

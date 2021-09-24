@@ -38,8 +38,10 @@ exports[`Dialog component Should render a dialog content with divider 1`] = `
             "color": "#333333",
             "fontSize": 14,
             "fontWeight": "400",
-            "paddingHorizontal": 16,
-            "paddingVertical": 16,
+            "paddingBottom": 16,
+            "paddingLeft": 16,
+            "paddingRight": 16,
+            "paddingTop": 16,
           },
         ]
       }
@@ -226,8 +228,10 @@ exports[`Dialog component Should render a dialog with title, content and actions
                   "color": "#333333",
                   "fontSize": 14,
                   "fontWeight": "400",
-                  "paddingHorizontal": 16,
-                  "paddingVertical": 16,
+                  "paddingBottom": 16,
+                  "paddingLeft": 16,
+                  "paddingRight": 16,
+                  "paddingTop": 16,
                 },
               ]
             }
