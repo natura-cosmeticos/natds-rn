@@ -1,4 +1,5 @@
 /* eslint-disable max-lines */
+/* eslint-disable no-console */
 import React, { useState } from 'react';
 import { View, FlatList, Text } from 'react-native';
 import { Card } from '../Card';

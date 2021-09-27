@@ -6,8 +6,7 @@ import { CSSObject } from 'styled-components';
 import {
   getColorByName, getCustomLogoA, getCustomLogoB, getNeutralLogoA, getNeutralLogoB, getSize,
 } from '../../common/themeSelectors';
-import { LogoColors, LogoProps, NeutralLogoModel,
-} from './Logo.types';
+import { LogoColors, LogoProps, NeutralLogoModel } from './Logo.types';
 
 const setStyle = ({ hexColor, width, height }: {
   hexColor?: string, width: number, height: number,
