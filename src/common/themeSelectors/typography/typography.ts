@@ -1,11 +1,9 @@
-import {
-  Caption, Subtitle2, Theme,
-} from '@naturacosmeticos/natds-themes/react-native';
+import { Theme, Heading1 } from '@naturacosmeticos/natds-themes/react-native';
 import { checkTheme } from '../theme/theme';
 
-const getTypographyBody1 = (theme: Theme): Caption => checkTheme(theme).body1;
-const getTypographyCaption = (theme: Theme): Caption => checkTheme(theme).caption;
-const getTypographySubtitle2 = (theme: Theme): Subtitle2 => checkTheme(theme).subtitle2;
+const getTypographyBody1 = (theme: Theme): Heading1 => checkTheme(theme).body1;
+const getTypographyCaption = (theme: Theme): Heading1 => checkTheme(theme).caption;
+const getTypographySubtitle2 = (theme: Theme): Heading1 => checkTheme(theme).subtitle2;
 
 const getBody1Styles = (theme: Theme) => ({
   fontSize: getTypographyBody1(theme).fontSize,

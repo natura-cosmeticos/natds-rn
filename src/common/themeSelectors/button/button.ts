@@ -7,4 +7,4 @@ type ButtonTypes = keyof Button;
 
 const getButtonPropsByType = (theme: Theme, type: ButtonTypes) => getButtonProps(theme)[type];
 
-export const getDefaultButtonProps = (theme: Theme) => getButtonPropsByType(theme, 'default');
+export const getDefaultButtonProps = (theme: Theme) => getButtonPropsByType(theme, 'contained');

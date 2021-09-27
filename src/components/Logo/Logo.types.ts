@@ -1,10 +1,9 @@
 import {
-  Color, Custom, Neutral, Size,
+  Color, Neutral, Size,
 } from '@naturacosmeticos/natds-themes';
 
 export type LogoColors = 'neutral' | keyof Pick<Color, 'primary' | 'secondary' | 'highlight' | 'surface'>
 export type LogoSizes = keyof Pick<Size, 'medium' | 'mediumX' | 'large' | 'largeX' | 'largeXX' | 'largeXXX' | 'huge' | 'hugeX' | 'hugeXX' | 'hugeXXX' | 'veryHuge'>
-export type CustomLogoModel = keyof Custom;
 export type NeutralLogoModel = keyof Neutral;
 
 export interface LogoProps {
@@ -24,7 +23,7 @@ export interface LogoProps {
    * Determines which logo model to show for brands that have two models to pick from.
    * @default a
    */
-  model?: CustomLogoModel | NeutralLogoModel;
+  model?: NeutralLogoModel;
   /**
    * Sets the size of the logo
    * @default veryHuge
