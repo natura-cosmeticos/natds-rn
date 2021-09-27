@@ -60,7 +60,7 @@ export interface DialogProps {
 }
 
 export const Dialog = ({
-  testID = 'dialog',
+  testID = 'ds-dialog',
   children,
   visible,
   onRequestClose,

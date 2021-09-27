@@ -1,4 +1,5 @@
 export { Dialog } from './Dialog';
+export { DialogHeader } from './DialogHeader';
 export {
-  DialogActions, DialogContent, DialogContentText, DialogTitle,
+  DialogContentText, DialogContent, DialogTitle, DialogActions,
 } from './Dialog.styles';
