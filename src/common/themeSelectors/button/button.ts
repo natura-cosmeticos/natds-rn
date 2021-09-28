@@ -1,9 +1,9 @@
-import { Button, Theme } from '@naturacosmeticos/natds-themes/react-native';
+import { Theme } from '@naturacosmeticos/natds-themes/react-native';
 import { checkTheme } from '../theme/theme';
 
 const getButtonProps = (theme: Theme) => checkTheme(theme).button;
 
-type ButtonTypes = keyof Button;
+type ButtonTypes = 'outlined' | 'contained' | 'text';
 
 const getButtonPropsByType = (theme: Theme, type: ButtonTypes) => getButtonProps(theme)[type];
 
