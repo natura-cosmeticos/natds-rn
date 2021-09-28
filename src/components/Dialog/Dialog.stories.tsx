@@ -1,22 +1,46 @@
+/* eslint-disable max-lines */
+/* eslint-disable max-len */
 /* eslint-disable no-use-before-define, max-lines */
 import React, { useState } from 'react';
 import { View } from 'react-native';
-import { text, boolean, select } from '@storybook/addon-knobs';
 import {
   Dialog, DialogTitle, DialogContent, DialogContentText, DialogActions,
 } from '.';
 import { Button } from '../Button';
-import { AlignmentOptions } from './Dialog.styles';
+import {
+  IconButton, DialogHeader,
+} from '..';
+
+const description = () => `
+---
+
+**NOTE**: This component is available in the following variants:
+
+  - ✅ standard (available but with alternative composition)
+  - ✅ alert (available but with alternative composition)
+
+With the following attribute status:
+
+- ✅ **Size**
+- ✅ **Divider**
+- ✅ **Scroll**
+
+---
+`;
 
 export default {
   component: Dialog,
   parameters: {
     componentSubtitle: 'Dialogs inform users about a task and can contain critical information, require decisions, or involve multiple tasks. ',
+    docs: {
+      extractComponentDescription: description,
+    },
   },
   subcomponents: {
     DialogActions,
     DialogContent,
     DialogContentText,
+    DialogHeader,
     DialogTitle,
   },
   title: 'Components|Dialog',
@@ -31,20 +55,14 @@ export const all = () => (
   }}>
     <View style={{ maxWidth: 300 }}>
       {
+        // for implementation samples view `standard` story bellow
+        standard()
+      }
+    </View>
+    <View style={{ maxWidth: 300 }}>
+      {
         // for implemantation samples view `alert` story bellow
         alert()
-      }
-    </View>
-    <View style={{ maxWidth: 300 }}>
-      {
-        // for implementation samples view `confirmation` story bellow
-        confirmation()
-      }
-    </View>
-    <View style={{ maxWidth: 300 }}>
-      {
-        // for implementation samples view `confirmationStacked` story bellow
-        confirmationStacked()
       }
     </View>
   </View>
@@ -64,7 +82,9 @@ export const alert = () => {
           </DialogContentText>
         </DialogContent>
         <DialogActions>
-          <Button text="cancel" type="text" onPress={() => setModalVisible(!modalVisible)} />
+          <View style={{ paddingRight: 16 }}>
+            <Button text="cancel" type="text" onPress={() => setModalVisible(!modalVisible)} />
+          </View>
           <Button text="ok" type="text" onPress={() => setModalVisible(!modalVisible)} />
         </DialogActions>
       </Dialog>
@@ -72,118 +92,38 @@ export const alert = () => {
   );
 };
 
-export const confirmation = () => {
+export const standard = () => {
   const [modalVisible, setModalVisible] = useState(false);
+  const icons = (
+    <>
+      <IconButton onPress={() => {}} />
+      <IconButton onPress={() => {}} />
+      <IconButton onPress={() => {}} />
+    </>
+  );
 
   return (
     <View style={{ flexDirection: 'row' }} >
-      <Button text="confimation dialog" onPress={() => setModalVisible(!modalVisible)} />
+      <Button text="standard dialog" onPress={() => setModalVisible(!modalVisible)} />
       <Dialog visible={modalVisible}>
-        <DialogTitle>Title</DialogTitle>
-        <DialogContent>
-          <DialogContentText>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc scelerisque metus nibh.
-            Suspendisse varius gravida ex. Praesent consequat, nibh non semper mattis, lorem purus
-            pellentesque sapien, vitae facilisis tellus sem et enim. Sed eget nunc nec eros gravida
-            egestas. Phasellus nec ipsum dolor. Donec justo ipsum, vehicula vel lacus at, facilisis
-            bibendum tellus. Duis ornare in tellus vel scelerisque.
-          </DialogContentText>
-        </DialogContent>
+        <DialogHeader icon={icons}>
+          <DialogTitle>Title</DialogTitle>
+        </DialogHeader>
+          <DialogContent divider>
+            <DialogContentText>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc scelerisque metus nibh.
+              Suspendisse varius gravida ex. Praesent consequat, nibh non semper mattis, lorem purus
+              pellentesque sapien, vitae facilisis tellus sem et enim. Sed eget nunc nec eros gravida
+              egestas. Phasellus nec ipsum dolor. Donec justo ipsum, vehicula vel lacus at, facilisis
+              bibendum tellus. Duis ornare in tellus vel scelerisque.
+            </DialogContentText>
+          </DialogContent>
         <DialogActions>
-          <Button text="cancel" type="text" onPress={() => setModalVisible(!modalVisible)} />
+          <View style={{ paddingRight: 16 }}>
+            <Button text="cancel" type="text" onPress={() => setModalVisible(!modalVisible)} />
+          </View>
           <Button text="ok" onPress={() => setModalVisible(!modalVisible)} />
         </DialogActions>
-      </Dialog>
-    </View>
-  );
-};
-
-export const confirmationStacked = () => {
-  const [modalVisible, setModalVisible] = useState(false);
-
-  return (
-    <View style={{ flexDirection: 'row' }} >
-      <Button text="confimation dialog with staked buttons" onPress={() => setModalVisible(!modalVisible)} />
-      <Dialog visible={modalVisible}>
-        <DialogTitle>Title</DialogTitle>
-        <DialogContent>
-          <DialogContentText>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc scelerisque metus nibh.
-            Suspendisse varius gravida ex. Praesent consequat, nibh non semper mattis, lorem purus
-            pellentesque sapien, vitae facilisis tellus sem et enim. Sed eget nunc nec eros gravida
-            egestas. Phasellus nec ipsum dolor. Donec justo ipsum, vehicula vel lacus at, facilisis
-            bibendum tellus. Duis ornare in tellus vel scelerisque.
-          </DialogContentText>
-        </DialogContent>
-        <DialogActions actionsAlignment="stacked">
-          <Button text="cancel" type="text" onPress={() => setModalVisible(!modalVisible)} />
-          <Button text="ok" onPress={() => setModalVisible(!modalVisible)} />
-        </DialogActions>
-      </Dialog>
-    </View>
-  );
-};
-
-const buildKnobs = () => {
-  const title = text('Title', 'Title');
-  const content = text('Content', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc scelerisque metus nibh.');
-  const withTextButton = boolean('With a text button?', true);
-  const textButtonLabel = text('Text button label', 'cancel');
-  const withTextContainedButton = boolean('With a contained button?', true);
-  const containedButtonLabel = text('Contained button label', 'ok');
-  const options = ['side-by-side', 'stacked'];
-  const actionsAlignment = select('Actions alignment', options, 'side-by-side');
-
-  return {
-    actionsAlignment,
-    containedButtonLabel,
-    content,
-    textButtonLabel,
-    title,
-    withTextButton,
-    withTextContainedButton,
-  };
-};
-
-export const interactive = () => {
-  const [modalVisible, setModalVisible] = useState(false);
-
-  const {
-    actionsAlignment,
-    containedButtonLabel,
-    content,
-    textButtonLabel,
-    title,
-    withTextButton,
-    withTextContainedButton,
-  } = buildKnobs();
-
-  const buttonText = withTextButton && <Button text={textButtonLabel} type="text" onPress={() => setModalVisible(!modalVisible)} />;
-  const buttonContained = withTextContainedButton && (
-    <Button
-      text={containedButtonLabel}
-      onPress={() => setModalVisible(!modalVisible)}
-    />
-  );
-
-  return (
-    <View style={{ flexDirection: 'row' }} >
-      <Button text="confimation dialog" onPress={() => setModalVisible(!modalVisible)} />
-      <Dialog visible={modalVisible}>
-        <DialogTitle>{title}</DialogTitle>
-        <DialogContent>
-          <DialogContentText>
-            {content}
-          </DialogContentText>
-        </DialogContent>
-        {
-          (withTextButton || withTextContainedButton) && (
-            <DialogActions actionsAlignment={actionsAlignment as AlignmentOptions}>
-              {buttonText}
-              {buttonContained}
-            </DialogActions>
-          )
-        }
       </Dialog>
     </View>
   );
