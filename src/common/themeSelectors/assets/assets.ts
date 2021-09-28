@@ -1,15 +1,14 @@
-import { Brand, Custom, Neutral } from '@naturacosmeticos/natds-themes';
+import { Brand, Neutral } from '@naturacosmeticos/natds-themes';
 import { Theme, checkTheme } from '../theme/theme';
 
 const getAssets = (theme: Theme) => checkTheme(theme).asset;
 const getBrandAssets = (theme: Theme) => getAssets(theme).brand;
 
 type BrandAssetsType = keyof Brand;
-type CustomBrandAssetsModel = keyof Custom;
 type NeutralBrandAssetsModel = keyof Neutral;
 
 const getBrandAssetsByModel = (
-  theme: Theme, type: BrandAssetsType, model: CustomBrandAssetsModel | NeutralBrandAssetsModel,
+  theme: Theme, type: BrandAssetsType, model: NeutralBrandAssetsModel,
 ) => getBrandAssets(theme)[type][model];
 
 export const getNeutralLogoA = (theme: Theme) => ({

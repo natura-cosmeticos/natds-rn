@@ -61,6 +61,57 @@ exports[`Alert component Should render alert with default props 1`] = `
             },
           },
         },
+        "font": Object {
+          "file": Object {
+            "body": Object {
+              "bold": "HelveticaNowDisplay-Bd",
+              "regular": "HelveticaNowDisplay-Regular",
+            },
+            "display": "HelveticaNowDisplay-Bd",
+            "headline": "HelveticaNowDisplay-Md",
+          },
+        },
+      },
+      "badge": Object {
+        "color": Object {
+          "alert": Object {
+            "background": "#e74627",
+            "label": "#ffffff",
+          },
+          "primary": Object {
+            "background": "#f4ab34",
+            "label": "#333333",
+          },
+          "secondary": Object {
+            "background": "#ff6b0b",
+            "label": "#000000",
+          },
+          "success": Object {
+            "background": "#569a32",
+            "label": "#ffffff",
+          },
+        },
+        "dot": Object {
+          "borderRadius": 4,
+          "height": 8,
+        },
+        "label": Object {
+          "fallback": Object {
+            "fontFamily": "Arial",
+            "fontWeight": 400,
+          },
+          "fontSize": 12,
+          "letterSpacing": 0.38,
+          "lineHeight": 1.5,
+          "primary": Object {
+            "fontFamily": "Roboto",
+            "fontWeight": 400,
+          },
+        },
+        "standard": Object {
+          "borderRadius": 8,
+          "height": 16,
+        },
       },
       "body1": Object {
         "fontSize": 16,
@@ -79,17 +130,112 @@ exports[`Alert component Should render alert with default props 1`] = `
         "small": 2,
       },
       "button": Object {
-        "default": Object {
+        "borderRadius": 4,
+        "contained": Object {
+          "color": Object {
+            "disable": Object {
+              "background": "#bbbbbb",
+              "border": "#FFFFFF00",
+              "label": "#333333",
+            },
+            "enable": Object {
+              "background": "#f4ab34",
+              "border": "#FFFFFF00",
+              "label": "#333333",
+            },
+            "focus": Object {
+              "background": "#A67423",
+              "border": "#FFFFFF00",
+              "label": "#333333",
+            },
+            "hover": Object {
+              "background": "#ef8426",
+              "border": "#FFFFFF00",
+              "label": "#333333",
+            },
+          },
+        },
+        "label": Object {
+          "fallback": Object {
+            "fontFamily": "Arial",
+            "fontWeight": 400,
+          },
           "fontSize": 14,
-          "fontWeight": 500,
           "letterSpacing": 1.23,
           "lineHeight": 1.5,
+          "primary": Object {
+            "fontFamily": "Roboto",
+            "fontWeight": 400,
+          },
+        },
+        "outlined": Object {
+          "color": Object {
+            "disable": Object {
+              "background": "#FFFFFF00",
+              "border": "#bbbbbb",
+              "label": "#777777",
+            },
+            "enable": Object {
+              "background": "#FFFFFF00",
+              "border": "#f4ab34",
+              "label": "#333333",
+            },
+            "focus": Object {
+              "background": "#e9ecef",
+              "border": "#f4ab34",
+              "label": "#333333",
+            },
+            "hover": Object {
+              "background": "#f1f3f5",
+              "border": "#f4ab34",
+              "label": "#333333",
+            },
+          },
+        },
+        "text": Object {
+          "color": Object {
+            "disable": Object {
+              "background": "#FFFFFF00",
+              "border": "#FFFFFF00",
+              "label": "#777777",
+            },
+            "enable": Object {
+              "background": "#FFFFFF00",
+              "border": "#FFFFFF00",
+              "label": "#333333",
+            },
+            "focus": Object {
+              "background": "#e9ecef",
+              "border": "#FFFFFF00",
+              "label": "#333333",
+            },
+            "hover": Object {
+              "background": "#f1f3f5",
+              "border": "#FFFFFF00",
+              "label": "#333333",
+            },
+          },
         },
       },
       "caption": Object {
         "fontSize": 12,
         "fontWeight": 400,
         "letterSpacing": 0.38,
+      },
+      "checkbox": Object {
+        "label": Object {
+          "fallback": Object {
+            "fontFamily": "Arial",
+            "fontWeight": 400,
+          },
+          "fontSize": 14,
+          "letterSpacing": 0.22,
+          "lineHeight": 1.5,
+          "primary": Object {
+            "fontFamily": "Roboto",
+            "fontWeight": 500,
+          },
+        },
       },
       "color": Object {
         "alert": "#e74627",
@@ -99,12 +245,24 @@ exports[`Alert component Should render alert with default props 1`] = `
         "link": "#227bbd",
         "lowEmphasis": "#bbbbbb",
         "mediumEmphasis": "#777777",
+        "neutral100": "#f1f3f5",
+        "neutral200": "#e9ecef",
+        "neutral300": "#dee2e6",
+        "neutral400": "#ced4da",
+        "neutral50": "#f8f9fa",
+        "neutral500": "#adb5bd",
+        "neutral600": "#868e96",
+        "neutral700": "#495057",
+        "neutral800": "#343a40",
+        "neutral900": "#212529",
         "onAlert": "#ffffff",
         "onBackground": "#333333",
         "onLink": "#ffffff",
         "onPrimary": "#333333",
         "onPrimaryDark": "#333333",
+        "onPrimaryDarkest": "#333333",
         "onPrimaryLight": "#333333",
+        "onPrimaryLightest": "#333333",
         "onSecondary": "#000000",
         "onSecondaryDark": "#000000",
         "onSecondaryLight": "#000000",
@@ -113,13 +271,43 @@ exports[`Alert component Should render alert with default props 1`] = `
         "onWarning": "#333333",
         "primary": "#f4ab34",
         "primaryDark": "#ef8426",
+        "primaryDarkest": "#A67423",
         "primaryLight": "#fefde8",
+        "primaryLightest": "#F8C675",
         "secondary": "#ff6b0b",
         "secondaryDark": "#ff5808",
         "secondaryLight": "#fff8e1",
         "success": "#569a32",
         "surface": "#ffffff",
         "warning": "#fcc433",
+      },
+      "dialog": Object {
+        "body": Object {
+          "fallback": Object {
+            "fontFamily": "Arial",
+            "fontWeight": 400,
+          },
+          "fontSize": 16,
+          "letterSpacing": 0.51,
+          "lineHeight": 1.5,
+          "primary": Object {
+            "fontFamily": "Roboto",
+            "fontWeight": 400,
+          },
+        },
+        "title": Object {
+          "fallback": Object {
+            "fontFamily": "Arial",
+            "fontWeight": 400,
+          },
+          "fontSize": 20,
+          "letterSpacing": 0.24,
+          "lineHeight": 1.25,
+          "primary": Object {
+            "fontFamily": "Roboto",
+            "fontWeight": 500,
+          },
+        },
       },
       "elevation": Object {
         "huge": Object {
@@ -260,6 +448,21 @@ exports[`Alert component Should render alert with default props 1`] = `
         "fontWeight": 500,
         "letterSpacing": 1.92,
       },
+      "radioButton": Object {
+        "label": Object {
+          "fallback": Object {
+            "fontFamily": "Arial",
+            "fontWeight": 400,
+          },
+          "fontSize": 14,
+          "letterSpacing": 0.22,
+          "lineHeight": 1.5,
+          "primary": Object {
+            "fontFamily": "Roboto",
+            "fontWeight": 500,
+          },
+        },
+      },
       "size": Object {
         "huge": 96,
         "hugeX": 128,
@@ -300,7 +503,65 @@ exports[`Alert component Should render alert with default props 1`] = `
         "fontWeight": 500,
         "letterSpacing": 0.11,
       },
+      "tag": Object {
+        "label": Object {
+          "fallback": Object {
+            "fontFamily": "Arial",
+            "fontWeight": 400,
+          },
+          "fontSize": 12,
+          "letterSpacing": 0.38,
+          "lineHeight": 1.25,
+          "primary": Object {
+            "fontFamily": "Roboto",
+            "fontWeight": 500,
+          },
+        },
+      },
+      "textField": Object {
+        "content": Object {
+          "fontSize": 16,
+          "letterSpacing": 0.51,
+          "lineHeight": 1.25,
+        },
+        "fallback": Object {
+          "fontFamily": "Arial",
+          "fontWeight": 400,
+        },
+        "helperText": Object {
+          "fontSize": 12,
+          "letterSpacing": 0.38,
+          "lineHeight": 1.25,
+        },
+        "label": Object {
+          "fontSize": 14,
+          "letterSpacing": 0.11,
+          "lineHeight": 1.25,
+        },
+        "primary": Object {
+          "fontFamily": "Roboto",
+          "fontWeight": 500,
+        },
+      },
       "typography": Object {
+        "body": Object {
+          "bold": Object {
+            "fontFamily": "Helvetica Now Display",
+            "fontWeight": 700,
+          },
+          "regular": Object {
+            "fontFamily": "Helvetica Now Display",
+            "fontWeight": 400,
+          },
+        },
+        "display": Object {
+          "fontFamily": "Helvetica Now Display",
+          "fontWeight": 700,
+        },
+        "fallback": Object {
+          "fontFamily": "Arial",
+          "fontWeight": 400,
+        },
         "fontFamily": Object {
           "branding": "Helvetica Now",
           "code": "Roboto Mono",
@@ -310,6 +571,10 @@ exports[`Alert component Should render alert with default props 1`] = `
         "fontWeight": Object {
           "medium": 500,
           "regular": 400,
+        },
+        "headline": Object {
+          "fontFamily": "Helvetica Now Display",
+          "fontWeight": 500,
         },
         "lineHeight": Object {
           "large": 2,

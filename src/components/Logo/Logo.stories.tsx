@@ -3,7 +3,7 @@ import { text } from '@storybook/addon-knobs';
 import { VerticalStoryContainer } from '../../common/HelperComponents/StoryContainer';
 import { Logo } from './Logo';
 import {
-  LogoSizes, LogoColors, CustomLogoModel, NeutralLogoModel,
+  LogoSizes, LogoColors, NeutralLogoModel,
 } from './Logo.types';
 
 const description = () => `
@@ -56,7 +56,7 @@ export const Interactive = () => (
   <VerticalStoryContainer title="Interactive">
     <Logo
       color={text('Color', 'neutral') as LogoColors}
-      model={text('Model', 'a') as CustomLogoModel | NeutralLogoModel}
+      model={text('Model', 'a') as NeutralLogoModel}
       size={text('Size', 'veryHuge') as LogoSizes}
     />
   </VerticalStoryContainer>
