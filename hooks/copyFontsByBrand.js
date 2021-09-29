@@ -1,4 +1,3 @@
-/* eslint-disable func-names */
 /* eslint-disable no-unused-vars */
 const path = require('path');
 const fsExtra = require('fs-extra');
@@ -10,7 +9,7 @@ const fontsByBrands = {
   theBodyShop: ['Druk', 'Recoleta', 'Work'],
 };
 
-module.exports = function (brand, destination) {
+export const copyFonts = (brand, destination) => {
   const fontFolder = path.join(path.dirname(require.resolve('@naturacosmeticos/natds-themes')), '..', 'react-native', 'assets');
 
   fontsByBrands[brand].map(fontName => fsExtra.copy(fontFolder, destination, {
