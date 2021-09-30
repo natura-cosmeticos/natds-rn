@@ -25,6 +25,7 @@
   },
   "files": [
     "build/lib",
+    "tools",
     "README.md",
     "CHANGELOG.mg"
   ],
@@ -35,12 +36,11 @@
     "build:sample:ios": "rnstl && react-native bundle --platform ios --dev false --entry-file index.js --bundle-output ios/NaturaReactComponents/main.jsbundle --assets-dest ios",
     "build:storybook:md": "node ./bin/docsToStories/buildStorybookDocs.js",
     "build:storybook:web": "yarn copy:storybook:assets && yarn build:storybook:md && build-storybook -c storybook-web -o build/storybook -s storybook-web/static",
-    "build": "yarn clear:build:lib && yarn build:lib && yarn copy:assets && yarn copy:hook",
+    "build": "yarn clear:build:lib && yarn build:lib && yarn copy:assets",
     "clear:build:lib": "rm -rf build/lib",
     "clear:build:storybook": "rm -rf build/storybook",
     "cm": "git-cz",
     "copy:assets": "cp -a src/assets build/lib/assets",
-    "copy:hook": "rsync -aqz hooks/copyFontsByBrand.js build/lib/hooks/",
     "copy:storybook:assets": "cp -a node_modules/@naturacosmeticos/natds-icons/dist storybook-web/static",
     "ios:5": "react-native run-ios --simulator=\"iPhone SE (2nd generation)\"",
     "ios": "concurrently --names 'auto-import-stories,react-native' 'rnstl' 'react-native run-ios'",
