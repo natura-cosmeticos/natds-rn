@@ -1,5 +1,3 @@
-/* eslint-disable func-names */
-/* eslint-disable no-unused-vars */
 const path = require('path');
 const fsExtra = require('fs-extra');
 
