@@ -8,7 +8,7 @@ const fontsByBrands = {
   theBodyShop: ['Druk', 'Recoleta', 'Work'],
 };
 
-exports.copy = function (brand, destination) {
+module.exports = function copy(brand, destination) {
   const fontFolder = path.join(path.dirname(require.resolve('@naturacosmeticos/natds-themes')), '..', 'react-native', 'assets');
 
   fontsByBrands[brand].map(fontName => fsExtra.copy(fontFolder, destination, {
