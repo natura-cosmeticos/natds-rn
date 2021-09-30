@@ -2,13 +2,6 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-## [7.6.0](https://github.com/natura-cosmeticos/natds-rn/compare/v7.5.1...v7.6.0) (2021-09-30)
-
-
-### Features
-
-* **typography:** creating method to copy fonts by brand ([320d67a](https://github.com/natura-cosmeticos/natds-rn/commit/320d67a378934b5dffbcd2abfb040e6739e32044))
-
 ### [7.5.1](https://github.com/natura-cosmeticos/natds-rn/compare/v7.5.0...v7.5.1) (2021-09-28)
 
 
