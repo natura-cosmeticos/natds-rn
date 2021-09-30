@@ -50,6 +50,7 @@
     "publish:release": "./bin/release/release.sh",
     "bump:version": "standard-version --releaseCommitMessageFormat 'chore(release): {{currentTag}} [ci skip]'",
     "start:clear:cache": "rm -rf /tmp/metro-* && watchman watch-del-all && watchman shutdown-server && yarn start:clear",
+    "clear:cache": " watchman watch-del-all && watchman shutdown-server",
     "start:clear": "concurrently --names 'auto-import-stories,react-native' 'rnstl' 'yarn start --reset-cache'",
     "start": "concurrently --names 'auto-import-stories,react-native' 'rnstl' 'react-native start'",
     "storybook:web": "yarn build:storybook:md && yarn copy:storybook:assets && node ./node_modules/@storybook/react/bin/index.js start-storybook -p 9001 -c storybook-web -s storybook-web/static",
