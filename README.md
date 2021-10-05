@@ -135,6 +135,35 @@ npx react-native link
 > For component detailed API and usage examples, check out the page [Using NatDS Icons](https://natds-rn.natura.design/?path=/docs/documentation-icons--page/)
 > and the [Icon component documentation](https://natds-rn.natura.design/?path=/docs/components-icon--default/).
 
+## Fonts
+
+We have the brand fonts package `@naturacosmeticos/natds-themes` as a dependency of this library, so you have the brand fonts files available in your `node_modules` folder after installation.
+To use the fonts in your app, you will need to import the method that will copy the fonts according to the brand and add their path to the `react-native.config.js` file:
+
+```javascript
+const copy = require('@naturacosmeticos/natds-rn/tools/copyFontsByBrand');
+
+module.exports = {
+  assets: [
+    './src/assets/fonts',
+  ],
+  commands: [
+    {
+      name: 'copy-fonts',
+      func: () => copy('your_brand', `${__dirname}/src/assets/fonts`),
+    },
+  ],
+};
+```
+
+and then run:
+
+```shell
+npx react-native copy-fonts && npx react-native link
+```
+
+> For component detailed API and usage examples, check out the page [Using NatDS Fonts](https://natds-rn.natura.design/?path=/docs/documentation-fonts--page/)
+
 # Issues
 
 Have an issue, need help or have a feature request? [create a issue](https://github.com/natura-cosmeticos/natds-rn/issues)
