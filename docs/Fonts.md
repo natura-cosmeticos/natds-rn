@@ -19,6 +19,8 @@ module.exports = {
 };
 ```
 
+> Available brands: `aesop`, `avon`, `natura`, `theBodyShop`.
+
 and then run:
 
 ```shell
