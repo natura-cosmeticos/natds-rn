@@ -35,6 +35,18 @@
 		B003F668EB8E4DFD9D41DF4B /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 22692A50068B4318BFA631E4 /* Roboto-Light.ttf */; };
 		C48C1BD0544FB138710CA898 /* libPods-NaturaReactComponents-NaturaReactComponentsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18207638E48A5EB947EC2897 /* libPods-NaturaReactComponents-NaturaReactComponentsTests.a */; };
 		D990993B8F4B416D9713D93D /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 70B97FA3DC984789943D17F8 /* Roboto-Regular.ttf */; };
+		91C0E5982F8849B6BC95D733 /* DrukCy-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 82C08DE0FCB040E69EF16AEE /* DrukCy-Bold.ttf */; };
+		BE0BA89CE7094D05B3196FDE /* HelveticaNowDisplay-Bd.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B8AFA213D9ED4F7288A7C837 /* HelveticaNowDisplay-Bd.ttf */; };
+		BC5B89002B634EADA03D16F0 /* HelveticaNowDisplay-Md.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4AAA991B0D8F43BB879BC5BF /* HelveticaNowDisplay-Md.ttf */; };
+		8AC62BF2A47E4224A4256F67 /* HelveticaNowDisplay-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9E26B35BBCD84C3C8DC8FEC1 /* HelveticaNowDisplay-Regular.ttf */; };
+		2076F26FC81E4E8CAFB31C78 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4FD45EEBCD0449EA87392818 /* Montserrat-Bold.ttf */; };
+		E5B86DB097ED4C29A5157F98 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D2BB2EFB355347578C7D804B /* Montserrat-Regular.ttf */; };
+		4423D3AB315F4A10A67D4B44 /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0BE8691E469D48C4854CD7C2 /* Montserrat-SemiBold.ttf */; };
+		30E53D99D8694A36B77B6DA5 /* Recoleta-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C240D6C83E634002814C99AD /* Recoleta-SemiBold.ttf */; };
+		D5E8885B18224657BE9BBFC4 /* SuisseIntl-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 21EE5EA907314C1EAA5A9216 /* SuisseIntl-Regular.ttf */; };
+		C98A782EB2D6442A972E1A79 /* WorkSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 91D1C51025194B1AB3699394 /* WorkSans-Bold.ttf */; };
+		0892D617269C4B85A6D6ECA3 /* WorkSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 16C12B71B3224DB59F1B5578 /* WorkSans-Regular.ttf */; };
+		B2440F9C1D1E4FDF8B8F2C95 /* ZapfHumanist601BT-Roman.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2D9924D160884310B8DC29C4 /* ZapfHumanist601BT-Roman.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,6 +128,18 @@
 		EE52BED68DDB4E798C637857 /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-BlackItalic.ttf"; path = "../src/assets/fonts/Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
 		EEF7E11139C44655B0C1F181 /* NaturaSans-Bold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "NaturaSans-Bold.otf"; path = "../lib/assets/fonts/NaturaSans-Bold.otf"; sourceTree = "<group>"; };
 		F787AC809C1A4DB8A9109F3D /* natds-icons.woff2 */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "natds-icons.woff2"; path = "../lib/assets/fonts/natds-icons.woff2"; sourceTree = "<group>"; };
+		82C08DE0FCB040E69EF16AEE /* DrukCy-Bold.ttf */ = {isa = PBXFileReference; name = "DrukCy-Bold.ttf"; path = "../src/assets/fonts/DrukCy-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B8AFA213D9ED4F7288A7C837 /* HelveticaNowDisplay-Bd.ttf */ = {isa = PBXFileReference; name = "HelveticaNowDisplay-Bd.ttf"; path = "../src/assets/fonts/HelveticaNowDisplay-Bd.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		4AAA991B0D8F43BB879BC5BF /* HelveticaNowDisplay-Md.ttf */ = {isa = PBXFileReference; name = "HelveticaNowDisplay-Md.ttf"; path = "../src/assets/fonts/HelveticaNowDisplay-Md.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		9E26B35BBCD84C3C8DC8FEC1 /* HelveticaNowDisplay-Regular.ttf */ = {isa = PBXFileReference; name = "HelveticaNowDisplay-Regular.ttf"; path = "../src/assets/fonts/HelveticaNowDisplay-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		4FD45EEBCD0449EA87392818 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; name = "Montserrat-Bold.ttf"; path = "../src/assets/fonts/Montserrat-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D2BB2EFB355347578C7D804B /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; name = "Montserrat-Regular.ttf"; path = "../src/assets/fonts/Montserrat-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0BE8691E469D48C4854CD7C2 /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; name = "Montserrat-SemiBold.ttf"; path = "../src/assets/fonts/Montserrat-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C240D6C83E634002814C99AD /* Recoleta-SemiBold.ttf */ = {isa = PBXFileReference; name = "Recoleta-SemiBold.ttf"; path = "../src/assets/fonts/Recoleta-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		21EE5EA907314C1EAA5A9216 /* SuisseIntl-Regular.ttf */ = {isa = PBXFileReference; name = "SuisseIntl-Regular.ttf"; path = "../src/assets/fonts/SuisseIntl-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		91D1C51025194B1AB3699394 /* WorkSans-Bold.ttf */ = {isa = PBXFileReference; name = "WorkSans-Bold.ttf"; path = "../src/assets/fonts/WorkSans-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		16C12B71B3224DB59F1B5578 /* WorkSans-Regular.ttf */ = {isa = PBXFileReference; name = "WorkSans-Regular.ttf"; path = "../src/assets/fonts/WorkSans-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		2D9924D160884310B8DC29C4 /* ZapfHumanist601BT-Roman.ttf */ = {isa = PBXFileReference; name = "ZapfHumanist601BT-Roman.ttf"; path = "../src/assets/fonts/ZapfHumanist601BT-Roman.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -282,6 +306,18 @@
 				70B97FA3DC984789943D17F8 /* Roboto-Regular.ttf */,
 				A235607A197A4DB2B301CDA3 /* Roboto-Thin.ttf */,
 				B5F5F0EB21AC412895CD2221 /* Roboto-ThinItalic.ttf */,
+				82C08DE0FCB040E69EF16AEE /* DrukCy-Bold.ttf */,
+				B8AFA213D9ED4F7288A7C837 /* HelveticaNowDisplay-Bd.ttf */,
+				4AAA991B0D8F43BB879BC5BF /* HelveticaNowDisplay-Md.ttf */,
+				9E26B35BBCD84C3C8DC8FEC1 /* HelveticaNowDisplay-Regular.ttf */,
+				4FD45EEBCD0449EA87392818 /* Montserrat-Bold.ttf */,
+				D2BB2EFB355347578C7D804B /* Montserrat-Regular.ttf */,
+				0BE8691E469D48C4854CD7C2 /* Montserrat-SemiBold.ttf */,
+				C240D6C83E634002814C99AD /* Recoleta-SemiBold.ttf */,
+				21EE5EA907314C1EAA5A9216 /* SuisseIntl-Regular.ttf */,
+				91D1C51025194B1AB3699394 /* WorkSans-Bold.ttf */,
+				16C12B71B3224DB59F1B5578 /* WorkSans-Regular.ttf */,
+				2D9924D160884310B8DC29C4 /* ZapfHumanist601BT-Roman.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -449,6 +485,18 @@
 				D990993B8F4B416D9713D93D /* Roboto-Regular.ttf in Resources */,
 				940E1FD6ECBF4374B8779681 /* Roboto-Thin.ttf in Resources */,
 				A5DC479D9E7E42A1B2225E3F /* Roboto-ThinItalic.ttf in Resources */,
+				91C0E5982F8849B6BC95D733 /* DrukCy-Bold.ttf in Resources */,
+				BE0BA89CE7094D05B3196FDE /* HelveticaNowDisplay-Bd.ttf in Resources */,
+				BC5B89002B634EADA03D16F0 /* HelveticaNowDisplay-Md.ttf in Resources */,
+				8AC62BF2A47E4224A4256F67 /* HelveticaNowDisplay-Regular.ttf in Resources */,
+				2076F26FC81E4E8CAFB31C78 /* Montserrat-Bold.ttf in Resources */,
+				E5B86DB097ED4C29A5157F98 /* Montserrat-Regular.ttf in Resources */,
+				4423D3AB315F4A10A67D4B44 /* Montserrat-SemiBold.ttf in Resources */,
+				30E53D99D8694A36B77B6DA5 /* Recoleta-SemiBold.ttf in Resources */,
+				D5E8885B18224657BE9BBFC4 /* SuisseIntl-Regular.ttf in Resources */,
+				C98A782EB2D6442A972E1A79 /* WorkSans-Bold.ttf in Resources */,
+				0892D617269C4B85A6D6ECA3 /* WorkSans-Regular.ttf in Resources */,
+				B2440F9C1D1E4FDF8B8F2C95 /* ZapfHumanist601BT-Roman.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
