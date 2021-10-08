@@ -47,7 +47,10 @@ exports[`Counter should render with default props 1`] = `
             Object {
               "alignContent": "center",
               "alignItems": "center",
+              "backgroundColor": "#FFFFFF00",
+              "borderColor": "#FFFFFF00",
               "borderRadius": 4,
+              "borderWidth": 0,
               "justifyContent": "center",
               "minHeight": 48,
               "paddingHorizontal": 16,
@@ -74,16 +77,17 @@ exports[`Counter should render with default props 1`] = `
             style={
               Array [
                 Object {
-                  "color": "#777777",
+                  "color": "#333333",
+                  "fontFamily": "Roboto",
                   "fontSize": 14,
-                  "fontWeight": "500",
+                  "fontWeight": "400",
                   "letterSpacing": 1.23,
                   "lineHeight": 19,
                 },
               ]
             }
             testID="button-label"
-            textColor="mediumEmphasis"
+            type="text"
           >
             −
           </Text>
@@ -141,7 +145,10 @@ exports[`Counter should render with default props 1`] = `
             Object {
               "alignContent": "center",
               "alignItems": "center",
+              "backgroundColor": "#FFFFFF00",
+              "borderColor": "#FFFFFF00",
               "borderRadius": 4,
+              "borderWidth": 0,
               "justifyContent": "center",
               "minHeight": 48,
               "paddingHorizontal": 16,
@@ -169,15 +176,16 @@ exports[`Counter should render with default props 1`] = `
               Array [
                 Object {
                   "color": "#333333",
+                  "fontFamily": "Roboto",
                   "fontSize": 14,
-                  "fontWeight": "500",
+                  "fontWeight": "400",
                   "letterSpacing": 1.23,
                   "lineHeight": 19,
                 },
               ]
             }
             testID="button-label"
-            textColor="highEmphasis"
+            type="text"
           >
             +
           </Text>

@@ -1,12 +1,8 @@
+/* eslint-disable max-len */
 /* eslint-disable max-lines */
 import { Color } from '@naturacosmeticos/natds-themes/react-native';
 import styled from 'styled-components/native';
 import {
-  getColorByName,
-  getColorLowEmphasis,
-  getColorMediumEmphasis,
-  getColorPrimary,
-  getRadiusBySize,
   getShadowBySize,
   getSizeMedium,
   getSizeSemi,
@@ -18,21 +14,13 @@ import {
 import { ButtonBaseProps } from './Button.types';
 
 type SurfaceProps = Required<Pick<ButtonBaseProps, 'type' | 'theme' | 'disabled' | 'size'>>
-type LabelProps = Pick<ButtonBaseProps, 'iconName' | 'iconPosition' | 'textColor' | 'theme' | 'disabled'| 'type'>
+type LabelProps = Pick<ButtonBaseProps, 'iconName' | 'iconPosition' | 'theme' | 'disabled'| 'type'>
 
-const getButtonStylesByType = ({ disabled, theme, type = 'contained' }: Omit<SurfaceProps, 'size'>) => {
-  const styles = {
-    contained: {
-      background: disabled ? getColorLowEmphasis(theme) : getColorPrimary(theme),
-    },
-    outlined: {
-      borderColor: disabled ? getColorMediumEmphasis(theme) : getColorPrimary(theme),
-      borderWidth: 1,
-    },
-  };
-
-  return styles[type];
-};
+const getButtonStylesByType = ({ disabled, theme, type = 'contained' }: Omit<SurfaceProps, 'size'>) => ({
+  background: disabled ? theme.button[type].color.disable.background : theme.button[type].color.enable.background,
+  borderColor: disabled ? theme.button[type].color.disable.border : theme.button[type].color.enable.border,
+  borderWidth: type === 'outlined' ? 1 : 0,
+});
 
 export const getButtonStylesBySize = ({ size, theme }: Pick<SurfaceProps, 'size' | 'theme'>) => {
   const buttonSizes = {
@@ -87,7 +75,7 @@ export const Surface = styled.View<SurfaceProps>(({
   ...getButtonStylesByType({ disabled, theme, type }),
   alignContent: 'center',
   alignItems: 'center',
-  borderRadius: getRadiusBySize(theme, 'medium'),
+  borderRadius: theme.button.borderRadius,
   justifyContent: 'center',
 }));
 
@@ -110,12 +98,13 @@ export const Label = styled.View<Pick<LabelProps, 'iconPosition'>>(({ iconPositi
 ));
 
 export const LabelText = styled.Text<LabelProps>(({
-  iconName, iconPosition, textColor, theme,
+  iconName, iconPosition, type = 'contained', theme, disabled = false,
 }) => ({
   ...iconMargin({ iconName, iconPosition, theme }),
-  color: getColorByName(theme, textColor),
-  fontSize: 14,
-  fontWeight: 500,
-  letterSpacing: 1.23,
+  color: disabled ? theme.button[type].color.disable.label : theme.button[type].color.enable.label,
+  fontFamily: theme.button.label.primary.fontFamily,
+  fontSize: theme.button.label.fontSize,
+  fontWeight: theme.button.label.primary.fontWeight,
+  letterSpacing: theme.button.label.letterSpacing,
   lineHeight: 19,
 }));

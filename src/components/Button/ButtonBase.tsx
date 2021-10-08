@@ -27,7 +27,7 @@ const ButtonComponent = ({
       disabled={disabled}
       hideOverflow={true}
       onPress={disabled ? () => { } : onPress}
-      style={{ borderRadius: getRadiusBySize(theme, 'medium') }}
+      style={{ borderRadius: theme.button.borderRadius }}
     >
       <Surface
         accessibilityHint={accessibilityHint}
@@ -44,7 +44,7 @@ const ButtonComponent = ({
             iconName={iconName}
             iconPosition={iconPosition}
             testID="button-label"
-            textColor={textColor}
+            type={type}
           >
             {text.toUpperCase()}
           </LabelText>
