@@ -6,7 +6,6 @@ import {
 } from './Button.styles';
 import { TouchableRipple } from '../TouchableRipple/TouchableRipple';
 import { ButtonBaseProps } from './Button.types';
-import { getRadiusBySize } from '../../common/themeSelectors';
 
 const ButtonComponent = ({
   accessibilityHint,
