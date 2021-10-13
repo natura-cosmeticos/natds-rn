@@ -17,10 +17,15 @@ const ButtonComponent = ({
   size = 'medium',
   testID = 'button-base',
   text,
-  textColor,
   theme,
   type = 'contained',
-}: ButtonBaseProps) => (
+  textLabelStyle,
+}: ButtonBaseProps) => {
+  const iconColor = disabled
+    ? theme.button[type].color.disable.label
+    : theme.button[type].color.enable.label;
+
+  return (
     <TouchableRipple
       color="highlight"
       disabled={disabled}
@@ -44,19 +49,22 @@ const ButtonComponent = ({
             iconPosition={iconPosition}
             testID="button-label"
             type={type}
+            disabled={disabled}
+            style={textLabelStyle}
           >
             {text.toUpperCase()}
           </LabelText>
           {iconName
             && <Icon
               accessibilityRole="imagebutton"
-              color={textColor}
+              style={{ color: iconColor }}
               name={iconName}
               size="small" />
           }
         </Label>
       </Surface>
     </TouchableRipple>
-);
+  );
+};
 
 export const ButtonBase = withTheme(ButtonComponent);

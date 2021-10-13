@@ -53,6 +53,7 @@ exports[`Button component Disabled variants should render disabled button compon
       }
     >
       <Text
+        disabled={true}
         iconPosition="right"
         style={
           Array [
@@ -63,6 +64,8 @@ exports[`Button component Disabled variants should render disabled button compon
               "fontWeight": "400",
               "letterSpacing": 1.23,
               "lineHeight": 19,
+              "marginEnd": 0,
+              "marginStart": 0,
             },
           ]
         }
@@ -129,16 +132,19 @@ exports[`Button component Disabled variants should render disabled button compon
       }
     >
       <Text
+        disabled={true}
         iconPosition="right"
         style={
           Array [
             Object {
-              "color": "#333333",
+              "color": "#777777",
               "fontFamily": "Roboto",
               "fontSize": 14,
               "fontWeight": "400",
               "letterSpacing": 1.23,
               "lineHeight": 19,
+              "marginEnd": 0,
+              "marginStart": 0,
             },
           ]
         }
@@ -205,16 +211,19 @@ exports[`Button component Disabled variants should render disabled button compon
       }
     >
       <Text
+        disabled={true}
         iconPosition="right"
         style={
           Array [
             Object {
-              "color": "#333333",
+              "color": "#777777",
               "fontFamily": "Roboto",
               "fontSize": 14,
               "fontWeight": "400",
               "letterSpacing": 1.23,
               "lineHeight": 19,
+              "marginEnd": 0,
+              "marginStart": 0,
             },
           ]
         }
@@ -283,6 +292,7 @@ exports[`Button component Variants should render button component contained 1`] 
       }
     >
       <Text
+        disabled={false}
         iconPosition="right"
         style={
           Array [
@@ -293,6 +303,8 @@ exports[`Button component Variants should render button component contained 1`] 
               "fontWeight": "400",
               "letterSpacing": 1.23,
               "lineHeight": 19,
+              "marginEnd": 0,
+              "marginStart": 0,
             },
           ]
         }
@@ -359,6 +371,7 @@ exports[`Button component Variants should render button component outlined 1`] =
       }
     >
       <Text
+        disabled={false}
         iconPosition="right"
         style={
           Array [
@@ -369,6 +382,8 @@ exports[`Button component Variants should render button component outlined 1`] =
               "fontWeight": "400",
               "letterSpacing": 1.23,
               "lineHeight": 19,
+              "marginEnd": 0,
+              "marginStart": 0,
             },
           ]
         }
@@ -435,6 +450,7 @@ exports[`Button component Variants should render button component text 1`] = `
       }
     >
       <Text
+        disabled={false}
         iconPosition="right"
         style={
           Array [
@@ -445,6 +461,8 @@ exports[`Button component Variants should render button component text 1`] = `
               "fontWeight": "400",
               "letterSpacing": 1.23,
               "lineHeight": 19,
+              "marginEnd": 0,
+              "marginStart": 0,
             },
           ]
         }
@@ -513,6 +531,7 @@ exports[`Button component with Icon should render the icon to the left 1`] = `
       }
     >
       <Text
+        disabled={false}
         iconName="outlined-default-mockup"
         iconPosition="left"
         style={
@@ -524,6 +543,7 @@ exports[`Button component with Icon should render the icon to the left 1`] = `
               "fontWeight": "400",
               "letterSpacing": 1.23,
               "lineHeight": 19,
+              "marginEnd": 0,
               "marginStart": 8,
             },
           ]
@@ -535,9 +555,13 @@ exports[`Button component with Icon should render the icon to the left 1`] = `
       </Text>
       <Text
         accessibilityRole="imagebutton"
-        color="onPrimary"
         name="outlined-default-mockup"
         size="small"
+        style={
+          Object {
+            "color": "#333333",
+          }
+        }
       >
         outlined-default-mockup
       </Text>
@@ -601,6 +625,7 @@ exports[`Button component with Icon should render the icon to the right by defau
       }
     >
       <Text
+        disabled={false}
         iconName="outlined-default-mockup"
         iconPosition="right"
         style={
@@ -613,6 +638,7 @@ exports[`Button component with Icon should render the icon to the right by defau
               "letterSpacing": 1.23,
               "lineHeight": 19,
               "marginEnd": 8,
+              "marginStart": 0,
             },
           ]
         }
@@ -623,9 +649,13 @@ exports[`Button component with Icon should render the icon to the right by defau
       </Text>
       <Text
         accessibilityRole="imagebutton"
-        color="onPrimary"
         name="outlined-default-mockup"
         size="small"
+        style={
+          Object {
+            "color": "#333333",
+          }
+        }
       >
         outlined-default-mockup
       </Text>

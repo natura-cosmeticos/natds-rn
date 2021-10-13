@@ -1,8 +1,6 @@
-/* eslint-disable max-lines */
 import React from 'react';
 import { ButtonBase } from './ButtonBase';
 import { ButtonProps } from './Button.types';
-import { getButtonTextColor } from './Button.styles';
 
 export const Button = ({
   accessibilityHint,
@@ -26,7 +24,6 @@ export const Button = ({
     size={size}
     testID={testID}
     text={text}
-    textColor={getButtonTextColor({ disabled, type })}
     type={type}
   />
 );

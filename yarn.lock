@@ -1661,6 +1661,16 @@
   resolved "https://registry.npmjs.org/@naturacosmeticos/natds-icons/-/natds-icons-1.3.0.tgz"
   integrity sha512-vy1VW+1jFwrQAT19/PvnXSr7Wh/NthcrtY4BWZ+I1Tt+wSqrteSprP5pFBgPdGf8Jy64N9KVhtE9wnmX9byP6g==
 
+"@naturacosmeticos/natds-rn@7.6.1":
+  version "7.6.1"
+  resolved "https://registry.yarnpkg.com/@naturacosmeticos/natds-rn/-/natds-rn-7.6.1.tgz#9893e95051565ce24335ec8d6ac8a9f11ceb228e"
+  integrity sha512-lBrEJOKgLeYw5rZ75lUwJUV6gNohJ2f8lPa3Hh/Xse9m5dLKESGrd65hspgS+EcjhFAze0CD151UvGUD/3eGvA==
+  dependencies:
+    "@naturacosmeticos/natds-icons" "^1.3.0"
+    "@naturacosmeticos/natds-themes" "^0.12.0"
+    react-native-gesture-handler "^1.10.3"
+    react-native-svg "^12.1.1"
+
 "@naturacosmeticos/natds-themes@^0.12.0":
   version "0.12.0"
   resolved "https://registry.yarnpkg.com/@naturacosmeticos/natds-themes/-/natds-themes-0.12.0.tgz#b571b89fda6979a6ac37ea98a569c7e5cc1a52fd"

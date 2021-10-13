@@ -73,16 +73,19 @@ exports[`Counter should render with default props 1`] = `
           }
         >
           <Text
+            disabled={true}
             iconPosition="right"
             style={
               Array [
                 Object {
-                  "color": "#333333",
+                  "color": "#777777",
                   "fontFamily": "Roboto",
                   "fontSize": 14,
                   "fontWeight": "400",
                   "letterSpacing": 1.23,
                   "lineHeight": 19,
+                  "marginEnd": 0,
+                  "marginStart": 0,
                 },
               ]
             }
@@ -171,6 +174,7 @@ exports[`Counter should render with default props 1`] = `
           }
         >
           <Text
+            disabled={false}
             iconPosition="right"
             style={
               Array [
@@ -181,6 +185,8 @@ exports[`Counter should render with default props 1`] = `
                   "fontWeight": "400",
                   "letterSpacing": 1.23,
                   "lineHeight": 19,
+                  "marginEnd": 0,
+                  "marginStart": 0,
                 },
               ]
             }
