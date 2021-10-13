@@ -19,6 +19,49 @@ exports[`Tab component Should render tab component without passing any type prop
   testID="tab"
   theme={
     Object {
+      "alert": Object {
+        "content": Object {
+          "fallback": Object {
+            "fontFamily": "Arial",
+            "fontWeight": 400,
+          },
+          "fontSize": 16,
+          "letterSpacing": 0.51,
+          "lineHeight": 1.5,
+          "primary": Object {
+            "fontFamily": "Roboto",
+            "fontWeight": 400,
+          },
+        },
+        "title": Object {
+          "fallback": Object {
+            "fontFamily": "Arial",
+            "fontWeight": 400,
+          },
+          "fontSize": 20,
+          "letterSpacing": 0.24,
+          "lineHeight": 1.5,
+          "primary": Object {
+            "fontFamily": "Roboto",
+            "fontWeight": 500,
+          },
+        },
+      },
+      "appBarTop": Object {
+        "title": Object {
+          "fallback": Object {
+            "fontFamily": "Arial",
+            "fontWeight": 400,
+          },
+          "fontSize": 20,
+          "letterSpacing": 0.24,
+          "lineHeight": 1.25,
+          "primary": Object {
+            "fontFamily": "Roboto",
+            "fontWeight": 500,
+          },
+        },
+      },
       "asset": Object {
         "brand": Object {
           "custom": Object {
@@ -67,6 +110,41 @@ exports[`Tab component Should render tab component without passing any type prop
             "display": "HelveticaNowDisplay-Bd",
             "headline": "HelveticaNowDisplay-Md",
           },
+        },
+      },
+      "avatar": Object {
+        "fallback": Object {
+          "fontFamily": "Arial",
+          "fontWeight": 400,
+        },
+        "largeXXX": Object {
+          "fontSize": 48,
+          "letterSpacing": 0,
+          "lineHeight": 1.5,
+        },
+        "medium": Object {
+          "fontSize": 24,
+          "letterSpacing": 0,
+          "lineHeight": 1.5,
+        },
+        "primary": Object {
+          "fontFamily": "Roboto",
+          "fontWeight": 400,
+        },
+        "semi": Object {
+          "fontSize": 14,
+          "letterSpacing": 0.22,
+          "lineHeight": 1.5,
+        },
+        "semiX": Object {
+          "fontSize": 20,
+          "letterSpacing": 0.24,
+          "lineHeight": 1.5,
+        },
+        "standard": Object {
+          "fontSize": 12,
+          "letterSpacing": 0,
+          "lineHeight": 1.5,
         },
       },
       "badge": Object {
@@ -155,14 +233,14 @@ exports[`Tab component Should render tab component without passing any type prop
         "label": Object {
           "fallback": Object {
             "fontFamily": "Arial",
-            "fontWeight": 400,
+            "fontWeight": 500,
           },
           "fontSize": 14,
           "letterSpacing": 1.23,
           "lineHeight": 1.5,
           "primary": Object {
             "fontFamily": "Roboto",
-            "fontWeight": 400,
+            "fontWeight": 500,
           },
         },
         "outlined": Object {
@@ -230,7 +308,7 @@ exports[`Tab component Should render tab component without passing any type prop
           "lineHeight": 1.5,
           "primary": Object {
             "fontFamily": "Roboto",
-            "fontWeight": 500,
+            "fontWeight": 400,
           },
         },
       },
@@ -277,6 +355,34 @@ exports[`Tab component Should render tab component without passing any type prop
         "success": "#569a32",
         "surface": "#ffffff",
         "warning": "#fcc433",
+      },
+      "counter": Object {
+        "content": Object {
+          "fallback": Object {
+            "fontFamily": "Arial",
+            "fontWeight": 400,
+          },
+          "fontSize": 16,
+          "letterSpacing": 0.51,
+          "lineHeight": 1.25,
+          "primary": Object {
+            "fontFamily": "Roboto",
+            "fontWeight": 400,
+          },
+        },
+        "label": Object {
+          "fallback": Object {
+            "fontFamily": "Arial",
+            "fontWeight": 400,
+          },
+          "fontSize": 14,
+          "letterSpacing": 0.11,
+          "lineHeight": 1.25,
+          "primary": Object {
+            "fontFamily": "Roboto",
+            "fontWeight": 500,
+          },
+        },
       },
       "dialog": Object {
         "body": Object {
@@ -396,6 +502,21 @@ exports[`Tab component Should render tab component without passing any type prop
           "shadowRadius": 2,
         },
       },
+      "expansionPanel": Object {
+        "title": Object {
+          "fallback": Object {
+            "fontFamily": "Arial",
+            "fontWeight": 400,
+          },
+          "fontSize": 16,
+          "letterSpacing": 0.13,
+          "lineHeight": 1.5,
+          "primary": Object {
+            "fontFamily": "Roboto",
+            "fontWeight": 400,
+          },
+        },
+      },
       "heading1": Object {
         "fontSize": 96,
         "fontWeight": 400,
@@ -425,6 +546,64 @@ exports[`Tab component Should render tab component without passing any type prop
         "fontSize": 20,
         "fontWeight": 500,
         "letterSpacing": 0.24,
+      },
+      "navigationDrawer": Object {
+        "header": Object {
+          "subtitle": Object {
+            "fallback": Object {
+              "fontFamily": "Arial",
+              "fontWeight": 400,
+            },
+            "fontSize": 14,
+            "letterSpacing": 0.22,
+            "lineHeight": 1.5,
+            "primary": Object {
+              "fontFamily": "Roboto",
+              "fontWeight": 400,
+            },
+          },
+          "title": Object {
+            "fallback": Object {
+              "fontFamily": "Arial",
+              "fontWeight": 400,
+            },
+            "fontSize": 20,
+            "letterSpacing": 0.24,
+            "lineHeight": 1.25,
+            "primary": Object {
+              "fontFamily": "Roboto",
+              "fontWeight": 500,
+            },
+          },
+        },
+        "section": Object {
+          "item": Object {
+            "fallback": Object {
+              "fontFamily": "Arial",
+              "fontWeight": 400,
+            },
+            "fontSize": 14,
+            "letterSpacing": 0.22,
+            "lineHeight": 1.5,
+            "primary": Object {
+              "fontFamily": "Roboto",
+              "fontWeight": 400,
+            },
+          },
+          "title": Object {
+            "fallback": Object {
+              "fontFamily": "Arial",
+              "fontWeight": 400,
+            },
+            "fontSize": 12,
+            "letterSpacing": 0.38,
+            "lineHeight": 1.5,
+            "primary": Object {
+              "fontFamily": "Roboto",
+              "fontWeight": 400,
+            },
+          },
+        },
       },
       "opacity": Object {
         "disabled": 0.32,
@@ -456,7 +635,54 @@ exports[`Tab component Should render tab component without passing any type prop
           "lineHeight": 1.5,
           "primary": Object {
             "fontFamily": "Roboto",
-            "fontWeight": 500,
+            "fontWeight": 400,
+          },
+        },
+      },
+      "rating": Object {
+        "counter": Object {
+          "label": Object {
+            "fallback": Object {
+              "fontFamily": "Arial",
+              "fontWeight": 400,
+            },
+            "fontSize": 14,
+            "letterSpacing": 0.22,
+            "lineHeight": 1.5,
+            "primary": Object {
+              "fontFamily": "Roboto",
+              "fontWeight": 400,
+            },
+          },
+        },
+        "input": Object {
+          "label": Object {
+            "fallback": Object {
+              "fontFamily": "Arial",
+              "fontWeight": 400,
+            },
+            "fontSize": 12,
+            "letterSpacing": 0.38,
+            "lineHeight": 1.5,
+            "primary": Object {
+              "fontFamily": "Roboto",
+              "fontWeight": 400,
+            },
+          },
+        },
+      },
+      "shortcut": Object {
+        "label": Object {
+          "fallback": Object {
+            "fontFamily": "Arial",
+            "fontWeight": 400,
+          },
+          "fontSize": 12,
+          "letterSpacing": 0.38,
+          "lineHeight": 1.5,
+          "primary": Object {
+            "fontFamily": "Roboto",
+            "fontWeight": 400,
           },
         },
       },
@@ -480,6 +706,21 @@ exports[`Tab component Should render tab component without passing any type prop
         "tiny": 8,
         "veryHuge": 256,
       },
+      "snackbar": Object {
+        "content": Object {
+          "fallback": Object {
+            "fontFamily": "Arial",
+            "fontWeight": 400,
+          },
+          "fontSize": 14,
+          "letterSpacing": 0.22,
+          "lineHeight": 1.5,
+          "primary": Object {
+            "fontFamily": "Roboto",
+            "fontWeight": 400,
+          },
+        },
+      },
       "spacing": Object {
         "large": 48,
         "micro": 4,
@@ -500,6 +741,21 @@ exports[`Tab component Should render tab component without passing any type prop
         "fontWeight": 500,
         "letterSpacing": 0.11,
       },
+      "tab": Object {
+        "label": Object {
+          "fallback": Object {
+            "fontFamily": "Arial",
+            "fontWeight": 400,
+          },
+          "fontSize": 14,
+          "letterSpacing": 1.23,
+          "lineHeight": 1.5,
+          "primary": Object {
+            "fontFamily": "Roboto",
+            "fontWeight": 500,
+          },
+        },
+      },
       "tag": Object {
         "label": Object {
           "fallback": Object {
@@ -517,27 +773,43 @@ exports[`Tab component Should render tab component without passing any type prop
       },
       "textField": Object {
         "content": Object {
+          "fallback": Object {
+            "fontFamily": "Arial",
+            "fontWeight": 400,
+          },
           "fontSize": 16,
           "letterSpacing": 0.51,
           "lineHeight": 1.25,
-        },
-        "fallback": Object {
-          "fontFamily": "Arial",
-          "fontWeight": 400,
+          "primary": Object {
+            "fontFamily": "Roboto",
+            "fontWeight": 400,
+          },
         },
         "helperText": Object {
+          "fallback": Object {
+            "fontFamily": "Arial",
+            "fontWeight": 400,
+          },
           "fontSize": 12,
           "letterSpacing": 0.38,
           "lineHeight": 1.25,
+          "primary": Object {
+            "fontFamily": "Roboto",
+            "fontWeight": 400,
+          },
         },
         "label": Object {
+          "fallback": Object {
+            "fontFamily": "Arial",
+            "fontWeight": 400,
+          },
           "fontSize": 14,
           "letterSpacing": 0.11,
-          "lineHeight": 1.25,
-        },
-        "primary": Object {
-          "fontFamily": "Roboto",
-          "fontWeight": 500,
+          "lineHeight": 1.5,
+          "primary": Object {
+            "fontFamily": "Roboto",
+            "fontWeight": 500,
+          },
         },
       },
       "typography": Object {
@@ -606,6 +878,49 @@ exports[`Tab component Should render tab component without passing any type prop
     testID="tab-item-0"
     theme={
       Object {
+        "alert": Object {
+          "content": Object {
+            "fallback": Object {
+              "fontFamily": "Arial",
+              "fontWeight": 400,
+            },
+            "fontSize": 16,
+            "letterSpacing": 0.51,
+            "lineHeight": 1.5,
+            "primary": Object {
+              "fontFamily": "Roboto",
+              "fontWeight": 400,
+            },
+          },
+          "title": Object {
+            "fallback": Object {
+              "fontFamily": "Arial",
+              "fontWeight": 400,
+            },
+            "fontSize": 20,
+            "letterSpacing": 0.24,
+            "lineHeight": 1.5,
+            "primary": Object {
+              "fontFamily": "Roboto",
+              "fontWeight": 500,
+            },
+          },
+        },
+        "appBarTop": Object {
+          "title": Object {
+            "fallback": Object {
+              "fontFamily": "Arial",
+              "fontWeight": 400,
+            },
+            "fontSize": 20,
+            "letterSpacing": 0.24,
+            "lineHeight": 1.25,
+            "primary": Object {
+              "fontFamily": "Roboto",
+              "fontWeight": 500,
+            },
+          },
+        },
         "asset": Object {
           "brand": Object {
             "custom": Object {
@@ -654,6 +969,41 @@ exports[`Tab component Should render tab component without passing any type prop
               "display": "HelveticaNowDisplay-Bd",
               "headline": "HelveticaNowDisplay-Md",
             },
+          },
+        },
+        "avatar": Object {
+          "fallback": Object {
+            "fontFamily": "Arial",
+            "fontWeight": 400,
+          },
+          "largeXXX": Object {
+            "fontSize": 48,
+            "letterSpacing": 0,
+            "lineHeight": 1.5,
+          },
+          "medium": Object {
+            "fontSize": 24,
+            "letterSpacing": 0,
+            "lineHeight": 1.5,
+          },
+          "primary": Object {
+            "fontFamily": "Roboto",
+            "fontWeight": 400,
+          },
+          "semi": Object {
+            "fontSize": 14,
+            "letterSpacing": 0.22,
+            "lineHeight": 1.5,
+          },
+          "semiX": Object {
+            "fontSize": 20,
+            "letterSpacing": 0.24,
+            "lineHeight": 1.5,
+          },
+          "standard": Object {
+            "fontSize": 12,
+            "letterSpacing": 0,
+            "lineHeight": 1.5,
           },
         },
         "badge": Object {
@@ -742,14 +1092,14 @@ exports[`Tab component Should render tab component without passing any type prop
           "label": Object {
             "fallback": Object {
               "fontFamily": "Arial",
-              "fontWeight": 400,
+              "fontWeight": 500,
             },
             "fontSize": 14,
             "letterSpacing": 1.23,
             "lineHeight": 1.5,
             "primary": Object {
               "fontFamily": "Roboto",
-              "fontWeight": 400,
+              "fontWeight": 500,
             },
           },
           "outlined": Object {
@@ -817,7 +1167,7 @@ exports[`Tab component Should render tab component without passing any type prop
             "lineHeight": 1.5,
             "primary": Object {
               "fontFamily": "Roboto",
-              "fontWeight": 500,
+              "fontWeight": 400,
             },
           },
         },
@@ -864,6 +1214,34 @@ exports[`Tab component Should render tab component without passing any type prop
           "success": "#569a32",
           "surface": "#ffffff",
           "warning": "#fcc433",
+        },
+        "counter": Object {
+          "content": Object {
+            "fallback": Object {
+              "fontFamily": "Arial",
+              "fontWeight": 400,
+            },
+            "fontSize": 16,
+            "letterSpacing": 0.51,
+            "lineHeight": 1.25,
+            "primary": Object {
+              "fontFamily": "Roboto",
+              "fontWeight": 400,
+            },
+          },
+          "label": Object {
+            "fallback": Object {
+              "fontFamily": "Arial",
+              "fontWeight": 400,
+            },
+            "fontSize": 14,
+            "letterSpacing": 0.11,
+            "lineHeight": 1.25,
+            "primary": Object {
+              "fontFamily": "Roboto",
+              "fontWeight": 500,
+            },
+          },
         },
         "dialog": Object {
           "body": Object {
@@ -983,6 +1361,21 @@ exports[`Tab component Should render tab component without passing any type prop
             "shadowRadius": 2,
           },
         },
+        "expansionPanel": Object {
+          "title": Object {
+            "fallback": Object {
+              "fontFamily": "Arial",
+              "fontWeight": 400,
+            },
+            "fontSize": 16,
+            "letterSpacing": 0.13,
+            "lineHeight": 1.5,
+            "primary": Object {
+              "fontFamily": "Roboto",
+              "fontWeight": 400,
+            },
+          },
+        },
         "heading1": Object {
           "fontSize": 96,
           "fontWeight": 400,
@@ -1012,6 +1405,64 @@ exports[`Tab component Should render tab component without passing any type prop
           "fontSize": 20,
           "fontWeight": 500,
           "letterSpacing": 0.24,
+        },
+        "navigationDrawer": Object {
+          "header": Object {
+            "subtitle": Object {
+              "fallback": Object {
+                "fontFamily": "Arial",
+                "fontWeight": 400,
+              },
+              "fontSize": 14,
+              "letterSpacing": 0.22,
+              "lineHeight": 1.5,
+              "primary": Object {
+                "fontFamily": "Roboto",
+                "fontWeight": 400,
+              },
+            },
+            "title": Object {
+              "fallback": Object {
+                "fontFamily": "Arial",
+                "fontWeight": 400,
+              },
+              "fontSize": 20,
+              "letterSpacing": 0.24,
+              "lineHeight": 1.25,
+              "primary": Object {
+                "fontFamily": "Roboto",
+                "fontWeight": 500,
+              },
+            },
+          },
+          "section": Object {
+            "item": Object {
+              "fallback": Object {
+                "fontFamily": "Arial",
+                "fontWeight": 400,
+              },
+              "fontSize": 14,
+              "letterSpacing": 0.22,
+              "lineHeight": 1.5,
+              "primary": Object {
+                "fontFamily": "Roboto",
+                "fontWeight": 400,
+              },
+            },
+            "title": Object {
+              "fallback": Object {
+                "fontFamily": "Arial",
+                "fontWeight": 400,
+              },
+              "fontSize": 12,
+              "letterSpacing": 0.38,
+              "lineHeight": 1.5,
+              "primary": Object {
+                "fontFamily": "Roboto",
+                "fontWeight": 400,
+              },
+            },
+          },
         },
         "opacity": Object {
           "disabled": 0.32,
@@ -1043,7 +1494,54 @@ exports[`Tab component Should render tab component without passing any type prop
             "lineHeight": 1.5,
             "primary": Object {
               "fontFamily": "Roboto",
-              "fontWeight": 500,
+              "fontWeight": 400,
+            },
+          },
+        },
+        "rating": Object {
+          "counter": Object {
+            "label": Object {
+              "fallback": Object {
+                "fontFamily": "Arial",
+                "fontWeight": 400,
+              },
+              "fontSize": 14,
+              "letterSpacing": 0.22,
+              "lineHeight": 1.5,
+              "primary": Object {
+                "fontFamily": "Roboto",
+                "fontWeight": 400,
+              },
+            },
+          },
+          "input": Object {
+            "label": Object {
+              "fallback": Object {
+                "fontFamily": "Arial",
+                "fontWeight": 400,
+              },
+              "fontSize": 12,
+              "letterSpacing": 0.38,
+              "lineHeight": 1.5,
+              "primary": Object {
+                "fontFamily": "Roboto",
+                "fontWeight": 400,
+              },
+            },
+          },
+        },
+        "shortcut": Object {
+          "label": Object {
+            "fallback": Object {
+              "fontFamily": "Arial",
+              "fontWeight": 400,
+            },
+            "fontSize": 12,
+            "letterSpacing": 0.38,
+            "lineHeight": 1.5,
+            "primary": Object {
+              "fontFamily": "Roboto",
+              "fontWeight": 400,
             },
           },
         },
@@ -1067,6 +1565,21 @@ exports[`Tab component Should render tab component without passing any type prop
           "tiny": 8,
           "veryHuge": 256,
         },
+        "snackbar": Object {
+          "content": Object {
+            "fallback": Object {
+              "fontFamily": "Arial",
+              "fontWeight": 400,
+            },
+            "fontSize": 14,
+            "letterSpacing": 0.22,
+            "lineHeight": 1.5,
+            "primary": Object {
+              "fontFamily": "Roboto",
+              "fontWeight": 400,
+            },
+          },
+        },
         "spacing": Object {
           "large": 48,
           "micro": 4,
@@ -1087,6 +1600,21 @@ exports[`Tab component Should render tab component without passing any type prop
           "fontWeight": 500,
           "letterSpacing": 0.11,
         },
+        "tab": Object {
+          "label": Object {
+            "fallback": Object {
+              "fontFamily": "Arial",
+              "fontWeight": 400,
+            },
+            "fontSize": 14,
+            "letterSpacing": 1.23,
+            "lineHeight": 1.5,
+            "primary": Object {
+              "fontFamily": "Roboto",
+              "fontWeight": 500,
+            },
+          },
+        },
         "tag": Object {
           "label": Object {
             "fallback": Object {
@@ -1104,27 +1632,43 @@ exports[`Tab component Should render tab component without passing any type prop
         },
         "textField": Object {
           "content": Object {
+            "fallback": Object {
+              "fontFamily": "Arial",
+              "fontWeight": 400,
+            },
             "fontSize": 16,
             "letterSpacing": 0.51,
             "lineHeight": 1.25,
-          },
-          "fallback": Object {
-            "fontFamily": "Arial",
-            "fontWeight": 400,
+            "primary": Object {
+              "fontFamily": "Roboto",
+              "fontWeight": 400,
+            },
           },
           "helperText": Object {
+            "fallback": Object {
+              "fontFamily": "Arial",
+              "fontWeight": 400,
+            },
             "fontSize": 12,
             "letterSpacing": 0.38,
             "lineHeight": 1.25,
+            "primary": Object {
+              "fontFamily": "Roboto",
+              "fontWeight": 400,
+            },
           },
           "label": Object {
+            "fallback": Object {
+              "fontFamily": "Arial",
+              "fontWeight": 400,
+            },
             "fontSize": 14,
             "letterSpacing": 0.11,
-            "lineHeight": 1.25,
-          },
-          "primary": Object {
-            "fontFamily": "Roboto",
-            "fontWeight": 500,
+            "lineHeight": 1.5,
+            "primary": Object {
+              "fontFamily": "Roboto",
+              "fontWeight": 500,
+            },
           },
         },
         "typography": Object {
@@ -1186,6 +1730,49 @@ exports[`Tab component Should render tab component without passing any type prop
       }
       theme={
         Object {
+          "alert": Object {
+            "content": Object {
+              "fallback": Object {
+                "fontFamily": "Arial",
+                "fontWeight": 400,
+              },
+              "fontSize": 16,
+              "letterSpacing": 0.51,
+              "lineHeight": 1.5,
+              "primary": Object {
+                "fontFamily": "Roboto",
+                "fontWeight": 400,
+              },
+            },
+            "title": Object {
+              "fallback": Object {
+                "fontFamily": "Arial",
+                "fontWeight": 400,
+              },
+              "fontSize": 20,
+              "letterSpacing": 0.24,
+              "lineHeight": 1.5,
+              "primary": Object {
+                "fontFamily": "Roboto",
+                "fontWeight": 500,
+              },
+            },
+          },
+          "appBarTop": Object {
+            "title": Object {
+              "fallback": Object {
+                "fontFamily": "Arial",
+                "fontWeight": 400,
+              },
+              "fontSize": 20,
+              "letterSpacing": 0.24,
+              "lineHeight": 1.25,
+              "primary": Object {
+                "fontFamily": "Roboto",
+                "fontWeight": 500,
+              },
+            },
+          },
           "asset": Object {
             "brand": Object {
               "custom": Object {
@@ -1234,6 +1821,41 @@ exports[`Tab component Should render tab component without passing any type prop
                 "display": "HelveticaNowDisplay-Bd",
                 "headline": "HelveticaNowDisplay-Md",
               },
+            },
+          },
+          "avatar": Object {
+            "fallback": Object {
+              "fontFamily": "Arial",
+              "fontWeight": 400,
+            },
+            "largeXXX": Object {
+              "fontSize": 48,
+              "letterSpacing": 0,
+              "lineHeight": 1.5,
+            },
+            "medium": Object {
+              "fontSize": 24,
+              "letterSpacing": 0,
+              "lineHeight": 1.5,
+            },
+            "primary": Object {
+              "fontFamily": "Roboto",
+              "fontWeight": 400,
+            },
+            "semi": Object {
+              "fontSize": 14,
+              "letterSpacing": 0.22,
+              "lineHeight": 1.5,
+            },
+            "semiX": Object {
+              "fontSize": 20,
+              "letterSpacing": 0.24,
+              "lineHeight": 1.5,
+            },
+            "standard": Object {
+              "fontSize": 12,
+              "letterSpacing": 0,
+              "lineHeight": 1.5,
             },
           },
           "badge": Object {
@@ -1322,14 +1944,14 @@ exports[`Tab component Should render tab component without passing any type prop
             "label": Object {
               "fallback": Object {
                 "fontFamily": "Arial",
-                "fontWeight": 400,
+                "fontWeight": 500,
               },
               "fontSize": 14,
               "letterSpacing": 1.23,
               "lineHeight": 1.5,
               "primary": Object {
                 "fontFamily": "Roboto",
-                "fontWeight": 400,
+                "fontWeight": 500,
               },
             },
             "outlined": Object {
@@ -1397,7 +2019,7 @@ exports[`Tab component Should render tab component without passing any type prop
               "lineHeight": 1.5,
               "primary": Object {
                 "fontFamily": "Roboto",
-                "fontWeight": 500,
+                "fontWeight": 400,
               },
             },
           },
@@ -1444,6 +2066,34 @@ exports[`Tab component Should render tab component without passing any type prop
             "success": "#569a32",
             "surface": "#ffffff",
             "warning": "#fcc433",
+          },
+          "counter": Object {
+            "content": Object {
+              "fallback": Object {
+                "fontFamily": "Arial",
+                "fontWeight": 400,
+              },
+              "fontSize": 16,
+              "letterSpacing": 0.51,
+              "lineHeight": 1.25,
+              "primary": Object {
+                "fontFamily": "Roboto",
+                "fontWeight": 400,
+              },
+            },
+            "label": Object {
+              "fallback": Object {
+                "fontFamily": "Arial",
+                "fontWeight": 400,
+              },
+              "fontSize": 14,
+              "letterSpacing": 0.11,
+              "lineHeight": 1.25,
+              "primary": Object {
+                "fontFamily": "Roboto",
+                "fontWeight": 500,
+              },
+            },
           },
           "dialog": Object {
             "body": Object {
@@ -1563,6 +2213,21 @@ exports[`Tab component Should render tab component without passing any type prop
               "shadowRadius": 2,
             },
           },
+          "expansionPanel": Object {
+            "title": Object {
+              "fallback": Object {
+                "fontFamily": "Arial",
+                "fontWeight": 400,
+              },
+              "fontSize": 16,
+              "letterSpacing": 0.13,
+              "lineHeight": 1.5,
+              "primary": Object {
+                "fontFamily": "Roboto",
+                "fontWeight": 400,
+              },
+            },
+          },
           "heading1": Object {
             "fontSize": 96,
             "fontWeight": 400,
@@ -1592,6 +2257,64 @@ exports[`Tab component Should render tab component without passing any type prop
             "fontSize": 20,
             "fontWeight": 500,
             "letterSpacing": 0.24,
+          },
+          "navigationDrawer": Object {
+            "header": Object {
+              "subtitle": Object {
+                "fallback": Object {
+                  "fontFamily": "Arial",
+                  "fontWeight": 400,
+                },
+                "fontSize": 14,
+                "letterSpacing": 0.22,
+                "lineHeight": 1.5,
+                "primary": Object {
+                  "fontFamily": "Roboto",
+                  "fontWeight": 400,
+                },
+              },
+              "title": Object {
+                "fallback": Object {
+                  "fontFamily": "Arial",
+                  "fontWeight": 400,
+                },
+                "fontSize": 20,
+                "letterSpacing": 0.24,
+                "lineHeight": 1.25,
+                "primary": Object {
+                  "fontFamily": "Roboto",
+                  "fontWeight": 500,
+                },
+              },
+            },
+            "section": Object {
+              "item": Object {
+                "fallback": Object {
+                  "fontFamily": "Arial",
+                  "fontWeight": 400,
+                },
+                "fontSize": 14,
+                "letterSpacing": 0.22,
+                "lineHeight": 1.5,
+                "primary": Object {
+                  "fontFamily": "Roboto",
+                  "fontWeight": 400,
+                },
+              },
+              "title": Object {
+                "fallback": Object {
+                  "fontFamily": "Arial",
+                  "fontWeight": 400,
+                },
+                "fontSize": 12,
+                "letterSpacing": 0.38,
+                "lineHeight": 1.5,
+                "primary": Object {
+                  "fontFamily": "Roboto",
+                  "fontWeight": 400,
+                },
+              },
+            },
           },
           "opacity": Object {
             "disabled": 0.32,
@@ -1623,7 +2346,54 @@ exports[`Tab component Should render tab component without passing any type prop
               "lineHeight": 1.5,
               "primary": Object {
                 "fontFamily": "Roboto",
-                "fontWeight": 500,
+                "fontWeight": 400,
+              },
+            },
+          },
+          "rating": Object {
+            "counter": Object {
+              "label": Object {
+                "fallback": Object {
+                  "fontFamily": "Arial",
+                  "fontWeight": 400,
+                },
+                "fontSize": 14,
+                "letterSpacing": 0.22,
+                "lineHeight": 1.5,
+                "primary": Object {
+                  "fontFamily": "Roboto",
+                  "fontWeight": 400,
+                },
+              },
+            },
+            "input": Object {
+              "label": Object {
+                "fallback": Object {
+                  "fontFamily": "Arial",
+                  "fontWeight": 400,
+                },
+                "fontSize": 12,
+                "letterSpacing": 0.38,
+                "lineHeight": 1.5,
+                "primary": Object {
+                  "fontFamily": "Roboto",
+                  "fontWeight": 400,
+                },
+              },
+            },
+          },
+          "shortcut": Object {
+            "label": Object {
+              "fallback": Object {
+                "fontFamily": "Arial",
+                "fontWeight": 400,
+              },
+              "fontSize": 12,
+              "letterSpacing": 0.38,
+              "lineHeight": 1.5,
+              "primary": Object {
+                "fontFamily": "Roboto",
+                "fontWeight": 400,
               },
             },
           },
@@ -1647,6 +2417,21 @@ exports[`Tab component Should render tab component without passing any type prop
             "tiny": 8,
             "veryHuge": 256,
           },
+          "snackbar": Object {
+            "content": Object {
+              "fallback": Object {
+                "fontFamily": "Arial",
+                "fontWeight": 400,
+              },
+              "fontSize": 14,
+              "letterSpacing": 0.22,
+              "lineHeight": 1.5,
+              "primary": Object {
+                "fontFamily": "Roboto",
+                "fontWeight": 400,
+              },
+            },
+          },
           "spacing": Object {
             "large": 48,
             "micro": 4,
@@ -1667,6 +2452,21 @@ exports[`Tab component Should render tab component without passing any type prop
             "fontWeight": 500,
             "letterSpacing": 0.11,
           },
+          "tab": Object {
+            "label": Object {
+              "fallback": Object {
+                "fontFamily": "Arial",
+                "fontWeight": 400,
+              },
+              "fontSize": 14,
+              "letterSpacing": 1.23,
+              "lineHeight": 1.5,
+              "primary": Object {
+                "fontFamily": "Roboto",
+                "fontWeight": 500,
+              },
+            },
+          },
           "tag": Object {
             "label": Object {
               "fallback": Object {
@@ -1684,27 +2484,43 @@ exports[`Tab component Should render tab component without passing any type prop
           },
           "textField": Object {
             "content": Object {
+              "fallback": Object {
+                "fontFamily": "Arial",
+                "fontWeight": 400,
+              },
               "fontSize": 16,
               "letterSpacing": 0.51,
               "lineHeight": 1.25,
-            },
-            "fallback": Object {
-              "fontFamily": "Arial",
-              "fontWeight": 400,
+              "primary": Object {
+                "fontFamily": "Roboto",
+                "fontWeight": 400,
+              },
             },
             "helperText": Object {
+              "fallback": Object {
+                "fontFamily": "Arial",
+                "fontWeight": 400,
+              },
               "fontSize": 12,
               "letterSpacing": 0.38,
               "lineHeight": 1.25,
+              "primary": Object {
+                "fontFamily": "Roboto",
+                "fontWeight": 400,
+              },
             },
             "label": Object {
+              "fallback": Object {
+                "fontFamily": "Arial",
+                "fontWeight": 400,
+              },
               "fontSize": 14,
               "letterSpacing": 0.11,
-              "lineHeight": 1.25,
-            },
-            "primary": Object {
-              "fontFamily": "Roboto",
-              "fontWeight": 500,
+              "lineHeight": 1.5,
+              "primary": Object {
+                "fontFamily": "Roboto",
+                "fontWeight": 500,
+              },
             },
           },
           "typography": Object {
@@ -1777,6 +2593,49 @@ exports[`Tab component Should render tab component without passing any type prop
     testID="tab-item-1"
     theme={
       Object {
+        "alert": Object {
+          "content": Object {
+            "fallback": Object {
+              "fontFamily": "Arial",
+              "fontWeight": 400,
+            },
+            "fontSize": 16,
+            "letterSpacing": 0.51,
+            "lineHeight": 1.5,
+            "primary": Object {
+              "fontFamily": "Roboto",
+              "fontWeight": 400,
+            },
+          },
+          "title": Object {
+            "fallback": Object {
+              "fontFamily": "Arial",
+              "fontWeight": 400,
+            },
+            "fontSize": 20,
+            "letterSpacing": 0.24,
+            "lineHeight": 1.5,
+            "primary": Object {
+              "fontFamily": "Roboto",
+              "fontWeight": 500,
+            },
+          },
+        },
+        "appBarTop": Object {
+          "title": Object {
+            "fallback": Object {
+              "fontFamily": "Arial",
+              "fontWeight": 400,
+            },
+            "fontSize": 20,
+            "letterSpacing": 0.24,
+            "lineHeight": 1.25,
+            "primary": Object {
+              "fontFamily": "Roboto",
+              "fontWeight": 500,
+            },
+          },
+        },
         "asset": Object {
           "brand": Object {
             "custom": Object {
@@ -1825,6 +2684,41 @@ exports[`Tab component Should render tab component without passing any type prop
               "display": "HelveticaNowDisplay-Bd",
               "headline": "HelveticaNowDisplay-Md",
             },
+          },
+        },
+        "avatar": Object {
+          "fallback": Object {
+            "fontFamily": "Arial",
+            "fontWeight": 400,
+          },
+          "largeXXX": Object {
+            "fontSize": 48,
+            "letterSpacing": 0,
+            "lineHeight": 1.5,
+          },
+          "medium": Object {
+            "fontSize": 24,
+            "letterSpacing": 0,
+            "lineHeight": 1.5,
+          },
+          "primary": Object {
+            "fontFamily": "Roboto",
+            "fontWeight": 400,
+          },
+          "semi": Object {
+            "fontSize": 14,
+            "letterSpacing": 0.22,
+            "lineHeight": 1.5,
+          },
+          "semiX": Object {
+            "fontSize": 20,
+            "letterSpacing": 0.24,
+            "lineHeight": 1.5,
+          },
+          "standard": Object {
+            "fontSize": 12,
+            "letterSpacing": 0,
+            "lineHeight": 1.5,
           },
         },
         "badge": Object {
@@ -1913,14 +2807,14 @@ exports[`Tab component Should render tab component without passing any type prop
           "label": Object {
             "fallback": Object {
               "fontFamily": "Arial",
-              "fontWeight": 400,
+              "fontWeight": 500,
             },
             "fontSize": 14,
             "letterSpacing": 1.23,
             "lineHeight": 1.5,
             "primary": Object {
               "fontFamily": "Roboto",
-              "fontWeight": 400,
+              "fontWeight": 500,
             },
           },
           "outlined": Object {
@@ -1988,7 +2882,7 @@ exports[`Tab component Should render tab component without passing any type prop
             "lineHeight": 1.5,
             "primary": Object {
               "fontFamily": "Roboto",
-              "fontWeight": 500,
+              "fontWeight": 400,
             },
           },
         },
@@ -2035,6 +2929,34 @@ exports[`Tab component Should render tab component without passing any type prop
           "success": "#569a32",
           "surface": "#ffffff",
           "warning": "#fcc433",
+        },
+        "counter": Object {
+          "content": Object {
+            "fallback": Object {
+              "fontFamily": "Arial",
+              "fontWeight": 400,
+            },
+            "fontSize": 16,
+            "letterSpacing": 0.51,
+            "lineHeight": 1.25,
+            "primary": Object {
+              "fontFamily": "Roboto",
+              "fontWeight": 400,
+            },
+          },
+          "label": Object {
+            "fallback": Object {
+              "fontFamily": "Arial",
+              "fontWeight": 400,
+            },
+            "fontSize": 14,
+            "letterSpacing": 0.11,
+            "lineHeight": 1.25,
+            "primary": Object {
+              "fontFamily": "Roboto",
+              "fontWeight": 500,
+            },
+          },
         },
         "dialog": Object {
           "body": Object {
@@ -2154,6 +3076,21 @@ exports[`Tab component Should render tab component without passing any type prop
             "shadowRadius": 2,
           },
         },
+        "expansionPanel": Object {
+          "title": Object {
+            "fallback": Object {
+              "fontFamily": "Arial",
+              "fontWeight": 400,
+            },
+            "fontSize": 16,
+            "letterSpacing": 0.13,
+            "lineHeight": 1.5,
+            "primary": Object {
+              "fontFamily": "Roboto",
+              "fontWeight": 400,
+            },
+          },
+        },
         "heading1": Object {
           "fontSize": 96,
           "fontWeight": 400,
@@ -2183,6 +3120,64 @@ exports[`Tab component Should render tab component without passing any type prop
           "fontSize": 20,
           "fontWeight": 500,
           "letterSpacing": 0.24,
+        },
+        "navigationDrawer": Object {
+          "header": Object {
+            "subtitle": Object {
+              "fallback": Object {
+                "fontFamily": "Arial",
+                "fontWeight": 400,
+              },
+              "fontSize": 14,
+              "letterSpacing": 0.22,
+              "lineHeight": 1.5,
+              "primary": Object {
+                "fontFamily": "Roboto",
+                "fontWeight": 400,
+              },
+            },
+            "title": Object {
+              "fallback": Object {
+                "fontFamily": "Arial",
+                "fontWeight": 400,
+              },
+              "fontSize": 20,
+              "letterSpacing": 0.24,
+              "lineHeight": 1.25,
+              "primary": Object {
+                "fontFamily": "Roboto",
+                "fontWeight": 500,
+              },
+            },
+          },
+          "section": Object {
+            "item": Object {
+              "fallback": Object {
+                "fontFamily": "Arial",
+                "fontWeight": 400,
+              },
+              "fontSize": 14,
+              "letterSpacing": 0.22,
+              "lineHeight": 1.5,
+              "primary": Object {
+                "fontFamily": "Roboto",
+                "fontWeight": 400,
+              },
+            },
+            "title": Object {
+              "fallback": Object {
+                "fontFamily": "Arial",
+                "fontWeight": 400,
+              },
+              "fontSize": 12,
+              "letterSpacing": 0.38,
+              "lineHeight": 1.5,
+              "primary": Object {
+                "fontFamily": "Roboto",
+                "fontWeight": 400,
+              },
+            },
+          },
         },
         "opacity": Object {
           "disabled": 0.32,
@@ -2214,7 +3209,54 @@ exports[`Tab component Should render tab component without passing any type prop
             "lineHeight": 1.5,
             "primary": Object {
               "fontFamily": "Roboto",
-              "fontWeight": 500,
+              "fontWeight": 400,
+            },
+          },
+        },
+        "rating": Object {
+          "counter": Object {
+            "label": Object {
+              "fallback": Object {
+                "fontFamily": "Arial",
+                "fontWeight": 400,
+              },
+              "fontSize": 14,
+              "letterSpacing": 0.22,
+              "lineHeight": 1.5,
+              "primary": Object {
+                "fontFamily": "Roboto",
+                "fontWeight": 400,
+              },
+            },
+          },
+          "input": Object {
+            "label": Object {
+              "fallback": Object {
+                "fontFamily": "Arial",
+                "fontWeight": 400,
+              },
+              "fontSize": 12,
+              "letterSpacing": 0.38,
+              "lineHeight": 1.5,
+              "primary": Object {
+                "fontFamily": "Roboto",
+                "fontWeight": 400,
+              },
+            },
+          },
+        },
+        "shortcut": Object {
+          "label": Object {
+            "fallback": Object {
+              "fontFamily": "Arial",
+              "fontWeight": 400,
+            },
+            "fontSize": 12,
+            "letterSpacing": 0.38,
+            "lineHeight": 1.5,
+            "primary": Object {
+              "fontFamily": "Roboto",
+              "fontWeight": 400,
             },
           },
         },
@@ -2238,6 +3280,21 @@ exports[`Tab component Should render tab component without passing any type prop
           "tiny": 8,
           "veryHuge": 256,
         },
+        "snackbar": Object {
+          "content": Object {
+            "fallback": Object {
+              "fontFamily": "Arial",
+              "fontWeight": 400,
+            },
+            "fontSize": 14,
+            "letterSpacing": 0.22,
+            "lineHeight": 1.5,
+            "primary": Object {
+              "fontFamily": "Roboto",
+              "fontWeight": 400,
+            },
+          },
+        },
         "spacing": Object {
           "large": 48,
           "micro": 4,
@@ -2258,6 +3315,21 @@ exports[`Tab component Should render tab component without passing any type prop
           "fontWeight": 500,
           "letterSpacing": 0.11,
         },
+        "tab": Object {
+          "label": Object {
+            "fallback": Object {
+              "fontFamily": "Arial",
+              "fontWeight": 400,
+            },
+            "fontSize": 14,
+            "letterSpacing": 1.23,
+            "lineHeight": 1.5,
+            "primary": Object {
+              "fontFamily": "Roboto",
+              "fontWeight": 500,
+            },
+          },
+        },
         "tag": Object {
           "label": Object {
             "fallback": Object {
@@ -2275,27 +3347,43 @@ exports[`Tab component Should render tab component without passing any type prop
         },
         "textField": Object {
           "content": Object {
+            "fallback": Object {
+              "fontFamily": "Arial",
+              "fontWeight": 400,
+            },
             "fontSize": 16,
             "letterSpacing": 0.51,
             "lineHeight": 1.25,
-          },
-          "fallback": Object {
-            "fontFamily": "Arial",
-            "fontWeight": 400,
+            "primary": Object {
+              "fontFamily": "Roboto",
+              "fontWeight": 400,
+            },
           },
           "helperText": Object {
+            "fallback": Object {
+              "fontFamily": "Arial",
+              "fontWeight": 400,
+            },
             "fontSize": 12,
             "letterSpacing": 0.38,
             "lineHeight": 1.25,
+            "primary": Object {
+              "fontFamily": "Roboto",
+              "fontWeight": 400,
+            },
           },
           "label": Object {
+            "fallback": Object {
+              "fontFamily": "Arial",
+              "fontWeight": 400,
+            },
             "fontSize": 14,
             "letterSpacing": 0.11,
-            "lineHeight": 1.25,
-          },
-          "primary": Object {
-            "fontFamily": "Roboto",
-            "fontWeight": 500,
+            "lineHeight": 1.5,
+            "primary": Object {
+              "fontFamily": "Roboto",
+              "fontWeight": 500,
+            },
           },
         },
         "typography": Object {
@@ -2357,6 +3445,49 @@ exports[`Tab component Should render tab component without passing any type prop
       }
       theme={
         Object {
+          "alert": Object {
+            "content": Object {
+              "fallback": Object {
+                "fontFamily": "Arial",
+                "fontWeight": 400,
+              },
+              "fontSize": 16,
+              "letterSpacing": 0.51,
+              "lineHeight": 1.5,
+              "primary": Object {
+                "fontFamily": "Roboto",
+                "fontWeight": 400,
+              },
+            },
+            "title": Object {
+              "fallback": Object {
+                "fontFamily": "Arial",
+                "fontWeight": 400,
+              },
+              "fontSize": 20,
+              "letterSpacing": 0.24,
+              "lineHeight": 1.5,
+              "primary": Object {
+                "fontFamily": "Roboto",
+                "fontWeight": 500,
+              },
+            },
+          },
+          "appBarTop": Object {
+            "title": Object {
+              "fallback": Object {
+                "fontFamily": "Arial",
+                "fontWeight": 400,
+              },
+              "fontSize": 20,
+              "letterSpacing": 0.24,
+              "lineHeight": 1.25,
+              "primary": Object {
+                "fontFamily": "Roboto",
+                "fontWeight": 500,
+              },
+            },
+          },
           "asset": Object {
             "brand": Object {
               "custom": Object {
@@ -2405,6 +3536,41 @@ exports[`Tab component Should render tab component without passing any type prop
                 "display": "HelveticaNowDisplay-Bd",
                 "headline": "HelveticaNowDisplay-Md",
               },
+            },
+          },
+          "avatar": Object {
+            "fallback": Object {
+              "fontFamily": "Arial",
+              "fontWeight": 400,
+            },
+            "largeXXX": Object {
+              "fontSize": 48,
+              "letterSpacing": 0,
+              "lineHeight": 1.5,
+            },
+            "medium": Object {
+              "fontSize": 24,
+              "letterSpacing": 0,
+              "lineHeight": 1.5,
+            },
+            "primary": Object {
+              "fontFamily": "Roboto",
+              "fontWeight": 400,
+            },
+            "semi": Object {
+              "fontSize": 14,
+              "letterSpacing": 0.22,
+              "lineHeight": 1.5,
+            },
+            "semiX": Object {
+              "fontSize": 20,
+              "letterSpacing": 0.24,
+              "lineHeight": 1.5,
+            },
+            "standard": Object {
+              "fontSize": 12,
+              "letterSpacing": 0,
+              "lineHeight": 1.5,
             },
           },
           "badge": Object {
@@ -2493,14 +3659,14 @@ exports[`Tab component Should render tab component without passing any type prop
             "label": Object {
               "fallback": Object {
                 "fontFamily": "Arial",
-                "fontWeight": 400,
+                "fontWeight": 500,
               },
               "fontSize": 14,
               "letterSpacing": 1.23,
               "lineHeight": 1.5,
               "primary": Object {
                 "fontFamily": "Roboto",
-                "fontWeight": 400,
+                "fontWeight": 500,
               },
             },
             "outlined": Object {
@@ -2568,7 +3734,7 @@ exports[`Tab component Should render tab component without passing any type prop
               "lineHeight": 1.5,
               "primary": Object {
                 "fontFamily": "Roboto",
-                "fontWeight": 500,
+                "fontWeight": 400,
               },
             },
           },
@@ -2615,6 +3781,34 @@ exports[`Tab component Should render tab component without passing any type prop
             "success": "#569a32",
             "surface": "#ffffff",
             "warning": "#fcc433",
+          },
+          "counter": Object {
+            "content": Object {
+              "fallback": Object {
+                "fontFamily": "Arial",
+                "fontWeight": 400,
+              },
+              "fontSize": 16,
+              "letterSpacing": 0.51,
+              "lineHeight": 1.25,
+              "primary": Object {
+                "fontFamily": "Roboto",
+                "fontWeight": 400,
+              },
+            },
+            "label": Object {
+              "fallback": Object {
+                "fontFamily": "Arial",
+                "fontWeight": 400,
+              },
+              "fontSize": 14,
+              "letterSpacing": 0.11,
+              "lineHeight": 1.25,
+              "primary": Object {
+                "fontFamily": "Roboto",
+                "fontWeight": 500,
+              },
+            },
           },
           "dialog": Object {
             "body": Object {
@@ -2734,6 +3928,21 @@ exports[`Tab component Should render tab component without passing any type prop
               "shadowRadius": 2,
             },
           },
+          "expansionPanel": Object {
+            "title": Object {
+              "fallback": Object {
+                "fontFamily": "Arial",
+                "fontWeight": 400,
+              },
+              "fontSize": 16,
+              "letterSpacing": 0.13,
+              "lineHeight": 1.5,
+              "primary": Object {
+                "fontFamily": "Roboto",
+                "fontWeight": 400,
+              },
+            },
+          },
           "heading1": Object {
             "fontSize": 96,
             "fontWeight": 400,
@@ -2763,6 +3972,64 @@ exports[`Tab component Should render tab component without passing any type prop
             "fontSize": 20,
             "fontWeight": 500,
             "letterSpacing": 0.24,
+          },
+          "navigationDrawer": Object {
+            "header": Object {
+              "subtitle": Object {
+                "fallback": Object {
+                  "fontFamily": "Arial",
+                  "fontWeight": 400,
+                },
+                "fontSize": 14,
+                "letterSpacing": 0.22,
+                "lineHeight": 1.5,
+                "primary": Object {
+                  "fontFamily": "Roboto",
+                  "fontWeight": 400,
+                },
+              },
+              "title": Object {
+                "fallback": Object {
+                  "fontFamily": "Arial",
+                  "fontWeight": 400,
+                },
+                "fontSize": 20,
+                "letterSpacing": 0.24,
+                "lineHeight": 1.25,
+                "primary": Object {
+                  "fontFamily": "Roboto",
+                  "fontWeight": 500,
+                },
+              },
+            },
+            "section": Object {
+              "item": Object {
+                "fallback": Object {
+                  "fontFamily": "Arial",
+                  "fontWeight": 400,
+                },
+                "fontSize": 14,
+                "letterSpacing": 0.22,
+                "lineHeight": 1.5,
+                "primary": Object {
+                  "fontFamily": "Roboto",
+                  "fontWeight": 400,
+                },
+              },
+              "title": Object {
+                "fallback": Object {
+                  "fontFamily": "Arial",
+                  "fontWeight": 400,
+                },
+                "fontSize": 12,
+                "letterSpacing": 0.38,
+                "lineHeight": 1.5,
+                "primary": Object {
+                  "fontFamily": "Roboto",
+                  "fontWeight": 400,
+                },
+              },
+            },
           },
           "opacity": Object {
             "disabled": 0.32,
@@ -2794,7 +4061,54 @@ exports[`Tab component Should render tab component without passing any type prop
               "lineHeight": 1.5,
               "primary": Object {
                 "fontFamily": "Roboto",
-                "fontWeight": 500,
+                "fontWeight": 400,
+              },
+            },
+          },
+          "rating": Object {
+            "counter": Object {
+              "label": Object {
+                "fallback": Object {
+                  "fontFamily": "Arial",
+                  "fontWeight": 400,
+                },
+                "fontSize": 14,
+                "letterSpacing": 0.22,
+                "lineHeight": 1.5,
+                "primary": Object {
+                  "fontFamily": "Roboto",
+                  "fontWeight": 400,
+                },
+              },
+            },
+            "input": Object {
+              "label": Object {
+                "fallback": Object {
+                  "fontFamily": "Arial",
+                  "fontWeight": 400,
+                },
+                "fontSize": 12,
+                "letterSpacing": 0.38,
+                "lineHeight": 1.5,
+                "primary": Object {
+                  "fontFamily": "Roboto",
+                  "fontWeight": 400,
+                },
+              },
+            },
+          },
+          "shortcut": Object {
+            "label": Object {
+              "fallback": Object {
+                "fontFamily": "Arial",
+                "fontWeight": 400,
+              },
+              "fontSize": 12,
+              "letterSpacing": 0.38,
+              "lineHeight": 1.5,
+              "primary": Object {
+                "fontFamily": "Roboto",
+                "fontWeight": 400,
               },
             },
           },
@@ -2818,6 +4132,21 @@ exports[`Tab component Should render tab component without passing any type prop
             "tiny": 8,
             "veryHuge": 256,
           },
+          "snackbar": Object {
+            "content": Object {
+              "fallback": Object {
+                "fontFamily": "Arial",
+                "fontWeight": 400,
+              },
+              "fontSize": 14,
+              "letterSpacing": 0.22,
+              "lineHeight": 1.5,
+              "primary": Object {
+                "fontFamily": "Roboto",
+                "fontWeight": 400,
+              },
+            },
+          },
           "spacing": Object {
             "large": 48,
             "micro": 4,
@@ -2838,6 +4167,21 @@ exports[`Tab component Should render tab component without passing any type prop
             "fontWeight": 500,
             "letterSpacing": 0.11,
           },
+          "tab": Object {
+            "label": Object {
+              "fallback": Object {
+                "fontFamily": "Arial",
+                "fontWeight": 400,
+              },
+              "fontSize": 14,
+              "letterSpacing": 1.23,
+              "lineHeight": 1.5,
+              "primary": Object {
+                "fontFamily": "Roboto",
+                "fontWeight": 500,
+              },
+            },
+          },
           "tag": Object {
             "label": Object {
               "fallback": Object {
@@ -2855,27 +4199,43 @@ exports[`Tab component Should render tab component without passing any type prop
           },
           "textField": Object {
             "content": Object {
+              "fallback": Object {
+                "fontFamily": "Arial",
+                "fontWeight": 400,
+              },
               "fontSize": 16,
               "letterSpacing": 0.51,
               "lineHeight": 1.25,
-            },
-            "fallback": Object {
-              "fontFamily": "Arial",
-              "fontWeight": 400,
+              "primary": Object {
+                "fontFamily": "Roboto",
+                "fontWeight": 400,
+              },
             },
             "helperText": Object {
+              "fallback": Object {
+                "fontFamily": "Arial",
+                "fontWeight": 400,
+              },
               "fontSize": 12,
               "letterSpacing": 0.38,
               "lineHeight": 1.25,
+              "primary": Object {
+                "fontFamily": "Roboto",
+                "fontWeight": 400,
+              },
             },
             "label": Object {
+              "fallback": Object {
+                "fontFamily": "Arial",
+                "fontWeight": 400,
+              },
               "fontSize": 14,
               "letterSpacing": 0.11,
-              "lineHeight": 1.25,
-            },
-            "primary": Object {
-              "fontFamily": "Roboto",
-              "fontWeight": 500,
+              "lineHeight": 1.5,
+              "primary": Object {
+                "fontFamily": "Roboto",
+                "fontWeight": 500,
+              },
             },
           },
           "typography": Object {
@@ -2948,6 +4308,49 @@ exports[`Tab component Should render tab component without passing any type prop
     testID="tab-item-2"
     theme={
       Object {
+        "alert": Object {
+          "content": Object {
+            "fallback": Object {
+              "fontFamily": "Arial",
+              "fontWeight": 400,
+            },
+            "fontSize": 16,
+            "letterSpacing": 0.51,
+            "lineHeight": 1.5,
+            "primary": Object {
+              "fontFamily": "Roboto",
+              "fontWeight": 400,
+            },
+          },
+          "title": Object {
+            "fallback": Object {
+              "fontFamily": "Arial",
+              "fontWeight": 400,
+            },
+            "fontSize": 20,
+            "letterSpacing": 0.24,
+            "lineHeight": 1.5,
+            "primary": Object {
+              "fontFamily": "Roboto",
+              "fontWeight": 500,
+            },
+          },
+        },
+        "appBarTop": Object {
+          "title": Object {
+            "fallback": Object {
+              "fontFamily": "Arial",
+              "fontWeight": 400,
+            },
+            "fontSize": 20,
+            "letterSpacing": 0.24,
+            "lineHeight": 1.25,
+            "primary": Object {
+              "fontFamily": "Roboto",
+              "fontWeight": 500,
+            },
+          },
+        },
         "asset": Object {
           "brand": Object {
             "custom": Object {
@@ -2996,6 +4399,41 @@ exports[`Tab component Should render tab component without passing any type prop
               "display": "HelveticaNowDisplay-Bd",
               "headline": "HelveticaNowDisplay-Md",
             },
+          },
+        },
+        "avatar": Object {
+          "fallback": Object {
+            "fontFamily": "Arial",
+            "fontWeight": 400,
+          },
+          "largeXXX": Object {
+            "fontSize": 48,
+            "letterSpacing": 0,
+            "lineHeight": 1.5,
+          },
+          "medium": Object {
+            "fontSize": 24,
+            "letterSpacing": 0,
+            "lineHeight": 1.5,
+          },
+          "primary": Object {
+            "fontFamily": "Roboto",
+            "fontWeight": 400,
+          },
+          "semi": Object {
+            "fontSize": 14,
+            "letterSpacing": 0.22,
+            "lineHeight": 1.5,
+          },
+          "semiX": Object {
+            "fontSize": 20,
+            "letterSpacing": 0.24,
+            "lineHeight": 1.5,
+          },
+          "standard": Object {
+            "fontSize": 12,
+            "letterSpacing": 0,
+            "lineHeight": 1.5,
           },
         },
         "badge": Object {
@@ -3084,14 +4522,14 @@ exports[`Tab component Should render tab component without passing any type prop
           "label": Object {
             "fallback": Object {
               "fontFamily": "Arial",
-              "fontWeight": 400,
+              "fontWeight": 500,
             },
             "fontSize": 14,
             "letterSpacing": 1.23,
             "lineHeight": 1.5,
             "primary": Object {
               "fontFamily": "Roboto",
-              "fontWeight": 400,
+              "fontWeight": 500,
             },
           },
           "outlined": Object {
@@ -3159,7 +4597,7 @@ exports[`Tab component Should render tab component without passing any type prop
             "lineHeight": 1.5,
             "primary": Object {
               "fontFamily": "Roboto",
-              "fontWeight": 500,
+              "fontWeight": 400,
             },
           },
         },
@@ -3206,6 +4644,34 @@ exports[`Tab component Should render tab component without passing any type prop
           "success": "#569a32",
           "surface": "#ffffff",
           "warning": "#fcc433",
+        },
+        "counter": Object {
+          "content": Object {
+            "fallback": Object {
+              "fontFamily": "Arial",
+              "fontWeight": 400,
+            },
+            "fontSize": 16,
+            "letterSpacing": 0.51,
+            "lineHeight": 1.25,
+            "primary": Object {
+              "fontFamily": "Roboto",
+              "fontWeight": 400,
+            },
+          },
+          "label": Object {
+            "fallback": Object {
+              "fontFamily": "Arial",
+              "fontWeight": 400,
+            },
+            "fontSize": 14,
+            "letterSpacing": 0.11,
+            "lineHeight": 1.25,
+            "primary": Object {
+              "fontFamily": "Roboto",
+              "fontWeight": 500,
+            },
+          },
         },
         "dialog": Object {
           "body": Object {
@@ -3325,6 +4791,21 @@ exports[`Tab component Should render tab component without passing any type prop
             "shadowRadius": 2,
           },
         },
+        "expansionPanel": Object {
+          "title": Object {
+            "fallback": Object {
+              "fontFamily": "Arial",
+              "fontWeight": 400,
+            },
+            "fontSize": 16,
+            "letterSpacing": 0.13,
+            "lineHeight": 1.5,
+            "primary": Object {
+              "fontFamily": "Roboto",
+              "fontWeight": 400,
+            },
+          },
+        },
         "heading1": Object {
           "fontSize": 96,
           "fontWeight": 400,
@@ -3354,6 +4835,64 @@ exports[`Tab component Should render tab component without passing any type prop
           "fontSize": 20,
           "fontWeight": 500,
           "letterSpacing": 0.24,
+        },
+        "navigationDrawer": Object {
+          "header": Object {
+            "subtitle": Object {
+              "fallback": Object {
+                "fontFamily": "Arial",
+                "fontWeight": 400,
+              },
+              "fontSize": 14,
+              "letterSpacing": 0.22,
+              "lineHeight": 1.5,
+              "primary": Object {
+                "fontFamily": "Roboto",
+                "fontWeight": 400,
+              },
+            },
+            "title": Object {
+              "fallback": Object {
+                "fontFamily": "Arial",
+                "fontWeight": 400,
+              },
+              "fontSize": 20,
+              "letterSpacing": 0.24,
+              "lineHeight": 1.25,
+              "primary": Object {
+                "fontFamily": "Roboto",
+                "fontWeight": 500,
+              },
+            },
+          },
+          "section": Object {
+            "item": Object {
+              "fallback": Object {
+                "fontFamily": "Arial",
+                "fontWeight": 400,
+              },
+              "fontSize": 14,
+              "letterSpacing": 0.22,
+              "lineHeight": 1.5,
+              "primary": Object {
+                "fontFamily": "Roboto",
+                "fontWeight": 400,
+              },
+            },
+            "title": Object {
+              "fallback": Object {
+                "fontFamily": "Arial",
+                "fontWeight": 400,
+              },
+              "fontSize": 12,
+              "letterSpacing": 0.38,
+              "lineHeight": 1.5,
+              "primary": Object {
+                "fontFamily": "Roboto",
+                "fontWeight": 400,
+              },
+            },
+          },
         },
         "opacity": Object {
           "disabled": 0.32,
@@ -3385,7 +4924,54 @@ exports[`Tab component Should render tab component without passing any type prop
             "lineHeight": 1.5,
             "primary": Object {
               "fontFamily": "Roboto",
-              "fontWeight": 500,
+              "fontWeight": 400,
+            },
+          },
+        },
+        "rating": Object {
+          "counter": Object {
+            "label": Object {
+              "fallback": Object {
+                "fontFamily": "Arial",
+                "fontWeight": 400,
+              },
+              "fontSize": 14,
+              "letterSpacing": 0.22,
+              "lineHeight": 1.5,
+              "primary": Object {
+                "fontFamily": "Roboto",
+                "fontWeight": 400,
+              },
+            },
+          },
+          "input": Object {
+            "label": Object {
+              "fallback": Object {
+                "fontFamily": "Arial",
+                "fontWeight": 400,
+              },
+              "fontSize": 12,
+              "letterSpacing": 0.38,
+              "lineHeight": 1.5,
+              "primary": Object {
+                "fontFamily": "Roboto",
+                "fontWeight": 400,
+              },
+            },
+          },
+        },
+        "shortcut": Object {
+          "label": Object {
+            "fallback": Object {
+              "fontFamily": "Arial",
+              "fontWeight": 400,
+            },
+            "fontSize": 12,
+            "letterSpacing": 0.38,
+            "lineHeight": 1.5,
+            "primary": Object {
+              "fontFamily": "Roboto",
+              "fontWeight": 400,
             },
           },
         },
@@ -3409,6 +4995,21 @@ exports[`Tab component Should render tab component without passing any type prop
           "tiny": 8,
           "veryHuge": 256,
         },
+        "snackbar": Object {
+          "content": Object {
+            "fallback": Object {
+              "fontFamily": "Arial",
+              "fontWeight": 400,
+            },
+            "fontSize": 14,
+            "letterSpacing": 0.22,
+            "lineHeight": 1.5,
+            "primary": Object {
+              "fontFamily": "Roboto",
+              "fontWeight": 400,
+            },
+          },
+        },
         "spacing": Object {
           "large": 48,
           "micro": 4,
@@ -3429,6 +5030,21 @@ exports[`Tab component Should render tab component without passing any type prop
           "fontWeight": 500,
           "letterSpacing": 0.11,
         },
+        "tab": Object {
+          "label": Object {
+            "fallback": Object {
+              "fontFamily": "Arial",
+              "fontWeight": 400,
+            },
+            "fontSize": 14,
+            "letterSpacing": 1.23,
+            "lineHeight": 1.5,
+            "primary": Object {
+              "fontFamily": "Roboto",
+              "fontWeight": 500,
+            },
+          },
+        },
         "tag": Object {
           "label": Object {
             "fallback": Object {
@@ -3446,27 +5062,43 @@ exports[`Tab component Should render tab component without passing any type prop
         },
         "textField": Object {
           "content": Object {
+            "fallback": Object {
+              "fontFamily": "Arial",
+              "fontWeight": 400,
+            },
             "fontSize": 16,
             "letterSpacing": 0.51,
             "lineHeight": 1.25,
-          },
-          "fallback": Object {
-            "fontFamily": "Arial",
-            "fontWeight": 400,
+            "primary": Object {
+              "fontFamily": "Roboto",
+              "fontWeight": 400,
+            },
           },
           "helperText": Object {
+            "fallback": Object {
+              "fontFamily": "Arial",
+              "fontWeight": 400,
+            },
             "fontSize": 12,
             "letterSpacing": 0.38,
             "lineHeight": 1.25,
+            "primary": Object {
+              "fontFamily": "Roboto",
+              "fontWeight": 400,
+            },
           },
           "label": Object {
+            "fallback": Object {
+              "fontFamily": "Arial",
+              "fontWeight": 400,
+            },
             "fontSize": 14,
             "letterSpacing": 0.11,
-            "lineHeight": 1.25,
-          },
-          "primary": Object {
-            "fontFamily": "Roboto",
-            "fontWeight": 500,
+            "lineHeight": 1.5,
+            "primary": Object {
+              "fontFamily": "Roboto",
+              "fontWeight": 500,
+            },
           },
         },
         "typography": Object {
@@ -3528,6 +5160,49 @@ exports[`Tab component Should render tab component without passing any type prop
       }
       theme={
         Object {
+          "alert": Object {
+            "content": Object {
+              "fallback": Object {
+                "fontFamily": "Arial",
+                "fontWeight": 400,
+              },
+              "fontSize": 16,
+              "letterSpacing": 0.51,
+              "lineHeight": 1.5,
+              "primary": Object {
+                "fontFamily": "Roboto",
+                "fontWeight": 400,
+              },
+            },
+            "title": Object {
+              "fallback": Object {
+                "fontFamily": "Arial",
+                "fontWeight": 400,
+              },
+              "fontSize": 20,
+              "letterSpacing": 0.24,
+              "lineHeight": 1.5,
+              "primary": Object {
+                "fontFamily": "Roboto",
+                "fontWeight": 500,
+              },
+            },
+          },
+          "appBarTop": Object {
+            "title": Object {
+              "fallback": Object {
+                "fontFamily": "Arial",
+                "fontWeight": 400,
+              },
+              "fontSize": 20,
+              "letterSpacing": 0.24,
+              "lineHeight": 1.25,
+              "primary": Object {
+                "fontFamily": "Roboto",
+                "fontWeight": 500,
+              },
+            },
+          },
           "asset": Object {
             "brand": Object {
               "custom": Object {
@@ -3576,6 +5251,41 @@ exports[`Tab component Should render tab component without passing any type prop
                 "display": "HelveticaNowDisplay-Bd",
                 "headline": "HelveticaNowDisplay-Md",
               },
+            },
+          },
+          "avatar": Object {
+            "fallback": Object {
+              "fontFamily": "Arial",
+              "fontWeight": 400,
+            },
+            "largeXXX": Object {
+              "fontSize": 48,
+              "letterSpacing": 0,
+              "lineHeight": 1.5,
+            },
+            "medium": Object {
+              "fontSize": 24,
+              "letterSpacing": 0,
+              "lineHeight": 1.5,
+            },
+            "primary": Object {
+              "fontFamily": "Roboto",
+              "fontWeight": 400,
+            },
+            "semi": Object {
+              "fontSize": 14,
+              "letterSpacing": 0.22,
+              "lineHeight": 1.5,
+            },
+            "semiX": Object {
+              "fontSize": 20,
+              "letterSpacing": 0.24,
+              "lineHeight": 1.5,
+            },
+            "standard": Object {
+              "fontSize": 12,
+              "letterSpacing": 0,
+              "lineHeight": 1.5,
             },
           },
           "badge": Object {
@@ -3664,14 +5374,14 @@ exports[`Tab component Should render tab component without passing any type prop
             "label": Object {
               "fallback": Object {
                 "fontFamily": "Arial",
-                "fontWeight": 400,
+                "fontWeight": 500,
               },
               "fontSize": 14,
               "letterSpacing": 1.23,
               "lineHeight": 1.5,
               "primary": Object {
                 "fontFamily": "Roboto",
-                "fontWeight": 400,
+                "fontWeight": 500,
               },
             },
             "outlined": Object {
@@ -3739,7 +5449,7 @@ exports[`Tab component Should render tab component without passing any type prop
               "lineHeight": 1.5,
               "primary": Object {
                 "fontFamily": "Roboto",
-                "fontWeight": 500,
+                "fontWeight": 400,
               },
             },
           },
@@ -3786,6 +5496,34 @@ exports[`Tab component Should render tab component without passing any type prop
             "success": "#569a32",
             "surface": "#ffffff",
             "warning": "#fcc433",
+          },
+          "counter": Object {
+            "content": Object {
+              "fallback": Object {
+                "fontFamily": "Arial",
+                "fontWeight": 400,
+              },
+              "fontSize": 16,
+              "letterSpacing": 0.51,
+              "lineHeight": 1.25,
+              "primary": Object {
+                "fontFamily": "Roboto",
+                "fontWeight": 400,
+              },
+            },
+            "label": Object {
+              "fallback": Object {
+                "fontFamily": "Arial",
+                "fontWeight": 400,
+              },
+              "fontSize": 14,
+              "letterSpacing": 0.11,
+              "lineHeight": 1.25,
+              "primary": Object {
+                "fontFamily": "Roboto",
+                "fontWeight": 500,
+              },
+            },
           },
           "dialog": Object {
             "body": Object {
@@ -3905,6 +5643,21 @@ exports[`Tab component Should render tab component without passing any type prop
               "shadowRadius": 2,
             },
           },
+          "expansionPanel": Object {
+            "title": Object {
+              "fallback": Object {
+                "fontFamily": "Arial",
+                "fontWeight": 400,
+              },
+              "fontSize": 16,
+              "letterSpacing": 0.13,
+              "lineHeight": 1.5,
+              "primary": Object {
+                "fontFamily": "Roboto",
+                "fontWeight": 400,
+              },
+            },
+          },
           "heading1": Object {
             "fontSize": 96,
             "fontWeight": 400,
@@ -3934,6 +5687,64 @@ exports[`Tab component Should render tab component without passing any type prop
             "fontSize": 20,
             "fontWeight": 500,
             "letterSpacing": 0.24,
+          },
+          "navigationDrawer": Object {
+            "header": Object {
+              "subtitle": Object {
+                "fallback": Object {
+                  "fontFamily": "Arial",
+                  "fontWeight": 400,
+                },
+                "fontSize": 14,
+                "letterSpacing": 0.22,
+                "lineHeight": 1.5,
+                "primary": Object {
+                  "fontFamily": "Roboto",
+                  "fontWeight": 400,
+                },
+              },
+              "title": Object {
+                "fallback": Object {
+                  "fontFamily": "Arial",
+                  "fontWeight": 400,
+                },
+                "fontSize": 20,
+                "letterSpacing": 0.24,
+                "lineHeight": 1.25,
+                "primary": Object {
+                  "fontFamily": "Roboto",
+                  "fontWeight": 500,
+                },
+              },
+            },
+            "section": Object {
+              "item": Object {
+                "fallback": Object {
+                  "fontFamily": "Arial",
+                  "fontWeight": 400,
+                },
+                "fontSize": 14,
+                "letterSpacing": 0.22,
+                "lineHeight": 1.5,
+                "primary": Object {
+                  "fontFamily": "Roboto",
+                  "fontWeight": 400,
+                },
+              },
+              "title": Object {
+                "fallback": Object {
+                  "fontFamily": "Arial",
+                  "fontWeight": 400,
+                },
+                "fontSize": 12,
+                "letterSpacing": 0.38,
+                "lineHeight": 1.5,
+                "primary": Object {
+                  "fontFamily": "Roboto",
+                  "fontWeight": 400,
+                },
+              },
+            },
           },
           "opacity": Object {
             "disabled": 0.32,
@@ -3965,7 +5776,54 @@ exports[`Tab component Should render tab component without passing any type prop
               "lineHeight": 1.5,
               "primary": Object {
                 "fontFamily": "Roboto",
-                "fontWeight": 500,
+                "fontWeight": 400,
+              },
+            },
+          },
+          "rating": Object {
+            "counter": Object {
+              "label": Object {
+                "fallback": Object {
+                  "fontFamily": "Arial",
+                  "fontWeight": 400,
+                },
+                "fontSize": 14,
+                "letterSpacing": 0.22,
+                "lineHeight": 1.5,
+                "primary": Object {
+                  "fontFamily": "Roboto",
+                  "fontWeight": 400,
+                },
+              },
+            },
+            "input": Object {
+              "label": Object {
+                "fallback": Object {
+                  "fontFamily": "Arial",
+                  "fontWeight": 400,
+                },
+                "fontSize": 12,
+                "letterSpacing": 0.38,
+                "lineHeight": 1.5,
+                "primary": Object {
+                  "fontFamily": "Roboto",
+                  "fontWeight": 400,
+                },
+              },
+            },
+          },
+          "shortcut": Object {
+            "label": Object {
+              "fallback": Object {
+                "fontFamily": "Arial",
+                "fontWeight": 400,
+              },
+              "fontSize": 12,
+              "letterSpacing": 0.38,
+              "lineHeight": 1.5,
+              "primary": Object {
+                "fontFamily": "Roboto",
+                "fontWeight": 400,
               },
             },
           },
@@ -3989,6 +5847,21 @@ exports[`Tab component Should render tab component without passing any type prop
             "tiny": 8,
             "veryHuge": 256,
           },
+          "snackbar": Object {
+            "content": Object {
+              "fallback": Object {
+                "fontFamily": "Arial",
+                "fontWeight": 400,
+              },
+              "fontSize": 14,
+              "letterSpacing": 0.22,
+              "lineHeight": 1.5,
+              "primary": Object {
+                "fontFamily": "Roboto",
+                "fontWeight": 400,
+              },
+            },
+          },
           "spacing": Object {
             "large": 48,
             "micro": 4,
@@ -4009,6 +5882,21 @@ exports[`Tab component Should render tab component without passing any type prop
             "fontWeight": 500,
             "letterSpacing": 0.11,
           },
+          "tab": Object {
+            "label": Object {
+              "fallback": Object {
+                "fontFamily": "Arial",
+                "fontWeight": 400,
+              },
+              "fontSize": 14,
+              "letterSpacing": 1.23,
+              "lineHeight": 1.5,
+              "primary": Object {
+                "fontFamily": "Roboto",
+                "fontWeight": 500,
+              },
+            },
+          },
           "tag": Object {
             "label": Object {
               "fallback": Object {
@@ -4026,27 +5914,43 @@ exports[`Tab component Should render tab component without passing any type prop
           },
           "textField": Object {
             "content": Object {
+              "fallback": Object {
+                "fontFamily": "Arial",
+                "fontWeight": 400,
+              },
               "fontSize": 16,
               "letterSpacing": 0.51,
               "lineHeight": 1.25,
-            },
-            "fallback": Object {
-              "fontFamily": "Arial",
-              "fontWeight": 400,
+              "primary": Object {
+                "fontFamily": "Roboto",
+                "fontWeight": 400,
+              },
             },
             "helperText": Object {
+              "fallback": Object {
+                "fontFamily": "Arial",
+                "fontWeight": 400,
+              },
               "fontSize": 12,
               "letterSpacing": 0.38,
               "lineHeight": 1.25,
+              "primary": Object {
+                "fontFamily": "Roboto",
+                "fontWeight": 400,
+              },
             },
             "label": Object {
+              "fallback": Object {
+                "fontFamily": "Arial",
+                "fontWeight": 400,
+              },
               "fontSize": 14,
               "letterSpacing": 0.11,
-              "lineHeight": 1.25,
-            },
-            "primary": Object {
-              "fontFamily": "Roboto",
-              "fontWeight": 500,
+              "lineHeight": 1.5,
+              "primary": Object {
+                "fontFamily": "Roboto",
+                "fontWeight": 500,
+              },
             },
           },
           "typography": Object {

@@ -1661,10 +1661,10 @@
   resolved "https://registry.npmjs.org/@naturacosmeticos/natds-icons/-/natds-icons-1.3.0.tgz"
   integrity sha512-vy1VW+1jFwrQAT19/PvnXSr7Wh/NthcrtY4BWZ+I1Tt+wSqrteSprP5pFBgPdGf8Jy64N9KVhtE9wnmX9byP6g==
 
-"@naturacosmeticos/natds-themes@^0.12.0":
-  version "0.12.0"
-  resolved "https://registry.yarnpkg.com/@naturacosmeticos/natds-themes/-/natds-themes-0.12.0.tgz#b571b89fda6979a6ac37ea98a569c7e5cc1a52fd"
-  integrity sha512-/lE1+j8xKtTZECOjL8g89r+lLxr3KErkqZv6rtxIIw+zPg7Q+w2sGUTsPWbOENeJmR/I1iUtbYDG7D1voJ8TDA==
+"@naturacosmeticos/natds-themes@^0.15.4":
+  version "0.15.4"
+  resolved "https://registry.yarnpkg.com/@naturacosmeticos/natds-themes/-/natds-themes-0.15.4.tgz#08026263202298e88ee8358126e80fb9ff623217"
+  integrity sha512-EImqxLPfDnk2qYdAnkrfYsrRvHJ6t6PQCkdMVpwaNW5CrGg5018O2xRJeQjUa8kG2UvwzV/xDK8epbR3wk1nbA==
   dependencies:
     open-color "^1.8.0"
 
@@ -14364,9 +14364,9 @@ onetime@^5.1.0:
     mimic-fn "^2.1.0"
 
 open-color@^1.8.0:
-  version "1.8.0"
-  resolved "https://registry.npmjs.org/open-color/-/open-color-1.8.0.tgz"
-  integrity sha512-gSHRpWLx83rKlHZIm9ZoUBsSMijhPRMxOOacUETjY8guu9dAwIAbtZgmVqkfglmhs3/pYppGohzp8fUdJ4YBqQ==
+  version "1.9.1"
+  resolved "https://registry.yarnpkg.com/open-color/-/open-color-1.9.1.tgz#a6e6328f60eff7aa60e3e8fcfa50f53ff3eece35"
+  integrity sha512-vCseG/EQ6/RcvxhUcGJiHViOgrtz4x0XbZepXvKik66TMGkvbmjeJrKFyBEx6daG5rNyyd14zYXhz0hZVwQFOw==
 
 open@^6.2.0, open@^6.3.0:
   version "6.4.0"
