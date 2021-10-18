@@ -1,0 +1,190 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Typography Component should render with body1 variant 1`] = `
+<Text
+  style={
+    Array [
+      Object {
+        "color": "#000000",
+        "fontSize": 16,
+        "fontWeight": "400",
+        "letterSpacing": 0.51,
+      },
+    ]
+  }
+  testID="typography"
+  variant="body1"
+>
+  Typography
+</Text>
+`;
+
+exports[`Typography Component should render with body2 variant 1`] = `
+<Text
+  style={
+    Array [
+      Object {
+        "color": "#000000",
+        "fontSize": 14,
+        "fontWeight": "400",
+        "letterSpacing": 0.22,
+      },
+    ]
+  }
+  testID="typography"
+  variant="body2"
+>
+  Typography
+</Text>
+`;
+
+exports[`Typography Component should render with caption variant 1`] = `
+<Text
+  style={
+    Array [
+      Object {
+        "color": "#000000",
+        "fontSize": 12,
+        "fontWeight": "400",
+        "letterSpacing": 0.38,
+      },
+    ]
+  }
+  testID="typography"
+  variant="caption"
+>
+  Typography
+</Text>
+`;
+
+exports[`Typography Component should render with default variant 1`] = `
+<Text
+  style={
+    Array [
+      Object {
+        "color": "#000000",
+        "fontSize": 96,
+        "fontWeight": "400",
+        "letterSpacing": 0,
+      },
+    ]
+  }
+  testID="typography"
+>
+  Typography
+</Text>
+`;
+
+exports[`Typography Component should render with heading2 variant 1`] = `
+<Text
+  style={
+    Array [
+      Object {
+        "color": "#000000",
+        "fontSize": 60,
+        "fontWeight": "400",
+        "letterSpacing": 0,
+      },
+    ]
+  }
+  testID="typography"
+  variant="heading2"
+>
+  Typography
+</Text>
+`;
+
+exports[`Typography Component should render with heading3 variant 1`] = `
+<Text
+  style={
+    Array [
+      Object {
+        "color": "#000000",
+        "fontSize": 48,
+        "fontWeight": "400",
+        "letterSpacing": 0,
+      },
+    ]
+  }
+  testID="typography"
+  variant="heading3"
+>
+  Typography
+</Text>
+`;
+
+exports[`Typography Component should render with heading4 variant 1`] = `
+<Text
+  style={
+    Array [
+      Object {
+        "color": "#000000",
+        "fontSize": 34,
+        "fontWeight": "400",
+        "letterSpacing": 0.27,
+      },
+    ]
+  }
+  testID="typography"
+  variant="heading4"
+>
+  Typography
+</Text>
+`;
+
+exports[`Typography Component should render with heading5 variant 1`] = `
+<Text
+  style={
+    Array [
+      Object {
+        "color": "#000000",
+        "fontSize": 24,
+        "fontWeight": "400",
+        "letterSpacing": 0,
+      },
+    ]
+  }
+  testID="typography"
+  variant="heading5"
+>
+  Typography
+</Text>
+`;
+
+exports[`Typography Component should render with heading6 variant 1`] = `
+<Text
+  style={
+    Array [
+      Object {
+        "color": "#000000",
+        "fontSize": 20,
+        "fontWeight": "500",
+        "letterSpacing": 0.24,
+      },
+    ]
+  }
+  testID="typography"
+  variant="heading6"
+>
+  Typography
+</Text>
+`;
+
+exports[`Typography Component should render with overline variant 1`] = `
+<Text
+  style={
+    Array [
+      Object {
+        "color": "#000000",
+        "fontSize": 12,
+        "fontWeight": "500",
+        "letterSpacing": 1.92,
+      },
+    ]
+  }
+  testID="typography"
+  variant="overline"
+>
+  Typography
+</Text>
+`;

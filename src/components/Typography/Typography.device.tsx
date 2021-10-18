@@ -1,4 +1,7 @@
 import { storiesOf } from '@storybook/react-native';
-import { CustomFonts } from './Typography.stories';
+import { All, CustomFonts, Variants } from './Typography.stories';
 
-storiesOf('Typography', module).add('Custom Fonts', CustomFonts);
+storiesOf('Typography', module)
+  .add('All', All)
+  .add('Custom Fonts', CustomFonts)
+  .add('Variants', Variants);
