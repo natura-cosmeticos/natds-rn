@@ -78,6 +78,7 @@ export const TextField = (props: TextFieldProps) => {
     size = 'mediumX',
     type = 'text',
     value = '',
+    testID = 'ds-input',
   }: TextFieldProps = props;
   const [secureState, setSecureState] = React.useState(isPasswordType(type));
   const fieldValue = getFieldValue({ numberValue, type, value });
@@ -92,7 +93,8 @@ export const TextField = (props: TextFieldProps) => {
         active, disabled, feedback, helperText,
       })}
     >
-      <Input testID="input"
+      <Input
+        testID={testID}
         disabled={disabled}
         editable={isEditable({ disabled, readonly })}
         hasActionIcon={hasActionIcon({ action, actionComponent })}
