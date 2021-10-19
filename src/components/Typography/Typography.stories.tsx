@@ -1,3 +1,4 @@
+/* eslint-disable max-lines */
 import React from 'react';
 import { Platform } from 'react-native';
 import { ThemeContext } from 'styled-components/native';
