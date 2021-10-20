@@ -13,7 +13,7 @@ exports[`Button component Disabled variants should render disabled button compon
   onStartShouldSetResponder={[Function]}
   style={
     Object {
-      "borderRadius": 42,
+      "borderRadius": 4,
     }
   }
   testID="touchable-ripple"
@@ -27,8 +27,10 @@ exports[`Button component Disabled variants should render disabled button compon
         Object {
           "alignContent": "center",
           "alignItems": "center",
-          "backgroundColor": "#FEEEEF",
-          "borderRadius": 42,
+          "backgroundColor": "#bbbbbb",
+          "borderColor": "#FFFFFF00",
+          "borderRadius": 4,
+          "borderWidth": 0,
           "justifyContent": "center",
           "minHeight": 40,
           "paddingHorizontal": 8,
@@ -51,20 +53,24 @@ exports[`Button component Disabled variants should render disabled button compon
       }
     >
       <Text
+        disabled={true}
         iconPosition="right"
         style={
           Array [
             Object {
-              "color": "#BBBBBB",
+              "color": "#333333",
+              "fontFamily": "Roboto",
               "fontSize": 14,
-              "fontWeight": "500",
+              "fontWeight": "400",
               "letterSpacing": 1.23,
               "lineHeight": 19,
+              "marginEnd": 0,
+              "marginStart": 0,
             },
           ]
         }
         testID="button-label"
-        textColor="highEmphasis"
+        type="contained"
       >
         BUTTON LABEL
       </Text>
@@ -86,7 +92,7 @@ exports[`Button component Disabled variants should render disabled button compon
   onStartShouldSetResponder={[Function]}
   style={
     Object {
-      "borderRadius": 42,
+      "borderRadius": 4,
     }
   }
   testID="touchable-ripple"
@@ -100,8 +106,9 @@ exports[`Button component Disabled variants should render disabled button compon
         Object {
           "alignContent": "center",
           "alignItems": "center",
-          "borderColor": "#FAFAEA",
-          "borderRadius": 42,
+          "backgroundColor": "#FFFFFF00",
+          "borderColor": "#bbbbbb",
+          "borderRadius": 4,
           "borderWidth": 1,
           "justifyContent": "center",
           "minHeight": 40,
@@ -125,20 +132,24 @@ exports[`Button component Disabled variants should render disabled button compon
       }
     >
       <Text
+        disabled={true}
         iconPosition="right"
         style={
           Array [
             Object {
-              "color": "#BBBBBB",
+              "color": "#777777",
+              "fontFamily": "Roboto",
               "fontSize": 14,
-              "fontWeight": "500",
+              "fontWeight": "400",
               "letterSpacing": 1.23,
               "lineHeight": 19,
+              "marginEnd": 0,
+              "marginStart": 0,
             },
           ]
         }
         testID="button-label"
-        textColor="mediumEmphasis"
+        type="outlined"
       >
         BUTTON LABEL
       </Text>
@@ -160,7 +171,7 @@ exports[`Button component Disabled variants should render disabled button compon
   onStartShouldSetResponder={[Function]}
   style={
     Object {
-      "borderRadius": 42,
+      "borderRadius": 4,
     }
   }
   testID="touchable-ripple"
@@ -174,7 +185,10 @@ exports[`Button component Disabled variants should render disabled button compon
         Object {
           "alignContent": "center",
           "alignItems": "center",
-          "borderRadius": 42,
+          "backgroundColor": "#FFFFFF00",
+          "borderColor": "#FFFFFF00",
+          "borderRadius": 4,
+          "borderWidth": 0,
           "justifyContent": "center",
           "minHeight": 40,
           "paddingHorizontal": 8,
@@ -197,20 +211,24 @@ exports[`Button component Disabled variants should render disabled button compon
       }
     >
       <Text
+        disabled={true}
         iconPosition="right"
         style={
           Array [
             Object {
-              "color": "#BBBBBB",
+              "color": "#777777",
+              "fontFamily": "Roboto",
               "fontSize": 14,
-              "fontWeight": "500",
+              "fontWeight": "400",
               "letterSpacing": 1.23,
               "lineHeight": 19,
+              "marginEnd": 0,
+              "marginStart": 0,
             },
           ]
         }
         testID="button-label"
-        textColor="mediumEmphasis"
+        type="text"
       >
         BUTTON LABEL
       </Text>
@@ -232,7 +250,7 @@ exports[`Button component Variants should render button component contained 1`] 
   onStartShouldSetResponder={[Function]}
   style={
     Object {
-      "borderRadius": 42,
+      "borderRadius": 4,
     }
   }
   testID="touchable-ripple"
@@ -246,8 +264,10 @@ exports[`Button component Variants should render button component contained 1`] 
         Object {
           "alignContent": "center",
           "alignItems": "center",
-          "backgroundColor": "#FFFFFF",
-          "borderRadius": 42,
+          "backgroundColor": "#f4ab34",
+          "borderColor": "#FFFFFF00",
+          "borderRadius": 4,
+          "borderWidth": 0,
           "justifyContent": "center",
           "minHeight": 40,
           "paddingHorizontal": 8,
@@ -272,20 +292,24 @@ exports[`Button component Variants should render button component contained 1`] 
       }
     >
       <Text
+        disabled={false}
         iconPosition="right"
         style={
           Array [
             Object {
-              "color": "#BBBBBB",
+              "color": "#333333",
+              "fontFamily": "Roboto",
               "fontSize": 14,
-              "fontWeight": "500",
+              "fontWeight": "400",
               "letterSpacing": 1.23,
               "lineHeight": 19,
+              "marginEnd": 0,
+              "marginStart": 0,
             },
           ]
         }
         testID="button-label"
-        textColor="onPrimary"
+        type="contained"
       >
         BUTTON LABEL
       </Text>
@@ -307,7 +331,7 @@ exports[`Button component Variants should render button component outlined 1`] =
   onStartShouldSetResponder={[Function]}
   style={
     Object {
-      "borderRadius": 42,
+      "borderRadius": 4,
     }
   }
   testID="touchable-ripple"
@@ -321,8 +345,9 @@ exports[`Button component Variants should render button component outlined 1`] =
         Object {
           "alignContent": "center",
           "alignItems": "center",
-          "borderColor": "#FFFFFF",
-          "borderRadius": 42,
+          "backgroundColor": "#FFFFFF00",
+          "borderColor": "#f4ab34",
+          "borderRadius": 4,
           "borderWidth": 1,
           "justifyContent": "center",
           "minHeight": 40,
@@ -346,20 +371,24 @@ exports[`Button component Variants should render button component outlined 1`] =
       }
     >
       <Text
+        disabled={false}
         iconPosition="right"
         style={
           Array [
             Object {
-              "color": "#BBBBBB",
+              "color": "#333333",
+              "fontFamily": "Roboto",
               "fontSize": 14,
-              "fontWeight": "500",
+              "fontWeight": "400",
               "letterSpacing": 1.23,
               "lineHeight": 19,
+              "marginEnd": 0,
+              "marginStart": 0,
             },
           ]
         }
         testID="button-label"
-        textColor="highEmphasis"
+        type="outlined"
       >
         BUTTON LABEL
       </Text>
@@ -381,7 +410,7 @@ exports[`Button component Variants should render button component text 1`] = `
   onStartShouldSetResponder={[Function]}
   style={
     Object {
-      "borderRadius": 42,
+      "borderRadius": 4,
     }
   }
   testID="touchable-ripple"
@@ -395,7 +424,10 @@ exports[`Button component Variants should render button component text 1`] = `
         Object {
           "alignContent": "center",
           "alignItems": "center",
-          "borderRadius": 42,
+          "backgroundColor": "#FFFFFF00",
+          "borderColor": "#FFFFFF00",
+          "borderRadius": 4,
+          "borderWidth": 0,
           "justifyContent": "center",
           "minHeight": 40,
           "paddingHorizontal": 8,
@@ -418,20 +450,24 @@ exports[`Button component Variants should render button component text 1`] = `
       }
     >
       <Text
+        disabled={false}
         iconPosition="right"
         style={
           Array [
             Object {
-              "color": "#BBBBBB",
+              "color": "#333333",
+              "fontFamily": "Roboto",
               "fontSize": 14,
-              "fontWeight": "500",
+              "fontWeight": "400",
               "letterSpacing": 1.23,
               "lineHeight": 19,
+              "marginEnd": 0,
+              "marginStart": 0,
             },
           ]
         }
         testID="button-label"
-        textColor="highEmphasis"
+        type="text"
       >
         BUTTON LABEL
       </Text>
@@ -453,7 +489,7 @@ exports[`Button component with Icon should render the icon to the left 1`] = `
   onStartShouldSetResponder={[Function]}
   style={
     Object {
-      "borderRadius": 42,
+      "borderRadius": 4,
     }
   }
   testID="touchable-ripple"
@@ -467,8 +503,10 @@ exports[`Button component with Icon should render the icon to the left 1`] = `
         Object {
           "alignContent": "center",
           "alignItems": "center",
-          "backgroundColor": "#FFFFFF",
-          "borderRadius": 42,
+          "backgroundColor": "#f4ab34",
+          "borderColor": "#FFFFFF00",
+          "borderRadius": 4,
+          "borderWidth": 0,
           "justifyContent": "center",
           "minHeight": 40,
           "paddingHorizontal": 8,
@@ -493,30 +531,37 @@ exports[`Button component with Icon should render the icon to the left 1`] = `
       }
     >
       <Text
+        disabled={false}
         iconName="outlined-default-mockup"
         iconPosition="left"
         style={
           Array [
             Object {
-              "color": "#BBBBBB",
+              "color": "#333333",
+              "fontFamily": "Roboto",
               "fontSize": 14,
-              "fontWeight": "500",
+              "fontWeight": "400",
               "letterSpacing": 1.23,
               "lineHeight": 19,
+              "marginEnd": 0,
               "marginStart": 8,
             },
           ]
         }
         testID="button-label"
-        textColor="onPrimary"
+        type="contained"
       >
         BUTTON LABEL
       </Text>
       <Text
         accessibilityRole="imagebutton"
-        color="onPrimary"
         name="outlined-default-mockup"
         size="small"
+        style={
+          Object {
+            "color": "#333333",
+          }
+        }
       >
         outlined-default-mockup
       </Text>
@@ -538,7 +583,7 @@ exports[`Button component with Icon should render the icon to the right by defau
   onStartShouldSetResponder={[Function]}
   style={
     Object {
-      "borderRadius": 42,
+      "borderRadius": 4,
     }
   }
   testID="touchable-ripple"
@@ -552,8 +597,10 @@ exports[`Button component with Icon should render the icon to the right by defau
         Object {
           "alignContent": "center",
           "alignItems": "center",
-          "backgroundColor": "#FFFFFF",
-          "borderRadius": 42,
+          "backgroundColor": "#f4ab34",
+          "borderColor": "#FFFFFF00",
+          "borderRadius": 4,
+          "borderWidth": 0,
           "justifyContent": "center",
           "minHeight": 40,
           "paddingHorizontal": 8,
@@ -578,30 +625,37 @@ exports[`Button component with Icon should render the icon to the right by defau
       }
     >
       <Text
+        disabled={false}
         iconName="outlined-default-mockup"
         iconPosition="right"
         style={
           Array [
             Object {
-              "color": "#BBBBBB",
+              "color": "#333333",
+              "fontFamily": "Roboto",
               "fontSize": 14,
-              "fontWeight": "500",
+              "fontWeight": "400",
               "letterSpacing": 1.23,
               "lineHeight": 19,
               "marginEnd": 8,
+              "marginStart": 0,
             },
           ]
         }
         testID="button-label"
-        textColor="onPrimary"
+        type="contained"
       >
         BUTTON LABEL
       </Text>
       <Text
         accessibilityRole="imagebutton"
-        color="onPrimary"
         name="outlined-default-mockup"
         size="small"
+        style={
+          Object {
+            "color": "#333333",
+          }
+        }
       >
         outlined-default-mockup
       </Text>

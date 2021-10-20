@@ -213,12 +213,16 @@ exports[`Checkbox component render should render checkbox indeterminate selected
       >
         <Text
           accessibilityRole="image"
+          color="surface"
+          size="small"
           style={
-            Object {
-              "color": "#ffffff",
-              "fontFamily": "natds-icons",
-              "fontSize": 16,
-            }
+            Array [
+              Object {
+                "color": "#ffffff",
+                "fontFamily": "natds-icons",
+                "fontSize": 16,
+              },
+            ]
           }
           testID="natds-icon"
         >
@@ -299,12 +303,16 @@ exports[`Checkbox component render should render checkbox indeterminate selected
       >
         <Text
           accessibilityRole="image"
+          color="surface"
+          size="small"
           style={
-            Object {
-              "color": "#ffffff",
-              "fontFamily": "natds-icons",
-              "fontSize": 16,
-            }
+            Array [
+              Object {
+                "color": "#ffffff",
+                "fontFamily": "natds-icons",
+                "fontSize": 16,
+              },
+            ]
           }
           testID="natds-icon"
         >
@@ -385,12 +393,16 @@ exports[`Checkbox component render should render checkbox selected but disabled 
       >
         <Text
           accessibilityRole="image"
+          color="surface"
+          size="small"
           style={
-            Object {
-              "color": "#ffffff",
-              "fontFamily": "natds-icons",
-              "fontSize": 16,
-            }
+            Array [
+              Object {
+                "color": "#ffffff",
+                "fontFamily": "natds-icons",
+                "fontSize": 16,
+              },
+            ]
           }
           testID="natds-icon"
         >
@@ -471,12 +483,16 @@ exports[`Checkbox component render should render checkbox selected correctly 1`]
       >
         <Text
           accessibilityRole="image"
+          color="surface"
+          size="small"
           style={
-            Object {
-              "color": "#ffffff",
-              "fontFamily": "natds-icons",
-              "fontSize": 16,
-            }
+            Array [
+              Object {
+                "color": "#ffffff",
+                "fontFamily": "natds-icons",
+                "fontSize": 16,
+              },
+            ]
           }
           testID="natds-icon"
         >

@@ -601,12 +601,16 @@ exports[`Alert component Should render alert with default props 1`] = `
   >
     <Text
       accessibilityRole="imagebutton"
+      color="#333333"
+      size="standard"
       style={
-        Object {
-          "color": "#333333",
-          "fontFamily": "natds-icons",
-          "fontSize": 24,
-        }
+        Array [
+          Object {
+            "color": "#333333",
+            "fontFamily": "natds-icons",
+            "fontSize": 24,
+          },
+        ]
       }
       testID="natds-icon"
     >

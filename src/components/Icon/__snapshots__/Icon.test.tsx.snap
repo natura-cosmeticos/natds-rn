@@ -3,12 +3,16 @@
 exports[`Icon component should render component with default props: Icon component - name: outlined-default-mockup 1`] = `
 <Text
   accessibilityRole="image"
+  color="highlight"
+  size="standard"
   style={
-    Object {
-      "color": "#BBBBBB",
-      "fontFamily": "natds-icons",
-      "fontSize": 24,
-    }
+    Array [
+      Object {
+        "color": "#BBBBBB",
+        "fontFamily": "natds-icons",
+        "fontSize": 24,
+      },
+    ]
   }
   testID="natds-icon"
 >
@@ -19,12 +23,16 @@ exports[`Icon component should render component with default props: Icon compone
 exports[`Icon component should render component with given props: Icon component - name: outlined-finance-bank 1`] = `
 <Text
   accessibilityRole="imagebutton"
+  color="highlight"
+  size="standard"
   style={
-    Object {
-      "color": "#BBBBBB",
-      "fontFamily": "natds-icons",
-      "fontSize": 24,
-    }
+    Array [
+      Object {
+        "color": "#BBBBBB",
+        "fontFamily": "natds-icons",
+        "fontSize": 24,
+      },
+    ]
   }
   testID="natds-icon"
 >
@@ -35,12 +43,16 @@ exports[`Icon component should render component with given props: Icon component
 exports[`Icon component should render correctly when icon is "filled-action-add": Icon component - name: filled-action-add 1`] = `
 <Text
   accessibilityRole="image"
+  color="highlight"
+  size="standard"
   style={
-    Object {
-      "color": "#BBBBBB",
-      "fontFamily": "natds-icons",
-      "fontSize": 24,
-    }
+    Array [
+      Object {
+        "color": "#BBBBBB",
+        "fontFamily": "natds-icons",
+        "fontSize": 24,
+      },
+    ]
   }
   testID="natds-icon"
 >
@@ -51,12 +63,16 @@ exports[`Icon component should render correctly when icon is "filled-action-add"
 exports[`Icon component should render correctly when icon is "outlined-action-micrec": Icon component - name: outlined-action-micrec 1`] = `
 <Text
   accessibilityRole="image"
+  color="highlight"
+  size="standard"
   style={
-    Object {
-      "color": "#BBBBBB",
-      "fontFamily": "natds-icons",
-      "fontSize": 24,
-    }
+    Array [
+      Object {
+        "color": "#BBBBBB",
+        "fontFamily": "natds-icons",
+        "fontSize": 24,
+      },
+    ]
   }
   testID="natds-icon"
 >
@@ -67,12 +83,16 @@ exports[`Icon component should render correctly when icon is "outlined-action-mi
 exports[`Icon component should render correctly when icon is "outlined-content-wellness": Icon component - name: outlined-content-wellness 1`] = `
 <Text
   accessibilityRole="image"
+  color="highlight"
+  size="standard"
   style={
-    Object {
-      "color": "#BBBBBB",
-      "fontFamily": "natds-icons",
-      "fontSize": 24,
-    }
+    Array [
+      Object {
+        "color": "#BBBBBB",
+        "fontFamily": "natds-icons",
+        "fontSize": 24,
+      },
+    ]
   }
   testID="natds-icon"
 >
@@ -83,12 +103,16 @@ exports[`Icon component should render correctly when icon is "outlined-content-w
 exports[`Icon component should render correctly when icon is "outlined-finance-bank": Icon component - name: outlined-finance-bank 1`] = `
 <Text
   accessibilityRole="image"
+  color="highlight"
+  size="standard"
   style={
-    Object {
-      "color": "#BBBBBB",
-      "fontFamily": "natds-icons",
-      "fontSize": 24,
-    }
+    Array [
+      Object {
+        "color": "#BBBBBB",
+        "fontFamily": "natds-icons",
+        "fontSize": 24,
+      },
+    ]
   }
   testID="natds-icon"
 >

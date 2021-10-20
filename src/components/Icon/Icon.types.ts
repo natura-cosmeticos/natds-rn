@@ -1,5 +1,6 @@
 import { IconName } from '@naturacosmeticos/natds-icons';
 import { Color, Size } from '@naturacosmeticos/natds-themes/react-native';
+import { StyleProp, TextStyle } from 'react-native';
 import { Theme } from '../..';
 
 /**
@@ -46,5 +47,9 @@ export interface IconProps {
   /**
    * The theme
    */
-  theme: Theme
+  theme?: Theme
+  /**
+   *
+   */
+  style?: StyleProp<TextStyle>
 }
