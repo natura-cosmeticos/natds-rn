@@ -60,6 +60,18 @@
 		<string>Roboto-Regular.ttf</string>
 		<string>Roboto-Thin.ttf</string>
 		<string>Roboto-ThinItalic.ttf</string>
+		<string>DrukCy-Bold.ttf</string>
+		<string>HelveticaNowDisplay-Bd.ttf</string>
+		<string>HelveticaNowDisplay-Md.ttf</string>
+		<string>HelveticaNowDisplay-Regular.ttf</string>
+		<string>Montserrat-Bold.ttf</string>
+		<string>Montserrat-Regular.ttf</string>
+		<string>Montserrat-SemiBold.ttf</string>
+		<string>Recoleta-SemiBold.ttf</string>
+		<string>SuisseIntl-Regular.ttf</string>
+		<string>WorkSans-Bold.ttf</string>
+		<string>WorkSans-Regular.ttf</string>
+		<string>ZapfHumanist601BT-Roman.ttf</string>
 	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>

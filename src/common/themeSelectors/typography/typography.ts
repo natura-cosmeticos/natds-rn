@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import { Theme, Heading1 } from '@naturacosmeticos/natds-themes/react-native';
 import { checkTheme } from '../theme/theme';
 
