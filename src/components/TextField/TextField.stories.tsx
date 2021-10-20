@@ -292,6 +292,25 @@ export const Type = () => {
   );
 };
 
+export const TextArea = () => {
+  const [value, setValue] = React.useState('');
+
+  return (
+    <>
+      <StoryContainer title='Text Area'>
+        <TextField
+          helperText="Helper text"
+          label="Label"
+          onChangeText={text => setValue(text)}
+          placeholder="Placeholder"
+          value={value}
+          multiline
+        />
+      </StoryContainer>
+    </>
+  );
+};
+
 export const All = () => (
   <>
     <Default />
@@ -303,5 +322,6 @@ export const All = () => (
     <Readonly />
     <Action />
     <Type />
+    <TextArea />
   </>
 );
