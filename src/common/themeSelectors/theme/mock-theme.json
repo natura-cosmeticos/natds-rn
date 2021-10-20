@@ -695,11 +695,11 @@
   "asset": {
       "font": {
           "file": {
-              "display": "HelveticaNowDisplay-Bd",
-              "headline": "HelveticaNowDisplay-Md",
+              "display": "helvetica_now_display_bd",
+              "headline": "helvetica_now_display_md",
               "body": {
-                  "regular": "HelveticaNowDisplay-Regular",
-                  "bold": "HelveticaNowDisplay-Bd"
+                  "regular": "helvetica_now_display_regular",
+                  "bold": "helvetica_now_display_bd"
               }
           }
       },

@@ -33,28 +33,14 @@ export const getColorByType = (theme: Theme, type: SnackbarType) => {
   }
 };
 
-export const getColorNameByType = (type: SnackbarType) => {
-  switch (type) {
-    case 'info':
-      return 'onLink';
-    case 'warning':
-      return 'onWarning';
-    case 'error':
-      return 'onAlert';
-    case 'success':
-      return 'onSuccess';
-    default:
-      return 'surface';
-  }
-};
 
 interface SnackbarButtonWrapperProps { isTwoLineAction?: boolean; }
 
 export const SnackbarButtonWrapper = styled.View<SnackbarButtonWrapperProps>`
-  marginTop: ${({ isTwoLineAction }) => (isTwoLineAction ? '0px' : '4px')};
-  marginBottom: 4px;
-  marginRight: 4px;
-  marginLeft: 4px;
+  margin-top: ${({ isTwoLineAction }) => (isTwoLineAction ? '0px' : '4px')};
+  margin-bottom: 4px;
+  margin-right: 4px;
+  margin-left: 4px;
 `;
 
 interface SnackbarWrapperProps {
@@ -108,10 +94,10 @@ interface SnackbarTextProps extends TextProps {
 
 export const SnackbarText = styled.Text<SnackbarTextProps>`
   color: ${({ theme, type }) => getColorByType(theme, type)};
-  flexGrow: 1;
-  paddingBottom: ${({ isTwoLineAction }) => (isTwoLineAction ? 8 : 16)}px;
-  paddingLeft: 16px;
-  paddingRight: 16px;
-  paddingTop: 16px;
-  fontSize: 14px;
+  flex-grow: 1;
+  padding-bottom: ${({ isTwoLineAction }) => (isTwoLineAction ? 8 : 16)}px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 16px;
+  font-size: 14px;
 `;

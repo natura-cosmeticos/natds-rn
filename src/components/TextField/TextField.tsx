@@ -1,6 +1,8 @@
 /* eslint-disable max-lines */
 import React, { Dispatch, SetStateAction } from 'react';
-import { KeyboardTypeOptions, NativeSyntheticEvent, TextInputFocusEventData } from 'react-native';
+import {
+  KeyboardTypeOptions, NativeSyntheticEvent, TextInputFocusEventData, Platform,
+} from 'react-native';
 import { useTheme } from 'styled-components/native';
 import { getPlaceholderTextColor, Input } from './TextField.styles';
 import { InputFeedbackContainer } from '../InputFeedbackContainer';
@@ -56,6 +58,7 @@ const getContainerProps = ({
   return { active };
 };
 
+// eslint-disable-next-line complexity
 export const TextField = (props: TextFieldProps) => {
   const theme = useTheme();
   const [active, setActive] = React.useState(false);
@@ -78,9 +81,12 @@ export const TextField = (props: TextFieldProps) => {
     size = 'mediumX',
     type = 'text',
     value = '',
+    testID = 'ds-input',
   }: TextFieldProps = props;
   const [secureState, setSecureState] = React.useState(isPasswordType(type));
   const fieldValue = getFieldValue({ numberValue, type, value });
+
+  const isAndroidMultiline = Platform.OS === 'android' && !!props.multiline;
 
   return (
     <InputFeedbackContainer
@@ -92,7 +98,9 @@ export const TextField = (props: TextFieldProps) => {
         active, disabled, feedback, helperText,
       })}
     >
-      <Input testID="input"
+      <Input
+        style={{ textAlignVertical: isAndroidMultiline ? 'top' : 'auto' }}
+        testID={testID}
         disabled={disabled}
         editable={isEditable({ disabled, readonly })}
         hasActionIcon={hasActionIcon({ action, actionComponent })}

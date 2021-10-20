@@ -107,11 +107,11 @@ exports[`Alert component Should render alert with default props 1`] = `
         "font": Object {
           "file": Object {
             "body": Object {
-              "bold": "HelveticaNowDisplay-Bd",
-              "regular": "HelveticaNowDisplay-Regular",
+              "bold": "helvetica_now_display_bd",
+              "regular": "helvetica_now_display_regular",
             },
-            "display": "HelveticaNowDisplay-Bd",
-            "headline": "HelveticaNowDisplay-Md",
+            "display": "helvetica_now_display_bd",
+            "headline": "helvetica_now_display_md",
           },
         },
       },
@@ -873,12 +873,16 @@ exports[`Alert component Should render alert with default props 1`] = `
   >
     <Text
       accessibilityRole="imagebutton"
+      color="#333333"
+      size="standard"
       style={
-        Object {
-          "color": "#333333",
-          "fontFamily": "natds-icons",
-          "fontSize": 24,
-        }
+        Array [
+          Object {
+            "color": "#333333",
+            "fontFamily": "natds-icons",
+            "fontSize": 24,
+          },
+        ]
       }
       testID="natds-icon"
     >

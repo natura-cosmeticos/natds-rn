@@ -1,12 +1,6 @@
-/* eslint-disable max-lines */
-import { Color } from '@naturacosmeticos/natds-themes/react-native';
+/* eslint-disable complexity */
 import styled from 'styled-components/native';
 import {
-  getColorByName,
-  getColorLowEmphasis,
-  getColorMediumEmphasis,
-  getColorPrimary,
-  getRadiusBySize,
   getShadowBySize,
   getSizeMedium,
   getSizeSemi,
@@ -18,21 +12,7 @@ import {
 import { ButtonBaseProps } from './Button.types';
 
 type SurfaceProps = Required<Pick<ButtonBaseProps, 'type' | 'theme' | 'disabled' | 'size'>>
-type LabelProps = Pick<ButtonBaseProps, 'iconName' | 'iconPosition' | 'textColor' | 'theme' | 'disabled'| 'type'>
-
-const getButtonStylesByType = ({ disabled, theme, type = 'contained' }: Omit<SurfaceProps, 'size'>) => {
-  const styles = {
-    contained: {
-      background: disabled ? getColorLowEmphasis(theme) : getColorPrimary(theme),
-    },
-    outlined: {
-      borderColor: disabled ? getColorMediumEmphasis(theme) : getColorPrimary(theme),
-      borderWidth: 1,
-    },
-  };
-
-  return styles[type];
-};
+type LabelProps = Pick<ButtonBaseProps, 'iconName' | 'iconPosition' | 'theme' | 'disabled' | 'type'>
 
 export const getButtonStylesBySize = ({ size, theme }: Pick<SurfaceProps, 'size' | 'theme'>) => {
   const buttonSizes = {
@@ -44,14 +24,13 @@ export const getButtonStylesBySize = ({ size, theme }: Pick<SurfaceProps, 'size'
       minHeight: getSizeMedium(theme),
       paddingHorizontal: getSpacingSmall(theme),
     },
-    semiX: {
-      minHeight: getSizeSemiX(theme),
-      paddingHorizontal: getSpacingTiny(theme),
-    },
-    // eslint-disable-next-line sort-keys
     semi: {
       minHeight: getSizeSemi(theme),
       paddingHorizontal: getSpacingMicro(theme),
+    },
+    semiX: {
+      minHeight: getSizeSemiX(theme),
+      paddingHorizontal: getSpacingTiny(theme),
     },
     small: {
       minHeight: getSizeSemi(theme),
@@ -68,54 +47,44 @@ export const getButtonShadowByType = ({ disabled, theme, type }: Omit<SurfacePro
     : {}
 );
 
-export const getButtonTextColor = ({ disabled, type }: Pick<LabelProps, 'disabled'| 'type'>) => {
-  const color: {
-    active: keyof Color,
-    disabled: keyof Color,
-  } = {
-    active: type === 'contained' ? 'onPrimary' : 'highEmphasis',
-    disabled: type === 'contained' ? 'highEmphasis' : 'mediumEmphasis',
-  };
-
-  return disabled ? color.disabled : color.active;
-};
-
 export const Surface = styled.View<SurfaceProps>(({
-  type = 'contained', theme, disabled = false, size,
+  disabled = false,
+  size,
+  theme,
+  type = 'contained',
 }) => ({
   ...getButtonStylesBySize({ size, theme }),
-  ...getButtonStylesByType({ disabled, theme, type }),
   alignContent: 'center',
   alignItems: 'center',
-  borderRadius: getRadiusBySize(theme, 'medium'),
+  background: disabled
+    ? theme.button[type].color.disable.background
+    : theme.button[type].color.enable.background,
+  borderColor: disabled
+    ? theme.button[type].color.disable.border
+    : theme.button[type].color.enable.border,
+  borderRadius: theme.button.borderRadius,
+  borderWidth: type === 'outlined' ? 1 : 0,
   justifyContent: 'center',
 }));
 
-const iconMargin = ({ theme, iconName, iconPosition }: Pick<LabelProps, 'theme' | 'iconName' | 'iconPosition'>) => {
-  if (!iconName) {
-    return {};
-  }
-
-  return iconPosition === 'left'
-    ? { marginStart: getSpacingTiny(theme) }
-    : { marginEnd: getSpacingTiny(theme) };
-};
-
-const labelOrder = ({ iconPosition }: Pick<LabelProps, 'iconPosition'>) => (
-  iconPosition === 'right' ? 'row' : 'row-reverse'
-);
-
-export const Label = styled.View<Pick<LabelProps, 'iconPosition'>>(({ iconPosition }) => (
-  { alignItems: 'center', flexDirection: labelOrder({ iconPosition }) }
-));
+export const Label = styled.View<Pick<LabelProps, 'iconPosition'>>(({ iconPosition }) => ({
+  alignItems: 'center',
+  flexDirection: iconPosition === 'right' ? 'row' : 'row-reverse',
+}));
 
 export const LabelText = styled.Text<LabelProps>(({
-  iconName, iconPosition, textColor, theme,
+  iconName,
+  iconPosition,
+  type = 'contained',
+  theme,
+  disabled = false,
 }) => ({
-  ...iconMargin({ iconName, iconPosition, theme }),
-  color: getColorByName(theme, textColor),
-  fontSize: 14,
-  fontWeight: 500,
-  letterSpacing: 1.23,
+  color: disabled ? theme.button[type].color.disable.label : theme.button[type].color.enable.label,
+  fontFamily: theme.button.label.primary.fontFamily,
+  fontSize: theme.button.label.fontSize,
+  fontWeight: theme.button.label.primary.fontWeight,
+  letterSpacing: theme.button.label.letterSpacing,
   lineHeight: 19,
+  marginEnd: iconName && iconPosition === 'right' ? getSpacingTiny(theme) : 0,
+  marginStart: iconName && iconPosition === 'left' ? getSpacingTiny(theme) : 0,
 }));

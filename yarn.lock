@@ -1661,10 +1661,10 @@
   resolved "https://registry.npmjs.org/@naturacosmeticos/natds-icons/-/natds-icons-1.3.0.tgz"
   integrity sha512-vy1VW+1jFwrQAT19/PvnXSr7Wh/NthcrtY4BWZ+I1Tt+wSqrteSprP5pFBgPdGf8Jy64N9KVhtE9wnmX9byP6g==
 
-"@naturacosmeticos/natds-themes@^0.15.4":
-  version "0.15.4"
-  resolved "https://registry.yarnpkg.com/@naturacosmeticos/natds-themes/-/natds-themes-0.15.4.tgz#08026263202298e88ee8358126e80fb9ff623217"
-  integrity sha512-EImqxLPfDnk2qYdAnkrfYsrRvHJ6t6PQCkdMVpwaNW5CrGg5018O2xRJeQjUa8kG2UvwzV/xDK8epbR3wk1nbA==
+"@naturacosmeticos/natds-themes@^0.16.4":
+  version "0.16.4"
+  resolved "https://registry.yarnpkg.com/@naturacosmeticos/natds-themes/-/natds-themes-0.16.4.tgz#97513f8f615a5daacc351a6eb452e04197e92ec6"
+  integrity sha512-ZWiwjH4KX8AufAi9H1ewKW+bqn3U9IZaFMcKcrvEIz96jB9H+79s1cvVDrxOVVBO2TovInNgvxcay5l1klhg2g==
   dependencies:
     open-color "^1.8.0"
 

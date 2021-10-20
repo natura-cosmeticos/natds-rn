@@ -40,10 +40,10 @@ describe('Counter', () => {
     });
   });
   describe('disabled attribute', () => {
-    it('should render with enabled buttons by default', () => {
+    it('should render with decrement button disabled and increment button enabled by default', () => {
       const { getByText } = renderWithTheme(<Counter {...defaultProps} />);
 
-      expect(getByText('−')).toBeEnabled();
+      expect(getByText('−')).toBeDisabled();
       expect(getByText('+')).toBeEnabled();
     });
     it('should render with enabled buttons when value is between minimum and maximum values', () => {

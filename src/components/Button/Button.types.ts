@@ -1,5 +1,6 @@
+import { StyleProp, TextStyle } from 'react-native';
 import { IconName } from '@naturacosmeticos/natds-icons';
-import { Color, Theme } from '@naturacosmeticos/natds-themes/react-native';
+import { Theme } from '@naturacosmeticos/natds-themes/react-native';
 
 /**
  * @deprecated Use 'semi' and 'medium'
@@ -11,8 +12,8 @@ export type ButtonTypes = 'contained' | 'outlined' | 'text'
 export type IconPositions = 'left' | 'right'
 
 export interface ButtonBaseProps extends ButtonProps {
-  textColor: keyof Color
   theme: Theme
+  textLabelStyle?: StyleProp<TextStyle>
 }
 
 export interface ButtonProps {

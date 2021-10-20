@@ -108,11 +108,11 @@ exports[`Card component should render Card component 1`] = `
         "font": Object {
           "file": Object {
             "body": Object {
-              "bold": "HelveticaNowDisplay-Bd",
-              "regular": "HelveticaNowDisplay-Regular",
+              "bold": "helvetica_now_display_bd",
+              "regular": "helvetica_now_display_regular",
             },
-            "display": "HelveticaNowDisplay-Bd",
-            "headline": "HelveticaNowDisplay-Md",
+            "display": "helvetica_now_display_bd",
+            "headline": "helvetica_now_display_md",
           },
         },
       },
