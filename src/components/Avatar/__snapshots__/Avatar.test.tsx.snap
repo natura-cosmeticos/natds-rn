@@ -34,6 +34,49 @@ exports[`Avatar component should render avatar component 1`] = `
     testID="avatar"
     theme={
       Object {
+        "alert": Object {
+          "content": Object {
+            "fallback": Object {
+              "fontFamily": "Arial",
+              "fontWeight": 400,
+            },
+            "fontSize": 16,
+            "letterSpacing": 0.51,
+            "lineHeight": 1.5,
+            "primary": Object {
+              "fontFamily": "Roboto",
+              "fontWeight": 400,
+            },
+          },
+          "title": Object {
+            "fallback": Object {
+              "fontFamily": "Arial",
+              "fontWeight": 400,
+            },
+            "fontSize": 20,
+            "letterSpacing": 0.24,
+            "lineHeight": 1.5,
+            "primary": Object {
+              "fontFamily": "Roboto",
+              "fontWeight": 500,
+            },
+          },
+        },
+        "appBarTop": Object {
+          "title": Object {
+            "fallback": Object {
+              "fontFamily": "Arial",
+              "fontWeight": 400,
+            },
+            "fontSize": 20,
+            "letterSpacing": 0.24,
+            "lineHeight": 1.25,
+            "primary": Object {
+              "fontFamily": "Roboto",
+              "fontWeight": 500,
+            },
+          },
+        },
         "asset": Object {
           "brand": Object {
             "custom": Object {
@@ -76,12 +119,47 @@ exports[`Avatar component should render avatar component 1`] = `
           "font": Object {
             "file": Object {
               "body": Object {
-                "bold": "HelveticaNowDisplay-Bd",
-                "regular": "HelveticaNowDisplay-Regular",
+                "bold": "helvetica_now_display_bd",
+                "regular": "helvetica_now_display_regular",
               },
-              "display": "HelveticaNowDisplay-Bd",
-              "headline": "HelveticaNowDisplay-Md",
+              "display": "helvetica_now_display_bd",
+              "headline": "helvetica_now_display_md",
             },
+          },
+        },
+        "avatar": Object {
+          "fallback": Object {
+            "fontFamily": "Arial",
+            "fontWeight": 400,
+          },
+          "largeXXX": Object {
+            "fontSize": 48,
+            "letterSpacing": 0,
+            "lineHeight": 1.5,
+          },
+          "medium": Object {
+            "fontSize": 24,
+            "letterSpacing": 0,
+            "lineHeight": 1.5,
+          },
+          "primary": Object {
+            "fontFamily": "Roboto",
+            "fontWeight": 400,
+          },
+          "semi": Object {
+            "fontSize": 14,
+            "letterSpacing": 0.22,
+            "lineHeight": 1.5,
+          },
+          "semiX": Object {
+            "fontSize": 20,
+            "letterSpacing": 0.24,
+            "lineHeight": 1.5,
+          },
+          "standard": Object {
+            "fontSize": 12,
+            "letterSpacing": 0,
+            "lineHeight": 1.5,
           },
         },
         "badge": Object {
@@ -170,14 +248,14 @@ exports[`Avatar component should render avatar component 1`] = `
           "label": Object {
             "fallback": Object {
               "fontFamily": "Arial",
-              "fontWeight": 400,
+              "fontWeight": 500,
             },
             "fontSize": 14,
             "letterSpacing": 1.23,
             "lineHeight": 1.5,
             "primary": Object {
               "fontFamily": "Roboto",
-              "fontWeight": 400,
+              "fontWeight": 500,
             },
           },
           "outlined": Object {
@@ -245,7 +323,7 @@ exports[`Avatar component should render avatar component 1`] = `
             "lineHeight": 1.5,
             "primary": Object {
               "fontFamily": "Roboto",
-              "fontWeight": 500,
+              "fontWeight": 400,
             },
           },
         },
@@ -292,6 +370,34 @@ exports[`Avatar component should render avatar component 1`] = `
           "success": "#569a32",
           "surface": "#ffffff",
           "warning": "#fcc433",
+        },
+        "counter": Object {
+          "content": Object {
+            "fallback": Object {
+              "fontFamily": "Arial",
+              "fontWeight": 400,
+            },
+            "fontSize": 16,
+            "letterSpacing": 0.51,
+            "lineHeight": 1.25,
+            "primary": Object {
+              "fontFamily": "Roboto",
+              "fontWeight": 400,
+            },
+          },
+          "label": Object {
+            "fallback": Object {
+              "fontFamily": "Arial",
+              "fontWeight": 400,
+            },
+            "fontSize": 14,
+            "letterSpacing": 0.11,
+            "lineHeight": 1.25,
+            "primary": Object {
+              "fontFamily": "Roboto",
+              "fontWeight": 500,
+            },
+          },
         },
         "dialog": Object {
           "body": Object {
@@ -411,6 +517,21 @@ exports[`Avatar component should render avatar component 1`] = `
             "shadowRadius": 2,
           },
         },
+        "expansionPanel": Object {
+          "title": Object {
+            "fallback": Object {
+              "fontFamily": "Arial",
+              "fontWeight": 400,
+            },
+            "fontSize": 16,
+            "letterSpacing": 0.13,
+            "lineHeight": 1.5,
+            "primary": Object {
+              "fontFamily": "Roboto",
+              "fontWeight": 400,
+            },
+          },
+        },
         "heading1": Object {
           "fontSize": 96,
           "fontWeight": 400,
@@ -440,6 +561,64 @@ exports[`Avatar component should render avatar component 1`] = `
           "fontSize": 20,
           "fontWeight": 500,
           "letterSpacing": 0.24,
+        },
+        "navigationDrawer": Object {
+          "header": Object {
+            "subtitle": Object {
+              "fallback": Object {
+                "fontFamily": "Arial",
+                "fontWeight": 400,
+              },
+              "fontSize": 14,
+              "letterSpacing": 0.22,
+              "lineHeight": 1.5,
+              "primary": Object {
+                "fontFamily": "Roboto",
+                "fontWeight": 400,
+              },
+            },
+            "title": Object {
+              "fallback": Object {
+                "fontFamily": "Arial",
+                "fontWeight": 400,
+              },
+              "fontSize": 20,
+              "letterSpacing": 0.24,
+              "lineHeight": 1.25,
+              "primary": Object {
+                "fontFamily": "Roboto",
+                "fontWeight": 500,
+              },
+            },
+          },
+          "section": Object {
+            "item": Object {
+              "fallback": Object {
+                "fontFamily": "Arial",
+                "fontWeight": 400,
+              },
+              "fontSize": 14,
+              "letterSpacing": 0.22,
+              "lineHeight": 1.5,
+              "primary": Object {
+                "fontFamily": "Roboto",
+                "fontWeight": 400,
+              },
+            },
+            "title": Object {
+              "fallback": Object {
+                "fontFamily": "Arial",
+                "fontWeight": 400,
+              },
+              "fontSize": 12,
+              "letterSpacing": 0.38,
+              "lineHeight": 1.5,
+              "primary": Object {
+                "fontFamily": "Roboto",
+                "fontWeight": 400,
+              },
+            },
+          },
         },
         "opacity": Object {
           "disabled": 0.32,
@@ -471,7 +650,54 @@ exports[`Avatar component should render avatar component 1`] = `
             "lineHeight": 1.5,
             "primary": Object {
               "fontFamily": "Roboto",
-              "fontWeight": 500,
+              "fontWeight": 400,
+            },
+          },
+        },
+        "rating": Object {
+          "counter": Object {
+            "label": Object {
+              "fallback": Object {
+                "fontFamily": "Arial",
+                "fontWeight": 400,
+              },
+              "fontSize": 14,
+              "letterSpacing": 0.22,
+              "lineHeight": 1.5,
+              "primary": Object {
+                "fontFamily": "Roboto",
+                "fontWeight": 400,
+              },
+            },
+          },
+          "input": Object {
+            "label": Object {
+              "fallback": Object {
+                "fontFamily": "Arial",
+                "fontWeight": 400,
+              },
+              "fontSize": 12,
+              "letterSpacing": 0.38,
+              "lineHeight": 1.5,
+              "primary": Object {
+                "fontFamily": "Roboto",
+                "fontWeight": 400,
+              },
+            },
+          },
+        },
+        "shortcut": Object {
+          "label": Object {
+            "fallback": Object {
+              "fontFamily": "Arial",
+              "fontWeight": 400,
+            },
+            "fontSize": 12,
+            "letterSpacing": 0.38,
+            "lineHeight": 1.5,
+            "primary": Object {
+              "fontFamily": "Roboto",
+              "fontWeight": 400,
             },
           },
         },
@@ -495,6 +721,21 @@ exports[`Avatar component should render avatar component 1`] = `
           "tiny": 8,
           "veryHuge": 256,
         },
+        "snackbar": Object {
+          "content": Object {
+            "fallback": Object {
+              "fontFamily": "Arial",
+              "fontWeight": 400,
+            },
+            "fontSize": 14,
+            "letterSpacing": 0.22,
+            "lineHeight": 1.5,
+            "primary": Object {
+              "fontFamily": "Roboto",
+              "fontWeight": 400,
+            },
+          },
+        },
         "spacing": Object {
           "large": 48,
           "micro": 4,
@@ -515,6 +756,21 @@ exports[`Avatar component should render avatar component 1`] = `
           "fontWeight": 500,
           "letterSpacing": 0.11,
         },
+        "tab": Object {
+          "label": Object {
+            "fallback": Object {
+              "fontFamily": "Arial",
+              "fontWeight": 400,
+            },
+            "fontSize": 14,
+            "letterSpacing": 1.23,
+            "lineHeight": 1.5,
+            "primary": Object {
+              "fontFamily": "Roboto",
+              "fontWeight": 500,
+            },
+          },
+        },
         "tag": Object {
           "label": Object {
             "fallback": Object {
@@ -532,27 +788,43 @@ exports[`Avatar component should render avatar component 1`] = `
         },
         "textField": Object {
           "content": Object {
+            "fallback": Object {
+              "fontFamily": "Arial",
+              "fontWeight": 400,
+            },
             "fontSize": 16,
             "letterSpacing": 0.51,
             "lineHeight": 1.25,
-          },
-          "fallback": Object {
-            "fontFamily": "Arial",
-            "fontWeight": 400,
+            "primary": Object {
+              "fontFamily": "Roboto",
+              "fontWeight": 400,
+            },
           },
           "helperText": Object {
+            "fallback": Object {
+              "fontFamily": "Arial",
+              "fontWeight": 400,
+            },
             "fontSize": 12,
             "letterSpacing": 0.38,
             "lineHeight": 1.25,
+            "primary": Object {
+              "fontFamily": "Roboto",
+              "fontWeight": 400,
+            },
           },
           "label": Object {
+            "fallback": Object {
+              "fontFamily": "Arial",
+              "fontWeight": 400,
+            },
             "fontSize": 14,
             "letterSpacing": 0.11,
-            "lineHeight": 1.25,
-          },
-          "primary": Object {
-            "fontFamily": "Roboto",
-            "fontWeight": 500,
+            "lineHeight": 1.5,
+            "primary": Object {
+              "fontFamily": "Roboto",
+              "fontWeight": 500,
+            },
           },
         },
         "typography": Object {
@@ -636,6 +908,49 @@ exports[`Avatar component should render avatar component anonymous 1`] = `
     testID="avatar"
     theme={
       Object {
+        "alert": Object {
+          "content": Object {
+            "fallback": Object {
+              "fontFamily": "Arial",
+              "fontWeight": 400,
+            },
+            "fontSize": 16,
+            "letterSpacing": 0.51,
+            "lineHeight": 1.5,
+            "primary": Object {
+              "fontFamily": "Roboto",
+              "fontWeight": 400,
+            },
+          },
+          "title": Object {
+            "fallback": Object {
+              "fontFamily": "Arial",
+              "fontWeight": 400,
+            },
+            "fontSize": 20,
+            "letterSpacing": 0.24,
+            "lineHeight": 1.5,
+            "primary": Object {
+              "fontFamily": "Roboto",
+              "fontWeight": 500,
+            },
+          },
+        },
+        "appBarTop": Object {
+          "title": Object {
+            "fallback": Object {
+              "fontFamily": "Arial",
+              "fontWeight": 400,
+            },
+            "fontSize": 20,
+            "letterSpacing": 0.24,
+            "lineHeight": 1.25,
+            "primary": Object {
+              "fontFamily": "Roboto",
+              "fontWeight": 500,
+            },
+          },
+        },
         "asset": Object {
           "brand": Object {
             "custom": Object {
@@ -678,12 +993,47 @@ exports[`Avatar component should render avatar component anonymous 1`] = `
           "font": Object {
             "file": Object {
               "body": Object {
-                "bold": "HelveticaNowDisplay-Bd",
-                "regular": "HelveticaNowDisplay-Regular",
+                "bold": "helvetica_now_display_bd",
+                "regular": "helvetica_now_display_regular",
               },
-              "display": "HelveticaNowDisplay-Bd",
-              "headline": "HelveticaNowDisplay-Md",
+              "display": "helvetica_now_display_bd",
+              "headline": "helvetica_now_display_md",
             },
+          },
+        },
+        "avatar": Object {
+          "fallback": Object {
+            "fontFamily": "Arial",
+            "fontWeight": 400,
+          },
+          "largeXXX": Object {
+            "fontSize": 48,
+            "letterSpacing": 0,
+            "lineHeight": 1.5,
+          },
+          "medium": Object {
+            "fontSize": 24,
+            "letterSpacing": 0,
+            "lineHeight": 1.5,
+          },
+          "primary": Object {
+            "fontFamily": "Roboto",
+            "fontWeight": 400,
+          },
+          "semi": Object {
+            "fontSize": 14,
+            "letterSpacing": 0.22,
+            "lineHeight": 1.5,
+          },
+          "semiX": Object {
+            "fontSize": 20,
+            "letterSpacing": 0.24,
+            "lineHeight": 1.5,
+          },
+          "standard": Object {
+            "fontSize": 12,
+            "letterSpacing": 0,
+            "lineHeight": 1.5,
           },
         },
         "badge": Object {
@@ -772,14 +1122,14 @@ exports[`Avatar component should render avatar component anonymous 1`] = `
           "label": Object {
             "fallback": Object {
               "fontFamily": "Arial",
-              "fontWeight": 400,
+              "fontWeight": 500,
             },
             "fontSize": 14,
             "letterSpacing": 1.23,
             "lineHeight": 1.5,
             "primary": Object {
               "fontFamily": "Roboto",
-              "fontWeight": 400,
+              "fontWeight": 500,
             },
           },
           "outlined": Object {
@@ -847,7 +1197,7 @@ exports[`Avatar component should render avatar component anonymous 1`] = `
             "lineHeight": 1.5,
             "primary": Object {
               "fontFamily": "Roboto",
-              "fontWeight": 500,
+              "fontWeight": 400,
             },
           },
         },
@@ -894,6 +1244,34 @@ exports[`Avatar component should render avatar component anonymous 1`] = `
           "success": "#569a32",
           "surface": "#ffffff",
           "warning": "#fcc433",
+        },
+        "counter": Object {
+          "content": Object {
+            "fallback": Object {
+              "fontFamily": "Arial",
+              "fontWeight": 400,
+            },
+            "fontSize": 16,
+            "letterSpacing": 0.51,
+            "lineHeight": 1.25,
+            "primary": Object {
+              "fontFamily": "Roboto",
+              "fontWeight": 400,
+            },
+          },
+          "label": Object {
+            "fallback": Object {
+              "fontFamily": "Arial",
+              "fontWeight": 400,
+            },
+            "fontSize": 14,
+            "letterSpacing": 0.11,
+            "lineHeight": 1.25,
+            "primary": Object {
+              "fontFamily": "Roboto",
+              "fontWeight": 500,
+            },
+          },
         },
         "dialog": Object {
           "body": Object {
@@ -1013,6 +1391,21 @@ exports[`Avatar component should render avatar component anonymous 1`] = `
             "shadowRadius": 2,
           },
         },
+        "expansionPanel": Object {
+          "title": Object {
+            "fallback": Object {
+              "fontFamily": "Arial",
+              "fontWeight": 400,
+            },
+            "fontSize": 16,
+            "letterSpacing": 0.13,
+            "lineHeight": 1.5,
+            "primary": Object {
+              "fontFamily": "Roboto",
+              "fontWeight": 400,
+            },
+          },
+        },
         "heading1": Object {
           "fontSize": 96,
           "fontWeight": 400,
@@ -1042,6 +1435,64 @@ exports[`Avatar component should render avatar component anonymous 1`] = `
           "fontSize": 20,
           "fontWeight": 500,
           "letterSpacing": 0.24,
+        },
+        "navigationDrawer": Object {
+          "header": Object {
+            "subtitle": Object {
+              "fallback": Object {
+                "fontFamily": "Arial",
+                "fontWeight": 400,
+              },
+              "fontSize": 14,
+              "letterSpacing": 0.22,
+              "lineHeight": 1.5,
+              "primary": Object {
+                "fontFamily": "Roboto",
+                "fontWeight": 400,
+              },
+            },
+            "title": Object {
+              "fallback": Object {
+                "fontFamily": "Arial",
+                "fontWeight": 400,
+              },
+              "fontSize": 20,
+              "letterSpacing": 0.24,
+              "lineHeight": 1.25,
+              "primary": Object {
+                "fontFamily": "Roboto",
+                "fontWeight": 500,
+              },
+            },
+          },
+          "section": Object {
+            "item": Object {
+              "fallback": Object {
+                "fontFamily": "Arial",
+                "fontWeight": 400,
+              },
+              "fontSize": 14,
+              "letterSpacing": 0.22,
+              "lineHeight": 1.5,
+              "primary": Object {
+                "fontFamily": "Roboto",
+                "fontWeight": 400,
+              },
+            },
+            "title": Object {
+              "fallback": Object {
+                "fontFamily": "Arial",
+                "fontWeight": 400,
+              },
+              "fontSize": 12,
+              "letterSpacing": 0.38,
+              "lineHeight": 1.5,
+              "primary": Object {
+                "fontFamily": "Roboto",
+                "fontWeight": 400,
+              },
+            },
+          },
         },
         "opacity": Object {
           "disabled": 0.32,
@@ -1073,7 +1524,54 @@ exports[`Avatar component should render avatar component anonymous 1`] = `
             "lineHeight": 1.5,
             "primary": Object {
               "fontFamily": "Roboto",
-              "fontWeight": 500,
+              "fontWeight": 400,
+            },
+          },
+        },
+        "rating": Object {
+          "counter": Object {
+            "label": Object {
+              "fallback": Object {
+                "fontFamily": "Arial",
+                "fontWeight": 400,
+              },
+              "fontSize": 14,
+              "letterSpacing": 0.22,
+              "lineHeight": 1.5,
+              "primary": Object {
+                "fontFamily": "Roboto",
+                "fontWeight": 400,
+              },
+            },
+          },
+          "input": Object {
+            "label": Object {
+              "fallback": Object {
+                "fontFamily": "Arial",
+                "fontWeight": 400,
+              },
+              "fontSize": 12,
+              "letterSpacing": 0.38,
+              "lineHeight": 1.5,
+              "primary": Object {
+                "fontFamily": "Roboto",
+                "fontWeight": 400,
+              },
+            },
+          },
+        },
+        "shortcut": Object {
+          "label": Object {
+            "fallback": Object {
+              "fontFamily": "Arial",
+              "fontWeight": 400,
+            },
+            "fontSize": 12,
+            "letterSpacing": 0.38,
+            "lineHeight": 1.5,
+            "primary": Object {
+              "fontFamily": "Roboto",
+              "fontWeight": 400,
             },
           },
         },
@@ -1097,6 +1595,21 @@ exports[`Avatar component should render avatar component anonymous 1`] = `
           "tiny": 8,
           "veryHuge": 256,
         },
+        "snackbar": Object {
+          "content": Object {
+            "fallback": Object {
+              "fontFamily": "Arial",
+              "fontWeight": 400,
+            },
+            "fontSize": 14,
+            "letterSpacing": 0.22,
+            "lineHeight": 1.5,
+            "primary": Object {
+              "fontFamily": "Roboto",
+              "fontWeight": 400,
+            },
+          },
+        },
         "spacing": Object {
           "large": 48,
           "micro": 4,
@@ -1117,6 +1630,21 @@ exports[`Avatar component should render avatar component anonymous 1`] = `
           "fontWeight": 500,
           "letterSpacing": 0.11,
         },
+        "tab": Object {
+          "label": Object {
+            "fallback": Object {
+              "fontFamily": "Arial",
+              "fontWeight": 400,
+            },
+            "fontSize": 14,
+            "letterSpacing": 1.23,
+            "lineHeight": 1.5,
+            "primary": Object {
+              "fontFamily": "Roboto",
+              "fontWeight": 500,
+            },
+          },
+        },
         "tag": Object {
           "label": Object {
             "fallback": Object {
@@ -1134,27 +1662,43 @@ exports[`Avatar component should render avatar component anonymous 1`] = `
         },
         "textField": Object {
           "content": Object {
+            "fallback": Object {
+              "fontFamily": "Arial",
+              "fontWeight": 400,
+            },
             "fontSize": 16,
             "letterSpacing": 0.51,
             "lineHeight": 1.25,
-          },
-          "fallback": Object {
-            "fontFamily": "Arial",
-            "fontWeight": 400,
+            "primary": Object {
+              "fontFamily": "Roboto",
+              "fontWeight": 400,
+            },
           },
           "helperText": Object {
+            "fallback": Object {
+              "fontFamily": "Arial",
+              "fontWeight": 400,
+            },
             "fontSize": 12,
             "letterSpacing": 0.38,
             "lineHeight": 1.25,
+            "primary": Object {
+              "fontFamily": "Roboto",
+              "fontWeight": 400,
+            },
           },
           "label": Object {
+            "fallback": Object {
+              "fontFamily": "Arial",
+              "fontWeight": 400,
+            },
             "fontSize": 14,
             "letterSpacing": 0.11,
-            "lineHeight": 1.25,
-          },
-          "primary": Object {
-            "fontFamily": "Roboto",
-            "fontWeight": 500,
+            "lineHeight": 1.5,
+            "primary": Object {
+              "fontFamily": "Roboto",
+              "fontWeight": 500,
+            },
           },
         },
         "typography": Object {
@@ -1233,6 +1777,49 @@ exports[`Avatar component should render avatar component image 1`] = `
     testID="avatar"
     theme={
       Object {
+        "alert": Object {
+          "content": Object {
+            "fallback": Object {
+              "fontFamily": "Arial",
+              "fontWeight": 400,
+            },
+            "fontSize": 16,
+            "letterSpacing": 0.51,
+            "lineHeight": 1.5,
+            "primary": Object {
+              "fontFamily": "Roboto",
+              "fontWeight": 400,
+            },
+          },
+          "title": Object {
+            "fallback": Object {
+              "fontFamily": "Arial",
+              "fontWeight": 400,
+            },
+            "fontSize": 20,
+            "letterSpacing": 0.24,
+            "lineHeight": 1.5,
+            "primary": Object {
+              "fontFamily": "Roboto",
+              "fontWeight": 500,
+            },
+          },
+        },
+        "appBarTop": Object {
+          "title": Object {
+            "fallback": Object {
+              "fontFamily": "Arial",
+              "fontWeight": 400,
+            },
+            "fontSize": 20,
+            "letterSpacing": 0.24,
+            "lineHeight": 1.25,
+            "primary": Object {
+              "fontFamily": "Roboto",
+              "fontWeight": 500,
+            },
+          },
+        },
         "asset": Object {
           "brand": Object {
             "custom": Object {
@@ -1275,12 +1862,47 @@ exports[`Avatar component should render avatar component image 1`] = `
           "font": Object {
             "file": Object {
               "body": Object {
-                "bold": "HelveticaNowDisplay-Bd",
-                "regular": "HelveticaNowDisplay-Regular",
+                "bold": "helvetica_now_display_bd",
+                "regular": "helvetica_now_display_regular",
               },
-              "display": "HelveticaNowDisplay-Bd",
-              "headline": "HelveticaNowDisplay-Md",
+              "display": "helvetica_now_display_bd",
+              "headline": "helvetica_now_display_md",
             },
+          },
+        },
+        "avatar": Object {
+          "fallback": Object {
+            "fontFamily": "Arial",
+            "fontWeight": 400,
+          },
+          "largeXXX": Object {
+            "fontSize": 48,
+            "letterSpacing": 0,
+            "lineHeight": 1.5,
+          },
+          "medium": Object {
+            "fontSize": 24,
+            "letterSpacing": 0,
+            "lineHeight": 1.5,
+          },
+          "primary": Object {
+            "fontFamily": "Roboto",
+            "fontWeight": 400,
+          },
+          "semi": Object {
+            "fontSize": 14,
+            "letterSpacing": 0.22,
+            "lineHeight": 1.5,
+          },
+          "semiX": Object {
+            "fontSize": 20,
+            "letterSpacing": 0.24,
+            "lineHeight": 1.5,
+          },
+          "standard": Object {
+            "fontSize": 12,
+            "letterSpacing": 0,
+            "lineHeight": 1.5,
           },
         },
         "badge": Object {
@@ -1369,14 +1991,14 @@ exports[`Avatar component should render avatar component image 1`] = `
           "label": Object {
             "fallback": Object {
               "fontFamily": "Arial",
-              "fontWeight": 400,
+              "fontWeight": 500,
             },
             "fontSize": 14,
             "letterSpacing": 1.23,
             "lineHeight": 1.5,
             "primary": Object {
               "fontFamily": "Roboto",
-              "fontWeight": 400,
+              "fontWeight": 500,
             },
           },
           "outlined": Object {
@@ -1444,7 +2066,7 @@ exports[`Avatar component should render avatar component image 1`] = `
             "lineHeight": 1.5,
             "primary": Object {
               "fontFamily": "Roboto",
-              "fontWeight": 500,
+              "fontWeight": 400,
             },
           },
         },
@@ -1491,6 +2113,34 @@ exports[`Avatar component should render avatar component image 1`] = `
           "success": "#569a32",
           "surface": "#ffffff",
           "warning": "#fcc433",
+        },
+        "counter": Object {
+          "content": Object {
+            "fallback": Object {
+              "fontFamily": "Arial",
+              "fontWeight": 400,
+            },
+            "fontSize": 16,
+            "letterSpacing": 0.51,
+            "lineHeight": 1.25,
+            "primary": Object {
+              "fontFamily": "Roboto",
+              "fontWeight": 400,
+            },
+          },
+          "label": Object {
+            "fallback": Object {
+              "fontFamily": "Arial",
+              "fontWeight": 400,
+            },
+            "fontSize": 14,
+            "letterSpacing": 0.11,
+            "lineHeight": 1.25,
+            "primary": Object {
+              "fontFamily": "Roboto",
+              "fontWeight": 500,
+            },
+          },
         },
         "dialog": Object {
           "body": Object {
@@ -1610,6 +2260,21 @@ exports[`Avatar component should render avatar component image 1`] = `
             "shadowRadius": 2,
           },
         },
+        "expansionPanel": Object {
+          "title": Object {
+            "fallback": Object {
+              "fontFamily": "Arial",
+              "fontWeight": 400,
+            },
+            "fontSize": 16,
+            "letterSpacing": 0.13,
+            "lineHeight": 1.5,
+            "primary": Object {
+              "fontFamily": "Roboto",
+              "fontWeight": 400,
+            },
+          },
+        },
         "heading1": Object {
           "fontSize": 96,
           "fontWeight": 400,
@@ -1639,6 +2304,64 @@ exports[`Avatar component should render avatar component image 1`] = `
           "fontSize": 20,
           "fontWeight": 500,
           "letterSpacing": 0.24,
+        },
+        "navigationDrawer": Object {
+          "header": Object {
+            "subtitle": Object {
+              "fallback": Object {
+                "fontFamily": "Arial",
+                "fontWeight": 400,
+              },
+              "fontSize": 14,
+              "letterSpacing": 0.22,
+              "lineHeight": 1.5,
+              "primary": Object {
+                "fontFamily": "Roboto",
+                "fontWeight": 400,
+              },
+            },
+            "title": Object {
+              "fallback": Object {
+                "fontFamily": "Arial",
+                "fontWeight": 400,
+              },
+              "fontSize": 20,
+              "letterSpacing": 0.24,
+              "lineHeight": 1.25,
+              "primary": Object {
+                "fontFamily": "Roboto",
+                "fontWeight": 500,
+              },
+            },
+          },
+          "section": Object {
+            "item": Object {
+              "fallback": Object {
+                "fontFamily": "Arial",
+                "fontWeight": 400,
+              },
+              "fontSize": 14,
+              "letterSpacing": 0.22,
+              "lineHeight": 1.5,
+              "primary": Object {
+                "fontFamily": "Roboto",
+                "fontWeight": 400,
+              },
+            },
+            "title": Object {
+              "fallback": Object {
+                "fontFamily": "Arial",
+                "fontWeight": 400,
+              },
+              "fontSize": 12,
+              "letterSpacing": 0.38,
+              "lineHeight": 1.5,
+              "primary": Object {
+                "fontFamily": "Roboto",
+                "fontWeight": 400,
+              },
+            },
+          },
         },
         "opacity": Object {
           "disabled": 0.32,
@@ -1670,7 +2393,54 @@ exports[`Avatar component should render avatar component image 1`] = `
             "lineHeight": 1.5,
             "primary": Object {
               "fontFamily": "Roboto",
-              "fontWeight": 500,
+              "fontWeight": 400,
+            },
+          },
+        },
+        "rating": Object {
+          "counter": Object {
+            "label": Object {
+              "fallback": Object {
+                "fontFamily": "Arial",
+                "fontWeight": 400,
+              },
+              "fontSize": 14,
+              "letterSpacing": 0.22,
+              "lineHeight": 1.5,
+              "primary": Object {
+                "fontFamily": "Roboto",
+                "fontWeight": 400,
+              },
+            },
+          },
+          "input": Object {
+            "label": Object {
+              "fallback": Object {
+                "fontFamily": "Arial",
+                "fontWeight": 400,
+              },
+              "fontSize": 12,
+              "letterSpacing": 0.38,
+              "lineHeight": 1.5,
+              "primary": Object {
+                "fontFamily": "Roboto",
+                "fontWeight": 400,
+              },
+            },
+          },
+        },
+        "shortcut": Object {
+          "label": Object {
+            "fallback": Object {
+              "fontFamily": "Arial",
+              "fontWeight": 400,
+            },
+            "fontSize": 12,
+            "letterSpacing": 0.38,
+            "lineHeight": 1.5,
+            "primary": Object {
+              "fontFamily": "Roboto",
+              "fontWeight": 400,
             },
           },
         },
@@ -1694,6 +2464,21 @@ exports[`Avatar component should render avatar component image 1`] = `
           "tiny": 8,
           "veryHuge": 256,
         },
+        "snackbar": Object {
+          "content": Object {
+            "fallback": Object {
+              "fontFamily": "Arial",
+              "fontWeight": 400,
+            },
+            "fontSize": 14,
+            "letterSpacing": 0.22,
+            "lineHeight": 1.5,
+            "primary": Object {
+              "fontFamily": "Roboto",
+              "fontWeight": 400,
+            },
+          },
+        },
         "spacing": Object {
           "large": 48,
           "micro": 4,
@@ -1714,6 +2499,21 @@ exports[`Avatar component should render avatar component image 1`] = `
           "fontWeight": 500,
           "letterSpacing": 0.11,
         },
+        "tab": Object {
+          "label": Object {
+            "fallback": Object {
+              "fontFamily": "Arial",
+              "fontWeight": 400,
+            },
+            "fontSize": 14,
+            "letterSpacing": 1.23,
+            "lineHeight": 1.5,
+            "primary": Object {
+              "fontFamily": "Roboto",
+              "fontWeight": 500,
+            },
+          },
+        },
         "tag": Object {
           "label": Object {
             "fallback": Object {
@@ -1731,27 +2531,43 @@ exports[`Avatar component should render avatar component image 1`] = `
         },
         "textField": Object {
           "content": Object {
+            "fallback": Object {
+              "fontFamily": "Arial",
+              "fontWeight": 400,
+            },
             "fontSize": 16,
             "letterSpacing": 0.51,
             "lineHeight": 1.25,
-          },
-          "fallback": Object {
-            "fontFamily": "Arial",
-            "fontWeight": 400,
+            "primary": Object {
+              "fontFamily": "Roboto",
+              "fontWeight": 400,
+            },
           },
           "helperText": Object {
+            "fallback": Object {
+              "fontFamily": "Arial",
+              "fontWeight": 400,
+            },
             "fontSize": 12,
             "letterSpacing": 0.38,
             "lineHeight": 1.25,
+            "primary": Object {
+              "fontFamily": "Roboto",
+              "fontWeight": 400,
+            },
           },
           "label": Object {
+            "fallback": Object {
+              "fontFamily": "Arial",
+              "fontWeight": 400,
+            },
             "fontSize": 14,
             "letterSpacing": 0.11,
-            "lineHeight": 1.25,
-          },
-          "primary": Object {
-            "fontFamily": "Roboto",
-            "fontWeight": 500,
+            "lineHeight": 1.5,
+            "primary": Object {
+              "fontFamily": "Roboto",
+              "fontWeight": 500,
+            },
           },
         },
         "typography": Object {
@@ -1832,6 +2648,49 @@ exports[`Avatar component should render avatar component letter 1`] = `
     testID="avatar"
     theme={
       Object {
+        "alert": Object {
+          "content": Object {
+            "fallback": Object {
+              "fontFamily": "Arial",
+              "fontWeight": 400,
+            },
+            "fontSize": 16,
+            "letterSpacing": 0.51,
+            "lineHeight": 1.5,
+            "primary": Object {
+              "fontFamily": "Roboto",
+              "fontWeight": 400,
+            },
+          },
+          "title": Object {
+            "fallback": Object {
+              "fontFamily": "Arial",
+              "fontWeight": 400,
+            },
+            "fontSize": 20,
+            "letterSpacing": 0.24,
+            "lineHeight": 1.5,
+            "primary": Object {
+              "fontFamily": "Roboto",
+              "fontWeight": 500,
+            },
+          },
+        },
+        "appBarTop": Object {
+          "title": Object {
+            "fallback": Object {
+              "fontFamily": "Arial",
+              "fontWeight": 400,
+            },
+            "fontSize": 20,
+            "letterSpacing": 0.24,
+            "lineHeight": 1.25,
+            "primary": Object {
+              "fontFamily": "Roboto",
+              "fontWeight": 500,
+            },
+          },
+        },
         "asset": Object {
           "brand": Object {
             "custom": Object {
@@ -1874,12 +2733,47 @@ exports[`Avatar component should render avatar component letter 1`] = `
           "font": Object {
             "file": Object {
               "body": Object {
-                "bold": "HelveticaNowDisplay-Bd",
-                "regular": "HelveticaNowDisplay-Regular",
+                "bold": "helvetica_now_display_bd",
+                "regular": "helvetica_now_display_regular",
               },
-              "display": "HelveticaNowDisplay-Bd",
-              "headline": "HelveticaNowDisplay-Md",
+              "display": "helvetica_now_display_bd",
+              "headline": "helvetica_now_display_md",
             },
+          },
+        },
+        "avatar": Object {
+          "fallback": Object {
+            "fontFamily": "Arial",
+            "fontWeight": 400,
+          },
+          "largeXXX": Object {
+            "fontSize": 48,
+            "letterSpacing": 0,
+            "lineHeight": 1.5,
+          },
+          "medium": Object {
+            "fontSize": 24,
+            "letterSpacing": 0,
+            "lineHeight": 1.5,
+          },
+          "primary": Object {
+            "fontFamily": "Roboto",
+            "fontWeight": 400,
+          },
+          "semi": Object {
+            "fontSize": 14,
+            "letterSpacing": 0.22,
+            "lineHeight": 1.5,
+          },
+          "semiX": Object {
+            "fontSize": 20,
+            "letterSpacing": 0.24,
+            "lineHeight": 1.5,
+          },
+          "standard": Object {
+            "fontSize": 12,
+            "letterSpacing": 0,
+            "lineHeight": 1.5,
           },
         },
         "badge": Object {
@@ -1968,14 +2862,14 @@ exports[`Avatar component should render avatar component letter 1`] = `
           "label": Object {
             "fallback": Object {
               "fontFamily": "Arial",
-              "fontWeight": 400,
+              "fontWeight": 500,
             },
             "fontSize": 14,
             "letterSpacing": 1.23,
             "lineHeight": 1.5,
             "primary": Object {
               "fontFamily": "Roboto",
-              "fontWeight": 400,
+              "fontWeight": 500,
             },
           },
           "outlined": Object {
@@ -2043,7 +2937,7 @@ exports[`Avatar component should render avatar component letter 1`] = `
             "lineHeight": 1.5,
             "primary": Object {
               "fontFamily": "Roboto",
-              "fontWeight": 500,
+              "fontWeight": 400,
             },
           },
         },
@@ -2090,6 +2984,34 @@ exports[`Avatar component should render avatar component letter 1`] = `
           "success": "#569a32",
           "surface": "#ffffff",
           "warning": "#fcc433",
+        },
+        "counter": Object {
+          "content": Object {
+            "fallback": Object {
+              "fontFamily": "Arial",
+              "fontWeight": 400,
+            },
+            "fontSize": 16,
+            "letterSpacing": 0.51,
+            "lineHeight": 1.25,
+            "primary": Object {
+              "fontFamily": "Roboto",
+              "fontWeight": 400,
+            },
+          },
+          "label": Object {
+            "fallback": Object {
+              "fontFamily": "Arial",
+              "fontWeight": 400,
+            },
+            "fontSize": 14,
+            "letterSpacing": 0.11,
+            "lineHeight": 1.25,
+            "primary": Object {
+              "fontFamily": "Roboto",
+              "fontWeight": 500,
+            },
+          },
         },
         "dialog": Object {
           "body": Object {
@@ -2209,6 +3131,21 @@ exports[`Avatar component should render avatar component letter 1`] = `
             "shadowRadius": 2,
           },
         },
+        "expansionPanel": Object {
+          "title": Object {
+            "fallback": Object {
+              "fontFamily": "Arial",
+              "fontWeight": 400,
+            },
+            "fontSize": 16,
+            "letterSpacing": 0.13,
+            "lineHeight": 1.5,
+            "primary": Object {
+              "fontFamily": "Roboto",
+              "fontWeight": 400,
+            },
+          },
+        },
         "heading1": Object {
           "fontSize": 96,
           "fontWeight": 400,
@@ -2238,6 +3175,64 @@ exports[`Avatar component should render avatar component letter 1`] = `
           "fontSize": 20,
           "fontWeight": 500,
           "letterSpacing": 0.24,
+        },
+        "navigationDrawer": Object {
+          "header": Object {
+            "subtitle": Object {
+              "fallback": Object {
+                "fontFamily": "Arial",
+                "fontWeight": 400,
+              },
+              "fontSize": 14,
+              "letterSpacing": 0.22,
+              "lineHeight": 1.5,
+              "primary": Object {
+                "fontFamily": "Roboto",
+                "fontWeight": 400,
+              },
+            },
+            "title": Object {
+              "fallback": Object {
+                "fontFamily": "Arial",
+                "fontWeight": 400,
+              },
+              "fontSize": 20,
+              "letterSpacing": 0.24,
+              "lineHeight": 1.25,
+              "primary": Object {
+                "fontFamily": "Roboto",
+                "fontWeight": 500,
+              },
+            },
+          },
+          "section": Object {
+            "item": Object {
+              "fallback": Object {
+                "fontFamily": "Arial",
+                "fontWeight": 400,
+              },
+              "fontSize": 14,
+              "letterSpacing": 0.22,
+              "lineHeight": 1.5,
+              "primary": Object {
+                "fontFamily": "Roboto",
+                "fontWeight": 400,
+              },
+            },
+            "title": Object {
+              "fallback": Object {
+                "fontFamily": "Arial",
+                "fontWeight": 400,
+              },
+              "fontSize": 12,
+              "letterSpacing": 0.38,
+              "lineHeight": 1.5,
+              "primary": Object {
+                "fontFamily": "Roboto",
+                "fontWeight": 400,
+              },
+            },
+          },
         },
         "opacity": Object {
           "disabled": 0.32,
@@ -2269,7 +3264,54 @@ exports[`Avatar component should render avatar component letter 1`] = `
             "lineHeight": 1.5,
             "primary": Object {
               "fontFamily": "Roboto",
-              "fontWeight": 500,
+              "fontWeight": 400,
+            },
+          },
+        },
+        "rating": Object {
+          "counter": Object {
+            "label": Object {
+              "fallback": Object {
+                "fontFamily": "Arial",
+                "fontWeight": 400,
+              },
+              "fontSize": 14,
+              "letterSpacing": 0.22,
+              "lineHeight": 1.5,
+              "primary": Object {
+                "fontFamily": "Roboto",
+                "fontWeight": 400,
+              },
+            },
+          },
+          "input": Object {
+            "label": Object {
+              "fallback": Object {
+                "fontFamily": "Arial",
+                "fontWeight": 400,
+              },
+              "fontSize": 12,
+              "letterSpacing": 0.38,
+              "lineHeight": 1.5,
+              "primary": Object {
+                "fontFamily": "Roboto",
+                "fontWeight": 400,
+              },
+            },
+          },
+        },
+        "shortcut": Object {
+          "label": Object {
+            "fallback": Object {
+              "fontFamily": "Arial",
+              "fontWeight": 400,
+            },
+            "fontSize": 12,
+            "letterSpacing": 0.38,
+            "lineHeight": 1.5,
+            "primary": Object {
+              "fontFamily": "Roboto",
+              "fontWeight": 400,
             },
           },
         },
@@ -2293,6 +3335,21 @@ exports[`Avatar component should render avatar component letter 1`] = `
           "tiny": 8,
           "veryHuge": 256,
         },
+        "snackbar": Object {
+          "content": Object {
+            "fallback": Object {
+              "fontFamily": "Arial",
+              "fontWeight": 400,
+            },
+            "fontSize": 14,
+            "letterSpacing": 0.22,
+            "lineHeight": 1.5,
+            "primary": Object {
+              "fontFamily": "Roboto",
+              "fontWeight": 400,
+            },
+          },
+        },
         "spacing": Object {
           "large": 48,
           "micro": 4,
@@ -2313,6 +3370,21 @@ exports[`Avatar component should render avatar component letter 1`] = `
           "fontWeight": 500,
           "letterSpacing": 0.11,
         },
+        "tab": Object {
+          "label": Object {
+            "fallback": Object {
+              "fontFamily": "Arial",
+              "fontWeight": 400,
+            },
+            "fontSize": 14,
+            "letterSpacing": 1.23,
+            "lineHeight": 1.5,
+            "primary": Object {
+              "fontFamily": "Roboto",
+              "fontWeight": 500,
+            },
+          },
+        },
         "tag": Object {
           "label": Object {
             "fallback": Object {
@@ -2330,27 +3402,43 @@ exports[`Avatar component should render avatar component letter 1`] = `
         },
         "textField": Object {
           "content": Object {
+            "fallback": Object {
+              "fontFamily": "Arial",
+              "fontWeight": 400,
+            },
             "fontSize": 16,
             "letterSpacing": 0.51,
             "lineHeight": 1.25,
-          },
-          "fallback": Object {
-            "fontFamily": "Arial",
-            "fontWeight": 400,
+            "primary": Object {
+              "fontFamily": "Roboto",
+              "fontWeight": 400,
+            },
           },
           "helperText": Object {
+            "fallback": Object {
+              "fontFamily": "Arial",
+              "fontWeight": 400,
+            },
             "fontSize": 12,
             "letterSpacing": 0.38,
             "lineHeight": 1.25,
+            "primary": Object {
+              "fontFamily": "Roboto",
+              "fontWeight": 400,
+            },
           },
           "label": Object {
+            "fallback": Object {
+              "fontFamily": "Arial",
+              "fontWeight": 400,
+            },
             "fontSize": 14,
             "letterSpacing": 0.11,
-            "lineHeight": 1.25,
-          },
-          "primary": Object {
-            "fontFamily": "Roboto",
-            "fontWeight": 500,
+            "lineHeight": 1.5,
+            "primary": Object {
+              "fontFamily": "Roboto",
+              "fontWeight": 500,
+            },
           },
         },
         "typography": Object {

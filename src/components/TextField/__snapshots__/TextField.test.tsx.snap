@@ -62,16 +62,19 @@ exports[`TextField render should render with default props 1`] = `
               "borderRadius": 8,
               "color": "#333333",
               "flexGrow": 1,
-              "height": 32,
               "maxWidth": "100%",
+              "minHeight": 32,
               "overflow": "hidden",
               "paddingLeft": 8,
               "paddingRight": 8,
               "width": 10,
             },
+            Object {
+              "textAlignVertical": "auto",
+            },
           ]
         }
-        testID="input"
+        testID="ds-input"
         underlineColorAndroid="transparent"
         value=""
       />

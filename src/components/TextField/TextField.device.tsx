@@ -10,6 +10,7 @@ import {
   Required,
   Sizes,
   States,
+  TextArea,
 } from './TextField.stories';
 
 storiesOf('TextField', module)
@@ -22,4 +23,5 @@ storiesOf('TextField', module)
   .add('Disabled', Disabled)
   .add('Readonly', Readonly)
   .add('Action', Action)
-  .add('Type', Type);
+  .add('Type', Type)
+  .add('TextArea', TextArea);
