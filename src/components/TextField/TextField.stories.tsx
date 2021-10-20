@@ -305,7 +305,6 @@ export const TextArea = () => {
           placeholder="Placeholder"
           value={value}
           multiline
-          numberOfLines={5}
         />
       </StoryContainer>
     </>
