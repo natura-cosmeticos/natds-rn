@@ -1,6 +1,5 @@
 import React from 'react';
-import { withTheme } from 'styled-components/native';
-import { Text } from 'react-native';
+import styled from 'styled-components/native';
 import { IconName, icons } from '@naturacosmeticos/natds-icons';
 import {
   getColorByName, getSize, getColorHighEmphasis, Theme,
@@ -18,13 +17,23 @@ export const getIconColor = (theme: Theme, color: IconColors) => {
   }
 };
 
+export const IconComponent = styled.Text<IconProps>(({
+  color = 'highlight',
+  size = 'standard',
+  theme,
+}) => ({
+  color: getIconColor(theme, color),
+  fontFamily: 'natds-icons',
+  fontSize: getSize(theme, size),
+}));
+
 const defaultIconName = 'outlined-default-mockup';
 
 export const checkIconName = (iconName: IconName) => (icons[iconName]
   ? icons[iconName].replace('%', '\\')
   : icons[defaultIconName]).replace('%', '\\');
 
-const IconComponent = ({
+export const Icon = ({
   accessibilityHint,
   accessibilityLabel,
   accessibilityRole = 'image',
@@ -33,25 +42,23 @@ const IconComponent = ({
   testID = 'natds-icon',
   theme,
   size = 'standard',
+  style,
 }: IconProps) => {
   const unicodeName = checkIconName(name);
   const code = JSON.parse(`["${unicodeName}"]`)[0];
 
   return (
-    <Text
+    <IconComponent
       accessibilityHint={accessibilityHint}
       accessibilityLabel={accessibilityLabel}
       accessibilityRole={accessibilityRole}
-      style={{
-        color: getIconColor(theme, color),
-        fontFamily: 'natds-icons',
-        fontSize: getSize(theme, size),
-      }}
+      color={color}
+      size={size}
+      style={style}
       testID={testID}
+      theme={theme}
     >
       {code}
-    </Text>
+    </IconComponent>
   );
 };
-
-export const Icon = withTheme(IconComponent);

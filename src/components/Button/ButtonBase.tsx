@@ -6,7 +6,6 @@ import {
 } from './Button.styles';
 import { TouchableRipple } from '../TouchableRipple/TouchableRipple';
 import { ButtonBaseProps } from './Button.types';
-import { getRadiusBySize } from '../../common/themeSelectors';
 
 const ButtonComponent = ({
   accessibilityHint,
@@ -18,16 +17,21 @@ const ButtonComponent = ({
   size = 'medium',
   testID = 'button-base',
   text,
-  textColor,
   theme,
   type = 'contained',
-}: ButtonBaseProps) => (
+  textLabelStyle,
+}: ButtonBaseProps) => {
+  const iconColor = disabled
+    ? theme.button[type].color.disable.label
+    : theme.button[type].color.enable.label;
+
+  return (
     <TouchableRipple
       color="highlight"
       disabled={disabled}
       hideOverflow={true}
       onPress={disabled ? () => { } : onPress}
-      style={{ borderRadius: getRadiusBySize(theme, 'medium') }}
+      style={{ borderRadius: theme.button.borderRadius }}
     >
       <Surface
         accessibilityHint={accessibilityHint}
@@ -44,20 +48,23 @@ const ButtonComponent = ({
             iconName={iconName}
             iconPosition={iconPosition}
             testID="button-label"
-            textColor={textColor}
+            type={type}
+            disabled={disabled}
+            style={textLabelStyle}
           >
             {text.toUpperCase()}
           </LabelText>
           {iconName
             && <Icon
               accessibilityRole="imagebutton"
-              color={textColor}
+              style={{ color: iconColor }}
               name={iconName}
               size="small" />
           }
         </Label>
       </Surface>
     </TouchableRipple>
-);
+  );
+};
 
 export const ButtonBase = withTheme(ButtonComponent);
