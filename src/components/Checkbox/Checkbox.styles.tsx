@@ -37,8 +37,11 @@ export const Container = styled.TouchableOpacity.attrs({
 
 export const Label = styled.Text<{ theme: Theme; disabled: boolean }>(({ theme, disabled }) => ({
   color: disabled ? getColorLowEmphasis(theme) : getColorOnBackground(theme),
-  fontSize: 14,
-  letterSpacing: 0.22,
+  fontFamily: theme.checkbox.label.primary.fontFamily,
+  fontSize: theme.checkbox.label.fontSize,
+  fontWeight: theme.checkbox.label.primary.fontWeight,
+  letterSpacing: theme.checkbox.label.letterSpacing,
+  lineHeight: theme.checkbox.label.fontSize * theme.checkbox.label.lineHeight,
   marginLeft: getSpacingTiny(theme),
 }));
 
