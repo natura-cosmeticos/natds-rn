@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 PRE_RELEASE_NAME=$(node ./bin/release/getPreReleaseName.js)
 
 [[ -z "${BITRISE_GIT_BRANCH}" ]] && BRANCH_NAME=$(git branch --show-current) || BRANCH_NAME=$BITRISE_GIT_BRANCH

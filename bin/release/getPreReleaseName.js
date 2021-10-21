@@ -10,4 +10,4 @@ const init = async () => {
   return preReleaseName;
 };
 
-init().then(result => console.log(result));
+init().then(result => console.log(result)).catch(error => error);
