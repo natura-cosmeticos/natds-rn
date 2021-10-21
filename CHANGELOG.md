@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [7.7.0](https://github.com/natura-cosmeticos/natds-rn/compare/v7.6.2...v7.7.0) (2021-10-21)
+
+
+### Features
+
+* **typography:** add Typography component and custom font copy helper ([6b2bbc9](https://github.com/natura-cosmeticos/natds-rn/commit/6b2bbc9fbd0ec29d630680a717e41b9dbe1d7bb7))
+
+
+### Bug Fixes
+
+* **text-field:** fix component height to allow expansion when multiline ([f08a40e](https://github.com/natura-cosmeticos/natds-rn/commit/f08a40ebe094b1945542230b351210155d486153))
+
 ### [7.6.2](https://github.com/natura-cosmeticos/natds-rn/compare/v7.6.1...v7.6.2) (2021-10-20)
 
 ### [7.6.1](https://github.com/natura-cosmeticos/natds-rn/compare/v7.5.0...v7.6.1) (2021-10-07)
