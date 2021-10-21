@@ -36,8 +36,11 @@ exports[`Dialog component Should render a dialog content with divider 1`] = `
         Array [
           Object {
             "color": "#333333",
-            "fontSize": 14,
+            "fontFamily": "Roboto",
+            "fontSize": 16,
             "fontWeight": "400",
+            "letterSpacing": 0.51,
+            "lineHeight": 24,
             "paddingBottom": 16,
             "paddingLeft": 16,
             "paddingRight": 16,
@@ -95,7 +98,11 @@ exports[`Dialog component Should render a dialog header with title and optional 
           "flexBasis": 0,
           "flexGrow": 0.85,
           "flexShrink": 1,
+          "fontFamily": "Roboto",
           "fontSize": 20,
+          "fontWeight": "500",
+          "letterSpacing": 0.24,
+          "lineHeight": 25,
         },
         Object {
           "fontWeight": "bold",
@@ -200,7 +207,11 @@ exports[`Dialog component Should render a dialog with title, content and actions
               "flexBasis": 0,
               "flexGrow": 0.85,
               "flexShrink": 1,
+              "fontFamily": "Roboto",
               "fontSize": 20,
+              "fontWeight": "500",
+              "letterSpacing": 0.24,
+              "lineHeight": 25,
             },
             Object {
               "fontWeight": "bold",
@@ -226,8 +237,11 @@ exports[`Dialog component Should render a dialog with title, content and actions
               Array [
                 Object {
                   "color": "#333333",
-                  "fontSize": 14,
+                  "fontFamily": "Roboto",
+                  "fontSize": 16,
                   "fontWeight": "400",
+                  "letterSpacing": 0.51,
+                  "lineHeight": 24,
                   "paddingBottom": 16,
                   "paddingLeft": 16,
                   "paddingRight": 16,
