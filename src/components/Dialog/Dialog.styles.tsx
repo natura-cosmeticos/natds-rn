@@ -44,7 +44,11 @@ export const DialogContainer = styled.View(({ theme }) => ({
 const DialogTitleComponent = styled.Text(({ theme }) => ({
   color: getColorHighEmphasis(theme),
   flex: 0.85,
-  fontSize: 20,
+  fontFamily: theme.dialog.title.primary.fontFamily,
+  fontSize: theme.dialog.title.fontSize,
+  fontWeight: theme.dialog.title.primary.fontWeight,
+  letterSpacing: theme.dialog.title.letterSpacing,
+  lineHeight: theme.dialog.title.fontSize * theme.dialog.title.lineHeight,
 }));
 
 export const DialogTitle = props => (
@@ -53,8 +57,11 @@ export const DialogTitle = props => (
 
 export const DialogContentText = styled.Text(({ theme }) => ({
   color: getColorHighEmphasis(theme),
-  fontSize: 14,
-  fontWeight: 400,
+  fontFamily: theme.dialog.body.primary.fontFamily,
+  fontSize: theme.dialog.body.fontSize,
+  fontWeight: theme.dialog.body.primary.fontWeight,
+  letterSpacing: theme.dialog.body.letterSpacing,
+  lineHeight: theme.dialog.body.fontSize * theme.dialog.body.lineHeight,
   padding: getSpacingSmall(theme),
 }));
 
