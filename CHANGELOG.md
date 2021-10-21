@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [7.9.0](https://github.com/natura-cosmeticos/natds-rn/compare/v7.8.0...v7.9.0) (2021-10-21)
+
+
+### Features
+
+* **checkbox:** applying typography tokens ([#199](https://github.com/natura-cosmeticos/natds-rn/issues/199)) ([953b6dd](https://github.com/natura-cosmeticos/natds-rn/commit/953b6ddd981516195271a90970d9391e8f8ffcff))
+
 ## [7.8.0](https://github.com/natura-cosmeticos/natds-rn/compare/v7.7.0...v7.8.0) (2021-10-21)
 
 
