@@ -5,7 +5,7 @@ import { Color } from '@naturacosmeticos/natds-themes/react-native';
 import { IconName } from '@naturacosmeticos/natds-icons';
 import { Icon } from '../Icon';
 import {
-  getColorMediumEmphasis, getSpacingMicro, getTypographyStyles,
+  getColorMediumEmphasis, getSpacingMicro,
 } from '../../common/themeSelectors';
 
 export interface HelperTextProps {
@@ -21,17 +21,15 @@ const HelperTextContainer = styled.View(({ theme }): CSSObject => ({
 }));
 
 const HelperText = styled.Text<Pick<HelperTextProps, 'feedback' | 'color'>>(
-  ({ color, feedback, theme }): CSSObject => {
-    const { caption } = getTypographyStyles(theme);
-
-    return ({
-      color: color || getColorMediumEmphasis(theme),
-      fontSize: caption.fontSize,
-      fontWeight: caption.fontWeight,
-      letterSpacing: caption.letterSpacing,
-      marginLeft: feedback && getSpacingMicro(theme),
-    });
-  },
+  ({ color, feedback, theme }): CSSObject => ({
+    color: color || getColorMediumEmphasis(theme),
+    fontFamily: theme.textField.helperText.primary.fontFamily,
+    fontSize: theme.textField.helperText.fontSize,
+    fontWeight: theme.textField.helperText.primary.fontWeight,
+    letterSpacing: theme.textField.helperText.letterSpacing,
+    lineHeight: theme.textField.helperText.fontSize * theme.textField.helperText.lineHeight,
+    marginLeft: feedback && getSpacingMicro(theme),
+  }),
 );
 
 export const InputHelperText = ({ color, content, feedback }: HelperTextProps) => {

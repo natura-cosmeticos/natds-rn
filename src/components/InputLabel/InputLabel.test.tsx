@@ -19,7 +19,7 @@ describe('InputLabel', () => {
       <InputLabel {...defaultProps} />,
     );
 
-    expect(getByTestId('label')).toHaveStyle({ color: '#777', fontSize: 16, marginBottom: 2 });
+    expect(getByTestId('label')).toHaveStyle({ color: '#777', fontSize: 14, marginBottom: 2 });
   });
 
   it('should render given content correctly', () => {
