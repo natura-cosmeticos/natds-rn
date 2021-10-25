@@ -39,13 +39,24 @@ export const getPlaceholderTextColor = (disabled: boolean, theme: Theme) => (
   disabled ? getColorLowEmphasis(theme) : getColorMediumEmphasis(theme)
 );
 
+const getInputLineHeight = (multiline: boolean, theme: Theme) => (
+  multiline && {
+    lineHeight: theme.textField.content.fontSize * theme.textField.content.lineHeight,
+  }
+);
+
 export const Input = styled.TextInput<InputStyleProps & CSSProperties>(({
-  disabled, hasActionIcon, readonly, size, theme,
+  disabled, hasActionIcon, readonly, size, theme, multiline = false,
 }): CSSObject => ({
+  ...getInputLineHeight(multiline, theme),
   backgroundColor: readonly ? getReadonlyColor(theme) : getColorSurface(theme),
   borderRadius: getBorderRadiusMedium(theme),
   color: getTextColor(disabled, theme),
   flexGrow: 1,
+  fontFamily: theme.textField.content.primary.fontFamily,
+  fontSize: theme.textField.content.fontSize,
+  fontWeight: theme.textField.content.primary.fontWeight,
+  letterSpacing: theme.textField.content.letterSpacing,
   maxWidth: '100%',
   minHeight: getFieldHeight(size, theme),
   overflow: 'hidden',

@@ -82,11 +82,12 @@ export const TextField = (props: TextFieldProps) => {
     type = 'text',
     value = '',
     testID = 'ds-input',
+    multiline = false,
   }: TextFieldProps = props;
   const [secureState, setSecureState] = React.useState(isPasswordType(type));
   const fieldValue = getFieldValue({ numberValue, type, value });
 
-  const isAndroidMultiline = Platform.OS === 'android' && !!props.multiline;
+  const isAndroidMultiline = Platform.OS === 'android' && multiline;
 
   return (
     <InputFeedbackContainer
@@ -142,7 +143,7 @@ export const TextField = (props: TextFieldProps) => {
         keyboardAppearance={props.keyboardAppearance}
         maxFontSizeMultiplier={props.maxFontSizeMultiplier}
         maxLength={props.maxLength}
-        multiline={props.multiline}
+        multiline={multiline}
         numberOfLines={props.numberOfLines}
         onChange={props.onChange}
         onContentSizeChange={props.onContentSizeChange}
