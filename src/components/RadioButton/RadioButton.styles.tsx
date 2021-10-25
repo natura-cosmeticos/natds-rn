@@ -37,8 +37,11 @@ export const Container = styled.TouchableOpacity.attrs({
 
 export const Label = styled.Text<{ theme: Theme; disabled: boolean }>(({ theme, disabled }) => ({
   color: disabled ? getColorLowEmphasis(theme) : getColorOnBackground(theme),
-  fontSize: 14,
-  letterSpacing: 0.22,
+  fontFamily: theme.radioButton.label.primary.fontFamily,
+  fontSize: theme.radioButton.label.fontSize,
+  fontWeight: theme.radioButton.label.primary.fontWeight,
+  letterSpacing: theme.radioButton.label.letterSpacing,
+  lineHeight: theme.radioButton.label.fontSize * theme.radioButton.label.lineHeight,
   marginLeft: getSpacingTiny(theme),
 }));
 
