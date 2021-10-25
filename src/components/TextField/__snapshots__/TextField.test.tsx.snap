@@ -47,6 +47,7 @@ exports[`TextField render should render with default props 1`] = `
         editable={true}
         hasActionIcon={false}
         keyboardType="default"
+        multiline={false}
         onBlur={[Function]}
         onChangeText={[Function]}
         onFocus={[Function]}
@@ -62,6 +63,10 @@ exports[`TextField render should render with default props 1`] = `
               "borderRadius": 8,
               "color": "#333333",
               "flexGrow": 1,
+              "fontFamily": "Roboto",
+              "fontSize": 16,
+              "fontWeight": "400",
+              "letterSpacing": 0.51,
               "maxWidth": "100%",
               "minHeight": 32,
               "overflow": "hidden",

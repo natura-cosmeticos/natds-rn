@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components/native';
 import { CSSObject, useTheme } from 'styled-components';
 import {
-  getColorMediumEmphasis, getSpacingMicro, getTypographyStyles,
+  getColorMediumEmphasis, getSpacingMicro,
 } from '../../common/themeSelectors';
 
 export interface LabelProps {
@@ -11,17 +11,15 @@ export interface LabelProps {
   required?: boolean;
 }
 
-export const Label = styled.Text<Pick<LabelProps, 'color'>>(({ color, theme }): CSSObject => {
-  const { subtitle2 } = getTypographyStyles(theme);
-
-  return ({
-    color: color || getColorMediumEmphasis(theme),
-    fontSize: subtitle2.fontSize,
-    fontWeight: subtitle2.fontWeight,
-    letterSpacing: subtitle2.letterSpacing,
-    marginBottom: getSpacingMicro(theme),
-  });
-});
+export const Label = styled.Text<Pick<LabelProps, 'color'>>(({ color, theme }): CSSObject => ({
+  color: color || getColorMediumEmphasis(theme),
+  fontFamily: theme.textField.label.primary.fontFamily,
+  fontSize: theme.textField.label.fontSize,
+  fontWeight: theme.textField.label.primary.fontWeight,
+  letterSpacing: theme.textField.label.letterSpacing,
+  lineHeight: theme.textField.label.fontSize * theme.textField.label.lineHeight,
+  marginBottom: getSpacingMicro(theme),
+}));
 
 export const InputLabel = ({ color, content, required }: LabelProps) => {
   const theme = useTheme();

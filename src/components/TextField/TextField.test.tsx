@@ -152,4 +152,12 @@ describe('TextField', () => {
       expect(getByTestId('input')).toHaveProp('value', '1234567');
     });
   });
+
+  describe('type multiline', () => {
+    it('should render with lineHeight value', () => {
+      const { getByTestId } = renderWithTheme(<TextField multiline />);
+
+      expect(getByTestId('ds-input')).toHaveStyle({ lineHeight: 20 });
+    });
+  });
 });
