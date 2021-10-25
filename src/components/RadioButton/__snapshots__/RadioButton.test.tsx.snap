@@ -183,8 +183,11 @@ exports[`RadioButton component should render radio button selected but disabled 
       Array [
         Object {
           "color": "#bbbbbb",
+          "fontFamily": "Roboto",
           "fontSize": 14,
+          "fontWeight": "400",
           "letterSpacing": 0.22,
+          "lineHeight": 21,
           "marginLeft": 8,
         },
       ]
@@ -341,8 +344,11 @@ exports[`RadioButton component should render radio button with label correctly 1
       Array [
         Object {
           "color": "#333333",
+          "fontFamily": "Roboto",
           "fontSize": 14,
+          "fontWeight": "400",
           "letterSpacing": 0.22,
+          "lineHeight": 21,
           "marginLeft": 8,
         },
       ]
