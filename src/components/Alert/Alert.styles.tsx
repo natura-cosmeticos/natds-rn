@@ -65,14 +65,19 @@ export const IconContent = styled.View<BaseAlert>(({ theme }) => ({
 
 export const AlertTitle = styled.Text<BaseAlert>(({ theme }) => ({
   flexWrap: 'wrap',
-  fontSize: 20,
-  fontWeight: 600,
-  letterSpacing: 0.24,
+  fontFamily: theme.alert.title.primary.fontFamily,
+  fontSize: theme.alert.title.fontSize,
+  fontWeight: theme.alert.title.primary.fontWeight,
+  letterSpacing: theme.alert.title.letterSpacing,
+  lineHeight: theme.alert.title.fontSize * theme.alert.title.lineHeight,
   marginBottom: getSpacingTiny(theme),
 }));
 
 export const AlertText = styled.Text<BaseAlert>(({ theme }) => ({
   color: '#333333',
-  fontSize: 16,
-  letterSpacing: 0.51,
+  fontFamily: theme.alert.content.primary.fontFamily,
+  fontSize: theme.alert.content.fontSize,
+  fontWeight: theme.alert.content.primary.fontWeight,
+  letterSpacing: theme.alert.content.letterSpacing,
+  lineHeight: theme.alert.content.fontSize * theme.alert.content.lineHeight,
 }));
