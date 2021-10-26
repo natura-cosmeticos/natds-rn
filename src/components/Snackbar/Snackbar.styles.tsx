@@ -92,12 +92,16 @@ interface SnackbarTextProps extends TextProps {
   isTwoLineAction?: boolean;
 }
 
-export const SnackbarText = styled.Text<SnackbarTextProps>`
-  color: ${({ theme, type }) => getColorByType(theme, type)};
-  flex-grow: 1;
-  padding-bottom: ${({ isTwoLineAction }) => (isTwoLineAction ? 8 : 16)}px;
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-top: 16px;
-  font-size: 14px;
-`;
+export const SnackbarText = styled.Text<SnackbarTextProps>(({ theme, type, isTwoLineAction }) => ({
+  color: getColorByType(theme, type),
+  flexGrow: 1,
+  fontFamily: theme.snackbar.content.primary.fontFamily,
+  fontSize: theme.snackbar.content.fontSize,
+  fontWeight: theme.snackbar.content.primary.fontWeight,
+  letterSpacing: theme.snackbar.content.letterSpacing,
+  lineHeight: theme.snackbar.content.fontSize * theme.snackbar.content.lineHeight,
+  paddingBottom: 16,
+  paddingLeft: 16,
+  paddingRight: 16,
+  paddingTop: isTwoLineAction ? 8 : 16,
+}));
