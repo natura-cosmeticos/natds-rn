@@ -72,10 +72,7 @@ export const TabButton = styled.TouchableOpacity<TabBase>(({ type, theme }) => (
 }));
 
 export const TabText = styled.Text<TabBase>(({ type, theme }) => ({
+  fontSize: 14,
+  letterSpacing: 1.25,
   ...getTabTextStyles(theme, type),
-  fontFamily: theme.tab.label.primary.fontFamily,
-  fontSize: theme.tab.label.fontSize,
-  fontWeight: theme.tab.label.primary.fontWeight,
-  letterSpacing: theme.tab.label.letterSpacing,
-  lineHeight: theme.tab.label.fontSize * theme.tab.label.lineHeight,
 }));
