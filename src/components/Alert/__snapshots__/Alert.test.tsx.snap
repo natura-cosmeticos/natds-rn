@@ -905,9 +905,11 @@ exports[`Alert component Should render alert with default props 1`] = `
         Array [
           Object {
             "flexWrap": "wrap",
+            "fontFamily": "Roboto",
             "fontSize": 20,
-            "fontWeight": "600",
+            "fontWeight": "500",
             "letterSpacing": 0.24,
+            "lineHeight": 30,
             "marginBottom": 8,
           },
         ]
@@ -920,8 +922,11 @@ exports[`Alert component Should render alert with default props 1`] = `
         Array [
           Object {
             "color": "#333333",
+            "fontFamily": "Roboto",
             "fontSize": 16,
+            "fontWeight": "400",
             "letterSpacing": 0.51,
+            "lineHeight": 24,
           },
         ]
       }
