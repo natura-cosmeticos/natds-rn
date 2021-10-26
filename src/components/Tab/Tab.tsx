@@ -59,7 +59,7 @@ const TabComponent = ({
           type={getCurrentType(index)}
           testID={`${testID}-item-${index}`}
         >
-          <TabText theme={theme} type={getCurrentType(index)} style={{ fontWeight: 'bold' }}>
+          <TabText theme={theme} type={getCurrentType(index)} >
             {tabOption.label.toUpperCase()}
           </TabText>
         </TabButton>
