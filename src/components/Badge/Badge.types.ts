@@ -1,6 +1,12 @@
 /* eslint-disable max-len */
 import { Color } from '@naturacosmeticos/natds-themes/react-native';
-import { AccessibilityRole, AccessibilityValue } from 'react-native';
+import { AccessibilityRole, AccessibilityValue, Animated } from 'react-native';
+
+export type AnimationProps = {
+  currentValue: Animated.Value
+  duration: number
+  toValue: number
+}
 
 export type BadgeColors = keyof Pick<Color, 'primary' | 'secondary' | 'success' | 'alert'>
 

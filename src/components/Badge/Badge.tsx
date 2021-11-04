@@ -5,7 +5,7 @@ import { Animated, Platform } from 'react-native';
 import {
   Container, Circle, BadgeBase as Pulse, Label,
 } from './Badge.styles';
-import { BadgeProps, BadgeStandardProps } from './Badge.types';
+import { BadgeProps, BadgeStandardProps, AnimationProps } from './Badge.types';
 
 export const buildValue = ({ value, limit }: BadgeStandardProps) => (limit && value >= limit ? `${limit}+` : value);
 export const isBadgeStandard = (props: BadgeProps): props is BadgeStandardProps => props.variant === 'standard';
@@ -19,7 +19,7 @@ export const Badge = (props: BadgeProps) => {
     color = 'alert', variant = 'standard', testID = 'ds-badge', accessible, accessibilityLabel, accessibilityRole, accessibilityValue,
   } = props;
 
-  const setAnimation = ({ currentValue, duration, toValue }) => {
+  const setAnimation = ({ currentValue, duration, toValue }: AnimationProps) => {
     const animation = Animated.timing(currentValue, {
       duration,
       isInteraction: false,
