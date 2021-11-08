@@ -38,7 +38,8 @@ exports[`Badge component Should render badge with standard variant 1`] = `
             "fontSize": 12,
             "fontWeight": "400",
             "letterSpacing": 0.38,
-            "lineHeight": 18,
+            "lineHeight": 16,
+            "textAlignVertical": "center",
           },
         ]
       }
