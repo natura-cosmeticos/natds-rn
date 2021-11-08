@@ -36,17 +36,18 @@ export const BadgeBase = styled.View<BadgeStyleProps>(({ theme, color, variant =
   height: theme.badge[convertPulseToDot(variant)].height,
 }));
 
-export const Circle = styled(BadgeBase)<BadgeStyleProps>(({ theme, variant = 'standard' }): CSSObject => ({
+export const Circle = styled(BadgeBase)(({ theme, variant = 'standard' }): CSSObject => ({
   ...getHorizontalPadding(variant, theme),
   alignContent: 'center',
   justifyContent: 'center',
 }));
 
-export const Label = styled.Text<BadgeStyleProps>(({ theme, color }): CSSObject => ({
+export const Label = styled.Text<BadgeStyleProps>(({ theme, color, variant = 'standard' }): CSSObject => ({
   color: theme.badge.color[color].label,
   fontFamily: theme.badge.label.primary.fontFamily,
   fontSize: theme.badge.label.fontSize,
   fontWeight: theme.badge.label.primary.fontWeight,
   letterSpacing: theme.badge.label.letterSpacing,
-  lineHeight: theme.badge.label.fontSize * theme.badge.label.lineHeight,
+  lineHeight: theme.badge[convertPulseToDot(variant)].height,
+  textAlignVertical: 'center',
 }));
