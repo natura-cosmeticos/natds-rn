@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [7.16.0](https://github.com/natura-cosmeticos/natds-rn/compare/v7.15.0...v7.16.0) (2021-11-09)
+
+
+### Features
+
+* **badge:** create a badge component ([#206](https://github.com/natura-cosmeticos/natds-rn/issues/206)) ([c18f8f1](https://github.com/natura-cosmeticos/natds-rn/commit/c18f8f1a9e34fc9bb9cd4bee4db45bf25406623f))
+
 ## [7.15.0](https://github.com/natura-cosmeticos/natds-rn/compare/v7.14.0...v7.15.0) (2021-10-27)
 
 
