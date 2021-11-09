@@ -67,9 +67,8 @@ export type BadgeStandardProps = BadgeBaseProps & {
   value: number
   /**
    * Specify the variant of Badge you want to create.
-   * @default 'standard'
    */
-  variant?: 'standard'
+  variant: 'standard'
 }
 
 export type BadgeProps = BadgePulseProps | BadgeDotProps | BadgeStandardProps

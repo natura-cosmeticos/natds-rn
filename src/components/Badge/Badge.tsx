@@ -16,7 +16,7 @@ export const Badge = (props: BadgeProps) => {
   const animationTime = 1600;
 
   const {
-    color = 'alert', variant = 'standard', testID = 'ds-badge', accessible, accessibilityLabel, accessibilityRole, accessibilityValue,
+    color = 'alert', variant, testID = 'ds-badge', accessible, accessibilityLabel, accessibilityRole, accessibilityValue,
   } = props;
 
   const setAnimation = ({ currentValue, duration, toValue }: AnimationProps) => {
