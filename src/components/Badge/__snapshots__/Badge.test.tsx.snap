@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Badge component Should render badge with standard variant 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignContent": "center",
+        "alignItems": "center",
+      },
+    ]
+  }
+  testID="ds-badge"
+>
+  <View
+    color="alert"
+    style={
+      Array [
+        Object {
+          "alignContent": "center",
+          "backgroundColor": "#e74627",
+          "borderRadius": 8,
+          "height": 16,
+          "justifyContent": "center",
+          "paddingHorizontal": 4,
+        },
+      ]
+    }
+    variant="standard"
+  >
+    <Text
+      color="alert"
+      style={
+        Array [
+          Object {
+            "color": "#ffffff",
+            "fontFamily": "Roboto",
+            "fontSize": 12,
+            "fontWeight": "400",
+            "letterSpacing": 0.38,
+            "lineHeight": 16,
+            "textAlignVertical": "center",
+          },
+        ]
+      }
+      variant="standard"
+    >
+      1
+    </Text>
+  </View>
+</View>
+`;
