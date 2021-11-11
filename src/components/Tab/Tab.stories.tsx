@@ -50,7 +50,6 @@ const tabPositions = {
 const iconPositions = {
   icon: 'icon',
   leading: 'leading',
-  none: 'none',
   top: 'top',
 };
 
@@ -246,7 +245,7 @@ export const Interactive = () => {
         elevation={boolean('Elevation', false)}
         backgroundColor={boolean('BackgroundColor', true)}
         position={select('Position', tabPositions, 'fixed') as TabPositions}
-        iconPosition={select('Icon Position', iconPositions, 'none') as IconPositions}
+        iconPosition={select('Icon Position', iconPositions, '') as IconPositions}
       />
     </View>
   );
