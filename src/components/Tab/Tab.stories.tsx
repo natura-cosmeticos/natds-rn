@@ -6,10 +6,38 @@ import { boolean, select } from '@storybook/addon-knobs';
 import { Tab } from '.';
 import { TabPositions, IconPositions } from './Tab.types';
 
+const description = () => `
+- - -
+
+  ### NOTE:
+  This component is available in the following variants:
+
+  - ✅ Standard
+
+With the following attribute status:
+
+  - **Position:**
+    - ✅ \`Fixed\`
+    - ✅ \`Scrollable\`
+  - **Icon:**
+    - ✅ \`Leading\`
+    - ✅ \`Top\`
+    - ✅ \`Icon\`
+  - ✅ **Disabled**
+  - ✅ **Elevation**
+  - ✅ **Color**
+  - ✅ **onChange**
+
+- - -
+`;
+
 export default {
   component: Tab,
   parameters: {
     componentSubtitle: 'Tabs allow the users to navigate between groups of contents that are at the same level of hierarchy.',
+    docs: {
+      extractComponentDescription: description,
+    },
   },
   title: 'Components|Tab',
 };
@@ -26,46 +54,24 @@ const iconPositions = {
   top: 'top',
 };
 
-const easyTabOptions = [
-  {
-    key: 'itemOne',
-    label: 'Item One',
-  },
-  {
-    key: 'itemTwo',
-    label: 'Item Two',
-  },
-  {
-    key: 'itemThree',
-    label: 'Item Three',
-  },
-];
-
-const iconTabOptions = [
-  {
-    iconName: 'outlined-default-mockup',
-    key: 'itemOne',
-    label: 'Item One',
-  },
-  {
-    iconName: 'outlined-default-mockup',
-    key: 'itemTwo',
-    label: 'Item Two',
-  },
-  {
-    iconName: 'outlined-default-mockup',
-    key: 'itemThree',
-    label: 'Item Three',
-  },
-];
-
-const easyOnChange = (value: number) => {
-  Alert.alert('Current Tab', `${easyTabOptions[value].label}`);
-};
-
 export const Positions = () => {
+  const positionTabOptions = [
+    {
+      key: 'itemOne',
+      label: 'Item One',
+    },
+    {
+      key: 'itemTwo',
+      label: 'Item Two',
+    },
+    {
+      key: 'itemThree',
+      label: 'Item Three',
+    },
+  ];
+
   const scrollableTabOptions = [
-    ...easyTabOptions,
+    ...positionTabOptions,
     {
       key: 'itemFourth',
       label: 'Item Four',
@@ -79,7 +85,7 @@ export const Positions = () => {
   return (
     <>
       <View style={{ maxWidth: 600, paddingBottom: 30 }}>
-        <Tab tabOptions={easyTabOptions} onChange={onChange} />
+        <Tab tabOptions={positionTabOptions} onChange={onChange} />
       </View>
       <View style={{ maxWidth: 600, paddingBottom: 30 }}>
         <Tab position="scrollable" tabOptions={scrollableTabOptions} onChange={onChange} />
@@ -89,6 +95,24 @@ export const Positions = () => {
 };
 
 export const Icon = () => {
+  const iconTabOptions = [
+    {
+      iconName: 'outlined-default-mockup',
+      key: 'itemOne',
+      label: 'Item One',
+    },
+    {
+      iconName: 'outlined-default-mockup',
+      key: 'itemTwo',
+      label: 'Item Two',
+    },
+    {
+      iconName: 'outlined-default-mockup',
+      key: 'itemThree',
+      label: 'Item Three',
+    },
+  ];
+
   const onChange = (value: number) => {
     Alert.alert('Current Tab', `${iconTabOptions[value].label}`);
   };
@@ -137,27 +161,87 @@ export const Disabled = () => {
   );
 };
 
-export const Elevation = () => (
-  <View style={{ maxWidth: 600, paddingBottom: 30 }}>
-    <Tab elevation={true} tabOptions={easyTabOptions} onChange={easyOnChange} />
-  </View>
-);
+export const Elevation = () => {
+  const tabOptions = [
+    {
+      key: 'itemOne',
+      label: 'Item One',
+    },
+    {
+      key: 'itemTwo',
+      label: 'Item Two',
+    },
+    {
+      key: 'itemThree',
+      label: 'Item Three',
+    },
+  ];
 
-export const Color = () => (
+  const onChange = (value: number) => {
+    Alert.alert('Current Tab', `${tabOptions[value].label}`);
+  };
+
+  return (
   <View style={{ maxWidth: 600, paddingBottom: 30 }}>
-    <Tab backgroundColor={false} tabOptions={easyTabOptions} onChange={easyOnChange} />
+    <Tab elevation={true} tabOptions={tabOptions} onChange={onChange} />
   </View>
-);
+  );
+};
+
+export const Color = () => {
+  const tabOptions = [
+    {
+      key: 'itemOne',
+      label: 'Item One',
+    },
+    {
+      key: 'itemTwo',
+      label: 'Item Two',
+    },
+    {
+      key: 'itemThree',
+      label: 'Item Three',
+    },
+  ];
+
+  const onChange = (value: number) => {
+    Alert.alert('Current Tab', `${tabOptions[value].label}`);
+  };
+
+  return (
+  <View style={{ maxWidth: 600, paddingBottom: 30 }}>
+    <Tab backgroundColor={false} tabOptions={tabOptions} onChange={onChange} />
+  </View>
+  );
+};
 
 export const Interactive = () => {
+  const interactiveTabOptions = [
+    {
+      iconName: 'outlined-default-mockup',
+      key: 'itemOne',
+      label: 'Item One',
+    },
+    {
+      iconName: 'outlined-default-mockup',
+      key: 'itemTwo',
+      label: 'Item Two',
+    },
+    {
+      iconName: 'outlined-default-mockup',
+      key: 'itemThree',
+      label: 'Item Three',
+    },
+  ];
+
   const onChange = (value: number) => {
-    Alert.alert('Current Tab', `${iconTabOptions[value].label}`);
+    Alert.alert('Current Tab', `${interactiveTabOptions[value].label}`);
   };
 
   return (
     <View style={{ maxWidth: 600, paddingBottom: 30 }}>
       <Tab
-        tabOptions={iconTabOptions}
+        tabOptions={interactiveTabOptions}
         onChange={onChange}
         elevation={boolean('Elevation', false)}
         backgroundColor={boolean('BackgroundColor', true)}

@@ -45,7 +45,7 @@ export interface TabProps {
    */
   position?: TabPositions
   /**
-   * Array of Tab options with `key`, `label`, `selected`, `disabled`, `iconName`, `accessibilityLabel`, `accessibilityHint` and `accessibilityState` properties.
+   * Array of Tab options with `key`, `label`, `selected`, `disabled`, and `iconName` properties.
    */
   tabOptions: TabOptions[]
   /**
