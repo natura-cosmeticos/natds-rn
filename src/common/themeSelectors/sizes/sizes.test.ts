@@ -9,6 +9,7 @@ describe.each`
   ${'Medium'}  | ${selectors.getSizeMedium}  | ${theme.size.medium}
   ${'MediumX'} | ${selectors.getSizeMediumX} | ${theme.size.mediumX}
   ${'Large'}   | ${selectors.getSizeLarge}   | ${theme.size.large}
+  ${'LargeX'}   | ${selectors.getSizeLargeX}   | ${theme.size.largeX}
 `('Size selectors', ({
   title, selector, expected,
 }) => {

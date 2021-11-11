@@ -14,3 +14,4 @@ export const getSizeSemiX = (theme: Theme) => getSize(theme, 'semiX');
 export const getSizeMedium = (theme: Theme) => getSize(theme, 'medium');
 export const getSizeMediumX = (theme: Theme) => getSize(theme, 'mediumX');
 export const getSizeLarge = (theme: Theme) => getSize(theme, 'large');
+export const getSizeLargeX = (theme: Theme) => getSize(theme, 'largeX');

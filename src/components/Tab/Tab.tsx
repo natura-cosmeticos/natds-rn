@@ -1,70 +1,103 @@
-import React, { useState } from 'react';
+/* eslint-disable max-len */
+import { IconName } from '@naturacosmeticos/natds-icons';
+import React, { useEffect, useState } from 'react';
+import { ScrollView, View } from 'react-native';
 import { withTheme } from 'styled-components/native';
-import { Theme } from '../../common/themeSelectors';
 
+import { Icon } from '../Icon';
 import {
-  TabWrapper, TabButton, TabText, TabButtonTypes,
+  TabWrapper, TabButton, TabText, TabButtonContent, getTabTextColor, getTabWrapperElevation,
 } from './Tab.styles';
-
-export interface TabOptions {
-  key: string;
-  label: string;
-}
-
-export interface TabProps {
-  /**
-   * Array of Tab options with key and label
-   */
-  tabOptions: TabOptions[];
-  /**
-   * The onChange prop allows passing a function that will be called
-   * once the tab option has been pressed.
-   */
-  onChange: (value: number) => void;
-  /**
-   * The tab theme
-   */
-  theme: Theme;
-  /**
-   * Optional ID for testing
-   */
-  testID?: string;
-}
+import { TabProps, TabButtonTypes } from './Tab.types';
 
 const TabComponent = ({
-  testID = 'tab', theme, tabOptions, onChange,
+  testID = 'ds-tab', theme, tabOptions, onChange, position = 'fixed',
+  iconPosition, elevation = false, backgroundColor = true, accessible = false,
+  accessibilityRole = 'tab',
 }: TabProps) => {
   const [activeTab, setActiveTab] = useState(0);
+
+  const TabPositionType = position === 'fixed' ? View : ScrollView;
 
   const handlePress = (index: number) => {
     onChange(index);
     setActiveTab(index);
   };
 
-  const getCurrentType = (index: number): TabButtonTypes => {
-    if (activeTab === index) {
+  const getCurrentType = (index: number, disabled = false): TabButtonTypes => {
+    if (activeTab === index && !disabled) {
       return 'primary';
     }
 
     return 'secondary';
   };
 
+  const getSelectedTab = (): number => {
+    let selected = 0;
+
+    tabOptions.find((tab, index) => {
+      if (tab.selected && !tab.disabled) {
+        selected = index;
+
+        return true;
+      }
+
+      return false;
+    });
+
+    return selected;
+  };
+
+  useEffect(() => {
+    const selectedIndex = getSelectedTab();
+
+    setActiveTab(selectedIndex);
+  }, []);
+
   return (
-    <TabWrapper theme={theme} testID={testID}>
-      {tabOptions.map((tabOption, index) => (
-        <TabButton
-          key={tabOption.key}
-          onPress={() => handlePress(index)}
-          theme={theme}
-          type={getCurrentType(index)}
-          testID={`${testID}-item-${index}`}
-        >
-          <TabText theme={theme} type={getCurrentType(index)} >
-            {tabOption.label.toUpperCase()}
-          </TabText>
-        </TabButton>
-      ))}
-    </TabWrapper>
+    <View
+      // This view is to apply the shadow when the position is scrollable in IOS, but not working in Android.
+      style={getTabWrapperElevation({ elevation, theme })}
+      accessible={accessible}
+      accessibilityRole={accessibilityRole}
+    >
+      <TabWrapper
+        // This view is to apply the shadow to working in Android.
+        style={getTabWrapperElevation({ elevation, theme })}
+        as={TabPositionType}
+        iconPosition={iconPosition}
+        backgroundColor={backgroundColor}
+        testID={testID}
+      >
+        {tabOptions.map((tabOption, index) => {
+          const currentType = getCurrentType(index, tabOption.disabled);
+
+          return (
+            <TabButton
+              accessible={accessible}
+              disabled={tabOption.disabled}
+              key={tabOption.key}
+              onPress={() => handlePress(index)}
+              type={currentType}
+              testID={`${testID}-item-${index}`}
+            >
+              <TabButtonContent iconPosition={iconPosition} >
+                {tabOption.iconName && iconPosition
+                  && <Icon
+                    accessibilityRole="imagebutton"
+                    style={getTabTextColor({ disabled: tabOption.disabled, theme, type: currentType })}
+                    name={tabOption.iconName as IconName}
+                    size="small" />
+                }
+                <TabText iconPosition={iconPosition} type={currentType} disabled={tabOption.disabled} >
+                  {tabOption.label.toUpperCase()}
+                </TabText>
+              </TabButtonContent>
+            </TabButton>
+          );
+        })}
+      </TabWrapper>
+    </View>
   );
 };
 
