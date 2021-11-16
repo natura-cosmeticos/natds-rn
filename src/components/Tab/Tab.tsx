@@ -87,7 +87,7 @@ const TabComponent = ({
                     accessibilityRole="imagebutton"
                     style={getTabTextColor({ disabled: tabOption.disabled, theme, type: currentType })}
                     name={tabOption.iconName as IconName}
-                    size="small" />
+                    size="standard" />
                 }
                 <TabText iconPosition={iconPosition} type={currentType} disabled={tabOption.disabled} >
                   {tabOption.label.toUpperCase()}

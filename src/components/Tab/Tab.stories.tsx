@@ -1,6 +1,6 @@
 /* eslint-disable max-lines */
 import React from 'react';
-import { Alert, View } from 'react-native';
+import { View } from 'react-native';
 
 import { boolean, select } from '@storybook/addon-knobs';
 import { Tab } from '.';
@@ -75,19 +75,19 @@ export const Positions = () => {
       key: 'itemFourth',
       label: 'Item Four',
     },
+    {
+      key: 'itemFifth',
+      label: 'Item Five',
+    },
   ];
-
-  const onChange = (value: number) => {
-    Alert.alert('Current Tab', `${scrollableTabOptions[value].label}`);
-  };
 
   return (
     <>
       <View style={{ maxWidth: 600, paddingBottom: 30 }}>
-        <Tab tabOptions={positionTabOptions} onChange={onChange} />
+        <Tab tabOptions={positionTabOptions} onChange={() => {}} />
       </View>
       <View style={{ maxWidth: 600, paddingBottom: 30 }}>
-        <Tab position="scrollable" tabOptions={scrollableTabOptions} onChange={onChange} />
+        <Tab position="scrollable" tabOptions={scrollableTabOptions} onChange={() => {}} />
       </View>
     </>
   );
@@ -112,20 +112,16 @@ export const Icon = () => {
     },
   ];
 
-  const onChange = (value: number) => {
-    Alert.alert('Current Tab', `${iconTabOptions[value].label}`);
-  };
-
   return (
     <>
       <View style={{ maxWidth: 600, paddingBottom: 30 }}>
-        <Tab iconPosition="leading" tabOptions={iconTabOptions} onChange={onChange} />
+        <Tab iconPosition="leading" tabOptions={iconTabOptions} onChange={() => {}} />
       </View>
       <View style={{ maxWidth: 600, paddingBottom: 30 }}>
-        <Tab iconPosition="top" tabOptions={iconTabOptions} onChange={onChange} />
+        <Tab iconPosition="top" tabOptions={iconTabOptions} onChange={() => {}} />
       </View>
       <View style={{ maxWidth: 600, paddingBottom: 30 }}>
-        <Tab iconPosition="icon" tabOptions={iconTabOptions} onChange={onChange} />
+        <Tab iconPosition="icon" tabOptions={iconTabOptions} onChange={() => {}} />
       </View>
     </>
   );
@@ -149,13 +145,9 @@ export const Disabled = () => {
     },
   ];
 
-  const onChange = (value: number) => {
-    Alert.alert('Current Tab', `${tabOptions[value].label}`);
-  };
-
   return (
     <View style={{ maxWidth: 600, paddingBottom: 30 }}>
-      <Tab tabOptions={tabOptions} onChange={onChange} />
+      <Tab tabOptions={tabOptions} onChange={() => {}} />
     </View>
   );
 };
@@ -176,13 +168,9 @@ export const Elevation = () => {
     },
   ];
 
-  const onChange = (value: number) => {
-    Alert.alert('Current Tab', `${tabOptions[value].label}`);
-  };
-
   return (
   <View style={{ maxWidth: 600, paddingBottom: 30 }}>
-    <Tab elevation={true} tabOptions={tabOptions} onChange={onChange} />
+    <Tab elevation={true} tabOptions={tabOptions} onChange={() => {}} />
   </View>
   );
 };
@@ -203,13 +191,9 @@ export const Color = () => {
     },
   ];
 
-  const onChange = (value: number) => {
-    Alert.alert('Current Tab', `${tabOptions[value].label}`);
-  };
-
   return (
   <View style={{ maxWidth: 600, paddingBottom: 30 }}>
-    <Tab backgroundColor={false} tabOptions={tabOptions} onChange={onChange} />
+    <Tab backgroundColor={false} tabOptions={tabOptions} onChange={() => {}} />
   </View>
   );
 };
@@ -231,21 +215,22 @@ export const Interactive = () => {
       key: 'itemThree',
       label: 'Item Three',
     },
+    {
+      iconName: 'outlined-default-mockup',
+      key: 'itemFourth',
+      label: 'Item Four',
+    },
   ];
-
-  const onChange = (value: number) => {
-    Alert.alert('Current Tab', `${interactiveTabOptions[value].label}`);
-  };
 
   return (
     <View style={{ maxWidth: 600, paddingBottom: 30 }}>
       <Tab
         tabOptions={interactiveTabOptions}
-        onChange={onChange}
+        onChange={() => {}}
         elevation={boolean('Elevation', false)}
         backgroundColor={boolean('BackgroundColor', true)}
         position={select('Position', tabPositions, 'fixed') as TabPositions}
-        iconPosition={select('Icon Position', iconPositions, '') as IconPositions}
+        iconPosition={select('Icon Position', iconPositions, 'icon') as IconPositions}
       />
     </View>
   );
