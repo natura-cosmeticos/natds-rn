@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [7.17.0](https://github.com/natura-cosmeticos/natds-rn/compare/v7.16.0...v7.17.0) (2021-11-16)
+
+
+### Features
+
+* **tab:** apply new attributes like position, icon and others ([#209](https://github.com/natura-cosmeticos/natds-rn/issues/209)) ([329de8e](https://github.com/natura-cosmeticos/natds-rn/commit/329de8e82b8a6ea5df17354d5fd5d3d5675807b9))
+
 ## [7.16.0](https://github.com/natura-cosmeticos/natds-rn/compare/v7.15.0...v7.16.0) (2021-11-09)
 
 
