@@ -1,5 +1,13 @@
 import { storiesOf } from '@storybook/react-native';
-import { fixed } from './Tab.stories';
+import {
+  All, Positions, Icon, Disabled, Color, Elevation, Interactive,
+} from './Tab.stories';
 
 storiesOf('Tab', module)
-  .add('fixed', fixed);
+  .add('All', All)
+  .add('Color', Color)
+  .add('Disabled', Disabled)
+  .add('Elevation', Elevation)
+  .add('Icon', Icon)
+  .add('Positions', Positions)
+  .add('Interactive', Interactive);
