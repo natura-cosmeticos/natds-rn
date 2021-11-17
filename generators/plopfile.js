@@ -1,0 +1,44 @@
+module.exports = function plopGenerator(plop) {
+  plop.setGenerator('component', {
+    actions: [
+      {
+        path: '../src/components/{{pascalCase name}}/{{pascalCase name}}.tsx',
+        templateFile: 'templates/index.tsx.hbs',
+        type: 'add',
+      },
+      {
+        path: '../src/components/{{pascalCase name}}/{{pascalCase name}}.stories.tsx',
+        templateFile: 'templates/stories.tsx.hbs',
+        type: 'add',
+      },
+      {
+        path: '../src/components/{{pascalCase name}}/{{pascalCase name}}.styles.ts',
+        templateFile: 'templates/styles.ts.hbs',
+        type: 'add',
+      },
+      {
+        path: '../src/components/{{pascalCase name}}/{{pascalCase name}}.test.tsx',
+        templateFile: 'templates/test.tsx.hbs',
+        type: 'add',
+      },
+      {
+        path: '../src/components/{{pascalCase name}}/{{pascalCase name}}.device.tsx',
+        templateFile: 'templates/device.tsx.hbs',
+        type: 'add',
+      },
+      {
+        path: '../src/components/{{pascalCase name}}/{{pascalCase name}}.types.ts',
+        templateFile: 'templates/types.ts.hbs',
+        type: 'add',
+      },
+    ],
+    description: 'application component logic',
+    prompts: [
+      {
+        message: 'component name',
+        name: 'name',
+        type: 'input',
+      },
+    ],
+  });
+};
