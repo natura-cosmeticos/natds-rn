@@ -71,7 +71,7 @@ describe('IconButton component', () => {
       />,
     );
 
-    const icon = queryByTestId('icon-button-icon');
+    const icon = queryByTestId('ds-icon-button-icon');
 
     expect(icon?.props).toHaveProperty('accessibilityHint', 'Go to account page');
     expect(icon?.props).toHaveProperty('accessibilityLabel', 'Press view your account');
@@ -84,19 +84,16 @@ describe('IconButton component', () => {
   it('should call onPress when item is pressed', () => {
     const onPressMock = jest.fn();
 
-    const { queryByTestId } = renderWithTheme(
+    const { getByTestId } = renderWithTheme(
       <IconButton
         color="default"
         icon="outlined-finance-bank"
         onPress={onPressMock}
+        testID='mockPress'
       />,
     );
 
-    const iconButton = queryByTestId('icon-button');
-
-    if (iconButton) {
-      fireEvent.press(iconButton);
-    }
+    fireEvent.press(getByTestId('mockPress-button'));
 
     expect(onPressMock).toHaveBeenCalled();
   });

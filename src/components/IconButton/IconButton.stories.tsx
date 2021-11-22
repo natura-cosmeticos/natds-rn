@@ -95,7 +95,7 @@ export const Icon = () => (
   </StoryContainer>
 );
 
-export const interactive = () => (
+export const Interactive = () => (
   <StoryContainer title="Interactive">
     <IconButton
       iconColor={select('Colors', iconButtonColorsOptions, 'default')}
