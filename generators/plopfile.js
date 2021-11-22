@@ -2,8 +2,13 @@ module.exports = function plopGenerator(plop) {
   plop.setGenerator('component', {
     actions: [
       {
+        path: '../src/components/{{pascalCase name}}/index.ts',
+        templateFile: 'templates/index.ts.hbs',
+        type: 'add',
+      },
+      {
         path: '../src/components/{{pascalCase name}}/{{pascalCase name}}.tsx',
-        templateFile: 'templates/index.tsx.hbs',
+        templateFile: 'templates/component.tsx.hbs',
         type: 'add',
       },
       {
