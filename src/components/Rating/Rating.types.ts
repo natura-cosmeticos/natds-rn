@@ -3,7 +3,7 @@ import { Size } from '@naturacosmeticos/natds-themes/react-native';
 export type RatingCounterSize = keyof Pick<Size, 'small' | 'standard' | 'semi' | 'semiX'>
 export type RatingInputSize = keyof Pick<Size, 'semi' | 'semiX' | 'medium'>
 export type RatingReadOnlySize = keyof Pick<Size, 'small' | 'standard' | 'semi' | 'semiX'>
-export type RatingValue = 0 | 1 | 2 | 3 | 4 | 5
+export type RatingValueProps = 0 | 1 | 2 | 3 | 4 | 5
 
 export interface RatingBaseProps {
   /**
@@ -58,7 +58,7 @@ export type RatingInputProps = RatingBaseProps & {
   onPress: (e: any) => void
   /** Sets the amount of filled stars, range: 0 to 5
    */
-  rate?: RatingValue
+  rate?: RatingValueProps
 }
 
 export type RatingReadOnlyProps = RatingBaseProps & {
@@ -71,7 +71,7 @@ export type RatingReadOnlyProps = RatingBaseProps & {
   size?: RatingReadOnlySize
   /** Sets the amount of filled stars, range: 0 to 5
    */
-  rate?: RatingValue
+  rate?: RatingValueProps
 }
 
 export type RatingProps = RatingCounterProps | RatingInputProps | RatingReadOnlyProps

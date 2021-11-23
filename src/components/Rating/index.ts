@@ -1,2 +1,2 @@
 export * from './Rating';
-export * from './Rating.types';
+export { RatingValueProps } from './Rating.types';
