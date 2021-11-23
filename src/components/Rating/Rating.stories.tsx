@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { boolean, text, select } from '@storybook/addon-knobs';
 import { StoryContainer } from '../../common/HelperComponents/StoryContainer';
-import { RatingValue } from './Rating.types';
+import { RatingValueProps } from './Rating.types';
 
 import { Rating } from './Rating';
 
@@ -72,7 +72,7 @@ const rates = {
 
 
 export const Input = () => {
-  const [rating, setRating] = useState<RatingValue>(0);
+  const [rating, setRating] = useState<RatingValueProps>(0);
 
   return (
     <StoryContainer title='Input'>
@@ -101,7 +101,7 @@ export const Interactive = () => (
       size={select('Size', sizes, 'semi') as any}
       align={select('Align', ['left', 'right'], 'left') as any}
       disabled={boolean('Disabled', false)}
-      rate={select('Rate', rates, 1) as RatingValue}
+      rate={select('Rate', rates, 1) as RatingValueProps}
       onPress={(() => {})}
     />
   </StoryContainer>
