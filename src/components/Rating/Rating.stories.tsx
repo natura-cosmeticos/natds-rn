@@ -11,24 +11,24 @@ const description = () => `
   ### NOTE:
   This component is available in the following variants:
 
-  - ✅ Counter
-  - ✅ Input
-  - ✅ Read-Only
+  - ✅ Counter (available but with alternative composition)
+  - ✅ Input (available but with alternative composition)
+  - ✅ Read-Only (available but with alternative composition)
 
 With the following attribute status:
 
-  - ✅ Hint
+  - ✅ Hint (available on input and counter variants)
   - **Size:**
-      - ✅ \`Small\`
-      - ✅ \`Standard\`
-      - ✅ \`Semi\`
-      - ✅ \`SemiX\`
-      - ✅ \`Medium\`
-  - **Alignment**
+      - ✅ \`Small\` (available on input and read-only variants)
+      - ✅ \`Standard\` (available on input and read-only variants)
+      - ✅ \`Semi\` (available in all variants)
+      - ✅ \`SemiX\` (available in all variants)
+      - ✅ \`Medium\` (available only in input variant)
+  - **Alignment** (available only in counter variant)
     - ✅ \`left\`
     - ✅ \`right\`
-  - ✅ **Disabled**
-  - ✅ **Rate**
+  - ✅ **Disabled** (available only in input variant)
+  - ✅ **Rate** (available on input and read-only variants)
   - **Interaction state**:
       - ✅ \`Enabled\`
       - ✅ \`Press\`

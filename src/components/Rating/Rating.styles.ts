@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import styled from 'styled-components/native';
 import { CSSObject } from 'styled-components';
 import { Theme } from '@naturacosmeticos/natds-themes/react-native';
@@ -36,13 +37,13 @@ const getWrapperDirection = ({ variant, align }: AlignStyleProps & VariantStyleP
   return 'row';
 };
 
-const getContentMargin = ({ theme, align }: AlignStyleProps) => {
-  if (align === 'right') {
+const getContentMargin = ({ theme, align, variant }: VariantStyleProps & AlignStyleProps) => {
+  if (align === 'right' && variant === 'counter') {
     return {
       marginLeft: theme.spacing.micro,
     };
   }
-  if (align === 'left') {
+  if (align === 'left' && variant === 'counter') {
     return {
       marginRight: theme.spacing.micro,
     };
@@ -56,8 +57,8 @@ export const Wrapper = styled.View(({ theme, variant, align = 'left' }: VariantS
   flexDirection: getWrapperDirection({ align, theme, variant }),
 }));
 
-export const Content = styled.View(({ theme, align }: AlignStyleProps): CSSObject => ({
-  ...getContentMargin({ align, theme }),
+export const Content = styled.View(({ theme, variant, align }: VariantStyleProps & AlignStyleProps): CSSObject => ({
+  ...getContentMargin({ align, theme, variant }),
   flexDirection: 'row',
 }));
 

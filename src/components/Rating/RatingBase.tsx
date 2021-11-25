@@ -15,13 +15,13 @@ export interface RatingBaseProps {
   accessibilityLabel?: string
   iconActive?: boolean
   iconFilled?: boolean
-  isClickable: boolean
+  isClickable?: boolean
   theme: Theme
 }
 
 const RatingBaseComponent = ({
   testID, disabled = false, onPress, size, theme,
-  accessibilityHint, accessibilityLabel, iconFilled = true, iconActive = true, isClickable,
+  accessibilityHint, accessibilityLabel, iconFilled = true, iconActive = true, isClickable = true,
 }: RatingBaseProps): JSX.Element => {
   const getRatingColor = ({ color }: Theme) => (iconFilled && iconActive && !disabled ? '#F8B546' : color.mediumEmphasis);
 

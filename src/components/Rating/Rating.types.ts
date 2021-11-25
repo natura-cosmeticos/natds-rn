@@ -55,6 +55,9 @@ export type RatingInputProps = RatingBaseProps & {
    * @default false
    */
   disabled?: boolean
+  /**
+   * The onPress event handler, that return index plus one of item position.
+   */
   onPress: (e: any) => void
   /** Sets the amount of filled stars, range: 0 to 5
    */

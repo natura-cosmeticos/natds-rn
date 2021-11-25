@@ -1,5 +1,468 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Rating Variants Counter Variant should render with counter variant 1`] = `
+<View
+  label="placeholder"
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+      },
+    ]
+  }
+  testID="ds-rating"
+  variant="counter"
+>
+  <View
+    label="placeholder"
+    style={
+      Array [
+        Object {
+          "flexDirection": "row",
+          "marginHorizontal": 0,
+        },
+      ]
+    }
+    testID="ds-rating-content"
+    variant="counter"
+  >
+    <View
+      accessible={true}
+      focusable={false}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "borderRadius": 50,
+        }
+      }
+      testID="ds-rating-1-button"
+    >
+      <View
+        backgroundStyle="none"
+        disabled={true}
+        size="semi"
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "transparent",
+              "borderRadius": 50,
+              "height": "px",
+              "justifyContent": "center",
+              "width": "px",
+            },
+            Object {},
+          ]
+        }
+        testID="ds-rating-1-background"
+      >
+        <Text
+          accessibilityRole="imagebutton"
+          name="filled-action-rating"
+          size="semi"
+          style={
+            Object {
+              "color": "#F8B546",
+            }
+          }
+          testID="ds-rating-1-icon"
+        >
+          filled-action-rating
+        </Text>
+      </View>
+    </View>
+  </View>
+  <Text
+    label="placeholder"
+    style={
+      Array [
+        Object {
+          "color": "#777777",
+          "fontFamily": "Roboto",
+          "fontSize": 14,
+          "fontWeight": "400",
+          "letterSpacing": 0.22,
+          "lineHeight": 21,
+        },
+      ]
+    }
+    testID="ds-rating-label"
+    variant="counter"
+  >
+    placeholder
+  </Text>
+</View>
+`;
+
+exports[`Rating Variants Input Variant should render with input variant 1`] = `
+<View
+  label="placeholder"
+  onPress={[Function]}
+  style={
+    Array [
+      Object {
+        "flexDirection": "column",
+      },
+    ]
+  }
+  testID="ds-rating"
+  variant="input"
+>
+  <View
+    label="placeholder"
+    onPress={[Function]}
+    style={
+      Array [
+        Object {
+          "flexDirection": "row",
+          "marginHorizontal": 0,
+        },
+      ]
+    }
+    testID="ds-rating-content"
+    variant="input"
+  >
+    <View
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "borderRadius": 50,
+        }
+      }
+      testID="ds-rating-1-button"
+    >
+      <View
+        backgroundStyle="none"
+        disabled={false}
+        size="semi"
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "transparent",
+              "borderRadius": 50,
+              "height": "px",
+              "justifyContent": "center",
+              "width": "px",
+            },
+            Object {},
+          ]
+        }
+        testID="ds-rating-1-background"
+      >
+        <Text
+          accessibilityRole="imagebutton"
+          name="outlined-action-rating"
+          size="semi"
+          style={
+            Object {
+              "color": "#777777",
+            }
+          }
+          testID="ds-rating-1-icon"
+        >
+          outlined-action-rating
+        </Text>
+      </View>
+    </View>
+    <View
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "borderRadius": 50,
+        }
+      }
+      testID="ds-rating-2-button"
+    >
+      <View
+        backgroundStyle="none"
+        disabled={false}
+        size="semi"
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "transparent",
+              "borderRadius": 50,
+              "height": "px",
+              "justifyContent": "center",
+              "width": "px",
+            },
+            Object {},
+          ]
+        }
+        testID="ds-rating-2-background"
+      >
+        <Text
+          accessibilityRole="imagebutton"
+          name="outlined-action-rating"
+          size="semi"
+          style={
+            Object {
+              "color": "#777777",
+            }
+          }
+          testID="ds-rating-2-icon"
+        >
+          outlined-action-rating
+        </Text>
+      </View>
+    </View>
+    <View
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "borderRadius": 50,
+        }
+      }
+      testID="ds-rating-3-button"
+    >
+      <View
+        backgroundStyle="none"
+        disabled={false}
+        size="semi"
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "transparent",
+              "borderRadius": 50,
+              "height": "px",
+              "justifyContent": "center",
+              "width": "px",
+            },
+            Object {},
+          ]
+        }
+        testID="ds-rating-3-background"
+      >
+        <Text
+          accessibilityRole="imagebutton"
+          name="outlined-action-rating"
+          size="semi"
+          style={
+            Object {
+              "color": "#777777",
+            }
+          }
+          testID="ds-rating-3-icon"
+        >
+          outlined-action-rating
+        </Text>
+      </View>
+    </View>
+    <View
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "borderRadius": 50,
+        }
+      }
+      testID="ds-rating-4-button"
+    >
+      <View
+        backgroundStyle="none"
+        disabled={false}
+        size="semi"
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "transparent",
+              "borderRadius": 50,
+              "height": "px",
+              "justifyContent": "center",
+              "width": "px",
+            },
+            Object {},
+          ]
+        }
+        testID="ds-rating-4-background"
+      >
+        <Text
+          accessibilityRole="imagebutton"
+          name="outlined-action-rating"
+          size="semi"
+          style={
+            Object {
+              "color": "#777777",
+            }
+          }
+          testID="ds-rating-4-icon"
+        >
+          outlined-action-rating
+        </Text>
+      </View>
+    </View>
+    <View
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "borderRadius": 50,
+        }
+      }
+      testID="ds-rating-5-button"
+    >
+      <View
+        backgroundStyle="none"
+        disabled={false}
+        size="semi"
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "transparent",
+              "borderRadius": 50,
+              "height": "px",
+              "justifyContent": "center",
+              "width": "px",
+            },
+            Object {},
+          ]
+        }
+        testID="ds-rating-5-background"
+      >
+        <Text
+          accessibilityRole="imagebutton"
+          name="outlined-action-rating"
+          size="semi"
+          style={
+            Object {
+              "color": "#777777",
+            }
+          }
+          testID="ds-rating-5-icon"
+        >
+          outlined-action-rating
+        </Text>
+      </View>
+    </View>
+  </View>
+  <Text
+    label="placeholder"
+    onPress={[Function]}
+    style={
+      Array [
+        Object {
+          "color": "#777777",
+          "fontFamily": "Roboto",
+          "fontSize": 12,
+          "fontWeight": "400",
+          "letterSpacing": 0.38,
+          "lineHeight": 18,
+          "marginTop": 4,
+        },
+      ]
+    }
+    testID="ds-rating-label"
+    variant="input"
+  >
+    placeholder
+  </Text>
+</View>
+`;
+
+exports[`Rating Variants RatingBase component should render a base component with medium size 1`] = `
+<View
+  accessible={true}
+  focusable={false}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "borderRadius": 50,
+    }
+  }
+  testID="undefined-button"
+>
+  <View
+    backgroundStyle="none"
+    disabled={false}
+    size="medium"
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "transparent",
+          "borderRadius": 50,
+          "height": "px",
+          "justifyContent": "center",
+          "width": "px",
+        },
+        Object {},
+      ]
+    }
+    testID="undefined-background"
+  >
+    <Text
+      accessibilityRole="imagebutton"
+      name="filled-action-rating"
+      size="medium"
+      style={
+        Object {
+          "color": "#F8B546",
+        }
+      }
+      testID="undefined-icon"
+    >
+      filled-action-rating
+    </Text>
+  </View>
+</View>
+`;
+
 exports[`Rating Variants ReadOnly Variant should render with read-only variant 1`] = `
 <View
   style={
@@ -22,6 +485,7 @@ exports[`Rating Variants ReadOnly Variant should render with read-only variant 1
       ]
     }
     testID="ds-rating-content"
+    variant="read-only"
   >
     <View
       accessible={true}
