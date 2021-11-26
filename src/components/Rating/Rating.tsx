@@ -41,7 +41,7 @@ export const Rating = (props: RatingProps) => {
         ))}
       </Content>
       {(isRatingInput(props) || isRatingCounter(props)) && (
-        <Label testID={`${testID}-label`} variant={variant} {...rest}>{props.label}</Label>
+        <Label testID={`${testID}-label`} variant={variant}>{props.label}</Label>
       )}
     </Wrapper>
   );
