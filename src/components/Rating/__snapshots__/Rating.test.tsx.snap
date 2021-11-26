@@ -80,7 +80,6 @@ exports[`Rating Variants Counter Variant should render with counter variant 1`] 
     </View>
   </View>
   <Text
-    label="placeholder"
     style={
       Array [
         Object {
@@ -386,8 +385,6 @@ exports[`Rating Variants Input Variant should render with input variant 1`] = `
     </View>
   </View>
   <Text
-    label="placeholder"
-    onPress={[Function]}
     style={
       Array [
         Object {

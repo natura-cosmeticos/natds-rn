@@ -1,5 +1,5 @@
 import React from 'react';
-import { fireEvent, waitFor } from '@testing-library/react-native';
+import { fireEvent } from '@testing-library/react-native';
 
 import { renderWithTheme } from '../../../test/testHelpers';
 import { Rating } from './Rating';
