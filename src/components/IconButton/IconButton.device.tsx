@@ -1,6 +1,6 @@
 import { storiesOf } from '@storybook/react-native';
 import {
-  interactive,
+  Interactive,
   Base,
   IconColor,
   BackgroundStyle,
@@ -16,4 +16,4 @@ storiesOf('IconButton', module)
   .add('Disabled', Disabled)
   .add('Size', Size)
   .add('Icon', Icon)
-  .add('interactive', interactive);
+  .add('Interactive', Interactive);

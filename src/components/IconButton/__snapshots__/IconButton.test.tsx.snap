@@ -16,7 +16,7 @@ exports[`IconButton component should render IconButton component disabled 1`] = 
       "borderRadius": 50,
     }
   }
-  testID="icon-button"
+  testID="ds-icon-button-button"
 >
   <View
     backgroundStyle="none"
@@ -37,7 +37,7 @@ exports[`IconButton component should render IconButton component disabled 1`] = 
         },
       ]
     }
-    testID="icon-button-background"
+    testID="ds-icon-button-background"
   >
     <Text
       accessibilityHint="Go to account page"
@@ -46,7 +46,7 @@ exports[`IconButton component should render IconButton component disabled 1`] = 
       color="highEmphasis"
       name="outlined-finance-bank"
       size="standard"
-      testID="icon-button-icon"
+      testID="ds-icon-button-icon"
     >
       outlined-finance-bank
     </Text>
@@ -70,7 +70,7 @@ exports[`IconButton component should render IconButton component with background
       "borderRadius": 50,
     }
   }
-  testID="icon-button"
+  testID="ds-icon-button-button"
 >
   <View
     backgroundStyle="float"
@@ -91,7 +91,7 @@ exports[`IconButton component should render IconButton component with background
         },
       ]
     }
-    testID="icon-button-background"
+    testID="ds-icon-button-background"
   >
     <Text
       accessibilityHint="Go to account page"
@@ -100,7 +100,7 @@ exports[`IconButton component should render IconButton component with background
       color="highEmphasis"
       name="outlined-finance-bank"
       size="standard"
-      testID="icon-button-icon"
+      testID="ds-icon-button-icon"
     >
       outlined-finance-bank
     </Text>
@@ -124,7 +124,7 @@ exports[`IconButton component should render IconButton component with background
       "borderRadius": 50,
     }
   }
-  testID="icon-button"
+  testID="ds-icon-button-button"
 >
   <View
     backgroundStyle="none"
@@ -145,7 +145,7 @@ exports[`IconButton component should render IconButton component with background
         },
       ]
     }
-    testID="icon-button-background"
+    testID="ds-icon-button-background"
   >
     <Text
       accessibilityHint="Go to account page"
@@ -154,7 +154,7 @@ exports[`IconButton component should render IconButton component with background
       color="highEmphasis"
       name="outlined-finance-bank"
       size="standard"
-      testID="icon-button-icon"
+      testID="ds-icon-button-icon"
     >
       outlined-finance-bank
     </Text>
@@ -178,7 +178,7 @@ exports[`IconButton component should render IconButton component with background
       "borderRadius": 50,
     }
   }
-  testID="icon-button"
+  testID="ds-icon-button-button"
 >
   <View
     backgroundStyle="overlay"
@@ -199,7 +199,7 @@ exports[`IconButton component should render IconButton component with background
         },
       ]
     }
-    testID="icon-button-background"
+    testID="ds-icon-button-background"
   >
     <Text
       accessibilityHint="Go to account page"
@@ -208,7 +208,7 @@ exports[`IconButton component should render IconButton component with background
       color="highEmphasis"
       name="outlined-finance-bank"
       size="standard"
-      testID="icon-button-icon"
+      testID="ds-icon-button-icon"
     >
       outlined-finance-bank
     </Text>
@@ -232,7 +232,7 @@ exports[`IconButton component should render IconButton component with color "def
       "borderRadius": 50,
     }
   }
-  testID="icon-button"
+  testID="ds-icon-button-button"
 >
   <View
     backgroundStyle="none"
@@ -253,7 +253,7 @@ exports[`IconButton component should render IconButton component with color "def
         },
       ]
     }
-    testID="icon-button-background"
+    testID="ds-icon-button-background"
   >
     <Text
       accessibilityHint="Go to account page"
@@ -262,7 +262,7 @@ exports[`IconButton component should render IconButton component with color "def
       color="highEmphasis"
       name="outlined-finance-bank"
       size="standard"
-      testID="icon-button-icon"
+      testID="ds-icon-button-icon"
     >
       outlined-finance-bank
     </Text>
@@ -286,7 +286,7 @@ exports[`IconButton component should render IconButton component with color "hig
       "borderRadius": 50,
     }
   }
-  testID="icon-button"
+  testID="ds-icon-button-button"
 >
   <View
     backgroundStyle="none"
@@ -307,7 +307,7 @@ exports[`IconButton component should render IconButton component with color "hig
         },
       ]
     }
-    testID="icon-button-background"
+    testID="ds-icon-button-background"
   >
     <Text
       accessibilityHint="Go to account page"
@@ -316,7 +316,7 @@ exports[`IconButton component should render IconButton component with color "hig
       color="highEmphasis"
       name="outlined-finance-bank"
       size="standard"
-      testID="icon-button-icon"
+      testID="ds-icon-button-icon"
     >
       outlined-finance-bank
     </Text>
@@ -340,7 +340,7 @@ exports[`IconButton component should render IconButton component with color "lig
       "borderRadius": 50,
     }
   }
-  testID="icon-button"
+  testID="ds-icon-button-button"
 >
   <View
     backgroundStyle="none"
@@ -361,7 +361,7 @@ exports[`IconButton component should render IconButton component with color "lig
         },
       ]
     }
-    testID="icon-button-background"
+    testID="ds-icon-button-background"
   >
     <Text
       accessibilityHint="Go to account page"
@@ -370,7 +370,7 @@ exports[`IconButton component should render IconButton component with color "lig
       color="highEmphasis"
       name="outlined-finance-bank"
       size="standard"
-      testID="icon-button-icon"
+      testID="ds-icon-button-icon"
     >
       outlined-finance-bank
     </Text>
@@ -394,7 +394,7 @@ exports[`IconButton component should render IconButton component with color "pri
       "borderRadius": 50,
     }
   }
-  testID="icon-button"
+  testID="ds-icon-button-button"
 >
   <View
     backgroundStyle="none"
@@ -415,7 +415,7 @@ exports[`IconButton component should render IconButton component with color "pri
         },
       ]
     }
-    testID="icon-button-background"
+    testID="ds-icon-button-background"
   >
     <Text
       accessibilityHint="Go to account page"
@@ -424,7 +424,7 @@ exports[`IconButton component should render IconButton component with color "pri
       color="highEmphasis"
       name="outlined-finance-bank"
       size="standard"
-      testID="icon-button-icon"
+      testID="ds-icon-button-icon"
     >
       outlined-finance-bank
     </Text>
@@ -448,7 +448,7 @@ exports[`IconButton component should render IconButton component with size "medi
       "borderRadius": 50,
     }
   }
-  testID="icon-button"
+  testID="ds-icon-button-button"
 >
   <View
     backgroundStyle="none"
@@ -469,7 +469,7 @@ exports[`IconButton component should render IconButton component with size "medi
         },
       ]
     }
-    testID="icon-button-background"
+    testID="ds-icon-button-background"
   >
     <Text
       accessibilityHint="Go to account page"
@@ -478,7 +478,7 @@ exports[`IconButton component should render IconButton component with size "medi
       color="highEmphasis"
       name="outlined-finance-bank"
       size="standard"
-      testID="icon-button-icon"
+      testID="ds-icon-button-icon"
     >
       outlined-finance-bank
     </Text>
@@ -502,7 +502,7 @@ exports[`IconButton component should render IconButton component with size "semi
       "borderRadius": 50,
     }
   }
-  testID="icon-button"
+  testID="ds-icon-button-button"
 >
   <View
     backgroundStyle="none"
@@ -523,7 +523,7 @@ exports[`IconButton component should render IconButton component with size "semi
         },
       ]
     }
-    testID="icon-button-background"
+    testID="ds-icon-button-background"
   >
     <Text
       accessibilityHint="Go to account page"
@@ -532,7 +532,7 @@ exports[`IconButton component should render IconButton component with size "semi
       color="highEmphasis"
       name="outlined-finance-bank"
       size="standard"
-      testID="icon-button-icon"
+      testID="ds-icon-button-icon"
     >
       outlined-finance-bank
     </Text>
@@ -556,7 +556,7 @@ exports[`IconButton component should render IconButton component with size "semi
       "borderRadius": 50,
     }
   }
-  testID="icon-button"
+  testID="ds-icon-button-button"
 >
   <View
     backgroundStyle="none"
@@ -577,7 +577,7 @@ exports[`IconButton component should render IconButton component with size "semi
         },
       ]
     }
-    testID="icon-button-background"
+    testID="ds-icon-button-background"
   >
     <Text
       accessibilityHint="Go to account page"
@@ -586,7 +586,7 @@ exports[`IconButton component should render IconButton component with size "semi
       color="highEmphasis"
       name="outlined-finance-bank"
       size="standard"
-      testID="icon-button-icon"
+      testID="ds-icon-button-icon"
     >
       outlined-finance-bank
     </Text>
@@ -610,7 +610,7 @@ exports[`IconButton component should render IconButton component with size "smal
       "borderRadius": 50,
     }
   }
-  testID="icon-button"
+  testID="ds-icon-button-button"
 >
   <View
     backgroundStyle="none"
@@ -631,7 +631,7 @@ exports[`IconButton component should render IconButton component with size "smal
         },
       ]
     }
-    testID="icon-button-background"
+    testID="ds-icon-button-background"
   >
     <Text
       accessibilityHint="Go to account page"
@@ -640,7 +640,7 @@ exports[`IconButton component should render IconButton component with size "smal
       color="highEmphasis"
       name="outlined-finance-bank"
       size="standard"
-      testID="icon-button-icon"
+      testID="ds-icon-button-icon"
     >
       outlined-finance-bank
     </Text>

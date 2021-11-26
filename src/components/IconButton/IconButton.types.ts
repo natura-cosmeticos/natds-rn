@@ -1,5 +1,16 @@
 /* eslint-disable max-len */
 import { IconName } from '@naturacosmeticos/natds-icons';
+import { Size } from '@naturacosmeticos/natds-themes/react-native';
+import { ReactElement } from 'react';
+
+export interface IconButtonBaseProps {
+  IconComponent: ReactElement;
+  backgroundStyle?: IconButtonBackgroundStyle;
+  disabled?: boolean;
+  onPress?: (e?: any) => void
+  testID?: string;
+  size?: keyof Size;
+}
 
 /**
  * @deprecated Use 'semi'
@@ -15,7 +26,7 @@ export type IconButtonColors = 'primary' | 'highEmphasis' | 'light' | IconButton
 
 export type IconButtonBackgroundStyle = 'none' | 'float' | 'overlay';
 
-export type IconContainerProps = Required<Pick<IconButtonProps, 'size' | 'backgroundStyle' | 'disabled'>>;
+export type IconContainerProps = Required<Pick<IconButtonBaseProps, 'size' | 'backgroundStyle' | 'disabled'>>;
 
 export interface IconButtonProps {
   /**

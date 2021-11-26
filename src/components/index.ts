@@ -14,6 +14,7 @@ export * from './ListItem';
 export * from './Logo';
 export * from './ProgressIndicator';
 export * from './RadioButton';
+export * from './Rating';
 export * from './Snackbar';
 export * from './Tab';
 export * from './TextField';

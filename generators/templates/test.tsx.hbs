@@ -1,0 +1,12 @@
+import React from 'react';
+
+import { renderWithTheme } from '../../../test/testHelpers';
+import { {{pascalCase name}} } from './{{pascalCase name}}';
+
+describe('{{pascalCase name}} Component', () => {
+  it('should render with default variant', () => {
+    const { toJSON } = renderWithTheme(<{{pascalCase name}} />);
+
+    expect(toJSON()).toMatchSnapshot();
+  });
+});

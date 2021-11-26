@@ -1,0 +1,37 @@
+import React from 'react';
+import { StoryContainer } from '../../common/HelperComponents/StoryContainer';
+
+import { {{pascalCase name}} } from './{{pascalCase name}}';
+
+const description = () => `
+- - -
+
+  ### NOTE:
+  This component is available in the following variants:
+
+  - ❌ Standard
+
+With the following attribute status:
+
+  - **Attributes:**
+    - ❌ \`Types\`
+
+- - -
+`;
+
+export default {
+  component: {{pascalCase name}},
+  parameters: {
+    componentSubtitle: '{{pascalCase name}} subtitle',
+    docs: {
+      extractComponentDescription: description,
+    },
+  },
+  title: 'Components|{{pascalCase name}}',
+};
+
+export const Default = () => (
+  <StoryContainer title='Default'>
+    <{{pascalCase name}} />
+  </StoryContainer>
+);
