@@ -11,9 +11,9 @@ const description = () => `
   ### NOTE:
   This component is available in the following variants:
 
-  - ✅ Counter (available but with alternative composition)
-  - ✅ Input (available but with alternative composition)
-  - ✅ Read-Only (available but with alternative composition)
+  - ✅ Counter
+  - ✅ Input
+  - ✅ Read-Only
 
 With the following attribute status:
 

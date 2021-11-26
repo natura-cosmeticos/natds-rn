@@ -1,5 +1,5 @@
 import React from 'react';
-import { fireEvent } from '@testing-library/react-native';
+import { fireEvent, waitFor } from '@testing-library/react-native';
 
 import { renderWithTheme } from '../../../test/testHelpers';
 import { Rating } from './Rating';
@@ -17,8 +17,9 @@ jest.mock('../../common/themeSelectors');
 describe('Rating Variants', () => {
   describe('Counter Variant', () => {
     it('should render with counter variant', () => {
-      const { getByTestId, toJSON } = renderWithTheme(<Rating variant='counter' label='placeholder' />);
+      const { getByTestId, toJSON, getAllByTestId } = renderWithTheme(<Rating variant='counter' label='placeholder' />);
 
+      expect(getAllByTestId(/-icon/).length).toBe(1);
       expect(getByTestId('ds-rating')?.props).toHaveProperty('variant', 'counter');
       expect(getByTestId('ds-rating')).toHaveStyle({ alignItems: 'center', flexDirection: 'row' });
       expect(toJSON()).toMatchSnapshot();
@@ -46,8 +47,9 @@ describe('Rating Variants', () => {
 
   describe('Input Variant', () => {
     it('should render with input variant', () => {
-      const { getByTestId, toJSON } = renderWithTheme(<Rating variant='input' label='placeholder' onPress={() => {}} />);
+      const { getByTestId, toJSON, getAllByTestId } = renderWithTheme(<Rating variant='input' label='placeholder' onPress={() => {}} />);
 
+      expect(getAllByTestId(/-icon/).length).toBe(5);
       expect(getByTestId('ds-rating')?.props).toHaveProperty('variant', 'input');
       expect(getByTestId('ds-rating')).toHaveStyle({ flexDirection: 'column' });
       expect(getByTestId('ds-rating-label')).toBeTruthy();
@@ -68,11 +70,10 @@ describe('Rating Variants', () => {
       const { getByTestId } = renderWithTheme(<Rating testID='rating' variant='input' rate={1} label='placeholder' onPress={() => {}} />);
 
       expect(getByTestId('rating-1-icon')).toHaveStyle({ color: '#F8B546' });
-      expect(getByTestId('rating-2-icon')).toHaveStyle({ color: '#777777' });
     });
 
     it('should render label when variant is input', () => {
-      const { getByTestId } = renderWithTheme(<Rating variant='input' rate={1} label='placeholder' onPress={() => {}} />);
+      const { getByTestId } = renderWithTheme(<Rating variant='input' label='placeholder' onPress={() => {}} />);
 
       expect(getByTestId('ds-rating-label')).toBeTruthy();
     });
