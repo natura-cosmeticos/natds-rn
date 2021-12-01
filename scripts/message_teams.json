@@ -1,13 +1,13 @@
 {
   "@type": "MessageCard",
   "@context": "http://schema.org/extensions",
-  "title": "🎉 RN - New Design System version available!",
+  "title": "🎉 React-Native - New Design System version available!",
   "text": "CHANGELOGMESSAGE",
   "sections": [{
       "activityTitle": "Info:",
       "facts": [{
           "name": "📲 Stack",
-          "value": "RN"
+          "value": "React-Native"
       }, {
           "name": "🏷 Version",
           "value": "VERSIONVALUE"
@@ -26,7 +26,7 @@
       }]
   }, {
       "@type": "OpenUri",
-      "name": "Check NatDS RN docs",
+      "name": "Check NatDS React-Native docs",
       "targets": [{
           "os": "default",
           "uri": "https://natds-rn.natura.design/?path=/story/documentation-contributing--page"
