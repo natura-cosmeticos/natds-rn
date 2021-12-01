@@ -1,0 +1,42 @@
+{
+  "@type": "MessageCard",
+  "@context": "http://schema.org/extensions",
+  "title": "🎉 React-Native - New Design System version available!",
+  "text": "CHANGELOGMESSAGE",
+  "sections": [{
+      "activityTitle": "Info:",
+      "facts": [{
+          "name": "📲 Stack",
+          "value": "React-Native"
+      }, {
+          "name": "🏷 Version",
+          "value": "VERSIONVALUE"
+      }, {
+          "name": "🔗 Available at",
+          "value": "NPM"
+      }],
+      "markdown": true
+  }],
+  "potentialAction": [{
+      "@type": "OpenUri",
+      "name": "Check all NatDS versions",
+      "targets": [{
+          "os": "default",
+          "uri": "https://github.com/natura-cosmeticos/natds-rn/releases"
+      }]
+  }, {
+      "@type": "OpenUri",
+      "name": "Check NatDS React-Native docs",
+      "targets": [{
+          "os": "default",
+          "uri": "https://natds-rn.natura.design/?path=/story/documentation-contributing--page"
+      }]
+  }, {
+      "@type": "OpenUri",
+      "name": "Check all DS info",
+      "targets": [{
+          "os": "default",
+          "uri": "https://ds.natura.design"
+      }]
+  } ]
+}
