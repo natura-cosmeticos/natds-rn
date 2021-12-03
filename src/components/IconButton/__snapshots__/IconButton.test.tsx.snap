@@ -2,6 +2,11 @@
 
 exports[`IconButton component should render IconButton component disabled 1`] = `
 <View
+  accessibilityState={
+    Object {
+      "disabled": true,
+    }
+  }
   accessible={true}
   focusable={false}
   onClick={[Function]}
@@ -56,6 +61,11 @@ exports[`IconButton component should render IconButton component disabled 1`] = 
 
 exports[`IconButton component should render IconButton component with background style "float" 1`] = `
 <View
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
   accessible={true}
   focusable={true}
   onClick={[Function]}
@@ -110,6 +120,11 @@ exports[`IconButton component should render IconButton component with background
 
 exports[`IconButton component should render IconButton component with background style "none" 1`] = `
 <View
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
   accessible={true}
   focusable={true}
   onClick={[Function]}
@@ -164,6 +179,11 @@ exports[`IconButton component should render IconButton component with background
 
 exports[`IconButton component should render IconButton component with background style "overlay" 1`] = `
 <View
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
   accessible={true}
   focusable={true}
   onClick={[Function]}
@@ -218,6 +238,11 @@ exports[`IconButton component should render IconButton component with background
 
 exports[`IconButton component should render IconButton component with color "default" 1`] = `
 <View
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
   accessible={true}
   focusable={true}
   onClick={[Function]}
@@ -272,6 +297,11 @@ exports[`IconButton component should render IconButton component with color "def
 
 exports[`IconButton component should render IconButton component with color "highEmphasis" 1`] = `
 <View
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
   accessible={true}
   focusable={true}
   onClick={[Function]}
@@ -326,6 +356,11 @@ exports[`IconButton component should render IconButton component with color "hig
 
 exports[`IconButton component should render IconButton component with color "light" 1`] = `
 <View
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
   accessible={true}
   focusable={true}
   onClick={[Function]}
@@ -380,6 +415,11 @@ exports[`IconButton component should render IconButton component with color "lig
 
 exports[`IconButton component should render IconButton component with color "primary" 1`] = `
 <View
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
   accessible={true}
   focusable={true}
   onClick={[Function]}
@@ -434,6 +474,11 @@ exports[`IconButton component should render IconButton component with color "pri
 
 exports[`IconButton component should render IconButton component with size "medium" 1`] = `
 <View
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
   accessible={true}
   focusable={true}
   onClick={[Function]}
@@ -488,6 +533,11 @@ exports[`IconButton component should render IconButton component with size "medi
 
 exports[`IconButton component should render IconButton component with size "semi" 1`] = `
 <View
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
   accessible={true}
   focusable={true}
   onClick={[Function]}
@@ -542,6 +592,11 @@ exports[`IconButton component should render IconButton component with size "semi
 
 exports[`IconButton component should render IconButton component with size "semiX" 1`] = `
 <View
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
   accessible={true}
   focusable={true}
   onClick={[Function]}
@@ -596,6 +651,11 @@ exports[`IconButton component should render IconButton component with size "semi
 
 exports[`IconButton component should render IconButton component with size "small" 1`] = `
 <View
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
   accessible={true}
   focusable={true}
   onClick={[Function]}

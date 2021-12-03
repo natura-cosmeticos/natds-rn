@@ -2,6 +2,11 @@
 
 exports[`Button component Disabled variants should render disabled button component contained 1`] = `
 <View
+  accessibilityState={
+    Object {
+      "disabled": true,
+    }
+  }
   accessible={true}
   focusable={true}
   onClick={[Function]}
@@ -81,6 +86,11 @@ exports[`Button component Disabled variants should render disabled button compon
 
 exports[`Button component Disabled variants should render disabled button component outlined 1`] = `
 <View
+  accessibilityState={
+    Object {
+      "disabled": true,
+    }
+  }
   accessible={true}
   focusable={true}
   onClick={[Function]}
@@ -160,6 +170,11 @@ exports[`Button component Disabled variants should render disabled button compon
 
 exports[`Button component Disabled variants should render disabled button component text 1`] = `
 <View
+  accessibilityState={
+    Object {
+      "disabled": true,
+    }
+  }
   accessible={true}
   focusable={true}
   onClick={[Function]}
@@ -239,6 +254,11 @@ exports[`Button component Disabled variants should render disabled button compon
 
 exports[`Button component Variants should render button component contained 1`] = `
 <View
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
   accessible={true}
   focusable={true}
   onClick={[Function]}
@@ -320,6 +340,11 @@ exports[`Button component Variants should render button component contained 1`] 
 
 exports[`Button component Variants should render button component outlined 1`] = `
 <View
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
   accessible={true}
   focusable={true}
   onClick={[Function]}
@@ -399,6 +424,11 @@ exports[`Button component Variants should render button component outlined 1`] =
 
 exports[`Button component Variants should render button component text 1`] = `
 <View
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
   accessible={true}
   focusable={true}
   onClick={[Function]}
@@ -478,6 +508,11 @@ exports[`Button component Variants should render button component text 1`] = `
 
 exports[`Button component with Icon should render the icon to the left 1`] = `
 <View
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
   accessible={true}
   focusable={true}
   onClick={[Function]}
@@ -572,6 +607,11 @@ exports[`Button component with Icon should render the icon to the left 1`] = `
 
 exports[`Button component with Icon should render the icon to the right by default 1`] = `
 <View
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
   accessible={true}
   focusable={true}
   onClick={[Function]}

@@ -16,6 +16,11 @@ exports[`Checkbox component render should render checkbox correctly 1`] = `
   testID="checkbox"
 >
   <View
+    accessibilityState={
+      Object {
+        "disabled": false,
+      }
+    }
     accessible={true}
     focusable={true}
     onClick={[Function]}
@@ -88,6 +93,11 @@ exports[`Checkbox component render should render checkbox disabled correctly 1`]
   testID="checkbox"
 >
   <View
+    accessibilityState={
+      Object {
+        "disabled": true,
+      }
+    }
     accessible={true}
     focusable={true}
     onClick={[Function]}
@@ -160,6 +170,11 @@ exports[`Checkbox component render should render checkbox indeterminate selected
   testID="checkbox"
 >
   <View
+    accessibilityState={
+      Object {
+        "disabled": true,
+      }
+    }
     accessible={true}
     focusable={true}
     onClick={[Function]}
@@ -250,6 +265,11 @@ exports[`Checkbox component render should render checkbox indeterminate selected
   testID="checkbox"
 >
   <View
+    accessibilityState={
+      Object {
+        "disabled": false,
+      }
+    }
     accessible={true}
     focusable={true}
     onClick={[Function]}
@@ -340,6 +360,11 @@ exports[`Checkbox component render should render checkbox selected but disabled 
   testID="checkbox"
 >
   <View
+    accessibilityState={
+      Object {
+        "disabled": true,
+      }
+    }
     accessible={true}
     focusable={true}
     onClick={[Function]}
@@ -430,6 +455,11 @@ exports[`Checkbox component render should render checkbox selected correctly 1`]
   testID="checkbox"
 >
   <View
+    accessibilityState={
+      Object {
+        "disabled": false,
+      }
+    }
     accessible={true}
     focusable={true}
     onClick={[Function]}

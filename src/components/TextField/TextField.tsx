@@ -127,7 +127,7 @@ export const TextField = (props: TextFieldProps) => {
         onAccessibilityAction={props.onAccessibilityAction}
         allowFontScaling={props.allowFontScaling}
         autoCapitalize={props.autoCapitalize}
-        autoCompleteType={props.autoCompleteType}
+        autoComplete={props.autoCompleteType}
         autoCorrect={props.autoCorrect}
         autoFocus={props.autoFocus}
         blurOnSubmit={props.blurOnSubmit}

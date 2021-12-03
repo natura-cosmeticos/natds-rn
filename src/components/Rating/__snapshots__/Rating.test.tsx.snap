@@ -28,6 +28,11 @@ exports[`Rating Variants Counter Variant should render with counter variant 1`] 
     variant="counter"
   >
     <View
+      accessibilityState={
+        Object {
+          "disabled": true,
+        }
+      }
       accessible={true}
       focusable={false}
       onClick={[Function]}
@@ -129,6 +134,11 @@ exports[`Rating Variants Input Variant should render with input variant 1`] = `
     variant="input"
   >
     <View
+      accessibilityState={
+        Object {
+          "disabled": false,
+        }
+      }
       accessible={true}
       focusable={true}
       onClick={[Function]}
@@ -180,6 +190,11 @@ exports[`Rating Variants Input Variant should render with input variant 1`] = `
       </View>
     </View>
     <View
+      accessibilityState={
+        Object {
+          "disabled": false,
+        }
+      }
       accessible={true}
       focusable={true}
       onClick={[Function]}
@@ -231,6 +246,11 @@ exports[`Rating Variants Input Variant should render with input variant 1`] = `
       </View>
     </View>
     <View
+      accessibilityState={
+        Object {
+          "disabled": false,
+        }
+      }
       accessible={true}
       focusable={true}
       onClick={[Function]}
@@ -282,6 +302,11 @@ exports[`Rating Variants Input Variant should render with input variant 1`] = `
       </View>
     </View>
     <View
+      accessibilityState={
+        Object {
+          "disabled": false,
+        }
+      }
       accessible={true}
       focusable={true}
       onClick={[Function]}
@@ -333,6 +358,11 @@ exports[`Rating Variants Input Variant should render with input variant 1`] = `
       </View>
     </View>
     <View
+      accessibilityState={
+        Object {
+          "disabled": false,
+        }
+      }
       accessible={true}
       focusable={true}
       onClick={[Function]}
@@ -408,6 +438,11 @@ exports[`Rating Variants Input Variant should render with input variant 1`] = `
 
 exports[`Rating Variants RatingBase component should render a base component with medium size 1`] = `
 <View
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
   accessible={true}
   focusable={false}
   onClick={[Function]}
@@ -485,6 +520,11 @@ exports[`Rating Variants ReadOnly Variant should render with read-only variant 1
     variant="read-only"
   >
     <View
+      accessibilityState={
+        Object {
+          "disabled": true,
+        }
+      }
       accessible={true}
       focusable={false}
       onClick={[Function]}
@@ -536,6 +576,11 @@ exports[`Rating Variants ReadOnly Variant should render with read-only variant 1
       </View>
     </View>
     <View
+      accessibilityState={
+        Object {
+          "disabled": true,
+        }
+      }
       accessible={true}
       focusable={false}
       onClick={[Function]}
@@ -587,6 +632,11 @@ exports[`Rating Variants ReadOnly Variant should render with read-only variant 1
       </View>
     </View>
     <View
+      accessibilityState={
+        Object {
+          "disabled": true,
+        }
+      }
       accessible={true}
       focusable={false}
       onClick={[Function]}
@@ -638,6 +688,11 @@ exports[`Rating Variants ReadOnly Variant should render with read-only variant 1
       </View>
     </View>
     <View
+      accessibilityState={
+        Object {
+          "disabled": true,
+        }
+      }
       accessible={true}
       focusable={false}
       onClick={[Function]}
@@ -689,6 +744,11 @@ exports[`Rating Variants ReadOnly Variant should render with read-only variant 1
       </View>
     </View>
     <View
+      accessibilityState={
+        Object {
+          "disabled": true,
+        }
+      }
       accessible={true}
       focusable={false}
       onClick={[Function]}

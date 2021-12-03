@@ -11,14 +11,15 @@ import { Size } from '@naturacosmeticos/natds-themes/react-native';
 import { IconButtonProps } from '../IconButton/IconButton.types';
 
 type AndroidProps = Pick<TextInputAndroidProps,
-  | 'autoCompleteType'
   | 'disableFullscreenUI'
   | 'importantForAutofill'
   | 'numberOfLines'
   | 'returnKeyLabel'
   | 'showSoftInputOnFocus'
   | 'textBreakStrategy'
->
+> & {
+  autoCompleteType?: Extract<TextInputAndroidProps, 'autoComplete'>
+}
 
 type IOSProps = Pick<TextInputIOSProps,
   | 'clearButtonMode'

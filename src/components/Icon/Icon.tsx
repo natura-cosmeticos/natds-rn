@@ -6,6 +6,10 @@ import {
 } from '../../common/themeSelectors';
 import { IconColors, IconProps } from './Icon.types';
 
+type IconStyleProps = {
+  theme: Theme
+} & IconProps;
+
 export const getIconColor = (theme: Theme, color: IconColors) => {
   switch (color) {
     case '#333333':
@@ -21,7 +25,7 @@ export const IconComponent = styled.Text<IconProps>(({
   color = 'highlight',
   size = 'standard',
   theme,
-}) => ({
+}: IconStyleProps) => ({
   color: getIconColor(theme, color),
   fontFamily: 'natds-icons',
   fontSize: getSize(theme, size),

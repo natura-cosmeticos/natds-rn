@@ -26,6 +26,11 @@ exports[`Tab component Should render tab component with default props 1`] = `
     testID="ds-tab"
   >
     <View
+      accessibilityState={
+        Object {
+          "disabled": false,
+        }
+      }
       accessible={true}
       focusable={true}
       onClick={[Function]}
@@ -83,6 +88,11 @@ exports[`Tab component Should render tab component with default props 1`] = `
       </View>
     </View>
     <View
+      accessibilityState={
+        Object {
+          "disabled": false,
+        }
+      }
       accessible={true}
       focusable={true}
       onClick={[Function]}
@@ -140,6 +150,11 @@ exports[`Tab component Should render tab component with default props 1`] = `
       </View>
     </View>
     <View
+      accessibilityState={
+        Object {
+          "disabled": false,
+        }
+      }
       accessible={true}
       focusable={true}
       onClick={[Function]}
@@ -197,6 +212,11 @@ exports[`Tab component Should render tab component with default props 1`] = `
       </View>
     </View>
     <View
+      accessibilityState={
+        Object {
+          "disabled": true,
+        }
+      }
       accessible={true}
       focusable={true}
       onClick={[Function]}
@@ -285,6 +305,11 @@ exports[`Tab component render props Should render tab component with scrollable 
   >
     <View>
       <View
+        accessibilityState={
+          Object {
+            "disabled": false,
+          }
+        }
         accessible={true}
         focusable={true}
         onClick={[Function]}
@@ -342,6 +367,11 @@ exports[`Tab component render props Should render tab component with scrollable 
         </View>
       </View>
       <View
+        accessibilityState={
+          Object {
+            "disabled": false,
+          }
+        }
         accessible={true}
         focusable={true}
         onClick={[Function]}
@@ -399,6 +429,11 @@ exports[`Tab component render props Should render tab component with scrollable 
         </View>
       </View>
       <View
+        accessibilityState={
+          Object {
+            "disabled": false,
+          }
+        }
         accessible={true}
         focusable={true}
         onClick={[Function]}
@@ -456,6 +491,11 @@ exports[`Tab component render props Should render tab component with scrollable 
         </View>
       </View>
       <View
+        accessibilityState={
+          Object {
+            "disabled": true,
+          }
+        }
         accessible={true}
         focusable={true}
         onClick={[Function]}

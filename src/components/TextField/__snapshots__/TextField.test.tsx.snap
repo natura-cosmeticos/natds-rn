@@ -42,7 +42,6 @@ exports[`TextField render should render with default props 1`] = `
       testID="box"
     >
       <TextInput
-        allowFontScaling={true}
         disabled={false}
         editable={true}
         hasActionIcon={false}
@@ -53,7 +52,6 @@ exports[`TextField render should render with default props 1`] = `
         onFocus={[Function]}
         placeholderTextColor="#777777"
         readonly={false}
-        rejectResponderTermination={true}
         secureTextEntry={false}
         size="mediumX"
         style={
@@ -80,7 +78,6 @@ exports[`TextField render should render with default props 1`] = `
           ]
         }
         testID="ds-input"
-        underlineColorAndroid="transparent"
         value=""
       />
     </View>

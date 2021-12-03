@@ -9,6 +9,7 @@ import {
   getRadiusBySize,
   getSpacingSmall,
   getSpacingTiny,
+  Theme,
 } from '../../common/themeSelectors';
 import { Divider } from '..';
 
@@ -98,9 +99,13 @@ export interface DialogActionsProps {
   actionsAlignment?: AlignmentOptions
 }
 
+type DialogActionsStyleProps = {
+  theme: Theme,
+} & DialogActionsProps;
+
 const buildDialogAlignment = (actionsAlignment: AlignmentOptions) => (actionsAlignment === 'side-by-side' ? 'row' : 'column');
 
-export const DialogActions = styled.View<DialogActionsProps>(({ theme, actionsAlignment = 'side-by-side' }) => ({
+export const DialogActions = styled.View(({ theme, actionsAlignment = 'side-by-side' }: DialogActionsStyleProps) => ({
   flexDirection: buildDialogAlignment(actionsAlignment),
   flexWrap: 'wrap',
   justifyContent: 'flex-end',

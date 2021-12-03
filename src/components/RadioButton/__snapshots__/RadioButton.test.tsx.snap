@@ -2,6 +2,11 @@
 
 exports[`RadioButton component should render radio button correctly 1`] = `
 <View
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
   accessible={true}
   focusable={true}
   onClick={[Function]}
@@ -57,6 +62,11 @@ exports[`RadioButton component should render radio button correctly 1`] = `
 
 exports[`RadioButton component should render radio button selected but disabled correctly 1`] = `
 <View
+  accessibilityState={
+    Object {
+      "disabled": true,
+    }
+  }
   accessible={true}
   focusable={true}
   onClick={[Function]}
@@ -126,6 +136,11 @@ exports[`RadioButton component should render radio button selected but disabled 
   testID="radio-button-label"
 >
   <View
+    accessibilityState={
+      Object {
+        "disabled": true,
+      }
+    }
     accessible={true}
     focusable={true}
     onClick={[Function]}
@@ -200,6 +215,11 @@ exports[`RadioButton component should render radio button selected but disabled 
 
 exports[`RadioButton component should render radio button selected correctly 1`] = `
 <View
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
   accessible={true}
   focusable={true}
   onClick={[Function]}
@@ -287,6 +307,11 @@ exports[`RadioButton component should render radio button with label correctly 1
   testID="radio-button-label"
 >
   <View
+    accessibilityState={
+      Object {
+        "disabled": false,
+      }
+    }
     accessible={true}
     focusable={true}
     onClick={[Function]}
