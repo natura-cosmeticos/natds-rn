@@ -22,6 +22,11 @@ exports[`Counter should render with default props 1`] = `
     testID="counter"
   >
     <View
+      accessibilityState={
+        Object {
+          "disabled": true,
+        }
+      }
       accessible={true}
       focusable={true}
       onClick={[Function]}
@@ -98,9 +103,7 @@ exports[`Counter should render with default props 1`] = `
       </View>
     </View>
     <TextInput
-      allowFontScaling={true}
       editable={false}
-      rejectResponderTermination={true}
       style={
         Array [
           Object {
@@ -121,10 +124,14 @@ exports[`Counter should render with default props 1`] = `
         ]
       }
       testID="counter-input"
-      underlineColorAndroid="transparent"
       value="0"
     />
     <View
+      accessibilityState={
+        Object {
+          "disabled": false,
+        }
+      }
       accessible={true}
       focusable={true}
       onClick={[Function]}

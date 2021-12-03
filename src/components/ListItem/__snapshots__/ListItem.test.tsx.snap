@@ -2,6 +2,11 @@
 
 exports[`ListItem component Should not render ListItem with ripple if is selected 1`] = `
 <View
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
   accessible={true}
   focusable={true}
   onClick={[Function]}
@@ -55,6 +60,11 @@ exports[`ListItem component Should render ListItem component correctly 1`] = `
 
 exports[`ListItem component Should render ListItem with ripple if is clickable 1`] = `
 <View
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
   accessible={true}
   focusable={true}
   onClick={[Function]}
