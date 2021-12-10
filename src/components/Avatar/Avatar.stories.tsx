@@ -1,64 +1,99 @@
 import React from 'react';
-import { View } from 'react-native';
 import { select, text } from '@storybook/addon-knobs';
-import { Avatar, AvatarTypes } from './Avatar';
-import { ContainerRow, TextWithTheme } from '../../common/HelperComponents/ThemeHelper.styles';
+import { IconName, iconNames } from '@naturacosmeticos/natds-icons';
+
+import { AvatarTypes, AvatarSizes } from './Avatar.types';
+// @ts-ignore
+import IconAnonymous from '../../assets/images/anonymous.jpg';
+import { StoryContainer } from '../../common/HelperComponents/StoryContainer';
+import { Avatar } from '.';
+
+const description = () => `
+---
+
+**NOTE**: This component is available in the following types:
+
+  - ✅ icon
+  - ✅ image
+  - ✅ letter
+
+With the following attribute status:
+
+- **Size:**
+  - ✅ \`standard\`
+  - ✅ \`semi\`
+  - ✅ \`semiX\`
+  - ✅ \`medium\`
+  - ✅ \`largeXXX\`
+- ✅ **imgSource**  (available only in image type)
+- ✅ **text**  (available only in letter type)
+- ✅ **iconName** (available only in icon type)
+
+---
+`;
 
 export default {
   component: Avatar,
   parameters: {
-    componentSubtitle:
-      'Avatar',
+    componentSubtitle: 'Avatars are used to identify a user.',
+    docs: {
+      extractComponentDescription: description,
+    },
   },
   title: 'Components/Avatar',
 };
 
-const imgSource = 'https://pbs.twimg.com/profile_images/1285932878795333632/Wl95KE_m_400x400.jpg';
 const textSample = 'Design System';
+const iconSample = 'outlined-default-mockup';
 
 const avatarTypes = {
-  anonymous: 'anonymous',
+  icon: 'icon',
   image: 'image',
   letter: 'letter',
 };
 
-export const all = () => (
-  <View>
-    <TextWithTheme>image</TextWithTheme>
-    <ContainerRow>
-      <Avatar type="image" size="huge" imgSource={{ uri: imgSource }} />
-      <Avatar type="image" size="large" imgSource={{ uri: imgSource }}/>
-      <Avatar type="image" size="standard" imgSource={{ uri: imgSource }}/>
-      <Avatar type="image" size="small" imgSource={{ uri: imgSource }}/>
-      <Avatar type="image" size="tiny" imgSource={{ uri: imgSource }}/>
-    </ContainerRow>
-    <TextWithTheme>letter</TextWithTheme>
-    <ContainerRow>
-      <Avatar type="letter" size="huge" text={textSample} />
-      <Avatar type="letter" size="large" text={textSample}/>
+const avatarSizes = {
+  largeXXX: 'largeXXX',
+  medium: 'medium',
+  semi: 'semi',
+  semiX: 'semiX',
+  standard: 'standard',
+};
+
+export const All = () => (
+  <>
+    <StoryContainer title="Image">
+      <Avatar type="image" size="standard" imgSource={{ uri: '' }}/>
+      <Avatar type="image" size="semi" imgSource={{ uri: '' }}/>
+      <Avatar type="image" size="semiX" imgSource={{ uri: '' }}/>
+      <Avatar type="image" size="medium" imgSource={{ uri: '' }}/>
+      <Avatar type="image" size="largeXXX" imgSource={{ uri: '' }}/>
+    </StoryContainer>
+    <StoryContainer title="Letter">
       <Avatar type="letter" size="standard" text={textSample}/>
-      <Avatar type="letter" size="small" text={textSample}/>
-      <Avatar type="letter" size="tiny" text={textSample}/>
-    </ContainerRow>
-    <TextWithTheme>anonymous</TextWithTheme>
-    <ContainerRow>
-      <Avatar type="anonymous" size="huge"/>
-      <Avatar type="anonymous" size="large"/>
-      <Avatar type="anonymous" size="standard"/>
-      <Avatar type="anonymous" size="small"/>
-      <Avatar type="anonymous" size="tiny"/>
-    </ContainerRow>
-  </View>
+      <Avatar type="letter" size="semi" text={textSample}/>
+      <Avatar type="letter" size="semiX" text={textSample}/>
+      <Avatar type="letter" size="medium" text={textSample}/>
+      <Avatar type="letter" size="largeXXX" text={textSample}/>
+    </StoryContainer>
+    <StoryContainer title="Icon">
+      <Avatar type="icon" size="standard" iconName={iconSample}/>
+      <Avatar type="icon" size="semi" iconName={iconSample}/>
+      <Avatar type="icon" size="semiX" iconName={iconSample}/>
+      <Avatar type="icon" size="medium" iconName={iconSample}/>
+      <Avatar type="icon" size="largeXXX" iconName={iconSample}/>
+    </StoryContainer>
+  </>
 );
 
-export const interactive = () => (
-  <View>
-    <TextWithTheme>interactive</TextWithTheme>
+export const Interactive = () => (
+  <StoryContainer title="Interactive">
     <Avatar
-      type={select('Type', avatarTypes, 'letter') as AvatarTypes}
-      text={text('Label', 'Natura Design System')}
-      imgSource={{ uri: imgSource }}
-      size="huge"
+      type={select('Type', avatarTypes, 'icon') as AvatarTypes}
+      text={text('Text', 'Natura Design System')}
+      imgSource={text('URL', '')}
+      iconName={select('IconName', iconNames as Array<IconName>, 'outlined-default-mockup' as IconName)}
+      size={select('Size', avatarSizes, 'medium') as AvatarSizes}
     />
-  </View>
+  </StoryContainer>
 );

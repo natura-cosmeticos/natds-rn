@@ -1,104 +1,20 @@
 /* eslint-disable max-lines */
 import React from 'react';
-import { View, ViewStyle } from 'react-native';
-import styled, { withTheme } from 'styled-components/native';
+import {
+  AvatarIcon, AvatarImage, AvatarLetter, Container,
+} from './Avatar.styles';
+import {
+  AvatarIconProps,
+  AvatarImageProps, AvatarLetterProps, AvatarProps,
+} from './Avatar.types';
 // @ts-ignore
 import IconAnonymous from '../../assets/images/anonymous.jpg';
-
-import {
-  Theme,
-  getColorOnPrimary,
-  getColorPrimary,
-  getAvatarBySize,
-} from '../../common/themeSelectors';
-
-export type AvatarSizes = 'tiny' | 'small' | 'standard' | 'large' | 'huge';
-export type AvatarTypes = 'image' | 'letter' | 'anonymous';
-
-
-export interface AvatarProps {
-  /**
-   * Divider variants `image' | 'letter' | 'anonymous`
-   */
-  type?: AvatarTypes;
-  /**
-   * The divider theme
-   */
-  theme: Theme;
-  /**
-   * Optional Value used com Letter type
-   */
-  text?: string;
-  /**
-   * Optional URL image used com Image type
-   */
-  imgSource?: any;
-  /**
-   * Optional Size
-   */
-  size?: AvatarSizes;
-  /**
-   * Optional accessibilityLabel
-   */
-  accessibilityLabel?: string;
-  /**
-   * Optional accessibilityHint
-   */
-  accessibilityHint?: string;
-  /**
-   * Optional ID for testing
-   */
-  testID?: string;
-}
-
-const getAvatarFontSize = (theme, size) => getAvatarBySize(size, theme).fontSize;
-
-const getAvatarSize = (theme, size) => getAvatarBySize(size, theme).size;
-
-const getViewStyles = (size: AvatarSizes, theme: Theme): ViewStyle => ({
-  alignItems: 'center',
-  backgroundColor: getColorPrimary(theme),
-  borderRadius: getAvatarSize(theme, size),
-  height: getAvatarSize(theme, size),
-  justifyContent: 'center',
-  width: getAvatarSize(theme, size),
-});
-
-
-interface AvatarImage {
-  size: AvatarSizes;
-  theme: Theme;
-  source: any;
-  type: AvatarTypes;
-}
-
-interface AvatarLetter {
-  accessibilityLabel?: string;
-  accessibilityHint?: string;
-  accessibilityRole?: string;
-  size: AvatarSizes;
-  theme: Theme;
-  type: AvatarTypes;
-}
-
-const AvatarImage = styled.Image<AvatarImage>(({ size, theme }) => ({
-  borderRadius: getAvatarSize(theme, size),
-  height: getAvatarSize(theme, size),
-  width: getAvatarSize(theme, size),
-}));
-
-const AvatarLetter = styled.Text<AvatarLetter>`
-  color: ${({ theme }) => getColorOnPrimary(theme)};
-  font-size: ${({ size, theme }) => getAvatarFontSize(theme, size)};
-  align-self: center;
-  letter-spacing: 1px;
-`;
 
 /**
  * Get the first character from first and last word
  * @param text string
  */
-const getTextValue = (text) => {
+export const getTextValue = (text = '') => {
   const textFormated = text.trim().toUpperCase();
 
   const firstLetters = textFormated
@@ -112,39 +28,65 @@ const getTextValue = (text) => {
   return `${firstLetters.charAt(0)}${firstLetters.charAt(firstLetters.length - 1)}`;
 };
 
-const AvatarComponent = ({
-  theme,
-  size = 'standard',
-  testID = 'avatar',
-  type = 'anonymous',
-  text = '',
-  imgSource,
-  accessibilityLabel = '',
-  accessibilityHint = '',
-}: AvatarProps) => (
-    <View style={getViewStyles(size, theme)} >
-      {type === 'letter'
-        ? (
-          <AvatarLetter
-            accessibilityLabel={accessibilityLabel}
-            accessibilityHint={accessibilityHint}
-            accessibilityRole="text"
-            size={size}
-            theme={theme}
-            testID={testID}
-            type={type} >{getTextValue(text)}</AvatarLetter>
-        ) : (
-          <AvatarImage
-            accessibilityLabel={accessibilityLabel}
-            accessibilityHint={accessibilityHint}
-            testID={testID}
-            type={type}
-            source={type === 'image' ? imgSource : IconAnonymous}
-            size={size}
-            theme={theme} />
-        )
-      }
-    </View>
-);
+export const isAvatarLetter = (props: AvatarProps): props is AvatarLetterProps => props.type === 'letter';
+export const isAvatarImage = (props: AvatarProps): props is AvatarImageProps => props.type === 'image';
+export const isAvatarIcon = (props: AvatarProps): props is AvatarIconProps => props.type === 'icon';
 
-export const Avatar = withTheme(AvatarComponent);
+export const Avatar = (props: AvatarProps) => {
+  const {
+    size = 'standard',
+    testID = 'ds-avatar',
+    accessibilityLabel,
+    accessibilityHint,
+    type = 'anonymous',
+  } = props;
+
+  return (
+    <Container testID={testID} size={size}>
+      {isAvatarLetter(props) && (
+        <AvatarLetter
+          accessibilityLabel={accessibilityLabel}
+          accessibilityHint={accessibilityHint}
+          accessibilityRole="text"
+          testID={`${testID}-letter`}
+          size={size}
+          type={type}
+        >
+          {getTextValue(props.text)}
+        </AvatarLetter>
+      )}
+      {isAvatarImage(props) && (
+        <AvatarImage
+          accessibilityLabel={accessibilityLabel}
+          accessibilityHint={accessibilityHint}
+          accessibilityRole="image"
+          testID={`${testID}-image`}
+          size={size}
+          type={type}
+          source={props.imgSource}
+        />
+      )}
+      {isAvatarIcon(props) && (
+        <AvatarIcon
+          accessibilityHint={accessibilityHint}
+          accessibilityLabel={accessibilityLabel}
+          accessibilityRole="image"
+          testID={`${testID}-icon`}
+          size={size}
+          name={props.iconName}
+        />
+      )}
+      {type === 'anonymous' && (
+        <AvatarImage
+          accessibilityLabel={accessibilityLabel}
+          accessibilityHint={accessibilityHint}
+          accessibilityRole="image"
+          testID={`${testID}-anonymous`}
+          size={size}
+          type={type}
+          source={IconAnonymous}
+        />
+      )}
+    </Container>
+  );
+};

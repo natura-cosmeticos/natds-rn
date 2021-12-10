@@ -1,9 +1,9 @@
 import { storiesOf } from '@storybook/react-native';
 import {
-  all,
-  interactive,
+  All,
+  Interactive,
 } from './Avatar.stories';
 
 storiesOf('Avatar', module)
-  .add('all', all)
-  .add('interactive', interactive);
+  .add('All', All)
+  .add('Interactive', Interactive);
