@@ -15,11 +15,6 @@ export type AvatarTypes = 'image' | 'icon' | 'letter' | AvatarTypesDeprecated;
 
 export interface AvatarBaseProps {
   /**
-   * Divider variants `image`, `letter`, `icon`.
-   * Deprecated 'anonymous' type, use `image` instead.
-   */
-  type?: AvatarTypes;
-  /**
    * Optional size of the avatar.
    * Deprecated `tiny`, `small`, `large` and `huge` sizes.
    */

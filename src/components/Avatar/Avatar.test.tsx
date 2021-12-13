@@ -14,19 +14,19 @@ jest.mock('../../common/themeSelectors', () => (
 
 describe('Avatar component', () => {
   it('should render avatar with default size', () => {
-    const { queryByTestId } = renderWithTheme(<Avatar type='image' testID='avatar' imgSource={{ uri: '' }} />);
+    const { queryByTestId } = renderWithTheme(<Avatar testID='ds-avatar' type='image' imgSource={{ uri: '' }} />);
 
-    expect(queryByTestId('avatar')).toHaveStyle({ height: 24, width: 24 });
+    expect(queryByTestId('ds-avatar')).toHaveStyle({ height: 24, width: 24 });
   });
 
   it('should render avatar with image type', () => {
-    const { queryByTestId } = renderWithTheme(<Avatar type='image' imgSource={{ uri: '' }} />);
+    const { queryByTestId } = renderWithTheme(<Avatar testID='ds-avatar-image' type='image' imgSource={{ uri: '' }} />);
 
     expect(queryByTestId('ds-avatar-image')?.props).toHaveProperty('type', 'image');
   });
 
   it('should render avatar with letter type', () => {
-    const { queryByTestId } = renderWithTheme(<Avatar type='letter' text="Design System" />);
+    const { queryByTestId } = renderWithTheme(<Avatar testID='ds-avatar-letter' type='letter' text="Design System" />);
 
     expect(queryByTestId('ds-avatar-letter')?.props).toHaveProperty('type', 'letter');
   });
@@ -56,16 +56,16 @@ describe('Avatar component', () => {
   });
 
   it('should render avatar with a deprecated size', () => {
-    const { toJSON, getByTestId } = renderWithTheme(<Avatar type='letter' size='huge' text='Deprecated'/>);
+    const { toJSON, getByTestId } = renderWithTheme(<Avatar testID='avatar-letter' type='letter' size='huge' text='Deprecated'/>);
 
-    expect(getByTestId('ds-avatar-letter')).toHaveStyle({ fontSize: 24 });
+    expect(getByTestId('avatar-letter')).toHaveStyle({ fontSize: 24 });
     expect(toJSON()).toMatchSnapshot();
   });
 
   it('should render avatar component with other size', () => {
     const { queryByTestId } = renderWithTheme(<Avatar type='image' imgSource={{ uri: '' }} size='semiX' />);
 
-    expect(queryByTestId('ds-avatar')).toHaveStyle({ height: 40, width: 40 });
+    expect(queryByTestId('avatar')).toHaveStyle({ height: 40, width: 40 });
   });
 
   it('should return the first character from first and last word', () => {

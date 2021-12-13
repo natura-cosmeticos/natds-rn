@@ -35,20 +35,20 @@ export const isAvatarIcon = (props: AvatarProps): props is AvatarIconProps => pr
 export const Avatar = (props: AvatarProps) => {
   const {
     size = 'standard',
-    testID = 'ds-avatar',
+    testID = 'avatar',
     accessibilityLabel,
     accessibilityHint,
     type = 'anonymous',
   } = props;
 
   return (
-    <Container testID={testID} size={size}>
+    <Container size={size}>
       {isAvatarLetter(props) && (
         <AvatarLetter
           accessibilityLabel={accessibilityLabel}
           accessibilityHint={accessibilityHint}
           accessibilityRole="text"
-          testID={`${testID}-letter`}
+          testID={testID}
           size={size}
           type={type}
         >
@@ -60,7 +60,7 @@ export const Avatar = (props: AvatarProps) => {
           accessibilityLabel={accessibilityLabel}
           accessibilityHint={accessibilityHint}
           accessibilityRole="image"
-          testID={`${testID}-image`}
+          testID={testID}
           size={size}
           type={type}
           source={props.imgSource}
@@ -71,7 +71,7 @@ export const Avatar = (props: AvatarProps) => {
           accessibilityHint={accessibilityHint}
           accessibilityLabel={accessibilityLabel}
           accessibilityRole="image"
-          testID={`${testID}-icon`}
+          testID={testID}
           size={size}
           name={props.iconName}
         />
@@ -81,7 +81,7 @@ export const Avatar = (props: AvatarProps) => {
           accessibilityLabel={accessibilityLabel}
           accessibilityHint={accessibilityHint}
           accessibilityRole="image"
-          testID={`${testID}-anonymous`}
+          testID={testID}
           size={size}
           type={type}
           source={IconAnonymous}

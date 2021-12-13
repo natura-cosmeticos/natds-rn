@@ -15,7 +15,6 @@ exports[`Avatar component should render avatar component anonymoys 1`] = `
       },
     ]
   }
-  testID="ds-avatar"
 >
   <Image
     accessibilityRole="image"
@@ -34,7 +33,7 @@ exports[`Avatar component should render avatar component anonymoys 1`] = `
         },
       ]
     }
-    testID="ds-avatar-anonymous"
+    testID="avatar"
     type="anonymous"
   />
 </View>
@@ -55,7 +54,6 @@ exports[`Avatar component should render avatar component icon 1`] = `
       },
     ]
   }
-  testID="ds-avatar"
 >
   <Text
     accessibilityRole="image"
@@ -68,7 +66,7 @@ exports[`Avatar component should render avatar component icon 1`] = `
         },
       ]
     }
-    testID="ds-avatar-icon"
+    testID="avatar"
   >
     filled-default-mockup
   </Text>
@@ -90,7 +88,6 @@ exports[`Avatar component should render avatar component image 1`] = `
       },
     ]
   }
-  testID="ds-avatar"
 >
   <Image
     accessibilityRole="image"
@@ -109,7 +106,7 @@ exports[`Avatar component should render avatar component image 1`] = `
         },
       ]
     }
-    testID="ds-avatar-image"
+    testID="avatar"
     type="image"
   />
 </View>
@@ -130,7 +127,6 @@ exports[`Avatar component should render avatar component letter 1`] = `
       },
     ]
   }
-  testID="ds-avatar"
 >
   <Text
     accessibilityRole="text"
@@ -148,7 +144,7 @@ exports[`Avatar component should render avatar component letter 1`] = `
         },
       ]
     }
-    testID="ds-avatar-letter"
+    testID="avatar"
     type="letter"
   >
     DS
@@ -171,7 +167,6 @@ exports[`Avatar component should render avatar with a deprecated size 1`] = `
       },
     ]
   }
-  testID="ds-avatar"
 >
   <Text
     accessibilityRole="text"
@@ -187,7 +182,7 @@ exports[`Avatar component should render avatar with a deprecated size 1`] = `
         },
       ]
     }
-    testID="ds-avatar-letter"
+    testID="avatar-letter"
     type="letter"
   >
     D
