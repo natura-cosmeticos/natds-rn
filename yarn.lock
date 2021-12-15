@@ -16101,7 +16101,7 @@ plist@^3.0.2:
     base64-js "^1.5.1"
     xmlbuilder "^9.0.7"
 
-plop@^2.7.6:
+plop@2.7.6:
   version "2.7.6"
   resolved "https://registry.yarnpkg.com/plop/-/plop-2.7.6.tgz#1fa5360cd5b04e9932ce677bb6bd44750d97ae67"
   integrity sha512-IgnYAsC3Ni7t1cDU7wH2151CD22YhMxH8PFh+iPzCf+WuGEWXslJ5t1Tpr0N/gjL23CAV/HbLAWug2IPM2YrHg==
@@ -17020,9 +17020,9 @@ react-native-svg-transformer@0.14.3:
     path-dirname "^1.0.2"
     semver "^5.6.0"
 
-react-native-svg-web@^1.0.9:
+react-native-svg-web@1.0.9:
   version "1.0.9"
-  resolved "https://registry.npmjs.org/react-native-svg-web/-/react-native-svg-web-1.0.9.tgz"
+  resolved "https://registry.yarnpkg.com/react-native-svg-web/-/react-native-svg-web-1.0.9.tgz#a50b1ac6e33eb9efdba38d58e6e13c193ef041c2"
   integrity sha512-fggz1MPx55xP92ZlFWhvxfsd8/Mj3z63E1eo1pldtBRuNbR4LffvtY9hwj96bgHZU3gRwJL00LV3GAWRFthlnA==
 
 react-native-svg@^12.1.1:
@@ -19484,9 +19484,9 @@ svg-path-bounds@^1.0.1:
     normalize-svg-path "^1.0.0"
     parse-svg-path "^0.1.2"
 
-svg-react-loader@^0.4.6:
+svg-react-loader@0.4.6:
   version "0.4.6"
-  resolved "https://registry.npmjs.org/svg-react-loader/-/svg-react-loader-0.4.6.tgz"
+  resolved "https://registry.yarnpkg.com/svg-react-loader/-/svg-react-loader-0.4.6.tgz#b263efb3e3d2fff4c682a729351aba5f185051a1"
   integrity sha512-HVEypjWQsQuJdBIPzXGxpmQsQts7QwfQuYgK1rah6BVCMoLNSCh/ESKVNd7/tHq8DkWYHHTyaUMDA1FjqZYrgA==
   dependencies:
     css "2.2.4"
