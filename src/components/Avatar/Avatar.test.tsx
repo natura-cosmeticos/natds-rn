@@ -1,60 +1,84 @@
+/* eslint-disable max-statements */
 import React from 'react';
-import renderer from 'react-test-renderer';
-import { render } from '@testing-library/react-native';
-import { ThemeProvider } from 'styled-components/native';
-import theme from '../../common/themeSelectors/theme/mock-theme.json';
 
-import { Avatar, AvatarTypes } from './Avatar';
+import { Avatar, getTextValue } from './Avatar';
+import { renderWithTheme } from '../../../test/testHelpers';
 
-const renderAvatar = (fn, type?: AvatarTypes) => fn(
-    <ThemeProvider theme={theme}>
-      <Avatar type={type} />
-    </ThemeProvider>,
-);
+jest.mock('../Icon/Icon');
+jest.mock('../../common/themeSelectors', () => (
+  {
+    getAvatarBySize: () => ({ fontSize: 24, size: 'largeXX' }),
+    getColorOnPrimary: () => '#333333',
+    getColorPrimary: () => '#FFAA33',
+  }));
 
 describe('Avatar component', () => {
-  it('should render avatar with default type', () => {
-    const { queryByTestId } = renderAvatar(render);
+  it('should render avatar with default size', () => {
+    const { queryByTestId } = renderWithTheme(<Avatar testID='ds-avatar' type='image' imgSource={{ uri: '' }} />);
 
-    expect(queryByTestId('avatar')?.props).toHaveProperty('type', 'anonymous');
+    expect(queryByTestId('ds-avatar')).toHaveStyle({ height: 24, width: 24 });
   });
-  it('should render avatar with anonymous type', () => {
-    const { queryByTestId } = renderAvatar(render, 'anonymous');
 
-    expect(queryByTestId('avatar')?.props).toHaveProperty('type', 'anonymous');
-  });
   it('should render avatar with image type', () => {
-    const { queryByTestId } = renderAvatar(render, 'image');
+    const { queryByTestId } = renderWithTheme(<Avatar testID='ds-avatar-image' type='image' imgSource={{ uri: '' }} />);
 
-    expect(queryByTestId('avatar')?.props).toHaveProperty('type', 'image');
+    expect(queryByTestId('ds-avatar-image')?.props).toHaveProperty('type', 'image');
   });
+
   it('should render avatar with letter type', () => {
-    const { queryByTestId } = renderAvatar(render, 'letter');
+    const { queryByTestId } = renderWithTheme(<Avatar testID='ds-avatar-letter' type='letter' text="Design System" />);
 
-    expect(queryByTestId('avatar')?.props).toHaveProperty('type', 'letter');
+    expect(queryByTestId('ds-avatar-letter')?.props).toHaveProperty('type', 'letter');
   });
 
-  it('should render avatar component', () => {
-    const avatar = renderAvatar(renderer.create);
+  it('should render avatar component icon', () => {
+    const { toJSON } = renderWithTheme(<Avatar type='icon' iconName='filled-default-mockup' />);
 
-    expect(avatar).toMatchSnapshot();
-  });
-
-  it('should render avatar component anonymous', () => {
-    const avatar = renderAvatar(renderer.create, 'anonymous').toJSON();
-
-    expect(avatar).toMatchSnapshot();
+    expect(toJSON()).toMatchSnapshot();
   });
 
   it('should render avatar component image', () => {
-    const avatar = renderAvatar(renderer.create, 'image').toJSON();
+    const { toJSON } = renderWithTheme(<Avatar type='image' imgSource={{ uri: '' }} />);
 
-    expect(avatar).toMatchSnapshot();
+    expect(toJSON()).toMatchSnapshot();
   });
 
   it('should render avatar component letter', () => {
-    const avatar = renderAvatar(renderer.create, 'letter').toJSON();
+    const { toJSON } = renderWithTheme(<Avatar type='letter' text='Design System' />);
 
-    expect(avatar).toMatchSnapshot();
+    expect(toJSON()).toMatchSnapshot();
+  });
+
+  it('should render avatar component anonymoys', () => {
+    const { toJSON } = renderWithTheme(<Avatar />);
+
+    expect(toJSON()).toMatchSnapshot();
+  });
+
+  it('should render avatar with a deprecated size', () => {
+    const { toJSON, getByTestId } = renderWithTheme(<Avatar testID='avatar-letter' type='letter' size='huge' text='Deprecated'/>);
+
+    expect(getByTestId('avatar-letter')).toHaveStyle({ fontSize: 24 });
+    expect(toJSON()).toMatchSnapshot();
+  });
+
+  it('should render avatar component with other size', () => {
+    const { queryByTestId } = renderWithTheme(<Avatar type='image' imgSource={{ uri: '' }} size='semiX' />);
+
+    expect(queryByTestId('avatar')).toHaveStyle({ height: 40, width: 40 });
+  });
+
+  it('should return the first character from first and last word', () => {
+    const mockFn = jest.fn(getTextValue);
+
+    mockFn();
+
+    expect(mockFn).toHaveBeenCalledTimes(1);
+  });
+
+  it('should return the first character', () => {
+    const mockFn = jest.fn(getTextValue);
+
+    expect(mockFn('Design')).toBe('D');
   });
 });
