@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [7.19.0](https://github.com/natura-cosmeticos/natds-rn/compare/v7.18.0...v7.19.0) (2021-12-15)
+
+
+### Features
+
+* **avatar:** update avatar component ([#216](https://github.com/natura-cosmeticos/natds-rn/issues/216)) ([32d7a37](https://github.com/natura-cosmeticos/natds-rn/commit/32d7a372222516954a96b8cf64c4a7f33ff35443))
+
 ## [7.18.0](https://github.com/natura-cosmeticos/natds-rn/compare/v7.17.0...v7.18.0) (2021-11-26)
 
 
