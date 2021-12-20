@@ -64,9 +64,6 @@ export const AvatarLetter = styled.Text(({ size, theme }: AvatarStyleProps) => (
   ...getFontsBySize(size, theme),
   alignSelf: 'center',
   color: getColorOnPrimary(theme),
-  fontFamily: theme.avatar.primary.fontFamily,
-  fontWeight: theme.avatar.primary.fontWeight,
-
 }));
 
 export const AvatarIcon = styled(Icon)(({ theme }) => ({

@@ -176,9 +176,7 @@ exports[`Avatar component should render avatar with a deprecated size 1`] = `
         Object {
           "alignSelf": "center",
           "color": "#333333",
-          "fontFamily": "Roboto",
           "fontSize": 24,
-          "fontWeight": "400",
         },
       ]
     }

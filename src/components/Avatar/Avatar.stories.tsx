@@ -4,7 +4,7 @@ import { IconName, iconNames } from '@naturacosmeticos/natds-icons';
 
 import { AvatarTypes, AvatarSizes } from './Avatar.types';
 // @ts-ignore
-import IconAnonymous from '../../assets/images/anonymous.jpg';
+import NatAvatar from '../../assets/images/nat_avatar.jpg';
 import { StoryContainer } from '../../common/HelperComponents/StoryContainer';
 import { Avatar } from '.';
 
@@ -63,11 +63,11 @@ const avatarSizes = {
 export const All = () => (
   <>
     <StoryContainer title="Image">
-      <Avatar type="image" size="standard" imgSource={{ uri: '' }}/>
-      <Avatar type="image" size="semi" imgSource={{ uri: '' }}/>
-      <Avatar type="image" size="semiX" imgSource={{ uri: '' }}/>
-      <Avatar type="image" size="medium" imgSource={{ uri: '' }}/>
-      <Avatar type="image" size="largeXXX" imgSource={{ uri: '' }}/>
+      <Avatar type="image" size="standard" imgSource={NatAvatar}/>
+      <Avatar type="image" size="semi" imgSource={NatAvatar}/>
+      <Avatar type="image" size="semiX" imgSource={NatAvatar}/>
+      <Avatar type="image" size="medium" imgSource={NatAvatar}/>
+      <Avatar type="image" size="largeXXX" imgSource={NatAvatar}/>
     </StoryContainer>
     <StoryContainer title="Letter">
       <Avatar type="letter" size="standard" text={textSample}/>
