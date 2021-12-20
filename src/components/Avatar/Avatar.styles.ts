@@ -38,9 +38,7 @@ const getBorderRadiusBySize = (size: AvatarSizes, theme: Theme) => {
 const getFontsBySize = (size: AvatarSizes, theme: Theme) => {
   if (!deprecatedSizes.includes(size)) {
     return {
-      fontFamily: theme.avatar.primary.fontFamily,
       fontSize: theme.avatar[size].fontSize,
-      fontWeight: theme.avatar.primary.fontWeight,
       letterSpacing: theme.avatar[size].letterSpacing,
       lineHeight: theme.avatar[size].fontSize * theme.avatar[size].lineHeight,
     };
@@ -64,6 +62,8 @@ export const AvatarLetter = styled.Text(({ size, theme }: AvatarStyleProps) => (
   ...getFontsBySize(size, theme),
   alignSelf: 'center',
   color: getColorOnPrimary(theme),
+  fontFamily: theme.avatar.primary.fontFamily,
+  fontWeight: theme.avatar.primary.fontWeight,
 }));
 
 export const AvatarIcon = styled(Icon)(({ theme }) => ({
