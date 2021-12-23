@@ -19,3 +19,4 @@ export * from './Snackbar';
 export * from './Tab';
 export * from './TextField';
 export * from './Typography';
+export * from './Tag';
