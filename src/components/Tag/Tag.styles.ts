@@ -23,10 +23,14 @@ export const getBorderPosition = ({ theme, size = 'small', borderPosition = 'def
     },
     left: {
       borderBottomLeftRadius: theme.tag[size].borderRadius.enable,
+      borderBottomRightRadius: theme.tag[size].borderRadius.disable,
       borderTopLeftRadius: theme.tag[size].borderRadius.enable,
+      borderTopRightRadius: theme.tag[size].borderRadius.disable,
     },
     right: {
+      borderBottomLeftRadius: theme.tag[size].borderRadius.disable,
       borderBottomRightRadius: theme.tag[size].borderRadius.enable,
+      borderTopLeftRadius: theme.tag[size].borderRadius.disable,
       borderTopRightRadius: theme.tag[size].borderRadius.enable,
     },
   };
@@ -35,10 +39,16 @@ export const getBorderPosition = ({ theme, size = 'small', borderPosition = 'def
 };
 
 export const getTextColorByName = ({ theme, color = 'primary' } : LabelStyleProps) => {
-  const capitalizeString = color.charAt(0).toUpperCase() + color.slice(1);
-  const normalizedString = `on${capitalizeString}`;
+  const styles = {
+    alert: theme.color.onAlert,
+    link: theme.color.onLink,
+    primary: theme.color.onPrimary,
+    secondary: theme.color.onSecondary,
+    success: theme.color.onSuccess,
+    warning: theme.color.onWarning,
+  };
 
-  return theme.color[normalizedString];
+  return styles[color];
 };
 
 export const getPaddingBySize = ({ theme, size = 'small' } : ContainerStyleProps) => {

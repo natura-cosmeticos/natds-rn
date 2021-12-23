@@ -17,7 +17,6 @@ const description = () => `
 With the following attribute status:
 
   - **Attributes:**
-    - ✅ **Text:**
     - **Size:**
       - ✅ \`Standard\`
       - ✅ \`Small\`
@@ -28,8 +27,8 @@ With the following attribute status:
       - ✅ \`Success\`
       - ✅ \`Link\`
       - ✅ \`Warining\`
-    - **Border Position:**
-      - ✅ \`Default\`
+    - **Position:**
+      - ✅ \`Center\`
       - ✅ \`Left\`
       - ✅ \`Right\`
 
@@ -48,7 +47,7 @@ const tagColors = [
 export default {
   component: Tag,
   parameters: {
-    componentSubtitle: 'A tag labels UI objects for quick recognition and navigation.',
+    componentSubtitle: 'Tags are used to label, categorize, or organize items using keywords that describe them.',
     docs: {
       extractComponentDescription: description,
     },
@@ -58,20 +57,20 @@ export default {
 
 export const Default = () => (
   <StoryContainer title='Standard'>
-    <Tag text='Lorem Ipsum' />
+    <Tag text='Design System' />
   </StoryContainer>
 );
 
 export const Borders = () => (
   <>
     <StoryContainer title='Default'>
-      <Tag text='Lorem Ipsum' borderPosition='default' />
+      <Tag text='Design System' borderPosition='default' />
     </StoryContainer>
     <StoryContainer title='Right'>
-      <Tag text='Lorem Ipsum' borderPosition='right' />
+      <Tag text='Design System' borderPosition='right' />
     </StoryContainer>
     <StoryContainer title='Left'>
-      <Tag text='Lorem Ipsum' borderPosition='left' />
+      <Tag text='Design System' borderPosition='left' />
     </StoryContainer>
   </>
 );
@@ -79,10 +78,10 @@ export const Borders = () => (
 export const Sizes = () => (
   <>
     <StoryContainer title='Standard'>
-      <Tag text='Lorem Ipsum' size="standard" />
+      <Tag text='Design System' size="standard" />
     </StoryContainer>
     <StoryContainer title='Small'>
-      <Tag text='Lorem Ipsum' size="small" />
+      <Tag text='Design System' size="small" />
     </StoryContainer>
   </>
 );
@@ -90,22 +89,22 @@ export const Sizes = () => (
 export const Colors = () => (
   <>
     <StoryContainer title='Primary'>
-      <Tag text='Lorem Ipsum' color='primary' />
+      <Tag text='Design System' color='primary' />
     </StoryContainer>
     <StoryContainer title='Secondary'>
-      <Tag text='Lorem Ipsum' color='secondary' />
+      <Tag text='Design System' color='secondary' />
     </StoryContainer>
     <StoryContainer title='Alert'>
-      <Tag text='Lorem Ipsum' color='alert' />
+      <Tag text='Design System' color='alert' />
     </StoryContainer>
     <StoryContainer title='Warning'>
-      <Tag text='Lorem Ipsum' color='warning' />
+      <Tag text='Design System' color='warning' />
     </StoryContainer>
     <StoryContainer title='Success'>
-      <Tag text='Lorem Ipsum' color='success' />
+      <Tag text='Design System' color='success' />
     </StoryContainer>
     <StoryContainer title='Link'>
-      <Tag text='Lorem Ipsum' color='link' />
+      <Tag text='Design System' color='link' />
     </StoryContainer>
   </>
 );
@@ -113,7 +112,7 @@ export const Colors = () => (
 export const Interactive = () => (
   <StoryContainer title="Interactive">
     <Tag
-      text={text('Text', 'Lorem Ipsum')}
+      text={text('Text', 'Design System')}
       size={select('Size', ['small', 'standard'], 'small') as TagSizes}
       color={select('Color', tagColors, 'primary') as TagColors}
       borderPosition={select('Border Position', ['default', 'left', 'right'], 'default') as TagPositions}

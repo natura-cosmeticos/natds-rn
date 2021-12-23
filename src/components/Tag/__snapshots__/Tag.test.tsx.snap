@@ -10,7 +10,9 @@ exports[`Tag Border Position should render with non standard border 1`] = `
       Object {
         "backgroundColor": "#f4ab34",
         "borderBottomLeftRadius": 8,
+        "borderBottomRightRadius": 0,
         "borderTopLeftRadius": 8,
+        "borderTopRightRadius": 0,
         "paddingHorizontal": 8,
       },
     ]
