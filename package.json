@@ -66,8 +66,8 @@
     "generate": "yarn plop --plopfile ./generators/plopfile.js"
   },
   "dependencies": {
-    "@naturacosmeticos/natds-icons": "^1.9.1",
-    "@naturacosmeticos/natds-themes": "^0.20.0",
+    "@naturacosmeticos/natds-icons": "^1.10.0",
+    "@naturacosmeticos/natds-themes": "^0.20.1",
     "fs-extra": "8.1.0",
     "react-native-gesture-handler": "^1.10.3",
     "react-native-svg": "^12.1.1"

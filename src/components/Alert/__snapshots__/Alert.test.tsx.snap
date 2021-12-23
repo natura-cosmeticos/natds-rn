@@ -532,7 +532,7 @@ exports[`Alert component Should render alert with default props 1`] = `
           "lineHeight": 1.5,
           "primary": Object {
             "fontFamily": "Roboto",
-            "fontWeight": 400,
+            "fontWeight": 500,
           },
         },
       },
