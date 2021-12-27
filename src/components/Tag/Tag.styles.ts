@@ -75,9 +75,9 @@ export const Label = styled.Text<LabelStyleProps>`
   ${({ theme, color }: LabelStyleProps) => css`
     color: ${getTextColorByName({ color, theme })};
     font-family: ${theme.tag.label.primary.fontFamily};
-    font-size: ${theme.tag.label.fontSize};
+    font-size: ${theme.tag.label.fontSize}px;
     font-weight: ${theme.tag.label.primary.fontWeight};
-    letter-spacing: ${theme.tag.label.letterSpacing};
+    letter-spacing: ${theme.tag.label.letterSpacing}px;
     line-height: ${theme.tag.label.fontSize * theme.tag.label.lineHeight}px;
   `}
 `;
