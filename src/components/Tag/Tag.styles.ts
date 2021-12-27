@@ -67,6 +67,7 @@ export const Container = styled.View<ContainerStyleProps>(({
 }: ContainerStyleProps) => ({
   ...getBorderPosition({ borderPosition, size, theme }),
   ...getPaddingBySize({ size, theme }),
+  alignSelf: 'flex-start',
   backgroundColor: theme.color[color],
 }));
 
