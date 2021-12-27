@@ -1,6 +1,6 @@
 {
   "name": "@naturacosmeticos/natds-rn",
-  "version": "7.19.0",
+  "version": "7.20.0-DSY-1982.4",
   "license": "ISC",
   "main": "build/lib/index.js",
   "keywords": [
@@ -66,8 +66,8 @@
     "generate": "yarn plop --plopfile ./generators/plopfile.js"
   },
   "dependencies": {
-    "@naturacosmeticos/natds-icons": "^1.9.1",
-    "@naturacosmeticos/natds-themes": "^0.20.0",
+    "@naturacosmeticos/natds-icons": "^1.10.0",
+    "@naturacosmeticos/natds-themes": "^0.20.1",
     "fs-extra": "8.1.0",
     "react-native-gesture-handler": "^1.10.3",
     "react-native-svg": "^12.1.1"

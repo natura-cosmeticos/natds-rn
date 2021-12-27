@@ -17,5 +17,6 @@ export * from './RadioButton';
 export * from './Rating';
 export * from './Snackbar';
 export * from './Tab';
+export * from './Tag';
 export * from './TextField';
 export * from './Typography';
