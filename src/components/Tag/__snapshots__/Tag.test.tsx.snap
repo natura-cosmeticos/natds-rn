@@ -8,6 +8,7 @@ exports[`Tag Border Position should render with non standard border 1`] = `
   style={
     Array [
       Object {
+        "alignSelf": "flex-start",
         "backgroundColor": "#f4ab34",
         "borderBottomLeftRadius": 8,
         "borderBottomRightRadius": 0,
@@ -48,6 +49,7 @@ exports[`Tag Colors should render with secondary color 1`] = `
   style={
     Array [
       Object {
+        "alignSelf": "flex-start",
         "backgroundColor": "#ff6b0b",
         "borderRadius": 8,
         "paddingHorizontal": 8,
@@ -85,6 +87,7 @@ exports[`Tag Component should render with default variant 1`] = `
   style={
     Array [
       Object {
+        "alignSelf": "flex-start",
         "backgroundColor": "#f4ab34",
         "borderRadius": 8,
         "paddingHorizontal": 8,
@@ -122,6 +125,7 @@ exports[`Tag Sizes should render with non default size 1`] = `
   style={
     Array [
       Object {
+        "alignSelf": "flex-start",
         "backgroundColor": "#f4ab34",
         "borderRadius": 12,
         "paddingHorizontal": 8,
