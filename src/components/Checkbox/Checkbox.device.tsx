@@ -1,9 +1,13 @@
 import { storiesOf } from '@storybook/react-native';
 import {
-  all,
-  interactive,
+  Default,
+  Indeterminate,
+  Disabled,
+  Interactive,
 } from './Checkbox.stories';
 
 storiesOf('Checkbox', module)
-  .add('all', all)
-  .add('interactive', interactive);
+  .add('Default', Default)
+  .add('Indeterminate', Indeterminate)
+  .add('Disabled', Disabled)
+  .add('Interactive', Interactive);

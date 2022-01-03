@@ -1,4 +1,5 @@
 /* eslint-disable max-lines */
+/* eslint-disable max-len */
 import { JSXElementConstructor } from 'react';
 import {
   AccessibilityProps,
@@ -69,7 +70,7 @@ type MultiPlatformProps = Pick<TextInputProps,
 >
 
 /**
- * @deprecated Use 'medium' and 'mediumX' instead
+ * @deprecated Deprecated sizes: `small` and `regular, use 'medium' and 'mediumX' instead.
  */
 type DeprecatedInputSizes = 'small' | 'regular';
 export type InputSizes = keyof Pick<Size, 'medium' | 'mediumX'> | DeprecatedInputSizes
@@ -116,20 +117,39 @@ interface BaseProps extends
     /**
      * This defines the height of the field, according to corresponding theme
      * Size token.
+     *
+     *  - Available states: 'enabled', 'focus', 'active', 'filled'
+     *
+     * ### Deprecated sizes: `small` and `regular, use 'medium' and 'mediumX' instead
      * @default 'mediumX'
      */
     size?: InputSizes;
     /**
-     * @deprecated
-     * This prop should not be used as providing states is no longer necessary.
      * This component now handles its own state.
+     *
+     *  - Available states: 'enabled', 'focus', 'active', 'filled'
+     *
+     * ### Deprecated, this prop should not be used as providing states is no longer necessary.
      */
     state?: TextFieldStates;
     /**
      * This provides the most common behavior expected for this component without
      * the need to customize it.
+     *
+     * - Available types: `number`, `text`, `password`
+     * @default 'text'
      */
     type?: TextFieldTypes;
+    /**
+     * Determines which keyboard to open, e.g.numeric.
+     * @default 'default'
+     */
+    keyboardType?: TextInputProps['keyboardType'];
+    /**
+     * If true, the text input obscures the text entered so that sensitive text like passwords stay secure.
+     * @default false
+     */
+    secureTextEntry?: TextInputProps['secureTextEntry'];
   }
 
 interface FeedbackProps {

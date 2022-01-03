@@ -24,7 +24,7 @@ export const Separator = styled.View((): CSSObject => ({
 
 const Container = styled(ContainerWithTheme)`
   max-width: 600px;
-  padding: 24px;
+  padding: 16px;
 `;
 
 const Title = styled(TextWithTheme)`

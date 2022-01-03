@@ -1,7 +1,6 @@
 import { storiesOf } from '@storybook/react-native';
 import {
   Action,
-  All,
   Default,
   Disabled,
   Feedback,
@@ -11,10 +10,10 @@ import {
   Sizes,
   States,
   TextArea,
+  Interactive,
 } from './TextField.stories';
 
 storiesOf('TextField', module)
-  .add('All', All)
   .add('Default', Default)
   .add('Sizes', Sizes)
   .add('States', States)
@@ -24,4 +23,5 @@ storiesOf('TextField', module)
   .add('Readonly', Readonly)
   .add('Action', Action)
   .add('Type', Type)
-  .add('TextArea', TextArea);
+  .add('TextArea', TextArea)
+  .add('Interactive', Interactive);
