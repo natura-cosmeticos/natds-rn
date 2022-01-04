@@ -2,7 +2,7 @@
 import React from 'react';
 import { View } from 'react-native';
 import { boolean, select, text as textKnob } from '@storybook/addon-knobs';
-import { VerticalStoryContainer, StoryContainer } from '../../common/HelperComponents/StoryContainer';
+import { StoryContainer, StoryWrapper } from '../../common/HelperComponents/StoryContainer';
 import { Button } from './Button';
 import { ButtonSizes, ButtonTypes } from './Button.types';
 
@@ -15,7 +15,7 @@ const description = () => `
   - ✅ outlined
   - ✅ text
 
-With the following attribute status:
+With the following attribute statuses:
 
 - **Size:**
     - ✅ \`semi\`
@@ -58,13 +58,13 @@ const buttonSizes = {
 };
 
 export const Default = () => (
-  <VerticalStoryContainer title="Standard">
+  <StoryContainer title="Standard">
     <Button onPress={onPress} text="Natura Design System" />
-  </VerticalStoryContainer>
+  </StoryContainer>
 );
 
 export const Variants = () => (
-  <VerticalStoryContainer title='Variants'>
+  <StoryWrapper title="Variants">
     <StoryContainer title="Contained">
       <Button onPress={onPress} text="Natura Design System" type="contained" />
     </StoryContainer>
@@ -74,11 +74,11 @@ export const Variants = () => (
     <StoryContainer title="Text">
       <Button onPress={onPress} text="Natura Design System" type="text" />
     </StoryContainer>
-  </VerticalStoryContainer>
+  </StoryWrapper>
 );
 
 export const Sizes = () => (
-  <VerticalStoryContainer title="Sizes">
+  <StoryWrapper title="Sizes">
     <StoryContainer title="Medium">
       <Button onPress={onPress} text="Natura Design System" size="medium" />
     </StoryContainer>
@@ -88,22 +88,22 @@ export const Sizes = () => (
     <StoryContainer title="Semi">
       <Button onPress={onPress} text="Natura Design System" size="semi" />
     </StoryContainer>
-  </VerticalStoryContainer>
+  </StoryWrapper>
 );
 
 export const Icons = () => (
-  <VerticalStoryContainer title="Icons">
+  <StoryWrapper title="Icons">
     <StoryContainer title="Left Icon">
       <Button onPress={onPress} text="Natura Design System" iconName="outlined-default-mockup" iconPosition="left" />
     </StoryContainer>
     <StoryContainer title="Right Icon">
       <Button onPress={onPress} text="Natura Design System" iconName="outlined-default-mockup" iconPosition="right" />
     </StoryContainer>
-  </VerticalStoryContainer>
+  </StoryWrapper>
 );
 
 export const Disabled = () => (
-  <VerticalStoryContainer title="Disabled">
+  <StoryWrapper title="Disabled">
     <StoryContainer title="Contained">
       <Button onPress={onPress} text="Natura Design System" type="contained" disabled />
     </StoryContainer>
@@ -113,26 +113,26 @@ export const Disabled = () => (
     <StoryContainer title="Text">
       <Button onPress={onPress} text="Natura Design System" type="text" disabled />
     </StoryContainer>
-  </VerticalStoryContainer>
+  </StoryWrapper>
 );
 
 export const Display = () => (
-    <>
-    <StoryContainer title='Display Inline'>
+  <StoryWrapper title="Display">
+    <StoryContainer title="Display-Inline">
       <View style={{ alignItems: 'flex-start', marginBottom: 14 }}>
         <Button onPress={onPress} text="Natura Design System" />
       </View>
     </StoryContainer>
-    <StoryContainer title='Display Block'>
+    <StoryContainer title="Display-Block">
       <View style={{ marginBottom: 14, width: '100%' }}>
         <Button onPress={onPress} text="Natura Design System" />
       </View>
     </StoryContainer>
-  </>
+  </StoryWrapper>
 );
 
 export const Interactive = () => (
-  <VerticalStoryContainer title="Interactive">
+  <StoryContainer title="Interactive">
     <Button
       disabled={boolean('Disabled', false)}
       onPress={onPress}
@@ -140,5 +140,5 @@ export const Interactive = () => (
       text={textKnob('Text', 'Natura Design System')}
       type={select('Types', buttonTypes, 'contained') as ButtonTypes}
     />
-  </VerticalStoryContainer>
+  </StoryContainer>
 );

@@ -37,14 +37,12 @@ export interface ButtonProps {
   disabled?: boolean
   /**
    * Name of the icon that will be rendered on the button at the previously selected position.
-   * @default undefined
    */
   iconName?: IconName,
   /**
    * Position of the icon to be rendered in relation to the label text.
    *
    * - Available positions: 'left', 'right'.
-   * @default undefined
    */
   iconPosition?: IconPositions
   /**
@@ -58,9 +56,9 @@ export interface ButtonProps {
   /**
    * This defines the height of the button, according to corresponding theme Size token.
    *
-   * - Available sizes: `semi`, `semiX`, `medium`
+   * - Available sizes: `semi`, `semiX`, `medium`.
    *
-   * #### Deprecated sizes: `small` and `large`, use `semi` and `medium` instead.
+   * #### Deprecated sizes: `small` and `large`.
    * @default `semiX`
    */
   size?: ButtonSizes,
@@ -70,9 +68,9 @@ export interface ButtonProps {
    */
   text: string
   /**
-   * Parameter that will determine button structure, border rendering or background color.
+   * Parameter that will determine button style such as border rendering and background color.
    *
-   * - Available types: `contained`, `outlined`, `text`
+   * - Available types: `contained`, `outlined`, `text`.
    * @default `contained`
    */
   type?: ButtonTypes

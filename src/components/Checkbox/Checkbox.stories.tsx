@@ -1,11 +1,10 @@
 /* eslint-disable max-lines */
 /* eslint-disable max-len */
 import React, { useState } from 'react';
-import { View } from 'react-native';
 import { boolean, select, text } from '@storybook/addon-knobs';
 
 import { Checkbox } from './Checkbox';
-import { StoryContainer, VerticalStoryContainer } from '../../common/HelperComponents/StoryContainer';
+import { StoryContainer, StoryWrapper } from '../../common/HelperComponents/StoryContainer';
 import { CheckboxColors } from './Checkbox.types';
 
 const description = () => `
@@ -47,7 +46,7 @@ export const Default = () => {
   return (
     <StoryContainer title="Standard">
       <Checkbox
-         label="Natura Design System"
+        label="Natura Design System"
         onPress={() => setIsSelected(!isSelected)}
         selected={isSelected}
       />
@@ -78,14 +77,14 @@ export const Disabled = () => {
   });
 
   return (
-    <VerticalStoryContainer title='Disabled'>
+    <StoryWrapper title="Disabled">
       <StoryContainer title="Disabled selected">
         <Checkbox
           disabled
           label="Natura Design System"
           onPress={() => setState({ ...state, disabledSelected: !state.disabledSelected })}
           selected={state.disabledSelected}
-          value='3'
+          value="3"
           />
       </StoryContainer>
       <StoryContainer title="Disabled indeterminate">
@@ -95,7 +94,7 @@ export const Disabled = () => {
           label="Natura Design System"
           onPress={() => setState({ ...state, disabledIndeterminate: !state.disabledIndeterminate })}
           selected={state.disabledIndeterminate}
-          value='2'
+          value="2"
         />
       </StoryContainer>
       <StoryContainer title="Disabled unselected">
@@ -104,15 +103,15 @@ export const Disabled = () => {
           label="Natura Design System"
           onPress={() => setState({ ...state, disabled: !state.disabled })}
           selected={state.disabled}
-          value='1'
+          value="1"
           />
       </StoryContainer>
-    </VerticalStoryContainer>
+    </StoryWrapper>
   );
 };
 
 export const Interactive = () => (
-  <View style={{ maxWidth: 600, padding: 30 }}>
+  <StoryContainer title="Interactive">
     <Checkbox
       color={select('Color', colorTypes, 'primary') as CheckboxColors}
       indeterminate={boolean('Indeterminate', false)}
@@ -122,5 +121,5 @@ export const Interactive = () => (
       label={text('Label', 'Natura Design System')}
       value={text('Value', 'my-label')}
     />
-  </View>
+  </StoryContainer>
 );

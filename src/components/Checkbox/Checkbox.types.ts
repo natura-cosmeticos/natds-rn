@@ -7,11 +7,11 @@ export type CheckboxColors = 'primary' | 'secondary';
 
 export interface CheckboxProps {
   /**
+   * <span style="color:red">*Deprecated, this prop is no longer necessary as this component should always be used with the primary color.*</span>
    * Define what the color will be, according to the corresponding values.
    *
-   * - Available colors: `primary`, `secondary`
+   * - Available colors: `primary`, `secondary`.
    *
-   * #### Deprecated, this prop is no longer necessary as this component should always be used with the primary color.
    * @default `primary`
    */
   color?: CheckboxColors;

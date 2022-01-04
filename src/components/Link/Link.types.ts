@@ -15,13 +15,13 @@ export interface LinkProps {
    */
   onPress: (ev: NativeSyntheticEvent<NativeTouchEvent>) => void;
   /**
-   * Optional ID for testing
+   * Optional ID for testing.
    */
   testID?: string;
   /**
    * Controls when the link should have an underline.
    *
-   * - Available types: `standard`, `underline`
+   * - Available types: `standard`, `underline`.
    * @default 'standard'
    */
   type?: LinkTypes;

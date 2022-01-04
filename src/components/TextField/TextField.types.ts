@@ -75,8 +75,7 @@ type MultiPlatformProps = Pick<TextInputProps,
 type DeprecatedInputSizes = 'small' | 'regular';
 export type InputSizes = keyof Pick<Size, 'medium' | 'mediumX'> | DeprecatedInputSizes
 /**
- * @deprecated These are no longer necessary. This component now handles
- * its own state.
+ * @deprecated These are no longer necessary. This component now handles its own state.
  */
 type TextFieldStates = 'enabled' | 'focus' | 'active' | 'filled';
 
@@ -118,25 +117,25 @@ interface BaseProps extends
      * This defines the height of the field, according to corresponding theme
      * Size token.
      *
-     *  - Available states: 'enabled', 'focus', 'active', 'filled'
+     *  - Available sizes: `medium`, `mediumX`.
      *
-     * ### Deprecated sizes: `small` and `regular, use 'medium' and 'mediumX' instead
+     * ### Deprecated sizes: `small` and `regular`.
      * @default 'mediumX'
      */
     size?: InputSizes;
     /**
-     * This component now handles its own state.
+     * <span style="color:red">*Deprecated, this prop should not be used as providing states is no longer necessary, this component now handles its own state.*</span>
      *
-     *  - Available states: 'enabled', 'focus', 'active', 'filled'
+     * Attribute responsible for changing the component's state.
      *
-     * ### Deprecated, this prop should not be used as providing states is no longer necessary.
+     *  - Available states: 'enabled', 'focus', 'active', 'filled'.
      */
     state?: TextFieldStates;
     /**
      * This provides the most common behavior expected for this component without
      * the need to customize it.
      *
-     * - Available types: `number`, `text`, `password`
+     * - Available types: `number`, `text`, `password`.
      * @default 'text'
      */
     type?: TextFieldTypes;

@@ -2,7 +2,7 @@ import React from 'react';
 import { Alert } from 'react-native';
 import { select, text as textKnob } from '@storybook/addon-knobs';
 
-import { StoryContainer, VerticalStoryContainer } from '../../common/HelperComponents/StoryContainer';
+import { StoryContainer, StoryWrapper } from '../../common/HelperComponents/StoryContainer';
 import { Link } from './Link';
 import { LinkTypes } from './Link.types';
 
@@ -44,14 +44,14 @@ export const Default = () => (
 );
 
 export const Types = () => (
-  <VerticalStoryContainer title='Types'>
+  <StoryWrapper title="Types">
     <StoryContainer title="Standard">
       <Link onPress={onPress}>Natura Design System</Link>
     </StoryContainer>
       <StoryContainer title="Underline">
       <Link onPress={onPress} type="underline">Natura Design System</Link>
     </StoryContainer>
-  </VerticalStoryContainer>
+  </StoryWrapper>
 );
 
 export const Interactive = () => (
