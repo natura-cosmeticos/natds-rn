@@ -42,7 +42,7 @@ export interface ButtonProps {
   /**
    * Position of the icon to be rendered in relation to the label text.
    *
-   * - Available positions: 'left', 'right'.
+   * - Available positions: `left`, `right`.
    */
   iconPosition?: IconPositions
   /**

@@ -128,7 +128,7 @@ interface BaseProps extends
      *
      * Attribute responsible for changing the component's state.
      *
-     *  - Available states: 'enabled', 'focus', 'active', 'filled'.
+     *  - Available states: `enabled`, `focus`, `active`, `filled`.
      */
     state?: TextFieldStates;
     /**
