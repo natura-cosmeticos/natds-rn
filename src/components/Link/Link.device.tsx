@@ -1,4 +1,7 @@
 import { storiesOf } from '@storybook/react-native';
-import { all } from './Link.stories';
+import { Default, Types, Interactive } from './Link.stories';
 
-storiesOf('Link', module).add('all', all);
+storiesOf('Link', module)
+  .add('Default', Default)
+  .add('Types', Types)
+  .add('Interactive', Interactive);

@@ -14,6 +14,11 @@ export const ContainerWithTheme = styled.View`
   background-color: ${getTheme(getColorBackground)};
 `;
 
+export const StoriesContainer = styled.ScrollView`
+  background-color: ${getTheme(getColorBackground)};
+  height: 100%;
+`;
+
 export const ContainerRow = styled(ContainerWithTheme)`
   align-items: center;
   flex-direction: row;

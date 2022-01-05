@@ -18,14 +18,29 @@ export const VerticalStoryContainer = ({ children, title }) => {
   return <StoryContainer {...{ children, title }} style={verticalStyle} />;
 };
 
+export const StoryWrapper = ({ children, title = '' }) => (
+  <Wrapper>
+    <Title>{title}</Title>
+    <Content>
+      {children}
+    </Content>
+  </Wrapper>
+);
+
 export const Separator = styled.View((): CSSObject => ({
   marginTop: 16,
 }));
 
 const Container = styled(ContainerWithTheme)`
   max-width: 600px;
-  padding: 24px;
+  padding: 16px;
 `;
+
+const Wrapper = styled.View`
+  padding: 16px;
+`;
+
+const Content = styled.View``;
 
 const Title = styled(TextWithTheme)`
   margin-bottom: 8px;

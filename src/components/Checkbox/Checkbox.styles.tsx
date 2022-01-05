@@ -1,4 +1,3 @@
-
 import styled from 'styled-components/native';
 import {
   Theme,
@@ -9,7 +8,7 @@ import {
   getColorSecondary,
   getSpacingTiny,
 } from '../../common/themeSelectors';
-import { CheckboxColors } from './Checkbox';
+import { CheckboxColors } from './Checkbox.types';
 
 function getBoxColor(
   selected = false,

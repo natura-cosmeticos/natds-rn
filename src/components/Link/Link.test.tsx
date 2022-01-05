@@ -2,7 +2,8 @@ import React from 'react';
 import { fireEvent, render } from '@testing-library/react-native';
 import { ThemeProvider } from 'styled-components/native';
 import theme from '../../common/themeSelectors/theme/mock-theme.json';
-import { Link, LinkProps } from './Link';
+import { Link } from './Link';
+import { LinkProps } from './Link.types';
 
 jest.mock(
   'react-native/Libraries/Components/Touchable/TouchableOpacity',

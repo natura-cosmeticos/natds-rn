@@ -5,7 +5,7 @@ import {
   ScrollView, SafeAreaView, Dimensions, StyleSheet, Platform, View,
 } from 'react-native';
 import { Button } from '../../components/Button';
-import { ContainerWithTheme } from '../HelperComponents/ThemeHelper.styles';
+import { StoriesContainer } from '../HelperComponents/ThemeHelper.styles';
 import { buildTheme, Brand } from '../themeSelectors';
 import { Container } from './StoryWrapper.styles';
 import { ThemeSelectorModal } from './ThemeSelectorModal';
@@ -50,11 +50,9 @@ export const StoriesWrapperNative = ({ story }) => {
             isLast
           />
         </Container>
-        <ScrollView>
-          <ContainerWithTheme>
+          <StoriesContainer>
             {story && story({ activeTheme, light: isLight })}
-          </ContainerWithTheme>
-        </ScrollView>
+          </StoriesContainer>
       </ThemeProvider>
     </SafeAreaView>
   );

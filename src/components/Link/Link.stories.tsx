@@ -1,24 +1,66 @@
 import React from 'react';
-import { Alert, View } from 'react-native';
-import { TextWithTheme } from '../../common/HelperComponents/ThemeHelper.styles';
+import { Alert } from 'react-native';
+import { select, text as textKnob } from '@storybook/addon-knobs';
+
+import { StoryContainer, StoryWrapper } from '../../common/HelperComponents/StoryContainer';
 import { Link } from './Link';
+import { LinkTypes } from './Link.types';
+
+const description = () => `
+---
+
+**NOTE**: This component is available in the following variants:
+
+  - ✅ standard
+
+With the following attribute status:
+
+- **Type:**
+    - ✅ \`standard\`
+    - ✅ \`underline\`
+
+---
+`;
 
 export default {
   component: Link,
-  title: 'Components/Link',
+  parameters: {
+    componentSubtitle: 'The link component allows you to have a pattern for anchor text.',
+    docs: {
+      extractComponentDescription: description,
+    },
+  },
+  title: 'Components|Link',
 };
 
 const onPress = () => {
   Alert.alert('something happened');
 };
 
-export const all = () => (
-  <View style={{ padding: 24, width: 336 }}>
-    <TextWithTheme>
-      The link component allows you to have a pattern for anchor text. It is
-      intended to be used <Link onPress={onPress}>inside paragraphs </Link>
-      and have the same text styles (size, letter spacing, etc) as the rest of
-      the <Link onPress={onPress} type="underline"> text content </Link>.
-    </TextWithTheme>
-  </View>
+export const Default = () => (
+  <StoryContainer title="Standard">
+    <Link onPress={onPress}>Natura Design System</Link>
+  </StoryContainer>
+);
+
+export const Types = () => (
+  <StoryWrapper title="Types">
+    <StoryContainer title="Standard">
+      <Link onPress={onPress}>Natura Design System</Link>
+    </StoryContainer>
+      <StoryContainer title="Underline">
+      <Link onPress={onPress} type="underline">Natura Design System</Link>
+    </StoryContainer>
+  </StoryWrapper>
+);
+
+export const Interactive = () => (
+  <StoryContainer title="Interactive">
+    <Link
+      onPress={onPress}
+      type={select('Type', ['standard', 'underline'], 'standard') as LinkTypes}
+    >
+      {textKnob('Children', 'Natura Design System')}
+    </Link>
+  </StoryContainer>
 );

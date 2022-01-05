@@ -1,10 +1,11 @@
 /* eslint-disable max-lines */
+/* eslint-disable max-len */
 import React, { useState } from 'react';
-import { View } from 'react-native';
 import { boolean, select, text } from '@storybook/addon-knobs';
-import { Checkbox, CheckboxColors } from './Checkbox';
-import { ListItem } from '../ListItem';
-import { VerticalStoryContainer } from '../../common/HelperComponents/StoryContainer';
+
+import { Checkbox } from './Checkbox';
+import { StoryContainer, StoryWrapper } from '../../common/HelperComponents/StoryContainer';
+import { CheckboxColors } from './Checkbox.types';
 
 const description = () => `
 - - -
@@ -39,89 +40,86 @@ const colorTypes = {
   secondary: 'secondary',
 };
 
-export const all = () => {
-  const initialState = {
-    disabled: false,
-    disabledIndeterminate: true,
-    disabledSelected: true,
-    indeterminate: false,
-    standard: false,
-  };
-
-  const [state, setState] = useState<typeof initialState>(initialState);
+export const Default = () => {
+  const [isSelected, setIsSelected] = useState(true);
 
   return (
-    <VerticalStoryContainer title="Checkbox">
-      <ListItem>
-        <Checkbox
-          label="Standard"
-          onPress={
-            value => setState({ ...state, standard: !state.standard })
-          }
-          selected={state.standard}
-          value='1'
-        />
-      </ListItem>
-      <ListItem>
-        <Checkbox
-          indeterminate
-          label="Indeterminate"
-          onPress={
-            value => setState({ ...state, indeterminate: !state.indeterminate })
-          }
-          selected={state.indeterminate}
-          value='2'
-        />
-      </ListItem>
-      <ListItem>
-        <Checkbox
-          disabled
-          label="Disabled"
-          onPress={
-            value => setState({ ...state, disabled: !state.disabled })
-          }
-          selected={state.disabled}
-          value='5'
-          />
-      </ListItem>
-      <ListItem>
-        <Checkbox
-          disabled
-          indeterminate
-          label="Disabled selected"
-          onPress={
-            value => setState({ ...state, disabledSelected: !state.disabledSelected })
-          }
-          selected={state.disabledSelected}
-          value='6'
-          />
-      </ListItem>
-      <ListItem>
-        <Checkbox
-          disabled
-          label="Disabled indeterminate"
-          onPress={
-            value => setState({ ...state, disabledIndeterminate: !state.disabledIndeterminate })
-          }
-          selected={state.disabledIndeterminate}
-          value='7'
-        />
-      </ListItem>
-    </VerticalStoryContainer>
+    <StoryContainer title="Standard">
+      <Checkbox
+        label="Natura Design System"
+        onPress={() => setIsSelected(!isSelected)}
+        selected={isSelected}
+      />
+    </StoryContainer>
   );
 };
 
+export const Indeterminate = () => {
+  const [isSelected, setIsSelected] = useState(true);
 
-export const interactive = () => (
-  <View style={{ maxWidth: 600, padding: 30 }}>
+  return (
+    <StoryContainer title="Indeterminate">
+      <Checkbox
+        indeterminate
+        label="Natura Design System"
+        onPress={() => setIsSelected(!isSelected)}
+        selected={isSelected}
+      />
+    </StoryContainer>
+  );
+};
+
+export const Disabled = () => {
+  const [state, setState] = useState({
+    disabled: false,
+    disabledIndeterminate: true,
+    disabledSelected: true,
+  });
+
+  return (
+    <StoryWrapper title="Disabled">
+      <StoryContainer title="Disabled selected">
+        <Checkbox
+          disabled
+          label="Natura Design System"
+          onPress={() => setState({ ...state, disabledSelected: !state.disabledSelected })}
+          selected={state.disabledSelected}
+          value="3"
+          />
+      </StoryContainer>
+      <StoryContainer title="Disabled indeterminate">
+        <Checkbox
+          disabled
+          indeterminate
+          label="Natura Design System"
+          onPress={() => setState({ ...state, disabledIndeterminate: !state.disabledIndeterminate })}
+          selected={state.disabledIndeterminate}
+          value="2"
+        />
+      </StoryContainer>
+      <StoryContainer title="Disabled unselected">
+        <Checkbox
+          disabled
+          label="Natura Design System"
+          onPress={() => setState({ ...state, disabled: !state.disabled })}
+          selected={state.disabled}
+          value="1"
+          />
+      </StoryContainer>
+    </StoryWrapper>
+  );
+};
+
+export const Interactive = () => (
+  <StoryContainer title="Interactive">
     <Checkbox
       color={select('Color', colorTypes, 'primary') as CheckboxColors}
       indeterminate={boolean('Indeterminate', false)}
       selected={boolean('Selected', true)}
       disabled={boolean('Disabled', false)}
       onPress={() => null}
-      label={text('Label', 'My Label')}
+      label={text('Label', 'Natura Design System')}
       value={text('Value', 'my-label')}
     />
-  </View>
+  </StoryContainer>
 );

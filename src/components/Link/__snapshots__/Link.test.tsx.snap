@@ -4,12 +4,15 @@ exports[`Link component should take a snapshot 1`] = `
 <Text
   onPress={[MockFunction]}
   style={
-    Object {
-      "color": "#227bbd",
-      "textDecorationLine": "none",
-    }
+    Array [
+      Object {
+        "color": "#227bbd",
+        "textDecorationLine": "none",
+      },
+    ]
   }
   testID="link"
+  type="standard"
 >
   something
 </Text>

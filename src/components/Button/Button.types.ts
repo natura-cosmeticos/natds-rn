@@ -3,7 +3,7 @@ import { IconName } from '@naturacosmeticos/natds-icons';
 import { Theme } from '@naturacosmeticos/natds-themes/react-native';
 
 /**
- * @deprecated Use 'semi' and 'medium'
+ * @deprecated Deprecated sizes: `small` and `large`, use `semi` and `medium` instead.
  */
 type ButtonSizesDeprecated = 'small' | 'large'
 export type ButtonSizes = 'semi' | 'semiX' | 'medium' | ButtonSizesDeprecated
@@ -32,37 +32,46 @@ export interface ButtonProps {
    * A disabled button is unusable and un-clickable.
    * The disabled attribute can be set to keep a user from clicking on the button until some
    * other condition has been met (like selecting a checkbox, etc.).
+   * @default false
    */
   disabled?: boolean
   /**
-   * The icon name
+   * Name of the icon that will be rendered on the button at the previously selected position.
    */
   iconName?: IconName,
   /**
-   * Icon position relative to text label `left` | `right`
+   * Position of the icon to be rendered in relation to the label text.
+   *
+   * - Available positions: `left`, `right`.
    */
   iconPosition?: IconPositions
   /**
-   * The onPress event handler
+   * Handler to be called when the user taps the button.
    */
   onPress: () => void,
   /**
-  * Optional ID for testing
+  * Optional ID for testing.
   */
   testID?: string,
   /**
-   * Icon Button sizes `semi` | `semiX` | `medium`
+   * This defines the height of the button, according to corresponding theme Size token.
    *
-   * #### deprecated sizes: `small` and `large`:
-   * - use `semi` and `medium` instead
+   * - Available sizes: `semi`, `semiX`, `medium`.
+   *
+   * #### Deprecated sizes: `small` and `large`.
+   * @default `semiX`
    */
   size?: ButtonSizes,
   /**
-   * The button text content
+   * Text to display inside the button.
+   * @required
    */
   text: string
   /**
-   * Button variants `contained` | `outlined` | `text`
+   * Parameter that will determine button style such as border rendering and background color.
+   *
+   * - Available types: `contained`, `outlined`, `text`.
+   * @default `contained`
    */
   type?: ButtonTypes
 }

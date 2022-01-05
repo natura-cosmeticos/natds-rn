@@ -1,50 +1,18 @@
-import React, { ReactNode } from 'react';
-import { withTheme } from 'styled-components/native';
-import { Theme } from '@naturacosmeticos/natds-themes/react-native';
-import { NativeSyntheticEvent, NativeTouchEvent, Text } from 'react-native';
-import { getColorLink } from '../../common/themeSelectors';
+import React from 'react';
+import { LinkProps } from './Link.types';
+import { Label } from './Link.styles';
 
-export type LinkTypes = 'standard' | 'underline';
-
-export interface LinkProps {
-  /**
-   * The content of the link
-   */
-  children: ReactNode;
-  /**
-   * The onPress event handler
-   */
-  onPress: (ev: NativeSyntheticEvent<NativeTouchEvent>) => void;
-  /**
-   * DefaultTheme
-   */
-  theme: Theme;
-  /**
-   * Optional ID for testing
-   */
-  testID?: string;
-  /**
-   * Controls when the link should have an underline.
-   */
-  type?: LinkTypes;
-}
-
-const LinkComponent = ({
+export const Link = ({
   children,
   onPress,
   testID,
-  theme,
   type = 'standard',
 }: LinkProps) => (
-  <Text
+  <Label
+    testID={testID}
     onPress={onPress}
-    style={{
-      color: getColorLink(theme),
-      textDecorationLine: type === 'underline' ? 'underline' : 'none',
-    }}
-    testID={testID}>
+    type={type}
+  >
     {children}
-  </Text>
+  </Label>
 );
-
-export const Link = withTheme(LinkComponent);
