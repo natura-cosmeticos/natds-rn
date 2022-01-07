@@ -66,7 +66,6 @@ addDecorator(
 );
 
 const docs = require.context('./docs', true, /\.stories.mdx/);
-const tokens = require.context('../src/tokens', true, /\.stories.(ts|md)x?$/);
 const components = require.context('../src/components', true, /\.stories.(ts|md)x?$/);
 
-configure([docs, tokens, components], module);
+configure([docs, components], module);

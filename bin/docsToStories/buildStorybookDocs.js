@@ -27,7 +27,7 @@ const buildFilesInfo = () => {
   const files = [
     {
       fileName: 'README',
-      title: 'Documentation|README',
+      title: 'Documentation|Getting Started',
     },
     {
       fileName: 'CONTRIBUTING',
