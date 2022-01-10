@@ -13,15 +13,15 @@ import React from 'react';
 import styled from 'styled-components/native';
 import { Theme } from '@naturacosmeticos/natds-themes/react-native';
 
-type ContainerStyleProps = {
+type SquareStyleProps = {
   theme: Theme
 }
 
-const Square = styled.View`
-  background-color: ${(props) => props.theme.color.primary};
-  height: ${(props) => props.theme.size.medium}px;
-  width: ${(props) => props.theme.size.medium}px;
-`;
+const Square = styled.View(({ theme }: SquareStyleProps) => ({
+  backgroungColor: theme.color.primary,
+  height: theme.size.medium,
+  width: theme.size.medium,
+}));
 
 export default App = () => (
   <Square />
