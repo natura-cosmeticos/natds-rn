@@ -78,6 +78,8 @@ export default function Theme({ channel, api }) {
   const eventListener = event => handleChange(buildThemeProps(event.matches ? 'dark' : 'light'));
 
   useEffect(() => {
+    handleChange(initialTheme);
+
     const matchMediaEnvent = window.matchMedia('(prefers-color-scheme: dark)');
 
     matchMediaEnvent.addEventListener('change', eventListener);
