@@ -1,13 +1,6 @@
-```
-███╗   ██╗ █████╗ ████████╗██████╗ ███████╗      ██████╗ ███╗   ██╗
-████╗  ██║██╔══██╗╚══██╔══╝██╔══██╗██╔════╝      ██╔══██╗████╗  ██║
-██╔██╗ ██║███████║   ██║   ██║  ██║███████╗█████╗██████╔╝██╔██╗ ██║
-██║╚██╗██║██╔══██║   ██║   ██║  ██║╚════██║╚════╝██╔══██╗██║╚██╗██║
-██║ ╚████║██║  ██║   ██║   ██████╔╝███████║      ██║  ██║██║ ╚████║
-╚═╝  ╚═══╝╚═╝  ╚═╝   ╚═╝   ╚═════╝ ╚══════╝      ╚═╝  ╚═╝╚═╝  ╚═══╝
-```
+# Natura Design System - React Native
 
-The Natura Design system for `react-native`
+React Native components for react-native based projects inside Natura&Co.
 
 [![Build Status](https://app.bitrise.io/app/2c91a0037aed90db/status.svg?token=BG3viyrEObiVtyL99gVNfQ&branch=master)](https://app.bitrise.io/app/2c91a0037aed90db) [![npm version](https://badge.fury.io/js/%40naturacosmeticos%2Fnatds-rn.svg)](https://badge.fury.io/js/%40naturacosmeticos%2Fnatds-rn) ![npm](https://img.shields.io/npm/dm/@naturacosmeticos/natds-rn?label=npm%20downloads) ![GitHub issues](https://img.shields.io/github/issues/natura-cosmeticos/natds-rn) ![NPM](https://img.shields.io/npm/l/@naturacosmeticos/natds-rn)
 
@@ -137,7 +130,9 @@ npx react-native link
 
 ## Fonts
 
-The brand fonts package `@naturacosmeticos/natds-themes` is a dependency of this library, so the font files by brand are available in the `node_modules` folder after installation. To do this, import the method `copyFontsByBrand` to `react-native.config.js` file, passing the brand that you need and the path to your assets folder:
+The brand fonts package `@naturacosmeticos/natds-themes` is a dependency of this library, so the font files by brand are available in the `node_modules` folder after installation. To do this, import the method `copyFontsByBrand` to `react-native.config.js` file, passing the brand that you need and the path to your assets folder.
+
+> Available brands: `aesop`, `avon`, `natura`, `theBodyShop`.
 
 ```javascript
 const copyFontsByBrand = require('@naturacosmeticos/natds-rn/tools/copyFontsByBrand');
@@ -155,8 +150,6 @@ module.exports = {
 };
 ```
 
-> Available brands: `aesop`, `avon`, `natura`, `theBodyShop`.
-
 and then run:
 
 ```shell
@@ -165,25 +158,41 @@ npx react-native copy-fonts && npx react-native link
 
 After that you can use the fonts of the chosen brand within your components using the parameters received from the theme.
 
-Example:
+## Usage
+
+### IOS
+> The configuration of custom fonts on the IOS platform within react native is loaded from your PostScript. Then your font family and your font weight must be declared.
+
 ```javascript
 import React from 'react';
 import styled from 'styled-components/native';
-import { View } from 'react-native';
 
 const CustomText = styled.Text(({ theme }) => ({
-  fontFamily: `"${theme.typography.display.fontFamily}"`,
+  fontFamily: theme.typography.display.fontFamily,
   fontWeight: theme.typography.display.fontWeight,
 }));
 
 export default App = () => (
-  <View>
-    <CustomText>Your Text<CustomText>
-  </View>
+  <CustomText>Your Text</CustomText>
 );
 ```
 
-> Some brand fonts failed to parse declaration, so we recommend that when declaring fontFamily the content must have single and double quotation marks to escape the spaces in the font name, as shown in the example.
+### Android
+> Android platform font declarations are loaded from the font name, which is the same file name. In this case, only the font family must be declared, as the file has its own font weight.
+
+```javascript
+import React from 'react';
+import styled from 'styled-components/native';
+
+const CustomText = styled.Text(({ theme }) => ({
+  fontFamily: theme.asset.font.file.display,
+}));
+
+export default App = () => (
+  <CustomText>Your Text</CustomText>
+);
+```
+
 # Issues
 
 Have an issue, need help or have a feature request? [create a issue](https://github.com/natura-cosmeticos/natds-rn/issues)

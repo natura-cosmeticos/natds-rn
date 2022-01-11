@@ -22,28 +22,21 @@ const createStorybookLinks = (content) => {
 };
 
 const buildFilesInfo = () => {
-  const docsFolderFiles = fs.readdirSync('./docs');
-
   const files = [
     {
       fileName: 'README',
-      title: 'Documentation|README',
+      title: 'Documentation|Getting Started',
     },
     {
-      fileName: 'CONTRIBUTING',
-      title: 'Documentation|Contributing',
+      fileName: 'CHANGELOG',
+      title: 'Documentation|Changelog',
+    },
+    {
+      fileName: 'DesignTokens',
+      filePath: 'docs/',
+      title: 'Documentation|Design Tokens',
     },
   ];
-
-  docsFolderFiles.forEach((file) => {
-    const fileName = file.replace('.md', '');
-
-    files.push({
-      fileName,
-      filePath: 'docs/',
-      title: `Documentation|${fileName}`,
-    });
-  });
 
   return files;
 };
