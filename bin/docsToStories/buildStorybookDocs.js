@@ -28,6 +28,10 @@ const buildFilesInfo = () => {
       title: 'Documentation|Getting Started',
     },
     {
+      fileName: 'CHANGELOG',
+      title: 'Documentation|Changelog',
+    },
+    {
       fileName: 'DesignTokens',
       filePath: 'docs/',
       title: 'Documentation|Design Tokens',
