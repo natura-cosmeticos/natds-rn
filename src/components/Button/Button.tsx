@@ -5,6 +5,8 @@ import { ButtonProps } from './Button.types';
 export const Button = ({
   accessibilityHint,
   accessibilityLabel,
+  accessibilityActions,
+  onAccessibilityAction,
   disabled = false,
   iconName,
   iconPosition,
@@ -15,6 +17,8 @@ export const Button = ({
   type = 'contained',
 }: ButtonProps) => (
   <ButtonBase
+    onAccessibilityAction={onAccessibilityAction}
+    accessibilityActions={accessibilityActions}
     accessibilityHint={accessibilityHint}
     accessibilityLabel={accessibilityLabel}
     disabled={disabled}
