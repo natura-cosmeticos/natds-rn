@@ -1,6 +1,6 @@
 /* eslint-disable max-lines */
 import React, {
-  Dispatch, SetStateAction, useState,
+  Dispatch, SetStateAction, forwardRef, useState,
 } from 'react';
 import {
   KeyboardTypeOptions, NativeSyntheticEvent, TextInputFocusEventData, Platform,
@@ -61,7 +61,7 @@ const getContainerProps = ({
 };
 
 // eslint-disable-next-line complexity
-export const TextField = (props: TextFieldProps) => {
+export const TextField = forwardRef<any, TextFieldProps>((props, ref) => {
   const theme = useTheme();
   const [active, setActive] = useState(false);
   const [numberValue, setNumberValue] = useState('');
@@ -102,6 +102,7 @@ export const TextField = (props: TextFieldProps) => {
       })}
     >
       <Input
+        ref={ref}
         style={{ textAlignVertical: isAndroidMultiline ? 'top' : 'auto' }}
         testID={testID}
         disabled={disabled}
@@ -189,4 +190,4 @@ export const TextField = (props: TextFieldProps) => {
       }
     </InputFeedbackContainer>
   );
-};
+});
