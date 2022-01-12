@@ -7,10 +7,16 @@ export const Link = ({
   onPress,
   testID,
   type = 'standard',
+  accessibilityHint,
+  accessibilityLabel,
+  accessibilityRole,
 }: LinkProps) => (
   <Label
-    testID={testID}
+    accessibilityHint={accessibilityHint}
+    accessibilityLabel={accessibilityLabel}
+    accessibilityRole={accessibilityRole}
     onPress={onPress}
+    testID={testID}
     type={type}
   >
     {children}
