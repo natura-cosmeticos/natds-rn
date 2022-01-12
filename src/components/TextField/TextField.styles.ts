@@ -74,7 +74,3 @@ export const ActionImage = styled.View<Pick<InputStyleProps, 'size' | 'theme'>>(
 export const ActionIcon = styled.View(({ theme }): CSSObject => ({
   paddingHorizontal: getSpacingTiny(theme),
 }));
-
-export const ActionIasdascon = styled.TextInput(({ theme }): CSSObject => ({
-  paddingHorizontal: getSpacingTiny(theme),
-}));
