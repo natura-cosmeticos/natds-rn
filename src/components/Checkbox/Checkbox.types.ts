@@ -1,11 +1,19 @@
 /* eslint-disable max-len */
+import { AccessibilityProps } from 'react-native';
 
 /**
  * @deprecated this prop is no longer necessary as this component should always be used with the primary color.
  */
 export type CheckboxColors = 'primary' | 'secondary';
 
-export interface CheckboxProps {
+type AccessibilityCheckboxProps = Pick<AccessibilityProps,
+  'accessibilityLabel' |
+  'accessibilityHint' |
+  'accessibilityRole' |
+  'accessibilityState'
+>
+
+export interface CheckboxProps extends AccessibilityCheckboxProps {
   /**
    * <span style="color:red">*Deprecated, this prop is no longer necessary as this component should always be used with the primary color.*</span>
    * Define what the color will be, according to the corresponding values.
