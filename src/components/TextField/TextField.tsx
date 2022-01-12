@@ -1,5 +1,7 @@
 /* eslint-disable max-lines */
-import React, { Dispatch, SetStateAction } from 'react';
+import React, {
+  Dispatch, SetStateAction, useState,
+} from 'react';
 import {
   KeyboardTypeOptions, NativeSyntheticEvent, TextInputFocusEventData, Platform,
 } from 'react-native';
@@ -61,8 +63,8 @@ const getContainerProps = ({
 // eslint-disable-next-line complexity
 export const TextField = (props: TextFieldProps) => {
   const theme = useTheme();
-  const [active, setActive] = React.useState(false);
-  const [numberValue, setNumberValue] = React.useState('');
+  const [active, setActive] = useState(false);
+  const [numberValue, setNumberValue] = useState('');
 
   const {
     action,
@@ -84,7 +86,7 @@ export const TextField = (props: TextFieldProps) => {
     testID = 'ds-input',
     multiline = false,
   }: TextFieldProps = props;
-  const [secureState, setSecureState] = React.useState(isPasswordType(type));
+  const [secureState, setSecureState] = useState(isPasswordType(type));
   const fieldValue = getFieldValue({ numberValue, type, value });
 
   const isAndroidMultiline = Platform.OS === 'android' && multiline;
@@ -169,6 +171,9 @@ export const TextField = (props: TextFieldProps) => {
       />
       { actionComponent && !!action
         && <TextFieldAction
+            accessibilityButtonHint={props.accessibilityButtonHint}
+            accessibilityButtonLabel={props.accessibilityButtonLabel}
+            accessibilityButtonRole={props.accessibilityButtonRole}
             action={action}
             actionComponent={actionComponent}
             size={size}
@@ -176,9 +181,11 @@ export const TextField = (props: TextFieldProps) => {
       }
       { !actionComponent && type === 'password'
         && <TextFieldPasswordAction
-          secureState={secureState}
-          onPress={() => setSecureState(!secureState)}
-        />
+            accessibilityButtonHint={props.accessibilityButtonHint}
+            accessibilityButtonLabel={props.accessibilityButtonLabel}
+            secureState={secureState}
+            onPress={() => setSecureState(!secureState)}
+          />
       }
     </InputFeedbackContainer>
   );

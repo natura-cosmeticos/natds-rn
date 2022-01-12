@@ -81,11 +81,30 @@ type TextFieldStates = 'enabled' | 'focus' | 'active' | 'filled';
 
 export type TextFieldTypes = 'text' | 'password' | 'number';
 
+export type AccessibilityButtonProps = {
+  /**
+   * An accessibility hint helps users understand what will happen when they perform an action on the accessibility element when that result is not obvious from the accessibility label.
+   */
+  accessibilityButtonHint?: AccessibilityProps['accessibilityHint'],
+  /**
+   * Overrides the text that's read by the screen reader when the user interacts with the element. By default, the label is constructed by traversing all the children and accumulating all the Text nodes separated by space.
+   */
+  accessibilityButtonLabel?: AccessibilityProps['accessibilityLabel'],
+  /**
+   * Accessibility Role tells a person using either VoiceOver on iOS or TalkBack on Android the type of element that is focused on.
+   */
+  accessibilityButtonRole?: AccessibilityProps['accessibilityRole'],
+}
 interface BaseProps extends
   AccessibilityProps,
   MultiPlatformProps,
   AndroidProps,
+  AccessibilityButtonProps,
   IOSProps {
+    /**
+     * The ref attibute allows you to create a reference to the component instance, which can be used to access the methods and properties of the component.
+     */
+    ref?: any,
     /**
      * Disabled TextField's are used when the user needs to perform
      * another action before being able to interact with the field.
