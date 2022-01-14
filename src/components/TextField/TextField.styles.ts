@@ -44,7 +44,7 @@ export const Input = styled.TextInput<InputStyleProps & CSSProperties>`
     disabled, hasActionIcon, readonly, size, theme, multiline = false,
   }) => css`
     background-color: ${readonly ? getReadonlyColor(theme) : getColorSurface(theme)};
-    border-radius: ${getBorderRadiusMedium(theme)};
+    border-radius: ${getBorderRadiusMedium(theme)}px;
     color: ${getTextColor(disabled, theme)};
     flex-grow: 1;
     font-family: ${theme.textField.content.primary.fontFamily};
@@ -53,7 +53,7 @@ export const Input = styled.TextInput<InputStyleProps & CSSProperties>`
     letter-spacing: ${theme.textField.content.letterSpacing}px;
     max-width: 100%;
     ${multiline && `line-height: ${theme.textField.content.fontSize * theme.textField.content.lineHeight}px;`};
-    min-height: ${getFieldHeight(size, theme)};
+    min-height: ${getFieldHeight(size, theme)}px;
     overflow: hidden;
     padding-left: ${getSpacingSmall(theme)}px;
     padding-right: ${hasActionIcon ? 0 : getSpacingSmall(theme)}px;
