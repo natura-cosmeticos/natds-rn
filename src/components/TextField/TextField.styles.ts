@@ -1,5 +1,5 @@
 import { Theme } from '@naturacosmeticos/natds-themes/react-native';
-import { CSSObject, CSSProperties } from 'styled-components';
+import { css, CSSObject, CSSProperties } from 'styled-components';
 import styled from 'styled-components/native';
 import {
   buildColorWithOpacity,
@@ -39,31 +39,27 @@ export const getPlaceholderTextColor = (disabled: boolean, theme: Theme) => (
   disabled ? getColorLowEmphasis(theme) : getColorMediumEmphasis(theme)
 );
 
-const getInputLineHeight = (multiline: boolean, theme: Theme) => (
-  multiline && {
-    lineHeight: theme.textField.content.fontSize * theme.textField.content.lineHeight,
-  }
-);
-
-export const Input = styled.TextInput<InputStyleProps & CSSProperties>(({
-  disabled, hasActionIcon, readonly, size, theme, multiline = false,
-}): CSSObject => ({
-  ...getInputLineHeight(multiline, theme),
-  backgroundColor: readonly ? getReadonlyColor(theme) : getColorSurface(theme),
-  borderRadius: getBorderRadiusMedium(theme),
-  color: getTextColor(disabled, theme),
-  flexGrow: 1,
-  fontFamily: theme.textField.content.primary.fontFamily,
-  fontSize: theme.textField.content.fontSize,
-  fontWeight: theme.textField.content.primary.fontWeight,
-  letterSpacing: theme.textField.content.letterSpacing,
-  maxWidth: '100%',
-  minHeight: getFieldHeight(size, theme),
-  overflow: 'hidden',
-  paddingLeft: getSpacingSmall(theme),
-  paddingRight: hasActionIcon ? 0 : getSpacingSmall(theme),
-  width: 10,
-}));
+export const Input = styled.TextInput<InputStyleProps & CSSProperties>`
+  ${({
+    disabled, hasActionIcon, readonly, size, theme, multiline = false,
+  }) => css`
+    background-color: ${readonly ? getReadonlyColor(theme) : getColorSurface(theme)};
+    border-radius: ${getBorderRadiusMedium(theme)}px;
+    color: ${getTextColor(disabled, theme)};
+    flex-grow: 1;
+    font-family: ${theme.textField.content.primary.fontFamily};
+    font-size: ${theme.textField.content.fontSize}px;
+    font-weight: ${theme.textField.content.primary.fontWeight};
+    letter-spacing: ${theme.textField.content.letterSpacing}px;
+    max-width: 100%;
+    ${multiline && `line-height: ${theme.textField.content.fontSize * theme.textField.content.lineHeight}px;`};
+    min-height: ${getFieldHeight(size, theme)}px;
+    overflow: hidden;
+    padding-left: ${getSpacingSmall(theme)}px;
+    padding-right: ${hasActionIcon ? 0 : getSpacingSmall(theme)}px;
+    width: 10px;
+  `}
+`;
 
 export const ActionImage = styled.View<Pick<InputStyleProps, 'size' | 'theme'>>(
   ({ size, theme }): CSSObject => ({

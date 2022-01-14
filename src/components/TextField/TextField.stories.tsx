@@ -88,7 +88,7 @@ export const Sizes = () => {
           onChangeText={text => setMediumXValue(text)}
           placeholder="Placeholder"
           value={mediumXValue}
-          />
+        />
       </StoryContainer>
       <StoryContainer title="Medium">
         <TextField

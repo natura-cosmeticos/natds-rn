@@ -1,4 +1,4 @@
-import { StyleProp, TextStyle } from 'react-native';
+import { StyleProp, TextStyle, AccessibilityProps } from 'react-native';
 import { IconName } from '@naturacosmeticos/natds-icons';
 import { Theme } from '@naturacosmeticos/natds-themes/react-native';
 
@@ -16,18 +16,14 @@ export interface ButtonBaseProps extends ButtonProps {
   textLabelStyle?: StyleProp<TextStyle>
 }
 
-export interface ButtonProps {
-  /**
-   * An accessibility hint helps users understand what will happen when they perform an action
-   * on the accessibility element when that result is not clear from the accessibility label.
-   */
-  accessibilityHint?: string
-  /**
-   * Overrides the text that's read by the screen reader when the user interacts with the element.
-   * By default, the label is constructed by traversing all the children and accumulating
-   * all the Text nodes separated by space.
-   */
-  accessibilityLabel?: string
+type AccessibilityButtonProps = Pick<AccessibilityProps,
+  'accessibilityActions' |
+  'onAccessibilityAction' |
+  'accessibilityHint' |
+  'accessibilityLabel'
+>
+
+export interface ButtonProps extends AccessibilityButtonProps {
   /**
    * A disabled button is unusable and un-clickable.
    * The disabled attribute can be set to keep a user from clicking on the button until some

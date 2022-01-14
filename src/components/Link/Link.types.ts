@@ -1,9 +1,14 @@
 import { ReactNode } from 'react';
-import { NativeSyntheticEvent, NativeTouchEvent } from 'react-native';
+import { NativeSyntheticEvent, NativeTouchEvent, AccessibilityProps } from 'react-native';
 
 export type LinkTypes = 'standard' | 'underline';
 
-export interface LinkProps {
+type AccessibilityLinkProps = Pick<AccessibilityProps,
+  'accessibilityHint' |
+  'accessibilityRole'
+>
+
+export interface LinkProps extends AccessibilityLinkProps {
   /**
    * The content of the link.
    * @required

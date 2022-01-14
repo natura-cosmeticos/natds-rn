@@ -22,6 +22,10 @@ const SelectedIcon = ({ indeterminate }: { indeterminate: boolean }): JSX.Elemen
 );
 
 export const Checkbox = ({
+  accessibilityHint,
+  accessibilityLabel,
+  accessibilityRole,
+  accessibilityState,
   color = 'primary',
   disabled = false,
   indeterminate = false,
@@ -38,7 +42,15 @@ export const Checkbox = ({
   };
 
   const checkbox = (
-    <Container disabled={disabled} testID={testID} onPress={onPressWithValue}>
+    <Container
+      accessibilityHint={accessibilityHint}
+      accessibilityLabel={accessibilityLabel}
+      accessibilityRole={accessibilityRole}
+      accessibilityState={accessibilityState}
+      disabled={disabled}
+      onPress={onPressWithValue}
+      testID={testID}
+    >
       <TouchableRipple
         size={20}
         color={color}
