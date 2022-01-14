@@ -4,7 +4,6 @@ import { NativeSyntheticEvent, NativeTouchEvent, AccessibilityProps } from 'reac
 export type LinkTypes = 'standard' | 'underline';
 
 type AccessibilityLinkProps = Pick<AccessibilityProps,
-  'accessibilityLabel' |
   'accessibilityHint' |
   'accessibilityRole'
 >
