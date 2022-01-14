@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [7.21.0](https://github.com/natura-cosmeticos/natds-rn/compare/v7.20.0...v7.21.0) (2022-01-14)
+
+
+### Features
+
+* **natds-rn:** improving a11y of the login page components ([#238](https://github.com/natura-cosmeticos/natds-rn/issues/238)) ([2412f8d](https://github.com/natura-cosmeticos/natds-rn/commit/2412f8ddf7f79a6f8a222d51847f5761bf82138a))
+
 ## [7.20.0](https://github.com/natura-cosmeticos/natds-rn/compare/v7.19.0...v7.20.0) (2021-12-27)
 
 
