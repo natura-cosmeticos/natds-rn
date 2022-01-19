@@ -1,5 +1,5 @@
-import { ReactNode } from 'react';
-import { StyleProp, TextProps } from 'react-native';
+import { ReactNode } from 'react'
+import { StyleProp, TextProps } from 'react-native'
 
 export type TypographyVariants =
   'heading1'
@@ -19,18 +19,18 @@ export interface TypographyProps {
   /**
    * Optional ID for testing
    */
-  testID?: string
+  testID?: string;
   /**
    * The component content
    */
-  children: ReactNode
+  children: ReactNode;
   /**
    * Overwrites or extends the styles applied to the component.
    */
-  style?: StyleProp<TextProps>
+  style?: StyleProp<TextProps>;
   /**
    * Applies the theme typography styles.
    * @default 'heading1'
    */
-  variant?: TypographyVariants
+  variant?: TypographyVariants;
 }
