@@ -1,4 +1,4 @@
-import { storiesOf } from '@storybook/react-native';
+import { storiesOf } from '@storybook/react-native'
 import {
   Default,
   Icons,
@@ -6,8 +6,8 @@ import {
   Sizes,
   Disabled,
   Display,
-  Variants,
-} from './Button.stories';
+  Variants
+} from './Button.stories'
 
 storiesOf('Button', module)
   .add('Default', Default)
@@ -16,4 +16,4 @@ storiesOf('Button', module)
   .add('Icons', Icons)
   .add('Disabled', Disabled)
   .add('Display', Display)
-  .add('Interactive', Interactive);
+  .add('Interactive', Interactive)

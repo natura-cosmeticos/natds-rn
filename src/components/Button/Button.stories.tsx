@@ -1,10 +1,10 @@
 /* eslint-disable max-lines */
-import React from 'react';
-import { View } from 'react-native';
-import { boolean, select, text as textKnob } from '@storybook/addon-knobs';
-import { StoryContainer, StoryWrapper } from '../../common/HelperComponents/StoryContainer';
-import { Button } from './Button';
-import { ButtonSizes, ButtonTypes } from './Button.types';
+import React from 'react'
+import { View } from 'react-native'
+import { boolean, select, text as textKnob } from '@storybook/addon-knobs'
+import { StoryContainer, StoryWrapper } from '../../common/HelperComponents/StoryContainer'
+import { Button } from './Button'
+import { ButtonSizes, ButtonTypes } from './Button.types'
 
 const description = () => `
 ---
@@ -30,38 +30,37 @@ With the following attribute statuses:
     - ✅ \`block\`
 
 ---
-`;
-
+`
 
 export default {
   component: Button,
   parameters: {
     componentSubtitle: 'Buttons allow users to take actions, and make choices, with a single tap.',
     docs: {
-      extractComponentDescription: description,
-    },
+      extractComponentDescription: description
+    }
   },
-  title: 'Components|Button',
-};
+  title: 'Components|Button'
+}
 
-const onPress = () => { };
+const onPress = () => ({})
 
 const buttonTypes = {
   contained: 'contained',
   outlined: 'outlined',
-  text: 'text',
-};
+  text: 'text'
+}
 const buttonSizes = {
   medium: 'medium',
   semi: 'semi',
-  semiX: 'semiX',
-};
+  semiX: 'semiX'
+}
 
 export const Default = () => (
   <StoryContainer title="Standard">
     <Button onPress={onPress} text="Natura Design System" />
   </StoryContainer>
-);
+)
 
 export const Variants = () => (
   <StoryWrapper title="Variants">
@@ -75,7 +74,7 @@ export const Variants = () => (
       <Button onPress={onPress} text="Natura Design System" type="text" />
     </StoryContainer>
   </StoryWrapper>
-);
+)
 
 export const Sizes = () => (
   <StoryWrapper title="Sizes">
@@ -89,7 +88,7 @@ export const Sizes = () => (
       <Button onPress={onPress} text="Natura Design System" size="semi" />
     </StoryContainer>
   </StoryWrapper>
-);
+)
 
 export const Icons = () => (
   <StoryWrapper title="Icons">
@@ -100,7 +99,7 @@ export const Icons = () => (
       <Button onPress={onPress} text="Natura Design System" iconName="outlined-default-mockup" iconPosition="right" />
     </StoryContainer>
   </StoryWrapper>
-);
+)
 
 export const Disabled = () => (
   <StoryWrapper title="Disabled">
@@ -114,7 +113,7 @@ export const Disabled = () => (
       <Button onPress={onPress} text="Natura Design System" type="text" disabled />
     </StoryContainer>
   </StoryWrapper>
-);
+)
 
 export const Display = () => (
   <StoryWrapper title="Display">
@@ -129,7 +128,7 @@ export const Display = () => (
       </View>
     </StoryContainer>
   </StoryWrapper>
-);
+)
 
 export const Interactive = () => (
   <StoryContainer title="Interactive">
@@ -141,4 +140,4 @@ export const Interactive = () => (
       type={select('Types', buttonTypes, 'contained') as ButtonTypes}
     />
   </StoryContainer>
-);
+)
