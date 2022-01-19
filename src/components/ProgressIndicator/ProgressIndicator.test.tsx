@@ -1,55 +1,55 @@
-import React from 'react';
-import { ThemeProvider } from 'styled-components/native';
-import renderer from 'react-test-renderer';
-import theme from '../../common/themeSelectors/theme/mock-theme.json';
-import { ProgressIndicator, ProgressIndicatorProps } from './ProgressIndicator';
+import React from 'react'
+import { ThemeProvider } from 'styled-components/native'
+import renderer from 'react-test-renderer'
+import theme from '../../common/themeSelectors/theme/mock-theme.json'
+import { ProgressIndicator, ProgressIndicatorProps } from './ProgressIndicator'
 
-jest.useFakeTimers();
+jest.useFakeTimers()
 
 const renderProgressIndicator = (
-  props?: Omit<ProgressIndicatorProps, 'theme'>,
+  props?: Omit<ProgressIndicatorProps, 'theme'>
 ) => renderer.create(
   <ThemeProvider theme={theme}>
     <ProgressIndicator {...props} />
-  </ThemeProvider>,
-);
+  </ThemeProvider>
+)
 
 describe('ProgressIndicator component', () => {
   it('Should render progress indicator correctly', () => {
-    const progressIndicator = renderProgressIndicator().toJSON();
+    const progressIndicator = renderProgressIndicator().toJSON()
 
-    expect(progressIndicator).toMatchSnapshot();
-  });
+    expect(progressIndicator).toMatchSnapshot()
+  })
 
   it('Should render progress indicator - size standard', () => {
     const progressIndicator = renderProgressIndicator({
-      size: 'standard',
-    }).toJSON();
+      size: 'standard'
+    }).toJSON()
 
-    expect(progressIndicator).toMatchSnapshot();
-  });
+    expect(progressIndicator).toMatchSnapshot()
+  })
 
   it('Should render progress indicator - size semi', () => {
     const progressIndicator = renderProgressIndicator({
-      size: 'semi',
-    }).toJSON();
+      size: 'semi'
+    }).toJSON()
 
-    expect(progressIndicator).toMatchSnapshot();
-  });
+    expect(progressIndicator).toMatchSnapshot()
+  })
 
   it('Should render progress indicator - size large', () => {
     const progressIndicator = renderProgressIndicator({
-      size: 'large',
-    }).toJSON();
+      size: 'large'
+    }).toJSON()
 
-    expect(progressIndicator).toMatchSnapshot();
-  });
+    expect(progressIndicator).toMatchSnapshot()
+  })
 
   it('Should render progress indicator - show layer', () => {
     const progressIndicator = renderProgressIndicator({
-      showLayer: true,
-    }).toJSON();
+      showLayer: true
+    }).toJSON()
 
-    expect(progressIndicator).toMatchSnapshot();
-  });
-});
+    expect(progressIndicator).toMatchSnapshot()
+  })
+})

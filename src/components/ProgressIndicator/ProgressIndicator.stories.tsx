@@ -1,28 +1,28 @@
-import React from 'react';
-import { boolean, select } from '@storybook/addon-knobs';
-import { View } from 'react-native';
-import { ContainerWithTheme } from '../../common/HelperComponents/ThemeHelper.styles';
+import React from 'react'
+import { boolean, select } from '@storybook/addon-knobs'
+import { View } from 'react-native'
+import { ContainerWithTheme } from '../../common/HelperComponents/ThemeHelper.styles'
 import {
   ProgressIndicator,
   ProgressIndicatorComponent,
-  ProgressIndicatorSizes,
-} from './ProgressIndicator';
+  ProgressIndicatorSizes
+} from './ProgressIndicator'
 
 export default {
   component: ProgressIndicatorComponent,
   parameters: {
     componentSubtitle:
-      'Progress indicators express an unspecified wait time or display the length of a process.',
+      'Progress indicators express an unspecified wait time or display the length of a process.'
   },
-  title: 'Components|ProgressIndicator',
-};
+  title: 'Components|ProgressIndicator'
+}
 
 const sizesTypes = {
   large: 'large',
   medium: 'medium',
   semi: 'semi',
-  standard: 'standard',
-};
+  standard: 'standard'
+}
 
 export const all = () => (
   <View style={{ maxWidth: 600 }}>
@@ -32,7 +32,7 @@ export const all = () => (
       </View>
     </ContainerWithTheme>
   </View>
-);
+)
 
 export const interactive = () => (
   <View style={{ maxWidth: 600 }}>
@@ -45,4 +45,4 @@ export const interactive = () => (
       </View>
     </ContainerWithTheme>
   </View>
-);
+)
