@@ -1,6 +1,6 @@
 import {
-  Color, Neutral, Size,
-} from '@naturacosmeticos/natds-themes';
+  Color, Neutral, Size
+} from '@naturacosmeticos/natds-themes'
 
 export type LogoColors = 'neutral' | keyof Pick<Color, 'primary' | 'secondary' | 'highlight' | 'surface'>
 export type LogoSizes = keyof Pick<Size, 'medium' | 'mediumX' | 'large' | 'largeX' | 'largeXX' | 'largeXXX' | 'huge' | 'hugeX' | 'hugeXX' | 'hugeXXX' | 'veryHuge'>
@@ -28,5 +28,5 @@ export interface LogoProps {
    * Sets the size of the logo
    * @default veryHuge
    */
-  size?: LogoSizes
+  size?: LogoSizes;
 }
