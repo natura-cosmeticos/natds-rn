@@ -1,12 +1,12 @@
-import React from 'react';
-import { useTheme } from 'styled-components/native';
-import { TouchableRipple } from '../TouchableRipple/TouchableRipple';
-import { getSize } from '../../common/themeSelectors';
+import React from 'react'
+import { useTheme } from 'styled-components/native'
+import { TouchableRipple } from '../TouchableRipple/TouchableRipple'
+import { getSize } from '../../common/themeSelectors'
 import {
-  getContainerElevation,
-} from './IconButton.helpers';
-import { IconButtonBaseProps } from './IconButton.types';
-import { IconContainer } from './IconButton.styles';
+  getContainerElevation
+} from './IconButton.helpers'
+import { IconButtonBaseProps } from './IconButton.types'
+import { IconContainer } from './IconButton.styles'
 
 export const IconButtonBase = ({
   size = 'semi',
@@ -14,9 +14,9 @@ export const IconButtonBase = ({
   backgroundStyle = 'none',
   disabled = false,
   onPress,
-  testID,
+  testID
 }: IconButtonBaseProps) => {
-  const theme = useTheme();
+  const theme = useTheme()
 
   return (
     <TouchableRipple
@@ -34,8 +34,8 @@ export const IconButtonBase = ({
         style={getContainerElevation(backgroundStyle, theme)}
         testID={`${testID}-background`}
       >
-       {IconComponent}
+        {IconComponent}
       </IconContainer>
     </TouchableRipple>
-  );
-};
+  )
+}

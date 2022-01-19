@@ -1,4 +1,4 @@
-import { storiesOf } from '@storybook/react-native';
+import { storiesOf } from '@storybook/react-native'
 import {
   Interactive,
   Base,
@@ -6,8 +6,8 @@ import {
   BackgroundStyle,
   Disabled,
   Size,
-  Icon,
-} from './IconButton.stories';
+  Icon
+} from './IconButton.stories'
 
 storiesOf('IconButton', module)
   .add('Base', Base)
@@ -16,4 +16,4 @@ storiesOf('IconButton', module)
   .add('Disabled', Disabled)
   .add('Size', Size)
   .add('Icon', Icon)
-  .add('Interactive', Interactive);
+  .add('Interactive', Interactive)

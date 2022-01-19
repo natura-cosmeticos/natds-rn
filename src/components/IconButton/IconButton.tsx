@@ -1,11 +1,11 @@
-import React from 'react';
-import { Icon } from '../Icon/Icon';
-import { IconButtonProps } from './IconButton.types';
+import React from 'react'
+import { Icon } from '../Icon/Icon'
+import { IconButtonProps } from './IconButton.types'
 import {
   getIconColor,
-  getIconSize,
-} from './IconButton.helpers';
-import { IconButtonBase } from './IconButtonBase';
+  getIconSize
+} from './IconButton.helpers'
+import { IconButtonBase } from './IconButtonBase'
 
 export const IconButton = ({
   accessibilityHint,
@@ -17,24 +17,24 @@ export const IconButton = ({
   backgroundStyle = 'none',
   disabled = false,
   onPress,
-  testID = 'ds-icon-button',
+  testID = 'ds-icon-button'
 }: IconButtonProps) => (
-    <IconButtonBase
-      disabled={disabled}
-      size={size}
-      backgroundStyle={backgroundStyle}
-      testID={testID}
-      onPress={disabled ? undefined : onPress}
-      IconComponent={(
-        <Icon
-          accessibilityHint={accessibilityHint}
-          accessibilityLabel={accessibilityLabel}
-          accessibilityRole="imagebutton"
-          size={getIconSize(size)}
-          color={getIconColor(iconColor, disabled)}
-          name={icon}
-          testID={`${testID}-icon`}
-        />
+  <IconButtonBase
+    disabled={disabled}
+    size={size}
+    backgroundStyle={backgroundStyle}
+    testID={testID}
+    onPress={disabled ? undefined : onPress}
+    IconComponent={(
+      <Icon
+        accessibilityHint={accessibilityHint}
+        accessibilityLabel={accessibilityLabel}
+        accessibilityRole="imagebutton"
+        size={getIconSize(size)}
+        color={getIconColor(iconColor, disabled)}
+        name={icon}
+        testID={`${testID}-icon`}
+      />
       )}
-    />
-);
+  />
+)
