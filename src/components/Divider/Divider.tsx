@@ -1,12 +1,12 @@
-import React from 'react';
-import { View } from 'react-native';
-import styled, { withTheme } from 'styled-components/native';
+import React from 'react'
+import { View } from 'react-native'
+import styled, { withTheme } from 'styled-components/native'
 import {
   Theme,
   getColorLowEmphasis,
   getSpacingStandard,
-  getSpacingNone,
-} from '../../common/themeSelectors';
+  getSpacingNone
+} from '../../common/themeSelectors'
 
 export type DividerTypes = 'fullBleed' | 'inset' | 'middle';
 
@@ -33,32 +33,32 @@ interface DividerBase {
 const getViewStyles = (type: DividerTypes, theme: Theme) => {
   const styles = {
     inset: {
-      marginLeft: getSpacingStandard(theme),
+      marginLeft: getSpacingStandard(theme)
     },
     middle: {
       marginLeft: getSpacingStandard(theme),
-      marginRight: getSpacingStandard(theme),
-    },
-  };
+      marginRight: getSpacingStandard(theme)
+    }
+  }
 
-  return styles[type];
-};
+  return styles[type]
+}
 
 const DividerBase = styled.View<DividerBase>(({ theme }) => ({
   backgroundColor: getColorLowEmphasis(theme),
   height: 1,
   margin: getSpacingNone(theme),
-  width: '100%',
-}));
+  width: '100%'
+}))
 
 const DividerComponent = ({
   theme,
   type = 'fullBleed',
-  testID = 'divider',
+  testID = 'divider'
 }: DividerProps) => (
   <View style={getViewStyles(type, theme)}>
     <DividerBase type={type} testID={testID} />
   </View>
-);
+)
 
-export const Divider = withTheme(DividerComponent);
+export const Divider = withTheme(DividerComponent)

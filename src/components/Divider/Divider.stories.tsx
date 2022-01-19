@@ -1,7 +1,8 @@
-import React from 'react';
-import { View } from 'react-native';
-import { Divider } from './Divider';
-import { ContainerWithBorder, TextWithTheme } from '../../common/HelperComponents/ThemeHelper.styles';
+import React, { ReactNode } from 'react'
+import { View } from 'react-native'
+import { StoryFn } from '@storybook/addons'
+import { Divider } from './Divider'
+import { ContainerWithBorder, TextWithTheme } from '../../common/HelperComponents/ThemeHelper.styles'
 
 const description = () => `
 - - -
@@ -14,7 +15,7 @@ const description = () => `
   - ✅ Middle
 
 - - -
-`;
+`
 
 export default {
   component: Divider,
@@ -22,21 +23,22 @@ export default {
     componentSubtitle:
       'A divider is a thin line that groups content in lists and layouts.',
     docs: {
-      extractComponentDescription: description,
-    },
+      extractComponentDescription: description
+    }
   },
-  title: 'Components|Divider',
-};
+  title: 'Components|Divider'
+}
 
-export const all = () => (
+export const all: StoryFn<ReactNode> = () => (
   <View style={{ maxWidth: 300, padding: 30 }}>
     <TextWithTheme>fullBleed</TextWithTheme>
     <ContainerWithBorder
       style={{
         height: 50,
         justifyContent: 'center',
-        marginBottom: 20,
-      }}>
+        marginBottom: 20
+      }}
+    >
       <Divider type="fullBleed" />
     </ContainerWithBorder>
     <TextWithTheme>inset</TextWithTheme>
@@ -44,8 +46,9 @@ export const all = () => (
       style={{
         height: 50,
         justifyContent: 'center',
-        marginBottom: 20,
-      }}>
+        marginBottom: 20
+      }}
+    >
       <Divider type="inset" />
     </ContainerWithBorder>
     <TextWithTheme>middle</TextWithTheme>
@@ -53,39 +56,43 @@ export const all = () => (
       style={{
         height: 50,
         justifyContent: 'center',
-        marginBottom: 20,
-      }}>
+        marginBottom: 20
+      }}
+    >
       <Divider type="middle" />
     </ContainerWithBorder>
   </View>
-);
+)
 
 export const fullBleed = () => (
   <View
     style={{
       height: 50,
-      justifyContent: 'center',
-    }}>
+      justifyContent: 'center'
+    }}
+  >
     <Divider type="fullBleed" />
   </View>
-);
+)
 
 export const inset = () => (
   <View
     style={{
       height: 50,
-      justifyContent: 'center',
-    }}>
+      justifyContent: 'center'
+    }}
+  >
     <Divider type="inset" />
   </View>
-);
+)
 
 export const middle = () => (
   <View
     style={{
       height: 50,
-      justifyContent: 'center',
-    }}>
+      justifyContent: 'center'
+    }}
+  >
     <Divider type="middle" />
   </View>
-);
+)
