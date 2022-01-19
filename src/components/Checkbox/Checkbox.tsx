@@ -1,17 +1,17 @@
-import React from 'react';
-import { IconName } from '@naturacosmeticos/natds-icons';
-import { Icon } from '../Icon';
-import { TouchableRipple } from '../TouchableRipple/TouchableRipple';
+import React from 'react'
+import { IconName } from '@naturacosmeticos/natds-icons'
+import { Icon } from '../Icon'
+import { TouchableRipple } from '../TouchableRipple/TouchableRipple'
 import {
-  Container, Box, Label, Wrapper,
-} from './Checkbox.styles';
-import { CheckboxProps } from './Checkbox.types';
+  Container, Box, Label, Wrapper
+} from './Checkbox.styles'
+import { CheckboxProps } from './Checkbox.types'
 
 const getIconName = (indeterminate: boolean): IconName => (
   indeterminate
     ? 'outlined-action-subtract'
     : 'outlined-action-done'
-);
+)
 
 const SelectedIcon = ({ indeterminate }: { indeterminate: boolean }): JSX.Element => (
   <Icon
@@ -19,7 +19,7 @@ const SelectedIcon = ({ indeterminate }: { indeterminate: boolean }): JSX.Elemen
     name={getIconName(indeterminate)}
     size="small"
   />
-);
+)
 
 export const Checkbox = ({
   accessibilityHint,
@@ -33,13 +33,13 @@ export const Checkbox = ({
   onPress,
   selected = false,
   testID = 'checkbox',
-  value = '',
+  value = ''
 }: CheckboxProps) => {
   const onPressWithValue = () => {
     if (onPress) {
-      onPress(value);
+      onPress(value)
     }
-  };
+  }
 
   const checkbox = (
     <Container
@@ -73,7 +73,7 @@ export const Checkbox = ({
         && <Label testID={`${testID}-label`} disabled={disabled}>{label}</Label>
       }
     </Container>
-  );
+  )
 
-  return checkbox;
-};
+  return checkbox
+}

@@ -1,5 +1,5 @@
 /* eslint-disable max-len */
-import { AccessibilityProps } from 'react-native';
+import { AccessibilityProps } from 'react-native'
 
 /**
  * @deprecated this prop is no longer necessary as this component should always be used with the primary color.
