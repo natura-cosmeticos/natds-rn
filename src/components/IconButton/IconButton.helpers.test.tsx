@@ -1,185 +1,179 @@
 /* eslint-disable mocha/no-setup-in-describe */
-import mockTheme from '../../common/themeSelectors/theme/mock-theme.json';
-import { getShadowBySize, getColorByName, buildColorWithOpacity } from '../../common/themeSelectors';
-import { IconButtonColors, IconButtonSizes } from './IconButton.types';
+import mockTheme from '../../common/themeSelectors/theme/mock-theme.json'
+import { getShadowBySize, getColorByName, buildColorWithOpacity } from '../../common/themeSelectors'
+import { IconButtonColors, IconButtonSizes } from './IconButton.types'
 import {
   getContainerElevation,
   getIconColor,
   getIconSize,
-  getContainerBackgroundColor,
-} from './IconButton.helpers';
+  getContainerBackgroundColor
+} from './IconButton.helpers'
 
-jest.mock('../../common/themeSelectors');
+jest.mock('../../common/themeSelectors', () => ({
+  getShadowBySize: jest.fn().mockReturnValue({ elevation: 3 }),
+  getColorByName: jest.fn().mockReturnValue('#eaeaea'),
+  buildColorWithOpacity: jest.fn().mockReturnValue('#eaeaea00')
+}))
 
 interface IconColorScenarios {
-  expectedIconColor: string,
-  iconColor: IconButtonColors,
-  disabled?: boolean
+  expectedIconColor: string;
+  iconColor: IconButtonColors;
+  disabled?: boolean;
 }
 
 interface IconSizesScenarios {
-  expectedIconSize: string,
-  iconSize: IconButtonSizes,
+  expectedIconSize: string;
+  iconSize: IconButtonSizes;
 }
 
 describe('getContainerElevation', () => {
   afterEach(() => {
-    jest.restoreAllMocks();
-    jest.clearAllMocks();
-  });
+    jest.restoreAllMocks()
+    jest.clearAllMocks()
+  })
 
   it('should return elevation micro when background style is float', () => {
-    // @ts-ignore
-    getShadowBySize.mockReturnValue({ elevation: 3 });
-    getContainerElevation('float', mockTheme);
+    getContainerElevation('float', mockTheme)
 
-    expect(getShadowBySize).toHaveBeenCalled();
-  });
+    expect(getShadowBySize).toHaveBeenCalled()
+  })
 
   it('should return no elevation if background style is not float', () => {
-    const elevation = getContainerElevation('overlay', mockTheme);
+    const elevation = getContainerElevation('overlay', mockTheme)
 
-    expect(elevation).toEqual({});
-    expect(getShadowBySize).not.toHaveBeenCalled();
-  });
-});
+    expect(elevation).toEqual({})
+    expect(getShadowBySize).not.toHaveBeenCalled()
+  })
+})
 
 describe('getIconColor', () => {
   const iconColors: Array<IconColorScenarios> = [
     {
       expectedIconColor: 'highEmphasis',
-      iconColor: 'default',
+      iconColor: 'default'
     },
     {
       expectedIconColor: 'highEmphasis',
-      iconColor: 'highEmphasis',
+      iconColor: 'highEmphasis'
     },
     {
       expectedIconColor: 'surface',
-      iconColor: 'light',
+      iconColor: 'light'
     },
     {
       expectedIconColor: 'primary',
-      iconColor: 'primary',
-    },
-  ];
+      iconColor: 'primary'
+    }
+  ]
 
   const iconColorsDisabled: Array<IconColorScenarios> = [
     {
       expectedIconColor: 'mediumEmphasis',
-      iconColor: 'default',
+      iconColor: 'default'
     },
     {
       expectedIconColor: 'mediumEmphasis',
-      iconColor: 'highEmphasis',
+      iconColor: 'highEmphasis'
     },
     {
       expectedIconColor: 'lowEmphasis',
-      iconColor: 'light',
+      iconColor: 'light'
     },
     {
       expectedIconColor: 'mediumEmphasis',
-      iconColor: 'primary',
-    },
-  ];
+      iconColor: 'primary'
+    }
+  ]
 
   it.each(iconColors)('should return the correct icon color for %o', ({
     expectedIconColor,
-    iconColor,
+    iconColor
   }) => {
-    const result = getIconColor(iconColor, false);
+    const result = getIconColor(iconColor, false)
 
-    expect(result).toEqual(expectedIconColor);
-  });
+    expect(result).toEqual(expectedIconColor)
+  })
 
   it.each(iconColorsDisabled)('should return the correct icon color for %o when is disabled', ({
     expectedIconColor,
-    iconColor,
+    iconColor
   }) => {
-    const result = getIconColor(iconColor, true);
+    const result = getIconColor(iconColor, true)
 
-    expect(result).toEqual(expectedIconColor);
-  });
-});
+    expect(result).toEqual(expectedIconColor)
+  })
+})
 
 describe('getIconSize', () => {
   const iconSizes: Array<IconSizesScenarios> = [
     {
       expectedIconSize: 'semiX',
-      iconSize: 'medium',
+      iconSize: 'medium'
     },
     {
       expectedIconSize: 'standard',
-      iconSize: 'semi',
+      iconSize: 'semi'
     },
     {
       expectedIconSize: 'semi',
-      iconSize: 'semiX',
+      iconSize: 'semiX'
     },
     {
       expectedIconSize: 'standard',
-      iconSize: 'small',
-    },
-  ];
+      iconSize: 'small'
+    }
+  ]
 
   it.each(iconSizes)('should return the correct icon color for %o when is disabled', ({
     expectedIconSize,
-    iconSize,
+    iconSize
   }) => {
-    const result = getIconSize(iconSize);
+    const result = getIconSize(iconSize)
 
-    expect(result).toEqual(expectedIconSize);
-  });
-});
+    expect(result).toEqual(expectedIconSize)
+  })
+})
 
 describe('getContainerBackgroundColor', () => {
   it('should return the background color float', () => {
-    // @ts-ignore
-    getColorByName.mockReturnValue('#eaeaea');
-
     getContainerBackgroundColor({
       backgroundStyle: 'float',
       disabled: false,
-      theme: mockTheme,
-    });
+      theme: mockTheme
+    })
 
-    expect(getColorByName).toHaveBeenCalledWith(mockTheme, 'surface');
-  });
+    expect(getColorByName).toHaveBeenCalledWith(mockTheme, 'surface')
+  })
 
   it('should return the background color float when is disabled', () => {
-    // @ts-ignore
-    getColorByName.mockReturnValue('#eaeaea');
-
     getContainerBackgroundColor({
       backgroundStyle: 'float',
       disabled: true,
-      theme: mockTheme,
-    });
+      theme: mockTheme
+    })
 
-    expect(getColorByName).toHaveBeenCalledWith(mockTheme, 'lowEmphasis');
-  });
+    expect(getColorByName).toHaveBeenCalledWith(mockTheme, 'lowEmphasis')
+  })
 
-  it('should return the background color none', () => {
+  it('should return the background color transparent', () => {
     const backgroundColor = getContainerBackgroundColor({
       backgroundStyle: 'none',
       disabled: false,
-      theme: mockTheme,
-    });
+      theme: mockTheme
+    })
 
-    expect(backgroundColor).toEqual('transparent');
-  });
+    expect(backgroundColor).toEqual('transparent')
+  })
 
-  it('should return the background color overlay', () => {
-    // @ts-ignore
-    buildColorWithOpacity.mockReturnValue('#eaeaea00');
-
+  it('should call with all requested parameters', () => {
+    buildColorWithOpacity(jest.fn(), jest.fn(), mockTheme)
     getContainerBackgroundColor({
       backgroundStyle: 'overlay',
       disabled: false,
-      theme: mockTheme,
-    });
+      theme: mockTheme
+    })
 
     expect(buildColorWithOpacity)
-      .toHaveBeenCalledWith(expect.any(Function), expect.any(Function), mockTheme);
-  });
-});
+      .toHaveBeenCalledWith(expect.any(Function), expect.any(Function), mockTheme)
+  })
+})
