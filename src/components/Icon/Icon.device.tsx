@@ -1,8 +1,8 @@
-import { storiesOf } from '@storybook/react-native';
+import { storiesOf } from '@storybook/react-native'
 import {
-  Default, Interactive,
-} from './Icon.stories';
+  Default, Interactive
+} from './Icon.stories'
 
 storiesOf('Icon', module)
   .add('Default', Default)
-  .add('interactive', Interactive);
+  .add('interactive', Interactive)

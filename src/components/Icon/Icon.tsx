@@ -1,41 +1,41 @@
-import React from 'react';
-import styled from 'styled-components/native';
-import { IconName, icons } from '@naturacosmeticos/natds-icons';
+import React from 'react'
+import styled from 'styled-components/native'
+import { IconName, icons } from '@naturacosmeticos/natds-icons'
 import {
-  getColorByName, getSize, getColorHighEmphasis, Theme,
-} from '../../common/themeSelectors';
-import { IconColors, IconProps } from './Icon.types';
+  getColorByName, getSize, getColorHighEmphasis, Theme
+} from '../../common/themeSelectors'
+import { IconColors, IconProps } from './Icon.types'
 
 type IconStyleProps = {
-  theme: Theme
+  theme: Theme;
 } & IconProps;
 
 export const getIconColor = (theme: Theme, color: IconColors) => {
   switch (color) {
     case '#333333':
-      return color;
+      return color
     case 'default':
-      return getColorHighEmphasis(theme);
+      return getColorHighEmphasis(theme)
     default:
-      return getColorByName(theme, color);
+      return getColorByName(theme, color)
   }
-};
+}
 
 export const IconComponent = styled.Text<IconProps>(({
   color = 'highlight',
   size = 'standard',
-  theme,
+  theme
 }: IconStyleProps) => ({
   color: getIconColor(theme, color),
   fontFamily: 'natds-icons',
-  fontSize: getSize(theme, size),
-}));
+  fontSize: getSize(theme, size)
+}))
 
-const defaultIconName = 'outlined-default-mockup';
+const defaultIconName = 'outlined-default-mockup'
 
 export const checkIconName = (iconName: IconName) => (icons[iconName]
   ? icons[iconName].replace('%', '\\')
-  : icons[defaultIconName]).replace('%', '\\');
+  : icons[defaultIconName]).replace('%', '\\')
 
 export const Icon = ({
   accessibilityHint,
@@ -46,10 +46,10 @@ export const Icon = ({
   testID = 'natds-icon',
   theme,
   size = 'standard',
-  style,
+  style
 }: IconProps) => {
-  const unicodeName = checkIconName(name);
-  const code = JSON.parse(`["${unicodeName}"]`)[0];
+  const unicodeName = checkIconName(name)
+  const code = JSON.parse(`["${unicodeName}"]`)[0]
 
   return (
     <IconComponent
@@ -64,5 +64,5 @@ export const Icon = ({
     >
       {code}
     </IconComponent>
-  );
-};
+  )
+}
