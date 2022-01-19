@@ -79,7 +79,7 @@
     "@commitlint/cli": "8.3.5",
     "@commitlint/config-conventional": "8.3.4",
     "@commitlint/read": "8.3.4",
-    "@naturacosmeticos/eslint-config-natds": "^0.0.3",
+    "@naturacosmeticos/eslint-config-natds": "^0.0.4",
     "@react-native-community/eslint-config": "0.0.5",
     "@storybook/addon-docs": "5.3.21",
     "@storybook/addon-knobs": "5.3.21",
