@@ -1,6 +1,6 @@
 /* eslint-disable max-len */
-import { IconName } from '@naturacosmeticos/natds-icons';
-import { Size } from '@naturacosmeticos/natds-themes/react-native';
+import { IconName } from '@naturacosmeticos/natds-icons'
+import { Size } from '@naturacosmeticos/natds-themes/react-native'
 
 /**
  * @deprecated
@@ -12,6 +12,10 @@ export type AvatarSizes = keyof Pick<Size, 'standard' | 'semi' | 'semiX' | 'medi
  */
 type AvatarTypesDeprecated = 'anonymous';
 export type AvatarTypes = 'image' | 'icon' | 'letter' | AvatarTypesDeprecated;
+
+type AvatarUriProps = {
+  uri: string;
+}
 
 export interface AvatarBaseProps {
   /**
@@ -43,7 +47,7 @@ export type AvatarImageProps = AvatarBaseProps & {
   * URL image.
   * @example imgSource={{uri: IMG_URL}}
   */
-  imgSource?: any;
+  imgSource?: string | AvatarUriProps;
 }
 
 export type AvatarIconProps = AvatarBaseProps & {
