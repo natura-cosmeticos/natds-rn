@@ -1,60 +1,63 @@
-import React from 'react';
-import { fireEvent, render } from '@testing-library/react-native';
-import { ThemeProvider } from 'styled-components/native';
-import theme from '../../common/themeSelectors/theme/mock-theme.json';
-import { Link } from './Link';
-import { LinkProps } from './Link.types';
+import React from 'react'
+import { fireEvent, render } from '@testing-library/react-native'
+import { ThemeProvider } from 'styled-components/native'
+import theme from '../../common/themeSelectors/theme/mock-theme.json'
+import { Link } from './Link'
+import { LinkProps } from './Link.types'
 
 jest.mock(
   'react-native/Libraries/Components/Touchable/TouchableOpacity',
-  () => 'TouchableOpacity',
-);
+  () => 'TouchableOpacity'
+)
 
-const link = (props: Omit<LinkProps, 'theme'>) => (
-  <ThemeProvider theme={theme}>
-    <Link {...props}>{props.children}</Link>
-  </ThemeProvider>
-);
+const link = (props: Omit<LinkProps, 'theme'>) => {
+  const { children } = props
+  return (
+    <ThemeProvider theme={theme}>
+      <Link {...props}>{children}</Link>
+    </ThemeProvider>
+  )
+}
 
 const defaultProps = {
   children: 'something',
   onPress: jest.fn(),
-  testID: 'link',
-};
+  testID: 'link'
+}
 
 describe('Link component', () => {
   it('should render the correct color token', () => {
-    const { queryByTestId } = render(link(defaultProps));
+    const { queryByTestId } = render(link(defaultProps))
 
-    expect(queryByTestId('link')).toHaveStyle({ color: '#227bbd' });
-  });
+    expect(queryByTestId('link')).toHaveStyle({ color: '#227bbd' })
+  })
   it('should render with underline style', () => {
     const { queryByTestId } = render(
-      link({ ...defaultProps, type: 'underline' }),
-    );
+      link({ ...defaultProps, type: 'underline' })
+    )
 
     expect(queryByTestId('link')).toHaveStyle({
-      textDecorationLine: 'underline',
-    });
-  });
+      textDecorationLine: 'underline'
+    })
+  })
   it('should render without underline style as default', () => {
-    const { queryByTestId } = render(link(defaultProps));
+    const { queryByTestId } = render(link(defaultProps))
 
     expect(queryByTestId('link')).toHaveStyle({
-      textDecorationLine: 'none',
-    });
-  });
+      textDecorationLine: 'none'
+    })
+  })
   it('should call the given onPress function', () => {
-    const onPress = jest.fn();
-    const { getByTestId } = render(link({ ...defaultProps, onPress }));
+    const onPress = jest.fn()
+    const { getByTestId } = render(link({ ...defaultProps, onPress }))
 
-    fireEvent.press(getByTestId('link'));
+    fireEvent.press(getByTestId('link'))
 
-    expect(onPress).toHaveBeenCalled();
-  });
+    expect(onPress).toHaveBeenCalled()
+  })
   it('should take a snapshot', () => {
-    const component = render(link(defaultProps)).toJSON();
+    const component = render(link(defaultProps)).toJSON()
 
-    expect(component).toMatchSnapshot();
-  });
-});
+    expect(component).toMatchSnapshot()
+  })
+})

@@ -1,6 +1,6 @@
-import React from 'react';
-import { LinkProps } from './Link.types';
-import { Label } from './Link.styles';
+import React from 'react'
+import { LinkProps } from './Link.types'
+import { Label } from './Link.styles'
 
 export const Link = ({
   children,
@@ -8,7 +8,7 @@ export const Link = ({
   testID,
   type = 'standard',
   accessibilityHint,
-  accessibilityRole,
+  accessibilityRole
 }: LinkProps) => (
   <Label
     accessibilityHint={accessibilityHint}
@@ -19,4 +19,4 @@ export const Link = ({
   >
     {children}
   </Label>
-);
+)

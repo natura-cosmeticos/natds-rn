@@ -1,10 +1,10 @@
-import React from 'react';
-import { Alert } from 'react-native';
-import { select, text as textKnob } from '@storybook/addon-knobs';
+import React from 'react'
+import { Alert } from 'react-native'
+import { select, text as textKnob } from '@storybook/addon-knobs'
 
-import { StoryContainer, StoryWrapper } from '../../common/HelperComponents/StoryContainer';
-import { Link } from './Link';
-import { LinkTypes } from './Link.types';
+import { StoryContainer, StoryWrapper } from '../../common/HelperComponents/StoryContainer'
+import { Link } from './Link'
+import { LinkTypes } from './Link.types'
 
 const description = () => `
 ---
@@ -20,39 +20,39 @@ With the following attribute status:
     - ✅ \`underline\`
 
 ---
-`;
+`
 
 export default {
   component: Link,
   parameters: {
     componentSubtitle: 'The link component allows you to have a pattern for anchor text.',
     docs: {
-      extractComponentDescription: description,
-    },
+      extractComponentDescription: description
+    }
   },
-  title: 'Components|Link',
-};
+  title: 'Components|Link'
+}
 
 const onPress = () => {
-  Alert.alert('something happened');
-};
+  Alert.alert('something happened')
+}
 
 export const Default = () => (
   <StoryContainer title="Standard">
     <Link onPress={onPress}>Natura Design System</Link>
   </StoryContainer>
-);
+)
 
 export const Types = () => (
   <StoryWrapper title="Types">
     <StoryContainer title="Standard">
       <Link onPress={onPress}>Natura Design System</Link>
     </StoryContainer>
-      <StoryContainer title="Underline">
+    <StoryContainer title="Underline">
       <Link onPress={onPress} type="underline">Natura Design System</Link>
     </StoryContainer>
   </StoryWrapper>
-);
+)
 
 export const Interactive = () => (
   <StoryContainer title="Interactive">
@@ -63,4 +63,4 @@ export const Interactive = () => (
       {textKnob('Children', 'Natura Design System')}
     </Link>
   </StoryContainer>
-);
+)
