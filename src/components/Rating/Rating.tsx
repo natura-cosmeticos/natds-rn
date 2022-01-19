@@ -1,26 +1,34 @@
 /* eslint-disable max-len */
-import React from 'react';
-
-import { Wrapper, Content, Label } from './Rating.styles';
+import React from 'react'
+import { Wrapper, Content, Label } from './Rating.styles'
 import {
-  RatingCounterProps, RatingInputProps, RatingProps, RatingReadOnlyProps,
-} from './Rating.types';
-import { RatingBase } from './RatingBase';
+  RatingCounterProps, RatingInputProps, RatingProps, RatingReadOnlyProps
+} from './Rating.types'
+import { RatingBase } from './RatingBase'
 
-export const isRatingInput = (props: RatingProps): props is RatingInputProps => props.variant === 'input';
-export const isRatingCounter = (props: RatingProps): props is RatingCounterProps => props.variant === 'counter';
-export const isRatingReadOnly = (props: RatingProps): props is RatingReadOnlyProps => props.variant === 'read-only';
+export const isRatingInput = (props: RatingProps): props is RatingInputProps => props.variant === 'input'
+export const isRatingCounter = (props: RatingProps): props is RatingCounterProps => props.variant === 'counter'
+export const isRatingReadOnly = (props: RatingProps): props is RatingReadOnlyProps => props.variant === 'read-only'
 
-export const renderTimes = (props: RatingProps) => (isRatingCounter(props) ? 1 : 5);
-export const isFilled = (value: number, props: RatingProps) => !isRatingInput(props) || (props.rate && value + 1 <= props.rate);
-export const isActive = (value: number, props: RatingProps) => (!isRatingCounter(props) && (props.rate && value + 1 <= props.rate)) || isRatingCounter(props);
+export const renderTimes = (props: RatingProps) => (isRatingCounter(props) ? 1 : 5)
+export const isFilled = (value: number, props: RatingProps) => !isRatingInput(props) || (props.rate && value + 1 <= props.rate)
+export const isActive = (value: number, props: RatingProps) => (!isRatingCounter(props) && (props.rate && value + 1 <= props.rate)) || isRatingCounter(props)
 
-export const isDisabled = (props: RatingProps) => isRatingInput(props) && props.disabled;
+export const isDisabled = (props: RatingProps) => isRatingInput(props) && props.disabled
 
 export const Rating = (props: RatingProps) => {
   const {
     size = 'semi', variant, testID = 'ds-rating', ...rest
-  } = props;
+  } = props
+
+  const renderRatingLabel = () => {
+    if ((isRatingInput(props) || isRatingCounter(props))) {
+      const { label } = props
+      return <Label testID={`${testID}-label`} variant={variant}>{label}</Label>
+    }
+
+    return null
+  }
 
   return (
     <Wrapper testID={testID} variant={variant} {...rest}>
@@ -40,9 +48,7 @@ export const Rating = (props: RatingProps) => {
           )
         ))}
       </Content>
-      {(isRatingInput(props) || isRatingCounter(props)) && (
-        <Label testID={`${testID}-label`} variant={variant}>{props.label}</Label>
-      )}
+      {renderRatingLabel()}
     </Wrapper>
-  );
-};
+  )
+}
