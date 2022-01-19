@@ -1,197 +1,197 @@
-import React from 'react';
+import React from 'react'
 import {
   act,
   cleanup,
   fireEvent,
-  render,
-} from '@testing-library/react-native';
+  render
+} from '@testing-library/react-native'
 
-import { ThemeProvider } from 'styled-components/native';
+import { ThemeProvider } from 'styled-components/native'
 
-import theme from '../../common/themeSelectors/theme/mock-theme.json';
-import { Snackbar, SnackbarProps } from './Snackbar';
+import theme from '../../common/themeSelectors/theme/mock-theme.json'
+import { Snackbar, SnackbarProps } from './Snackbar'
 
 jest.mock('react-native/Libraries/Components/Touchable/TouchableHighlight',
-  () => 'TouchableHighlight');
+  () => 'TouchableHighlight')
 
 const defaultProps = {
   message: 'A short snackbar message',
   onClose: jest.fn(),
   open: true,
-  type: 'standard',
-} as Omit<SnackbarProps, 'theme'>;
+  type: 'standard'
+} as Omit<SnackbarProps, 'theme'>
 
 const ProviderWrapper = ({ children }) => (
   <ThemeProvider theme={theme}>
     {children}
   </ThemeProvider>
-);
+)
 
 const setup = (propOverrides?: Partial<SnackbarProps>) => {
-  const props = { ...defaultProps, ...propOverrides };
+  const props = { ...defaultProps, ...propOverrides }
 
-  const result = render(<Snackbar {...props} />, { wrapper: ProviderWrapper });
+  const result = render(<Snackbar {...props} />, { wrapper: ProviderWrapper })
 
   return {
     props,
-    result,
-  };
-};
+    result
+  }
+}
 
 // eslint-disable-next-line max-statements
 describe('Snackbar', () => {
   beforeEach(() => {
-    jest.useFakeTimers();
-  });
+    jest.useFakeTimers()
+  })
 
   afterEach(() => {
-    cleanup();
-    jest.useRealTimers();
-  });
+    cleanup()
+    jest.useRealTimers()
+  })
 
   it('message is presented correctly', () => {
-    const expectedMessage = 'A snackbar message';
+    const expectedMessage = 'A snackbar message'
 
-    const { result } = setup({ message: expectedMessage });
-    const element = result.queryByTestId('natds-snackbar-text');
+    const { result } = setup({ message: expectedMessage })
+    const element = result.queryByTestId('natds-snackbar-text')
 
-    expect(element).toHaveTextContent(expectedMessage);
-  });
+    expect(element).toHaveTextContent(expectedMessage)
+  })
 
   describe('when setting a type', () => {
     it('displays a warning type correctly', () => {
-      const type = 'warning';
+      const type = 'warning'
 
-      const { result } = setup({ type });
-      const wrapperElement = result.queryByTestId('natds-snackbar-wrapper');
-      const textElement = result.queryByTestId('natds-snackbar-text');
+      const { result } = setup({ type })
+      const wrapperElement = result.queryByTestId('natds-snackbar-wrapper')
+      const textElement = result.queryByTestId('natds-snackbar-text')
 
-      expect(wrapperElement).toHaveStyle({ backgroundColor: theme.color.warning });
-      expect(textElement).toHaveStyle({ color: theme.color.onWarning });
-    });
+      expect(wrapperElement).toHaveStyle({ backgroundColor: theme.color.warning })
+      expect(textElement).toHaveStyle({ color: theme.color.onWarning })
+    })
 
     it('displays a error type correctly', () => {
-      const type = 'error';
+      const type = 'error'
 
-      const { result } = setup({ type });
-      const wrapperElement = result.queryByTestId('natds-snackbar-wrapper');
-      const textElement = result.queryByTestId('natds-snackbar-text');
+      const { result } = setup({ type })
+      const wrapperElement = result.queryByTestId('natds-snackbar-wrapper')
+      const textElement = result.queryByTestId('natds-snackbar-text')
 
-      expect(wrapperElement).toHaveStyle({ backgroundColor: theme.color.alert });
-      expect(textElement).toHaveStyle({ color: theme.color.onAlert });
-    });
+      expect(wrapperElement).toHaveStyle({ backgroundColor: theme.color.alert })
+      expect(textElement).toHaveStyle({ color: theme.color.onAlert })
+    })
 
     it('displays a success type correctly', () => {
-      const type = 'success';
+      const type = 'success'
 
-      const { result } = setup({ type });
-      const wrapperElement = result.queryByTestId('natds-snackbar-wrapper');
-      const textElement = result.queryByTestId('natds-snackbar-text');
+      const { result } = setup({ type })
+      const wrapperElement = result.queryByTestId('natds-snackbar-wrapper')
+      const textElement = result.queryByTestId('natds-snackbar-text')
 
-      expect(wrapperElement).toHaveStyle({ backgroundColor: theme.color.success });
-      expect(textElement).toHaveStyle({ color: theme.color.onSuccess });
-    });
+      expect(wrapperElement).toHaveStyle({ backgroundColor: theme.color.success })
+      expect(textElement).toHaveStyle({ color: theme.color.onSuccess })
+    })
 
     it('displays a info type correctly', () => {
-      const type = 'info';
+      const type = 'info'
 
-      const { result } = setup({ type });
-      const wrapperElement = result.queryByTestId('natds-snackbar-wrapper');
-      const textElement = result.queryByTestId('natds-snackbar-text');
+      const { result } = setup({ type })
+      const wrapperElement = result.queryByTestId('natds-snackbar-wrapper')
+      const textElement = result.queryByTestId('natds-snackbar-text')
 
-      expect(wrapperElement).toHaveStyle({ backgroundColor: theme.color.link });
-      expect(textElement).toHaveStyle({ color: theme.color.onLink });
-    });
+      expect(wrapperElement).toHaveStyle({ backgroundColor: theme.color.link })
+      expect(textElement).toHaveStyle({ color: theme.color.onLink })
+    })
 
     it('displays a standard type correctly', () => {
-      const type = 'standard';
+      const type = 'standard'
 
-      const { result } = setup({ type });
-      const wrapperElement = result.queryByTestId('natds-snackbar-wrapper');
-      const textElement = result.queryByTestId('natds-snackbar-text');
+      const { result } = setup({ type })
+      const wrapperElement = result.queryByTestId('natds-snackbar-wrapper')
+      const textElement = result.queryByTestId('natds-snackbar-text')
 
-      expect(wrapperElement).toHaveStyle({ backgroundColor: theme.color.onSurface });
-      expect(textElement).toHaveStyle({ color: theme.color.surface });
-    });
-  });
+      expect(wrapperElement).toHaveStyle({ backgroundColor: theme.color.onSurface })
+      expect(textElement).toHaveStyle({ color: theme.color.surface })
+    })
+  })
 
   describe('when past a certain period of time', () => {
     it('hides snackbar automatically', () => {
-      const autoHideDuration = 5000;
+      const autoHideDuration = 5000
 
-      const { props } = setup({ autoHideDuration });
+      const { props } = setup({ autoHideDuration })
 
       act(() => {
-        jest.advanceTimersByTime(autoHideDuration);
-      });
+        jest.advanceTimersByTime(autoHideDuration)
+      })
 
-      expect(props.onClose).toHaveBeenCalled();
-    });
-  });
+      expect(props.onClose).toHaveBeenCalled()
+    })
+  })
 
   describe('when setting a button text', () => {
     it('displays correctly', () => {
-      const expectedButtonText = 'OK';
+      const expectedButtonText = 'OK'
 
-      const { result } = setup({ buttonText: expectedButtonText });
-      const element = result.queryByTestId('button-label');
+      const { result } = setup({ buttonText: expectedButtonText })
+      const element = result.queryByTestId('button-label')
 
-      expect(element).not.toBeNull();
-      expect(element).toHaveTextContent(expectedButtonText);
-    });
+      expect(element).not.toBeNull()
+      expect(element).toHaveTextContent(expectedButtonText)
+    })
 
     describe('when pressing it', () => {
       it('dismisses the snackbar', () => {
-        const expectedButtonText = 'OK';
+        const expectedButtonText = 'OK'
 
-        const { props, result } = setup({ buttonText: expectedButtonText });
-        const element = result.getByTestId('natds-snackbar-button');
+        const { props, result } = setup({ buttonText: expectedButtonText })
+        const element = result.getByTestId('natds-snackbar-button')
 
-        fireEvent.press(element);
-        expect(props.onClose).toHaveBeenCalled();
-      });
-    });
-  });
+        fireEvent.press(element)
+        expect(props.onClose).toHaveBeenCalled()
+      })
+    })
+  })
 
   describe('when not setting a button text', () => {
     it('displays correctly', () => {
-      const { result } = setup();
-      const element = result.queryByTestId('natds-snackbar-button');
+      const { result } = setup()
+      const element = result.queryByTestId('natds-snackbar-button')
 
-      expect(element).toBeNull();
-    });
-  });
+      expect(element).toBeNull()
+    })
+  })
 
   describe('when setting to be open', () => {
     it('displays correctly', () => {
-      const { result } = setup({ open: true });
-      const element = result.queryByTestId('natds-snackbar-wrapper');
+      const { result } = setup({ open: true })
+      const element = result.queryByTestId('natds-snackbar-wrapper')
 
-      expect(element).not.toBeNull();
-    });
+      expect(element).not.toBeNull()
+    })
 
     describe('when setting it back to be closed', () => {
       it('displays correctly', () => {
-        const { props, result } = setup({ open: true });
+        const { props, result } = setup({ open: true })
 
-        result.rerender(<Snackbar {...props} open={false} />);
+        result.rerender(<Snackbar {...props} open={false} />)
         // eslint-disable-next-line max-nested-callbacks
         act(() => {
-          jest.advanceTimersByTime(195);
-        });
-        const element = result.queryByTestId('natds-snackbar-wrapper');
+          jest.advanceTimersByTime(195)
+        })
+        const element = result.queryByTestId('natds-snackbar-wrapper')
 
-        expect(element).toBeNull();
-      });
-    });
-  });
+        expect(element).toBeNull()
+      })
+    })
+  })
 
   describe('when setting to be closed', () => {
     it('displays correctly', () => {
-      const { result } = setup({ open: false });
-      const element = result.queryByTestId('natds-snackbar-wrapper');
+      const { result } = setup({ open: false })
+      const element = result.queryByTestId('natds-snackbar-wrapper')
 
-      expect(element).toBeNull();
-    });
-  });
-});
+      expect(element).toBeNull()
+    })
+  })
+})
