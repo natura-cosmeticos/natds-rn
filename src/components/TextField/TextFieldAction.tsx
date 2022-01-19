@@ -1,34 +1,35 @@
-import React from 'react';
-import { View } from 'react-native';
-import { IconButton } from '../IconButton';
-import { ActionIcon, ActionImage } from './TextField.styles';
-import { AccessibilityButtonProps } from './TextField.types';
+import React from 'react'
+import { View } from 'react-native'
+import { IconButton } from '../IconButton'
+import { ActionIcon, ActionImage } from './TextField.styles'
+import { AccessibilityButtonProps } from './TextField.types'
 
 type TextFieldActionStyleProps = Pick<AccessibilityButtonProps,
   'accessibilityButtonHint' |
   'accessibilityButtonLabel' |
   'accessibilityButtonRole'>
 & {
-  secureState: boolean,
-  onPress: () => void
+  secureState: boolean;
+  onPress: () => void;
 }
 
 export const TextFieldPasswordAction = ({
   accessibilityButtonHint,
   accessibilityButtonLabel,
   secureState,
-  onPress,
+  onPress
 }: TextFieldActionStyleProps) => (
-  <ActionIcon testID="password-action-icon" >
+  <ActionIcon testID="password-action-icon">
     <IconButton
       accessibilityHint={accessibilityButtonHint}
       accessibilityLabel={accessibilityButtonLabel}
       onPress={onPress}
       icon={secureState
         ? 'outlined-action-visibilityoff'
-        : 'outlined-action-visibility'} />
+        : 'outlined-action-visibility'}
+    />
   </ActionIcon>
-);
+)
 
 export const TextFieldAction = ({
   action,
@@ -36,29 +37,31 @@ export const TextFieldAction = ({
   size,
   accessibilityButtonHint,
   accessibilityButtonLabel,
-  accessibilityButtonRole,
+  accessibilityButtonRole
 }) => (
   <View>
     { action === 'icon'
-      && <ActionIcon
-          testID="action-icon"
-          accessibilityHint={accessibilityButtonHint}
-          accessibilityLabel={accessibilityButtonLabel}
-          accessibilityRole={accessibilityButtonRole}
-        >
-          { actionComponent }
-        </ActionIcon>
-    }
+      && (
+      <ActionIcon
+        testID="action-icon"
+        accessibilityHint={accessibilityButtonHint}
+        accessibilityLabel={accessibilityButtonLabel}
+        accessibilityRole={accessibilityButtonRole}
+      >
+        { actionComponent }
+      </ActionIcon>
+      )}
     { action === 'image'
-      && <ActionImage
-          accessibilityHint={accessibilityButtonHint}
-          accessibilityLabel={accessibilityButtonLabel}
-          accessibilityRole={accessibilityButtonRole}
-          testID="action-image"
-          size={size}
-        >
-          { actionComponent }
-        </ActionImage>
-    }
+      && (
+      <ActionImage
+        accessibilityHint={accessibilityButtonHint}
+        accessibilityLabel={accessibilityButtonLabel}
+        accessibilityRole={accessibilityButtonRole}
+        testID="action-image"
+        size={size}
+      >
+        { actionComponent }
+      </ActionImage>
+      )}
   </View>
-);
+)

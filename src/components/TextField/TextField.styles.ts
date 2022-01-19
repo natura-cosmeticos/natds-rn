@@ -1,6 +1,6 @@
-import { Theme } from '@naturacosmeticos/natds-themes/react-native';
-import { css, CSSObject, CSSProperties } from 'styled-components';
-import styled from 'styled-components/native';
+import { Theme } from '@naturacosmeticos/natds-themes/react-native'
+import { css, CSSObject, CSSProperties } from 'styled-components'
+import styled from 'styled-components/native'
 import {
   buildColorWithOpacity,
   getBorderRadiusMedium,
@@ -13,35 +13,35 @@ import {
   getSizeMedium,
   getSizeMediumX,
   getSpacingSmall,
-  getSpacingTiny,
-} from '../../common/themeSelectors';
-import { InputSizes } from './TextField.types';
+  getSpacingTiny
+} from '../../common/themeSelectors'
+import { InputSizes } from './TextField.types'
 
 interface InputStyleProps {
-  disabled: boolean,
-  hasActionIcon: boolean,
-  readonly: boolean,
-  size: InputSizes,
-  theme: Theme,
+  disabled: boolean;
+  hasActionIcon: boolean;
+  readonly: boolean;
+  size: InputSizes;
+  theme: Theme;
 }
-const isSizeMediumX = (size: InputSizes) => size === 'mediumX';
+const isSizeMediumX = (size: InputSizes) => size === 'mediumX'
 const getFieldHeight = (size: InputSizes, theme: Theme) => (
   isSizeMediumX(size) ? getSizeMediumX(theme) : getSizeMedium(theme)
-);
+)
 const getReadonlyColor = (theme: Theme) => buildColorWithOpacity(
-  getColorLowEmphasis, getOpacityDisabledLow, theme,
-);
+  getColorLowEmphasis, getOpacityDisabledLow, theme
+)
 const getTextColor = (disabled: boolean, theme: Theme) => (
   disabled ? getColorLowEmphasis(theme) : getColorHighEmphasis(theme)
-);
+)
 
 export const getPlaceholderTextColor = (disabled: boolean, theme: Theme) => (
   disabled ? getColorLowEmphasis(theme) : getColorMediumEmphasis(theme)
-);
+)
 
 export const Input = styled.TextInput<InputStyleProps & CSSProperties>`
   ${({
-    disabled, hasActionIcon, readonly, size, theme, multiline = false,
+    disabled, hasActionIcon, readonly, size, theme, multiline = false
   }) => css`
     background-color: ${readonly ? getReadonlyColor(theme) : getColorSurface(theme)};
     border-radius: ${getBorderRadiusMedium(theme)}px;
@@ -59,7 +59,7 @@ export const Input = styled.TextInput<InputStyleProps & CSSProperties>`
     padding-right: ${hasActionIcon ? 0 : getSpacingSmall(theme)}px;
     width: 10px;
   `}
-`;
+`
 
 export const ActionImage = styled.View<Pick<InputStyleProps, 'size' | 'theme'>>(
   ({ size, theme }): CSSObject => ({
@@ -67,10 +67,10 @@ export const ActionImage = styled.View<Pick<InputStyleProps, 'size' | 'theme'>>(
     borderTopRightRadius: getBorderRadiusMedium(theme),
     maxHeight: getFieldHeight(size, theme),
     overflow: 'hidden',
-    width: getSizeLarge(theme),
-  }),
-);
+    width: getSizeLarge(theme)
+  })
+)
 
 export const ActionIcon = styled.View(({ theme }): CSSObject => ({
-  paddingHorizontal: getSpacingTiny(theme),
-}));
+  paddingHorizontal: getSpacingTiny(theme)
+}))

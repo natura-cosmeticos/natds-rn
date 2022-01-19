@@ -1,4 +1,4 @@
-import { storiesOf } from '@storybook/react-native';
+import { storiesOf } from '@storybook/react-native'
 import {
   Action,
   Default,
@@ -10,8 +10,8 @@ import {
   Sizes,
   States,
   TextArea,
-  Interactive,
-} from './TextField.stories';
+  Interactive
+} from './TextField.stories'
 
 storiesOf('TextField', module)
   .add('Default', Default)
@@ -24,4 +24,4 @@ storiesOf('TextField', module)
   .add('Action', Action)
   .add('Type', Type)
   .add('TextArea', TextArea)
-  .add('Interactive', Interactive);
+  .add('Interactive', Interactive)
