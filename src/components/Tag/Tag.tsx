@@ -1,12 +1,14 @@
-import React from 'react';
+import React from 'react'
 
-import { Container, Label } from './Tag.styles';
-import { TagProps } from './Tag.types';
+import { Container, Label } from './Tag.styles'
+import { TagProps } from './Tag.types'
 
 export const Tag = (props: TagProps) => {
   const {
     testID = 'ds-tag', color = 'primary', size = 'small', borderPosition = 'default',
-  } = props;
+    accessible, accessibilityRole, accessibilityHint, accessibilityLabel, accessibilityState,
+    allowFontScaling, maxFontSizeMultiplier, text
+  } = props
 
   return (
     <Container
@@ -18,16 +20,16 @@ export const Tag = (props: TagProps) => {
       <Label
         color={color}
         testID={`${testID}-label`}
-        accessible={props.accessible}
-        accessibilityRole={props.accessibilityRole}
-        accessibilityHint={props.accessibilityHint}
-        accessibilityLabel={props.accessibilityLabel}
-        accessibilityState={props.accessibilityState}
-        allowFontScaling={props.allowFontScaling}
-        maxFontSizeMultiplier={props.maxFontSizeMultiplier}
+        accessible={accessible}
+        accessibilityRole={accessibilityRole}
+        accessibilityHint={accessibilityHint}
+        accessibilityLabel={accessibilityLabel}
+        accessibilityState={accessibilityState}
+        allowFontScaling={allowFontScaling}
+        maxFontSizeMultiplier={maxFontSizeMultiplier}
       >
-        {props.text}
+        {text}
       </Label>
     </Container>
-  );
-};
+  )
+}
