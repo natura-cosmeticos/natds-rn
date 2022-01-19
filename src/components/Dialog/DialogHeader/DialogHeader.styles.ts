@@ -1,9 +1,9 @@
-import styled from 'styled-components/native';
+import styled from 'styled-components/native'
 import {
   getColorHighEmphasis,
   getSpacingSmall,
-  getSpacingTiny,
-} from '../../../common/themeSelectors';
+  getSpacingTiny
+} from '../../../common/themeSelectors'
 
 export const DialogHeaderContainer = styled.View(({ theme }) => ({
   alignItems: 'center',
@@ -11,10 +11,10 @@ export const DialogHeaderContainer = styled.View(({ theme }) => ({
   flexDirection: 'row',
   justifyContent: 'space-between',
   paddingBottom: getSpacingTiny(theme),
-  paddingHorizontal: getSpacingSmall(theme),
-}));
+  paddingHorizontal: getSpacingSmall(theme)
+}))
 
-export const DialogHeaderContent = styled.View(({ theme }) => ({
+export const DialogHeaderContent = styled.View(() => ({
   flexDirection: 'row',
-  height: '100%',
-}));
+  height: '100%'
+}))

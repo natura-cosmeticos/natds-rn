@@ -1,4 +1,4 @@
-import { DialogHeader } from './DialogHeader';
+import { DialogHeader } from './DialogHeader'
 
-export { DialogHeader };
-export default DialogHeader;
+export { DialogHeader }
+export default DialogHeader
