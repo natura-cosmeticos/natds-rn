@@ -1,21 +1,21 @@
 /* eslint-disable max-lines */
 /* eslint-disable no-console */
-import React, { useState } from 'react';
-import { View, FlatList, Text } from 'react-native';
-import { Card } from '../Card';
-import { Divider } from '../Divider';
-import { ListItem, ListItemFeedback } from './ListItem';
-import { Checkbox } from '../Checkbox';
-import { TextWithTheme } from '../../common/HelperComponents/ThemeHelper.styles';
-import { data } from './stories.data';
+import React, { useState } from 'react'
+import { View, FlatList, Text } from 'react-native'
+import { Card } from '../Card'
+import { Divider } from '../Divider'
+import { ListItem, ListItemFeedback } from './ListItem'
+import { Checkbox } from '../Checkbox'
+import { TextWithTheme } from '../../common/HelperComponents/ThemeHelper.styles'
+import { data } from './stories.data'
 
 export default {
   component: ListItem,
   parameters: {
-    componentSubtitle: 'List items are rows of information that can have user interactions or not',
+    componentSubtitle: 'List items are rows of information that can have user interactions or not'
   },
-  title: 'Components|List',
-};
+  title: 'Components|List'
+}
 
 export const Base = () => (
   <FlatList
@@ -28,7 +28,7 @@ export const Base = () => (
       </ListItem>
     )}
   />
-);
+)
 
 export const RippleFeedback = () => (
   <FlatList
@@ -41,25 +41,26 @@ export const RippleFeedback = () => (
       </ListItem>
     )}
   />
-);
+)
 
 export const SelectionFeedback = () => {
-  const [selected, setSelected] = useState('');
+  const [selected, setSelected] = useState('')
 
   const renderItem = ({ item }) => {
     const listItemProps = {
       feedback: 'selection' as ListItemFeedback,
       selected: item.key === selected,
-      ...(item.unreleased ? {} : { onPress: () => setSelected(item.key) }),
-    };
+      ...(item.unreleased ? {} : { onPress: () => setSelected(item.key) })
+    }
 
     return (
       <ListItem {...listItemProps}>
         <View style={{
           flexDirection: 'row',
           justifyContent: 'space-between',
-          padding: 16,
-        }}>
+          padding: 16
+        }}
+        >
           <TextWithTheme>{item.title}</TextWithTheme>
           <Checkbox
             selected={item.key === selected}
@@ -68,8 +69,8 @@ export const SelectionFeedback = () => {
           />
         </View>
       </ListItem>
-    );
-  };
+    )
+  }
 
   return (
     <FlatList
@@ -78,13 +79,12 @@ export const SelectionFeedback = () => {
       renderItem={renderItem}
       extraData={selected}
     />
-  );
-};
-
+  )
+}
 
 export const Dividers = () => {
   const renderExtraInfo = (extraInfo) => {
-    if (!extraInfo) return null;
+    if (!extraInfo) return null
 
     const extraInfoData = Object
       .keys(extraInfo)
@@ -95,8 +95,9 @@ export const Dividers = () => {
               flexDirection: 'row',
               justifyContent: 'space-between',
               paddingHorizontal: 32,
-              paddingVertical: 16,
-            }}>
+              paddingVertical: 16
+            }}
+            >
               <TextWithTheme>{item}</TextWithTheme>
               <TextWithTheme>{extraInfo[item]}</TextWithTheme>
             </View>
@@ -106,18 +107,19 @@ export const Dividers = () => {
               ? <Divider type="inset" />
               : null
           }
-        </View >
-      ));
+        </View>
+      ))
 
-    return extraInfoData;
-  };
+    return extraInfoData
+  }
 
   return (
     <View style={{
       flex: 1,
       paddingHorizontal: 10,
-      paddingVertical: 20,
-    }}>
+      paddingVertical: 20
+    }}
+    >
       <Card>
         <FlatList
           ItemSeparatorComponent={Divider}
@@ -135,5 +137,5 @@ export const Dividers = () => {
         />
       </Card>
     </View>
-  );
-};
+  )
+}
