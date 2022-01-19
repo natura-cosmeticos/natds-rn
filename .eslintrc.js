@@ -7,8 +7,10 @@ module.exports = {
   },
   "parser": "@typescript-eslint/parser",
   "extends": [
-    "@naturacosmeticos/eslint-config-natura",
-    "plugin:react/recommended"
+    '@naturacosmeticos/eslint-config-natds/base',
+    '@naturacosmeticos/eslint-config-natds/jest',
+    '@naturacosmeticos/eslint-config-natds/react',
+    '@naturacosmeticos/eslint-config-natds/typescript',
   ],
   "parserOptions": {
     "ecmaFeatures": {
@@ -21,67 +23,46 @@ module.exports = {
     "Atomics": "readonly",
     "SharedArrayBuffer": "readonly"
   },
-  "plugins": [
-    "react",
-    '@typescript-eslint'
-  ],
-  "rules": {
-    "react/jsx-filename-extension": [
-      1,
-      {
-        "extensions": [
-          ".tsx",
-          ".jsx"
-        ]
-      }
-    ],
-    "import/prefer-default-export": 0,
-    "max-lines-per-function": 0,
-    "react/prop-types": 0,
-    "import/no-extraneous-dependencies": [
-      "error",
-      {
-        "devDependencies": [
-          "hooks/**/*",
-          "**/*.test.*",
-          "**/*.stories.*",
-          "**/*.device.*",
-          "test-setup.js",
-          "storybook/**/*",
-          "storybook-web/**/*",
-          "bin/**/*",
-          "lib/**/*",
-          "test/**/*"
-        ]
-      }
-    ],
-    'import/extensions': ['error', 'ignorePackages', {
-      js: 'never',
-      mjs: 'never',
-      jsx: 'never',
-      ts: 'never',
-      tsx: 'never',
-    }],
-  },
   "overrides": [
     {
       "files": ["*.test.tsx", "*.test.ts"],
       "rules": {
-        "max-lines": 0
+        "max-lines": 0,
+        "max-lines-per-function": 0
       }
     },
     {
       "files": ["*.tsx", "*.ts"],
       "rules": {
-        "no-unused-vars": 0
+        "react/jsx-props-no-spreading": 0,
+        "import/no-cycle": 0,
+        "import/prefer-default-export": 0,
+        "import/no-extraneous-dependencies": [
+          "error",
+          {
+            "devDependencies": [
+              "hooks/**/*",
+              "**/*.test.*",
+              "**/*.stories.*",
+              "**/*.device.*",
+              "test-setup.js",
+              "storybook/**/*",
+              "storybook-web/**/*",
+              "bin/**/*",
+              "lib/**/*",
+              "test/**/*"
+            ]
+          }
+        ],
+        "@typescript-eslint/explicit-function-return-type": 0,
       }
     },
     {
       "files": ["bin/**/*"],
       "rules": {
-        "no-console": 0
+        "no-console": 0,
       }
-    }
+    },
   ],
   "settings": {
     "import/resolver": {
