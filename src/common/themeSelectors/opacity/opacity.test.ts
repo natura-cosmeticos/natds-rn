@@ -1,5 +1,5 @@
-import theme from '../theme/mock-theme.json';
-import * as selectors from './opacity';
+import theme from '../theme/mock-theme.json'
+import * as selectors from './opacity'
 
 /*  eslint-disable mocha/no-setup-in-describe */
 describe.each`
@@ -11,12 +11,12 @@ ${'high'}        | ${selectors.getOpacityHigh}        | ${theme.opacity.high}
 ${'veryHigh'}    | ${selectors.getOpacityVeryHigh}    | ${theme.opacity.veryHigh}
 ${'medium'}      | ${selectors.getOpacityMedium}      | ${theme.opacity.medium}
 `('Opacity selectors', ({
-  title, selector, expected,
+  title, selector, expected
 }) => {
   it(`should return the opacity ${title}`, () => {
-    const result = selector(theme);
+    const result = selector(theme)
 
-    expect(result).toBe(expected);
-  });
-});
+    expect(result).toBe(expected)
+  })
+})
 /* eslint-enable mocha/no-setup-in-describe */

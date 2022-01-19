@@ -1,39 +1,39 @@
-import React, { ReactElement } from 'react';
-import { View } from 'react-native';
+import React, { ReactElement } from 'react'
+import { View } from 'react-native'
 import {
   TokenContainer,
   TokenColorContainer,
   ActualColor, ColorName,
   CategoryTitle,
   CategoryWrapper,
-  Container,
-} from './TokenMosaic.styles';
+  Container
+} from './TokenMosaic.styles'
 
 type TokenMosaicData = Record<string, string>
 type TokenMosaicWithCategoriesData = Record<string, TokenMosaicData>
 
 interface ItemRenderer {
-  (key: string, data: TokenMosaicData): ReactElement
+  (key: string, data: TokenMosaicData): ReactElement;
 }
 
 interface TokenColorProps {
-  colorName: string
-  color: string
+  colorName: string;
+  color: string;
 }
 
 interface TokenMosaicProps {
-  data: TokenMosaicData
-  itemRenderer: ItemRenderer
+  data: TokenMosaicData;
+  itemRenderer: ItemRenderer;
 }
 
 interface TokenMosaicWithCategoriesProps {
-  categories: TokenMosaicWithCategoriesData
-  itemRenderer: ItemRenderer
+  categories: TokenMosaicWithCategoriesData;
+  itemRenderer: ItemRenderer;
 }
 
 const buildMosaic = (data: TokenMosaicData, itemRenderer: ItemRenderer) => Object
   .keys(data)
-  .map(key => itemRenderer(key, data));
+  .map((key) => itemRenderer(key, data))
 
 const Category = ({ category, data, itemRenderer }) => (
   <CategoryWrapper>
@@ -42,29 +42,29 @@ const Category = ({ category, data, itemRenderer }) => (
       {buildMosaic(data, itemRenderer)}
     </TokenContainer>
   </CategoryWrapper>
-);
+)
 
 const buildCategories = (
   categories: TokenMosaicWithCategoriesData,
-  itemRenderer: ItemRenderer,
+  itemRenderer: ItemRenderer
 ) => Object
   .keys(categories)
-  .map(category => (
+  .map((category) => (
     <Category
       key={category}
       category={category}
       data={categories[category]}
       itemRenderer={itemRenderer}
     />
-  ));
+  ))
 
 export const TokenMosaicWithCategories = (
-  { categories, itemRenderer }: TokenMosaicWithCategoriesProps,
+  { categories, itemRenderer }: TokenMosaicWithCategoriesProps
 ) => (
   <Container>
     {buildCategories(categories, itemRenderer)}
   </Container>
-);
+)
 
 export const TokenMosaic = ({ data, itemRenderer }: TokenMosaicProps) => (
   <Container>
@@ -72,14 +72,14 @@ export const TokenMosaic = ({ data, itemRenderer }: TokenMosaicProps) => (
       {buildMosaic(data, itemRenderer)}
     </TokenContainer>
   </Container>
-);
+)
 
 export const TokenColor = ({ colorName, color }: TokenColorProps) => (
   <TokenColorContainer>
-    <ActualColor style={{ backgroundColor: color }}></ActualColor>
+    <ActualColor style={{ backgroundColor: color }} />
     <View>
       <ColorName>{colorName}</ColorName>
       <ColorName style={{ color: '#bbbbbb' }}>{color}</ColorName>
     </View>
   </TokenColorContainer>
-);
+)

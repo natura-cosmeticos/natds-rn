@@ -1,11 +1,10 @@
-const themeSelectors = jest.requireActual('..');
+const themeSelectors = jest.requireActual('..')
 
 const mockSelectors = Object
   .keys(themeSelectors)
   .reduce((acc, selector) => ({
     ...acc,
-    [selector]: jest.fn(),
-  }), {});
+    [selector]: jest.fn()
+  }), {})
 
-
-module.exports = mockSelectors;
+module.exports = mockSelectors

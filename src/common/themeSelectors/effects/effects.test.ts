@@ -1,6 +1,6 @@
-import { Elevation } from '@naturacosmeticos/natds-themes/react-native';
-import theme from '../theme/mock-theme.json';
-import * as selectors from './effects';
+import { Elevation } from '@naturacosmeticos/natds-themes/react-native'
+import theme from '../theme/mock-theme.json'
+import * as selectors from './effects'
 
 const scenarios = [
   {
@@ -9,30 +9,28 @@ const scenarios = [
       shadowColor: theme.elevation.tiny.shadowColor,
       shadowOffset: {
         height: theme.elevation.tiny.shadowOffsetHeight,
-        width: theme.elevation.tiny.shadowOffsetWidth,
+        width: theme.elevation.tiny.shadowOffsetWidth
       },
       shadowOpacity: theme.elevation.tiny.shadowOpacity,
-      shadowRadius: theme.elevation.tiny.shadowRadius,
+      shadowRadius: theme.elevation.tiny.shadowRadius
     },
     name: 'getShadowBySize',
     params: 'tiny' as keyof Elevation,
     selector: selectors.getShadowBySize,
-    title: 'shadow',
-  },
-];
+    title: 'shadow'
+  }
+]
 
 describe('Effects selectors', () => {
-  /*  eslint-disable mocha/no-setup-in-describe */
-  scenarios.forEach(scenario => (
-    describe(scenario.name, () => {
+  scenarios.forEach((scenario) => (
+    describe(`${scenario.name}`, () => {
       (
         it(`should return the ${scenario.title} effect`, () => {
-          const result = scenario.selector(theme, scenario.params);
+          const result = scenario.selector(theme, scenario.params)
 
-          expect(result).toEqual(scenario.expectedResult);
+          expect(result).toEqual(scenario.expectedResult)
         })
-      );
+      )
     })
-  ));
-  /* eslint-enable mocha/no-setup-in-describe */
-});
+  ))
+})

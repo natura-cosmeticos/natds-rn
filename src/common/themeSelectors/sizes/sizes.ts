@@ -1,17 +1,17 @@
-import { Size, Theme } from '@naturacosmeticos/natds-themes/react-native';
-import { checkTheme } from '../theme/theme';
+import { Size, Theme } from '@naturacosmeticos/natds-themes/react-native'
+import { checkTheme } from '../theme/theme'
 
-const getRadiusSizes = (theme: Theme) => checkTheme(theme).borderRadius;
+const getRadiusSizes = (theme: Theme) => checkTheme(theme).borderRadius
 
-export const getRadiusBySize = (theme: Theme, size: keyof Size) => getRadiusSizes(theme)[size];
+export const getRadiusBySize = (theme: Theme, size: keyof Size) => getRadiusSizes(theme)[size]
 
-export const getBorderRadiusMedium = (theme: Theme) => getRadiusBySize(theme, 'medium');
+export const getBorderRadiusMedium = (theme: Theme) => getRadiusBySize(theme, 'medium')
 
-export const getSize = (theme: Theme, size: keyof Size) => checkTheme(theme).size[size];
+export const getSize = (theme: Theme, size: keyof Size) => checkTheme(theme).size[size]
 
-export const getSizeSemi = (theme: Theme) => getSize(theme, 'semi');
-export const getSizeSemiX = (theme: Theme) => getSize(theme, 'semiX');
-export const getSizeMedium = (theme: Theme) => getSize(theme, 'medium');
-export const getSizeMediumX = (theme: Theme) => getSize(theme, 'mediumX');
-export const getSizeLarge = (theme: Theme) => getSize(theme, 'large');
-export const getSizeLargeX = (theme: Theme) => getSize(theme, 'largeX');
+export const getSizeSemi = (theme: Theme) => getSize(theme, 'semi')
+export const getSizeSemiX = (theme: Theme) => getSize(theme, 'semiX')
+export const getSizeMedium = (theme: Theme) => getSize(theme, 'medium')
+export const getSizeMediumX = (theme: Theme) => getSize(theme, 'mediumX')
+export const getSizeLarge = (theme: Theme) => getSize(theme, 'large')
+export const getSizeLargeX = (theme: Theme) => getSize(theme, 'largeX')
