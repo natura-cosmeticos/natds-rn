@@ -1,6 +1,6 @@
-import React from 'react';
-import { renderWithTheme } from '../../../test/testHelpers';
-import { InputHelperText } from './InputHelperText';
+import React from 'react'
+import { renderWithTheme } from '../../../test/testHelpers'
+import { InputHelperText } from './InputHelperText'
 
 jest.mock('../../common/themeSelectors', () => (
   {
@@ -8,57 +8,57 @@ jest.mock('../../common/themeSelectors', () => (
     getColorMediumEmphasis: () => '#777',
     getSize: () => 24,
     getSpacingMicro: () => 2,
-    getTypographyStyles: () => ({ caption: { fontSize: 12 } }),
-  }));
+    getTypographyStyles: () => ({ caption: { fontSize: 12 } })
+  }))
 
 const defaultProps = {
-  content: 'testing helper text',
-};
+  content: 'testing helper text'
+}
 
 describe('InputHelperText', () => {
   it('should render with default props', () => {
     const { getByTestId, queryByTestId } = renderWithTheme(
-      <InputHelperText {...defaultProps} />,
-    );
+      <InputHelperText {...defaultProps} />
+    )
 
     expect(getByTestId('helper-text')).toHaveStyle({
-      color: '#777', fontSize: 12,
-    });
-    expect(getByTestId('helper-text')).not.toHaveStyle({ marginLeft: 2 });
-    expect(queryByTestId('icon')).toBeFalsy();
-  });
+      color: '#777', fontSize: 12
+    })
+    expect(getByTestId('helper-text')).not.toHaveStyle({ marginLeft: 2 })
+    expect(queryByTestId('icon')).toBeFalsy()
+  })
 
   it('should render given content correctly', () => {
     const { getByTestId } = renderWithTheme(
-      <InputHelperText {...defaultProps} />,
-    );
+      <InputHelperText {...defaultProps} />
+    )
 
-    expect(getByTestId('helper-text')).toHaveTextContent('testing helper text');
-  });
+    expect(getByTestId('helper-text')).toHaveTextContent('testing helper text')
+  })
 
   it('should render with icon to give feedback for error', () => {
     const { getByTestId, queryByTestId } = renderWithTheme(
-      <InputHelperText {...defaultProps} feedback='error' />,
-    );
+      <InputHelperText {...defaultProps} feedback="error" />
+    )
 
-    expect(getByTestId('helper-text')).toHaveStyle({ marginLeft: 2 });
-    expect(queryByTestId('icon')).toBeTruthy();
-  });
+    expect(getByTestId('helper-text')).toHaveStyle({ marginLeft: 2 })
+    expect(queryByTestId('icon')).toBeTruthy()
+  })
 
   it('should render with icon to give feedback for success', () => {
     const { getByTestId, queryByTestId } = renderWithTheme(
-      <InputHelperText {...defaultProps} feedback='success' />,
-    );
+      <InputHelperText {...defaultProps} feedback="success" />
+    )
 
-    expect(getByTestId('helper-text')).toHaveStyle({ marginLeft: 2 });
-    expect(queryByTestId('icon')).toBeTruthy();
-  });
+    expect(getByTestId('helper-text')).toHaveStyle({ marginLeft: 2 })
+    expect(queryByTestId('icon')).toBeTruthy()
+  })
 
   it('should render with given color', () => {
     const { getByTestId } = renderWithTheme(
-      <InputHelperText {...defaultProps} color="#BBB" />,
-    );
+      <InputHelperText {...defaultProps} color="#BBB" />
+    )
 
-    expect(getByTestId('helper-text')).toHaveStyle({ color: '#BBB' });
-  });
-});
+    expect(getByTestId('helper-text')).toHaveStyle({ color: '#BBB' })
+  })
+})

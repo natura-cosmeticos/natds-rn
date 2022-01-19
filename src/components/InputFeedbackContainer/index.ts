@@ -1,1 +1,1 @@
-export { InputFeedbackContainer } from './InputFeedbackContainer';
+export { InputFeedbackContainer } from './InputFeedbackContainer'

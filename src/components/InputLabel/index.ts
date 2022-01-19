@@ -1,1 +1,1 @@
-export { InputLabel } from './InputLabel';
+export { InputLabel } from './InputLabel'
