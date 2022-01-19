@@ -1,11 +1,13 @@
-import React, { useEffect, useRef, useState } from 'react';
-import { Animated, Platform } from 'react-native';
-import { withTheme } from 'styled-components/native';
-import { Theme, getShadowBySize } from '../../common/themeSelectors';
+import React, {
+  useEffect, useRef, useState, useCallback
+} from 'react'
+import { Animated, Platform } from 'react-native'
+import { withTheme } from 'styled-components/native'
+import { Theme, getShadowBySize } from '../../common/themeSelectors'
 import {
-  SnackbarWrapper, SnackbarText, SnackbarButtonWrapper, getColorByType,
-} from './Snackbar.styles';
-import { ButtonBase } from '../Button/ButtonBase';
+  SnackbarWrapper, SnackbarText, SnackbarButtonWrapper, getColorByType
+} from './Snackbar.styles'
+import { ButtonBase } from '../Button/ButtonBase'
 
 export type SnackbarType = 'standard' | 'success' | 'error' | 'warning' | 'info';
 
@@ -53,49 +55,49 @@ export const SnackbarComponent = ({
   autoHideDuration = 5000,
   open,
   numberOfLines = 2,
-  onClose,
+  onClose
 }: SnackbarProps) => {
-  const fadeAnim = useRef(new Animated.Value(0)).current;
-  const [isOpen, setIsOpen] = useState(false);
-  const [isMultiLineText, setIsMultiLineText] = useState(false);
-  const autoHideTimer = React.useRef<NodeJS.Timeout>();
+  const fadeAnim = useRef(new Animated.Value(0)).current
+  const [isOpen, setIsOpen] = useState(false)
+  const [isMultiLineText, setIsMultiLineText] = useState(false)
+  const autoHideTimer = React.useRef<NodeJS.Timeout>()
 
-  const handleClose = () => {
-    if (onClose) onClose();
-  };
+  const handleClose = useCallback(() => {
+    if (onClose) onClose()
+  }, [onClose])
 
-  const show = () => {
-    setIsOpen(true);
+  const show = useCallback(() => {
+    setIsOpen(true)
     // fade in duration recommended by material-ui
     Animated.timing(fadeAnim, { duration: 225, toValue: 1, useNativeDriver: Platform.OS !== 'web' })
       .start(({ finished }) => {
-        if (finished) autoHideTimer.current = global.setTimeout(handleClose, autoHideDuration);
-      });
-  };
+        if (finished) autoHideTimer.current = global.setTimeout(handleClose, autoHideDuration)
+      })
+  }, [autoHideDuration, fadeAnim, handleClose])
 
-  const hide = () => {
+  const hide = useCallback(() => {
     // fade out duration recommended by material-ui
     Animated.timing(fadeAnim, { duration: 195, toValue: 0, useNativeDriver: Platform.OS !== 'web' })
       .start(({ finished }) => {
-        if (finished) setIsOpen(false);
-      });
-  };
+        if (finished) setIsOpen(false)
+      })
+  }, [fadeAnim])
 
-  const toggle = () => {
-    if (open) return show();
+  const toggle = useCallback(() => {
+    if (open) return show()
 
-    return hide();
-  };
+    return hide()
+  }, [hide, open, show])
 
   useEffect(() => {
-    toggle();
+    toggle()
 
     return () => {
-      if (autoHideTimer.current) global.clearTimeout(autoHideTimer.current);
-    };
-  }, [open, autoHideDuration]);
+      if (autoHideTimer.current) global.clearTimeout(autoHideTimer.current)
+    }
+  }, [open, autoHideDuration, toggle])
 
-  if (!isOpen) return null;
+  if (!isOpen) return null
 
   return (
     <SnackbarWrapper
@@ -109,7 +111,7 @@ export const SnackbarComponent = ({
         testID="natds-snackbar-text"
         numberOfLines={numberOfLines}
         onTextLayout={({ nativeEvent: { lines } }) => {
-          setIsMultiLineText(lines.length >= numberOfLines);
+          setIsMultiLineText(lines.length >= numberOfLines)
         }}
         ellipsizeMode="tail"
         isTwoLineAction={isMultiLineText && !!buttonText}
@@ -129,7 +131,7 @@ export const SnackbarComponent = ({
         </SnackbarButtonWrapper>
       )}
     </SnackbarWrapper>
-  );
-};
+  )
+}
 
-export const Snackbar = withTheme(SnackbarComponent);
+export const Snackbar = withTheme(SnackbarComponent)
