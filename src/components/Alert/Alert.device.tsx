@@ -1,6 +1,6 @@
-import { storiesOf } from '@storybook/react-native';
-import { all, interactive } from './Alert.stories';
+import { storiesOf } from '@storybook/react-native'
+import { All, Interactive } from './Alert.stories'
 
 storiesOf('Alert', module)
-  .add('all', all)
-  .add('interactive', interactive);
+  .add('All', All)
+  .add('Interactive', Interactive)
