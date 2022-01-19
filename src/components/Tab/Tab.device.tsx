@@ -1,7 +1,7 @@
-import { storiesOf } from '@storybook/react-native';
+import { storiesOf } from '@storybook/react-native'
 import {
-  All, Positions, Icon, Disabled, Color, Elevation, Interactive,
-} from './Tab.stories';
+  All, Positions, Icon, Disabled, Color, Elevation, Interactive
+} from './Tab.stories'
 
 storiesOf('Tab', module)
   .add('All', All)
@@ -10,4 +10,4 @@ storiesOf('Tab', module)
   .add('Elevation', Elevation)
   .add('Icon', Icon)
   .add('Positions', Positions)
-  .add('Interactive', Interactive);
+  .add('Interactive', Interactive)

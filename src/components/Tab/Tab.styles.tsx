@@ -1,6 +1,6 @@
 /* eslint-disable max-lines */
-import styled from 'styled-components/native';
-import { AccessibilityState } from 'react-native';
+import styled from 'styled-components/native'
+import { AccessibilityState } from 'react-native'
 
 import {
   getColorMediumEmphasis,
@@ -12,109 +12,108 @@ import {
   getSizeLargeX,
   getSizeMedium,
   getShadowBySize,
-  Theme,
-} from '../../common/themeSelectors';
+  Theme
+} from '../../common/themeSelectors'
 import {
-  TabButtonTypes, TabProps, IconPositions,
-} from './Tab.types';
-import { TouchableRipple } from '../TouchableRipple/TouchableRipple';
+  TabButtonTypes, TabProps, IconPositions
+} from './Tab.types'
+import { TouchableRipple } from '../TouchableRipple/TouchableRipple'
 
 interface TabBase {
-  type: TabButtonTypes
-  theme: Theme
-  accessibilityLabel?: string
-  accessibilityHint?: string
-  accessibilityState?: AccessibilityState
-  accessible?: boolean
+  type: TabButtonTypes;
+  theme: Theme;
+  accessibilityLabel?: string;
+  accessibilityHint?: string;
+  accessibilityState?: AccessibilityState;
+  accessible?: boolean;
 }
 
 interface TextBase extends TabBase {
-  iconPosition?: IconPositions
-  disabled?: boolean
+  iconPosition?: IconPositions;
+  disabled?: boolean;
 }
 
 interface DisplayText {
-  theme: Theme
-  iconPosition?: IconPositions
+  theme: Theme;
+  iconPosition?: IconPositions;
 }
 
 interface TabWrapperProp {
-  theme: Theme
-  elevation?: boolean
-  backgroundColor?: boolean
-  iconPosition?: IconPositions
+  theme: Theme;
+  elevation?: boolean;
+  backgroundColor?: boolean;
+  iconPosition?: IconPositions;
 }
 
 interface ButtonContentProps extends TabProps {
-  theme: Theme,
+  theme: Theme;
 }
 
 const getTabButtonStyles = (theme: Theme, type: TabButtonTypes) => {
   const styles = {
     primary: {
-      borderBottomColor: getColorPrimary(theme),
+      borderBottomColor: getColorPrimary(theme)
     },
     secondary: {
-      borderColor: 'transparent',
-    },
-  };
+      borderColor: 'transparent'
+    }
+  }
 
-  return styles[type];
-};
+  return styles[type]
+}
 
 export const getTabTextStyles = (theme: Theme, type: TabButtonTypes) => {
   const styles = {
     primary: getColorOnBackground(theme),
-    secondary: getColorMediumEmphasis(theme),
-  };
+    secondary: getColorMediumEmphasis(theme)
+  }
 
-  return styles[type];
-};
+  return styles[type]
+}
 
 export const getDisplayTextStyles = ({ theme, iconPosition }: DisplayText) => {
   if (iconPosition) {
     const styles = {
       icon: {
-        display: 'none',
+        display: 'none'
       },
       leading: {
-        paddingLeft: theme.spacing.micro,
+        paddingLeft: theme.spacing.micro
       },
       top: {
-        paddingTop: theme.spacing.micro,
-      },
-    };
+        paddingTop: theme.spacing.micro
+      }
+    }
 
-    return styles[iconPosition];
+    return styles[iconPosition]
   }
 
-  return {};
-};
+  return {}
+}
 
 export const getTabTextColor = ({ disabled, theme, type }: TextBase) => {
   if (disabled) {
-    return { color: getColorLowEmphasis(theme) };
+    return { color: getColorLowEmphasis(theme) }
   }
 
-  return { color: getTabTextStyles(theme, type) };
-};
+  return { color: getTabTextStyles(theme, type) }
+}
 
 export const getTabWrapperElevation = ({ elevation, theme }: TabWrapperProp) => (
   elevation && getShadowBySize(theme, 'micro')
-);
+)
 
 export const TabWrapper = styled.View.attrs({
   horizontal: true,
-  showsHorizontalScrollIndicator: false,
+  showsHorizontalScrollIndicator: false
 })<TabWrapperProp>(({
-  theme, backgroundColor, iconPosition,
+  theme, backgroundColor, iconPosition
 }) => ({
   backgroundColor: backgroundColor ? getColorSurface(theme) : 'transparent',
   border: 'none',
   flexDirection: 'row',
-  height: iconPosition === 'icon' ? getSizeMedium(theme) : getSizeLargeX(theme),
-}));
-
+  height: iconPosition === 'icon' ? getSizeMedium(theme) : getSizeLargeX(theme)
+}))
 
 export const TabButton = styled(TouchableRipple)<TabBase>(({ type, theme }) => ({
   ...getTabButtonStyles(theme, type),
@@ -124,11 +123,11 @@ export const TabButton = styled(TouchableRipple)<TabBase>(({ type, theme }) => (
   flex: 1,
   justifyContent: 'center',
   minWidth: getSizeLargeX(theme),
-  paddingHorizontal: getSpacingSmall(theme),
-}));
+  paddingHorizontal: getSpacingSmall(theme)
+}))
 
 export const TabText = styled.Text<TextBase>(({
-  type, theme, iconPosition, disabled = false,
+  type, theme, iconPosition, disabled = false
 }) => ({
   ...getDisplayTextStyles({ iconPosition, theme }),
   ...getTabTextColor({ disabled, theme, type }),
@@ -136,10 +135,10 @@ export const TabText = styled.Text<TextBase>(({
   fontSize: theme.tab.label.fontSize,
   fontWeight: theme.tab.label.primary.fontWeight,
   letterSpacing: theme.tab.label.letterSpacing,
-  lineHeight: theme.tab.label.fontSize * theme.tab.label.lineHeight,
-}));
+  lineHeight: theme.tab.label.fontSize * theme.tab.label.lineHeight
+}))
 
 export const TabButtonContent = styled.View<Pick<ButtonContentProps, 'iconPosition'>>(({ iconPosition }) => ({
   alignItems: 'center',
-  flexDirection: iconPosition === 'leading' ? 'row' : 'column',
-}));
+  flexDirection: iconPosition === 'leading' ? 'row' : 'column'
+}))

@@ -1,58 +1,58 @@
 /* eslint-disable max-len */
-import { IconName } from '@naturacosmeticos/natds-icons';
-import React, { useEffect, useState } from 'react';
-import { ScrollView, View } from 'react-native';
-import { withTheme } from 'styled-components/native';
+import { IconName } from '@naturacosmeticos/natds-icons'
+import React, { useEffect, useState, useCallback } from 'react'
+import { ScrollView, View } from 'react-native'
+import { withTheme } from 'styled-components/native'
 
-import { Icon } from '../Icon';
+import { Icon } from '../Icon'
 import {
-  TabWrapper, TabButton, TabText, TabButtonContent, getTabTextColor, getTabWrapperElevation,
-} from './Tab.styles';
-import { TabProps, TabButtonTypes } from './Tab.types';
+  TabWrapper, TabButton, TabText, TabButtonContent, getTabTextColor, getTabWrapperElevation
+} from './Tab.styles'
+import { TabProps, TabButtonTypes } from './Tab.types'
 
 const TabComponent = ({
   testID = 'ds-tab', theme, tabOptions, onChange, position = 'fixed',
   iconPosition, elevation = false, backgroundColor = true, accessible = false,
-  accessibilityRole = 'tab',
+  accessibilityRole = 'tab'
 }: TabProps) => {
-  const [activeTab, setActiveTab] = useState(0);
+  const [activeTab, setActiveTab] = useState(0)
 
-  const TabPositionType = position === 'fixed' ? View : ScrollView;
+  const TabPositionType = position === 'fixed' ? View : ScrollView
 
   const handlePress = (index: number) => {
-    onChange(index);
-    setActiveTab(index);
-  };
+    onChange(index)
+    setActiveTab(index)
+  }
 
   const getCurrentType = (index: number, disabled = false): TabButtonTypes => {
     if (activeTab === index && !disabled) {
-      return 'primary';
+      return 'primary'
     }
 
-    return 'secondary';
-  };
+    return 'secondary'
+  }
 
-  const getSelectedTab = (): number => {
-    let selected = 0;
+  const getSelectedTab = useCallback((): number => {
+    let selected = 0
 
     tabOptions.find((tab, index) => {
       if (tab.selected && !tab.disabled) {
-        selected = index;
+        selected = index
 
-        return true;
+        return true
       }
 
-      return false;
-    });
+      return false
+    })
 
-    return selected;
-  };
+    return selected
+  }, [tabOptions])
 
   useEffect(() => {
-    const selectedIndex = getSelectedTab();
+    const selectedIndex = getSelectedTab()
 
-    setActiveTab(selectedIndex);
-  }, []);
+    setActiveTab(selectedIndex)
+  }, [getSelectedTab])
 
   return (
     <View
@@ -70,7 +70,7 @@ const TabComponent = ({
         testID={testID}
       >
         {tabOptions.map((tabOption, index) => {
-          const currentType = getCurrentType(index, tabOption.disabled);
+          const currentType = getCurrentType(index, tabOption.disabled)
 
           return (
             <TabButton
@@ -81,24 +81,26 @@ const TabComponent = ({
               type={currentType}
               testID={`${testID}-item-${index}`}
             >
-              <TabButtonContent iconPosition={iconPosition} >
+              <TabButtonContent iconPosition={iconPosition}>
                 {tabOption.iconName && iconPosition
-                  && <Icon
+                  && (
+                  <Icon
                     accessibilityRole="imagebutton"
                     style={getTabTextColor({ disabled: tabOption.disabled, theme, type: currentType })}
                     name={tabOption.iconName as IconName}
-                    size="standard" />
-                }
-                <TabText iconPosition={iconPosition} type={currentType} disabled={tabOption.disabled} >
+                    size="standard"
+                  />
+                  )}
+                <TabText iconPosition={iconPosition} type={currentType} disabled={tabOption.disabled}>
                   {tabOption.label.toUpperCase()}
                 </TabText>
               </TabButtonContent>
             </TabButton>
-          );
+          )
         })}
       </TabWrapper>
     </View>
-  );
-};
+  )
+}
 
-export const Tab = withTheme(TabComponent);
+export const Tab = withTheme(TabComponent)
