@@ -1,6 +1,6 @@
-import { Theme } from '@naturacosmeticos/natds-themes/react-native';
-import { CSSObject } from 'styled-components';
-import styled from 'styled-components/native';
+import { Theme } from '@naturacosmeticos/natds-themes/react-native'
+import { CSSObject } from 'styled-components'
+import styled from 'styled-components/native'
 import {
   getBorderRadiusMedium,
   getColorHighEmphasis,
@@ -10,9 +10,9 @@ import {
   getSize,
   getSizeMediumX,
   getSpacingMicro,
-  getSpacingSmall,
-} from '../../common/themeSelectors';
-import { CounterSizes } from './Counter.types';
+  getSpacingSmall
+} from '../../common/themeSelectors'
+import { CounterSizes } from './Counter.types'
 
 export const Label = styled.Text<{ theme: Theme }>(({ theme }): CSSObject => ({
   color: getColorMediumEmphasis(theme),
@@ -21,11 +21,11 @@ export const Label = styled.Text<{ theme: Theme }>(({ theme }): CSSObject => ({
   fontWeight: theme.counter.label.primary.fontWeight,
   letterSpacing: theme.counter.label.letterSpacing,
   lineHeight: theme.counter.label.fontSize * theme.counter.label.lineHeight,
-  marginBottom: getSpacingMicro(theme),
-}));
+  marginBottom: getSpacingMicro(theme)
+}))
 
 export const Container = styled.View<{
-  size: CounterSizes, theme: Theme
+  size: CounterSizes; theme: Theme;
 }>(({ size, theme }): CSSObject => ({
   alignItems: 'center',
   alignSelf: 'flex-start',
@@ -34,8 +34,8 @@ export const Container = styled.View<{
   borderRadius: getBorderRadiusMedium(theme),
   borderWidth: 1,
   flexDirection: 'row',
-  height: getSize(theme, size),
-}));
+  height: getSize(theme, size)
+}))
 
 export const Input = styled.TextInput<{ theme: Theme }>(({ theme }): CSSObject => ({
   borderColor: getColorLowEmphasis(theme),
@@ -50,5 +50,5 @@ export const Input = styled.TextInput<{ theme: Theme }>(({ theme }): CSSObject =
   lineHeight: theme.counter.content.fontSize * theme.counter.content.lineHeight,
   paddingHorizontal: getSpacingSmall(theme),
   textAlign: 'center',
-  width: getSizeMediumX(theme),
-}));
+  width: getSizeMediumX(theme)
+}))

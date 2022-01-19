@@ -1,4 +1,4 @@
-import { storiesOf } from '@storybook/react-native';
+import { storiesOf } from '@storybook/react-native'
 import {
   All,
   Default,
@@ -6,8 +6,8 @@ import {
   Interactive,
   Label,
   Size,
-  Value,
-} from './Counter.stories';
+  Value
+} from './Counter.stories'
 
 storiesOf('Counter', module)
   .add('All', All)
@@ -16,4 +16,4 @@ storiesOf('Counter', module)
   .add('Size', Size)
   .add('Disabled', Disabled)
   .add('Value', Value)
-  .add('Interactive', Interactive);
+  .add('Interactive', Interactive)
