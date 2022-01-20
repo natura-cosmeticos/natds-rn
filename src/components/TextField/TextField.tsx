@@ -1,6 +1,7 @@
+/* eslint-disable max-len */
 /* eslint-disable max-lines */
 import React, {
-  Dispatch, SetStateAction, forwardRef, useState
+  Dispatch, SetStateAction, forwardRef, useState, FunctionComponent
 } from 'react'
 import {
   KeyboardTypeOptions, NativeSyntheticEvent, TextInputFocusEventData, Platform, TextInput
@@ -61,7 +62,7 @@ const getContainerProps = ({
 }
 
 // eslint-disable-next-line complexity
-export const TextField = forwardRef<TextInput, TextFieldProps>((props, ref) => {
+export const TextField: FunctionComponent<TextFieldProps> = forwardRef<TextInput, TextFieldProps>((props, ref) => {
   const theme = useTheme()
   const [active, setActive] = useState(false)
   const [numberValue, setNumberValue] = useState('')
