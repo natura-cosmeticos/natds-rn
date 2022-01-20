@@ -1,5 +1,5 @@
-import theme from '../theme/mock-theme.json';
-import * as selectors from './assets';
+import theme from '../theme/mock-theme.json'
+import * as selectors from './assets'
 
 /*  eslint-disable mocha/no-setup-in-describe */
 describe.each`
@@ -9,12 +9,12 @@ ${'neutral'}  | ${'b'} | ${selectors.getNeutralLogoB} | ${theme.asset.brand.neut
 ${'custom'}   | ${'a'} | ${selectors.getCustomLogoA}  | ${theme.asset.brand.custom.a}
 ${'custom'}   | ${'b'} | ${selectors.getCustomLogoB}  | ${theme.asset.brand.custom.b}
 `('Assets selectors', ({
-  title, model, selector, expected,
+  title, model, selector, expected
 }) => {
   it(`should return brand's ${title} logo in model ${model}`, () => {
-    const result = selector(theme);
+    const result = selector(theme)
 
-    expect(result).toStrictEqual(expected);
-  });
-});
+    expect(result).toStrictEqual(expected)
+  })
+})
 /* eslint-enable mocha/no-setup-in-describe */

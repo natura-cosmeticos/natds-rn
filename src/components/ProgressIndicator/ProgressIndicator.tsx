@@ -1,11 +1,11 @@
-import React, { useEffect, useRef } from 'react';
-import { withTheme } from 'styled-components/native';
-import { Theme } from '@naturacosmeticos/natds-themes/react-native';
-import { Animated, Easing, Platform } from 'react-native';
+import React, { useEffect, useRef, useCallback } from 'react'
+import { withTheme } from 'styled-components/native'
+import { Theme } from '@naturacosmeticos/natds-themes/react-native'
+import { Animated, Easing, Platform } from 'react-native'
 import {
-  Container, Layer, Line, Loop, View,
-} from './ProgressIndicator.styles';
-import { getSize } from '../../common/themeSelectors';
+  Container, Layer, Line, Loop, View
+} from './ProgressIndicator.styles'
+import { getSize } from '../../common/themeSelectors'
 
 export type ProgressIndicatorSizes = 'standard' | 'semi' | 'medium' | 'large';
 
@@ -27,57 +27,58 @@ export interface ProgressIndicatorProps {
 export const ProgressIndicatorComponent = ({
   size = 'medium',
   showLayer = false,
-  theme,
+  theme
 }: ProgressIndicatorProps) => {
   /**
    * Duration specify how much the circle will take to make a 720deg loop around itself,
    * decrease it will speed up the animation speed and increase will slow the animation speed
    * The default speed is 1.4 second per loop
    */
-  const duration = 1400;
+  const duration = 1400
   /**
    * This animation/Animated.timing, is responsible for looping the border around the view.
    */
-  const timer = useRef(new Animated.Value(0)).current;
+  const timer = useRef(new Animated.Value(0)).current
   const rotation = Animated.timing(timer, {
     duration,
     easing: Easing.inOut(Easing.quad),
     isInteraction: false,
     toValue: 1,
-    useNativeDriver: Platform.OS !== 'web',
-  });
+    useNativeDriver: Platform.OS !== 'web'
+  })
   /**
    * The rotate animation will take from 0deg to 720deg to make a full loop around itself
    */
-  const minCircularRange = '0deg';
-  const maxCircularRange = '720deg';
+  const minCircularRange = '0deg'
+  const maxCircularRange = '720deg'
 
   const layerStyle = {
     transform: [
       {
         rotate: timer.interpolate({
           inputRange: [0, 1],
-          outputRange: [minCircularRange, maxCircularRange],
-        }),
-      },
-    ],
-  };
+          outputRange: [minCircularRange, maxCircularRange]
+        })
+      }
+    ]
+  }
 
   /**
    * Loop rotation animation continuously,
    * each time it reaches the end, it resets and begins again from the start.
    */
-  function startRotation(): void {
-    timer.setValue(0);
-    Animated.loop(rotation).start();
-  }
+
+  const startRotation = useCallback((): void => {
+    timer.setValue(0)
+    Animated.loop(rotation).start()
+  }, [rotation, timer])
 
   /**
    * Reset the timer and loop the animation again on each update
    */
   useEffect(() => {
-    startRotation();
-  }, []);
+    startRotation()
+  }, [startRotation])
 
   return (
     <View size={getSize(theme, size)} showLayer={showLayer}>
@@ -91,9 +92,9 @@ export const ProgressIndicatorComponent = ({
         </Loop>
       </Layer>
     </View>
-  );
-};
+  )
+}
 
 export const ProgressIndicator = React.memo(
-  withTheme(ProgressIndicatorComponent),
-);
+  withTheme(ProgressIndicatorComponent)
+)

@@ -1,42 +1,42 @@
-import React from 'react';
-import renderer from 'react-test-renderer';
-import { ThemeProvider } from 'styled-components/native';
+import React from 'react'
+import renderer from 'react-test-renderer'
+import { ThemeProvider } from 'styled-components/native'
 
-import { Text } from 'react-native';
-import theme from '../../common/themeSelectors/theme/mock-theme.json';
+import { Text } from 'react-native'
+import theme from '../../common/themeSelectors/theme/mock-theme.json'
 import {
-  Dialog, DialogTitle, DialogContent, DialogContentText, DialogActions, DialogHeader,
-} from '.';
-import { renderWithTheme } from '../../../test/testHelpers';
+  Dialog, DialogTitle, DialogContent, DialogContentText, DialogActions, DialogHeader
+} from '.'
+import { renderWithTheme } from '../../../test/testHelpers'
 
 const renderOldDialog = () => (renderer.create(
   <ThemeProvider theme={theme}>
-     <Dialog visible={true}>
-        <DialogTitle>Title</DialogTitle>
-        <DialogContent>
-          <DialogContentText>
-            content
-          </DialogContentText>
-        </DialogContent>
-        <DialogActions>
-          <Text>
-            actions
-          </Text>
-        </DialogActions>
-      </Dialog>
-  </ThemeProvider>,
-));
+    <Dialog visible>
+      <DialogTitle>Title</DialogTitle>
+      <DialogContent>
+        <DialogContentText>
+          content
+        </DialogContentText>
+      </DialogContent>
+      <DialogActions>
+        <Text>
+          actions
+        </Text>
+      </DialogActions>
+    </Dialog>
+  </ThemeProvider>
+))
 
 describe('Dialog component', () => {
   it('Should render a dialog with title, content and actions', () => {
-    const dialog = renderOldDialog().toJSON();
+    const dialog = renderOldDialog().toJSON()
 
-    expect(dialog).toMatchSnapshot();
-  });
+    expect(dialog).toMatchSnapshot()
+  })
 
   it('Should render a new dialog with header, content and actions', () => {
     const { getByTestId, toJSON } = renderWithTheme(
-      <Dialog visible={true} testID='dialog' >
+      <Dialog visible testID="dialog">
         <DialogHeader>
           <DialogTitle>Title</DialogTitle>
         </DialogHeader>
@@ -48,46 +48,46 @@ describe('Dialog component', () => {
         <DialogActions>
           actions
         </DialogActions>
-      </Dialog>,
-    );
-    const dialog = getByTestId('dialog');
+      </Dialog>
+    )
+    const dialog = getByTestId('dialog')
 
-    expect(dialog).toHaveTextContent('content');
-    expect(dialog).toHaveTextContent('actions');
-    expect(toJSON).toMatchSnapshot();
-  });
+    expect(dialog).toHaveTextContent('content')
+    expect(dialog).toHaveTextContent('actions')
+    expect(toJSON).toMatchSnapshot()
+  })
 
   it('Should render a dialog content with divider', () => {
     const content = (
-      <DialogContent divider >
+      <DialogContent divider>
         <DialogContentText>
           something...
         </DialogContentText>
       </DialogContent>
-    );
+    )
 
-    const { toJSON } = renderWithTheme(content);
+    const { toJSON } = renderWithTheme(content)
 
-    expect(toJSON()).toMatchSnapshot();
-  });
+    expect(toJSON()).toMatchSnapshot()
+  })
 
   it('Should render a dialog passing alignment action', () => {
-    const { getByTestId, toJSON } = renderWithTheme(<DialogActions testID='dialog-actions' actionsAlignment='stacked' >something...</DialogActions>);
+    const { getByTestId, toJSON } = renderWithTheme(<DialogActions testID="dialog-actions" actionsAlignment="stacked">something...</DialogActions>)
 
-    expect(getByTestId('dialog-actions')).toHaveProp('actionsAlignment', 'stacked');
-    expect(toJSON()).toMatchSnapshot();
-  });
+    expect(getByTestId('dialog-actions')).toHaveProp('actionsAlignment', 'stacked')
+    expect(toJSON()).toMatchSnapshot()
+  })
 
   it('Should render a dialog header with title and optional test id', () => {
     const header = (
-      <DialogHeader testID='dialog-header'>
+      <DialogHeader testID="dialog-header">
         <DialogTitle>something...</DialogTitle>
       </DialogHeader>
-    );
+    )
 
-    const { getByTestId, toJSON } = renderWithTheme(header);
+    const { getByTestId, toJSON } = renderWithTheme(header)
 
-    expect(getByTestId('dialog-header')).toHaveTextContent('something...');
-    expect(toJSON()).toMatchSnapshot();
-  });
-});
+    expect(getByTestId('dialog-header')).toHaveTextContent('something...')
+    expect(toJSON()).toMatchSnapshot()
+  })
+})

@@ -1,5 +1,4 @@
-
-import styled from 'styled-components/native';
+import styled from 'styled-components/native'
 import {
   getColorPrimary,
   Theme,
@@ -7,33 +6,33 @@ import {
   getColorLowEmphasis,
   getColorOnBackground,
   getColorMediumEmphasis,
-  getSpacingTiny,
-} from '../../common/themeSelectors';
-import { RadioButtonColors } from './RadioButton';
+  getSpacingTiny
+} from '../../common/themeSelectors'
+import { RadioButtonColors } from './RadioButton'
 
 function getCircleColor(
   selected = false,
   disabled: boolean,
   color: RadioButtonColors,
-  theme: Theme,
+  theme: Theme
 ) {
   if (disabled) {
-    return getColorLowEmphasis(theme);
+    return getColorLowEmphasis(theme)
   }
 
   if (selected) {
-    return color === 'secondary' ? getColorSecondary(theme) : getColorPrimary(theme);
+    return color === 'secondary' ? getColorSecondary(theme) : getColorPrimary(theme)
   }
 
-  return getColorMediumEmphasis(theme);
+  return getColorMediumEmphasis(theme)
 }
 
 export const Container = styled.TouchableOpacity.attrs({
-  activeOpacity: 1,
+  activeOpacity: 1
 })`
   flex-direction: row;
   align-items: center;
-`;
+`
 
 export const Label = styled.Text<{ theme: Theme; disabled: boolean }>(({ theme, disabled }) => ({
   color: disabled ? getColorLowEmphasis(theme) : getColorOnBackground(theme),
@@ -42,9 +41,8 @@ export const Label = styled.Text<{ theme: Theme; disabled: boolean }>(({ theme, 
   fontWeight: theme.radioButton.label.primary.fontWeight,
   letterSpacing: theme.radioButton.label.letterSpacing,
   lineHeight: theme.radioButton.label.fontSize * theme.radioButton.label.lineHeight,
-  marginLeft: getSpacingTiny(theme),
-}));
-
+  marginLeft: getSpacingTiny(theme)
+}))
 
 export const Circle = styled.View<{
   theme: Theme;
@@ -55,7 +53,7 @@ export const Circle = styled.View<{
   theme,
   color,
   selected,
-  disabled,
+  disabled
 }) => ({
   alignItems: 'center',
   borderColor: getCircleColor(selected, disabled, color, theme),
@@ -63,8 +61,8 @@ export const Circle = styled.View<{
   borderWidth: '2px',
   height: 20,
   justifyContent: 'center',
-  width: 20,
-}));
+  width: 20
+}))
 
 export const Center = styled.View<{
   theme: Theme;
@@ -75,17 +73,17 @@ export const Center = styled.View<{
   theme,
   color,
   selected,
-  disabled,
+  disabled
 }) => ({
   backgroundColor: getCircleColor(selected, disabled, color, theme),
   borderRadius: 12,
   height: 10,
-  width: 10,
-}));
+  width: 10
+}))
 
 export const Wrapper = styled.View(() => ({
   alignItems: 'center',
   display: 'flex',
   justifyContent: 'center',
-  padding: 8,
-}));
+  padding: 8
+}))

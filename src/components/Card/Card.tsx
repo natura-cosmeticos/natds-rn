@@ -1,11 +1,11 @@
-import React, { ReactNode } from 'react';
-import styled, { withTheme } from 'styled-components/native';
+import React, { ReactNode } from 'react'
+import styled, { withTheme } from 'styled-components/native'
 import {
   Theme,
   getRadiusBySize,
   getShadowBySize,
-  getColorSurface,
-} from '../../common/themeSelectors';
+  getColorSurface
+} from '../../common/themeSelectors'
 
 export type CardTypes = 'base';
 
@@ -35,22 +35,23 @@ interface CardBase {
 
 const CardBase = styled.View<CardBase>(({ theme }) => ({
   backgroundColor: getColorSurface(theme),
-  borderRadius: getRadiusBySize(theme, 'medium'),
-}));
+  borderRadius: getRadiusBySize(theme, 'medium')
+}))
 
 const CardComponent = ({
   children,
   testID = 'card',
   theme,
-  type = 'base',
+  type = 'base'
 }: CardProps) => (
   <CardBase
     style={getShadowBySize(theme, 'micro')}
     testID={testID}
     theme={theme}
-    type={type}>
+    type={type}
+  >
     {children}
   </CardBase>
-);
+)
 
-export const Card = withTheme(CardComponent);
+export const Card = withTheme(CardComponent)

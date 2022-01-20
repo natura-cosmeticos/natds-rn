@@ -1,47 +1,46 @@
-import styled from 'styled-components/native';
-import { TextProps, NativeSyntheticEvent, TargetedEvent } from 'react-native';
-import { SnackbarType } from './Snackbar';
-import { Theme, getSpacingSmall, getRadiusBySize } from '../../common/themeSelectors';
+import styled from 'styled-components/native'
+import { TextProps, NativeSyntheticEvent, TargetedEvent } from 'react-native'
+import { SnackbarType } from './Snackbar'
+import { Theme, getSpacingSmall, getRadiusBySize } from '../../common/themeSelectors'
 
 const getBackgroundColorByType = (theme: Theme, type: SnackbarType) => {
   switch (type) {
     case 'info':
-      return theme.color.link;
+      return theme.color.link
     case 'warning':
-      return theme.color.warning;
+      return theme.color.warning
     case 'error':
-      return theme.color.alert;
+      return theme.color.alert
     case 'success':
-      return theme.color.success;
+      return theme.color.success
     default:
-      return theme.color.onSurface;
+      return theme.color.onSurface
   }
-};
+}
 
 export const getColorByType = (theme: Theme, type: SnackbarType) => {
   switch (type) {
     case 'info':
-      return theme.color.onLink;
+      return theme.color.onLink
     case 'warning':
-      return theme.color.onWarning;
+      return theme.color.onWarning
     case 'error':
-      return theme.color.onAlert;
+      return theme.color.onAlert
     case 'success':
-      return theme.color.onSuccess;
+      return theme.color.onSuccess
     default:
-      return theme.color.surface;
+      return theme.color.surface
   }
-};
+}
 
-
-interface SnackbarButtonWrapperProps { isTwoLineAction?: boolean; }
+interface SnackbarButtonWrapperProps { isTwoLineAction?: boolean }
 
 export const SnackbarButtonWrapper = styled.View<SnackbarButtonWrapperProps>`
   margin-top: ${({ isTwoLineAction }) => (isTwoLineAction ? '0px' : '4px')};
   margin-bottom: 4px;
   margin-right: 4px;
   margin-left: 4px;
-`;
+`
 
 interface SnackbarWrapperProps {
   theme: Theme;
@@ -61,8 +60,8 @@ export const SnackbarWrapper = styled.View<SnackbarWrapperProps>(({ theme, type 
   marginLeft: getSpacingSmall(theme),
   marginRight: getSpacingSmall(theme),
   position: 'absolute',
-  right: 0,
-}));
+  right: 0
+}))
 
 // begin - onTextLayout missing typings @0.62.2
 // TODO: remove this block when upgrading @types/react-native
@@ -103,5 +102,5 @@ export const SnackbarText = styled.Text<SnackbarTextProps>(({ theme, type, isTwo
   paddingBottom: 16,
   paddingLeft: 16,
   paddingRight: 16,
-  paddingTop: isTwoLineAction ? 8 : 16,
-}));
+  paddingTop: isTwoLineAction ? 8 : 16
+}))

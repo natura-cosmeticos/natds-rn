@@ -1,24 +1,24 @@
-import React, { ReactNode } from 'react';
-import styled from 'styled-components/native';
-import { CSSObject, useTheme } from 'styled-components';
-import { getBorderRadiusMedium, getColorSurface } from '../..';
-import { InputStates } from '../InputFeedbackContainer/InputFeedbackHelper';
-import { getColorLowEmphasis } from '../../common/themeSelectors';
+import React, { ReactNode } from 'react'
+import styled from 'styled-components/native'
+import { CSSObject, useTheme } from 'styled-components'
+import { getBorderRadiusMedium, getColorSurface } from '../..'
+import { InputStates } from '../InputFeedbackContainer/InputFeedbackHelper'
+import { getColorLowEmphasis } from '../../common/themeSelectors'
 
 interface InputBoxProps {
-  boxColor?: string,
-  boxState?: Extract<InputStates, 'active'>,
-  children: ReactNode,
+  boxColor?: string;
+  boxState?: Extract<InputStates, 'active'>;
+  children: ReactNode;
 }
 
 const BoxContainer = styled.View<{ borderWidth: number }>(({ borderWidth, theme }): CSSObject => ({
   borderColor: 'transparent',
   borderRadius: getBorderRadiusMedium(theme),
-  borderWidth,
-}));
+  borderWidth
+}))
 
 const Box = styled.View<{
-  borderColor: string, borderWidth: number,
+  borderColor: string; borderWidth: number;
 }>(({ borderColor, borderWidth, theme }): CSSObject => ({
   alignItems: 'center',
   backgroundColor: getColorSurface(theme),
@@ -26,12 +26,12 @@ const Box = styled.View<{
   borderRadius: getBorderRadiusMedium(theme),
   borderWidth,
   flexDirection: 'row',
-  maxWidth: '100%',
-}));
+  maxWidth: '100%'
+}))
 
 export const InputBox = ({ boxColor, boxState, children }: InputBoxProps) => {
-  const theme = useTheme();
-  const isActive = boxState === 'active';
+  const theme = useTheme()
+  const isActive = boxState === 'active'
 
   return (
     <BoxContainer testID="box-container" borderWidth={isActive ? 0 : 1} theme={theme}>
@@ -39,5 +39,5 @@ export const InputBox = ({ boxColor, boxState, children }: InputBoxProps) => {
         { children }
       </Box>
     </BoxContainer>
-  );
-};
+  )
+}

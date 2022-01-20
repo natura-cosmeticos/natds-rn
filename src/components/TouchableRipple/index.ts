@@ -1,1 +1,1 @@
-export { TouchableRipple } from './TouchableRipple';
+export { TouchableRipple } from './TouchableRipple'

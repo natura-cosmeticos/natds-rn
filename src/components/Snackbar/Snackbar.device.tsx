@@ -1,21 +1,21 @@
-import { storiesOf } from '@storybook/react-native';
+import { storiesOf } from '@storybook/react-native'
 import {
-  interactive,
-  standard,
-  info,
-  warning,
-  error,
-  success,
-  multiline,
-  multilineWithButton,
-} from './Snackbar.stories';
+  Interactive,
+  Standard,
+  Info,
+  Warning,
+  Error,
+  Success,
+  Multiline,
+  MultilineWithButton
+} from './Snackbar.stories'
 
 storiesOf('Snackbar', module)
-  .add('interactive', interactive)
-  .add('standard', standard)
-  .add('info', info)
-  .add('warning', warning)
-  .add('error', error)
-  .add('success', success)
-  .add('multiline', multiline)
-  .add('multiline with button', multilineWithButton);
+  .add('interactive', Interactive)
+  .add('standard', Standard)
+  .add('info', Info)
+  .add('warning', Warning)
+  .add('error', Error)
+  .add('success', Success)
+  .add('multiline', Multiline)
+  .add('multiline with button', MultilineWithButton)

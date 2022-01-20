@@ -1,2 +1,2 @@
-export * from './common/themeSelectors';
-export * from './components';
+export * from './common/themeSelectors'
+export * from './components'

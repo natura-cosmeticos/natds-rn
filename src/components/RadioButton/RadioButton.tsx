@@ -1,9 +1,9 @@
-import React from 'react';
+import React from 'react'
 
-import { TouchableRipple } from '../TouchableRipple/TouchableRipple';
+import { TouchableRipple } from '../TouchableRipple/TouchableRipple'
 import {
-  Container, Circle, Center, Label, Wrapper,
-} from './RadioButton.styles';
+  Container, Circle, Center, Label, Wrapper
+} from './RadioButton.styles'
 
 /**
  * @deprecated use `primary` instead
@@ -53,13 +53,13 @@ export const RadioButton = ({
   disabled = false,
   label,
   value = '',
-  testID = 'radio-button',
+  testID = 'radio-button'
 }: RadioButtonProps) => {
   const onPressWithValue = () => {
     if (onPress) {
-      onPress(value);
+      onPress(value)
     }
-  };
+  }
   const radio = (
     <TouchableRipple
       size={20}
@@ -85,7 +85,7 @@ export const RadioButton = ({
         </Circle>
       </Wrapper>
     </TouchableRipple>
-  );
+  )
 
   if (label) {
     return (
@@ -93,8 +93,8 @@ export const RadioButton = ({
         {radio}
         <Label disabled={disabled}>{label}</Label>
       </Container>
-    );
+    )
   }
 
-  return radio;
-};
+  return radio
+}

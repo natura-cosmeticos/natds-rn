@@ -1,4 +1,4 @@
-import { Size } from '@naturacosmeticos/natds-themes/react-native';
+import { Size } from '@naturacosmeticos/natds-themes/react-native'
 
 export type CounterSizes = keyof Pick<Size, 'medium' | 'semiX'>;
 
@@ -7,74 +7,74 @@ export interface CounterProps {
    * An accessibility hint helps users understand what will happen when they perform an action
    * on the accessibility element when that result is not clear from the accessibility label.
    */
-  decrementButtonAccessibilityHint?: string,
+  decrementButtonAccessibilityHint?: string;
   /**
    * An accessibility label overrides the text that's read by the screen reader when the user
    * interacts with the element. By default, the label is constructed by traversing all the
    * children and accumulating all the Text nodes separated by space.
    */
-  decrementButtonAccessibilityLabel?: string,
+  decrementButtonAccessibilityLabel?: string;
   /**
    * An accessibility hint helps users understand what will happen when they perform an action
    * on the accessibility element when that result is not clear from the accessibility label.
    */
-  incrementButtonAccessibilityHint?: string,
+  incrementButtonAccessibilityHint?: string;
   /**
    * An accessibility label overrides the text that's read by the screen reader when the user
    * interacts with the element. By default, the label is constructed by traversing all the
    * children and accumulating all the Text nodes separated by space.
    */
-  incrementButtonAccessibilityLabel?: string,
+  incrementButtonAccessibilityLabel?: string;
   /**
    * An accessibility hint helps users understand what will happen when they perform an action
    * on the accessibility element when that result is not clear from the accessibility label.
    */
-  inputAccessibilityHint?: string,
+  inputAccessibilityHint?: string;
   /**
    * An accessibility label overrides the text that's read by the screen reader when the user
    * interacts with the element. By default, the label is constructed by traversing all the
    * children and accumulating all the Text nodes separated by space.
    */
-  inputAccessibilityLabel?: string,
+  inputAccessibilityLabel?: string;
   /**
    * When `true` both the decrement and increment button are disabled.
    * @default false
    */
-  disabled?: boolean,
+  disabled?: boolean;
   /**
    * When provided this shows above the counter.
    */
-  label?: string,
+  label?: string;
   /**
    * The minimum valid value for the component
    * @default 0
    */
-  minValue?: number,
+  minValue?: number;
   /**
    * The maximum valid value for the component
    * @default 99
    */
-  maxValue?: number,
+  maxValue?: number;
   /**
    * Callback that is called when the decrement button is pressed.
    */
-  onDecrement: () => void,
+  onDecrement: () => void;
   /**
    * Callback that is called when the increment button is pressed.
    */
-  onIncrement: () => void,
+  onIncrement: () => void;
   /**
    * This defines the height of the component, according to
    * corresponding theme Size token.
    * @default 'medium'
    */
-  size?: CounterSizes,
+  size?: CounterSizes;
   /**
    * Optional ID for testing.
    */
-  testID?: string,
+  testID?: string;
   /**
    * Current value of the counter.
    */
-  value?: number,
+  value?: number;
 }

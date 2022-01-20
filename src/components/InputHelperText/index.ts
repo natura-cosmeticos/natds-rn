@@ -1,1 +1,1 @@
-export { InputHelperText } from './InputHelperText';
+export { InputHelperText } from './InputHelperText'

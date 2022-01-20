@@ -1,11 +1,11 @@
-import React from 'react';
-import { withTheme } from 'styled-components/native';
-import { Icon } from '../Icon';
+import React from 'react'
+import { withTheme } from 'styled-components/native'
+import { Icon } from '../Icon'
 import {
-  getButtonShadowByType, Label, LabelText, Surface,
-} from './Button.styles';
-import { TouchableRipple } from '../TouchableRipple/TouchableRipple';
-import { ButtonBaseProps } from './Button.types';
+  getButtonShadowByType, Label, LabelText, Surface
+} from './Button.styles'
+import { TouchableRipple } from '../TouchableRipple/TouchableRipple'
+import { ButtonBaseProps } from './Button.types'
 
 const ButtonComponent = ({
   accessibilityHint,
@@ -19,18 +19,18 @@ const ButtonComponent = ({
   text,
   theme,
   type = 'contained',
-  textLabelStyle,
+  textLabelStyle
 }: ButtonBaseProps) => {
   const iconColor = disabled
     ? theme.button[type].color.disable.label
-    : theme.button[type].color.enable.label;
+    : theme.button[type].color.enable.label
 
   return (
     <TouchableRipple
       color="highlight"
       disabled={disabled}
-      hideOverflow={true}
-      onPress={disabled ? () => { } : onPress}
+      hideOverflow
+      onPress={disabled ? () => ({}) : onPress}
       style={{ borderRadius: theme.button.borderRadius }}
     >
       <Surface
@@ -55,16 +55,18 @@ const ButtonComponent = ({
             {text.toUpperCase()}
           </LabelText>
           {iconName
-            && <Icon
+            && (
+            <Icon
               accessibilityRole="imagebutton"
               style={{ color: iconColor }}
               name={iconName}
-              size="small" />
-          }
+              size="small"
+            />
+            )}
         </Label>
       </Surface>
     </TouchableRipple>
-  );
-};
+  )
+}
 
-export const ButtonBase = withTheme(ButtonComponent);
+export const ButtonBase = withTheme(ButtonComponent)

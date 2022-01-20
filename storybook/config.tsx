@@ -2,7 +2,7 @@
 import React from 'react';
 import { configure, addDecorator } from '@storybook/react-native';
 import { withKnobs } from '@storybook/addon-knobs';
-import { StoriesWrapper } from '../src/common/StoryWrapper';
+import StoriesWrapper from '../src/common/StoryWrapper';
 // @ts-ignore
 import { loadStories } from './storyLoader';
 

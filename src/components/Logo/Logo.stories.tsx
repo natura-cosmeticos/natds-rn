@@ -1,10 +1,10 @@
-import React from 'react';
-import { text } from '@storybook/addon-knobs';
-import { VerticalStoryContainer } from '../../common/HelperComponents/StoryContainer';
-import { Logo } from './Logo';
+import React from 'react'
+import { text } from '@storybook/addon-knobs'
+import { VerticalStoryContainer } from '../../common/HelperComponents/StoryContainer'
+import { Logo } from './Logo'
 import {
-  LogoSizes, LogoColors, NeutralLogoModel,
-} from './Logo.types';
+  LogoSizes, LogoColors, NeutralLogoModel
+} from './Logo.types'
 
 const description = () => `
 - - -
@@ -39,18 +39,18 @@ With the following attribute status:
     - ✅ \`veryhuge\`
 
 - - -
-`;
+`
 
 export default {
   component: Logo,
   parameters: {
     componentSubtitle: 'Logo adapted as brand standards for each company.',
     docs: {
-      extractComponentDescription: description,
-    },
+      extractComponentDescription: description
+    }
   },
-  title: 'Components|Logo',
-};
+  title: 'Components|Logo'
+}
 
 export const Interactive = () => (
   <VerticalStoryContainer title="Interactive">
@@ -60,4 +60,4 @@ export const Interactive = () => (
       size={text('Size', 'veryHuge') as LogoSizes}
     />
   </VerticalStoryContainer>
-);
+)

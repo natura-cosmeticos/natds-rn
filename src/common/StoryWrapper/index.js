@@ -1,2 +1,3 @@
+import { StoriesWrapper } from './StoriesWrapper'
 
-export { StoriesWrapper } from './StoriesWrapper';
+export default StoriesWrapper

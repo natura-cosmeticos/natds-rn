@@ -1,11 +1,11 @@
 /* eslint-disable max-len */
-import { Color } from '@naturacosmeticos/natds-themes/react-native';
-import { AccessibilityRole, AccessibilityValue, Animated } from 'react-native';
+import { Color } from '@naturacosmeticos/natds-themes/react-native'
+import { AccessibilityRole, AccessibilityValue, Animated } from 'react-native'
 
 export type AnimationProps = {
-  currentValue: Animated.Value
-  duration: number
-  toValue: number
+  currentValue: Animated.Value;
+  duration: number;
+  toValue: number;
 }
 
 export type BadgeColors = keyof Pick<Color, 'primary' | 'secondary' | 'success' | 'alert'>
@@ -33,25 +33,25 @@ export interface BadgeBaseProps {
    * If no color is specified, the 'alert' color will be applied as default.
    * @default 'alert'
    */
-  color?: BadgeColors
+  color?: BadgeColors;
   /**
    * Optional ID for testing
    */
-  testID?: string
+  testID?: string;
 }
 
 export type BadgePulseProps = BadgeBaseProps & {
   /**
    * Specify the variant of Badge you want to create.
    */
-  variant: 'pulse',
+  variant: 'pulse';
 }
 
 export type BadgeDotProps = BadgeBaseProps & {
   /**
    * Specify the variant of Badge you want to create.
    */
-  variant: 'dot'
+  variant: 'dot';
 }
 
 export type BadgeStandardProps = BadgeBaseProps & {
@@ -59,16 +59,16 @@ export type BadgeStandardProps = BadgeBaseProps & {
    * Specify the limit of notification and when is equal or less than value,
    * will display a `+` sign next to the value. Only available for `standard` variant
    */
-  limit?: number
+  limit?: number;
   /**
    * Specify the number that will be display inside the Badge.
    * Only available for `standard` variant
    */
-  value: number
+  value: number;
   /**
    * Specify the variant of Badge you want to create.
    */
-  variant: 'standard'
+  variant: 'standard';
 }
 
 export type BadgeProps = BadgePulseProps | BadgeDotProps | BadgeStandardProps

@@ -1,5 +1,5 @@
-import theme from '../theme/mock-theme.json';
-import * as selectors from './sizes';
+import theme from '../theme/mock-theme.json'
+import * as selectors from './sizes'
 
 /*  eslint-disable mocha/no-setup-in-describe */
 describe.each`
@@ -11,24 +11,24 @@ describe.each`
   ${'Large'}   | ${selectors.getSizeLarge}   | ${theme.size.large}
   ${'LargeX'}   | ${selectors.getSizeLargeX}   | ${theme.size.largeX}
 `('Size selectors', ({
-  title, selector, expected,
+  title, selector, expected
 }) => {
   it(`should return size ${title}`, () => {
-    const result = selector(theme);
+    const result = selector(theme)
 
-    expect(result).toBe(expected);
-  });
-});
+    expect(result).toBe(expected)
+  })
+})
 describe.each`
   title       | selector                           | expected
   ${'Medium'} | ${selectors.getBorderRadiusMedium} | ${theme.borderRadius.medium}
 `('BorderRadius selectors', ({
-  title, selector, expected,
+  title, selector, expected
 }) => {
   it(`should return border radius ${title}`, () => {
-    const result = selector(theme);
+    const result = selector(theme)
 
-    expect(result).toBe(expected);
-  });
-});
+    expect(result).toBe(expected)
+  })
+})
 /* eslint-enable mocha/no-setup-in-describe */

@@ -1,9 +1,11 @@
-import React, { useState } from 'react';
-import { boolean, text, select } from '@storybook/addon-knobs';
-import { StoryContainer } from '../../common/HelperComponents/StoryContainer';
-import { RatingValueProps } from './Rating.types';
+import React, { useState } from 'react'
+import { boolean, text, select } from '@storybook/addon-knobs'
+import { StoryContainer } from '../../common/HelperComponents/StoryContainer'
+import {
+  RatingAlignProps, RatingValueProps, RatingVarianstProps
+} from './Rating.types'
 
-import { Rating } from './Rating';
+import { Rating } from './Rating'
 
 const description = () => `
 - - -
@@ -34,32 +36,32 @@ With the following attribute status:
       - ✅ \`Press\`
 
 - - -
-`;
+`
 
 export default {
   component: Rating,
   parameters: {
     componentSubtitle: 'Rating subtitle',
     docs: {
-      extractComponentDescription: description,
-    },
+      extractComponentDescription: description
+    }
   },
-  title: 'Components|Rating',
-};
+  title: 'Components|Rating'
+}
 
 const variants = {
   counter: 'counter',
   input: 'input',
-  readOnly: 'read-only',
-};
+  readOnly: 'read-only'
+}
 
 const sizes = {
   medium: 'medium',
   semi: 'semi',
   semix: 'semiX',
   small: 'small',
-  standard: 'standard',
-};
+  standard: 'standard'
+}
 
 const rates = {
   0: 0,
@@ -67,42 +69,41 @@ const rates = {
   2: 2,
   3: 3,
   4: 4,
-  5: 5,
-};
-
+  5: 5
+}
 
 export const Input = () => {
-  const [rating, setRating] = useState<RatingValueProps>(0);
+  const [rating, setRating] = useState<RatingValueProps | number>(0)
 
   return (
-    <StoryContainer title='Input'>
-      <Rating variant='input' rate={rating} label='Placeholder' size='semi' onPress={(value => setRating(value))}/>
+    <StoryContainer title="Input">
+      <Rating variant="input" rate={rating} label="Placeholder" size="semi" onPress={((value) => setRating(value))} />
     </StoryContainer>
-  );
-};
+  )
+}
 
 export const ReadOnly = () => (
-  <StoryContainer title='Read-Only'>
-    <Rating variant='read-only' rate={3} size='semi' />
+  <StoryContainer title="Read-Only">
+    <Rating variant="read-only" rate={3} size="semi" />
   </StoryContainer>
-);
+)
 
 export const Counter = () => (
-  <StoryContainer title='Counter'>
-    <Rating variant='counter' label='Placeholder' size='semi' />
+  <StoryContainer title="Counter">
+    <Rating variant="counter" label="Placeholder" size="semi" />
   </StoryContainer>
-);
+)
 
 export const Interactive = () => (
-  <StoryContainer title='Interactive'>
+  <StoryContainer title="Interactive">
     <Rating
-      variant={select('Variant', variants, 'read-only') as any}
+      variant={select('Variant', variants, 'read-only') as RatingVarianstProps}
       label={text('Label', 'Placeholder')}
-      size={select('Size', sizes, 'semi') as any}
-      align={select('Align', ['left', 'right'], 'left') as any}
+      size={select('Size', sizes, 'semi') as never}
+      align={select('Align', ['left', 'right'], 'left') as RatingAlignProps}
       disabled={boolean('Disabled', false)}
       rate={select('Rate', rates, 1) as RatingValueProps}
-      onPress={(() => {})}
+      onPress={(() => ({}))}
     />
   </StoryContainer>
-);
+)

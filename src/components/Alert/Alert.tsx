@@ -1,8 +1,8 @@
-import { IconName } from '@naturacosmeticos/natds-icons';
-import React from 'react';
-import { withTheme } from 'styled-components/native';
-import { Theme } from '../../common/themeSelectors';
-import { Icon } from '../Icon/Icon';
+import { IconName } from '@naturacosmeticos/natds-icons'
+import React from 'react'
+import { withTheme } from 'styled-components/native'
+import { Theme } from '../../common/themeSelectors'
+import { Icon } from '../Icon/Icon'
 
 import {
   AlertWrapper,
@@ -11,9 +11,8 @@ import {
   Variants,
   Types,
   AlertContent,
-  IconContent,
-} from './Alert.styles';
-
+  IconContent
+} from './Alert.styles'
 
 export interface AlertProps {
   /**
@@ -45,21 +44,21 @@ export interface AlertProps {
 const getIcon = (type: Types) => {
   const icons: Record<Types, { name: IconName }> = {
     error: {
-      name: 'outlined-alert-cancel',
+      name: 'outlined-alert-cancel'
     },
     info: {
-      name: 'outlined-alert-info',
+      name: 'outlined-alert-info'
     },
     success: {
-      name: 'outlined-alert-check',
+      name: 'outlined-alert-check'
     },
     warning: {
-      name: 'outlined-alert-warning',
-    },
-  };
+      name: 'outlined-alert-warning'
+    }
+  }
 
-  return icons[type];
-};
+  return icons[type]
+}
 
 const AlertComponent = ({
   testID = 'alert',
@@ -67,7 +66,7 @@ const AlertComponent = ({
   variant,
   type,
   title,
-  message,
+  message
 }: AlertProps) => (
   <AlertWrapper theme={theme} testID={testID} variant={variant} type={type}>
     <IconContent testID={`${testID}-icon`}>
@@ -78,6 +77,6 @@ const AlertComponent = ({
       <AlertText>{message}</AlertText>
     </AlertContent>
   </AlertWrapper>
-);
+)
 
-export const Alert = withTheme(AlertComponent);
+export const Alert = withTheme(AlertComponent)

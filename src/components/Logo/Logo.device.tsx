@@ -1,4 +1,4 @@
-import { storiesOf } from '@storybook/react-native';
-import { Interactive } from './Logo.stories';
+import { storiesOf } from '@storybook/react-native'
+import { Interactive } from './Logo.stories'
 
-storiesOf('Logo', module).add('Interactive', Interactive);
+storiesOf('Logo', module).add('Interactive', Interactive)

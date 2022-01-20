@@ -1,10 +1,10 @@
 /* eslint-disable max-lines */
-import React from 'react';
-import { View } from 'react-native';
+import React from 'react'
+import { View } from 'react-native'
 
-import { boolean, select } from '@storybook/addon-knobs';
-import { Tab } from '.';
-import { TabPositions, IconPositions } from './Tab.types';
+import { boolean, select } from '@storybook/addon-knobs'
+import { Tab } from '.'
+import { TabPositions, IconPositions } from './Tab.types'
 
 const description = () => `
 - - -
@@ -29,213 +29,212 @@ With the following attribute status:
   - ✅ **onChange**
 
 - - -
-`;
+`
 
 export default {
   component: Tab,
   parameters: {
     componentSubtitle: 'Tabs allow the users to navigate between groups of contents that are at the same level of hierarchy.',
     docs: {
-      extractComponentDescription: description,
-    },
+      extractComponentDescription: description
+    }
   },
-  title: 'Components|Tab',
-};
+  title: 'Components|Tab'
+}
 
 const tabPositions = {
   fixed: 'fixed',
-  scrollable: 'scrollable',
-};
+  scrollable: 'scrollable'
+}
 
 const iconPositions = {
   icon: 'icon',
   leading: 'leading',
-  top: 'top',
-};
+  top: 'top'
+}
 
 export const Positions = () => {
   const positionTabOptions = [
     {
       key: 'itemOne',
-      label: 'Item One',
+      label: 'Item One'
     },
     {
       key: 'itemTwo',
-      label: 'Item Two',
+      label: 'Item Two'
     },
     {
       key: 'itemThree',
-      label: 'Item Three',
-    },
-  ];
+      label: 'Item Three'
+    }
+  ]
 
   const scrollableTabOptions = [
     ...positionTabOptions,
     {
       key: 'itemFourth',
-      label: 'Item Four',
+      label: 'Item Four'
     },
     {
       key: 'itemFifth',
-      label: 'Item Five',
-    },
-  ];
+      label: 'Item Five'
+    }
+  ]
 
   return (
     <>
       <View style={{ maxWidth: 600, paddingBottom: 30 }}>
-        <Tab tabOptions={positionTabOptions} onChange={() => {}} />
+        <Tab tabOptions={positionTabOptions} onChange={() => ({})} />
       </View>
       <View style={{ maxWidth: 600, paddingBottom: 30 }}>
-        <Tab position="scrollable" tabOptions={scrollableTabOptions} onChange={() => {}} />
+        <Tab position="scrollable" tabOptions={scrollableTabOptions} onChange={() => ({})} />
       </View>
     </>
-  );
-};
+  )
+}
 
 export const Icon = () => {
   const iconTabOptions = [
     {
       iconName: 'outlined-default-mockup',
       key: 'itemOne',
-      label: 'Item One',
+      label: 'Item One'
     },
     {
       iconName: 'outlined-default-mockup',
       key: 'itemTwo',
-      label: 'Item Two',
+      label: 'Item Two'
     },
     {
       iconName: 'outlined-default-mockup',
       key: 'itemThree',
-      label: 'Item Three',
-    },
-  ];
+      label: 'Item Three'
+    }
+  ]
 
   return (
     <>
       <View style={{ maxWidth: 600, paddingBottom: 30 }}>
-        <Tab iconPosition="leading" tabOptions={iconTabOptions} onChange={() => {}} />
+        <Tab iconPosition="leading" tabOptions={iconTabOptions} onChange={() => ({})} />
       </View>
       <View style={{ maxWidth: 600, paddingBottom: 30 }}>
-        <Tab iconPosition="top" tabOptions={iconTabOptions} onChange={() => {}} />
+        <Tab iconPosition="top" tabOptions={iconTabOptions} onChange={() => ({})} />
       </View>
       <View style={{ maxWidth: 600, paddingBottom: 30 }}>
-        <Tab iconPosition="icon" tabOptions={iconTabOptions} onChange={() => {}} />
+        <Tab iconPosition="icon" tabOptions={iconTabOptions} onChange={() => ({})} />
       </View>
     </>
-  );
-};
+  )
+}
 
 export const Disabled = () => {
   const tabOptions = [
     {
       disabled: true,
       key: 'itemOne',
-      label: 'Item One',
+      label: 'Item One'
     },
     {
       key: 'itemTwo',
       label: 'Item Two',
-      selected: true,
+      selected: true
     },
     {
       key: 'itemThree',
-      label: 'Item Three',
-    },
-  ];
+      label: 'Item Three'
+    }
+  ]
 
   return (
     <View style={{ maxWidth: 600, paddingBottom: 30 }}>
-      <Tab tabOptions={tabOptions} onChange={() => {}} />
+      <Tab tabOptions={tabOptions} onChange={() => ({})} />
     </View>
-  );
-};
+  )
+}
 
 export const Elevation = () => {
   const tabOptions = [
     {
       key: 'itemOne',
-      label: 'Item One',
+      label: 'Item One'
     },
     {
       key: 'itemTwo',
-      label: 'Item Two',
+      label: 'Item Two'
     },
     {
       key: 'itemThree',
-      label: 'Item Three',
-    },
-  ];
+      label: 'Item Three'
+    }
+  ]
 
   return (
-  <View style={{ maxWidth: 600, paddingBottom: 30 }}>
-    <Tab elevation={true} tabOptions={tabOptions} onChange={() => {}} />
-  </View>
-  );
-};
+    <View style={{ maxWidth: 600, paddingBottom: 30 }}>
+      <Tab elevation tabOptions={tabOptions} onChange={() => ({})} />
+    </View>
+  )
+}
 
 export const Color = () => {
   const tabOptions = [
     {
       key: 'itemOne',
-      label: 'Item One',
+      label: 'Item One'
     },
     {
       key: 'itemTwo',
-      label: 'Item Two',
+      label: 'Item Two'
     },
     {
       key: 'itemThree',
-      label: 'Item Three',
-    },
-  ];
+      label: 'Item Three'
+    }
+  ]
 
   return (
-  <View style={{ maxWidth: 600, paddingBottom: 30 }}>
-    <Tab backgroundColor={false} tabOptions={tabOptions} onChange={() => {}} />
-  </View>
-  );
-};
+    <View style={{ maxWidth: 600, paddingBottom: 30 }}>
+      <Tab backgroundColor={false} tabOptions={tabOptions} onChange={() => ({})} />
+    </View>
+  )
+}
 
 export const Interactive = () => {
   const interactiveTabOptions = [
     {
       iconName: 'outlined-default-mockup',
       key: 'itemOne',
-      label: 'Item One',
+      label: 'Item One'
     },
     {
       iconName: 'outlined-default-mockup',
       key: 'itemTwo',
-      label: 'Item Two',
+      label: 'Item Two'
     },
     {
       iconName: 'outlined-default-mockup',
       key: 'itemThree',
-      label: 'Item Three',
+      label: 'Item Three'
     },
     {
       iconName: 'outlined-default-mockup',
       key: 'itemFourth',
-      label: 'Item Four',
-    },
-  ];
+      label: 'Item Four'
+    }
+  ]
 
   return (
     <View style={{ maxWidth: 600, paddingBottom: 30 }}>
       <Tab
         tabOptions={interactiveTabOptions}
-        onChange={() => {}}
+        onChange={() => ({})}
         elevation={boolean('Elevation', false)}
         backgroundColor={boolean('BackgroundColor', true)}
         position={select('Position', tabPositions, 'fixed') as TabPositions}
         iconPosition={select('Icon Position', iconPositions, 'icon') as IconPositions}
       />
     </View>
-  );
-};
-
+  )
+}
 
 export const All = () => (
   <>
@@ -245,4 +244,4 @@ export const All = () => (
     <Icon />
     <Positions />
   </>
-);
+)

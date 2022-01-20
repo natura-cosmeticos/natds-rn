@@ -1,8 +1,8 @@
-import React, { ReactElement } from 'react';
-import { View, TouchableWithoutFeedback } from 'react-native';
-import { Theme } from '../../common/themeSelectors';
-import { TouchableRipple, TouchableRippleProps } from '../TouchableRipple/TouchableRipple';
-import { ListItem as ListItemComponent } from './ListItem.styles';
+import React, { ReactElement } from 'react'
+import { View, TouchableWithoutFeedback } from 'react-native'
+import { Theme } from '../../common/themeSelectors'
+import { TouchableRipple, TouchableRippleProps } from '../TouchableRipple/TouchableRipple'
+import { ListItem as ListItemComponent } from './ListItem.styles'
 
 export type ListItemFeedback = 'ripple' | 'selection'
 
@@ -45,7 +45,7 @@ const ListWrapper = ({
       <View>
         {children}
       </View>
-    );
+    )
   }
 
   if (feedback === 'ripple') {
@@ -53,15 +53,15 @@ const ListWrapper = ({
       <TouchableRipple onPress={onPress} {...props}>
         {children}
       </TouchableRipple>
-    );
+    )
   }
 
   return (
     <TouchableWithoutFeedback onPress={onPress} {...props}>
       {children}
     </TouchableWithoutFeedback>
-  );
-};
+  )
+}
 
 export const ListItem = ({
   children,
@@ -70,19 +70,19 @@ export const ListItem = ({
   feedback = 'ripple',
   ...rest
 }: ListItemProps) => (
-    <ListWrapper
-      color="highlight"
-      hideOverflow
+  <ListWrapper
+    color="highlight"
+    hideOverflow
+    onPress={onPress}
+    testID={`${testID}-wrapper`}
+    feedback={feedback}
+  >
+    <ListItemComponent
+      testID={testID}
       onPress={onPress}
-      testID={`${testID}-wrapper`}
-      feedback={feedback}
+      {...rest}
     >
-      <ListItemComponent
-        testID={testID}
-        onPress={onPress}
-        {...rest}
-      >
-        {children}
-      </ListItemComponent >
-    </ListWrapper >
-);
+      {children}
+    </ListItemComponent>
+  </ListWrapper>
+)

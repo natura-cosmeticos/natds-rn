@@ -1,8 +1,11 @@
-import React from 'react';
-import { Text } from 'react-native';
+import React from 'react'
+import { Text } from 'react-native'
 
-export const Icon = props => (
-  <Text {...props}>
-    {props.name}
-  </Text>
-);
+export const Icon = (props) => {
+  const { name } = props
+  return (
+    <Text {...props}>
+      {name}
+    </Text>
+  )
+}

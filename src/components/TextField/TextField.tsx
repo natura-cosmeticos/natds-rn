@@ -1,70 +1,71 @@
+/* eslint-disable max-len */
 /* eslint-disable max-lines */
 import React, {
-  Dispatch, SetStateAction, forwardRef, useState,
-} from 'react';
+  Dispatch, SetStateAction, forwardRef, useState, FunctionComponent
+} from 'react'
 import {
-  KeyboardTypeOptions, NativeSyntheticEvent, TextInputFocusEventData, Platform,
-} from 'react-native';
-import { useTheme } from 'styled-components/native';
-import { getPlaceholderTextColor, Input } from './TextField.styles';
-import { InputFeedbackContainer } from '../InputFeedbackContainer';
-import { TextFieldProps, TextFieldTypes } from './TextField.types';
-import { TextFieldAction, TextFieldPasswordAction } from './TextFieldAction';
+  KeyboardTypeOptions, NativeSyntheticEvent, TextInputFocusEventData, Platform, TextInput
+} from 'react-native'
+import { useTheme } from 'styled-components/native'
+import { getPlaceholderTextColor, Input } from './TextField.styles'
+import { InputFeedbackContainer } from '../InputFeedbackContainer'
+import { TextFieldProps, TextFieldTypes } from './TextField.types'
+import { TextFieldAction, TextFieldPasswordAction } from './TextFieldAction'
 
 const statusActiveHandler = (
   event: (e: NativeSyntheticEvent<TextInputFocusEventData>) => void,
   nativeEvent: NativeSyntheticEvent<TextInputFocusEventData>,
   status: boolean,
-  setActive: Dispatch<SetStateAction<boolean>>,
+  setActive: Dispatch<SetStateAction<boolean>>
 ) => {
-  setActive(status);
-  if (event) event(nativeEvent);
-};
+  setActive(status)
+  if (event) event(nativeEvent)
+}
 
-const isFieldFilled = ({ readonly, value }: Pick<TextFieldProps, 'readonly' | 'value'>) => !readonly && value !== '';
-const isEditable = ({ disabled, readonly }: Pick<TextFieldProps, 'disabled' | 'readonly'>) => !disabled && !readonly;
+const isFieldFilled = ({ readonly, value }: Pick<TextFieldProps, 'readonly' | 'value'>) => !readonly && value !== ''
+const isEditable = ({ disabled, readonly }: Pick<TextFieldProps, 'disabled' | 'readonly'>) => !disabled && !readonly
 
 const hasActionIcon = (
-  { action, actionComponent }: Pick<TextFieldProps, 'action' | 'actionComponent'>,
-): boolean => !!(action === 'icon' && actionComponent);
+  { action, actionComponent }: Pick<TextFieldProps, 'action' | 'actionComponent'>
+): boolean => !!(action === 'icon' && actionComponent)
 
-const isNumberType = (type: TextFieldTypes) => type === 'number';
+const isNumberType = (type: TextFieldTypes) => type === 'number'
 const getKeyboardType = ({ keyboardType, type }: {
-  keyboardType: KeyboardTypeOptions, type: TextFieldTypes,
-}) => (isNumberType(type) ? 'numeric' : keyboardType);
+  keyboardType: KeyboardTypeOptions; type: TextFieldTypes;
+}) => (isNumberType(type) ? 'numeric' : keyboardType)
 const handleOnChangeText = ({
-  onChangeText, text, type, setNumberValue,
+  onChangeText, text, type, setNumberValue
 }: {
-  onChangeText: (text: string) => void,
-  text: string,
-  type: TextFieldTypes,
-  setNumberValue: Dispatch<SetStateAction<string>>,
-}) => (isNumberType(type) ? setNumberValue(text.replace(/\D/g, '')) : onChangeText(text));
+  onChangeText: (text: string) => void;
+  text: string;
+  type: TextFieldTypes;
+  setNumberValue: Dispatch<SetStateAction<string>>;
+}) => (isNumberType(type) ? setNumberValue(text.replace(/\D/g, '')) : onChangeText(text))
 const getFieldValue = ({ numberValue, type, value }: {
-  numberValue: string, type: TextFieldTypes, value: string,
+  numberValue: string; type: TextFieldTypes; value: string;
 }) => (
   isNumberType(type) ? numberValue : value
-);
+)
 
-const isPasswordType = (type: TextFieldTypes) => type === 'password';
+const isPasswordType = (type: TextFieldTypes) => type === 'password'
 const isSecureText = ({ secureState, secureTextEntry, type }: {
-  secureState: boolean, secureTextEntry: boolean, type: TextFieldTypes,
-}) => (isPasswordType(type) ? secureState : secureTextEntry);
+  secureState: boolean; secureTextEntry: boolean; type: TextFieldTypes;
+}) => (isPasswordType(type) ? secureState : secureTextEntry)
 
 const getContainerProps = ({
-  active, disabled, feedback, helperText,
+  active, disabled, feedback, helperText
 }) => {
-  if (disabled) return { disabled, helperText };
-  if (feedback) return { active, feedback, helperText };
+  if (disabled) return { disabled, helperText }
+  if (feedback) return { active, feedback, helperText }
 
-  return { active };
-};
+  return { active }
+}
 
 // eslint-disable-next-line complexity
-export const TextField = forwardRef<any, TextFieldProps>((props, ref) => {
-  const theme = useTheme();
-  const [active, setActive] = useState(false);
-  const [numberValue, setNumberValue] = useState('');
+export const TextField: FunctionComponent<TextFieldProps> = forwardRef<TextInput, TextFieldProps>((props, ref) => {
+  const theme = useTheme()
+  const [active, setActive] = useState(false)
+  const [numberValue, setNumberValue] = useState('')
 
   const {
     action,
@@ -74,9 +75,9 @@ export const TextField = forwardRef<any, TextFieldProps>((props, ref) => {
     helperText = '',
     keyboardType = 'default',
     label,
-    onBlur = () => {},
-    onChangeText = () => {},
-    onFocus = () => {},
+    onBlur = () => ({}),
+    onChangeText = () => ({}),
+    onFocus = () => ({}),
     readonly = false,
     required = false,
     secureTextEntry = false,
@@ -84,12 +85,12 @@ export const TextField = forwardRef<any, TextFieldProps>((props, ref) => {
     type = 'text',
     value = '',
     testID = 'ds-input',
-    multiline = false,
-  }: TextFieldProps = props;
-  const [secureState, setSecureState] = useState(isPasswordType(type));
-  const fieldValue = getFieldValue({ numberValue, type, value });
+    multiline = false
+  }: TextFieldProps = props
+  const [secureState, setSecureState] = useState(isPasswordType(type))
+  const fieldValue = getFieldValue({ numberValue, type, value })
 
-  const isAndroidMultiline = Platform.OS === 'android' && multiline;
+  const isAndroidMultiline = Platform.OS === 'android' && multiline
 
   return (
     <InputFeedbackContainer
@@ -97,8 +98,9 @@ export const TextField = forwardRef<any, TextFieldProps>((props, ref) => {
       helperText={helperText}
       label={label}
       required={required}
+      // eslint-disable-next-line react/jsx-props-no-spreading
       {...getContainerProps({
-        active, disabled, feedback, helperText,
+        active, disabled, feedback, helperText
       })}
     >
       <Input
@@ -109,11 +111,11 @@ export const TextField = forwardRef<any, TextFieldProps>((props, ref) => {
         editable={isEditable({ disabled, readonly })}
         hasActionIcon={hasActionIcon({ action, actionComponent })}
         keyboardType={getKeyboardType({ keyboardType, type })}
-        onBlur={nativeEvent => statusActiveHandler(onBlur, nativeEvent, false, setActive)}
-        onChangeText={text => handleOnChangeText({
-          onChangeText, setNumberValue, text, type,
+        onBlur={(nativeEvent) => statusActiveHandler(onBlur, nativeEvent, false, setActive)}
+        onChangeText={(text) => handleOnChangeText({
+          onChangeText, setNumberValue, text, type
         })}
-        onFocus={nativeEvent => !readonly
+        onFocus={(nativeEvent) => !readonly
           && statusActiveHandler(onFocus, nativeEvent, true, setActive)}
         placeholderTextColor={getPlaceholderTextColor(disabled, theme)}
         readonly={readonly}
@@ -171,23 +173,25 @@ export const TextField = forwardRef<any, TextFieldProps>((props, ref) => {
         textContentType={props.textContentType}
       />
       { actionComponent && !!action
-        && <TextFieldAction
-            accessibilityButtonHint={props.accessibilityButtonHint}
-            accessibilityButtonLabel={props.accessibilityButtonLabel}
-            accessibilityButtonRole={props.accessibilityButtonRole}
-            action={action}
-            actionComponent={actionComponent}
-            size={size}
+        && (
+        <TextFieldAction
+          accessibilityButtonHint={props.accessibilityButtonHint}
+          accessibilityButtonLabel={props.accessibilityButtonLabel}
+          accessibilityButtonRole={props.accessibilityButtonRole}
+          action={action}
+          actionComponent={actionComponent}
+          size={size}
         />
-      }
+        )}
       { !actionComponent && type === 'password'
-        && <TextFieldPasswordAction
-            accessibilityButtonHint={props.accessibilityButtonHint}
-            accessibilityButtonLabel={props.accessibilityButtonLabel}
-            secureState={secureState}
-            onPress={() => setSecureState(!secureState)}
-          />
-      }
+        && (
+        <TextFieldPasswordAction
+          accessibilityButtonHint={props.accessibilityButtonHint}
+          accessibilityButtonLabel={props.accessibilityButtonLabel}
+          secureState={secureState}
+          onPress={() => setSecureState(!secureState)}
+        />
+        )}
     </InputFeedbackContainer>
-  );
-});
+  )
+})

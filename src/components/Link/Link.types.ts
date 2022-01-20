@@ -1,5 +1,5 @@
-import { ReactNode } from 'react';
-import { NativeSyntheticEvent, NativeTouchEvent, AccessibilityProps } from 'react-native';
+import { ReactNode } from 'react'
+import { NativeSyntheticEvent, NativeTouchEvent, AccessibilityProps } from 'react-native'
 
 export type LinkTypes = 'standard' | 'underline';
 

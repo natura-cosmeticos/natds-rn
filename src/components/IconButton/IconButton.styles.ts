@@ -1,10 +1,10 @@
-import styled from 'styled-components/native';
+import styled from 'styled-components/native'
 import {
-  getContainerBackgroundColor,
-} from './IconButton.helpers';
-import { getSize } from '../../common/themeSelectors';
+  getContainerBackgroundColor
+} from './IconButton.helpers'
+import { getSize } from '../../common/themeSelectors'
 
-import { IconContainerProps } from './IconButton.types';
+import { IconContainerProps } from './IconButton.types'
 
 export const IconContainer = styled.View<IconContainerProps>`
   height: ${({ size, theme }) => getSize(theme, size)}px;
@@ -13,4 +13,4 @@ export const IconContainer = styled.View<IconContainerProps>`
   border-radius: 50px;
   justify-content: center;
   align-items: center;
-`;
+`

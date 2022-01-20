@@ -1,6 +1,6 @@
 /* eslint-disable max-len */
-import { Color, Size } from '@naturacosmeticos/natds-themes/react-native';
-import { AccessibilityRole, AccessibilityState } from 'react-native';
+import { Color, Size } from '@naturacosmeticos/natds-themes/react-native'
+import { AccessibilityRole, AccessibilityState } from 'react-native'
 
 export type TagColors = keyof Pick<Color, 'primary' | 'secondary' | 'success' | 'alert' | 'warning' | 'link'>
 export type TagSizes = keyof Pick<Size, 'small' | 'standard'>
@@ -54,21 +54,21 @@ export interface TagProps {
    * @default `default`
    * @optional
    */
-  borderPosition?: TagPositions
+  borderPosition?: TagPositions;
   /** Optional size of the tag.
    * @default `small`
    * @optional
    */
-  size?: TagSizes
+  size?: TagSizes;
   /**
    * Optional color of the tag.
    * @default `primary`
    * @optional
    */
-  color?: TagColors
+  color?: TagColors;
   /**
    * Optional ID for testing.
    * @optional
    */
-  testID?: string
+  testID?: string;
 }

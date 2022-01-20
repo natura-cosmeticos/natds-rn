@@ -1,13 +1,12 @@
 /* eslint-disable max-lines */
-import React from 'react';
-import { Image, ImageSourcePropType } from 'react-native';
-import { boolean, select, text as textKnob } from '@storybook/addon-knobs';
+import React from 'react'
+import { Image, ImageSourcePropType } from 'react-native'
+import { boolean, select, text as textKnob } from '@storybook/addon-knobs'
 
-import { StoryContainer, StoryWrapper } from '../../common/HelperComponents/StoryContainer';
-import { TextField } from './TextField';
-// @ts-ignore
-import placeholderImage from '../../assets/images/textfield_image_arealimit.png';
-import { IconButton } from '../IconButton';
+import { StoryContainer, StoryWrapper } from '../../common/HelperComponents/StoryContainer'
+import { TextField } from './TextField'
+import placeholderImage from '../../assets/images/textfield_image_arealimit.png'
+import { IconButton } from '../IconButton'
 
 const description = () => `
 - - -
@@ -46,38 +45,38 @@ With the following attribute statuses:
   - ✅ \`Number\`
 
 - - -
-`;
+`
 
 export default {
   component: TextField,
   parameters: {
     componentSubtitle: 'TextField let users enter and edit text.',
     docs: {
-      extractComponentDescription: description,
-    },
+      extractComponentDescription: description
+    }
   },
-  title: 'Components|TextField',
-};
+  title: 'Components|TextField'
+}
 
 export const Default = () => {
-  const [value, setValue] = React.useState('');
+  const [value, setValue] = React.useState('')
 
   return (
     <StoryContainer title="Standard">
       <TextField
         helperText="Helper text"
         label="Label"
-        onChangeText={text => setValue(text)}
+        onChangeText={(text) => setValue(text)}
         placeholder="Placeholder"
         value={value}
       />
     </StoryContainer>
-  );
-};
+  )
+}
 
 export const Sizes = () => {
-  const [mediumXValue, setMediumXValue] = React.useState('This is the default size: MediumX');
-  const [mediumValue, setMediumValue] = React.useState('This is the size: Medium');
+  const [mediumXValue, setMediumXValue] = React.useState('This is the default size: MediumX')
+  const [mediumValue, setMediumValue] = React.useState('This is the size: Medium')
 
   return (
     <StoryWrapper title="Sizes">
@@ -85,7 +84,7 @@ export const Sizes = () => {
         <TextField
           helperText="Helper text"
           label="Label"
-          onChangeText={text => setMediumXValue(text)}
+          onChangeText={(text) => setMediumXValue(text)}
           placeholder="Placeholder"
           value={mediumXValue}
         />
@@ -94,19 +93,19 @@ export const Sizes = () => {
         <TextField
           helperText="Helper text"
           label="Label"
-          onChangeText={text => setMediumValue(text)}
+          onChangeText={(text) => setMediumValue(text)}
           placeholder="Placeholder"
-          size='medium'
+          size="medium"
           value={mediumValue}
         />
       </StoryContainer>
     </StoryWrapper>
-  );
-};
+  )
+}
 
 export const States = () => {
-  const [blankValue, setBlankValue] = React.useState('');
-  const [filledValue, setFilledValue] = React.useState('This field has already been filled');
+  const [blankValue, setBlankValue] = React.useState('')
+  const [filledValue, setFilledValue] = React.useState('This field has already been filled')
 
   return (
     <StoryWrapper title="States">
@@ -114,7 +113,7 @@ export const States = () => {
         <TextField
           helperText="Helper text"
           label="Label"
-          onChangeText={text => setBlankValue(text)}
+          onChangeText={(text) => setBlankValue(text)}
           placeholder="This field is not filled yet"
           value={blankValue}
         />
@@ -123,18 +122,18 @@ export const States = () => {
         <TextField
           helperText="Helper text"
           label="Label"
-          onChangeText={text => setFilledValue(text)}
+          onChangeText={(text) => setFilledValue(text)}
           placeholder="Placeholder"
           value={filledValue}
         />
       </StoryContainer>
     </StoryWrapper>
-  );
-};
+  )
+}
 
 export const Feedback = () => {
-  const [errorValue, setErrorValue] = React.useState('This value does not fit the field\'s validation rules');
-  const [successValue, setSuccessValue] = React.useState('This value fits the field\'s validation rules');
+  const [errorValue, setErrorValue] = React.useState('This value does not fit the field\'s validation rules')
+  const [successValue, setSuccessValue] = React.useState('This value fits the field\'s validation rules')
 
   return (
     <StoryWrapper title="Feedback">
@@ -143,7 +142,7 @@ export const Feedback = () => {
           feedback="error"
           helperText="Helper text"
           label="Label"
-          onChangeText={text => setErrorValue(text)}
+          onChangeText={(text) => setErrorValue(text)}
           placeholder="Placeholder"
           value={errorValue}
         />
@@ -153,34 +152,34 @@ export const Feedback = () => {
           feedback="success"
           helperText="Helper text"
           label="Label"
-          onChangeText={text => setSuccessValue(text)}
+          onChangeText={(text) => setSuccessValue(text)}
           placeholder="Placeholder"
           value={successValue}
         />
       </StoryContainer>
     </StoryWrapper>
-  );
-};
+  )
+}
 
 export const Required = () => {
-  const [value, setValue] = React.useState('This field is required to move on to the next step');
+  const [value, setValue] = React.useState('This field is required to move on to the next step')
 
   return (
     <StoryContainer title="Required">
       <TextField
         helperText="Helper text"
         label="Label"
-        onChangeText={text => setValue(text)}
+        onChangeText={(text) => setValue(text)}
         placeholder="Placeholder"
         required
         value={value}
       />
     </StoryContainer>
-  );
-};
+  )
+}
 
 export const Disabled = () => {
-  const [value, setValue] = React.useState('This field is disabled, the user can\'t fill it');
+  const [value, setValue] = React.useState('This field is disabled, the user can\'t fill it')
 
   return (
     <StoryContainer title="Disabled">
@@ -188,74 +187,75 @@ export const Disabled = () => {
         disabled
         helperText="Helper text"
         label="Label"
-        onChangeText={text => setValue(text)}
+        onChangeText={(text) => setValue(text)}
         placeholder="Placeholder"
         value={value}
       />
     </StoryContainer>
-  );
-};
+  )
+}
 
 export const Readonly = () => {
-  const [value, setValue] = React.useState('This content is read only, the user can\'t change it');
+  const [value, setValue] = React.useState('This content is read only, the user can\'t change it')
 
   return (
     <StoryContainer title="Read Only">
       <TextField
         helperText="Helper text"
         label="Label"
-        onChangeText={text => setValue(text)}
+        onChangeText={(text) => setValue(text)}
         placeholder="Placeholder"
         readonly
         value={value}
       />
     </StoryContainer>
-  );
-};
+  )
+}
 
-const imageStyle = { height: 56 };
+const imageStyle = { height: 56 }
 
 export const Action = () => {
-  const initialValue = '';
-  const [actionIconValue, setActionIconValue] = React.useState(initialValue);
-  const [actionImageValue, setActionImageValue] = React.useState(initialValue);
+  const initialValue = ''
+  const [actionIconValue, setActionIconValue] = React.useState(initialValue)
+  const [actionImageValue, setActionImageValue] = React.useState(initialValue)
 
   return (
     <StoryWrapper title="Action">
       <StoryContainer title="Icon">
         <TextField
           action="icon"
-          actionComponent={<IconButton onPress={() => {}} />}
+          actionComponent={<IconButton onPress={() => ({})} />}
           helperText="Helper text"
           label="Label"
           placeholder="Placeholder"
-          onChangeText={text => setActionIconValue(text)}
+          onChangeText={(text) => setActionIconValue(text)}
           value={actionIconValue}
         />
       </StoryContainer>
       <StoryContainer title="Image">
         <TextField
           action="image"
-          actionComponent={
+          actionComponent={(
             <Image
               source={placeholderImage as ImageSourcePropType}
               style={imageStyle}
-            />}
+            />
+          )}
           helperText="Helper text"
           label="Label"
           placeholder="Placeholder"
-          onChangeText={text => setActionImageValue(text)}
+          onChangeText={(text) => setActionImageValue(text)}
           value={actionImageValue}
         />
       </StoryContainer>
     </StoryWrapper>
-  );
-};
+  )
+}
 
 export const Type = () => {
-  const [textValue, setTextValue] = React.useState('');
-  const [passwordValue, setPasswordValue] = React.useState('');
-  const [numberValue, setNumberValue] = React.useState('');
+  const [textValue, setTextValue] = React.useState('')
+  const [passwordValue, setPasswordValue] = React.useState('')
+  const [numberValue, setNumberValue] = React.useState('')
 
   return (
     <StoryWrapper title="Type">
@@ -263,7 +263,7 @@ export const Type = () => {
         <TextField
           helperText="This is the default type"
           label="Label"
-          onChangeText={text => setTextValue(text)}
+          onChangeText={(text) => setTextValue(text)}
           placeholder="Type anything here"
           value={textValue}
         />
@@ -273,7 +273,7 @@ export const Type = () => {
           type="password"
           helperText="The eye button on the right side will change your password visibility"
           label="Label"
-          onChangeText={text => setPasswordValue(text)}
+          onChangeText={(text) => setPasswordValue(text)}
           placeholder="Type here your password"
           value={passwordValue}
         />
@@ -283,31 +283,31 @@ export const Type = () => {
           type="number"
           helperText="This field will only accept numbers"
           label="Label"
-          onChangeText={text => setNumberValue(text)}
+          onChangeText={(text) => setNumberValue(text)}
           placeholder="Type numbers here"
           value={numberValue}
         />
       </StoryContainer>
     </StoryWrapper>
-  );
-};
+  )
+}
 
 export const TextArea = () => {
-  const [value, setValue] = React.useState('');
+  const [value, setValue] = React.useState('')
 
   return (
     <StoryContainer title="Text Area">
       <TextField
         helperText="Helper text"
         label="Label"
-        onChangeText={text => setValue(text)}
+        onChangeText={(text) => setValue(text)}
         placeholder="Placeholder"
         value={value}
         multiline
       />
-      </StoryContainer>
-  );
-};
+    </StoryContainer>
+  )
+}
 
 export const Interactive = () => (
   <StoryContainer title="Interactive">
@@ -324,4 +324,4 @@ export const Interactive = () => (
       multiline={boolean('Multiline', false)}
     />
   </StoryContainer>
-);
+)

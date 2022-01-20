@@ -1,11 +1,11 @@
 /* eslint-disable max-lines */
 /* eslint-disable max-len */
-import React, { useState } from 'react';
-import { boolean, select, text } from '@storybook/addon-knobs';
+import React, { useState } from 'react'
+import { boolean, select, text } from '@storybook/addon-knobs'
 
-import { Checkbox } from './Checkbox';
-import { StoryContainer, StoryWrapper } from '../../common/HelperComponents/StoryContainer';
-import { CheckboxColors } from './Checkbox.types';
+import { Checkbox } from './Checkbox'
+import { StoryContainer, StoryWrapper } from '../../common/HelperComponents/StoryContainer'
+import { CheckboxColors } from './Checkbox.types'
 
 const description = () => `
 - - -
@@ -21,27 +21,26 @@ With the following attribute status:
   - ✅ **Disabled**
 
 - - -
-`;
-
+`
 
 export default {
   component: Checkbox,
   parameters: {
     componentSubtitle: 'Selection controls allow the user to select options.',
     docs: {
-      extractComponentDescription: description,
-    },
+      extractComponentDescription: description
+    }
   },
-  title: 'Components|Checkbox',
-};
+  title: 'Components|Checkbox'
+}
 
 const colorTypes = {
   primary: 'primary',
-  secondary: 'secondary',
-};
+  secondary: 'secondary'
+}
 
 export const Default = () => {
-  const [isSelected, setIsSelected] = useState(true);
+  const [isSelected, setIsSelected] = useState(true)
 
   return (
     <StoryContainer title="Standard">
@@ -51,11 +50,11 @@ export const Default = () => {
         selected={isSelected}
       />
     </StoryContainer>
-  );
-};
+  )
+}
 
 export const Indeterminate = () => {
-  const [isSelected, setIsSelected] = useState(true);
+  const [isSelected, setIsSelected] = useState(true)
 
   return (
     <StoryContainer title="Indeterminate">
@@ -66,15 +65,15 @@ export const Indeterminate = () => {
         selected={isSelected}
       />
     </StoryContainer>
-  );
-};
+  )
+}
 
 export const Disabled = () => {
   const [state, setState] = useState({
     disabled: false,
     disabledIndeterminate: true,
-    disabledSelected: true,
-  });
+    disabledSelected: true
+  })
 
   return (
     <StoryWrapper title="Disabled">
@@ -85,7 +84,7 @@ export const Disabled = () => {
           onPress={() => setState({ ...state, disabledSelected: !state.disabledSelected })}
           selected={state.disabledSelected}
           value="3"
-          />
+        />
       </StoryContainer>
       <StoryContainer title="Disabled indeterminate">
         <Checkbox
@@ -104,11 +103,11 @@ export const Disabled = () => {
           onPress={() => setState({ ...state, disabled: !state.disabled })}
           selected={state.disabled}
           value="1"
-          />
+        />
       </StoryContainer>
     </StoryWrapper>
-  );
-};
+  )
+}
 
 export const Interactive = () => (
   <StoryContainer title="Interactive">
@@ -122,4 +121,4 @@ export const Interactive = () => (
       value={text('Value', 'my-label')}
     />
   </StoryContainer>
-);
+)

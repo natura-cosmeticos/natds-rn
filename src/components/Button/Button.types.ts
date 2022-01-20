@@ -1,6 +1,6 @@
-import { StyleProp, TextStyle, AccessibilityProps } from 'react-native';
-import { IconName } from '@naturacosmeticos/natds-icons';
-import { Theme } from '@naturacosmeticos/natds-themes/react-native';
+import { StyleProp, TextStyle, AccessibilityProps } from 'react-native'
+import { IconName } from '@naturacosmeticos/natds-icons'
+import { Theme } from '@naturacosmeticos/natds-themes/react-native'
 
 /**
  * @deprecated Deprecated sizes: `small` and `large`, use `semi` and `medium` instead.
@@ -12,8 +12,8 @@ export type ButtonTypes = 'contained' | 'outlined' | 'text'
 export type IconPositions = 'left' | 'right'
 
 export interface ButtonBaseProps extends ButtonProps {
-  theme: Theme
-  textLabelStyle?: StyleProp<TextStyle>
+  theme: Theme;
+  textLabelStyle?: StyleProp<TextStyle>;
 }
 
 type AccessibilityButtonProps = Pick<AccessibilityProps,
@@ -30,25 +30,25 @@ export interface ButtonProps extends AccessibilityButtonProps {
    * other condition has been met (like selecting a checkbox, etc.).
    * @default false
    */
-  disabled?: boolean
+  disabled?: boolean;
   /**
    * Name of the icon that will be rendered on the button at the previously selected position.
    */
-  iconName?: IconName,
+  iconName?: IconName;
   /**
    * Position of the icon to be rendered in relation to the label text.
    *
    * - Available positions: `left`, `right`.
    */
-  iconPosition?: IconPositions
+  iconPosition?: IconPositions;
   /**
    * Handler to be called when the user taps the button.
    */
-  onPress: () => void,
+  onPress: () => void;
   /**
   * Optional ID for testing.
   */
-  testID?: string,
+  testID?: string;
   /**
    * This defines the height of the button, according to corresponding theme Size token.
    *
@@ -57,17 +57,17 @@ export interface ButtonProps extends AccessibilityButtonProps {
    * #### Deprecated sizes: `small` and `large`.
    * @default `semiX`
    */
-  size?: ButtonSizes,
+  size?: ButtonSizes;
   /**
    * Text to display inside the button.
    * @required
    */
-  text: string
+  text: string;
   /**
    * Parameter that will determine button style such as border rendering and background color.
    *
    * - Available types: `contained`, `outlined`, `text`.
    * @default `contained`
    */
-  type?: ButtonTypes
+  type?: ButtonTypes;
 }

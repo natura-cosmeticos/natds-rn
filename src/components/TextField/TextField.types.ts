@@ -1,15 +1,15 @@
 /* eslint-disable max-lines */
 /* eslint-disable max-len */
-import { JSXElementConstructor } from 'react';
+import { JSXElementConstructor } from 'react'
 import {
   AccessibilityProps,
   Image,
   TextInputAndroidProps,
   TextInputIOSProps,
-  TextInputProps,
-} from 'react-native';
-import { Size } from '@naturacosmeticos/natds-themes/react-native';
-import { IconButtonProps } from '../IconButton/IconButton.types';
+  TextInputProps
+} from 'react-native'
+import { Size } from '@naturacosmeticos/natds-themes/react-native'
+import { IconButtonProps } from '../IconButton/IconButton.types'
 
 type AndroidProps = Pick<TextInputAndroidProps,
   | 'disableFullscreenUI'
@@ -19,7 +19,7 @@ type AndroidProps = Pick<TextInputAndroidProps,
   | 'showSoftInputOnFocus'
   | 'textBreakStrategy'
 > & {
-  autoCompleteType?: Extract<TextInputAndroidProps, 'autoComplete'>
+  autoCompleteType?: Extract<TextInputAndroidProps, 'autoComplete'>;
 }
 
 type IOSProps = Pick<TextInputIOSProps,
@@ -85,15 +85,15 @@ export type AccessibilityButtonProps = {
   /**
    * An accessibility hint helps users understand what will happen when they perform an action on the accessibility element when that result is not obvious from the accessibility label.
    */
-  accessibilityButtonHint?: AccessibilityProps['accessibilityHint'],
+  accessibilityButtonHint?: AccessibilityProps['accessibilityHint'];
   /**
    * Overrides the text that's read by the screen reader when the user interacts with the element. By default, the label is constructed by traversing all the children and accumulating all the Text nodes separated by space.
    */
-  accessibilityButtonLabel?: AccessibilityProps['accessibilityLabel'],
+  accessibilityButtonLabel?: AccessibilityProps['accessibilityLabel'];
   /**
    * Accessibility Role tells a person using either VoiceOver on iOS or TalkBack on Android the type of element that is focused on.
    */
-  accessibilityButtonRole?: AccessibilityProps['accessibilityRole'],
+  accessibilityButtonRole?: AccessibilityProps['accessibilityRole'];
 }
 interface BaseProps extends
   AccessibilityProps,
@@ -101,10 +101,6 @@ interface BaseProps extends
   AndroidProps,
   AccessibilityButtonProps,
   IOSProps {
-    /**
-     * The ref attibute allows you to create a reference to the component instance, which can be used to access the methods and properties of the component.
-     */
-    ref?: any,
     /**
      * Disabled TextField's are used when the user needs to perform
      * another action before being able to interact with the field.

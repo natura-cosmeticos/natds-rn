@@ -4,6 +4,6 @@
  * This is done using the resolve alias config on /storybook-web/main.js file
  */
 
-import { Modal } from 'react-native';
+import { Modal } from 'react-native'
 
-export default Modal;
+export default Modal

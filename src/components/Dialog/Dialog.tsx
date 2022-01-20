@@ -1,19 +1,19 @@
-import React, { ReactNode } from 'react';
-import { NativeSyntheticEvent } from 'react-native';
-import Modal from '../../common/Modal';
+import React, { ReactNode } from 'react'
+import { ModalProps, NativeSyntheticEvent } from 'react-native'
+import Modal from '../../common/Modal'
 import {
-  DialogWrapper, DialogOverlay, DialogContainer,
-} from './Dialog.styles';
+  DialogWrapper, DialogOverlay, DialogContainer
+} from './Dialog.styles'
 
 export interface DialogProps {
   /**
    * Controls the dialog visibility state
    */
-  visible: boolean
+  visible: boolean;
   /**
    * The dialog content
    */
-  children: ReactNode
+  children: ReactNode;
   /**
    * The `onRequestClose` prop allows passing a function that will be called
    *  once the modal has been dismissed.
@@ -25,18 +25,18 @@ export interface DialogProps {
    * for the underlying window.
    * Platform: `Android`
    */
-  hardwareAccelerated?: boolean
+  hardwareAccelerated?: boolean;
   /**
    * The onShow prop allows passing a function that will be called once the modal has been shown.
    */
-  onShow?: (event: NativeSyntheticEvent<any>) => void
+  onShow?: (event: NativeSyntheticEvent<ModalProps>) => void;
   /**
    * The `onOrientationChange` callback is called when the orientation changes while the modal
    * is being displayed. The orientation provided is only 'portrait' or 'landscape'.
    * This callback is also called on initial render, regardless of the current orientation.
    * Platform: `iOS`
    */
-  onOrientationChange?: (event: NativeSyntheticEvent<any>) => void;
+  onOrientationChange?: (event: NativeSyntheticEvent<ModalProps>) => void;
   /**
    * The supportedOrientations prop allows the modal to be rotated to any of the specified
    * orientations. On iOS, the modal is still restricted by what's specified in your app's
@@ -46,7 +46,7 @@ export interface DialogProps {
    */
   supportedOrientations?: Array<
     'portrait' | 'portrait-upside-down' | 'landscape' | 'landscape-left' | 'landscape-right'
-  >
+  >;
   /**
    * The `onDismiss` prop allows passing a function that will be called once the modal has
    * been dismissed.
@@ -56,7 +56,7 @@ export interface DialogProps {
   /**
    * Optional ID for testing
    */
-  testID?: string,
+  testID?: string;
 }
 
 export const Dialog = ({
@@ -68,19 +68,19 @@ export const Dialog = ({
   onShow,
   supportedOrientations,
   onOrientationChange,
-  onDismiss,
+  onDismiss
 }: DialogProps) => (
-    <Modal
-      animationType="fade"
-      visible={visible}
-      transparent
-      onRequestClose={onRequestClose}
-      hardwareAccelerated={hardwareAccelerated}
-      supportedOrientations={supportedOrientations}
-      onShow={onShow}
-      onOrientationChange={onOrientationChange}
-      onDismiss={onDismiss}
-    >
+  <Modal
+    animationType="fade"
+    visible={visible}
+    transparent
+    onRequestClose={onRequestClose}
+    hardwareAccelerated={hardwareAccelerated}
+    supportedOrientations={supportedOrientations}
+    onShow={onShow}
+    onOrientationChange={onOrientationChange}
+    onDismiss={onDismiss}
+  >
     <DialogWrapper>
       <DialogOverlay />
       <DialogContainer testID={testID}>
@@ -88,4 +88,4 @@ export const Dialog = ({
       </DialogContainer>
     </DialogWrapper>
   </Modal>
-);
+)

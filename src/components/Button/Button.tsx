@@ -1,6 +1,6 @@
-import React from 'react';
-import { ButtonBase } from './ButtonBase';
-import { ButtonProps } from './Button.types';
+import React from 'react'
+import { ButtonBase } from './ButtonBase'
+import { ButtonProps } from './Button.types'
 
 export const Button = ({
   accessibilityHint,
@@ -14,7 +14,7 @@ export const Button = ({
   size = 'semiX',
   testID = 'button',
   text,
-  type = 'contained',
+  type = 'contained'
 }: ButtonProps) => (
   <ButtonBase
     onAccessibilityAction={onAccessibilityAction}
@@ -30,4 +30,4 @@ export const Button = ({
     text={text}
     type={type}
   />
-);
+)

@@ -1,9 +1,9 @@
-import { storiesOf } from '@storybook/react-native';
+import { storiesOf } from '@storybook/react-native'
 import {
-  all,
-  interactive,
-} from './RadioButton.stories';
+  All,
+  Interactive
+} from './RadioButton.stories'
 
 storiesOf('RadioButton', module)
-  .add('all', all)
-  .add('interactive', interactive);
+  .add('all', All)
+  .add('interactive', Interactive)
