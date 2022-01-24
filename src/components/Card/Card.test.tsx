@@ -4,7 +4,8 @@ import { render } from '@testing-library/react-native'
 import { ThemeProvider } from 'styled-components/native'
 import { Text } from 'react-native'
 import theme from '../../common/themeSelectors/theme/mock-theme.json'
-import { Card, CardTypes } from './Card'
+import { CardTypes } from './Card.types'
+import { Card } from '.'
 
 const renderCard = (fn, props?: CardTypes) => fn(
   <ThemeProvider theme={theme}>

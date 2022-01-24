@@ -1,42 +1,9 @@
-import React, { ReactNode } from 'react'
-import styled, { withTheme } from 'styled-components/native'
-import {
-  Theme,
-  getRadiusBySize,
-  getShadowBySize,
-  getColorSurface
-} from '../../common/themeSelectors'
+import React from 'react'
+import { withTheme } from 'styled-components/native'
+import { getShadowBySize } from '../../common/themeSelectors'
 
-export type CardTypes = 'base';
-
-export interface CardProps {
-  /**
-   * Card variants `base`
-   */
-  type?: CardTypes;
-  /**
-   * The Card content
-   */
-  children: ReactNode;
-  /**
-   * The Card theme
-   */
-  theme: Theme;
-  /**
-   * Optional ID for testing
-   */
-  testID?: string;
-}
-
-interface CardBase {
-  type: CardTypes;
-  theme: Theme;
-}
-
-const CardBase = styled.View<CardBase>(({ theme }) => ({
-  backgroundColor: getColorSurface(theme),
-  borderRadius: getRadiusBySize(theme, 'medium')
-}))
+import { CardBase } from './Card.styles'
+import { CardProps } from './Card.types'
 
 const CardComponent = ({
   children,
