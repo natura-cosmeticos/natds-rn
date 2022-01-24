@@ -1,8 +1,9 @@
 import React from 'react'
 import { View } from 'react-native'
 import { select, text as textKnob } from '@storybook/addon-knobs'
-import { Card, CardTypes } from './Card'
+import { Card } from './Card'
 import { TextWithTheme } from '../../common/HelperComponents/ThemeHelper.styles'
+import { CardTypes } from './Card.types'
 
 export default {
   component: Card,
@@ -17,7 +18,7 @@ const cardTypes = {
   base: 'base'
 }
 
-export const base = () => (
+export const Default = () => (
   <View
     style={{
       alignContent: 'center',
@@ -26,14 +27,14 @@ export const base = () => (
       width: 328
     }}
   >
-    <TextWithTheme style={{ marginBottom: 8 }}>Base</TextWithTheme>
+    <TextWithTheme style={{ marginBottom: 8 }}>Default</TextWithTheme>
     <Card>
       <View style={{ minHeight: 192 }} />
     </Card>
   </View>
 )
 
-export const interactive = () => (
+export const Interactive = () => (
   <View
     style={{
       alignContent: 'center',
