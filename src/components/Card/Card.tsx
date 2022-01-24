@@ -14,7 +14,6 @@ const CardComponent = ({
   <CardBase
     style={getShadowBySize(theme, 'micro')}
     testID={testID}
-    theme={theme}
     type={type}
   >
     {children}
