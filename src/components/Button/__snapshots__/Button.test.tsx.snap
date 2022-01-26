@@ -36,11 +36,11 @@ exports[`Button component Disabled variants should render disabled button compon
           "borderColor": "#FFFFFF00",
           "borderRadius": 4,
           "borderWidth": 0,
+          "elevation": 0,
           "justifyContent": "center",
           "minHeight": 40,
           "paddingHorizontal": 8,
         },
-        Object {},
       ]
     }
     testID="button"
@@ -120,11 +120,11 @@ exports[`Button component Disabled variants should render disabled button compon
           "borderColor": "#bbbbbb",
           "borderRadius": 4,
           "borderWidth": 1,
+          "elevation": 0,
           "justifyContent": "center",
           "minHeight": 40,
           "paddingHorizontal": 8,
         },
-        Object {},
       ]
     }
     testID="button"
@@ -204,11 +204,11 @@ exports[`Button component Disabled variants should render disabled button compon
           "borderColor": "#FFFFFF00",
           "borderRadius": 4,
           "borderWidth": 0,
+          "elevation": 0,
           "justifyContent": "center",
           "minHeight": 40,
           "paddingHorizontal": 8,
         },
-        Object {},
       ]
     }
     testID="button"
@@ -291,8 +291,6 @@ exports[`Button component Variants should render button component contained 1`] 
           "justifyContent": "center",
           "minHeight": 40,
           "paddingHorizontal": 8,
-        },
-        Object {
           "shadowColor": "#AEAEAE",
         },
       ]
@@ -374,11 +372,11 @@ exports[`Button component Variants should render button component outlined 1`] =
           "borderColor": "#f4ab34",
           "borderRadius": 4,
           "borderWidth": 1,
+          "elevation": 0,
           "justifyContent": "center",
           "minHeight": 40,
           "paddingHorizontal": 8,
         },
-        Object {},
       ]
     }
     testID="button"
@@ -458,11 +456,11 @@ exports[`Button component Variants should render button component text 1`] = `
           "borderColor": "#FFFFFF00",
           "borderRadius": 4,
           "borderWidth": 0,
+          "elevation": 0,
           "justifyContent": "center",
           "minHeight": 40,
           "paddingHorizontal": 8,
         },
-        Object {},
       ]
     }
     testID="button"
@@ -545,8 +543,6 @@ exports[`Button component with Icon should render the icon to the left 1`] = `
           "justifyContent": "center",
           "minHeight": 40,
           "paddingHorizontal": 8,
-        },
-        Object {
           "shadowColor": "#AEAEAE",
         },
       ]
@@ -644,8 +640,6 @@ exports[`Button component with Icon should render the icon to the right by defau
           "justifyContent": "center",
           "minHeight": 40,
           "paddingHorizontal": 8,
-        },
-        Object {
           "shadowColor": "#AEAEAE",
         },
       ]

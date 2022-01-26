@@ -1,9 +1,7 @@
 import React from 'react'
 import { withTheme } from 'styled-components/native'
 import { Icon } from '../Icon'
-import {
-  getButtonShadowByType, Label, LabelText, Surface
-} from './Button.styles'
+import { Label, LabelText, Surface } from './Button.styles'
 import { TouchableRipple } from '../TouchableRipple/TouchableRipple'
 import { ButtonBaseProps } from './Button.types'
 
@@ -38,7 +36,6 @@ const ButtonComponent = ({
         accessibilityLabel={accessibilityLabel}
         accessibilityRole="button"
         disabled={disabled}
-        style={getButtonShadowByType({ disabled, theme, type })}
         size={size}
         testID={testID}
         type={type}
