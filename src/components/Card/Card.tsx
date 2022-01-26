@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { CardProps } from './Card.types'
-import { CardBaseComponent } from './CardBase'
+import { CardBase } from './Card.styles'
 
 export const Card = ({
   children,
@@ -10,12 +10,12 @@ export const Card = ({
   elevation = true,
   radius = true
 }: CardProps) => (
-  <CardBaseComponent
+  <CardBase
     testID={testID}
     type={type}
     elevation={elevation}
     radius={radius}
   >
     {children}
-  </CardBaseComponent>
+  </CardBase>
 )
