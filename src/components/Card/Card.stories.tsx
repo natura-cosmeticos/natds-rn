@@ -1,21 +1,39 @@
 import React from 'react'
 import { View } from 'react-native'
-import { select, text as textKnob } from '@storybook/addon-knobs'
+import { boolean, select, text as textKnob } from '@storybook/addon-knobs'
 import { Card } from './Card'
 import { TextWithTheme } from '../../common/HelperComponents/ThemeHelper.styles'
 import { CardTypes } from './Card.types'
+
+const description = () => `
+---
+
+**NOTE for UX**: This component is available in the following variants:
+
+  - ✅ base
+
+With the following attribute statuses:
+
+- **Elevation:**
+    - ✅ \`True\`
+    - ✅ \`False\`
+- **Radius**
+  - ✅ \`True\`
+  - ✅ \`false\`
+
+---
+`
 
 export default {
   component: Card,
   parameters: {
     componentSubtitle:
-      'Cards are surfaces that groups content and actions in the same space. Its construction must always create a visual hierarchy of the content and communicate its purposes clearly.'
+      'Cards are surfaces that groups content and actions in the same space. Its construction must always create a visual hierarchy of the content and communicate its purposes.',
+    docs: {
+      extractComponentDescription: description
+    }
   },
   title: 'Components/Card'
-}
-
-const cardTypes = {
-  base: 'base'
 }
 
 export const Default = () => (
@@ -44,7 +62,11 @@ export const Interactive = () => (
     }}
   >
     <TextWithTheme style={{ marginBottom: 8 }}>Interactive</TextWithTheme>
-    <Card type={select('Types', cardTypes, 'base') as CardTypes}>
+    <Card
+      type={select('Types', ['base'], 'base') as CardTypes}
+      elevation={boolean('Elevation', true)}
+      radius={boolean('Radius', true)}
+    >
       <View style={{ minHeight: 192 }}>
         <TextWithTheme style={{ margin: 16 }}>
           {textKnob('Content', 'Some content here.')}

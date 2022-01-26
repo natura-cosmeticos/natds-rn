@@ -1,23 +1,21 @@
 import React from 'react'
-import { withTheme } from 'styled-components/native'
-import { getShadowBySize } from '../../common/themeSelectors'
 
-import { CardBase } from './Card.styles'
 import { CardProps } from './Card.types'
+import { CardBaseComponent } from './CardBase'
 
-const CardComponent = ({
+export const Card = ({
   children,
   testID = 'card',
-  theme,
-  type = 'base'
+  type = 'base',
+  elevation = true,
+  radius = true
 }: CardProps) => (
-  <CardBase
-    style={getShadowBySize(theme, 'micro')}
+  <CardBaseComponent
     testID={testID}
     type={type}
+    elevation={elevation}
+    radius={radius}
   >
     {children}
-  </CardBase>
+  </CardBaseComponent>
 )
-
-export const Card = withTheme(CardComponent)

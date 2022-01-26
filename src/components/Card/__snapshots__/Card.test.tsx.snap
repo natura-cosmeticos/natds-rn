@@ -1,12 +1,36 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Card component should render Card component 1`] = `
+exports[`Card component should render a Card without elevation 1`] = `
 <View
+  elevation={false}
+  radius={true}
   style={
     Array [
       Object {
         "backgroundColor": "#ffffff",
         "borderRadius": 4,
+      },
+      false,
+    ]
+  }
+  testID="elevationID"
+  type="base"
+>
+  <Text>
+    Card
+  </Text>
+</View>
+`;
+
+exports[`Card component should render a Card without rounded corners 1`] = `
+<View
+  elevation={true}
+  radius={false}
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#ffffff",
+        "borderRadius": 0,
       },
       Object {
         "elevation": 1,
@@ -20,9 +44,11 @@ exports[`Card component should render Card component 1`] = `
       },
     ]
   }
-  testID="card"
+  testID="radiusID"
   type="base"
 >
-  <Text />
+  <Text>
+    Card
+  </Text>
 </View>
 `;

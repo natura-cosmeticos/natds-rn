@@ -1,12 +1,10 @@
 import { ReactNode } from 'react'
 
-import { Theme } from '../../common/themeSelectors'
-
 export type CardTypes = 'base';
 
 export interface CardProps {
   /**
-   * Card variants `base`
+   * The type of card to render.
    */
   type?: CardTypes;
   /**
@@ -14,11 +12,17 @@ export interface CardProps {
    */
   children: ReactNode;
   /**
-   * The Card theme
-   */
-  theme: Theme;
-  /**
    * Optional ID for testing
    */
   testID?: string;
+  /**
+   * Render a elevation shadow on the card
+   * @default true
+   */
+  elevation?: boolean;
+  /**
+   * Determine rouded corners in the Card
+   * @default true
+   */
+  radius?: boolean;
 }

@@ -4,25 +4,33 @@ import { render } from '@testing-library/react-native'
 import { ThemeProvider } from 'styled-components/native'
 import { Text } from 'react-native'
 import theme from '../../common/themeSelectors/theme/mock-theme.json'
-import { CardTypes } from './Card.types'
+import { CardProps } from './Card.types'
 import { Card } from '.'
 
-const renderCard = (fn, props?: CardTypes) => fn(
+const renderCard = (fn, props?: CardProps) => fn(
   <ThemeProvider theme={theme}>
-    <Card>
-      <Text>{props}</Text>
+    <Card {...props}>
+      {props?.children}
     </Card>
   </ThemeProvider>
 )
 
+const children = <Text>Card</Text>
+
 describe('Card component', () => {
   it('should render Base type as default', () => {
-    const { queryByTestId } = renderCard(render)
+    const { queryByTestId } = renderCard(render, { children })
 
     expect(queryByTestId('card')?.props).toHaveProperty('type', 'base')
   })
-  it('should render Card component', () => {
-    const card = renderCard(renderer.create)
+  it('should render a Card without elevation', () => {
+    const card = renderCard(renderer.create, { children, testID: 'elevationID', elevation: false })
+
+    expect(card).toMatchSnapshot()
+  })
+
+  it('should render a Card without rounded corners', () => {
+    const card = renderCard(renderer.create, { children, testID: 'radiusID', radius: false })
 
     expect(card).toMatchSnapshot()
   })
