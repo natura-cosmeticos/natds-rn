@@ -7,10 +7,7 @@ const scenarios = [
     expectedResult: {
       elevation: theme.elevation.tiny.elevation,
       shadowColor: theme.elevation.tiny.shadowColor,
-      shadowOffset: {
-        height: theme.elevation.tiny.shadowOffsetHeight,
-        width: theme.elevation.tiny.shadowOffsetWidth
-      },
+      shadowOffset: `${theme.elevation.tiny.shadowOffsetWidth}px ${theme.elevation.tiny.shadowOffsetHeight}px`,
       shadowOpacity: theme.elevation.tiny.shadowOpacity,
       shadowRadius: theme.elevation.tiny.shadowRadius
     },

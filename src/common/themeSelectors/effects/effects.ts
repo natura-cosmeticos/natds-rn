@@ -16,10 +16,7 @@ export const getShadowBySize = (theme: Theme, size: keyof Elevation) => {
   return {
     elevation,
     shadowColor,
-    shadowOffset: {
-      height: shadowOffsetHeight,
-      width: shadowOffsetWidth
-    },
+    shadowOffset: `${shadowOffsetWidth}px ${shadowOffsetHeight}px`,
     shadowOpacity,
     shadowRadius
   }
