@@ -1,7 +1,10 @@
 import styled from 'styled-components/native'
 import { TextProps, NativeSyntheticEvent, TargetedEvent } from 'react-native'
 import { SnackbarType } from './Snackbar'
-import { Theme, getSpacingSmall, getRadiusBySize } from '../../common/themeSelectors'
+import {
+  Theme, getSpacingSmall, getRadiusBySize, getShadowBySize
+} from '../../common/themeSelectors'
+import { ButtonBase } from '../Button/ButtonBase'
 
 const getBackgroundColorByType = (theme: Theme, type: SnackbarType) => {
   switch (type) {
@@ -48,6 +51,7 @@ interface SnackbarWrapperProps {
 }
 
 export const SnackbarWrapper = styled.View<SnackbarWrapperProps>(({ theme, type }) => ({
+  ...getShadowBySize(theme, 'large'),
   alignItems: 'center',
   backgroundColor: getBackgroundColorByType(theme, type),
   borderRadius: getRadiusBySize(theme, 'medium'),
@@ -62,6 +66,11 @@ export const SnackbarWrapper = styled.View<SnackbarWrapperProps>(({ theme, type 
   position: 'absolute',
   right: 0
 }))
+
+export const ButtonBaseStyled = styled(ButtonBase).attrs(({ theme, type }) => ({
+  type: 'text',
+  textLabelStyle: { color: getColorByType(theme, type) }
+}))``
 
 // begin - onTextLayout missing typings @0.62.2
 // TODO: remove this block when upgrading @types/react-native
