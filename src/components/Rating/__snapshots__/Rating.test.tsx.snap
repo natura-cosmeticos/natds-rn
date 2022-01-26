@@ -59,11 +59,11 @@ exports[`Rating Variants Counter Variant should render with counter variant 1`] 
               "alignItems": "center",
               "backgroundColor": "transparent",
               "borderRadius": 50,
+              "elevation": 0,
               "height": "px",
               "justifyContent": "center",
               "width": "px",
             },
-            Object {},
           ]
         }
         testID="ds-rating-1-background"
@@ -165,11 +165,11 @@ exports[`Rating Variants Input Variant should render with input variant 1`] = `
               "alignItems": "center",
               "backgroundColor": "transparent",
               "borderRadius": 50,
+              "elevation": 0,
               "height": "px",
               "justifyContent": "center",
               "width": "px",
             },
-            Object {},
           ]
         }
         testID="ds-rating-1-background"
@@ -221,11 +221,11 @@ exports[`Rating Variants Input Variant should render with input variant 1`] = `
               "alignItems": "center",
               "backgroundColor": "transparent",
               "borderRadius": 50,
+              "elevation": 0,
               "height": "px",
               "justifyContent": "center",
               "width": "px",
             },
-            Object {},
           ]
         }
         testID="ds-rating-2-background"
@@ -277,11 +277,11 @@ exports[`Rating Variants Input Variant should render with input variant 1`] = `
               "alignItems": "center",
               "backgroundColor": "transparent",
               "borderRadius": 50,
+              "elevation": 0,
               "height": "px",
               "justifyContent": "center",
               "width": "px",
             },
-            Object {},
           ]
         }
         testID="ds-rating-3-background"
@@ -333,11 +333,11 @@ exports[`Rating Variants Input Variant should render with input variant 1`] = `
               "alignItems": "center",
               "backgroundColor": "transparent",
               "borderRadius": 50,
+              "elevation": 0,
               "height": "px",
               "justifyContent": "center",
               "width": "px",
             },
-            Object {},
           ]
         }
         testID="ds-rating-4-background"
@@ -389,11 +389,11 @@ exports[`Rating Variants Input Variant should render with input variant 1`] = `
               "alignItems": "center",
               "backgroundColor": "transparent",
               "borderRadius": 50,
+              "elevation": 0,
               "height": "px",
               "justifyContent": "center",
               "width": "px",
             },
-            Object {},
           ]
         }
         testID="ds-rating-5-background"
@@ -469,11 +469,11 @@ exports[`Rating Variants RatingBase component should render a base component wit
           "alignItems": "center",
           "backgroundColor": "transparent",
           "borderRadius": 50,
+          "elevation": 0,
           "height": "px",
           "justifyContent": "center",
           "width": "px",
         },
-        Object {},
       ]
     }
     testID="undefined-background"
@@ -551,11 +551,11 @@ exports[`Rating Variants ReadOnly Variant should render with read-only variant 1
               "alignItems": "center",
               "backgroundColor": "transparent",
               "borderRadius": 50,
+              "elevation": 0,
               "height": "px",
               "justifyContent": "center",
               "width": "px",
             },
-            Object {},
           ]
         }
         testID="ds-rating-1-background"
@@ -607,11 +607,11 @@ exports[`Rating Variants ReadOnly Variant should render with read-only variant 1
               "alignItems": "center",
               "backgroundColor": "transparent",
               "borderRadius": 50,
+              "elevation": 0,
               "height": "px",
               "justifyContent": "center",
               "width": "px",
             },
-            Object {},
           ]
         }
         testID="ds-rating-2-background"
@@ -663,11 +663,11 @@ exports[`Rating Variants ReadOnly Variant should render with read-only variant 1
               "alignItems": "center",
               "backgroundColor": "transparent",
               "borderRadius": 50,
+              "elevation": 0,
               "height": "px",
               "justifyContent": "center",
               "width": "px",
             },
-            Object {},
           ]
         }
         testID="ds-rating-3-background"
@@ -719,11 +719,11 @@ exports[`Rating Variants ReadOnly Variant should render with read-only variant 1
               "alignItems": "center",
               "backgroundColor": "transparent",
               "borderRadius": 50,
+              "elevation": 0,
               "height": "px",
               "justifyContent": "center",
               "width": "px",
             },
-            Object {},
           ]
         }
         testID="ds-rating-4-background"
@@ -775,11 +775,11 @@ exports[`Rating Variants ReadOnly Variant should render with read-only variant 1
               "alignItems": "center",
               "backgroundColor": "transparent",
               "borderRadius": 50,
+              "elevation": 0,
               "height": "px",
               "justifyContent": "center",
               "width": "px",
             },
-            Object {},
           ]
         }
         testID="ds-rating-5-background"

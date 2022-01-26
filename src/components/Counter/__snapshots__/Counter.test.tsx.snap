@@ -56,11 +56,11 @@ exports[`Counter should render with default props 1`] = `
               "borderColor": "#FFFFFF00",
               "borderRadius": 4,
               "borderWidth": 0,
+              "elevation": 0,
               "justifyContent": "center",
               "minHeight": 48,
               "paddingHorizontal": 16,
             },
-            Object {},
           ]
         }
         testID="button"
@@ -161,11 +161,11 @@ exports[`Counter should render with default props 1`] = `
               "borderColor": "#FFFFFF00",
               "borderRadius": 4,
               "borderWidth": 0,
+              "elevation": 0,
               "justifyContent": "center",
               "minHeight": 48,
               "paddingHorizontal": 16,
             },
-            Object {},
           ]
         }
         testID="button"
