@@ -3,11 +3,32 @@ import { View, Button } from 'react-native'
 import { text, select, number } from '@storybook/addon-knobs'
 import { Snackbar, SnackbarType } from './Snackbar'
 
+const description = () => `
+- - -
+
+  ### NOTE for UX: This component is available in the following variants:
+
+  - ✅ Standard
+
+With the following attribute status:
+
+  - **Color:**
+    - ✅ Error
+    - ✅ Info
+    - ✅ Standard
+    - ✅ Success
+    - ✅ Warning
+
+- - -
+`
+
 export default {
   component: Snackbar,
   parameters: {
-    componentSubtitle:
-      'Snackar'
+    componentSubtitle: 'Snackbars provide brief messages about app processes at the bottom of the screen.',
+    docs: {
+      extractComponentDescription: description
+    }
   },
   title: 'Components|Snackbar'
 }
