@@ -14,12 +14,8 @@ const description = () => `
 
 With the following attribute statuses:
 
-- **Elevation:**
-    - ✅ \`True\`
-    - ✅ \`False\`
-- **Radius**
-  - ✅ \`True\`
-  - ✅ \`false\`
+  - ✅ **Elevation:**
+  - ✅ **Radius**
 
 ---
 `

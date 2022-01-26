@@ -3,12 +3,12 @@
 exports[`Card component should render a Card without elevation 1`] = `
 <View
   elevation={false}
-  radius={true}
+  radius={false}
   style={
     Array [
       Object {
         "backgroundColor": "#ffffff",
-        "borderRadius": 4,
+        "borderRadius": 0,
         "elevation": 0,
       },
     ]
@@ -24,21 +24,14 @@ exports[`Card component should render a Card without elevation 1`] = `
 
 exports[`Card component should render a Card without rounded corners 1`] = `
 <View
-  elevation={true}
+  elevation={false}
   radius={false}
   style={
     Array [
       Object {
         "backgroundColor": "#ffffff",
         "borderRadius": 0,
-        "elevation": 1,
-        "shadowColor": "#000000",
-        "shadowOffset": Object {
-          "height": 1,
-          "width": 0,
-        },
-        "shadowOpacity": 0.14,
-        "shadowRadius": 1,
+        "elevation": 0,
       },
     ]
   }

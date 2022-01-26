@@ -7,8 +7,8 @@ export const Card = ({
   children,
   testID = 'card',
   type = 'base',
-  elevation = true,
-  radius = true
+  elevation = false,
+  radius = false
 }: CardProps) => (
   <CardBase
     testID={testID}
