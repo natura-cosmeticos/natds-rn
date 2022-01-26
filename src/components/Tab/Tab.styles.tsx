@@ -18,6 +18,7 @@ import {
   TabButtonTypes, TabProps, IconPositions
 } from './Tab.types'
 import { TouchableRipple } from '../TouchableRipple/TouchableRipple'
+import { Icon } from '../Icon'
 
 interface TabBase {
   type: TabButtonTypes;
@@ -100,15 +101,16 @@ export const getTabTextColor = ({ disabled, theme, type }: TextBase) => {
 }
 
 export const getTabWrapperElevation = ({ elevation, theme }: TabWrapperProp) => (
-  elevation && getShadowBySize(theme, 'micro')
+  elevation ? getShadowBySize(theme, 'micro') : { elevation: 0 }
 )
 
 export const TabWrapper = styled.View.attrs({
   horizontal: true,
   showsHorizontalScrollIndicator: false
 })<TabWrapperProp>(({
-  theme, backgroundColor, iconPosition
+  theme, backgroundColor, iconPosition, elevation
 }) => ({
+  ...getTabWrapperElevation({ elevation, theme }),
   backgroundColor: backgroundColor ? getColorSurface(theme) : 'transparent',
   border: 'none',
   flexDirection: 'row',
@@ -141,4 +143,8 @@ export const TabText = styled.Text<TextBase>(({
 export const TabButtonContent = styled.View<Pick<ButtonContentProps, 'iconPosition'>>(({ iconPosition }) => ({
   alignItems: 'center',
   flexDirection: iconPosition === 'leading' ? 'row' : 'column'
+}))
+
+export const TabIcon = styled(Icon)<ButtonContentProps>(({ theme, type, disabled }) => ({
+  ...getTabTextColor({ disabled, theme, type })
 }))

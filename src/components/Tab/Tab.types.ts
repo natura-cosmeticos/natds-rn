@@ -1,6 +1,5 @@
 /* eslint-disable max-len */
 import { AccessibilityRole } from 'react-native'
-import { Theme } from '../../common/themeSelectors'
 
 export type TabButtonTypes = 'primary' | 'secondary'
 export type IconPositions = 'leading' | 'top' | 'icon'
@@ -53,10 +52,6 @@ export interface TabProps {
    * once the tab option has been pressed.
    */
   onChange: (value: number) => void;
-  /**
-   * The tab theme
-   */
-  theme: Theme;
   /**
    * Optional ID for testing
    */
