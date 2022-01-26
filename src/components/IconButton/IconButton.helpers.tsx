@@ -62,5 +62,5 @@ export const getContainerElevation = (
 ) => (
   backgroundStyle === 'float'
     ? getShadowBySize(theme, 'micro')
-    : {}
+    : { elevation: 0 }
 )
