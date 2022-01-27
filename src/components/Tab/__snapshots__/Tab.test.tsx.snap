@@ -4,27 +4,301 @@ exports[`Tab component Should render tab component with default props 1`] = `
 <View
   accessibilityRole="tab"
   accessible={false}
-  style={false}
+  backgroundColor={true}
+  elevation={false}
+  horizontal={true}
+  showsHorizontalScrollIndicator={false}
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#FFFFFF",
+        "borderColor": "black",
+        "borderStyle": "solid",
+        "borderWidth": 0,
+        "elevation": 0,
+        "flexDirection": "row",
+        "height": 72,
+      },
+    ]
+  }
+  testID="ds-tab"
 >
   <View
-    backgroundColor={true}
-    horizontal={true}
-    showsHorizontalScrollIndicator={false}
+    accessibilityState={
+      Object {
+        "disabled": false,
+      }
+    }
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
     style={
       Array [
         Object {
-          "backgroundColor": "#FFFFFF",
-          "borderColor": "black",
+          "alignItems": "center",
+          "borderBottomColor": "#F4F4",
+          "borderBottomWidth": 2,
           "borderStyle": "solid",
-          "borderWidth": 0,
-          "flexDirection": "row",
-          "height": 72,
+          "flexBasis": 0,
+          "flexGrow": 1,
+          "flexShrink": 1,
+          "justifyContent": "center",
+          "minWidth": 72,
+          "paddingHorizontal": 16,
         },
-        false,
       ]
     }
-    testID="ds-tab"
+    testID="ds-tab-item-0"
   >
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "column",
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#333333",
+              "fontFamily": "Roboto",
+              "fontSize": 14,
+              "fontWeight": "500",
+              "letterSpacing": 1.23,
+              "lineHeight": 21,
+            },
+          ]
+        }
+        type="primary"
+      >
+        ITEM ONE
+      </Text>
+    </View>
+  </View>
+  <View
+    accessibilityState={
+      Object {
+        "disabled": false,
+      }
+    }
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "borderBottomWidth": 2,
+          "borderColor": "transparent",
+          "borderStyle": "solid",
+          "flexBasis": 0,
+          "flexGrow": 1,
+          "flexShrink": 1,
+          "justifyContent": "center",
+          "minWidth": 72,
+          "paddingHorizontal": 16,
+        },
+      ]
+    }
+    testID="ds-tab-item-1"
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "column",
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#777777",
+              "fontFamily": "Roboto",
+              "fontSize": 14,
+              "fontWeight": "500",
+              "letterSpacing": 1.23,
+              "lineHeight": 21,
+            },
+          ]
+        }
+        type="secondary"
+      >
+        ITEM TWO
+      </Text>
+    </View>
+  </View>
+  <View
+    accessibilityState={
+      Object {
+        "disabled": false,
+      }
+    }
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "borderBottomWidth": 2,
+          "borderColor": "transparent",
+          "borderStyle": "solid",
+          "flexBasis": 0,
+          "flexGrow": 1,
+          "flexShrink": 1,
+          "justifyContent": "center",
+          "minWidth": 72,
+          "paddingHorizontal": 16,
+        },
+      ]
+    }
+    testID="ds-tab-item-2"
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "column",
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#777777",
+              "fontFamily": "Roboto",
+              "fontSize": 14,
+              "fontWeight": "500",
+              "letterSpacing": 1.23,
+              "lineHeight": 21,
+            },
+          ]
+        }
+        type="secondary"
+      >
+        ITEM THREE
+      </Text>
+    </View>
+  </View>
+  <View
+    accessibilityState={
+      Object {
+        "disabled": true,
+      }
+    }
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "borderBottomWidth": 2,
+          "borderColor": "transparent",
+          "borderStyle": "solid",
+          "flexBasis": 0,
+          "flexGrow": 1,
+          "flexShrink": 1,
+          "justifyContent": "center",
+          "minWidth": 72,
+          "paddingHorizontal": 16,
+        },
+      ]
+    }
+    testID="ds-tab-item-3"
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "column",
+          },
+        ]
+      }
+    >
+      <Text
+        disabled={true}
+        style={
+          Array [
+            Object {
+              "color": "#BBBBBB",
+              "fontFamily": "Roboto",
+              "fontSize": 14,
+              "fontWeight": "500",
+              "letterSpacing": 1.23,
+              "lineHeight": 21,
+            },
+          ]
+        }
+        type="secondary"
+      >
+        ITEM FOUR
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Tab component render props Should render tab component with scrollable postion 1`] = `
+<RCTScrollView
+  accessibilityRole="tab"
+  accessible={false}
+  backgroundColor={true}
+  elevation={false}
+  horizontal={true}
+  showsHorizontalScrollIndicator={false}
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#FFFFFF",
+        "borderColor": "black",
+        "borderStyle": "solid",
+        "borderWidth": 0,
+        "elevation": 0,
+        "flexDirection": "row",
+        "height": 72,
+      },
+    ]
+  }
+  testID="ds-tab"
+>
+  <View>
     <View
       accessibilityState={
         Object {
@@ -275,285 +549,5 @@ exports[`Tab component Should render tab component with default props 1`] = `
       </View>
     </View>
   </View>
-</View>
-`;
-
-exports[`Tab component render props Should render tab component with scrollable postion 1`] = `
-<View
-  accessibilityRole="tab"
-  accessible={false}
-  style={false}
->
-  <RCTScrollView
-    backgroundColor={true}
-    horizontal={true}
-    showsHorizontalScrollIndicator={false}
-    style={
-      Array [
-        Object {
-          "backgroundColor": "#FFFFFF",
-          "borderColor": "black",
-          "borderStyle": "solid",
-          "borderWidth": 0,
-          "flexDirection": "row",
-          "height": 72,
-        },
-        false,
-      ]
-    }
-    testID="ds-tab"
-  >
-    <View>
-      <View
-        accessibilityState={
-          Object {
-            "disabled": false,
-          }
-        }
-        accessible={true}
-        focusable={true}
-        onClick={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        style={
-          Array [
-            Object {
-              "alignItems": "center",
-              "borderBottomColor": "#F4F4",
-              "borderBottomWidth": 2,
-              "borderStyle": "solid",
-              "flexBasis": 0,
-              "flexGrow": 1,
-              "flexShrink": 1,
-              "justifyContent": "center",
-              "minWidth": 72,
-              "paddingHorizontal": 16,
-            },
-          ]
-        }
-        testID="ds-tab-item-0"
-      >
-        <View
-          style={
-            Array [
-              Object {
-                "alignItems": "center",
-                "flexDirection": "column",
-              },
-            ]
-          }
-        >
-          <Text
-            style={
-              Array [
-                Object {
-                  "color": "#333333",
-                  "fontFamily": "Roboto",
-                  "fontSize": 14,
-                  "fontWeight": "500",
-                  "letterSpacing": 1.23,
-                  "lineHeight": 21,
-                },
-              ]
-            }
-            type="primary"
-          >
-            ITEM ONE
-          </Text>
-        </View>
-      </View>
-      <View
-        accessibilityState={
-          Object {
-            "disabled": false,
-          }
-        }
-        accessible={true}
-        focusable={true}
-        onClick={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        style={
-          Array [
-            Object {
-              "alignItems": "center",
-              "borderBottomWidth": 2,
-              "borderColor": "transparent",
-              "borderStyle": "solid",
-              "flexBasis": 0,
-              "flexGrow": 1,
-              "flexShrink": 1,
-              "justifyContent": "center",
-              "minWidth": 72,
-              "paddingHorizontal": 16,
-            },
-          ]
-        }
-        testID="ds-tab-item-1"
-      >
-        <View
-          style={
-            Array [
-              Object {
-                "alignItems": "center",
-                "flexDirection": "column",
-              },
-            ]
-          }
-        >
-          <Text
-            style={
-              Array [
-                Object {
-                  "color": "#777777",
-                  "fontFamily": "Roboto",
-                  "fontSize": 14,
-                  "fontWeight": "500",
-                  "letterSpacing": 1.23,
-                  "lineHeight": 21,
-                },
-              ]
-            }
-            type="secondary"
-          >
-            ITEM TWO
-          </Text>
-        </View>
-      </View>
-      <View
-        accessibilityState={
-          Object {
-            "disabled": false,
-          }
-        }
-        accessible={true}
-        focusable={true}
-        onClick={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        style={
-          Array [
-            Object {
-              "alignItems": "center",
-              "borderBottomWidth": 2,
-              "borderColor": "transparent",
-              "borderStyle": "solid",
-              "flexBasis": 0,
-              "flexGrow": 1,
-              "flexShrink": 1,
-              "justifyContent": "center",
-              "minWidth": 72,
-              "paddingHorizontal": 16,
-            },
-          ]
-        }
-        testID="ds-tab-item-2"
-      >
-        <View
-          style={
-            Array [
-              Object {
-                "alignItems": "center",
-                "flexDirection": "column",
-              },
-            ]
-          }
-        >
-          <Text
-            style={
-              Array [
-                Object {
-                  "color": "#777777",
-                  "fontFamily": "Roboto",
-                  "fontSize": 14,
-                  "fontWeight": "500",
-                  "letterSpacing": 1.23,
-                  "lineHeight": 21,
-                },
-              ]
-            }
-            type="secondary"
-          >
-            ITEM THREE
-          </Text>
-        </View>
-      </View>
-      <View
-        accessibilityState={
-          Object {
-            "disabled": true,
-          }
-        }
-        accessible={true}
-        focusable={true}
-        onClick={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        style={
-          Array [
-            Object {
-              "alignItems": "center",
-              "borderBottomWidth": 2,
-              "borderColor": "transparent",
-              "borderStyle": "solid",
-              "flexBasis": 0,
-              "flexGrow": 1,
-              "flexShrink": 1,
-              "justifyContent": "center",
-              "minWidth": 72,
-              "paddingHorizontal": 16,
-            },
-          ]
-        }
-        testID="ds-tab-item-3"
-      >
-        <View
-          style={
-            Array [
-              Object {
-                "alignItems": "center",
-                "flexDirection": "column",
-              },
-            ]
-          }
-        >
-          <Text
-            disabled={true}
-            style={
-              Array [
-                Object {
-                  "color": "#BBBBBB",
-                  "fontFamily": "Roboto",
-                  "fontSize": 14,
-                  "fontWeight": "500",
-                  "letterSpacing": 1.23,
-                  "lineHeight": 21,
-                },
-              ]
-            }
-            type="secondary"
-          >
-            ITEM FOUR
-          </Text>
-        </View>
-      </View>
-    </View>
-  </RCTScrollView>
-</View>
+</RCTScrollView>
 `;

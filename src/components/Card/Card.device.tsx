@@ -1,6 +1,6 @@
 import { storiesOf } from '@storybook/react-native'
-import { base, interactive } from './Card.stories'
+import { Default, Interactive } from './Card.stories'
 
 storiesOf('Card', module)
-  .add('base', base)
-  .add('interactive', interactive)
+  .add('Default', Default)
+  .add('Interactive', Interactive)

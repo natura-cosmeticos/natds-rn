@@ -2,16 +2,14 @@
 import { IconName } from '@naturacosmeticos/natds-icons'
 import React, { useEffect, useState, useCallback } from 'react'
 import { ScrollView, View } from 'react-native'
-import { withTheme } from 'styled-components/native'
 
-import { Icon } from '../Icon'
 import {
-  TabWrapper, TabButton, TabText, TabButtonContent, getTabTextColor, getTabWrapperElevation
+  TabWrapper, TabButton, TabText, TabButtonContent, TabIcon
 } from './Tab.styles'
 import { TabProps, TabButtonTypes } from './Tab.types'
 
-const TabComponent = ({
-  testID = 'ds-tab', theme, tabOptions, onChange, position = 'fixed',
+export const Tab = ({
+  testID = 'ds-tab', tabOptions, onChange, position = 'fixed',
   iconPosition, elevation = false, backgroundColor = true, accessible = false,
   accessibilityRole = 'tab'
 }: TabProps) => {
@@ -55,52 +53,45 @@ const TabComponent = ({
   }, [getSelectedTab])
 
   return (
-    <View
-      // This view is to apply the shadow when the position is scrollable in IOS, but not working in Android.
-      style={getTabWrapperElevation({ elevation, theme })}
+    <TabWrapper
+      as={TabPositionType}
+      iconPosition={iconPosition}
+      backgroundColor={backgroundColor}
+      elevation={elevation}
+      testID={testID}
       accessible={accessible}
       accessibilityRole={accessibilityRole}
     >
-      <TabWrapper
-        // This view is to apply the shadow to working in Android.
-        style={getTabWrapperElevation({ elevation, theme })}
-        as={TabPositionType}
-        iconPosition={iconPosition}
-        backgroundColor={backgroundColor}
-        testID={testID}
-      >
-        {tabOptions.map((tabOption, index) => {
-          const currentType = getCurrentType(index, tabOption.disabled)
+      {tabOptions.map((tabOption, index) => {
+        const currentType = getCurrentType(index, tabOption.disabled)
 
-          return (
-            <TabButton
-              accessible={accessible}
-              disabled={tabOption.disabled}
-              key={tabOption.key}
-              onPress={() => handlePress(index)}
-              type={currentType}
-              testID={`${testID}-item-${index}`}
-            >
-              <TabButtonContent iconPosition={iconPosition}>
-                {tabOption.iconName && iconPosition
+        return (
+          <TabButton
+            accessible={accessible}
+            disabled={tabOption.disabled}
+            key={tabOption.key}
+            onPress={() => handlePress(index)}
+            type={currentType}
+            testID={`${testID}-item-${index}`}
+          >
+            <TabButtonContent iconPosition={iconPosition}>
+              {tabOption.iconName && iconPosition
                   && (
-                  <Icon
+                  <TabIcon
+                    type={currentType}
+                    disabled={tabOption.disabled}
                     accessibilityRole="imagebutton"
-                    style={getTabTextColor({ disabled: tabOption.disabled, theme, type: currentType })}
                     name={tabOption.iconName as IconName}
                     size="standard"
                   />
                   )}
-                <TabText iconPosition={iconPosition} type={currentType} disabled={tabOption.disabled}>
-                  {tabOption.label.toUpperCase()}
-                </TabText>
-              </TabButtonContent>
-            </TabButton>
-          )
-        })}
-      </TabWrapper>
-    </View>
+              <TabText iconPosition={iconPosition} type={currentType} disabled={tabOption.disabled}>
+                {tabOption.label.toUpperCase()}
+              </TabText>
+            </TabButtonContent>
+          </TabButton>
+        )
+      })}
+    </TabWrapper>
   )
 }
-
-export const Tab = withTheme(TabComponent)

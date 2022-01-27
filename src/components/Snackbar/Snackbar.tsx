@@ -2,20 +2,13 @@ import React, {
   useEffect, useRef, useState, useCallback
 } from 'react'
 import { Animated, Platform } from 'react-native'
-import { withTheme } from 'styled-components/native'
-import { Theme, getShadowBySize } from '../../common/themeSelectors'
 import {
-  SnackbarWrapper, SnackbarText, SnackbarButtonWrapper, getColorByType
+  SnackbarWrapper, SnackbarText, SnackbarButtonWrapper, ButtonBaseStyled
 } from './Snackbar.styles'
-import { ButtonBase } from '../Button/ButtonBase'
 
 export type SnackbarType = 'standard' | 'success' | 'error' | 'warning' | 'info';
 
 export interface SnackbarProps {
-  /**
-   * Theme
-   */
-  theme: Theme;
   /**
    * Snackbar's message content
    */
@@ -47,8 +40,7 @@ export interface SnackbarProps {
 }
 
 // eslint-disable-next-line max-statements
-export const SnackbarComponent = ({
-  theme,
+export const Snackbar = ({
   message,
   buttonText,
   type = 'standard',
@@ -103,7 +95,7 @@ export const SnackbarComponent = ({
     <SnackbarWrapper
       type={type}
       as={Animated.View}
-      style={{ opacity: fadeAnim, ...getShadowBySize(theme, 'large') }}
+      style={{ opacity: fadeAnim }}
       testID="natds-snackbar-wrapper"
     >
       <SnackbarText
@@ -120,18 +112,15 @@ export const SnackbarComponent = ({
       </SnackbarText>
       {buttonText && (
         <SnackbarButtonWrapper isTwoLineAction={isMultiLineText && !!buttonText}>
-          <ButtonBase
+          <ButtonBaseStyled
             text={buttonText}
-            type="text"
             onPress={handleClose}
             testID="natds-snackbar-button"
             size="medium"
-            textLabelStyle={{ color: getColorByType(theme, type) }}
+            type={type}
           />
         </SnackbarButtonWrapper>
       )}
     </SnackbarWrapper>
   )
 }
-
-export const Snackbar = withTheme(SnackbarComponent)

@@ -1,6 +1,6 @@
 {
   "name": "@naturacosmeticos/natds-rn",
-  "version": "7.21.0",
+  "version": "7.22.0-DSY-2549.6",
   "license": "ISC",
   "main": "build/lib/index.js",
   "keywords": [
@@ -162,7 +162,8 @@
   },
   "husky": {
     "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-push": "yarn lint && yarn tsc && yarn test"
     }
   },
   "config": {

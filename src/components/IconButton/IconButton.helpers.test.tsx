@@ -41,7 +41,7 @@ describe('getContainerElevation', () => {
   it('should return no elevation if background style is not float', () => {
     const elevation = getContainerElevation('overlay', mockTheme)
 
-    expect(elevation).toEqual({})
+    expect(elevation).toEqual({ elevation: 0 })
     expect(getShadowBySize).not.toHaveBeenCalled()
   })
 })

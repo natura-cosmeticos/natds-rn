@@ -25,8 +25,7 @@ With the following attribute status:
     - ✅ \`Icon\`
   - ✅ **Disabled**
   - ✅ **Elevation**
-  - ✅ **Color**
-  - ✅ **onChange**
+  - ✅ **Background Color**
 
 - - -
 `

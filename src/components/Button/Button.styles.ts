@@ -44,7 +44,7 @@ export const getButtonStylesBySize = ({ size, theme }: Pick<SurfaceProps, 'size'
 export const getButtonShadowByType = ({ disabled, theme, type }: Omit<SurfaceProps, 'size'>) => (
   type === 'contained' && !disabled
     ? getShadowBySize(theme, 'tiny')
-    : {}
+    : { elevation: 0 }
 )
 
 export const Surface = styled.View<SurfaceProps>(({
@@ -52,8 +52,9 @@ export const Surface = styled.View<SurfaceProps>(({
   size,
   theme,
   type = 'contained'
-}) => ({
+}: SurfaceProps) => ({
   ...getButtonStylesBySize({ size, theme }),
+  ...getButtonShadowByType({ disabled, theme, type }),
   alignContent: 'center',
   alignItems: 'center',
   background: disabled
