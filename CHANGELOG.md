@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [7.22.0](https://github.com/natura-cosmeticos/natds-rn/compare/v7.21.0...v7.22.0) (2022-01-27)
+
+
+### Features
+
+* **card:**  releasing elevation and radius attributes ([#241](https://github.com/natura-cosmeticos/natds-rn/issues/241)) ([4820af8](https://github.com/natura-cosmeticos/natds-rn/commit/4820af8d6faefa01eec47f16c85332832066d0db))
+
 ## [7.21.0](https://github.com/natura-cosmeticos/natds-rn/compare/v7.20.0...v7.21.0) (2022-01-14)
 
 
