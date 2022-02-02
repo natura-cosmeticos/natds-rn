@@ -1,8 +1,8 @@
+/* eslint-disable max-len */
 import { Theme } from '@naturacosmeticos/natds-themes/react-native'
 import { CSSObject } from 'styled-components'
 import styled from 'styled-components/native'
 import {
-  getBorderRadiusMedium,
   getColorHighEmphasis,
   getColorLowEmphasis,
   getColorMediumEmphasis,
@@ -14,6 +14,14 @@ import {
 } from '../../common/themeSelectors'
 import { CounterSizes } from './Counter.types'
 
+type CounterStyleProps = {
+  theme: Theme;
+}
+
+type ContainerStyleProps = CounterStyleProps & {
+  size: CounterSizes;
+}
+
 export const Label = styled.Text<{ theme: Theme }>(({ theme }): CSSObject => ({
   color: getColorMediumEmphasis(theme),
   fontFamily: theme.counter.label.primary.fontFamily,
@@ -24,14 +32,12 @@ export const Label = styled.Text<{ theme: Theme }>(({ theme }): CSSObject => ({
   marginBottom: getSpacingMicro(theme)
 }))
 
-export const Container = styled.View<{
-  size: CounterSizes; theme: Theme;
-}>(({ size, theme }): CSSObject => ({
+export const Container = styled.View<ContainerStyleProps>(({ size, theme }: ContainerStyleProps): CSSObject => ({
   alignItems: 'center',
   alignSelf: 'flex-start',
   backgroundColor: getColorSurface(theme),
   borderColor: getColorLowEmphasis(theme),
-  borderRadius: getBorderRadiusMedium(theme),
+  borderRadius: theme.counter.borderRadius,
   borderWidth: 1,
   flexDirection: 'row',
   height: getSize(theme, size)
