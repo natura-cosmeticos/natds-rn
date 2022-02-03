@@ -6,16 +6,19 @@ import {
   getColorSurface,
   getColorHighlight,
   getOpacity56,
-  getRadiusBySize,
   getSpacingSmall,
   getSpacingTiny,
   Theme
 } from '../../common/themeSelectors'
 import { Divider } from '..'
 
+type DialogStyleProps = {
+  theme: Theme;
+}
+
 const { height } = Dimensions.get('window')
 
-export const DialogOverlay = styled.View(({ theme }) => ({
+export const DialogOverlay = styled.View(({ theme }: DialogStyleProps) => ({
   background: getColorHighlight(theme),
   bottom: 0,
   flex: 1,
@@ -26,7 +29,7 @@ export const DialogOverlay = styled.View(({ theme }) => ({
   top: 0
 }))
 
-export const DialogWrapper = styled.View(({ theme }) => ({
+export const DialogWrapper = styled.View(({ theme }: DialogStyleProps) => ({
   alignItems: 'center',
   flex: 1,
   justifyContent: 'center',
@@ -34,15 +37,15 @@ export const DialogWrapper = styled.View(({ theme }) => ({
   paddingRight: getSpacingSmall(theme)
 }))
 
-export const DialogContainer = styled.View(({ theme }) => ({
+export const DialogContainer = styled.View(({ theme }: DialogStyleProps) => ({
   backgroundColor: getColorSurface(theme),
-  borderRadius: getRadiusBySize(theme, 'medium'),
+  borderRadius: theme.dialog.borderRadius,
   maxHeight: height * 0.7,
   paddingVertical: getSpacingSmall(theme),
   width: '100%'
 }))
 
-const DialogTitleComponent = styled.Text(({ theme }) => ({
+const DialogTitleComponent = styled.Text(({ theme }: DialogStyleProps) => ({
   color: getColorHighEmphasis(theme),
   flex: 0.85,
   fontFamily: theme.dialog.title.primary.fontFamily,
@@ -56,7 +59,7 @@ export const DialogTitle = (props) => (
   <DialogTitleComponent {...props} style={{ fontWeight: 'bold' }} />
 )
 
-export const DialogContentText = styled.Text(({ theme }) => ({
+export const DialogContentText = styled.Text(({ theme }: DialogStyleProps) => ({
   color: getColorHighEmphasis(theme),
   fontFamily: theme.dialog.body.primary.fontFamily,
   fontSize: theme.dialog.body.fontSize,
@@ -83,7 +86,7 @@ const DialogContentComponent = styled.ScrollView<DialogContentProps>(() => ({
   flexShrink: 1
 }))
 
-export const DialogContent = ({ children, divider = false }) => (
+export const DialogContent = ({ children, divider = false }: DialogContentProps) => (
   <DialogContentComponent bounces={false}>
     {divider && <Divider />}
     {children}
@@ -99,9 +102,7 @@ export interface DialogActionsProps {
   actionsAlignment?: AlignmentOptions;
 }
 
-type DialogActionsStyleProps = {
-  theme: Theme;
-} & DialogActionsProps;
+type DialogActionsStyleProps = DialogStyleProps & DialogActionsProps;
 
 const buildDialogAlignment = (actionsAlignment: AlignmentOptions) => (actionsAlignment === 'side-by-side' ? 'row' : 'column')
 

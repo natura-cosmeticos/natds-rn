@@ -5,5 +5,5 @@ import {
 } from './Dialog.stories'
 
 storiesOf('Dialog', module)
-  .add('alert', Alert)
-  .add('standard', Standard)
+  .add('Alert', Alert)
+  .add('Standard', Standard)
