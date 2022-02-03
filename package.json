@@ -1,6 +1,6 @@
 {
   "name": "@naturacosmeticos/natds-rn",
-  "version": "7.22.0",
+  "version": "7.23.0-DSY-2552.0",
   "license": "ISC",
   "main": "build/lib/index.js",
   "keywords": [
@@ -67,7 +67,7 @@
   },
   "dependencies": {
     "@naturacosmeticos/natds-icons": "^1.10.0",
-    "@naturacosmeticos/natds-themes": "^0.20.1",
+    "@naturacosmeticos/natds-themes": "^0.24.3",
     "fs-extra": "8.1.0",
     "react-native-gesture-handler": "^1.10.3",
     "react-native-svg": "^12.1.1"
