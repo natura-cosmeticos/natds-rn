@@ -126,7 +126,7 @@ export const Disabled = () => {
   )
 }
 
-export const Value = () => {
+export const Range = () => {
   const initialValue = 42
   const [value, setValue] = React.useState(initialValue)
 
@@ -176,13 +176,3 @@ export const Interactive = () => {
     </StoryContainer>
   )
 }
-
-export const All = () => (
-  <>
-    <Default />
-    <Label />
-    <Size />
-    <Disabled />
-    <Value />
-  </>
-)
