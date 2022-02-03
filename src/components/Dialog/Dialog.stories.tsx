@@ -1,6 +1,4 @@
-/* eslint-disable max-lines */
 /* eslint-disable max-len */
-/* eslint-disable no-use-before-define, max-lines */
 import React, { useState } from 'react'
 import { View } from 'react-native'
 import {
@@ -10,6 +8,7 @@ import { Button } from '../Button'
 import {
   IconButton, DialogHeader
 } from '..'
+import { StoryWrapper } from '../../common/HelperComponents/StoryContainer'
 
 const description = () => `
 ---
@@ -50,23 +49,25 @@ export const Alert = () => {
   const [modalVisible, setModalVisible] = useState(false)
 
   return (
-    <View style={{ flexDirection: 'row' }}>
-      <Button text="alert dialog" onPress={() => setModalVisible(!modalVisible)} />
-      <Dialog visible={modalVisible} onRequestClose={() => setModalVisible(false)}>
-        <DialogContent>
-          <DialogContentText>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc scelerisque metus nibh.
-            Suspendisse varius gravida ex. Praesent consequat, nibh non semper mattis
-          </DialogContentText>
-        </DialogContent>
-        <DialogActions>
-          <View style={{ paddingRight: 16 }}>
-            <Button text="cancel" type="text" onPress={() => setModalVisible(!modalVisible)} />
-          </View>
-          <Button text="ok" type="text" onPress={() => setModalVisible(!modalVisible)} />
-        </DialogActions>
-      </Dialog>
-    </View>
+    <StoryWrapper title="Alert">
+      <>
+        <Button text="alert dialog" onPress={() => setModalVisible(!modalVisible)} />
+        <Dialog visible={modalVisible} onRequestClose={() => setModalVisible(false)}>
+          <DialogContent>
+            <DialogContentText>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc scelerisque metus nibh.
+              Suspendisse varius gravida ex. Praesent consequat, nibh non semper mattis
+            </DialogContentText>
+          </DialogContent>
+          <DialogActions>
+            <View style={{ paddingRight: 16 }}>
+              <Button text="cancel" type="text" onPress={() => setModalVisible(!modalVisible)} />
+            </View>
+            <Button text="ok" type="text" onPress={() => setModalVisible(!modalVisible)} />
+          </DialogActions>
+        </Dialog>
+      </>
+    </StoryWrapper>
   )
 }
 
@@ -81,51 +82,30 @@ export const Standard = () => {
   )
 
   return (
-    <View style={{ flexDirection: 'row' }}>
-      <Button text="standard dialog" onPress={() => setModalVisible(!modalVisible)} />
-      <Dialog visible={modalVisible}>
-        <DialogHeader icon={icons}>
-          <DialogTitle>Title</DialogTitle>
-        </DialogHeader>
-        <DialogContent divider>
-          <DialogContentText>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc scelerisque metus nibh.
-            Suspendisse varius gravida ex. Praesent consequat, nibh non semper mattis, lorem purus
-            pellentesque sapien, vitae facilisis tellus sem et enim. Sed eget nunc nec eros gravida
-            egestas. Phasellus nec ipsum dolor. Donec justo ipsum, vehicula vel lacus at, facilisis
-            bibendum tellus. Duis ornare in tellus vel scelerisque.
-          </DialogContentText>
-        </DialogContent>
-        <DialogActions>
-          <View style={{ paddingRight: 16 }}>
-            <Button text="cancel" type="text" onPress={() => setModalVisible(!modalVisible)} />
-          </View>
-          <Button text="ok" onPress={() => setModalVisible(!modalVisible)} />
-        </DialogActions>
-      </Dialog>
-    </View>
+    <StoryWrapper title="Standard">
+      <>
+        <Button text="standard dialog" onPress={() => setModalVisible(!modalVisible)} />
+        <Dialog visible={modalVisible}>
+          <DialogHeader icon={icons}>
+            <DialogTitle>Title</DialogTitle>
+          </DialogHeader>
+          <DialogContent divider>
+            <DialogContentText>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc scelerisque metus nibh.
+              Suspendisse varius gravida ex. Praesent consequat, nibh non semper mattis, lorem purus
+              pellentesque sapien, vitae facilisis tellus sem et enim. Sed eget nunc nec eros gravida
+              egestas. Phasellus nec ipsum dolor. Donec justo ipsum, vehicula vel lacus at, facilisis
+              bibendum tellus. Duis ornare in tellus vel scelerisque.
+            </DialogContentText>
+          </DialogContent>
+          <DialogActions>
+            <View style={{ paddingRight: 16 }}>
+              <Button text="cancel" type="text" onPress={() => setModalVisible(!modalVisible)} />
+            </View>
+            <Button text="ok" onPress={() => setModalVisible(!modalVisible)} />
+          </DialogActions>
+        </Dialog>
+      </>
+    </StoryWrapper>
   )
 }
-
-export const All = () => (
-  <View style={{
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    maxWidth: 800,
-    padding: 20
-  }}
-  >
-    <View style={{ maxWidth: 300 }}>
-      {
-        // for implementation samples view `standard` story bellow
-        Standard()
-      }
-    </View>
-    <View style={{ maxWidth: 300 }}>
-      {
-        // for implemantation samples view `alert` story bellow
-        Alert()
-      }
-    </View>
-  </View>
-)
