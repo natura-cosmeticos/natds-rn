@@ -1,9 +1,9 @@
+/* eslint-disable max-len */
 import React, { ReactNode } from 'react'
 import styled from 'styled-components/native'
 import {
   getSpacingSmall,
   getSpacingTiny,
-  getRadiusBySize,
   Theme
 } from '../../common/themeSelectors'
 
@@ -41,9 +41,9 @@ const getAlertStyles = (type: Types) => {
   return styles[type]
 }
 
-const AlertWrapperComponent = styled.View<AlertWrapperProp>(({ theme, type }) => ({
+const AlertWrapperComponent = styled.View<AlertWrapperProp>(({ theme, type }: AlertWrapperProp) => ({
   ...getAlertStyles(type),
-  borderRadius: getRadiusBySize(theme, 'medium'),
+  borderRadius: theme.alert.borderRadius,
   flexDirection: 'row',
   margin: getSpacingSmall(theme),
   padding: getSpacingSmall(theme)
