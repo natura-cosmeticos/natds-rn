@@ -3,12 +3,10 @@ import { useTheme } from 'styled-components/native'
 import { TouchableRipple } from '../TouchableRipple/TouchableRipple'
 import { getSize } from '../../common/themeSelectors'
 import { IconButtonBaseProps } from './IconButton.types'
-import { IconContainer } from './IconButton.styles'
 
 export const IconButtonBase = ({
   size = 'semi',
   IconComponent,
-  backgroundStyle = 'none',
   disabled = false,
   onPress,
   testID
@@ -24,14 +22,7 @@ export const IconButtonBase = ({
       testID={`${testID}-button`}
       style={{ borderRadius: 50 }}
     >
-      <IconContainer
-        disabled={disabled}
-        size={size}
-        backgroundStyle={backgroundStyle}
-        testID={`${testID}-background`}
-      >
-        {IconComponent}
-      </IconContainer>
+      {IconComponent}
     </TouchableRipple>
   )
 }
