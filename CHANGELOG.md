@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [7.25.0](https://github.com/natura-cosmeticos/natds-rn/compare/v7.24.0...v7.25.0) (2022-02-07)
+
+
+### Bug Fixes
+
+* **alert:** Applying border radius token ([#246](https://github.com/natura-cosmeticos/natds-rn/issues/246)) ([5bf0eb0](https://github.com/natura-cosmeticos/natds-rn/commit/5bf0eb0d4b4040d9dc5ada98d53dfabf8ba89914))
+
 ## [7.24.0](https://github.com/natura-cosmeticos/natds-rn/compare/v7.23.0...v7.24.0) (2022-02-03)
 
 
