@@ -6,7 +6,7 @@ exports[`Alert component Should render alert with default props 1`] = `
     Array [
       Object {
         "backgroundColor": "#D7E6F1",
-        "borderRadius": 8,
+        "borderRadius": 4,
         "flexDirection": "row",
         "marginBottom": 16,
         "marginLeft": 16,
