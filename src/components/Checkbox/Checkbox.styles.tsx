@@ -8,7 +8,13 @@ import {
   getColorSecondary,
   getSpacingTiny
 } from '../../common/themeSelectors'
-import { CheckboxColors } from './Checkbox.types'
+import { CheckboxColors, CheckboxProps } from './Checkbox.types'
+
+type CheckboxStyleProps = {
+  theme: Theme;
+}
+
+type BoxStyleProps = CheckboxProps & CheckboxStyleProps
 
 function getBoxColor(
   selected = false,
@@ -44,21 +50,16 @@ export const Label = styled.Text<{ theme: Theme; disabled: boolean }>(({ theme, 
   marginLeft: getSpacingTiny(theme)
 }))
 
-export const Box = styled.View<{
-  theme: Theme;
-  color: CheckboxColors;
-  selected?: boolean;
-  disabled: boolean;
-}>(({
+export const Box = styled.View<BoxStyleProps>(({
   theme,
-  color,
+  color = 'primary',
   selected,
-  disabled
-}) => ({
+  disabled = false
+}: BoxStyleProps) => ({
   alignItems: 'center',
   backgroundColor: selected ? getBoxColor(selected, disabled, color, theme) : 'transparent',
   borderColor: getBoxColor(selected, disabled, color, theme),
-  borderRadius: 3,
+  borderRadius: theme.checkbox.borderRadius,
   borderWidth: 2,
   height: 20,
   justifyContent: 'center',
