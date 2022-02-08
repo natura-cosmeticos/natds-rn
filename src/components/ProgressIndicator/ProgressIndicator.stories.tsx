@@ -4,9 +4,9 @@ import { View } from 'react-native'
 import { ContainerWithTheme } from '../../common/HelperComponents/ThemeHelper.styles'
 import {
   ProgressIndicator,
-  ProgressIndicatorComponent,
-  ProgressIndicatorSizes
+  ProgressIndicatorComponent
 } from './ProgressIndicator'
+import { ProgressIndicatorSizes } from './ProgressIndicator.types'
 
 export default {
   component: ProgressIndicatorComponent,
@@ -24,7 +24,7 @@ const sizesTypes = {
   standard: 'standard'
 }
 
-export const all = () => (
+export const Default = () => (
   <View style={{ maxWidth: 600 }}>
     <ContainerWithTheme>
       <View style={{ margin: 15 }}>
@@ -34,7 +34,7 @@ export const all = () => (
   </View>
 )
 
-export const interactive = () => (
+export const Interactive = () => (
   <View style={{ maxWidth: 600 }}>
     <ContainerWithTheme>
       <View style={{ margin: 15 }}>

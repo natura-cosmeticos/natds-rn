@@ -1,5 +1,7 @@
 import { storiesOf } from '@storybook/react-native'
 
-import { all, interactive } from './ProgressIndicator.stories'
+import { Default, Interactive } from './ProgressIndicator.stories'
 
-storiesOf('ProgressIndicator', module).add('all', all).add('interactive', interactive)
+storiesOf('ProgressIndicator', module)
+  .add('Default', Default)
+  .add('Interactive', Interactive)

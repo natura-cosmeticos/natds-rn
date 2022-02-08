@@ -1,33 +1,13 @@
 import React, { useEffect, useRef, useCallback } from 'react'
-import { withTheme } from 'styled-components/native'
-import { Theme } from '@naturacosmeticos/natds-themes/react-native'
 import { Animated, Easing, Platform } from 'react-native'
 import {
-  Container, Layer, Line, Loop, View
+  Container, Layer, Line, View
 } from './ProgressIndicator.styles'
-import { getSize } from '../../common/themeSelectors'
-
-export type ProgressIndicatorSizes = 'standard' | 'semi' | 'medium' | 'large';
-
-export interface ProgressIndicatorProps {
-  /**
-   * Size to be used in the progress indicator
-   */
-  size?: ProgressIndicatorSizes;
-  /**
-   * Shows a colored layer behind the progress indicator
-   */
-  showLayer?: boolean;
-  /**
-   * Default theme
-   */
-  theme: Theme;
-}
+import { ProgressIndicatorProps } from './ProgressIndicator.types'
 
 export const ProgressIndicatorComponent = ({
   size = 'medium',
-  showLayer = false,
-  theme
+  showLayer = false
 }: ProgressIndicatorProps) => {
   /**
    * Duration specify how much the circle will take to make a 720deg loop around itself,
@@ -81,20 +61,16 @@ export const ProgressIndicatorComponent = ({
   }, [startRotation])
 
   return (
-    <View size={getSize(theme, size)} showLayer={showLayer}>
-      <Layer as={Animated.View} size={getSize(theme, size)}>
-        <Loop as={Animated.View}>
-          <Layer as={Animated.View} size={getSize(theme, size)} style={layerStyle}>
-            <Container as={Animated.View} size={getSize(theme, size)}>
-              <Line as={Animated.View} size={getSize(theme, size)} />
-            </Container>
-          </Layer>
-        </Loop>
+    <View size={size} showLayer={showLayer}>
+      <Layer as={Animated.View} size={size} style={layerStyle}>
+        <Container as={Animated.View} size={size}>
+          <Line as={Animated.View} size={size} />
+        </Container>
       </Layer>
     </View>
   )
 }
 
 export const ProgressIndicator = React.memo(
-  withTheme(ProgressIndicatorComponent)
+  ProgressIndicatorComponent
 )
