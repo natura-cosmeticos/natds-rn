@@ -49,39 +49,19 @@ exports[`Rating Variants Counter Variant should render with counter variant 1`] 
       }
       testID="ds-rating-1-button"
     >
-      <View
-        backgroundStyle="none"
-        disabled={true}
+      <Text
+        accessibilityRole="imagebutton"
+        name="filled-action-rating"
         size="semi"
         style={
-          Array [
-            Object {
-              "alignItems": "center",
-              "backgroundColor": "transparent",
-              "borderRadius": 50,
-              "elevation": 0,
-              "height": "px",
-              "justifyContent": "center",
-              "width": "px",
-            },
-          ]
-        }
-        testID="ds-rating-1-background"
-      >
-        <Text
-          accessibilityRole="imagebutton"
-          name="filled-action-rating"
-          size="semi"
-          style={
-            Object {
-              "color": "#F8B546",
-            }
+          Object {
+            "color": "#F8B546",
           }
-          testID="ds-rating-1-icon"
-        >
-          filled-action-rating
-        </Text>
-      </View>
+        }
+        testID="ds-rating-1-icon"
+      >
+        filled-action-rating
+      </Text>
     </View>
   </View>
   <Text
@@ -155,39 +135,19 @@ exports[`Rating Variants Input Variant should render with input variant 1`] = `
       }
       testID="ds-rating-1-button"
     >
-      <View
-        backgroundStyle="none"
-        disabled={false}
+      <Text
+        accessibilityRole="imagebutton"
+        name="outlined-action-rating"
         size="semi"
         style={
-          Array [
-            Object {
-              "alignItems": "center",
-              "backgroundColor": "transparent",
-              "borderRadius": 50,
-              "elevation": 0,
-              "height": "px",
-              "justifyContent": "center",
-              "width": "px",
-            },
-          ]
-        }
-        testID="ds-rating-1-background"
-      >
-        <Text
-          accessibilityRole="imagebutton"
-          name="outlined-action-rating"
-          size="semi"
-          style={
-            Object {
-              "color": "#777777",
-            }
+          Object {
+            "color": "#777777",
           }
-          testID="ds-rating-1-icon"
-        >
-          outlined-action-rating
-        </Text>
-      </View>
+        }
+        testID="ds-rating-1-icon"
+      >
+        outlined-action-rating
+      </Text>
     </View>
     <View
       accessibilityState={
@@ -211,39 +171,19 @@ exports[`Rating Variants Input Variant should render with input variant 1`] = `
       }
       testID="ds-rating-2-button"
     >
-      <View
-        backgroundStyle="none"
-        disabled={false}
+      <Text
+        accessibilityRole="imagebutton"
+        name="outlined-action-rating"
         size="semi"
         style={
-          Array [
-            Object {
-              "alignItems": "center",
-              "backgroundColor": "transparent",
-              "borderRadius": 50,
-              "elevation": 0,
-              "height": "px",
-              "justifyContent": "center",
-              "width": "px",
-            },
-          ]
-        }
-        testID="ds-rating-2-background"
-      >
-        <Text
-          accessibilityRole="imagebutton"
-          name="outlined-action-rating"
-          size="semi"
-          style={
-            Object {
-              "color": "#777777",
-            }
+          Object {
+            "color": "#777777",
           }
-          testID="ds-rating-2-icon"
-        >
-          outlined-action-rating
-        </Text>
-      </View>
+        }
+        testID="ds-rating-2-icon"
+      >
+        outlined-action-rating
+      </Text>
     </View>
     <View
       accessibilityState={
@@ -267,39 +207,19 @@ exports[`Rating Variants Input Variant should render with input variant 1`] = `
       }
       testID="ds-rating-3-button"
     >
-      <View
-        backgroundStyle="none"
-        disabled={false}
+      <Text
+        accessibilityRole="imagebutton"
+        name="outlined-action-rating"
         size="semi"
         style={
-          Array [
-            Object {
-              "alignItems": "center",
-              "backgroundColor": "transparent",
-              "borderRadius": 50,
-              "elevation": 0,
-              "height": "px",
-              "justifyContent": "center",
-              "width": "px",
-            },
-          ]
-        }
-        testID="ds-rating-3-background"
-      >
-        <Text
-          accessibilityRole="imagebutton"
-          name="outlined-action-rating"
-          size="semi"
-          style={
-            Object {
-              "color": "#777777",
-            }
+          Object {
+            "color": "#777777",
           }
-          testID="ds-rating-3-icon"
-        >
-          outlined-action-rating
-        </Text>
-      </View>
+        }
+        testID="ds-rating-3-icon"
+      >
+        outlined-action-rating
+      </Text>
     </View>
     <View
       accessibilityState={
@@ -323,39 +243,19 @@ exports[`Rating Variants Input Variant should render with input variant 1`] = `
       }
       testID="ds-rating-4-button"
     >
-      <View
-        backgroundStyle="none"
-        disabled={false}
+      <Text
+        accessibilityRole="imagebutton"
+        name="outlined-action-rating"
         size="semi"
         style={
-          Array [
-            Object {
-              "alignItems": "center",
-              "backgroundColor": "transparent",
-              "borderRadius": 50,
-              "elevation": 0,
-              "height": "px",
-              "justifyContent": "center",
-              "width": "px",
-            },
-          ]
-        }
-        testID="ds-rating-4-background"
-      >
-        <Text
-          accessibilityRole="imagebutton"
-          name="outlined-action-rating"
-          size="semi"
-          style={
-            Object {
-              "color": "#777777",
-            }
+          Object {
+            "color": "#777777",
           }
-          testID="ds-rating-4-icon"
-        >
-          outlined-action-rating
-        </Text>
-      </View>
+        }
+        testID="ds-rating-4-icon"
+      >
+        outlined-action-rating
+      </Text>
     </View>
     <View
       accessibilityState={
@@ -379,39 +279,19 @@ exports[`Rating Variants Input Variant should render with input variant 1`] = `
       }
       testID="ds-rating-5-button"
     >
-      <View
-        backgroundStyle="none"
-        disabled={false}
+      <Text
+        accessibilityRole="imagebutton"
+        name="outlined-action-rating"
         size="semi"
         style={
-          Array [
-            Object {
-              "alignItems": "center",
-              "backgroundColor": "transparent",
-              "borderRadius": 50,
-              "elevation": 0,
-              "height": "px",
-              "justifyContent": "center",
-              "width": "px",
-            },
-          ]
-        }
-        testID="ds-rating-5-background"
-      >
-        <Text
-          accessibilityRole="imagebutton"
-          name="outlined-action-rating"
-          size="semi"
-          style={
-            Object {
-              "color": "#777777",
-            }
+          Object {
+            "color": "#777777",
           }
-          testID="ds-rating-5-icon"
-        >
-          outlined-action-rating
-        </Text>
-      </View>
+        }
+        testID="ds-rating-5-icon"
+      >
+        outlined-action-rating
+      </Text>
     </View>
   </View>
   <Text
@@ -459,39 +339,19 @@ exports[`Rating Variants RatingBase component should render a base component wit
   }
   testID="undefined-button"
 >
-  <View
-    backgroundStyle="none"
-    disabled={false}
+  <Text
+    accessibilityRole="imagebutton"
+    name="filled-action-rating"
     size="medium"
     style={
-      Array [
-        Object {
-          "alignItems": "center",
-          "backgroundColor": "transparent",
-          "borderRadius": 50,
-          "elevation": 0,
-          "height": "px",
-          "justifyContent": "center",
-          "width": "px",
-        },
-      ]
-    }
-    testID="undefined-background"
-  >
-    <Text
-      accessibilityRole="imagebutton"
-      name="filled-action-rating"
-      size="medium"
-      style={
-        Object {
-          "color": "#F8B546",
-        }
+      Object {
+        "color": "#F8B546",
       }
-      testID="undefined-icon"
-    >
-      filled-action-rating
-    </Text>
-  </View>
+    }
+    testID="undefined-icon"
+  >
+    filled-action-rating
+  </Text>
 </View>
 `;
 
@@ -541,39 +401,19 @@ exports[`Rating Variants ReadOnly Variant should render with read-only variant 1
       }
       testID="ds-rating-1-button"
     >
-      <View
-        backgroundStyle="none"
-        disabled={true}
+      <Text
+        accessibilityRole="imagebutton"
+        name="filled-action-rating"
         size="semi"
         style={
-          Array [
-            Object {
-              "alignItems": "center",
-              "backgroundColor": "transparent",
-              "borderRadius": 50,
-              "elevation": 0,
-              "height": "px",
-              "justifyContent": "center",
-              "width": "px",
-            },
-          ]
-        }
-        testID="ds-rating-1-background"
-      >
-        <Text
-          accessibilityRole="imagebutton"
-          name="filled-action-rating"
-          size="semi"
-          style={
-            Object {
-              "color": "#777777",
-            }
+          Object {
+            "color": "#777777",
           }
-          testID="ds-rating-1-icon"
-        >
-          filled-action-rating
-        </Text>
-      </View>
+        }
+        testID="ds-rating-1-icon"
+      >
+        filled-action-rating
+      </Text>
     </View>
     <View
       accessibilityState={
@@ -597,39 +437,19 @@ exports[`Rating Variants ReadOnly Variant should render with read-only variant 1
       }
       testID="ds-rating-2-button"
     >
-      <View
-        backgroundStyle="none"
-        disabled={true}
+      <Text
+        accessibilityRole="imagebutton"
+        name="filled-action-rating"
         size="semi"
         style={
-          Array [
-            Object {
-              "alignItems": "center",
-              "backgroundColor": "transparent",
-              "borderRadius": 50,
-              "elevation": 0,
-              "height": "px",
-              "justifyContent": "center",
-              "width": "px",
-            },
-          ]
-        }
-        testID="ds-rating-2-background"
-      >
-        <Text
-          accessibilityRole="imagebutton"
-          name="filled-action-rating"
-          size="semi"
-          style={
-            Object {
-              "color": "#777777",
-            }
+          Object {
+            "color": "#777777",
           }
-          testID="ds-rating-2-icon"
-        >
-          filled-action-rating
-        </Text>
-      </View>
+        }
+        testID="ds-rating-2-icon"
+      >
+        filled-action-rating
+      </Text>
     </View>
     <View
       accessibilityState={
@@ -653,39 +473,19 @@ exports[`Rating Variants ReadOnly Variant should render with read-only variant 1
       }
       testID="ds-rating-3-button"
     >
-      <View
-        backgroundStyle="none"
-        disabled={true}
+      <Text
+        accessibilityRole="imagebutton"
+        name="filled-action-rating"
         size="semi"
         style={
-          Array [
-            Object {
-              "alignItems": "center",
-              "backgroundColor": "transparent",
-              "borderRadius": 50,
-              "elevation": 0,
-              "height": "px",
-              "justifyContent": "center",
-              "width": "px",
-            },
-          ]
-        }
-        testID="ds-rating-3-background"
-      >
-        <Text
-          accessibilityRole="imagebutton"
-          name="filled-action-rating"
-          size="semi"
-          style={
-            Object {
-              "color": "#777777",
-            }
+          Object {
+            "color": "#777777",
           }
-          testID="ds-rating-3-icon"
-        >
-          filled-action-rating
-        </Text>
-      </View>
+        }
+        testID="ds-rating-3-icon"
+      >
+        filled-action-rating
+      </Text>
     </View>
     <View
       accessibilityState={
@@ -709,39 +509,19 @@ exports[`Rating Variants ReadOnly Variant should render with read-only variant 1
       }
       testID="ds-rating-4-button"
     >
-      <View
-        backgroundStyle="none"
-        disabled={true}
+      <Text
+        accessibilityRole="imagebutton"
+        name="filled-action-rating"
         size="semi"
         style={
-          Array [
-            Object {
-              "alignItems": "center",
-              "backgroundColor": "transparent",
-              "borderRadius": 50,
-              "elevation": 0,
-              "height": "px",
-              "justifyContent": "center",
-              "width": "px",
-            },
-          ]
-        }
-        testID="ds-rating-4-background"
-      >
-        <Text
-          accessibilityRole="imagebutton"
-          name="filled-action-rating"
-          size="semi"
-          style={
-            Object {
-              "color": "#777777",
-            }
+          Object {
+            "color": "#777777",
           }
-          testID="ds-rating-4-icon"
-        >
-          filled-action-rating
-        </Text>
-      </View>
+        }
+        testID="ds-rating-4-icon"
+      >
+        filled-action-rating
+      </Text>
     </View>
     <View
       accessibilityState={
@@ -765,39 +545,19 @@ exports[`Rating Variants ReadOnly Variant should render with read-only variant 1
       }
       testID="ds-rating-5-button"
     >
-      <View
-        backgroundStyle="none"
-        disabled={true}
+      <Text
+        accessibilityRole="imagebutton"
+        name="filled-action-rating"
         size="semi"
         style={
-          Array [
-            Object {
-              "alignItems": "center",
-              "backgroundColor": "transparent",
-              "borderRadius": 50,
-              "elevation": 0,
-              "height": "px",
-              "justifyContent": "center",
-              "width": "px",
-            },
-          ]
-        }
-        testID="ds-rating-5-background"
-      >
-        <Text
-          accessibilityRole="imagebutton"
-          name="filled-action-rating"
-          size="semi"
-          style={
-            Object {
-              "color": "#777777",
-            }
+          Object {
+            "color": "#777777",
           }
-          testID="ds-rating-5-icon"
-        >
-          filled-action-rating
-        </Text>
-      </View>
+        }
+        testID="ds-rating-5-icon"
+      >
+        filled-action-rating
+      </Text>
     </View>
   </View>
 </View>

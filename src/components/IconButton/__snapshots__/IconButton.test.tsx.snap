@@ -32,7 +32,7 @@ exports[`IconButton component should render IconButton component disabled 1`] = 
         Object {
           "alignItems": "center",
           "backgroundColor": "transparent",
-          "borderRadius": 50,
+          "borderRadius": 16,
           "elevation": 1,
           "height": "px",
           "justifyContent": "center",
@@ -89,7 +89,7 @@ exports[`IconButton component should render IconButton component with background
         Object {
           "alignItems": "center",
           "backgroundColor": "transparent",
-          "borderRadius": 50,
+          "borderRadius": 16,
           "elevation": 1,
           "height": "px",
           "justifyContent": "center",
@@ -146,7 +146,7 @@ exports[`IconButton component should render IconButton component with background
         Object {
           "alignItems": "center",
           "backgroundColor": "transparent",
-          "borderRadius": 50,
+          "borderRadius": 16,
           "elevation": 1,
           "height": "px",
           "justifyContent": "center",
@@ -203,7 +203,7 @@ exports[`IconButton component should render IconButton component with background
         Object {
           "alignItems": "center",
           "backgroundColor": "transparent",
-          "borderRadius": 50,
+          "borderRadius": 16,
           "elevation": 1,
           "height": "px",
           "justifyContent": "center",
@@ -260,7 +260,7 @@ exports[`IconButton component should render IconButton component with color "def
         Object {
           "alignItems": "center",
           "backgroundColor": "transparent",
-          "borderRadius": 50,
+          "borderRadius": 16,
           "elevation": 1,
           "height": "px",
           "justifyContent": "center",
@@ -317,7 +317,7 @@ exports[`IconButton component should render IconButton component with color "hig
         Object {
           "alignItems": "center",
           "backgroundColor": "transparent",
-          "borderRadius": 50,
+          "borderRadius": 16,
           "elevation": 1,
           "height": "px",
           "justifyContent": "center",
@@ -374,7 +374,7 @@ exports[`IconButton component should render IconButton component with color "lig
         Object {
           "alignItems": "center",
           "backgroundColor": "transparent",
-          "borderRadius": 50,
+          "borderRadius": 16,
           "elevation": 1,
           "height": "px",
           "justifyContent": "center",
@@ -431,7 +431,7 @@ exports[`IconButton component should render IconButton component with color "pri
         Object {
           "alignItems": "center",
           "backgroundColor": "transparent",
-          "borderRadius": 50,
+          "borderRadius": 16,
           "elevation": 1,
           "height": "px",
           "justifyContent": "center",
@@ -488,7 +488,7 @@ exports[`IconButton component should render IconButton component with size "medi
         Object {
           "alignItems": "center",
           "backgroundColor": "transparent",
-          "borderRadius": 50,
+          "borderRadius": 24,
           "elevation": 1,
           "height": "px",
           "justifyContent": "center",
@@ -545,7 +545,7 @@ exports[`IconButton component should render IconButton component with size "semi
         Object {
           "alignItems": "center",
           "backgroundColor": "transparent",
-          "borderRadius": 50,
+          "borderRadius": 16,
           "elevation": 1,
           "height": "px",
           "justifyContent": "center",
@@ -602,7 +602,7 @@ exports[`IconButton component should render IconButton component with size "semi
         Object {
           "alignItems": "center",
           "backgroundColor": "transparent",
-          "borderRadius": 50,
+          "borderRadius": 20,
           "elevation": 1,
           "height": "px",
           "justifyContent": "center",

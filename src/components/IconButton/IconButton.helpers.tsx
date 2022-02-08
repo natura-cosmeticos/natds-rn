@@ -16,7 +16,7 @@ import {
 
 export const getContainerBackgroundColor = ({
   theme,
-  backgroundStyle,
+  backgroundStyle = 'none',
   disabled
 }: Omit<IconContainerProps, 'size'> & { theme: Theme }) => {
   const float = disabled

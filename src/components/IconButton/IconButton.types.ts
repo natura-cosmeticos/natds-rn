@@ -5,7 +5,6 @@ import { ReactElement } from 'react'
 
 export interface IconButtonBaseProps {
   IconComponent: ReactElement;
-  backgroundStyle?: IconButtonBackgroundStyle;
   disabled?: boolean;
   onPress?: () => void;
   testID?: string;
@@ -26,7 +25,7 @@ export type IconButtonColors = 'primary' | 'highEmphasis' | 'light' | IconButton
 
 export type IconButtonBackgroundStyle = 'none' | 'float' | 'overlay';
 
-export type IconContainerProps = Required<Pick<IconButtonBaseProps, 'size' | 'backgroundStyle' | 'disabled'>>;
+export type IconContainerProps = {backgroundStyle?: IconButtonBackgroundStyle} & Required<Pick<IconButtonBaseProps, 'size' | 'disabled'>>;
 
 export interface IconButtonProps {
   /**
