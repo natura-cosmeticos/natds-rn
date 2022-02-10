@@ -29,7 +29,7 @@ export const View = styled(Layer)<{size: number; showLayer: boolean; theme: Them
   ({ size, showLayer, theme }: ViewStyleProps) => ({
     alignItems: 'center',
     backgroundColor: showLayer ? getColorSurface(theme) : 'transparent',
-    borderRadius: theme.progressIndicator[size].borderRadius,
+    borderRadius: (getSize(theme, size) + 4) / 2,
     display: 'flex',
     height: getSize(theme, size) + 4,
     justifyContent: 'center',

@@ -9,7 +9,7 @@ exports[`ProgressIndicator component Should render progress indicator - show lay
       Object {
         "alignItems": "center",
         "backgroundColor": "#ffffff",
-        "borderRadius": 24,
+        "borderRadius": 26,
         "display": "flex",
         "height": 52,
         "justifyContent": "center",
@@ -74,7 +74,7 @@ exports[`ProgressIndicator component Should render progress indicator - size lar
       Object {
         "alignItems": "center",
         "backgroundColor": "transparent",
-        "borderRadius": 32,
+        "borderRadius": 34,
         "display": "flex",
         "height": 68,
         "justifyContent": "center",
@@ -137,7 +137,7 @@ exports[`ProgressIndicator component Should render progress indicator - size sem
       Object {
         "alignItems": "center",
         "backgroundColor": "transparent",
-        "borderRadius": 16,
+        "borderRadius": 18,
         "display": "flex",
         "height": 36,
         "justifyContent": "center",
@@ -202,7 +202,7 @@ exports[`ProgressIndicator component Should render progress indicator - size sta
       Object {
         "alignItems": "center",
         "backgroundColor": "transparent",
-        "borderRadius": 12,
+        "borderRadius": 14,
         "display": "flex",
         "height": 28,
         "justifyContent": "center",
@@ -265,7 +265,7 @@ exports[`ProgressIndicator component Should render progress indicator correctly 
       Object {
         "alignItems": "center",
         "backgroundColor": "transparent",
-        "borderRadius": 24,
+        "borderRadius": 26,
         "display": "flex",
         "height": 52,
         "justifyContent": "center",
