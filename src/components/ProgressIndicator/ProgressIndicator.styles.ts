@@ -1,47 +1,53 @@
 /* eslint-disable max-len */
-import { StyleSheet } from 'react-native'
 import styled from 'styled-components/native'
-import { Theme, getColorPrimary, getColorSurface } from '../../common/themeSelectors'
+import {
+  Theme, getColorPrimary, getColorSurface, getSize
+} from '../../common/themeSelectors'
+import { ProgressIndicatorSizes } from './ProgressIndicator.types'
 
-export const View = styled.View<{size: number; showLayer: boolean; theme: Theme}>(
-  ({ size, showLayer, theme }) => ({
+type BaseStyleProps = {
+  theme: Theme;
+}
+
+type LineStyleProps = BaseStyleProps & {
+  size: ProgressIndicatorSizes;
+}
+
+type ViewStyleProps = BaseStyleProps & {
+  size: ProgressIndicatorSizes;
+  showLayer: boolean;
+}
+
+export const Layer = styled.View<{size: number; theme: Theme}>(
+  ({ size, theme }) => ({
+    height: getSize(theme, size),
+    width: getSize(theme, size)
+  })
+)
+
+export const View = styled(Layer)<{size: number; showLayer: boolean; theme: Theme}>(
+  ({ size, showLayer, theme }: ViewStyleProps) => ({
     alignItems: 'center',
     backgroundColor: showLayer ? getColorSurface(theme) : 'transparent',
-    borderRadius: (size + 4) / 2,
+    borderRadius: (getSize(theme, size) + 4) / 2,
     display: 'flex',
-    height: size + 4,
+    height: getSize(theme, size) + 4,
     justifyContent: 'center',
-    width: size + 4
+    width: getSize(theme, size) + 4
   })
 )
 
-export const Layer = styled.View<{
-  size: number;
-}>(({ size }) => ({
-  height: size,
-  width: size
-}))
-
-export const Line = styled.View<{ theme: Theme; size: number }>(
-  ({ theme, size }) => ({
+export const Line = styled(Layer)<{ theme: Theme; size: number }>(
+  ({ theme, size }: LineStyleProps) => ({
     borderColor: getColorPrimary(theme),
-    borderRadius: size / 2,
-    borderWidth: size / 10,
-    height: size,
-    width: size
+    borderRadius: theme.progressIndicator[size].borderRadius,
+    borderWidth: getSize(theme, size) / 10
   })
 )
 
-export const Container = styled.View<{
-  size: number;
-}>(({ size }) => ({
-  height: size / 2,
-  overflow: 'hidden',
-  width: size
-}))
-
-export const Loop = styled.View(() => ({
-  ...StyleSheet.absoluteFillObject,
-  alignItems: 'center',
-  justifyContent: 'center'
+export const Container = styled(Layer)<{
+  size: number; theme: Theme;
+}>(({ size, theme }) => ({
+  height: getSize(theme, size) / 2,
+  overflow: 'hidden'
 }))

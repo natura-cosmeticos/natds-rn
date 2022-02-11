@@ -3,7 +3,7 @@
 exports[`ProgressIndicator component Should render progress indicator - show layer 1`] = `
 <View
   showLayer={true}
-  size={48}
+  size="medium"
   style={
     Array [
       Object {
@@ -21,10 +21,15 @@ exports[`ProgressIndicator component Should render progress indicator - show lay
   <View
     collapsable={false}
     nativeID="animatedComponent"
-    size={48}
+    size="medium"
     style={
       Object {
         "height": 48,
+        "transform": Array [
+          Object {
+            "rotate": "0deg",
+          },
+        ],
         "width": 48,
       }
     }
@@ -32,62 +37,29 @@ exports[`ProgressIndicator component Should render progress indicator - show lay
     <View
       collapsable={false}
       nativeID="animatedComponent"
+      size="medium"
       style={
         Object {
-          "alignItems": "center",
-          "bottom": 0,
-          "justifyContent": "center",
-          "left": 0,
-          "position": "absolute",
-          "right": 0,
-          "top": 0,
+          "height": 24,
+          "overflow": "hidden",
+          "width": 48,
         }
       }
     >
       <View
         collapsable={false}
         nativeID="animatedComponent"
-        size={48}
+        size="medium"
         style={
           Object {
+            "borderColor": "#f4ab34",
+            "borderRadius": 24,
+            "borderWidth": 4.8,
             "height": 48,
-            "transform": Array [
-              Object {
-                "rotate": "0deg",
-              },
-            ],
             "width": 48,
           }
         }
-      >
-        <View
-          collapsable={false}
-          nativeID="animatedComponent"
-          size={48}
-          style={
-            Object {
-              "height": 24,
-              "overflow": "hidden",
-              "width": 48,
-            }
-          }
-        >
-          <View
-            collapsable={false}
-            nativeID="animatedComponent"
-            size={48}
-            style={
-              Object {
-                "borderColor": "#f4ab34",
-                "borderRadius": 24,
-                "borderWidth": 4.8,
-                "height": 48,
-                "width": 48,
-              }
-            }
-          />
-        </View>
-      </View>
+      />
     </View>
   </View>
 </View>
@@ -96,7 +68,7 @@ exports[`ProgressIndicator component Should render progress indicator - show lay
 exports[`ProgressIndicator component Should render progress indicator - size large 1`] = `
 <View
   showLayer={false}
-  size={64}
+  size="large"
   style={
     Array [
       Object {
@@ -112,12 +84,15 @@ exports[`ProgressIndicator component Should render progress indicator - size lar
   }
 >
   <View
-    collapsable={false}
-    nativeID="animatedComponent"
-    size={64}
+    size="large"
     style={
       Object {
         "height": 64,
+        "transform": Array [
+          Object {
+            "rotate": "0deg",
+          },
+        ],
         "width": 64,
       }
     }
@@ -125,60 +100,29 @@ exports[`ProgressIndicator component Should render progress indicator - size lar
     <View
       collapsable={false}
       nativeID="animatedComponent"
+      size="large"
       style={
         Object {
-          "alignItems": "center",
-          "bottom": 0,
-          "justifyContent": "center",
-          "left": 0,
-          "position": "absolute",
-          "right": 0,
-          "top": 0,
+          "height": 32,
+          "overflow": "hidden",
+          "width": 64,
         }
       }
     >
       <View
-        size={64}
+        collapsable={false}
+        nativeID="animatedComponent"
+        size="large"
         style={
           Object {
+            "borderColor": "#f4ab34",
+            "borderRadius": 32,
+            "borderWidth": 6.4,
             "height": 64,
-            "transform": Array [
-              Object {
-                "rotate": "0deg",
-              },
-            ],
             "width": 64,
           }
         }
-      >
-        <View
-          collapsable={false}
-          nativeID="animatedComponent"
-          size={64}
-          style={
-            Object {
-              "height": 32,
-              "overflow": "hidden",
-              "width": 64,
-            }
-          }
-        >
-          <View
-            collapsable={false}
-            nativeID="animatedComponent"
-            size={64}
-            style={
-              Object {
-                "borderColor": "#f4ab34",
-                "borderRadius": 32,
-                "borderWidth": 6.4,
-                "height": 64,
-                "width": 64,
-              }
-            }
-          />
-        </View>
-      </View>
+      />
     </View>
   </View>
 </View>
@@ -187,7 +131,7 @@ exports[`ProgressIndicator component Should render progress indicator - size lar
 exports[`ProgressIndicator component Should render progress indicator - size semi 1`] = `
 <View
   showLayer={false}
-  size={32}
+  size="semi"
   style={
     Array [
       Object {
@@ -205,10 +149,15 @@ exports[`ProgressIndicator component Should render progress indicator - size sem
   <View
     collapsable={false}
     nativeID="animatedComponent"
-    size={32}
+    size="semi"
     style={
       Object {
         "height": 32,
+        "transform": Array [
+          Object {
+            "rotate": "0deg",
+          },
+        ],
         "width": 32,
       }
     }
@@ -216,62 +165,29 @@ exports[`ProgressIndicator component Should render progress indicator - size sem
     <View
       collapsable={false}
       nativeID="animatedComponent"
+      size="semi"
       style={
         Object {
-          "alignItems": "center",
-          "bottom": 0,
-          "justifyContent": "center",
-          "left": 0,
-          "position": "absolute",
-          "right": 0,
-          "top": 0,
+          "height": 16,
+          "overflow": "hidden",
+          "width": 32,
         }
       }
     >
       <View
         collapsable={false}
         nativeID="animatedComponent"
-        size={32}
+        size="semi"
         style={
           Object {
+            "borderColor": "#f4ab34",
+            "borderRadius": 16,
+            "borderWidth": 3.2,
             "height": 32,
-            "transform": Array [
-              Object {
-                "rotate": "0deg",
-              },
-            ],
             "width": 32,
           }
         }
-      >
-        <View
-          collapsable={false}
-          nativeID="animatedComponent"
-          size={32}
-          style={
-            Object {
-              "height": 16,
-              "overflow": "hidden",
-              "width": 32,
-            }
-          }
-        >
-          <View
-            collapsable={false}
-            nativeID="animatedComponent"
-            size={32}
-            style={
-              Object {
-                "borderColor": "#f4ab34",
-                "borderRadius": 16,
-                "borderWidth": 3.2,
-                "height": 32,
-                "width": 32,
-              }
-            }
-          />
-        </View>
-      </View>
+      />
     </View>
   </View>
 </View>
@@ -280,7 +196,7 @@ exports[`ProgressIndicator component Should render progress indicator - size sem
 exports[`ProgressIndicator component Should render progress indicator - size standard 1`] = `
 <View
   showLayer={false}
-  size={24}
+  size="standard"
   style={
     Array [
       Object {
@@ -296,12 +212,15 @@ exports[`ProgressIndicator component Should render progress indicator - size sta
   }
 >
   <View
-    collapsable={false}
-    nativeID="animatedComponent"
-    size={24}
+    size="standard"
     style={
       Object {
         "height": 24,
+        "transform": Array [
+          Object {
+            "rotate": "0deg",
+          },
+        ],
         "width": 24,
       }
     }
@@ -309,60 +228,29 @@ exports[`ProgressIndicator component Should render progress indicator - size sta
     <View
       collapsable={false}
       nativeID="animatedComponent"
+      size="standard"
       style={
         Object {
-          "alignItems": "center",
-          "bottom": 0,
-          "justifyContent": "center",
-          "left": 0,
-          "position": "absolute",
-          "right": 0,
-          "top": 0,
+          "height": 12,
+          "overflow": "hidden",
+          "width": 24,
         }
       }
     >
       <View
-        size={24}
+        collapsable={false}
+        nativeID="animatedComponent"
+        size="standard"
         style={
           Object {
+            "borderColor": "#f4ab34",
+            "borderRadius": 12,
+            "borderWidth": 2.4,
             "height": 24,
-            "transform": Array [
-              Object {
-                "rotate": "0deg",
-              },
-            ],
             "width": 24,
           }
         }
-      >
-        <View
-          collapsable={false}
-          nativeID="animatedComponent"
-          size={24}
-          style={
-            Object {
-              "height": 12,
-              "overflow": "hidden",
-              "width": 24,
-            }
-          }
-        >
-          <View
-            collapsable={false}
-            nativeID="animatedComponent"
-            size={24}
-            style={
-              Object {
-                "borderColor": "#f4ab34",
-                "borderRadius": 12,
-                "borderWidth": 2.4,
-                "height": 24,
-                "width": 24,
-              }
-            }
-          />
-        </View>
-      </View>
+      />
     </View>
   </View>
 </View>
@@ -371,7 +259,7 @@ exports[`ProgressIndicator component Should render progress indicator - size sta
 exports[`ProgressIndicator component Should render progress indicator correctly 1`] = `
 <View
   showLayer={false}
-  size={48}
+  size="medium"
   style={
     Array [
       Object {
@@ -389,10 +277,15 @@ exports[`ProgressIndicator component Should render progress indicator correctly 
   <View
     collapsable={false}
     nativeID="animatedComponent"
-    size={48}
+    size="medium"
     style={
       Object {
         "height": 48,
+        "transform": Array [
+          Object {
+            "rotate": "0deg",
+          },
+        ],
         "width": 48,
       }
     }
@@ -400,62 +293,29 @@ exports[`ProgressIndicator component Should render progress indicator correctly 
     <View
       collapsable={false}
       nativeID="animatedComponent"
+      size="medium"
       style={
         Object {
-          "alignItems": "center",
-          "bottom": 0,
-          "justifyContent": "center",
-          "left": 0,
-          "position": "absolute",
-          "right": 0,
-          "top": 0,
+          "height": 24,
+          "overflow": "hidden",
+          "width": 48,
         }
       }
     >
       <View
         collapsable={false}
         nativeID="animatedComponent"
-        size={48}
+        size="medium"
         style={
           Object {
+            "borderColor": "#f4ab34",
+            "borderRadius": 24,
+            "borderWidth": 4.8,
             "height": 48,
-            "transform": Array [
-              Object {
-                "rotate": "0deg",
-              },
-            ],
             "width": 48,
           }
         }
-      >
-        <View
-          collapsable={false}
-          nativeID="animatedComponent"
-          size={48}
-          style={
-            Object {
-              "height": 24,
-              "overflow": "hidden",
-              "width": 48,
-            }
-          }
-        >
-          <View
-            collapsable={false}
-            nativeID="animatedComponent"
-            size={48}
-            style={
-              Object {
-                "borderColor": "#f4ab34",
-                "borderRadius": 24,
-                "borderWidth": 4.8,
-                "height": 48,
-                "width": 48,
-              }
-            }
-          />
-        </View>
-      </View>
+      />
     </View>
   </View>
 </View>
