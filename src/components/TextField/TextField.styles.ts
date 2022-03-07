@@ -3,7 +3,6 @@ import { css, CSSObject, CSSProperties } from 'styled-components'
 import styled from 'styled-components/native'
 import {
   buildColorWithOpacity,
-  getBorderRadiusMedium,
   getColorHighEmphasis,
   getColorLowEmphasis,
   getColorMediumEmphasis,
@@ -23,6 +22,7 @@ interface InputStyleProps {
   readonly: boolean;
   size: InputSizes;
   theme: Theme;
+  multiline: boolean;
 }
 const isSizeMediumX = (size: InputSizes) => size === 'mediumX'
 const getFieldHeight = (size: InputSizes, theme: Theme) => (
@@ -42,9 +42,9 @@ export const getPlaceholderTextColor = (disabled: boolean, theme: Theme) => (
 export const Input = styled.TextInput<InputStyleProps & CSSProperties>`
   ${({
     disabled, hasActionIcon, readonly, size, theme, multiline = false
-  }) => css`
+  }: InputStyleProps) => css`
     background-color: ${readonly ? getReadonlyColor(theme) : getColorSurface(theme)};
-    border-radius: ${getBorderRadiusMedium(theme)}px;
+    border-radius: ${theme.textField.borderRadius}px;
     color: ${getTextColor(disabled, theme)};
     flex-grow: 1;
     font-family: ${theme.textField.content.primary.fontFamily};
@@ -62,9 +62,9 @@ export const Input = styled.TextInput<InputStyleProps & CSSProperties>`
 `
 
 export const ActionImage = styled.View<Pick<InputStyleProps, 'size' | 'theme'>>(
-  ({ size, theme }): CSSObject => ({
-    borderBottomRightRadius: getBorderRadiusMedium(theme),
-    borderTopRightRadius: getBorderRadiusMedium(theme),
+  ({ size, theme }: InputStyleProps): CSSObject => ({
+    borderBottomRightRadius: `${theme.textField.borderRadius}px`,
+    borderTopRightRadius: `${theme.textField.borderRadius}px`,
     maxHeight: getFieldHeight(size, theme),
     overflow: 'hidden',
     width: getSizeLarge(theme)
