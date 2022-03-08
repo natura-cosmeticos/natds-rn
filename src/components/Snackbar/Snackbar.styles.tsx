@@ -1,8 +1,9 @@
+/* eslint-disable max-len */
 import styled from 'styled-components/native'
 import { TextProps, NativeSyntheticEvent, TargetedEvent } from 'react-native'
 import { SnackbarType } from './Snackbar'
 import {
-  Theme, getSpacingSmall, getRadiusBySize, getShadowBySize
+  Theme, getSpacingSmall, getShadowBySize
 } from '../../common/themeSelectors'
 import { ButtonBase } from '../Button/ButtonBase'
 
@@ -50,11 +51,11 @@ interface SnackbarWrapperProps {
   type: SnackbarType;
 }
 
-export const SnackbarWrapper = styled.View<SnackbarWrapperProps>(({ theme, type }) => ({
+export const SnackbarWrapper = styled.View<SnackbarWrapperProps>(({ theme, type }: SnackbarWrapperProps) => ({
   ...getShadowBySize(theme, 'large'),
   alignItems: 'center',
   backgroundColor: getBackgroundColorByType(theme, type),
-  borderRadius: getRadiusBySize(theme, 'medium'),
+  borderRadius: `${theme.snackbar.borderRadius}px`,
   bottom: 0,
   flexDirection: 'row',
   flexWrap: 'wrap',
