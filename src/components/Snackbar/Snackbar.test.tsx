@@ -49,6 +49,12 @@ describe('Snackbar', () => {
     jest.useRealTimers()
   })
 
+  it('should take a snapshot', () => {
+    const component = setup()
+
+    expect(component).toMatchSnapshot()
+  })
+
   it('message is presented correctly', () => {
     const expectedMessage = 'A snackbar message'
 
