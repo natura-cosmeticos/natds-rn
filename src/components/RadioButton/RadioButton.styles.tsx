@@ -10,6 +10,13 @@ import {
 } from '../../common/themeSelectors'
 import { RadioButtonColors } from './RadioButton'
 
+type RadioButtonProps = {
+  theme: Theme;
+  color: RadioButtonColors;
+  selected?: boolean;
+  disabled: boolean;
+}
+
 function getCircleColor(
   selected = false,
   disabled: boolean,
@@ -44,17 +51,12 @@ export const Label = styled.Text<{ theme: Theme; disabled: boolean }>(({ theme, 
   marginLeft: getSpacingTiny(theme)
 }))
 
-export const Circle = styled.View<{
-  theme: Theme;
-  color: RadioButtonColors;
-  selected?: boolean;
-  disabled: boolean;
-}>(({
+export const Circle = styled.View<RadioButtonProps>(({
   theme,
   color,
   selected,
   disabled
-}) => ({
+}: RadioButtonProps) => ({
   alignItems: 'center',
   borderColor: getCircleColor(selected, disabled, color, theme),
   borderRadius: 12,
@@ -64,19 +66,14 @@ export const Circle = styled.View<{
   width: 20
 }))
 
-export const Center = styled.View<{
-  theme: Theme;
-  color: RadioButtonColors;
-  selected?: boolean;
-  disabled: boolean;
-}>(({
+export const Center = styled.View<RadioButtonProps>(({
   theme,
   color,
   selected,
   disabled
-}) => ({
+}: RadioButtonProps) => ({
   backgroundColor: getCircleColor(selected, disabled, color, theme),
-  borderRadius: 12,
+  borderRadius: `${theme.radioButton.borderRadius}px`,
   height: 10,
   width: 10
 }))
