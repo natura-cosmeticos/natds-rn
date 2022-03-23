@@ -117,6 +117,10 @@ exports[`Alert component Should render alert with default props 1`] = `
         },
       },
       "avatar": Object {
+        "color": Object {
+          "background": "#f4ab34",
+          "label": "#333333",
+        },
         "fallback": Object {
           "fontFamily": "Arial",
           "fontWeight": 400,
@@ -314,6 +318,9 @@ exports[`Alert component Should render alert with default props 1`] = `
           "disable": 0,
           "enable": 4,
         },
+        "color": Object {
+          "background": "#ffffff",
+        },
       },
       "checkbox": Object {
         "borderRadius": 2,
@@ -419,6 +426,10 @@ exports[`Alert component Should render alert with default props 1`] = `
           },
         },
         "borderRadius": 4,
+        "color": Object {
+          "background": "#ffffff",
+          "title": "#000000",
+        },
         "title": Object {
           "fallback": Object {
             "fontFamily": "Arial",
@@ -431,6 +442,11 @@ exports[`Alert component Should render alert with default props 1`] = `
             "fontFamily": "Roboto",
             "fontWeight": 500,
           },
+        },
+      },
+      "divider": Object {
+        "color": Object {
+          "background": "#bbbbbb",
         },
       },
       "elevation": Object {
@@ -576,8 +592,40 @@ exports[`Alert component Should render alert with default props 1`] = `
         "lineHeight": 1.5,
       },
       "iconButton": Object {
+        "float": Object {
+          "color": Object {
+            "disable": Object {
+              "background": "#bbbbbb",
+            },
+            "enable": Object {
+              "background": "#ffffff",
+            },
+            "focus": Object {
+              "background": "#e9ecef",
+            },
+            "hover": Object {
+              "background": "#f1f3f5",
+            },
+          },
+        },
         "medium": Object {
           "borderRadius": 24,
+        },
+        "overlay": Object {
+          "color": Object {
+            "disable": Object {
+              "background": "#000000",
+            },
+            "enable": Object {
+              "background": "#000000",
+            },
+            "focus": Object {
+              "background": "#000000",
+            },
+            "hover": Object {
+              "background": "#000000",
+            },
+          },
         },
         "semi": Object {
           "borderRadius": 16,
@@ -585,14 +633,38 @@ exports[`Alert component Should render alert with default props 1`] = `
         "semiX": Object {
           "borderRadius": 20,
         },
+        "standard": Object {
+          "color": Object {
+            "disable": Object {
+              "background": "#FFFFFF00",
+            },
+            "enable": Object {
+              "background": "#FFFFFF00",
+            },
+            "focus": Object {
+              "background": "#e9ecef",
+            },
+            "hover": Object {
+              "background": "#f1f3f5",
+            },
+          },
+        },
       },
       "image": Object {
         "borderRadius": Object {
-          "disable": 0,
-          "enable": 4,
+          "medium": 4,
+          "none": 0,
         },
       },
       "link": Object {
+        "color": Object {
+          "label": Object {
+            "enable": Object {
+              "default": "#227bbd",
+              "light": "#bbbbbb",
+            },
+          },
+        },
         "label": Object {
           "fallback": Object {
             "fontFamily": "Arial",
@@ -606,9 +678,6 @@ exports[`Alert component Should render alert with default props 1`] = `
             "fontWeight": 400,
           },
         },
-      },
-      "menuItem": Object {
-        "borderRadius": 4,
       },
       "navigationDrawer": Object {
         "header": Object {
@@ -689,6 +758,10 @@ exports[`Alert component Should render alert with default props 1`] = `
         "lineHeight": 1.5,
       },
       "progressIndicator": Object {
+        "color": Object {
+          "layer": "#ffffff",
+          "stroke": "#f4ab34",
+        },
         "large": Object {
           "borderRadius": 32,
         },
@@ -704,6 +777,20 @@ exports[`Alert component Should render alert with default props 1`] = `
       },
       "radioButton": Object {
         "borderRadius": 12,
+        "color": Object {
+          "disable": Object {
+            "border": "#bbbbbb",
+            "content": "#bbbbbb",
+          },
+          "select": Object {
+            "border": "#f4ab34",
+            "content": "#f4ab34",
+          },
+          "unselect": Object {
+            "border": "#000000",
+            "content": "#000000",
+          },
+        },
         "label": Object {
           "fallback": Object {
             "fontFamily": "Arial",
@@ -752,6 +839,58 @@ exports[`Alert component Should render alert with default props 1`] = `
       },
       "shortcut": Object {
         "borderRadius": 28,
+        "contained": Object {
+          "color": Object {
+            "disable": Object {
+              "neutral": Object {
+                "background": "#bbbbbb",
+                "border": "#FFFFFF00",
+                "label": "#777777",
+              },
+              "primary": Object {
+                "background": "#bbbbbb",
+                "border": "#FFFFFF00",
+                "label": "#777777",
+              },
+            },
+            "enable": Object {
+              "neutral": Object {
+                "background": "#ffffff",
+                "border": "#FFFFFF00",
+                "label": "#333333",
+              },
+              "primary": Object {
+                "background": "#f4ab34",
+                "border": "#FFFFFF00",
+                "label": "#333333",
+              },
+            },
+            "focus": Object {
+              "neutral": Object {
+                "background": "#e9ecef",
+                "border": "#FFFFFF00",
+                "label": "#333333",
+              },
+              "primary": Object {
+                "background": "#A67423",
+                "border": "#FFFFFF00",
+                "label": "#333333",
+              },
+            },
+            "hover": Object {
+              "neutral": Object {
+                "background": "#f1f3f5",
+                "border": "#FFFFFF00",
+                "label": "#333333",
+              },
+              "primary": Object {
+                "background": "#ef8426",
+                "border": "#FFFFFF00",
+                "label": "#333333",
+              },
+            },
+          },
+        },
         "label": Object {
           "fallback": Object {
             "fontFamily": "Arial",
@@ -763,6 +902,58 @@ exports[`Alert component Should render alert with default props 1`] = `
           "primary": Object {
             "fontFamily": "Roboto",
             "fontWeight": 400,
+          },
+        },
+        "outlined": Object {
+          "color": Object {
+            "disable": Object {
+              "neutral": Object {
+                "background": "#ffffff",
+                "border": "#bbbbbb",
+                "label": "#bbbbbb",
+              },
+              "primary": Object {
+                "background": "#ffffff",
+                "border": "#bbbbbb",
+                "label": "#bbbbbb",
+              },
+            },
+            "enable": Object {
+              "neutral": Object {
+                "background": "#FFFFFF00",
+                "border": "#bbbbbb",
+                "label": "#333333",
+              },
+              "primary": Object {
+                "background": "#FFFFFF00",
+                "border": "#f4ab34",
+                "label": "#333333",
+              },
+            },
+            "focus": Object {
+              "neutral": Object {
+                "background": "#e9ecef",
+                "border": "#777777",
+                "label": "#333333",
+              },
+              "primary": Object {
+                "background": "#e9ecef",
+                "border": "#ef8426",
+                "label": "#333333",
+              },
+            },
+            "hover": Object {
+              "neutral": Object {
+                "background": "#f1f3f5",
+                "border": "#777777",
+                "label": "#333333",
+              },
+              "primary": Object {
+                "background": "#f1f3f5",
+                "border": "#ef8426",
+                "label": "#333333",
+              },
+            },
           },
         },
       },
@@ -840,6 +1031,24 @@ exports[`Alert component Should render alert with default props 1`] = `
         },
       },
       "tag": Object {
+        "color": Object {
+          "background": Object {
+            "alert": "#e74627",
+            "link": "#227bbd",
+            "primary": "#f4ab34",
+            "secondary": "#ff6b0b",
+            "success": "#569a32",
+            "warning": "#fcc433",
+          },
+          "label": Object {
+            "alert": "#ffffff",
+            "link": "#ffffff",
+            "primary": "#333333",
+            "secondary": "#000000",
+            "success": "#ffffff",
+            "warning": "#333333",
+          },
+        },
         "label": Object {
           "fallback": Object {
             "fontFamily": "Arial",
