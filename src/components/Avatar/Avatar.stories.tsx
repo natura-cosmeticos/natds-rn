@@ -4,7 +4,7 @@ import { IconName, iconNames } from '@naturacosmeticos/natds-icons'
 
 import { AvatarTypes, AvatarSizes } from './Avatar.types'
 import NatAvatar from '../../assets/images/nat_avatar.jpg'
-import { StoryContainer } from '../../common/HelperComponents/StoryContainer'
+import { StoryContainer, StoryWrapper } from '../../common/HelperComponents/StoryContainer'
 import { Avatar } from '.'
 
 const description = () => `
@@ -59,30 +59,44 @@ const avatarSizes = {
   standard: 'standard'
 }
 
-export const All = () => (
-  <>
+export const Default = () => (
+  <StoryContainer title="Standard">
+    <Avatar />
+  </StoryContainer>
+)
+
+export const Variants = () => (
+  <StoryWrapper title="Variants">
     <StoryContainer title="Image">
-      <Avatar type="image" size="standard" imgSource={NatAvatar} />
-      <Avatar type="image" size="semi" imgSource={NatAvatar} />
-      <Avatar type="image" size="semiX" imgSource={NatAvatar} />
       <Avatar type="image" size="medium" imgSource={NatAvatar} />
-      <Avatar type="image" size="largeXXX" imgSource={NatAvatar} />
     </StoryContainer>
     <StoryContainer title="Letter">
-      <Avatar type="letter" size="standard" text={textSample} />
-      <Avatar type="letter" size="semi" text={textSample} />
-      <Avatar type="letter" size="semiX" text={textSample} />
       <Avatar type="letter" size="medium" text={textSample} />
-      <Avatar type="letter" size="largeXXX" text={textSample} />
     </StoryContainer>
     <StoryContainer title="Icon">
-      <Avatar type="icon" size="standard" iconName={iconSample} />
-      <Avatar type="icon" size="semi" iconName={iconSample} />
-      <Avatar type="icon" size="semiX" iconName={iconSample} />
       <Avatar type="icon" size="medium" iconName={iconSample} />
+    </StoryContainer>
+  </StoryWrapper>
+)
+
+export const Sizes = () => (
+  <StoryWrapper title="Sizes">
+    <StoryContainer title="Standard">
+      <Avatar type="icon" size="standard" iconName={iconSample} />
+    </StoryContainer>
+    <StoryContainer title="Semi">
+      <Avatar type="icon" size="semi" iconName={iconSample} />
+    </StoryContainer>
+    <StoryContainer title="SemiX">
+      <Avatar type="icon" size="semiX" iconName={iconSample} />
+    </StoryContainer>
+    <StoryContainer title="Medium">
+      <Avatar type="icon" size="medium" iconName={iconSample} />
+    </StoryContainer>
+    <StoryContainer title="LargeXXX">
       <Avatar type="icon" size="largeXXX" iconName={iconSample} />
     </StoryContainer>
-  </>
+  </StoryWrapper>
 )
 
 export const Interactive = () => (

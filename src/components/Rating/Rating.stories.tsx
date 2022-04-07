@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { boolean, text, select } from '@storybook/addon-knobs'
-import { StoryContainer } from '../../common/HelperComponents/StoryContainer'
+import { StoryContainer, StoryWrapper } from '../../common/HelperComponents/StoryContainer'
 import {
   RatingAlignProps, RatingValueProps, RatingVarianstProps
 } from './Rating.types'
@@ -72,27 +72,35 @@ const rates = {
   5: 5
 }
 
-export const Input = () => {
+export const Default = () => {
   const [rating, setRating] = useState<RatingValueProps | number>(0)
 
   return (
-    <StoryContainer title="Input">
+    <StoryContainer title="Standard">
       <Rating variant="input" rate={rating} label="Placeholder" size="semi" onPress={((value) => setRating(value))} />
     </StoryContainer>
   )
 }
 
-export const ReadOnly = () => (
-  <StoryContainer title="Read-Only">
-    <Rating variant="read-only" rate={3} size="semi" />
-  </StoryContainer>
-)
+export const Variants = () => {
+  const [rating, setRating] = useState<RatingValueProps | number>(0)
 
-export const Counter = () => (
-  <StoryContainer title="Counter">
-    <Rating variant="counter" label="Placeholder" size="semi" />
-  </StoryContainer>
-)
+  return (
+    <StoryWrapper title="Variants">
+      <StoryContainer title="Input">
+        <Rating variant="input" rate={rating} label="Placeholder" size="semi" onPress={((value) => setRating(value))} />
+      </StoryContainer>
+
+      <StoryContainer title="Read-Only">
+        <Rating variant="read-only" rate={3} size="semi" />
+      </StoryContainer>
+
+      <StoryContainer title="Counter">
+        <Rating variant="counter" label="Placeholder" size="semi" />
+      </StoryContainer>
+    </StoryWrapper>
+  )
+}
 
 export const Interactive = () => (
   <StoryContainer title="Interactive">

@@ -1,9 +1,11 @@
 import { storiesOf } from '@storybook/react-native'
 import {
-  All,
+  Default,
+  Variants,
   Interactive
 } from './RadioButton.stories'
 
 storiesOf('RadioButton', module)
-  .add('all', All)
-  .add('interactive', Interactive)
+  .add('Default', Default)
+  .add('Variants', Variants)
+  .add('Interactive', Interactive)

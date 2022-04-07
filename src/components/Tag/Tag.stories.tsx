@@ -3,7 +3,7 @@ import { select, text } from '@storybook/addon-knobs'
 import { StoryFn } from '@storybook/addons'
 import React, { ReactNode } from 'react'
 
-import { StoryContainer } from '../../common/HelperComponents/StoryContainer'
+import { StoryContainer, StoryWrapper } from '../../common/HelperComponents/StoryContainer'
 import { Tag } from './Tag'
 import { TagColors, TagPositions, TagSizes } from './Tag.types'
 
@@ -62,8 +62,8 @@ export const Default: StoryFn<ReactNode> = () => (
   </StoryContainer>
 )
 
-export const Borders: StoryFn<ReactNode> = () => (
-  <>
+export const Variants: StoryFn<ReactNode> = () => (
+  <StoryWrapper title="Variants">
     <StoryContainer title="Default">
       <Tag text="Design System" borderPosition="default" />
     </StoryContainer>
@@ -73,7 +73,7 @@ export const Borders: StoryFn<ReactNode> = () => (
     <StoryContainer title="Left">
       <Tag text="Design System" borderPosition="left" />
     </StoryContainer>
-  </>
+  </StoryWrapper>
 )
 
 export const Sizes: StoryFn<ReactNode> = () => (

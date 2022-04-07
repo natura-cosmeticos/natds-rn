@@ -1,13 +1,13 @@
 import { storiesOf } from '@storybook/react-native'
 import {
-  Base,
+  Default,
   Dividers,
   RippleFeedback,
   SelectionFeedback
 } from './ListItem.stories'
 
 storiesOf('ListItem', module)
-  .add('Base', Base)
+  .add('Default', Default)
   .add('FeedbackRipple', RippleFeedback)
   .add('FeedbackSelection', SelectionFeedback)
   .add('Dividers', Dividers)

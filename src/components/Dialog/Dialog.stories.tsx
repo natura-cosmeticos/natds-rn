@@ -8,7 +8,7 @@ import { Button } from '../Button'
 import {
   IconButton, DialogHeader
 } from '..'
-import { StoryWrapper } from '../../common/HelperComponents/StoryContainer'
+import { StoryContainer, StoryWrapper } from '../../common/HelperComponents/StoryContainer'
 
 const description = () => `
 ---
@@ -45,34 +45,9 @@ export default {
   title: 'Components|Dialog'
 }
 
-export const Alert = () => {
-  const [modalVisible, setModalVisible] = useState(false)
-
-  return (
-    <StoryWrapper title="Alert">
-      <>
-        <Button text="alert dialog" onPress={() => setModalVisible(!modalVisible)} />
-        <Dialog visible={modalVisible} onRequestClose={() => setModalVisible(false)}>
-          <DialogContent>
-            <DialogContentText>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc scelerisque metus nibh.
-              Suspendisse varius gravida ex. Praesent consequat, nibh non semper mattis
-            </DialogContentText>
-          </DialogContent>
-          <DialogActions>
-            <View style={{ paddingRight: 16 }}>
-              <Button text="cancel" type="text" onPress={() => setModalVisible(!modalVisible)} />
-            </View>
-            <Button text="ok" type="text" onPress={() => setModalVisible(!modalVisible)} />
-          </DialogActions>
-        </Dialog>
-      </>
-    </StoryWrapper>
-  )
-}
-
-export const Standard = () => {
-  const [modalVisible, setModalVisible] = useState(false)
+export const Variants = () => {
+  const [modalAlertVisible, setModalAlertVisible] = useState(false)
+  const [modalStandardVisible, setModalStandardVisible] = useState(false)
   const icons = (
     <>
       <IconButton onPress={() => ({})} />
@@ -82,30 +57,52 @@ export const Standard = () => {
   )
 
   return (
-    <StoryWrapper title="Standard">
-      <>
-        <Button text="standard dialog" onPress={() => setModalVisible(!modalVisible)} />
-        <Dialog visible={modalVisible}>
-          <DialogHeader icon={icons}>
-            <DialogTitle>Title</DialogTitle>
-          </DialogHeader>
-          <DialogContent divider>
-            <DialogContentText>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc scelerisque metus nibh.
-              Suspendisse varius gravida ex. Praesent consequat, nibh non semper mattis, lorem purus
-              pellentesque sapien, vitae facilisis tellus sem et enim. Sed eget nunc nec eros gravida
-              egestas. Phasellus nec ipsum dolor. Donec justo ipsum, vehicula vel lacus at, facilisis
-              bibendum tellus. Duis ornare in tellus vel scelerisque.
-            </DialogContentText>
-          </DialogContent>
-          <DialogActions>
-            <View style={{ paddingRight: 16 }}>
-              <Button text="cancel" type="text" onPress={() => setModalVisible(!modalVisible)} />
-            </View>
-            <Button text="ok" onPress={() => setModalVisible(!modalVisible)} />
-          </DialogActions>
-        </Dialog>
-      </>
+    <StoryWrapper title="Variants">
+      <StoryContainer title="Alert">
+        <>
+          <Button text="alert dialog" onPress={() => setModalAlertVisible(!modalAlertVisible)} />
+          <Dialog visible={modalAlertVisible} onRequestClose={() => setModalAlertVisible(false)}>
+            <DialogContent>
+              <DialogContentText>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc scelerisque metus nibh.
+                Suspendisse varius gravida ex. Praesent consequat, nibh non semper mattis
+              </DialogContentText>
+            </DialogContent>
+            <DialogActions>
+              <View style={{ paddingRight: 16 }}>
+                <Button text="cancel" type="text" onPress={() => setModalAlertVisible(!modalAlertVisible)} />
+              </View>
+              <Button text="ok" type="text" onPress={() => setModalAlertVisible(!modalAlertVisible)} />
+            </DialogActions>
+          </Dialog>
+        </>
+      </StoryContainer>
+
+      <StoryContainer title="Standard">
+        <>
+          <Button text="standard dialog" onPress={() => setModalStandardVisible(!modalStandardVisible)} />
+          <Dialog visible={modalStandardVisible}>
+            <DialogHeader icon={icons}>
+              <DialogTitle>Title</DialogTitle>
+            </DialogHeader>
+            <DialogContent divider>
+              <DialogContentText>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc scelerisque metus nibh.
+                Suspendisse varius gravida ex. Praesent consequat, nibh non semper mattis, lorem purus
+                pellentesque sapien, vitae facilisis tellus sem et enim. Sed eget nunc nec eros gravida
+                egestas. Phasellus nec ipsum dolor. Donec justo ipsum, vehicula vel lacus at, facilisis
+                bibendum tellus. Duis ornare in tellus vel scelerisque.
+              </DialogContentText>
+            </DialogContent>
+            <DialogActions>
+              <View style={{ paddingRight: 16 }}>
+                <Button text="cancel" type="text" onPress={() => setModalStandardVisible(!modalStandardVisible)} />
+              </View>
+              <Button text="ok" onPress={() => setModalStandardVisible(!modalStandardVisible)} />
+            </DialogActions>
+          </Dialog>
+        </>
+      </StoryContainer>
     </StoryWrapper>
   )
 }

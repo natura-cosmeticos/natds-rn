@@ -62,20 +62,6 @@ export const Default = () => (
   </StoryContainer>
 )
 
-export const Variants = () => (
-  <StoryWrapper title="Variants">
-    <StoryContainer title="Contained">
-      <Button onPress={onPress} text="Natura Design System" type="contained" />
-    </StoryContainer>
-    <StoryContainer title="Outlined">
-      <Button onPress={onPress} text="Natura Design System" type="outlined" />
-    </StoryContainer>
-    <StoryContainer title="Text">
-      <Button onPress={onPress} text="Natura Design System" type="text" />
-    </StoryContainer>
-  </StoryWrapper>
-)
-
 export const Sizes = () => (
   <StoryWrapper title="Sizes">
     <StoryContainer title="Medium">
@@ -90,43 +76,53 @@ export const Sizes = () => (
   </StoryWrapper>
 )
 
-export const Icons = () => (
-  <StoryWrapper title="Icons">
-    <StoryContainer title="Left Icon">
-      <Button onPress={onPress} text="Natura Design System" iconName="outlined-default-mockup" iconPosition="left" />
-    </StoryContainer>
-    <StoryContainer title="Right Icon">
-      <Button onPress={onPress} text="Natura Design System" iconName="outlined-default-mockup" iconPosition="right" />
-    </StoryContainer>
-  </StoryWrapper>
-)
+export const Variants = () => (
+  <StoryWrapper title="Variants">
+    <StoryWrapper title="Types">
+      <StoryContainer title="Contained">
+        <Button onPress={onPress} text="Natura Design System" type="contained" />
+      </StoryContainer>
+      <StoryContainer title="Outlined">
+        <Button onPress={onPress} text="Natura Design System" type="outlined" />
+      </StoryContainer>
+      <StoryContainer title="Text">
+        <Button onPress={onPress} text="Natura Design System" type="text" />
+      </StoryContainer>
+    </StoryWrapper>
 
-export const Disabled = () => (
-  <StoryWrapper title="Disabled">
-    <StoryContainer title="Contained">
-      <Button onPress={onPress} text="Natura Design System" type="contained" disabled />
-    </StoryContainer>
-    <StoryContainer title="Outlined">
-      <Button onPress={onPress} text="Natura Design System" type="outlined" disabled />
-    </StoryContainer>
-    <StoryContainer title="Text">
-      <Button onPress={onPress} text="Natura Design System" type="text" disabled />
-    </StoryContainer>
-  </StoryWrapper>
-)
+    <StoryWrapper title="Icons">
+      <StoryContainer title="Left Icon">
+        <Button onPress={onPress} text="Natura Design System" iconName="outlined-default-mockup" iconPosition="left" />
+      </StoryContainer>
+      <StoryContainer title="Right Icon">
+        <Button onPress={onPress} text="Natura Design System" iconName="outlined-default-mockup" iconPosition="right" />
+      </StoryContainer>
+    </StoryWrapper>
 
-export const Display = () => (
-  <StoryWrapper title="Display">
-    <StoryContainer title="Display-Inline">
-      <View style={{ alignItems: 'flex-start', marginBottom: 14 }}>
-        <Button onPress={onPress} text="Natura Design System" />
-      </View>
-    </StoryContainer>
-    <StoryContainer title="Display-Block">
-      <View style={{ marginBottom: 14, width: '100%' }}>
-        <Button onPress={onPress} text="Natura Design System" />
-      </View>
-    </StoryContainer>
+    <StoryWrapper title="Disabled">
+      <StoryContainer title="Contained">
+        <Button onPress={onPress} text="Natura Design System" type="contained" disabled />
+      </StoryContainer>
+      <StoryContainer title="Outlined">
+        <Button onPress={onPress} text="Natura Design System" type="outlined" disabled />
+      </StoryContainer>
+      <StoryContainer title="Text">
+        <Button onPress={onPress} text="Natura Design System" type="text" disabled />
+      </StoryContainer>
+    </StoryWrapper>
+
+    <StoryWrapper title="Display">
+      <StoryContainer title="Display-Inline">
+        <View style={{ alignItems: 'flex-start', marginBottom: 14 }}>
+          <Button onPress={onPress} text="Natura Design System" />
+        </View>
+      </StoryContainer>
+      <StoryContainer title="Display-Block">
+        <View style={{ marginBottom: 14, width: '100%' }}>
+          <Button onPress={onPress} text="Natura Design System" />
+        </View>
+      </StoryContainer>
+    </StoryWrapper>
   </StoryWrapper>
 )
 

@@ -1,10 +1,9 @@
 import { storiesOf } from '@storybook/react-native'
 import {
-  Counter, ReadOnly, Interactive, Input
+  Default, Variants, Interactive
 } from './Rating.stories'
 
 storiesOf('Rating', module)
-  .add('Counter', Counter)
-  .add('ReadOnly', ReadOnly)
-  .add('Input', Input)
+  .add('Default', Default)
+  .add('Variants', Variants)
   .add('Interactive', Interactive)

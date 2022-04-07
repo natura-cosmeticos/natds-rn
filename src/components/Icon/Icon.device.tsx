@@ -5,4 +5,4 @@ import {
 
 storiesOf('Icon', module)
   .add('Default', Default)
-  .add('interactive', Interactive)
+  .add('Interactive', Interactive)

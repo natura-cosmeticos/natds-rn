@@ -1,6 +1,6 @@
 import React from 'react'
-import { text as textKnob } from '@storybook/addon-knobs'
-import { IconName } from '@naturacosmeticos/natds-icons'
+import { text, select } from '@storybook/addon-knobs'
+import { IconName, iconNames } from '@naturacosmeticos/natds-icons'
 import { Icon } from './Icon'
 import { IconColors, IconSizes } from './Icon.types'
 import { StoryContainer } from '../../common/HelperComponents/StoryContainer'
@@ -37,9 +37,9 @@ export const Default = () => (
 export const Interactive = () => (
   <StoryContainer title="Interactive">
     <Icon
-      color={textKnob('Color', 'highlight')as IconColors}
-      name={textKnob('Icon name', 'outlined-default-mockup') as IconName}
-      size={textKnob('Size', 'standard') as IconSizes}
+      color={text('Color', 'highlight')as IconColors}
+      name={select('Icon name', iconNames as Array<IconName>, 'outlined-default-mockup') as IconName}
+      size={text('Size', 'standard') as IconSizes}
     />
   </StoryContainer>
 )

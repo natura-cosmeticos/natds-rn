@@ -1,9 +1,13 @@
 import { storiesOf } from '@storybook/react-native'
 import {
-  All,
+  Default,
+  Variants,
+  Sizes,
   Interactive
 } from './Avatar.stories'
 
 storiesOf('Avatar', module)
-  .add('All', All)
+  .add('Default', Default)
+  .add('Variants', Variants)
+  .add('Sizes', Sizes)
   .add('Interactive', Interactive)

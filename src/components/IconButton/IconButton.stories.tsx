@@ -2,7 +2,7 @@ import React from 'react'
 import { select, boolean } from '@storybook/addon-knobs'
 import { iconNames, IconName } from '@naturacosmeticos/natds-icons'
 import { IconButton } from './IconButton'
-import { StoryContainer } from '../../common/HelperComponents/StoryContainer'
+import { StoryContainer, StoryWrapper } from '../../common/HelperComponents/StoryContainer'
 import {
   iconButtonBackgroundStylesOptions,
   iconButtonSizesOptions,
@@ -49,50 +49,61 @@ export default {
   title: 'Components/IconButton'
 }
 
-export const Base = () => (
-  <StoryContainer title="Base">
+export const Default = () => (
+  <StoryContainer title="Standard">
     <IconButton onPress={() => ({})} />
   </StoryContainer>
 )
 
-export const IconColor = () => (
-  <StoryContainer title="IconColor" style={{ backgroundColor: '#eaeaea' }}>
-    <IconButton onPress={() => ({})} iconColor="highEmphasis" />
-    <IconButton onPress={() => ({})} iconColor="primary" />
-    <IconButton onPress={() => ({})} iconColor="light" />
-  </StoryContainer>
+export const Variants = () => (
+  <StoryWrapper title="Variants">
+    <StoryContainer title="Standard">
+      <IconButton onPress={() => ({})} />
+    </StoryContainer>
+    <StoryContainer title="Float">
+      <IconButton onPress={() => ({})} backgroundStyle="float" />
+    </StoryContainer>
+    <StoryContainer title="Overlay">
+      <IconButton onPress={() => ({})} iconColor="light" backgroundStyle="overlay" />
+    </StoryContainer>
+    <StoryContainer title="Disabled Standard">
+      <IconButton onPress={() => ({})} disabled backgroundStyle="none" />
+    </StoryContainer>
+    <StoryContainer title="Disabled Float">
+      <IconButton onPress={() => ({})} disabled backgroundStyle="float" />
+    </StoryContainer>
+    <StoryContainer title="Disabled Overlay">
+      <IconButton onPress={() => ({})} disabled iconColor="light" backgroundStyle="overlay" />
+    </StoryContainer>
+  </StoryWrapper>
 )
 
-export const BackgroundStyle = () => (
-  <StoryContainer title="BackgroundStyle">
-    <IconButton onPress={() => ({})} iconColor="highEmphasis" backgroundStyle="none" />
-    <IconButton onPress={() => ({})} iconColor="primary" backgroundStyle="float" />
-    <IconButton onPress={() => ({})} iconColor="light" backgroundStyle="overlay" />
-  </StoryContainer>
+export const Colors = () => (
+  <StoryWrapper title="Colors">
+    <StoryContainer title="Primary" style={{ backgroundColor: '#eaeaea' }}>
+      <IconButton onPress={() => ({})} iconColor="primary" />
+    </StoryContainer>
+    <StoryContainer title="Light" style={{ backgroundColor: '#eaeaea' }}>
+      <IconButton onPress={() => ({})} iconColor="light" />
+    </StoryContainer>
+    <StoryContainer title="HighEmphasis" style={{ backgroundColor: '#eaeaea' }}>
+      <IconButton onPress={() => ({})} iconColor="highEmphasis" />
+    </StoryContainer>
+  </StoryWrapper>
 )
 
-export const Disabled = () => (
-  <StoryContainer title="Disabled">
-    <IconButton onPress={() => ({})} disabled iconColor="highEmphasis" backgroundStyle="none" />
-    <IconButton onPress={() => ({})} disabled iconColor="primary" backgroundStyle="float" />
-    <IconButton onPress={() => ({})} disabled iconColor="light" backgroundStyle="overlay" />
-  </StoryContainer>
-)
-
-export const Size = () => (
-  <StoryContainer title="Sizes">
-    <IconButton onPress={() => ({})} size="semi" />
-    <IconButton onPress={() => ({})} size="semiX" />
-    <IconButton onPress={() => ({})} size="medium" />
-  </StoryContainer>
-)
-
-export const Icon = () => (
-  <StoryContainer title="Icon">
-    <IconButton onPress={() => ({})} size="medium" icon="outlined-finance-charging" />
-    <IconButton onPress={() => ({})} size="medium" icon="outlined-place-forklift" />
-    <IconButton onPress={() => ({})} size="medium" icon="outlined-social-network" />
-  </StoryContainer>
+export const Sizes = () => (
+  <StoryWrapper title="Sizes">
+    <StoryContainer title="Semi">
+      <IconButton onPress={() => ({})} size="semi" />
+    </StoryContainer>
+    <StoryContainer title="SemiX">
+      <IconButton onPress={() => ({})} size="semiX" />
+    </StoryContainer>
+    <StoryContainer title="Medium">
+      <IconButton onPress={() => ({})} size="medium" />
+    </StoryContainer>
+  </StoryWrapper>
 )
 
 export const Interactive = () => (
