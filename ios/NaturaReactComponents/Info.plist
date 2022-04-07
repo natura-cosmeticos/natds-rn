@@ -60,18 +60,19 @@
 		<string>Roboto-Regular.ttf</string>
 		<string>Roboto-Thin.ttf</string>
 		<string>Roboto-ThinItalic.ttf</string>
-		<string>DrukCy-Bold.ttf</string>
-		<string>HelveticaNowDisplay-Bd.ttf</string>
-		<string>HelveticaNowDisplay-Md.ttf</string>
-		<string>HelveticaNowDisplay-Regular.ttf</string>
-		<string>Montserrat-Bold.ttf</string>
-		<string>Montserrat-Regular.ttf</string>
-		<string>Montserrat-SemiBold.ttf</string>
-		<string>Recoleta-SemiBold.ttf</string>
-		<string>SuisseIntl-Regular.ttf</string>
-		<string>WorkSans-Bold.ttf</string>
-		<string>WorkSans-Regular.ttf</string>
-		<string>ZapfHumanist601BT-Roman.ttf</string>
+		<string>druk_cy_bold.ttf</string>
+		<string>helvetica_now_display_bd.ttf</string>
+		<string>helvetica_now_display_md.ttf</string>
+		<string>helvetica_now_display_regular.ttf</string>
+		<string>montserrat_bold.ttf</string>
+		<string>montserrat_regular.ttf</string>
+		<string>montserrat_semi_bold.ttf</string>
+		<string>recoleta_semi_bold.ttf</string>
+		<string>suisse_intl_medium.ttf</string>
+		<string>suisse_intl_regular.ttf</string>
+		<string>work_sans_bold.ttf</string>
+		<string>work_sans_regular.ttf</string>
+		<string>zapf_humanist601bt_roman.ttf</string>
 	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
