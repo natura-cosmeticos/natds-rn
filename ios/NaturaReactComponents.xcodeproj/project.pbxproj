@@ -849,7 +849,7 @@
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = net.natura.NatDSRNSample;
 				PRODUCT_NAME = NatDSRNSampleApp;
-				PROVISIONING_PROFILE_SPECIFIER = "NATDS React Native - appStore";
+				PROVISIONING_PROFILE_SPECIFIER = "Bitrise ios app-store - (net.natura.NatDSRNSample)";
 				SWIFT_OBJC_BRIDGING_HEADER = "NaturaReactComponents-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -878,7 +878,7 @@
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = net.natura.NatDSRNSample;
 				PRODUCT_NAME = NatDSRNSampleApp;
-				PROVISIONING_PROFILE_SPECIFIER = "NATDS React Native - appStore";
+				PROVISIONING_PROFILE_SPECIFIER = "Bitrise ios app-store - (net.natura.NatDSRNSample)";
 				SWIFT_OBJC_BRIDGING_HEADER = "NaturaReactComponents-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
