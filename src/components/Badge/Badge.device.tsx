@@ -1,5 +1,13 @@
 import { storiesOf } from '@storybook/react-native'
-import { All } from './Badge.stories'
+import {
+  Default,
+  Variants,
+  Colors,
+  Interactive
+} from './Badge.stories'
 
 storiesOf('Badge', module)
-  .add('All', All)
+  .add('Default', Default)
+  .add('Variants', Variants)
+  .add('Colors', Colors)
+  .add('Interactive', Interactive)

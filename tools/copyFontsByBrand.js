@@ -24,7 +24,7 @@ module.exports = function copyFontsByBrand(brand, destination) {
     const dest = fs.createWriteStream(`${destination}/${fontName}.ttf`)
 
     source.pipe(dest)
-    source.on('end', () => console.log(`${fontName} done!`))
+    source.on('end', () => console.log(`Copied ${fontName} to ${destination}`))
     source.on('error', () => console.log(`${fontName} error`))
   })
 }

@@ -43,8 +43,8 @@ export const Default = () => (
   </StoryContainer>
 )
 
-export const Types = () => (
-  <StoryWrapper title="Types">
+export const Variants = () => (
+  <StoryWrapper title="Variants">
     <StoryContainer title="Standard">
       <Link onPress={onPress}>Natura Design System</Link>
     </StoryContainer>

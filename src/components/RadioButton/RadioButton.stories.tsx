@@ -3,6 +3,7 @@ import { View } from 'react-native'
 import { boolean, text } from '@storybook/addon-knobs'
 
 import { RadioButton } from './RadioButton'
+import { StoryContainer, StoryWrapper } from '../../common/HelperComponents/StoryContainer'
 
 export default {
   component: RadioButton,
@@ -12,28 +13,49 @@ export default {
   title: 'Components|RadioButton'
 }
 
-export const All = () => {
+export const Default = () => {
   const [selected, setSelected] = useState<string | null>(null)
 
   return (
-    <View style={{ maxWidth: 600, padding: 30 }}>
+    <StoryContainer title="Standard">
       <RadioButton
-        color="primary"
         selected={selected === '1'}
         onPress={setSelected}
-        label="Primary"
+        label="Natura Design System"
         value="1"
       />
-      <RadioButton
-        label="Disabled"
-        disabled
-      />
-      <RadioButton
-        selected
-        label="Selected disabled"
-        disabled
-      />
-    </View>
+    </StoryContainer>
+  )
+}
+
+export const Variants = () => {
+  const [selected, setSelected] = useState<string | null>(null)
+
+  return (
+    <StoryWrapper title="Variants">
+      <StoryContainer title="Standard">
+        <RadioButton
+          color="primary"
+          selected={selected === '1'}
+          onPress={setSelected}
+          label="Natura Design System"
+          value="1"
+        />
+      </StoryContainer>
+      <StoryContainer title="Deselected Disabled">
+        <RadioButton
+          label="Natura Design System"
+          disabled
+        />
+      </StoryContainer>
+      <StoryContainer title="Selected Disabled">
+        <RadioButton
+          selected
+          label="Natura Design System"
+          disabled
+        />
+      </StoryContainer>
+    </StoryWrapper>
   )
 }
 

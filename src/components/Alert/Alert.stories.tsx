@@ -6,6 +6,7 @@ import {
   Variants,
   Types
 } from './Alert.styles'
+import { StoryContainer, StoryWrapper } from '../../common/HelperComponents/StoryContainer'
 
 const alertDefinition = 'An alert displays a short, important message in a way that attracts the user\'s attention without interrupting the user\'s task.'
 
@@ -29,12 +30,23 @@ const variants = {
 }
 
 export const All = () => (
-  <>
-    <Alert type="success" variant="standard" title="Title" message={alertDefinition} />
-    <Alert type="error" variant="standard" title="Title" message={alertDefinition} />
-    <Alert type="warning" variant="standard" title="Title" message={alertDefinition} />
-    <Alert type="info" variant="standard" title="Title" message={alertDefinition} />
-  </>
+  <StoryWrapper title="Variants">
+    <StoryContainer title="Success">
+      <Alert type="success" variant="standard" title="Title" message={alertDefinition} />
+    </StoryContainer>
+
+    <StoryContainer title="Error">
+      <Alert type="error" variant="standard" title="Title" message={alertDefinition} />
+    </StoryContainer>
+
+    <StoryContainer title="Warning">
+      <Alert type="warning" variant="standard" title="Title" message={alertDefinition} />
+    </StoryContainer>
+
+    <StoryContainer title="Info">
+      <Alert type="info" variant="standard" title="Title" message={alertDefinition} />
+    </StoryContainer>
+  </StoryWrapper>
 )
 export const Interactive = () => (
   <Alert

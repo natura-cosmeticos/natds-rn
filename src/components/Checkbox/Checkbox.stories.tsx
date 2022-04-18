@@ -53,36 +53,32 @@ export const Default = () => {
   )
 }
 
-export const Indeterminate = () => {
-  const [isSelected, setIsSelected] = useState(true)
+export const Variants = () => {
+  const [standard, setStandard] = useState(true)
+  const [indeterminate, setIndeterminate] = useState(true)
 
   return (
-    <StoryContainer title="Indeterminate">
-      <Checkbox
-        indeterminate
-        label="Natura Design System"
-        onPress={() => setIsSelected(!isSelected)}
-        selected={isSelected}
-      />
-    </StoryContainer>
-  )
-}
-
-export const Disabled = () => {
-  const [state, setState] = useState({
-    disabled: false,
-    disabledIndeterminate: true,
-    disabledSelected: true
-  })
-
-  return (
-    <StoryWrapper title="Disabled">
+    <StoryWrapper title="Variants">
+      <StoryContainer title="Standard">
+        <Checkbox
+          label="Natura Design System"
+          onPress={() => setStandard(!standard)}
+          selected={standard}
+        />
+      </StoryContainer>
+      <StoryContainer title="Indeterminate">
+        <Checkbox
+          indeterminate
+          label="Natura Design System"
+          onPress={() => setIndeterminate(!indeterminate)}
+          selected={indeterminate}
+        />
+      </StoryContainer>
       <StoryContainer title="Disabled selected">
         <Checkbox
           disabled
           label="Natura Design System"
-          onPress={() => setState({ ...state, disabledSelected: !state.disabledSelected })}
-          selected={state.disabledSelected}
+          selected
           value="3"
         />
       </StoryContainer>
@@ -91,8 +87,7 @@ export const Disabled = () => {
           disabled
           indeterminate
           label="Natura Design System"
-          onPress={() => setState({ ...state, disabledIndeterminate: !state.disabledIndeterminate })}
-          selected={state.disabledIndeterminate}
+          selected
           value="2"
         />
       </StoryContainer>
@@ -100,8 +95,7 @@ export const Disabled = () => {
         <Checkbox
           disabled
           label="Natura Design System"
-          onPress={() => setState({ ...state, disabled: !state.disabled })}
-          selected={state.disabled}
+          selected={false}
           value="1"
         />
       </StoryContainer>

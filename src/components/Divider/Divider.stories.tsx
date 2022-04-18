@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react'
 import { View } from 'react-native'
 import { StoryFn } from '@storybook/addons'
 import { Divider } from './Divider'
-import { ContainerWithBorder, TextWithTheme } from '../../common/HelperComponents/ThemeHelper.styles'
+import { StoryContainer, StoryWrapper } from '../../common/HelperComponents/StoryContainer'
 
 const description = () => `
 - - -
@@ -29,70 +29,54 @@ export default {
   title: 'Components|Divider'
 }
 
-export const all: StoryFn<ReactNode> = () => (
-  <View style={{ maxWidth: 300, padding: 30 }}>
-    <TextWithTheme>fullBleed</TextWithTheme>
-    <ContainerWithBorder
+export const Default: StoryFn<ReactNode> = () => (
+  <StoryContainer title="Standard">
+    <View
       style={{
         height: 50,
-        justifyContent: 'center',
-        marginBottom: 20
+        width: '100%',
+        justifyContent: 'center'
       }}
     >
-      <Divider type="fullBleed" />
-    </ContainerWithBorder>
-    <TextWithTheme>inset</TextWithTheme>
-    <ContainerWithBorder
-      style={{
-        height: 50,
-        justifyContent: 'center',
-        marginBottom: 20
-      }}
-    >
-      <Divider type="inset" />
-    </ContainerWithBorder>
-    <TextWithTheme>middle</TextWithTheme>
-    <ContainerWithBorder
-      style={{
-        height: 50,
-        justifyContent: 'center',
-        marginBottom: 20
-      }}
-    >
-      <Divider type="middle" />
-    </ContainerWithBorder>
-  </View>
+      <Divider />
+    </View>
+  </StoryContainer>
 )
 
-export const fullBleed = () => (
-  <View
-    style={{
-      height: 50,
-      justifyContent: 'center'
-    }}
-  >
-    <Divider type="fullBleed" />
-  </View>
-)
-
-export const inset = () => (
-  <View
-    style={{
-      height: 50,
-      justifyContent: 'center'
-    }}
-  >
-    <Divider type="inset" />
-  </View>
-)
-
-export const middle = () => (
-  <View
-    style={{
-      height: 50,
-      justifyContent: 'center'
-    }}
-  >
-    <Divider type="middle" />
-  </View>
+export const Variants: StoryFn<ReactNode> = () => (
+  <StoryWrapper title="Variants">
+    <StoryContainer title="FullBleed">
+      <View
+        style={{
+          height: 50,
+          width: '100%',
+          justifyContent: 'center'
+        }}
+      >
+        <Divider />
+      </View>
+    </StoryContainer>
+    <StoryContainer title="Inset">
+      <View
+        style={{
+          height: 50,
+          width: '100%',
+          justifyContent: 'center'
+        }}
+      >
+        <Divider type="inset" />
+      </View>
+    </StoryContainer>
+    <StoryContainer title="Middle">
+      <View
+        style={{
+          height: 50,
+          width: '100%',
+          justifyContent: 'center'
+        }}
+      >
+        <Divider type="middle" />
+      </View>
+    </StoryContainer>
+  </StoryWrapper>
 )

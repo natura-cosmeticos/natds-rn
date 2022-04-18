@@ -8,6 +8,7 @@ import { ListItem, ListItemFeedback } from './ListItem'
 import { Checkbox } from '../Checkbox'
 import { TextWithTheme } from '../../common/HelperComponents/ThemeHelper.styles'
 import { data } from './stories.data'
+import { StoryContainer } from '../../common/HelperComponents/StoryContainer'
 
 export default {
   component: ListItem,
@@ -17,30 +18,34 @@ export default {
   title: 'Components|List'
 }
 
-export const Base = () => (
-  <FlatList
-    data={data}
-    renderItem={({ item }) => (
-      <ListItem>
-        <View style={{ padding: 16 }}>
-          <TextWithTheme>{item.title}</TextWithTheme>
-        </View>
-      </ListItem>
-    )}
-  />
+export const Default = () => (
+  <StoryContainer title="Standard">
+    <FlatList
+      data={data}
+      renderItem={({ item }) => (
+        <ListItem>
+          <View style={{ padding: 16 }}>
+            <TextWithTheme>{item.title}</TextWithTheme>
+          </View>
+        </ListItem>
+      )}
+    />
+  </StoryContainer>
 )
 
 export const RippleFeedback = () => (
-  <FlatList
-    data={data}
-    renderItem={({ item }) => (
-      <ListItem feedback="ripple" onPress={() => console.log('I was pressed')}>
-        <View style={{ padding: 16 }}>
-          <TextWithTheme>{item.title}</TextWithTheme>
-        </View>
-      </ListItem>
-    )}
-  />
+  <StoryContainer title="Feedback Ripple">
+    <FlatList
+      data={data}
+      renderItem={({ item }) => (
+        <ListItem feedback="ripple" onPress={() => console.log('I was pressed')}>
+          <View style={{ padding: 16 }}>
+            <TextWithTheme>{item.title}</TextWithTheme>
+          </View>
+        </ListItem>
+      )}
+    />
+  </StoryContainer>
 )
 
 export const SelectionFeedback = () => {
@@ -73,12 +78,14 @@ export const SelectionFeedback = () => {
   }
 
   return (
-    <FlatList
-      ItemSeparatorComponent={Divider}
-      data={data}
-      renderItem={renderItem}
-      extraData={selected}
-    />
+    <StoryContainer title="Feedback Selection">
+      <FlatList
+        ItemSeparatorComponent={Divider}
+        data={data}
+        renderItem={renderItem}
+        extraData={selected}
+      />
+    </StoryContainer>
   )
 }
 
@@ -114,28 +121,30 @@ export const Dividers = () => {
   }
 
   return (
-    <View style={{
-      flex: 1,
-      paddingHorizontal: 10,
-      paddingVertical: 20
-    }}
-    >
-      <Card>
-        <FlatList
-          ItemSeparatorComponent={Divider}
-          data={data}
-          renderItem={({ item }) => (
-            <>
-              <ListItem onPress={() => console.log('I was pressed')}>
-                <View style={{ padding: 16 }}>
-                  <Text>{item.title}</Text>
-                </View>
-              </ListItem>
-              {renderExtraInfo(item.extraInfo)}
-            </>
-          )}
-        />
-      </Card>
-    </View>
+    <StoryContainer title="Dividers">
+      <View style={{
+        flex: 1,
+        paddingHorizontal: 10,
+        paddingVertical: 20
+      }}
+      >
+        <Card>
+          <FlatList
+            ItemSeparatorComponent={Divider}
+            data={data}
+            renderItem={({ item }) => (
+              <>
+                <ListItem onPress={() => console.log('I was pressed')}>
+                  <View style={{ padding: 16 }}>
+                    <Text>{item.title}</Text>
+                  </View>
+                </ListItem>
+                {renderExtraInfo(item.extraInfo)}
+              </>
+            )}
+          />
+        </Card>
+      </View>
+    </StoryContainer>
   )
 }

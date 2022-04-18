@@ -67,12 +67,12 @@ export const CustomFonts = () => {
         }
 
         return (
-          <VerticalStoryContainer title="custom">
+          <VerticalStoryContainer title="Custom">
             <Typography
               variant="heading3"
               style={{
                 fontFamily: setTypographyByPlatform({ type: 'display' }),
-                fontWeight: isAndroidPlatform ? '' : weightByPlatform({ type: 'display' })
+                fontWeight: isAndroidPlatform ? 'normal' : weightByPlatform({ type: 'display' })
               }}
             >
               Display
@@ -83,7 +83,7 @@ export const CustomFonts = () => {
               variant="heading3"
               style={{
                 fontFamily: setTypographyByPlatform({ type: 'headline' }),
-                fontWeight: isAndroidPlatform ? '' : weightByPlatform({ type: 'headline' })
+                fontWeight: isAndroidPlatform ? 'normal' : weightByPlatform({ type: 'headline' })
               }}
             >
               Headline
@@ -94,7 +94,7 @@ export const CustomFonts = () => {
               variant="heading3"
               style={{
                 fontFamily: setTypographyByPlatform({ type: 'body', weight: 'regular' }),
-                fontWeight: isAndroidPlatform ? '' : weightByPlatform({ type: 'body', weight: 'regular' })
+                fontWeight: isAndroidPlatform ? 'normal' : weightByPlatform({ type: 'body', weight: 'regular' })
               }}
             >
               Body Regular
@@ -105,7 +105,7 @@ export const CustomFonts = () => {
               variant="heading3"
               style={{
                 fontFamily: setTypographyByPlatform({ type: 'body', weight: 'bold' }),
-                fontWeight: isAndroidPlatform ? '' : weightByPlatform({ type: 'body', weight: 'bold' })
+                fontWeight: isAndroidPlatform ? 'normal' : weightByPlatform({ type: 'body', weight: 'bold' })
               }}
             >
               Body Bold
@@ -119,7 +119,7 @@ export const CustomFonts = () => {
 }
 
 export const Variants = () => (
-  <VerticalStoryContainer title="variants">
+  <VerticalStoryContainer title="Variants">
     <Typography variant="heading1" numberOfLines={1}>Heading1</Typography>
     <Separator />
     <Typography variant="heading2" numberOfLines={1}>Heading2</Typography>
@@ -140,11 +140,4 @@ export const Variants = () => (
     <Separator />
     <Typography variant="overline">Overline</Typography>
   </VerticalStoryContainer>
-)
-
-export const All = () => (
-  <>
-    <CustomFonts />
-    <Variants />
-  </>
 )
