@@ -1,32 +1,30 @@
-const themes = require('@naturacosmeticos/natds-themes/react-native');
+const themes = require('@naturacosmeticos/natds-themes/react-native')
 
-const path = require('path');
-const fsExtra = require('fs-extra');
+const path = require('path')
+const fs = require('fs')
 
 function getFontNameByBrand(file) {
   const brandFonts = Object.keys(file).map((name) => {
     if (typeof file[name] === 'object') {
-      return getFontNameByBrand(file[name]);
+      return getFontNameByBrand(file[name])
     }
 
-    return file[name];
-  });
+    return file[name]
+  })
 
-  return brandFonts.flat();
+  return brandFonts.flat()
 }
 
-
 module.exports = function copyFontsByBrand(brand, destination) {
-  const fontFolder = path.join(path.dirname(require.resolve('@naturacosmeticos/natds-themes')), '..', 'react-native', 'assets');
-  const typographyFile = themes[brand].light.asset.font.file;
+  const fontFolder = path.join(path.dirname(require.resolve('@naturacosmeticos/natds-themes')), '..', 'react-native', 'assets')
+  const typographyFile = themes[brand].light.asset.font.file
 
-  getFontNameByBrand(typographyFile).map(fontName => fsExtra.copy(fontFolder, destination, {
-    filter: (fontPath) => {
-      if (fsExtra.lstatSync(fontPath).isDirectory()) {
-        return true;
-      }
+  getFontNameByBrand(typographyFile).map((fontName) => {
+    const source = fs.createReadStream(`${fontFolder}/${fontName}.ttf`)
+    const dest = fs.createWriteStream(`${destination}/${fontName}.ttf`)
 
-      return fontPath.includes(fontName) && fontPath;
-    },
-  }));
-};
+    source.pipe(dest)
+    source.on('end', () => console.log(`${fontName} done!`))
+    source.on('error', () => console.log(`${fontName} error`))
+  })
+}
