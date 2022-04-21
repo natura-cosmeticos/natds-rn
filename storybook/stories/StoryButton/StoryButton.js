@@ -15,6 +15,12 @@ import {
   NatLoading,
 } from '../../../lib';
 
+import { ThemeNaturaLight } from '../../../lib/themes/ThemeNaturaLight';
+import { ThemeNaturacoLight } from '../../../lib/themes/ThemeNaturacoLight';
+import { ThemeAesopLight } from '../../../lib/themes/ThemeAesopLight';
+import { ThemeAvonLight } from '../../../lib/themes/ThemeAvonLight';
+import { ThemeTheBodyShopLight } from '../../../lib/themes/ThemeTheBodyShopLight';
+
 const styles = {
   defaultScreen: {
     flex: 1,
@@ -47,6 +53,35 @@ export const StoryButton = () => (
             onPress={() => Alert.alert('press')}
           />
           <NatSpace />
+          <NatText value={'Theme'} type="h6" />
+          <NatSpace />
+          <Button
+            type="primary"
+            label="Natura"
+            theme={ThemeNaturaLight}
+            onPress={() => Alert.alert('press')}
+          />
+          <NatSpace />
+          <Button
+            type="primary"
+            label="Avon"
+            theme={ThemeAvonLight}
+            onPress={() => Alert.alert('press')}
+          />
+          <NatSpace />
+          <Button
+            type="primary"
+            label="THe Body Shop"
+            theme={ThemeTheBodyShopLight}
+            onPress={() => Alert.alert('press')}
+          />
+          <NatSpace />
+          <Button
+            type="primary"
+            label="AESOP"
+            theme={ThemeAesopLight}
+            onPress={() => Alert.alert('press')}
+          />
           <NatText value={'Color'} type="h6" />
           <NatSpace />
           <Button
