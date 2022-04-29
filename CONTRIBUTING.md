@@ -10,4 +10,4 @@ Follow the steps bellow to add a new feature, make an improvement or fix a bug.
 - [Install](./docs/Installation.md) the project on your machine
 - [Check your](./docs/CodeQuality.md) code locally
 - Submit a [Pull Request](./docs/PullRequests.md) for validation
-- [Merge and publish](./docs/PullRequests.md) your contribution
+- [Merge and publish](./docs/Publishing.md) your contribution
