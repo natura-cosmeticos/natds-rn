@@ -4,17 +4,13 @@ Please include a summary of the changes and features that were added. Also inclu
 
 ## Type of change
 
-- [ ] Bug fix (non-breaking change which fixes an issue)
-- [ ] New feature (non-breaking change which adds functionality)
-- [ ] Breaking change (fix or feature that would cause existing functionality to not work as expected)
-- [ ] This change requires a documentation update
-
-# How Has This Been Tested?
-
-Please describe the tests that you ran to verify your changes. Provide instructions so we can reproduce. Please also list any relevant details for your test configuration
-
-- [ ] Test A
-- [ ] Test B
+- [ ] feat: new feature for the user, not a new feature for build script
+- [ ] fix: bug fix for the user, not a fix to a build script
+- [ ] docs: changes to the documentation
+- [ ] style: formatting, missing semi colons, etc; no production code change
+- [ ] refactor: refactoring production code, eg. renaming a variable
+- [ ] test: adding missing tests, refactoring tests; no production code change
+- [ ] chore: updating grunt tasks etc; no production code change
 
 # Checklist:
 
@@ -22,6 +18,7 @@ Please describe the tests that you ran to verify your changes. Provide instructi
 - [ ] I have performed a self-review of my own code
 - [ ] I have commented my code, particularly in hard-to-understand areas
 - [ ] I have made corresponding changes to the documentation
-- [ ] My changes generate no new warnings
+- [ ] My changes generate no new warnings or errors;
 - [ ] I have added tests that prove my fix is effective or that my feature works
 - [ ] New and existing unit tests pass locally with my changes
+- [ ] My commits follow the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) Guidelines;

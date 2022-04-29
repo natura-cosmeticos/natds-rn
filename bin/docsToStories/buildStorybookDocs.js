@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 
-const fs = require('fs');
-const Handlebars = require('handlebars');
+const fs = require('fs')
+const Handlebars = require('handlebars')
 
-const docsOutputPath = 'storybook-web/docs/';
+const docsOutputPath = 'storybook-web/docs/'
 
 const template = `
 import { Meta } from '@storybook/addon-docs/blocks';
@@ -11,56 +11,69 @@ import { Meta } from '@storybook/addon-docs/blocks';
 <Meta title="{{title}}" />
 
 {{content}}
-`;
+`
 
 const createStorybookLinks = (content) => {
-  const githubPathRegex = /.(?:\/\w+)*?\/(\w+).md/gm;
+  const githubPathRegex = /.(?:\/\w+)*?\/(\w+).md/gm
 
-  const createPath = (match, offset) => `?path=/docs/documentation-${offset.toLowerCase()}--page`;
+  const createPath = (match, offset) => `?path=/docs/documentation-${offset.toLowerCase()}--page`
 
-  return content.replace(githubPathRegex, createPath);
-};
+  return content.replace(githubPathRegex, createPath)
+}
 
 const buildFilesInfo = () => {
+  const docsFolderFiles = fs.readdirSync('./docs')
+
   const files = [
     {
       fileName: 'README',
-      title: 'Documentation|Getting Started',
+      title: 'Documentation|Getting Started'
     },
     {
       fileName: 'CHANGELOG',
-      title: 'Documentation|Changelog',
+      title: 'Documentation|Changelog'
     },
     {
-      fileName: 'DesignTokens',
-      filePath: 'docs/',
-      title: 'Documentation|Design Tokens',
-    },
-  ];
+      fileName: 'CONTRIBUTING',
+      title: 'Documentation|Contributing'
+    }
+  ]
 
-  return files;
-};
+  docsFolderFiles.forEach((file) => {
+    const fileName = file.replace('.md', '')
+    const excludeFiles = ['Icons', 'MigratingToV3']
+
+    if (!excludeFiles.includes(fileName)) {
+      files.push({
+        fileName,
+        filePath: 'docs/',
+        title: `Documentation|${fileName}`
+      })
+    }
+  })
+
+  return files
+}
 
 const createDocsFromMD = () => {
   buildFilesInfo()
     .forEach(({ fileName, filePath, title }) => {
-      const path = `${filePath || ''}${fileName}.md`;
-      const markdownFile = createStorybookLinks(fs.readFileSync(path, { encoding: 'utf8' }));
+      const path = `${filePath || ''}${fileName}.md`
+      const markdownFile = createStorybookLinks(fs.readFileSync(path, { encoding: 'utf8' }))
 
-      const compile = Handlebars.compile(template, { noEscape: true });
+      const compile = Handlebars.compile(template, { noEscape: true })
 
       const output = compile({
         content: markdownFile,
-        title,
-      });
+        title
+      })
 
       if (!fs.existsSync(docsOutputPath)) {
-        fs.mkdirSync(docsOutputPath, { recursive: true });
+        fs.mkdirSync(docsOutputPath, { recursive: true })
       }
 
-      fs.writeFileSync(`${docsOutputPath}${fileName}.stories.mdx`, output);
-    });
-};
+      fs.writeFileSync(`${docsOutputPath}${fileName}.stories.mdx`, output)
+    })
+}
 
-
-createDocsFromMD();
+createDocsFromMD()

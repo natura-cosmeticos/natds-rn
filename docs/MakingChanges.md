@@ -13,6 +13,8 @@ Create your component boilerplate following de [folder and file conventions](./P
 - Create a `.test.tsx` file and write your first test
 - Create a file for your component and write make the test pass
 
+> To simplify the process, we recommend that you use the PlopJS tool to create your component boilerplate, you can just run the yarn command `yarn generate YOUR_COMPONENT_NAME`. You can find more information about it [here](https://plopjs.com/documentation/#getting-started).
+
 ### Step Two: Create your component storybook files
 
 #### About Storybook
@@ -40,7 +42,7 @@ Open your device or simulator and [run the app](./Installation.md#check-your-ins
 
 ### Step Four: Add documentation to your component
 
-As mentioned earlier, `.stories` represent your web docs file and will render like [this](https://natds-rn.natura.design/?path=/docs/components-button--all)
+As mentioned earlier, `.stories` represent your web docs file and will render like [this](https://natds-rn.natura.design/?path=/docs/components-button--all).
 The information from the example above comes from some places:
 
 **The global story config**

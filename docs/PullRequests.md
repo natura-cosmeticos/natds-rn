@@ -1,11 +1,11 @@
-# Pull Requests
+ # Pull Requests
 
 ## Before opening a pull request
 
 Before opening a pull request, please be sure that:
 
 - your code follows our [contributing guidelines](./ContributionGuidelines.md) and that your [code quality checks](./CodeQuality.md) pass locally.
-- you tested your code on an ios and android and made sure that both are consistent with [our visual guidelines](https://zeroheight.com/08f80f4e1/v/latest/p/46291e-about).
+- you tested your code on an ios and android and made sure that both are consistent with [our visual guidelines](https://ds.natura.design/28db352be/p/45fbb3-index).
 - you documented your code. If it is a component, make sure you documented the props and added examples in you sample app and web documentation. Also check that the documentation is rendering and legible on storybook.
 
 ## Opening a pull request
@@ -16,7 +16,8 @@ Also, a pull request is a trigger for several processes.
 The main processes are:
 
 - The pipeline will run our pull request workflow
-- The design system team will start the review
+- Make a review session with the Design System Team to ensure that your code is in accordance with the documentation and that the visual guidelines are followed
+
 
 ### Pipeline
 
@@ -34,6 +35,3 @@ Our pull request pipeline will run the following steps:
 
     yarn add @naturacosmeticos/natds-rn@7.2.0-DSY-1216.0
     ```
-
-> Are you working with a fork and does not have access to our pipelines?
-> [Contact us](https://github.com/natura-cosmeticos/natds-rn/issues)
