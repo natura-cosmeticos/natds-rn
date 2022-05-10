@@ -8,7 +8,7 @@ import { Highlight } from './Hightlight'
 export const Image:
   FunctionComponent<ImageProps> = forwardRef<ImageNativeProps, ImageProps>((props, ref) => {
     const {
-      variant = 'standard', radius = 'none', fade = 'bottom', children, testID, ...rest
+      variant = 'standard', radius = 'none', fade, children, testID, ...rest
     } = props
 
     return (
@@ -18,8 +18,8 @@ export const Image:
           {children}
         </S.Content>
         )}
-        {variant === 'highlight' && <Highlight fade={fade} />}
-        <S.Image ref={ref} {...rest} variant={variant} />
+        {variant === 'highlight' && <Highlight fade={fade} variant={variant} />}
+        <S.Image ref={ref} {...rest} />
       </S.Wrapper>
     )
   })

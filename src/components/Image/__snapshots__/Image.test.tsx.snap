@@ -47,7 +47,7 @@ exports[`Image Component should render a highlight effect class 1`] = `
               0,
               0,
               1,
-              2046820352,
+              -872415232,
             ]
           }
           gradientTransform={null}
@@ -56,7 +56,7 @@ exports[`Image Component should render a highlight effect class 1`] = `
           x1="0"
           x2="0"
           y1="0"
-          y2="0"
+          y2="1"
         />
       </RNSVGDefs>
       <RNSVGRect
@@ -132,7 +132,6 @@ exports[`Image Component should render with a text children 1`] = `
         },
       ]
     }
-    variant="standard"
   />
 </View>
 `;
@@ -262,7 +261,6 @@ exports[`Image Component should render with bottom fade 1`] = `
         },
       ]
     }
-    variant="highlight"
   />
 </View>
 `;
@@ -315,7 +313,6 @@ exports[`Image Component should render with default variant 1`] = `
         },
       ]
     }
-    variant="standard"
   />
 </View>
 `;
@@ -397,7 +394,7 @@ exports[`Image Component should render with highlight variant 1`] = `
                 0,
                 0,
                 1,
-                -872415232,
+                2046820352,
               ]
             }
             gradientTransform={null}
@@ -406,7 +403,7 @@ exports[`Image Component should render with highlight variant 1`] = `
             x1="0"
             x2="0"
             y1="0"
-            y2="1"
+            y2="0"
           />
         </RNSVGDefs>
         <RNSVGRect
@@ -445,7 +442,6 @@ exports[`Image Component should render with highlight variant 1`] = `
         },
       ]
     }
-    variant="highlight"
   />
 </View>
 `;

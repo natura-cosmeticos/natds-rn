@@ -11,7 +11,7 @@ type FadeProps = {
   theme: Theme;
 } & Pick<ImageBaseProps, 'fade' | 'variant' | 'source'>
 
-export const getFadePosition = (fade = 'bottom') => {
+export const getFadePosition = (fade?) => {
   const positions = {
     left: {
       x1: '1', y1: '0', x2: '0', y2: '0'
@@ -27,7 +27,7 @@ export const getFadePosition = (fade = 'bottom') => {
     }
   }
 
-  return positions[fade] || positions.bottom
+  return positions[fade]
 }
 
 export const isHighlight = (props: ImageBaseProps): props is ImageBaseProps => props.variant === 'highlight'
@@ -38,8 +38,10 @@ const defaultPosition = {
 export const Fade = (props: FadeProps) => {
   const { theme, fade } = props
 
-  const fadePosition = isHighlight(props) ? defaultPosition : getFadePosition(fade)
-  const opacity = isHighlight(props) ? theme.opacity.medium : theme.opacity.veryHigh
+  const fadePosition = isHighlight(props) && fade === undefined
+    ? defaultPosition : getFadePosition(fade)
+  const opacity = isHighlight(props) && fade === undefined
+    ? theme.opacity.medium : theme.opacity.veryHigh
 
   return (
     <View style={{

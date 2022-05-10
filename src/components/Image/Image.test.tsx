@@ -58,11 +58,17 @@ describe('Image Component', () => {
     expect(result).toEqual(0)
   })
 
-  it('should return bottom value when not receive a fade props', () => {
-    const result = getFadePosition()
+  it('should return a object value when receive a bottom fade props', () => {
+    const result = getFadePosition('bottom')
 
-    expect(result).toEqual({
+    expect(result).toMatchObject({
       x1: '0', y1: '0', x2: '0', y2: '1'
     })
+  })
+
+  it('should return a undefined when not receive fade props', () => {
+    const result = getFadePosition()
+
+    expect(result).toEqual(undefined)
   })
 })
