@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Text } from 'react-native'
+import { View, Text, Platform } from 'react-native'
 import { select, text } from '@storybook/addon-knobs'
 import { StoryContainer, StoryWrapper } from '../../common/HelperComponents/StoryContainer'
 
@@ -7,6 +7,8 @@ import { Image } from './Image'
 import NatAvatar from '../../assets/images/nat_avatar.jpg'
 import { Badge } from '../Badge'
 import { Tag } from '../Tag'
+
+const webStoryMessage = Platform.OS === 'web' && ' (the effect can only be rendered within the native platforms)'
 
 const description = () => `
 - - -
@@ -61,7 +63,7 @@ export const Variants = () => (
         <Image source={NatAvatar} />
       </View>
     </StoryContainer>
-    <StoryContainer title="Highlight (the effect can only be rendered within the native platforms)">
+    <StoryContainer title={`Highlight${webStoryMessage}`}>
       <View style={{ width: 100, height: 100 }}>
         <Image source={NatAvatar} variant="highlight" />
       </View>
@@ -90,7 +92,7 @@ export const Radius = () => (
 )
 
 export const Fade = () => (
-  <StoryWrapper title="Fade (the effect can only be rendered within the native platforms)">
+  <StoryWrapper title={`Fade${webStoryMessage}`}>
     <StoryContainer title="Left">
       <View style={{ width: 100, height: 100 }}>
         <Image source={NatAvatar} variant="highlight" fade="left" />

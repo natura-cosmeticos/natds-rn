@@ -27,7 +27,10 @@ type MultiPlatformProps = Pick<ImageNativeProps,
   | 'style'
 >
 
-export interface ImageBaseProps {
+export interface ImageBaseProps extends
+  MultiPlatformProps,
+  IOSPlatformProps,
+  AndroidPlatformProps {
   /**
    * Optional ID for testing.
    */
@@ -63,4 +66,3 @@ export interface ImageBaseProps {
 }
 
 export type ImageProps = ImageBaseProps
-  & (MultiPlatformProps | IOSPlatformProps | AndroidPlatformProps);
