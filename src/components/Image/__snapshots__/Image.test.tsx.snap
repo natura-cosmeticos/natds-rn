@@ -1,0 +1,447 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Image Component should render a highlight effect class 1`] = `
+<View
+  style={
+    Object {
+      "height": "100%",
+      "position": "absolute",
+      "top": 0,
+      "width": "100%",
+      "zIndex": 1,
+    }
+  }
+>
+  <RNSVGSvgView
+    bbHeight="100%"
+    bbWidth="100%"
+    focusable={false}
+    height="100%"
+    style={
+      Array [
+        Object {
+          "backgroundColor": "transparent",
+          "borderWidth": 0,
+        },
+        Object {
+          "bottom": 0,
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        },
+        Object {
+          "flex": 0,
+          "height": "100%",
+          "width": "100%",
+        },
+      ]
+    }
+    width="100%"
+  >
+    <RNSVGGroup>
+      <RNSVGDefs>
+        <RNSVGLinearGradient
+          gradient={
+            Array [
+              0,
+              0,
+              1,
+              -872415232,
+            ]
+          }
+          gradientTransform={null}
+          gradientUnits={0}
+          name="fade_overlay"
+          x1="0"
+          x2="0"
+          y1="0"
+          y2="1"
+        />
+      </RNSVGDefs>
+      <RNSVGRect
+        fill={
+          Array [
+            1,
+            "fade_overlay",
+          ]
+        }
+        height="100%"
+        propList={
+          Array [
+            "fill",
+          ]
+        }
+        width="100%"
+        x={0}
+        y={0}
+      />
+    </RNSVGGroup>
+  </RNSVGSvgView>
+</View>
+`;
+
+exports[`Image Component should render with a text children 1`] = `
+<View
+  radius="none"
+  style={
+    Array [
+      Object {
+        "borderRadius": 0,
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "overflow": "hidden",
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "justifyContent": "center",
+          "marginLeft": 8,
+          "marginRight": 8,
+          "marginTop": 8,
+          "position": "absolute",
+          "top": 0,
+          "zIndex": 2,
+        },
+      ]
+    }
+  >
+    <Text>
+      Hello
+    </Text>
+  </View>
+  <Image
+    source={
+      Object {
+        "testUri": "../../../src/assets/images/nat_avatar.jpg",
+      }
+    }
+    style={
+      Array [
+        Object {
+          "aspectRatio": 1,
+          "flexBasis": 0,
+          "flexGrow": 1,
+          "flexShrink": 1,
+        },
+      ]
+    }
+  />
+</View>
+`;
+
+exports[`Image Component should render with bottom fade 1`] = `
+<View
+  radius="none"
+  style={
+    Array [
+      Object {
+        "borderRadius": 0,
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "overflow": "hidden",
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "justifyContent": "center",
+          "marginLeft": 8,
+          "marginRight": 8,
+          "marginTop": 8,
+          "position": "absolute",
+          "top": 0,
+          "zIndex": 2,
+        },
+      ]
+    }
+  />
+  <View
+    style={
+      Object {
+        "height": "100%",
+        "position": "absolute",
+        "top": 0,
+        "width": "100%",
+        "zIndex": 1,
+      }
+    }
+  >
+    <RNSVGSvgView
+      bbHeight="100%"
+      bbWidth="100%"
+      focusable={false}
+      height="100%"
+      style={
+        Array [
+          Object {
+            "backgroundColor": "transparent",
+            "borderWidth": 0,
+          },
+          Object {
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          Object {
+            "flex": 0,
+            "height": "100%",
+            "width": "100%",
+          },
+        ]
+      }
+      width="100%"
+    >
+      <RNSVGGroup>
+        <RNSVGDefs>
+          <RNSVGLinearGradient
+            gradient={
+              Array [
+                0,
+                0,
+                1,
+                -872415232,
+              ]
+            }
+            gradientTransform={null}
+            gradientUnits={0}
+            name="fade_overlay"
+            x1="0"
+            x2="0"
+            y1="0"
+            y2="1"
+          />
+        </RNSVGDefs>
+        <RNSVGRect
+          fill={
+            Array [
+              1,
+              "fade_overlay",
+            ]
+          }
+          height="100%"
+          propList={
+            Array [
+              "fill",
+            ]
+          }
+          width="100%"
+          x={0}
+          y={0}
+        />
+      </RNSVGGroup>
+    </RNSVGSvgView>
+  </View>
+  <Image
+    source={
+      Object {
+        "testUri": "../../../src/assets/images/nat_avatar.jpg",
+      }
+    }
+    style={
+      Array [
+        Object {
+          "aspectRatio": 1,
+          "flexBasis": 0,
+          "flexGrow": 1,
+          "flexShrink": 1,
+        },
+      ]
+    }
+  />
+</View>
+`;
+
+exports[`Image Component should render with default variant 1`] = `
+<View
+  radius="none"
+  style={
+    Array [
+      Object {
+        "borderRadius": 0,
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "overflow": "hidden",
+      },
+    ]
+  }
+  testID="default"
+>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "justifyContent": "center",
+          "marginLeft": 8,
+          "marginRight": 8,
+          "marginTop": 8,
+          "position": "absolute",
+          "top": 0,
+          "zIndex": 2,
+        },
+      ]
+    }
+  />
+  <Image
+    source={
+      Object {
+        "testUri": "../../../src/assets/images/nat_avatar.jpg",
+      }
+    }
+    style={
+      Array [
+        Object {
+          "aspectRatio": 1,
+          "flexBasis": 0,
+          "flexGrow": 1,
+          "flexShrink": 1,
+        },
+      ]
+    }
+  />
+</View>
+`;
+
+exports[`Image Component should render with highlight variant 1`] = `
+<View
+  radius="none"
+  style={
+    Array [
+      Object {
+        "borderRadius": 0,
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "overflow": "hidden",
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "justifyContent": "center",
+          "marginLeft": 8,
+          "marginRight": 8,
+          "marginTop": 8,
+          "position": "absolute",
+          "top": 0,
+          "zIndex": 2,
+        },
+      ]
+    }
+  />
+  <View
+    style={
+      Object {
+        "height": "100%",
+        "position": "absolute",
+        "top": 0,
+        "width": "100%",
+        "zIndex": 1,
+      }
+    }
+  >
+    <RNSVGSvgView
+      bbHeight="100%"
+      bbWidth="100%"
+      focusable={false}
+      height="100%"
+      style={
+        Array [
+          Object {
+            "backgroundColor": "transparent",
+            "borderWidth": 0,
+          },
+          Object {
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          Object {
+            "flex": 0,
+            "height": "100%",
+            "width": "100%",
+          },
+        ]
+      }
+      width="100%"
+    >
+      <RNSVGGroup>
+        <RNSVGDefs>
+          <RNSVGLinearGradient
+            gradient={
+              Array [
+                0,
+                0,
+                1,
+                2046820352,
+              ]
+            }
+            gradientTransform={null}
+            gradientUnits={0}
+            name="fade_overlay"
+            x1="0"
+            x2="0"
+            y1="0"
+            y2="0"
+          />
+        </RNSVGDefs>
+        <RNSVGRect
+          fill={
+            Array [
+              1,
+              "fade_overlay",
+            ]
+          }
+          height="100%"
+          propList={
+            Array [
+              "fill",
+            ]
+          }
+          width="100%"
+          x={0}
+          y={0}
+        />
+      </RNSVGGroup>
+    </RNSVGSvgView>
+  </View>
+  <Image
+    source={
+      Object {
+        "testUri": "../../../src/assets/images/nat_avatar.jpg",
+      }
+    }
+    style={
+      Array [
+        Object {
+          "aspectRatio": 1,
+          "flexBasis": 0,
+          "flexGrow": 1,
+          "flexShrink": 1,
+        },
+      ]
+    }
+  />
+</View>
+`;
