@@ -40,7 +40,7 @@ With the following attribute statuses:
 export default {
   component: Image,
   parameters: {
-    componentSubtitle: 'Image subtitle',
+    componentSubtitle: 'Informs the user of image content with possible resources for greater interaction',
     docs: {
       extractComponentDescription: description
     }
