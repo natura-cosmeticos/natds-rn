@@ -8,7 +8,7 @@ import NatAvatar from '../../assets/images/nat_avatar.jpg'
 import { Badge } from '../Badge'
 import { Tag } from '../Tag'
 
-const webStoryMessage = Platform.OS === 'web' && ' (the effect can only be rendered within the native platforms)'
+const webStoryMessage = Platform.OS === 'web' ? ' (the effect can only be rendered within the native platforms)' : ''
 
 const description = () => `
 - - -
