@@ -1,5 +1,5 @@
 import React from 'react'
-import { text } from '@storybook/addon-knobs'
+import { select } from '@storybook/addon-knobs'
 import { VerticalStoryContainer } from '../../common/HelperComponents/StoryContainer'
 import { Logo } from './Logo'
 import {
@@ -55,9 +55,9 @@ export default {
 export const Interactive = () => (
   <VerticalStoryContainer title="Interactive">
     <Logo
-      color={text('Color', 'neutral') as LogoColors}
-      model={text('Model', 'a') as NeutralLogoModel}
-      size={text('Size', 'veryHuge') as LogoSizes}
+      color={select('Color', ['neutral', 'primary', 'secondary', 'highlight', 'surface'], 'neutral') as LogoColors}
+      model={select('Model', ['a', 'b'], 'a') as NeutralLogoModel}
+      size={select('Size', ['medium', 'mediumX', 'large', 'largeX', 'largeXX', 'largeXXX', 'huge', 'hugeX', 'hugeXX', 'hugeXXX', 'veryHuge'], 'veryHuge') as LogoSizes}
     />
   </VerticalStoryContainer>
 )
