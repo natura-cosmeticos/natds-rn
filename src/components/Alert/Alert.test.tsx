@@ -1,11 +1,7 @@
 import React from 'react'
-import renderer from 'react-test-renderer'
-import { render } from '@testing-library/react-native'
-import { ThemeProvider } from 'styled-components/native'
 import theme from '../../common/themeSelectors/theme/mock-theme.json'
 import { Alert } from '.'
-import { AlertProps } from './Alert'
-import { Types, Variants } from './Alert.styles'
+import { renderWithTheme } from '../../../test/testHelpers'
 
 jest.mock('../../common/themeSelectors', () => (
   {
@@ -17,65 +13,59 @@ jest.mock('../../common/themeSelectors', () => (
     getSpacingTiny: () => 8
   }))
 
-const renderAlert = (fn, props: Omit<AlertProps, 'theme'>) => (fn(
-  <ThemeProvider theme={theme}>
-    <Alert {...props} />
-  </ThemeProvider>
-))
-
 describe('Alert component', () => {
   it('Should render alert with default props', () => {
-    const defaultProps = ({
-      message: 'Alert text message',
-      testID: 'alert',
-      title: 'title',
-      type: 'info' as Types,
-      variant: 'standard' as Variants
-    })
+    const { toJSON } = renderWithTheme(<Alert testID="alert" title="title" message="Alert text message" />)
 
-    const wrapper = renderAlert(renderer.create, defaultProps)
+    expect(toJSON()).toMatchSnapshot()
+  })
 
-    expect(wrapper.toJSON()).toMatchSnapshot()
+  it('Should render alert with outlined variant', () => {
+    const { toJSON } = renderWithTheme(<Alert variant="outlined" title="title" message="Alert text message" />)
+
+    expect(toJSON()).toMatchSnapshot()
+  })
+
+  it('Should render alert with custom type with outlined variant', () => {
+    const { toJSON } = renderWithTheme(
+      <Alert
+        type="custom"
+        title="title"
+        message="Alert text message"
+        variant="outlined"
+        backgroundColorName="primary"
+        borderColorName="primary"
+        iconName="filled-action-check"
+        iconColorName="link"
+        messageColorName="link"
+        titleColorName="link"
+      />
+    )
+
+    expect(toJSON()).toMatchSnapshot()
   })
 
   it('Should change icon when type changes', () => {
-    const props = ({
-      message: 'Alert text message',
-      title: 'title',
-      type: 'success' as Types,
-      variant: 'standard' as Variants
-    })
+    const { queryByTestId } = renderWithTheme(<Alert type="success" title="title" message="Alert text message" />)
 
-    const { queryByTestId } = renderAlert(render, props)
-    const alertIconProp = queryByTestId('alert-icon')?.props?.children?.props
-
-    expect(alertIconProp).toHaveProperty('name', 'outlined-alert-check')
+    expect(queryByTestId('alert-icon')?.props?.children?.props).toHaveProperty('name', 'outlined-alert-check')
   })
 
   it('Should change alert background color when type changes', () => {
-    const props = ({
-      message: 'Alert text message',
-      title: 'title',
-      type: 'warning' as Types,
-      variant: 'standard' as Variants
-    })
+    const { queryByTestId } = renderWithTheme(<Alert type="warning" title="title" message="Alert text message" />)
 
-    const { queryByTestId } = renderAlert(render, props)
-    const alertBackgroundColor = queryByTestId('alert')?.props?.style[0]
-
-    expect(alertBackgroundColor).toHaveProperty('backgroundColor', '#FBF2DA')
+    expect(queryByTestId('alert')?.props?.style[0]).toHaveProperty('backgroundColor', `${theme.color.warning}29`)
   })
 
   it('Should hide title component when not informed', () => {
-    const props = ({
-      message: 'Alert text message',
-      type: 'info' as Types,
-      variant: 'standard' as Variants
-    })
+    const { queryByTestId } = renderWithTheme(<Alert message="Alert text message" />)
 
-    const { queryByTestId } = renderAlert(render, props)
-    const alertTitle = queryByTestId('alert-content')?.props?.children[0]
+    expect(queryByTestId('alert-content')?.props?.children[0]).toBeFalsy()
+  })
 
-    expect(alertTitle).toBeFalsy()
+  it('Should hide icon component when icon props is false', () => {
+    const { queryByTestId } = renderWithTheme(<Alert icon={false} title="title" message="Alert text message" />)
+
+    expect(queryByTestId('alert-icon')?.props?.children).toBeFalsy()
   })
 })

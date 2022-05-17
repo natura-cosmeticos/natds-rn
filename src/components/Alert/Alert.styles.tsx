@@ -1,70 +1,60 @@
 /* eslint-disable max-len */
-import React, { ReactNode } from 'react'
 import styled from 'styled-components/native'
 import {
   getSpacingSmall,
   getSpacingTiny,
   Theme
 } from '../../common/themeSelectors'
-
-export type Variants = 'standard' | 'outlined' | 'filled';
-export type Types = 'success' | 'error' | 'warning' | 'info';
+import {
+  AlertCustomProps, AlertProps, Types, Variants
+} from './Alert.types'
 
 interface BaseAlert {
   theme: Theme;
 }
 
-interface AlertWrapperProp {
-  theme: Theme;
-  type: Types;
-  variant: Variants;
-  testID?: string;
-  children: ReactNode;
-}
+type AlertWrapperProp = BaseAlert & AlertProps
 
-const getAlertStyles = (type: Types) => {
+const getAlertStyles = (
+  type: Types = 'info', variant: Variants = 'standard', backgroundColorName = 'link', borderColorName = 'link'
+) => (theme: Theme) => {
+  const alertStylesMap = {
+    info: 'link',
+    error: 'alert',
+    success: 'success',
+    warning: 'warning'
+  }
+
   const styles = {
-    error: {
-      backgroundColor: '#F7DDD8'
+    standard: {
+      backgroundColor: `${theme.color[alertStylesMap[type]]}29`
     },
-    info: {
-      backgroundColor: '#D7E6F1'
+    filled: {
+      backgroundColor: `${theme.color[alertStylesMap[type]]}29`
     },
-    success: {
-      backgroundColor: '#E0EBDA'
+    outlined: {
+      backgroundColor: `${theme.color[alertStylesMap[type]]}29`,
+      borderColor: theme.color[alertStylesMap[type]]
     },
-    warning: {
-      backgroundColor: '#FBF2DA'
+    custom: {
+      backgroundColor: `${theme.color[backgroundColorName]}29`,
+      borderColor: theme.color[borderColorName]
     }
   }
 
-  return styles[type]
+  return type !== 'custom' ? styles[variant] : styles.custom
 }
 
-const AlertWrapperComponent = styled.View<AlertWrapperProp>(({ theme, type }: AlertWrapperProp) => ({
-  ...getAlertStyles(type),
+export const AlertWrapper = styled.View<AlertWrapperProp>(({
+  theme, type, variant, backgroundColorName, borderColorName
+}: AlertCustomProps & BaseAlert & AlertWrapperProp) => ({
+  ...getAlertStyles(type, variant, backgroundColorName, borderColorName)(theme),
+  borderWidth: variant === 'outlined' ? 1 : 0,
   borderRadius: theme.alert.borderRadius,
   flexDirection: 'row',
   margin: getSpacingSmall(theme),
   padding: getSpacingSmall(theme)
 }))
-
-export const AlertWrapper: React.FC<AlertWrapperProp> = ({
-  theme,
-  type,
-  variant,
-  testID,
-  children
-}: AlertWrapperProp) => (
-  <AlertWrapperComponent
-    theme={theme}
-    type={type}
-    variant={variant}
-    testID={testID}
-  >
-    {children}
-  </AlertWrapperComponent>
-)
 
 export const AlertContent = styled.View<BaseAlert>(() => ({
   flexDirection: 'column',
@@ -76,8 +66,9 @@ export const IconContent = styled.View<BaseAlert>(({ theme }) => ({
   marginTop: 2
 }))
 
-export const AlertTitle = styled.Text<BaseAlert>(({ theme }) => ({
+export const AlertTitle = styled.Text<AlertWrapperProp>(({ theme, titleColorName = 'neutral900' }: AlertCustomProps & BaseAlert) => ({
   flexWrap: 'wrap',
+  color: theme.color[titleColorName],
   fontFamily: theme.alert.title.primary.fontFamily,
   fontSize: theme.alert.title.fontSize,
   fontWeight: theme.alert.title.primary.fontWeight,
@@ -86,8 +77,8 @@ export const AlertTitle = styled.Text<BaseAlert>(({ theme }) => ({
   marginBottom: getSpacingTiny(theme)
 }))
 
-export const AlertText = styled.Text<BaseAlert>(({ theme }) => ({
-  color: '#333333',
+export const AlertText = styled.Text<AlertWrapperProp>(({ theme, messageColorName = 'neutral900' }: AlertCustomProps & BaseAlert) => ({
+  color: theme.color[messageColorName],
   fontFamily: theme.alert.content.primary.fontFamily,
   fontSize: theme.alert.content.fontSize,
   fontWeight: theme.alert.content.primary.fontWeight,
