@@ -56,6 +56,14 @@ const variantsMap = {
   filled: 'filled'
 }
 
+export const Default = () => (
+  <StoryWrapper title="Default">
+    <StoryContainer title="Standard">
+      <Alert title="Title" message={alertDefinition} />
+    </StoryContainer>
+  </StoryWrapper>
+)
+
 export const Variants = () => (
   <StoryWrapper title="Variants">
     <StoryContainer title="Standard">
@@ -99,7 +107,17 @@ export const Types = () => (
     </StoryContainer>
 
     <StoryContainer title="Custom">
-      <Alert type="custom" title="Title" message={alertDefinition} />
+      <Alert
+        type="custom"
+        title="Title"
+        message={alertDefinition}
+        variant="outlined"
+        backgroundColorName="secondaryDark"
+        borderColorName="secondaryDark"
+        titleColorName="secondaryDark"
+        messageColorName="secondaryDark"
+        iconColorName="secondaryDark"
+      />
     </StoryContainer>
   </StoryWrapper>
 )
