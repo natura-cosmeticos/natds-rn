@@ -14,10 +14,10 @@ const description = () => `
 
 With the following attribute status:
 
-- **Type:**
-  - ✅ \`contained\`
+- **Type:** (available as variant)
+  - ✅ \`contained\` (available as standard)
   - ✅ \`outlined\`
-- **Color:**
+- **Color:** (available as type)
   - ✅ \`success\`
   - ✅ \`error\`
   - ✅ \`warning\`
@@ -83,6 +83,18 @@ export const Icon = () => (
     </StoryContainer>
 
     <StoryContainer title="With Icon">
+      <Alert title="Title" message={alertDefinition} />
+    </StoryContainer>
+  </StoryWrapper>
+)
+
+export const Title = () => (
+  <StoryWrapper title="Title">
+    <StoryContainer title="Without Title">
+      <Alert message={alertDefinition} />
+    </StoryContainer>
+
+    <StoryContainer title="With Title">
       <Alert title="Title" message={alertDefinition} />
     </StoryContainer>
   </StoryWrapper>
