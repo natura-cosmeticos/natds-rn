@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [7.29.0](https://github.com/natura-cosmeticos/natds-rn/compare/v7.28.0...v7.29.0) (2022-05-20)
+
+
+### Features
+
+* **alert:** update alert attributes ([#275](https://github.com/natura-cosmeticos/natds-rn/issues/275)) ([7d71f08](https://github.com/natura-cosmeticos/natds-rn/commit/7d71f08c9156e9e4dcc48d18d48820ea9a54133b))
+
 ## [7.28.0](https://github.com/natura-cosmeticos/natds-rn/compare/v7.26.8...v7.28.0) (2022-05-13)
 
 
