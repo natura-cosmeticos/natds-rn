@@ -1,45 +1,16 @@
+/* eslint-disable react/destructuring-assignment */
 import { IconName } from '@naturacosmeticos/natds-icons'
 import React from 'react'
-import { withTheme } from 'styled-components/native'
-import { Theme } from '../../common/themeSelectors'
 import { Icon } from '../Icon/Icon'
 
 import {
   AlertWrapper,
   AlertTitle,
   AlertText,
-  Variants,
-  Types,
   AlertContent,
   IconContent
 } from './Alert.styles'
-
-export interface AlertProps {
-  /**
-   * Default theme
-   */
-  theme: Theme;
-  /**
-    * Variant 'standard' | 'outlined' | 'filled'
-    */
-  variant: Variants;
-  /**
-    * Color types 'success' | 'error' | 'warning' | 'info'
-    */
-  type: Types;
-  /**
-    * Alert title
-    */
-  title?: string;
-  /**
-    * Alert message
-    */
-  message: string;
-  /**
-   * Optional ID for testing
-   */
-  testID?: string;
-}
+import { AlertCustomProps, AlertProps, Types } from './Alert.types'
 
 const getIcon = (type: Types) => {
   const icons: Record<Types, { name: IconName }> = {
@@ -54,29 +25,41 @@ const getIcon = (type: Types) => {
     },
     warning: {
       name: 'outlined-alert-warning'
+    },
+    custom: {
+      name: 'outlined-default-mockup'
     }
   }
 
   return icons[type]
 }
 
-const AlertComponent = ({
-  testID = 'alert',
-  theme,
-  variant,
-  type,
-  title,
-  message
-}: AlertProps) => (
-  <AlertWrapper theme={theme} testID={testID} variant={variant} type={type}>
-    <IconContent testID={`${testID}-icon`}>
-      <Icon color="#333333" name={getIcon(type).name} accessibilityRole="imagebutton" />
-    </IconContent>
-    <AlertContent testID={`${testID}-content`}>
-      {!!title && <AlertTitle>{title}</AlertTitle>}
-      <AlertText>{message}</AlertText>
-    </AlertContent>
-  </AlertWrapper>
-)
+export const isAlertCustom = (props: AlertProps): props is AlertCustomProps => props.type === 'custom'
 
-export const Alert = withTheme(AlertComponent)
+export const Alert = (props: AlertProps) => {
+  const {
+    testID = 'alert',
+    variant = 'standard',
+    type = 'info',
+    icon = true,
+    title,
+    message
+  } = props
+
+  return (
+    <AlertWrapper
+      testID={testID}
+      variant={variant}
+      type={type}
+      {...props}
+    >
+      <IconContent testID={`${testID}-icon`}>
+        {icon && <Icon color={isAlertCustom(props) ? props.iconColorName : 'neutral900'} name={isAlertCustom(props) ? props.iconName : getIcon(type).name} accessibilityRole="imagebutton" />}
+      </IconContent>
+      <AlertContent testID={`${testID}-content`}>
+        {!!title && <AlertTitle {...props}>{title}</AlertTitle>}
+        <AlertText {...props}>{message}</AlertText>
+      </AlertContent>
+    </AlertWrapper>
+  )
+}

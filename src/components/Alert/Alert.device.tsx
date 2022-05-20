@@ -1,6 +1,12 @@
 import { storiesOf } from '@storybook/react-native'
-import { All, Interactive } from './Alert.stories'
+import {
+  Default, Variants, Types, Icon, Title, Interactive
+} from './Alert.stories'
 
 storiesOf('Alert', module)
-  .add('Variants', All)
+  .add('Default', Default)
+  .add('Variants', Variants)
+  .add('Icon', Icon)
+  .add('Title', Title)
+  .add('Types', Types)
   .add('Interactive', Interactive)
