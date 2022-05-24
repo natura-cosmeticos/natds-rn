@@ -1,7 +1,7 @@
 import React from 'react'
 import { StoryContainer } from '../../common/HelperComponents/StoryContainer'
 
-import Select from './Select'
+import { Select } from './Select'
 
 const description = () => `
 - - -

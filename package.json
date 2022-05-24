@@ -29,8 +29,9 @@
     "README.md",
     "CHANGELOG.mg",
     "tools",
-    "react-native-component.podspec",
+    "RNNComponent.podspec",
     "android/app/src/main/java/com/naturareactnativecomponents",
+    "android/app/src/main/build.gradle",
     "ios/NaturaReactNativeComponents"
   ],
   "scripts": {
