@@ -10,7 +10,9 @@ target 'NaturaReactComponents' do
     :path => config[:reactNativePath],
     # to enable hermes on iOS, change `false` to `true` and then install pods
     :hermes_enabled => false
-  )
+    )
+
+  pod 'react-native-component', :path => '../'
 
   target 'NaturaReactComponentsTests' do
     inherit! :complete
