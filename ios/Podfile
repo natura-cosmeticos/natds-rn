@@ -12,7 +12,7 @@ target 'NaturaReactComponents' do
     :hermes_enabled => false
     )
 
-  pod 'react-native-component', :path => '../'
+  pod 'RNNComponent', :path => '../'
 
   target 'NaturaReactComponentsTests' do
     inherit! :complete
