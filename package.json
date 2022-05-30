@@ -31,7 +31,7 @@
     "tools",
     "RNCNatura-react-native.podspec",
     "ios/NaturaReactNativeComponents",
-    "android/app/src/main/AndroidManifest.xml",
+    "android/app/src/main/AndroidManifest.naturareactcomponent.xml",
     "android/build.naturareactcomponent.gradle",
     "android/app/src/main/java/com/naturareactnativecomponents"
   ],
