@@ -30,7 +30,8 @@
     "CHANGELOG.mg",
     "tools",
     "RNCNatura-react-native.podspec",
-    "android/src",
+    "android/src/main",
+    "android/src/build.gradle android/",
     "ios/NaturaReactNativeComponents"
   ],
   "scripts": {
