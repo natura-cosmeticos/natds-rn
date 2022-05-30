@@ -1,4 +1,4 @@
-package com.naturareactnativecomponents;
+package com.naturareactnativecomponents.select;
 
 import android.graphics.Color;
 import android.view.View;
