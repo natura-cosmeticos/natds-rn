@@ -30,9 +30,10 @@
     "CHANGELOG.mg",
     "tools",
     "RNCNatura-react-native.podspec",
-    "android/src/main",
-    "android/src/build.gradle android/",
-    "ios/NaturaReactNativeComponents"
+    "ios/NaturaReactNativeComponents",
+    "android/app/src/main/AndroidManifest.xml",
+    "android/build.naturareactcomponent.gradle",
+    "android/app/src/main/java/com/naturareactnativecomponents"
   ],
   "scripts": {
     "android": "concurrently --names 'auto-import-stories,react-native' 'rnstl' 'react-native run-android'",
