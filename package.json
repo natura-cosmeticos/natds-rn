@@ -30,8 +30,8 @@
     "CHANGELOG.mg",
     "tools",
     "RNCNatura-react-native.podspec",
-    "src/android",
-    "src/ios"
+    "src/android/ /android",
+    "src/ios/"
   ],
   "scripts": {
     "android": "concurrently --names 'auto-import-stories,react-native' 'rnstl' 'react-native run-android'",
