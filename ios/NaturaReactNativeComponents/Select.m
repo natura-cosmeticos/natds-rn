@@ -11,7 +11,7 @@
 
 @interface RCT_EXTERN_MODULE(SelectManager, RCTViewManager)
 
-RCT_EXPORT_VIEW_PROPERTY(color, NSString)
+RCT_EXPORT_VIEW_PROPERTY(placeHolder, NSString)
 
 @end
 

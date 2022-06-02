@@ -18,25 +18,58 @@ class SelectManager: RCTViewManager {
 
 class Select : UIView {
 
-  @objc var color: String = "" {
+  @objc var placeHolder: String = "" {
     didSet {
-      self.backgroundColor = hexStringToUIColor(hexColor: color)
+      self.placeholder = placeHolder
     }
   }
 
-  func hexStringToUIColor(hexColor: String) -> UIColor {
-    let stringScanner = Scanner(string: hexColor)
+  let data: [String] = ["Item1", "Item2"]
 
-    if(hexColor.hasPrefix("#")) {
-      stringScanner.scanLocation = 1
-    }
-    var color: UInt32 = 0
-    stringScanner.scanHexInt32(&color)
+  let textField: UITextField = {
+    let textField = UITextField()
+    textField.translatesAutoresizingMaskIntoConstraints = false
+    return textField
+  }()
 
-    let r = CGFloat(Int(color >> 16) & 0x000000FF)
-    let g = CGFloat(Int(color >> 8) & 0x000000FF)
-    let b = CGFloat(Int(color) & 0x000000FF)
+  // lazy let pickerView: UIPickerView = {
+  //   let pickerView = UIPickerView()
+  //   pickerView.delegate = self
+  //   pickerView.dataSource = self
+  //   return pickerView
+  // }()
 
-    return UIColor(red: r / 255.0, green: g / 255.0, blue: b / 255.0, alpha: 1)
+  // init() {
+  //   super.init(frame: .zero)
+  //   textField.inputView = pickerView
+  //   self.addSubview(textField)
+
+  //   self.widthAnchor.constraint(equalToConstant: 70).isActive = true
+  //   self.heightAnchor.constraint(equalToConstant: 25).isActive = true
+
+  //   textField.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
+  //   textField.leadingAnchor.constraint(equalTo: self.leadingAnchor).isActive = true
+  //   textField.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
+  //   textField.trailingAnchor.constraint(equalTo: self.trailingAnchor).isActive = true
+  // }
+
+  // required init?(coder: NSCoder) {
+  //   fatalError("init(coder:) has not been implemented")
+  // }
+
+  func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+    return data[row]
+  }
+
+  func numberOfComponents(in pickerView: UIPickerView) -> Int {
+    return 1
+  }
+
+  func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+    return data.count
+  }
+
+  func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+    textField.text = data[row]
   }
 }

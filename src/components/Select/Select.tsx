@@ -8,8 +8,8 @@ import {
 } from 'react-native'
 
 export type SelectProps = {
-  color: string;
-  style: ViewStyle;
+  placeHolder?: string;
+  style?: ViewStyle;
 };
 
 const styles = StyleSheet.create({
@@ -19,9 +19,8 @@ const styles = StyleSheet.create({
     justifyContent: 'center'
   },
   box: {
-    width: 60,
-    height: 60,
-    marginVertical: 20
+    width: 260,
+    height: 20
   }
 })
 
@@ -40,6 +39,6 @@ const NativeComponent = UIManager.getViewManagerConfig(REACT_CLASS) != null
 
 export const Select = () => (
   <View style={styles.container}>
-    <NativeComponent color="#32a852" style={styles.box} />
+    <NativeComponent placeHolder="Placeholder..." style={styles.box} />
   </View>
 )
