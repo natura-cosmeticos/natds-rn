@@ -12,6 +12,8 @@ target 'NaturaReactComponents' do
     :hermes_enabled => false
   )
 
+  pod 'naturareactnativecomponents', :path => '..'
+
   target 'NaturaReactComponentsTests' do
     inherit! :complete
     # Pods for testing

@@ -28,7 +28,10 @@
     "build/lib",
     "README.md",
     "CHANGELOG.mg",
-    "tools"
+    "tools",
+    "naturareactnativecomponents.podspec",
+    "ios/NaturaReactNativeComponents",
+    "ios/NaturaReactNativeComponents/Naturareactnativecomponents.xcodeproj/project.xcworkspace"
   ],
   "scripts": {
     "android": "concurrently --names 'auto-import-stories,react-native' 'rnstl' 'react-native run-android'",
