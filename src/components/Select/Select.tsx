@@ -10,6 +10,7 @@ import {
 export type SelectProps = {
   placeHolder?: string;
   style?: ViewStyle;
+  items?: Array<string>;
 };
 
 const styles = StyleSheet.create({
@@ -39,6 +40,10 @@ const NativeComponent = UIManager.getViewManagerConfig(REACT_CLASS) != null
 
 export const Select = () => (
   <View style={styles.container}>
-    <NativeComponent placeHolder="Placeholder..." style={styles.box} />
+    <NativeComponent
+      placeHolder="Placeholder..."
+      style={styles.box}
+      items={['Item1', 'Item2']}
+    />
   </View>
 )
