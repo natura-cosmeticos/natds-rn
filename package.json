@@ -31,7 +31,8 @@
     "tools",
     "naturareactnativecomponents.podspec",
     "ios/NaturaReactNativeComponents",
-    "ios/NaturaReactNativeComponents/Naturareactnativecomponents.xcodeproj/project.xcworkspace"
+    "!ios/NaturaReactNativeComponents/Naturareactnativecomponents.xcodeproj/project.xcworkspace",
+    "android/app/src/main/java/com/naturareactnativecomponents"
   ],
   "scripts": {
     "android": "concurrently --names 'auto-import-stories,react-native' 'rnstl' 'react-native run-android'",
