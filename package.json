@@ -67,7 +67,7 @@
   },
   "dependencies": {
     "@naturacosmeticos/natds-icons": "^1.11.3",
-    "@naturacosmeticos/natds-themes": "^0.29.4",
+    "@naturacosmeticos/natds-themes": "^0.45.2",
     "react-native-gesture-handler": "^1.10.3",
     "react-native-svg": "^12.1.1"
   },
@@ -154,8 +154,8 @@
   "peerDependencies": {
     "react": ">=16.8.0",
     "react-native": ">=0.59.10",
-    "styled-components": ">=5",
-    "react-native-svg": ">=12.1.1"
+    "react-native-svg": ">=12.1.1",
+    "styled-components": ">=5"
   },
   "engines": {
     "node": ">=12"
