@@ -42,6 +42,31 @@ npm install --save @naturacosmeticos/natds-rn
 
 yarn add @naturacosmeticos/natds-rn
 ```
+## Extra configuration (version > 7.29.0)
+
+For native components within the application, we will need some extra configuration. If your dependency is greater than 7.29.0, you will need to do this step.
+
+## Android
+
+Import the androidLink module, inside your react-native.config.js file which is located in the project root. This will ensure that the native android dependencies are correct and that the autolink works correctly.
+
+```javascript
+require('@naturacosmeticos/natds-rn/tools/androidLink');
+```
+
+After configuring, run the command:
+
+```sh
+npx react native link
+```
+
+## IOS
+
+To include the native dependency, just go to the `ios` folder, located at the root of the application and run the command:
+
+```sh
+pod install
+```
 
 **Dependencies**
 
