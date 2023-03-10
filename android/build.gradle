@@ -22,7 +22,7 @@ buildscript {
 
 allprojects {
     repositories {
-         exclusiveContent {
+        exclusiveContent {
             // We get React Native's Android binaries exclusively through npm,
             // from a local Maven repo inside node_modules/react-native/.
             // (The use of exclusiveContent prevents looking elsewhere like Maven Central
