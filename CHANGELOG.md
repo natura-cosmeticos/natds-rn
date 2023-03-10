@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [7.30.1](https://github.com/natura-cosmeticos/natds-rn/compare/v7.29.0...v7.30.1) (2023-03-10)
+
+
+### Bug Fixes
+
+* add exclusiveContent in repositories ([04cd90f](https://github.com/natura-cosmeticos/natds-rn/commit/04cd90fc33bd26e2b34e688cae1c709600e4e6e9))
+* **logo:**  v0.45.2 ajust logo consultoriaDeBeleza ([6dd0893](https://github.com/natura-cosmeticos/natds-rn/commit/6dd08937d1214fc61b79ab8a286cdd00606903ac))
+* **natds-themes:**  resolve colors mock-theme ([8ec16b6](https://github.com/natura-cosmeticos/natds-rn/commit/8ec16b644dcd34ee0e0bd8ceea8c0fa684175999))
+
 ## [7.29.0](https://github.com/natura-cosmeticos/natds-rn/compare/v7.28.0...v7.29.0) (2022-05-20)
 
 
