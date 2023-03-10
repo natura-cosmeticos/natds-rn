@@ -162,14 +162,14 @@
                   "label": "#333333"
               },
               "hover": {
-                  "background": "#ef8426",
+                  "background": "#cd902c",
                   "border": "#FFFFFF00",
-                  "label": "#333333"
+                  "label": "#ffffff"
               },
               "focus": {
                   "background": "#A67423",
                   "border": "#FFFFFF00",
-                  "label": "#333333"
+                  "label": "#ffffff"
               }
           }
       },
@@ -598,7 +598,7 @@
               },
               "hover": {
                   "primary": {
-                      "background": "#ef8426",
+                      "background": "#cd902c",
                       "border": "#FFFFFF00",
                       "label": "#333333"
                   },
@@ -651,7 +651,7 @@
               "hover": {
                   "primary": {
                       "background": "#f1f3f5",
-                      "border": "#ef8426",
+                      "border": "#cd902c",
                       "label": "#333333"
                   },
                   "neutral": {
@@ -663,7 +663,7 @@
               "focus": {
                   "primary": {
                       "background": "#e9ecef",
-                      "border": "#ef8426",
+                      "border": "#cd902c",
                       "label": "#333333"
                   },
                   "neutral": {
@@ -930,7 +930,7 @@
       "fontFamily": {
           "primary": "Roboto",
           "secondary": "sans-serif",
-          "branding": "Helvetica Now",
+          "branding": "Roboto",
           "code": "Roboto Mono"
       },
       "fontWeight": {
@@ -970,50 +970,54 @@
       "large": 48,
       "xLarge": 64
   },
-  "color": {
-      "neutral50": "#f8f9fa",
-      "neutral100": "#f1f3f5",
-      "neutral200": "#e9ecef",
-      "neutral300": "#dee2e6",
-      "neutral400": "#ced4da",
-      "neutral500": "#adb5bd",
-      "neutral600": "#868e96",
-      "neutral700": "#495057",
-      "neutral800": "#343a40",
-      "neutral900": "#212529",
-      "primary": "#f4ab34",
-      "onPrimary": "#333333",
-      "primaryLight": "#fefde8",
-      "onPrimaryLight": "#333333",
-      "primaryLightest": "#F8C675",
-      "onPrimaryLightest": "#333333",
-      "primaryDark": "#ef8426",
-      "onPrimaryDark": "#333333",
-      "primaryDarkest": "#A67423",
-      "onPrimaryDarkest": "#333333",
-      "secondary": "#ff6b0b",
-      "onSecondary": "#000000",
-      "secondaryLight": "#fff8e1",
-      "onSecondaryLight": "#000000",
-      "secondaryDark": "#ff5808",
-      "onSecondaryDark": "#000000",
-      "background": "#fafafa",
-      "onBackground": "#333333",
-      "surface": "#ffffff",
-      "onSurface": "#333333",
-      "highlight": "#000000",
-      "highEmphasis": "#333333",
-      "mediumEmphasis": "#777777",
-      "lowEmphasis": "#bbbbbb",
-      "link": "#227bbd",
-      "onLink": "#ffffff",
-      "success": "#569a32",
-      "onSuccess": "#ffffff",
-      "warning": "#fcc433",
-      "onWarning": "#333333",
-      "alert": "#e74627",
-      "onAlert": "#ffffff"
-  },
+  "color":{
+    "neutral50": "#f8f9fa",
+    "neutral100": "#f1f3f5",
+    "neutral200": "#e9ecef",
+    "neutral300": "#dee2e6",
+    "neutral400": "#ced4da",
+    "neutral500": "#adb5bd",
+    "neutral600": "#868e96",
+    "neutral700": "#495057",
+    "neutral800": "#343a40",
+    "neutral900": "#212529",
+    "primary": "#f4ab34",
+    "onPrimary": "#333333",
+    "primaryLight": "#f6b854",
+    "onPrimaryLight": "#333333",
+    "primaryLightest": "#F8C675",
+    "onPrimaryLightest": "#333333",
+    "primaryDark": "#cd902c",
+    "onPrimaryDark": "#ffffff",
+    "primaryDarkest": "#A67423",
+    "onPrimaryDarkest": "#ffffff",
+    "secondary": "#ff6b0b",
+    "onSecondary": "#000000",
+    "secondaryLight": "#ff8332",
+    "onSecondaryLight": "#000000",
+    "secondaryLightest": "#ff9a59",
+    "onSecondaryLightest": "#000000",
+    "secondaryDark": "#d65a09",
+    "onSecondaryDark": "#ffffff",
+    "secondaryDarkest": "#ad4907",
+    "onSecondaryDarkest": "#ffffff",
+    "background": "#fafafa",
+    "onBackground": "#333333",
+    "surface": "#ffffff",
+    "onSurface": "#333333",
+    "highlight": "#000000",
+    "highEmphasis": "#333333",
+    "mediumEmphasis": "#777777",
+    "lowEmphasis": "#bbbbbb",
+    "link": "#227bbd",
+    "onLink": "#ffffff",
+    "success": "#569a32",
+    "onSuccess": "#ffffff",
+    "warning": "#fcc433",
+    "onWarning": "#333333",
+    "alert": "#e74627",
+    "onAlert": "#ffffff"
+},
   "asset": {
       "font": {
           "file": {
