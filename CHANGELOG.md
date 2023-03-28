@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [7.32.0](https://github.com/natura-cosmeticos/natds-rn/compare/v7.30.1...v7.32.0) (2023-03-28)
+
+
+### Features
+
+* **natds-themes:** add casaEestilo ([33be4f4](https://github.com/natura-cosmeticos/natds-rn/commit/33be4f4e1a48c69a7da5bd7b801fab972f490316))
+
 ### [7.30.1](https://github.com/natura-cosmeticos/natds-rn/compare/v7.29.0...v7.30.1) (2023-03-10)
 
 
