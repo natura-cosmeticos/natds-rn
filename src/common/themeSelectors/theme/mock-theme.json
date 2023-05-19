@@ -939,19 +939,19 @@
       },
       "display": {
           "fontFamily": "Helvetica Now Display",
-          "fontWeight": 700
+          "fontWeight": 900
       },
       "headline": {
           "fontFamily": "Helvetica Now Display",
-          "fontWeight": 500
+          "fontWeight": 700
       },
       "body": {
           "regular": {
-              "fontFamily": "Helvetica Now Display",
+              "fontFamily": "Helvetica Now Text",
               "fontWeight": 400
           },
           "bold": {
-              "fontFamily": "Helvetica Now Display",
+              "fontFamily": "Helvetica Now Text",
               "fontWeight": 700
           }
       },

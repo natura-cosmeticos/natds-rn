@@ -2031,10 +2031,10 @@
   resolved "https://registry.yarnpkg.com/@naturacosmeticos/natds-icons/-/natds-icons-1.11.3.tgz#e7de13d8fde2c44f9c68e73de75f02906fefdfb8"
   integrity sha512-NQVrs5aUaCc7eyrPRh5TlgRYZqT0SXDHq/VVcWUG/R7j9wzFFvCs/IbcAjeNJR4cVNDqq2ruAIl9ZnHanw5Qpw==
 
-"@naturacosmeticos/natds-themes@^0.50.0":
-  version "0.50.0"
-  resolved "https://registry.yarnpkg.com/@naturacosmeticos/natds-themes/-/natds-themes-0.50.0.tgz#d8f1708bd491db6efd815da445662716020e7ed6"
-  integrity sha512-vSvM6FixKeoTxCc/G8OoZV/Z7LO1dNMaxv0f5pKGfHx/K2Uuvj8fdE64GT0q9TOTO9ULk5ueWIEiJM5ZuM2uYA==
+"@naturacosmeticos/natds-themes@^0.53.0":
+  version "0.53.0"
+  resolved "https://registry.yarnpkg.com/@naturacosmeticos/natds-themes/-/natds-themes-0.53.0.tgz#dd7d168c6bb3aa202f07788853bf7b63f6fb8d59"
+  integrity sha512-zq1SJtyU+hnQATKmMXXiNpH8mAtAEc9H3vqxUAUB7iwGolmZQsY/V4EiQjDiPAJK8GZQ/wUnm2zNXg3+E7mmFw==
   dependencies:
     open-color "^1.8.0"
     svg2vectordrawable "2.6.26"
