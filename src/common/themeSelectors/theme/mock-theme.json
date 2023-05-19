@@ -938,20 +938,20 @@
           "medium": 500
       },
       "display": {
-          "fontFamily": "Helvetica Now Display",
-          "fontWeight": 900
+          "fontFamily": "Roboto",
+          "fontWeight": 700
       },
       "headline": {
-          "fontFamily": "Helvetica Now Display",
-          "fontWeight": 700
+          "fontFamily": "Roboto",
+          "fontWeight": 500
       },
       "body": {
           "regular": {
-              "fontFamily": "Helvetica Now Text",
+              "fontFamily": "Roboto",
               "fontWeight": 400
           },
           "bold": {
-              "fontFamily": "Helvetica Now Text",
+              "fontFamily": "Roboto",
               "fontWeight": 700
           }
       },
@@ -1021,11 +1021,11 @@
   "asset": {
       "font": {
           "file": {
-              "display": "helvetica_now_display_bd",
-              "headline": "helvetica_now_display_md",
+              "display": "roboto_regular",
+              "headline": "roboto_regular",
               "body": {
-                  "regular": "helvetica_now_display_regular",
-                  "bold": "helvetica_now_display_bd"
+                  "regular": "roboto_regular",
+                  "bold": "roboto_medium"
               }
           }
       },
