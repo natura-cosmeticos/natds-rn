@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [7.34.0](https://github.com/natura-cosmeticos/natds-rn/compare/v7.32.0...v7.34.0) (2023-05-19)
+
+
+### Features
+
+* **natds-rn:** add new theme avon_v2 ([6538713](https://github.com/natura-cosmeticos/natds-rn/commit/653871323d2da0d0fe7729be7f99e9e73dffba8f))
+
 ## [7.32.0](https://github.com/natura-cosmeticos/natds-rn/compare/v7.30.1...v7.32.0) (2023-03-28)
 
 
