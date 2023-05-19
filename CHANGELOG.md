@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [7.35.0](https://github.com/natura-cosmeticos/natds-rn/compare/v7.34.0...v7.35.0) (2023-05-19)
+
+
+### Features
+
+* **natds-rn:** remove fontfamily Helvetica ([aeeda8f](https://github.com/natura-cosmeticos/natds-rn/commit/aeeda8fa16bf659977e0d07ee1cab1d6e423b528))
+
 ## [7.34.0](https://github.com/natura-cosmeticos/natds-rn/compare/v7.32.0...v7.34.0) (2023-05-19)
 
 
