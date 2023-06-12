@@ -1,4 +1,7 @@
+/* eslint-disable max-len */
+/* eslint-disable complexity */
 import styled from 'styled-components/native'
+import { BrandTypes } from '../../common/brandTypes/brandTypes'
 import {
   Theme,
   getColorLowEmphasis,
@@ -6,7 +9,8 @@ import {
   getColorOnBackground,
   getColorPrimary,
   getColorSecondary,
-  getSpacingTiny
+  getSpacingTiny,
+  buildTheme
 } from '../../common/themeSelectors'
 import { CheckboxColors, CheckboxProps } from './Checkbox.types'
 
@@ -20,17 +24,31 @@ function getBoxColor(
   selected = false,
   disabled: boolean,
   color: CheckboxColors,
-  theme: Theme
+  theme: Theme,
+  brand?: BrandTypes,
+  mode?: 'light' | 'dark'
 ) {
   if (disabled) {
     return getColorLowEmphasis(theme)
   }
 
   if (selected) {
+    if (brand) {
+      const themeSwitch = buildTheme(brand, mode ?? 'light')
+      return color === 'secondary' ? getColorSecondary(themeSwitch) : getColorPrimary(themeSwitch)
+    }
     return color === 'secondary' ? getColorSecondary(theme) : getColorPrimary(theme)
   }
 
   return getColorMediumEmphasis(theme)
+}
+
+const getlabelColor = (theme: Theme, brand: BrandTypes, mode: 'light' | 'dark') => {
+  if (brand) {
+    const themeSelectLabel = buildTheme(brand, mode ?? 'light')
+    return getColorOnBackground(themeSelectLabel)
+  }
+  return getColorOnBackground(theme)
 }
 
 export const Container = styled.TouchableOpacity.attrs({
@@ -40,8 +58,10 @@ export const Container = styled.TouchableOpacity.attrs({
   align-items: center;
 `
 
-export const Label = styled.Text<{ theme: Theme; disabled: boolean }>(({ theme, disabled }) => ({
-  color: disabled ? getColorLowEmphasis(theme) : getColorOnBackground(theme),
+export const Label = styled.Text<{ theme: Theme; disabled: boolean; brand: BrandTypes; mode: 'light' | 'dark' }>(({
+  theme, disabled, brand, mode
+}) => ({
+  color: disabled ? getColorLowEmphasis(theme) : getlabelColor(theme, brand, mode),
   fontFamily: theme.checkbox.label.primary.fontFamily,
   fontSize: theme.checkbox.label.fontSize,
   fontWeight: theme.checkbox.label.primary.fontWeight,
@@ -53,12 +73,14 @@ export const Label = styled.Text<{ theme: Theme; disabled: boolean }>(({ theme, 
 export const Box = styled.View<BoxStyleProps>(({
   theme,
   color = 'primary',
+  brand,
+  mode,
   selected,
   disabled = false
 }: BoxStyleProps) => ({
   alignItems: 'center',
-  backgroundColor: selected ? getBoxColor(selected, disabled, color, theme) : 'transparent',
-  borderColor: getBoxColor(selected, disabled, color, theme),
+  backgroundColor: selected ? getBoxColor(selected, disabled, color, theme, brand, mode) : 'transparent',
+  borderColor: getBoxColor(selected, disabled, color, theme, brand, mode),
   borderRadius: theme.checkbox.borderRadius,
   borderWidth: 2,
   height: 20,
