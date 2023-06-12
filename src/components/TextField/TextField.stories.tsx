@@ -73,6 +73,34 @@ export const Default = () => {
     </StoryContainer>
   )
 }
+export const Brand = () => {
+  const [value, setValue] = React.useState('')
+
+  return (
+    <StoryWrapper title="Brand">
+      <StoryContainer title="Avon">
+        <TextField
+          brand="avon"
+          helperText="Helper text"
+          label="Label"
+          onChangeText={(text) => setValue(text)}
+          placeholder="Placeholder"
+          value={value}
+        />
+      </StoryContainer>
+      <StoryContainer title="Avon v2">
+        <TextField
+          brand="avon_v2"
+          helperText="Helper text"
+          label="Label"
+          onChangeText={(text) => setValue(text)}
+          placeholder="Placeholder"
+          value={value}
+        />
+      </StoryContainer>
+    </StoryWrapper>
+  )
+}
 
 export const Sizes = () => {
   const [mediumXValue, setMediumXValue] = React.useState('This is the default size: MediumX')
