@@ -3,7 +3,8 @@ import {
   Default,
   Variants,
   Sizes,
-  Interactive
+  Interactive,
+  Brands
 } from './Avatar.stories'
 
 storiesOf('Avatar', module)
@@ -11,3 +12,4 @@ storiesOf('Avatar', module)
   .add('Variants', Variants)
   .add('Sizes', Sizes)
   .add('Interactive', Interactive)
+  .add('Brands', Brands)

@@ -3,7 +3,8 @@ import {
   Default,
   Interactive,
   Sizes,
-  Variants
+  Variants,
+  Brand
 } from './Button.stories'
 
 storiesOf('Button', module)
@@ -11,3 +12,4 @@ storiesOf('Button', module)
   .add('Variants', Variants)
   .add('Sizes', Sizes)
   .add('Interactive', Interactive)
+  .add('Brand', Brand)

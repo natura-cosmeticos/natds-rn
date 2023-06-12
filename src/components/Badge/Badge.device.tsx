@@ -3,7 +3,8 @@ import {
   Default,
   Variants,
   Colors,
-  Interactive
+  Interactive,
+  Brand
 } from './Badge.stories'
 
 storiesOf('Badge', module)
@@ -11,3 +12,4 @@ storiesOf('Badge', module)
   .add('Variants', Variants)
   .add('Colors', Colors)
   .add('Interactive', Interactive)
+  .add('Brand', Brand)
