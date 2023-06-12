@@ -61,6 +61,17 @@ export const Default = () => (
     <Button onPress={onPress} text="Natura Design System" />
   </StoryContainer>
 )
+export const Brand = () => (
+  <StoryWrapper title="Brands">
+    <StoryContainer title="Avon">
+      <Button brand="avon" onPress={onPress} text="Natura Design System" />
+    </StoryContainer>
+    <StoryContainer title="Avon v2">
+      <Button brand="avon_v2" onPress={onPress} text="Natura Design System" />
+    </StoryContainer>
+
+  </StoryWrapper>
+)
 
 export const Sizes = () => (
   <StoryWrapper title="Sizes">

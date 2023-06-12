@@ -1,6 +1,7 @@
 import { StyleProp, TextStyle, AccessibilityProps } from 'react-native'
 import { IconName } from '@naturacosmeticos/natds-icons'
 import { Theme } from '@naturacosmeticos/natds-themes/react-native'
+import { BrandTypes } from '../../common/brandTypes/brandTypes'
 
 /**
  * @deprecated Deprecated sizes: `small` and `large`, use `semi` and `medium` instead.
@@ -35,6 +36,10 @@ export interface ButtonProps extends AccessibilityButtonProps {
    * Name of the icon that will be rendered on the button at the previously selected position.
    */
   iconName?: IconName;
+  /**
+   * Name of the icon that will be rendered on the button at the previously selected position.
+   */
+  brand?: BrandTypes;
   /**
    * Position of the icon to be rendered in relation to the label text.
    *
