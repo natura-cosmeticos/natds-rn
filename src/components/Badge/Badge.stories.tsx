@@ -43,6 +43,16 @@ export const Default = () => (
     <Badge variant="standard" value={100} limit={99} />
   </StoryContainer>
 )
+export const Brand = () => (
+  <StoryWrapper title="Standard Brand Avon e Avon V2">
+    <StoryContainer title="Standard Avon">
+      <Badge brand="avon" color="primary" variant="standard" value={100} limit={99} />
+    </StoryContainer>
+    <StoryContainer title="Standard Avon v2">
+      <Badge brand="avon_v2" color="primary" variant="standard" value={100} limit={99} />
+    </StoryContainer>
+  </StoryWrapper>
+)
 
 export const Variants = () => (
   <StoryWrapper title="Variants">
