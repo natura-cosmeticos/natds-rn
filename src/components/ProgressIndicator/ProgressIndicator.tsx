@@ -7,7 +7,8 @@ import { ProgressIndicatorProps } from './ProgressIndicator.types'
 
 export const ProgressIndicatorComponent = ({
   size = 'medium',
-  showLayer = false
+  showLayer = false,
+  brand
 }: ProgressIndicatorProps) => {
   /**
    * Duration specify how much the circle will take to make a 720deg loop around itself,
@@ -62,9 +63,9 @@ export const ProgressIndicatorComponent = ({
 
   return (
     <View size={size} showLayer={showLayer}>
-      <Layer as={Animated.View} size={size} style={layerStyle}>
+      <Layer brand={brand} as={Animated.View} size={size} style={layerStyle}>
         <Container as={Animated.View} size={size}>
-          <Line as={Animated.View} size={size} />
+          <Line brand={brand} as={Animated.View} size={size} />
         </Container>
       </Layer>
     </View>

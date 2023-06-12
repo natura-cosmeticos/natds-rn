@@ -1,6 +1,6 @@
 import React from 'react'
 import { boolean, select } from '@storybook/addon-knobs'
-import { View } from 'react-native'
+import { Text, View } from 'react-native'
 import { ContainerWithTheme } from '../../common/HelperComponents/ThemeHelper.styles'
 import {
   ProgressIndicator,
@@ -29,6 +29,16 @@ export const Default = () => (
     <ContainerWithTheme>
       <View style={{ margin: 15 }}>
         <ProgressIndicator />
+      </View>
+    </ContainerWithTheme>
+  </View>
+)
+export const Brands = () => (
+  <View style={{ maxWidth: 600, display: 'flex', flexDirection: 'column' }}>
+    <Text>Avon v2</Text>
+    <ContainerWithTheme>
+      <View style={{ margin: 15 }}>
+        <ProgressIndicator brand="avon_v2" />
       </View>
     </ContainerWithTheme>
   </View>
