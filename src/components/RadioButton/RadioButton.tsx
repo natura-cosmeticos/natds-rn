@@ -1,4 +1,5 @@
 import React from 'react'
+import { BrandTypes } from '../../common/brandTypes/brandTypes'
 
 import { TouchableRipple } from '../TouchableRipple/TouchableRipple'
 import {
@@ -18,6 +19,10 @@ export interface RadioButtonProps {
    * deprecated color: `secondary`
    */
   color?: RadioButtonColors;
+  /**
+   * Optional brand that appears to the component,
+   */
+  brand?: BrandTypes;
   /**
    * Called when the touch is released, but not if cancelled
    */
@@ -52,6 +57,7 @@ export const RadioButton = ({
   selected,
   disabled = false,
   label,
+  brand,
   value = '',
   testID = 'radio-button'
 }: RadioButtonProps) => {
@@ -70,11 +76,12 @@ export const RadioButton = ({
       style={{ borderRadius: 50 }}
     >
       <Wrapper>
-        <Circle disabled={disabled} color={color} selected={selected} testID={`${testID}-circle`}>
+        <Circle brand={brand} disabled={disabled} color={color} selected={selected} testID={`${testID}-circle`}>
           {
             selected
               ? (
                 <Center
+                  brand={brand}
                   disabled={disabled}
                   color={color}
                   selected={selected}
