@@ -1,5 +1,6 @@
 /* eslint-disable max-len */
 import { AccessibilityRole } from 'react-native'
+import { BrandTypes } from '../../common/brandTypes/brandTypes'
 
 export type TabButtonTypes = 'primary' | 'secondary'
 export type IconPositions = 'leading' | 'top' | 'icon'
@@ -18,6 +19,11 @@ export interface TabProps {
    * @default 'tab'
    */
    accessibilityRole?: AccessibilityRole;
+  /**
+  /**
+   * Optional Brand prop for theme select.
+   */
+   brand?: BrandTypes;
   /**
    * When `true`, indicates that the view is an accessibility element.
    * @default false

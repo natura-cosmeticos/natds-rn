@@ -11,7 +11,7 @@ import { TabProps, TabButtonTypes } from './Tab.types'
 export const Tab = ({
   testID = 'ds-tab', tabOptions, onChange, position = 'fixed',
   iconPosition, elevation = false, backgroundColor = true, accessible = false,
-  accessibilityRole = 'tab'
+  accessibilityRole = 'tab', brand
 }: TabProps) => {
   const [activeTab, setActiveTab] = useState(0)
 
@@ -67,6 +67,7 @@ export const Tab = ({
 
         return (
           <TabButton
+            brand={brand}
             accessible={accessible}
             disabled={tabOption.disabled}
             key={tabOption.key}
