@@ -78,6 +78,22 @@ export const Variants = () => (
     </StoryContainer>
   </StoryWrapper>
 )
+export const Brands = () => (
+  <StoryWrapper title="Brands">
+    <StoryContainer title="Avon">
+      <Avatar brand="avon" type="letter" size="medium" text={textSample} />
+    </StoryContainer>
+    <StoryContainer title="Avon v2">
+      <Avatar brand="avon_v2" type="letter" size="medium" text={textSample} />
+    </StoryContainer>
+    <StoryContainer title="Avon">
+      <Avatar brand="avon" type="icon" size="medium" iconName={iconSample} />
+    </StoryContainer>
+    <StoryContainer title="Avon v2">
+      <Avatar brand="avon_v2" type="icon" size="medium" iconName={iconSample} />
+    </StoryContainer>
+  </StoryWrapper>
+)
 
 export const Sizes = () => (
   <StoryWrapper title="Sizes">
