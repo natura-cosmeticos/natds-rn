@@ -1,6 +1,7 @@
 /* eslint-disable max-len */
 import { Color, Size } from '@naturacosmeticos/natds-themes/react-native'
 import { AccessibilityRole, AccessibilityState } from 'react-native'
+import { BrandTypes } from '../../common/brandTypes/brandTypes'
 
 export type TagColors = keyof Pick<Color, 'primary' | 'secondary' | 'success' | 'alert' | 'warning' | 'link'>
 export type TagSizes = keyof Pick<Size, 'small' | 'standard'>
@@ -66,6 +67,10 @@ export interface TagProps {
    * @optional
    */
   color?: TagColors;
+  /**
+   * Optional brand of the tag.
+   */
+  brand?: BrandTypes;
   /**
    * Optional ID for testing.
    * @optional
