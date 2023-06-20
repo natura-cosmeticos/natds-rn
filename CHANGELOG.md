@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+
+## [7.36.0](https://github.com/natura-cosmeticos/natds-rn/compare/v7.35.0...v7.36.0) (2023-06-20)
+
+### Features
+
+* **natds-rn:** expose prop REF
+* **natds-rn:** enable switch theme by prop
+
 ## [7.35.0](https://github.com/natura-cosmeticos/natds-rn/compare/v7.34.0...v7.35.0) (2023-05-19)
 
 
