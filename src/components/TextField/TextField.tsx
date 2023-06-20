@@ -62,7 +62,7 @@ const getContainerProps = ({
 }
 
 // eslint-disable-next-line complexity
-export const TextField = forwardRef<TextInput, TextFieldProps>((props, ref) => {
+export const TextField: React.ForwardRefExoticComponent<TextFieldProps & React.RefAttributes<TextInput>> = forwardRef<TextInput, TextFieldProps>((props, ref) => {
   const theme = useTheme()
   const [active, setActive] = useState(false)
   const [numberValue, setNumberValue] = useState('')
