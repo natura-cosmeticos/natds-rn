@@ -69,6 +69,17 @@ export const Default = () => (
     <Tab tabOptions={defaultOptions} onChange={() => ({})} />
   </Container>
 )
+export const Brand = () => (
+  <StoryWrapper title="Brands">
+    <Container title="Avon">
+      <Tab brand="avon" tabOptions={defaultOptions} onChange={() => ({})} />
+    </Container>
+    <Container title="Avon v2">
+      <Tab brand="avon_v2" tabOptions={defaultOptions} onChange={() => ({})} />
+    </Container>
+
+  </StoryWrapper>
+)
 
 export const Variants = () => (
   <StoryWrapper title="Variants">

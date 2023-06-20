@@ -2,7 +2,9 @@ import { Theme } from '@naturacosmeticos/natds-themes/react-native'
 import React, { ReactNode } from 'react'
 import { CSSObject } from 'styled-components'
 import styled, { useTheme } from 'styled-components/native'
+import { BrandTypes } from '../../common/brandTypes/brandTypes'
 import {
+  buildTheme,
   getColorAlert,
   getColorHighEmphasis,
   getColorLowEmphasis,
@@ -21,6 +23,7 @@ type ContentProps = {
   helperText?: string;
   label?: string;
   required?: boolean;
+  brand?: BrandTypes;
 }
 
 type FeedbackProps =
@@ -33,7 +36,19 @@ type ColorsObject = {
   [state in InputStates]: { box: string; text: string };
 }
 
-export const getElementsColorsByState = (element: 'box' | 'text', theme: Theme) => (state: InputStates) => {
+export const getElementsColorsByState = (element: 'box' | 'text', theme: Theme, brand?: BrandTypes) => (state: InputStates) => {
+  if (brand) {
+    const themeSelect = buildTheme(brand, 'dark')
+    const colorsTheme: ColorsObject = {
+      active: { box: getColorPrimary(themeSelect), text: getColorMediumEmphasis(theme) },
+      default: { box: getColorLowEmphasis(theme), text: getColorMediumEmphasis(theme) },
+      disabled: { box: getColorLowEmphasis(theme), text: getColorLowEmphasis(theme) },
+      error: { box: getColorAlert(theme), text: getColorAlert(theme) },
+      filled: { box: getColorHighEmphasis(theme), text: getColorMediumEmphasis(theme) },
+      success: { box: getColorSuccess(theme), text: getColorSuccess(theme) }
+    }
+    return colorsTheme[state][element]
+  }
   const colors: ColorsObject = {
     active: { box: getColorPrimary(theme), text: getColorMediumEmphasis(theme) },
     default: { box: getColorLowEmphasis(theme), text: getColorMediumEmphasis(theme) },
@@ -50,16 +65,16 @@ const Container = styled.View((): CSSObject => ({ width: '100%' }))
 
 export const InputFeedbackContainer = (props: InputFeedbackContainerProps) => {
   const {
-    active, children, disabled, helperText, label, required, feedback, filled
+    active, children, disabled, helperText, label, required, feedback, filled, brand
   } = props
   const theme = useTheme()
   const boxState = buildInputState({
     active, disabled, feedback, filled
   })
-  const boxColor = getElementsColorsByState('box', theme)(boxState)
+  const boxColor = getElementsColorsByState('box', theme, brand)(boxState)
 
   const textState = buildInputState({ disabled, feedback, filled })
-  const textColor = getElementsColorsByState('text', theme)(textState)
+  const textColor = getElementsColorsByState('text', theme, brand)(textState)
 
   return (
     <Container>

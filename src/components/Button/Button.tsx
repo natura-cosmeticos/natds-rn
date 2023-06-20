@@ -14,7 +14,8 @@ export const Button = ({
   size = 'semiX',
   testID = 'button',
   text,
-  type = 'contained'
+  type = 'contained',
+  brand
 }: ButtonProps) => (
   <ButtonBase
     onAccessibilityAction={onAccessibilityAction}
@@ -26,6 +27,7 @@ export const Button = ({
     iconPosition={iconPosition}
     onPress={onPress}
     size={size}
+    brand={brand}
     testID={testID}
     text={text}
     type={type}

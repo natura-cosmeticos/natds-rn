@@ -16,7 +16,7 @@ export const Badge = (props: BadgeProps) => {
   const animationTime = 1600
 
   const {
-    color = 'alert', variant, testID = 'ds-badge', accessible, accessibilityLabel, accessibilityRole, accessibilityValue
+    color = 'alert', variant, testID = 'ds-badge', accessible, accessibilityLabel, accessibilityRole, accessibilityValue, brand
   } = props
 
   const setAnimation = useCallback(({ currentValue, duration, toValue }: AnimationProps) => {
@@ -45,8 +45,8 @@ export const Badge = (props: BadgeProps) => {
       accessibilityRole={accessibilityRole}
       accessibilityValue={accessibilityValue}
     >
-      <Circle color={color} variant={variant}>
-        {isBadgeStandard(props) && <Label color={color} variant={variant}>{buildValue(props)}</Label>}
+      <Circle color={color} variant={variant} brand={brand}>
+        {isBadgeStandard(props) && <Label brand={brand} color={color} variant={variant}>{buildValue(props)}</Label>}
       </Circle>
       {variant === 'pulse' && (
       <Pulse

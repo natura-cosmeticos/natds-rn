@@ -1,6 +1,8 @@
+/* eslint-disable max-len */
 /* eslint-disable complexity */
 import styled from 'styled-components/native'
 import {
+  buildTheme,
   getShadowBySize,
   getSizeMedium,
   getSizeSemi,
@@ -11,8 +13,8 @@ import {
 } from '../../common/themeSelectors'
 import { ButtonBaseProps } from './Button.types'
 
-type SurfaceProps = Required<Pick<ButtonBaseProps, 'type' | 'theme' | 'disabled' | 'size'>>
-type LabelProps = Pick<ButtonBaseProps, 'iconName' | 'iconPosition' | 'theme' | 'disabled' | 'type'>
+type SurfaceProps = Pick<ButtonBaseProps, 'type' | 'theme' | 'disabled' | 'size' | 'brand'>
+type LabelProps = Pick<ButtonBaseProps, 'iconName' | 'iconPosition' | 'theme' | 'disabled' | 'type' | 'brand'>
 
 export const getButtonStylesBySize = ({ size, theme }: Pick<SurfaceProps, 'size' | 'theme'>) => {
   const buttonSizes = {
@@ -38,7 +40,7 @@ export const getButtonStylesBySize = ({ size, theme }: Pick<SurfaceProps, 'size'
     }
   }
 
-  return buttonSizes[size]
+  return size && buttonSizes[size]
 }
 
 export const getButtonShadowByType = ({ disabled, theme, type }: Omit<SurfaceProps, 'size'>) => (
@@ -47,10 +49,27 @@ export const getButtonShadowByType = ({ disabled, theme, type }: Omit<SurfacePro
     : { elevation: 0 }
 )
 
+const getSelectTheme = ({ theme, type, brand }: Pick<SurfaceProps, 'theme' | 'type' | 'brand'>) => {
+  if (brand) {
+    const themeSelected = buildTheme(brand, 'light')
+    return type && {
+      back: themeSelected.button[type].color.enable.background,
+      border: themeSelected.button[type].color.enable.border,
+      label: themeSelected.button[type].color.enable.label
+    }
+  }
+  return type && {
+    back: theme.button[type].color.enable.background,
+    border: theme.button[type].color.enable.border,
+    label: theme.button[type].color.enable.label
+  }
+}
+
 export const Surface = styled.View<SurfaceProps>(({
   disabled = false,
   size,
   theme,
+  brand,
   type = 'contained'
 }: SurfaceProps) => ({
   ...getButtonStylesBySize({ size, theme }),
@@ -59,10 +78,10 @@ export const Surface = styled.View<SurfaceProps>(({
   alignItems: 'center',
   background: disabled
     ? theme.button[type].color.disable.background
-    : theme.button[type].color.enable.background,
+    : getSelectTheme({ theme, type, brand })?.back,
   borderColor: disabled
     ? theme.button[type].color.disable.border
-    : theme.button[type].color.enable.border,
+    : getSelectTheme({ theme, type, brand })?.border,
   borderRadius: theme.button.borderRadius,
   borderWidth: type === 'outlined' ? 1 : 0,
   justifyContent: 'center'
@@ -76,11 +95,12 @@ export const Label = styled.View<Pick<LabelProps, 'iconPosition'>>(({ iconPositi
 export const LabelText = styled.Text<LabelProps>(({
   iconName,
   iconPosition,
-  type = 'contained',
+  type,
   theme,
+  brand,
   disabled = false
 }) => ({
-  color: disabled ? theme.button[type].color.disable.label : theme.button[type].color.enable.label,
+  color: disabled ? theme.button[type].color.disable.label : getSelectTheme({ theme, type, brand })?.label,
   fontFamily: theme.button.label.primary.fontFamily,
   fontSize: theme.button.label.fontSize,
   fontWeight: theme.button.label.primary.fontWeight,

@@ -1,6 +1,7 @@
 /* eslint-disable max-len */
 import { Color } from '@naturacosmeticos/natds-themes/react-native'
 import { AccessibilityRole, AccessibilityValue, Animated } from 'react-native'
+import { BrandTypes } from '../../common/brandTypes/brandTypes'
 
 export type AnimationProps = {
   currentValue: Animated.Value;
@@ -15,6 +16,10 @@ export interface BadgeBaseProps {
    * Indicates that the view is an accessibility element.
    */
   accessible?: boolean;
+  /**
+   * Indicates that the view is an accessibility element.
+   */
+  brand?: BrandTypes;
   /**
    * When a view is marked as accessible, it is a good practice to set an accessibilityLabel on the view.
    */

@@ -30,6 +30,8 @@ export const Checkbox = ({
   disabled = false,
   indeterminate = false,
   label,
+  brand,
+  mode,
   onPress,
   selected = false,
   testID = 'checkbox',
@@ -59,7 +61,7 @@ export const Checkbox = ({
         style={{ borderRadius: 50 }}
       >
         <Wrapper>
-          <Box disabled={disabled} color={color} selected={selected} testID={`${testID}-box`}>
+          <Box brand={brand} mode={mode} disabled={disabled} color={color} selected={selected} testID={`${testID}-box`}>
             {
               selected
                 ? <SelectedIcon indeterminate={indeterminate} />
@@ -70,7 +72,7 @@ export const Checkbox = ({
       </TouchableRipple>
       {
         label
-        && <Label testID={`${testID}-label`} disabled={disabled}>{label}</Label>
+        && <Label brand={brand} mode={mode} testID={`${testID}-label`} disabled={disabled}>{label}</Label>
       }
     </Container>
   )

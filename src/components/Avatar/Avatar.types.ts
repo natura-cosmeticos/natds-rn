@@ -1,6 +1,7 @@
 /* eslint-disable max-len */
 import { IconName } from '@naturacosmeticos/natds-icons'
 import { Size } from '@naturacosmeticos/natds-themes/react-native'
+import { BrandTypes } from '../../common/brandTypes/brandTypes'
 
 /**
  * @deprecated
@@ -23,6 +24,10 @@ export interface AvatarBaseProps {
    * Deprecated `tiny`, `small`, `large` and `huge` sizes.
    */
   size?: AvatarSizes;
+  /**
+   * Optional accessibilityLabel.
+   */
+  brand?: BrandTypes;
   /**
    * Optional accessibilityLabel.
    */

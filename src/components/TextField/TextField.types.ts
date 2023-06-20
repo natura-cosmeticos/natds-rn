@@ -10,6 +10,7 @@ import {
 } from 'react-native'
 import { Size } from '@naturacosmeticos/natds-themes/react-native'
 import { IconButtonProps } from '../IconButton/IconButton.types'
+import { BrandTypes } from '../../common/brandTypes/brandTypes'
 
 type AndroidProps = Pick<TextInputAndroidProps,
   | 'disableFullscreenUI'
@@ -96,6 +97,7 @@ export type AccessibilityButtonProps = {
   accessibilityButtonRole?: AccessibilityProps['accessibilityRole'];
 }
 interface BaseProps extends
+  Brand,
   AccessibilityProps,
   MultiPlatformProps,
   AndroidProps,
@@ -193,6 +195,10 @@ interface ActionImageProps {
 interface ActionIconProps {
   action: 'icon';
   actionComponent: React.ReactComponentElement<JSXElementConstructor<IconButtonProps>>;
+}
+
+interface Brand {
+  brand?: BrandTypes;
 }
 
 interface WithoutActionProps {

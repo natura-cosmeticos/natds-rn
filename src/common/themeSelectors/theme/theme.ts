@@ -4,7 +4,7 @@ import themes, { Theme as ExternalTheme } from '@naturacosmeticos/natds-themes/r
 
 export type Theme = ExternalTheme;
 export type ThemeMode = 'dark' | 'light';
-export type Brand = 'natura' | 'theBodyShop' | 'avon' | 'aesop' | 'consultoriaDeBeleza' | 'natura_v2';
+export type Brand = 'aesop'| 'avon' | 'avon_v2' | 'biome' | 'natura' | 'theBodyShop' | 'consultoriaDeBeleza' | 'natura_v2' | 'casaEestilo';
 export interface ThemeSelector {
   (theme: Theme): string | number | undefined;
 }

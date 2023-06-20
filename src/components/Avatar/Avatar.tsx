@@ -37,6 +37,7 @@ export const Avatar = (props: AvatarProps) => {
     testID = 'avatar',
     accessibilityLabel,
     accessibilityHint,
+    brand,
     type = 'anonymous'
   } = props
 
@@ -45,6 +46,7 @@ export const Avatar = (props: AvatarProps) => {
       const { text } = props
       return (
         <AvatarLetter
+          brand={brand}
           accessibilityLabel={accessibilityLabel}
           accessibilityHint={accessibilityHint}
           accessibilityRole="text"
@@ -76,6 +78,7 @@ export const Avatar = (props: AvatarProps) => {
       const { iconName } = props
       return (
         <AvatarIcon
+          brand={brand}
           accessibilityHint={accessibilityHint}
           accessibilityLabel={accessibilityLabel}
           accessibilityRole="image"
@@ -100,7 +103,7 @@ export const Avatar = (props: AvatarProps) => {
   }
 
   return (
-    <Container size={size}>
+    <Container brand={brand} size={size}>
       {renderAvatarByType()}
     </Container>
   )

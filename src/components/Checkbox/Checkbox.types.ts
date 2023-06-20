@@ -1,5 +1,6 @@
 /* eslint-disable max-len */
 import { AccessibilityProps } from 'react-native'
+import { BrandTypes } from '../../common/brandTypes/brandTypes'
 
 /**
  * @deprecated this prop is no longer necessary as this component should always be used with the primary color.
@@ -23,6 +24,14 @@ export interface CheckboxProps extends AccessibilityCheckboxProps {
    * @default `primary`
    */
   color?: CheckboxColors;
+  /**
+   * Optional brand that appears to the component,
+   */
+  brand?: BrandTypes;
+  /**
+   * Optional brand that appears to the component,
+   */
+  mode?: 'light' | 'dark';
   /**
    * Called when the touch is released, but not if cancelled.
    */

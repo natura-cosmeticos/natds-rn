@@ -10,7 +10,8 @@ import {
   Sizes,
   States,
   TextArea,
-  Interactive
+  Interactive,
+  Brand
 } from './TextField.stories'
 
 storiesOf('TextField', module)
@@ -25,3 +26,4 @@ storiesOf('TextField', module)
   .add('Type', Type)
   .add('TextArea', TextArea)
   .add('Interactive', Interactive)
+  .add('Brand', Brand)

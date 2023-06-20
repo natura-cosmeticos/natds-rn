@@ -70,6 +70,7 @@ export const TextField: FunctionComponent<TextFieldProps> = forwardRef<TextInput
   const {
     action,
     actionComponent,
+    brand,
     disabled = false,
     feedback,
     helperText = '',
@@ -94,6 +95,7 @@ export const TextField: FunctionComponent<TextFieldProps> = forwardRef<TextInput
 
   return (
     <InputFeedbackContainer
+      brand={brand}
       filled={isFieldFilled({ readonly, value })}
       helperText={helperText}
       label={label}

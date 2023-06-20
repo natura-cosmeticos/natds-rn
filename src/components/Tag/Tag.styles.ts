@@ -1,6 +1,8 @@
 import styled, { css } from 'styled-components/native'
 import { Theme } from '@naturacosmeticos/natds-themes/react-native'
 import { TagColors, TagPositions, TagSizes } from './Tag.types'
+import { BrandTypes } from '../../common/brandTypes/brandTypes'
+import { buildTheme } from '../../common/themeSelectors'
 
 type TagStyleBaseProps = {
   theme: Theme;
@@ -10,10 +12,12 @@ type ContainerStyleProps = TagStyleBaseProps & {
   color?: TagColors;
   size?: TagSizes;
   borderPosition?: TagPositions;
+  brand?: BrandTypes;
 }
 
 type LabelStyleProps = TagStyleBaseProps & {
   color?: TagColors;
+  brand?: BrandTypes;
 }
 
 export const getBorderPosition = ({ theme, size = 'small', borderPosition = 'default' }: ContainerStyleProps) => {
@@ -38,7 +42,7 @@ export const getBorderPosition = ({ theme, size = 'small', borderPosition = 'def
   return styles[borderPosition]
 }
 
-export const getTextColorByName = ({ theme, color = 'primary' }: LabelStyleProps) => {
+export const getTextColorByName = ({ theme, color = 'primary', brand }: LabelStyleProps) => {
   const styles = {
     alert: theme.color.onAlert,
     link: theme.color.onLink,
@@ -46,6 +50,18 @@ export const getTextColorByName = ({ theme, color = 'primary' }: LabelStyleProps
     secondary: theme.color.onSecondary,
     success: theme.color.onSuccess,
     warning: theme.color.onWarning
+  }
+  if (brand) {
+    const themeSelectTag = buildTheme(brand, 'light')
+    const stylesBrand = {
+      alert: themeSelectTag.color.onAlert,
+      link: themeSelectTag.color.onLink,
+      primary: themeSelectTag.color.onPrimary,
+      secondary: themeSelectTag.color.onSecondary,
+      success: themeSelectTag.color.onSuccess,
+      warning: themeSelectTag.color.onWarning
+    }
+    return stylesBrand[color]
   }
 
   return styles[color]
@@ -61,19 +77,26 @@ export const getPaddingBySize = ({ theme, size = 'small' }: ContainerStyleProps)
 
   return { paddingHorizontal: theme.spacing.tiny }
 }
+export const getBackGroundColor = ({ theme, color = 'primary', brand }: ContainerStyleProps) => {
+  if (brand) {
+    const themeSelectBack = buildTheme(brand, 'light')
+    return themeSelectBack.color[color]
+  }
+  return theme.color[color]
+}
 
 export const Container = styled.View<ContainerStyleProps>(({
-  theme, color = 'primary', size, borderPosition
+  theme, color = 'primary', size, borderPosition, brand
 }: ContainerStyleProps) => ({
   ...getBorderPosition({ borderPosition, size, theme }),
   ...getPaddingBySize({ size, theme }),
   alignSelf: 'flex-start',
-  backgroundColor: theme.color[color]
+  backgroundColor: getBackGroundColor({ theme, color, brand })
 }))
 
 export const Label = styled.Text<LabelStyleProps>`
-  ${({ theme, color }: LabelStyleProps) => css`
-    color: ${getTextColorByName({ color, theme })};
+  ${({ theme, color, brand }: LabelStyleProps) => css`
+    color: ${getTextColorByName({ color, theme, brand })};
     font-family: ${theme.tag.label.primary.fontFamily};
     font-size: ${theme.tag.label.fontSize}px;
     font-weight: ${theme.tag.label.primary.fontWeight};

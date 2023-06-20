@@ -15,6 +15,7 @@ const ButtonComponent = ({
   size = 'medium',
   testID = 'button-base',
   text,
+  brand,
   theme,
   type = 'contained',
   textLabelStyle
@@ -37,6 +38,7 @@ const ButtonComponent = ({
         accessibilityRole="button"
         disabled={disabled}
         size={size}
+        brand={brand}
         testID={testID}
         type={type}
       >
@@ -46,6 +48,7 @@ const ButtonComponent = ({
             iconPosition={iconPosition}
             testID="button-label"
             type={type}
+            brand={brand}
             disabled={disabled}
             style={textLabelStyle}
           >

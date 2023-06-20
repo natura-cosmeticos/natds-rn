@@ -58,6 +58,34 @@ export const Variants = () => {
     </StoryWrapper>
   )
 }
+export const Brand = () => {
+  const [selected, setSelected] = useState<string | null>(null)
+
+  return (
+    <StoryWrapper title="Brands">
+      <StoryContainer title="Avon">
+        <RadioButton
+          brand="avon"
+          color="primary"
+          selected={selected === '1'}
+          onPress={setSelected}
+          label="Natura Design System"
+          value="1"
+        />
+      </StoryContainer>
+      <StoryContainer title="Avon v2">
+        <RadioButton
+          brand="avon_v2"
+          color="primary"
+          selected={selected === '1'}
+          onPress={setSelected}
+          label="Natura Design System"
+          value="1"
+        />
+      </StoryContainer>
+    </StoryWrapper>
+  )
+}
 
 export const Interactive = () => (
   <View style={{ maxWidth: 600, padding: 30 }}>

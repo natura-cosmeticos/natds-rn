@@ -1,6 +1,6 @@
 import { storiesOf } from '@storybook/react-native'
 import {
-  Default, Variants, Sizes, Colors, Interactive
+  Default, Variants, Sizes, Colors, Interactive, Brands
 } from './Tag.stories'
 
 storiesOf('Tag', module)
@@ -9,3 +9,4 @@ storiesOf('Tag', module)
   .add('Sizes', Sizes)
   .add('Colors', Colors)
   .add('Interactive', Interactive)
+  .add('Brands', Brands)

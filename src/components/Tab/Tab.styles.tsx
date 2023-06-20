@@ -12,13 +12,15 @@ import {
   getSizeLargeX,
   getSizeMedium,
   getShadowBySize,
-  Theme
+  Theme,
+  buildTheme
 } from '../../common/themeSelectors'
 import {
   TabButtonTypes, TabProps, IconPositions
 } from './Tab.types'
 import { TouchableRipple } from '../TouchableRipple/TouchableRipple'
 import { Icon } from '../Icon'
+import { BrandTypes } from '../../common/brandTypes/brandTypes'
 
 interface TabBase {
   type: TabButtonTypes;
@@ -50,7 +52,7 @@ interface ButtonContentProps extends TabProps {
   theme: Theme;
 }
 
-const getTabButtonStyles = (theme: Theme, type: TabButtonTypes) => {
+const getTabButtonStyles = (theme: Theme, type: TabButtonTypes, brand: BrandTypes) => {
   const styles = {
     primary: {
       borderBottomColor: getColorPrimary(theme)
@@ -58,6 +60,18 @@ const getTabButtonStyles = (theme: Theme, type: TabButtonTypes) => {
     secondary: {
       borderColor: 'transparent'
     }
+  }
+  if (brand) {
+    const themeSelectTab = buildTheme(brand, 'light')
+    const stylesTheme = {
+      primary: {
+        borderBottomColor: getColorPrimary(themeSelectTab)
+      },
+      secondary: {
+        borderColor: 'transparent'
+      }
+    }
+    return stylesTheme[type]
   }
 
   return styles[type]
@@ -117,8 +131,8 @@ export const TabWrapper = styled.View.attrs({
   height: iconPosition === 'icon' ? getSizeMedium(theme) : getSizeLargeX(theme)
 }))
 
-export const TabButton = styled(TouchableRipple)<TabBase>(({ type, theme }) => ({
-  ...getTabButtonStyles(theme, type),
+export const TabButton = styled(TouchableRipple)<TabBase>(({ type, theme, brand }) => ({
+  ...getTabButtonStyles(theme, type, brand),
   alignItems: 'center',
   borderBottomWidth: 2,
   borderStyle: 'solid',

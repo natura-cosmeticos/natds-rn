@@ -52,6 +52,33 @@ export const Default = () => {
     </StoryContainer>
   )
 }
+export const Brand = () => {
+  const [isSelected, setIsSelected] = useState(true)
+
+  return (
+    <StoryWrapper title="Brand">
+      <StoryContainer title="Light">
+        <Checkbox
+          brand="avon_v2"
+          label="Natura Design System"
+          color="primary"
+          onPress={() => setIsSelected(!isSelected)}
+          selected={isSelected}
+        />
+      </StoryContainer>
+      <StoryContainer title="Dark">
+        <Checkbox
+          mode="dark"
+          brand="avon_v2"
+          label="Natura Design System"
+          color="primary"
+          onPress={() => setIsSelected(!isSelected)}
+          selected={isSelected}
+        />
+      </StoryContainer>
+    </StoryWrapper>
+  )
+}
 
 export const Variants = () => {
   const [standard, setStandard] = useState(true)

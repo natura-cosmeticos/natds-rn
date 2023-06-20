@@ -86,6 +86,16 @@ export const Sizes: StoryFn<ReactNode> = () => (
     </StoryContainer>
   </>
 )
+export const Brands: StoryFn<ReactNode> = () => (
+  <>
+    <StoryContainer title="Avon">
+      <Tag brand="avon" text="Design System" size="standard" />
+    </StoryContainer>
+    <StoryContainer title="Avon v2">
+      <Tag brand="avon_v2" text="Design System" size="small" />
+    </StoryContainer>
+  </>
+)
 
 export const Colors: StoryFn<ReactNode> = () => (
   <>

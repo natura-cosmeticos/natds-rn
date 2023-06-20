@@ -1,3 +1,5 @@
+import { BrandTypes } from '../../common/brandTypes/brandTypes'
+
 export type ProgressIndicatorSizes = 'standard' | 'semi' | 'medium' | 'large';
 
 export interface ProgressIndicatorProps {
@@ -9,4 +11,8 @@ export interface ProgressIndicatorProps {
    * Shows a colored layer behind the progress indicator
    */
   showLayer?: boolean;
+  /**
+   * Optional brand to the component,
+   */
+  brand?: BrandTypes;
 }
