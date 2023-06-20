@@ -2,6 +2,29 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [7.36.0](https://github.com/natura-cosmeticos/natds-rn/compare/v7.35.0...v7.36.0) (2023-06-20)
+
+
+### Features
+
+* **natds-rn:**  add prop brand to Avatar ([107b97b](https://github.com/natura-cosmeticos/natds-rn/commit/107b97bbcfa7edd19a33667fec52c5b716456bb5))
+* **natds-rn:** add brand prop to TextField ([cb279b0](https://github.com/natura-cosmeticos/natds-rn/commit/cb279b028e0fad5ad768297bea0175f8d91ccedc))
+* **natds-rn:** add brandTypes ([940ec7b](https://github.com/natura-cosmeticos/natds-rn/commit/940ec7bd990f095a7e7a055c8e0d21cac8419ac9))
+* **natds-rn:** add prop Brand to Badge ([eedea51](https://github.com/natura-cosmeticos/natds-rn/commit/eedea51008a963a28b0c8310fdad3e7dc5d066a4))
+* **natds-rn:** add prop brand to button ([a29e575](https://github.com/natura-cosmeticos/natds-rn/commit/a29e575d580aaa6c27ac1618bea46394aeb2abfb))
+* **natds-rn:** add prop brand to checkbox ([2d64a6d](https://github.com/natura-cosmeticos/natds-rn/commit/2d64a6d35d49a1ca27e11762b7fe5885d03994c7))
+* **natds-rn:** add prop brand to progressIndicator ([b90b761](https://github.com/natura-cosmeticos/natds-rn/commit/b90b7616bd009f9c91cc19cf08bc20403263da36))
+* **natds-rn:** add prop brand to RadioButton ([15652cb](https://github.com/natura-cosmeticos/natds-rn/commit/15652cb2c4037104b800e68d9a9ddbc4fbf89072))
+* **natds-rn:** add prop brand to Tab ([34e493b](https://github.com/natura-cosmeticos/natds-rn/commit/34e493bf86e75757a6f97c0064ad047b115a5a06))
+* **natds-rn:** add prop brand to Tag ([b3480da](https://github.com/natura-cosmeticos/natds-rn/commit/b3480da3938eb3b4d9ca93e6bc27c12c52c17f08))
+* **natds-rn:** add stories Brand device ([955e299](https://github.com/natura-cosmeticos/natds-rn/commit/955e299de49e66542607d076cc6e9753f808ca47))
+
+
+### Bug Fixes
+
+* **natds-rn:** change file theme add brands ([1f308e3](https://github.com/natura-cosmeticos/natds-rn/commit/1f308e36c646cd949a25d1d394ec815f28a84a1c))
+* **natds-rn:** expose ref prop ([a0d01dd](https://github.com/natura-cosmeticos/natds-rn/commit/a0d01dd218226082c59e0a1d4ea7c0a39b066205))
+* **natds-rn:** refact/type-infer ([0848180](https://github.com/natura-cosmeticos/natds-rn/commit/0848180948f8e5da6d961c06244e07ea4fa39a9f))
 
 ## [7.36.0](https://github.com/natura-cosmeticos/natds-rn/compare/v7.35.0...v7.36.0) (2023-06-20)
 
