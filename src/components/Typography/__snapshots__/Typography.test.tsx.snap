@@ -81,7 +81,7 @@ exports[`Typography Component should render with heading2 variant 1`] = `
     Array [
       Object {
         "color": "#000000",
-        "fontSize": 60,
+        "fontSize": 64,
         "fontWeight": "400",
         "letterSpacing": 0,
       },
@@ -119,9 +119,9 @@ exports[`Typography Component should render with heading4 variant 1`] = `
     Array [
       Object {
         "color": "#000000",
-        "fontSize": 34,
+        "fontSize": 32,
         "fontWeight": "400",
-        "letterSpacing": 0.27,
+        "letterSpacing": 0,
       },
     ]
   }

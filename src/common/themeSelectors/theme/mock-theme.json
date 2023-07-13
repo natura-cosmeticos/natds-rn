@@ -801,7 +801,7 @@
       "letterSpacing": 0
   },
   "heading2": {
-      "fontSize": 60,
+      "fontSize": 64,
       "fontWeight": 400,
       "lineHeight": 1.5,
       "letterSpacing": 0
@@ -813,10 +813,10 @@
       "letterSpacing": 0
   },
   "heading4": {
-      "fontSize": 34,
+      "fontSize": 32,
       "fontWeight": 400,
       "lineHeight": 1.5,
-      "letterSpacing": 0.27
+      "letterSpacing": 0
   },
   "heading5": {
       "fontSize": 24,

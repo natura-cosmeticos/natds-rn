@@ -18,7 +18,7 @@ describe('Typography Component', () => {
   it('should render with heading2 variant', () => {
     const { getByTestId, toJSON } = renderWithTheme(<Typography testID="typography" variant="heading2">Typography</Typography>)
 
-    expect(getByTestId('typography')).toHaveStyle({ fontSize: 60 })
+    expect(getByTestId('typography')).toHaveStyle({ fontSize: 64 })
     expect(toJSON()).toMatchSnapshot()
   })
 
@@ -32,7 +32,7 @@ describe('Typography Component', () => {
   it('should render with heading4 variant', () => {
     const { getByTestId, toJSON } = renderWithTheme(<Typography testID="typography" variant="heading4">Typography</Typography>)
 
-    expect(getByTestId('typography')).toHaveStyle({ fontSize: 34 })
+    expect(getByTestId('typography')).toHaveStyle({ fontSize: 32 })
     expect(toJSON()).toMatchSnapshot()
   })
 
