@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [7.37.0](https://github.com/natura-cosmeticos/natds-rn/compare/v7.36.0...v7.37.0) (2023-07-21)
+
+
+### Features
+
+* **natds-rn:** add new Logo Avon-v2 ([3985e59](https://github.com/natura-cosmeticos/natds-rn/commit/3985e59140e7c08f5ce300dbddb33195b262d82e))
+
 ## [7.36.0](https://github.com/natura-cosmeticos/natds-rn/compare/v7.35.0...v7.36.0) (2023-06-20)
 
 
