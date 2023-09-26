@@ -7,29 +7,20 @@ import { Button } from './Button'
 import { ButtonSizes, ButtonTypes } from './Button.types'
 
 const description = () => `
----
+> Buttons allow users to take actions, and make choices, with a single tap.
 
-**NOTE**: This component is available in the following variants:
+## Properties
+| Property         | Values                                                                             |    Status           |
+|---               |                                                                                 ---|                  ---|
+| **type**         | contained, outlined, text                                                          | ✅ Available        |
+| **textTranform** | uppercase, lowercase,  capitalize                                                  | 🗂️  Backlog         |
+| **size**         | semi, semiX, medium                                                                | ✅ Available        |
+| **iconName**     | 'icon_name'                                                                        | ✅ Available        |
+| **disabled**     | true, false                                                                        | ✅ Available        |
+| **display **     | inline, block                                                                      | ❌ Not Applicable   |
+| **brand**        | aesop, avon, avon_v2, natura <br/> consultoriaDeBeleza, natura_v2, casaEestilo     | ✅ Available        |
 
-  - ✅ contained
-  - ✅ outlined
-  - ✅ text
-
-With the following attribute statuses:
-
-- **Size:**
-    - ✅ \`semi\`
-    - ✅ \`semiX\`
-    - ✅ \`medium\`
-- **Icon**
-  - ✅ \`left\`
-  - ✅ \`right\`
-- ✅ **Disabled**
-- **Display**:
-    - ✅ \`inline\`
-    - ✅ \`block\`
-
----
+## Technical Usages Examples
 `
 
 export default {
@@ -88,7 +79,7 @@ export const Sizes = () => (
 )
 
 export const Variants = () => (
-  <StoryWrapper title="Variants">
+  <StoryWrapper title="Properties">
     <StoryWrapper title="Types">
       <StoryContainer title="Contained">
         <Button onPress={onPress} text="Natura Design System" type="contained" />
