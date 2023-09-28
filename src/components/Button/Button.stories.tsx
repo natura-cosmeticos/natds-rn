@@ -12,13 +12,13 @@ const description = () => `
 ## Properties
 | Property         | Values                                                                             |    Status           |
 |---               |                                                                                 ---|                  ---|
-| **type**         | contained, outlined, text                                                          | ✅ Available        |
+| **type**         | contained, outlined, text                                                          | ✅ Ready        |
 | **textTranform** | uppercase, lowercase,  capitalize                                                  | 🗂️  Backlog         |
-| **size**         | semi, semiX, medium                                                                | ✅ Available        |
-| **iconName**     | 'icon_name'                                                                        | ✅ Available        |
-| **disabled**     | true, false                                                                        | ✅ Available        |
+| **size**         | semi, semiX, medium                                                                | ✅ Ready        |
+| **iconName**     | 'icon_name'                                                                        | ✅ Ready        |
+| **disabled**     | true, false                                                                        | ✅ Ready        |
 | **display **     | inline, block                                                                      | ❌ Not Applicable   |
-| **brand**        | aesop, avon, avon_v2, natura <br/> consultoriaDeBeleza, natura_v2, casaEestilo     | ✅ Available        |
+| **brand**        | aesop, avon, avon_v2, natura <br/> consultoriaDeBeleza, natura_v2, casaEestilo     | ✅ Ready        |
 
 ## Technical Usages Examples
 `
@@ -26,7 +26,7 @@ const description = () => `
 export default {
   component: Button,
   parameters: {
-    componentSubtitle: 'Buttons allow users to take actions, and make choices, with a single tap.',
+    componentSubtitle: '',
     docs: {
       extractComponentDescription: description
     }
