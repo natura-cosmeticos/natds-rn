@@ -12,13 +12,13 @@ const description = () => `
 ## Properties
 | Property         | Values                                                                             |    Status           |
 |---               |                                                                                 ---|                  ---|
-| **type**         | contained, outlined, text                                                          | ✅ Ready        |
+| **type**         | contained, outlined, text                                                          | ✅ Available        |
 | **textTranform** | uppercase, lowercase,  capitalize                                                  | 🗂️  Backlog         |
-| **size**         | semi, semiX, medium                                                                | ✅ Ready        |
-| **iconName**     | 'icon_name'                                                                        | ✅ Ready        |
-| **disabled**     | true, false                                                                        | ✅ Ready        |
+| **size**         | semi, semiX, medium                                                                | ✅ Available        |
+| **iconName**     | 'icon_name'                                                                        | ✅ Available        |
+| **disabled**     | true, false                                                                        | ✅ Available        |
 | **display **     | inline, block                                                                      | ❌ Not Applicable   |
-| **brand**        | aesop, avon, avon_v2, natura <br/> consultoriaDeBeleza, natura_v2, casaEestilo     | ✅ Ready        |
+| **brand**        | aesop, avon, avon_v2, natura <br/> consultoriaDeBeleza, natura_v2, casaEestilo     | ✅ Available        |
 
 ## Technical Usages Examples
 `
