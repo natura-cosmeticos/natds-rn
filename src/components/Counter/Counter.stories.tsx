@@ -6,28 +6,36 @@ import { StoryContainer, StoryWrapper, VerticalStoryContainer } from '../../comm
 import { Counter } from './Counter'
 
 const description = () => `
----
+> A Counter reduces input effort for fields with values that deviate little from the default by allowing users to increase or decrease the number in a single button press.
 
-  ### NOTE:
-  This component is available in the following variants:
+## Properties
+| Property                   | Values                                                                               |    Status    |
+|---                         |                                                                                   ---|           ---|
+| **variant (no prop)**                 | Standard                                                                  | ✅ Available |
+| **decrementButtonAccessibilityHint**  | string                                                                    | ✅ Available |
+| **decrementButtonAccessibilityLabel** | string                                                                    | ✅ Available |
+| **incrementButtonAccessibilityHint**  | string                                                                    | ✅ Available |
+| **incrementButtonAccessibilityLabel** | string                                                                    | ✅ Available |
+| **inputAccessibilityHint**            | string                                                                    | ✅ Available |
+| **inputAccessibilityLabel**           | string                                                                    | ✅ Available |
+| **disabled**                          | true/false                                                                | ✅ Available |
+| **label**                             | true/false                                                                | ✅ Available |
+| **minValue**                          | number                                                                    | ✅ Available |
+| **maxValue**                          | number                                                                    | ✅ Available |
+| **onDecrement**                       | function                                                                  | ✅ Available |
+| **onIncrement**                       | function                                                                  | ✅ Available |
+| **size**                              | function                                                                  | ✅ Available |
+| **value**                             | function                                                                  | ✅ Available |
 
-  - ✅ Standard
 
-With the following attribute status:
 
-  - ✅ **Label**
-  - **Size:**
-    - ✅ \`Medium\`
-    - ✅ \`SemiX\`
-  - ✅ **Disabled**
-
----
+## Technical Usages Examples
 `
 
 export default {
   component: Counter,
   parameters: {
-    componentSubtitle: 'A Counter reduces input effort for fields with values that deviate little from the default by allowing users to increase or decrease the number in a single button press.',
+    componentSubtitle: '',
     docs: {
       extractComponentDescription: description
     }
