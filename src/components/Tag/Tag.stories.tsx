@@ -8,32 +8,26 @@ import { Tag } from './Tag'
 import { TagColors, TagPositions, TagSizes } from './Tag.types'
 
 const description: StoryFn<ReactNode> = () => `
-- - -
+> Tags are used to label, categorize, or organize items using keywords that describe them.
 
-  ### NOTE:
-  This component is available in the following variants:
-
-  - ✅ Standard
-
-With the following attribute status:
-
-  - **Attributes:**
-    - **Size:**
-      - ✅ \`Standard\`
-      - ✅ \`Small\`
-    - **Color:**
-      - ✅ \`Primary\`
-      - ✅ \`Secondary\`
-      - ✅ \`Alert\`
-      - ✅ \`Success\`
-      - ✅ \`Link\`
-      - ✅ \`Warining\`
-    - **Position:**
-      - ✅ \`Center\`
-      - ✅ \`Left\`
-      - ✅ \`Right\`
-
-- - -
+## Properties
+| Property                  | Values                                              |    Status    |
+|---                        |                                                  ---|           ---|
+| **variant (no prop)**     | Standard                                            | ✅ Available |
+| **accessible**            | true/false                                          | ✅ Available |
+| **accessibilityLabel**    | string                                              | ✅ Available |
+| **accessibilityHint**     | string                                              | ✅ Available |
+| **accessibilityRole**     | accessibilityRole                                   | ✅ Available |
+| **accessibilityState**    | accessibilityState                                  | ✅ Available |
+| **accessibilityState**    | accessibilityState                                  | ✅ Available |
+| **allowFontScaling**      | true/false                                          | ✅ Available |
+| **maxFontSizeMultiplier** | number                                              | ✅ Available |
+| **text**                  | string                                              | ✅ Available |
+| **borderPosition**        | default, left, right                                | ✅ Available |
+| **size**                  | small, standard                                     | ✅ Available |
+| **color**                 | alert, link, primary, secondary, success, warning   | ✅ Available |
+| **brand**                 | avon, avon_v2, natura, natura_v2, theBodyShop, <br /> consultoriaDeBeleza, casaEestilo            | ✅ Available        |
+## Technical Usages Examples
 `
 
 const tagColors = [
@@ -48,7 +42,7 @@ const tagColors = [
 export default {
   component: Tag,
   parameters: {
-    componentSubtitle: 'Tags are used to label, categorize, or organize items using keywords that describe them.',
+    componentSubtitle: '',
     docs: {
       extractComponentDescription: description
     }
