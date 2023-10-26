@@ -5,23 +5,22 @@ import { Divider } from './Divider'
 import { StoryContainer, StoryWrapper } from '../../common/HelperComponents/StoryContainer'
 
 const description = () => `
-- - -
+> A divider is a thin line that groups content in lists and layouts.
 
-### NOTE:
-  This component is available in the following variants:
+## Properties
+| Property                | Values                                         |    Status    |
+|---                      |                                             ---|           ---|
+| **type**                | fullBleed, inset, middle                       | ✅ Available |
 
-  - ✅ Full-bleed
-  - ✅ Inset
-  - ✅ Middle
 
-- - -
+## Technical Usages Examples
 `
 
 export default {
   component: Divider,
   parameters: {
     componentSubtitle:
-      'A divider is a thin line that groups content in lists and layouts.',
+      '',
     docs: {
       extractComponentDescription: description
     }
