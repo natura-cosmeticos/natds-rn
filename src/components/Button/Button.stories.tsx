@@ -18,7 +18,7 @@ const description = () => `
 | **iconName**     | 'icon_name'                                                                        | ✅ Available        |
 | **disabled**     | true, false                                                                        | ✅ Available        |
 | **display **     | inline, block                                                                      | ❌ Not Applicable   |
-| **brand**        | aesop, avon, avon_v2, natura <br/> consultoriaDeBeleza, natura_v2, casaEestilo     | ✅ Available        |
+| **brand**                   | avon, avon_v2, natura, natura_v2, theBodyShop, <br /> consultoriaDeBeleza, casaEestilo            | ✅ Available        |
 
 ## Technical Usages Examples
 `
