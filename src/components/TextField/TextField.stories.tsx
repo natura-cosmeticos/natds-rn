@@ -9,48 +9,37 @@ import placeholderImage from '../../assets/images/textfield_image_arealimit.png'
 import { IconButton } from '../IconButton'
 
 const description = () => `
-- - -
+> TextField let users enter and edit text.
 
-### NOTE:
-This component is available in the following variants:
-
-- ✅ Standard
-
-With the following attribute statuses:
-
-- **Size:**
-  - ✅ \`Medium\`
-  - ✅ \`MediumX\`
-- **Style:**
-  - ✅ \`Outlined\`
-- **States:**
-  - ✅ \`Enabled\`
-  - ✅ \`Active\`
-  - ✅ \`Filled\`
-- **Feedback:**
-  - ✅ \`Error\`
-  - ✅ \`Success\`
-- ✅ **Required**
-- ✅ **Disabled**
-- ✅ **Read Only**
-- ✅ **Helper Text**
-- **Action:**
-  - ✅ \`None\`
-  - ✅ \`Icon Button\`
-  - ✅ \`Image\`
-- **Type:**
-  - ✅ \`Text\`
-  - ✅ \`Password\`
-  - ✅ \`Multi-line\`
-  - ✅ \`Number\`
-
-- - -
+## Properties
+| Property                  | Values                                              |    Status    |
+|---                        |                                                  ---|           ---|
+| **variant (no prop)**     | Standard                                            | ✅ Available |
+| **action**                | none, iconButton, image                             | ✅ Available |
+| **actionComponent**       | component image                                     | ✅ Available |
+| **disabled**              | true/false                                          | ✅ Available |
+| **feedback**              | error, success                                      | ✅ Available |
+| **helperText**            | string                                              | ✅ Available |
+| **keyboardType**          | TextInputProps                                      | ✅ Available |
+| **label**                 | string                                              | ✅ Available |
+| **readonly**              | true/false                                          | ✅ Available |
+| **required**              | true/false                                          | ✅ Available |
+| **secureTextEntry**       | TextInputProps                                      | ✅ Available |
+| **onBlur**                | function                                            | ✅ Available |
+| **onChangeText**          | function                                            | ✅ Available |
+| **onFocus**               | function                                            | ✅ Available |
+| **size**                  | medium, mediumX                                     | ✅ Available |
+| **type**                  | text, password, number                              | ✅ Available |
+| **value**                 | string                                              | ✅ Available |
+| **multiline**             | true/false                                          | ✅ Available |
+| **brand**                 | avon, avon_v2, natura, natura_v2, theBodyShop, <br /> consultoriaDeBeleza, casaEestilo            | ✅ Available        |
+## Technical Usages Examples
 `
 
 export default {
   component: TextField,
   parameters: {
-    componentSubtitle: 'TextField let users enter and edit text.',
+    componentSubtitle: '',
     docs: {
       extractComponentDescription: description
     }
