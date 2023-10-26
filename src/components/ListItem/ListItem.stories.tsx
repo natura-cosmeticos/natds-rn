@@ -10,10 +10,26 @@ import { TextWithTheme } from '../../common/HelperComponents/ThemeHelper.styles'
 import { data } from './stories.data'
 import { StoryContainer } from '../../common/HelperComponents/StoryContainer'
 
+const description = () => `
+> List items are rows of information that can have user interactions or not
+
+## Properties
+| Property                | Values                                         |    Status    |
+|---                      |                                             ---|           ---|
+| **feedback**            | ripple, selection                              | ✅ Available |
+| **selected**            | true/false                                     | ✅ Available |
+| **onPress**             | function                                       | ✅ Available |
+
+## Technical Usages Examples
+`
+
 export default {
   component: ListItem,
   parameters: {
-    componentSubtitle: 'List items are rows of information that can have user interactions or not'
+    componentSubtitle: '',
+    docs: {
+      extractComponentDescription: description
+    }
   },
   title: 'Components|List'
 }
