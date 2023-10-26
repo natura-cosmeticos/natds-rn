@@ -8,25 +8,30 @@ import { StoryContainer, StoryWrapper } from '../../common/HelperComponents/Stor
 import { CheckboxColors } from './Checkbox.types'
 
 const description = () => `
-- - -
+> Checkbox selection controls allow the user to select options..
 
-  ### NOTE:
-  This component is available in the following variants:
+## Properties
+| Property                   | Values                                                                                            |    Status           |
+|---                         |                                                                                                ---|                  ---|
+| **variant (no prop)**      | Standard, Indeterminate                                                                           | ✅ Available        |
+| **color**                  | primary, secondary                                                                                | ✅ Available        |
+| **accessibilityLabel**     | string                                                                                            | ✅ Available        |
+| **onPress**                | function                                                                                          | ✅ Available        |
+| **selected**               | true/false                                                                                        | ✅ Available        |
+| **disabled**               | true/false                                                                                        | ✅ Available        |
+| **indeterminate**          | true/false                                                                                        | ✅ Available        |
+| **label**                  | string                                                                                            | ✅ Available        |
+| **brand**                  | avon, avon_v2, natura, natura_v2, theBodyShop, <br /> consultoriaDeBeleza, casaEestilo            | ✅ Available        |
+| **mode**                   | light, dark                                                                                       | ✅ Available        |
 
-  - ✅ **Standard**
-  - ✅ **Indeterminate**
 
-With the following attribute status:
-
-  - ✅ **Disabled**
-
-- - -
+## Technical Usages Examples
 `
 
 export default {
   component: Checkbox,
   parameters: {
-    componentSubtitle: 'Selection controls allow the user to select options.',
+    componentSubtitle: '',
     docs: {
       extractComponentDescription: description
     }
