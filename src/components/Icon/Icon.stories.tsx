@@ -6,21 +6,26 @@ import { IconColors, IconSizes } from './Icon.types'
 import { StoryContainer } from '../../common/HelperComponents/StoryContainer'
 
 const description = () => `
----
+> A helper component to display icons from @naturacosmeticos/natds-icons package
 
-**NOTE**: This component is available with the following attribute status:
+## Properties
+| Property                | Values                                                        |    Status    |
+|---                      |                                                            ---|           ---|
+| **color**               | color-tokens                                                  | ✅ Available |
+| **size**                | none, micro, tiny, small, standard, semi, semiX, medium       | ✅ Available |
+| **name**                | icon-name                                                     | ✅ Available |
+| **accessibilityHint**   | string                                                        | ✅ Available |
+| **accessibilityLabel**  | string                                                        | ✅ Available |
+| **accessibilityLabel**  | imagebutton, image                                            | ✅ Available |
 
-- ✅ **Color:** all supported Color tokens from \`natds-themes\`
-- ✅  **Size:** all supported Size tokens from \`natds-themes\`
-- ✅  **Name:** all supported Icon names from [Icon Library](https://ds.natura.design/28db352be/p/94367e-icon-library/b/6154b9)
 
----
+## Technical Usages Examples
 `
 
 export default {
   component: Icon,
   parameters: {
-    componentSubtitle: 'A helper component to display icons from @naturacosmeticos/natds-icons package',
+    componentSubtitle: '',
     docs: {
       extractComponentDescription: description
     }
