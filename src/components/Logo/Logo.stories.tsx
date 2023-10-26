@@ -7,44 +7,23 @@ import {
 } from './Logo.types'
 
 const description = () => `
-- - -
+> Logo adapted as brand standards for each company.
 
-  ### NOTE:
-  This component is available in the following variants:
+## Properties
+| Property                | Values                                           |    Status    |
+|---                      |                                               ---|           ---|
+| **accessibilityLabel**  | string                                           | ✅ Available |
+| **color**               | neutral, primary, secondary, highlight, surface  | ✅ Available |
+| **model**               | a, b                                             | ✅ Available |
+| **size**                | medium, mediumX, large, largeX, largeXX, largeXXX <br /> huge, hugeX, hugeXX, hugeXXX, veryHuge     | ✅ Available |
 
-  - ✅ Base
-
-With the following attribute status:
-
-- **Model**
-    - ✅ \`primary\`
-    - ✅ \`secondary\`
-- **Color**
-    - ✅ \`neutral\`
-    - ✅ \`primary\`
-    - ✅ \`secondary\`
-    - ✅ \`highlight\`
-    - ✅ \`surface\`
-- **Size**
-    - ✅ \`medium\`
-    - ✅ \`mediumx\`
-    - ✅ \`large\`
-    - ✅ \`largex\`
-    - ✅ \`largexx\`
-    - ✅ \`largexxx\`
-    - ✅ \`huge\`
-    - ✅ \`hugex\`
-    - ✅ \`hugexx\`
-    - ✅ \`hugexxx\`
-    - ✅ \`veryhuge\`
-
-- - -
+## Technical Usages Examples
 `
 
 export default {
   component: Logo,
   parameters: {
-    componentSubtitle: 'Logo adapted as brand standards for each company.',
+    componentSubtitle: '',
     docs: {
       extractComponentDescription: description
     }
