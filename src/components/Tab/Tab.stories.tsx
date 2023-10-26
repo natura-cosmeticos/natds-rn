@@ -11,33 +11,28 @@ import {
 } from './stories.data'
 
 const description = () => `
-- - -
+> Tabs allow the users to navigate between groups of contents that are at the same level of hierarchy.
 
-  ### NOTE:
-  This component is available in the following variants:
-
-  - ✅ Standard
-
-With the following attribute status:
-
-  - **Position:**
-    - ✅ \`Fixed\`
-    - ✅ \`Scrollable\`
-  - **Icon:**
-    - ✅ \`Leading\`
-    - ✅ \`Top\`
-    - ✅ \`Icon\`
-  - ✅ **Disabled**
-  - ✅ **Elevation**
-  - ✅ **Background Color**
-
-- - -
+## Properties
+| Property                | Values                                         |    Status    |
+|---                      |                                             ---|           ---|
+| **variant (no prop)**   | Standard                                       | ✅ Available |
+| **accessibilityRole**   | string                                         | ✅ Available |
+| **accessible**          | true/false                                     | ✅ Available |
+| **backgroundColor**     | true/false                                     | ✅ Available |
+| **elevation**           | true/false                                     | ✅ Available |
+| **iconPosition**        | leading, top, icon                             | ✅ Available |
+| **position**            | fixed, scrollable                              | ✅ Available |
+| **onChange**            | function                                       | ✅ Available |
+| **tabOptions**          | array(disabled?: boolean, iconName?: string; <br /> key: string; label: string; selected?: boolean;) | ✅ Available |
+| **brand**               | avon, avon_v2, natura, natura_v2, theBodyShop, <br /> consultoriaDeBeleza, casaEestilo            | ✅ Available        |
+## Technical Usages Examples
 `
 
 export default {
   component: Tab,
   parameters: {
-    componentSubtitle: 'Tabs allow the users to navigate between groups of contents that are at the same level of hierarchy.',
+    componentSubtitle: '',
     docs: {
       extractComponentDescription: description
     }
