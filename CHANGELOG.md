@@ -2,6 +2,42 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [7.38.0](https://github.com/natura-cosmeticos/natds-rn/compare/v7.37.0...v7.38.0) (2023-11-20)
+
+
+### Features
+
+* **natds-rn:** add table props to doc button ([8d05fc1](https://github.com/natura-cosmeticos/natds-rn/commit/8d05fc1e7de050943cc87dd43b05f0b35dfef0fc))
+* **natds-rn:** change status doc Alert ([7493903](https://github.com/natura-cosmeticos/natds-rn/commit/7493903d090d6d0a998eccd42223589a41844c95))
+* **natds-rn:** change status doc Avatar ([8681a07](https://github.com/natura-cosmeticos/natds-rn/commit/8681a07efe1a707ae4b049fbc0bac86bb9252f20))
+* **natds-rn:** change status doc Badge ([f736d14](https://github.com/natura-cosmeticos/natds-rn/commit/f736d14badf79477bf5ca779e0032482019da2f8))
+* **natds-rn:** change status doc Button ([c757adc](https://github.com/natura-cosmeticos/natds-rn/commit/c757adcd34e07e3c6cc20212858eef7c6e632fa9))
+* **natds-rn:** change status doc Card ([bbf198b](https://github.com/natura-cosmeticos/natds-rn/commit/bbf198b491177f478e4a7aa05d696bee5588de2c))
+* **natds-rn:** change status doc CheckBox ([0a4c3e8](https://github.com/natura-cosmeticos/natds-rn/commit/0a4c3e8f71e62e5d15adc2866104355b535363c4))
+* **natds-rn:** change status doc Counter ([3d3e482](https://github.com/natura-cosmeticos/natds-rn/commit/3d3e482bc9dc706109a2e9aa47516b8d7d1c160c))
+* **natds-rn:** change status doc Dialog ([7b278c5](https://github.com/natura-cosmeticos/natds-rn/commit/7b278c533c79bfe1438e2b31fa637f217a2337bb))
+* **natds-rn:** change status doc Divider ([11f834f](https://github.com/natura-cosmeticos/natds-rn/commit/11f834f46d0d7aa1ffa68b9eba39d2d63325dd24))
+* **natds-rn:** change status doc Icon ([c4c1383](https://github.com/natura-cosmeticos/natds-rn/commit/c4c1383b2011815e628c2d8835b4f871a93ddd8e))
+* **natds-rn:** change status doc iconButton ([1a1fc1b](https://github.com/natura-cosmeticos/natds-rn/commit/1a1fc1b8b7535c022a5ad2c3418e143232c653a0))
+* **natds-rn:** change status doc Image ([1929c70](https://github.com/natura-cosmeticos/natds-rn/commit/1929c7042b4412239c904038c7062981fb18c82d))
+* **natds-rn:** change status doc Link ([28fef29](https://github.com/natura-cosmeticos/natds-rn/commit/28fef2955b323b7b180430bbcd72239692887330))
+* **natds-rn:** change status doc List ([1d6405c](https://github.com/natura-cosmeticos/natds-rn/commit/1d6405c5800c70ed2928bd7d6ccbbeabcd33606e))
+* **natds-rn:** change status doc Logo ([787898f](https://github.com/natura-cosmeticos/natds-rn/commit/787898f11ef1e381060359bf5821c8658b84f0aa))
+* **natds-rn:** change status doc ProgressIndicator ([7e5824e](https://github.com/natura-cosmeticos/natds-rn/commit/7e5824e3940063be4f1ca667c77cc1a3a86b1ba9))
+* **natds-rn:** change status doc RadioButton ([34b1f74](https://github.com/natura-cosmeticos/natds-rn/commit/34b1f74f7308cf6a75f6fb3eebc554ab3d32a038))
+* **natds-rn:** change status doc Rating ([da030f3](https://github.com/natura-cosmeticos/natds-rn/commit/da030f35f23bdd5ad28200d20a2e790488cd722d))
+* **natds-rn:** change status doc Snackbar ([d9ddbfb](https://github.com/natura-cosmeticos/natds-rn/commit/d9ddbfbaeaa3c6e49448cc3dacbbe3908ff8a4fd))
+* **natds-rn:** change status doc Tab ([24ffaa7](https://github.com/natura-cosmeticos/natds-rn/commit/24ffaa7ceaad65066de36f9a8f3cf30cc52637df))
+* **natds-rn:** change status doc Tag ([9562354](https://github.com/natura-cosmeticos/natds-rn/commit/9562354265a1a5fea2fc20ca42e55d14726c381b))
+* **natds-rn:** change status doc TextField ([386d66c](https://github.com/natura-cosmeticos/natds-rn/commit/386d66c3e3e6de51cbffbe7a0ac103984ef1cada))
+* **natds-rn:** change status doc Typography ([aceab80](https://github.com/natura-cosmeticos/natds-rn/commit/aceab80868aabf3fbf17931d21c50e9dc50cdefc))
+
+
+### Bug Fixes
+
+* **natds-rn:** change status Available button ([1e385ef](https://github.com/natura-cosmeticos/natds-rn/commit/1e385ef2c64d8e7ae72aaf3055216e8b8c94be5b))
+* **natds-rn:** change status propperties ([1615d45](https://github.com/natura-cosmeticos/natds-rn/commit/1615d4578fc3f2ca624a25b24ca4c6dd899ec8c3))
+
 ## [7.37.0](https://github.com/natura-cosmeticos/natds-rn/compare/v7.36.0...v7.37.0) (2023-07-21)
 
 
