@@ -6,30 +6,27 @@ import { StoryContainer, StoryWrapper } from '../../common/HelperComponents/Stor
 import { Types as TypesProps, Variants as VariantsProps } from './Alert.types'
 
 const description = () => `
----
+> Alert An alert displays a short, important message in a way that attracts the user's attention without interrupting the user's task.
 
-**NOTE**: This component is available in the following types:
+## Properties
+| Property                   | Values                                           |    Status           |
+|---                         |                                               ---|                  ---|
+| **variant**                | standard, outlined,  filled                      | ✅ Available        |
+| **type**                   | success, error, warning, info, custom            | ✅ Available        |
+| **icon**                   | true/false                                       | ✅ Available        |
+| **title**                  | string                                           | ✅ Available        |
+| **message**                | string                                           | ✅ Available        |
+| **backgroundColorName **   | string of theme color                            | ✅ Available        |
+| **borderColorName **       | string of theme color                            | ✅ Available        |
+| **iconColorName **         | string of theme color                            | ✅ Available        |
+| **iconName **              | icon-name                                        | ✅ Available        |
+| **titleColorName **        | icon-name                                        | ✅ Available        |
+| **messageColorName **      | icon-name                                        | ✅ Available        |
 
-  - ✅ Standard
-
-With the following attribute status:
-
-- **Type:** (available as variant)
-  - ✅ \`contained\` (available as standard)
-  - ✅ \`outlined\`
-- **Color:** (available as type)
-  - ✅ \`success\`
-  - ✅ \`error\`
-  - ✅ \`warning\`
-  - ✅ \`info\`
-  - ✅ \`custom\`
-- ✅ **Title**
-- ✅ **Icon**
-
----
+## Technical Usages Examples
 `
 
-const alertDefinition = 'An alert displays a short, important message in a way that attracts the user\'s attention without interrupting the user\'s task.'
+const alertDefinition = ''
 
 export default {
   component: Alert,

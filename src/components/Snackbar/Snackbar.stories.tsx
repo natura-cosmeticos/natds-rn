@@ -5,28 +5,27 @@ import { Snackbar, SnackbarType } from './Snackbar'
 import { StoryContainer, StoryWrapper } from '../../common/HelperComponents/StoryContainer'
 
 const description = () => `
-- - -
+> Snackbars provide brief messages about app processes at the bottom of the screen.
 
-  ### NOTE for UX: This component is available in the following variants:
+## Properties
+| Property                | Values                                         |    Status    |
+|---                      |                                             ---|           ---|
+| **variant (no prop)**   | Standard                                       | ✅ Available |
+| **message**             | string                                         | ✅ Available |
+| **buttonText**          | string                                         | ✅ Available |
+| **type**                | standard, success, error, warning, info        | ✅ Available |
+| **autoHideDuration**    | number                                         | ✅ Available |
+| **open**                | true/false                                     | ✅ Available |
+| **numberOfLines**       | number                                         | ✅ Available |
+| **onClose**             | function                                       | ✅ Available |
 
-  - ✅ Standard
-
-With the following attribute status:
-
-  - **Color:**
-    - ✅ Error
-    - ✅ Info
-    - ✅ Standard
-    - ✅ Success
-    - ✅ Warning
-
-- - -
+## Technical Usages Examples
 `
 
 export default {
   component: Snackbar,
   parameters: {
-    componentSubtitle: 'Snackbars provide brief messages about app processes at the bottom of the screen.',
+    componentSubtitle: '',
     docs: {
       extractComponentDescription: description
     }

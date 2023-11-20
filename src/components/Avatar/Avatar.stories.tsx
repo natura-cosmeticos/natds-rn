@@ -8,33 +8,28 @@ import { StoryContainer, StoryWrapper } from '../../common/HelperComponents/Stor
 import { Avatar } from '.'
 
 const description = () => `
----
+> Avatars are used to identify a user.
 
-**NOTE**: This component is available in the following types:
+## Properties
+| Property                   | Values                                                                                            |    Status           |
+|---                         |                                                                                                ---|                  ---|
+| **size**                   | standard, medium, semiX, tiny, small, semi, large, largeXXX, huge                                 | ✅ Available        |
+| **accessibilityLabel**     | string                                                                                            | ✅ Available        |
+| **accessibilityHint**      | string                                                                                            | ✅ Available        |
+| **type**                   | image, icon, letter, anonymous                                                                    | ✅ Available        |
+| **imgSource**              | string, uri: string   (available only in image type)                                              | ✅ Available        |
+| **text**                   | string, (available only in letter type)                                                           | ✅ Available        |
+| **iconName**               | icon-name, (available only in icon type)                                                          | ✅ Available        |
+| **brand**                  | avon, avon_v2, natura, natura_v2, theBodyShop, <br /> consultoriaDeBeleza, casaEestilo            | ✅ Available        |
 
-  - ✅ icon
-  - ✅ image
-  - ✅ letter
 
-With the following attribute status:
-
-- **Size:**
-  - ✅ \`standard\`
-  - ✅ \`semi\`
-  - ✅ \`semiX\`
-  - ✅ \`medium\`
-  - ✅ \`largeXXX\`
-- ✅ **imgSource**  (available only in image type)
-- ✅ **text**  (available only in letter type)
-- ✅ **iconName** (available only in icon type)
-
----
+## Technical Usages Examples
 `
 
 export default {
   component: Avatar,
   parameters: {
-    componentSubtitle: 'Avatars are used to identify a user.',
+    componentSubtitle: '',
     docs: {
       extractComponentDescription: description
     }

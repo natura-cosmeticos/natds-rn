@@ -10,38 +10,29 @@ import {
 } from './IconButton.types'
 
 const extractComponentDescription = () => `
-- - -
+> A button component with an icon from @naturacosmeticos/natds-icons package
 
-  ### NOTE:
-  This component is available in the following variants:
+## Properties
+| Property                | Values                                                        |    Status    |
+|---                      |                                                            ---|           ---|
+| **variant (no prop)**   | Standard                                                      | ✅ Available |
+| **vaccessibilityHint**  | string                                                        | ✅ Available |
+| **accessibilityLabel**  | string                                                        | ✅ Available |
+| **iconColor**           | primary, highEmphasis, light, default                         | ✅ Available |
+| **color**               | primary, highEmphasis, light, default                         | ✅ Available |
+| **backgroundStyle**     | none, float, overlay                                          | ✅ Available |
+| **disabled**            | true/false                                                    | ✅ Available |
+| **icon**                | icon-name                                                     | ✅ Available |
+| **size**                | semi, semiX, medium                                           | ✅ Available |
+| **onPress**             | function                                                      | ✅ Available |
 
-  - ✅ Standard
-
-With the following attribute status:
-
-  - **Icon Color:**
-    - ✅ \`Hight Emphasis\`
-    - ✅ \`Primary\`
-    - ✅ \`Light\`
-  - **Background Style:**
-    - ✅ \`None (inherit)\`
-    - ✅ \`Float\`
-    - ✅ \`Overlay\`
-  - ✅ **Disabled**
-  - **Size:**
-    - ✅ \`Semi\`
-    - ✅ \`SemiX\`
-    - ✅ \`Medium\`
-  - ✅ **OnPress (OnClick)**
-  - ✅ **Icon**
-
-- - -
+## Technical Usages Examples
 `
 
 export default {
   component: IconButton,
   parameters: {
-    componentSubtitle: 'A button component with an icon from @naturacosmeticos/natds-icons package',
+    componentSubtitle: '',
     docs: {
       extractComponentDescription
     }

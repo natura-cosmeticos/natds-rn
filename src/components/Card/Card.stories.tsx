@@ -6,25 +6,22 @@ import { TextWithTheme } from '../../common/HelperComponents/ThemeHelper.styles'
 import { CardTypes } from './Card.types'
 
 const description = () => `
----
+> Cards are surfaces that groups content and actions in the same space. Its construction must always create a visual hierarchy of the content and communicate its purposes.
 
-**NOTE for UX**: This component is available in the following variants:
+## Properties
+| Property                   | Values                                                                                            |    Status           |
+|---                         |                                                                                                ---|                  ---|
+| **type**                   | base                                                                                              | ✅ Available        |
+| **elevation**              | true/false                                                                                        | ✅ Available        |
+| **radius**                 | true/false                                                                                        | ✅ Available        |
 
-  - ✅ base
-
-With the following attribute statuses:
-
-  - ✅ **Elevation:**
-  - ✅ **Radius**
-
----
+## Technical Usages Examples
 `
 
 export default {
   component: Card,
   parameters: {
-    componentSubtitle:
-      'Cards are surfaces that groups content and actions in the same space. Its construction must always create a visual hierarchy of the content and communicate its purposes.',
+    componentSubtitle: '',
     docs: {
       extractComponentDescription: description
     }

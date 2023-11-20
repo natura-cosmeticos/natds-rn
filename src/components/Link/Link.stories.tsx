@@ -7,25 +7,23 @@ import { Link } from './Link'
 import { LinkTypes } from './Link.types'
 
 const description = () => `
----
+> The link component allows you to have a pattern for anchor text.
 
-**NOTE**: This component is available in the following variants:
+## Properties
+| Property                | Values                                         |    Status    |
+|---                      |                                             ---|           ---|
+| **type**                | standard, underline                            | ✅ Available |
+| **onPress**              | none, medium, circle                           | ✅ Available |
 
-  - ✅ standard
 
-With the following attribute status:
 
-- **Type:**
-    - ✅ \`standard\`
-    - ✅ \`underline\`
-
----
+## Technical Usages Examples
 `
 
 export default {
   component: Link,
   parameters: {
-    componentSubtitle: 'The link component allows you to have a pattern for anchor text.',
+    componentSubtitle: '',
     docs: {
       extractComponentDescription: description
     }

@@ -6,31 +6,20 @@ import { Typography } from './Typography.styles'
 import { Separator, VerticalStoryContainer } from '../../common/HelperComponents/StoryContainer'
 
 const description = () => `
-- - -
+> Typography component for displaying text.
 
-  ### NOTE:
-  This component is available in the following variants:
+## Properties
+| Property                  | Values                                              |    Status    |
+|---                        |                                                  ---|           ---|
+| **variant**               | heading1, heading2, heading3, heading4, heading5, <br /> heading6, subtitle1, subtitle2, body1, body2, caption, overline                                            | ✅ Available |
 
-  - ✅ Heading1
-  - ✅ Heading2
-  - ✅ Heading3
-  - ✅ Heading4
-  - ✅ Heading5
-  - ✅ Heading6
-  - ✅ Body1
-  - ✅ Body2
-  - ✅ Caption
-  - ✅ Overline
-
-  Props of the nativo component are also available.
-
-- - -
+## Technical Usages Examples
 `
 
 export default {
   component: Typography,
   parameters: {
-    componentSubtitle: 'Typography component for displaying text.',
+    componentSubtitle: '',
     docs: {
       extractComponentDescription: description
     }

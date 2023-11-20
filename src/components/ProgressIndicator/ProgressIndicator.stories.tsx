@@ -8,11 +8,25 @@ import {
 } from './ProgressIndicator'
 import { ProgressIndicatorSizes } from './ProgressIndicator.types'
 
+const description = () => `
+> Progress indicators express an unspecified wait time or display the length of a process.
+
+## Properties
+| Property                | Values                                         |    Status    |
+|---                      |                                             ---|           ---|
+| **size**                | standard, semi, medium, large                  | ✅ Available |
+| **showLayer**           | true/false                                     | ✅ Available |
+| **brand**               | avon, avon_v2, natura, natura_v2, theBodyShop, <br /> consultoriaDeBeleza, casaEestilo            | ✅ Available        |
+## Technical Usages Examples
+`
+
 export default {
   component: ProgressIndicatorComponent,
   parameters: {
-    componentSubtitle:
-      'Progress indicators express an unspecified wait time or display the length of a process.'
+    componentSubtitle: '',
+    docs: {
+      extractComponentDescription: description
+    }
   },
   title: 'Components|ProgressIndicator'
 }

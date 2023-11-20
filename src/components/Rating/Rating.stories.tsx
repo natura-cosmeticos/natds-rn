@@ -8,40 +8,27 @@ import {
 import { Rating } from './Rating'
 
 const description = () => `
-- - -
+> Rating is used to allow users to assign ratings or reviews to an item.
 
-  ### NOTE:
-  This component is available in the following variants:
-
-  - ✅ Counter
-  - ✅ Input
-  - ✅ Read-Only
-
-With the following attribute status:
-
-  - ✅ Hint (available on input and counter variants)
-  - **Size:**
-      - ✅ \`Small\` (available on input and read-only variants)
-      - ✅ \`Standard\` (available on input and read-only variants)
-      - ✅ \`Semi\` (available in all variants)
-      - ✅ \`SemiX\` (available in all variants)
-      - ✅ \`Medium\` (available only in input variant)
-  - **Alignment** (available only in counter variant)
-    - ✅ \`left\`
-    - ✅ \`right\`
-  - ✅ **Disabled** (available only in input variant)
-  - ✅ **Rate** (available on input and read-only variants)
-  - **Interaction state**:
-      - ✅ \`Enabled\`
-      - ✅ \`Press\`
-
-- - -
+## Properties
+| Property                | Values                                         |    Status    |
+|---                      |                                             ---|           ---|
+| **variant**             | counter, input, read-Only                      | ✅ Available |
+| **accessibilityHint**   | string                                         | ✅ Available |
+| **accessibilityLabel**  | string                                         | ✅ Available |
+| **label**               | string                                         | ✅ Available |
+| **size**                | semi, semiX, small, standard, medium           | ✅ Available |
+| **align**               | left, right                                    | ✅ Available |
+| **disabled**            | true/false                                     | ✅ Available |
+| **onPress**             | function                                       | ✅ Available |
+| **rate**                | number                                         | ✅ Available |
+## Technical Usages Examples
 `
 
 export default {
   component: Rating,
   parameters: {
-    componentSubtitle: 'Rating subtitle',
+    componentSubtitle: '',
     docs: {
       extractComponentDescription: description
     }

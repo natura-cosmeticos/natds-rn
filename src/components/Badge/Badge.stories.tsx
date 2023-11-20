@@ -5,32 +5,29 @@ import { StoryContainer, StoryWrapper } from '../../common/HelperComponents/Stor
 import { BadgeColors } from './Badge.types'
 
 const description = () => `
-- - -
+> Badge is a visual indicator for numeric values.
 
-  ### NOTE:
-  This component is available in the following variants:
+## Properties
+| Property                   | Values                                                                                            |    Status           |
+|---                         |                                                                                                ---|                  ---|
+| **variant**                | dot, pulse, standard                                                                              | ✅ Available        |
+| **accessible**             | true/false                                                                                        | ✅ Available        |
+| **accessibilityLabel**     | string                                                                                            | ✅ Available        |
+| **accessibilityRole**      | AccessibilityRole                                                                                 | ✅ Available        |
+| **accessibilityValue**     | accessibilityValue                                                                                | ✅ Available        |
+| **color**                  | primary, secondary, success, alert                                                                | ✅ Available        |
+| **limit**                  | number                                                                                            | ✅ Available        |
+| **value**                  | number                                                                                            | ✅ Available        |
+| **brand**                  | avon, avon_v2, natura, natura_v2, theBodyShop, <br /> consultoriaDeBeleza, casaEestilo            | ✅ Available        |
 
-  - ✅ Dot
-  - ✅ Pulse
-  - ✅ Standard
 
-With the following attribute status:
-
-  - **Color:**
-    - ✅ \`Alert\`
-    - ✅ \`Primary\`
-    - ✅ \`Secondary\`
-    - ✅ \`Success\`
-
-  - ✅ **Limit**
-  - ✅ **Value**
-- - -
+## Technical Usages Examples
 `
 
 export default {
   component: Badge,
   parameters: {
-    componentSubtitle: 'Badge is a visual indicator for numeric values.',
+    componentSubtitle: '',
     docs: {
       extractComponentDescription: description
     }

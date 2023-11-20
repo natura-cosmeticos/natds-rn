@@ -11,36 +11,25 @@ import { Tag } from '../Tag'
 const webStoryMessage = Platform.OS === 'web' ? ' (the effect can only be rendered within the native platforms)' : ''
 
 const description = () => `
-- - -
+> Informs the user of image content with possible resources for greater interaction
 
-  ### NOTE:
-  This component is available in the following variants:
+## Properties
+| Property                | Values                                         |    Status    |
+|---                      |                                             ---|           ---|
+| **variant**             | standard, highlight                            | ✅ Available |
+| **radius**              | none, medium, circle                           | ✅ Available |
+| **fade**                | top, left, right, bottom                       | ✅ Available |
+| **source**              | string, ImageSourcePropType                    | ✅ Available |
+| **fallback**            | (is available using the native onError method) | ✅ Available |
 
-  - ✅ Standard
-  - ✅ Highlight
 
-With the following attribute statuses:
-
-  - **Attributes:**
-  - **Radius:**
-    - ✅ \`None\`
-    - ✅ \`Medium\`
-    - ✅ \`Circle\`
-  - **Fade:**
-    - ✅ \`Left\`
-    - ✅ \`Top\`
-    - ✅ \`Right\`
-    - ✅ \`Bottom\`
-
-  - ✅ **Fallback** (is available using the native onError method)
-
-- - -
+## Technical Usages Examples
 `
 
 export default {
   component: Image,
   parameters: {
-    componentSubtitle: 'Informs the user of image content with possible resources for greater interaction',
+    componentSubtitle: '',
     docs: {
       extractComponentDescription: description
     }

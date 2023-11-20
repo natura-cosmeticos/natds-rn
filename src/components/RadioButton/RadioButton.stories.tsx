@@ -5,10 +5,29 @@ import { boolean, text } from '@storybook/addon-knobs'
 import { RadioButton } from './RadioButton'
 import { StoryContainer, StoryWrapper } from '../../common/HelperComponents/StoryContainer'
 
+const description = () => `
+> Selection controls allow the user to select options.
+
+## Properties
+| Property                | Values                                         |    Status    |
+|---                      |                                             ---|           ---|
+| **color**               | primary, secondary                             | ✅ Available |
+| **onPress**             | function                                       | ✅ Available |
+| **selected**            | true/false                                     | ✅ Available |
+| **disabled**            | true/false                                     | ✅ Available |
+| **label**               | string                                         | ✅ Available |
+| **value**               | string                                         | ✅ Available |
+| **brand**               | avon, avon_v2, natura, natura_v2, theBodyShop, <br /> consultoriaDeBeleza, casaEestilo    | ✅ Available |
+## Technical Usages Examples
+`
+
 export default {
   component: RadioButton,
   parameters: {
-    componentSubtitle: 'Selection controls allow the user to select options.'
+    componentSubtitle: '',
+    docs: {
+      extractComponentDescription: description
+    }
   },
   title: 'Components|RadioButton'
 }

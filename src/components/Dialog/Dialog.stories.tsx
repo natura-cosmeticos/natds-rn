@@ -11,26 +11,27 @@ import {
 import { StoryContainer, StoryWrapper } from '../../common/HelperComponents/StoryContainer'
 
 const description = () => `
----
+> Dialogs inform users about a task and can contain critical information, require decisions, or involve multiple tasks.
 
-**NOTE**: This component is available in the following variants:
+## Properties
+| Property                   | Values                                                                               |    Status    |
+|---                         |                                                                                   ---|           ---|
+| **variant (no prop)**      | standard, alert (available but with alternative composition)                         | ✅ Available |
+| **visible**                | string                                                                               | ✅ Available |
+| **onRequestClose**         | function                                                                             | ✅ Available |
+| **hardwareAccelerated**    | true/false                                                                           | ✅ Available |
+| **onShow**                 | function                                                                             | ✅ Available |
+| **onOrientationChange**    | function                                                                             | ✅ Available |
+| **supportedOrientations**  | portrait, portrait-upside-down, landscape, landscape-left, landscape-right           | ✅ Available |
+| **onDismiss**              | function                                                                             | ✅ Available |
 
-  - ✅ standard (available but with alternative composition)
-  - ✅ alert (available but with alternative composition)
-
-With the following attribute status:
-
-- ✅ **Size**
-- ✅ **Divider**
-- ✅ **Scroll**
-
----
+## Technical Usages Examples
 `
 
 export default {
   component: Dialog,
   parameters: {
-    componentSubtitle: 'Dialogs inform users about a task and can contain critical information, require decisions, or involve multiple tasks. ',
+    componentSubtitle: ' ',
     docs: {
       extractComponentDescription: description
     }
