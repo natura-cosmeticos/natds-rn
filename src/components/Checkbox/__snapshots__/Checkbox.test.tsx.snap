@@ -309,8 +309,8 @@ exports[`Checkbox component render should render checkbox indeterminate selected
           Array [
             Object {
               "alignItems": "center",
-              "backgroundColor": "#f4ab34",
-              "borderColor": "#f4ab34",
+              "backgroundColor": "#f6be00",
+              "borderColor": "#f6be00",
               "borderRadius": 2,
               "borderWidth": 2,
               "height": 20,
@@ -499,8 +499,8 @@ exports[`Checkbox component render should render checkbox selected correctly 1`]
           Array [
             Object {
               "alignItems": "center",
-              "backgroundColor": "#f4ab34",
-              "borderColor": "#f4ab34",
+              "backgroundColor": "#f6be00",
+              "borderColor": "#f6be00",
               "borderRadius": 2,
               "borderWidth": 2,
               "height": 20,

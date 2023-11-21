@@ -11,8 +11,8 @@ exports[`Alert component Should render alert with custom type with outlined vari
   style={
     Array [
       Object {
-        "backgroundColor": "#f4ab3429",
-        "borderColor": "#f4ab34",
+        "backgroundColor": "#f6be0029",
+        "borderColor": "#f6be00",
         "borderRadius": 4,
         "borderWidth": 1,
         "flexDirection": "row",
