@@ -2026,15 +2026,15 @@
     eslint-plugin-react "^7.22.0"
     eslint-plugin-react-hooks "^4.2.0"
 
-"@naturacosmeticos/natds-icons@^1.11.3":
-  version "1.11.3"
-  resolved "https://registry.yarnpkg.com/@naturacosmeticos/natds-icons/-/natds-icons-1.11.3.tgz#e7de13d8fde2c44f9c68e73de75f02906fefdfb8"
-  integrity sha512-NQVrs5aUaCc7eyrPRh5TlgRYZqT0SXDHq/VVcWUG/R7j9wzFFvCs/IbcAjeNJR4cVNDqq2ruAIl9ZnHanw5Qpw==
+"@naturacosmeticos/natds-icons@^1.18.0":
+  version "1.18.0"
+  resolved "https://registry.yarnpkg.com/@naturacosmeticos/natds-icons/-/natds-icons-1.18.0.tgz#79afd3e92ec0d8e272a2fac91540e55f717bbf4f"
+  integrity sha512-dBO/GZLQuaDwlRPSUOqguY/pOQJTlpJuxOp9TtMPdIZCcEPd5cTFJYEhheBkC6aso1wVw+qK72I/TF6B5yMJTA==
 
-"@naturacosmeticos/natds-themes@^0.58.5":
-  version "0.58.5"
-  resolved "https://registry.yarnpkg.com/@naturacosmeticos/natds-themes/-/natds-themes-0.58.5.tgz#785dd8f01dd7b37a6c005cc141c1d5d630960a20"
-  integrity sha512-x9s4zyIKhIa0ASgEnRBlL0LU12ee8JqLYVZBihWvQpzI7Ny3ihmexcfxrKr/tt308hBbnvb7R3x5ap+ksN9sTw==
+"@naturacosmeticos/natds-themes@^0.68.1":
+  version "0.68.1"
+  resolved "https://registry.yarnpkg.com/@naturacosmeticos/natds-themes/-/natds-themes-0.68.1.tgz#2e14ba7316d3ae0ceb5ff7eed32c1846efe7fd54"
+  integrity sha512-5SUCiGnW79nPjIYG7/vh9euUTPidJhe64NOE/eaPAApQ3/9wk4tfXjND2nnyp7tNEp280eIbXpU36NW2WZW5pQ==
   dependencies:
     open-color "^1.8.0"
     svg2vectordrawable "2.6.26"
