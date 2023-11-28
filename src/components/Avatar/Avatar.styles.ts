@@ -50,7 +50,6 @@ const getFontsBySize = (size: AvatarSizes, theme: Theme) => {
 
 const getThemeSelect = (theme: Theme, brand?: BrandTypes) => {
   if (brand) {
-    console.log(brand)
     const themeSelectAvathar = buildTheme(brand, 'light')
     return {
       back: getColorPrimary(themeSelectAvathar),

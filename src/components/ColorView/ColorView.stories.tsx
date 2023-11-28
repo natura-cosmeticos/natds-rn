@@ -33,9 +33,6 @@ export default {
   },
   title: 'Components/ColorView'
 }
-type PropsKey = {
-  keys: string[];
-}
 
 const keysToRemove = ['neutral50',
   'neutral100', 'neutral200',
