@@ -284,7 +284,7 @@ exports[`Button component Variants should render button component contained 1`] 
         Object {
           "alignContent": "center",
           "alignItems": "center",
-          "backgroundColor": "#f4ab34",
+          "backgroundColor": "#f6be00",
           "borderColor": "#FFFFFF00",
           "borderRadius": 4,
           "borderWidth": 0,
@@ -315,7 +315,7 @@ exports[`Button component Variants should render button component contained 1`] 
         style={
           Array [
             Object {
-              "color": "#333333",
+              "color": "#000000",
               "fontFamily": "Roboto",
               "fontSize": 14,
               "fontWeight": "500",
@@ -369,7 +369,7 @@ exports[`Button component Variants should render button component outlined 1`] =
           "alignContent": "center",
           "alignItems": "center",
           "backgroundColor": "#FFFFFF00",
-          "borderColor": "#f4ab34",
+          "borderColor": "#f6be00",
           "borderRadius": 4,
           "borderWidth": 1,
           "elevation": 0,
@@ -536,7 +536,7 @@ exports[`Button component with Icon should render the icon to the left 1`] = `
         Object {
           "alignContent": "center",
           "alignItems": "center",
-          "backgroundColor": "#f4ab34",
+          "backgroundColor": "#f6be00",
           "borderColor": "#FFFFFF00",
           "borderRadius": 4,
           "borderWidth": 0,
@@ -568,7 +568,7 @@ exports[`Button component with Icon should render the icon to the left 1`] = `
         style={
           Array [
             Object {
-              "color": "#333333",
+              "color": "#000000",
               "fontFamily": "Roboto",
               "fontSize": 14,
               "fontWeight": "500",
@@ -590,7 +590,7 @@ exports[`Button component with Icon should render the icon to the left 1`] = `
         size="small"
         style={
           Object {
-            "color": "#333333",
+            "color": "#000000",
           }
         }
       >
@@ -633,7 +633,7 @@ exports[`Button component with Icon should render the icon to the right by defau
         Object {
           "alignContent": "center",
           "alignItems": "center",
-          "backgroundColor": "#f4ab34",
+          "backgroundColor": "#f6be00",
           "borderColor": "#FFFFFF00",
           "borderRadius": 4,
           "borderWidth": 0,
@@ -665,7 +665,7 @@ exports[`Button component with Icon should render the icon to the right by defau
         style={
           Array [
             Object {
-              "color": "#333333",
+              "color": "#000000",
               "fontFamily": "Roboto",
               "fontSize": 14,
               "fontWeight": "500",
@@ -687,7 +687,7 @@ exports[`Button component with Icon should render the icon to the right by defau
         size="small"
         style={
           Object {
-            "color": "#333333",
+            "color": "#000000",
           }
         }
       >

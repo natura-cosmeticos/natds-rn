@@ -22,7 +22,7 @@ describe('Tag Colors', () => {
     const { getByTestId, toJSON } = renderWithTheme(<Tag text="Lorem Ipsum" color="secondary" />)
 
     expect(getByTestId('ds-tag')?.props).toHaveProperty('color', 'secondary')
-    expect(getByTestId('ds-tag')).toHaveStyle({ backgroundColor: '#ff6b0b' })
+    expect(getByTestId('ds-tag')).toHaveStyle({ backgroundColor: '#9f81fd' })
     expect(getByTestId('ds-tag-label')).toHaveStyle({ color: '#000000' })
     expect(toJSON()).toMatchSnapshot()
   })
@@ -30,7 +30,7 @@ describe('Tag Colors', () => {
   it('should return the standard color value', () => {
     const mockFn = jest.fn(getTextColorByName)
 
-    expect(mockFn({ theme })).toEqual('#333333')
+    expect(mockFn({ theme })).toEqual('#000000')
     expect(mockFn).toHaveBeenCalledTimes(1)
   })
 })

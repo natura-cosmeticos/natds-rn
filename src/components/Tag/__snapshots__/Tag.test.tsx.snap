@@ -9,7 +9,7 @@ exports[`Tag Border Position should render with non standard border 1`] = `
     Array [
       Object {
         "alignSelf": "flex-start",
-        "backgroundColor": "#f4ab34",
+        "backgroundColor": "#f6be00",
         "borderBottomLeftRadius": 8,
         "borderBottomRightRadius": 0,
         "borderTopLeftRadius": 8,
@@ -25,7 +25,7 @@ exports[`Tag Border Position should render with non standard border 1`] = `
     style={
       Array [
         Object {
-          "color": "#333333",
+          "color": "#000000",
           "fontFamily": "Roboto",
           "fontSize": 12,
           "fontWeight": "400",
@@ -50,7 +50,7 @@ exports[`Tag Colors should render with secondary color 1`] = `
     Array [
       Object {
         "alignSelf": "flex-start",
-        "backgroundColor": "#ff6b0b",
+        "backgroundColor": "#9f81fd",
         "borderRadius": 8,
         "paddingHorizontal": 8,
       },
@@ -88,7 +88,7 @@ exports[`Tag Component should render with default variant 1`] = `
     Array [
       Object {
         "alignSelf": "flex-start",
-        "backgroundColor": "#f4ab34",
+        "backgroundColor": "#f6be00",
         "borderRadius": 8,
         "paddingHorizontal": 8,
       },
@@ -101,7 +101,7 @@ exports[`Tag Component should render with default variant 1`] = `
     style={
       Array [
         Object {
-          "color": "#333333",
+          "color": "#000000",
           "fontFamily": "Roboto",
           "fontSize": 12,
           "fontWeight": "400",
@@ -126,7 +126,7 @@ exports[`Tag Sizes should render with non default size 1`] = `
     Array [
       Object {
         "alignSelf": "flex-start",
-        "backgroundColor": "#f4ab34",
+        "backgroundColor": "#f6be00",
         "borderRadius": 12,
         "paddingHorizontal": 8,
         "paddingVertical": 4,
@@ -140,7 +140,7 @@ exports[`Tag Sizes should render with non default size 1`] = `
     style={
       Array [
         Object {
-          "color": "#333333",
+          "color": "#000000",
           "fontFamily": "Roboto",
           "fontSize": 12,
           "fontWeight": "400",

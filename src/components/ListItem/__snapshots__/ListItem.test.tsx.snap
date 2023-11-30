@@ -24,7 +24,7 @@ exports[`ListItem component Should not render ListItem with ripple if is selecte
     style={
       Array [
         Object {
-          "backgroundColor": "#f4ab3416",
+          "backgroundColor": "#f6be0016",
           "minHeight": 48,
         },
       ]
@@ -102,7 +102,7 @@ exports[`ListItem component Should render ListItem with state selected 1`] = `
     style={
       Array [
         Object {
-          "backgroundColor": "#f4ab3416",
+          "backgroundColor": "#f6be0016",
           "minHeight": 48,
         },
       ]

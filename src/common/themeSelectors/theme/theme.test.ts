@@ -14,7 +14,7 @@ describe('Theme selectors', () => {
 
   describe('buildTheme', () => {
     it('should build theme using tokens', () => {
-      const result = buildTheme('natura', 'light')
+      const result = buildTheme('consultoriaDeBeleza', 'light')
 
       expect(result).toStrictEqual(mockTheme)
     })
