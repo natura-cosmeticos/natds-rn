@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [7.39.0](https://github.com/natura-cosmeticos/natds-rn/compare/v7.38.0...v7.39.0) (2023-11-30)
+
+
+### Features
+
+* **natds-rn:** add ColorView Component ([f84245c](https://github.com/natura-cosmeticos/natds-rn/commit/f84245c35d54255e08b984f2feeb92464b042961))
+* **natds-rn:** update themes to 0.68.1 icon 1.18.0 ([8793995](https://github.com/natura-cosmeticos/natds-rn/commit/879399529d76658dd87331def1f868a84b1826fe))
+
 ## [7.38.0](https://github.com/natura-cosmeticos/natds-rn/compare/v7.37.0...v7.38.0) (2023-11-20)
 
 
