@@ -1,4 +1,3 @@
-/* eslint-disable max-statements, mocha/no-setup-in-describe */
 import React from 'react'
 import { fireEvent } from '@testing-library/react-native'
 import mockTheme from '../../common/themeSelectors/theme/mock-theme.json'

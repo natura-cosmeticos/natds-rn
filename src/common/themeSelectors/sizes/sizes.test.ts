@@ -1,7 +1,6 @@
 import theme from '../theme/mock-theme.json'
 import * as selectors from './sizes'
 
-/*  eslint-disable mocha/no-setup-in-describe */
 describe.each`
   title        | selector                    | expected
   ${'Semi'}    | ${selectors.getSizeSemi}    | ${theme.size.semi}
@@ -31,4 +30,3 @@ describe.each`
     expect(result).toBe(expected)
   })
 })
-/* eslint-enable mocha/no-setup-in-describe */

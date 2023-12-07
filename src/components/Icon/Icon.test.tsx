@@ -30,7 +30,6 @@ describe('Icon component', () => {
     jest.clearAllMocks()
   })
 
-  /* eslint-disable-next-line mocha/no-setup-in-describe */
   it.each(sampleNames)('should render correctly when icon is %p', (name) => {
     const { toJSON } = renderIcon({ name })
 

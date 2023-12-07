@@ -1,7 +1,6 @@
 import theme from '../theme/mock-theme.json'
 import * as selectors from './opacity'
 
-/*  eslint-disable mocha/no-setup-in-describe */
 describe.each`
 title            | selector                           | expected
 ${'mediumLow'}   | ${selectors.getOpacityMediumLow}   | ${theme.opacity.mediumLow}
@@ -19,4 +18,3 @@ ${'medium'}      | ${selectors.getOpacityMedium}      | ${theme.opacity.medium}
     expect(result).toBe(expected)
   })
 })
-/* eslint-enable mocha/no-setup-in-describe */

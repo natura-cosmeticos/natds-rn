@@ -1,7 +1,6 @@
 import theme from '../theme/mock-theme.json'
 import * as selectors from './colors'
 
-/*  eslint-disable mocha/no-setup-in-describe */
 describe.each`
 title               | selector                            | expected
 ${'primary'}        | ${selectors.getColorPrimary}        | ${theme.color.primary}
@@ -31,4 +30,3 @@ ${'link'}           | ${selectors.getColorLink}           | ${theme.color.link}
     expect(result).toEqual(expected)
   })
 })
-/* eslint-enable mocha/no-setup-in-describe */
