@@ -95,7 +95,6 @@ describe('InputFeedbackContainer', () => {
   })
 })
 
-/*  eslint-disable mocha/no-setup-in-describe */
 describe.each`
   title           | state         | expectedBoxColor  | expectedTextColor
   ${'"active"'}   | ${'active'}   | ${'#FA3'}         | ${'#777'}
@@ -120,4 +119,3 @@ describe.each`
     expect(textColor).toBe(expectedTextColor)
   })
 })
-/* eslint-enable mocha/no-setup-in-describe */

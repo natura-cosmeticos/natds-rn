@@ -1,7 +1,6 @@
 import theme from '../theme/mock-theme.json'
 import * as selectors from './assets'
 
-/*  eslint-disable mocha/no-setup-in-describe */
 describe.each`
 title         | model  | selector                     | expected
 ${'neutral'}  | ${'a'} | ${selectors.getNeutralLogoA} | ${theme.asset.brand.neutral.a}
@@ -17,4 +16,3 @@ ${'custom'}   | ${'b'} | ${selectors.getCustomLogoB}  | ${theme.asset.brand.cust
     expect(result).toStrictEqual(expected)
   })
 })
-/* eslint-enable mocha/no-setup-in-describe */

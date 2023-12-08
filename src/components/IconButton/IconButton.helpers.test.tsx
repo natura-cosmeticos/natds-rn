@@ -1,4 +1,3 @@
-/* eslint-disable mocha/no-setup-in-describe */
 import mockTheme from '../../common/themeSelectors/theme/mock-theme.json'
 import { getShadowBySize, getColorByName, buildColorWithOpacity } from '../../common/themeSelectors'
 import { IconButtonColors, IconButtonSizes } from './IconButton.types'
