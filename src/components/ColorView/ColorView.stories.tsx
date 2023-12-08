@@ -5,22 +5,7 @@ import ColorView from './ColorView'
 import { buildTheme } from '../../common/themeSelectors'
 
 const description = () => `
-> Colors are used to identify a user.
-
-## Properties
-| Property                   | Values                                                                                            |    Status           |
-|---                         |                                                                                                ---|                  ---|
-| **size**                   | standard, medium, semiX, tiny, small, semi, large, largeXXX, huge                                 | ✅ Available        |
-| **accessibilityLabel**     | string                                                                                            | ✅ Available        |
-| **accessibilityHint**      | string                                                                                            | ✅ Available        |
-| **type**                   | image, icon, letter, anonymous                                                                    | ✅ Available        |
-| **imgSource**              | string, uri: string   (available only in image type)                                              | ✅ Available        |
-| **text**                   | string, (available only in letter type)                                                           | ✅ Available        |
-| **iconName**               | icon-name, (available only in icon type)                                                          | ✅ Available        |
-| **brand**                  | avon, avon_v2, natura, natura_v2, theBodyShop, <br /> consultoriaDeBeleza, casaEestilo            | ✅ Available        |
-
-
-## Technical Usages Examples
+> Colors from theme.
 `
 
 export default {
