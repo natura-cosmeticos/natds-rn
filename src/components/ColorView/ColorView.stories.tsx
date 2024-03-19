@@ -19,12 +19,7 @@ export default {
   title: 'Components/ColorView'
 }
 
-const keysToRemove = ['neutral50',
-  'neutral100', 'neutral200',
-  'neutral300', 'neutral400',
-  'neutral500', 'neutral600',
-  'neutral700', 'neutral800',
-  'neutral900'
+const keysToRemove = [
 ]
 function removeKeys(obj: Color) {
   for (const key of keysToRemove) {
