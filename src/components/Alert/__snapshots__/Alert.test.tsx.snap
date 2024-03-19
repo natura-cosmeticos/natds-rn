@@ -202,7 +202,7 @@ exports[`Alert component Should render alert with default props 1`] = `
       style={
         Array [
           Object {
-            "color": "#212529",
+            "color": "#111111",
             "flexWrap": "wrap",
             "fontFamily": "Roboto",
             "fontSize": 20,
@@ -223,7 +223,7 @@ exports[`Alert component Should render alert with default props 1`] = `
       style={
         Array [
           Object {
-            "color": "#212529",
+            "color": "#111111",
             "fontFamily": "Roboto",
             "fontSize": 16,
             "fontWeight": "400",
@@ -313,7 +313,7 @@ exports[`Alert component Should render alert with outlined variant 1`] = `
       style={
         Array [
           Object {
-            "color": "#212529",
+            "color": "#111111",
             "flexWrap": "wrap",
             "fontFamily": "Roboto",
             "fontSize": 20,
@@ -334,7 +334,7 @@ exports[`Alert component Should render alert with outlined variant 1`] = `
       style={
         Array [
           Object {
-            "color": "#212529",
+            "color": "#111111",
             "fontFamily": "Roboto",
             "fontSize": 16,
             "fontWeight": "400",

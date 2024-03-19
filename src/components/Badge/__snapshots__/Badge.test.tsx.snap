@@ -33,7 +33,7 @@ exports[`Badge component Should render badge with standard variant 1`] = `
       style={
         Array [
           Object {
-            "color": "#ffffff",
+            "color": "#111111",
             "fontFamily": "Roboto",
             "fontSize": 12,
             "fontWeight": "400",

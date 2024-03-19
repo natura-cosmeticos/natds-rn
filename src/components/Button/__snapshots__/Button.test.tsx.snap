@@ -32,7 +32,7 @@ exports[`Button component Disabled variants should render disabled button compon
         Object {
           "alignContent": "center",
           "alignItems": "center",
-          "backgroundColor": "#bbbbbb",
+          "backgroundColor": "#8c8c8c",
           "borderColor": "#FFFFFF00",
           "borderRadius": 4,
           "borderWidth": 0,
@@ -63,7 +63,7 @@ exports[`Button component Disabled variants should render disabled button compon
         style={
           Array [
             Object {
-              "color": "#333333",
+              "color": "#363636",
               "fontFamily": "Roboto",
               "fontSize": 14,
               "fontWeight": "500",
@@ -117,7 +117,7 @@ exports[`Button component Disabled variants should render disabled button compon
           "alignContent": "center",
           "alignItems": "center",
           "backgroundColor": "#FFFFFF00",
-          "borderColor": "#bbbbbb",
+          "borderColor": "#8c8c8c",
           "borderRadius": 4,
           "borderWidth": 1,
           "elevation": 0,
@@ -147,7 +147,7 @@ exports[`Button component Disabled variants should render disabled button compon
         style={
           Array [
             Object {
-              "color": "#777777",
+              "color": "#737373",
               "fontFamily": "Roboto",
               "fontSize": 14,
               "fontWeight": "500",
@@ -231,7 +231,7 @@ exports[`Button component Disabled variants should render disabled button compon
         style={
           Array [
             Object {
-              "color": "#777777",
+              "color": "#737373",
               "fontFamily": "Roboto",
               "fontSize": 14,
               "fontWeight": "500",
@@ -399,7 +399,7 @@ exports[`Button component Variants should render button component outlined 1`] =
         style={
           Array [
             Object {
-              "color": "#333333",
+              "color": "#363636",
               "fontFamily": "Roboto",
               "fontSize": 14,
               "fontWeight": "500",
@@ -483,7 +483,7 @@ exports[`Button component Variants should render button component text 1`] = `
         style={
           Array [
             Object {
-              "color": "#333333",
+              "color": "#363636",
               "fontFamily": "Roboto",
               "fontSize": 14,
               "fontWeight": "500",

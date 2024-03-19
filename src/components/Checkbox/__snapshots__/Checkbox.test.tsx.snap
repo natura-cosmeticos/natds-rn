@@ -61,7 +61,7 @@ exports[`Checkbox component render should render checkbox correctly 1`] = `
             Object {
               "alignItems": "center",
               "backgroundColor": "transparent",
-              "borderColor": "#777777",
+              "borderColor": "#737373",
               "borderRadius": 2,
               "borderWidth": 2,
               "height": 20,
@@ -138,7 +138,7 @@ exports[`Checkbox component render should render checkbox disabled correctly 1`]
             Object {
               "alignItems": "center",
               "backgroundColor": "transparent",
-              "borderColor": "#bbbbbb",
+              "borderColor": "#8c8c8c",
               "borderRadius": 2,
               "borderWidth": 2,
               "height": 20,
@@ -214,8 +214,8 @@ exports[`Checkbox component render should render checkbox indeterminate selected
           Array [
             Object {
               "alignItems": "center",
-              "backgroundColor": "#bbbbbb",
-              "borderColor": "#bbbbbb",
+              "backgroundColor": "#8c8c8c",
+              "borderColor": "#8c8c8c",
               "borderRadius": 2,
               "borderWidth": 2,
               "height": 20,
@@ -404,8 +404,8 @@ exports[`Checkbox component render should render checkbox selected but disabled 
           Array [
             Object {
               "alignItems": "center",
-              "backgroundColor": "#bbbbbb",
-              "borderColor": "#bbbbbb",
+              "backgroundColor": "#8c8c8c",
+              "borderColor": "#8c8c8c",
               "borderRadius": 2,
               "borderWidth": 2,
               "height": 20,

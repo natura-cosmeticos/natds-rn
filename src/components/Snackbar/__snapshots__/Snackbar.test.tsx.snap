@@ -14,7 +14,7 @@ Object {
     style={
       Object {
         "alignItems": "center",
-        "backgroundColor": "#333333",
+        "backgroundColor": "#363636",
         "borderRadius": 4,
         "bottom": 0,
         "elevation": 6,
