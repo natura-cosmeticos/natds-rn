@@ -35,12 +35,55 @@ export const ColorViews = () => {
   const theme = buildTheme('natura', 'light')
   const { color } = theme
   const ArrayTheme = Object.entries(removeKeys(color))
+  const deprecatedColor = [
+    'highEmphasis',
+    'mediumEmphasis',
+    'lowEmphasis',
+    'highlight',
+    'surfaceInverse',
+    'onSurfaceInverse',
+    'link',
+    'onLink'
+
+  ]
+  const internalOnlyLabels = [
+    'primitiveLightGray50',
+    'primitiveLightGray100',
+    'primitiveLightGray200',
+    'primitiveLightGray300',
+    'primitiveLightGray400',
+    'primitiveLightGray500',
+    'primitiveLightGray600',
+    'primitiveLightGray700',
+    'primitiveLightGray800',
+    'primitiveLightGray900',
+    'primitiveDarkGray50',
+    'primitiveDarkGray100',
+    'primitiveDarkGray200',
+    'primitiveDarkGray300',
+    'primitiveDarkGray400',
+    'primitiveDarkGray500',
+    'primitiveDarkGray600',
+    'primitiveDarkGray700',
+    'primitiveDarkGray800',
+    'primitiveDarkGray900',
+    'primitiveBlack',
+    'primitiveWhite'
+  ]
 
   return (
 
     <div style={{ display: 'flex', flexWrap: 'wrap', padding: '30px' }}>
       {
-        ArrayTheme.map((label) => <ColorView labelToken={label[0]} keyToken={label[1]} />)
+        ArrayTheme.map((label) => {
+          if (deprecatedColor.some((dep) => label[0].includes(dep))) {
+            return <ColorView deprecated labelToken={label[0]} keyToken={label[1]} />
+          }
+          if (internalOnlyLabels.some((dep) => label[0].includes(dep))) {
+            return <ColorView internalOnly labelToken={label[0]} keyToken={label[1]} />
+          }
+          return <ColorView labelToken={label[0]} keyToken={label[1]} />
+        })
 
       }
     </div>
