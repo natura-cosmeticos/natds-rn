@@ -4,7 +4,7 @@ import { View } from 'react-native'
 import { boolean, select, text as textKnob } from '@storybook/addon-knobs'
 import { StoryContainer, StoryWrapper } from '../../common/HelperComponents/StoryContainer'
 import { Button } from './Button'
-import { ButtonSizes, ButtonTypes } from './Button.types'
+import { ButtonSizes, ButtonTypes, ITextTransformProp } from './Button.types'
 
 const description = () => `
 > Buttons allow users to take actions, and make choices, with a single tap.
@@ -41,6 +41,11 @@ const buttonTypes = {
   outlined: 'outlined',
   text: 'text'
 }
+const buttontextTransform = {
+  uppercase: 'uppercase',
+  lowercase: 'lowercase',
+  capitalize: 'capitalize'
+}
 const buttonSizes = {
   medium: 'medium',
   semi: 'semi',
@@ -49,7 +54,7 @@ const buttonSizes = {
 
 export const Default = () => (
   <StoryContainer title="Standard">
-    <Button onPress={onPress} text="Natura Design System" />
+    <Button textTransform="uppercase" onPress={onPress} text="Natura Design System" />
   </StoryContainer>
 )
 export const Brand = () => (
@@ -59,6 +64,15 @@ export const Brand = () => (
     </StoryContainer>
     <StoryContainer title="Avon v2">
       <Button brand="avon_v2" onPress={onPress} text="Natura Design System" />
+    </StoryContainer>
+    <StoryContainer title="Natura V1">
+      <Button brand="natura" onPress={onPress} text="Natura Design System" />
+    </StoryContainer>
+    <StoryContainer title="Natura V2">
+      <Button brand="natura_v2" onPress={onPress} text="Natura Design System" />
+    </StoryContainer>
+    <StoryContainer title="Natura V3">
+      <Button brand="natura_v3" onPress={onPress} text="Natura Design System" />
     </StoryContainer>
 
   </StoryWrapper>
@@ -136,6 +150,7 @@ export const Interactive = () => (
       size={select('Size', buttonSizes, 'semiX') as ButtonSizes}
       text={textKnob('Text', 'Natura Design System')}
       type={select('Types', buttonTypes, 'contained') as ButtonTypes}
+      textTransform={select('textTransform', buttontextTransform, 'uppercase') as ITextTransformProp}
     />
   </StoryContainer>
 )

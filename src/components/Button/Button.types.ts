@@ -11,7 +11,7 @@ export type ButtonSizes = 'semi' | 'semiX' | 'medium' | ButtonSizesDeprecated
 
 export type ButtonTypes = 'contained' | 'outlined' | 'text'
 export type IconPositions = 'left' | 'right'
-
+export type ITextTransformProp = 'uppercase' | 'lowercase' | 'capitalize'
 export interface ButtonBaseProps extends ButtonProps {
   theme: Theme;
   textLabelStyle?: StyleProp<TextStyle>;
@@ -40,6 +40,8 @@ export interface ButtonProps extends AccessibilityButtonProps {
    * Name of the icon that will be rendered on the button at the previously selected position.
    */
   brand?: BrandTypes;
+
+  textTransform?: ITextTransformProp;
   /**
    * Position of the icon to be rendered in relation to the label text.
    *

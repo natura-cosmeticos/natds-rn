@@ -8,6 +8,7 @@ import { ButtonBaseProps } from './Button.types'
 const ButtonComponent = ({
   accessibilityHint,
   accessibilityLabel,
+  textTransform,
   disabled = false,
   iconName,
   iconPosition = 'right',
@@ -44,6 +45,7 @@ const ButtonComponent = ({
       >
         <Label iconPosition={iconPosition}>
           <LabelText
+            textTransform={textTransform}
             iconName={iconName}
             iconPosition={iconPosition}
             testID="button-label"
@@ -52,7 +54,7 @@ const ButtonComponent = ({
             disabled={disabled}
             style={textLabelStyle}
           >
-            {text.toUpperCase()}
+            {text}
           </LabelText>
           {iconName
             && (
