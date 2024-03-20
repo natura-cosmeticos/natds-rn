@@ -39,7 +39,7 @@ describe('Button component', () => {
     expect(queryByTestId('button')?.props).toHaveProperty('type', 'contained')
     expect(queryByTestId('button')?.props).toHaveProperty('size', 'semiX')
     expect(queryByTestId('button')?.props).toHaveProperty('disabled', false)
-    expect(queryByTestId('button-label')).toHaveTextContent('BUTTON LABEL')
+    expect(queryByTestId('button-label')).toHaveTextContent('button label')
   })
 
   it('should render button with the given type prop', () => {

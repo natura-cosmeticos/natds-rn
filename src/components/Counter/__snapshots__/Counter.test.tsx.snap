@@ -91,10 +91,12 @@ exports[`Counter should render with default props 1`] = `
                   "lineHeight": 19,
                   "marginEnd": 0,
                   "marginStart": 0,
+                  "textTransform": "uppercase",
                 },
               ]
             }
             testID="button-label"
+            textTransform="uppercase"
             type="text"
           >
             −
@@ -196,10 +198,12 @@ exports[`Counter should render with default props 1`] = `
                   "lineHeight": 19,
                   "marginEnd": 0,
                   "marginStart": 0,
+                  "textTransform": "uppercase",
                 },
               ]
             }
             testID="button-label"
+            textTransform="uppercase"
             type="text"
           >
             +
