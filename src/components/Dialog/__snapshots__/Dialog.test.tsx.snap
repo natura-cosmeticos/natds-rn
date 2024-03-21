@@ -17,7 +17,7 @@ exports[`Dialog component Should render a dialog content with divider 1`] = `
         style={
           Array [
             Object {
-              "backgroundColor": "#bbbbbb",
+              "backgroundColor": "#8c8c8c",
               "height": 1,
               "marginBottom": 0,
               "marginLeft": 0,
@@ -35,7 +35,7 @@ exports[`Dialog component Should render a dialog content with divider 1`] = `
       style={
         Array [
           Object {
-            "color": "#333333",
+            "color": "#363636",
             "fontFamily": "Roboto",
             "fontSize": 16,
             "fontWeight": "400",
@@ -56,7 +56,7 @@ exports[`Dialog component Should render a dialog content with divider 1`] = `
         style={
           Array [
             Object {
-              "backgroundColor": "#bbbbbb",
+              "backgroundColor": "#8c8c8c",
               "height": 1,
               "marginBottom": 0,
               "marginLeft": 0,
@@ -80,7 +80,7 @@ exports[`Dialog component Should render a dialog header with title and optional 
     Array [
       Object {
         "alignItems": "center",
-        "color": "#333333",
+        "color": "#363636",
         "flexDirection": "row",
         "justifyContent": "space-between",
         "paddingBottom": 8,
@@ -94,7 +94,7 @@ exports[`Dialog component Should render a dialog header with title and optional 
     style={
       Array [
         Object {
-          "color": "#333333",
+          "color": "#363636",
           "flexBasis": 0,
           "flexGrow": 0.85,
           "flexShrink": 1,
@@ -171,7 +171,7 @@ exports[`Dialog component Should render a dialog with title, content and actions
       style={
         Array [
           Object {
-            "backgroundColor": "#000000",
+            "backgroundColor": "#111111",
             "bottom": 0,
             "flexBasis": 0,
             "flexGrow": 1,
@@ -203,7 +203,7 @@ exports[`Dialog component Should render a dialog with title, content and actions
         style={
           Array [
             Object {
-              "color": "#333333",
+              "color": "#363636",
               "flexBasis": 0,
               "flexGrow": 0.85,
               "flexShrink": 1,
@@ -236,7 +236,7 @@ exports[`Dialog component Should render a dialog with title, content and actions
             style={
               Array [
                 Object {
-                  "color": "#333333",
+                  "color": "#363636",
                   "fontFamily": "Roboto",
                   "fontSize": 16,
                   "fontWeight": "400",

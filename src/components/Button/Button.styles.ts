@@ -14,7 +14,7 @@ import {
 import { ButtonBaseProps } from './Button.types'
 
 type SurfaceProps = Pick<ButtonBaseProps, 'type' | 'theme' | 'disabled' | 'size' | 'brand'>
-type LabelProps = Pick<ButtonBaseProps, 'iconName' | 'iconPosition' | 'theme' | 'disabled' | 'type' | 'brand'>
+type LabelProps = Pick<ButtonBaseProps, 'iconName' | 'iconPosition' | 'theme' | 'disabled' | 'type' | 'brand'| 'textTransform' >
 
 export const getButtonStylesBySize = ({ size, theme }: Pick<SurfaceProps, 'size' | 'theme'>) => {
   const buttonSizes = {
@@ -55,13 +55,15 @@ const getSelectTheme = ({ theme, type, brand }: Pick<SurfaceProps, 'theme' | 'ty
     return type && {
       back: themeSelected.button[type].color.enable.background,
       border: themeSelected.button[type].color.enable.border,
-      label: themeSelected.button[type].color.enable.label
+      label: themeSelected.button[type].color.enable.label,
+      buttonBorderRadius: themeSelected.button.borderRadius
     }
   }
   return type && {
     back: theme.button[type].color.enable.background,
     border: theme.button[type].color.enable.border,
-    label: theme.button[type].color.enable.label
+    label: theme.button[type].color.enable.label,
+    buttonBorderRadius: theme.button.borderRadius
   }
 }
 
@@ -82,7 +84,7 @@ export const Surface = styled.View<SurfaceProps>(({
   borderColor: disabled
     ? theme.button[type].color.disable.border
     : getSelectTheme({ theme, type, brand })?.border,
-  borderRadius: theme.button.borderRadius,
+  borderRadius: getSelectTheme({ theme, type, brand })?.buttonBorderRadius,
   borderWidth: type === 'outlined' ? 1 : 0,
   justifyContent: 'center'
 }))
@@ -98,6 +100,7 @@ export const LabelText = styled.Text<LabelProps>(({
   type,
   theme,
   brand,
+  textTransform,
   disabled = false
 }) => ({
   color: disabled ? theme.button[type].color.disable.label : getSelectTheme({ theme, type, brand })?.label,
@@ -106,6 +109,7 @@ export const LabelText = styled.Text<LabelProps>(({
   fontWeight: theme.button.label.primary.fontWeight,
   letterSpacing: theme.button.label.letterSpacing,
   lineHeight: 19,
+  textTransform,
   marginEnd: iconName && iconPosition === 'right' ? getSpacingTiny(theme) : 0,
   marginStart: iconName && iconPosition === 'left' ? getSpacingTiny(theme) : 0
 }))

@@ -11,7 +11,7 @@ exports[`Counter should render with default props 1`] = `
           "alignItems": "center",
           "alignSelf": "flex-start",
           "backgroundColor": "#ffffff",
-          "borderColor": "#bbbbbb",
+          "borderColor": "#8c8c8c",
           "borderRadius": 4,
           "borderWidth": 1,
           "flexDirection": "row",
@@ -83,7 +83,7 @@ exports[`Counter should render with default props 1`] = `
             style={
               Array [
                 Object {
-                  "color": "#777777",
+                  "color": "#737373",
                   "fontFamily": "Roboto",
                   "fontSize": 14,
                   "fontWeight": "500",
@@ -91,10 +91,12 @@ exports[`Counter should render with default props 1`] = `
                   "lineHeight": 19,
                   "marginEnd": 0,
                   "marginStart": 0,
+                  "textTransform": "uppercase",
                 },
               ]
             }
             testID="button-label"
+            textTransform="uppercase"
             type="text"
           >
             −
@@ -107,10 +109,10 @@ exports[`Counter should render with default props 1`] = `
       style={
         Array [
           Object {
-            "borderColor": "#bbbbbb",
+            "borderColor": "#8c8c8c",
             "borderLeftWidth": 1,
             "borderRightWidth": 1,
-            "color": "#333333",
+            "color": "#363636",
             "fontFamily": "Roboto",
             "fontSize": 16,
             "fontWeight": "400",
@@ -188,7 +190,7 @@ exports[`Counter should render with default props 1`] = `
             style={
               Array [
                 Object {
-                  "color": "#333333",
+                  "color": "#363636",
                   "fontFamily": "Roboto",
                   "fontSize": 14,
                   "fontWeight": "500",
@@ -196,10 +198,12 @@ exports[`Counter should render with default props 1`] = `
                   "lineHeight": 19,
                   "marginEnd": 0,
                   "marginStart": 0,
+                  "textTransform": "uppercase",
                 },
               ]
             }
             testID="button-label"
+            textTransform="uppercase"
             type="text"
           >
             +

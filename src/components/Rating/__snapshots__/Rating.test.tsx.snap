@@ -68,7 +68,7 @@ exports[`Rating Variants Counter Variant should render with counter variant 1`] 
     style={
       Array [
         Object {
-          "color": "#777777",
+          "color": "#737373",
           "fontFamily": "Roboto",
           "fontSize": 14,
           "fontWeight": "400",
@@ -141,7 +141,7 @@ exports[`Rating Variants Input Variant should render with input variant 1`] = `
         size="semi"
         style={
           Object {
-            "color": "#777777",
+            "color": "#737373",
           }
         }
         testID="ds-rating-1-icon"
@@ -177,7 +177,7 @@ exports[`Rating Variants Input Variant should render with input variant 1`] = `
         size="semi"
         style={
           Object {
-            "color": "#777777",
+            "color": "#737373",
           }
         }
         testID="ds-rating-2-icon"
@@ -213,7 +213,7 @@ exports[`Rating Variants Input Variant should render with input variant 1`] = `
         size="semi"
         style={
           Object {
-            "color": "#777777",
+            "color": "#737373",
           }
         }
         testID="ds-rating-3-icon"
@@ -249,7 +249,7 @@ exports[`Rating Variants Input Variant should render with input variant 1`] = `
         size="semi"
         style={
           Object {
-            "color": "#777777",
+            "color": "#737373",
           }
         }
         testID="ds-rating-4-icon"
@@ -285,7 +285,7 @@ exports[`Rating Variants Input Variant should render with input variant 1`] = `
         size="semi"
         style={
           Object {
-            "color": "#777777",
+            "color": "#737373",
           }
         }
         testID="ds-rating-5-icon"
@@ -298,7 +298,7 @@ exports[`Rating Variants Input Variant should render with input variant 1`] = `
     style={
       Array [
         Object {
-          "color": "#777777",
+          "color": "#737373",
           "fontFamily": "Roboto",
           "fontSize": 12,
           "fontWeight": "400",
@@ -407,7 +407,7 @@ exports[`Rating Variants ReadOnly Variant should render with read-only variant 1
         size="semi"
         style={
           Object {
-            "color": "#777777",
+            "color": "#737373",
           }
         }
         testID="ds-rating-1-icon"
@@ -443,7 +443,7 @@ exports[`Rating Variants ReadOnly Variant should render with read-only variant 1
         size="semi"
         style={
           Object {
-            "color": "#777777",
+            "color": "#737373",
           }
         }
         testID="ds-rating-2-icon"
@@ -479,7 +479,7 @@ exports[`Rating Variants ReadOnly Variant should render with read-only variant 1
         size="semi"
         style={
           Object {
-            "color": "#777777",
+            "color": "#737373",
           }
         }
         testID="ds-rating-3-icon"
@@ -515,7 +515,7 @@ exports[`Rating Variants ReadOnly Variant should render with read-only variant 1
         size="semi"
         style={
           Object {
-            "color": "#777777",
+            "color": "#737373",
           }
         }
         testID="ds-rating-4-icon"
@@ -551,7 +551,7 @@ exports[`Rating Variants ReadOnly Variant should render with read-only variant 1
         size="semi"
         style={
           Object {
-            "color": "#777777",
+            "color": "#737373",
           }
         }
         testID="ds-rating-5-icon"

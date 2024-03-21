@@ -1,13 +1,19 @@
 import React from 'react'
-import { ColorText, Container } from './ColorView.styles'
+import {
+  ColorText, Container, ContainerDeprecated, ContainerinternalOnly
+} from './ColorView.styles'
 import { Typography } from '../Typography'
 
 type tokenLab = {
   labelToken: string;
   keyToken: string;
+  deprecated?: boolean;
+  internalOnly?: boolean;
 }
 
-const ColorView = ({ labelToken, keyToken }: tokenLab) => (
+const ColorView = ({
+  labelToken, keyToken, deprecated, internalOnly
+}: tokenLab) => (
 
   <div style={{
     display: 'flex', flexDirection: 'column', gap: '5px', padding: '5px', marginBottom: '15px'
@@ -19,6 +25,21 @@ const ColorView = ({ labelToken, keyToken }: tokenLab) => (
     >
       <Typography variant="subtitle2">{labelToken}</Typography>
       <Typography variant="body2"><ColorText>{keyToken}</ColorText></Typography>
+      {
+        deprecated && (
+        <ContainerDeprecated>
+          <Typography style={{ color: '#fff' }} color="" variant="subtitle2">Deprecated</Typography>
+        </ContainerDeprecated>
+        )
+      }
+      {
+         internalOnly && (
+         <ContainerinternalOnly>
+           <Typography style={{ color: '#fff' }} color="" variant="subtitle2">internalOnly</Typography>
+         </ContainerinternalOnly>
+         )
+      }
+
     </div>
 
     <Container color={labelToken} />

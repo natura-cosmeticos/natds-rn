@@ -32,3 +32,15 @@ export const Grid = styled.View(({ theme, color = 'primary' }: PropsColorView): 
 export const ColorText = styled.View(({ theme }: PropsColorView): CSSObject => ({
   color: theme.color.lowEmphasis
 }))
+export const ContainerDeprecated = styled.View(({ theme }: PropsColorView): CSSObject => ({
+  boxSizing: 'border-box',
+  paddingLeft: '5px',
+  borderRadius: 999,
+  backgroundColor: theme.color.alert
+}))
+export const ContainerinternalOnly = styled.View(({ theme }: PropsColorView): CSSObject => ({
+  boxSizing: 'border-box',
+  paddingLeft: '5px',
+  borderRadius: 999,
+  backgroundColor: theme.color.info
+}))

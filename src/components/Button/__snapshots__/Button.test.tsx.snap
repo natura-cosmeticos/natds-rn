@@ -32,7 +32,7 @@ exports[`Button component Disabled variants should render disabled button compon
         Object {
           "alignContent": "center",
           "alignItems": "center",
-          "backgroundColor": "#bbbbbb",
+          "backgroundColor": "#8c8c8c",
           "borderColor": "#FFFFFF00",
           "borderRadius": 4,
           "borderWidth": 0,
@@ -63,7 +63,7 @@ exports[`Button component Disabled variants should render disabled button compon
         style={
           Array [
             Object {
-              "color": "#333333",
+              "color": "#363636",
               "fontFamily": "Roboto",
               "fontSize": 14,
               "fontWeight": "500",
@@ -71,13 +71,15 @@ exports[`Button component Disabled variants should render disabled button compon
               "lineHeight": 19,
               "marginEnd": 0,
               "marginStart": 0,
+              "textTransform": "uppercase",
             },
           ]
         }
         testID="button-label"
+        textTransform="uppercase"
         type="contained"
       >
-        BUTTON LABEL
+        button label
       </Text>
     </View>
   </View>
@@ -117,7 +119,7 @@ exports[`Button component Disabled variants should render disabled button compon
           "alignContent": "center",
           "alignItems": "center",
           "backgroundColor": "#FFFFFF00",
-          "borderColor": "#bbbbbb",
+          "borderColor": "#8c8c8c",
           "borderRadius": 4,
           "borderWidth": 1,
           "elevation": 0,
@@ -147,7 +149,7 @@ exports[`Button component Disabled variants should render disabled button compon
         style={
           Array [
             Object {
-              "color": "#777777",
+              "color": "#737373",
               "fontFamily": "Roboto",
               "fontSize": 14,
               "fontWeight": "500",
@@ -155,13 +157,15 @@ exports[`Button component Disabled variants should render disabled button compon
               "lineHeight": 19,
               "marginEnd": 0,
               "marginStart": 0,
+              "textTransform": "uppercase",
             },
           ]
         }
         testID="button-label"
+        textTransform="uppercase"
         type="outlined"
       >
-        BUTTON LABEL
+        button label
       </Text>
     </View>
   </View>
@@ -231,7 +235,7 @@ exports[`Button component Disabled variants should render disabled button compon
         style={
           Array [
             Object {
-              "color": "#777777",
+              "color": "#737373",
               "fontFamily": "Roboto",
               "fontSize": 14,
               "fontWeight": "500",
@@ -239,13 +243,15 @@ exports[`Button component Disabled variants should render disabled button compon
               "lineHeight": 19,
               "marginEnd": 0,
               "marginStart": 0,
+              "textTransform": "uppercase",
             },
           ]
         }
         testID="button-label"
+        textTransform="uppercase"
         type="text"
       >
-        BUTTON LABEL
+        button label
       </Text>
     </View>
   </View>
@@ -323,13 +329,15 @@ exports[`Button component Variants should render button component contained 1`] 
               "lineHeight": 19,
               "marginEnd": 0,
               "marginStart": 0,
+              "textTransform": "uppercase",
             },
           ]
         }
         testID="button-label"
+        textTransform="uppercase"
         type="contained"
       >
-        BUTTON LABEL
+        button label
       </Text>
     </View>
   </View>
@@ -399,7 +407,7 @@ exports[`Button component Variants should render button component outlined 1`] =
         style={
           Array [
             Object {
-              "color": "#333333",
+              "color": "#363636",
               "fontFamily": "Roboto",
               "fontSize": 14,
               "fontWeight": "500",
@@ -407,13 +415,15 @@ exports[`Button component Variants should render button component outlined 1`] =
               "lineHeight": 19,
               "marginEnd": 0,
               "marginStart": 0,
+              "textTransform": "uppercase",
             },
           ]
         }
         testID="button-label"
+        textTransform="uppercase"
         type="outlined"
       >
-        BUTTON LABEL
+        button label
       </Text>
     </View>
   </View>
@@ -483,7 +493,7 @@ exports[`Button component Variants should render button component text 1`] = `
         style={
           Array [
             Object {
-              "color": "#333333",
+              "color": "#363636",
               "fontFamily": "Roboto",
               "fontSize": 14,
               "fontWeight": "500",
@@ -491,13 +501,15 @@ exports[`Button component Variants should render button component text 1`] = `
               "lineHeight": 19,
               "marginEnd": 0,
               "marginStart": 0,
+              "textTransform": "uppercase",
             },
           ]
         }
         testID="button-label"
+        textTransform="uppercase"
         type="text"
       >
-        BUTTON LABEL
+        button label
       </Text>
     </View>
   </View>
@@ -576,13 +588,15 @@ exports[`Button component with Icon should render the icon to the left 1`] = `
               "lineHeight": 19,
               "marginEnd": 0,
               "marginStart": 8,
+              "textTransform": "uppercase",
             },
           ]
         }
         testID="button-label"
+        textTransform="uppercase"
         type="contained"
       >
-        BUTTON LABEL
+        button label
       </Text>
       <Text
         accessibilityRole="imagebutton"
@@ -673,13 +687,15 @@ exports[`Button component with Icon should render the icon to the right by defau
               "lineHeight": 19,
               "marginEnd": 8,
               "marginStart": 0,
+              "textTransform": "uppercase",
             },
           ]
         }
         testID="button-label"
+        textTransform="uppercase"
         type="contained"
       >
-        BUTTON LABEL
+        button label
       </Text>
       <Text
         accessibilityRole="imagebutton"

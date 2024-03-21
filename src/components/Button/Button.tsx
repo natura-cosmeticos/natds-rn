@@ -7,6 +7,7 @@ export const Button = ({
   accessibilityLabel,
   accessibilityActions,
   onAccessibilityAction,
+  textTransform = 'uppercase',
   disabled = false,
   iconName,
   iconPosition,
@@ -23,6 +24,7 @@ export const Button = ({
     accessibilityHint={accessibilityHint}
     accessibilityLabel={accessibilityLabel}
     disabled={disabled}
+    textTransform={textTransform}
     iconName={iconName}
     iconPosition={iconPosition}
     onPress={onPress}

@@ -100,7 +100,7 @@ describe('Rating Variants', () => {
       const { getByTestId } = renderWithTheme(<Rating rate={3} variant="read-only" />)
 
       expect(getByTestId('ds-rating-3-icon')).toHaveStyle({ color: '#F8B546' })
-      expect(getByTestId('ds-rating-4-icon')).toHaveStyle({ color: '#777777' })
+      expect(getByTestId('ds-rating-4-icon')).toHaveStyle({ color: '#737373' })
     })
   })
 
@@ -141,7 +141,7 @@ describe('Rating Variants', () => {
       const { getByTestId } = renderWithTheme(<RatingBase testID="base" size="medium" iconActive={false} />)
 
       expect(getByTestId('base-icon')?.props).toHaveProperty('name', 'filled-action-rating')
-      expect(getByTestId('base-icon')).toHaveStyle({ color: '#777777' })
+      expect(getByTestId('base-icon')).toHaveStyle({ color: '#737373' })
     })
   })
 
