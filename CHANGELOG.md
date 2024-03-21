@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [7.41.0](https://github.com/natura-cosmeticos/natds-rn/compare/v7.40.0...v7.41.0) (2024-03-21)
+
+
+### Features
+
+* **natds-rn:** added new theme natura_v3 ([c18f287](https://github.com/natura-cosmeticos/natds-rn/commit/c18f287c1080c8004b160410c094f24aa2cf7ef4))
+* **natds-rn:** added prop textTransform ([cea09dc](https://github.com/natura-cosmeticos/natds-rn/commit/cea09dcb4504714aaa7c7984dca48763c9aa95cd))
+* **natds-rn:** added tag internalOnly e Deprecated in ColorView ([d883c43](https://github.com/natura-cosmeticos/natds-rn/commit/d883c43c8d66a9b0ad9f77341c88fa098230ad60))
+* **natds-rn:** show new colors in colorViewa ([d1c9a17](https://github.com/natura-cosmeticos/natds-rn/commit/d1c9a178ab5bc064675607138e652289583a8cda))
+
 ## [7.40.0](https://github.com/natura-cosmeticos/natds-rn/compare/v7.39.0...v7.40.0) (2023-12-08)
 
 
