@@ -78,10 +78,6 @@ export const SearchIcon = () => {
     // @ts-ignore
     handleChange(e.target.value)
   }
-  const handleSelect = (values: OptionProps) => {
-    setValue(values.label)
-    handleChange(values.label)
-  }
   return (
     <>
 
