@@ -4,11 +4,98 @@ All notable changes to this project will be documented in this file. See [standa
 
 ## [7.42.0](https://github.com/natura-cosmeticos/natds-rn/compare/v7.41.0...v7.42.0) (2024-05-01)
 
-
 ### Features
 
 * **natds-rn:** update icons and stories ([7e0d59a](https://github.com/natura-cosmeticos/natds-rn/commit/7e0d59a4f10d47d5e835fee584262fdb1417f09d))
-
+* **natds-icons:** add icon filled-action-half-rating 
+* **natds-icons:** add icon filled-action-rating 
+* **natds-icons:** add icon filled-action-zoomin 
+* **natds-icons:** add icon filled-action-zoomout 
+* **natds-icons:** add icon filled-alert-cancel 
+* **natds-icons:** add icon filled-alert-check 
+* **natds-icons:** add icon filled-alert-empty 
+* **natds-icons:** add icon filled-alert-indeterminate 
+* **natds-icons:** add icon filled-alert-info
+* **natds-icons:** add icon filled-alert-notificationunavailable 
+* **natds-icons:** add icon filled-communication-digital-service 
+* **natds-icons:** add icon filled-content-oil 
+* **natds-icons:** add icon filled-finance-shield 
+* **natds-icons:** add icon filled-finance-shieldcheck 
+* **natds-icons:** add icon filled-finance-shieldplus 
+* **natds-icons:** add icon filled-navigation-arrowctrlcompactbottom 
+* **natds-icons:** add icon filled-navigation-arrowctrlcompactleft 
+* **natds-icons:** add icon filled-navigation-arrowctrlcompactright 
+* **natds-icons:** add icon filled-navigation-arrowctrlcompacttop 
+* **natds-icons:** add icon filled-navigation-arrowctrlregularbottom 
+* **natds-icons:** add icon filled-navigation-arrowctrlregularleft 
+* **natds-icons:** add icon filled-navigation-arrowctrlregularright 
+* **natds-icons:** add icon filled-navigation-arrowctrlregulartop 
+* **natds-icons:** add icon filled-navigation-arrowrunbottom 
+* **natds-icons:** add icon filled-navigation-arrowrunleft 
+* **natds-icons:** add icon filled-navigation-arrowrunright 
+* **natds-icons:** add icon filled-navigation-arrowruntop 
+* **natds-icons:** add icon filled-navigation-arrowtrianglebottom 
+* **natds-icons:** add icon filled-navigation-arrowtriangleleft 
+* **natds-icons:** add icon filled-navigation-arrowtriangleright 
+* **natds-icons:** add icon filled-navigation-arrowtriangletop 
+* **natds-icons:** add icon fillled-action-indeterminatecheckbox 
+* **natds-icons:** add icon outlined-action-half-rating 
+* **natds-icons:** add icon outlined-action-rating 
+* **natds-icons:** add icon outlined-alert-cancel 
+* **natds-icons:** add icon outlined-alert-check 
+* **natds-icons:** add icon outlined-alert-empty 
+* **natds-icons:** add icon outlined-alert-indeterminate 
+* **natds-icons:** add icon outlined-alert-info 
+* **natds-icons:** add icon outlined-alert-notificationunavailable 
+* **natds-icons:** add icon outlined-communication-digital-service 
+* **natds-icons:** add icon outlined-content-handsoap 
+* **natds-icons:** add icon outlined-content-oil 
+* **natds-icons:** add icon outlined-content-sensitive 
+* **natds-icons:** add icon outlined-finance-shield 
+* **natds-icons:** add icon outlined-finance-shieldcheck 
+* **natds-icons:** add icon outlined-finance-shieldplus 
+* **natds-icons:** add icon outlined-navigation-arrowctrlcompactbottom 
+* **natds-icons:** add icon outlined-navigation-arrowctrlcompactleft 
+* **natds-icons:** add icon outlined-navigation-arrowctrlcompactright 
+* **natds-icons:** add icon outlined-navigation-arrowctrlcompacttop 
+* **natds-icons:** add icon outlined-navigation-arrowctrlregularbottom 
+* **natds-icons:** add icon outlined-navigation-arrowctrlregularleft 
+* **natds-icons:** add icon outlined-navigation-arrowctrlregularright 
+* **natds-icons:** add icon outlined-navigation-arrowctrlregulartop 
+* **natds-icons:** add icon outlined-navigation-arrowrunbottom 
+* **natds-icons:** add icon outlined-navigation-arrowrunleft 
+* **natds-icons:** add icon outlined-navigation-arrowrunright 
+* **natds-icons:** add icon outlined-navigation-arrowruntop 
+* **natds-icons:** add icon outlined-place-target 
+* **natds-icons:** add icon outlined-product-cube 
+* **natds-icons:** add-icon outlined-finance-shield 
+* **natds-icons:** add-icon filled-brand-tiktok
+* **natds-icons:** add-icon filled-content-handsoap
+* **natds-icons:** add-icon filled-content-handwater
+* **natds-icons:** add-icon filled-content-oilunavailable
+* **natds-icons:** add-icon filled-content-sensitive
+* **natds-icons:** add-icon filled-finance-shieldplus
+* **natds-icons:** add-icon filled-media-volumeoff
+* **natds-icons:** add-icon filled-media-volumeon
+* **natds-icons:** add-icon filled-navigation-maximize
+* **natds-icons:** add-icon filled-navigation-minimize
+* **natds-icons:** add-icon filled-place-target
+* **natds-icons:** add-icon filled-product-cube
+* **natds-icons:** add-icon outlined-action-zoomin
+* **natds-icons:** add-icon outlined-action-zoomout
+* **natds-icons:** add-icon outlined-brand-tiktok
+* **natds-icons:** add-icon outlined-content-handsoap
+* **natds-icons:** add-icon outlined-content-handwater
+* **natds-icons:** add-icon outlined-content-oilunavailable
+* **natds-icons:** add-icon outlined-content-sensitive
+* **natds-icons:** add-icon outlined-finance-shieldplus
+* **natds-icons:** add-icon outlined-makeup-age
+* **natds-icons:** add-icon outlined-makeup-mixedskin
+* **natds-icons:** add-icon outlined-makeup-typeacneic
+* **natds-icons:** add-icon outlined-media-volumeoff
+* **natds-icons:** add-icon outlined-media-volumeon
+* **natds-icons:** add-icon outlined-navigation-maximize
+* **natds-icons:** add-icon outlined-navigation-minimize
 
 ### Bug Fixes
 
