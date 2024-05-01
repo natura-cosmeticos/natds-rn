@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [7.42.0](https://github.com/natura-cosmeticos/natds-rn/compare/v7.41.0...v7.42.0) (2024-05-01)
+
+
+### Features
+
+* **natds-rn:** update icons and stories ([7e0d59a](https://github.com/natura-cosmeticos/natds-rn/commit/7e0d59a4f10d47d5e835fee584262fdb1417f09d))
+
+
+### Bug Fixes
+
+* **natds-rn:** remove handleSelect in iconStories ([11a3a1b](https://github.com/natura-cosmeticos/natds-rn/commit/11a3a1b0c98461814b79ae964ce764ff42795500))
+
 ## [7.41.0](https://github.com/natura-cosmeticos/natds-rn/compare/v7.40.0...v7.41.0) (2024-03-21)
 
 
