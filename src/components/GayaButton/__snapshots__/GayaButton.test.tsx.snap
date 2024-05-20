@@ -1,0 +1,723 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button component Disabled variants should render disabled button component contained 1`] = `
+<View
+  accessibilityState={
+    Object {
+      "disabled": true,
+    }
+  }
+  accessible={true}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "borderRadius": 4,
+    }
+  }
+  testID="touchable-ripple"
+>
+  <View
+    accessibilityRole="button"
+    color="primary"
+    disabled={true}
+    size="semiX"
+    style={
+      Array [
+        Object {
+          "alignContent": "center",
+          "alignItems": "center",
+          "backgroundColor": "#a4a4a4",
+          "borderColor": "#a4a4a4",
+          "borderRadius": 4,
+          "borderWidth": 0,
+          "elevation": 0,
+          "justifyContent": "center",
+          "minHeight": 40,
+          "paddingHorizontal": 8,
+        },
+      ]
+    }
+    testID="button"
+    type="contained"
+  >
+    <View
+      iconPosition="right"
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+          },
+        ]
+      }
+    >
+      <Text
+        color="primary"
+        disabled={true}
+        iconPosition="right"
+        style={
+          Array [
+            Object {
+              "color": "#363636",
+              "fontFamily": "Roboto",
+              "fontSize": 14,
+              "fontWeight": "500",
+              "letterSpacing": 1.23,
+              "lineHeight": 19,
+              "marginEnd": 0,
+              "marginStart": 0,
+              "textTransform": "uppercase",
+            },
+          ]
+        }
+        testID="button-label"
+        type="contained"
+      >
+        button label
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Button component Disabled variants should render disabled button component outlined 1`] = `
+<View
+  accessibilityState={
+    Object {
+      "disabled": true,
+    }
+  }
+  accessible={true}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "borderRadius": 4,
+    }
+  }
+  testID="touchable-ripple"
+>
+  <View
+    accessibilityRole="button"
+    color="primary"
+    disabled={true}
+    size="semiX"
+    style={
+      Array [
+        Object {
+          "alignContent": "center",
+          "alignItems": "center",
+          "backgroundColor": "#a4a4a4",
+          "borderColor": "#a4a4a4",
+          "borderRadius": 4,
+          "borderWidth": 1,
+          "elevation": 0,
+          "justifyContent": "center",
+          "minHeight": 40,
+          "paddingHorizontal": 8,
+        },
+      ]
+    }
+    testID="button"
+    type="outlined"
+  >
+    <View
+      iconPosition="right"
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+          },
+        ]
+      }
+    >
+      <Text
+        color="primary"
+        disabled={true}
+        iconPosition="right"
+        style={
+          Array [
+            Object {
+              "color": "#363636",
+              "fontFamily": "Roboto",
+              "fontSize": 14,
+              "fontWeight": "500",
+              "letterSpacing": 1.23,
+              "lineHeight": 19,
+              "marginEnd": 0,
+              "marginStart": 0,
+              "textTransform": "uppercase",
+            },
+          ]
+        }
+        testID="button-label"
+        type="outlined"
+      >
+        button label
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Button component Disabled variants should render disabled button component text 1`] = `
+<View
+  accessibilityState={
+    Object {
+      "disabled": true,
+    }
+  }
+  accessible={true}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "borderRadius": 4,
+    }
+  }
+  testID="touchable-ripple"
+>
+  <View
+    accessibilityRole="button"
+    color="primary"
+    disabled={true}
+    size="semiX"
+    style={
+      Array [
+        Object {
+          "alignContent": "center",
+          "alignItems": "center",
+          "backgroundColor": "#a4a4a4",
+          "borderColor": "#a4a4a4",
+          "borderRadius": 4,
+          "borderWidth": 0,
+          "elevation": 0,
+          "justifyContent": "center",
+          "minHeight": 40,
+          "paddingHorizontal": 8,
+        },
+      ]
+    }
+    testID="button"
+    type="ghost"
+  >
+    <View
+      iconPosition="right"
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+          },
+        ]
+      }
+    >
+      <Text
+        color="primary"
+        disabled={true}
+        iconPosition="right"
+        style={
+          Array [
+            Object {
+              "color": "#363636",
+              "fontFamily": "Roboto",
+              "fontSize": 14,
+              "fontWeight": "500",
+              "letterSpacing": 1.23,
+              "lineHeight": 19,
+              "marginEnd": 0,
+              "marginStart": 0,
+              "textTransform": "uppercase",
+            },
+          ]
+        }
+        testID="button-label"
+        type="ghost"
+      >
+        button label
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Button component Variants should render button component contained 1`] = `
+<View
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
+  accessible={true}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "borderRadius": 4,
+    }
+  }
+  testID="touchable-ripple"
+>
+  <View
+    accessibilityRole="button"
+    color="primary"
+    disabled={false}
+    size="semiX"
+    style={
+      Array [
+        Object {
+          "alignContent": "center",
+          "alignItems": "center",
+          "backgroundColor": "#f6be00",
+          "borderColor": "#FFFFFF00",
+          "borderRadius": 4,
+          "borderWidth": 0,
+          "justifyContent": "center",
+          "minHeight": 40,
+          "paddingHorizontal": 8,
+          "shadowColor": "#AEAEAE",
+        },
+      ]
+    }
+    testID="button"
+    type="contained"
+  >
+    <View
+      iconPosition="right"
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+          },
+        ]
+      }
+    >
+      <Text
+        color="primary"
+        disabled={false}
+        iconPosition="right"
+        style={
+          Array [
+            Object {
+              "color": "#000000",
+              "fontFamily": "Roboto",
+              "fontSize": 14,
+              "fontWeight": "500",
+              "letterSpacing": 1.23,
+              "lineHeight": 19,
+              "marginEnd": 0,
+              "marginStart": 0,
+              "textTransform": "uppercase",
+            },
+          ]
+        }
+        testID="button-label"
+        type="contained"
+      >
+        button label
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Button component Variants should render button component outlined 1`] = `
+<View
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
+  accessible={true}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "borderRadius": 4,
+    }
+  }
+  testID="touchable-ripple"
+>
+  <View
+    accessibilityRole="button"
+    color="primary"
+    disabled={false}
+    size="semiX"
+    style={
+      Array [
+        Object {
+          "alignContent": "center",
+          "alignItems": "center",
+          "backgroundColor": "#FFFFFF00",
+          "borderColor": "#f6be00",
+          "borderRadius": 4,
+          "borderWidth": 1,
+          "elevation": 0,
+          "justifyContent": "center",
+          "minHeight": 40,
+          "paddingHorizontal": 8,
+        },
+      ]
+    }
+    testID="button"
+    type="outlined"
+  >
+    <View
+      iconPosition="right"
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+          },
+        ]
+      }
+    >
+      <Text
+        color="primary"
+        disabled={false}
+        iconPosition="right"
+        style={
+          Array [
+            Object {
+              "color": "#363636",
+              "fontFamily": "Roboto",
+              "fontSize": 14,
+              "fontWeight": "500",
+              "letterSpacing": 1.23,
+              "lineHeight": 19,
+              "marginEnd": 0,
+              "marginStart": 0,
+              "textTransform": "uppercase",
+            },
+          ]
+        }
+        testID="button-label"
+        type="outlined"
+      >
+        button label
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Button component Variants should render button component text 1`] = `
+<View
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
+  accessible={true}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "borderRadius": 4,
+    }
+  }
+  testID="touchable-ripple"
+>
+  <View
+    accessibilityRole="button"
+    color="primary"
+    disabled={false}
+    size="semiX"
+    style={
+      Array [
+        Object {
+          "alignContent": "center",
+          "alignItems": "center",
+          "backgroundColor": "#FFFFFF00",
+          "borderColor": "#FFFFFF00",
+          "borderRadius": 4,
+          "borderWidth": 0,
+          "elevation": 0,
+          "justifyContent": "center",
+          "minHeight": 40,
+          "paddingHorizontal": 8,
+        },
+      ]
+    }
+    testID="button"
+    type="ghost"
+  >
+    <View
+      iconPosition="right"
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+          },
+        ]
+      }
+    >
+      <Text
+        color="primary"
+        disabled={false}
+        iconPosition="right"
+        style={
+          Array [
+            Object {
+              "color": "#f6be00",
+              "fontFamily": "Roboto",
+              "fontSize": 14,
+              "fontWeight": "500",
+              "letterSpacing": 1.23,
+              "lineHeight": 19,
+              "marginEnd": 0,
+              "marginStart": 0,
+              "textTransform": "uppercase",
+            },
+          ]
+        }
+        testID="button-label"
+        type="ghost"
+      >
+        button label
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Button component with Icon should render the icon to the left 1`] = `
+<View
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
+  accessible={true}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "borderRadius": 4,
+    }
+  }
+  testID="touchable-ripple"
+>
+  <View
+    accessibilityRole="button"
+    color="primary"
+    disabled={false}
+    size="semiX"
+    style={
+      Array [
+        Object {
+          "alignContent": "center",
+          "alignItems": "center",
+          "backgroundColor": "#f6be00",
+          "borderColor": "#FFFFFF00",
+          "borderRadius": 4,
+          "borderWidth": 0,
+          "justifyContent": "center",
+          "minHeight": 40,
+          "paddingHorizontal": 8,
+          "shadowColor": "#AEAEAE",
+        },
+      ]
+    }
+    testID="button"
+    type="contained"
+  >
+    <View
+      iconPosition="left"
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row-reverse",
+          },
+        ]
+      }
+    >
+      <Text
+        color="primary"
+        disabled={false}
+        iconName="outlined-default-mockup"
+        iconPosition="left"
+        style={
+          Array [
+            Object {
+              "color": "#000000",
+              "fontFamily": "Roboto",
+              "fontSize": 14,
+              "fontWeight": "500",
+              "letterSpacing": 1.23,
+              "lineHeight": 19,
+              "marginEnd": 0,
+              "marginStart": 8,
+              "textTransform": "uppercase",
+            },
+          ]
+        }
+        testID="button-label"
+        type="contained"
+      >
+        button label
+      </Text>
+      <Text
+        accessibilityRole="imagebutton"
+        name="outlined-default-mockup"
+        size="small"
+        style={
+          Object {
+            "color": "#000000",
+          }
+        }
+      >
+        outlined-default-mockup
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Button component with Icon should render the icon to the right by default 1`] = `
+<View
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
+  accessible={true}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "borderRadius": 4,
+    }
+  }
+  testID="touchable-ripple"
+>
+  <View
+    accessibilityRole="button"
+    color="primary"
+    disabled={false}
+    size="semiX"
+    style={
+      Array [
+        Object {
+          "alignContent": "center",
+          "alignItems": "center",
+          "backgroundColor": "#f6be00",
+          "borderColor": "#FFFFFF00",
+          "borderRadius": 4,
+          "borderWidth": 0,
+          "justifyContent": "center",
+          "minHeight": 40,
+          "paddingHorizontal": 8,
+          "shadowColor": "#AEAEAE",
+        },
+      ]
+    }
+    testID="button"
+    type="contained"
+  >
+    <View
+      iconPosition="right"
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+          },
+        ]
+      }
+    >
+      <Text
+        color="primary"
+        disabled={false}
+        iconName="outlined-default-mockup"
+        iconPosition="right"
+        style={
+          Array [
+            Object {
+              "color": "#000000",
+              "fontFamily": "Roboto",
+              "fontSize": 14,
+              "fontWeight": "500",
+              "letterSpacing": 1.23,
+              "lineHeight": 19,
+              "marginEnd": 8,
+              "marginStart": 0,
+              "textTransform": "uppercase",
+            },
+          ]
+        }
+        testID="button-label"
+        type="contained"
+      >
+        button label
+      </Text>
+      <Text
+        accessibilityRole="imagebutton"
+        name="outlined-default-mockup"
+        size="small"
+        style={
+          Object {
+            "color": "#000000",
+          }
+        }
+      >
+        outlined-default-mockup
+      </Text>
+    </View>
+  </View>
+</View>
+`;
