@@ -1,3 +1,5 @@
+/* eslint-disable react/no-unescaped-entities */
+/* eslint-disable max-len */
 /* eslint-disable @typescript-eslint/camelcase */
 /* eslint-disable max-lines */
 import React from 'react'
@@ -9,22 +11,25 @@ import {
   GayaButtonColor, GayaButtonSizes, GayaButtonTypes, ITextTransformProp
 } from './GayaButton.types'
 import { BrandTypes } from '../../common/brandTypes/brandTypes'
+import { Typography } from '../Typography'
 
 const description = () => `
-> Buttons allow users to take actions, and make choices, with a single tap.
+> O GaYaButton faz parte da evolução contínua dos componentes do GaYa Design System. Lançado como um novo componente, o GaYaButton substitui o antigo Button, que permanecerá disponível para uso, mas não receberá mais atualizações ou suporte ativo. 
+Recomendamos a migração para o GaYaButton o mais rápido possível para aproveitar as melhorias e garantir a compatibilidade futura..
 
-## Properties
-| Property         | Values                                                                             |    Status           |
-|---               |                                                                                 ---|                  ---|
-| **type**         | contained, outlined, ghost, tonal                                                  | ✅ Available        |
-| **textTranform** | uppercase, lowercase,  capitalize                                                  | 🗂️  Backlog         |
-| **size**         | semi, semiX, medium                                                                | ✅ Available        |
-| **iconName**     | 'icon_name'                                                                        | ✅ Available        |
-| **disabled**     | true, false                                                                        | ✅ Available        |
-| **display **     | inline, block                                                                      | ❌ Not Applicable   |
-| **brand**                   | avon, avon_v2, natura, natura_v2, natura_v3, theBodyShop, <br /> consultoriaDeBeleza, casaEestilo            | ✅ Available        |
+## Propriedades
+| Figma         | Property         | Values                                                                             |    Status           |
+|---               |---               |                                                                                 ---|                  ---|
+| **variant**      | **type**         | contained, outlined, ghost, tonal                                                  | ✅ Available        |
+| **textTranform** | **textTranform** | uppercase, lowercase,  capitalize                                                  | ✅ Available         |
+| **Size**         | **size**         | semi, semiX, medium                                                                | ✅ Available        |
+| **Icon**         | **iconName**     | 'icon_name'                                                                        | ✅ Available        |
+| **Disabled**     | **disabled**     | true, false                                                                        | ✅ Available        |
+| **Display**      | **display **     | inline, block                                                                      | ❌ Not Applicable   |
+| **--**           | **brand**        | avon, avon_v2, natura, natura_v2, natura_v3, theBodyShop, <br /> consultoriaDeBeleza, casaEestilo            | ✅ Available        |
+| **color**        | **color**        | primary, onPrimary, secondary, onSecondary, neutral, inverse                        | ✅ Available        |
 
-## Technical Usages Examples
+## Exemplos de usos
 `
 
 export default {
@@ -218,4 +223,59 @@ export const Interactive = () => (
       textTransform={select('textTransform', GayabuttontextTransform, 'uppercase') as ITextTransformProp}
     />
   </StoryContainer>
+)
+
+export const AccessibilityGuide = () => (
+  <div>
+    <Typography variant="heading4">Guia de acessibilidade</Typography>
+    <table
+      style={{
+        fontFamily: 'roboto',
+        fontSize: '13px',
+        maxWidth: '800px',
+        margin: '20px 0',
+        borderCollapse: 'collapse',
+        border: '1px solid #ccc'
+      }}
+    >
+      <thead>
+        <tr style={{ backgroundColor: '#f4f4f4', color: '#333' }}>
+          <th style={{ padding: '10px', fontSize: '16px', border: '1px solid #ccc' }}><Typography variant="subtitle1">Atributo</Typography></th>
+          <th style={{ padding: '10px', fontSize: '16px', border: '1px solid #ccc' }}><Typography variant="subtitle1">Descrição</Typography></th>
+          <th style={{ padding: '10px', fontSize: '16px', border: '1px solid #ccc' }}><Typography variant="subtitle1">Código de Exemplo</Typography></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style={{ padding: '10px', border: '1px solid #ccc' }}>role</td>
+          <td style={{ padding: '10px', border: '1px solid #ccc' }}>Especifica o papel do elemento para tecnologias assistivas.</td>
+          <td style={{ padding: '10px', border: '1px solid #ccc' }}><code>&lt;Gayabutton role="button"&gt;Click me&lt;/Gayabutton&gt;</code></td>
+        </tr>
+        <tr>
+          <td style={{ padding: '10px', border: '1px solid #ccc' }}>aria-label</td>
+          <td style={{ padding: '10px', border: '1px solid #ccc' }}>Fornece uma etiqueta de texto para leitores de tela.</td>
+          <td style={{ padding: '10px', border: '1px solid #ccc' }}><code>&lt;Gayabutton aria-label="Fechar"&gt;X&lt;/Gayabutton&gt;</code></td>
+        </tr>
+        <tr>
+          <td style={{ padding: '10px', border: '1px solid #ccc' }}>aria-describedby</td>
+          <td style={{ padding: '10px', border: '1px solid #ccc' }}>Identifica elementos que descrevem o botão.</td>
+          <td style={{ padding: '10px', border: '1px solid #ccc' }}>
+            <code>&lt;Gayabutton aria-describedby="descriptionClose"&gt;Fechar&lt;/Gayabutton&gt;</code>
+            <br />
+            <code>&lt;div id="descriptionClose"&gt;Clique para fechar a janela&lt;/div&gt;</code>
+          </td>
+        </tr>
+        <tr>
+          <td style={{ padding: '10px', border: '1px solid #ccc' }}>aria-disabled</td>
+          <td style={{ padding: '10px', border: '1px solid #ccc' }}>Indica que o elemento está desabilitado, mas ainda é acessado pela tecnologia assistiva.</td>
+          <td style={{ padding: '10px', border: '1px solid #ccc' }}><code>&lt;Gayabutton aria-disabled="true"&gt;Não disponível&lt;/button&gt;</code></td>
+        </tr>
+        <tr>
+          <td style={{ padding: '10px', border: '1px solid #ccc' }}>aria-haspopup</td>
+          <td style={{ padding: '10px', border: '1px solid #ccc' }}>Indica que o botão tem um menu popup associado.</td>
+          <td style={{ padding: '10px', border: '1px solid #ccc' }}><code>&lt;Gayabutton aria-haspopup="true"&gt;Opções&lt;/button&gt;</code></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 )
