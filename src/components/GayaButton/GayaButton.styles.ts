@@ -49,15 +49,15 @@ export const getButtonStylesBySize = ({
   const buttonSizes = {
     large: {
       minHeight: getSizeMedium(theme),
-      paddingHorizontal: getSpacingSmall(theme)
+      paddingHorizontal: theme.button.paddingX
     },
     medium: {
       minHeight: getSizeMedium(theme),
-      paddingHorizontal: getSpacingSmall(theme)
+      paddingHorizontal: theme.button.paddingX
     },
     semi: {
       minHeight: getSizeSemi(theme),
-      paddingHorizontal: getSpacingMicro(theme)
+      paddingHorizontal: theme.button.paddingX
     },
     semiX: {
       minHeight: getSizeSemiX(theme),
@@ -65,7 +65,7 @@ export const getButtonStylesBySize = ({
     },
     small: {
       minHeight: getSizeSemi(theme),
-      paddingHorizontal: getSpacingMicro(theme)
+      paddingHorizontal: theme.button.paddingX
     }
   }
   return size && buttonSizes[size]
