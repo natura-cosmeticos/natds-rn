@@ -20,14 +20,14 @@ Recomendamos a migração para o GaYaButton o mais rápido possível para aprove
 ## Propriedades
 | Figma         | Property         | Values                                                                             |    Status           |
 |---               |---               |                                                                                 ---|                  ---|
-| **variant**      | **type**         | contained, outlined, ghost, tonal                                                  | ✅ Available        |
-| **textTranform** | **textTranform** | uppercase, lowercase,  capitalize                                                  | ✅ Available         |
-| **Size**         | **size**         | semi, semiX, medium                                                                | ✅ Available        |
-| **Icon**         | **iconName**     | 'icon_name'                                                                        | ✅ Available        |
-| **Disabled**     | **disabled**     | true, false                                                                        | ✅ Available        |
+| **variant**      | **type**         | contained, outlined, ghost, tonal                                                  | ✅ Disponível        |
+| **textTranform** | **textTranform** | uppercase, lowercase,  capitalize                                                  | ✅ Disponível         |
+| **Size**         | **size**         | semi, semiX, medium                                                                | ✅ Disponível        |
+| **Icon**         | **iconName**     | 'icon_name'                                                                        | ✅ Disponível        |
+| **Disabled**     | **disabled**     | true, false                                                                        | ✅ Disponível        |
 | **Display**      | **display **     | inline, block                                                                      | ❌ Not Applicable   |
-| **--**           | **brand**        | avon, avon_v2, natura, natura_v2, natura_v3, theBodyShop, <br /> consultoriaDeBeleza, casaEestilo            | ✅ Available        |
-| **color**        | **color**        | primary, onPrimary, secondary, onSecondary, neutral, inverse                        | ✅ Available        |
+| **--**           | **brand**        | avon, avon_v2, natura, natura_v2, natura_v3, theBodyShop, <br /> consultoriaDeBeleza, casaEestilo            | ✅ Disponível        |
+| **color**        | **color**        | primary, onPrimary, secondary, onSecondary, neutral, inverse                        | ✅ Disponível        |
 
 ## Exemplos de usos
 `
