@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### Features
+
+* **natds-icons:** add icon filled-finance-bag 
+* **natds-icons:** add icon filled-finance-bagcheck 
+* **natds-icons:** add icon filled-product-nailpolish 
+* **natds-icons:** add icon outlined-finance-bagcheck 
+* **natds-icons:** add icon outlined-product-nailpolish 
+
 ## [7.42.0](https://github.com/natura-cosmeticos/natds-rn/compare/v7.41.0...v7.42.0) (2024-05-01)
 
 ### Features
