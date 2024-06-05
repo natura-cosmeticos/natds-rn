@@ -5,6 +5,7 @@
 import React from 'react'
 import { View } from 'react-native'
 import { boolean, select, text as textKnob } from '@storybook/addon-knobs'
+import { background } from '@storybook/theming'
 import { StoryContainer, StoryWrapper } from '../../common/HelperComponents/StoryContainer'
 import { GayaButton } from './GayaButton'
 import {
@@ -15,7 +16,7 @@ import { Typography } from '../Typography'
 
 const description = () => `
 > O GaYaButton faz parte da evolução contínua dos componentes do GaYa Design System. Lançado como um novo componente, o GaYaButton substitui o antigo Button, que permanecerá disponível para uso, mas não receberá mais atualizações ou suporte ativo. 
-Recomendamos a migração para o GaYaButton o mais rápido possível para aproveitar as melhorias e garantir a compatibilidade futura..
+Recomendamos a migração para o GayaButton o mais rápido possível para aproveitar as melhorias e garantir a compatibilidade futura.
 
 ## Propriedades
 | Figma         | Property         | Values                                                                             |    Status           |
@@ -91,7 +92,7 @@ export const Default = () => (
     <GayaButton onPress={onPress} text="Natura Design System" />
   </StoryContainer>
 )
-export const Brand = () => (
+export const BrandLight = () => (
   <StoryWrapper title="Brands">
     <StoryContainer title="Avon">
       <GayaButton brand="avon" type="contained" onPress={onPress} text="Button" />
@@ -134,6 +135,54 @@ export const Brand = () => (
       <GayaButton brand="consultoriaDeBeleza" type="outlined" onPress={onPress} text="Button" />
       <GayaButton brand="consultoriaDeBeleza" type="ghost" onPress={onPress} text="Button" />
       <GayaButton brand="consultoriaDeBeleza" type="tonal" onPress={onPress} text="Button" />
+    </StoryContainer>
+
+  </StoryWrapper>
+)
+export const BrandDark = () => (
+
+  <StoryWrapper title="Brands">
+    <StoryContainer title="Avon" style={{ backgroundColor: 'black', padding: 20 }}>
+      <GayaButton mode="dark" brand="avon" type="contained" onPress={onPress} text="Button" />
+      <GayaButton mode="dark" brand="avon" type="outlined" onPress={onPress} text="Button" />
+      <GayaButton mode="dark" brand="avon" type="ghost" onPress={onPress} text="Button" />
+      <GayaButton mode="dark" brand="avon" type="tonal" onPress={onPress} text="Button" />
+    </StoryContainer>
+    <StoryContainer title="Avon v2" style={{ backgroundColor: 'black', padding: 20 }}>
+      <GayaButton mode="dark" brand="avon_v2" type="contained" onPress={onPress} text="Button" />
+      <GayaButton mode="dark" brand="avon_v2" type="outlined" onPress={onPress} text="Button" />
+      <GayaButton mode="dark" brand="avon_v2" type="ghost" onPress={onPress} text="Button" />
+      <GayaButton mode="dark" brand="avon_v2" type="tonal" onPress={onPress} text="Button" />
+    </StoryContainer>
+    <StoryContainer title="Natura V1" style={{ backgroundColor: 'black', padding: 20 }}>
+      <GayaButton mode="dark" brand="natura" type="contained" onPress={onPress} text="Button" />
+      <GayaButton mode="dark" brand="natura" type="outlined" onPress={onPress} text="Button" />
+      <GayaButton mode="dark" brand="natura" type="ghost" onPress={onPress} text="Button" />
+      <GayaButton mode="dark" brand="natura" type="tonal" onPress={onPress} text="Button" />
+    </StoryContainer>
+    <StoryContainer title="Natura V2" style={{ backgroundColor: 'black', padding: 20 }}>
+      <GayaButton mode="dark" brand="natura_v2" type="contained" onPress={onPress} text="Button" />
+      <GayaButton mode="dark" brand="natura_v2" type="outlined" onPress={onPress} text="Button" />
+      <GayaButton mode="dark" brand="natura_v2" type="ghost" onPress={onPress} text="Button" />
+      <GayaButton mode="dark" brand="natura_v2" type="tonal" onPress={onPress} text="Button" />
+    </StoryContainer>
+    <StoryContainer title="Natura V3" style={{ backgroundColor: 'black', padding: 20 }}>
+      <GayaButton mode="dark" brand="natura_v3" type="contained" onPress={onPress} text="Button" />
+      <GayaButton mode="dark" brand="natura_v3" type="outlined" onPress={onPress} text="Button" />
+      <GayaButton mode="dark" brand="natura_v3" type="ghost" onPress={onPress} text="Button" />
+      <GayaButton mode="dark" brand="natura_v3" type="tonal" onPress={onPress} text="Button" />
+    </StoryContainer>
+    <StoryContainer title="Casa & Estilo" style={{ backgroundColor: 'black', padding: 20 }}>
+      <GayaButton mode="dark" brand="casaEestilo" type="contained" onPress={onPress} text="Button" />
+      <GayaButton mode="dark" brand="casaEestilo" type="outlined" onPress={onPress} text="Button" />
+      <GayaButton mode="dark" brand="casaEestilo" type="ghost" onPress={onPress} text="Button" />
+      <GayaButton mode="dark" brand="casaEestilo" type="tonal" onPress={onPress} text="Button" />
+    </StoryContainer>
+    <StoryContainer title="Consultoria de Beleza" style={{ backgroundColor: 'black', padding: 20 }}>
+      <GayaButton mode="dark" brand="consultoriaDeBeleza" type="contained" onPress={onPress} text="Button" />
+      <GayaButton mode="dark" brand="consultoriaDeBeleza" type="outlined" onPress={onPress} text="Button" />
+      <GayaButton mode="dark" brand="consultoriaDeBeleza" type="ghost" onPress={onPress} text="Button" />
+      <GayaButton mode="dark" brand="consultoriaDeBeleza" type="tonal" onPress={onPress} text="Button" />
     </StoryContainer>
 
   </StoryWrapper>
