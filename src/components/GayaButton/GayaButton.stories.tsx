@@ -5,7 +5,6 @@
 import React from 'react'
 import { View } from 'react-native'
 import { boolean, select, text as textKnob } from '@storybook/addon-knobs'
-import { background } from '@storybook/theming'
 import { StoryContainer, StoryWrapper } from '../../common/HelperComponents/StoryContainer'
 import { GayaButton } from './GayaButton'
 import {
