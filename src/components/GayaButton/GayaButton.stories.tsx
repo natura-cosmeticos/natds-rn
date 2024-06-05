@@ -296,33 +296,27 @@ export const AccessibilityGuide = () => (
       </thead>
       <tbody>
         <tr>
-          <td style={{ padding: '10px', border: '1px solid #ccc' }}>role</td>
-          <td style={{ padding: '10px', border: '1px solid #ccc' }}>Especifica o papel do elemento para tecnologias assistivas.</td>
-          <td style={{ padding: '10px', border: '1px solid #ccc' }}><code>&lt;Gayabutton role="button"&gt;Click me&lt;/Gayabutton&gt;</code></td>
+          <td style={{ padding: '10px', border: '1px solid #ccc' }}>accessibilityRole</td>
+          <td style={{ padding: '10px', border: '1px solid #ccc' }}>A função de acessibilidade informa a uma pessoa que usa o VoiceOver no iOS ou o TalkBack no Android o tipo de elemento em que se concentra.</td>
+          <td style={{ padding: '10px', border: '1px solid #ccc' }}><code>&lt;Gayabutton accessibilityRole="button"&gt;Click me&lt;/Gayabutton&gt;</code></td>
         </tr>
         <tr>
-          <td style={{ padding: '10px', border: '1px solid #ccc' }}>aria-label</td>
+          <td style={{ padding: '10px', border: '1px solid #ccc' }}>accessibilityLabel</td>
           <td style={{ padding: '10px', border: '1px solid #ccc' }}>Fornece uma etiqueta de texto para leitores de tela.</td>
-          <td style={{ padding: '10px', border: '1px solid #ccc' }}><code>&lt;Gayabutton aria-label="Fechar"&gt;X&lt;/Gayabutton&gt;</code></td>
+          <td style={{ padding: '10px', border: '1px solid #ccc' }}><code>&lt;Gayabutton accessibilityLabel="Fechar"&gt;X&lt;/Gayabutton&gt;</code></td>
         </tr>
         <tr>
-          <td style={{ padding: '10px', border: '1px solid #ccc' }}>aria-describedby</td>
-          <td style={{ padding: '10px', border: '1px solid #ccc' }}>Identifica elementos que descrevem o botão.</td>
+          <td style={{ padding: '10px', border: '1px solid #ccc' }}>accessibilityHint</td>
+          <td style={{ padding: '10px', border: '1px solid #ccc' }}>Uma dica de acessibilidade ajuda os usuários a entender o que acontecerá quando eles executarem uma ação no elemento de acessibilidade quando esse resultado não for óbvio no rótulo de acessibilidade.</td>
           <td style={{ padding: '10px', border: '1px solid #ccc' }}>
-            <code>&lt;Gayabutton aria-describedby="descriptionClose"&gt;Fechar&lt;/Gayabutton&gt;</code>
+            <code>&lt;Gayabutton accessibilityHint="Clique para fechar"&gt;X&lt;/Gayabutton&gt;</code>
             <br />
-            <code>&lt;div id="descriptionClose"&gt;Clique para fechar a janela&lt;/div&gt;</code>
           </td>
         </tr>
         <tr>
-          <td style={{ padding: '10px', border: '1px solid #ccc' }}>aria-disabled</td>
-          <td style={{ padding: '10px', border: '1px solid #ccc' }}>Indica que o elemento está desabilitado, mas ainda é acessado pela tecnologia assistiva.</td>
-          <td style={{ padding: '10px', border: '1px solid #ccc' }}><code>&lt;Gayabutton aria-disabled="true"&gt;Não disponível&lt;/button&gt;</code></td>
-        </tr>
-        <tr>
-          <td style={{ padding: '10px', border: '1px solid #ccc' }}>aria-haspopup</td>
-          <td style={{ padding: '10px', border: '1px solid #ccc' }}>Indica que o botão tem um menu popup associado.</td>
-          <td style={{ padding: '10px', border: '1px solid #ccc' }}><code>&lt;Gayabutton aria-haspopup="true"&gt;Opções&lt;/button&gt;</code></td>
+          <td style={{ padding: '10px', border: '1px solid #ccc' }}>accessibilityState</td>
+          <td style={{ padding: '10px', border: '1px solid #ccc' }}>Ao receber disabled indica que o elemento está desabilitado, mas ainda é acessado pela tecnologia assistiva.</td>
+          <td style={{ padding: '10px', border: '1px solid #ccc' }}><code>&lt;Gayabutton accessibilityState"disabled"&gt;Não disponível&lt;/button&gt;</code></td>
         </tr>
       </tbody>
     </table>
