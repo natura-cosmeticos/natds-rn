@@ -21,6 +21,7 @@ export interface GayaButtonBaseProps extends GayaButtonProps {
 type AccessibilityButtonProps = Pick<AccessibilityProps,
   'accessibilityActions' |
   'onAccessibilityAction' |
+  'accessibilityState' |
   'accessibilityHint' |
   'accessibilityLabel'
 >

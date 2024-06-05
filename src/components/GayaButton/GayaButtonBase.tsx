@@ -10,6 +10,7 @@ import { GayaButtonBaseProps } from './GayaButton.types'
 const GayaButtonComponent = ({
   accessibilityHint,
   accessibilityLabel,
+  accessibilityState,
   textTransform,
   disabled = false,
   iconName,
@@ -40,6 +41,7 @@ const GayaButtonComponent = ({
       <Surface
         accessibilityHint={accessibilityHint}
         accessibilityLabel={accessibilityLabel}
+        accessibilityState={accessibilityState}
         accessibilityRole="button"
         disabled={disabled}
         size={size}

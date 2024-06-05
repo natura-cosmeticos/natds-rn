@@ -6,6 +6,7 @@ export const GayaButton = ({
   accessibilityHint,
   accessibilityLabel,
   accessibilityActions,
+  accessibilityState,
   onAccessibilityAction,
   textTransform,
   disabled = false,
@@ -22,6 +23,7 @@ export const GayaButton = ({
 }: GayaButtonProps) => (
   <GayaButtonBase
     onAccessibilityAction={onAccessibilityAction}
+    accessibilityState={accessibilityState || disabled}
     accessibilityActions={accessibilityActions}
     accessibilityHint={accessibilityHint}
     accessibilityLabel={accessibilityLabel}
