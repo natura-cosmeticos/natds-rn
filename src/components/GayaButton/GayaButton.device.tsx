@@ -4,7 +4,8 @@ import {
   Interactive,
   Sizes,
   Variants,
-  Brand
+  BrandLight,
+  BrandDark
 } from './GayaButton.stories'
 
 storiesOf('GayaButton', module)
@@ -12,4 +13,5 @@ storiesOf('GayaButton', module)
   .add('Variants', Variants)
   .add('Sizes', Sizes)
   .add('Interactive', Interactive)
-  .add('Brand', Brand)
+  .add('BrandDark', BrandLight)
+  .add('BrandDark', BrandDark)
