@@ -20,12 +20,12 @@ Recomendamos a migração para o GayaButton o mais rápido possível para aprove
 ## Propriedades
 | Figma         | Property         | Values                                                                             |    Status           |
 |---               |---               |                                                                                 ---|                  ---|
-| **variant**      | **type**         | contained, outlined, ghost, tonal                                                  | ✅ Disponível        |
+| **hierarchy**      | **type**         | contained, outlined, ghost, tonal                                                  | ✅ Disponível        |
 | **textTranform** | **textTranform** | uppercase, lowercase,  capitalize                                                  | ✅ Disponível         |
 | **Size**         | **size**         | semi, semiX, medium                                                                | ✅ Disponível        |
 | **Icon**         | **iconName**     | 'icon_name'                                                                        | ✅ Disponível        |
 | **Disabled**     | **disabled**     | true, false                                                                        | ✅ Disponível        |
-| **Display**      | **display **     | inline, block                                                                      | ❌ Not Applicable   |
+| **Display**      | **display **     | inline, block                                                                      | ❌ Não aplicável   |
 | **--**           | **brand**        | avon, avon_v2, natura, natura_v2, natura_v3, theBodyShop, <br /> consultoriaDeBeleza, casaEestilo            | ✅ Disponível        |
 | **color**        | **color**        | primary, onPrimary, secondary, onSecondary, neutral, inverse                        | ✅ Disponível        |
 
