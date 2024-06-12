@@ -151,8 +151,8 @@
         },
         "borderRadius": 4,
         "elevation": "none",
-        "paddingX": 8,
-        "textTransform": "uppercase",
+        "paddingX": 24,
+        "textTransform": "capitalize",
         "contained": {
             "color": {
                 "primary": {
@@ -1809,8 +1809,8 @@
         "button": {
             "borderRadius": 4,
             "elevation": "none",
-            "paddingX": 8,
-            "textTransform": "uppercase"
+            "paddingX": 24,
+            "textTransform": "capitalize"
         },
         "shortcut": {
             "borderRadius": 28
