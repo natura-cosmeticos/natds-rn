@@ -1,4 +1,4 @@
-# Natura Design System - React Native
+# GaYa Design System - React Native
 
 React Native components for react-native based projects inside Natura&Co.
 

@@ -1,0 +1,1 @@
+export { GayaButton } from './GayaButton'
