@@ -2,6 +2,27 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [7.44.0](https://github.com/natura-cosmeticos/natds-rn/compare/v7.43.0...v7.44.0) (2024-06-12)
+
+
+### Features
+
+* **natds-rn:** added GayaButton ([70c2eb9](https://github.com/natura-cosmeticos/natds-rn/commit/70c2eb9cbf72f722865cf4a80e1f3b7a1e730971))
+* **natds-rn:** added paddingX to all size ([0242fb4](https://github.com/natura-cosmeticos/natds-rn/commit/0242fb4593dde1da29521b9f5a62613c7f423374))
+* **natds-rn:** added prop accessibilityState ([ed8aaf3](https://github.com/natura-cosmeticos/natds-rn/commit/ed8aaf3211ed2627c2bf32eda4b697649b9ea35e))
+* **natds-rn:** added stories accessibility ([50d3748](https://github.com/natura-cosmeticos/natds-rn/commit/50d37480749dbeb42f7104350486cfdebc91c20c))
+* **natds-rn:** added stories Brand Dark GayaButton ([7e64863](https://github.com/natura-cosmeticos/natds-rn/commit/7e6486339d78d334d1bd122c2f565f0d647a829b))
+* **natds-rn:** added stories Brand Dark GayaButton ([f82346f](https://github.com/natura-cosmeticos/natds-rn/commit/f82346fcccdeb6daed40485472b47316ff6cdf3b))
+* **natds-rn:** added stories BrandLight in device ([aaec0ad](https://github.com/natura-cosmeticos/natds-rn/commit/aaec0ad7bfbf9823b2af3570edd2021fe2666244))
+* **natds-rn:** translate docs and change variant to hierarchy ([fa08786](https://github.com/natura-cosmeticos/natds-rn/commit/fa087864f5138a0f55a8d50606b4b54060a5b85f))
+* **natds-rn:** update Icons ([ebf74ad](https://github.com/natura-cosmeticos/natds-rn/commit/ebf74ad254c5735ceba577862f7e959e3ec52edd))
+* **natds-rn:** update themes version ([6fd3c20](https://github.com/natura-cosmeticos/natds-rn/commit/6fd3c20cff944df47e4623438b97f217fa3512b3))
+
+
+### Bug Fixes
+
+* **natds-rn:** clean imports ([941e0d5](https://github.com/natura-cosmeticos/natds-rn/commit/941e0d538edc3ec7e918ad60d0a506ac1b1283a7))
+* **natds-rn:** update stories GayaButton ([5ddaa17](https://github.com/natura-cosmeticos/natds-rn/commit/5ddaa17427619a7cf605f7cc909d089672af40de))
 
 ## [7.43.0](https://github.com/natura-cosmeticos/natds-rn/compare/v7.42.0...v7.43.0) (2024-06-07)
 
