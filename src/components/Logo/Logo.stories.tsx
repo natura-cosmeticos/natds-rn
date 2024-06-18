@@ -33,10 +33,13 @@ export default {
 
 export const Interactive = () => (
   <VerticalStoryContainer title="Interactive">
-    <Logo
-      color={text('Color', 'neutral') as LogoColors}
-      model={text('Model', 'a') as NeutralLogoModel}
-      size={text('Size', 'veryHuge') as LogoSizes}
-    />
+    <div style={{ padding: 24 }}>
+      <Logo
+        color={text('Color', 'neutral') as LogoColors}
+        model={text('Model', 'a') as NeutralLogoModel}
+        size={text('Size', 'veryHuge') as LogoSizes}
+      />
+
+    </div>
   </VerticalStoryContainer>
 )
