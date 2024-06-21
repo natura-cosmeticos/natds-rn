@@ -41,7 +41,7 @@ exports[`Button component Disabled variants should render disabled button compon
           "elevation": 0,
           "justifyContent": "center",
           "minHeight": 40,
-          "paddingHorizontal": 8,
+          "paddingHorizontal": 24,
         },
       ]
     }
@@ -74,7 +74,7 @@ exports[`Button component Disabled variants should render disabled button compon
               "lineHeight": 19,
               "marginEnd": 0,
               "marginStart": 0,
-              "textTransform": "uppercase",
+              "textTransform": "capitalize",
             },
           ]
         }
@@ -129,7 +129,7 @@ exports[`Button component Disabled variants should render disabled button compon
           "elevation": 0,
           "justifyContent": "center",
           "minHeight": 40,
-          "paddingHorizontal": 8,
+          "paddingHorizontal": 24,
         },
       ]
     }
@@ -162,7 +162,7 @@ exports[`Button component Disabled variants should render disabled button compon
               "lineHeight": 19,
               "marginEnd": 0,
               "marginStart": 0,
-              "textTransform": "uppercase",
+              "textTransform": "capitalize",
             },
           ]
         }
@@ -217,7 +217,7 @@ exports[`Button component Disabled variants should render disabled button compon
           "elevation": 0,
           "justifyContent": "center",
           "minHeight": 40,
-          "paddingHorizontal": 8,
+          "paddingHorizontal": 24,
         },
       ]
     }
@@ -250,7 +250,7 @@ exports[`Button component Disabled variants should render disabled button compon
               "lineHeight": 19,
               "marginEnd": 0,
               "marginStart": 0,
-              "textTransform": "uppercase",
+              "textTransform": "capitalize",
             },
           ]
         }
@@ -304,7 +304,7 @@ exports[`Button component Variants should render button component contained 1`] 
           "borderWidth": 0,
           "justifyContent": "center",
           "minHeight": 40,
-          "paddingHorizontal": 8,
+          "paddingHorizontal": 24,
           "shadowColor": "#AEAEAE",
         },
       ]
@@ -338,7 +338,7 @@ exports[`Button component Variants should render button component contained 1`] 
               "lineHeight": 19,
               "marginEnd": 0,
               "marginStart": 0,
-              "textTransform": "uppercase",
+              "textTransform": "capitalize",
             },
           ]
         }
@@ -393,7 +393,7 @@ exports[`Button component Variants should render button component outlined 1`] =
           "elevation": 0,
           "justifyContent": "center",
           "minHeight": 40,
-          "paddingHorizontal": 8,
+          "paddingHorizontal": 24,
         },
       ]
     }
@@ -426,7 +426,7 @@ exports[`Button component Variants should render button component outlined 1`] =
               "lineHeight": 19,
               "marginEnd": 0,
               "marginStart": 0,
-              "textTransform": "uppercase",
+              "textTransform": "capitalize",
             },
           ]
         }
@@ -481,7 +481,7 @@ exports[`Button component Variants should render button component text 1`] = `
           "elevation": 0,
           "justifyContent": "center",
           "minHeight": 40,
-          "paddingHorizontal": 8,
+          "paddingHorizontal": 24,
         },
       ]
     }
@@ -514,7 +514,7 @@ exports[`Button component Variants should render button component text 1`] = `
               "lineHeight": 19,
               "marginEnd": 0,
               "marginStart": 0,
-              "textTransform": "uppercase",
+              "textTransform": "capitalize",
             },
           ]
         }
@@ -568,7 +568,7 @@ exports[`Button component with Icon should render the icon to the left 1`] = `
           "borderWidth": 0,
           "justifyContent": "center",
           "minHeight": 40,
-          "paddingHorizontal": 8,
+          "paddingHorizontal": 24,
           "shadowColor": "#AEAEAE",
         },
       ]
@@ -603,7 +603,7 @@ exports[`Button component with Icon should render the icon to the left 1`] = `
               "lineHeight": 19,
               "marginEnd": 0,
               "marginStart": 8,
-              "textTransform": "uppercase",
+              "textTransform": "capitalize",
             },
           ]
         }
@@ -669,7 +669,7 @@ exports[`Button component with Icon should render the icon to the right by defau
           "borderWidth": 0,
           "justifyContent": "center",
           "minHeight": 40,
-          "paddingHorizontal": 8,
+          "paddingHorizontal": 24,
           "shadowColor": "#AEAEAE",
         },
       ]
@@ -704,7 +704,7 @@ exports[`Button component with Icon should render the icon to the right by defau
               "lineHeight": 19,
               "marginEnd": 8,
               "marginStart": 0,
-              "textTransform": "uppercase",
+              "textTransform": "capitalize",
             },
           ]
         }

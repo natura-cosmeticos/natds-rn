@@ -67,7 +67,7 @@
   },
   "dependencies": {
     "@naturacosmeticos/natds-icons": "^1.25.1",
-    "@naturacosmeticos/natds-themes": "^0.75.1",
+    "@naturacosmeticos/natds-themes": "^0.77.2",
     "react-native-gesture-handler": "^1.10.3",
     "react-native-svg": "^12.1.1"
   },
