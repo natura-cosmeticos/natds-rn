@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [7.45.0](https://github.com/natura-cosmeticos/natds-rn/compare/v7.44.0...v7.45.0) (2024-06-21)
+
+
+### Features
+
+* **natds-rn:** added 2 new themes forcaDeVendas casaEestilo_v2 ([d007aff](https://github.com/natura-cosmeticos/natds-rn/commit/d007affd0c712ec08d4bf697bdc8b46d03906815))
+* **natds-rn:** added logo Força de Vendas ([7336518](https://github.com/natura-cosmeticos/natds-rn/commit/7336518c6da97c6f4033c3ba47a11ce8aaaa51ea))
+
+
+### Bug Fixes
+
+* **natds-rn:** fixed svg forcaDevendas-custom-a ([c935faa](https://github.com/natura-cosmeticos/natds-rn/commit/c935faa9712f3ccf254cf7d9e1719c554fdbbd3e))
+
 ## [7.44.0](https://github.com/natura-cosmeticos/natds-rn/compare/v7.43.0...v7.44.0) (2024-06-12)
 
 
