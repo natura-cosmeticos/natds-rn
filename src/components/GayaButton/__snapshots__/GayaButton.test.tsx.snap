@@ -25,7 +25,6 @@ exports[`Button component Disabled variants should render disabled button compon
 >
   <View
     accessibilityRole="button"
-    accessibilityState={true}
     color="primary"
     disabled={true}
     size="semiX"
@@ -113,7 +112,6 @@ exports[`Button component Disabled variants should render disabled button compon
 >
   <View
     accessibilityRole="button"
-    accessibilityState={true}
     color="primary"
     disabled={true}
     size="semiX"
@@ -201,7 +199,6 @@ exports[`Button component Disabled variants should render disabled button compon
 >
   <View
     accessibilityRole="button"
-    accessibilityState={true}
     color="primary"
     disabled={true}
     size="semiX"
@@ -289,7 +286,6 @@ exports[`Button component Variants should render button component contained 1`] 
 >
   <View
     accessibilityRole="button"
-    accessibilityState={false}
     color="primary"
     disabled={false}
     size="semiX"
@@ -377,7 +373,6 @@ exports[`Button component Variants should render button component outlined 1`] =
 >
   <View
     accessibilityRole="button"
-    accessibilityState={false}
     color="primary"
     disabled={false}
     size="semiX"
@@ -465,7 +460,6 @@ exports[`Button component Variants should render button component text 1`] = `
 >
   <View
     accessibilityRole="button"
-    accessibilityState={false}
     color="primary"
     disabled={false}
     size="semiX"
@@ -553,7 +547,6 @@ exports[`Button component with Icon should render the icon to the left 1`] = `
 >
   <View
     accessibilityRole="button"
-    accessibilityState={false}
     color="primary"
     disabled={false}
     size="semiX"
@@ -654,7 +647,6 @@ exports[`Button component with Icon should render the icon to the right by defau
 >
   <View
     accessibilityRole="button"
-    accessibilityState={false}
     color="primary"
     disabled={false}
     size="semiX"
