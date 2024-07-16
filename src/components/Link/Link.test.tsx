@@ -29,7 +29,7 @@ describe('Link component', () => {
   it('should render the correct color token', () => {
     const { queryByTestId } = render(link(defaultProps))
 
-    expect(queryByTestId('link')).toHaveStyle({ color: '#227bbd' })
+    expect(queryByTestId('link')).toHaveStyle({ color: '#1267cf' })
   })
   it('should render with underline style', () => {
     const { queryByTestId } = render(
