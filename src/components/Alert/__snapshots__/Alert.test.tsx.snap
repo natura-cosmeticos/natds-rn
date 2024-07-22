@@ -83,7 +83,7 @@ exports[`Alert component Should render alert with custom type with outlined vari
       style={
         Array [
           Object {
-            "color": "#227bbd",
+            "color": "#1267cf",
             "flexWrap": "wrap",
             "fontFamily": "Roboto",
             "fontSize": 20,
@@ -111,7 +111,7 @@ exports[`Alert component Should render alert with custom type with outlined vari
       style={
         Array [
           Object {
-            "color": "#227bbd",
+            "color": "#1267cf",
             "fontFamily": "Roboto",
             "fontSize": 16,
             "fontWeight": "400",
@@ -137,7 +137,7 @@ exports[`Alert component Should render alert with default props 1`] = `
   style={
     Array [
       Object {
-        "backgroundColor": "#227bbd29",
+        "backgroundColor": "#1267cf29",
         "borderRadius": 4,
         "borderWidth": 0,
         "flexDirection": "row",
@@ -247,8 +247,8 @@ exports[`Alert component Should render alert with outlined variant 1`] = `
   style={
     Array [
       Object {
-        "backgroundColor": "#227bbd29",
-        "borderColor": "#227bbd",
+        "backgroundColor": "#1267cf29",
+        "borderColor": "#1267cf",
         "borderRadius": 4,
         "borderWidth": 1,
         "flexDirection": "row",

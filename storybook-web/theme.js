@@ -20,7 +20,7 @@ const buildTheme = (theme, mode) => create({
   barTextColor: theme.color.highEmphasis,
 
   // Brand
-  brandTitle: '[Gaya] Natura Design System',
+  brandTitle: 'GaYa Design System',
 });
 
 export const dark = buildTheme(themes.natura.dark, 'dark');

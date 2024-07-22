@@ -326,20 +326,20 @@ export const AccessibilityGuide = () => (
         <tr>
           <td style={{ padding: '10px', border: '1px solid #ccc' }}>accessibilityLabel</td>
           <td style={{ padding: '10px', border: '1px solid #ccc' }}>Fornece uma etiqueta de texto para leitores de tela.</td>
-          <td style={{ padding: '10px', border: '1px solid #ccc' }}><code>&lt;Gayabutton accessibilityLabel="Fechar"&gt;X&lt;/Gayabutton&gt;</code></td>
+          <td style={{ padding: '10px', border: '1px solid #ccc' }}><code>&lt;Gayabutton accessibilityLabel="Fechar"&gt;X&lt;/GayaButton&gt;</code></td>
         </tr>
         <tr>
           <td style={{ padding: '10px', border: '1px solid #ccc' }}>accessibilityHint</td>
           <td style={{ padding: '10px', border: '1px solid #ccc' }}>Uma dica de acessibilidade ajuda os usuários a entender o que acontecerá quando eles executarem uma ação no elemento de acessibilidade quando esse resultado não for óbvio no rótulo de acessibilidade.</td>
           <td style={{ padding: '10px', border: '1px solid #ccc' }}>
-            <code>&lt;Gayabutton accessibilityHint="Clique para fechar"&gt;X&lt;/Gayabutton&gt;</code>
+            <code>&lt;Gayabutton accessibilityHint="Clique para fechar"&gt;X&lt;/GayaButton&gt;</code>
             <br />
           </td>
         </tr>
         <tr>
           <td style={{ padding: '10px', border: '1px solid #ccc' }}>accessibilityState</td>
           <td style={{ padding: '10px', border: '1px solid #ccc' }}>Ao receber disabled indica que o elemento está desabilitado, mas ainda é acessado pela tecnologia assistiva.</td>
-          <td style={{ padding: '10px', border: '1px solid #ccc' }}><code>&lt;Gayabutton accessibilityState"disabled"&gt;Não disponível&lt;/button&gt;</code></td>
+          <td style={{ padding: '10px', border: '1px solid #ccc' }}><code>&lt;Gayabutton accessibilityState"disabled"&gt;Não disponível&lt;/GayaButton&gt;</code></td>
         </tr>
       </tbody>
     </table>

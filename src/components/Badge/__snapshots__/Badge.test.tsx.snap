@@ -18,7 +18,7 @@ exports[`Badge component Should render badge with standard variant 1`] = `
       Array [
         Object {
           "alignContent": "center",
-          "backgroundColor": "#e74627",
+          "backgroundColor": "#de3529",
           "borderRadius": 8,
           "height": 16,
           "justifyContent": "center",

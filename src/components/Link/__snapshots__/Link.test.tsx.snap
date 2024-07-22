@@ -6,7 +6,7 @@ exports[`Link component should take a snapshot 1`] = `
   style={
     Array [
       Object {
-        "color": "#227bbd",
+        "color": "#1267cf",
         "textDecorationLine": "none",
       },
     ]
