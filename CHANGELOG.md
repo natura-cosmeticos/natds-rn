@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [7.46.0](https://github.com/natura-cosmeticos/natds-rn/compare/v7.45.0...v7.46.0) (2024-07-22)
+
+
+### Features
+
+* **natds-rn:** update color primitive references ([c37c8e7](https://github.com/natura-cosmeticos/natds-rn/commit/c37c8e72039a39b98664616add092eb5b84b483c))
+
+
+### Bug Fixes
+
+* **natds-rn:** fixed accessibilityState ([91f5289](https://github.com/natura-cosmeticos/natds-rn/commit/91f528948a465aaf9c9e56bb8a760102e102e2d5))
+* **natds-rn:** update Icon fixed filled-action-indeterminatecheckbox ([dc10d1e](https://github.com/natura-cosmeticos/natds-rn/commit/dc10d1e8b8f88c73f791dccb472ce4cc14f0ab78))
+
 ## [7.45.0](https://github.com/natura-cosmeticos/natds-rn/compare/v7.44.0...v7.45.0) (2024-06-21)
 
 
