@@ -122,7 +122,8 @@ module.exports = {
 and then run:
 
 ```shell
-npx react-native link
+npx react-native link `(deprecated)`
+npx react-native-asset `(new)`
 ```
 
 > For component detailed API and usage examples, check out the page [Using NatDS Icons](https://natds-rn.natura.design/?path=/docs/documentation-icons--page/)
