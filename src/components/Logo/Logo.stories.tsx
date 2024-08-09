@@ -1,9 +1,9 @@
 import React from 'react'
-import { text } from '@storybook/addon-knobs'
+import { text, select } from '@storybook/addon-knobs'
 import { VerticalStoryContainer } from '../../common/HelperComponents/StoryContainer'
 import { Logo } from './Logo'
 import {
-  LogoSizes, LogoColors, NeutralLogoModel
+  LogoSizes, LogoColors
 } from './Logo.types'
 
 const description = () => `
@@ -30,13 +30,17 @@ export default {
   },
   title: 'Components|Logo'
 }
-
+type Model = 'a' | 'b'
+const Model = {
+  a: 'a',
+  b: 'b'
+}
 export const Interactive = () => (
   <VerticalStoryContainer title="Interactive">
     <div style={{ padding: 24 }}>
       <Logo
         color={text('Color', 'neutral') as LogoColors}
-        model={text('Model', 'a') as NeutralLogoModel}
+        model={select('model', Model, 'a') as Model}
         size={text('Size', 'veryHuge') as LogoSizes}
       />
 
