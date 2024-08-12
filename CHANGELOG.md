@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [7.47.0](https://github.com/natura-cosmeticos/natds-rn/compare/v7.46.0...v7.47.0) (2024-08-12)
+
+
+### Features
+
+* **natds-rn:** added logo fuerzadeventas FV espanha ([6c64575](https://github.com/natura-cosmeticos/natds-rn/commit/6c6457591942709e2037d8d36883371bb735493d))
+
 ## [7.46.0](https://github.com/natura-cosmeticos/natds-rn/compare/v7.45.0...v7.46.0) (2024-07-22)
 
 
