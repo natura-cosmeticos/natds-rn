@@ -3,6 +3,7 @@ import React from 'react'
 import { Color } from '@naturacosmeticos/natds-themes/react-native'
 import ColorView from './ColorView'
 import { buildTheme } from '../../common/themeSelectors'
+import { getStoryBookTheme } from '../../../storybook-web/addons/theme/shared.js'
 
 const description = () => `
 > Colors from theme.
@@ -32,7 +33,9 @@ function removeKeys(obj: Color) {
 }
 
 export const ColorViews = () => {
-  const theme = buildTheme('natura', 'light')
+  const mode = getStoryBookTheme()
+  const theme = buildTheme('natura', mode)
+
   const { color } = theme
   const ArrayTheme = Object.entries(removeKeys(color))
   const deprecatedColor = [

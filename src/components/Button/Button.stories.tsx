@@ -17,7 +17,7 @@ const description = () => `
 | **size**         | semi, semiX, medium                                                                | ✅ Available        |
 | **iconName**     | 'icon_name'                                                                        | ✅ Available        |
 | **disabled**     | true, false                                                                        | ✅ Available        |
-| **display **     | inline, block                                                                      | ❌ Not Applicable   |
+| **display **     | inline, block                                                                                                | ❌ Not Applicable   |
 | **brand**                   | avon, avon_v2, natura, natura_v2, theBodyShop, <br /> consultoriaDeBeleza, casaEestilo            | ✅ Available        |
 
 ## Technical Usages Examples
