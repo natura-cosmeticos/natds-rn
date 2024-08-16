@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [7.48.0](https://github.com/natura-cosmeticos/natds-rn/compare/v7.47.0...v7.48.0) (2024-08-16)
+
+
+### Features
+
+* **natds-rn:** update colorView stories added mode ([174c6d9](https://github.com/natura-cosmeticos/natds-rn/commit/174c6d94c2f1fbbf395bb45fa353dff17a3bfcef))
+* **natds-rn:** update lib Icons and Themes ([5a541e3](https://github.com/natura-cosmeticos/natds-rn/commit/5a541e348f0a45bda50648470d2cc7220b1351c2))
+
 ## [7.47.0](https://github.com/natura-cosmeticos/natds-rn/compare/v7.46.0...v7.47.0) (2024-08-12)
 
 
