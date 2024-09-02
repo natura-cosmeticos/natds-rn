@@ -214,13 +214,13 @@ export const BrandDark = () => (
 export const Sizes = () => (
   <StoryWrapper title="Sizes">
     <StoryContainer title="Medium">
-      <GayaButton onPress={onPress} text="Natura Design System" size="medium" />
+      <GayaButton onPress={onPress} text="GaYa Design System" size="medium" />
     </StoryContainer>
     <StoryContainer title="SemiX">
-      <GayaButton onPress={onPress} text="Natura Design System" size="semiX" />
+      <GayaButton onPress={onPress} text="GaYa Design System" size="semiX" />
     </StoryContainer>
     <StoryContainer title="Semi">
-      <GayaButton onPress={onPress} text="Natura Design System" size="semi" />
+      <GayaButton onPress={onPress} text="GaYa Design System" size="semi" />
     </StoryContainer>
   </StoryWrapper>
 )
@@ -229,52 +229,52 @@ export const Variants = () => (
   <StoryWrapper title="Properties">
     <StoryWrapper title="Types">
       <StoryContainer title="Contained">
-        <GayaButton onPress={onPress} text="Natura Design System" type="contained" />
+        <GayaButton onPress={onPress} text="GaYa Design System" type="contained" />
       </StoryContainer>
       <StoryContainer title="Outlined">
-        <GayaButton onPress={onPress} text="Natura Design System" type="outlined" />
+        <GayaButton onPress={onPress} text="GaYa Design System" type="outlined" />
       </StoryContainer>
       <StoryContainer title="ghost">
-        <GayaButton color="primary" onPress={onPress} text="Natura Design System" type="ghost" />
+        <GayaButton color="primary" onPress={onPress} text="GaYa Design System" type="ghost" />
       </StoryContainer>
       <StoryContainer title="tonal">
-        <GayaButton onPress={onPress} text="Natura Design System" type="tonal" />
+        <GayaButton onPress={onPress} text="GaYa Design System" type="tonal" />
       </StoryContainer>
     </StoryWrapper>
 
     <StoryWrapper title="Icons">
       <StoryContainer title="Left Icon">
-        <GayaButton onPress={onPress} text="Natura Design System" iconName="outlined-default-mockup" iconPosition="left" />
+        <GayaButton onPress={onPress} text="GaYa Design System" iconName="outlined-default-mockup" iconPosition="left" />
       </StoryContainer>
       <StoryContainer title="Right Icon">
-        <GayaButton onPress={onPress} text="Natura Design System" iconName="outlined-default-mockup" iconPosition="right" />
+        <GayaButton onPress={onPress} text="GaYa Design System" iconName="outlined-default-mockup" iconPosition="right" />
       </StoryContainer>
     </StoryWrapper>
 
     <StoryWrapper title="Disabled">
       <StoryContainer title="Contained">
-        <GayaButton onPress={onPress} text="Natura Design System" type="contained" disabled />
+        <GayaButton onPress={onPress} text="GaYa Design System" type="contained" disabled />
       </StoryContainer>
       <StoryContainer title="Outlined">
-        <GayaButton onPress={onPress} text="Natura Design System" type="outlined" disabled />
+        <GayaButton onPress={onPress} text="GaYa Design System" type="outlined" disabled />
       </StoryContainer>
       <StoryContainer title="ghost">
-        <GayaButton onPress={onPress} text="Natura Design System" type="ghost" disabled />
+        <GayaButton onPress={onPress} text="GaYa Design System" type="ghost" disabled />
       </StoryContainer>
       <StoryContainer title="tonal">
-        <GayaButton onPress={onPress} text="Natura Design System" type="tonal" disabled />
+        <GayaButton onPress={onPress} text="GaYa Design System" type="tonal" disabled />
       </StoryContainer>
     </StoryWrapper>
 
     <StoryWrapper title="Display">
       <StoryContainer title="Display-Inline">
         <View style={{ alignItems: 'flex-start', marginBottom: 14 }}>
-          <GayaButton onPress={onPress} text="Natura Design System" />
+          <GayaButton onPress={onPress} text="GaYa Design System" />
         </View>
       </StoryContainer>
       <StoryContainer title="Display-Block">
         <View style={{ marginBottom: 14, width: '100%' }}>
-          <GayaButton onPress={onPress} text="Natura Design System" />
+          <GayaButton onPress={onPress} text="GaYa Design System" />
         </View>
       </StoryContainer>
     </StoryWrapper>
