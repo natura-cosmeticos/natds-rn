@@ -7,7 +7,7 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### Bug Fixes
 
-* **natds-rn:** change FV theme textransform token  to none ([d0c7baf](https://github.com/natura-cosmeticos/natds-rn/commit/d0c7bafffe7815ad68b3d4904c41d9ae5bf5e2a2))
+* **natds-rn:** change FV theme textTransform token  to none ([d0c7baf](https://github.com/natura-cosmeticos/natds-rn/commit/d0c7bafffe7815ad68b3d4904c41d9ae5bf5e2a2))
 
 ## [7.48.0](https://github.com/natura-cosmeticos/natds-rn/compare/v7.47.0...v7.48.0) (2024-08-16)
 
