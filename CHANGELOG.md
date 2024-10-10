@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [7.49.0](https://github.com/natura-cosmeticos/natds-rn/compare/v7.48.1...v7.49.0) (2024-10-10)
+
+
+### Features
+
+* **natds-rn:** update lib icons ([27d8645](https://github.com/natura-cosmeticos/natds-rn/commit/27d864574e8d62041ad55bbad6b0d115f138605c))
+
 ### [7.48.1](https://github.com/natura-cosmeticos/natds-rn/compare/v7.48.0...v7.48.1) (2024-09-02)
 
 
