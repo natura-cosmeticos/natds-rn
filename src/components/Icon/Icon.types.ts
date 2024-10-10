@@ -1,3 +1,4 @@
+// version lib icons 1.27.5
 import { IconName } from '@naturacosmeticos/natds-icons'
 import { Color, Size } from '@naturacosmeticos/natds-themes/react-native'
 import { StyleProp, TextStyle } from 'react-native'
