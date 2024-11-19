@@ -1,10 +1,12 @@
 /* eslint-disable max-len */
 import { Color, Size } from '@naturacosmeticos/natds-themes/react-native'
 import { AccessibilityRole, AccessibilityState } from 'react-native'
+import { IconName } from '@naturacosmeticos/natds-icons'
 import { BrandTypes } from '../../common/brandTypes/brandTypes'
 
 export type TagColors = keyof Pick<Color, 'primary' | 'secondary' | 'success' | 'alert' | 'warning' | 'link'>
 export type TagSizes = keyof Pick<Size, 'small' | 'standard'>
+export type TagIconPosition = 'left' | 'right'
 // It was done that way for the documentation to show types explicitly.
 export type TagPositions = keyof {
   default: 'default';
@@ -76,4 +78,14 @@ export interface TagProps {
    * @optional
    */
   testID?: string;
+  /**
+   * Optional prop IconName.
+   * @optional
+   */
+  iconName?: IconName;
+  /**
+   * Optional prop IconPosition.
+   * @optional
+   */
+  iconPosition?: TagIconPosition;
 }

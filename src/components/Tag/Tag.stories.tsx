@@ -3,9 +3,12 @@ import { select, text } from '@storybook/addon-knobs'
 import { StoryFn } from '@storybook/addons'
 import React, { ReactNode } from 'react'
 
+import { IconName, iconNames } from '@naturacosmeticos/natds-icons'
 import { StoryContainer, StoryWrapper } from '../../common/HelperComponents/StoryContainer'
 import { Tag } from './Tag'
-import { TagColors, TagPositions, TagSizes } from './Tag.types'
+import {
+  TagColors, TagIconPosition, TagPositions, TagSizes
+} from './Tag.types'
 
 const description: StoryFn<ReactNode> = () => `
 > Tags are used to label, categorize, or organize items using keywords that describe them.
@@ -120,6 +123,18 @@ export const Interactive: StoryFn<ReactNode> = () => (
       text={text('Text', 'Design System')}
       size={select('Size', ['small', 'standard'], 'small') as TagSizes}
       color={select('Color', tagColors, 'primary') as TagColors}
+      borderPosition={select('Border Position', ['default', 'left', 'right'], 'default') as TagPositions}
+    />
+  </StoryContainer>
+)
+export const TagIcon: StoryFn<ReactNode> = () => (
+  <StoryContainer title="Interactive">
+    <Tag
+      text={text('Text', 'Design System')}
+      size={select('Size', ['small', 'standard'], 'small') as TagSizes}
+      color={select('Color', tagColors, 'primary') as TagColors}
+      iconName={select('Icon name', iconNames as Array<IconName>, 'outlined-default-mockup') as IconName}
+      iconPosition={select('Icon Position', ['left', 'right'], 'default') as TagIconPosition}
       borderPosition={select('Border Position', ['default', 'left', 'right'], 'default') as TagPositions}
     />
   </StoryContainer>
