@@ -20,24 +20,36 @@ exports[`Tag Border Position should render with non standard border 1`] = `
   }
   testID="ds-tag"
 >
-  <Text
-    color="primary"
+  <View
     style={
       Array [
         Object {
-          "color": "#000000",
-          "fontFamily": "Roboto",
-          "fontSize": 12,
-          "fontWeight": "400",
-          "letterSpacing": 0.38,
-          "lineHeight": 15,
+          "alignItems": "center",
+          "flexDirection": "row-reverse",
+          "gap": 5,
         },
       ]
     }
-    testID="ds-tag-label"
   >
-    Lorem Ipsum
-  </Text>
+    <Text
+      color="primary"
+      style={
+        Array [
+          Object {
+            "color": "#000000",
+            "fontFamily": "Roboto",
+            "fontSize": 12,
+            "fontWeight": "400",
+            "letterSpacing": 0.38,
+            "lineHeight": 15,
+          },
+        ]
+      }
+      testID="ds-tag-label"
+    >
+      Lorem Ipsum
+    </Text>
+  </View>
 </View>
 `;
 
@@ -58,24 +70,36 @@ exports[`Tag Colors should render with secondary color 1`] = `
   }
   testID="ds-tag"
 >
-  <Text
-    color="secondary"
+  <View
     style={
       Array [
         Object {
-          "color": "#000000",
-          "fontFamily": "Roboto",
-          "fontSize": 12,
-          "fontWeight": "400",
-          "letterSpacing": 0.38,
-          "lineHeight": 15,
+          "alignItems": "center",
+          "flexDirection": "row-reverse",
+          "gap": 5,
         },
       ]
     }
-    testID="ds-tag-label"
   >
-    Lorem Ipsum
-  </Text>
+    <Text
+      color="secondary"
+      style={
+        Array [
+          Object {
+            "color": "#000000",
+            "fontFamily": "Roboto",
+            "fontSize": 12,
+            "fontWeight": "400",
+            "letterSpacing": 0.38,
+            "lineHeight": 15,
+          },
+        ]
+      }
+      testID="ds-tag-label"
+    >
+      Lorem Ipsum
+    </Text>
+  </View>
 </View>
 `;
 
@@ -96,24 +120,36 @@ exports[`Tag Component should render with default variant 1`] = `
   }
   testID="tag"
 >
-  <Text
-    color="primary"
+  <View
     style={
       Array [
         Object {
-          "color": "#000000",
-          "fontFamily": "Roboto",
-          "fontSize": 12,
-          "fontWeight": "400",
-          "letterSpacing": 0.38,
-          "lineHeight": 15,
+          "alignItems": "center",
+          "flexDirection": "row-reverse",
+          "gap": 5,
         },
       ]
     }
-    testID="tag-label"
   >
-    Lorem Ipsum
-  </Text>
+    <Text
+      color="primary"
+      style={
+        Array [
+          Object {
+            "color": "#000000",
+            "fontFamily": "Roboto",
+            "fontSize": 12,
+            "fontWeight": "400",
+            "letterSpacing": 0.38,
+            "lineHeight": 15,
+          },
+        ]
+      }
+      testID="tag-label"
+    >
+      Lorem Ipsum
+    </Text>
+  </View>
 </View>
 `;
 
@@ -135,23 +171,35 @@ exports[`Tag Sizes should render with non default size 1`] = `
   }
   testID="ds-tag"
 >
-  <Text
-    color="primary"
+  <View
     style={
       Array [
         Object {
-          "color": "#000000",
-          "fontFamily": "Roboto",
-          "fontSize": 12,
-          "fontWeight": "400",
-          "letterSpacing": 0.38,
-          "lineHeight": 15,
+          "alignItems": "center",
+          "flexDirection": "row-reverse",
+          "gap": 5,
         },
       ]
     }
-    testID="ds-tag-label"
   >
-    Lorem Ipsum
-  </Text>
+    <Text
+      color="primary"
+      style={
+        Array [
+          Object {
+            "color": "#000000",
+            "fontFamily": "Roboto",
+            "fontSize": 12,
+            "fontWeight": "400",
+            "letterSpacing": 0.38,
+            "lineHeight": 15,
+          },
+        ]
+      }
+      testID="ds-tag-label"
+    >
+      Lorem Ipsum
+    </Text>
+  </View>
 </View>
 `;
