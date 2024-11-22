@@ -27,7 +27,7 @@ export const Tag = (props: TagProps) => {
       size={size}
       borderPosition={borderPosition}
     >
-      <LabelContainer iconRight={iconRight} iconLeft={iconLeft}>
+      <LabelContainer>
         {(iconLeft)
           && (
             <Icon
