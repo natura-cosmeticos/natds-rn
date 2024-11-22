@@ -6,7 +6,11 @@ import { BrandTypes } from '../../common/brandTypes/brandTypes'
 
 export type TagColors = keyof Pick<Color, 'primary' | 'secondary' | 'success' | 'alert' | 'warning' | 'link'>
 export type TagSizes = keyof Pick<Size, 'small' | 'standard'>
-export type TagIconPosition = 'left' | 'right'
+// export type TagIconPosition = 'left' | 'right'
+export type TagIconPosition = {
+  iconRight: boolean;
+  iconLeft: boolean;
+}
 // It was done that way for the documentation to show types explicitly.
 export type TagPositions = keyof {
   default: 'default';
@@ -79,13 +83,13 @@ export interface TagProps {
    */
   testID?: string;
   /**
-   * Optional prop IconName.
+   * Optional prop IconRight.
    * @optional
    */
-  iconName?: IconName;
+  iconRight?: IconName;
   /**
-   * Optional prop IconPosition.
+   * Optional prop IconRight.
    * @optional
    */
-  iconPosition?: TagIconPosition;
+  iconLeft?: IconName;
 }

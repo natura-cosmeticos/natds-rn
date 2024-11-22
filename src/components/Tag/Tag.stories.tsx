@@ -7,29 +7,31 @@ import { IconName, iconNames } from '@naturacosmeticos/natds-icons'
 import { StoryContainer, StoryWrapper } from '../../common/HelperComponents/StoryContainer'
 import { Tag } from './Tag'
 import {
-  TagColors, TagIconPosition, TagPositions, TagSizes
+  TagColors, TagPositions, TagSizes
 } from './Tag.types'
 
 const description: StoryFn<ReactNode> = () => `
 > Tags are used to label, categorize, or organize items using keywords that describe them.
 
 ## Properties
-| Property                  | Values                                              |    Status    |
-|---                        |                                                  ---|           ---|
-| **variant (no prop)**     | Standard                                            | ✅ Available |
-| **accessible**            | true/false                                          | ✅ Available |
-| **accessibilityLabel**    | string                                              | ✅ Available |
-| **accessibilityHint**     | string                                              | ✅ Available |
-| **accessibilityRole**     | accessibilityRole                                   | ✅ Available |
-| **accessibilityState**    | accessibilityState                                  | ✅ Available |
-| **accessibilityState**    | accessibilityState                                  | ✅ Available |
-| **allowFontScaling**      | true/false                                          | ✅ Available |
-| **maxFontSizeMultiplier** | number                                              | ✅ Available |
-| **text**                  | string                                              | ✅ Available |
-| **borderPosition**        | default, left, right                                | ✅ Available |
-| **size**                  | small, standard                                     | ✅ Available |
-| **color**                 | alert, link, primary, secondary, success, warning   | ✅ Available |
-| **brand**                 | avon, avon_v2, natura, natura_v2, theBodyShop, <br /> consultoriaDeBeleza, casaEestilo            | ✅ Available        |
+| Figma                     | Property                  | Values                                              |    Status    |
+|---                        |---                        |                                                  ---|           ---|
+| **--**                    | **variant (no prop)**     | Standard                                            | ✅ Available |
+| **--**                    | **accessible**            | true/false                                          | ✅ Available |
+| **--**                    | **accessibilityLabel**    | string                                              | ✅ Available |
+| **--**                    | **accessibilityHint**     | string                                              | ✅ Available |
+| **--**                    | **accessibilityRole**     | accessibilityRole                                   | ✅ Available |
+| **--**                    | **accessibilityState**    | accessibilityState                                  | ✅ Available |
+| **--**                    | **accessibilityState**    | accessibilityState                                  | ✅ Available |
+| **--**                    | **allowFontScaling**      | true/false                                          | ✅ Available |
+| **--**                    | **maxFontSizeMultiplier** | number                                              | ✅ Available |
+| **--**                    | **text**                  | string                                              | ✅ Available |
+| **position**              | **borderPosition**        | default, left, right                                | ✅ Available |
+| **size**                  | **size**                  | small, standard                                     | ✅ Available |
+| **color**                 | **color**                 | alert, link, primary, secondary, success, warning   | ✅ Available |
+| **iconRight**             | **iconRight**             | true/false (icon name)                              | ✅ Available |
+| **iconLeft**             | **iconLeft**               | true/false (icon name)                              | ✅ Available |
+| **--**                    | **brand**                 | avon, avon_v2, natura, natura_v2, theBodyShop, <br /> consultoriaDeBeleza, casaEestilo            | ✅ Available        |
 ## Technical Usages Examples
 `
 
@@ -133,9 +135,9 @@ export const TagIcon: StoryFn<ReactNode> = () => (
       text={text('Text', 'Design System')}
       size={select('Size', ['small', 'standard'], 'small') as TagSizes}
       color={select('Color', tagColors, 'primary') as TagColors}
-      iconName={select('Icon name', iconNames as Array<IconName>, 'outlined-default-mockup') as IconName}
-      iconPosition={select('Icon Position', ['left', 'right'], 'default') as TagIconPosition}
-      borderPosition={select('Border Position', ['default', 'left', 'right'], 'default') as TagPositions}
+      iconLeft={select('iconLeft', [undefined, ...iconNames] as Array<IconName>, undefined) as IconName}
+      iconRight={select('iconRight', [undefined, ...iconNames] as Array<IconName>, undefined) as IconName}
+      borderPosition={select('position', ['default', 'left', 'right'], 'default') as TagPositions}
     />
   </StoryContainer>
 )

@@ -107,8 +107,9 @@ export const Label = styled.Text<LabelStyleProps>`
   `}
 `
 
-export const LabelContainer = styled.View<Pick<TagProps, 'iconPosition'>>(({ iconPosition }) => ({
+export const LabelContainer = styled.View<Pick<TagProps, 'iconRight'>>(({ iconRight }) => ({
+  display: 'flex',
   alignItems: 'center',
-  flexDirection: iconPosition === 'right' ? 'row' : 'row-reverse',
+  flexDirection: iconRight ? 'row' : 'row-reverse',
   gap: 5
 }))

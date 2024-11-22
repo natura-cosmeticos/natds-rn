@@ -1,3 +1,4 @@
+/* eslint-disable complexity */
 import React from 'react'
 
 import { useTheme } from 'styled-components/native'
@@ -12,7 +13,7 @@ export const Tag = (props: TagProps) => {
   const {
     testID = 'ds-tag', color = 'primary', size = 'small', borderPosition = 'default',
     accessible, accessibilityRole, accessibilityHint, accessibilityLabel, accessibilityState,
-    allowFontScaling, maxFontSizeMultiplier, text, brand, iconName, iconPosition
+    allowFontScaling, maxFontSizeMultiplier, text, brand, iconLeft, iconRight
   } = props
   const ctxTheme = useTheme()
   const theme = brand ? buildTheme(brand, 'light') : ctxTheme
@@ -26,30 +27,35 @@ export const Tag = (props: TagProps) => {
       size={size}
       borderPosition={borderPosition}
     >
-      <LabelContainer iconPosition={iconPosition}>
-        <Label
-          color={color}
-          brand={brand}
-          testID={`${testID}-label`}
-          accessible={accessible}
-          accessibilityRole={accessibilityRole}
-          accessibilityHint={accessibilityHint}
-          accessibilityLabel={accessibilityLabel}
-          accessibilityState={accessibilityState}
-          allowFontScaling={allowFontScaling}
-          maxFontSizeMultiplier={maxFontSizeMultiplier}
-        >
-          {text}
-        </Label>
-        {iconName
-            && (
+      <LabelContainer iconRight={iconRight} iconLeft={iconLeft}>
+        {
+          text
+          && (
+          <Label
+            color={color}
+            brand={brand}
+            testID={`${testID}-label`}
+            accessible={accessible}
+            accessibilityRole={accessibilityRole}
+            accessibilityHint={accessibilityHint}
+            accessibilityLabel={accessibilityLabel}
+            accessibilityState={accessibilityState}
+            allowFontScaling={allowFontScaling}
+            maxFontSizeMultiplier={maxFontSizeMultiplier}
+          >
+            {text}
+          </Label>
+          )
+        }
+        {(iconRight || iconLeft)
+          && (
             <Icon
               accessibilityRole="imagebutton"
               style={{ color: iconColor }}
-              name={iconName}
+              name={(iconRight || iconLeft)}
               size="small"
             />
-            )}
+          )}
 
       </LabelContainer>
     </Container>
