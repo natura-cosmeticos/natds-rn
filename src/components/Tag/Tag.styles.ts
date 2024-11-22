@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components/native'
 import { Theme } from '@naturacosmeticos/natds-themes/react-native'
 import {
-  TagColors, TagPositions, TagSizes, TagProps
+  TagColors, TagPositions, TagSizes
 } from './Tag.types'
 import { BrandTypes } from '../../common/brandTypes/brandTypes'
 import { buildTheme } from '../../common/themeSelectors'

@@ -26,7 +26,7 @@ exports[`Tag Border Position should render with non standard border 1`] = `
         Object {
           "alignItems": "center",
           "display": "flex",
-          "flexDirection": "row-reverse",
+          "flexDirection": "row",
           "gap": 5,
         },
       ]
@@ -77,7 +77,7 @@ exports[`Tag Colors should render with secondary color 1`] = `
         Object {
           "alignItems": "center",
           "display": "flex",
-          "flexDirection": "row-reverse",
+          "flexDirection": "row",
           "gap": 5,
         },
       ]
@@ -128,7 +128,7 @@ exports[`Tag Component should render with default variant 1`] = `
         Object {
           "alignItems": "center",
           "display": "flex",
-          "flexDirection": "row-reverse",
+          "flexDirection": "row",
           "gap": 5,
         },
       ]
@@ -180,7 +180,7 @@ exports[`Tag Sizes should render with non default size 1`] = `
         Object {
           "alignItems": "center",
           "display": "flex",
-          "flexDirection": "row-reverse",
+          "flexDirection": "row",
           "gap": 5,
         },
       ]
