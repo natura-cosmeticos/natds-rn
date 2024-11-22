@@ -28,6 +28,15 @@ export const Tag = (props: TagProps) => {
       borderPosition={borderPosition}
     >
       <LabelContainer iconRight={iconRight} iconLeft={iconLeft}>
+        {(iconLeft)
+          && (
+            <Icon
+              accessibilityRole="imagebutton"
+              style={{ color: iconColor }}
+              name={(iconLeft)}
+              size="small"
+            />
+          )}
         {
           text
           && (
@@ -47,12 +56,12 @@ export const Tag = (props: TagProps) => {
           </Label>
           )
         }
-        {(iconRight || iconLeft)
+        {(iconRight)
           && (
             <Icon
               accessibilityRole="imagebutton"
               style={{ color: iconColor }}
-              name={(iconRight || iconLeft)}
+              name={(iconRight)}
               size="small"
             />
           )}
