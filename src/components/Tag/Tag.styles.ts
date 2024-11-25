@@ -1,6 +1,8 @@
 import styled, { css } from 'styled-components/native'
 import { Theme } from '@naturacosmeticos/natds-themes/react-native'
-import { TagColors, TagPositions, TagSizes } from './Tag.types'
+import {
+  TagColors, TagPositions, TagSizes
+} from './Tag.types'
 import { BrandTypes } from '../../common/brandTypes/brandTypes'
 import { buildTheme } from '../../common/themeSelectors'
 
@@ -15,7 +17,7 @@ type ContainerStyleProps = TagStyleBaseProps & {
   brand?: BrandTypes;
 }
 
-type LabelStyleProps = TagStyleBaseProps & {
+export type LabelStyleProps = TagStyleBaseProps & {
   color?: TagColors;
   brand?: BrandTypes;
 }
@@ -104,3 +106,10 @@ export const Label = styled.Text<LabelStyleProps>`
     line-height: ${theme.tag.label.fontSize * theme.tag.label.lineHeight}px;
   `}
 `
+
+export const LabelContainer = styled.View(() => ({
+  display: 'flex',
+  alignItems: 'center',
+  flexDirection: 'row',
+  gap: 5
+}))
