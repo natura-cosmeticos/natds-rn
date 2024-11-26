@@ -12,7 +12,7 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### Bug Fixes
 
-* **natds-rn:** inert slot iconLeft iconRight ([7227b17](https://github.com/natura-cosmeticos/natds-rn/commit/7227b1745addc5e7b003adc2e3b0fa3f3dbb14fc))
+* **natds-rn:** insert slot iconLeft iconRight ([7227b17](https://github.com/natura-cosmeticos/natds-rn/commit/7227b1745addc5e7b003adc2e3b0fa3f3dbb14fc))
 * **natds-rn:** update LabelContainer ([73ae86e](https://github.com/natura-cosmeticos/natds-rn/commit/73ae86e3034a0ec8a603af08a468778d9b3d54e3))
 * **natds-rn:** update props iconLeft iconRight ([c8179cc](https://github.com/natura-cosmeticos/natds-rn/commit/c8179ccbd3493475488030ab9536c575c00b3a1a))
 
