@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [7.50.0](https://github.com/natura-cosmeticos/natds-rn/compare/v7.49.0...v7.50.0) (2024-11-26)
+
+
+### Features
+
+* **natds-rn:** added prop iconName ([5969eca](https://github.com/natura-cosmeticos/natds-rn/commit/5969ecae4d5f885806c3d74b8f05fc9fab134704))
+
+
+### Bug Fixes
+
+* **natds-rn:** inert slot iconLeft iconRight ([7227b17](https://github.com/natura-cosmeticos/natds-rn/commit/7227b1745addc5e7b003adc2e3b0fa3f3dbb14fc))
+* **natds-rn:** update LabelContainer ([73ae86e](https://github.com/natura-cosmeticos/natds-rn/commit/73ae86e3034a0ec8a603af08a468778d9b3d54e3))
+* **natds-rn:** update props iconLeft iconRight ([c8179cc](https://github.com/natura-cosmeticos/natds-rn/commit/c8179ccbd3493475488030ab9536c575c00b3a1a))
+
 ## [7.49.0](https://github.com/natura-cosmeticos/natds-rn/compare/v7.48.1...v7.49.0) (2024-10-10)
 
 
