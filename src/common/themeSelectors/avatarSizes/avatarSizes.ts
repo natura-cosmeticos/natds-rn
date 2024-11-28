@@ -10,7 +10,7 @@ export const getAvatarBySize = (size: AvatarSize, theme: Theme) => {
     tiny: 'standard',
     small: 'semi',
     standard: 'semiX',
-    large: 'medium',
+    large: 'large',
     huge: 'largeXX'
   }
 
@@ -18,7 +18,7 @@ export const getAvatarBySize = (size: AvatarSize, theme: Theme) => {
     tiny: '12px',
     small: '14px',
     standard: '16px',
-    large: '16px',
+    large: '32px',
     huge: '24px'
   }
 

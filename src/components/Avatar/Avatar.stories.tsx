@@ -48,6 +48,7 @@ const avatarTypes = {
 
 const avatarSizes = {
   largeXXX: 'largeXXX',
+  large: 'large',
   medium: 'medium',
   semi: 'semi',
   semiX: 'semiX',
@@ -103,6 +104,9 @@ export const Sizes = () => (
     </StoryContainer>
     <StoryContainer title="Medium">
       <Avatar type="icon" size="medium" iconName={iconSample} />
+    </StoryContainer>
+    <StoryContainer title="Large">
+      <Avatar type="icon" size="large" iconName={iconSample} />
     </StoryContainer>
     <StoryContainer title="LargeXXX">
       <Avatar type="icon" size="largeXXX" iconName={iconSample} />
