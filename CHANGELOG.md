@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [7.50.1](https://github.com/natura-cosmeticos/natds-rn/compare/v7.50.0...v7.50.1) (2024-11-29)
+
+
+### Bug Fixes
+
+* **natds-rn:** fix prop large ([9645cc3](https://github.com/natura-cosmeticos/natds-rn/commit/9645cc320b238acb08b2b666d7db19ea61862507))
+
 ## [7.50.0](https://github.com/natura-cosmeticos/natds-rn/compare/v7.49.0...v7.50.0) (2024-11-26)
 
 
