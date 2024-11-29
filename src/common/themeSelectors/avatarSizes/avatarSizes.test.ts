@@ -6,7 +6,7 @@ describe.each`
     ${'tiny'}     | ${selectors.getAvatarBySize} | ${'tiny'}     | ${{ fontSize: '12px', size: theme.size.standard }}
     ${'small'}    | ${selectors.getAvatarBySize} | ${'small'}    | ${{ fontSize: '14px', size: theme.size.semi }}
     ${'standard'} | ${selectors.getAvatarBySize} | ${'standard'} | ${{ fontSize: '16px', size: theme.size.semiX }}
-    ${'large'}    | ${selectors.getAvatarBySize} | ${'large'}    | ${{ fontSize: '16px', size: theme.size.medium }}
+    ${'large'}    | ${selectors.getAvatarBySize} | ${'large'}    | ${{ fontSize: '32px', size: theme.size.large }}
     ${'huge'}     | ${selectors.getAvatarBySize} | ${'huge'}     | ${{ fontSize: '24px', size: theme.size.largeXX }}
   `('AvatarSize', ({
   title, selector, param, expected
