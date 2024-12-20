@@ -1,7 +1,7 @@
 import React, { ReactNode } from 'react'
 import styled from 'styled-components/native'
 import { CSSObject, useTheme } from 'styled-components'
-import { getBorderRadiusMedium, getColorSurface } from '../..'
+import { getColorSurface } from '../..'
 import { InputStates } from '../InputFeedbackContainer/InputFeedbackHelper'
 import { getColorLowEmphasis } from '../../common/themeSelectors'
 
@@ -13,7 +13,7 @@ interface InputBoxProps {
 
 const BoxContainer = styled.View<{ borderWidth: number }>(({ borderWidth, theme }): CSSObject => ({
   borderColor: 'transparent',
-  borderRadius: getBorderRadiusMedium(theme),
+  borderRadius: theme.textField.borderRadius,
   borderWidth
 }))
 
@@ -23,7 +23,7 @@ const Box = styled.View<{
   alignItems: 'center',
   backgroundColor: getColorSurface(theme),
   borderColor,
-  borderRadius: getBorderRadiusMedium(theme),
+  borderRadius: theme.textField.borderRadius,
   borderWidth,
   flexDirection: 'row',
   maxWidth: '100%'
