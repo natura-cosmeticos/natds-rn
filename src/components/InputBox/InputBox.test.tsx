@@ -22,14 +22,14 @@ describe('InputBox', () => {
 
     expect(getByTestId('box-container')).toHaveStyle({
       borderColor: 'transparent',
-      borderRadius: 8,
+      borderRadius: 4,
       borderWidth: 1
     })
     expect(getByTestId('box')).toHaveStyle({
       alignItems: 'center',
       backgroundColor: '#FFF',
       borderColor: '#BBB',
-      borderRadius: 8,
+      borderRadius: 4,
       borderWidth: 1,
       flexDirection: 'row'
     })
