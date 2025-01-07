@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [7.51.0](https://github.com/natura-cosmeticos/natds-rn/compare/v7.50.1...v7.51.0) (2025-01-07)
+
+
+### Features
+
+* **natds-rn:**  added themes CB2 FV2 ([5e1ee5e](https://github.com/natura-cosmeticos/natds-rn/commit/5e1ee5eabb14c33045b4c1f8b2952a3a69a267e1))
+
+
+### Bug Fixes
+
+* **natds-rn:**  fixed colorView Stories ([5824256](https://github.com/natura-cosmeticos/natds-rn/commit/5824256bdc1ea0631fb271d8ef16524769c72915))
+
 ### [7.50.1](https://github.com/natura-cosmeticos/natds-rn/compare/v7.50.0...v7.50.1) (2024-11-29)
 
 
