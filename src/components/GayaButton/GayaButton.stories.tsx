@@ -141,11 +141,23 @@ export const BrandLight = () => (
       <GayaButton brand="consultoriaDeBeleza" type="ghost" onPress={onPress} text="Button" />
       <GayaButton brand="consultoriaDeBeleza" type="tonal" onPress={onPress} text="Button" />
     </StoryContainer>
+    <StoryContainer title="Consultoria de Beleza V2">
+      <GayaButton brand="consultoriaDeBeleza_v2" type="contained" onPress={onPress} text="Button" />
+      <GayaButton brand="consultoriaDeBeleza_v2" type="outlined" onPress={onPress} text="Button" />
+      <GayaButton brand="consultoriaDeBeleza_v2" type="ghost" onPress={onPress} text="Button" />
+      <GayaButton brand="consultoriaDeBeleza_v2" type="tonal" onPress={onPress} text="Button" />
+    </StoryContainer>
     <StoryContainer title="Força de Vendas">
       <GayaButton brand="forcaDeVendas" type="contained" onPress={onPress} text="Button" />
       <GayaButton brand="forcaDeVendas" type="outlined" onPress={onPress} text="Button" />
       <GayaButton brand="forcaDeVendas" type="ghost" onPress={onPress} text="Button" />
       <GayaButton brand="forcaDeVendas" type="tonal" onPress={onPress} text="Button" />
+    </StoryContainer>
+    <StoryContainer title="Força de Vendas V2">
+      <GayaButton brand="forcaDeVendas_v2" type="contained" onPress={onPress} text="Button" />
+      <GayaButton brand="forcaDeVendas_v2" type="outlined" onPress={onPress} text="Button" />
+      <GayaButton brand="forcaDeVendas_v2" type="ghost" onPress={onPress} text="Button" />
+      <GayaButton brand="forcaDeVendas_v2" type="tonal" onPress={onPress} text="Button" />
     </StoryContainer>
 
   </StoryWrapper>

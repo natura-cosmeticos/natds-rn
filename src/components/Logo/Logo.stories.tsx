@@ -1,5 +1,5 @@
 import React from 'react'
-import { text, select } from '@storybook/addon-knobs'
+import { select } from '@storybook/addon-knobs'
 import { VerticalStoryContainer } from '../../common/HelperComponents/StoryContainer'
 import { Logo } from './Logo'
 import {
@@ -35,13 +35,33 @@ const Model = {
   a: 'a',
   b: 'b'
 }
+const Color = {
+  neutral: 'neutral',
+  primary: 'primary',
+  secondary: 'secondary',
+  highlight: 'highlight',
+  surface: 'surface'
+}
+const Size = {
+  medium: 'medium',
+  mediumX: 'mediumX',
+  large: 'large',
+  largeX: 'largeX',
+  largeXX: 'largeXX',
+  largeXXX: 'largeXXX',
+  huge: 'huge',
+  hugeX: 'hugeX',
+  hugeXX: 'hugeXX',
+  hugeXXX: 'hugeXXX',
+  veryHuge: 'veryHuge'
+}
 export const Interactive = () => (
   <VerticalStoryContainer title="Interactive">
     <div style={{ padding: 24 }}>
       <Logo
-        color={text('Color', 'neutral') as LogoColors}
+        color={select('Color', Color, 'neutral') as LogoColors}
         model={select('model', Model, 'a') as Model}
-        size={text('Size', 'veryHuge') as LogoSizes}
+        size={select('Size', Size, 'veryHuge') as LogoSizes}
       />
 
     </div>

@@ -1,9 +1,10 @@
 /* eslint-disable no-restricted-syntax */
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Color } from '@naturacosmeticos/natds-themes/react-native'
+import { addons } from '@storybook/addons'
 import ColorView from './ColorView'
 import { buildTheme } from '../../common/themeSelectors'
-import { getStoryBookTheme } from '../../../storybook-web/addons/theme/shared.js'
+import { CHANGE, getStoryBookTheme } from '../../../storybook-web/addons/theme/shared.js'
 
 const description = () => `
 > Colors from theme.
@@ -34,9 +35,25 @@ function removeKeys(obj: Color) {
 
 export const ColorViews = () => {
   const mode = getStoryBookTheme()
-  const theme = buildTheme('natura', mode)
+  const theme = buildTheme('natura', 'light')
+  const [themeAll, setThemeAll] = useState(theme)
+  const channel = addons.getChannel()
+  useEffect(() => {
+    // Defina a função ouvinte fora de channel.on
+    const handleChange = ({ type, name }) => {
+      setThemeAll(buildTheme(name, type))
+    }
 
-  const { color } = theme
+    // Registre o ouvinte
+    channel.on(CHANGE, handleChange)
+
+    // Limpeza: remova o ouvinte usando a mesma função
+    return () => {
+      channel.removeListener(CHANGE, handleChange)
+    }
+  }, [channel, mode])
+
+  const { color } = themeAll
   const ArrayTheme = Object.entries(removeKeys(color))
   const deprecatedColor = [
     'highEmphasis',
