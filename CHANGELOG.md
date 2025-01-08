@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [7.51.1](https://github.com/natura-cosmeticos/natds-rn/compare/v7.51.0...v7.51.1) (2025-01-08)
+
+
+### Bug Fixes
+
+* **natds-rn:**  Stories brand-dark in GayaButton ([86f4b46](https://github.com/natura-cosmeticos/natds-rn/commit/86f4b46e6f37b050c609d51f26a17e6211d0d80b))
+* **natds-rn:**  update themes fixed textTransform CB2 FV2 to none ([ff40ef1](https://github.com/natura-cosmeticos/natds-rn/commit/ff40ef172d4e0f4cf32c863206090cee26ffe93d))
+
 ## [7.51.0](https://github.com/natura-cosmeticos/natds-rn/compare/v7.50.1...v7.51.0) (2025-01-07)
 
 
