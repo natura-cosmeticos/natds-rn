@@ -12,7 +12,7 @@ import {
 } from './GayaButton.types'
 import { BrandTypes } from '../../common/brandTypes/brandTypes'
 import { Typography } from '../Typography'
-
+// theme version 0.82.1
 const description = () => `
 > O GaYaButton faz parte da evolução contínua dos componentes do GaYa Design System. Lançado como um novo componente, o GaYaButton substitui o antigo Button, que permanecerá disponível para uso, mas não receberá mais atualizações ou suporte ativo. 
 Recomendamos a migração para o GayaButton o mais rápido possível para aproveitar as melhorias e garantir a compatibilidade futura.
