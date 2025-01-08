@@ -213,11 +213,23 @@ export const BrandDark = () => (
       <GayaButton mode="dark" brand="consultoriaDeBeleza" type="ghost" onPress={onPress} text="Button" />
       <GayaButton mode="dark" brand="consultoriaDeBeleza" type="tonal" onPress={onPress} text="Button" />
     </StoryContainer>
+    <StoryContainer title="Consultoria de Beleza v2" style={{ backgroundColor: 'black', padding: 20 }}>
+      <GayaButton mode="dark" brand="consultoriaDeBeleza_v2" type="contained" onPress={onPress} text="Button" />
+      <GayaButton mode="dark" brand="consultoriaDeBeleza_v2" type="outlined" onPress={onPress} text="Button" />
+      <GayaButton mode="dark" brand="consultoriaDeBeleza_v2" type="ghost" onPress={onPress} text="Button" />
+      <GayaButton mode="dark" brand="consultoriaDeBeleza_v2" type="tonal" onPress={onPress} text="Button" />
+    </StoryContainer>
     <StoryContainer title="Força de Vendas" style={{ backgroundColor: 'black', padding: 20 }}>
       <GayaButton mode="dark" brand="forcaDeVendas" type="contained" onPress={onPress} text="Button" />
       <GayaButton mode="dark" brand="forcaDeVendas" type="outlined" onPress={onPress} text="Button" />
       <GayaButton mode="dark" brand="forcaDeVendas" type="ghost" onPress={onPress} text="Button" />
       <GayaButton mode="dark" brand="forcaDeVendas" type="tonal" onPress={onPress} text="Button" />
+    </StoryContainer>
+    <StoryContainer title="Força de Vendas V2" style={{ backgroundColor: 'black', padding: 20 }}>
+      <GayaButton mode="dark" brand="forcaDeVendas_v2" type="contained" onPress={onPress} text="Button" />
+      <GayaButton mode="dark" brand="forcaDeVendas_v2" type="outlined" onPress={onPress} text="Button" />
+      <GayaButton mode="dark" brand="forcaDeVendas_v2" type="ghost" onPress={onPress} text="Button" />
+      <GayaButton mode="dark" brand="forcaDeVendas_v2" type="tonal" onPress={onPress} text="Button" />
     </StoryContainer>
 
   </StoryWrapper>
