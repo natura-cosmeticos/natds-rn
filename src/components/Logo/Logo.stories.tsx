@@ -5,7 +5,7 @@ import { Logo } from './Logo'
 import {
   LogoSizes, LogoColors
 } from './Logo.types'
-
+// theme 0.82.3
 const description = () => `
 > Logo adapted as brand standards for each company.
 

@@ -61,13 +61,13 @@ const Container = styled.View((): CSSObject => (
 export const Logo = ({
   accessibilityLabel, color = 'neutral', model = 'a', size = 'veryHuge'
 }: LogoProps) => {
-  const theme = useTheme()
-  const { file, height, width } = getLogoByProps(color, model, theme)
+  const themes = useTheme()
+  const { file, height, width } = getLogoByProps(color, model, themes)
 
   const logo = setStyle({
-    height: (getSize(theme, size) * height) / width,
-    hexColor: getCustomColor(color, theme),
-    width: getSize(theme, size)
+    height: (getSize(themes, size) * height) / width,
+    hexColor: getCustomColor(color, themes),
+    width: getSize(themes, size)
   }, file)
 
   return (
