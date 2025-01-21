@@ -59,16 +59,24 @@ const Container = styled.View((): CSSObject => (
 ))
 
 export const Logo = ({
-  accessibilityLabel, color = 'neutral', model = 'a', size = 'veryHuge'
+  accessibilityLabel, color = 'neutral', model = 'a', size = 'veryHuge', languages = 'default'
 }: LogoProps) => {
   const themes = useTheme()
-  const { file, height, width } = getLogoByProps(color, model, themes)
+  const {
+    file, height, width, es, pt
+  } = getLogoByProps(color, model, themes)
 
+  const langProp = {
+    default: file,
+    es,
+    pt
+  }[languages]
+  const langSafe = langProp || file
   const logo = setStyle({
     height: (getSize(themes, size) * height) / width,
     hexColor: getCustomColor(color, themes),
     width: getSize(themes, size)
-  }, file)
+  }, langSafe)
 
   return (
     <Container>

@@ -3,7 +3,7 @@ import { select } from '@storybook/addon-knobs'
 import { VerticalStoryContainer } from '../../common/HelperComponents/StoryContainer'
 import { Logo } from './Logo'
 import {
-  LogoSizes, LogoColors
+  LogoSizes, LogoColors, LogoLanguages
 } from './Logo.types'
 // theme 0.82.3
 const description = () => `
@@ -42,6 +42,11 @@ const Color = {
   highlight: 'highlight',
   surface: 'surface'
 }
+const Language = {
+  es: 'es',
+  pt: 'pt',
+  default: 'default'
+}
 const Size = {
   medium: 'medium',
   mediumX: 'mediumX',
@@ -62,6 +67,7 @@ export const Interactive = () => (
         color={select('Color', Color, 'neutral') as LogoColors}
         model={select('model', Model, 'a') as Model}
         size={select('Size', Size, 'veryHuge') as LogoSizes}
+        languages={select('Language', Language, 'default') as LogoLanguages}
       />
 
     </div>
