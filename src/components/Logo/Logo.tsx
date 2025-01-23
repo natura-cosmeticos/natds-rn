@@ -66,12 +66,12 @@ export const Logo = ({
     file, height, width, es, pt
   } = getLogoByProps(color, model, themes)
 
-  const langProp = {
+  const langProps = {
     default: file,
     es,
     pt
   }[languages]
-  const langSafe = langProp || file
+  const langSafe = langProps || file
   const logo = setStyle({
     height: (getSize(themes, size) * height) / width,
     hexColor: getCustomColor(color, themes),
