@@ -9,6 +9,33 @@ All notable changes to this project will be documented in this file. See [standa
 
 * **natds-rn:**  added prop languages ([6b8f582](https://github.com/natura-cosmeticos/natds-rn/commit/6b8f582b539cc94a3d5960fe60bb479743ac2a08))
 * **natds-rn:**  update lib icon to 1.28.1 ([5f8fe00](https://github.com/natura-cosmeticos/natds-rn/commit/5f8fe00b079b4953218dc653c42378daf01cb489))
+* **natds-icons:** filled-action-addproduct
+* **natds-icons:** filled-action-filepdf
+* **natds-icons:** filled-content-carbondioxide
+* **natds-icons:** filled-content-healthy
+* **natds-icons:** filled-content-maintenance
+* **natds-icons:** filled-content-ticketdiscount
+* **natds-icons:** filled-content-ticketstar
+* **natds-icons:** filled-content-trophystar
+* **natds-icons:** filled-navigation-opennew
+* **natds-icons:** filled-navigation-shuffle
+* **natds-icons:** filled-place-rocket
+* **natds-icons:** filled-product-backpack
+* **natds-icons:** filled-product-spray
+
+* **natds-icons:** outlined-action-addproduct		
+* **natds-icons:** outlined-action-filepdf
+* **natds-icons:** outlined-content-carbondioxide
+* **natds-icons:** outlined-content-healthy		
+* **natds-icons:** outlined-content-maintenance		
+* **natds-icons:** outlined-content-ticketdiscount
+* **natds-icons:** outlined-content-ticketstar
+* **natds-icons:** outlined-content-trophystar
+* **natds-icons:** outlined-navigation-opennew
+* **natds-icons:** outlined-navigation-shuffle
+* **natds-icons:** outlined-place-rocket			
+* **natds-icons:** outlined-product-backpack
+* **natds-icons:** outlined-product-spray
 
 
 ### Bug Fixes
