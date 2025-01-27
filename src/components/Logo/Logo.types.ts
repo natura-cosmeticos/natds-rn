@@ -5,6 +5,7 @@ import {
 export type LogoColors = 'neutral' | keyof Pick<Color, 'primary' | 'secondary' | 'highlight' | 'surface'>
 export type LogoSizes = keyof Pick<Size, 'medium' | 'mediumX' | 'large' | 'largeX' | 'largeXX' | 'largeXXX' | 'huge' | 'hugeX' | 'hugeXX' | 'hugeXXX' | 'veryHuge'>
 export type NeutralLogoModel = keyof Neutral;
+export type LogoLanguages = 'default' |'pt' | 'es'
 
 export interface LogoProps {
   /**
@@ -29,4 +30,7 @@ export interface LogoProps {
    * @default veryHuge
    */
   size?: LogoSizes;
+
+  languages?: LogoLanguages;
+
 }
