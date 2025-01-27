@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [7.52.0](https://github.com/natura-cosmeticos/natds-rn/compare/v7.51.1...v7.52.0) (2025-01-27)
+
+
+### Features
+
+* **natds-rn:**  added prop languages ([6b8f582](https://github.com/natura-cosmeticos/natds-rn/commit/6b8f582b539cc94a3d5960fe60bb479743ac2a08))
+* **natds-rn:**  update lib icon to 1.28.1 ([5f8fe00](https://github.com/natura-cosmeticos/natds-rn/commit/5f8fe00b079b4953218dc653c42378daf01cb489))
+
+
+### Bug Fixes
+
+* **natds-rn:**  update lib themes 0.82.9 fixed logo CB-V2 ([225d5af](https://github.com/natura-cosmeticos/natds-rn/commit/225d5aff09fbdee42fb73fc6e3de21385476d3dd))
+* **natds-rn:**  update themes fixed logo CB2  AB ES PT-BR ([947d21b](https://github.com/natura-cosmeticos/natds-rn/commit/947d21b7a8b6ec714e38b3a4a88f6e09b2246dd2))
+* **natds-styles:** fixed CB-V2 e FV2  default language PT ([583ad8b](https://github.com/natura-cosmeticos/natds-rn/commit/583ad8bb0126b289134a439f9ef6983bee55f7de))
+
 ### [7.51.1](https://github.com/natura-cosmeticos/natds-rn/compare/v7.51.0...v7.51.1) (2025-01-08)
 
 
