@@ -608,7 +608,7 @@ exports[`Button component with Icon should render the icon to the left 1`] = `
       <Text
         accessibilityRole="imagebutton"
         name="outlined-default-mockup"
-        size="small"
+        size="standard"
         style={
           Object {
             "color": "#000000",
@@ -708,7 +708,7 @@ exports[`Button component with Icon should render the icon to the right by defau
       <Text
         accessibilityRole="imagebutton"
         name="outlined-default-mockup"
-        size="small"
+        size="standard"
         style={
           Object {
             "color": "#000000",

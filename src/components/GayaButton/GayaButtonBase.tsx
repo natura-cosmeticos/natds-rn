@@ -26,6 +26,12 @@ const GayaButtonComponent = ({
   type = 'contained',
   textLabelStyle
 }: GayaButtonBaseProps) => {
+  const iconSize = {
+    medium: 'standard',
+    semiX: 'standard',
+    semi: 'small'
+  }
+
   const iconColor = disabled
     ? theme.button[type].color.disable.label
     : theme.button[type].color.enable.label
@@ -72,7 +78,7 @@ const GayaButtonComponent = ({
               accessibilityRole="imagebutton"
               style={{ color: iconColor }}
               name={iconName}
-              size="small"
+              size={iconSize[size]}
             />
             )}
         </Label>

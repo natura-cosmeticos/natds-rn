@@ -5,13 +5,15 @@
 import React from 'react'
 import { View } from 'react-native'
 import { boolean, select, text as textKnob } from '@storybook/addon-knobs'
+import { IconName, iconNames } from '@naturacosmeticos/natds-icons'
 import { StoryContainer, StoryWrapper } from '../../common/HelperComponents/StoryContainer'
 import { GayaButton } from './GayaButton'
 import {
-  GayaButtonColor, GayaButtonSizes, GayaButtonTypes, ITextTransformProp
+  GayaButtonColor, GayaButtonSizes, GayaButtonTypes, IconPositions, ITextTransformProp
 } from './GayaButton.types'
 import { BrandTypes } from '../../common/brandTypes/brandTypes'
 import { Typography } from '../Typography'
+
 // theme version 0.82.1
 const description = () => `
 > O GaYaButton faz parte da evolução contínua dos componentes do GaYa Design System. Lançado como um novo componente, o GaYaButton substitui o antigo Button, que permanecerá disponível para uso, mas não receberá mais atualizações ou suporte ativo. 
@@ -51,6 +53,10 @@ const GayabuttonTypes = {
   ghost: 'ghost',
   tonal: 'tonal'
 }
+const GayaButtonIconPosition = {
+  left: 'left',
+  right: 'right'
+}
 const GayabuttontextTransform = {
   uppercase: 'uppercase',
   lowercase: 'lowercase',
@@ -70,6 +76,7 @@ const brand = {
   natura_v3: 'natura_v3',
   theBodyShop: 'theBodyShop',
   consultoriaDeBeleza: 'consultoriaDeBeleza',
+  consultoriaDeBeleza_v2: 'consultoriaDeBeleza_v2',
   casaEestilo: 'casaEestilo'
 }
 const mode = {
@@ -308,8 +315,10 @@ export const Variants = () => (
 export const Interactive = () => (
   <StoryContainer title="Interactive">
     <GayaButton
+      iconPosition={select('IconPosition', GayaButtonIconPosition, 'left') as IconPositions}
       disabled={boolean('Disabled', false)}
       onPress={onPress}
+      iconName={select('Icon name', iconNames as Array<IconName>, 'outlined-finance-bank' as IconName)}
       brand={select('brand', brand, undefined) as BrandTypes}
       mode={select('mode', mode, undefined) as mode}
       size={select('Size', GayabuttonSizes, 'semiX') as GayaButtonSizes}
@@ -319,6 +328,32 @@ export const Interactive = () => (
       textTransform={select('textTransform', GayabuttontextTransform, 'uppercase') as ITextTransformProp}
     />
   </StoryContainer>
+)
+export const Icon = () => (
+
+  <StoryWrapper title="Icons">
+    <StoryContainer title="Left Icon">
+      <GayaButton
+        iconPosition="left"
+        iconName={select('Icon name', iconNames as Array<IconName>, 'outlined-finance-bank' as IconName)}
+        disabled={boolean('Disabled', false)}
+        onPress={onPress}
+        size={select('Size', GayabuttonSizes, 'semiX') as GayaButtonSizes}
+        text={textKnob('Text', 'Natura Design System')}
+      />
+    </StoryContainer>
+    <StoryContainer title="Right Icon">
+      <GayaButton
+        iconPosition="right"
+        iconName={select('Icon name', iconNames as Array<IconName>, 'outlined-finance-bank' as IconName)}
+        disabled={boolean('Disabled', false)}
+        onPress={onPress}
+        size={select('Size', GayabuttonSizes, 'semiX') as GayaButtonSizes}
+        text={textKnob('Text', 'Natura Design System')}
+      />
+    </StoryContainer>
+  </StoryWrapper>
+
 )
 
 export const AccessibilityGuide = () => (
