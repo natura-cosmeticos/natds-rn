@@ -329,6 +329,32 @@ export const Interactive = () => (
     />
   </StoryContainer>
 )
+export const Icon = () => (
+
+  <StoryWrapper title="Icons">
+    <StoryContainer title="Left Icon">
+      <GayaButton
+        iconPosition="left"
+        iconName={select('Icon name', iconNames as Array<IconName>, 'outlined-finance-bank' as IconName)}
+        disabled={boolean('Disabled', false)}
+        onPress={onPress}
+        size={select('Size', GayabuttonSizes, 'semiX') as GayaButtonSizes}
+        text={textKnob('Text', 'Natura Design System')}
+      />
+    </StoryContainer>
+    <StoryContainer title="Right Icon">
+      <GayaButton
+        iconPosition="right"
+        iconName={select('Icon name', iconNames as Array<IconName>, 'outlined-finance-bank' as IconName)}
+        disabled={boolean('Disabled', false)}
+        onPress={onPress}
+        size={select('Size', GayabuttonSizes, 'semiX') as GayaButtonSizes}
+        text={textKnob('Text', 'Natura Design System')}
+      />
+    </StoryContainer>
+  </StoryWrapper>
+
+)
 
 export const AccessibilityGuide = () => (
   <div>
