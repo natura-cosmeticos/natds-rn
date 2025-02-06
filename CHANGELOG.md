@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [7.52.1](https://github.com/natura-cosmeticos/natds-rn/compare/v7.52.0...v7.52.1) (2025-02-06)
+
+
+### Bug Fixes
+
+* **natds-rn:**  added storie Icon in GayaButton ([d3f0f8e](https://github.com/natura-cosmeticos/natds-rn/commit/d3f0f8e096155a3515c37e01bb3d874c46b21e0c))
+* **natds-rn:**  fixed Icon - medium - semiX = standard and semi = small ([b57d36d](https://github.com/natura-cosmeticos/natds-rn/commit/b57d36dff7abdb6d65b2f6e044b58cd7cd4cd3f0))
+
 ## [7.52.0](https://github.com/natura-cosmeticos/natds-rn/compare/v7.51.1...v7.52.0) (2025-01-27)
 
 
