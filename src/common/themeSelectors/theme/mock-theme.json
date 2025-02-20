@@ -128,11 +128,11 @@
         "background": "#9f81fd"
       },
       "success": {
-        "label": "#111111",
+        "label": "#ffffff",
         "background": "#2f833e"
       },
       "alert": {
-        "label": "#111111",
+        "label": "#ffffff",
         "background": "#de3529"
       }
     }
@@ -1612,8 +1612,8 @@
       "label": {
         "primary": "#000000",
         "secondary": "#000000",
-        "success": "#111111",
-        "alert": "#111111",
+        "success": "#ffffff",
+        "alert": "#ffffff",
         "warning": "#111111",
         "link": "#ffffff"
       }
@@ -2125,7 +2125,7 @@
     "linkDarkest": "#052149",
     "onLinkDarkest": "#ffffff",
     "success": "#2f833e",
-    "onSuccess": "#111111",
+    "onSuccess": "#ffffff",
     "successLight": "#92d492",
     "onSuccessLight": "#111111",
     "successLightest": "#d9f7d5",
@@ -2145,7 +2145,7 @@
     "warningDarkest": "#5c4b14",
     "onWarningDarkest": "#ffffff",
     "alert": "#de3529",
-    "onAlert": "#111111",
+    "onAlert": "#ffffff",
     "alertLight": "#ffa392",
     "onAlertLight": "#111111",
     "alertLightest": "#ffedea",
