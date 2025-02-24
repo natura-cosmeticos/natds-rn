@@ -7,8 +7,23 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### Features
 
+* **natds-rn:** added theme Avon-V3
 * **natds-rn:**  update lib icons ([d66d909](https://github.com/natura-cosmeticos/natds-rn/commit/d66d909bdcdf4561bec12d2db73ee2ef1726d045))
+* **natds-icons:** filled-growthplan-flowertulip
+* **natds-icons:** filled-growthplan-graphic
+* **natds-icons:** filled-growthplan-laurelwreath
+* **natds-icons:** filled-growthplan-trophy
+* **natds-icons:** filled-growthplan-trophyaward
+* **natds-icons:** filled-growthplan-trophydiamond
+* **natds-icons:** filled-growthplan-trophysapphire
 
+* **natds-icons:** outlined-growthplan-flowertulip
+* **natds-icons:** outlined-growthplan-graphic
+* **natds-icons:** outlined-growthplan-laurelwreath
+* **natds-icons:** outlined-growthplan-trophy
+* **natds-icons:** outlined-growthplan-trophyaward
+* **natds-icons:** outlined-growthplan-trophydiamond
+* **natds-icons:** outlined-growthplan-trophysapphire
 
 ### Bug Fixes
 
