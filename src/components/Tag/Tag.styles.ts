@@ -54,14 +54,14 @@ export const getTextColorByName = ({ theme, color = 'primary', brand }: LabelSty
     warning: theme.color.onWarning
   }
   if (brand) {
-    const themeSelectTag = buildTheme(brand, 'light')
+    const themeSelected = buildTheme(brand, 'light')
     const stylesBrand = {
-      alert: themeSelectTag.color.onAlert,
-      link: themeSelectTag.color.onLink,
-      primary: themeSelectTag.color.onPrimary,
-      secondary: themeSelectTag.color.onSecondary,
-      success: themeSelectTag.color.onSuccess,
-      warning: themeSelectTag.color.onWarning
+      alert: themeSelected.color.onAlert,
+      link: themeSelected.color.onLink,
+      primary: themeSelected.color.onPrimary,
+      secondary: themeSelected.color.onSecondary,
+      success: themeSelected.color.onSuccess,
+      warning: themeSelected.color.onWarning
     }
     return stylesBrand[color]
   }
