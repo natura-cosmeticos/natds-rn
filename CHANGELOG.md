@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [7.53.0](https://github.com/natura-cosmeticos/natds-rn/compare/v7.52.1...v7.53.0) (2025-02-24)
+
+
+### Features
+
+* **natds-rn:**  update lib icons ([d66d909](https://github.com/natura-cosmeticos/natds-rn/commit/d66d909bdcdf4561bec12d2db73ee2ef1726d045))
+
+
+### Bug Fixes
+
+* **natds-rn:**  tag color onSuccess update theme ([ea004bb](https://github.com/natura-cosmeticos/natds-rn/commit/ea004bb0f21ce608c6c2081c722aecf6c6f8b722))
+
 ### [7.52.1](https://github.com/natura-cosmeticos/natds-rn/compare/v7.52.0...v7.52.1) (2025-02-06)
 
 
