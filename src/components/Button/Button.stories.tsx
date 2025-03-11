@@ -31,7 +31,7 @@ export default {
       extractComponentDescription: description
     }
   },
-  title: 'Components|Button'
+  title: 'Deprecated|Button'
 }
 
 const onPress = () => ({})
