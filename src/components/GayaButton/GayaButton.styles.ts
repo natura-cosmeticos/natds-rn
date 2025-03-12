@@ -81,15 +81,15 @@ export const getSelectTheme = (brand: BrandTypes | undefined, {
   theme, type, color, mode
 }: Pick<SurfaceProps, 'theme' | 'type' | 'color' | 'mode'>) => {
   if (brand) {
-    const colorThemes = buildTheme(brand, mode)
+    const colorTheme = buildTheme(brand, mode)
     let propBrandsColor = {}
     if (type && color) {
       propBrandsColor = {
-        back: colorThemes.button[type].color[color].background,
-        border: colorThemes.button[type].color[color].border,
-        label: colorThemes.button[type].color[color].label,
-        buttonBorderRadius: colorThemes.button.borderRadius,
-        textransform: colorThemes.button.textTransform
+        back: colorTheme.button[type].color[color].background,
+        border: colorTheme.button[type].color[color].border,
+        label: colorTheme.button[type].color[color].label,
+        buttonBorderRadius: colorTheme.button.borderRadius,
+        textransform: colorTheme.button.textTransform
       }
       return type && {
         ...propBrandsColor
