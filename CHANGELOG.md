@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [7.54.0](https://github.com/natura-cosmeticos/natds-rn/compare/v7.53.0...v7.54.0) (2025-03-13)
+
+
+### Features
+
+* **natds-rn:** added 6 new icons and update theme ([e68fa72](https://github.com/natura-cosmeticos/natds-rn/commit/e68fa720da02d128a0d27e78952107966f16ba47))
+
+
+### Bug Fixes
+
+* **natds-rn:**  correction color secondaryDark and secondaryDarkest ([298db67](https://github.com/natura-cosmeticos/natds-rn/commit/298db676cfb180c94209ffdffbf12645e18b13c4))
+* **natds-rn:**  rollback color secondaryDark Darkest ([9e0934c](https://github.com/natura-cosmeticos/natds-rn/commit/9e0934c0377c159eb578dd9eab68e36aa387c2df))
+* **natds-rn:** deprecated button in storybook ([fe378da](https://github.com/natura-cosmeticos/natds-rn/commit/fe378da6854975c8f01fe538cf92fb5cd97b278b))
+* **natds-rn:** fixed logo Avon-V3 height in position A and custom A ([c6741a5](https://github.com/natura-cosmeticos/natds-rn/commit/c6741a5524b829c760f4e21fd03572abbd486e8f))
+
 ## [7.53.0](https://github.com/natura-cosmeticos/natds-rn/compare/v7.52.1...v7.53.0) (2025-02-24)
 
 
