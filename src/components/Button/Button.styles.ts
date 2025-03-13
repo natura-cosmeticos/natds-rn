@@ -17,7 +17,7 @@ type SurfaceProps = Pick<ButtonBaseProps, 'type' | 'theme' | 'disabled' | 'size'
 type LabelProps = Pick<ButtonBaseProps, 'iconName' | 'iconPosition' | 'theme' | 'disabled' | 'type' | 'brand'| 'textTransform' >
 
 export const getButtonStylesBySize = ({ size, theme }: Pick<SurfaceProps, 'size' | 'theme'>) => {
-  const buttonSizes = {
+  const buttonSize = {
     large: {
       minHeight: getSizeMedium(theme),
       paddingHorizontal: getSpacingSmall(theme)
@@ -40,7 +40,7 @@ export const getButtonStylesBySize = ({ size, theme }: Pick<SurfaceProps, 'size'
     }
   }
 
-  return size && buttonSizes[size]
+  return size && buttonSize[size]
 }
 
 export const getButtonShadowByType = ({ disabled, theme, type }: Omit<SurfaceProps, 'size'>) => (
