@@ -11,7 +11,7 @@ All notable changes to this project will be documented in this file. See [standa
 
 
 ### Bug Fixes
-
+* **natds-rn:**  correction fontFamily roboto to Avon-V3
 * **natds-rn:**  correction color secondaryDark and secondaryDarkest ([298db67](https://github.com/natura-cosmeticos/natds-rn/commit/298db676cfb180c94209ffdffbf12645e18b13c4))
 * **natds-rn:**  rollback color secondaryDark Darkest ([9e0934c](https://github.com/natura-cosmeticos/natds-rn/commit/9e0934c0377c159eb578dd9eab68e36aa387c2df))
 * **natds-rn:** deprecated button in storybook ([fe378da](https://github.com/natura-cosmeticos/natds-rn/commit/fe378da6854975c8f01fe538cf92fb5cd97b278b))
