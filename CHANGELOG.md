@@ -8,7 +8,13 @@ All notable changes to this project will be documented in this file. See [standa
 ### Features
 
 * **natds-rn:** added 6 new icons and update theme ([e68fa72](https://github.com/natura-cosmeticos/natds-rn/commit/e68fa720da02d128a0d27e78952107966f16ba47))
+* **natds-icons:** filled-content-generativeai
+* **natds-icons:** filled-finance-bagshield
+* **natds-icons:** filled-finance-cashback
 
+* **natds-icons:** outlined-content-generativeai
+* **natds-icons:** outlined-finance-bagshield
+* **natds-icons:** outlined-finance-cashback
 
 ### Bug Fixes
 * **natds-rn:**  correction fontFamily roboto to Avon-V3
