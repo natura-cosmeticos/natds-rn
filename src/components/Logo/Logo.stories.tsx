@@ -19,6 +19,7 @@ const description = () => `
 
 ## Technical Usages Examples
 `
+// update logo FV and Natura
 
 export default {
   component: Logo,
