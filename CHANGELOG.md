@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [7.55.0](https://github.com/natura-cosmeticos/natds-rn/compare/v7.54.0...v7.55.0) (2025-04-04)
+
+
+### Features
+
+* **natds-rn:**  added new logo FV and Natura ([60eaa30](https://github.com/natura-cosmeticos/natds-rn/commit/60eaa304dd1229a4ca421815249ee93ee716ce75))
+
 ## [7.54.0](https://github.com/natura-cosmeticos/natds-rn/compare/v7.53.0...v7.54.0) (2025-03-13)
 
 
