@@ -3,13 +3,16 @@
 import React from 'react'
 import { grouwthPlanColors } from './growthPlanColors'
 
-export default {
+const description = () => `
+> Colors from theme GrowthPlan.
+`
 
+export default {
+  component: <>GrowPlanColors</>,
   parameters: {
-    component: <>GrowPlanColors</>,
     componentSubtitle: '',
     docs: {
-      extractComponentDescription: ''
+      extractComponentDescription: description
     }
   },
   title: 'Colors|GrowthPlan'
