@@ -18,7 +18,7 @@ export default {
       extractComponentDescription: description
     }
   },
-  title: 'Components/ColorView'
+  title: 'Colors|Themes'
 }
 
 const keysToRemove = [
