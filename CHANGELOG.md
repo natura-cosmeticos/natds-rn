@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [7.56.0](https://github.com/natura-cosmeticos/natds-rn/compare/v7.55.0...v7.56.0) (2025-04-11)
+
+
+### Features
+
+* **natds-rn:**  added Growth Plan Colors ([28c6cdf](https://github.com/natura-cosmeticos/natds-rn/commit/28c6cdf0623b03698cadc24c6c33b6fabfe086d1))
+
+
+### Bug Fixes
+
+* **natds-rn:**  added description Grawth Plan Colors ([24fcc47](https://github.com/natura-cosmeticos/natds-rn/commit/24fcc476ef565fde9e15e46fdfb2f54ecb6984a9))
+* **natds-rn:**  change stories GrowthColos ([259dba5](https://github.com/natura-cosmeticos/natds-rn/commit/259dba53d6949e06450620bcb3ad54a40e52fd7c))
+
 ## [7.55.0](https://github.com/natura-cosmeticos/natds-rn/compare/v7.54.0...v7.55.0) (2025-04-04)
 
 
