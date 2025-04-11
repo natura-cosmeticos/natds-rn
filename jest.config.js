@@ -8,6 +8,7 @@ module.exports = {
     '!<rootDir>/src/**/**/*.device.+(ts|tsx|js)',
     '!<rootDir>/src/**/**/*.stories.+(ts|tsx|js)',
     '!<rootDir>/src/**/**/*.data.+(ts|tsx|js)',
+    '!<rootDir>/src/growthPlanColors/**/*.+(ts|tsx|js)',
   ],
   coverageThreshold: {
     global: {
