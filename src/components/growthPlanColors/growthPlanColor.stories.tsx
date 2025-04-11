@@ -4,7 +4,27 @@ import React from 'react'
 import { grouwthPlanColors } from './growthPlanColors'
 
 const description = () => `
-> Colors from theme GrowthPlan.
+> Colors from theme Growth Plan.
+
+Este componente exibe os grupos de cores do Growth Plan de forma visual.
+
+Cada grupo (como seed, bronze, silver, etc) é apresentado com suas variações de cor.
+
+🔧 **Modo de uso**:
+Importe o objeto de cores diretamente da biblioteca \`@naturacosmeticos/natds-rn\`:
+
+\`\`\`
+import { growthPlanColors } from '@naturacosmeticos/natds-rn';
+\`\`\`
+
+🎨 **Exemplo de uso **:
+
+const { seed, bronze, silver } = growthPlanColors.color;
+
+
+
+
+Utilize esta visualização para verificar as cores disponíveis, seus nomes, valores hexadecimais e uma prévia visual de cada uma.
 `
 
 export default {
@@ -15,7 +35,7 @@ export default {
       extractComponentDescription: description
     }
   },
-  title: 'Colors|GrowthPlan'
+  title: 'Colors|Growth Plan'
 }
 
 const boxStyle: React.CSSProperties = {
