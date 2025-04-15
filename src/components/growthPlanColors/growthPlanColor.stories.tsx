@@ -4,7 +4,9 @@ import React from 'react'
 import { grouwthPlanColors } from './growthPlanColors'
 
 const description = () => `
-> Colors from theme Growth Plan.
+> ⚠️ **Observação:** Essas cores não são recomendadas para componentes core.
+
+> Cores do Plano de Crescimento.
 
 Este componente exibe os grupos de cores do Growth Plan de forma visual.
 
@@ -28,7 +30,7 @@ Utilize esta visualização para verificar as cores disponíveis, seus nomes, va
 `
 
 export default {
-  component: <>GrowPlanColors</>,
+  component: <>GrowthPlanColors</>,
   parameters: {
     componentSubtitle: '',
     docs: {
