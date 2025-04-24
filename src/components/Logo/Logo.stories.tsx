@@ -19,7 +19,7 @@ const description = () => `
 
 ## Technical Usages Examples
 `
-// update logo FV and Natura
+// update logo CB1
 
 export default {
   component: Logo,
