@@ -148,7 +148,7 @@ function processSvg({
     return applyStyleSubstitutions({ svg: replacedSvg, hexColor })
   }
 
-  // Tem ID especial => remove <style> e aplica rules inline
+  // Tem ID especial => remove <style> e aplica rules inline -
   replacedSvg = replacedSvg.replace(/<style[^>]*>[\s\S]*?<\/style>/g, '')
 
   replacedSvg = applyAvonInlineRules({
