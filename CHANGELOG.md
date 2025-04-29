@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [7.56.1](https://github.com/natura-cosmeticos/natds-rn/compare/v7.56.0...v7.56.1) (2025-04-29)
+
+
+### Bug Fixes
+
+* **natds-rn:**  change description Grawth Plan Colors ([5011ca3](https://github.com/natura-cosmeticos/natds-rn/commit/5011ca3dfbbeca906439acdc161576e525494b42))
+* **natds-rn:**  fixed logo CB1 ([430cb06](https://github.com/natura-cosmeticos/natds-rn/commit/430cb065c92bdbe3c404a6d69f61b88bc7fc5c2d))
+
 ## [7.56.0](https://github.com/natura-cosmeticos/natds-rn/compare/v7.55.0...v7.56.0) (2025-04-11)
 
 
