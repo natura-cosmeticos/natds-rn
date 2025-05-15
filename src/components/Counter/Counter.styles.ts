@@ -14,6 +14,8 @@ import {
 } from '../../common/themeSelectors'
 import { CounterSizes } from './Counter.types'
 
+// update theme 0.84.4
+
 type CounterStyleProps = {
   theme: Theme;
 }
