@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [7.56.2](https://github.com/natura-cosmeticos/natds-rn/compare/v7.56.1...v7.56.2) (2025-05-15)
+
+
+### Bug Fixes
+
+* **natds-rn:**  fixed forms textField Counter textTransform ([0840c6b](https://github.com/natura-cosmeticos/natds-rn/commit/0840c6bf40f48ab26f7ca226f8e70e3a00ac194d))
+
 ### [7.56.1](https://github.com/natura-cosmeticos/natds-rn/compare/v7.56.0...v7.56.1) (2025-04-29)
 
 
