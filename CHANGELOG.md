@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [7.57.0](https://github.com/natura-cosmeticos/natds-rn/compare/v7.56.2...v7.57.0) (2025-06-15)
+
+
+### Features
+
+* **natds-rn:**  added new icons lib 1.31.0 ([ba4dd1e](https://github.com/natura-cosmeticos/natds-rn/commit/ba4dd1eab90fc550c24b7adcd111b5b082e3d913))
+
+
+### Bug Fixes
+
+* **natds-rn:**  update lib Icon icon filled-content-strawberry ([a4b3195](https://github.com/natura-cosmeticos/natds-rn/commit/a4b3195a0751cf79fbd611fd0674fdca34dd41cc))
+
 ### [7.56.2](https://github.com/natura-cosmeticos/natds-rn/compare/v7.56.1...v7.56.2) (2025-05-15)
 
 
