@@ -7,7 +7,25 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### Features
 
-* **natds-rn:**  added new icons lib 1.31.0 ([ba4dd1e](https://github.com/natura-cosmeticos/natds-rn/commit/ba4dd1eab90fc550c24b7adcd111b5b082e3d913))
+* **natds-rn:**  added new icons lib 1.32.0 ([ba4dd1e](https://github.com/natura-cosmeticos/natds-rn/commit/ba4dd1eab90fc550c24b7adcd111b5b082e3d913))
+
+* **natds-icons:** filled-action-delete
+* **natds-icons:** filled-alert-cancel
+* **natds-icons:** filled-alert-check
+* **natds-icons:** filled-alert-info
+* **natds-icons:** filled-alert-warning
+* **natds-icons:** filled-content-strawberry
+* **natds-icons:** filled-product-mirror-woman
+* **natds-icons:** filled-product-shoewoman
+
+* **natds-icons:** outlined-action-delete
+* **natds-icons:** outlined-alert-cancel
+* **natds-icons:** outlined-alert-check
+* **natds-icons:** outlined-alert-info
+* **natds-icons:** outlined-alert-warning
+* **natds-icons:** outlined-content-strawberry
+* **natds-icons:** outlined-product-mirror-woman
+* **natds-icons:** outlined-product-shoewoman
 
 
 ### Bug Fixes
