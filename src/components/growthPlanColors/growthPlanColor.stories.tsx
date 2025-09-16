@@ -1,16 +1,18 @@
 /* eslint-disable max-len */
 
 import React from 'react'
-import { grouwthPlanColors } from './growthPlanColors'
+import { growthPlanColors } from './growthPlanColors'
 
 const description = () => `
 > ⚠️ **Observação:** Essas cores não são recomendadas para componentes core.
+
+
 
 > Cores do Plano de Crescimento.
 
 Este componente exibe os grupos de cores do Growth Plan de forma visual.
 
-Cada grupo (como seed, bronze, silver, etc) é apresentado com suas variações de cor.
+Cada grupo (como crystal, bronze, silver, etc) é apresentado com suas variações de cor.
 
 🔧 **Modo de uso**:
 Importe o objeto de cores diretamente da biblioteca \`@naturacosmeticos/natds-rn\`:
@@ -21,9 +23,39 @@ import { growthPlanColors } from '@naturacosmeticos/natds-rn';
 
 🎨 **Exemplo de uso **:
 
-const { seed, bronze, silver } = growthPlanColors.color;
+const { crystal, bronze, silver } = growthPlanColors.color;
 
-
+> 📋 **Nova Estrutura Semântica Disponível:** Introduzimos \`growthPlanSemanticColors\` que facilita significativamente o uso em providers, contextos e temas.
+>
+> **Formato da Nova Estrutura:**
+> 
+> bronze: {
+   primary: '#DE713B',
+   onPrimary: '#111111',
+   primaryLight: '#F7C6BA',
+   onPrimaryLight: '#111111',
+  etc..
+> }
+> 
+>
+> **Benefícios para Contextos e Providers:**
+> 
+> // ✅ Facilita criação de contextos reutilizáveis
+> const ThemeContext = createContext({
+>   colors: growthPlanSemanticColors.color.bronze // Objeto completo
+> });
+>
+> // ✅ Permite troca dinâmica de níveis
+> const [currentLevel, setCurrentLevel] = useState('bronze');
+> const themeColors = growthPlanSemanticColors.color[currentLevel];
+>
+> // ✅ Uso consistente independente do nível
+> <Button 
+>   backgroundColor={themeColors.primary}
+>   color={themeColors.onPrimary}
+> />
+> \`\`\`
+>
 
 
 Utilize esta visualização para verificar as cores disponíveis, seus nomes, valores hexadecimais e uma prévia visual de cada uma.
@@ -37,7 +69,7 @@ export default {
       extractComponentDescription: description
     }
   },
-  title: 'Colors|Growth Plan'
+  title: 'Colors|GrowthPlan'
 }
 
 const boxStyle: React.CSSProperties = {
@@ -78,7 +110,7 @@ const CategoryBlock = ({ categoryName, colors }: { categoryName: string; colors:
 )
 
 export const AllColors = () => {
-  const colorGroups = grouwthPlanColors.color
+  const colorGroups = growthPlanColors.color
 
   return (
     <div style={{ padding: '2rem' }}>
