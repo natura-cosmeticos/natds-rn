@@ -1,108 +1,108 @@
 export type CrystalColorsTypes = {
-    crystal: string;
-    onCrystal: string;
-    crystalLight: string;
-    onCrystalLight: string;
-    crystalLightest: string;
-    onCrystalLightest: string;
-    crystalDark: string;
-    onCrystalDark: string;
-    crystalDarkest: string;
-    onCrystalDarkest: string;
-  };
+  crystal: string;
+  onCrystal: string;
+  crystalLight: string;
+  onCrystalLight: string;
+  crystalLightest: string;
+  onCrystalLightest: string;
+  crystalDark: string;
+  onCrystalDark: string;
+  crystalDarkest: string;
+  onCrystalDarkest: string;
+};
 
 export type BronzeColorsTypes = {
-    bronze: string;
-    onBronze: string;
-    bronzeLight: string;
-    onBronzeLight: string;
-    bronzeLightest: string;
-    onBronzeLightest: string;
-    bronzeDark: string;
-    onBronzeDark: string;
-    bronzeDarkest: string;
-    onBronzeDarkest: string;
-  };
+  bronze: string;
+  onBronze: string;
+  bronzeLight: string;
+  onBronzeLight: string;
+  bronzeLightest: string;
+  onBronzeLightest: string;
+  bronzeDark: string;
+  onBronzeDark: string;
+  bronzeDarkest: string;
+  onBronzeDarkest: string;
+};
 
 export type SilverColorsTypes = {
-    silver: string;
-    onSilver: string;
-    silverLight: string;
-    onSilverLight: string;
-    silverLightest: string;
-    onSilverLightest: string;
-    silverDark: string;
-    onSilverDark: string;
-    silverDarkest: string;
-    onSilverDarkest: string;
-  };
+  silver: string;
+  onSilver: string;
+  silverLight: string;
+  onSilverLight: string;
+  silverLightest: string;
+  onSilverLightest: string;
+  silverDark: string;
+  onSilverDark: string;
+  silverDarkest: string;
+  onSilverDarkest: string;
+};
 
 export type GoldColorsTypes = {
-    gold: string;
-    onGold: string;
-    goldLight: string;
-    onGoldLight: string;
-    goldLightest: string;
-    onGoldLightest: string;
-    goldDark: string;
-    onGoldDark: string;
-    goldDarkest: string;
-    onGoldDarkest: string;
-  };
+  gold: string;
+  onGold: string;
+  goldLight: string;
+  onGoldLight: string;
+  goldLightest: string;
+  onGoldLightest: string;
+  goldDark: string;
+  onGoldDark: string;
+  goldDarkest: string;
+  onGoldDarkest: string;
+};
 export type SapphireColorsTypes = {
-    sapphire: string;
-    onSapphire: string;
-    sapphireLight: string;
-    onSapphireLight: string;
-    sapphireLightest: string;
-    onSapphireLightest: string;
-    sapphireDark: string;
-    onSapphireDark: string;
-    sapphireDarkest: string;
-    onSapphireDarkest: string;
-  };
+  sapphire: string;
+  onSapphire: string;
+  sapphireLight: string;
+  onSapphireLight: string;
+  sapphireLightest: string;
+  onSapphireLightest: string;
+  sapphireDark: string;
+  onSapphireDark: string;
+  sapphireDarkest: string;
+  onSapphireDarkest: string;
+};
 
 export type DiamondColorsTypes = {
-    diamond: string;
-    onDiamond: string;
-    diamondLight: string;
-    onDiamondLight: string;
-    diamondLightest: string;
-    onDiamondLightest: string;
-    diamondDark: string;
-    onDiamondDark: string;
-    diamondDarkest: string;
-    onDiamondDarkest: string;
-  };
+  diamond: string;
+  onDiamond: string;
+  diamondLight: string;
+  onDiamondLight: string;
+  diamondLightest: string;
+  onDiamondLightest: string;
+  diamondDark: string;
+  onDiamondDark: string;
+  diamondDarkest: string;
+  onDiamondDarkest: string;
+};
 
 export type DiamondPlusColorsTypes = {
-    diamondPlus: string;
-    onDiamondPlus: string;
-    diamondPlusLight: string;
-    onDiamondPlusLight: string;
-    diamondPlusLightest: string;
-    onDiamondPlusLightest: string;
-    diamondPlusDark: string;
-    onDiamondPlusDark: string;
-    diamondPlusDarkest: string;
-    onDiamondPlusDarkest: string;
-  };
+  diamondPlus: string;
+  onDiamondPlus: string;
+  diamondPlusLight: string;
+  onDiamondPlusLight: string;
+  diamondPlusLightest: string;
+  onDiamondPlusLightest: string;
+  diamondPlusDark: string;
+  onDiamondPlusDark: string;
+  diamondPlusDarkest: string;
+  onDiamondPlusDarkest: string;
+};
 
 type growthPlanColorsTypes = {
-    crystal: CrystalColorsTypes;
-    bronze: BronzeColorsTypes;
-    silver: SilverColorsTypes;
-    gold: GoldColorsTypes;
-    sapphire: SapphireColorsTypes;
-    diamond: DiamondColorsTypes;
-    diamondPlus: DiamondPlusColorsTypes;
-  };
+  crystal: CrystalColorsTypes;
+  bronze: BronzeColorsTypes;
+  silver: SilverColorsTypes;
+  gold: GoldColorsTypes;
+  sapphire: SapphireColorsTypes;
+  diamond: DiamondColorsTypes;
+  diamondPlus: DiamondPlusColorsTypes;
+};
 
 export type GrowthPlanColorsTypes = {
-    color: growthPlanColorsTypes;
-  };
+  color: growthPlanColorsTypes;
+};
 
-export const grouwthPlanColors: GrowthPlanColorsTypes = {
+export const growthPlanColors: GrowthPlanColorsTypes = {
 
   color: {
     crystal: {
@@ -155,15 +155,15 @@ export const grouwthPlanColors: GrowthPlanColorsTypes = {
       onGoldDarkest: '#FFFFFF'
     },
     sapphire: {
-      sapphire: '#006EFF',
+      sapphire: '#317FE8',
       onSapphire: '#111111',
-      sapphireLight: '#99C4FF',
+      sapphireLight: '#A3C6F5',
       onSapphireLight: '#111111',
-      sapphireLightest: '#E0F0FF',
+      sapphireLightest: '#D1E3FA',
       onSapphireLightest: '#111111',
-      sapphireDark: '#0052C7',
+      sapphireDark: '#0F3F80',
       onSapphireDark: '#FFFFFF',
-      sapphireDarkest: '#003985',
+      sapphireDarkest: '#092449',
       onSapphireDarkest: '#FFFFFF'
     },
     diamond: {
