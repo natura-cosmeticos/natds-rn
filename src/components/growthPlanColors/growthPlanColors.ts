@@ -1,194 +1,138 @@
-export type CrystalColorsTypes = {
-  crystal: string;
-  onCrystal: string;
-  crystalLight: string;
-  onCrystalLight: string;
-  crystalLightest: string;
-  onCrystalLightest: string;
-  crystalDark: string;
-  onCrystalDark: string;
-  crystalDarkest: string;
-  onCrystalDarkest: string;
-};
+/**
+ * Growth Plan Colors - Estrutura de cores do plano de crescimento
+ *
+ * Esta estrutura utiliza nomenclatura semântica (primary, secondary, etc.)
+ * facilitando o uso e reutilização.
+ */
 
-export type BronzeColorsTypes = {
-  bronze: string;
-  onBronze: string;
-  bronzeLight: string;
-  onBronzeLight: string;
-  bronzeLightest: string;
-  onBronzeLightest: string;
-  bronzeDark: string;
-  onBronzeDark: string;
-  bronzeDarkest: string;
-  onBronzeDarkest: string;
-};
+export interface SemanticColorScheme {
+  primary: string;
+  onPrimary: string;
+  primaryLight: string;
+  onPrimaryLight: string;
+  primaryLightest: string;
+  onPrimaryLightest: string;
+  primaryDark: string;
+  onPrimaryDark: string;
+  primaryDarkest: string;
+  onPrimaryDarkest: string;
+}
 
-export type SilverColorsTypes = {
-  silver: string;
-  onSilver: string;
-  silverLight: string;
-  onSilverLight: string;
-  silverLightest: string;
-  onSilverLightest: string;
-  silverDark: string;
-  onSilverDark: string;
-  silverDarkest: string;
-  onSilverDarkest: string;
-};
+export interface GrowthPlanColorsType {
+  crystal: SemanticColorScheme;
+  bronze: SemanticColorScheme;
+  silver: SemanticColorScheme;
+  gold: SemanticColorScheme;
+  sapphire: SemanticColorScheme;
+  diamond: SemanticColorScheme;
+  diamondPlus: SemanticColorScheme;
+}
 
-export type GoldColorsTypes = {
-  gold: string;
-  onGold: string;
-  goldLight: string;
-  onGoldLight: string;
-  goldLightest: string;
-  onGoldLightest: string;
-  goldDark: string;
-  onGoldDark: string;
-  goldDarkest: string;
-  onGoldDarkest: string;
-};
-export type SapphireColorsTypes = {
-  sapphire: string;
-  onSapphire: string;
-  sapphireLight: string;
-  onSapphireLight: string;
-  sapphireLightest: string;
-  onSapphireLightest: string;
-  sapphireDark: string;
-  onSapphireDark: string;
-  sapphireDarkest: string;
-  onSapphireDarkest: string;
-};
+export interface GrowthPlanType {
+  color: GrowthPlanColorsType;
+}
 
-export type DiamondColorsTypes = {
-  diamond: string;
-  onDiamond: string;
-  diamondLight: string;
-  onDiamondLight: string;
-  diamondLightest: string;
-  onDiamondLightest: string;
-  diamondDark: string;
-  onDiamondDark: string;
-  diamondDarkest: string;
-  onDiamondDarkest: string;
-};
-
-export type DiamondPlusColorsTypes = {
-  diamondPlus: string;
-  onDiamondPlus: string;
-  diamondPlusLight: string;
-  onDiamondPlusLight: string;
-  diamondPlusLightest: string;
-  onDiamondPlusLightest: string;
-  diamondPlusDark: string;
-  onDiamondPlusDark: string;
-  diamondPlusDarkest: string;
-  onDiamondPlusDarkest: string;
-};
-
-type growthPlanColorsTypes = {
-  crystal: CrystalColorsTypes;
-  bronze: BronzeColorsTypes;
-  silver: SilverColorsTypes;
-  gold: GoldColorsTypes;
-  sapphire: SapphireColorsTypes;
-  diamond: DiamondColorsTypes;
-  diamondPlus: DiamondPlusColorsTypes;
-};
-
-export type GrowthPlanColorsTypes = {
-  color: growthPlanColorsTypes;
-};
-
-export const growthPlanColors: GrowthPlanColorsTypes = {
-
+export const growthPlanColors: GrowthPlanType = {
   color: {
     crystal: {
-      crystal: '#75B7F0',
-      onCrystal: '#111111',
-      crystalLight: '#BADBF7',
-      onCrystalLight: '#111111',
-      crystalLightest: '#D1E7FA',
-      onCrystalLightest: '#111111',
-      crystalDark: '#0F518A',
-      onCrystalDark: '#FFFFFF',
-      crystalDarkest: '#093053',
-      onCrystalDarkest: '#FFFFFF'
+      primary: '#75B7F0',
+      onPrimary: '#111111',
+      primaryLight: '#BADBF7',
+      onPrimaryLight: '#111111',
+      primaryLightest: '#D1E7FA',
+      onPrimaryLightest: '#111111',
+      primaryDark: '#0F518A',
+      onPrimaryDark: '#FFFFFF',
+      primaryDarkest: '#093053',
+      onPrimaryDarkest: '#FFFFFF'
     },
     bronze: {
-      bronze: '#DE713B',
-      onBronze: '#111111',
-      bronzeLight: '#F7C6BA',
-      onBronzeLight: '#111111',
-      bronzeLightest: '#FBE1DA',
-      onBronzeLightest: '#111111',
-      bronzeDark: '#7B3715',
-      onBronzeDark: '#FFFFFF',
-      bronzeDarkest: '#441E0C',
-      onBronzeDarkest: '#FFFFFF'
-
+      primary: '#DE713B',
+      onPrimary: '#111111',
+      primaryLight: '#F7C6BA',
+      onPrimaryLight: '#111111',
+      primaryLightest: '#FBE1DA',
+      onPrimaryLightest: '#111111',
+      primaryDark: '#7B3715',
+      onPrimaryDark: '#FFFFFF',
+      primaryDarkest: '#441E0C',
+      onPrimaryDarkest: '#FFFFFF'
     },
     silver: {
-      silver: '#859DB7',
-      onSilver: '#111111',
-      silverLight: '#BFCCD9',
-      onSilverLight: '#111111',
-      silverLightest: '#E1E7ED',
-      onSilverLightest: '#111111',
-      silverDark: '#35475A',
-      onSilverDark: '#FFFFFF',
-      silverDarkest: '#1E2632',
-      onSilverDarkest: '#FFFFFF'
+      primary: '#859DB7',
+      onPrimary: '#111111',
+      primaryLight: '#BFCCD9',
+      onPrimaryLight: '#111111',
+      primaryLightest: '#E1E7ED',
+      onPrimaryLightest: '#111111',
+      primaryDark: '#35475A',
+      onPrimaryDark: '#FFFFFF',
+      primaryDarkest: '#1E2632',
+      onPrimaryDarkest: '#FFFFFF'
     },
     gold: {
-      gold: '#DA9E2F',
-      onGold: '#111111',
-      goldLight: '#EED3A0',
-      onGoldLight: '#111111',
-      goldLightest: '#F8ECD6',
-      onGoldLightest: '#111111',
-      goldDark: '#7A5716',
-      onGoldDark: '#FFFFFF',
-      goldDarkest: '#44300C',
-      onGoldDarkest: '#FFFFFF'
+      primary: '#DA9E2F',
+      onPrimary: '#111111',
+      primaryLight: '#EED3A0',
+      onPrimaryLight: '#111111',
+      primaryLightest: '#F8ECD6',
+      onPrimaryLightest: '#111111',
+      primaryDark: '#7A5716',
+      onPrimaryDark: '#FFFFFF',
+      primaryDarkest: '#44300C',
+      onPrimaryDarkest: '#FFFFFF'
     },
     sapphire: {
-      sapphire: '#317FE8',
-      onSapphire: '#111111',
-      sapphireLight: '#A3C6F5',
-      onSapphireLight: '#111111',
-      sapphireLightest: '#D1E3FA',
-      onSapphireLightest: '#111111',
-      sapphireDark: '#0F3F80',
-      onSapphireDark: '#FFFFFF',
-      sapphireDarkest: '#092449',
-      onSapphireDarkest: '#FFFFFF'
+      primary: '#317FE8',
+      onPrimary: '#111111',
+      primaryLight: '#A3C6F5',
+      onPrimaryLight: '#111111',
+      primaryLightest: '#D1E3FA',
+      onPrimaryLightest: '#111111',
+      primaryDark: '#0F3F80',
+      onPrimaryDark: '#FFFFFF',
+      primaryDarkest: '#092449',
+      onPrimaryDarkest: '#FFFFFF'
     },
     diamond: {
-      diamond: '#A26CE0',
-      onDiamond: '#111111',
-      diamondLight: '#CAABED',
-      onDiamondLight: '#111111',
-      diamondLightest: '#E6D7F7',
-      onDiamondLightest: '#111111',
-      diamondDark: '#451977',
-      onDiamondDark: '#FFFFFF',
-      diamondDarkest: '#260E42',
-      onDiamondDarkest: '#FFFFFF'
+      primary: '#A26CE0',
+      onPrimary: '#111111',
+      primaryLight: '#CAABED',
+      onPrimaryLight: '#111111',
+      primaryLightest: '#E6D7F7',
+      onPrimaryLightest: '#111111',
+      primaryDark: '#451977',
+      onPrimaryDark: '#FFFFFF',
+      primaryDarkest: '#260E42',
+      onPrimaryDarkest: '#FFFFFF'
     },
     diamondPlus: {
-      diamondPlus: '#3C4F77',
-      onDiamondPlus: '#FFFFFF',
-      diamondPlusLight: '#BBC6DD',
-      onDiamondPlusLight: '#FFFFFF',
-      diamondPlusLightest: '#DDE3EE',
-      onDiamondPlusLightest: '#FFFFFF',
-      diamondPlusDark: '#293651',
-      onDiamondPlusDark: '#FFFFFF',
-      diamondPlusDarkest: '#1B2436',
-      onDiamondPlusDarkest: '#FFFFFF'
+      primary: '#3C4F77',
+      onPrimary: '#FFFFFF',
+      primaryLight: '#BBC6DD',
+      onPrimaryLight: '#FFFFFF',
+      primaryLightest: '#DDE3EE',
+      onPrimaryLightest: '#FFFFFF',
+      primaryDark: '#293651',
+      onPrimaryDark: '#FFFFFF',
+      primaryDarkest: '#1B2436',
+      onPrimaryDarkest: '#FFFFFF'
     }
   }
 }
+
+/**
+ * Exemplos de uso:
+ *
+ * // Uso semântico intuitivo
+ * background: growthPlanColors.color.bronze.primary
+ * color: growthPlanColors.color.bronze.onPrimary
+ *
+ * // Para variações
+ * background: growthPlanColors.color.gold.primaryLight
+ * color: growthPlanColors.color.gold.onPrimaryLight
+ *
+ * // Para temas escuros
+ * background: growthPlanColors.color.diamond.primaryDark
+ * color: growthPlanColors.color.diamond.onPrimaryDark
+ */

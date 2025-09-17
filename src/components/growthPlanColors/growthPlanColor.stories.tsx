@@ -1,7 +1,7 @@
 /* eslint-disable max-len */
 
 import React from 'react'
-import { growthPlanColors } from './growthPlanColors'
+import { legacyGrowthPlanColors } from './legacyGrowthPlanColors'
 
 const description = () => `
 > ⚠️ **Observação:** Essas cores não são recomendadas para componentes core.
@@ -18,14 +18,14 @@ Cada grupo (como crystal, bronze, silver, etc) é apresentado com suas variaçõ
 Importe o objeto de cores diretamente da biblioteca \`@naturacosmeticos/natds-rn\`:
 
 \`\`\`
-import { growthPlanColors } from '@naturacosmeticos/natds-rn';
+import { legacyGrowthPlanColors } from '@naturacosmeticos/natds-rn';
 \`\`\`
 
 🎨 **Exemplo de uso **:
 
-const { crystal, bronze, silver } = growthPlanColors.color;
+const { crystal, bronze, silver } = legacyGrowthPlanColors.color;
 
-> 📋 **Nova Estrutura Semântica Disponível:** Introduzimos \`growthPlanSemanticColors\` que facilita significativamente o uso em providers, contextos e temas.
+> 📋 ** NovaEstrutura Semântica:** O \`growthPlanColors\` facilita significativamente o uso em providers, contextos e temas.
 >
 > **Formato da Nova Estrutura:**
 > 
@@ -42,12 +42,12 @@ const { crystal, bronze, silver } = growthPlanColors.color;
 > 
 > // ✅ Facilita criação de contextos reutilizáveis
 > const ThemeContext = createContext({
->   colors: growthPlanSemanticColors.color.bronze // Objeto completo
+>   colors: growthPlanColors.color.bronze // Objeto completo
 > });
 >
 > // ✅ Permite troca dinâmica de níveis
 > const [currentLevel, setCurrentLevel] = useState('bronze');
-> const themeColors = growthPlanSemanticColors.color[currentLevel];
+> const themeColors = growthPlanColors.color[currentLevel];
 >
 > // ✅ Uso consistente independente do nível
 > <Button 
@@ -110,7 +110,7 @@ const CategoryBlock = ({ categoryName, colors }: { categoryName: string; colors:
 )
 
 export const AllColors = () => {
-  const colorGroups = growthPlanColors.color
+  const colorGroups = legacyGrowthPlanColors.color
 
   return (
     <div style={{ padding: '2rem' }}>
