@@ -1,23 +1,40 @@
 /* eslint-disable max-len */
 import React from 'react'
 import { Icon } from '../../Icon/Icon'
-import { SpotIconProps, SpotIconColors } from './SpotIcon.types'
-import { growthPlanColors } from '../growthPlanColors'
+import { SpotIconProps } from './SpotIcon.types'
+import { useGrowthPlanColors } from '../Provider'
 
 /**
- * Função utilitária para mapear cores semânticas para valores hex
- * Por enquanto usa o nível 'crystal' como padrão
- * Posteriormente será sobrescrito pelo Provider
+ * SpotIcon - Componente de ícone especializado para Growth Plan
+ *
+ * Este componente utiliza o Context do GrowthPlanProviderColors para
+ * obter as cores dinamicamente, permitindo que diferentes níveis
+ * sejam aplicados sem recriar o componente.
+ *
+ * @param {SpotIconProps} props - Props do SpotIcon
+ * @returns {JSX.Element} Componente SpotIcon renderizado
+ *
+ * @example
+ * ```typescript
+ * // Dentro de um Provider
+ * <GrowthPlanProviderColors theme={growthPlanColors.color.diamondPlus}>
+ *   <SpotIcon name="spoticon-growthplan-trophydiamond" color="primary" size="large" />
+ * </GrowthPlanProviderColors>
+ *
+ * // Sem Provider (usa crystal como fallback)
+ * <SpotIcon name="spoticon-growthplan-crystal" color="primaryLight" size="medium" />
+ * ```
  */
-const getSemanticColor = (colorType: SpotIconColors): string => growthPlanColors.color.crystal[colorType]
-
 export const SpotIcon = ({
   color = 'primary',
   size = 'medium',
   ...iconProps
 }: SpotIconProps) => {
-  // Obtém a cor hex baseada na cor semântica
-  const colorValue = getSemanticColor(color)
+  // Obtém as cores do contexto (com fallback para crystal se não estiver em um Provider)
+  const { colors } = useGrowthPlanColors()
+
+  // Obtém a cor hex baseada na cor semântica do contexto
+  const colorValue = colors[color]
 
   // Usa 'default' no Icon e aplica a cor via style
   const customStyle = { color: colorValue }
