@@ -25,7 +25,7 @@ export const GrowthPlanColorContext = createContext<GrowthPlanColorContextType |
  *
  * // Usando com tema específico
  * <GrowthPlanProviderColors theme={growthPlanColors.color.diamondPlus}>
- *   <SpotIcon name="spoticon-growthplan-trophydiamond" color="primary" />
+ *   <SpotIcon name="spoticon-growthplan-trophydiamond" color="main" />
  * </GrowthPlanProviderColors>
  *
  * // Usando com nível identificado (opcional)

@@ -20,7 +20,7 @@ export interface SpotIconProps extends Omit<IconProps, 'size' | 'name' | 'color'
 
   /**
    * Semantic color tokens from Growth Plan color scheme
-   * @default 'primary'
+   * @default 'main'
    */
   color?: SpotIconColors;
 }

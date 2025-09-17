@@ -46,7 +46,7 @@ export interface LevelButton {
    */
   label: string;
   /**
-   * Cor primary do nível
+   * Cor main do nível
    */
   color: string;
 }

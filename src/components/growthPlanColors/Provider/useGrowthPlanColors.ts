@@ -17,8 +17,8 @@ import { growthPlanColors } from '../growthPlanColors'
  *   const { colors, currentLevel } = useGrowthPlanColors()
  *
  *   return (
- *     <View style={{ backgroundColor: colors.primary }}>
- *       <Text style={{ color: colors.onPrimary }}>
+ *     <View style={{ backgroundColor: colors.main }}>
+ *       <Text style={{ color: colors.onMain }}>
  *         Nível atual: {currentLevel}
  *       </Text>
  *     </View>

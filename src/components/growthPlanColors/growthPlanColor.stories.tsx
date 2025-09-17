@@ -1,7 +1,9 @@
 /* eslint-disable max-len */
 
-import React from 'react'
+import React, { useState } from 'react'
 import { legacyGrowthPlanColors } from './legacyGrowthPlanColors'
+import { growthPlanColors } from './growthPlanColors'
+import { GayaButton } from '../GayaButton'
 
 const description = () => `
 > ⚠️ **Observação:** Essas cores não são recomendadas para componentes core.
@@ -30,10 +32,10 @@ const { crystal, bronze, silver } = legacyGrowthPlanColors.color;
 > **Formato da Nova Estrutura:**
 > 
 > bronze: {
-   primary: '#DE713B',
-   onPrimary: '#111111',
-   primaryLight: '#F7C6BA',
-   onPrimaryLight: '#111111',
+   main: '#DE713B',
+   onMain: '#111111',
+   mainLight: '#F7C6BA',
+   onMainLight: '#111111',
   etc..
 > }
 > 
@@ -51,8 +53,8 @@ const { crystal, bronze, silver } = legacyGrowthPlanColors.color;
 >
 > // ✅ Uso consistente independente do nível
 > <Button 
->   backgroundColor={themeColors.primary}
->   color={themeColors.onPrimary}
+>   backgroundColor={themeColors.main}
+>   color={themeColors.onMain}
 > />
 > \`\`\`
 >
@@ -101,7 +103,7 @@ const ColorBlock = ({ name, value }: { name: string; value: string }) => (
 const CategoryBlock = ({ categoryName, colors }: { categoryName: string; colors: Record<string, string> }) => (
   <div style={{ marginBottom: '2rem' }}>
     <h2 style={{ fontFamily: 'sans-serif' }}>{categoryName.toUpperCase()}</h2>
-    <div style={{ display: 'flex', flexWrap: 'wrap' }}>
+    <div style={{ display: 'flex', flexWrap: 'wrap', padding: '2rem' }}>
       {Object.entries(colors).map(([key, value]) => (
         <ColorBlock key={key} name={key} value={value} />
       ))}
@@ -109,14 +111,62 @@ const CategoryBlock = ({ categoryName, colors }: { categoryName: string; colors:
   </div>
 )
 
+const renderToggleButtons = (isLegacy: boolean, setIsLegacy: (value: boolean) => void) => (
+  <div style={{ marginBottom: '1rem', display: 'flex', gap: '1rem' }}>
+    <GayaButton
+      onPress={() => setIsLegacy(true)}
+      color={isLegacy ? 'primary' : 'neutral'}
+      type={isLegacy ? 'contained' : 'outlined'}
+      text="Estrutura Legacy"
+    />
+    <GayaButton
+      onPress={() => setIsLegacy(false)}
+      color={!isLegacy ? 'primary' : 'neutral'}
+      type={!isLegacy ? 'contained' : 'outlined'}
+      text="Estrutura Semântica"
+    />
+  </div>
+)
+
+const renderIndicator = (isLegacy: boolean) => (
+  <div
+    style={{
+      padding: '1rem',
+      marginBottom: '1rem',
+      backgroundColor: '#f5f5f5',
+      borderRadius: '4px'
+    }}
+  >
+    <p
+      style={{
+        margin: 0,
+        fontFamily: 'sans-serif',
+        fontSize: '14px',
+        color: '#666'
+      }}
+    >
+      {isLegacy
+        ? '📋 Exibindo: legacyGrowthPlanColors (nomenclatura: bronze, bronzeLight, bronzeDark, etc.)'
+        : '🎨 Exibindo: growthPlanColors (nomenclatura: main, mainLight, mainDark, etc.)'}
+    </p>
+  </div>
+)
+
 export const AllColors = () => {
-  const colorGroups = legacyGrowthPlanColors.color
+  const [isLegacy, setIsLegacy] = useState(true)
+
+  // Alterna entre os dois objetos baseado no estado
+  const colorGroups = isLegacy ? legacyGrowthPlanColors.color : growthPlanColors.color
 
   return (
-    <div style={{ padding: '2rem' }}>
-      {Object.entries(colorGroups).map(([categoryName, colors]) => (
-        <CategoryBlock key={categoryName} categoryName={categoryName} colors={colors} />
-      ))}
-    </div>
+    <>
+      {renderToggleButtons(isLegacy, setIsLegacy)}
+      {renderIndicator(isLegacy)}
+      <div style={{ padding: '2rem' }}>
+        {Object.entries(colorGroups).map(([categoryName, colors]) => (
+          <CategoryBlock key={categoryName} categoryName={categoryName} colors={colors} />
+        ))}
+      </div>
+    </>
   )
 }

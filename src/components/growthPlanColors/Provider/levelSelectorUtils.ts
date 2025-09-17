@@ -26,7 +26,7 @@ export const formatLevelLabel = (level: string): string => level
 export const generateLevelButtons = (): LevelButton[] => Object.keys(growthPlanColors.color).map((level) => ({
   key: level,
   label: formatLevelLabel(level),
-  color: growthPlanColors.color[level as keyof typeof growthPlanColors.color].primary
+  color: growthPlanColors.color[level as keyof typeof growthPlanColors.color].main
 }))
 
 /**

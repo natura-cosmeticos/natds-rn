@@ -18,15 +18,15 @@ import { useGrowthPlanColors } from '../Provider'
  * ```typescript
  * // Dentro de um Provider
  * <GrowthPlanProviderColors theme={growthPlanColors.color.diamondPlus}>
- *   <SpotIcon name="spoticon-growthplan-trophydiamond" color="primary" size="large" />
+ *   <SpotIcon name="spoticon-growthplan-trophydiamond" color="main" size="large" />
  * </GrowthPlanProviderColors>
  *
  * // Sem Provider (usa crystal como fallback)
- * <SpotIcon name="spoticon-growthplan-crystal" color="primaryLight" size="medium" />
+ * <SpotIcon name="spoticon-growthplan-crystal" color="mainLight" size="medium" />
  * ```
  */
 export const SpotIcon = ({
-  color = 'primary',
+  color = 'main',
   size = 'medium',
   ...iconProps
 }: SpotIconProps) => {

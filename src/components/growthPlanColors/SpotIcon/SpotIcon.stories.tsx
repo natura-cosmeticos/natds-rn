@@ -18,7 +18,7 @@ O SpotIcon agora utiliza o **GrowthPlanProviderColors** para obter cores dinamic
 **Funcionalidades:**
 - **Provider-Based:** Utiliza Context API para cores dinâmicas
 - **Range de tamanhos:** medium, mediumX, large, largeX, largeXX, largeXXX, huge, hugeX
-- **Cores semânticas:** primary, primaryLight, primaryDark, onPrimary, etc.
+- **Cores semânticas:** main, mainLight, mainDark, onMain, etc.
 - **Sincronização automática:** Botões gerados automaticamente do growthPlanColors
 
 🔧 **Modo de uso**:
@@ -27,11 +27,11 @@ import { SpotIcon, GrowthPlanProviderColors, growthPlanColors } from '@naturacos
 
 // Com Provider (recomendado)
 <GrowthPlanProviderColors theme={growthPlanColors.color.diamondPlus}>
-  <SpotIcon name="spoticon-growthplan-trophydiamond" color="primary" size="large" />
+  <SpotIcon name="spoticon-growthplan-trophydiamond" color="main" size="large" />
 </GrowthPlanProviderColors>
 
 // Sem Provider (usa crystal como fallback)
-<SpotIcon name="spoticon-growthplan-crystal" color="primaryLight" size="medium" />
+<SpotIcon name="spoticon-growthplan-crystal" color="mainLight" size="medium" />
 \`\`\`
 
 🎮 **Playground Interativo:**
@@ -154,16 +154,16 @@ const SpotIconSizeOptions = {
 }
 
 const SemanticColorOptions = {
-  primary: 'primary',
-  onPrimary: 'onPrimary',
-  primaryLight: 'primaryLight',
-  onPrimaryLight: 'onPrimaryLight',
-  primaryLightest: 'primaryLightest',
-  onPrimaryLightest: 'onPrimaryLightest',
-  primaryDark: 'primaryDark',
-  onPrimaryDark: 'onPrimaryDark',
-  primaryDarkest: 'primaryDarkest',
-  onPrimaryDarkest: 'onPrimaryDarkest'
+  main: 'main',
+  onMain: 'onMain',
+  mainLight: 'mainLight',
+  onMainLight: 'onMainLight',
+  mainLightest: 'mainLightest',
+  onMainLightest: 'onMainLightest',
+  mainDark: 'mainDark',
+  onMainDark: 'onMainDark',
+  mainDarkest: 'mainDarkest',
+  onMainDarkest: 'onMainDarkest'
 }
 
 const SpotIconOptionsName = {
@@ -185,7 +185,7 @@ const SpotIconOptionsName = {
  */
 export const Playground = () => {
   const [selectedLevel, setSelectedLevel] = useState('diamondPlus')
-  const selectedColor = select('Color (semântica)', SemanticColorOptions, 'primary') as SpotIconColors
+  const selectedColor = select('Color (semântica)', SemanticColorOptions, 'main') as SpotIconColors
   const iconName = select('Icon name', SpotIconOptionsName, 'spoticon-growthplan-trophydiamond') as SpotIconName
   const size = select('Size', SpotIconSizeOptions, 'large') as SpotIconSizes
 
@@ -224,7 +224,7 @@ export const Sizes = () => {
             <SpotIcon
               name="spoticon-growthplan-trophydiamond"
               size={size}
-              color="primary"
+              color="main"
             />
             <Text style={styles.sizeLabel}>{size}</Text>
           </View>
