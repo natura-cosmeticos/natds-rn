@@ -1,24 +1,32 @@
+/* eslint-disable max-len */
 import React from 'react'
 import { Icon } from '../../Icon/Icon'
-import { SpotIconProps } from './SpotIcon.types'
-import { IconColors } from '../../Icon/Icon.types'
+import { SpotIconProps, SpotIconColors } from './SpotIcon.types'
+import { growthPlanColors } from '../growthPlanColors'
+
+/**
+ * Função utilitária para mapear cores semânticas para valores hex
+ * Por enquanto usa o nível 'crystal' como padrão
+ * Posteriormente será sobrescrito pelo Provider
+ */
+const getSemanticColor = (colorType: SpotIconColors): string => growthPlanColors.color.crystal[colorType]
 
 export const SpotIcon = ({
-  customColor,
-  color = 'highlight',
+  color = 'primary',
   size = 'medium',
   ...iconProps
 }: SpotIconProps) => {
-  // Se customColor for fornecida, usamos ela diretamente no style
-  // Senão, usamos a cor do tema normalmente
-  const iconColor: IconColors = customColor ? 'default' : color
-  const customStyle = customColor ? { color: customColor } : undefined
-  const finalStyle = customStyle ? [iconProps.style, customStyle] : iconProps.style
+  // Obtém a cor hex baseada na cor semântica
+  const colorValue = getSemanticColor(color)
+
+  // Usa 'default' no Icon e aplica a cor via style
+  const customStyle = { color: colorValue }
+  const finalStyle = [iconProps.style, customStyle]
 
   return (
     <Icon
       {...iconProps}
-      color={iconColor}
+      color="default"
       size={size}
       style={finalStyle}
     />

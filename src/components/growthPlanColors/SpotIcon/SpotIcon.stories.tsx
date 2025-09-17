@@ -2,10 +2,9 @@
 
 import React from 'react'
 import { View } from 'react-native'
-import { text, select } from '@storybook/addon-knobs'
+import { select } from '@storybook/addon-knobs'
 import { SpotIcon } from './SpotIcon'
-import { SpotIconName, SpotIconSizes } from './SpotIcon.types'
-import { IconColors } from '../../Icon/Icon.types'
+import { SpotIconName, SpotIconSizes, SpotIconColors } from './SpotIcon.types'
 import { StoryContainer } from '../../../common/HelperComponents/StoryContainer'
 
 const description = () => `
@@ -13,34 +12,36 @@ const description = () => `
 
 > Componente SpotIcon baseado no Icon padrão.
 
-O SpotIcon estende todas as funcionalidades do componente Icon padrão, mas com um range específico de tamanhos (medium até hugeX) e suporte a cores customizadas.
+O SpotIcon estende todas as funcionalidades do componente Icon padrão, mas com um range específico de tamanhos (medium até hugeX) e cores semânticas do Growth Plan.
 
 **Características principais:**
 - **Range de tamanhos:** medium, mediumX, large, largeX, largeXX, largeXXX, huge, hugeX
-- **Cores de tema:** mantém suporte a todos os tokens de cor do sistema de design
-- **Cores customizadas:** prop \`customColor\` permite usar cores hexadecimais que sobrepõem as cores de tema
+- **Cores semânticas:** usa tokens de cor semântica do Growth Plan (primary, primaryLight, primaryDark, etc.)
+- **Provider Ready:** preparado para receber configuração de nível via Provider futuro
 
 🔧 **Modo de uso**:
 \`\`\`typescript
 import { SpotIcon } from '@naturacosmeticos/natds-rn';
 
-// Usando cor de tema
-<SpotIcon name="heart" color="primary" size="large" />
-
-// Usando cor customizada (sobrepõe cor de tema)
-<SpotIcon name="heart" color="primary" customColor="#FF6B6B" size="large" />
+// Usando cores semânticas do Growth Plan
+<SpotIcon name="spoticon-growthplan-graphic" color="primary" size="large" />
+<SpotIcon name="spoticon-growthplan-crystal" color="primaryLight" size="medium" />
+<SpotIcon name="spoticon-growthplan-trophy" color="primaryDark" size="huge" />
 \`\`\`
 
-🎨 **Prioridade de cores:**
-1. \`customColor\` (quando fornecida) - sobrepõe qualquer cor de tema
-2. \`color\` - usa tokens de cor do sistema de design
-3. Fallback padrão - 'highlight'
+🎨 **Cores disponíveis:**
+- \`primary\` - Cor principal
+- \`primaryLight\` - Variação clara
+- \`primaryLightest\` - Variação mais clara
+- \`primaryDark\` - Variação escura  
+- \`primaryDarkest\` - Variação mais escura
+- \`onPrimary\`, \`onPrimaryLight\`, \`onPrimaryLightest\`, \`onPrimaryDark\`, \`onPrimaryDarkest\` - Cores de contraste
 `
 
 export default {
   component: SpotIcon,
   parameters: {
-    componentSubtitle: 'SpotIcon para Growth Plan com suporte a cores customizadas',
+    componentSubtitle: 'SpotIcon para Growth Plan com cores semânticas',
     docs: {
       extractComponentDescription: description
     }
@@ -84,6 +85,24 @@ export const AllSizes = () => {
   )
 }
 
+// Story demonstrando todas as cores semânticas
+export const AllSemanticColors = () => {
+  const colors: SpotIconColors[] = ['primary', 'onPrimary', 'primaryLight', 'onPrimaryLight', 'primaryLightest', 'onPrimaryLightest', 'primaryDark', 'onPrimaryDark', 'primaryDarkest', 'onPrimaryDarkest']
+
+  return (
+    <View style={containerStyle}>
+      {colors.map((color) => (
+        <View key={color} style={itemStyle}>
+          <SpotIcon name="spoticon-growthplan-crystal" size="large" color={color} />
+          <View style={labelStyle}>
+            <text>{color}</text>
+          </View>
+        </View>
+      ))}
+    </View>
+  )
+}
+
 // Opções de tamanhos disponíveis para o SpotIcon
 const SpotIconSizeOptions = {
   medium: 'medium',
@@ -96,16 +115,18 @@ const SpotIconSizeOptions = {
   hugeX: 'hugeX'
 }
 
-// Opções de cores de tema mais comuns
-const ThemeColorOptions = {
+// Opções de cores semânticas do Growth Plan
+const SemanticColorOptions = {
   primary: 'primary',
-  secondary: 'secondary',
-  highlight: 'highlight',
-  surface: 'surface',
-  alert: 'alert',
-  warning: 'warning',
-  success: 'success',
-  link: 'link'
+  onPrimary: 'onPrimary',
+  primaryLight: 'primaryLight',
+  onPrimaryLight: 'onPrimaryLight',
+  primaryLightest: 'primaryLightest',
+  onPrimaryLightest: 'onPrimaryLightest',
+  primaryDark: 'primaryDark',
+  onPrimaryDark: 'onPrimaryDark',
+  primaryDarkest: 'primaryDarkest',
+  onPrimaryDarkest: 'onPrimaryDarkest'
 }
 const SpotIconOptionsName = {
   'outlined-default-mockup': 'outlined-default-mockup',
@@ -122,8 +143,7 @@ const SpotIconOptionsName = {
 
 // Story interativo para playground
 export const Playground = () => {
-  const selectedColor = select('Color (tema)', ThemeColorOptions, 'highlight') as IconColors
-  const customColor = text('Custom Color (hex)', '')
+  const selectedColor = select('Color (semântica)', SemanticColorOptions, 'primary') as SpotIconColors
   const iconName = select('Icon name', SpotIconOptionsName, 'spoticon-growthplan-graphic') as SpotIconName
   const size = select('Size', SpotIconSizeOptions, 'large') as SpotIconSizes
   return (
@@ -132,7 +152,6 @@ export const Playground = () => {
         name={iconName}
         size={size}
         color={selectedColor}
-        customColor={customColor || undefined}
       />
     </StoryContainer>
   )
