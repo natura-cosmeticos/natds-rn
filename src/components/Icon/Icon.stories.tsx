@@ -42,13 +42,21 @@ export const Default = () => (
     <Icon />
   </StoryContainer>
 )
-
+const IconSizepropName = {
+  standard: 'standard',
+  micro: 'micro',
+  tiny: 'tiny',
+  small: 'small',
+  semi: 'semi',
+  semiX: 'semiX',
+  medium: 'medium'
+}
 export const Interactive = () => (
   <StoryContainer title="Interactive">
     <Icon
       color={text('Color', 'highlight')as IconColors}
       name={select('Icon name', iconNames as Array<IconName>, 'outlined-default-mockup') as IconName}
-      size={text('Size', 'standard') as IconSizes}
+      size={select('Size', IconSizepropName, 'standard') as IconSizes}
     />
   </StoryContainer>
 )
