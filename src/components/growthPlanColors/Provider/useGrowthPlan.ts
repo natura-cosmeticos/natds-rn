@@ -37,7 +37,7 @@ export const useGrowthPlan = (): GrowthPlanContextType => {
     )
 
     return {
-      colors: growthPlanColors.color.crystal,
+      colors: growthPlanColors.crystal,
       currentLevel: 'crystal'
     }
   }

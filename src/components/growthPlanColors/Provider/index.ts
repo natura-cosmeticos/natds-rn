@@ -14,6 +14,6 @@ export {
 export type {
   GrowthPlanContextType,
   GrowthPlanProviderProps,
-  GrowthPlanLevel,
   LevelButton
 } from './GrowthPlanProvider.types'
+export type { GrowthPlanLevel } from '../growthPlanColors'

@@ -16,28 +16,28 @@ export const formatLevelLabel = (level: string): string => level
 
 /**
  * Gera automaticamente os botões de seleção de nível
- * baseado no objeto growthPlanColors.color
+ * baseado no objeto growthPlanColors
  *
  * Esta função garante sincronização automática:
  * - Se novos níveis forem adicionados ao growthPlanColors, aparecerão automaticamente
  * - Se cores forem alteradas, os botões refletirão as mudanças
  * - Se níveis forem removidos, os botões também serão removidos
  */
-export const generateLevelButtons = (): LevelButton[] => Object.keys(growthPlanColors.color).map((level) => ({
+export const generateLevelButtons = (): LevelButton[] => Object.keys(growthPlanColors).map((level) => ({
   key: level,
   label: formatLevelLabel(level),
-  color: growthPlanColors.color[level as keyof typeof growthPlanColors.color].main
+  color: growthPlanColors[level as keyof typeof growthPlanColors].main
 }))
 
 /**
  * Obtém a lista de níveis disponíveis
  */
-export const getAvailableLevels = (): string[] => Object.keys(growthPlanColors.color)
+export const getAvailableLevels = (): string[] => Object.keys(growthPlanColors)
 
 /**
  * Verifica se um nível é válido
  */
-export const isValidLevel = (level: string): boolean => level in growthPlanColors.color
+export const isValidLevel = (level: string): boolean => level in growthPlanColors
 
 /**
  * Obtém o esquema de cores para um nível específico
@@ -45,7 +45,7 @@ export const isValidLevel = (level: string): boolean => level in growthPlanColor
 export const getColorSchemeForLevel = (level: string) => {
   if (!isValidLevel(level)) {
     console.warn(`Nível '${level}' não encontrado. Usando 'crystal' como fallback.`)
-    return growthPlanColors.color.crystal
+    return growthPlanColors.crystal
   }
-  return growthPlanColors.color[level as keyof typeof growthPlanColors.color]
+  return growthPlanColors[level as keyof typeof growthPlanColors]
 }

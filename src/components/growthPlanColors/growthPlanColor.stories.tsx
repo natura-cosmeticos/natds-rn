@@ -44,12 +44,12 @@ const { crystal, bronze, silver } = legacyGrowthPlanColors.color;
 > 
 > // ✅ Facilita criação de contextos reutilizáveis
 > const ThemeContext = createContext({
->   colors: growthPlanColors.color.bronze // Objeto completo
+>   colors: growthPlanColors.bronze // Objeto completo
 > });
 >
 > // ✅ Permite troca dinâmica de níveis
 > const [currentLevel, setCurrentLevel] = useState('bronze');
-> const themeColors = growthPlanColors.color[currentLevel];
+> const themeColors = growthPlanColors[currentLevel];
 >
 > // ✅ Uso consistente independente do nível
 > <Button 
@@ -156,7 +156,7 @@ export const AllColors = () => {
   const [isLegacy, setIsLegacy] = useState(true)
 
   // Alterna entre os dois objetos baseado no estado
-  const colorGroups = isLegacy ? legacyGrowthPlanColors.color : growthPlanColors.color
+  const colorGroups = isLegacy ? legacyGrowthPlanColors.color : growthPlanColors
 
   return (
     <>

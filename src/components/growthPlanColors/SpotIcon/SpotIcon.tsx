@@ -17,7 +17,7 @@ import { useGrowthPlan } from '../Provider'
  * @example
  * ```typescript
  * // Dentro de um Provider
- * <GrowthPlanProviderColors theme={growthPlanColors.color.diamondPlus}>
+ * <GrowthPlanProviderColors theme={growthPlanColors.diamondPlus}>
  *   <SpotIcon name="spoticon-growthplan-trophydiamond" color="main" size="large" />
  * </GrowthPlanProviderColors>
  *
