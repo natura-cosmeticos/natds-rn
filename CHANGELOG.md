@@ -2,6 +2,32 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [7.58.0](https://github.com/natura-cosmeticos/natds-rn/compare/v7.57.0...v7.58.0) (2025-09-22)
+
+
+### Features
+
+* **natds-rn:**  create GrowthPlanProviderColors ([b9e21db](https://github.com/natura-cosmeticos/natds-rn/commit/b9e21db5c80dc4df9f784236254f13c8644683e9))
+* **natds-rn:** added code SpotIcon ([4472c81](https://github.com/natura-cosmeticos/natds-rn/commit/4472c8160839ec2cd760c50f6b646ef7159b7ebf))
+* **natds-rn:** update Icons with SpotIcons ([90ee1b3](https://github.com/natura-cosmeticos/natds-rn/commit/90ee1b3dab7ed633b33f0888bab6e497ebdd0170))
+
+
+### Bug Fixes
+
+* **natds-rn:**  fixed color growPlanColors structure ([ec56fe6](https://github.com/natura-cosmeticos/natds-rn/commit/ec56fe64cd2564d223f3cb7349801febe45df9c8))
+* **natds-rn:**  fixed color growPlanColors structure Main ([323e3f3](https://github.com/natura-cosmeticos/natds-rn/commit/323e3f362227c3b166ce5ae7aa2e6b84ed69cc60))
+* **natds-rn:**  fixed color sapphire GrowPlanColors ([143a590](https://github.com/natura-cosmeticos/natds-rn/commit/143a590a2c9e52102f34c9ee12a65c80175d2daf))
+* **natds-rn:**  fixed file GrowthPlanProvider ([f43f9dd](https://github.com/natura-cosmeticos/natds-rn/commit/f43f9ddca22ecc48d30dc65d84371df47fe24253))
+* **natds-rn:**  fixed files levelSelectorUtils useGrowthPlan ([4de8c27](https://github.com/natura-cosmeticos/natds-rn/commit/4de8c271ead256822af58e108eb805778003113d))
+* **natds-rn:**  fixed GrowPlanPovider ([0efe8a8](https://github.com/natura-cosmeticos/natds-rn/commit/0efe8a8a318b09bceb55d02a55364ee7a21755b4))
+* **natds-rn:**  fixed GrowthPlan Icon ([4eb8d1f](https://github.com/natura-cosmeticos/natds-rn/commit/4eb8d1f346b56947b047f03f1ca8719b6c38d6a7))
+* **natds-rn:**  fixed GrowthPlanColors ([ff768a8](https://github.com/natura-cosmeticos/natds-rn/commit/ff768a83a965fb5397dd74bf391d78fb61373f51))
+* **natds-rn:**  fixed growthPlanSemanticColos ([4efc626](https://github.com/natura-cosmeticos/natds-rn/commit/4efc62664bd2559f751a93df915f9cbf10305b3a))
+* **natds-rn:**  fixed name interfaces GrowthPLan ([a9c63fc](https://github.com/natura-cosmeticos/natds-rn/commit/a9c63fc2ca4055904502dcbb6465369f7eaf08f0))
+* **natds-rn:**  fixed stories GrowthPLanColors ([a9ad5ab](https://github.com/natura-cosmeticos/natds-rn/commit/a9ad5abcae61f5211918f43e155b6c9bf0c5b1a6))
+* **natds-rn:**  fixed stories Icon ([9078913](https://github.com/natura-cosmeticos/natds-rn/commit/90789130e97fa68752a60a8377e752f682eb49b8))
+* **natds-rn:**  remove customColor prop spotIcon ([bd25acb](https://github.com/natura-cosmeticos/natds-rn/commit/bd25acbca613488f051b0291620b8d3b67ef96f7))
+
 ## [7.57.0](https://github.com/natura-cosmeticos/natds-rn/compare/v7.56.2...v7.57.0) (2025-06-15)
 
 
