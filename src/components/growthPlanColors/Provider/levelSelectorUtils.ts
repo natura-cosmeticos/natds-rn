@@ -1,6 +1,6 @@
 /* eslint-disable max-len */
 import { growthPlanColors } from '../growthPlanColors'
-import { LevelButton } from './GrowthPlanProviderColors.types'
+import { LevelButton } from './GrowthPlanProvider.types'
 
 /**
  * Formata o nome do nível para exibição
