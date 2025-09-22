@@ -2,9 +2,14 @@ import { ReactNode } from 'react'
 import { SemanticColorScheme } from '../growthPlanColors'
 
 /**
- * Interface para o contexto do Growth Plan Colors
+ * Níveis disponíveis do Growth Plan
  */
-export interface GrowthPlanColorContextType {
+export type GrowthPlanLevel = 'crystal' | 'bronze' | 'silver' | 'gold' | 'sapphire' | 'diamond' | 'diamondPlus'
+
+/**
+ * Interface para o contexto do Growth Plan
+ */
+export interface GrowthPlanContextType {
   /**
    * Esquema de cores semânticas atual
    */
@@ -12,21 +17,17 @@ export interface GrowthPlanColorContextType {
   /**
    * Nível atual selecionado (crystal, bronze, silver, etc.)
    */
-  currentLevel: string;
+  currentLevel: GrowthPlanLevel;
 }
 
 /**
- * Props para o GrowthPlanProviderColors
+ * Props para o GrowthPlanProvider
  */
-export interface GrowthPlanProviderColorsProps {
+export interface GrowthPlanProviderProps {
   /**
-   * Tema de cores a ser aplicado (um dos níveis do growthPlanColors)
+   * Nível do Growth Plan que define o tema de cores
    */
-  theme: SemanticColorScheme;
-  /**
-   * Nome do nível atual (opcional, usado para identificação)
-   */
-  level?: string;
+  level: GrowthPlanLevel;
   /**
    * Componentes filhos que receberão as cores via contexto
    */

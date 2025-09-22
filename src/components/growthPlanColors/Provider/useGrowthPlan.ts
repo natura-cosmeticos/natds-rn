@@ -1,20 +1,20 @@
 import { useContext } from 'react'
-import { GrowthPlanColorContext } from './GrowthPlanProviderColors'
-import { GrowthPlanColorContextType } from './GrowthPlanProviderColors.types'
+import { GrowthPlanContext } from './GrowthPlanProvider'
+import { GrowthPlanContextType } from './GrowthPlanProvider.types'
 import { growthPlanColors } from '../growthPlanColors'
 
 /**
- * Hook personalizado para consumir as cores do Growth Plan
+ * Hook personalizado para consumir o contexto do Growth Plan
  *
  * Este hook permite acessar as cores do contexto do Growth Plan
  * com fallback para o nível 'crystal' caso não esteja dentro de um Provider
  *
- * @returns {GrowthPlanColorContextType} Objeto com cores e nível atual
+ * @returns {GrowthPlanContextType} Objeto com cores e nível atual
  *
  * @example
  * ```typescript
  * const MyComponent = () => {
- *   const { colors, currentLevel } = useGrowthPlanColors()
+ *   const { colors, currentLevel } = useGrowthPlan()
  *
  *   return (
  *     <View style={{ backgroundColor: colors.main }}>
@@ -26,13 +26,13 @@ import { growthPlanColors } from '../growthPlanColors'
  * }
  * ```
  */
-export const useGrowthPlanColors = (): GrowthPlanColorContextType => {
-  const context = useContext(GrowthPlanColorContext)
+export const useGrowthPlan = (): GrowthPlanContextType => {
+  const context = useContext(GrowthPlanContext)
 
   // Se não estiver dentro de um Provider, usa crystal como fallback
   if (!context) {
     console.warn(
-      'useGrowthPlanColors deve ser usado dentro de um GrowthPlanProviderColors. '
+      'useGrowthPlan deve ser usado dentro de um GrowthPlanProvider. '
       + 'Usando nível "crystal" como fallback.'
     )
 

@@ -7,28 +7,27 @@ import {
 import { select } from '@storybook/addon-knobs'
 import { SpotIcon } from './SpotIcon'
 import { SpotIconName, SpotIconSizes, SpotIconColors } from './SpotIcon.types'
-import { GrowthPlanProviderColors, generateLevelButtons } from '../Provider'
-import { growthPlanColors } from '../growthPlanColors'
+import { GrowthPlanProvider, generateLevelButtons, GrowthPlanLevel } from '../Provider'
 
 const description = () => `
 > 🎨 **SpotIcon com Provider de Cores Dinâmico**
 
-O SpotIcon agora utiliza o **GrowthPlanProviderColors** para obter cores dinamicamente, permitindo trocar entre diferentes níveis do Growth Plan sem recriar o componente.
+O SpotIcon agora utiliza o **GrowthPlanProvider** para obter cores dinamicamente, permitindo trocar entre diferentes níveis do Growth Plan sem recriar o componente.
 
 **Funcionalidades:**
 - **Provider-Based:** Utiliza Context API para cores dinâmicas
 - **Range de tamanhos:** medium, mediumX, large, largeX, largeXX, largeXXX, huge, hugeX
 - **Cores semânticas:** main, mainLight, mainDark, onMain, etc.
-- **Sincronização automática:** Botões gerados automaticamente do growthPlanColors
+- **API Simplificada:** Apenas especifique o nível, o tema é resolvido automaticamente
 
 🔧 **Modo de uso**:
 \`\`\`typescript
-import { SpotIcon, GrowthPlanProviderColors, growthPlanColors } from '@naturacosmeticos/natds-rn';
+import { SpotIcon, GrowthPlanProvider } from '@naturacosmeticos/natds-rn';
 
-// Com Provider (recomendado)
-<GrowthPlanProviderColors theme={growthPlanColors.color.diamondPlus}>
+// Com Provider (recomendado) - API simplificada
+<GrowthPlanProvider level="bronze">
   <SpotIcon name="spoticon-growthplan-trophydiamond" color="main" size="large" />
-</GrowthPlanProviderColors>
+</GrowthPlanProvider>
 
 // Sem Provider (usa crystal como fallback)
 <SpotIcon name="spoticon-growthplan-crystal" color="mainLight" size="medium" />
@@ -184,7 +183,7 @@ const SpotIconOptionsName = {
  * Permite testar diferentes níveis do Growth Plan em tempo real
  */
 export const Playground = () => {
-  const [selectedLevel, setSelectedLevel] = useState('diamondPlus')
+  const [selectedLevel, setSelectedLevel] = useState<GrowthPlanLevel>('diamondPlus')
   const selectedColor = select('Color (semântica)', SemanticColorOptions, 'main') as SpotIconColors
   const iconName = select('Icon name', SpotIconOptionsName, 'spoticon-growthplan-trophydiamond') as SpotIconName
   const size = select('Size', SpotIconSizeOptions, 'large') as SpotIconSizes
@@ -193,10 +192,10 @@ export const Playground = () => {
     <View style={styles.container}>
       <LevelSelector
         selectedLevel={selectedLevel}
-        onLevelChange={setSelectedLevel}
+        onLevelChange={(level) => setSelectedLevel(level as GrowthPlanLevel)}
       />
 
-      <GrowthPlanProviderColors theme={growthPlanColors.color[selectedLevel as keyof typeof growthPlanColors.color]}>
+      <GrowthPlanProvider level={selectedLevel}>
         <View style={styles.iconContainer}>
           <SpotIcon
             name={iconName}
@@ -204,7 +203,7 @@ export const Playground = () => {
             color={selectedColor}
           />
         </View>
-      </GrowthPlanProviderColors>
+      </GrowthPlanProvider>
     </View>
   )
 }
@@ -217,7 +216,7 @@ export const Sizes = () => {
   const sizes: SpotIconSizes[] = ['medium', 'mediumX', 'large', 'largeX', 'largeXX', 'largeXXX', 'huge', 'hugeX']
 
   return (
-    <GrowthPlanProviderColors theme={growthPlanColors.color.diamondPlus}>
+    <GrowthPlanProvider level="diamondPlus">
       <View style={styles.sizesContainer}>
         {sizes.map((size) => (
           <View key={size} style={styles.sizeItem}>
@@ -230,6 +229,6 @@ export const Sizes = () => {
           </View>
         ))}
       </View>
-    </GrowthPlanProviderColors>
+    </GrowthPlanProvider>
   )
 }

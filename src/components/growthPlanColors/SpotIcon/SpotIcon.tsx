@@ -2,7 +2,7 @@
 import React from 'react'
 import { Icon } from '../../Icon/Icon'
 import { SpotIconProps } from './SpotIcon.types'
-import { useGrowthPlanColors } from '../Provider'
+import { useGrowthPlan } from '../Provider'
 
 /**
  * SpotIcon - Componente de ícone especializado para Growth Plan
@@ -31,7 +31,7 @@ export const SpotIcon = ({
   ...iconProps
 }: SpotIconProps) => {
   // Obtém as cores do contexto (com fallback para crystal se não estiver em um Provider)
-  const { colors } = useGrowthPlanColors()
+  const { colors } = useGrowthPlan()
 
   // Obtém a cor hex baseada na cor semântica do contexto
   const colorValue = colors[color]

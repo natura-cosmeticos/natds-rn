@@ -2,17 +2,18 @@
  * Growth Plan Provider - Exports
  *
  * Este arquivo centraliza todas as exportações relacionadas ao
- * Provider de cores do Growth Plan
+ * Provider do Growth Plan
  */
 
-export { GrowthPlanProviderColors } from './GrowthPlanProviderColors'
-export { useGrowthPlanColors } from './useGrowthPlanColors'
+export { GrowthPlanProvider } from './GrowthPlanProvider'
+export { useGrowthPlan } from './useGrowthPlan'
 export {
   generateLevelButtons,
   formatLevelLabel
 } from './levelSelectorUtils'
 export type {
-  GrowthPlanColorContextType,
-  GrowthPlanProviderColorsProps,
+  GrowthPlanContextType,
+  GrowthPlanProviderProps,
+  GrowthPlanLevel,
   LevelButton
-} from './GrowthPlanProviderColors.types'
+} from './GrowthPlanProvider.types'
