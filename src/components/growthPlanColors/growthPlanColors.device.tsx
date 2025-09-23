@@ -3,5 +3,5 @@ import {
   AllColors
 } from './growthPlanColor.stories'
 
-storiesOf('GrowthPlan', module)
-  .add('AllColors', AllColors)
+storiesOf('Growth Plan', module)
+  .add('Colors', AllColors)

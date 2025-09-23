@@ -45,7 +45,7 @@ export default {
       extractComponentDescription: description
     }
   },
-  title: 'GrowthPlan|SpotIcon'
+  title: 'Growth Plan/Patterns/Spot Icon'
 }
 
 const styles = StyleSheet.create({
