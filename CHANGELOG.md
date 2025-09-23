@@ -11,6 +11,21 @@ All notable changes to this project will be documented in this file. See [standa
 * **natds-rn:** added code SpotIcon ([4472c81](https://github.com/natura-cosmeticos/natds-rn/commit/4472c8160839ec2cd760c50f6b646ef7159b7ebf))
 * **natds-rn:** update Icons with SpotIcons ([90ee1b3](https://github.com/natura-cosmeticos/natds-rn/commit/90ee1b3dab7ed633b33f0888bab6e497ebdd0170))
 
+* **natds-icons:** filled-growthplan-diamondgem  
+* **natds-icons:** filled-growthplan-crystal 
+* **natds-icons:** outlined-growthplan-crystal  
+* **natds-icons:** outlined-growthplan-diamondgem
+
+* **natds-icons:** spoticon-growthplan-crystal 
+* **natds-icons:** spoticon-growthplan-diamondgem 
+* **natds-icons:** spoticon-growthplan-flowertulip 
+* **natds-icons:** spoticon-growthplan-graphic 
+* **natds-icons:** spoticon-growthplan-laurelwreath 
+* **natds-icons:** spoticon-growthplan-trophy 
+* **natds-icons:** spoticon-growthplan-trophyaward 
+* **natds-icons:** spoticon-growthplan-trophydiamond 
+* **natds-icons:** spoticon-growthplan-trophysapphire 
+
 
 ### Bug Fixes
 
