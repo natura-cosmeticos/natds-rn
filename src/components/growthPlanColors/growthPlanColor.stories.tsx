@@ -153,7 +153,7 @@ const renderIndicator = (isLegacy: boolean) => (
 )
 
 export const AllColors = () => {
-  const [isLegacy, setIsLegacy] = useState(true)
+  const [isLegacy, setIsLegacy] = useState(false)
 
   // Alterna entre os dois objetos baseado no estado
   const colorGroups = isLegacy ? legacyGrowthPlanColors.color : growthPlanColors
