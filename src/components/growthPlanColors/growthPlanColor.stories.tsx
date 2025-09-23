@@ -71,7 +71,7 @@ export default {
       extractComponentDescription: description
     }
   },
-  title: 'Colors|GrowthPlan'
+  title: 'Growth Plan/Colors'
 }
 
 const boxStyle: React.CSSProperties = {
